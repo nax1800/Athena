@@ -82,9 +82,9 @@ void UPackResource_C::UpdateCount()
 // Function PackResource.PackResource_C.UpdateType
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortResourceType                       Param_ResourceType                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortResourceType                       ResourceType_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPackResource_C::UpdateType(EFortResourceType Param_ResourceType)
+void UPackResource_C::UpdateType(EFortResourceType ResourceType_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,7 +93,7 @@ void UPackResource_C::UpdateType(EFortResourceType Param_ResourceType)
 
 	Params::PackResource_C_UpdateType Parms{};
 
-	Parms.Param_ResourceType = Param_ResourceType;
+	Parms.ResourceType_0 = ResourceType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

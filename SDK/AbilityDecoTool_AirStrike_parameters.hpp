@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "StrikePatternVectorStruct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AirStrikesPatterns_structs.hpp"
-#include "StrikePatternVectorStruct_structs.hpp"
 
 
 namespace SDK::Params
@@ -55,18 +55,18 @@ public:
 	int32                                         K2Node_CustomEvent_Power_Level;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9B[0x1];                                       // 0x009B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123;                              // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Variable2;                                // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable1234;                             // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable4;                                // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_InTime;                         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00B0(0x0008)(NoDestructor)
-	int32                                         Temp_int_Variable12345;                            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00B0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable5;                                // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x00C8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -78,12 +78,12 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select1_Default;                            // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select12_Default;                           // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select2_Default;                            // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike) == 0x000008, "Wrong alignment on AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike");
 static_assert(sizeof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike) == 0x000120, "Wrong size on AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike");
@@ -111,16 +111,16 @@ static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoT
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_GetInstigator_ReturnValue) == 0x000080, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_CustomEvent_Power_Level) == 0x000088, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_CustomEvent_Power_Level' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000090, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_DynamicCast_bSuccess12) == 0x000098, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_DynamicCast_bSuccess2) == 0x000098, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_bool_Variable1) == 0x000099, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAuthority_ReturnValue) == 0x00009A, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable12) == 0x00009C, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable123) == 0x0000A0, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_bool_Variable12) == 0x0000A4, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable1234) == 0x0000A8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable1234' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable2) == 0x00009C, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable3) == 0x0000A0, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_bool_Variable2) == 0x0000A4, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable4) == 0x0000A8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable4' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_CustomEvent_InTime) == 0x0000AC, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_CustomEvent_InTime' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000B0, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable12345) == 0x0000B8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable12345' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, Temp_int_Variable5) == 0x0000B8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::Temp_int_Variable5' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0000C0, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x0000C8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x0000D8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
@@ -128,11 +128,11 @@ static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoT
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x0000F0, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_Select_Default) == 0x0000F4, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_Select1_Default) == 0x0000F8, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000100, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x000110, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_Select12_Default) == 0x000114, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_Add_IntInt_ReturnValue12) == 0x000118, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_Add_IntInt_ReturnValue123) == 0x00011C, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000100, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000110, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, K2Node_Select2_Default) == 0x000114, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_Add_IntInt_ReturnValue2) == 0x000118, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike, CallFunc_Add_IntInt_ReturnValue3) == 0x00011C, "Member 'AbilityDecoTool_AirStrike_C_ExecuteUbergraph_AbilityDecoTool_AirStrike::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.HideFor
 // 0x0004 (0x0004 - 0x0000)
@@ -161,22 +161,22 @@ static_assert(offsetof(AbilityDecoTool_AirStrike_C_PassInfo, Power_Level) == 0x0
 struct AbilityDecoTool_AirStrike_C_BPPressSecondaryFire final
 {
 public:
-	class AFortDecoHelper*                        Param_FortDecoHelper;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortDecoHelper*                        FortDecoHelper_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AbilityDecoTool_AirStrike_C_BPPressSecondaryFire) == 0x000008, "Wrong alignment on AbilityDecoTool_AirStrike_C_BPPressSecondaryFire");
 static_assert(sizeof(AbilityDecoTool_AirStrike_C_BPPressSecondaryFire) == 0x000008, "Wrong size on AbilityDecoTool_AirStrike_C_BPPressSecondaryFire");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_BPPressSecondaryFire, Param_FortDecoHelper) == 0x000000, "Member 'AbilityDecoTool_AirStrike_C_BPPressSecondaryFire::Param_FortDecoHelper' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_BPPressSecondaryFire, FortDecoHelper_0) == 0x000000, "Member 'AbilityDecoTool_AirStrike_C_BPPressSecondaryFire::FortDecoHelper_0' has a wrong offset!");
 
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.BPOnSetDecoObjectPreview
 // 0x0008 (0x0008 - 0x0000)
 struct AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview final
 {
 public:
-	class AFortDecoHelper*                        Param_FortDecoHelper;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortDecoHelper*                        FortDecoHelper_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview) == 0x000008, "Wrong alignment on AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview");
 static_assert(sizeof(AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview) == 0x000008, "Wrong size on AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview, Param_FortDecoHelper) == 0x000000, "Member 'AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview::Param_FortDecoHelper' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview, FortDecoHelper_0) == 0x000000, "Member 'AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview::FortDecoHelper_0' has a wrong offset!");
 
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.PopulatePositionArrays
 // 0x00F0 (0x00F0 - 0x0000)
@@ -187,52 +187,52 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable12;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable1;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable12;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable123;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable123;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable1234;                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234;               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable4;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0040(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable1234;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable4;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Array_Get_Item1;                          // 0x006C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1;        // 0x0078(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item12;                         // 0x0084(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item2;                          // 0x0084(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item123;                        // 0x0094(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue123;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue123;               // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Array_Get_Item3;                          // 0x0094(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AB[0x1];                                       // 0x00AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_AddUnique_ReturnValue1;             // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item1234;                       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item12345;                      // 0x00BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue1234;             // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item4;                          // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item5;                          // 0x00BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue4;                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_VectorVector_ReturnValue;      // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1234;              // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue4;                 // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CE[0x2];                                       // 0x00CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAirStrikesPatterns                    CallFunc_Array_Get_Item123456;                     // 0x00D0(0x0010)(HasGetValueTypeHash)
-	struct FStrikePatternVectorStruct             CallFunc_Array_Get_Item1234567;                    // 0x00E0(0x0010)(HasGetValueTypeHash)
+	struct FAirStrikesPatterns                    CallFunc_Array_Get_Item6;                          // 0x00D0(0x0010)(HasGetValueTypeHash)
+	struct FStrikePatternVectorStruct             CallFunc_Array_Get_Item7;                          // 0x00E0(0x0010)(HasGetValueTypeHash)
 };
 static_assert(alignof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays) == 0x000008, "Wrong alignment on AbilityDecoTool_AirStrike_C_PopulatePositionArrays");
 static_assert(sizeof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays) == 0x0000F0, "Wrong size on AbilityDecoTool_AirStrike_C_PopulatePositionArrays");
@@ -240,45 +240,45 @@ static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable1) == 0x00000C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable12) == 0x000010, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable12' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable2) == 0x000010, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue1) == 0x000014, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue12) == 0x000018, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue2) == 0x000018, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_bool_True_if_break_was_hit_Variable) == 0x00001C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable1) == 0x000020, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable1' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Not_PreBool_ReturnValue) == 0x000024, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable12) == 0x000028, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable123) == 0x00002C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue123) == 0x000030, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable123) == 0x000034, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable1234) == 0x000038, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable1234' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue1234) == 0x00003C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable2) == 0x000028, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable3) == 0x00002C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue3) == 0x000030, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable3) == 0x000034, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Loop_Counter_Variable4) == 0x000038, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Loop_Counter_Variable4' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Add_IntInt_ReturnValue4) == 0x00003C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item) == 0x000040, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000050, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue1) == 0x000060, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable1234) == 0x000064, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable1234' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, Temp_int_Array_Index_Variable4) == 0x000064, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::Temp_int_Array_Index_Variable4' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue1) == 0x000068, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item1) == 0x00006C, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item1' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Multiply_VectorFloat_ReturnValue1) == 0x000078, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Multiply_VectorFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item12) == 0x000084, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item2) == 0x000084, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Add_ReturnValue) == 0x000090, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item123) == 0x000094, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue12) == 0x0000A0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue123) == 0x0000A4, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue12) == 0x0000A8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue123) == 0x0000A9, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item3) == 0x000094, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue2) == 0x0000A0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue3) == 0x0000A4, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue2) == 0x0000A8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue3) == 0x0000A9, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_BooleanAND_ReturnValue) == 0x0000AA, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_AddUnique_ReturnValue) == 0x0000AC, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_AddUnique_ReturnValue1) == 0x0000B4, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_AddUnique_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item1234) == 0x0000B8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item1234' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item12345) == 0x0000BC, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item12345' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue1234) == 0x0000C8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item4) == 0x0000B8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item4' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item5) == 0x0000BC, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item5' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Length_ReturnValue4) == 0x0000C8, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Length_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_EqualEqual_VectorVector_ReturnValue) == 0x0000CC, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_EqualEqual_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue1234) == 0x0000CD, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item123456) == 0x0000D0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item123456' has a wrong offset!");
-static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item1234567) == 0x0000E0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item1234567' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Less_IntInt_ReturnValue4) == 0x0000CD, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Less_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item6) == 0x0000D0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item6' has a wrong offset!");
+static_assert(offsetof(AbilityDecoTool_AirStrike_C_PopulatePositionArrays, CallFunc_Array_Get_Item7) == 0x0000E0, "Member 'AbilityDecoTool_AirStrike_C_PopulatePositionArrays::CallFunc_Array_Get_Item7' has a wrong offset!");
 
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.HideMeshAndPlacement
 // 0x0020 (0x0020 - 0x0000)

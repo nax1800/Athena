@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener
-// 0x0138 (0x0138 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener final
 {
 public:
@@ -36,11 +36,11 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x00E8(0x0020)()
 	int32                                         CallFunc_GetGameplayEffectCount_ReturnValue;       // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0110(0x0018)()
-	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue; // 0x0128(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0110(0x0010)()
+	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue; // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener) == 0x000008, "Wrong alignment on GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener");
-static_assert(sizeof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener) == 0x000138, "Wrong size on GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener");
+static_assert(sizeof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener) == 0x000130, "Wrong size on GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, EntryPoint) == 0x000000, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_GetGrantedByEffectContext_ReturnValue) == 0x000008, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_GetGrantedByEffectContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_EffectContextGetInstigatorActor_ReturnValue) == 0x000020, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_EffectContextGetInstigatorActor_ReturnValue' has a wrong offset!");
@@ -52,18 +52,7 @@ static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergra
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x0000E8, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_GetGameplayEffectCount_ReturnValue) == 0x000108, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_GetGameplayEffectCount_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000110, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000128, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
-
-// Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.K2_ActivateAbilityFromEvent
-// 0x00A8 (0x00A8 - 0x0000)
-struct GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent final
-{
-public:
-	struct FGameplayEventData                     Param_EventData;                                   // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent, Param_EventData) == 0x000000, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent::Param_EventData' has a wrong offset!");
+static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000120, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
 
 // Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.Exceute GC
 // 0x0100 (0x0100 - 0x0000)
@@ -101,20 +90,31 @@ static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_Exceute_GC, K2
 struct GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks final
 {
 public:
-	int32                                         Param_StackCount;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StackCount_0;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AB_Constructor_BASE_C*                  BaseReference;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue12;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue2;           // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks) == 0x000008, "Wrong alignment on GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks");
 static_assert(sizeof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks) == 0x000018, "Wrong size on GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks");
-static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, Param_StackCount) == 0x000000, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::Param_StackCount' has a wrong offset!");
+static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, StackCount_0) == 0x000000, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::StackCount_0' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, BaseReference) == 0x000008, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::BaseReference' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x000011, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, CallFunc_EqualEqual_IntInt_ReturnValue12) == 0x000012, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::CallFunc_EqualEqual_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000012, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
+
+// Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.K2_ActivateAbilityFromEvent
+// 0x00A8 (0x00A8 - 0x0000)
+struct GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent final
+{
+public:
+	struct FGameplayEventData                     EventData_0;                                       // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent");
+static_assert(sizeof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent");
+static_assert(offsetof(GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent, EventData_0) == 0x000000, "Member 'GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent::EventData_0' has a wrong offset!");
 
 }
 

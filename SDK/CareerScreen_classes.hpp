@@ -20,30 +20,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CareerScreen.CareerScreen_C
-// 0x0050 (0x0410 - 0x03C0)
+// 0x0038 (0x0330 - 0x02F8)
 class UCareerScreen_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Image_0;                                           // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_3;                                           // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_4;                                           // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_5;                                           // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         LeaderboardsButton;                                // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         ProfileButton;                                     // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         ReplaysButton;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class ULandingPageTile_C*                     LeaderboardsBtn;                                   // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULandingPageTile_C*                     ProfileBtn;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULandingPageTile_C*                     ProfileStatsBtn;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULandingPageTile_C*                     RecentGamesBtn;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULandingPageTile_C*                     ReplaysBtn;                                        // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBox;                                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CareerScreen(int32 EntryPoint);
-	void BndEvt__PanelButton_0_K2Node_ComponentBoundEvent_71_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__ProfileButton_K2Node_ComponentBoundEvent_126_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__ReplaysButton_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void Construct();
-	void DisableHotFixedOffButtons();
-	void OnActivated();
+	void BndEvt__RecentGamesBtn_K2Node_ComponentBoundEvent_279_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__ReplaysBtn_K2Node_ComponentBoundEvent_262_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__LeaderboardsBtn_K2Node_ComponentBoundEvent_245_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__ProfileBtn_K2Node_ComponentBoundEvent_228_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__ProfileStatsBtn_K2Node_ComponentBoundEvent_211_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void ShowReplayBrowser();
 	void OnDeactivated();
+	void OnActivated();
+	void Construct();
+	void SetupButtonStates();
+	void GetFirstInteractableWidget(class UWidget** Widget);
+	void ApplyHotfixButtonStates();
 
 public:
 	static class UClass* StaticClass()
@@ -56,17 +58,14 @@ public:
 	}
 };
 static_assert(alignof(UCareerScreen_C) == 0x000008, "Wrong alignment on UCareerScreen_C");
-static_assert(sizeof(UCareerScreen_C) == 0x000410, "Wrong size on UCareerScreen_C");
-static_assert(offsetof(UCareerScreen_C, UberGraphFrame) == 0x0003C0, "Member 'UCareerScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_0) == 0x0003C8, "Member 'UCareerScreen_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_1) == 0x0003D0, "Member 'UCareerScreen_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_2) == 0x0003D8, "Member 'UCareerScreen_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_3) == 0x0003E0, "Member 'UCareerScreen_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_4) == 0x0003E8, "Member 'UCareerScreen_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Image_5) == 0x0003F0, "Member 'UCareerScreen_C::Image_5' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, LeaderboardsButton) == 0x0003F8, "Member 'UCareerScreen_C::LeaderboardsButton' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, ProfileButton) == 0x000400, "Member 'UCareerScreen_C::ProfileButton' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, ReplaysButton) == 0x000408, "Member 'UCareerScreen_C::ReplaysButton' has a wrong offset!");
+static_assert(sizeof(UCareerScreen_C) == 0x000330, "Wrong size on UCareerScreen_C");
+static_assert(offsetof(UCareerScreen_C, UberGraphFrame) == 0x0002F8, "Member 'UCareerScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, LeaderboardsBtn) == 0x000300, "Member 'UCareerScreen_C::LeaderboardsBtn' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, ProfileBtn) == 0x000308, "Member 'UCareerScreen_C::ProfileBtn' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, ProfileStatsBtn) == 0x000310, "Member 'UCareerScreen_C::ProfileStatsBtn' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, RecentGamesBtn) == 0x000318, "Member 'UCareerScreen_C::RecentGamesBtn' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, ReplaysBtn) == 0x000320, "Member 'UCareerScreen_C::ReplaysBtn' has a wrong offset!");
+static_assert(offsetof(UCareerScreen_C, WrapBox) == 0x000328, "Member 'UCareerScreen_C::WrapBox' has a wrong offset!");
 
 }
 

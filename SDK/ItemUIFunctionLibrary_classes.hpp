@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
@@ -25,6 +25,7 @@ public:
 	static void ParseLevelRequiredFromString(const class FString& InString, class UObject* __WorldContext, int32* OutInt);
 	static void Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier);
 	static void Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value);
+	static void IsNullItem(class UObject* ItemObject, class UObject* __WorldContext, bool* Is_Null_Item);
 
 public:
 	static class UClass* StaticClass()

@@ -196,9 +196,9 @@ void UIconTextButton_C::OnCurrentTextStyleChanged()
 // Function IconTextButton.IconTextButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_ButtonText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             ButtonText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UIconTextButton_C::Set_Text(const class FText& Param_ButtonText)
+void UIconTextButton_C::Set_Text(const class FText& ButtonText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -207,7 +207,7 @@ void UIconTextButton_C::Set_Text(const class FText& Param_ButtonText)
 
 	Params::IconTextButton_C_Set_Text Parms{};
 
-	Parms.Param_ButtonText = std::move(Param_ButtonText);
+	Parms.ButtonText_0 = std::move(ButtonText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -216,9 +216,9 @@ void UIconTextButton_C::Set_Text(const class FText& Param_ButtonText)
 // Function IconTextButton.IconTextButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      Param_IconBrush                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FSlateBrush                      IconBrush_0                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UIconTextButton_C::Set_Icon(const struct FSlateBrush& Param_IconBrush)
+void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -227,7 +227,7 @@ void UIconTextButton_C::Set_Icon(const struct FSlateBrush& Param_IconBrush)
 
 	Params::IconTextButton_C_Set_Icon Parms{};
 
-	Parms.Param_IconBrush = std::move(Param_IconBrush);
+	Parms.IconBrush_0 = std::move(IconBrush_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -270,9 +270,9 @@ void UIconTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 // Function IconTextButton.IconTextButton_C.SetControllerStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Param_ControllerInputStyle                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           ControllerInputStyle_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UIconTextButton_C::SetControllerStyle(class UClass* Param_ControllerInputStyle)
+void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -281,7 +281,7 @@ void UIconTextButton_C::SetControllerStyle(class UClass* Param_ControllerInputSt
 
 	Params::IconTextButton_C_SetControllerStyle Parms{};
 
-	Parms.Param_ControllerInputStyle = Param_ControllerInputStyle;
+	Parms.ControllerInputStyle_0 = ControllerInputStyle_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -324,9 +324,9 @@ void UIconTextButton_C::UpdateStyle(bool UsingGamepad)
 // Function IconTextButton.IconTextButton_C.SetMouseKeyboardStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Param_ControllerInputStyle                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           ControllerInputStyle_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* Param_ControllerInputStyle)
+void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -335,7 +335,7 @@ void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* Param_ControllerInpu
 
 	Params::IconTextButton_C_SetMouseKeyboardStyle Parms{};
 
-	Parms.Param_ControllerInputStyle = Param_ControllerInputStyle;
+	Parms.ControllerInputStyle_0 = ControllerInputStyle_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -358,9 +358,9 @@ void UIconTextButton_C::UpdateContentAlignment()
 // Function IconTextButton.IconTextButton_C.SetContentAlignment
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EHorizontalAlignment                    Param_ContentAlignment                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHorizontalAlignment                    ContentAlignment_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UIconTextButton_C::SetContentAlignment(EHorizontalAlignment Param_ContentAlignment)
+void UIconTextButton_C::SetContentAlignment(EHorizontalAlignment ContentAlignment_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -369,7 +369,7 @@ void UIconTextButton_C::SetContentAlignment(EHorizontalAlignment Param_ContentAl
 
 	Params::IconTextButton_C_SetContentAlignment Parms{};
 
-	Parms.Param_ContentAlignment = Param_ContentAlignment;
+	Parms.ContentAlignment_0 = ContentAlignment_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -440,6 +440,27 @@ void UIconTextButton_C::ShowIcon(bool bShouldShow)
 	Parms.bShouldShow = bShouldShow;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function IconTextButton.IconTextButton_C.Get Dynamic Material
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UMaterialInstanceDynamic*         Ret_Material                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UIconTextButton_C::Get_Dynamic_Material(class UMaterialInstanceDynamic** Ret_Material)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTextButton_C", "Get Dynamic Material");
+
+	Params::IconTextButton_C_Get_Dynamic_Material Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Ret_Material != nullptr)
+		*Ret_Material = Parms.Ret_Material;
 }
 
 }

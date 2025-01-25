@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C
-// 0x0050 (0x0420 - 0x03D0)
+// 0x0050 (0x0350 - 0x0300)
 class UBP_FortExpeditionPickVehicleWidget_C final : public UFortExpeditionPickVehicleWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(Transient, DuplicateTransient)
-	class UCommonTileView*                        CommonTileView_0;                                  // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_ExpeditionSquadSlotsView_C*         ExpeditionSquadSlotsView;                          // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackInputAction;                                   // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TArray<class UObject*>                        SquadOjbects;                                      // 0x0400(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	UMulticastDelegateProperty_                   OnVehicleSelected;                                 // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
+	class UCommonTileView*                        CommonTileView_0;                                  // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_ExpeditionSquadSlotsView_C*         ExpeditionSquadSlotsView;                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TArray<class UObject*>                        SquadOjbects;                                      // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	UMulticastDelegateProperty_                   OnVehicleSelected;                                 // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnVehicleSelected__DelegateSignature(class FName SquadId);
@@ -59,14 +59,14 @@ public:
 	}
 };
 static_assert(alignof(UBP_FortExpeditionPickVehicleWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionPickVehicleWidget_C");
-static_assert(sizeof(UBP_FortExpeditionPickVehicleWidget_C) == 0x000420, "Wrong size on UBP_FortExpeditionPickVehicleWidget_C");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, UberGraphFrame) == 0x0003D0, "Member 'UBP_FortExpeditionPickVehicleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, CommonTileView_0) == 0x0003D8, "Member 'UBP_FortExpeditionPickVehicleWidget_C::CommonTileView_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, ExpeditionSquadSlotsView) == 0x0003E0, "Member 'UBP_FortExpeditionPickVehicleWidget_C::ExpeditionSquadSlotsView' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SafeZone_0) == 0x0003E8, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, BackInputAction) == 0x0003F0, "Member 'UBP_FortExpeditionPickVehicleWidget_C::BackInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SquadOjbects) == 0x000400, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SquadOjbects' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, OnVehicleSelected) == 0x000410, "Member 'UBP_FortExpeditionPickVehicleWidget_C::OnVehicleSelected' has a wrong offset!");
+static_assert(sizeof(UBP_FortExpeditionPickVehicleWidget_C) == 0x000350, "Wrong size on UBP_FortExpeditionPickVehicleWidget_C");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, UberGraphFrame) == 0x000300, "Member 'UBP_FortExpeditionPickVehicleWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, CommonTileView_0) == 0x000308, "Member 'UBP_FortExpeditionPickVehicleWidget_C::CommonTileView_0' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, ExpeditionSquadSlotsView) == 0x000310, "Member 'UBP_FortExpeditionPickVehicleWidget_C::ExpeditionSquadSlotsView' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SafeZone_0) == 0x000318, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, BackInputAction) == 0x000320, "Member 'UBP_FortExpeditionPickVehicleWidget_C::BackInputAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SquadOjbects) == 0x000330, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SquadOjbects' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, OnVehicleSelected) == 0x000340, "Member 'UBP_FortExpeditionPickVehicleWidget_C::OnVehicleSelected' has a wrong offset!");
 
 }
 

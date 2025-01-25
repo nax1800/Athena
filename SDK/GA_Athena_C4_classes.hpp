@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -22,61 +22,63 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Athena_C4.GA_Athena_C4_C
-// 0x0230 (0x0D18 - 0x0AE8)
+// 0x0240 (0x0B38 - 0x08F8)
 class UGA_Athena_C4_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTag                           EventActivation;                                   // 0x0AF8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EventComplete;                                     // 0x0B00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         GrenadeSpeedMin;                                   // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         GrenadeSpeedMax;                                   // 0x0B0C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         GravityScale;                                      // 0x0B10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B14[0x4];                                      // 0x0B14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             GrenadeSound;                                      // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EC_DefaultExplosion;                               // 0x0B20(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FFortGameplayEffectContainerSpec       EC_ReturnedEffect;                                 // 0x0B28(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         ExplosionRadius;                                   // 0x0BA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AdditionalThrowAngle;                              // 0x0BAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortFeedbackHandle                    GrenadeDialogFeedback;                             // 0x0BB0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          GrenadeAmmo;                                       // 0x0BC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          PlasmaGrenades;                                    // 0x0BC9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Flashbang;                                         // 0x0BCA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BCB[0x1];                                      // 0x0BCB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                GrenadeTargetingOriginOffset;                      // 0x0BCC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AB_BGA_Athena_C4_C*                     DummyProjectile;                                   // 0x0BD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DummyShouldBounce;                                 // 0x0BE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BE1[0x3];                                      // 0x0BE1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DummyBounciness;                                   // 0x0BE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DummyFriction;                                     // 0x0BE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TrajectoryUpdateInterval;                          // 0x0BEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DummyMaxSpeed;                                     // 0x0BF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DummyGravity;                                      // 0x0BF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DummyTimeStep;                                     // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DummyExtent;                                       // 0x0BFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                GrenadeTargetingOriginOffset_Crouched;             // 0x0C00(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          InThrowWindup;                                     // 0x0C0C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C0D[0x3];                                      // 0x0C0D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_ProjectileTrajectory_C*             TrajectoryIndicator;                               // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 TrajectoryIndicatorClass;                          // 0x0C18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AbilityKeyPressed;                                 // 0x0C20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C21[0x3];                                      // 0x0C21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxSpeedPitch;                                     // 0x0C24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinSpeedPitch;                                     // 0x0C28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C2C[0x4];                                      // 0x0C2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     Event_Data;                                        // 0x0C30(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MaxTossPitch;                                      // 0x0CE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxTrajectoryBounces;                              // 0x0CE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PostThrowCancelDelay;                              // 0x0CE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CEC[0x4];                                      // 0x0CEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AB_BGA_Athena_C4_C*                     RefToC4;                                           // 0x0CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Activation_Radius;                                 // 0x0CF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ExplosionLevel;                                    // 0x0CFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 BGA_C4;                                            // 0x0D00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           GroupActorTag;                                     // 0x0D08(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 PassiveGE;                                         // 0x0D10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           EventActivation;                                   // 0x0900(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EventComplete;                                     // 0x0908(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         GrenadeSpeedMin;                                   // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GrenadeSpeedMax;                                   // 0x0914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GravityScale;                                      // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91C[0x4];                                      // 0x091C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             GrenadeSound;                                      // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EC_DefaultExplosion;                               // 0x0928(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FFortGameplayEffectContainerSpec       EC_ReturnedEffect;                                 // 0x0930(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         ExplosionRadius;                                   // 0x09B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AdditionalThrowAngle;                              // 0x09B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortFeedbackHandle                    GrenadeDialogFeedback;                             // 0x09B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          GrenadeAmmo;                                       // 0x09D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          PlasmaGrenades;                                    // 0x09D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Flashbang;                                         // 0x09D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9D3[0x1];                                      // 0x09D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                GrenadeTargetingOriginOffset;                      // 0x09D4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AB_BGA_Athena_C4_C*                     DummyProjectile;                                   // 0x09E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DummyShouldBounce;                                 // 0x09E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9E9[0x3];                                      // 0x09E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DummyBounciness;                                   // 0x09EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DummyFriction;                                     // 0x09F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TrajectoryUpdateInterval;                          // 0x09F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DummyMaxSpeed;                                     // 0x09F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DummyGravity;                                      // 0x09FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DummyTimeStep;                                     // 0x0A00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DummyExtent;                                       // 0x0A04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                GrenadeTargetingOriginOffset_Crouched;             // 0x0A08(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InThrowWindup;                                     // 0x0A14(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A15[0x3];                                      // 0x0A15(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_ProjectileTrajectory_C*             TrajectoryIndicator;                               // 0x0A18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 TrajectoryIndicatorClass;                          // 0x0A20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AbilityKeyPressed;                                 // 0x0A28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A29[0x3];                                      // 0x0A29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxSpeedPitch;                                     // 0x0A2C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinSpeedPitch;                                     // 0x0A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A34[0x4];                                      // 0x0A34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayEventData                     Event_Data;                                        // 0x0A38(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0AE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MaxTossPitch;                                      // 0x0AE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxTrajectoryBounces;                              // 0x0AEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PostThrowCancelDelay;                              // 0x0AF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AF4[0x4];                                      // 0x0AF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AB_BGA_Athena_C4_C*                     RefToC4;                                           // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Activation_Radius;                                 // 0x0B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ExplosionLevel;                                    // 0x0B04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 BGA_C4;                                            // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           GroupActorTag;                                     // 0x0B10(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 PassiveGE;                                         // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PostThrowEndDelay;                                 // 0x0B20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B24[0x4];                                      // 0x0B24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCurveTableRowHandle                   AthenaGameData;                                    // 0x0B28(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Athena_C4(int32 EntryPoint);
@@ -110,50 +112,52 @@ public:
 	}
 };
 static_assert(alignof(UGA_Athena_C4_C) == 0x000008, "Wrong alignment on UGA_Athena_C4_C");
-static_assert(sizeof(UGA_Athena_C4_C) == 0x000D18, "Wrong size on UGA_Athena_C4_C");
-static_assert(offsetof(UGA_Athena_C4_C, UberGraphFrame) == 0x000AF0, "Member 'UGA_Athena_C4_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, EventActivation) == 0x000AF8, "Member 'UGA_Athena_C4_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, EventComplete) == 0x000B00, "Member 'UGA_Athena_C4_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeSpeedMin) == 0x000B08, "Member 'UGA_Athena_C4_C::GrenadeSpeedMin' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeSpeedMax) == 0x000B0C, "Member 'UGA_Athena_C4_C::GrenadeSpeedMax' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GravityScale) == 0x000B10, "Member 'UGA_Athena_C4_C::GravityScale' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeSound) == 0x000B18, "Member 'UGA_Athena_C4_C::GrenadeSound' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, EC_DefaultExplosion) == 0x000B20, "Member 'UGA_Athena_C4_C::EC_DefaultExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, EC_ReturnedEffect) == 0x000B28, "Member 'UGA_Athena_C4_C::EC_ReturnedEffect' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, ExplosionRadius) == 0x000BA8, "Member 'UGA_Athena_C4_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, AdditionalThrowAngle) == 0x000BAC, "Member 'UGA_Athena_C4_C::AdditionalThrowAngle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeDialogFeedback) == 0x000BB0, "Member 'UGA_Athena_C4_C::GrenadeDialogFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeAmmo) == 0x000BC8, "Member 'UGA_Athena_C4_C::GrenadeAmmo' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, PlasmaGrenades) == 0x000BC9, "Member 'UGA_Athena_C4_C::PlasmaGrenades' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, Flashbang) == 0x000BCA, "Member 'UGA_Athena_C4_C::Flashbang' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeTargetingOriginOffset) == 0x000BCC, "Member 'UGA_Athena_C4_C::GrenadeTargetingOriginOffset' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyProjectile) == 0x000BD8, "Member 'UGA_Athena_C4_C::DummyProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyShouldBounce) == 0x000BE0, "Member 'UGA_Athena_C4_C::DummyShouldBounce' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyBounciness) == 0x000BE4, "Member 'UGA_Athena_C4_C::DummyBounciness' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyFriction) == 0x000BE8, "Member 'UGA_Athena_C4_C::DummyFriction' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, TrajectoryUpdateInterval) == 0x000BEC, "Member 'UGA_Athena_C4_C::TrajectoryUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyMaxSpeed) == 0x000BF0, "Member 'UGA_Athena_C4_C::DummyMaxSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyGravity) == 0x000BF4, "Member 'UGA_Athena_C4_C::DummyGravity' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyTimeStep) == 0x000BF8, "Member 'UGA_Athena_C4_C::DummyTimeStep' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, DummyExtent) == 0x000BFC, "Member 'UGA_Athena_C4_C::DummyExtent' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GrenadeTargetingOriginOffset_Crouched) == 0x000C00, "Member 'UGA_Athena_C4_C::GrenadeTargetingOriginOffset_Crouched' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, InThrowWindup) == 0x000C0C, "Member 'UGA_Athena_C4_C::InThrowWindup' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, TrajectoryIndicator) == 0x000C10, "Member 'UGA_Athena_C4_C::TrajectoryIndicator' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, TrajectoryIndicatorClass) == 0x000C18, "Member 'UGA_Athena_C4_C::TrajectoryIndicatorClass' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, AbilityKeyPressed) == 0x000C20, "Member 'UGA_Athena_C4_C::AbilityKeyPressed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, MaxSpeedPitch) == 0x000C24, "Member 'UGA_Athena_C4_C::MaxSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, MinSpeedPitch) == 0x000C28, "Member 'UGA_Athena_C4_C::MinSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, Event_Data) == 0x000C30, "Member 'UGA_Athena_C4_C::Event_Data' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, PlayerPawn) == 0x000CD8, "Member 'UGA_Athena_C4_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, MaxTossPitch) == 0x000CE0, "Member 'UGA_Athena_C4_C::MaxTossPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, MaxTrajectoryBounces) == 0x000CE4, "Member 'UGA_Athena_C4_C::MaxTrajectoryBounces' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, PostThrowCancelDelay) == 0x000CE8, "Member 'UGA_Athena_C4_C::PostThrowCancelDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, RefToC4) == 0x000CF0, "Member 'UGA_Athena_C4_C::RefToC4' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, Activation_Radius) == 0x000CF8, "Member 'UGA_Athena_C4_C::Activation_Radius' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, ExplosionLevel) == 0x000CFC, "Member 'UGA_Athena_C4_C::ExplosionLevel' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, BGA_C4) == 0x000D00, "Member 'UGA_Athena_C4_C::BGA_C4' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, GroupActorTag) == 0x000D08, "Member 'UGA_Athena_C4_C::GroupActorTag' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_C, PassiveGE) == 0x000D10, "Member 'UGA_Athena_C4_C::PassiveGE' has a wrong offset!");
+static_assert(sizeof(UGA_Athena_C4_C) == 0x000B38, "Wrong size on UGA_Athena_C4_C");
+static_assert(offsetof(UGA_Athena_C4_C, UberGraphFrame) == 0x0008F8, "Member 'UGA_Athena_C4_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, EventActivation) == 0x000900, "Member 'UGA_Athena_C4_C::EventActivation' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, EventComplete) == 0x000908, "Member 'UGA_Athena_C4_C::EventComplete' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeSpeedMin) == 0x000910, "Member 'UGA_Athena_C4_C::GrenadeSpeedMin' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeSpeedMax) == 0x000914, "Member 'UGA_Athena_C4_C::GrenadeSpeedMax' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GravityScale) == 0x000918, "Member 'UGA_Athena_C4_C::GravityScale' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeSound) == 0x000920, "Member 'UGA_Athena_C4_C::GrenadeSound' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, EC_DefaultExplosion) == 0x000928, "Member 'UGA_Athena_C4_C::EC_DefaultExplosion' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, EC_ReturnedEffect) == 0x000930, "Member 'UGA_Athena_C4_C::EC_ReturnedEffect' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, ExplosionRadius) == 0x0009B0, "Member 'UGA_Athena_C4_C::ExplosionRadius' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, AdditionalThrowAngle) == 0x0009B4, "Member 'UGA_Athena_C4_C::AdditionalThrowAngle' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeDialogFeedback) == 0x0009B8, "Member 'UGA_Athena_C4_C::GrenadeDialogFeedback' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeAmmo) == 0x0009D0, "Member 'UGA_Athena_C4_C::GrenadeAmmo' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, PlasmaGrenades) == 0x0009D1, "Member 'UGA_Athena_C4_C::PlasmaGrenades' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, Flashbang) == 0x0009D2, "Member 'UGA_Athena_C4_C::Flashbang' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeTargetingOriginOffset) == 0x0009D4, "Member 'UGA_Athena_C4_C::GrenadeTargetingOriginOffset' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyProjectile) == 0x0009E0, "Member 'UGA_Athena_C4_C::DummyProjectile' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyShouldBounce) == 0x0009E8, "Member 'UGA_Athena_C4_C::DummyShouldBounce' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyBounciness) == 0x0009EC, "Member 'UGA_Athena_C4_C::DummyBounciness' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyFriction) == 0x0009F0, "Member 'UGA_Athena_C4_C::DummyFriction' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, TrajectoryUpdateInterval) == 0x0009F4, "Member 'UGA_Athena_C4_C::TrajectoryUpdateInterval' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyMaxSpeed) == 0x0009F8, "Member 'UGA_Athena_C4_C::DummyMaxSpeed' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyGravity) == 0x0009FC, "Member 'UGA_Athena_C4_C::DummyGravity' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyTimeStep) == 0x000A00, "Member 'UGA_Athena_C4_C::DummyTimeStep' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, DummyExtent) == 0x000A04, "Member 'UGA_Athena_C4_C::DummyExtent' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GrenadeTargetingOriginOffset_Crouched) == 0x000A08, "Member 'UGA_Athena_C4_C::GrenadeTargetingOriginOffset_Crouched' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, InThrowWindup) == 0x000A14, "Member 'UGA_Athena_C4_C::InThrowWindup' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, TrajectoryIndicator) == 0x000A18, "Member 'UGA_Athena_C4_C::TrajectoryIndicator' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, TrajectoryIndicatorClass) == 0x000A20, "Member 'UGA_Athena_C4_C::TrajectoryIndicatorClass' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, AbilityKeyPressed) == 0x000A28, "Member 'UGA_Athena_C4_C::AbilityKeyPressed' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, MaxSpeedPitch) == 0x000A2C, "Member 'UGA_Athena_C4_C::MaxSpeedPitch' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, MinSpeedPitch) == 0x000A30, "Member 'UGA_Athena_C4_C::MinSpeedPitch' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, Event_Data) == 0x000A38, "Member 'UGA_Athena_C4_C::Event_Data' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, PlayerPawn) == 0x000AE0, "Member 'UGA_Athena_C4_C::PlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, MaxTossPitch) == 0x000AE8, "Member 'UGA_Athena_C4_C::MaxTossPitch' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, MaxTrajectoryBounces) == 0x000AEC, "Member 'UGA_Athena_C4_C::MaxTrajectoryBounces' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, PostThrowCancelDelay) == 0x000AF0, "Member 'UGA_Athena_C4_C::PostThrowCancelDelay' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, RefToC4) == 0x000AF8, "Member 'UGA_Athena_C4_C::RefToC4' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, Activation_Radius) == 0x000B00, "Member 'UGA_Athena_C4_C::Activation_Radius' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, ExplosionLevel) == 0x000B04, "Member 'UGA_Athena_C4_C::ExplosionLevel' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, BGA_C4) == 0x000B08, "Member 'UGA_Athena_C4_C::BGA_C4' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, GroupActorTag) == 0x000B10, "Member 'UGA_Athena_C4_C::GroupActorTag' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, PassiveGE) == 0x000B18, "Member 'UGA_Athena_C4_C::PassiveGE' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, PostThrowEndDelay) == 0x000B20, "Member 'UGA_Athena_C4_C::PostThrowEndDelay' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_C, AthenaGameData) == 0x000B28, "Member 'UGA_Athena_C4_C::AthenaGameData' has a wrong offset!");
 
 }
 

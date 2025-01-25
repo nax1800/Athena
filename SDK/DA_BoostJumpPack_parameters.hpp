@@ -23,24 +23,28 @@ struct DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsErebus_ReturnValue;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortDecoHelper*                        K2Node_Event_FortDecoHelper;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  K2Node_Select_Default;                             // 0x0028(0x0020)(ConstParm)
 };
 static_assert(alignof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack) == 0x000008, "Wrong alignment on DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack");
 static_assert(sizeof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack) == 0x000048, "Wrong size on DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, EntryPoint) == 0x000000, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, Temp_bool_Variable) == 0x000004, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, CallFunc_IsErebus_ReturnValue) == 0x000004, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::CallFunc_IsErebus_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, K2Node_Event_FortDecoHelper) == 0x000018, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::K2Node_Event_FortDecoHelper' has a wrong offset!");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000020, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, CallFunc_BooleanOR_ReturnValue) == 0x000021, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, Temp_bool_Variable) == 0x000022, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack, K2Node_Select_Default) == 0x000028, "Member 'DA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack::K2Node_Select_Default' has a wrong offset!");
 
 // Function DA_BoostJumpPack.DA_BoostJumpPack_C.BPPressTrigger

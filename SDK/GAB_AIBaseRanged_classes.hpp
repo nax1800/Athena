@@ -10,24 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_AIBaseRanged.GAB_AIBaseRanged_C
-// 0x0030 (0x0B18 - 0x0AE8)
+// 0x0028 (0x0920 - 0x08F8)
 class UGAB_AIBaseRanged_C : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class AActor*                                 CurrentAIAbilityTarget;                            // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastThrowTime;                                     // 0x0B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimeSinceLastThrowToResetThrowCount;               // 0x0B04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCurveTableRowHandle                   ProjectileSpeedDifficultyCurve;                    // 0x0B08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class AActor*                                 CurrentAIAbilityTarget;                            // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastThrowTime;                                     // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeSinceLastThrowToResetThrowCount;               // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCurveTableRowHandle                   ProjectileSpeedDifficultyCurve;                    // 0x0910(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_AIBaseRanged(int32 EntryPoint);
@@ -49,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(UGAB_AIBaseRanged_C) == 0x000008, "Wrong alignment on UGAB_AIBaseRanged_C");
-static_assert(sizeof(UGAB_AIBaseRanged_C) == 0x000B18, "Wrong size on UGAB_AIBaseRanged_C");
-static_assert(offsetof(UGAB_AIBaseRanged_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_AIBaseRanged_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseRanged_C, CurrentAIAbilityTarget) == 0x000AF8, "Member 'UGAB_AIBaseRanged_C::CurrentAIAbilityTarget' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseRanged_C, LastThrowTime) == 0x000B00, "Member 'UGAB_AIBaseRanged_C::LastThrowTime' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseRanged_C, TimeSinceLastThrowToResetThrowCount) == 0x000B04, "Member 'UGAB_AIBaseRanged_C::TimeSinceLastThrowToResetThrowCount' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseRanged_C, ProjectileSpeedDifficultyCurve) == 0x000B08, "Member 'UGAB_AIBaseRanged_C::ProjectileSpeedDifficultyCurve' has a wrong offset!");
+static_assert(sizeof(UGAB_AIBaseRanged_C) == 0x000920, "Wrong size on UGAB_AIBaseRanged_C");
+static_assert(offsetof(UGAB_AIBaseRanged_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_AIBaseRanged_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseRanged_C, CurrentAIAbilityTarget) == 0x000900, "Member 'UGAB_AIBaseRanged_C::CurrentAIAbilityTarget' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseRanged_C, LastThrowTime) == 0x000908, "Member 'UGAB_AIBaseRanged_C::LastThrowTime' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseRanged_C, TimeSinceLastThrowToResetThrowCount) == 0x00090C, "Member 'UGAB_AIBaseRanged_C::TimeSinceLastThrowToResetThrowCount' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseRanged_C, ProjectileSpeedDifficultyCurve) == 0x000910, "Member 'UGAB_AIBaseRanged_C::ProjectileSpeedDifficultyCurve' has a wrong offset!");
 
 }
 

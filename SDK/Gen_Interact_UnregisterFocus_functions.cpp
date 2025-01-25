@@ -20,10 +20,10 @@ namespace SDK
 // Function Gen_Interact_UnregisterFocus.Gen_Interact_UnregisterFocus_C.SetParams
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Param_ActorToUnregister                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorToUnregister_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGen_Interact_UnregisterFocus_C*  ThisObject                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGen_Interact_UnregisterFocus_C::SetParams(class AActor* Param_ActorToUnregister, class UGen_Interact_UnregisterFocus_C** ThisObject)
+void UGen_Interact_UnregisterFocus_C::SetParams(class AActor* ActorToUnregister_0, class UGen_Interact_UnregisterFocus_C** ThisObject)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UGen_Interact_UnregisterFocus_C::SetParams(class AActor* Param_ActorToUnreg
 
 	Params::Gen_Interact_UnregisterFocus_C_SetParams Parms{};
 
-	Parms.Param_ActorToUnregister = Param_ActorToUnregister;
+	Parms.ActorToUnregister_0 = ActorToUnregister_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

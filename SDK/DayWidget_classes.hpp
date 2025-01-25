@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DayWidget.DayWidget_C
-// 0x0010 (0x0230 - 0x0220)
+// 0x0010 (0x0228 - 0x0218)
 class UDayWidget_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       DayNumberText;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       DayNumberText;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_DayWidget(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UDayWidget_C) == 0x000008, "Wrong alignment on UDayWidget_C");
-static_assert(sizeof(UDayWidget_C) == 0x000230, "Wrong size on UDayWidget_C");
-static_assert(offsetof(UDayWidget_C, UberGraphFrame) == 0x000220, "Member 'UDayWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDayWidget_C, DayNumberText) == 0x000228, "Member 'UDayWidget_C::DayNumberText' has a wrong offset!");
+static_assert(sizeof(UDayWidget_C) == 0x000228, "Wrong size on UDayWidget_C");
+static_assert(offsetof(UDayWidget_C, UberGraphFrame) == 0x000218, "Member 'UDayWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UDayWidget_C, DayNumberText) == 0x000220, "Member 'UDayWidget_C::DayNumberText' has a wrong offset!");
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaSpectatorMapPanel.AthenaSpectatorMapPanel_C
-// 0x0018 (0x0408 - 0x03F0)
+// 0x0018 (0x0340 - 0x0328)
 class UAthenaSpectatorMapPanel_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UAthenaMapLayer*                        AthenaMapLayer;                                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaSpectatorScoreboard_C*           AthenaSpectatorScoreboard;                         // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UAthenaMapLayer*                        AthenaMapLayer;                                    // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaSpectatorScoreboard_C*           AthenaSpectatorScoreboard;                         // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaSpectatorMapPanel(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(UAthenaSpectatorMapPanel_C) == 0x000008, "Wrong alignment on UAthenaSpectatorMapPanel_C");
-static_assert(sizeof(UAthenaSpectatorMapPanel_C) == 0x000408, "Wrong size on UAthenaSpectatorMapPanel_C");
-static_assert(offsetof(UAthenaSpectatorMapPanel_C, UberGraphFrame) == 0x0003F0, "Member 'UAthenaSpectatorMapPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorMapPanel_C, AthenaMapLayer) == 0x0003F8, "Member 'UAthenaSpectatorMapPanel_C::AthenaMapLayer' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorMapPanel_C, AthenaSpectatorScoreboard) == 0x000400, "Member 'UAthenaSpectatorMapPanel_C::AthenaSpectatorScoreboard' has a wrong offset!");
+static_assert(sizeof(UAthenaSpectatorMapPanel_C) == 0x000340, "Wrong size on UAthenaSpectatorMapPanel_C");
+static_assert(offsetof(UAthenaSpectatorMapPanel_C, UberGraphFrame) == 0x000328, "Member 'UAthenaSpectatorMapPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorMapPanel_C, AthenaMapLayer) == 0x000330, "Member 'UAthenaSpectatorMapPanel_C::AthenaMapLayer' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorMapPanel_C, AthenaSpectatorScoreboard) == 0x000338, "Member 'UAthenaSpectatorMapPanel_C::AthenaSpectatorScoreboard' has a wrong offset!");
 
 }
 

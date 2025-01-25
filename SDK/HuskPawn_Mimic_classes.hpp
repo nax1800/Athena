@@ -18,28 +18,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HuskPawn_Mimic.HuskPawn_Mimic_C
-// 0x0080 (0x2200 - 0x2180)
+// 0x0080 (0x2270 - 0x21F0)
 class AHuskPawn_Mimic_C final : public AHuskPawn_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_HuskPawn_Mimic_C;                   // 0x2180(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   SM_Quad;                                           // 0x2188(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_Mimic_Trail_Right;                               // 0x2190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_Mimic_Trail_Left;                                // 0x2198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Troll_Fleeing_Loop;                                // 0x21A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortMiniMapComponent*                  FortMiniMap1;                                      // 0x21A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ChestTop;                                          // 0x21B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x21B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ChestBottom;                                       // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsBecomingChest;                                   // 0x21C8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21C9[0x7];                                     // 0x21C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        ActivatingPlayerPawn;                              // 0x21D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimeInSecondsBeforeReturningToSpawn;               // 0x21D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21DC[0x4];                                     // 0x21DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   ShouldBecomeChestBBKey;                            // 0x21E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SpawnRotationKey;                                  // 0x21E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SpawnLocationKey;                                  // 0x21F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGen_Interact_UnregisterFocus_C*        UnregisterFocusParams_Kill;                        // 0x21F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_HuskPawn_Mimic_C;                   // 0x21E8(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   SM_Quad;                                           // 0x21F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_Mimic_Trail_Right;                               // 0x21F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_Mimic_Trail_Left;                                // 0x2200(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Troll_Fleeing_Loop;                                // 0x2208(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortMiniMapComponent*                  FortMiniMap1;                                      // 0x2210(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ChestTop;                                          // 0x2218(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x2220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ChestBottom;                                       // 0x2228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsBecomingChest;                                   // 0x2230(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2231[0x7];                                     // 0x2231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        ActivatingPlayerPawn;                              // 0x2238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeInSecondsBeforeReturningToSpawn;               // 0x2240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2244[0x4];                                     // 0x2244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ShouldBecomeChestBBKey;                            // 0x2248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SpawnRotationKey;                                  // 0x2250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SpawnLocationKey;                                  // 0x2258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGen_Interact_UnregisterFocus_C*        UnregisterFocusParams_Kill;                        // 0x2260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HuskPawn_Mimic(int32 EntryPoint);
@@ -69,23 +69,23 @@ public:
 	}
 };
 static_assert(alignof(AHuskPawn_Mimic_C) == 0x000010, "Wrong alignment on AHuskPawn_Mimic_C");
-static_assert(sizeof(AHuskPawn_Mimic_C) == 0x002200, "Wrong size on AHuskPawn_Mimic_C");
-static_assert(offsetof(AHuskPawn_Mimic_C, UberGraphFrame_HuskPawn_Mimic_C) == 0x002180, "Member 'AHuskPawn_Mimic_C::UberGraphFrame_HuskPawn_Mimic_C' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, SM_Quad) == 0x002188, "Member 'AHuskPawn_Mimic_C::SM_Quad' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, P_Mimic_Trail_Right) == 0x002190, "Member 'AHuskPawn_Mimic_C::P_Mimic_Trail_Right' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, P_Mimic_Trail_Left) == 0x002198, "Member 'AHuskPawn_Mimic_C::P_Mimic_Trail_Left' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, Troll_Fleeing_Loop) == 0x0021A0, "Member 'AHuskPawn_Mimic_C::Troll_Fleeing_Loop' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, FortMiniMap1) == 0x0021A8, "Member 'AHuskPawn_Mimic_C::FortMiniMap1' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, ChestTop) == 0x0021B0, "Member 'AHuskPawn_Mimic_C::ChestTop' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, ParticleSystem1) == 0x0021B8, "Member 'AHuskPawn_Mimic_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, ChestBottom) == 0x0021C0, "Member 'AHuskPawn_Mimic_C::ChestBottom' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, IsBecomingChest) == 0x0021C8, "Member 'AHuskPawn_Mimic_C::IsBecomingChest' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, ActivatingPlayerPawn) == 0x0021D0, "Member 'AHuskPawn_Mimic_C::ActivatingPlayerPawn' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, TimeInSecondsBeforeReturningToSpawn) == 0x0021D8, "Member 'AHuskPawn_Mimic_C::TimeInSecondsBeforeReturningToSpawn' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, ShouldBecomeChestBBKey) == 0x0021E0, "Member 'AHuskPawn_Mimic_C::ShouldBecomeChestBBKey' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, SpawnRotationKey) == 0x0021E8, "Member 'AHuskPawn_Mimic_C::SpawnRotationKey' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, SpawnLocationKey) == 0x0021F0, "Member 'AHuskPawn_Mimic_C::SpawnLocationKey' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_Mimic_C, UnregisterFocusParams_Kill) == 0x0021F8, "Member 'AHuskPawn_Mimic_C::UnregisterFocusParams_Kill' has a wrong offset!");
+static_assert(sizeof(AHuskPawn_Mimic_C) == 0x002270, "Wrong size on AHuskPawn_Mimic_C");
+static_assert(offsetof(AHuskPawn_Mimic_C, UberGraphFrame_HuskPawn_Mimic_C) == 0x0021E8, "Member 'AHuskPawn_Mimic_C::UberGraphFrame_HuskPawn_Mimic_C' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, SM_Quad) == 0x0021F0, "Member 'AHuskPawn_Mimic_C::SM_Quad' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, P_Mimic_Trail_Right) == 0x0021F8, "Member 'AHuskPawn_Mimic_C::P_Mimic_Trail_Right' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, P_Mimic_Trail_Left) == 0x002200, "Member 'AHuskPawn_Mimic_C::P_Mimic_Trail_Left' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, Troll_Fleeing_Loop) == 0x002208, "Member 'AHuskPawn_Mimic_C::Troll_Fleeing_Loop' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, FortMiniMap1) == 0x002210, "Member 'AHuskPawn_Mimic_C::FortMiniMap1' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, ChestTop) == 0x002218, "Member 'AHuskPawn_Mimic_C::ChestTop' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, ParticleSystem1) == 0x002220, "Member 'AHuskPawn_Mimic_C::ParticleSystem1' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, ChestBottom) == 0x002228, "Member 'AHuskPawn_Mimic_C::ChestBottom' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, IsBecomingChest) == 0x002230, "Member 'AHuskPawn_Mimic_C::IsBecomingChest' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, ActivatingPlayerPawn) == 0x002238, "Member 'AHuskPawn_Mimic_C::ActivatingPlayerPawn' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, TimeInSecondsBeforeReturningToSpawn) == 0x002240, "Member 'AHuskPawn_Mimic_C::TimeInSecondsBeforeReturningToSpawn' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, ShouldBecomeChestBBKey) == 0x002248, "Member 'AHuskPawn_Mimic_C::ShouldBecomeChestBBKey' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, SpawnRotationKey) == 0x002250, "Member 'AHuskPawn_Mimic_C::SpawnRotationKey' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, SpawnLocationKey) == 0x002258, "Member 'AHuskPawn_Mimic_C::SpawnLocationKey' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_Mimic_C, UnregisterFocusParams_Kill) == 0x002260, "Member 'AHuskPawn_Mimic_C::UnregisterFocusParams_Kill' has a wrong offset!");
 
 }
 

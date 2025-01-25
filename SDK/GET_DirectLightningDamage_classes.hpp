@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GET_DirectLightningDamage.GET_DirectLightningDamage_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGET_DirectLightningDamage_C : public UGET_DirectElementalDamage_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGET_DirectLightningDamage_C>();
 	}
 };
-static_assert(alignof(UGET_DirectLightningDamage_C) == 0x000010, "Wrong alignment on UGET_DirectLightningDamage_C");
-static_assert(sizeof(UGET_DirectLightningDamage_C) == 0x000670, "Wrong size on UGET_DirectLightningDamage_C");
+static_assert(alignof(UGET_DirectLightningDamage_C) == 0x000008, "Wrong alignment on UGET_DirectLightningDamage_C");
+static_assert(sizeof(UGET_DirectLightningDamage_C) == 0x000638, "Wrong size on UGET_DirectLightningDamage_C");
 
 }
 

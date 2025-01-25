@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -37,7 +37,7 @@ public:
 	float                                         CallFunc_BreakVector_X;                            // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0110(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x0120(0x0080)(IsPlainOldData, NoDestructor)
@@ -61,7 +61,7 @@ static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, Call
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_X) == 0x000100, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_Y) == 0x000104, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_Z) == 0x000108, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x00010C, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x00010C, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_MakeVector_ReturnValue1) == 0x000110, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00011C, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate, K2Node_MakeStruct_ParticleSysParam) == 0x000120, "Member 'GCNL_GM_Snare_C_OnWhileActiveParticleSystemActivate::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");

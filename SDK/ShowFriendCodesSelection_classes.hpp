@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ShowFriendCodesSelection.ShowFriendCodesSelection_C
-// 0x0040 (0x0400 - 0x03C0)
+// 0x0040 (0x0338 - 0x02F8)
 class UShowFriendCodesSelection_C final : public UFriendCodeListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         ButtonBox;                                         // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             CodesListScrollBox;                                // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFriendCodePC_C*                        FriendCodePC;                                      // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFriendCodePC_C*                        FriendCodePC_0;                                    // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      IconTextButton;                                    // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox_NUI;                                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title;                                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalBox*                         ButtonBox;                                         // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             CodesListScrollBox;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFriendCodePC_C*                        FriendCodePC;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFriendCodePC_C*                        FriendCodePC_0;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      IconTextButton;                                    // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox_NUI;                                      // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title;                                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ShowFriendCodesSelection(int32 EntryPoint);
@@ -49,15 +49,15 @@ public:
 	}
 };
 static_assert(alignof(UShowFriendCodesSelection_C) == 0x000008, "Wrong alignment on UShowFriendCodesSelection_C");
-static_assert(sizeof(UShowFriendCodesSelection_C) == 0x000400, "Wrong size on UShowFriendCodesSelection_C");
-static_assert(offsetof(UShowFriendCodesSelection_C, UberGraphFrame) == 0x0003C0, "Member 'UShowFriendCodesSelection_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, ButtonBox) == 0x0003C8, "Member 'UShowFriendCodesSelection_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, CodesListScrollBox) == 0x0003D0, "Member 'UShowFriendCodesSelection_C::CodesListScrollBox' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC) == 0x0003D8, "Member 'UShowFriendCodesSelection_C::FriendCodePC' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC_0) == 0x0003E0, "Member 'UShowFriendCodesSelection_C::FriendCodePC_0' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, IconTextButton) == 0x0003E8, "Member 'UShowFriendCodesSelection_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, Lightbox_NUI) == 0x0003F0, "Member 'UShowFriendCodesSelection_C::Lightbox_NUI' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, Title) == 0x0003F8, "Member 'UShowFriendCodesSelection_C::Title' has a wrong offset!");
+static_assert(sizeof(UShowFriendCodesSelection_C) == 0x000338, "Wrong size on UShowFriendCodesSelection_C");
+static_assert(offsetof(UShowFriendCodesSelection_C, UberGraphFrame) == 0x0002F8, "Member 'UShowFriendCodesSelection_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, ButtonBox) == 0x000300, "Member 'UShowFriendCodesSelection_C::ButtonBox' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, CodesListScrollBox) == 0x000308, "Member 'UShowFriendCodesSelection_C::CodesListScrollBox' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC) == 0x000310, "Member 'UShowFriendCodesSelection_C::FriendCodePC' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC_0) == 0x000318, "Member 'UShowFriendCodesSelection_C::FriendCodePC_0' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, IconTextButton) == 0x000320, "Member 'UShowFriendCodesSelection_C::IconTextButton' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, Lightbox_NUI) == 0x000328, "Member 'UShowFriendCodesSelection_C::Lightbox_NUI' has a wrong offset!");
+static_assert(offsetof(UShowFriendCodesSelection_C, Title) == 0x000330, "Member 'UShowFriendCodesSelection_C::Title' has a wrong offset!");
 
 }
 

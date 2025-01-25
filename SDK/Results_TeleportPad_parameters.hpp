@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -58,20 +58,20 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable12;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable1;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable12;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidPad_bIsValid;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item1;                          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidPad_bIsValid1;                     // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_TimeRemainingSeconds;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,47 +79,47 @@ public:
 	float                                         K2Node_Event_Percent;                              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId1234567;        // 0x0070(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName1234567;      // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item12;                         // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidPad_bIsValid12;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId7;              // 0x0070(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName7;            // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item2;                          // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidPad_bIsValid2;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue123;              // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId123456;         // 0x00C0(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName123456;       // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId12345;          // 0x00F8(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName12345;        // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId1234;           // 0x0130(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName1234;         // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId123;            // 0x0168(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName123;          // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId12;             // 0x01A0(0x0028)(HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_TargetName12;           // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId6;              // 0x00C0(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName6;            // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId5;              // 0x00F8(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName5;            // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId4;              // 0x0130(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName4;            // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId3;              // 0x0168(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName3;            // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId2;              // 0x01A0(0x0028)(HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_TargetName2;            // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId1;              // 0x01D8(0x0028)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName1;            // 0x0200(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x0210(0x0028)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName;             // 0x0238(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0248(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer123;   // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer12;    // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer3;     // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer2;     // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad;     // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad1;    // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_262[0x6];                                      // 0x0262(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer1;     // 0x0268(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer;      // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad12;   // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad123;  // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad2;    // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad3;    // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_27A[0x2];                                      // 0x027A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable123;                 // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable123;                  // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item123;                        // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidPad_bIsValid123;                   // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue123;               // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item3;                          // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidPad_bIsValid3;                     // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_292[0x2];                                      // 0x0292(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Should_Hide_Exit_Timer_bHideExitTimer1;   // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad) == 0x000008, "Wrong alignment on Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad");
@@ -134,58 +134,58 @@ static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPa
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue1) == 0x000014, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable) == 0x000018, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Loop_Counter_Variable12) == 0x00001C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Loop_Counter_Variable12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue12) == 0x000020, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Loop_Counter_Variable2) == 0x00001C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue2) == 0x000020, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue1) == 0x000028, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue1) == 0x00002D, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable1) == 0x000030, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable1' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable12) == 0x000034, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable2) == 0x000034, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item) == 0x000038, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid) == 0x000040, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item1) == 0x000048, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue12) == 0x000050, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue2) == 0x000050, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid1) == 0x000054, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_Event_TimeRemainingSeconds) == 0x000058, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_Event_TimeRemainingSeconds' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00005C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_Event_Percent) == 0x000060, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_Event_Percent' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000068, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId1234567) == 0x000070, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId1234567' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName1234567) == 0x000098, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName1234567' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item12) == 0x0000A8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid12) == 0x0000B0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue123) == 0x0000B4, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue12) == 0x0000B8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId123456) == 0x0000C0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId123456' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName123456) == 0x0000E8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName123456' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId12345) == 0x0000F8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId12345' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName12345) == 0x000120, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName12345' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId1234) == 0x000130, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId1234' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName1234) == 0x000158, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName1234' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId123) == 0x000168, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName123) == 0x000190, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId12) == 0x0001A0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName12) == 0x0001C8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId7) == 0x000070, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId7' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName7) == 0x000098, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName7' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item2) == 0x0000A8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid2) == 0x0000B0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Length_ReturnValue3) == 0x0000B4, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue2) == 0x0000B8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId6) == 0x0000C0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId6' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName6) == 0x0000E8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName6' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId5) == 0x0000F8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId5' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName5) == 0x000120, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName5' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId4) == 0x000130, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId4' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName4) == 0x000158, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName4' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId3) == 0x000168, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName3) == 0x000190, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId2) == 0x0001A0, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName2) == 0x0001C8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId1) == 0x0001D8, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName1) == 0x000200, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetId) == 0x000210, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TargetName) == 0x000238, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TargetName' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_Button) == 0x000248, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer123) == 0x000250, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer12) == 0x000258, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer3) == 0x000250, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer2) == 0x000258, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad) == 0x000260, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad1) == 0x000261, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer1) == 0x000268, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, K2Node_ComponentBoundEvent_TeleportPadPlayer) == 0x000270, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::K2Node_ComponentBoundEvent_TeleportPadPlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad12) == 0x000278, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad12' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad123) == 0x000279, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Loop_Counter_Variable123) == 0x00027C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Loop_Counter_Variable123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable123) == 0x000280, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item123) == 0x000288, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid123) == 0x000290, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue123) == 0x000291, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue123) == 0x000294, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad2) == 0x000278, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad2' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad3) == 0x000279, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsLocalPlayersPad_bIsLocalPlayersPad3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Loop_Counter_Variable3) == 0x00027C, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_int_Array_Index_Variable3) == 0x000280, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_int_Array_Index_Variable3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Array_Get_Item3) == 0x000288, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_IsValidPad_bIsValid3) == 0x000290, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_IsValidPad_bIsValid3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Less_IntInt_ReturnValue3) == 0x000291, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Add_IntInt_ReturnValue3) == 0x000294, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Should_Hide_Exit_Timer_bHideExitTimer1) == 0x000298, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Should_Hide_Exit_Timer_bHideExitTimer1' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__Pad4_K2Node_ComponentBoundEvent_7_OnTeleportPadIntroFinished__DelegateSignature
@@ -370,12 +370,12 @@ static_assert(sizeof(Results_TeleportPad_C_OnExitTimeRemainingUpdated) == 0x0000
 static_assert(offsetof(Results_TeleportPad_C_OnExitTimeRemainingUpdated, TimeRemainingSeconds) == 0x000000, "Member 'Results_TeleportPad_C_OnExitTimeRemainingUpdated::TimeRemainingSeconds' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.Initialize
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct Results_TeleportPad_C_Initialize final
 {
 public:
 	class UFortUIScoreReport*                     InScoreReport;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortCompletionResult                         Param_CompletionResult;                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortCompletionResult                         CompletionResult_0;                                // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UResults_TeleportPadPlayer_C*           CurrentTeleportPad;                                // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentScoreReportIndex;                           // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -391,29 +391,28 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A[0x2];                                       // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerCount_ReturnValue1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item;                           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item1;                          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UResults_TeleportPadPlayer_C*>   K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
-	class AFortPlayerPawn*                        CallFunc_GetCurrentPlayerPawn_ReturnValue;         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetPlatformUniqueNetId_ReturnValue;       // 0x0098(0x0028)(HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x00C0(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetPlayerCount_ReturnValue1;              // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UResults_TeleportPadPlayer_C*>   K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item1;                          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7A[0x2];                                       // 0x007A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerState*                       CallFunc_GetCurrentPlayerState_ReturnValue;        // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0088(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       CallFunc_GetPlatformUniqueNetId_ReturnValue;       // 0x00B8(0x0028)(HasGetValueTypeHash)
 };
 static_assert(alignof(Results_TeleportPad_C_Initialize) == 0x000008, "Wrong alignment on Results_TeleportPad_C_Initialize");
-static_assert(sizeof(Results_TeleportPad_C_Initialize) == 0x0000F0, "Wrong size on Results_TeleportPad_C_Initialize");
+static_assert(sizeof(Results_TeleportPad_C_Initialize) == 0x0000E0, "Wrong size on Results_TeleportPad_C_Initialize");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_TeleportPad_C_Initialize::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, Param_CompletionResult) == 0x000008, "Member 'Results_TeleportPad_C_Initialize::Param_CompletionResult' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CompletionResult_0) == 0x000008, "Member 'Results_TeleportPad_C_Initialize::CompletionResult_0' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CurrentTeleportPad) == 0x000010, "Member 'Results_TeleportPad_C_Initialize::CurrentTeleportPad' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CurrentScoreReportIndex) == 0x000018, "Member 'Results_TeleportPad_C_Initialize::CurrentScoreReportIndex' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, ScoreReport) == 0x000020, "Member 'Results_TeleportPad_C_Initialize::ScoreReport' has a wrong offset!");
@@ -425,21 +424,19 @@ static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetPlayerCount
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetScoreReportIndicesByPlayerID_SortedScoreReportIndices) == 0x000038, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetScoreReportIndicesByPlayerID_SortedScoreReportIndices' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000048, "Member 'Results_TeleportPad_C_Initialize::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000049, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, Temp_int_Variable) == 0x00004C, "Member 'Results_TeleportPad_C_Initialize::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetPlayerCount_ReturnValue1) == 0x000050, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetPlayerCount_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Array_Get_Item) == 0x000054, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000059, "Member 'Results_TeleportPad_C_Initialize::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Array_Get_Item1) == 0x000060, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, K2Node_MakeArray_Array) == 0x000068, "Member 'Results_TeleportPad_C_Initialize::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetCurrentPlayerPawn_ReturnValue) == 0x000078, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetCurrentPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'Results_TeleportPad_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, K2Node_DynamicCast_AsFort_Player_State) == 0x000088, "Member 'Results_TeleportPad_C_Initialize::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'Results_TeleportPad_C_Initialize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetPlatformUniqueNetId_ReturnValue) == 0x000098, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetPlatformUniqueNetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x0000C0, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_IsValidNetID_ReturnValue) == 0x0000E8, "Member 'Results_TeleportPad_C_Initialize::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetPlayerCount_ReturnValue1) == 0x00004C, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetPlayerCount_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, Temp_int_Variable) == 0x000050, "Member 'Results_TeleportPad_C_Initialize::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, K2Node_MakeArray_Array) == 0x000058, "Member 'Results_TeleportPad_C_Initialize::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Array_Get_Item) == 0x000068, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Array_Get_Item1) == 0x000070, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000079, "Member 'Results_TeleportPad_C_Initialize::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x00007C, "Member 'Results_TeleportPad_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetCurrentPlayerState_ReturnValue) == 0x000080, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetCurrentPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x000088, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_IsValid_ReturnValue) == 0x0000B0, "Member 'Results_TeleportPad_C_Initialize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_IsValidNetID_ReturnValue) == 0x0000B1, "Member 'Results_TeleportPad_C_Initialize::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPad_C_Initialize, CallFunc_GetPlatformUniqueNetId_ReturnValue) == 0x0000B8, "Member 'Results_TeleportPad_C_Initialize::CallFunc_GetPlatformUniqueNetId_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.Focus
 // 0x0020 (0x0020 - 0x0000)

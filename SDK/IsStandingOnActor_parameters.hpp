@@ -34,12 +34,12 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetMovementBaseActor_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12345;                           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123456;                          // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234567;                         // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable5;                               // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable6;                               // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable7;                               // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetBlackboardValueAsObject_ReturnValue;   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -63,12 +63,12 @@ static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_Get
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_GetMovementBaseActor_ReturnValue) == 0x000038, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::CallFunc_GetMovementBaseActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable1) == 0x000040, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable12) == 0x000041, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable123) == 0x000042, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable1234) == 0x000043, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable12345) == 0x000044, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable123456) == 0x000045, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable123456' has a wrong offset!");
-static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable1234567) == 0x000046, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable1234567' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable2) == 0x000041, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable3) == 0x000042, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable4) == 0x000043, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable5) == 0x000044, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable5' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable6) == 0x000045, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, Temp_bool_Variable7) == 0x000046, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::Temp_bool_Variable7' has a wrong offset!");
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_GetBlackboardValueAsObject_ReturnValue) == 0x000048, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::CallFunc_GetBlackboardValueAsObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000050, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsStandingOnActor_C_PerformConditionCheckAI, CallFunc_BooleanAND_ReturnValue) == 0x000051, "Member 'IsStandingOnActor_C_PerformConditionCheckAI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");

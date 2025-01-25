@@ -32,14 +32,14 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bUsingGamepad)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsMobileApp_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_UsingGampad;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4B[0x5];                                       // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select1_Default;                            // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select12_Default;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select2_Default;                            // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x000008, "Wrong alignment on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
 static_assert(sizeof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x000060, "Wrong size on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
@@ -52,13 +52,13 @@ static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget,
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000018, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_Select_Default) == 0x000020, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_GetContext_ReturnValue1) == 0x000028, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_GetContext_ReturnValue12) == 0x000030, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_IsMobileApp_ReturnValue) == 0x000048, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_IsMobileApp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_CustomEvent_UsingGampad) == 0x000049, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_CustomEvent_UsingGampad' has a wrong offset!");
-static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, Temp_bool_Variable12) == 0x00004A, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, Temp_bool_Variable2) == 0x00004A, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_Select1_Default) == 0x000050, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_Select12_Default) == 0x000058, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, K2Node_Select2_Default) == 0x000058, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function SplashScreenWidget.SplashScreenWidget_C.OnInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)

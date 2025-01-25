@@ -355,9 +355,9 @@ void AGCN_Hoverboard_Running_C::ClearSounds()
 // Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.GetHoverboardSkeletal
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class USkeletalMeshComponent*           Param_SK_HoverboardComponent                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           SK_HoverboardComponent_0                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGCN_Hoverboard_Running_C::GetHoverboardSkeletal(class USkeletalMeshComponent** Param_SK_HoverboardComponent)
+void AGCN_Hoverboard_Running_C::GetHoverboardSkeletal(class USkeletalMeshComponent** SK_HoverboardComponent_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -368,8 +368,8 @@ void AGCN_Hoverboard_Running_C::GetHoverboardSkeletal(class USkeletalMeshCompone
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_SK_HoverboardComponent != nullptr)
-		*Param_SK_HoverboardComponent = Parms.Param_SK_HoverboardComponent;
+	if (SK_HoverboardComponent_0 != nullptr)
+		*SK_HoverboardComponent_0 = Parms.SK_HoverboardComponent_0;
 }
 
 
@@ -386,6 +386,56 @@ float AGCN_Hoverboard_Running_C::GetPlayerLeanValuePercent()
 		Func = Class->GetFunction("GCN_Hoverboard_Running_C", "GetPlayerLeanValuePercent");
 
 	Params::GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.OnExecute
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool AGCN_Hoverboard_Running_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Hoverboard_Running_C", "OnExecute");
+
+	Params::GCN_Hoverboard_Running_C_OnExecute Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.WhileActive
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool AGCN_Hoverboard_Running_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Hoverboard_Running_C", "WhileActive");
+
+	Params::GCN_Hoverboard_Running_C_WhileActive Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
 
 	UObject::ProcessEvent(Func, &Parms);
 

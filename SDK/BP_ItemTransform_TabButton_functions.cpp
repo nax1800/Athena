@@ -37,57 +37,57 @@ void UBP_ItemTransform_TabButton_C::ExecuteUbergraph_BP_ItemTransform_TabButton(
 }
 
 
-// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnUnhovered
+// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UBP_ItemTransform_TabButton_C::OnUnhovered()
+void UBP_ItemTransform_TabButton_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "OnUnhovered");
+		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnHovered
+// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UBP_ItemTransform_TabButton_C::OnHovered()
+void UBP_ItemTransform_TabButton_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "OnHovered");
+		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnDeselected
+// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 
-void UBP_ItemTransform_TabButton_C::OnDeselected()
+void UBP_ItemTransform_TabButton_C::BP_OnDeselected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "OnDeselected");
+		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnSelected
+// Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UBP_ItemTransform_TabButton_C::OnSelected()
+void UBP_ItemTransform_TabButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "OnSelected");
+		Func = Class->GetFunction("BP_ItemTransform_TabButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -164,9 +164,9 @@ void UBP_ItemTransform_TabButton_C::OnCurrentTextStyleChanged()
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_ButtonText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             ButtonText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& Param_ButtonText)
+void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& ButtonText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -175,7 +175,7 @@ void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& Param_ButtonText
 
 	Params::BP_ItemTransform_TabButton_C_Set_Text Parms{};
 
-	Parms.Param_ButtonText = std::move(Param_ButtonText);
+	Parms.ButtonText_0 = std::move(ButtonText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -184,9 +184,9 @@ void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& Param_ButtonText
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      Param_IconBrush                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FSlateBrush                      IconBrush_0                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& Param_IconBrush)
+void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -195,7 +195,7 @@ void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& Param_Ico
 
 	Params::BP_ItemTransform_TabButton_C_Set_Icon Parms{};
 
-	Parms.Param_IconBrush = std::move(Param_IconBrush);
+	Parms.IconBrush_0 = std::move(IconBrush_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -218,9 +218,9 @@ void UBP_ItemTransform_TabButton_C::Refresh_Bang_State()
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Tab Id
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_TabId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             TabId_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ItemTransform_TabButton_C::Set_Tab_Id(class FName Param_TabId)
+void UBP_ItemTransform_TabButton_C::Set_Tab_Id(class FName TabId_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -229,7 +229,7 @@ void UBP_ItemTransform_TabButton_C::Set_Tab_Id(class FName Param_TabId)
 
 	Params::BP_ItemTransform_TabButton_C_Set_Tab_Id Parms{};
 
-	Parms.Param_TabId = Param_TabId;
+	Parms.TabId_0 = TabId_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

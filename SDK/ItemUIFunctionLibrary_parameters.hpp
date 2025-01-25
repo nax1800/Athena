@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -62,15 +62,15 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable1;                                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123;                              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable1234;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12345;                            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123456;                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable1234567;                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12345678;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123456789;                        // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12345678910;                      // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable4;                                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable5;                                // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable6;                                // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable7;                                // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable8;                                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable9;                                // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable10;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Convert_Tier_To_Integer");
@@ -81,15 +81,15 @@ static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Numeric_
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_byte_Variable) == 0x000014, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable1) == 0x00001C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable12) == 0x000020, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable123) == 0x000024, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable1234) == 0x000028, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable1234' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable12345) == 0x00002C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable12345' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable123456) == 0x000030, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable123456' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable1234567) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable1234567' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable12345678) == 0x000038, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable12345678' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable123456789) == 0x00003C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable123456789' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable12345678910) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable12345678910' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable2) == 0x000020, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable3) == 0x000024, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable4) == 0x000028, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable4' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable5) == 0x00002C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable5' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable6) == 0x000030, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable6' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable7) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable7' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable8) == 0x000038, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable8' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable9) == 0x00003C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable9' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable10) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable10' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, K2Node_Select_Default) == 0x000044, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Truncate Integer Value
@@ -113,32 +113,32 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue12;        // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue2;         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0058(0x0018)()
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0076(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0076(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_77[0x1];                                       // 0x0077(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable1;                               // 0x0078(0x0018)()
-	bool                                          Temp_bool_Variable1234;                            // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable12;                              // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0098(0x0018)()
 	float                                         K2Node_Select_Default;                             // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable123;                             // 0x00B8(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x00B8(0x0018)()
 	float                                         K2Node_Select1_Default;                            // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select12_Default;                           // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12345;                           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Select2_Default;                            // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable5;                               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00E0(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00F8(0x0040)(HasGetValueTypeHash)
-	class FText                                   K2Node_Select123_Default;                          // 0x0138(0x0018)()
-	class FText                                   K2Node_Select1234_Default;                         // 0x0150(0x0018)()
-	class FText                                   K2Node_Select12345_Default;                        // 0x0168(0x0018)()
+	class FText                                   K2Node_Select3_Default;                            // 0x0138(0x0018)()
+	class FText                                   K2Node_Select4_Default;                            // 0x0150(0x0018)()
+	class FText                                   K2Node_Select5_Default;                            // 0x0168(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0180(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0018)()
@@ -157,29 +157,51 @@ static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue1) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x000044, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x000048, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue12) == 0x00004C, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x000050, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue2) == 0x00004C, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000050, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable) == 0x000058, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x000070, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000070, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable1) == 0x000074, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable12) == 0x000075, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable123) == 0x000076, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable123' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable2) == 0x000075, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable3) == 0x000076, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable3' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable1) == 0x000078, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable1234) == 0x000090, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable12) == 0x000098, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable4) == 0x000090, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable2) == 0x000098, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable2' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select_Default) == 0x0000B0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable123) == 0x0000B8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable123' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable3) == 0x0000B8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable3' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select1_Default) == 0x0000D0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select12_Default) == 0x0000D4, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable12345) == 0x0000D8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable12345' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select2_Default) == 0x0000D4, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable5) == 0x0000D8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable5' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000E0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeStruct_FormatArgumentData) == 0x0000F8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select123_Default) == 0x000138, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select1234_Default) == 0x000150, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select1234_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select12345_Default) == 0x000168, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select12345_Default' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select3_Default) == 0x000138, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select4_Default) == 0x000150, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select5_Default) == 0x000168, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select5_Default' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeStruct_FormatArgumentData1) == 0x000180, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeArray_Array) == 0x0001C0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Format_ReturnValue) == 0x0001D0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Format_ReturnValue' has a wrong offset!");
+
+// Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.IsNullItem
+// 0x0028 (0x0028 - 0x0000)
+struct ItemUIFunctionLibrary_C_IsNullItem final
+{
+public:
+	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_Null_Item;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ItemUIFunctionLibrary_C_IsNullItem) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_IsNullItem");
+static_assert(sizeof(ItemUIFunctionLibrary_C_IsNullItem) == 0x000028, "Wrong size on ItemUIFunctionLibrary_C_IsNullItem");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, ItemObject) == 0x000000, "Member 'ItemUIFunctionLibrary_C_IsNullItem::ItemObject' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, __WorldContext) == 0x000008, "Member 'ItemUIFunctionLibrary_C_IsNullItem::__WorldContext' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, Is_Null_Item) == 0x000010, "Member 'ItemUIFunctionLibrary_C_IsNullItem::Is_Null_Item' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'ItemUIFunctionLibrary_C_IsNullItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, CallFunc_GetObjectClass_ReturnValue) == 0x000018, "Member 'ItemUIFunctionLibrary_C_IsNullItem::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_IsNullItem, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000020, "Member 'ItemUIFunctionLibrary_C_IsNullItem::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
 
 }
 

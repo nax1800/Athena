@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass News.News_C
-// 0x0048 (0x0408 - 0x03C0)
+// 0x0048 (0x0340 - 0x02F8)
 class UNews_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CloseButton;                                       // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             DescriptionScroll;                                 // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 MainIcon;                                          // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBoxEntries;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextDescription;                                   // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title;                                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonButtonGroup*                     ButtonGroup;                                       // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CloseButton;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             DescriptionScroll;                                 // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 MainIcon;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBoxEntries;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextDescription;                                   // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title;                                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonButtonGroup*                     ButtonGroup;                                       // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_News(int32 EntryPoint);
@@ -52,16 +52,16 @@ public:
 	}
 };
 static_assert(alignof(UNews_C) == 0x000008, "Wrong alignment on UNews_C");
-static_assert(sizeof(UNews_C) == 0x000408, "Wrong size on UNews_C");
-static_assert(offsetof(UNews_C, UberGraphFrame) == 0x0003C0, "Member 'UNews_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNews_C, CloseButton) == 0x0003C8, "Member 'UNews_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UNews_C, DescriptionScroll) == 0x0003D0, "Member 'UNews_C::DescriptionScroll' has a wrong offset!");
-static_assert(offsetof(UNews_C, Lightbox) == 0x0003D8, "Member 'UNews_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UNews_C, MainIcon) == 0x0003E0, "Member 'UNews_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UNews_C, ScrollBoxEntries) == 0x0003E8, "Member 'UNews_C::ScrollBoxEntries' has a wrong offset!");
-static_assert(offsetof(UNews_C, TextDescription) == 0x0003F0, "Member 'UNews_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UNews_C, Title) == 0x0003F8, "Member 'UNews_C::Title' has a wrong offset!");
-static_assert(offsetof(UNews_C, ButtonGroup) == 0x000400, "Member 'UNews_C::ButtonGroup' has a wrong offset!");
+static_assert(sizeof(UNews_C) == 0x000340, "Wrong size on UNews_C");
+static_assert(offsetof(UNews_C, UberGraphFrame) == 0x0002F8, "Member 'UNews_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UNews_C, CloseButton) == 0x000300, "Member 'UNews_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UNews_C, DescriptionScroll) == 0x000308, "Member 'UNews_C::DescriptionScroll' has a wrong offset!");
+static_assert(offsetof(UNews_C, Lightbox) == 0x000310, "Member 'UNews_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UNews_C, MainIcon) == 0x000318, "Member 'UNews_C::MainIcon' has a wrong offset!");
+static_assert(offsetof(UNews_C, ScrollBoxEntries) == 0x000320, "Member 'UNews_C::ScrollBoxEntries' has a wrong offset!");
+static_assert(offsetof(UNews_C, TextDescription) == 0x000328, "Member 'UNews_C::TextDescription' has a wrong offset!");
+static_assert(offsetof(UNews_C, Title) == 0x000330, "Member 'UNews_C::Title' has a wrong offset!");
+static_assert(offsetof(UNews_C, ButtonGroup) == 0x000338, "Member 'UNews_C::ButtonGroup' has a wrong offset!");
 
 }
 

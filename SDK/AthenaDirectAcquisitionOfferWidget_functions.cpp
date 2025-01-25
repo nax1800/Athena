@@ -37,15 +37,65 @@ void UAthenaDirectAcquisitionOfferWidget_C::ExecuteUbergraph_AthenaDirectAcquisi
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OfferCarousel
-// (BlueprintCallable, BlueprintEvent)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OfferCarousel()
+void UAthenaDirectAcquisitionOfferWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OfferCarousel");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "Tick");
+
+	Params::AthenaDirectAcquisitionOfferWidget_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.PlayAnim_CarouselTransition
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidget_C::PlayAnim_CarouselTransition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "PlayAnim_CarouselTransition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnEntryReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnEntryReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.AnimEvent_Carousel_ImageSwap
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidget_C::AnimEvent_Carousel_ImageSwap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "AnimEvent_Carousel_ImageSwap");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,23 +129,21 @@ void UAthenaDirectAcquisitionOfferWidget_C::Construct()
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaDirectAcquisitionOfferWidget_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UAthenaDirectAcquisitionOfferWidget_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "SetData");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnListItemObjectSet");
 
-	Params::AthenaDirectAcquisitionOfferWidget_C_SetData Parms{};
+	Params::AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -115,29 +163,29 @@ void UAthenaDirectAcquisitionOfferWidget_C::OnUpdateStatus()
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnUnhovered
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OnUnhovered()
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnUnhovered");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnHovered
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OnHovered()
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnHovered");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,15 +211,15 @@ void UAthenaDirectAcquisitionOfferWidget_C::HandleOfferPurchaseComplete(bool bSu
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnClicked
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OnClicked()
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnClicked");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,153 +239,43 @@ void UAthenaDirectAcquisitionOfferWidget_C::OnOfferSet()
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.Reset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidget_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.ToggleExpansion
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidget_C::ToggleExpansion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "ToggleExpansion");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSelected                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaDirectAcquisitionOfferWidget_C::SetSelected(bool bSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "SetSelected");
-
-	Params::AthenaDirectAcquisitionOfferWidget_C_SetSelected Parms{};
-
-	Parms.bSelected = bSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetIndexInList
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InIndexInList                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaDirectAcquisitionOfferWidget_C::SetIndexInList(int32 InIndexInList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "SetIndexInList");
-
-	Params::AthenaDirectAcquisitionOfferWidget_C_SetIndexInList Parms{};
-
-	Parms.InIndexInList = InIndexInList;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetExpanded
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaDirectAcquisitionOfferWidget_C::SetExpanded(bool bExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "SetExpanded");
-
-	Params::AthenaDirectAcquisitionOfferWidget_C_SetExpanded Parms{};
-
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.RegisterOnClicked
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-
-void UAthenaDirectAcquisitionOfferWidget_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "RegisterOnClicked");
-
-	Params::AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked Parms{};
-
-	Parms.Callback = Callback;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.Private_OnExpanderArrowShiftClicked
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidget_C::Private_OnExpanderArrowShiftClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "Private_OnExpanderArrowShiftClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnReleaseToPool
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnItemSelectionChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OnReleaseToPool()
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnReleaseToPool");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnItemSelectionChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnAcquireFromPool
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaDirectAcquisitionOfferWidget_C::OnAcquireFromPool()
+void UAthenaDirectAcquisitionOfferWidget_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "OnAcquireFromPool");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "BP_OnItemExpansionChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -567,39 +505,52 @@ void UAthenaDirectAcquisitionOfferWidget_C::UpdateBadge()
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetData
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetOfferIndexAndCountText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OfferIndex                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             OfferDisplayCount                                      (Parm, OutParm)
+// int32                                   NextOfferIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             NextOfferDisplayCount                                  (Parm, OutParm)
 
-class UObject* UAthenaDirectAcquisitionOfferWidget_C::GetData() const
+void UAthenaDirectAcquisitionOfferWidget_C::GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "GetData");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "GetOfferIndexAndCountText");
 
-	Params::AthenaDirectAcquisitionOfferWidget_C_GetData Parms{};
+	Params::AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (OfferIndex != nullptr)
+		*OfferIndex = Parms.OfferIndex;
+
+	if (OfferDisplayCount != nullptr)
+		*OfferDisplayCount = std::move(Parms.OfferDisplayCount);
+
+	if (NextOfferIndex != nullptr)
+		*NextOfferIndex = Parms.NextOfferIndex;
+
+	if (NextOfferDisplayCount != nullptr)
+		*NextOfferDisplayCount = std::move(Parms.NextOfferDisplayCount);
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.IsItemExpanded
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.HasGroupedOffers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-bool UAthenaDirectAcquisitionOfferWidget_C::IsItemExpanded() const
+bool UAthenaDirectAcquisitionOfferWidget_C::HasGroupedOffers()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "IsItemExpanded");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "HasGroupedOffers");
 
-	Params::AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded Parms{};
+	Params::AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -607,39 +558,33 @@ bool UAthenaDirectAcquisitionOfferWidget_C::IsItemExpanded() const
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.DoesItemHaveChildren
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.TryToResetCarouselTimer
+// (Public, BlueprintCallable, BlueprintEvent)
 
-int32 UAthenaDirectAcquisitionOfferWidget_C::DoesItemHaveChildren() const
+void UAthenaDirectAcquisitionOfferWidget_C::TryToResetCarouselTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "DoesItemHaveChildren");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "TryToResetCarouselTimer");
 
-	Params::AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetIndentLevel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetListItemObject
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-int32 UAthenaDirectAcquisitionOfferWidget_C::GetIndentLevel() const
+class UObject* UAthenaDirectAcquisitionOfferWidget_C::GetListItemObject() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "GetIndentLevel");
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidget_C", "GetListItemObject");
 
-	Params::AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel Parms{};
+	Params::AthenaDirectAcquisitionOfferWidget_C_GetListItemObject Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

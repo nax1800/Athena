@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ItemReceived_Base.ItemReceived_Base_C.FinalOnGiftingComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemReceived_Base_C::FinalOnGiftingComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "FinalOnGiftingComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemReceived_Base.ItemReceived_Base_C.ExecuteUbergraph_ItemReceived_Base
 // (HasDefaults)
 // Parameters:
@@ -46,6 +32,54 @@ void UItemReceived_Base_C::ExecuteUbergraph_ItemReceived_Base(int32 EntryPoint)
 	Params::ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemReceived_Base.ItemReceived_Base_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UItemReceived_Base_C::OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceived_Base_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemReceived_Base.ItemReceived_Base_C.ShowNextItem
+// (BlueprintCallable, BlueprintEvent)
+
+void UItemReceived_Base_C::ShowNextItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceived_Base_C", "ShowNextItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemReceived_Base.ItemReceived_Base_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UItemReceived_Base_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceived_Base_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature");
+
+	Params::ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -147,31 +181,81 @@ void UItemReceived_Base_C::BndEvt__EquipButton_K2Node_ComponentBoundEvent_193_Co
 }
 
 
-// Function ItemReceived_Base.ItemReceived_Base_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function ItemReceived_Base.ItemReceived_Base_C.UpdateRarityFlare
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   Who                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemReceived_Base_C::Construct()
+void UItemReceived_Base_C::UpdateRarityFlare(bool NewParam, int32 Who)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "Construct");
+		Func = Class->GetFunction("ItemReceived_Base_C", "UpdateRarityFlare");
+
+	Params::ItemReceived_Base_C_UpdateRarityFlare Parms{};
+
+	Parms.NewParam = NewParam;
+	Parms.Who = Who;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemReceived_Base.ItemReceived_Base_C.AnimateRollout
+// (BlueprintCallable, BlueprintEvent)
+
+void UItemReceived_Base_C::AnimateRollout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceived_Base_C", "AnimateRollout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ItemReceived_Base.ItemReceived_Base_C.CustomEvent_0
+// Function ItemReceived_Base.ItemReceived_Base_C.SelectItem
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CenterWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UItemReceived_Base_C::CustomEvent_0()
+void UItemReceived_Base_C::SelectItem(int32 Index_0, bool CenterWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "CustomEvent_0");
+		Func = Class->GetFunction("ItemReceived_Base_C", "SelectItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::ItemReceived_Base_C_SelectItem Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.CenterWidget = CenterWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemReceived_Base.ItemReceived_Base_C.OnGiftBoxItemSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bFromSelf                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemReceived_Base_C::OnGiftBoxItemSet(bool bFromSelf)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceived_Base_C", "OnGiftBoxItemSet");
+
+	Params::ItemReceived_Base_C_OnGiftBoxItemSet Parms{};
+
+	Parms.bFromSelf = bFromSelf;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -195,129 +279,17 @@ void UItemReceived_Base_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_
 }
 
 
-// Function ItemReceived_Base.ItemReceived_Base_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UItemReceived_Base_C::OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.OnGiftBoxItemSet
-// (Event, Public, BlueprintEvent)
-
-void UItemReceived_Base_C::OnGiftBoxItemSet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "OnGiftBoxItemSet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.SelectItem
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CenterWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UItemReceived_Base_C::SelectItem(int32 Param_Index, bool CenterWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "SelectItem");
-
-	Params::ItemReceived_Base_C_SelectItem Parms{};
-
-	Parms.Param_Index = Param_Index;
-	Parms.CenterWidget = CenterWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.UpdateRarityFlare
-// (BlueprintCallable, BlueprintEvent)
-
-void UItemReceived_Base_C::UpdateRarityFlare()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "UpdateRarityFlare");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.Left
-// (BlueprintCallable, BlueprintEvent)
-
-void UItemReceived_Base_C::Left()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "Left");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.Right
-// (BlueprintCallable, BlueprintEvent)
-
-void UItemReceived_Base_C::Right()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "Right");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.AnimateRollout
-// (BlueprintCallable, BlueprintEvent)
-
-void UItemReceived_Base_C::AnimateRollout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "AnimateRollout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemReceived_Base.ItemReceived_Base_C.PreConstruct
+// Function ItemReceived_Base.ItemReceived_Base_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UItemReceived_Base_C::PreConstruct(bool IsDesignTime)
+void UItemReceived_Base_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "PreConstruct");
+		Func = Class->GetFunction("ItemReceived_Base_C", "Construct");
 
-	Params::ItemReceived_Base_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -459,9 +431,9 @@ void UItemReceived_Base_C::HandleRight(EUINavigation Nav_Enum, class UWidget** N
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Increment                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemReceived_Base_C::HandleSelectionIncrement(bool Increment, int32* Param_Index)
+void UItemReceived_Base_C::HandleSelectionIncrement(bool Increment, int32* Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -474,28 +446,28 @@ void UItemReceived_Base_C::HandleSelectionIncrement(bool Increment, int32* Param
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Index != nullptr)
-		*Param_Index = Parms.Param_Index;
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
 }
 
 
-// Function ItemReceived_Base.ItemReceived_Base_C.Clicked
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function ItemReceived_Base.ItemReceived_Base_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButton*                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemReceived_Base_C::Clicked(class UCommonButton* NewParam)
+class UWidget* UItemReceived_Base_C::GetWidgetForFramingViewedItem()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemReceived_Base_C", "Clicked");
+		Func = Class->GetFunction("ItemReceived_Base_C", "GetWidgetForFramingViewedItem");
 
-	Params::ItemReceived_Base_C_Clicked Parms{};
-
-	Parms.NewParam = NewParam;
+	Params::ItemReceived_Base_C_GetWidgetForFramingViewedItem Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

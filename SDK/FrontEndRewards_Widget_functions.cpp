@@ -1342,20 +1342,6 @@ void UFrontEndRewards_Widget_C::HandleOnDifficultyIncreaseRewardsClaimFailed()
 }
 
 
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.StartRewardsMusic
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_Widget_C::StartRewardsMusic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_Widget_C", "StartRewardsMusic");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateGiftBox
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1415,6 +1401,56 @@ void UFrontEndRewards_Widget_C::HandleOnGiftBoxRemoved(bool bSucceeded)
 	Parms.bSucceeded = bSucceeded;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateItemCacheReward
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UFrontEndRewards_Widget_C::PopulateItemCacheReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FrontEndRewards_Widget_C", "PopulateItemCacheReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnItemCacheRewardsClaimed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UFrontEndRewards_Widget_C::HandleOnItemCacheRewardsClaimed(TArray<struct FFortItemInstanceQuantityPair>& Rewards)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FrontEndRewards_Widget_C", "HandleOnItemCacheRewardsClaimed");
+
+	Params::FrontEndRewards_Widget_C_HandleOnItemCacheRewardsClaimed Parms{};
+
+	Parms.Rewards = std::move(Rewards);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Rewards = std::move(Parms.Rewards);
+}
+
+
+// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnItemCacheRewardsClaimFailed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UFrontEndRewards_Widget_C::HandleOnItemCacheRewardsClaimFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FrontEndRewards_Widget_C", "HandleOnItemCacheRewardsClaimFailed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

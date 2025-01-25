@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Bullet_Sniper_Auto_Child.B_Prj_Bullet_Sniper_Auto_Child_C
-// 0x0000 (0x0938 - 0x0938)
+// 0x0000 (0x07E8 - 0x07E8)
 class AB_Prj_Bullet_Sniper_Auto_Child_C final : public AB_Prj_Bullet_Sniper_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Bullet_Sniper_Auto_Child_C) == 0x000008, "Wrong alignment on AB_Prj_Bullet_Sniper_Auto_Child_C");
-static_assert(sizeof(AB_Prj_Bullet_Sniper_Auto_Child_C) == 0x000938, "Wrong size on AB_Prj_Bullet_Sniper_Auto_Child_C");
+static_assert(sizeof(AB_Prj_Bullet_Sniper_Auto_Child_C) == 0x0007E8, "Wrong size on AB_Prj_Bullet_Sniper_Auto_Child_C");
 
 }
 

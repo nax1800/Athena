@@ -36,36 +36,42 @@ static_assert(offsetof(MapKeybindWidget_C_ExecuteUbergraph_MapKeybindWidget, Cal
 static_assert(offsetof(MapKeybindWidget_C_ExecuteUbergraph_MapKeybindWidget, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'MapKeybindWidget_C_ExecuteUbergraph_MapKeybindWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 
 // Function MapKeybindWidget.MapKeybindWidget_C.UpdateKeybindWidget
-// 0x0148 (0x0148 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct MapKeybindWidget_C_UpdateKeybindWidget final
 {
 public:
 	class UTexture2D*                             PCIcon;                                            // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             XB1Icon;                                           // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             PS4Icon;                                           // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue1;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonGamepadType                            CallFunc_GetCurrentGamepadType_ReturnValue;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ECommonGamepadType                            Temp_byte_Variable;                                // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x0088)()
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x00C0(0x0088)()
+	ECommonGamepadType                            Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonGamepadType                            CallFunc_GetCurrentGamepadType_ReturnValue;        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0050(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x00D8(0x0088)()
 };
 static_assert(alignof(MapKeybindWidget_C_UpdateKeybindWidget) == 0x000008, "Wrong alignment on MapKeybindWidget_C_UpdateKeybindWidget");
-static_assert(sizeof(MapKeybindWidget_C_UpdateKeybindWidget) == 0x000148, "Wrong size on MapKeybindWidget_C_UpdateKeybindWidget");
+static_assert(sizeof(MapKeybindWidget_C_UpdateKeybindWidget) == 0x000160, "Wrong size on MapKeybindWidget_C_UpdateKeybindWidget");
 static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, PCIcon) == 0x000000, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::PCIcon' has a wrong offset!");
 static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, XB1Icon) == 0x000008, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::XB1Icon' has a wrong offset!");
 static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, PS4Icon) == 0x000010, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::PS4Icon' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetCurrentGamepadType_ReturnValue) == 0x000028, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetCurrentGamepadType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000029, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, Temp_byte_Variable) == 0x00002A, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_MakeStruct_SlateBrush) == 0x000030, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_Select_Default) == 0x0000B8, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_MakeStruct_SlateBrush1) == 0x0000C0, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, Temp_byte_Variable) == 0x000018, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, Temp_object_Variable) == 0x000020, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetCurrentGamepadType_ReturnValue) == 0x000030, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetCurrentGamepadType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetContext_ReturnValue1) == 0x000038, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_GetCurrentInputType_ReturnValue) == 0x000040, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_Select_Default) == 0x000048, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_MakeStruct_SlateBrush) == 0x000050, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+static_assert(offsetof(MapKeybindWidget_C_UpdateKeybindWidget, K2Node_MakeStruct_SlateBrush1) == 0x0000D8, "Member 'MapKeybindWidget_C_UpdateKeybindWidget::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
 
 }
 

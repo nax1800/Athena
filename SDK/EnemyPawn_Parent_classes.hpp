@@ -10,136 +10,159 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass EnemyPawn_Parent.EnemyPawn_Parent_C
-// 0x0400 (0x1FE0 - 0x1BE0)
-class AEnemyPawn_Parent_C : public AFortAIPawn
+// 0x0450 (0x2050 - 0x1C00)
+#pragma pack(push, 0x1)
+class alignas(0x10) AEnemyPawn_Parent_C : public AFortAIPawn
 {
 public:
-	uint8                                         Pad_1BD8[0x8];                                     // 0x1BD8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1BE0(0x0008)(Transient, DuplicateTransient)
-	class UCapsuleComponent*                      WeaponCapsuleCollision;                            // 0x1BE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Elemental_Layer_Audio_Loop;                        // 0x1BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4; // 0x1BF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4; // 0x1BFC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BFD[0x3];                                     // 0x1BFD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     FadeMiniBossLightOutTL;                            // 0x1C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C11[0x7];                                     // 0x1C11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Enemy_Spawn_Out_TL;                                // 0x1C18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C2D[0x3];                                     // 0x1C2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     EnemySpawnInTL;                                    // 0x1C30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynamic_Material_Instance_0;                       // 0x1C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Death_Effects;                                     // 0x1C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        HQ_Death_Particle_System;                          // 0x1C48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DeathFX_SpawnRateScale;                            // 0x1C50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HQ_DeathFX_MaxDistance;                            // 0x1C54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        LQ_Death_Particle_System;                          // 0x1C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_CylinderHeight;                         // 0x1C60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_CylinderRadius;                         // 0x1C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_SpawnRateScale;                         // 0x1C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C6C[0x4];                                     // 0x1C6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   LQ_PS_Socket_Attach;                               // 0x1C70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Death_Socket;                                      // 0x1C78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UsePOCScaleAndMaterials;                           // 0x1C80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          POCShouldOverrideMaterial;                         // 0x1C81(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          POCShouldOverrideMaterialValues;                   // 0x1C82(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C83[0x5];                                     // 0x1C83(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     POCOverrideMaterial;                               // 0x1C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialHairColor;                              // 0x1C90(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialSkinColor;                              // 0x1CA0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialPantColor;                              // 0x1CB0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialShirtColor;                             // 0x1CC0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRandomStream                          RandomStream;                                      // 0x1CD0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         PseudoRandomNetworkedFloat;                        // 0x1CD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseRandomColorVariation;                           // 0x1CDC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CDD[0x3];                                     // 0x1CDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FLinearColor>                   MaleHuskHairColors;                                // 0x1CE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FLinearColor>                   MaleHuskSkinColors;                                // 0x1CF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FLinearColor>                   MaleHuskPantColors;                                // 0x1D00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FLinearColor>                   MaleHuskShirtColors;                               // 0x1D10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UCurveFloat*                            HieghtDistributionCurve;                           // 0x1D20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RandomizeMeshScale;                                // 0x1D28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D29[0x7];                                     // 0x1D29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             SpawnParticlesTransform;                           // 0x1D30(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UMaterialInstanceDynamic*               Dynamic_Material_Instance_1;                       // 0x1D60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        SpawnParticles;                                    // 0x1D68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CharacterElementalParticles;                       // 0x1D70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AllowHeadshot;                                     // 0x1D78(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D79[0x7];                                     // 0x1D79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_RangedWeapon;                                   // 0x1D80(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UParticleSystemComponent*               HeadshotParticleSystemComp;                        // 0x1DA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           Additive_Hit_React_Montage;                        // 0x1DA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Death_Normal_Sound;                                // 0x1DB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Elemental_Audio_Layer_Sound;                       // 0x1DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SpecialEventHalloweenPumpkinHead;                  // 0x1DC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SpecialEventHalloweenPumpkinHeadApplied;           // 0x1DC1(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_1DC2[0x6];                                     // 0x1DC2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_NPCCharacterTypeHuskBasic;                      // 0x1DC8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_SpecialEventHalloweenPumpkinHead;               // 0x1DE8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         PumpkinHeadPercentage;                             // 0x1E08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E0C[0x4];                                     // 0x1E0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_SpecialEvent_Halloween_PumpkinHead;             // 0x1E10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Pumpkin_Head_Mesh;                                 // 0x1E18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Pumpkin_Eyeglow_Mesh;                              // 0x1E20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               PumpkinHeadRotation;                               // 0x1E28(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FVector                                PumpkinHeadScale;                                  // 0x1E34(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PumpkinHeadOffset;                                 // 0x1E40(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E4C[0x4];                                     // 0x1E4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               PumpkinEyesFX;                                     // 0x1E50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Headshot_FX_Socket;                                // 0x1E58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Material_Alteration_0;                             // 0x1E60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Material_Alteration_1;                             // 0x1E68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               SleepParticleSystemComp;                           // 0x1E70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Husk_Sleeping_Sound;                               // 0x1E78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        HuskSleepSound;                                    // 0x1E80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               WakeUpParticleSystemComp;                          // 0x1E88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AwokenMaxDistance;                                 // 0x1E90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E94[0x4];                                     // 0x1E94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 AwokenSkeletalMesh;                                // 0x1E98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               AwokenSkelMeshMID;                                 // 0x1EA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AwokenFadeInTime;                                  // 0x1EA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AwokenFadeOutTime;                                 // 0x1EAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AwokenDuration;                                    // 0x1EB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Sleeping;                                          // 0x1EB4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasGlowColorsAssigned;                             // 0x1EB5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SpawnInTimelineCompletedSuccessfully;              // 0x1EB6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EB7[0x1];                                     // 0x1EB7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CharacterSpawnInSafetyCheckHandle;                 // 0x1EB8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UMaterialInstanceDynamic*               Base_MID_0;                                        // 0x1EC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Previous_MID_0;                                    // 0x1EC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        CharacterElementalParticlesTemplate;               // 0x1ED0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FrozenHuskMeshScale;                               // 0x1ED8(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SpawnFrozenHuskMesh;                               // 0x1EE4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE5[0x3];                                     // 0x1EE5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        CharacterAmbientParticlesTemplate;                 // 0x1EE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CharacterAmbientParticles;                         // 0x1EF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FString, class UMaterialInterface*> MaterialModifierMap;                               // 0x1EF8(0x0050)(Edit, BlueprintVisible, ZeroConstructor)
-	TMap<class FString, class UMaterialInterface*> MaterialModifierMapDefaults;                       // 0x1F48(0x0050)(Edit, BlueprintVisible, ZeroConstructor)
-	class USkeletalMeshComponent*                 DuplicateCharacterMesh;                            // 0x1F98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DuplicateCharacterMID;                             // 0x1FA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BoneRefPosePosition;                               // 0x1FA8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                MiniBossSizeScale;                                 // 0x1FB4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   MiniBossLight;                                     // 0x1FC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               MinibossPSComponent;                               // 0x1FC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MiniBossLightIntensity;                            // 0x1FD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CharacterParticlesMaxDrawDistance;                 // 0x1FD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Slow_Shackle_Scale;                                // 0x1FD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BF8[0x8];                                     // 0x1BF8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1C00(0x0008)(Transient, DuplicateTransient)
+	class UCapsuleComponent*                      WeaponCapsuleCollision;                            // 0x1C08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Elemental_Layer_Audio_Loop;                        // 0x1C10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4; // 0x1C18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4; // 0x1C1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C1D[0x3];                                     // 0x1C1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     FadeMiniBossLightOutTL;                            // 0x1C20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C2C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C; // 0x1C30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C31[0x7];                                     // 0x1C31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Enemy_Spawn_Out_TL;                                // 0x1C38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88; // 0x1C4C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C4D[0x3];                                     // 0x1C4D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     EnemySpawnInTL;                                    // 0x1C50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Death_Effects;                                     // 0x1C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        HQ_Death_Particle_System;                          // 0x1C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeathFX_SpawnRateScale;                            // 0x1C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HQ_DeathFX_MaxDistance;                            // 0x1C6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        LQ_Death_Particle_System;                          // 0x1C70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_CylinderHeight;                         // 0x1C78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_CylinderRadius;                         // 0x1C7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_SpawnRateScale;                         // 0x1C80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C84[0x4];                                     // 0x1C84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   LQ_PS_Socket_Attach;                               // 0x1C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Death_Socket;                                      // 0x1C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UsePOCScaleAndMaterials;                           // 0x1C98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          POCShouldOverrideMaterial;                         // 0x1C99(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          POCShouldOverrideMaterialValues;                   // 0x1C9A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C9B[0x5];                                     // 0x1C9B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     POCOverrideMaterial;                               // 0x1CA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialHairColor;                              // 0x1CA8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialSkinColor;                              // 0x1CB8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialPantColor;                              // 0x1CC8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialShirtColor;                             // 0x1CD8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRandomStream                          RandomStream;                                      // 0x1CE8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	float                                         PseudoRandomNetworkedFloat;                        // 0x1CF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseRandomColorVariation;                           // 0x1CF4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1CF5[0x3];                                     // 0x1CF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FLinearColor>                   MaleHuskHairColors;                                // 0x1CF8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FLinearColor>                   MaleHuskSkinColors;                                // 0x1D08(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FLinearColor>                   MaleHuskPantColors;                                // 0x1D18(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FLinearColor>                   MaleHuskShirtColors;                               // 0x1D28(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UCurveFloat*                            HieghtDistributionCurve;                           // 0x1D38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RandomizeMeshScale;                                // 0x1D40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D41[0xF];                                     // 0x1D41(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             SpawnParticlesTransform;                           // 0x1D50(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UMaterialInstanceDynamic*               Pumpkin_Head_MID;                                  // 0x1D80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        SpawnParticles;                                    // 0x1D88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CharacterElementalParticles;                       // 0x1D90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AllowHeadshot;                                     // 0x1D98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D99[0x7];                                     // 0x1D99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_RangedWeapon;                                   // 0x1DA0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UParticleSystemComponent*               HeadshotParticleSystemComp;                        // 0x1DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           Additive_Hit_React_Montage;                        // 0x1DC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Death_Normal_Sound;                                // 0x1DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Elemental_Audio_Layer_Sound;                       // 0x1DD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SpecialEventHalloweenPumpkinHead;                  // 0x1DE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1DE1[0x7];                                     // 0x1DE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_NPCCharacterTypeHuskBasic;                      // 0x1DE8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_SpecialEventHalloweenPumpkinHead;               // 0x1E08(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         PumpkinHeadPercentage;                             // 0x1E28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E2C[0x4];                                     // 0x1E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_SpecialEvent_Halloween_PumpkinHead;             // 0x1E30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               PumpkinHeadRotation;                               // 0x1E38(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                                PumpkinHeadScale;                                  // 0x1E44(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PumpkinHeadOffset;                                 // 0x1E50(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E5C[0x4];                                     // 0x1E5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Headshot_FX_Socket;                                // 0x1E60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               SleepParticleSystemComp;                           // 0x1E68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Husk_Sleeping_Sound;                               // 0x1E70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        HuskSleepSound;                                    // 0x1E78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               WakeUpParticleSystemComp;                          // 0x1E80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AwokenMaxDistance;                                 // 0x1E88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E8C[0x4];                                     // 0x1E8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 AwokenSkeletalMesh;                                // 0x1E90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               AwokenSkelMeshMID;                                 // 0x1E98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AwokenFadeInTime;                                  // 0x1EA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AwokenFadeOutTime;                                 // 0x1EA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AwokenDuration;                                    // 0x1EA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Sleeping;                                          // 0x1EAC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasGlowColorsAssigned;                             // 0x1EAD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SpawnInTimelineCompletedSuccessfully;              // 0x1EAE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1EAF[0x1];                                     // 0x1EAF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CharacterSpawnInSafetyCheckHandle;                 // 0x1EB0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Previous_MID;                                      // 0x1EB8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FVector                                FrozenHuskMeshScale;                               // 0x1EC8(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SpawnFrozenHuskMesh;                               // 0x1ED4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1ED5[0x3];                                     // 0x1ED5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        CharacterAmbientParticlesTemplate;                 // 0x1ED8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CharacterAmbientParticles;                         // 0x1EE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 DuplicateCharacterMesh;                            // 0x1EE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DuplicateCharacterMID;                             // 0x1EF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BoneRefPosePosition;                               // 0x1EF8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                MiniBossSizeScale;                                 // 0x1F04(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   MiniBossLight;                                     // 0x1F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               MinibossPSComponent;                               // 0x1F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MiniBossLightIntensity;                            // 0x1F20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CharacterParticlesMaxDrawDistance;                 // 0x1F24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Slow_Shackle_Scale;                                // 0x1F28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F2C[0x4];                                     // 0x1F2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPhysicalMaterial*>              Original_Phys_Material;                            // 0x1F30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UParticleSystemComponent*>       Elemental_FXs;                                     // 0x1F40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	bool                                          IsMiniBoss;                                        // 0x1F50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F51[0x3];                                     // 0x1F51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                SizeScale_FireElemental;                           // 0x1F54(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SizeScale_FireElemental_Head;                      // 0x1F60(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F6C[0x4];                                     // 0x1F6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     DeathFX_MID_Index0;                                // 0x1F70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Death_FX_MID_Index_1;                              // 0x1F78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DeathFX_Use_Strands;                               // 0x1F80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F81[0x3];                                     // 0x1F81(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           DeathFX_EmissiveHot;                               // 0x1F84(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Death_FX_Emissive_Soft_Color;                      // 0x1F94(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DeathFX_Change_Emissive;                           // 0x1FA4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          DeathFX_Customize_Visuals;                         // 0x1FA5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1FA6[0x2];                                     // 0x1FA6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Ice_HandL;                                         // 0x1FA8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Ice_HandR;                                         // 0x1FB8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Ice_HandL_Name;                                    // 0x1FC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Ice_HandR_Name;                                    // 0x1FD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Ice_SpawnRateScale;                                // 0x1FD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Lightning_ElecFresExp;                             // 0x1FDC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Lightning_SizeScale;                               // 0x1FE0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Lightning_WPOScale;                                // 0x1FEC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Lightning_WPOBias;                                 // 0x1FF8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Lightning_SpawnScaleRate;                          // 0x2004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Previous_MID_AuxObjs;                              // 0x2008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UObject*>                        Auxillary_Objects;                                 // 0x2018(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	int32                                         Restoring_Array_Index;                             // 0x2028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_202C[0x4];                                     // 0x202C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        Duplicate_Auxillary_Objects;                       // 0x2030(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	bool                                          Should_Use_Aux_Elemental_Particles;                // 0x2040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_EnemyPawn_Parent(int32 EntryPoint);
@@ -174,32 +197,28 @@ public:
 	void EnemyDeathVisuals(bool* HQ);
 	void StopDeathFX();
 	void PickColorFromAnArrayOfColors(TArray<struct FLinearColor>& ArrayOfColors, struct FLinearColor* Color);
-	void SetVectorParameterOnAllCharacterMIDs(class FName Parameter_Name, const struct FLinearColor& Linear_Color);
+	void SetVectorParameterOnAllCharacterMIDs(class FName Parameter_Name, const struct FVector& Vector_Value);
 	void SetScalarParameterOnAllCharacterMIDs(class FName Parameter_Name, float Scalar_Value);
-	void SetActiveParticlesOnCharacterMesh(bool Active, bool Reset);
+	void SetActiveElementalParticles(bool Active, bool Reset);
 	void PlayAdditiveHitReacts(const struct FVector& Hit_Direction, class UAnimMontage* Anim_Montage);
-	void OverrideMaterialAndCopyParametersOnCharacterMesh(class UMaterialInterface* New_Material_To_Apply);
+	void OverrideMaterialAndCopyParametersOnCharacterElements(class UMaterialInterface* New_Material_To_Apply);
 	void DestroyAwokenSkeletalMesh();
 	void OverridePhysicalMaterialOnCharacterMesh(class UPhysicalMaterial* Physical_Material_Override);
 	void SpawnParticleSystemOnCharacterMesh(class UParticleSystem* ParticleSystemTemplate, class UParticleSystemComponent* ParticleSystemComponentReferenceVar, class FName AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TArray<struct FParticleSysParam>& InstanceParameters, bool AutoActivate, bool AutoDestroy, bool AbsoluteLocation, bool AbsoluteRotation, bool AbsoluteScale, class UParticleSystemComponent** PSComponentReference);
-	void SetCharacterFresnelGlowColors(const struct FLinearColor& Inner_Color, const struct FLinearColor& Outer_Color);
-	void SetCharacterEyeColors(const struct FLinearColor& Eye_Color_Inner, const struct FLinearColor& Eye_Color_Outer);
 	void CharacterSpawnInSafetyCheck();
-	void RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds);
-	void SpawnMeshAttachedToCharacter(class UStaticMesh* Static_Mesh, class FName Socket_Name, const struct FTransform& Relative_Transform, bool Absolute_Location, bool Absolute_Rotation, bool Absolute_Scale, class UStaticMeshComponent** Static_Mesh_Component_Reference);
+	void RestorePreviousMaterialOnCharacterElements(float Delay_in_Seconds);
 	void SpecialEventHalloweenPumpkinHeadHusk(bool ApplyPumpkinHeadMesh, bool DebugApplicationOrRemoval_);
-	void OnRep_SpecialEventHalloweenPumpkinHeadApplied();
-	void OverrideMaterialFromMapByMeshTag();
-	void OverwriteKeysInMaterialMap(class UMaterialInterface* Fire, class UMaterialInterface* Ice, class UMaterialInterface* Lightning, class UMaterialInterface* Default);
-	void RestoreMaterialMapToDefaults();
-	void CreateDuplicateCharacterMesh(class UMaterialInterface* Material_to_Apply);
+	void CreateDuplicateCharacterElements(class UMaterialInterface* Material_to_Apply);
 	void SetDuplicateCharacterMeshHiddenInGame(bool Hidden);
-	void SetParticlesOnCharacterMeshHiddenInGame(bool Hidden);
+	void SetElementalParticlesHiddenInGame(bool Hidden);
 	void TransformHitLocationWorldSpaceToPreskinnedLocalSpace(struct FVector* PreskinnedLS);
 	void SetVectorParameterOnAllCharacterMIDsByMap(const TMap<class FName, struct FLinearColor>& Map);
 	void SetScalarParameterOnAllCharacterMIDsByMap(const TMap<class FName, float>& Map);
 	void SpawnMinibossLight();
 	void SetMinibossLightHiddenInGame(bool Hidden);
+	void RestorePreviousPhysMaterialOnCharacterMesh(float Delay_in_Seconds);
+	void DeleteDuplicateCharacterElements();
+	void DynamicMaterialArraySetup(TArray<class UMaterialInterface*>& Array_to_Check, const TArray<class UMaterialInstanceDynamic*>& Array_to_Store, class UMaterialInterface* New_Material, class UPrimitiveComponent* Mesh_to_Assign_New_Material);
 	void Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn);
 
 public:
@@ -212,108 +231,125 @@ public:
 		return GetDefaultObjImpl<AEnemyPawn_Parent_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AEnemyPawn_Parent_C) == 0x000010, "Wrong alignment on AEnemyPawn_Parent_C");
-static_assert(sizeof(AEnemyPawn_Parent_C) == 0x001FE0, "Wrong size on AEnemyPawn_Parent_C");
-static_assert(offsetof(AEnemyPawn_Parent_C, UberGraphFrame) == 0x001BE0, "Member 'AEnemyPawn_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, WeaponCapsuleCollision) == 0x001BE8, "Member 'AEnemyPawn_Parent_C::WeaponCapsuleCollision' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Layer_Audio_Loop) == 0x001BF0, "Member 'AEnemyPawn_Parent_C::Elemental_Layer_Audio_Loop' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4) == 0x001BF8, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4) == 0x001BFC, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL) == 0x001C00, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C08, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C0C, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C10, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL) == 0x001C18, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C20, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C24, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C28, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C2C, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL) == 0x001C30, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Dynamic_Material_Instance_0) == 0x001C38, "Member 'AEnemyPawn_Parent_C::Dynamic_Material_Instance_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Effects) == 0x001C40, "Member 'AEnemyPawn_Parent_C::Death_Effects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HQ_Death_Particle_System) == 0x001C48, "Member 'AEnemyPawn_Parent_C::HQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_SpawnRateScale) == 0x001C50, "Member 'AEnemyPawn_Parent_C::DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HQ_DeathFX_MaxDistance) == 0x001C54, "Member 'AEnemyPawn_Parent_C::HQ_DeathFX_MaxDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_Death_Particle_System) == 0x001C58, "Member 'AEnemyPawn_Parent_C::LQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderHeight) == 0x001C60, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderHeight' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderRadius) == 0x001C64, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderRadius' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_SpawnRateScale) == 0x001C68, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_PS_Socket_Attach) == 0x001C70, "Member 'AEnemyPawn_Parent_C::LQ_PS_Socket_Attach' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Socket) == 0x001C78, "Member 'AEnemyPawn_Parent_C::Death_Socket' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, UsePOCScaleAndMaterials) == 0x001C80, "Member 'AEnemyPawn_Parent_C::UsePOCScaleAndMaterials' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterial) == 0x001C81, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterial' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterialValues) == 0x001C82, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterialValues' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCOverrideMaterial) == 0x001C88, "Member 'AEnemyPawn_Parent_C::POCOverrideMaterial' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialHairColor) == 0x001C90, "Member 'AEnemyPawn_Parent_C::POCMaterialHairColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialSkinColor) == 0x001CA0, "Member 'AEnemyPawn_Parent_C::POCMaterialSkinColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialPantColor) == 0x001CB0, "Member 'AEnemyPawn_Parent_C::POCMaterialPantColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialShirtColor) == 0x001CC0, "Member 'AEnemyPawn_Parent_C::POCMaterialShirtColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, RandomStream) == 0x001CD0, "Member 'AEnemyPawn_Parent_C::RandomStream' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PseudoRandomNetworkedFloat) == 0x001CD8, "Member 'AEnemyPawn_Parent_C::PseudoRandomNetworkedFloat' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, UseRandomColorVariation) == 0x001CDC, "Member 'AEnemyPawn_Parent_C::UseRandomColorVariation' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskHairColors) == 0x001CE0, "Member 'AEnemyPawn_Parent_C::MaleHuskHairColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskSkinColors) == 0x001CF0, "Member 'AEnemyPawn_Parent_C::MaleHuskSkinColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskPantColors) == 0x001D00, "Member 'AEnemyPawn_Parent_C::MaleHuskPantColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskShirtColors) == 0x001D10, "Member 'AEnemyPawn_Parent_C::MaleHuskShirtColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HieghtDistributionCurve) == 0x001D20, "Member 'AEnemyPawn_Parent_C::HieghtDistributionCurve' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, RandomizeMeshScale) == 0x001D28, "Member 'AEnemyPawn_Parent_C::RandomizeMeshScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticlesTransform) == 0x001D30, "Member 'AEnemyPawn_Parent_C::SpawnParticlesTransform' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Dynamic_Material_Instance_1) == 0x001D60, "Member 'AEnemyPawn_Parent_C::Dynamic_Material_Instance_1' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticles) == 0x001D68, "Member 'AEnemyPawn_Parent_C::SpawnParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterElementalParticles) == 0x001D70, "Member 'AEnemyPawn_Parent_C::CharacterElementalParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AllowHeadshot) == 0x001D78, "Member 'AEnemyPawn_Parent_C::AllowHeadshot' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, TC_RangedWeapon) == 0x001D80, "Member 'AEnemyPawn_Parent_C::TC_RangedWeapon' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HeadshotParticleSystemComp) == 0x001DA0, "Member 'AEnemyPawn_Parent_C::HeadshotParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Additive_Hit_React_Montage) == 0x001DA8, "Member 'AEnemyPawn_Parent_C::Additive_Hit_React_Montage' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Normal_Sound) == 0x001DB0, "Member 'AEnemyPawn_Parent_C::Death_Normal_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Audio_Layer_Sound) == 0x001DB8, "Member 'AEnemyPawn_Parent_C::Elemental_Audio_Layer_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpecialEventHalloweenPumpkinHead) == 0x001DC0, "Member 'AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHead' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpecialEventHalloweenPumpkinHeadApplied) == 0x001DC1, "Member 'AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHeadApplied' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, TC_NPCCharacterTypeHuskBasic) == 0x001DC8, "Member 'AEnemyPawn_Parent_C::TC_NPCCharacterTypeHuskBasic' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, TC_SpecialEventHalloweenPumpkinHead) == 0x001DE8, "Member 'AEnemyPawn_Parent_C::TC_SpecialEventHalloweenPumpkinHead' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadPercentage) == 0x001E08, "Member 'AEnemyPawn_Parent_C::PumpkinHeadPercentage' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, GE_SpecialEvent_Halloween_PumpkinHead) == 0x001E10, "Member 'AEnemyPawn_Parent_C::GE_SpecialEvent_Halloween_PumpkinHead' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Head_Mesh) == 0x001E18, "Member 'AEnemyPawn_Parent_C::Pumpkin_Head_Mesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Eyeglow_Mesh) == 0x001E20, "Member 'AEnemyPawn_Parent_C::Pumpkin_Eyeglow_Mesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadRotation) == 0x001E28, "Member 'AEnemyPawn_Parent_C::PumpkinHeadRotation' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadScale) == 0x001E34, "Member 'AEnemyPawn_Parent_C::PumpkinHeadScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadOffset) == 0x001E40, "Member 'AEnemyPawn_Parent_C::PumpkinHeadOffset' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinEyesFX) == 0x001E50, "Member 'AEnemyPawn_Parent_C::PumpkinEyesFX' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Headshot_FX_Socket) == 0x001E58, "Member 'AEnemyPawn_Parent_C::Headshot_FX_Socket' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Material_Alteration_0) == 0x001E60, "Member 'AEnemyPawn_Parent_C::Material_Alteration_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Material_Alteration_1) == 0x001E68, "Member 'AEnemyPawn_Parent_C::Material_Alteration_1' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SleepParticleSystemComp) == 0x001E70, "Member 'AEnemyPawn_Parent_C::SleepParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Husk_Sleeping_Sound) == 0x001E78, "Member 'AEnemyPawn_Parent_C::Husk_Sleeping_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HuskSleepSound) == 0x001E80, "Member 'AEnemyPawn_Parent_C::HuskSleepSound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, WakeUpParticleSystemComp) == 0x001E88, "Member 'AEnemyPawn_Parent_C::WakeUpParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenMaxDistance) == 0x001E90, "Member 'AEnemyPawn_Parent_C::AwokenMaxDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkeletalMesh) == 0x001E98, "Member 'AEnemyPawn_Parent_C::AwokenSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkelMeshMID) == 0x001EA0, "Member 'AEnemyPawn_Parent_C::AwokenSkelMeshMID' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeInTime) == 0x001EA8, "Member 'AEnemyPawn_Parent_C::AwokenFadeInTime' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeOutTime) == 0x001EAC, "Member 'AEnemyPawn_Parent_C::AwokenFadeOutTime' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenDuration) == 0x001EB0, "Member 'AEnemyPawn_Parent_C::AwokenDuration' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Sleeping) == 0x001EB4, "Member 'AEnemyPawn_Parent_C::Sleeping' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HasGlowColorsAssigned) == 0x001EB5, "Member 'AEnemyPawn_Parent_C::HasGlowColorsAssigned' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnInTimelineCompletedSuccessfully) == 0x001EB6, "Member 'AEnemyPawn_Parent_C::SpawnInTimelineCompletedSuccessfully' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterSpawnInSafetyCheckHandle) == 0x001EB8, "Member 'AEnemyPawn_Parent_C::CharacterSpawnInSafetyCheckHandle' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Base_MID_0) == 0x001EC0, "Member 'AEnemyPawn_Parent_C::Base_MID_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Previous_MID_0) == 0x001EC8, "Member 'AEnemyPawn_Parent_C::Previous_MID_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterElementalParticlesTemplate) == 0x001ED0, "Member 'AEnemyPawn_Parent_C::CharacterElementalParticlesTemplate' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, FrozenHuskMeshScale) == 0x001ED8, "Member 'AEnemyPawn_Parent_C::FrozenHuskMeshScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnFrozenHuskMesh) == 0x001EE4, "Member 'AEnemyPawn_Parent_C::SpawnFrozenHuskMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterAmbientParticlesTemplate) == 0x001EE8, "Member 'AEnemyPawn_Parent_C::CharacterAmbientParticlesTemplate' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterAmbientParticles) == 0x001EF0, "Member 'AEnemyPawn_Parent_C::CharacterAmbientParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaterialModifierMap) == 0x001EF8, "Member 'AEnemyPawn_Parent_C::MaterialModifierMap' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaterialModifierMapDefaults) == 0x001F48, "Member 'AEnemyPawn_Parent_C::MaterialModifierMapDefaults' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DuplicateCharacterMesh) == 0x001F98, "Member 'AEnemyPawn_Parent_C::DuplicateCharacterMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DuplicateCharacterMID) == 0x001FA0, "Member 'AEnemyPawn_Parent_C::DuplicateCharacterMID' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, BoneRefPosePosition) == 0x001FA8, "Member 'AEnemyPawn_Parent_C::BoneRefPosePosition' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossSizeScale) == 0x001FB4, "Member 'AEnemyPawn_Parent_C::MiniBossSizeScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossLight) == 0x001FC0, "Member 'AEnemyPawn_Parent_C::MiniBossLight' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MinibossPSComponent) == 0x001FC8, "Member 'AEnemyPawn_Parent_C::MinibossPSComponent' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossLightIntensity) == 0x001FD0, "Member 'AEnemyPawn_Parent_C::MiniBossLightIntensity' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterParticlesMaxDrawDistance) == 0x001FD4, "Member 'AEnemyPawn_Parent_C::CharacterParticlesMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Slow_Shackle_Scale) == 0x001FD8, "Member 'AEnemyPawn_Parent_C::Slow_Shackle_Scale' has a wrong offset!");
+static_assert(sizeof(AEnemyPawn_Parent_C) == 0x002050, "Wrong size on AEnemyPawn_Parent_C");
+static_assert(offsetof(AEnemyPawn_Parent_C, UberGraphFrame) == 0x001C00, "Member 'AEnemyPawn_Parent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, WeaponCapsuleCollision) == 0x001C08, "Member 'AEnemyPawn_Parent_C::WeaponCapsuleCollision' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Layer_Audio_Loop) == 0x001C10, "Member 'AEnemyPawn_Parent_C::Elemental_Layer_Audio_Loop' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4) == 0x001C18, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL_Fade_2CE2533F4858E8E5F1A8D39F9CE6D9F4' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4) == 0x001C1C, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL__Direction_2CE2533F4858E8E5F1A8D39F9CE6D9F4' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, FadeMiniBossLightOutTL) == 0x001C20, "Member 'AEnemyPawn_Parent_C::FadeMiniBossLightOutTL' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C28, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C2C, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C) == 0x001C30, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL) == 0x001C38, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C40, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_MiniBossFadeLight_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C44, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C48, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001C4C, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL) == 0x001C50, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Death_Effects) == 0x001C58, "Member 'AEnemyPawn_Parent_C::Death_Effects' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HQ_Death_Particle_System) == 0x001C60, "Member 'AEnemyPawn_Parent_C::HQ_Death_Particle_System' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_SpawnRateScale) == 0x001C68, "Member 'AEnemyPawn_Parent_C::DeathFX_SpawnRateScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HQ_DeathFX_MaxDistance) == 0x001C6C, "Member 'AEnemyPawn_Parent_C::HQ_DeathFX_MaxDistance' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, LQ_Death_Particle_System) == 0x001C70, "Member 'AEnemyPawn_Parent_C::LQ_Death_Particle_System' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderHeight) == 0x001C78, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderHeight' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderRadius) == 0x001C7C, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderRadius' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_SpawnRateScale) == 0x001C80, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_SpawnRateScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, LQ_PS_Socket_Attach) == 0x001C88, "Member 'AEnemyPawn_Parent_C::LQ_PS_Socket_Attach' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Death_Socket) == 0x001C90, "Member 'AEnemyPawn_Parent_C::Death_Socket' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, UsePOCScaleAndMaterials) == 0x001C98, "Member 'AEnemyPawn_Parent_C::UsePOCScaleAndMaterials' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterial) == 0x001C99, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterial' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterialValues) == 0x001C9A, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterialValues' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCOverrideMaterial) == 0x001CA0, "Member 'AEnemyPawn_Parent_C::POCOverrideMaterial' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialHairColor) == 0x001CA8, "Member 'AEnemyPawn_Parent_C::POCMaterialHairColor' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialSkinColor) == 0x001CB8, "Member 'AEnemyPawn_Parent_C::POCMaterialSkinColor' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialPantColor) == 0x001CC8, "Member 'AEnemyPawn_Parent_C::POCMaterialPantColor' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialShirtColor) == 0x001CD8, "Member 'AEnemyPawn_Parent_C::POCMaterialShirtColor' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, RandomStream) == 0x001CE8, "Member 'AEnemyPawn_Parent_C::RandomStream' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, PseudoRandomNetworkedFloat) == 0x001CF0, "Member 'AEnemyPawn_Parent_C::PseudoRandomNetworkedFloat' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, UseRandomColorVariation) == 0x001CF4, "Member 'AEnemyPawn_Parent_C::UseRandomColorVariation' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskHairColors) == 0x001CF8, "Member 'AEnemyPawn_Parent_C::MaleHuskHairColors' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskSkinColors) == 0x001D08, "Member 'AEnemyPawn_Parent_C::MaleHuskSkinColors' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskPantColors) == 0x001D18, "Member 'AEnemyPawn_Parent_C::MaleHuskPantColors' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskShirtColors) == 0x001D28, "Member 'AEnemyPawn_Parent_C::MaleHuskShirtColors' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HieghtDistributionCurve) == 0x001D38, "Member 'AEnemyPawn_Parent_C::HieghtDistributionCurve' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, RandomizeMeshScale) == 0x001D40, "Member 'AEnemyPawn_Parent_C::RandomizeMeshScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticlesTransform) == 0x001D50, "Member 'AEnemyPawn_Parent_C::SpawnParticlesTransform' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Head_MID) == 0x001D80, "Member 'AEnemyPawn_Parent_C::Pumpkin_Head_MID' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticles) == 0x001D88, "Member 'AEnemyPawn_Parent_C::SpawnParticles' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, CharacterElementalParticles) == 0x001D90, "Member 'AEnemyPawn_Parent_C::CharacterElementalParticles' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AllowHeadshot) == 0x001D98, "Member 'AEnemyPawn_Parent_C::AllowHeadshot' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, TC_RangedWeapon) == 0x001DA0, "Member 'AEnemyPawn_Parent_C::TC_RangedWeapon' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HeadshotParticleSystemComp) == 0x001DC0, "Member 'AEnemyPawn_Parent_C::HeadshotParticleSystemComp' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Additive_Hit_React_Montage) == 0x001DC8, "Member 'AEnemyPawn_Parent_C::Additive_Hit_React_Montage' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Death_Normal_Sound) == 0x001DD0, "Member 'AEnemyPawn_Parent_C::Death_Normal_Sound' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Audio_Layer_Sound) == 0x001DD8, "Member 'AEnemyPawn_Parent_C::Elemental_Audio_Layer_Sound' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SpecialEventHalloweenPumpkinHead) == 0x001DE0, "Member 'AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHead' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, TC_NPCCharacterTypeHuskBasic) == 0x001DE8, "Member 'AEnemyPawn_Parent_C::TC_NPCCharacterTypeHuskBasic' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, TC_SpecialEventHalloweenPumpkinHead) == 0x001E08, "Member 'AEnemyPawn_Parent_C::TC_SpecialEventHalloweenPumpkinHead' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadPercentage) == 0x001E28, "Member 'AEnemyPawn_Parent_C::PumpkinHeadPercentage' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, GE_SpecialEvent_Halloween_PumpkinHead) == 0x001E30, "Member 'AEnemyPawn_Parent_C::GE_SpecialEvent_Halloween_PumpkinHead' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadRotation) == 0x001E38, "Member 'AEnemyPawn_Parent_C::PumpkinHeadRotation' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadScale) == 0x001E44, "Member 'AEnemyPawn_Parent_C::PumpkinHeadScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadOffset) == 0x001E50, "Member 'AEnemyPawn_Parent_C::PumpkinHeadOffset' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Headshot_FX_Socket) == 0x001E60, "Member 'AEnemyPawn_Parent_C::Headshot_FX_Socket' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SleepParticleSystemComp) == 0x001E68, "Member 'AEnemyPawn_Parent_C::SleepParticleSystemComp' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Husk_Sleeping_Sound) == 0x001E70, "Member 'AEnemyPawn_Parent_C::Husk_Sleeping_Sound' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HuskSleepSound) == 0x001E78, "Member 'AEnemyPawn_Parent_C::HuskSleepSound' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, WakeUpParticleSystemComp) == 0x001E80, "Member 'AEnemyPawn_Parent_C::WakeUpParticleSystemComp' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenMaxDistance) == 0x001E88, "Member 'AEnemyPawn_Parent_C::AwokenMaxDistance' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkeletalMesh) == 0x001E90, "Member 'AEnemyPawn_Parent_C::AwokenSkeletalMesh' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkelMeshMID) == 0x001E98, "Member 'AEnemyPawn_Parent_C::AwokenSkelMeshMID' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeInTime) == 0x001EA0, "Member 'AEnemyPawn_Parent_C::AwokenFadeInTime' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeOutTime) == 0x001EA4, "Member 'AEnemyPawn_Parent_C::AwokenFadeOutTime' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, AwokenDuration) == 0x001EA8, "Member 'AEnemyPawn_Parent_C::AwokenDuration' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Sleeping) == 0x001EAC, "Member 'AEnemyPawn_Parent_C::Sleeping' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, HasGlowColorsAssigned) == 0x001EAD, "Member 'AEnemyPawn_Parent_C::HasGlowColorsAssigned' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SpawnInTimelineCompletedSuccessfully) == 0x001EAE, "Member 'AEnemyPawn_Parent_C::SpawnInTimelineCompletedSuccessfully' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, CharacterSpawnInSafetyCheckHandle) == 0x001EB0, "Member 'AEnemyPawn_Parent_C::CharacterSpawnInSafetyCheckHandle' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Previous_MID) == 0x001EB8, "Member 'AEnemyPawn_Parent_C::Previous_MID' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, FrozenHuskMeshScale) == 0x001EC8, "Member 'AEnemyPawn_Parent_C::FrozenHuskMeshScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SpawnFrozenHuskMesh) == 0x001ED4, "Member 'AEnemyPawn_Parent_C::SpawnFrozenHuskMesh' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, CharacterAmbientParticlesTemplate) == 0x001ED8, "Member 'AEnemyPawn_Parent_C::CharacterAmbientParticlesTemplate' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, CharacterAmbientParticles) == 0x001EE0, "Member 'AEnemyPawn_Parent_C::CharacterAmbientParticles' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DuplicateCharacterMesh) == 0x001EE8, "Member 'AEnemyPawn_Parent_C::DuplicateCharacterMesh' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DuplicateCharacterMID) == 0x001EF0, "Member 'AEnemyPawn_Parent_C::DuplicateCharacterMID' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, BoneRefPosePosition) == 0x001EF8, "Member 'AEnemyPawn_Parent_C::BoneRefPosePosition' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossSizeScale) == 0x001F04, "Member 'AEnemyPawn_Parent_C::MiniBossSizeScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossLight) == 0x001F10, "Member 'AEnemyPawn_Parent_C::MiniBossLight' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MinibossPSComponent) == 0x001F18, "Member 'AEnemyPawn_Parent_C::MinibossPSComponent' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, MiniBossLightIntensity) == 0x001F20, "Member 'AEnemyPawn_Parent_C::MiniBossLightIntensity' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, CharacterParticlesMaxDrawDistance) == 0x001F24, "Member 'AEnemyPawn_Parent_C::CharacterParticlesMaxDrawDistance' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Slow_Shackle_Scale) == 0x001F28, "Member 'AEnemyPawn_Parent_C::Slow_Shackle_Scale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Original_Phys_Material) == 0x001F30, "Member 'AEnemyPawn_Parent_C::Original_Phys_Material' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_FXs) == 0x001F40, "Member 'AEnemyPawn_Parent_C::Elemental_FXs' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, IsMiniBoss) == 0x001F50, "Member 'AEnemyPawn_Parent_C::IsMiniBoss' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SizeScale_FireElemental) == 0x001F54, "Member 'AEnemyPawn_Parent_C::SizeScale_FireElemental' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, SizeScale_FireElemental_Head) == 0x001F60, "Member 'AEnemyPawn_Parent_C::SizeScale_FireElemental_Head' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_MID_Index0) == 0x001F70, "Member 'AEnemyPawn_Parent_C::DeathFX_MID_Index0' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Death_FX_MID_Index_1) == 0x001F78, "Member 'AEnemyPawn_Parent_C::Death_FX_MID_Index_1' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_Use_Strands) == 0x001F80, "Member 'AEnemyPawn_Parent_C::DeathFX_Use_Strands' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_EmissiveHot) == 0x001F84, "Member 'AEnemyPawn_Parent_C::DeathFX_EmissiveHot' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Death_FX_Emissive_Soft_Color) == 0x001F94, "Member 'AEnemyPawn_Parent_C::Death_FX_Emissive_Soft_Color' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_Change_Emissive) == 0x001FA4, "Member 'AEnemyPawn_Parent_C::DeathFX_Change_Emissive' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, DeathFX_Customize_Visuals) == 0x001FA5, "Member 'AEnemyPawn_Parent_C::DeathFX_Customize_Visuals' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Ice_HandL) == 0x001FA8, "Member 'AEnemyPawn_Parent_C::Ice_HandL' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Ice_HandR) == 0x001FB8, "Member 'AEnemyPawn_Parent_C::Ice_HandR' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Ice_HandL_Name) == 0x001FC8, "Member 'AEnemyPawn_Parent_C::Ice_HandL_Name' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Ice_HandR_Name) == 0x001FD0, "Member 'AEnemyPawn_Parent_C::Ice_HandR_Name' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Ice_SpawnRateScale) == 0x001FD8, "Member 'AEnemyPawn_Parent_C::Ice_SpawnRateScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Lightning_ElecFresExp) == 0x001FDC, "Member 'AEnemyPawn_Parent_C::Lightning_ElecFresExp' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Lightning_SizeScale) == 0x001FE0, "Member 'AEnemyPawn_Parent_C::Lightning_SizeScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Lightning_WPOScale) == 0x001FEC, "Member 'AEnemyPawn_Parent_C::Lightning_WPOScale' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Lightning_WPOBias) == 0x001FF8, "Member 'AEnemyPawn_Parent_C::Lightning_WPOBias' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Lightning_SpawnScaleRate) == 0x002004, "Member 'AEnemyPawn_Parent_C::Lightning_SpawnScaleRate' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Previous_MID_AuxObjs) == 0x002008, "Member 'AEnemyPawn_Parent_C::Previous_MID_AuxObjs' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Auxillary_Objects) == 0x002018, "Member 'AEnemyPawn_Parent_C::Auxillary_Objects' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Restoring_Array_Index) == 0x002028, "Member 'AEnemyPawn_Parent_C::Restoring_Array_Index' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Duplicate_Auxillary_Objects) == 0x002030, "Member 'AEnemyPawn_Parent_C::Duplicate_Auxillary_Objects' has a wrong offset!");
+static_assert(offsetof(AEnemyPawn_Parent_C, Should_Use_Aux_Elemental_Particles) == 0x002040, "Member 'AEnemyPawn_Parent_C::Should_Use_Aux_Elemental_Particles' has a wrong offset!");
 
 }
 

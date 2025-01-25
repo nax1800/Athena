@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Frontend_BG_Main.Frontend_BG_Main_C
-// 0x0000 (0x0330 - 0x0330)
+// 0x0000 (0x0340 - 0x0340)
 class AFrontend_BG_Main_C final : public AFortLevelScriptActor
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AFrontend_BG_Main_C) == 0x000008, "Wrong alignment on AFrontend_BG_Main_C");
-static_assert(sizeof(AFrontend_BG_Main_C) == 0x000330, "Wrong size on AFrontend_BG_Main_C");
+static_assert(sizeof(AFrontend_BG_Main_C) == 0x000340, "Wrong size on AFrontend_BG_Main_C");
 
 }
 

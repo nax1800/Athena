@@ -37,6 +37,26 @@ void UGA_Athena_Shields_C::ExecuteUbergraph_GA_Athena_Shields(int32 EntryPoint)
 }
 
 
+// Function GA_Athena_Shields.GA_Athena_Shields_C.K2_OnEndAbility
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGA_Athena_Shields_C::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Athena_Shields_C", "K2_OnEndAbility");
+
+	Params::GA_Athena_Shields_C_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function GA_Athena_Shields.GA_Athena_Shields_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 

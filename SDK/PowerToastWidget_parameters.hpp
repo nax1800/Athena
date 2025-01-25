@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -28,8 +28,8 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0038(0x0008)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0038(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0040(0x0038)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent1;                          // 0x0078(0x0070)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00E8(0x0070)(ConstParm)
@@ -45,7 +45,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0393(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_394[0x4];                                      // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FUniqueNetIdRepl& NewTeamMemberId)> K2Node_CreateDelegate_OutputDelegate123;           // 0x03A0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FUniqueNetIdRepl& NewTeamMemberId)> K2Node_CreateDelegate_OutputDelegate3;             // 0x03A0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x000008, "Wrong alignment on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
@@ -53,7 +53,7 @@ static_assert(sizeof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, EntryPoint) == 0x000000, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate12) == 0x000028, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000038, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_MyGeometry) == 0x000040, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_MouseEvent1) == 0x000078, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_MouseEvent1' has a wrong offset!");
@@ -68,7 +68,7 @@ static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, Cal
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_BooleanAND_ReturnValue) == 0x000392, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_BooleanAND_ReturnValue1) == 0x000393, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue1) == 0x000398, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate123) == 0x0003A0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x0003A0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x0003B0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnTeamMemberFinishedSynchronizing_Event_0
@@ -135,7 +135,7 @@ struct PowerToastWidget_C_SetToast final
 public:
 	class UFortUINotification*                    Toast;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortRegisteredPlayerInfo*              CallFunc_GetPlayerInfoFromUniqueID_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

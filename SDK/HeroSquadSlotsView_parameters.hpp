@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.ExecuteUbergraph_HeroSquadSlotsView
-// 0x0030 (0x0030 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView final
 {
 public:
@@ -28,16 +28,22 @@ public:
 	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPrototypingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortPrototypingStatus                        CallFunc_GetPrototypingStatus_ReturnValue;         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView) == 0x000008, "Wrong alignment on HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView");
-static_assert(sizeof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView) == 0x000030, "Wrong size on HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView");
+static_assert(sizeof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView) == 0x000040, "Wrong size on HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView");
 static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, EntryPoint) == 0x000000, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, CallFunc_GetUINavigationManager_ReturnValue) == 0x000028, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, CallFunc_GetPrototypingStatus_ReturnValue) == 0x000038, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::CallFunc_GetPrototypingStatus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000039, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.CreateAndAddSquadSlotButton
-// 0x0458 (0x0458 - 0x0000)
+// 0x0468 (0x0468 - 0x0000)
 struct HeroSquadSlotsView_C_CreateAndAddSquadSlotButton final
 {
 public:
@@ -46,83 +52,89 @@ public:
 	struct FHomebaseSquadSlot                     SquadSlotDefinition;                               // 0x0008(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UWidget*                                OutSquadSlotButtonHost;                            // 0x0070(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortSquadSlotSelectorButton*           ReturnValue;                                       // 0x0078(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0110(0x0088)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0198(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x01B0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue12;            // 0x01C8(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue123;           // 0x01E0(0x0018)()
-	class FText                                   Temp_text_Variable;                                // 0x01F8(0x0018)()
+	class FText                                   Temp_text_Variable;                                // 0x0080(0x0018)()
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00A0(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0128(0x0088)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x01B0(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x01C8(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x01E0(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue3;             // 0x01F8(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0210(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue;                       // 0x0238(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x0240(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0258(0x0040)(HasGetValueTypeHash)
-	TArray<class UWidget*>                        K2Node_MakeArray_Array;                            // 0x0298(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x02A8(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02B8(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x02D0(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x02E8(0x0018)()
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue1;                      // 0x0308(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        K2Node_MakeArray_Array12;                          // 0x0318(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FSlateBrush                            K2Node_Select1_Default;                            // 0x0328(0x0088)()
-	bool                                          Temp_bool_Variable12;                              // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue12;            // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select12_Default;                           // 0x03C0(0x0018)()
-	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue12;                     // 0x03D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x03E0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array123;                         // 0x0420(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UWidget*>                        K2Node_MakeArray_Array1234;                        // 0x0430(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0440(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0230(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x0248(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0260(0x0040)(HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable3;                               // 0x02A0(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02B8(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02C8(0x0018)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue;                       // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select1_Default;                            // 0x02F8(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0310(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0350(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0360(0x0018)()
+	TArray<class UWidget*>                        K2Node_MakeArray_Array2;                           // 0x0378(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          Temp_bool_Variable2;                               // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_Select2_Default;                            // 0x0398(0x0088)()
+	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue1;                      // 0x0420(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        K2Node_MakeArray_Array3;                           // 0x0430(0x0010)(ZeroConstructor, ReferenceParm)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue1;             // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_441[0x7];                                      // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USimpleSquadSlotButton_C*               CallFunc_Create_ReturnValue2;                      // 0x0450(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        K2Node_MakeArray_Array4;                           // 0x0458(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000008, "Wrong alignment on HeroSquadSlotsView_C_CreateAndAddSquadSlotButton");
-static_assert(sizeof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000458, "Wrong size on HeroSquadSlotsView_C_CreateAndAddSquadSlotButton");
+static_assert(sizeof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000468, "Wrong size on HeroSquadSlotsView_C_CreateAndAddSquadSlotButton");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotIndex) == 0x000000, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotDefinition) == 0x000008, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotDefinition' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, OutSquadSlotButtonHost) == 0x000070, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::OutSquadSlotButtonHost' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, ReturnValue) == 0x000078, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000080, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_SwitchInteger_CmpSuccess) == 0x000081, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush1) == 0x000110, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue) == 0x000198, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue1) == 0x0001B0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue12) == 0x0001C8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue123) == 0x0001E0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable) == 0x0001F8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable) == 0x000080, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000098, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_SwitchInteger_CmpSuccess) == 0x000099, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush) == 0x0000A0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush1) == 0x000128, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue) == 0x0001B0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue1) == 0x0001C8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue2) == 0x0001E0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue3) == 0x0001F8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable1) == 0x000210, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable1' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable) == 0x000228, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000230, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue) == 0x000238, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select_Default) == 0x000240, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData) == 0x000258, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array) == 0x000298, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array1) == 0x0002A8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue) == 0x0002B8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable12) == 0x0002D0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable123) == 0x0002E8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000300, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue1) == 0x000308, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable1) == 0x000310, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array12) == 0x000318, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select1_Default) == 0x000328, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable12) == 0x0003B0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue12) == 0x0003B8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select12_Default) == 0x0003C0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue12) == 0x0003D8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData1) == 0x0003E0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array123) == 0x000420, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array123' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array1234) == 0x000430, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array1234' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue1) == 0x000440, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable2) == 0x000230, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select_Default) == 0x000248, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData) == 0x000260, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable3) == 0x0002A0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array) == 0x0002B8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue) == 0x0002C8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x0002E0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue) == 0x0002E8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable1) == 0x0002F0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select1_Default) == 0x0002F8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData1) == 0x000310, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array1) == 0x000350, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue1) == 0x000360, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array2) == 0x000378, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable2) == 0x000388, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000390, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select2_Default) == 0x000398, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue1) == 0x000420, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralByte_ReturnValue) == 0x000428, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array3) == 0x000430, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array3' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralByte_ReturnValue1) == 0x000440, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000448, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue2) == 0x000450, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array4) == 0x000458, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array4' has a wrong offset!");
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.HandleSquadNavigation
 // 0x0018 (0x0018 - 0x0000)
@@ -148,12 +160,12 @@ static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, CallFunc_Equa
 struct HeroSquadSlotsView_C_HighlightSlotByIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HeroSquadSlotsView_C_HighlightSlotByIndex) == 0x000004, "Wrong alignment on HeroSquadSlotsView_C_HighlightSlotByIndex");
 static_assert(sizeof(HeroSquadSlotsView_C_HighlightSlotByIndex) == 0x000008, "Wrong size on HeroSquadSlotsView_C_HighlightSlotByIndex");
-static_assert(offsetof(HeroSquadSlotsView_C_HighlightSlotByIndex, Param_Index) == 0x000000, "Member 'HeroSquadSlotsView_C_HighlightSlotByIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(HeroSquadSlotsView_C_HighlightSlotByIndex, Index_0) == 0x000000, "Member 'HeroSquadSlotsView_C_HighlightSlotByIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(HeroSquadSlotsView_C_HighlightSlotByIndex, K2Node_SwitchInteger_CmpSuccess) == 0x000004, "Member 'HeroSquadSlotsView_C_HighlightSlotByIndex::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 }

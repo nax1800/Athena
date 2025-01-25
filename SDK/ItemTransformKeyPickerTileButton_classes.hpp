@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C
-// 0x0020 (0x0858 - 0x0838)
+// 0x0020 (0x08E0 - 0x08C0)
 class UItemTransformKeyPickerTileButton_C final : public UFortTransformKeyPickerTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0838(0x0008)(Transient, DuplicateTransient)
-	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          NullItemBorder;                                    // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        RootWidgetSwitcher;                                // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
+	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          NullItemBorder;                                    // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        RootWidgetSwitcher;                                // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemTransformKeyPickerTileButton(int32 EntryPoint);
-	void OnHovered();
-	void OnSelected();
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
+	void BP_OnHovered();
+	void BP_OnSelected();
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void Update_Bang_State();
 	void Get_Transform_Key(class UFortAccountItem** AsFort_Account_Item);
 	void Is_Transform_Key_Consumable(bool* bConsumedOnConversion);
@@ -50,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformKeyPickerTileButton_C) == 0x000008, "Wrong alignment on UItemTransformKeyPickerTileButton_C");
-static_assert(sizeof(UItemTransformKeyPickerTileButton_C) == 0x000858, "Wrong size on UItemTransformKeyPickerTileButton_C");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, UberGraphFrame) == 0x000838, "Member 'UItemTransformKeyPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NormalBangWrapper) == 0x000840, "Member 'UItemTransformKeyPickerTileButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NullItemBorder) == 0x000848, "Member 'UItemTransformKeyPickerTileButton_C::NullItemBorder' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, RootWidgetSwitcher) == 0x000850, "Member 'UItemTransformKeyPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
+static_assert(sizeof(UItemTransformKeyPickerTileButton_C) == 0x0008E0, "Wrong size on UItemTransformKeyPickerTileButton_C");
+static_assert(offsetof(UItemTransformKeyPickerTileButton_C, UberGraphFrame) == 0x0008C0, "Member 'UItemTransformKeyPickerTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NormalBangWrapper) == 0x0008C8, "Member 'UItemTransformKeyPickerTileButton_C::NormalBangWrapper' has a wrong offset!");
+static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NullItemBorder) == 0x0008D0, "Member 'UItemTransformKeyPickerTileButton_C::NullItemBorder' has a wrong offset!");
+static_assert(offsetof(UItemTransformKeyPickerTileButton_C, RootWidgetSwitcher) == 0x0008D8, "Member 'UItemTransformKeyPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
 
 }
 

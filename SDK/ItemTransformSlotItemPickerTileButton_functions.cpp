@@ -37,23 +37,21 @@ void UItemTransformSlotItemPickerTileButton_C::ExecuteUbergraph_ItemTransformSlo
 }
 
 
-// Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformSlotItemPickerTileButton_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UItemTransformSlotItemPickerTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformSlotItemPickerTileButton_C", "SetData");
+		Func = Class->GetFunction("ItemTransformSlotItemPickerTileButton_C", "OnListItemObjectSet");
 
-	Params::ItemTransformSlotItemPickerTileButton_C_SetData Parms{};
+	Params::ItemTransformSlotItemPickerTileButton_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.ExecuteUbergraph_QuestObjectiveEntry
-// ()
+// (HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -34,6 +34,42 @@ void UQuestObjectiveEntry_C::ExecuteUbergraph_QuestObjectiveEntry(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuestObjectiveEntry.QuestObjectiveEntry_C.ObjectiveInfoSet
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UFortQuestObjectiveInfo*          ObjectiveInfo                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsAnnouncement                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UQuestObjectiveEntry_C::ObjectiveInfoSet(const class UFortQuestObjectiveInfo* ObjectiveInfo, bool IsAnnouncement)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestObjectiveEntry_C", "ObjectiveInfoSet");
+
+	Params::QuestObjectiveEntry_C_ObjectiveInfoSet Parms{};
+
+	Parms.ObjectiveInfo = ObjectiveInfo;
+	Parms.IsAnnouncement = IsAnnouncement;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuestObjectiveEntry.QuestObjectiveEntry_C.StartDisplayingObjective
+// (Event, Public, BlueprintEvent)
+
+void UQuestObjectiveEntry_C::StartDisplayingObjective()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestObjectiveEntry_C", "StartDisplayingObjective");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,58 +94,56 @@ void UQuestObjectiveEntry_C::SetData(class UObject* InData)
 
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.UpdateProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortQuestObjectiveInfo*          Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   AchievedCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UQuestObjectiveEntry_C::UpdateProgress(class UFortQuestObjectiveInfo* Objective, int32 AchievedCount)
+void UQuestObjectiveEntry_C::UpdateProgress()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("QuestObjectiveEntry_C", "UpdateProgress");
 
-	Params::QuestObjectiveEntry_C_UpdateProgress Parms{};
-
-	Parms.Objective = Objective;
-	Parms.AchievedCount = AchievedCount;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function QuestObjectiveEntry.QuestObjectiveEntry_C.Update
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortQuestObjectiveInfo*          Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   AchievedCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UQuestObjectiveEntry_C::Update(class UFortQuestObjectiveInfo* Objective, int32 AchievedCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestObjectiveEntry_C", "Update");
-
-	Params::QuestObjectiveEntry_C_Update Parms{};
-
-	Parms.Objective = Objective;
-	Parms.AchievedCount = AchievedCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function QuestObjectiveEntry.QuestObjectiveEntry_C.PlayAppearAnimation
+// Function QuestObjectiveEntry.QuestObjectiveEntry_C.AppearAnimationFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UQuestObjectiveEntry_C::PlayAppearAnimation()
+void UQuestObjectiveEntry_C::AppearAnimationFinished()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("QuestObjectiveEntry_C", "PlayAppearAnimation");
+		Func = Class->GetFunction("QuestObjectiveEntry_C", "AppearAnimationFinished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestObjectiveEntry.QuestObjectiveEntry_C.LerpProgress
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UQuestObjectiveEntry_C::LerpProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestObjectiveEntry_C", "LerpProgress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestObjectiveEntry.QuestObjectiveEntry_C.UpdateLerp
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UQuestObjectiveEntry_C::UpdateLerp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestObjectiveEntry_C", "UpdateLerp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

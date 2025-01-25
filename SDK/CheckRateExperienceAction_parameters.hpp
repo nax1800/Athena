@@ -37,7 +37,7 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPendingLogout_ReturnValue;              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction) == 0x000008, "Wrong alignment on CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction");
@@ -55,7 +55,7 @@ static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExp
 static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_ShouldShowRateWidget_ReturnValue) == 0x0000A0, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_ShouldShowRateWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_GetContext_ReturnValue1) == 0x0000A8, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_IsPendingLogout_ReturnValue) == 0x0000B0, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_IsPendingLogout_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_GetContext_ReturnValue12) == 0x0000B8, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_GetContext_ReturnValue2) == 0x0000B8, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction, CallFunc_Not_PreBool_ReturnValue) == 0x0000C0, "Member 'CheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function CheckRateExperienceAction.CheckRateExperienceAction_C.Execute

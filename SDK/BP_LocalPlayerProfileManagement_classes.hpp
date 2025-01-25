@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C
-// 0x0070 (0x0288 - 0x0218)
+// 0x0070 (0x0280 - 0x0210)
 class UBP_LocalPlayerProfileManagement_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CloseProfileButton;                                // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPlayerBanner_C*                        HomebaseBanner;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       HomebaseName;                                      // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBasicRatingWidget_C*                   HomeBaseRating;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      LeavePartyButton;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      OpenBannerEditorButton;                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ViewProfileButton;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OpenBannerEditor;                                  // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   CloseProfileModal;                                 // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CloseProfileButton;                                // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPlayerBanner_C*                        HomebaseBanner;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       HomebaseName;                                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBasicRatingWidget_C*                   HomeBaseRating;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      LeavePartyButton;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      OpenBannerEditorButton;                            // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ViewProfileButton;                                 // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OpenBannerEditor;                                  // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   CloseProfileModal;                                 // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OpenBannerEditor__DelegateSignature();
@@ -64,19 +64,19 @@ public:
 	}
 };
 static_assert(alignof(UBP_LocalPlayerProfileManagement_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerProfileManagement_C");
-static_assert(sizeof(UBP_LocalPlayerProfileManagement_C) == 0x000288, "Wrong size on UBP_LocalPlayerProfileManagement_C");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, UberGraphFrame) == 0x000218, "Member 'UBP_LocalPlayerProfileManagement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileButton) == 0x000220, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseBanner) == 0x000228, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseBanner' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseName) == 0x000230, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseName' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomeBaseRating) == 0x000238, "Member 'UBP_LocalPlayerProfileManagement_C::HomeBaseRating' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, Image_0) == 0x000240, "Member 'UBP_LocalPlayerProfileManagement_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, LeavePartyButton) == 0x000248, "Member 'UBP_LocalPlayerProfileManagement_C::LeavePartyButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, NormalBangWrapper) == 0x000250, "Member 'UBP_LocalPlayerProfileManagement_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditorButton) == 0x000258, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditorButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, ViewProfileButton) == 0x000260, "Member 'UBP_LocalPlayerProfileManagement_C::ViewProfileButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditor) == 0x000268, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileModal) == 0x000278, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileModal' has a wrong offset!");
+static_assert(sizeof(UBP_LocalPlayerProfileManagement_C) == 0x000280, "Wrong size on UBP_LocalPlayerProfileManagement_C");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, UberGraphFrame) == 0x000210, "Member 'UBP_LocalPlayerProfileManagement_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileButton) == 0x000218, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileButton' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseBanner) == 0x000220, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseBanner' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseName) == 0x000228, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseName' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomeBaseRating) == 0x000230, "Member 'UBP_LocalPlayerProfileManagement_C::HomeBaseRating' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, Image_0) == 0x000238, "Member 'UBP_LocalPlayerProfileManagement_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, LeavePartyButton) == 0x000240, "Member 'UBP_LocalPlayerProfileManagement_C::LeavePartyButton' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, NormalBangWrapper) == 0x000248, "Member 'UBP_LocalPlayerProfileManagement_C::NormalBangWrapper' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditorButton) == 0x000250, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditorButton' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, ViewProfileButton) == 0x000258, "Member 'UBP_LocalPlayerProfileManagement_C::ViewProfileButton' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditor) == 0x000260, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditor' has a wrong offset!");
+static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileModal) == 0x000270, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileModal' has a wrong offset!");
 
 }
 

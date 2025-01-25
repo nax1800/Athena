@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C
-// 0x0030 (0x0490 - 0x0460)
+// 0x0030 (0x03C8 - 0x0398)
 class USquadSlotItemPicker_C final : public UFortSquadSlotItemPicker
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       HideSort;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowSort;                                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Show_Items;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Hide_Items;                                        // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       SortText;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       HideSort;                                          // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowSort;                                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Show_Items;                                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Hide_Items;                                        // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       SortText;                                          // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SquadSlotItemPicker(int32 EntryPoint);
@@ -48,13 +48,13 @@ public:
 	}
 };
 static_assert(alignof(USquadSlotItemPicker_C) == 0x000008, "Wrong alignment on USquadSlotItemPicker_C");
-static_assert(sizeof(USquadSlotItemPicker_C) == 0x000490, "Wrong size on USquadSlotItemPicker_C");
-static_assert(offsetof(USquadSlotItemPicker_C, UberGraphFrame) == 0x000460, "Member 'USquadSlotItemPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPicker_C, HideSort) == 0x000468, "Member 'USquadSlotItemPicker_C::HideSort' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPicker_C, ShowSort) == 0x000470, "Member 'USquadSlotItemPicker_C::ShowSort' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPicker_C, Show_Items) == 0x000478, "Member 'USquadSlotItemPicker_C::Show_Items' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPicker_C, Hide_Items) == 0x000480, "Member 'USquadSlotItemPicker_C::Hide_Items' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPicker_C, SortText) == 0x000488, "Member 'USquadSlotItemPicker_C::SortText' has a wrong offset!");
+static_assert(sizeof(USquadSlotItemPicker_C) == 0x0003C8, "Wrong size on USquadSlotItemPicker_C");
+static_assert(offsetof(USquadSlotItemPicker_C, UberGraphFrame) == 0x000398, "Member 'USquadSlotItemPicker_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USquadSlotItemPicker_C, HideSort) == 0x0003A0, "Member 'USquadSlotItemPicker_C::HideSort' has a wrong offset!");
+static_assert(offsetof(USquadSlotItemPicker_C, ShowSort) == 0x0003A8, "Member 'USquadSlotItemPicker_C::ShowSort' has a wrong offset!");
+static_assert(offsetof(USquadSlotItemPicker_C, Show_Items) == 0x0003B0, "Member 'USquadSlotItemPicker_C::Show_Items' has a wrong offset!");
+static_assert(offsetof(USquadSlotItemPicker_C, Hide_Items) == 0x0003B8, "Member 'USquadSlotItemPicker_C::Hide_Items' has a wrong offset!");
+static_assert(offsetof(USquadSlotItemPicker_C, SortText) == 0x0003C0, "Member 'USquadSlotItemPicker_C::SortText' has a wrong offset!");
 
 }
 

@@ -42,5 +42,33 @@ static_assert(alignof(ReplicationGraphDebugActor_ServerPrintAllActorInfo) == 0x0
 static_assert(sizeof(ReplicationGraphDebugActor_ServerPrintAllActorInfo) == 0x000010, "Wrong size on ReplicationGraphDebugActor_ServerPrintAllActorInfo");
 static_assert(offsetof(ReplicationGraphDebugActor_ServerPrintAllActorInfo, Str) == 0x000000, "Member 'ReplicationGraphDebugActor_ServerPrintAllActorInfo::Str' has a wrong offset!");
 
+// Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass
+// 0x0010 (0x0010 - 0x0000)
+struct ReplicationGraphDebugActor_ServerSetCullDistanceForClass final
+{
+public:
+	class UClass*                                 Class_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CullDistance;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass) == 0x000008, "Wrong alignment on ReplicationGraphDebugActor_ServerSetCullDistanceForClass");
+static_assert(sizeof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass) == 0x000010, "Wrong size on ReplicationGraphDebugActor_ServerSetCullDistanceForClass");
+static_assert(offsetof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass, Class_0) == 0x000000, "Member 'ReplicationGraphDebugActor_ServerSetCullDistanceForClass::Class_0' has a wrong offset!");
+static_assert(offsetof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass, CullDistance) == 0x000008, "Member 'ReplicationGraphDebugActor_ServerSetCullDistanceForClass::CullDistance' has a wrong offset!");
+
+// Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass
+// 0x0010 (0x0010 - 0x0000)
+struct ReplicationGraphDebugActor_ServerSetPeriodFrameForClass final
+{
+public:
+	class UClass*                                 Class_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PeriodFrame;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass) == 0x000008, "Wrong alignment on ReplicationGraphDebugActor_ServerSetPeriodFrameForClass");
+static_assert(sizeof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass) == 0x000010, "Wrong size on ReplicationGraphDebugActor_ServerSetPeriodFrameForClass");
+static_assert(offsetof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass, Class_0) == 0x000000, "Member 'ReplicationGraphDebugActor_ServerSetPeriodFrameForClass::Class_0' has a wrong offset!");
+static_assert(offsetof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass, PeriodFrame) == 0x000008, "Member 'ReplicationGraphDebugActor_ServerSetPeriodFrameForClass::PeriodFrame' has a wrong offset!");
+
 }
 

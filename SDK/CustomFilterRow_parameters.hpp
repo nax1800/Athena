@@ -21,12 +21,12 @@ namespace SDK::Params
 struct CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature final
 {
 public:
-	EFortInventoryCustomFilter                    Param_Filter;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortInventoryCustomFilter                    Filter_0;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsChecked;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature) == 0x000001, "Wrong alignment on CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature");
 static_assert(sizeof(CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature) == 0x000002, "Wrong size on CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature");
-static_assert(offsetof(CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature, Param_Filter) == 0x000000, "Member 'CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature::Param_Filter' has a wrong offset!");
+static_assert(offsetof(CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature, Filter_0) == 0x000000, "Member 'CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature::Filter_0' has a wrong offset!");
 static_assert(offsetof(CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature, IsChecked) == 0x000001, "Member 'CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature::IsChecked' has a wrong offset!");
 
 // Function CustomFilterRow.CustomFilterRow_C.ExecuteUbergraph_CustomFilterRow

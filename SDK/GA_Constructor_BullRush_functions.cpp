@@ -40,9 +40,9 @@ void UGA_Constructor_BullRush_C::ExecuteUbergraph_GA_Constructor_BullRush(int32 
 // Function GA_Constructor_BullRush.GA_Constructor_BullRush_C.ForceAttach
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortAIPawn*                      Param_LocalOverlap                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortAIPawn*                      LocalOverlap_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Constructor_BullRush_C::ForceAttach(class AFortAIPawn* Param_LocalOverlap)
+void UGA_Constructor_BullRush_C::ForceAttach(class AFortAIPawn* LocalOverlap_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void UGA_Constructor_BullRush_C::ForceAttach(class AFortAIPawn* Param_LocalOverl
 
 	Params::GA_Constructor_BullRush_C_ForceAttach Parms{};
 
-	Parms.Param_LocalOverlap = Param_LocalOverlap;
+	Parms.LocalOverlap_0 = LocalOverlap_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1406,9 +1406,9 @@ void UGA_Constructor_BullRush_C::GetAppliedDamage(class UClass** Applied)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortPawn*                        InPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_NotADefender                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    NotADefender_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UGA_Constructor_BullRush_C::NotADefender(class AFortPawn* InPawn, bool* Param_NotADefender)
+void UGA_Constructor_BullRush_C::NotADefender(class AFortPawn* InPawn, bool* NotADefender_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1421,8 +1421,8 @@ void UGA_Constructor_BullRush_C::NotADefender(class AFortPawn* InPawn, bool* Par
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_NotADefender != nullptr)
-		*Param_NotADefender = Parms.Param_NotADefender;
+	if (NotADefender_0 != nullptr)
+		*NotADefender_0 = Parms.NotADefender_0;
 }
 
 
@@ -1490,6 +1490,34 @@ bool UGA_Constructor_BullRush_C::HighOffGround(const struct FVector& ImpactPoint
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function GA_Constructor_BullRush.GA_Constructor_BullRush_C.ForceDamageWallClose
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UGA_Constructor_BullRush_C::ForceDamageWallClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Constructor_BullRush_C", "ForceDamageWallClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Constructor_BullRush.GA_Constructor_BullRush_C.SetupBodytype
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGA_Constructor_BullRush_C::SetupBodytype()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Constructor_BullRush_C", "SetupBodytype");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

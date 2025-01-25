@@ -51,28 +51,6 @@ void UBoostsRoot_C::OnDeactivated()
 }
 
 
-// Function BoostsRoot.BoostsRoot_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWidget*                          ActiveWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBoostsRoot_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BoostsRoot_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature");
-
-	Params::BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature Parms{};
-
-	Parms.ActiveWidget = ActiveWidget;
-	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BoostsRoot.BoostsRoot_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -189,27 +167,6 @@ void UBoostsRoot_C::HandleCursorModeChanging(bool IsEnabled)
 	Parms.IsEnabled = IsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BoostsRoot.BoostsRoot_C.HandleStore
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UBoostsRoot_C::HandleStore(bool* Passthrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BoostsRoot_C", "HandleStore");
-
-	Params::BoostsRoot_C_HandleStore Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
 }
 
 

@@ -104,5 +104,33 @@ void UBacchusControlsHelp_C::Handle_Close()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function BacchusControlsHelp.BacchusControlsHelp_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UBacchusControlsHelp_C::OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BacchusControlsHelp_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BacchusControlsHelp.BacchusControlsHelp_C.Update
+// (BlueprintCallable, BlueprintEvent)
+
+void UBacchusControlsHelp_C::Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BacchusControlsHelp_C", "Update");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

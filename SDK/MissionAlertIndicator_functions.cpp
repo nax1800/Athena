@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function MissionAlertIndicator.MissionAlertIndicator_C.ExecuteUbergraph_MissionAlertIndicator
+// ()
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMissionAlertIndicator_C::ExecuteUbergraph_MissionAlertIndicator(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MissionAlertIndicator_C", "ExecuteUbergraph_MissionAlertIndicator");
+
+	Params::MissionAlertIndicator_C_ExecuteUbergraph_MissionAlertIndicator Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MissionAlertIndicator.MissionAlertIndicator_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UMissionAlertIndicator_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MissionAlertIndicator_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MissionAlertIndicator.MissionAlertIndicator_C.ToggleTimer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params

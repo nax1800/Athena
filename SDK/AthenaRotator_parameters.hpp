@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,7 +24,7 @@ struct AthenaRotator_C_ExecuteUbergraph_AthenaRotator final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,7 +32,8 @@ public:
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue1;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0030(0x0038)(IsPlainOldData, NoDestructor)
@@ -42,26 +43,26 @@ public:
 	bool                                          CallFunc_IsInteractionEnabled_ReturnValue;         // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInteractionEnabled_ReturnValue1;        // 0x00A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00AF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator) == 0x000008, "Wrong alignment on AthenaRotator_C_ExecuteUbergraph_AthenaRotator");
 static_assert(sizeof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator) == 0x0000B0, "Wrong size on AthenaRotator_C_ExecuteUbergraph_AthenaRotator");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, EntryPoint) == 0x000000, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, Temp_bool_Variable) == 0x000004, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_GetCurrentInputType_ReturnValue) == 0x000018, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_GetCurrentInputType_ReturnValue1) == 0x000019, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_GetCurrentInputType_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x00001B, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanOR_ReturnValue) == 0x00001C, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_ComponentBoundEvent_Button1) == 0x000020, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_Event_MyGeometry) == 0x000030, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_Event_MyGeometry' has a wrong offset!");
@@ -71,15 +72,14 @@ static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_Ma
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsInteractionEnabled_ReturnValue) == 0x0000A4, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsInteractionEnabled_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_Event_IsDesignTime) == 0x0000A5, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsInteractionEnabled_ReturnValue1) == 0x0000A6, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsInteractionEnabled_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_Not_PreBool_ReturnValue) == 0x0000A7, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsHovered_ReturnValue) == 0x0000A8, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanOR_ReturnValue) == 0x0000A9, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, Temp_byte_Variable) == 0x0000AA, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsBROnly_ReturnValue) == 0x0000AB, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanAND_ReturnValue) == 0x0000A7, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_Not_PreBool_ReturnValue) == 0x0000A8, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_IsHovered_ReturnValue) == 0x0000A9, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanOR_ReturnValue1) == 0x0000AA, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, Temp_byte_Variable) == 0x0000AB, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, Temp_byte_Variable1) == 0x0000AC, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanOR_ReturnValue1) == 0x0000AD, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, CallFunc_BooleanAND_ReturnValue) == 0x0000AE, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_Select_Default) == 0x0000AF, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, Temp_bool_Variable) == 0x0000AD, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaRotator_C_ExecuteUbergraph_AthenaRotator, K2Node_Select_Default) == 0x0000AE, "Member 'AthenaRotator_C_ExecuteUbergraph_AthenaRotator::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaRotator.AthenaRotator_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

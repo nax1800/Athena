@@ -20,9 +20,9 @@ namespace SDK
 // Function PurchaseFlow.PurchaseFlowJSBridge.RECEIPT
 // (Final, Native, Public)
 // Parameters:
-// struct FPurchaseFlowReceiptParam        Param_RECEIPT                                          (Parm, NativeAccessSpecifierPublic)
+// struct FPurchaseFlowReceiptParam        RECEIPT_0                                              (Parm, NativeAccessSpecifierPublic)
 
-void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& Param_RECEIPT)
+void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& RECEIPT_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& Para
 
 	Params::PurchaseFlowJSBridge_RECEIPT Parms{};
 
-	Parms.Param_RECEIPT = std::move(Param_RECEIPT);
+	Parms.RECEIPT_0 = std::move(RECEIPT_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

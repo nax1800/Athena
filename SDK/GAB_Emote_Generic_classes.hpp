@@ -10,24 +10,32 @@
 
 #include "Basic.hpp"
 
+#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_Emote_Generic.GAB_Emote_Generic_C
-// 0x0010 (0x0AF8 - 0x0AE8)
-class UGAB_Emote_Generic_C final : public UFortGameplayAbility
+// 0x0040 (0x0938 - 0x08F8)
+class UGAB_Emote_Generic_C : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PostTriggerCancelDelay;                            // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HideReticle;                                       // 0x090C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_90D[0x3];                                      // 0x090D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  ReticleHUDElementTags;                             // 0x0910(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FName                                   MontageOverrideSection;                            // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_Emote_Generic(int32 EntryPoint);
+	void PlayInitialEmoteMontage();
+	void OnMontageStartedPlaying();
 	void K2_ActivateAbility();
 	void OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D(class UObject* Loaded);
 	void Triggered_DE7019AA4E006879EDD264899869FEE2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
@@ -35,6 +43,8 @@ public:
 	void Completed_DE7019AA4E006879EDD264899869FEE2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void K2_OnEndAbility(bool bWasCancelled);
 	void GetBodyTypeAndGender(EFortCustomBodyType* BodyType, EFortCustomGender* Gender);
+	TSoftObjectPtr<class UAnimMontage> GetMontageToPlay(class UFortMontageItemDefinitionBase* EmoteAsset, EFortCustomBodyType BodyType, EFortCustomGender Gender);
+	void SetReticleVisibility(bool ShouldHide);
 
 public:
 	static class UClass* StaticClass()
@@ -47,8 +57,13 @@ public:
 	}
 };
 static_assert(alignof(UGAB_Emote_Generic_C) == 0x000008, "Wrong alignment on UGAB_Emote_Generic_C");
-static_assert(sizeof(UGAB_Emote_Generic_C) == 0x000AF8, "Wrong size on UGAB_Emote_Generic_C");
-static_assert(offsetof(UGAB_Emote_Generic_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_Emote_Generic_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UGAB_Emote_Generic_C) == 0x000938, "Wrong size on UGAB_Emote_Generic_C");
+static_assert(offsetof(UGAB_Emote_Generic_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_Emote_Generic_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_Emote_Generic_C, PlayerPawn) == 0x000900, "Member 'UGAB_Emote_Generic_C::PlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_Emote_Generic_C, PostTriggerCancelDelay) == 0x000908, "Member 'UGAB_Emote_Generic_C::PostTriggerCancelDelay' has a wrong offset!");
+static_assert(offsetof(UGAB_Emote_Generic_C, HideReticle) == 0x00090C, "Member 'UGAB_Emote_Generic_C::HideReticle' has a wrong offset!");
+static_assert(offsetof(UGAB_Emote_Generic_C, ReticleHUDElementTags) == 0x000910, "Member 'UGAB_Emote_Generic_C::ReticleHUDElementTags' has a wrong offset!");
+static_assert(offsetof(UGAB_Emote_Generic_C, MontageOverrideSection) == 0x000930, "Member 'UGAB_Emote_Generic_C::MontageOverrideSection' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SkillTreepAGEColors_structs.hpp"
 #include "SkillTreePages_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -33,9 +33,9 @@ public:
 	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x00DC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select1_Default;                            // 0x00EC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESkillTreePages                               Temp_byte_Variable12;                              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESkillTreePages                               Temp_byte_Variable2;                               // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x0100(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0100(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SkillTreeColorSetup_C_SkillTreeBGSetup) == 0x000008, "Wrong alignment on SkillTreeColorSetup_C_SkillTreeBGSetup");
 static_assert(sizeof(SkillTreeColorSetup_C_SkillTreeBGSetup) == 0x000110, "Wrong size on SkillTreeColorSetup_C_SkillTreeBGSetup");
@@ -47,8 +47,8 @@ static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variabl
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variable1) == 0x0000D9, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, K2Node_Select_Default) == 0x0000DC, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, K2Node_Select1_Default) == 0x0000EC, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variable12) == 0x0000FC, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, K2Node_Select12_Default) == 0x000100, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variable2) == 0x0000FC, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, K2Node_Select2_Default) == 0x000100, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::K2Node_Select2_Default' has a wrong offset!");
 
 }
 

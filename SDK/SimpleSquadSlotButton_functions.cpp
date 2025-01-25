@@ -37,6 +37,20 @@ void USimpleSquadSlotButton_C::ExecuteUbergraph_SimpleSquadSlotButton(int32 Entr
 }
 
 
+// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.BP_OnHovered
+// (Event, Protected, BlueprintEvent)
+
+void USimpleSquadSlotButton_C::BP_OnHovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleSquadSlotButton_C", "BP_OnHovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -57,15 +71,15 @@ void USimpleSquadSlotButton_C::BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEven
 }
 
 
-// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.OnSelected
+// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void USimpleSquadSlotButton_C::OnSelected()
+void USimpleSquadSlotButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleSquadSlotButton_C", "OnSelected");
+		Func = Class->GetFunction("SimpleSquadSlotButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

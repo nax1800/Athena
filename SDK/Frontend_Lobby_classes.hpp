@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Frontend_Lobby.Frontend_Lobby_C
-// 0x0018 (0x0348 - 0x0330)
+// 0x0018 (0x0358 - 0x0340)
 class AFrontend_Lobby_C final : public AFortLevelScriptActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
-	class FName                                   CurrentBackgroundLevelName;                        // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   NewBackgroundLevelName;                            // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(Transient, DuplicateTransient)
+	class FName                                   CurrentBackgroundLevelName;                        // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NewBackgroundLevelName;                            // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Frontend_Lobby(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(AFrontend_Lobby_C) == 0x000008, "Wrong alignment on AFrontend_Lobby_C");
-static_assert(sizeof(AFrontend_Lobby_C) == 0x000348, "Wrong size on AFrontend_Lobby_C");
-static_assert(offsetof(AFrontend_Lobby_C, UberGraphFrame) == 0x000330, "Member 'AFrontend_Lobby_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontend_Lobby_C, CurrentBackgroundLevelName) == 0x000338, "Member 'AFrontend_Lobby_C::CurrentBackgroundLevelName' has a wrong offset!");
-static_assert(offsetof(AFrontend_Lobby_C, NewBackgroundLevelName) == 0x000340, "Member 'AFrontend_Lobby_C::NewBackgroundLevelName' has a wrong offset!");
+static_assert(sizeof(AFrontend_Lobby_C) == 0x000358, "Wrong size on AFrontend_Lobby_C");
+static_assert(offsetof(AFrontend_Lobby_C, UberGraphFrame) == 0x000340, "Member 'AFrontend_Lobby_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AFrontend_Lobby_C, CurrentBackgroundLevelName) == 0x000348, "Member 'AFrontend_Lobby_C::CurrentBackgroundLevelName' has a wrong offset!");
+static_assert(offsetof(AFrontend_Lobby_C, NewBackgroundLevelName) == 0x000350, "Member 'AFrontend_Lobby_C::NewBackgroundLevelName' has a wrong offset!");
 
 }
 

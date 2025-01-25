@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass HeroesCamera_Blueprint.HeroesCamera_Blueprint_C
-// 0x0020 (0x08D0 - 0x08B0)
+// 0x0020 (0x08A0 - 0x0880)
 class AHeroesCamera_Blueprint_C final : public AFortCameraBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
-	bool                                          MouseDown;                                         // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8B9[0x7];                                      // 0x08B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        Cached_Pawn;                                       // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0880(0x0008)(Transient, DuplicateTransient)
+	bool                                          MouseDown;                                         // 0x0888(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_889[0x7];                                      // 0x0889(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        Cached_Pawn;                                       // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HeroesCamera_Blueprint(int32 EntryPoint);
@@ -51,10 +51,10 @@ public:
 	}
 };
 static_assert(alignof(AHeroesCamera_Blueprint_C) == 0x000010, "Wrong alignment on AHeroesCamera_Blueprint_C");
-static_assert(sizeof(AHeroesCamera_Blueprint_C) == 0x0008D0, "Wrong size on AHeroesCamera_Blueprint_C");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, UberGraphFrame) == 0x0008B0, "Member 'AHeroesCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, MouseDown) == 0x0008B8, "Member 'AHeroesCamera_Blueprint_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, Cached_Pawn) == 0x0008C0, "Member 'AHeroesCamera_Blueprint_C::Cached_Pawn' has a wrong offset!");
+static_assert(sizeof(AHeroesCamera_Blueprint_C) == 0x0008A0, "Wrong size on AHeroesCamera_Blueprint_C");
+static_assert(offsetof(AHeroesCamera_Blueprint_C, UberGraphFrame) == 0x000880, "Member 'AHeroesCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AHeroesCamera_Blueprint_C, MouseDown) == 0x000888, "Member 'AHeroesCamera_Blueprint_C::MouseDown' has a wrong offset!");
+static_assert(offsetof(AHeroesCamera_Blueprint_C, Cached_Pawn) == 0x000890, "Member 'AHeroesCamera_Blueprint_C::Cached_Pawn' has a wrong offset!");
 
 }
 

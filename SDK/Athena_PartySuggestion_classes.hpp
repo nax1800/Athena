@@ -11,32 +11,33 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Athena_PartySuggestion.Athena_PartySuggestion_C
-// 0x02E0 (0x04F0 - 0x0210)
+// 0x0328 (0x0530 - 0x0208)
 class UAthena_PartySuggestion_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro_433;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       RequestAccepted;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MouseHovered;                                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Outro;                                             // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Hovered;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthena_PartyIconsDisplay_C*            Athena_PartyIconsDisplay;                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                Border_0;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                BorderOfDarkenedText;                              // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                ButtonOverlay;                                     // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_2isLFG;                            // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro_433;                                         // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       RequestAccepted;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MouseHovered;                                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Outro;                                             // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Hovered;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthena_PartyIconsDisplay_C*            Athena_PartyIconsDisplay;                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Border_0;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                BorderOfDarkenedText;                              // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                ButtonOverlay;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_2InvitedYou;                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_3IsPlaying;                        // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HB_ActionPrompt;                                   // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 I_SquiglyTail;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Platform;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,53 +52,53 @@ public:
 	int32                                         CurPartySize;                                      // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bCurIsLFG;                                         // 0x02F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           Timer_AnimOutro;                                   // 0x02F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           Timer_AnimOutro;                                   // 0x02F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPartySuggestionInQueue;                           // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnSuggestionMouseDown;                             // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FFortPartySuggestion                   NewPartyStruct;                                    // 0x0318(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FFortPartySuggestion                   CurPartyStruct;                                    // 0x0398(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bIsHovered;                                        // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_419[0x7];                                      // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MID_MainBorder_Normal;                             // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_MainBorder_Normal_Tail;                        // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFloatSpringState                      SpringState_ShapeChange;                           // 0x0430(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         SS_0_Stiffness;                                    // 0x0438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SS_0_Damping;                                      // 0x043C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SS_0_Mass;                                         // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Spring_ShapeChange_NewVal;                         // 0x0444(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Spring_ShapeChange_Target;                         // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   MID_ShapeParam;                                    // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     M_MainBorder_Normal;                               // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     M_MainBorder_Normal_Tail;                          // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     M_MainBorder_Highlight;                            // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     M_MainBorder_Highlight_Tail;                       // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_HighlightBorder;                               // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_HighlightBorder_Tail;                          // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_Cur_Border;                                    // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_Cur_Tail;                                      // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_SparkleTraingles;                              // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     M_SparkleTriangles;                                // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MID_Color_R_Param;                                 // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MID_Sparkles_InnerColorParam;                      // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MID_Sparkles_OuterColorParam;                      // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MID_Color_L_Param;                                 // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MID_Sparkles_TriangleColor_A;                      // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFloatSpringState                      SpringState_Scale;                                 // 0x04D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         Spring_Scale_NewVal;                               // 0x04D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Spring_Scale_Target;                               // 0x04DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SS_1_Mass;                                         // 0x04E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SS_1_Damping;                                      // 0x04E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SS_1_Stiffness;                                    // 0x04E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bUseSpringInterpAnims;                             // 0x04EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          CurIsInvited;                                      // 0x04ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsActive;                                         // 0x04EE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FFortPartySuggestion                   NewPartyStruct;                                    // 0x0318(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortPartySuggestion                   CurPartyStruct;                                    // 0x03B8(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bIsHovered;                                        // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               MID_MainBorder_Normal;                             // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_MainBorder_Normal_Tail;                        // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFloatSpringState                      SpringState_ShapeChange;                           // 0x0470(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	float                                         SS_0_Stiffness;                                    // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SS_0_Damping;                                      // 0x047C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SS_0_Mass;                                         // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Spring_ShapeChange_NewVal;                         // 0x0484(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Spring_ShapeChange_Target;                         // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   MID_ShapeParam;                                    // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     M_MainBorder_Normal;                               // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     M_MainBorder_Normal_Tail;                          // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     M_MainBorder_Highlight;                            // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     M_MainBorder_Highlight_Tail;                       // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_HighlightBorder;                               // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_HighlightBorder_Tail;                          // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Cur_Border;                                    // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Cur_Tail;                                      // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_SparkleTraingles;                              // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     M_SparkleTriangles;                                // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MID_Color_R_Param;                                 // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MID_Sparkles_InnerColorParam;                      // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MID_Sparkles_OuterColorParam;                      // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MID_Color_L_Param;                                 // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MID_Sparkles_TriangleColor_A;                      // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFloatSpringState                      SpringState_Scale;                                 // 0x0510(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	float                                         Spring_Scale_NewVal;                               // 0x0518(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Spring_Scale_Target;                               // 0x051C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SS_1_Mass;                                         // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SS_1_Damping;                                      // 0x0524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SS_1_Stiffness;                                    // 0x0528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseSpringInterpAnims;                             // 0x052C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          CurIsInvited;                                      // 0x052D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bIsActive;                                         // 0x052E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_Athena_PartySuggestion(int32 EntryPoint);
-	void OnSuggestionMouseDown__DelegateSignature();
 	void PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem);
+	void OnSuggestionMouseDown__DelegateSignature();
+	void ExecuteUbergraph_Athena_PartySuggestion(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_31_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -134,21 +135,22 @@ public:
 	}
 };
 static_assert(alignof(UAthena_PartySuggestion_C) == 0x000008, "Wrong alignment on UAthena_PartySuggestion_C");
-static_assert(sizeof(UAthena_PartySuggestion_C) == 0x0004F0, "Wrong size on UAthena_PartySuggestion_C");
-static_assert(offsetof(UAthena_PartySuggestion_C, UberGraphFrame) == 0x000210, "Member 'UAthena_PartySuggestion_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Intro_433) == 0x000218, "Member 'UAthena_PartySuggestion_C::Intro_433' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, RequestAccepted) == 0x000220, "Member 'UAthena_PartySuggestion_C::RequestAccepted' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MouseHovered) == 0x000228, "Member 'UAthena_PartySuggestion_C::MouseHovered' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Outro) == 0x000230, "Member 'UAthena_PartySuggestion_C::Outro' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Hovered) == 0x000238, "Member 'UAthena_PartySuggestion_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Intro) == 0x000240, "Member 'UAthena_PartySuggestion_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Athena_PartyIconsDisplay) == 0x000248, "Member 'UAthena_PartySuggestion_C::Athena_PartyIconsDisplay' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Border_0) == 0x000250, "Member 'UAthena_PartySuggestion_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, BorderOfDarkenedText) == 0x000258, "Member 'UAthena_PartySuggestion_C::BorderOfDarkenedText' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, ButtonOverlay) == 0x000260, "Member 'UAthena_PartySuggestion_C::ButtonOverlay' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_0) == 0x000268, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_1) == 0x000270, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_2isLFG) == 0x000278, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_2isLFG' has a wrong offset!");
+static_assert(sizeof(UAthena_PartySuggestion_C) == 0x000530, "Wrong size on UAthena_PartySuggestion_C");
+static_assert(offsetof(UAthena_PartySuggestion_C, UberGraphFrame) == 0x000208, "Member 'UAthena_PartySuggestion_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Intro_433) == 0x000210, "Member 'UAthena_PartySuggestion_C::Intro_433' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, RequestAccepted) == 0x000218, "Member 'UAthena_PartySuggestion_C::RequestAccepted' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MouseHovered) == 0x000220, "Member 'UAthena_PartySuggestion_C::MouseHovered' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Outro) == 0x000228, "Member 'UAthena_PartySuggestion_C::Outro' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Hovered) == 0x000230, "Member 'UAthena_PartySuggestion_C::Hovered' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Intro) == 0x000238, "Member 'UAthena_PartySuggestion_C::Intro' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Athena_PartyIconsDisplay) == 0x000240, "Member 'UAthena_PartySuggestion_C::Athena_PartyIconsDisplay' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Border_0) == 0x000248, "Member 'UAthena_PartySuggestion_C::Border_0' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, BorderOfDarkenedText) == 0x000250, "Member 'UAthena_PartySuggestion_C::BorderOfDarkenedText' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, ButtonOverlay) == 0x000258, "Member 'UAthena_PartySuggestion_C::ButtonOverlay' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_0) == 0x000260, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_0' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_1) == 0x000268, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_1' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_2InvitedYou) == 0x000270, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_2InvitedYou' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CommonTextBlock_3IsPlaying) == 0x000278, "Member 'UAthena_PartySuggestion_C::CommonTextBlock_3IsPlaying' has a wrong offset!");
 static_assert(offsetof(UAthena_PartySuggestion_C, HB_ActionPrompt) == 0x000280, "Member 'UAthena_PartySuggestion_C::HB_ActionPrompt' has a wrong offset!");
 static_assert(offsetof(UAthena_PartySuggestion_C, I_SquiglyTail) == 0x000288, "Member 'UAthena_PartySuggestion_C::I_SquiglyTail' has a wrong offset!");
 static_assert(offsetof(UAthena_PartySuggestion_C, Image_Platform) == 0x000290, "Member 'UAthena_PartySuggestion_C::Image_Platform' has a wrong offset!");
@@ -166,41 +168,41 @@ static_assert(offsetof(UAthena_PartySuggestion_C, Timer_AnimOutro) == 0x0002F8, 
 static_assert(offsetof(UAthena_PartySuggestion_C, bPartySuggestionInQueue) == 0x000300, "Member 'UAthena_PartySuggestion_C::bPartySuggestionInQueue' has a wrong offset!");
 static_assert(offsetof(UAthena_PartySuggestion_C, OnSuggestionMouseDown) == 0x000308, "Member 'UAthena_PartySuggestion_C::OnSuggestionMouseDown' has a wrong offset!");
 static_assert(offsetof(UAthena_PartySuggestion_C, NewPartyStruct) == 0x000318, "Member 'UAthena_PartySuggestion_C::NewPartyStruct' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, CurPartyStruct) == 0x000398, "Member 'UAthena_PartySuggestion_C::CurPartyStruct' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, bIsHovered) == 0x000418, "Member 'UAthena_PartySuggestion_C::bIsHovered' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_MainBorder_Normal) == 0x000420, "Member 'UAthena_PartySuggestion_C::MID_MainBorder_Normal' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_MainBorder_Normal_Tail) == 0x000428, "Member 'UAthena_PartySuggestion_C::MID_MainBorder_Normal_Tail' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SpringState_ShapeChange) == 0x000430, "Member 'UAthena_PartySuggestion_C::SpringState_ShapeChange' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Stiffness) == 0x000438, "Member 'UAthena_PartySuggestion_C::SS_0_Stiffness' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Damping) == 0x00043C, "Member 'UAthena_PartySuggestion_C::SS_0_Damping' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Mass) == 0x000440, "Member 'UAthena_PartySuggestion_C::SS_0_Mass' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Spring_ShapeChange_NewVal) == 0x000444, "Member 'UAthena_PartySuggestion_C::Spring_ShapeChange_NewVal' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Spring_ShapeChange_Target) == 0x000448, "Member 'UAthena_PartySuggestion_C::Spring_ShapeChange_Target' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_ShapeParam) == 0x000450, "Member 'UAthena_PartySuggestion_C::MID_ShapeParam' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Normal) == 0x000458, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Normal' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Normal_Tail) == 0x000460, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Normal_Tail' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Highlight) == 0x000468, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Highlight' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Highlight_Tail) == 0x000470, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Highlight_Tail' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_HighlightBorder) == 0x000478, "Member 'UAthena_PartySuggestion_C::MID_HighlightBorder' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_HighlightBorder_Tail) == 0x000480, "Member 'UAthena_PartySuggestion_C::MID_HighlightBorder_Tail' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Cur_Border) == 0x000488, "Member 'UAthena_PartySuggestion_C::MID_Cur_Border' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Cur_Tail) == 0x000490, "Member 'UAthena_PartySuggestion_C::MID_Cur_Tail' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_SparkleTraingles) == 0x000498, "Member 'UAthena_PartySuggestion_C::MID_SparkleTraingles' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, M_SparkleTriangles) == 0x0004A0, "Member 'UAthena_PartySuggestion_C::M_SparkleTriangles' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Color_R_Param) == 0x0004A8, "Member 'UAthena_PartySuggestion_C::MID_Color_R_Param' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_InnerColorParam) == 0x0004B0, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_InnerColorParam' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_OuterColorParam) == 0x0004B8, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_OuterColorParam' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Color_L_Param) == 0x0004C0, "Member 'UAthena_PartySuggestion_C::MID_Color_L_Param' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_TriangleColor_A) == 0x0004C8, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_TriangleColor_A' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SpringState_Scale) == 0x0004D0, "Member 'UAthena_PartySuggestion_C::SpringState_Scale' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Spring_Scale_NewVal) == 0x0004D8, "Member 'UAthena_PartySuggestion_C::Spring_Scale_NewVal' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, Spring_Scale_Target) == 0x0004DC, "Member 'UAthena_PartySuggestion_C::Spring_Scale_Target' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Mass) == 0x0004E0, "Member 'UAthena_PartySuggestion_C::SS_1_Mass' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Damping) == 0x0004E4, "Member 'UAthena_PartySuggestion_C::SS_1_Damping' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Stiffness) == 0x0004E8, "Member 'UAthena_PartySuggestion_C::SS_1_Stiffness' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, bUseSpringInterpAnims) == 0x0004EC, "Member 'UAthena_PartySuggestion_C::bUseSpringInterpAnims' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, CurIsInvited) == 0x0004ED, "Member 'UAthena_PartySuggestion_C::CurIsInvited' has a wrong offset!");
-static_assert(offsetof(UAthena_PartySuggestion_C, bIsActive) == 0x0004EE, "Member 'UAthena_PartySuggestion_C::bIsActive' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CurPartyStruct) == 0x0003B8, "Member 'UAthena_PartySuggestion_C::CurPartyStruct' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, bIsHovered) == 0x000458, "Member 'UAthena_PartySuggestion_C::bIsHovered' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_MainBorder_Normal) == 0x000460, "Member 'UAthena_PartySuggestion_C::MID_MainBorder_Normal' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_MainBorder_Normal_Tail) == 0x000468, "Member 'UAthena_PartySuggestion_C::MID_MainBorder_Normal_Tail' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SpringState_ShapeChange) == 0x000470, "Member 'UAthena_PartySuggestion_C::SpringState_ShapeChange' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Stiffness) == 0x000478, "Member 'UAthena_PartySuggestion_C::SS_0_Stiffness' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Damping) == 0x00047C, "Member 'UAthena_PartySuggestion_C::SS_0_Damping' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_0_Mass) == 0x000480, "Member 'UAthena_PartySuggestion_C::SS_0_Mass' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Spring_ShapeChange_NewVal) == 0x000484, "Member 'UAthena_PartySuggestion_C::Spring_ShapeChange_NewVal' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Spring_ShapeChange_Target) == 0x000488, "Member 'UAthena_PartySuggestion_C::Spring_ShapeChange_Target' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_ShapeParam) == 0x000490, "Member 'UAthena_PartySuggestion_C::MID_ShapeParam' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Normal) == 0x000498, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Normal' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Normal_Tail) == 0x0004A0, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Normal_Tail' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Highlight) == 0x0004A8, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Highlight' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, M_MainBorder_Highlight_Tail) == 0x0004B0, "Member 'UAthena_PartySuggestion_C::M_MainBorder_Highlight_Tail' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_HighlightBorder) == 0x0004B8, "Member 'UAthena_PartySuggestion_C::MID_HighlightBorder' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_HighlightBorder_Tail) == 0x0004C0, "Member 'UAthena_PartySuggestion_C::MID_HighlightBorder_Tail' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Cur_Border) == 0x0004C8, "Member 'UAthena_PartySuggestion_C::MID_Cur_Border' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Cur_Tail) == 0x0004D0, "Member 'UAthena_PartySuggestion_C::MID_Cur_Tail' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_SparkleTraingles) == 0x0004D8, "Member 'UAthena_PartySuggestion_C::MID_SparkleTraingles' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, M_SparkleTriangles) == 0x0004E0, "Member 'UAthena_PartySuggestion_C::M_SparkleTriangles' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Color_R_Param) == 0x0004E8, "Member 'UAthena_PartySuggestion_C::MID_Color_R_Param' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_InnerColorParam) == 0x0004F0, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_InnerColorParam' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_OuterColorParam) == 0x0004F8, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_OuterColorParam' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Color_L_Param) == 0x000500, "Member 'UAthena_PartySuggestion_C::MID_Color_L_Param' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, MID_Sparkles_TriangleColor_A) == 0x000508, "Member 'UAthena_PartySuggestion_C::MID_Sparkles_TriangleColor_A' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SpringState_Scale) == 0x000510, "Member 'UAthena_PartySuggestion_C::SpringState_Scale' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Spring_Scale_NewVal) == 0x000518, "Member 'UAthena_PartySuggestion_C::Spring_Scale_NewVal' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, Spring_Scale_Target) == 0x00051C, "Member 'UAthena_PartySuggestion_C::Spring_Scale_Target' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Mass) == 0x000520, "Member 'UAthena_PartySuggestion_C::SS_1_Mass' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Damping) == 0x000524, "Member 'UAthena_PartySuggestion_C::SS_1_Damping' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, SS_1_Stiffness) == 0x000528, "Member 'UAthena_PartySuggestion_C::SS_1_Stiffness' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, bUseSpringInterpAnims) == 0x00052C, "Member 'UAthena_PartySuggestion_C::bUseSpringInterpAnims' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, CurIsInvited) == 0x00052D, "Member 'UAthena_PartySuggestion_C::CurIsInvited' has a wrong offset!");
+static_assert(offsetof(UAthena_PartySuggestion_C, bIsActive) == 0x00052E, "Member 'UAthena_PartySuggestion_C::bIsActive' has a wrong offset!");
 
 }
 

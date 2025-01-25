@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ViewInfoButton_NoText.ViewInfoButton_NoText_C
-// 0x0008 (0x0810 - 0x0808)
+// 0x0008 (0x0898 - 0x0890)
 class UViewInfoButton_NoText_C final : public UCommonButton
 {
 public:
-	class UNamedSlot*                             Content;                                           // 0x0808(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Content;                                           // 0x0890(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(UViewInfoButton_NoText_C) == 0x000008, "Wrong alignment on UViewInfoButton_NoText_C");
-static_assert(sizeof(UViewInfoButton_NoText_C) == 0x000810, "Wrong size on UViewInfoButton_NoText_C");
-static_assert(offsetof(UViewInfoButton_NoText_C, Content) == 0x000808, "Member 'UViewInfoButton_NoText_C::Content' has a wrong offset!");
+static_assert(sizeof(UViewInfoButton_NoText_C) == 0x000898, "Wrong size on UViewInfoButton_NoText_C");
+static_assert(offsetof(UViewInfoButton_NoText_C, Content) == 0x000890, "Member 'UViewInfoButton_NoText_C::Content' has a wrong offset!");
 
 }
 

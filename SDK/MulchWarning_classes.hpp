@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MulchWarning.MulchWarning_C
-// 0x0050 (0x0260 - 0x0210)
+// 0x0050 (0x0258 - 0x0208)
 class UMulchWarning_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          Border;                                            // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       WarningCount;                                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       WarningText;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Count;                                             // 0x0230(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Warning;                                           // 0x0248(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          Border;                                            // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       WarningCount;                                      // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       WarningText;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Count;                                             // 0x0228(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Warning;                                           // 0x0240(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_MulchWarning(int32 EntryPoint);
@@ -45,13 +45,13 @@ public:
 	}
 };
 static_assert(alignof(UMulchWarning_C) == 0x000008, "Wrong alignment on UMulchWarning_C");
-static_assert(sizeof(UMulchWarning_C) == 0x000260, "Wrong size on UMulchWarning_C");
-static_assert(offsetof(UMulchWarning_C, UberGraphFrame) == 0x000210, "Member 'UMulchWarning_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchWarning_C, Border) == 0x000218, "Member 'UMulchWarning_C::Border' has a wrong offset!");
-static_assert(offsetof(UMulchWarning_C, WarningCount) == 0x000220, "Member 'UMulchWarning_C::WarningCount' has a wrong offset!");
-static_assert(offsetof(UMulchWarning_C, WarningText) == 0x000228, "Member 'UMulchWarning_C::WarningText' has a wrong offset!");
-static_assert(offsetof(UMulchWarning_C, Count) == 0x000230, "Member 'UMulchWarning_C::Count' has a wrong offset!");
-static_assert(offsetof(UMulchWarning_C, Warning) == 0x000248, "Member 'UMulchWarning_C::Warning' has a wrong offset!");
+static_assert(sizeof(UMulchWarning_C) == 0x000258, "Wrong size on UMulchWarning_C");
+static_assert(offsetof(UMulchWarning_C, UberGraphFrame) == 0x000208, "Member 'UMulchWarning_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMulchWarning_C, Border) == 0x000210, "Member 'UMulchWarning_C::Border' has a wrong offset!");
+static_assert(offsetof(UMulchWarning_C, WarningCount) == 0x000218, "Member 'UMulchWarning_C::WarningCount' has a wrong offset!");
+static_assert(offsetof(UMulchWarning_C, WarningText) == 0x000220, "Member 'UMulchWarning_C::WarningText' has a wrong offset!");
+static_assert(offsetof(UMulchWarning_C, Count) == 0x000228, "Member 'UMulchWarning_C::Count' has a wrong offset!");
+static_assert(offsetof(UMulchWarning_C, Warning) == 0x000240, "Member 'UMulchWarning_C::Warning' has a wrong offset!");
 
 }
 

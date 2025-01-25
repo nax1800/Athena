@@ -37,6 +37,20 @@ void UAthenaCustomizationTab_C::ExecuteUbergraph_AthenaCustomizationTab(int32 En
 }
 
 
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.ProcessLoadoutChanged
+// (Event, Public, BlueprintEvent)
+
+void UAthenaCustomizationTab_C::ProcessLoadoutChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaCustomizationTab_C", "ProcessLoadoutChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.BndEvt__ButtonConfirm_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -315,10 +329,10 @@ void UAthenaCustomizationTab_C::RegisterInputActions()
 // Parameters:
 // EAthenaCustomizationCategory            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*                    WidgetToReturnFocusTo                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Param_HeaderText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             HeaderText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                                   Subslot_Index                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaCustomizationTab_C::BeginPickingCustomization(EAthenaCustomizationCategory Category, class UCommonButton* WidgetToReturnFocusTo, const class FText& Param_HeaderText, int32 Subslot_Index)
+void UAthenaCustomizationTab_C::BeginPickingCustomization(EAthenaCustomizationCategory Category, class UCommonButton* WidgetToReturnFocusTo, const class FText& HeaderText_0, int32 Subslot_Index)
 {
 	static class UFunction* Func = nullptr;
 
@@ -329,7 +343,7 @@ void UAthenaCustomizationTab_C::BeginPickingCustomization(EAthenaCustomizationCa
 
 	Parms.Category = Category;
 	Parms.WidgetToReturnFocusTo = WidgetToReturnFocusTo;
-	Parms.Param_HeaderText = std::move(Param_HeaderText);
+	Parms.HeaderText_0 = std::move(HeaderText_0);
 	Parms.Subslot_Index = Subslot_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -416,11 +430,11 @@ void UAthenaCustomizationTab_C::SelectFirstWidget()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EAthenaCustomizationCategory            Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Param_HeaderText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText                             Param_DescriptionText                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             HeaderText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             DescriptionText                                        (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                                   SubslotIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaCustomizationTab_C::HandleSlotHovered(EAthenaCustomizationCategory Type, const class FText& Param_HeaderText, const class FText& Param_DescriptionText, int32 SubslotIndex)
+void UAthenaCustomizationTab_C::HandleSlotHovered(EAthenaCustomizationCategory Type, const class FText& HeaderText_0, const class FText& DescriptionText, int32 SubslotIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -430,8 +444,8 @@ void UAthenaCustomizationTab_C::HandleSlotHovered(EAthenaCustomizationCategory T
 	Params::AthenaCustomizationTab_C_HandleSlotHovered Parms{};
 
 	Parms.Type = Type;
-	Parms.Param_HeaderText = std::move(Param_HeaderText);
-	Parms.Param_DescriptionText = std::move(Param_DescriptionText);
+	Parms.HeaderText_0 = std::move(HeaderText_0);
+	Parms.DescriptionText = std::move(DescriptionText);
 	Parms.SubslotIndex = SubslotIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -494,10 +508,10 @@ void UAthenaCustomizationTab_C::SetHeaderToBanner()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Param_HeaderText                                       (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText                             Param_DescriptionText                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             HeaderText_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             DescriptionText                                        (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UAthenaCustomizationTab_C::SetItemDetailsToDisplay(class UFortItem* InputPin, const class FText& Param_HeaderText, const class FText& Param_DescriptionText)
+void UAthenaCustomizationTab_C::SetItemDetailsToDisplay(class UFortItem* InputPin, const class FText& HeaderText_0, const class FText& DescriptionText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -507,8 +521,8 @@ void UAthenaCustomizationTab_C::SetItemDetailsToDisplay(class UFortItem* InputPi
 	Params::AthenaCustomizationTab_C_SetItemDetailsToDisplay Parms{};
 
 	Parms.InputPin = InputPin;
-	Parms.Param_HeaderText = std::move(Param_HeaderText);
-	Parms.Param_DescriptionText = std::move(Param_DescriptionText);
+	Parms.HeaderText_0 = std::move(HeaderText_0);
+	Parms.DescriptionText = std::move(DescriptionText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -546,6 +560,61 @@ void UAthenaCustomizationTab_C::HandleFavorite(bool* Passthrough)
 
 	if (Passthrough != nullptr)
 		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.RegisterShiftCosmeticTier
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaCustomizationTab_C::RegisterShiftCosmeticTier()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaCustomizationTab_C", "RegisterShiftCosmeticTier");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.HandleShiftCosmeticTier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaCustomizationTab_C::HandleShiftCosmeticTier(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaCustomizationTab_C", "HandleShiftCosmeticTier");
+
+	Params::AthenaCustomizationTab_C_HandleShiftCosmeticTier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UAthenaCustomizationTab_C::GetWidgetForFramingViewedItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaCustomizationTab_C", "GetWidgetForFramingViewedItem");
+
+	Params::AthenaCustomizationTab_C_GetWidgetForFramingViewedItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

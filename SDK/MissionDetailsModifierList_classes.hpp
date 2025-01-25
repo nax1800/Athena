@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionDetailsModifierList.MissionDetailsModifierList_C
-// 0x0030 (0x0248 - 0x0218)
+// 0x0030 (0x0240 - 0x0210)
 class UMissionDetailsModifierList_C final : public UCommonUserWidget
 {
 public:
-	class UCommonBorder*                          BorderExtra;                                       // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextMore;                                          // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBoxModifiers;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               WrapBoxModifiers;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UFortGameplayModifierItemDefinition*> DebugMods;                                         // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UCommonBorder*                          BorderExtra;                                       // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextMore;                                          // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VBoxModifiers;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBoxModifiers;                                  // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UFortGameplayModifierItemDefinition*> DebugMods;                                         // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool ShowMinusDescriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons);
@@ -42,12 +42,12 @@ public:
 	}
 };
 static_assert(alignof(UMissionDetailsModifierList_C) == 0x000008, "Wrong alignment on UMissionDetailsModifierList_C");
-static_assert(sizeof(UMissionDetailsModifierList_C) == 0x000248, "Wrong size on UMissionDetailsModifierList_C");
-static_assert(offsetof(UMissionDetailsModifierList_C, BorderExtra) == 0x000218, "Member 'UMissionDetailsModifierList_C::BorderExtra' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, TextMore) == 0x000220, "Member 'UMissionDetailsModifierList_C::TextMore' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, VBoxModifiers) == 0x000228, "Member 'UMissionDetailsModifierList_C::VBoxModifiers' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, WrapBoxModifiers) == 0x000230, "Member 'UMissionDetailsModifierList_C::WrapBoxModifiers' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, DebugMods) == 0x000238, "Member 'UMissionDetailsModifierList_C::DebugMods' has a wrong offset!");
+static_assert(sizeof(UMissionDetailsModifierList_C) == 0x000240, "Wrong size on UMissionDetailsModifierList_C");
+static_assert(offsetof(UMissionDetailsModifierList_C, BorderExtra) == 0x000210, "Member 'UMissionDetailsModifierList_C::BorderExtra' has a wrong offset!");
+static_assert(offsetof(UMissionDetailsModifierList_C, TextMore) == 0x000218, "Member 'UMissionDetailsModifierList_C::TextMore' has a wrong offset!");
+static_assert(offsetof(UMissionDetailsModifierList_C, VBoxModifiers) == 0x000220, "Member 'UMissionDetailsModifierList_C::VBoxModifiers' has a wrong offset!");
+static_assert(offsetof(UMissionDetailsModifierList_C, WrapBoxModifiers) == 0x000228, "Member 'UMissionDetailsModifierList_C::WrapBoxModifiers' has a wrong offset!");
+static_assert(offsetof(UMissionDetailsModifierList_C, DebugMods) == 0x000230, "Member 'UMissionDetailsModifierList_C::DebugMods' has a wrong offset!");
 
 }
 

@@ -10,30 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C
-// 0x0020 (0x0858 - 0x0838)
+// 0x0020 (0x08E0 - 0x08C0)
 class UAthenaInventoryFortItemTileButton_C final : public UAthenaInventoryFortItemTileButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0838(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 DropTarget;                                        // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               InputActionWrapper;                                // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                ItemWidgetHolder;                                  // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 DropTarget;                                        // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               InputActionWrapper;                                // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                ItemWidgetHolder;                                  // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaInventoryFortItemTileButton(int32 EntryPoint);
-	void OnSelected();
+	void BP_OnSelected();
 	void UpdateStyle();
 	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
 	void UpdateInteractionWidgetVisibility();
@@ -52,11 +52,11 @@ public:
 	}
 };
 static_assert(alignof(UAthenaInventoryFortItemTileButton_C) == 0x000008, "Wrong alignment on UAthenaInventoryFortItemTileButton_C");
-static_assert(sizeof(UAthenaInventoryFortItemTileButton_C) == 0x000858, "Wrong size on UAthenaInventoryFortItemTileButton_C");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, UberGraphFrame) == 0x000838, "Member 'UAthenaInventoryFortItemTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, DropTarget) == 0x000840, "Member 'UAthenaInventoryFortItemTileButton_C::DropTarget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, InputActionWrapper) == 0x000848, "Member 'UAthenaInventoryFortItemTileButton_C::InputActionWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, ItemWidgetHolder) == 0x000850, "Member 'UAthenaInventoryFortItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
+static_assert(sizeof(UAthenaInventoryFortItemTileButton_C) == 0x0008E0, "Wrong size on UAthenaInventoryFortItemTileButton_C");
+static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, UberGraphFrame) == 0x0008C0, "Member 'UAthenaInventoryFortItemTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, DropTarget) == 0x0008C8, "Member 'UAthenaInventoryFortItemTileButton_C::DropTarget' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, InputActionWrapper) == 0x0008D0, "Member 'UAthenaInventoryFortItemTileButton_C::InputActionWrapper' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, ItemWidgetHolder) == 0x0008D8, "Member 'UAthenaInventoryFortItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
 
 }
 

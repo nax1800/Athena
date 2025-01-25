@@ -138,10 +138,10 @@ void UResults_PlayerScoreBox_C::PreConstruct(bool IsDesignTime)
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Score                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_PlayRate                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Score_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   PlayRate_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_PlayerScoreBox_C::Initialize(int32 Param_Score, float Param_PlayRate)
+void UResults_PlayerScoreBox_C::Initialize(int32 Score_0, float PlayRate_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -150,8 +150,8 @@ void UResults_PlayerScoreBox_C::Initialize(int32 Param_Score, float Param_PlayRa
 
 	Params::Results_PlayerScoreBox_C_Initialize Parms{};
 
-	Parms.Param_Score = Param_Score;
-	Parms.Param_PlayRate = Param_PlayRate;
+	Parms.Score_0 = Score_0;
+	Parms.PlayRate_0 = PlayRate_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -160,9 +160,9 @@ void UResults_PlayerScoreBox_C::Initialize(int32 Param_Score, float Param_PlayRa
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.SetIsBestScore
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIsBestScore                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsBestScore_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UResults_PlayerScoreBox_C::SetIsBestScore(bool Param_bIsBestScore)
+void UResults_PlayerScoreBox_C::SetIsBestScore(bool bIsBestScore_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,7 +171,7 @@ void UResults_PlayerScoreBox_C::SetIsBestScore(bool Param_bIsBestScore)
 
 	Params::Results_PlayerScoreBox_C_SetIsBestScore Parms{};
 
-	Parms.Param_bIsBestScore = Param_bIsBestScore;
+	Parms.bIsBestScore_0 = bIsBestScore_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -194,9 +194,9 @@ void UResults_PlayerScoreBox_C::SetSkippingToEnd()
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.SetIsValidScoreBox
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIsValidScoreBox                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsValidScoreBox_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool Param_bIsValidScoreBox)
+void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool bIsValidScoreBox_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -205,7 +205,7 @@ void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool Param_bIsValidScoreBox)
 
 	Params::Results_PlayerScoreBox_C_SetIsValidScoreBox Parms{};
 
-	Parms.Param_bIsValidScoreBox = Param_bIsValidScoreBox;
+	Parms.bIsValidScoreBox_0 = bIsValidScoreBox_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -214,9 +214,9 @@ void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool Param_bIsValidScoreBox)
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.GetIsValidScoreBox
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bIsValidScoreBox                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsValidScoreBox_0                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* Param_bIsValidScoreBox)
+void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* bIsValidScoreBox_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -227,8 +227,8 @@ void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* Param_bIsValidScoreBox)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bIsValidScoreBox != nullptr)
-		*Param_bIsValidScoreBox = Parms.Param_bIsValidScoreBox;
+	if (bIsValidScoreBox_0 != nullptr)
+		*bIsValidScoreBox_0 = Parms.bIsValidScoreBox_0;
 }
 
 }

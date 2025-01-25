@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Trap_FloorHoverboardSpeed.GA_Trap_FloorHoverboardSpeed_C
-// 0x0018 (0x0B38 - 0x0B20)
+// 0x0018 (0x0940 - 0x0928)
 class UGA_Trap_FloorHoverboardSpeed_C final : public UGA_TrapGeneric_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C;     // 0x0B20(0x0008)(Transient, DuplicateTransient)
-	float                                         HoverboardBoostVelocityShift;                      // 0x0B28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2C[0x4];                                      // 0x0B2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATrap_Floor_Hoverboard_Speed_C*         HoverboardSpeedTrap;                               // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C;     // 0x0928(0x0008)(Transient, DuplicateTransient)
+	float                                         HoverboardBoostVelocityShift;                      // 0x0930(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_934[0x4];                                      // 0x0934(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATrap_Floor_Hoverboard_Speed_C*         HoverboardSpeedTrap;                               // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(UGA_Trap_FloorHoverboardSpeed_C) == 0x000008, "Wrong alignment on UGA_Trap_FloorHoverboardSpeed_C");
-static_assert(sizeof(UGA_Trap_FloorHoverboardSpeed_C) == 0x000B38, "Wrong size on UGA_Trap_FloorHoverboardSpeed_C");
-static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C) == 0x000B20, "Member 'UGA_Trap_FloorHoverboardSpeed_C::UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C' has a wrong offset!");
-static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, HoverboardBoostVelocityShift) == 0x000B28, "Member 'UGA_Trap_FloorHoverboardSpeed_C::HoverboardBoostVelocityShift' has a wrong offset!");
-static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, HoverboardSpeedTrap) == 0x000B30, "Member 'UGA_Trap_FloorHoverboardSpeed_C::HoverboardSpeedTrap' has a wrong offset!");
+static_assert(sizeof(UGA_Trap_FloorHoverboardSpeed_C) == 0x000940, "Wrong size on UGA_Trap_FloorHoverboardSpeed_C");
+static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C) == 0x000928, "Member 'UGA_Trap_FloorHoverboardSpeed_C::UberGraphFrame_GA_Trap_FloorHoverboardSpeed_C' has a wrong offset!");
+static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, HoverboardBoostVelocityShift) == 0x000930, "Member 'UGA_Trap_FloorHoverboardSpeed_C::HoverboardBoostVelocityShift' has a wrong offset!");
+static_assert(offsetof(UGA_Trap_FloorHoverboardSpeed_C, HoverboardSpeedTrap) == 0x000938, "Member 'UGA_Trap_FloorHoverboardSpeed_C::HoverboardSpeedTrap' has a wrong offset!");
 
 }
 

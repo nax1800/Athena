@@ -13,113 +13,117 @@
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.ExecuteUbergraph_AthenaEquippedItemWidget
-// 0x02A0 (0x02A0 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable1;                              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable12;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable123;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEquippedWeaponDisplay                        Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable1;                              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable2;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEquippedWeaponDisplay                        Temp_byte_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable3;                              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_ResourceCount1;                       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortWeaponRanged*                      K2Node_Event_RangedWeapon;                         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortWorldItemDefinition*               K2Node_Event_Item12;                               // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0038(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
+	class AFortWeaponRanged*                      K2Node_Event_RangedWeapon;                         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortWorldItemDefinition*               K2Node_Event_Item2;                                // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0058(0x0088)()
-	int32                                         CallFunc_GetBulletsPerClip_ReturnValue;            // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortResourceItemDefinition*            K2Node_Event_Item1;                                // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_ResourceCount;                        // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue1;              // 0x00F8(0x0018)()
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue1; // 0x0110(0x0088)()
-	EEquippedWeaponDisplay                        K2Node_Event_Mode;                                 // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x019A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bHasAmmo;                             // 0x019B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         K2Node_Event_MagazineAmmoCount;                    // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_BackupAmmoCount;                      // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_TotalRemaining;                       // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetRemainingAmmoText_CurrentAmmoText;     // 0x01A8(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetCurrentAmmoText_CurrentAmmoText;       // 0x01C8(0x0018)()
-	float                                         K2Node_Select1_Default;                            // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select12_Default;                           // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_Remaining;                            // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue12;             // 0x01F0(0x0018)()
-	class AFortWeapon*                            K2Node_Event_Weapon;                               // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortWeaponItemDefinition*              K2Node_Event_Item;                                 // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue12; // 0x0218(0x0088)()
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x0058(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_GetBulletsPerClip_ReturnValue;            // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortResourceItemDefinition*            K2Node_Event_Item1;                                // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_ResourceCount;                        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue1;              // 0x0098(0x0018)()
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue1;        // 0x00B0(0x0028)(HasGetValueTypeHash)
+	EEquippedWeaponDisplay                        K2Node_Event_Mode;                                 // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bHasAmmo;                             // 0x00DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         K2Node_Event_MagazineAmmoCount;                    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_BackupAmmoCount;                      // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_TotalRemaining;                       // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetRemainingAmmoText_CurrentAmmoText;     // 0x00E8(0x0018)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetCurrentAmmoText_CurrentAmmoText;       // 0x0108(0x0018)()
+	float                                         K2Node_Select1_Default;                            // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_Remaining;                            // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0130(0x0018)()
+	class AFortWeapon*                            K2Node_Event_Weapon;                               // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortWeaponItemDefinition*              K2Node_Event_Item;                                 // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue2;        // 0x0158(0x0028)(HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select2_Default;                            // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Get_Standard_Icon_Size_Icon_Size;         // 0x0188(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget) == 0x000008, "Wrong alignment on AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget");
-static_assert(sizeof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget) == 0x0002A0, "Wrong size on AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget");
+static_assert(sizeof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget) == 0x000190, "Wrong size on AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget");
 static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, EntryPoint) == 0x000000, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable) == 0x000004, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable1) == 0x000008, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_bool_Variable) == 0x00000C, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable12) == 0x000010, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable123) == 0x000014, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable) == 0x000018, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable1) == 0x000019, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable12) == 0x00001A, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable123) == 0x00001B, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable1234) == 0x00001C, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_bool_Variable1) == 0x00001D, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_bool_Variable) == 0x000008, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable1) == 0x00000C, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable2) == 0x000010, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable) == 0x000014, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable1) == 0x000015, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable2) == 0x000016, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable3) == 0x000017, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_byte_Variable4) == 0x000018, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_float_Variable3) == 0x00001C, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_float_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_ResourceCount1) == 0x000020, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_ResourceCount1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_RangedWeapon) == 0x000028, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_RangedWeapon' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item12) == 0x000030, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item12' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000038, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_RangedWeapon) == 0x000040, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_RangedWeapon' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item2) == 0x000048, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item2' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000058, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetBulletsPerClip_ReturnValue) == 0x0000E0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetBulletsPerClip_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x0000E4, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item1) == 0x0000E8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_ResourceCount) == 0x0000F0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_ResourceCount' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue1) == 0x0000F8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue1) == 0x000110, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Mode) == 0x000198, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Mode' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_SwitchEnum_CmpSuccess) == 0x000199, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select_Default) == 0x00019A, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_bHasAmmo) == 0x00019B, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_bHasAmmo' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_MagazineAmmoCount) == 0x00019C, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_MagazineAmmoCount' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_BackupAmmoCount) == 0x0001A0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_BackupAmmoCount' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_TotalRemaining) == 0x0001A4, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_TotalRemaining' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetRemainingAmmoText_CurrentAmmoText) == 0x0001A8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetRemainingAmmoText_CurrentAmmoText' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue1) == 0x0001C0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetCurrentAmmoText_CurrentAmmoText) == 0x0001C8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetCurrentAmmoText_CurrentAmmoText' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select1_Default) == 0x0001E0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue12) == 0x0001E4, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select12_Default) == 0x0001E8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Remaining) == 0x0001EC, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Remaining' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue12) == 0x0001F0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Weapon) == 0x000208, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Weapon' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item) == 0x000210, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue12) == 0x000218, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000058, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetBulletsPerClip_ReturnValue) == 0x000080, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetBulletsPerClip_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000084, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item1) == 0x000088, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_ResourceCount) == 0x000090, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_ResourceCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue1) == 0x000098, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetSmallPreviewImage_ReturnValue1) == 0x0000B0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetSmallPreviewImage_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Mode) == 0x0000D8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Mode' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_SwitchEnum_CmpSuccess) == 0x0000D9, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select_Default) == 0x0000DA, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_bHasAmmo) == 0x0000DB, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_bHasAmmo' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_MagazineAmmoCount) == 0x0000DC, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_MagazineAmmoCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_BackupAmmoCount) == 0x0000E0, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_BackupAmmoCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_TotalRemaining) == 0x0000E4, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_TotalRemaining' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetRemainingAmmoText_CurrentAmmoText) == 0x0000E8, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetRemainingAmmoText_CurrentAmmoText' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue1) == 0x000100, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetCurrentAmmoText_CurrentAmmoText) == 0x000108, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetCurrentAmmoText_CurrentAmmoText' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select1_Default) == 0x000120, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Greater_IntInt_ReturnValue2) == 0x000124, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Remaining) == 0x000128, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Remaining' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Conv_IntToText_ReturnValue2) == 0x000130, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Weapon) == 0x000148, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Weapon' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Event_Item) == 0x000150, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Event_Item' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_GetSmallPreviewImage_ReturnValue2) == 0x000158, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_GetSmallPreviewImage_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, Temp_bool_Variable1) == 0x000180, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, K2Node_Select2_Default) == 0x000184, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget, CallFunc_Get_Standard_Icon_Size_Icon_Size) == 0x000188, "Member 'AthenaEquippedItemWidget_C_ExecuteUbergraph_AthenaEquippedItemWidget::CallFunc_Get_Standard_Icon_Size_Icon_Size' has a wrong offset!");
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.UtilityItemTypeChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -150,13 +154,13 @@ static_assert(offsetof(AthenaEquippedItemWidget_C_UtilityItemCountChanged, Remai
 struct AthenaEquippedItemWidget_C_AmmoChanged final
 {
 public:
-	int32                                         Param_MagazineAmmoCount;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MagazineAmmoCount_0;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         BackupAmmoCount;                                   // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalRemaining;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaEquippedItemWidget_C_AmmoChanged) == 0x000004, "Wrong alignment on AthenaEquippedItemWidget_C_AmmoChanged");
 static_assert(sizeof(AthenaEquippedItemWidget_C_AmmoChanged) == 0x00000C, "Wrong size on AthenaEquippedItemWidget_C_AmmoChanged");
-static_assert(offsetof(AthenaEquippedItemWidget_C_AmmoChanged, Param_MagazineAmmoCount) == 0x000000, "Member 'AthenaEquippedItemWidget_C_AmmoChanged::Param_MagazineAmmoCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_AmmoChanged, MagazineAmmoCount_0) == 0x000000, "Member 'AthenaEquippedItemWidget_C_AmmoChanged::MagazineAmmoCount_0' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_AmmoChanged, BackupAmmoCount) == 0x000004, "Member 'AthenaEquippedItemWidget_C_AmmoChanged::BackupAmmoCount' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_AmmoChanged, TotalRemaining) == 0x000008, "Member 'AthenaEquippedItemWidget_C_AmmoChanged::TotalRemaining' has a wrong offset!");
 
@@ -188,12 +192,12 @@ struct AthenaEquippedItemWidget_C_ResourceTypeChanged final
 {
 public:
 	class UFortResourceItemDefinition*            Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_ResourceCount;                               // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ResourceCount_0;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaEquippedItemWidget_C_ResourceTypeChanged) == 0x000008, "Wrong alignment on AthenaEquippedItemWidget_C_ResourceTypeChanged");
 static_assert(sizeof(AthenaEquippedItemWidget_C_ResourceTypeChanged) == 0x000010, "Wrong size on AthenaEquippedItemWidget_C_ResourceTypeChanged");
 static_assert(offsetof(AthenaEquippedItemWidget_C_ResourceTypeChanged, Item) == 0x000000, "Member 'AthenaEquippedItemWidget_C_ResourceTypeChanged::Item' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ResourceTypeChanged, Param_ResourceCount) == 0x000008, "Member 'AthenaEquippedItemWidget_C_ResourceTypeChanged::Param_ResourceCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ResourceTypeChanged, ResourceCount_0) == 0x000008, "Member 'AthenaEquippedItemWidget_C_ResourceTypeChanged::ResourceCount_0' has a wrong offset!");
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.AmmoTypeChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -213,11 +217,11 @@ static_assert(offsetof(AthenaEquippedItemWidget_C_AmmoTypeChanged, Item) == 0x00
 struct AthenaEquippedItemWidget_C_ResourceCountChanged final
 {
 public:
-	int32                                         Param_ResourceCount;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ResourceCount_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaEquippedItemWidget_C_ResourceCountChanged) == 0x000004, "Wrong alignment on AthenaEquippedItemWidget_C_ResourceCountChanged");
 static_assert(sizeof(AthenaEquippedItemWidget_C_ResourceCountChanged) == 0x000004, "Wrong size on AthenaEquippedItemWidget_C_ResourceCountChanged");
-static_assert(offsetof(AthenaEquippedItemWidget_C_ResourceCountChanged, Param_ResourceCount) == 0x000000, "Member 'AthenaEquippedItemWidget_C_ResourceCountChanged::Param_ResourceCount' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_ResourceCountChanged, ResourceCount_0) == 0x000000, "Member 'AthenaEquippedItemWidget_C_ResourceCountChanged::ResourceCount_0' has a wrong offset!");
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.UpdateWidgetColor
 // 0x0060 (0x0060 - 0x0000)
@@ -233,11 +237,11 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0028)()
 };
 static_assert(alignof(AthenaEquippedItemWidget_C_UpdateWidgetColor) == 0x000008, "Wrong alignment on AthenaEquippedItemWidget_C_UpdateWidgetColor");
@@ -249,11 +253,11 @@ static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_float_
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable1) == 0x00000C, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, K2Node_Select_Default) == 0x000010, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_struct_Variable) == 0x000014, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable12) == 0x000024, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable2) == 0x000024, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_byte_Variable) == 0x000025, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, Temp_byte_Variable1) == 0x000026, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, K2Node_Select1_Default) == 0x000027, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, K2Node_Select12_Default) == 0x000028, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, K2Node_Select2_Default) == 0x000028, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::K2Node_Select2_Default' has a wrong offset!");
 static_assert(offsetof(AthenaEquippedItemWidget_C_UpdateWidgetColor, K2Node_MakeStruct_SlateColor) == 0x000038, "Member 'AthenaEquippedItemWidget_C_UpdateWidgetColor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.GetCurrentAmmoText

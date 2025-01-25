@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Pistol_SixShooter_Athena.B_Pistol_SixShooter_Athena_C
-// 0x0010 (0x0E68 - 0x0E58)
+// 0x0010 (0x0F80 - 0x0F70)
 class AB_Pistol_SixShooter_Athena_C final : public AB_Pistol_Generic_C
 {
 public:
-	class UStaticMeshComponent*                   Reload_QuickReload;                                // 0x0E58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Reload_Ammo;                                       // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Reload_QuickReload;                                // 0x0F70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Reload_Ammo;                                       // 0x0F78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -38,9 +38,9 @@ public:
 	}
 };
 static_assert(alignof(AB_Pistol_SixShooter_Athena_C) == 0x000008, "Wrong alignment on AB_Pistol_SixShooter_Athena_C");
-static_assert(sizeof(AB_Pistol_SixShooter_Athena_C) == 0x000E68, "Wrong size on AB_Pistol_SixShooter_Athena_C");
-static_assert(offsetof(AB_Pistol_SixShooter_Athena_C, Reload_QuickReload) == 0x000E58, "Member 'AB_Pistol_SixShooter_Athena_C::Reload_QuickReload' has a wrong offset!");
-static_assert(offsetof(AB_Pistol_SixShooter_Athena_C, Reload_Ammo) == 0x000E60, "Member 'AB_Pistol_SixShooter_Athena_C::Reload_Ammo' has a wrong offset!");
+static_assert(sizeof(AB_Pistol_SixShooter_Athena_C) == 0x000F80, "Wrong size on AB_Pistol_SixShooter_Athena_C");
+static_assert(offsetof(AB_Pistol_SixShooter_Athena_C, Reload_QuickReload) == 0x000F70, "Member 'AB_Pistol_SixShooter_Athena_C::Reload_QuickReload' has a wrong offset!");
+static_assert(offsetof(AB_Pistol_SixShooter_Athena_C, Reload_Ammo) == 0x000F78, "Member 'AB_Pistol_SixShooter_Athena_C::Reload_Ammo' has a wrong offset!");
 
 }
 

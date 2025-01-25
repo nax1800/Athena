@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -46,9 +46,9 @@ public:
 	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x00D0(0x0010)(ConstParm, NoDestructor)
 	float                                         K2Node_Event_HeldPercent;                          // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_SlateBrush_ReturnValue;        // 0x00E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x00E7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x00E7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -71,9 +71,9 @@ static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, K2Node_
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, K2Node_Event_NewTriggeredAction) == 0x0000D0, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::K2Node_Event_NewTriggeredAction' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, K2Node_Event_HeldPercent) == 0x0000E0, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::K2Node_Event_HeldPercent' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, Temp_bool_Variable1) == 0x0000E4, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, Temp_byte_Variable12) == 0x0000E5, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, Temp_byte_Variable2) == 0x0000E5, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, CallFunc_EqualEqual_SlateBrush_ReturnValue) == 0x0000E6, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::CallFunc_EqualEqual_SlateBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, Temp_byte_Variable123) == 0x0000E7, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, Temp_byte_Variable3) == 0x0000E7, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, K2Node_Select_Default) == 0x0000E8, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_ExecuteUbergraph_IconTextButton, K2Node_Select1_Default) == 0x0000E9, "Member 'IconTextButton_C_ExecuteUbergraph_IconTextButton::K2Node_Select1_Default' has a wrong offset!");
 
@@ -137,22 +137,22 @@ static_assert(offsetof(IconTextButton_C_PreConstruct, IsDesignTime) == 0x000000,
 struct IconTextButton_C_Set_Text final
 {
 public:
-	class FText                                   Param_ButtonText;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   ButtonText_0;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(IconTextButton_C_Set_Text) == 0x000008, "Wrong alignment on IconTextButton_C_Set_Text");
 static_assert(sizeof(IconTextButton_C_Set_Text) == 0x000018, "Wrong size on IconTextButton_C_Set_Text");
-static_assert(offsetof(IconTextButton_C_Set_Text, Param_ButtonText) == 0x000000, "Member 'IconTextButton_C_Set_Text::Param_ButtonText' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_Set_Text, ButtonText_0) == 0x000000, "Member 'IconTextButton_C_Set_Text::ButtonText_0' has a wrong offset!");
 
 // Function IconTextButton.IconTextButton_C.Set Icon
 // 0x0088 (0x0088 - 0x0000)
 struct IconTextButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            Param_IconBrush;                                   // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(IconTextButton_C_Set_Icon) == 0x000008, "Wrong alignment on IconTextButton_C_Set_Icon");
 static_assert(sizeof(IconTextButton_C_Set_Icon) == 0x000088, "Wrong size on IconTextButton_C_Set_Icon");
-static_assert(offsetof(IconTextButton_C_Set_Icon, Param_IconBrush) == 0x000000, "Member 'IconTextButton_C_Set_Icon::Param_IconBrush' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'IconTextButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function IconTextButton.IconTextButton_C.InitializeButton
 // 0x0010 (0x0010 - 0x0000)
@@ -185,14 +185,14 @@ static_assert(offsetof(IconTextButton_C_UpdateTextAndStyle, bUsingGamepad) == 0x
 struct IconTextButton_C_SetControllerStyle final
 {
 public:
-	class UClass*                                 Param_ControllerInputStyle;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ControllerInputStyle_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(IconTextButton_C_SetControllerStyle) == 0x000008, "Wrong alignment on IconTextButton_C_SetControllerStyle");
 static_assert(sizeof(IconTextButton_C_SetControllerStyle) == 0x000018, "Wrong size on IconTextButton_C_SetControllerStyle");
-static_assert(offsetof(IconTextButton_C_SetControllerStyle, Param_ControllerInputStyle) == 0x000000, "Member 'IconTextButton_C_SetControllerStyle::Param_ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_SetControllerStyle, ControllerInputStyle_0) == 0x000000, "Member 'IconTextButton_C_SetControllerStyle::ControllerInputStyle_0' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetControllerStyle, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'IconTextButton_C_SetControllerStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetControllerStyle, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'IconTextButton_C_SetControllerStyle::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetControllerStyle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'IconTextButton_C_SetControllerStyle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -225,29 +225,33 @@ static_assert(offsetof(IconTextButton_C_UpdateText, CallFunc_Not_PreBool_ReturnV
 static_assert(offsetof(IconTextButton_C_UpdateText, K2Node_Select1_Default) == 0x000040, "Member 'IconTextButton_C_UpdateText::K2Node_Select1_Default' has a wrong offset!");
 
 // Function IconTextButton.IconTextButton_C.UpdateStyle
-// 0x0001 (0x0001 - 0x0000)
+// 0x0003 (0x0003 - 0x0000)
 struct IconTextButton_C_UpdateStyle final
 {
 public:
 	bool                                          UsingGamepad;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsErebus_ReturnValue;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(IconTextButton_C_UpdateStyle) == 0x000001, "Wrong alignment on IconTextButton_C_UpdateStyle");
-static_assert(sizeof(IconTextButton_C_UpdateStyle) == 0x000001, "Wrong size on IconTextButton_C_UpdateStyle");
+static_assert(sizeof(IconTextButton_C_UpdateStyle) == 0x000003, "Wrong size on IconTextButton_C_UpdateStyle");
 static_assert(offsetof(IconTextButton_C_UpdateStyle, UsingGamepad) == 0x000000, "Member 'IconTextButton_C_UpdateStyle::UsingGamepad' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_UpdateStyle, CallFunc_IsErebus_ReturnValue) == 0x000001, "Member 'IconTextButton_C_UpdateStyle::CallFunc_IsErebus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_UpdateStyle, CallFunc_BooleanOR_ReturnValue) == 0x000002, "Member 'IconTextButton_C_UpdateStyle::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function IconTextButton.IconTextButton_C.SetMouseKeyboardStyle
 // 0x0018 (0x0018 - 0x0000)
 struct IconTextButton_C_SetMouseKeyboardStyle final
 {
 public:
-	class UClass*                                 Param_ControllerInputStyle;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ControllerInputStyle_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(IconTextButton_C_SetMouseKeyboardStyle) == 0x000008, "Wrong alignment on IconTextButton_C_SetMouseKeyboardStyle");
 static_assert(sizeof(IconTextButton_C_SetMouseKeyboardStyle) == 0x000018, "Wrong size on IconTextButton_C_SetMouseKeyboardStyle");
-static_assert(offsetof(IconTextButton_C_SetMouseKeyboardStyle, Param_ControllerInputStyle) == 0x000000, "Member 'IconTextButton_C_SetMouseKeyboardStyle::Param_ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_SetMouseKeyboardStyle, ControllerInputStyle_0) == 0x000000, "Member 'IconTextButton_C_SetMouseKeyboardStyle::ControllerInputStyle_0' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetMouseKeyboardStyle, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'IconTextButton_C_SetMouseKeyboardStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetMouseKeyboardStyle, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'IconTextButton_C_SetMouseKeyboardStyle::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTextButton_C_SetMouseKeyboardStyle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'IconTextButton_C_SetMouseKeyboardStyle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -272,11 +276,11 @@ static_assert(offsetof(IconTextButton_C_UpdateContentAlignment, K2Node_DynamicCa
 struct IconTextButton_C_SetContentAlignment final
 {
 public:
-	EHorizontalAlignment                          Param_ContentAlignment;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHorizontalAlignment                          ContentAlignment_0;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(IconTextButton_C_SetContentAlignment) == 0x000001, "Wrong alignment on IconTextButton_C_SetContentAlignment");
 static_assert(sizeof(IconTextButton_C_SetContentAlignment) == 0x000001, "Wrong size on IconTextButton_C_SetContentAlignment");
-static_assert(offsetof(IconTextButton_C_SetContentAlignment, Param_ContentAlignment) == 0x000000, "Member 'IconTextButton_C_SetContentAlignment::Param_ContentAlignment' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_SetContentAlignment, ContentAlignment_0) == 0x000000, "Member 'IconTextButton_C_SetContentAlignment::ContentAlignment_0' has a wrong offset!");
 
 // Function IconTextButton.IconTextButton_C.UpdateTextStyle
 // 0x0008 (0x0008 - 0x0000)
@@ -320,6 +324,19 @@ public:
 static_assert(alignof(IconTextButton_C_ShowIcon) == 0x000001, "Wrong alignment on IconTextButton_C_ShowIcon");
 static_assert(sizeof(IconTextButton_C_ShowIcon) == 0x000001, "Wrong size on IconTextButton_C_ShowIcon");
 static_assert(offsetof(IconTextButton_C_ShowIcon, bShouldShow) == 0x000000, "Member 'IconTextButton_C_ShowIcon::bShouldShow' has a wrong offset!");
+
+// Function IconTextButton.IconTextButton_C.Get Dynamic Material
+// 0x0010 (0x0010 - 0x0000)
+struct IconTextButton_C_Get_Dynamic_Material final
+{
+public:
+	class UMaterialInstanceDynamic*               Ret_Material;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(IconTextButton_C_Get_Dynamic_Material) == 0x000008, "Wrong alignment on IconTextButton_C_Get_Dynamic_Material");
+static_assert(sizeof(IconTextButton_C_Get_Dynamic_Material) == 0x000010, "Wrong size on IconTextButton_C_Get_Dynamic_Material");
+static_assert(offsetof(IconTextButton_C_Get_Dynamic_Material, Ret_Material) == 0x000000, "Member 'IconTextButton_C_Get_Dynamic_Material::Ret_Material' has a wrong offset!");
+static_assert(offsetof(IconTextButton_C_Get_Dynamic_Material, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'IconTextButton_C_Get_Dynamic_Material::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 }
 

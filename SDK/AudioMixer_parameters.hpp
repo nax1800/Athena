@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
-// 0x0028 (0x0028 - 0x0000)
-struct SubmixEffectDynamicsProcessorPreset_SetSettings final
-{
-public:
-	struct FSubmixEffectDynamicsProcessorSettings InSettings;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000004, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetSettings");
-static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000028, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetSettings");
-static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetSettings, InSettings) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetSettings::InSettings' has a wrong offset!");
-
 // Function AudioMixer.SynthComponent.SetSubmixSend
 // 0x0010 (0x0010 - 0x0000)
 struct SynthComponent_SetSubmixSend final
@@ -165,6 +154,57 @@ static_assert(offsetof(AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntr
 static_assert(offsetof(AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry, PresetChain) == 0x000008, "Member 'AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry::PresetChain' has a wrong offset!");
 static_assert(offsetof(AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry, EntryIndex) == 0x000010, "Member 'AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry::EntryIndex' has a wrong offset!");
 static_assert(offsetof(AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry, bBypassed) == 0x000014, "Member 'AudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry::bBypassed' has a wrong offset!");
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.StartRecordingOutput
+// 0x0018 (0x0018 - 0x0000)
+struct AudioMixerBlueprintLibrary_StartRecordingOutput final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExpectedDuration;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundSubmix*                           SubmixToRecord;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AudioMixerBlueprintLibrary_StartRecordingOutput) == 0x000008, "Wrong alignment on AudioMixerBlueprintLibrary_StartRecordingOutput");
+static_assert(sizeof(AudioMixerBlueprintLibrary_StartRecordingOutput) == 0x000018, "Wrong size on AudioMixerBlueprintLibrary_StartRecordingOutput");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StartRecordingOutput, WorldContextObject) == 0x000000, "Member 'AudioMixerBlueprintLibrary_StartRecordingOutput::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StartRecordingOutput, ExpectedDuration) == 0x000008, "Member 'AudioMixerBlueprintLibrary_StartRecordingOutput::ExpectedDuration' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StartRecordingOutput, SubmixToRecord) == 0x000010, "Member 'AudioMixerBlueprintLibrary_StartRecordingOutput::SubmixToRecord' has a wrong offset!");
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.StopRecordingOutput
+// 0x0048 (0x0048 - 0x0000)
+struct AudioMixerBlueprintLibrary_StopRecordingOutput final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAudioRecordingExportType                     ExportType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name_0;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Path;                                              // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USoundSubmix*                           SubmixToRecord;                                    // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USoundWave*                             ExistingSoundWaveToOverwrite;                      // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USoundWave*                             ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AudioMixerBlueprintLibrary_StopRecordingOutput) == 0x000008, "Wrong alignment on AudioMixerBlueprintLibrary_StopRecordingOutput");
+static_assert(sizeof(AudioMixerBlueprintLibrary_StopRecordingOutput) == 0x000048, "Wrong size on AudioMixerBlueprintLibrary_StopRecordingOutput");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, WorldContextObject) == 0x000000, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, ExportType) == 0x000008, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::ExportType' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, Name_0) == 0x000010, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::Name_0' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, Path) == 0x000020, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::Path' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, SubmixToRecord) == 0x000030, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::SubmixToRecord' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, ExistingSoundWaveToOverwrite) == 0x000038, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::ExistingSoundWaveToOverwrite' has a wrong offset!");
+static_assert(offsetof(AudioMixerBlueprintLibrary_StopRecordingOutput, ReturnValue) == 0x000040, "Member 'AudioMixerBlueprintLibrary_StopRecordingOutput::ReturnValue' has a wrong offset!");
+
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
+// 0x0028 (0x0028 - 0x0000)
+struct SubmixEffectDynamicsProcessorPreset_SetSettings final
+{
+public:
+	struct FSubmixEffectDynamicsProcessorSettings InSettings;                                        // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000004, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetSettings");
+static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000028, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetSettings");
+static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetSettings, InSettings) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetSettings::InSettings' has a wrong offset!");
 
 // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
 // 0x0010 (0x0010 - 0x0000)

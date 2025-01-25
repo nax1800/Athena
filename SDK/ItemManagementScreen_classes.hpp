@@ -10,31 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementScreen.ItemManagementScreen_C
-// 0x0048 (0x0888 - 0x0840)
+// 0x0048 (0x04F8 - 0x04B0)
 class UItemManagementScreen_C final : public UFortItemManagementScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x0008)(Transient, DuplicateTransient)
-	class UCraftingBar_C*                         CraftingBar;                                       // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Inventory;                                 // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Screen;                                    // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          ItemDragEnabled;                                   // 0x0860(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_861[0x7];                                      // 0x0861(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemManagementItemTileButton*      SelectedTileButton;                                // 0x0868(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UQuantitySelector_C*                    QuantitySelectorWidget;                            // 0x0870(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          WarningShownReadOnlyWIFE;                          // 0x0878(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_879[0x7];                                      // 0x0879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             StorageTransferSound;                              // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04B0(0x0008)(Transient, DuplicateTransient)
+	class UCraftingBar_C*                         CraftingBar;                                       // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Inventory;                                 // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Screen;                                    // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          ItemDragEnabled;                                   // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemManagementItemTileButton*      SelectedTileButton;                                // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UQuantitySelector_C*                    QuantitySelectorWidget;                            // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          WarningShownReadOnlyWIFE;                          // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             StorageTransferSound;                              // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemManagementScreen(int32 EntryPoint);
@@ -88,16 +88,16 @@ public:
 	}
 };
 static_assert(alignof(UItemManagementScreen_C) == 0x000008, "Wrong alignment on UItemManagementScreen_C");
-static_assert(sizeof(UItemManagementScreen_C) == 0x000888, "Wrong size on UItemManagementScreen_C");
-static_assert(offsetof(UItemManagementScreen_C, UberGraphFrame) == 0x000840, "Member 'UItemManagementScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, CraftingBar) == 0x000848, "Member 'UItemManagementScreen_C::CraftingBar' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, SizeBox_Inventory) == 0x000850, "Member 'UItemManagementScreen_C::SizeBox_Inventory' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, SizeBox_Screen) == 0x000858, "Member 'UItemManagementScreen_C::SizeBox_Screen' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, ItemDragEnabled) == 0x000860, "Member 'UItemManagementScreen_C::ItemDragEnabled' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, SelectedTileButton) == 0x000868, "Member 'UItemManagementScreen_C::SelectedTileButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, QuantitySelectorWidget) == 0x000870, "Member 'UItemManagementScreen_C::QuantitySelectorWidget' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, WarningShownReadOnlyWIFE) == 0x000878, "Member 'UItemManagementScreen_C::WarningShownReadOnlyWIFE' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, StorageTransferSound) == 0x000880, "Member 'UItemManagementScreen_C::StorageTransferSound' has a wrong offset!");
+static_assert(sizeof(UItemManagementScreen_C) == 0x0004F8, "Wrong size on UItemManagementScreen_C");
+static_assert(offsetof(UItemManagementScreen_C, UberGraphFrame) == 0x0004B0, "Member 'UItemManagementScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, CraftingBar) == 0x0004B8, "Member 'UItemManagementScreen_C::CraftingBar' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, SizeBox_Inventory) == 0x0004C0, "Member 'UItemManagementScreen_C::SizeBox_Inventory' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, SizeBox_Screen) == 0x0004C8, "Member 'UItemManagementScreen_C::SizeBox_Screen' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, ItemDragEnabled) == 0x0004D0, "Member 'UItemManagementScreen_C::ItemDragEnabled' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, SelectedTileButton) == 0x0004D8, "Member 'UItemManagementScreen_C::SelectedTileButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, QuantitySelectorWidget) == 0x0004E0, "Member 'UItemManagementScreen_C::QuantitySelectorWidget' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, WarningShownReadOnlyWIFE) == 0x0004E8, "Member 'UItemManagementScreen_C::WarningShownReadOnlyWIFE' has a wrong offset!");
+static_assert(offsetof(UItemManagementScreen_C, StorageTransferSound) == 0x0004F0, "Member 'UItemManagementScreen_C::StorageTransferSound' has a wrong offset!");
 
 }
 

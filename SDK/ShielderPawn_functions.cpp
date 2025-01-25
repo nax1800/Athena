@@ -71,22 +71,8 @@ void AShielderPawn_C::InvisibleOrphanTick()
 }
 
 
-// Function ShielderPawn.ShielderPawn_C.AdditiveHitReactDelay
-// (BlueprintCallable, BlueprintEvent)
-
-void AShielderPawn_C::AdditiveHitReactDelay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShielderPawn_C", "AdditiveHitReactDelay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ShielderPawn.ShielderPawn_C.RotateShielderForward
-// (BlueprintCallable, BlueprintEvent)
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
 void AShielderPawn_C::RotateShielderForward()
 {
@@ -305,27 +291,13 @@ void AShielderPawn_C::GrabRandomPotentialAttachPawn(bool HiddenAttach)
 }
 
 
-// Function ShielderPawn.ShielderPawn_C.PostSpawnIn
-// (BlueprintCallable, BlueprintEvent)
-
-void AShielderPawn_C::PostSpawnIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShielderPawn_C", "PostSpawnIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ShielderPawn.ShielderPawn_C.VerifyPotentialAttachPawnIsValidAndAttachToIt
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        Param_PotentialAttachPawn                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPawn*                        PotentialAttachPawn_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    HiddenAttach                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AShielderPawn_C::VerifyPotentialAttachPawnIsValidAndAttachToIt(class AFortPawn* Param_PotentialAttachPawn, bool HiddenAttach)
+void AShielderPawn_C::VerifyPotentialAttachPawnIsValidAndAttachToIt(class AFortPawn* PotentialAttachPawn_0, bool HiddenAttach)
 {
 	static class UFunction* Func = nullptr;
 
@@ -334,7 +306,7 @@ void AShielderPawn_C::VerifyPotentialAttachPawnIsValidAndAttachToIt(class AFortP
 
 	Params::ShielderPawn_C_VerifyPotentialAttachPawnIsValidAndAttachToIt Parms{};
 
-	Parms.Param_PotentialAttachPawn = Param_PotentialAttachPawn;
+	Parms.PotentialAttachPawn_0 = PotentialAttachPawn_0;
 	Parms.HiddenAttach = HiddenAttach;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -374,11 +346,11 @@ void AShielderPawn_C::OnComponentBeginOverlap(class UPrimitiveComponent* Overlap
 // Function ShielderPawn.ShielderPawn_C.SetShielderOrphanStatus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Orphaned                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Orphaned_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    GiveZVelocityOnDetach                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void AShielderPawn_C::SetShielderOrphanStatus(bool Param_Orphaned, bool GiveZVelocityOnDetach, const class FString& Reason)
+void AShielderPawn_C::SetShielderOrphanStatus(bool Param_Orphaned_0, bool GiveZVelocityOnDetach, const class FString& Reason)
 {
 	static class UFunction* Func = nullptr;
 
@@ -387,7 +359,7 @@ void AShielderPawn_C::SetShielderOrphanStatus(bool Param_Orphaned, bool GiveZVel
 
 	Params::ShielderPawn_C_SetShielderOrphanStatus Parms{};
 
-	Parms.Param_Orphaned = Param_Orphaned;
+	Parms.Param_Orphaned_0 = Param_Orphaned_0;
 	Parms.GiveZVelocityOnDetach = GiveZVelocityOnDetach;
 	Parms.Reason = std::move(Reason);
 
@@ -460,20 +432,6 @@ void AShielderPawn_C::OnDeathServer(float Damage, const struct FGameplayTagConta
 	Parms.EffectContext = std::move(EffectContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ShielderPawn.ShielderPawn_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AShielderPawn_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShielderPawn_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -588,20 +546,6 @@ void AShielderPawn_C::InterpShielderToNewLocation__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ShielderPawn_C", "InterpShielderToNewLocation__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ShielderPawn.ShielderPawn_C.OnRep_SpringArmTargetRotation
-// (HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AShielderPawn_C::OnRep_SpringArmTargetRotation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShielderPawn_C", "OnRep_SpringArmTargetRotation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -797,6 +741,48 @@ void AShielderPawn_C::SpawnSuperShielderBGA()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ShielderPawn_C", "SpawnSuperShielderBGA");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderPawn.ShielderPawn_C.PostSpawnIn
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderPawn_C::PostSpawnIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderPawn_C", "PostSpawnIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderPawn.ShielderPawn_C.AdditiveHitReactDelay
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderPawn_C::AdditiveHitReactDelay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderPawn_C", "AdditiveHitReactDelay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderPawn.ShielderPawn_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AShielderPawn_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderPawn_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -1723,10 +1723,10 @@ void AStoreCardReveal_BP_C::SetText_CCB(bool Hide)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortAccountItemDefinition*       Object                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_IsDefender                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDefender_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             Result                                                 (Parm, OutParm)
 
-void AStoreCardReveal_BP_C::IsDefender(class UFortAccountItemDefinition* Object, bool* Param_IsDefender, class FText* Result)
+void AStoreCardReveal_BP_C::IsDefender(class UFortAccountItemDefinition* Object, bool* IsDefender_0, class FText* Result)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1739,8 +1739,8 @@ void AStoreCardReveal_BP_C::IsDefender(class UFortAccountItemDefinition* Object,
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsDefender != nullptr)
-		*Param_IsDefender = Parms.Param_IsDefender;
+	if (IsDefender_0 != nullptr)
+		*IsDefender_0 = Parms.IsDefender_0;
 
 	if (Result != nullptr)
 		*Result = std::move(Parms.Result);

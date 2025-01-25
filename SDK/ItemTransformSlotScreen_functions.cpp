@@ -111,28 +111,6 @@ void UItemTransformSlotScreen_C::ExecuteUbergraph_ItemTransformSlotScreen(int32 
 }
 
 
-// Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.HandleSlotButton_DoubleClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    AssociatedButton                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ButtonIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemTransformSlotScreen_C::HandleSlotButton_DoubleClicked(class UCommonButton* AssociatedButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformSlotScreen_C", "HandleSlotButton_DoubleClicked");
-
-	Params::ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked Parms{};
-
-	Parms.AssociatedButton = AssociatedButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.HandleSlotButton_Clicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -304,12 +282,12 @@ void UItemTransformSlotScreen_C::ResetScreen()
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.Get Transform Data
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_SelectedKey                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                Param_SacrificeItems                                   (Parm, OutParm, ZeroConstructor)
+// class UFortItem*                        SelectedKey_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortItem*>                SacrificeItems_0                                       (Parm, OutParm, ZeroConstructor)
 // int32                                   CurrentSacrificePoints                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTier                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformSlotScreen_C::Get_Transform_Data(class UFortItem** Param_SelectedKey, TArray<class UFortItem*>* Param_SacrificeItems, int32* CurrentSacrificePoints, int32* CurrentTier)
+void UItemTransformSlotScreen_C::Get_Transform_Data(class UFortItem** SelectedKey_0, TArray<class UFortItem*>* SacrificeItems_0, int32* CurrentSacrificePoints, int32* CurrentTier)
 {
 	static class UFunction* Func = nullptr;
 
@@ -320,11 +298,11 @@ void UItemTransformSlotScreen_C::Get_Transform_Data(class UFortItem** Param_Sele
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_SelectedKey != nullptr)
-		*Param_SelectedKey = Parms.Param_SelectedKey;
+	if (SelectedKey_0 != nullptr)
+		*SelectedKey_0 = Parms.SelectedKey_0;
 
-	if (Param_SacrificeItems != nullptr)
-		*Param_SacrificeItems = std::move(Parms.Param_SacrificeItems);
+	if (SacrificeItems_0 != nullptr)
+		*SacrificeItems_0 = std::move(Parms.SacrificeItems_0);
 
 	if (CurrentSacrificePoints != nullptr)
 		*CurrentSacrificePoints = Parms.CurrentSacrificePoints;
@@ -337,9 +315,9 @@ void UItemTransformSlotScreen_C::Get_Transform_Data(class UFortItem** Param_Sele
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.Navigate to Button
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformSlotScreen_C::Navigate_to_Button(int32 Param_Index)
+void UItemTransformSlotScreen_C::Navigate_to_Button(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -348,7 +326,7 @@ void UItemTransformSlotScreen_C::Navigate_to_Button(int32 Param_Index)
 
 	Params::ItemTransformSlotScreen_C_Navigate_to_Button Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

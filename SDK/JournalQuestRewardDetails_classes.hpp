@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass JournalQuestRewardDetails.JournalQuestRewardDetails_C
-// 0x0020 (0x0240 - 0x0220)
+// 0x0020 (0x0238 - 0x0218)
 class UJournalQuestRewardDetails_C final : public UFortJournalQuestDetails
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          BorderBonusesBottomEdge;                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPerkDivider_C*                         PerkDivider;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UQuestVerticalRewardInfo_C*             QuestVerticalRewardInfo;                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          BorderBonusesBottomEdge;                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPerkDivider_C*                         PerkDivider;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UQuestVerticalRewardInfo_C*             QuestVerticalRewardInfo;                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_JournalQuestRewardDetails(int32 EntryPoint);
@@ -50,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(UJournalQuestRewardDetails_C) == 0x000008, "Wrong alignment on UJournalQuestRewardDetails_C");
-static_assert(sizeof(UJournalQuestRewardDetails_C) == 0x000240, "Wrong size on UJournalQuestRewardDetails_C");
-static_assert(offsetof(UJournalQuestRewardDetails_C, UberGraphFrame) == 0x000220, "Member 'UJournalQuestRewardDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJournalQuestRewardDetails_C, BorderBonusesBottomEdge) == 0x000228, "Member 'UJournalQuestRewardDetails_C::BorderBonusesBottomEdge' has a wrong offset!");
-static_assert(offsetof(UJournalQuestRewardDetails_C, PerkDivider) == 0x000230, "Member 'UJournalQuestRewardDetails_C::PerkDivider' has a wrong offset!");
-static_assert(offsetof(UJournalQuestRewardDetails_C, QuestVerticalRewardInfo) == 0x000238, "Member 'UJournalQuestRewardDetails_C::QuestVerticalRewardInfo' has a wrong offset!");
+static_assert(sizeof(UJournalQuestRewardDetails_C) == 0x000238, "Wrong size on UJournalQuestRewardDetails_C");
+static_assert(offsetof(UJournalQuestRewardDetails_C, UberGraphFrame) == 0x000218, "Member 'UJournalQuestRewardDetails_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UJournalQuestRewardDetails_C, BorderBonusesBottomEdge) == 0x000220, "Member 'UJournalQuestRewardDetails_C::BorderBonusesBottomEdge' has a wrong offset!");
+static_assert(offsetof(UJournalQuestRewardDetails_C, PerkDivider) == 0x000228, "Member 'UJournalQuestRewardDetails_C::PerkDivider' has a wrong offset!");
+static_assert(offsetof(UJournalQuestRewardDetails_C, QuestVerticalRewardInfo) == 0x000230, "Member 'UJournalQuestRewardDetails_C::QuestVerticalRewardInfo' has a wrong offset!");
 
 }
 

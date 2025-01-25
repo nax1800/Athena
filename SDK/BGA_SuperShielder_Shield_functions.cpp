@@ -189,34 +189,6 @@ void ABGA_SuperShielder_Shield_C::OnDamagePlayEffects(float Damage, const struct
 }
 
 
-// Function BGA_SuperShielder_Shield.BGA_SuperShielder_Shield_C.Opacity Control__FinishedFunc
-// (BlueprintEvent)
-
-void ABGA_SuperShielder_Shield_C::Opacity_Control__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_SuperShielder_Shield_C", "Opacity Control__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BGA_SuperShielder_Shield.BGA_SuperShielder_Shield_C.Opacity Control__UpdateFunc
-// (BlueprintEvent)
-
-void ABGA_SuperShielder_Shield_C::Opacity_Control__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_SuperShielder_Shield_C", "Opacity Control__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BGA_SuperShielder_Shield.BGA_SuperShielder_Shield_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 

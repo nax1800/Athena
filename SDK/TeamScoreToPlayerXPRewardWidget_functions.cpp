@@ -88,9 +88,9 @@ void UTeamScoreToPlayerXPRewardWidget_C::Update_XP_LERP(float LERP_Factor)
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIXpInfo                    Param_XPInfo                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FFortUIXpInfo                    XPInfo_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& Param_XPInfo)
+void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& XPInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,7 +99,7 @@ void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& 
 
 	Params::TeamScoreToPlayerXPRewardWidget_C_Initialize Parms{};
 
-	Parms.Param_XPInfo = std::move(Param_XPInfo);
+	Parms.XPInfo_0 = std::move(XPInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

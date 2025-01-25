@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "TooltipStat_structs.hpp"
 
 
@@ -115,15 +115,15 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                Temp_object_Variable1;                             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable123;                           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable1234;                          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12345;                         // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable123456;                        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable1234567;                       // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12345678;                      // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable123456789;                     // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12345678910;                   // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable2;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable3;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable4;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable5;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable6;                             // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable7;                             // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable8;                             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable9;                             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable10;                            // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 CallFunc_GetPerkTier_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select_Default;                             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -135,15 +135,15 @@ static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, SlateBrush) == 0x000
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_byte_Variable) == 0x000088, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable) == 0x000090, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable1) == 0x000098, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable12) == 0x0000A0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable123) == 0x0000A8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable1234) == 0x0000B0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable12345) == 0x0000B8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable123456) == 0x0000C0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable1234567) == 0x0000C8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable12345678) == 0x0000D0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable12345678' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable123456789) == 0x0000D8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable123456789' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable12345678910) == 0x0000E0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable12345678910' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable2) == 0x0000A0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable3) == 0x0000A8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable4) == 0x0000B0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable5) == 0x0000B8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable6) == 0x0000C0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable7) == 0x0000C8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable8) == 0x0000D0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable9) == 0x0000D8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable9' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable10) == 0x0000E0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable10' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, CallFunc_GetPerkTier_ReturnValue) == 0x0000E8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::CallFunc_GetPerkTier_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, K2Node_Select_Default) == 0x0000F0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, K2Node_MakeStruct_SlateBrush) == 0x0000F8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
@@ -201,20 +201,20 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EVerticalAlignment                            Temp_byte_Variable123;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EVerticalAlignment                            Temp_byte_Variable1234;                            // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EVerticalAlignment                            Temp_byte_Variable3;                               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EVerticalAlignment                            Temp_byte_Variable4;                               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EVerticalAlignment                            K2Node_Select_Default;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IFortClientAnnouncement_TutorialInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface; // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue;              // 0x0038(0x0018)()
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PerkWidgetNew_C_InitializeText) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeText");
 static_assert(sizeof(PerkWidgetNew_C_InitializeText) == 0x000058, "Wrong size on PerkWidgetNew_C_InitializeText");
@@ -222,18 +222,18 @@ static_assert(offsetof(PerkWidgetNew_C_InitializeText, DescriptionText) == 0x000
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable) == 0x000010, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_bool_Variable) == 0x000011, "Member 'PerkWidgetNew_C_InitializeText::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable1) == 0x000012, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable12) == 0x000013, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable2) == 0x000013, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_bool_Variable1) == 0x000014, "Member 'PerkWidgetNew_C_InitializeText::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable123) == 0x000015, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable1234) == 0x000016, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable3) == 0x000015, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable4) == 0x000016, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_Select_Default) == 0x000017, "Member 'PerkWidgetNew_C_InitializeText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable12345) == 0x000018, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_bool_Variable12) == 0x000019, "Member 'PerkWidgetNew_C_InitializeText::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_byte_Variable5) == 0x000018, "Member 'PerkWidgetNew_C_InitializeText::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, Temp_bool_Variable2) == 0x000019, "Member 'PerkWidgetNew_C_InitializeText::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_Select1_Default) == 0x00001A, "Member 'PerkWidgetNew_C_InitializeText::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface) == 0x000020, "Member 'PerkWidgetNew_C_InitializeText::K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'PerkWidgetNew_C_InitializeText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeText, CallFunc_GetTooltipTitle_ReturnValue) == 0x000038, "Member 'PerkWidgetNew_C_InitializeText::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_Select12_Default) == 0x000050, "Member 'PerkWidgetNew_C_InitializeText::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_Select2_Default) == 0x000050, "Member 'PerkWidgetNew_C_InitializeText::K2Node_Select2_Default' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeHeroBonusIcon
 // 0x00C0 (0x00C0 - 0x0000)
@@ -245,7 +245,7 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortSupportBonusType                         CallFunc_GetSupportBonusType_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -258,7 +258,7 @@ static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, SupportPerkType)
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_byte_Variable) == 0x000001, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable) == 0x000008, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable1) == 0x000010, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable12) == 0x000018, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable12' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable2) == 0x000018, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable2' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, CallFunc_GetSupportBonusType_ReturnValue) == 0x000020, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::CallFunc_GetSupportBonusType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, K2Node_Select_Default) == 0x000028, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, K2Node_MakeStruct_SlateBrush) == 0x000030, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
@@ -304,10 +304,10 @@ public:
 	class FText                                   CallFunc_GetTierText_ReturnValue;                  // 0x0100(0x0018)()
 	int32                                         CallFunc_GetRequiredLevel_ReturnValue;             // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0120(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0120(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0160(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x0188(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0188(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01C8(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x01E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x01F0(0x0018)()
@@ -327,10 +327,10 @@ static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetContext_ReturnVa
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData1) == 0x0000C0, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetTierText_ReturnValue) == 0x000100, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetTierText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetRequiredLevel_ReturnValue) == 0x000118, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetRequiredLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData12) == 0x000120, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData2) == 0x000120, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Conv_IntToText_ReturnValue) == 0x000160, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeArray_Array) == 0x000178, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData123) == 0x000188, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData3) == 0x000188, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Format_ReturnValue) == 0x0001C8, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeArray_Array1) == 0x0001E0, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeArray_Array1' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Format_ReturnValue1) == 0x0001F0, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Format_ReturnValue1' has a wrong offset!");
@@ -357,21 +357,21 @@ static_assert(offsetof(PerkWidgetNew_C_HighlightBadge, K2Node_MakeStruct_SlateCo
 struct PerkWidgetNew_C_InitializeSettings final
 {
 public:
-	bool                                          Param_bIncludeName;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_bIncludeDescription;                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortBrushSize                                Param_IconSize;                                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Param_bUseLargeFormatName;                         // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIncludeName_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIncludeDescription_0;                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortBrushSize                                IconSize_0;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseLargeFormatName_0;                             // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerk                            Param_Perk;                                        // 0x0008(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFortUIPerk                            Perk_0;                                            // 0x0008(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          ShowMouseTooltips;                                 // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PerkWidgetNew_C_InitializeSettings) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeSettings");
 static_assert(sizeof(PerkWidgetNew_C_InitializeSettings) == 0x0000A8, "Wrong size on PerkWidgetNew_C_InitializeSettings");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Param_bIncludeName) == 0x000000, "Member 'PerkWidgetNew_C_InitializeSettings::Param_bIncludeName' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Param_bIncludeDescription) == 0x000001, "Member 'PerkWidgetNew_C_InitializeSettings::Param_bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Param_IconSize) == 0x000002, "Member 'PerkWidgetNew_C_InitializeSettings::Param_IconSize' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Param_bUseLargeFormatName) == 0x000003, "Member 'PerkWidgetNew_C_InitializeSettings::Param_bUseLargeFormatName' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Param_Perk) == 0x000008, "Member 'PerkWidgetNew_C_InitializeSettings::Param_Perk' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bIncludeName_0) == 0x000000, "Member 'PerkWidgetNew_C_InitializeSettings::bIncludeName_0' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bIncludeDescription_0) == 0x000001, "Member 'PerkWidgetNew_C_InitializeSettings::bIncludeDescription_0' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, IconSize_0) == 0x000002, "Member 'PerkWidgetNew_C_InitializeSettings::IconSize_0' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bUseLargeFormatName_0) == 0x000003, "Member 'PerkWidgetNew_C_InitializeSettings::bUseLargeFormatName_0' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Perk_0) == 0x000008, "Member 'PerkWidgetNew_C_InitializeSettings::Perk_0' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, ShowMouseTooltips) == 0x0000A0, "Member 'PerkWidgetNew_C_InitializeSettings::ShowMouseTooltips' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.Get_OverlayAbilityPerk_ToolTipWidget
@@ -409,47 +409,48 @@ struct PerkWidgetNew_C_UpdatePerk final
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPerkHighlighted_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAbility_ReturnValue;                   // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShouldFadePerk_Result;                    // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select1_Default;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_Select123_Default;                          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select1234_Default;                         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_Select2_Default;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select4_Default;                            // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PerkWidgetNew_C_UpdatePerk) == 0x000008, "Wrong alignment on PerkWidgetNew_C_UpdatePerk");
 static_assert(sizeof(PerkWidgetNew_C_UpdatePerk) == 0x000058, "Wrong size on PerkWidgetNew_C_UpdatePerk");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable) == 0x000000, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable1) == 0x000001, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable12) == 0x000002, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable2) == 0x000002, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable) == 0x000003, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable1) == 0x000004, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable123) == 0x000005, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable123' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable3) == 0x000005, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable3' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_struct_Variable) == 0x000008, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_struct_Variable1) == 0x000018, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_struct_Variable1' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, CallFunc_IsPerkHighlighted_ReturnValue) == 0x000028, "Member 'PerkWidgetNew_C_UpdatePerk::CallFunc_IsPerkHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable12) == 0x000029, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable123) == 0x00002A, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable2) == 0x000029, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_byte_Variable3) == 0x00002A, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, CallFunc_HasAbility_ReturnValue) == 0x00002B, "Member 'PerkWidgetNew_C_UpdatePerk::CallFunc_HasAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable1234) == 0x00002C, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable1234' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, Temp_bool_Variable4) == 0x00002C, "Member 'PerkWidgetNew_C_UpdatePerk::Temp_bool_Variable4' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, CallFunc_ShouldFadePerk_Result) == 0x00002D, "Member 'PerkWidgetNew_C_UpdatePerk::CallFunc_ShouldFadePerk_Result' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select_Default) == 0x00002E, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select1_Default) == 0x000030, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select12_Default) == 0x000038, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select123_Default) == 0x000048, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select1234_Default) == 0x000050, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select1234_Default' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select2_Default) == 0x000038, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select3_Default) == 0x000040, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(PerkWidgetNew_C_UpdatePerk, K2Node_Select4_Default) == 0x000044, "Member 'PerkWidgetNew_C_UpdatePerk::K2Node_Select4_Default' has a wrong offset!");
 
 }
 

@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "FortniteGame_classes.hpp"
 
 
@@ -17,11 +18,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Athena_GameState.Athena_GameState_C
-// 0x0008 (0x1C08 - 0x1C00)
+// 0x0028 (0x1818 - 0x17F0)
 class AAthena_GameState_C final : public AFortGameStateAthena
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x17F0(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x17F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_NewTrack_0_21F3C11243B4DF8C6B6A958D51E85950; // 0x1800(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_21F3C11243B4DF8C6B6A958D51E85950; // 0x1804(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1805[0x3];                                     // 0x1805(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x1808(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Victory_Royale_Sound;                              // 0x1810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
+	void ExecuteUbergraph_Athena_GameState(int32 EntryPoint);
+	void OnWinnerAnnounced();
+	void Timeline_0__FinishedFunc();
+	void Timeline_0__UpdateFunc();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +48,13 @@ public:
 	}
 };
 static_assert(alignof(AAthena_GameState_C) == 0x000008, "Wrong alignment on AAthena_GameState_C");
-static_assert(sizeof(AAthena_GameState_C) == 0x001C08, "Wrong size on AAthena_GameState_C");
-static_assert(offsetof(AAthena_GameState_C, DefaultSceneRoot) == 0x001C00, "Member 'AAthena_GameState_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(AAthena_GameState_C) == 0x001818, "Wrong size on AAthena_GameState_C");
+static_assert(offsetof(AAthena_GameState_C, UberGraphFrame) == 0x0017F0, "Member 'AAthena_GameState_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AAthena_GameState_C, DefaultSceneRoot) == 0x0017F8, "Member 'AAthena_GameState_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AAthena_GameState_C, Timeline_0_NewTrack_0_21F3C11243B4DF8C6B6A958D51E85950) == 0x001800, "Member 'AAthena_GameState_C::Timeline_0_NewTrack_0_21F3C11243B4DF8C6B6A958D51E85950' has a wrong offset!");
+static_assert(offsetof(AAthena_GameState_C, Timeline_0__Direction_21F3C11243B4DF8C6B6A958D51E85950) == 0x001804, "Member 'AAthena_GameState_C::Timeline_0__Direction_21F3C11243B4DF8C6B6A958D51E85950' has a wrong offset!");
+static_assert(offsetof(AAthena_GameState_C, Timeline_0) == 0x001808, "Member 'AAthena_GameState_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AAthena_GameState_C, Victory_Royale_Sound) == 0x001810, "Member 'AAthena_GameState_C::Victory_Royale_Sound' has a wrong offset!");
 
 }
 

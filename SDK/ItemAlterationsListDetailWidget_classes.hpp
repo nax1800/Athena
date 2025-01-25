@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0268 - 0x0258)
 class UItemAlterationsListDetailWidget_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UAlterationsWidget_C*                   AlterationsWidget;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UAlterationsWidget_C*                   AlterationsWidget;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemAlterationsListDetailWidget(int32 EntryPoint);
@@ -43,9 +43,9 @@ public:
 	}
 };
 static_assert(alignof(UItemAlterationsListDetailWidget_C) == 0x000008, "Wrong alignment on UItemAlterationsListDetailWidget_C");
-static_assert(sizeof(UItemAlterationsListDetailWidget_C) == 0x000270, "Wrong size on UItemAlterationsListDetailWidget_C");
-static_assert(offsetof(UItemAlterationsListDetailWidget_C, UberGraphFrame) == 0x000260, "Member 'UItemAlterationsListDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemAlterationsListDetailWidget_C, AlterationsWidget) == 0x000268, "Member 'UItemAlterationsListDetailWidget_C::AlterationsWidget' has a wrong offset!");
+static_assert(sizeof(UItemAlterationsListDetailWidget_C) == 0x000268, "Wrong size on UItemAlterationsListDetailWidget_C");
+static_assert(offsetof(UItemAlterationsListDetailWidget_C, UberGraphFrame) == 0x000258, "Member 'UItemAlterationsListDetailWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemAlterationsListDetailWidget_C, AlterationsWidget) == 0x000260, "Member 'UItemAlterationsListDetailWidget_C::AlterationsWidget' has a wrong offset!");
 
 }
 

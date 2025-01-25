@@ -74,27 +74,5 @@ void AGCN_Commando_InAPinch_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-
-// Function GCN_Commando_InAPinch.GCN_Commando_InAPinch_C.OnWhileActiveParticleSystemDeactivate
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UParticleSystemComponent*         WhileActiveParticleSysComponent                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void AGCN_Commando_InAPinch_C::OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Commando_InAPinch_C", "OnWhileActiveParticleSystemDeactivate");
-
-	Params::GCN_Commando_InAPinch_C_OnWhileActiveParticleSystemDeactivate Parms{};
-
-	Parms.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
 }
 

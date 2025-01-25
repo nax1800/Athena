@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function Athena_PlayerController.Athena_PlayerController_C.ExecuteUbergraph_Athena_PlayerController
-// (HasDefaults)
+// ()
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -37,17 +37,47 @@ void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int32 
 }
 
 
+// Function Athena_PlayerController.Athena_PlayerController_C.ReceiveEndPlay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AAthena_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveEndPlay");
+
+	Params::Athena_PlayerController_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Athena_PlayerController.Athena_PlayerController_C.PlayWinEffects
 // (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            FinisherPawn                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortWeaponItemDefinition*        FinishingWeapon                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EDeathCause                             DeathCause                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAthena_PlayerController_C::PlayWinEffects()
+void AAthena_PlayerController_C::PlayWinEffects(class APawn* FinisherPawn, const class UFortWeaponItemDefinition* FinishingWeapon, EDeathCause DeathCause)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Athena_PlayerController_C", "PlayWinEffects");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Athena_PlayerController_C_PlayWinEffects Parms{};
+
+	Parms.FinisherPawn = FinisherPawn;
+	Parms.FinishingWeapon = FinishingWeapon;
+	Parms.DeathCause = DeathCause;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

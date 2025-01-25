@@ -20,9 +20,9 @@ namespace SDK
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotSelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_SquadSlotIndex                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SquadSlotIndex_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UExpeditionSquadSlotButton_C::OnSquadSlotSelected__DelegateSignature(int32 Param_SquadSlotIndex)
+void UExpeditionSquadSlotButton_C::OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UExpeditionSquadSlotButton_C::OnSquadSlotSelected__DelegateSignature(int32 
 
 	Params::ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature Parms{};
 
-	Parms.Param_SquadSlotIndex = Param_SquadSlotIndex;
+	Parms.SquadSlotIndex_0 = SquadSlotIndex_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -94,9 +94,9 @@ void UExpeditionSquadSlotButton_C::ExecuteUbergraph_ExpeditionSquadSlotButton(in
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.Open Squad Slot
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_SquadSlotIndex                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SquadSlotIndex_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UExpeditionSquadSlotButton_C::Open_Squad_Slot(int32 Param_SquadSlotIndex)
+void UExpeditionSquadSlotButton_C::Open_Squad_Slot(int32 SquadSlotIndex_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +105,7 @@ void UExpeditionSquadSlotButton_C::Open_Squad_Slot(int32 Param_SquadSlotIndex)
 
 	Params::ExpeditionSquadSlotButton_C_Open_Squad_Slot Parms{};
 
-	Parms.Param_SquadSlotIndex = Param_SquadSlotIndex;
+	Parms.SquadSlotIndex_0 = SquadSlotIndex_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -159,15 +159,15 @@ void UExpeditionSquadSlotButton_C::BndEvt__PopupMenuAnchor_K2Node_ComponentBound
 }
 
 
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSelected
+// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UExpeditionSquadSlotButton_C::OnSelected()
+void UExpeditionSquadSlotButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "OnSelected");
+		Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

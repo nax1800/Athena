@@ -19,20 +19,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass GiftingUserItem.GiftingUserItem_C
-// 0x0038 (0x0860 - 0x0828)
+// 0x0040 (0x08E8 - 0x08A8)
 class UGiftingUserItem_C final : public UFortGiftingUserItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0828(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Toggle;                                            // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageEmptyCheck;                                   // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageErrorState;                                   // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageSelectedCheck;                                // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  Switcher_UserStatus;                               // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_UserDetails;                           // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Toggle;                                            // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageEmptyCheck;                                   // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageErrorState;                                   // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageSelectedCheck;                                // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  Switcher_UserStatus;                               // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_Message;                                      // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_UserDetails;                           // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GiftingUserItem(int32 EntryPoint);
+	void UpdateMessageText(const class FText& NewMessage);
 	void SetSelectionState(ESelectionState NewState, bool bAnimateOnSelect);
 
 public:
@@ -46,14 +48,15 @@ public:
 	}
 };
 static_assert(alignof(UGiftingUserItem_C) == 0x000008, "Wrong alignment on UGiftingUserItem_C");
-static_assert(sizeof(UGiftingUserItem_C) == 0x000860, "Wrong size on UGiftingUserItem_C");
-static_assert(offsetof(UGiftingUserItem_C, UberGraphFrame) == 0x000828, "Member 'UGiftingUserItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, Toggle) == 0x000830, "Member 'UGiftingUserItem_C::Toggle' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageEmptyCheck) == 0x000838, "Member 'UGiftingUserItem_C::ImageEmptyCheck' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageErrorState) == 0x000840, "Member 'UGiftingUserItem_C::ImageErrorState' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageSelectedCheck) == 0x000848, "Member 'UGiftingUserItem_C::ImageSelectedCheck' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, Switcher_UserStatus) == 0x000850, "Member 'UGiftingUserItem_C::Switcher_UserStatus' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, VerticalBox_UserDetails) == 0x000858, "Member 'UGiftingUserItem_C::VerticalBox_UserDetails' has a wrong offset!");
+static_assert(sizeof(UGiftingUserItem_C) == 0x0008E8, "Wrong size on UGiftingUserItem_C");
+static_assert(offsetof(UGiftingUserItem_C, UberGraphFrame) == 0x0008A8, "Member 'UGiftingUserItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, Toggle) == 0x0008B0, "Member 'UGiftingUserItem_C::Toggle' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, ImageEmptyCheck) == 0x0008B8, "Member 'UGiftingUserItem_C::ImageEmptyCheck' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, ImageErrorState) == 0x0008C0, "Member 'UGiftingUserItem_C::ImageErrorState' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, ImageSelectedCheck) == 0x0008C8, "Member 'UGiftingUserItem_C::ImageSelectedCheck' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, Switcher_UserStatus) == 0x0008D0, "Member 'UGiftingUserItem_C::Switcher_UserStatus' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, Text_Message) == 0x0008D8, "Member 'UGiftingUserItem_C::Text_Message' has a wrong offset!");
+static_assert(offsetof(UGiftingUserItem_C, VerticalBox_UserDetails) == 0x0008E0, "Member 'UGiftingUserItem_C::VerticalBox_UserDetails' has a wrong offset!");
 
 }
 

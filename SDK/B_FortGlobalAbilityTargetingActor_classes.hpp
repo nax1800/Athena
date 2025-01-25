@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_FortGlobalAbilityTargetingActor.B_FortGlobalAbilityTargetingActor_C
-// 0x0000 (0x0318 - 0x0318)
+// 0x0000 (0x0328 - 0x0328)
 class AB_FortGlobalAbilityTargetingActor_C final : public AFortGlobalAbilityTargetingActor
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AB_FortGlobalAbilityTargetingActor_C) == 0x000008, "Wrong alignment on AB_FortGlobalAbilityTargetingActor_C");
-static_assert(sizeof(AB_FortGlobalAbilityTargetingActor_C) == 0x000318, "Wrong size on AB_FortGlobalAbilityTargetingActor_C");
+static_assert(sizeof(AB_FortGlobalAbilityTargetingActor_C) == 0x000328, "Wrong size on AB_FortGlobalAbilityTargetingActor_C");
 
 }
 

@@ -18,34 +18,33 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Minigun_Athena.B_Minigun_Athena_C
-// 0x0070 (0x0EC8 - 0x0E58)
+// 0x0070 (0x0FE0 - 0x0F70)
 class AB_Minigun_Athena_C final : public AB_Ranged_Generic_C
 {
 public:
-	uint8                                         Pad_E54[0x4];                                      // 0x0E54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_Minigun_Athena_C;                 // 0x0E58(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   BarrelGlowFX;                                      // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SpinUpSound;                                       // 0x0E68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SpinDownSound;                                     // 0x0E70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_MinigunChargeUp;                                 // 0x0E78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A; // 0x0E80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A; // 0x0E84(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E85[0x3];                                      // 0x0E85(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     SpinAudioVolumeTimeline;                           // 0x0E88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E; // 0x0E90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E; // 0x0E94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E95[0x3];                                      // 0x0E95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     BarrelGlow;                                        // 0x0E98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MuzzleGlowMID;                                     // 0x0EA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasPlayedSpinUpSound;                             // 0x0EA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EA9[0x3];                                      // 0x0EA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SpinUpAudioVolumeMultiplier;                       // 0x0EAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CurrentSpinAudioComponent;                         // 0x0EB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentAmmo;                                       // 0x0EB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlayedSpinUpAudio;                                // 0x0EBC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bPlayedSpinDownAudio;                              // 0x0EBD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EBE[0x2];                                      // 0x0EBE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SpinVolumeMultiplier;                              // 0x0EC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_Minigun_Athena_C;                 // 0x0F70(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   BarrelGlowFX;                                      // 0x0F78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SpinUpSound;                                       // 0x0F80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SpinDownSound;                                     // 0x0F88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_MinigunChargeUp;                                 // 0x0F90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A; // 0x0F98(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A; // 0x0F9C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9D[0x3];                                      // 0x0F9D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     SpinAudioVolumeTimeline;                           // 0x0FA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E; // 0x0FA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E; // 0x0FAC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FAD[0x3];                                      // 0x0FAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     BarrelGlow;                                        // 0x0FB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MuzzleGlowMID;                                     // 0x0FB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasPlayedSpinUpSound;                             // 0x0FC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FC1[0x3];                                      // 0x0FC1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpinUpAudioVolumeMultiplier;                       // 0x0FC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CurrentSpinAudioComponent;                         // 0x0FC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentAmmo;                                       // 0x0FD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlayedSpinUpAudio;                                // 0x0FD4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bPlayedSpinDownAudio;                              // 0x0FD5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FD6[0x2];                                      // 0x0FD6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpinVolumeMultiplier;                              // 0x0FD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Minigun_Athena(int32 EntryPoint);
@@ -76,26 +75,26 @@ public:
 	}
 };
 static_assert(alignof(AB_Minigun_Athena_C) == 0x000008, "Wrong alignment on AB_Minigun_Athena_C");
-static_assert(sizeof(AB_Minigun_Athena_C) == 0x000EC8, "Wrong size on AB_Minigun_Athena_C");
-static_assert(offsetof(AB_Minigun_Athena_C, UberGraphFrame_B_Minigun_Athena_C) == 0x000E58, "Member 'AB_Minigun_Athena_C::UberGraphFrame_B_Minigun_Athena_C' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlowFX) == 0x000E60, "Member 'AB_Minigun_Athena_C::BarrelGlowFX' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinUpSound) == 0x000E68, "Member 'AB_Minigun_Athena_C::SpinUpSound' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinDownSound) == 0x000E70, "Member 'AB_Minigun_Athena_C::SpinDownSound' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, P_MinigunChargeUp) == 0x000E78, "Member 'AB_Minigun_Athena_C::P_MinigunChargeUp' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A) == 0x000E80, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A) == 0x000E84, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline) == 0x000E88, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E) == 0x000E90, "Member 'AB_Minigun_Athena_C::BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E) == 0x000E94, "Member 'AB_Minigun_Athena_C::BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow) == 0x000E98, "Member 'AB_Minigun_Athena_C::BarrelGlow' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, MuzzleGlowMID) == 0x000EA0, "Member 'AB_Minigun_Athena_C::MuzzleGlowMID' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, bHasPlayedSpinUpSound) == 0x000EA8, "Member 'AB_Minigun_Athena_C::bHasPlayedSpinUpSound' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinUpAudioVolumeMultiplier) == 0x000EAC, "Member 'AB_Minigun_Athena_C::SpinUpAudioVolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, CurrentSpinAudioComponent) == 0x000EB0, "Member 'AB_Minigun_Athena_C::CurrentSpinAudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, CurrentAmmo) == 0x000EB8, "Member 'AB_Minigun_Athena_C::CurrentAmmo' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, bPlayedSpinUpAudio) == 0x000EBC, "Member 'AB_Minigun_Athena_C::bPlayedSpinUpAudio' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, bPlayedSpinDownAudio) == 0x000EBD, "Member 'AB_Minigun_Athena_C::bPlayedSpinDownAudio' has a wrong offset!");
-static_assert(offsetof(AB_Minigun_Athena_C, SpinVolumeMultiplier) == 0x000EC0, "Member 'AB_Minigun_Athena_C::SpinVolumeMultiplier' has a wrong offset!");
+static_assert(sizeof(AB_Minigun_Athena_C) == 0x000FE0, "Wrong size on AB_Minigun_Athena_C");
+static_assert(offsetof(AB_Minigun_Athena_C, UberGraphFrame_B_Minigun_Athena_C) == 0x000F70, "Member 'AB_Minigun_Athena_C::UberGraphFrame_B_Minigun_Athena_C' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlowFX) == 0x000F78, "Member 'AB_Minigun_Athena_C::BarrelGlowFX' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinUpSound) == 0x000F80, "Member 'AB_Minigun_Athena_C::SpinUpSound' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinDownSound) == 0x000F88, "Member 'AB_Minigun_Athena_C::SpinDownSound' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, P_MinigunChargeUp) == 0x000F90, "Member 'AB_Minigun_Athena_C::P_MinigunChargeUp' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A) == 0x000F98, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline_Volume_18EF57D9444836E65E22B6A5DFE3BF4A' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A) == 0x000F9C, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline__Direction_18EF57D9444836E65E22B6A5DFE3BF4A' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinAudioVolumeTimeline) == 0x000FA0, "Member 'AB_Minigun_Athena_C::SpinAudioVolumeTimeline' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E) == 0x000FA8, "Member 'AB_Minigun_Athena_C::BarrelGlow_MuzzleGlowOpacity_6AA244864FFB6D03BB4DAA82CADCA13E' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E) == 0x000FAC, "Member 'AB_Minigun_Athena_C::BarrelGlow__Direction_6AA244864FFB6D03BB4DAA82CADCA13E' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, BarrelGlow) == 0x000FB0, "Member 'AB_Minigun_Athena_C::BarrelGlow' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, MuzzleGlowMID) == 0x000FB8, "Member 'AB_Minigun_Athena_C::MuzzleGlowMID' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, bHasPlayedSpinUpSound) == 0x000FC0, "Member 'AB_Minigun_Athena_C::bHasPlayedSpinUpSound' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinUpAudioVolumeMultiplier) == 0x000FC4, "Member 'AB_Minigun_Athena_C::SpinUpAudioVolumeMultiplier' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, CurrentSpinAudioComponent) == 0x000FC8, "Member 'AB_Minigun_Athena_C::CurrentSpinAudioComponent' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, CurrentAmmo) == 0x000FD0, "Member 'AB_Minigun_Athena_C::CurrentAmmo' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, bPlayedSpinUpAudio) == 0x000FD4, "Member 'AB_Minigun_Athena_C::bPlayedSpinUpAudio' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, bPlayedSpinDownAudio) == 0x000FD5, "Member 'AB_Minigun_Athena_C::bPlayedSpinDownAudio' has a wrong offset!");
+static_assert(offsetof(AB_Minigun_Athena_C, SpinVolumeMultiplier) == 0x000FD8, "Member 'AB_Minigun_Athena_C::SpinVolumeMultiplier' has a wrong offset!");
 
 }
 

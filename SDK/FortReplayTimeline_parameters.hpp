@@ -10,38 +10,45 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "Slate_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function FortReplayTimeline.FortReplayTimeline_C.ExecuteUbergraph_FortReplayTimeline
-// 0x0060 (0x0060 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EHudVisibilityState IsVisible)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortReplayEventType EventType, float TimeRatio, int32 MarkerIdx)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_CustomEvent_TimeNow;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bIsTimelineFocus)>        K2Node_CreateDelegate_OutputDelegate1;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue12;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue2;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue123;                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue3;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EHudVisibilityState IsVisible)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue4;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue5;                  // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue6;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue7;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline) == 0x000008, "Wrong alignment on FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline");
-static_assert(sizeof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline) == 0x000060, "Wrong size on FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline");
+static_assert(sizeof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline) == 0x0000A0, "Wrong size on FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, EntryPoint) == 0x000000, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, K2Node_Event_IsDesignTime) == 0x000018, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -49,11 +56,17 @@ static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline,
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue1) == 0x000028, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, K2Node_CreateDelegate_OutputDelegate1) == 0x000030, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue12) == 0x000040, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue2) == 0x000040, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetValue_ReturnValue) == 0x000048, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue123) == 0x000050, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000058, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_FClamp_ReturnValue) == 0x00005C, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue3) == 0x000050, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, K2Node_CreateDelegate_OutputDelegate2) == 0x000058, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue4) == 0x000068, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue5) == 0x000070, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue6) == 0x000078, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_GetContext_ReturnValue7) == 0x000080, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, K2Node_CreateDelegate_OutputDelegate3) == 0x000088, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000098, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline, CallFunc_FClamp_ReturnValue) == 0x00009C, "Member 'FortReplayTimeline_C_ExecuteUbergraph_FortReplayTimeline::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 
 // Function FortReplayTimeline.FortReplayTimeline_C.CurrentTimeChangedFromNative
 // 0x0004 (0x0004 - 0x0000)
@@ -227,6 +240,41 @@ static_assert(sizeof(FortReplayTimeline_C_OnHUDVisibilityChanged) == 0x000018, "
 static_assert(offsetof(FortReplayTimeline_C_OnHUDVisibilityChanged, VisibilityState) == 0x000000, "Member 'FortReplayTimeline_C_OnHUDVisibilityChanged::VisibilityState' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_OnHUDVisibilityChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FortReplayTimeline_C_OnHUDVisibilityChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortReplayTimeline_C_OnHUDVisibilityChanged, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'FortReplayTimeline_C_OnHUDVisibilityChanged::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function FortReplayTimeline.FortReplayTimeline_C.AddMarkerToTimeline
+// 0x0060 (0x0060 - 0x0000)
+struct FortReplayTimeline_C_AddMarkerToTimeline final
+{
+public:
+	EFortReplayEventType                          EventType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RelativeTime;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EventIdx;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCanvasPanelSlot*                       CanvasPanelSlot;                                   // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              AnchorVec;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0028(0x0010)(NoDestructor)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineMarker_C*                      CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(FortReplayTimeline_C_AddMarkerToTimeline) == 0x000008, "Wrong alignment on FortReplayTimeline_C_AddMarkerToTimeline");
+static_assert(sizeof(FortReplayTimeline_C_AddMarkerToTimeline) == 0x000060, "Wrong size on FortReplayTimeline_C_AddMarkerToTimeline");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, EventType) == 0x000000, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::EventType' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, RelativeTime) == 0x000004, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::RelativeTime' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, EventIdx) == 0x000008, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::EventIdx' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, CanvasPanelSlot) == 0x000010, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::CanvasPanelSlot' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, AnchorVec) == 0x000018, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::AnchorVec' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, K2Node_MakeStruct_Anchors) == 0x000028, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::K2Node_MakeStruct_Anchors' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, CallFunc_GetPlayerController_ReturnValue) == 0x000038, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, CallFunc_Create_ReturnValue) == 0x000040, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, CallFunc_AddChild_ReturnValue) == 0x000048, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, K2Node_DynamicCast_AsCanvas_Panel_Slot) == 0x000050, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::K2Node_DynamicCast_AsCanvas_Panel_Slot' has a wrong offset!");
+static_assert(offsetof(FortReplayTimeline_C_AddMarkerToTimeline, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'FortReplayTimeline_C_AddMarkerToTimeline::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function FortReplayTimeline.FortReplayTimeline_C.GetProgressBarWidget
 // 0x0008 (0x0008 - 0x0000)

@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaTeamCountWidget.AthenaTeamCountWidget_C
-// 0x0030 (0x0288 - 0x0258)
+// 0x0030 (0x0280 - 0x0250)
 class UAthenaTeamCountWidget_C final : public UAthenaTeamAliveCountBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CommonTextBlock_3;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_4;                                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_6;                                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           TeamContainer;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           TeamInfoBox;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CommonTextBlock_3;                                 // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_4;                                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_6;                                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           TeamContainer;                                     // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           TeamInfoBox;                                       // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaTeamCountWidget(int32 EntryPoint);
@@ -45,13 +45,13 @@ public:
 	}
 };
 static_assert(alignof(UAthenaTeamCountWidget_C) == 0x000008, "Wrong alignment on UAthenaTeamCountWidget_C");
-static_assert(sizeof(UAthenaTeamCountWidget_C) == 0x000288, "Wrong size on UAthenaTeamCountWidget_C");
-static_assert(offsetof(UAthenaTeamCountWidget_C, UberGraphFrame) == 0x000258, "Member 'UAthenaTeamCountWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamCountWidget_C, CommonTextBlock_3) == 0x000260, "Member 'UAthenaTeamCountWidget_C::CommonTextBlock_3' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamCountWidget_C, Image_4) == 0x000268, "Member 'UAthenaTeamCountWidget_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamCountWidget_C, Image_6) == 0x000270, "Member 'UAthenaTeamCountWidget_C::Image_6' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamCountWidget_C, TeamContainer) == 0x000278, "Member 'UAthenaTeamCountWidget_C::TeamContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamCountWidget_C, TeamInfoBox) == 0x000280, "Member 'UAthenaTeamCountWidget_C::TeamInfoBox' has a wrong offset!");
+static_assert(sizeof(UAthenaTeamCountWidget_C) == 0x000280, "Wrong size on UAthenaTeamCountWidget_C");
+static_assert(offsetof(UAthenaTeamCountWidget_C, UberGraphFrame) == 0x000250, "Member 'UAthenaTeamCountWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaTeamCountWidget_C, CommonTextBlock_3) == 0x000258, "Member 'UAthenaTeamCountWidget_C::CommonTextBlock_3' has a wrong offset!");
+static_assert(offsetof(UAthenaTeamCountWidget_C, Image_4) == 0x000260, "Member 'UAthenaTeamCountWidget_C::Image_4' has a wrong offset!");
+static_assert(offsetof(UAthenaTeamCountWidget_C, Image_6) == 0x000268, "Member 'UAthenaTeamCountWidget_C::Image_6' has a wrong offset!");
+static_assert(offsetof(UAthenaTeamCountWidget_C, TeamContainer) == 0x000270, "Member 'UAthenaTeamCountWidget_C::TeamContainer' has a wrong offset!");
+static_assert(offsetof(UAthenaTeamCountWidget_C, TeamInfoBox) == 0x000278, "Member 'UAthenaTeamCountWidget_C::TeamInfoBox' has a wrong offset!");
 
 }
 

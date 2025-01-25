@@ -10,27 +10,29 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HelpPanel.HelpPanel_C
-// 0x0048 (0x0438 - 0x03F0)
+// 0x0068 (0x0390 - 0x0328)
 class UHelpPanel_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CloseButton;                                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHelpEntryBodyWidget_C*                 HelpEntryBodyWidget;                               // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             HelpEntryScrollBox;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HelpIcon;                                          // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTreeView*                        HelpTreeView;                                      // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UFortHelpItem*>                  TopLevelHelpItems;                                 // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CloseButton;                                       // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHelpEntryBodyWidget_C*                 HelpEntryBodyWidget;                               // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             HelpEntryScrollBox;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HelpIcon;                                          // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTreeView*                        HelpTreeView;                                      // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextHeader;                                        // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UFortHelpItem*>                  TopLevelHelpItems;                                 // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class FText                                   Header_Display_Text;                               // 0x0378(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_HelpPanel(int32 EntryPoint);
@@ -46,6 +48,8 @@ public:
 	void UpdateDetails(class UFortHelpItem* SelectedHelpItem);
 	TArray<class UObject*> HelpTreeView_GetChildrenForCategory(class UObject* Item);
 	void UnbindDelegates();
+	void SetSelectedItemByID(class FName SelectedItemID);
+	void Setup_Header();
 
 public:
 	static class UClass* StaticClass()
@@ -58,15 +62,17 @@ public:
 	}
 };
 static_assert(alignof(UHelpPanel_C) == 0x000008, "Wrong alignment on UHelpPanel_C");
-static_assert(sizeof(UHelpPanel_C) == 0x000438, "Wrong size on UHelpPanel_C");
-static_assert(offsetof(UHelpPanel_C, UberGraphFrame) == 0x0003F0, "Member 'UHelpPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, CloseButton) == 0x0003F8, "Member 'UHelpPanel_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpEntryBodyWidget) == 0x000400, "Member 'UHelpPanel_C::HelpEntryBodyWidget' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpEntryScrollBox) == 0x000408, "Member 'UHelpPanel_C::HelpEntryScrollBox' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpIcon) == 0x000410, "Member 'UHelpPanel_C::HelpIcon' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpTreeView) == 0x000418, "Member 'UHelpPanel_C::HelpTreeView' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, Lightbox) == 0x000420, "Member 'UHelpPanel_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, TopLevelHelpItems) == 0x000428, "Member 'UHelpPanel_C::TopLevelHelpItems' has a wrong offset!");
+static_assert(sizeof(UHelpPanel_C) == 0x000390, "Wrong size on UHelpPanel_C");
+static_assert(offsetof(UHelpPanel_C, UberGraphFrame) == 0x000328, "Member 'UHelpPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, CloseButton) == 0x000330, "Member 'UHelpPanel_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, HelpEntryBodyWidget) == 0x000338, "Member 'UHelpPanel_C::HelpEntryBodyWidget' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, HelpEntryScrollBox) == 0x000340, "Member 'UHelpPanel_C::HelpEntryScrollBox' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, HelpIcon) == 0x000348, "Member 'UHelpPanel_C::HelpIcon' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, HelpTreeView) == 0x000350, "Member 'UHelpPanel_C::HelpTreeView' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, Lightbox) == 0x000358, "Member 'UHelpPanel_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, TextHeader) == 0x000360, "Member 'UHelpPanel_C::TextHeader' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, TopLevelHelpItems) == 0x000368, "Member 'UHelpPanel_C::TopLevelHelpItems' has a wrong offset!");
+static_assert(offsetof(UHelpPanel_C, Header_Display_Text) == 0x000378, "Member 'UHelpPanel_C::Header_Display_Text' has a wrong offset!");
 
 }
 

@@ -31,6 +31,54 @@ void UHordeTierResultsWidget_C::OnTierResultsWidgetComplete__DelegateSignature()
 }
 
 
+// Function HordeTierResultsWidget.HordeTierResultsWidget_C.ExecuteUbergraph_HordeTierResultsWidget
+// ()
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHordeTierResultsWidget_C::ExecuteUbergraph_HordeTierResultsWidget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HordeTierResultsWidget_C", "ExecuteUbergraph_HordeTierResultsWidget");
+
+	Params::HordeTierResultsWidget_C_ExecuteUbergraph_HordeTierResultsWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HordeTierResultsWidget.HordeTierResultsWidget_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UHordeTierResultsWidget_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HordeTierResultsWidget_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HordeTierResultsWidget.HordeTierResultsWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UHordeTierResultsWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HordeTierResultsWidget_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.InitializeMovie
 // (Protected, BlueprintCallable, BlueprintEvent)
 
@@ -97,31 +145,6 @@ void UHordeTierResultsWidget_C::OnEndOfMovieReached()
 		Func = Class->GetFunction("HordeTierResultsWidget_C", "OnEndOfMovieReached");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnHandleAction
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHordeTierResultsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HordeTierResultsWidget_C", "OnHandleAction");
-
-	Params::HordeTierResultsWidget_C_OnHandleAction Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = Parms.bPassThrough;
 }
 
 }

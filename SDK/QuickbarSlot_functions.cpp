@@ -37,12 +37,72 @@ void UQuickbarSlot_C::ExecuteUbergraph_QuickbarSlot(int32 EntryPoint)
 }
 
 
+// Function QuickbarSlot.QuickbarSlot_C.SetSlotSelected
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSelected                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UQuickbarSlot_C::SetSlotSelected(bool bSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuickbarSlot_C", "SetSlotSelected");
+
+	Params::QuickbarSlot_C_SetSlotSelected Parms{};
+
+	Parms.bSelected = bSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuickbarSlot.QuickbarSlot_C.MinimizeSlot
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bShouldSkipAnimation                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UQuickbarSlot_C::MinimizeSlot(bool bShouldSkipAnimation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuickbarSlot_C", "MinimizeSlot");
+
+	Params::QuickbarSlot_C_MinimizeSlot Parms{};
+
+	Parms.bShouldSkipAnimation = bShouldSkipAnimation;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuickbarSlot.QuickbarSlot_C.MaximizeSlot
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bShouldSkipAnimation                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UQuickbarSlot_C::MaximizeSlot(bool bShouldSkipAnimation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuickbarSlot_C", "MaximizeSlot");
+
+	Params::QuickbarSlot_C_MaximizeSlot Parms{};
+
+	Parms.bShouldSkipAnimation = bShouldSkipAnimation;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function QuickbarSlot.QuickbarSlot_C.SetAnimatedBoxScaleFactor
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_AnimatedBoxScaleFactor                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   AnimatedBoxScaleFactor_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuickbarSlot_C::SetAnimatedBoxScaleFactor(float Param_AnimatedBoxScaleFactor)
+void UQuickbarSlot_C::SetAnimatedBoxScaleFactor(float AnimatedBoxScaleFactor_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +111,7 @@ void UQuickbarSlot_C::SetAnimatedBoxScaleFactor(float Param_AnimatedBoxScaleFact
 
 	Params::QuickbarSlot_C_SetAnimatedBoxScaleFactor Parms{};
 
-	Parms.Param_AnimatedBoxScaleFactor = Param_AnimatedBoxScaleFactor;
+	Parms.AnimatedBoxScaleFactor_0 = AnimatedBoxScaleFactor_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,66 +204,6 @@ void UQuickbarSlot_C::HandleMaximizeStarted()
 		Func = Class->GetFunction("QuickbarSlot_C", "HandleMaximizeStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function QuickbarSlot.QuickbarSlot_C.SetSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Selected                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UQuickbarSlot_C::SetSelected(bool Param_Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuickbarSlot_C", "SetSelected");
-
-	Params::QuickbarSlot_C_SetSelected Parms{};
-
-	Parms.Param_Selected = Param_Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function QuickbarSlot.QuickbarSlot_C.Minimize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ShouldSkipAnimation                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UQuickbarSlot_C::Minimize(bool ShouldSkipAnimation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuickbarSlot_C", "Minimize");
-
-	Params::QuickbarSlot_C_Minimize Parms{};
-
-	Parms.ShouldSkipAnimation = ShouldSkipAnimation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function QuickbarSlot.QuickbarSlot_C.Maximize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ShouldSkipAnimation                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UQuickbarSlot_C::Maximize(bool ShouldSkipAnimation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuickbarSlot_C", "Maximize");
-
-	Params::QuickbarSlot_C_Maximize Parms{};
-
-	Parms.ShouldSkipAnimation = ShouldSkipAnimation;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

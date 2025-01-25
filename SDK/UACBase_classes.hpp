@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // Class UACBase.UACNetworkComponent
-// 0x0120 (0x0210 - 0x00F0)
+// 0x0100 (0x01F0 - 0x00F0)
 class UUACNetworkComponent final : public UActorComponent
 {
 public:
 	int32                                         PlayerID;                                          // 0x00F0(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4[0x11C];                                     // 0x00F4(0x011C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F4[0xFC];                                      // 0x00F4(0x00FC)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void SendClientHello();
+	void SendClientHello(uint32 SessionKey);
 	void SendPacketToClient(uint8 Type, const TArray<uint8>& Packet);
 	void SendPacketToServer(uint8 Type, const TArray<uint8>& Packet);
 
@@ -40,7 +40,7 @@ public:
 	}
 };
 static_assert(alignof(UUACNetworkComponent) == 0x000008, "Wrong alignment on UUACNetworkComponent");
-static_assert(sizeof(UUACNetworkComponent) == 0x000210, "Wrong size on UUACNetworkComponent");
+static_assert(sizeof(UUACNetworkComponent) == 0x0001F0, "Wrong size on UUACNetworkComponent");
 static_assert(offsetof(UUACNetworkComponent, PlayerID) == 0x0000F0, "Member 'UUACNetworkComponent::PlayerID' has a wrong offset!");
 
 }

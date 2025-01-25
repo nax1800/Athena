@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "SkillTreeGroups_structs.hpp"
+#include "Engine_structs.hpp"
 #include "SkillTreeGroupColors_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NodeBackground.NodeBackground_C
-// 0x0078 (0x0880 - 0x0808)
+// 0x0078 (0x0908 - 0x0890)
 class UNodeBackground_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	ESkillTreeGroups                              Group;                                             // 0x0810(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_811[0x3];                                      // 0x0811(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSkillTreeGroupColors                  GroupColors;                                       // 0x0814(0x0054)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          Horizontal;                                        // 0x0868(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_869[0x7];                                      // 0x0869(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 VerticalStyle;                                     // 0x0870(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 HorizontalStyle;                                   // 0x0878(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	ESkillTreeGroups                              Group;                                             // 0x0898(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_899[0x3];                                      // 0x0899(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSkillTreeGroupColors                  GroupColors;                                       // 0x089C(0x0054)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          Horizontal;                                        // 0x08F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8F1[0x7];                                      // 0x08F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 VerticalStyle;                                     // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 HorizontalStyle;                                   // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_NodeBackground(int32 EntryPoint);
@@ -50,13 +50,13 @@ public:
 	}
 };
 static_assert(alignof(UNodeBackground_C) == 0x000008, "Wrong alignment on UNodeBackground_C");
-static_assert(sizeof(UNodeBackground_C) == 0x000880, "Wrong size on UNodeBackground_C");
-static_assert(offsetof(UNodeBackground_C, UberGraphFrame) == 0x000808, "Member 'UNodeBackground_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, Group) == 0x000810, "Member 'UNodeBackground_C::Group' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, GroupColors) == 0x000814, "Member 'UNodeBackground_C::GroupColors' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, Horizontal) == 0x000868, "Member 'UNodeBackground_C::Horizontal' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, VerticalStyle) == 0x000870, "Member 'UNodeBackground_C::VerticalStyle' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, HorizontalStyle) == 0x000878, "Member 'UNodeBackground_C::HorizontalStyle' has a wrong offset!");
+static_assert(sizeof(UNodeBackground_C) == 0x000908, "Wrong size on UNodeBackground_C");
+static_assert(offsetof(UNodeBackground_C, UberGraphFrame) == 0x000890, "Member 'UNodeBackground_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UNodeBackground_C, Group) == 0x000898, "Member 'UNodeBackground_C::Group' has a wrong offset!");
+static_assert(offsetof(UNodeBackground_C, GroupColors) == 0x00089C, "Member 'UNodeBackground_C::GroupColors' has a wrong offset!");
+static_assert(offsetof(UNodeBackground_C, Horizontal) == 0x0008F0, "Member 'UNodeBackground_C::Horizontal' has a wrong offset!");
+static_assert(offsetof(UNodeBackground_C, VerticalStyle) == 0x0008F8, "Member 'UNodeBackground_C::VerticalStyle' has a wrong offset!");
+static_assert(offsetof(UNodeBackground_C, HorizontalStyle) == 0x000900, "Member 'UNodeBackground_C::HorizontalStyle' has a wrong offset!");
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerSpawnPlacementActor.PlayerSpawnPlacementActor_C
-// 0x0008 (0x0688 - 0x0680)
+// 0x0008 (0x0620 - 0x0618)
 class APlayerSpawnPlacementActor_C final : public AFortPlacementActor
 {
 public:
-	class UArrowComponent*                        Arrow;                                             // 0x0680(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Arrow;                                             // 0x0618(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -37,8 +37,8 @@ public:
 	}
 };
 static_assert(alignof(APlayerSpawnPlacementActor_C) == 0x000008, "Wrong alignment on APlayerSpawnPlacementActor_C");
-static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x000688, "Wrong size on APlayerSpawnPlacementActor_C");
-static_assert(offsetof(APlayerSpawnPlacementActor_C, Arrow) == 0x000680, "Member 'APlayerSpawnPlacementActor_C::Arrow' has a wrong offset!");
+static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x000620, "Wrong size on APlayerSpawnPlacementActor_C");
+static_assert(offsetof(APlayerSpawnPlacementActor_C, Arrow) == 0x000618, "Member 'APlayerSpawnPlacementActor_C::Arrow' has a wrong offset!");
 
 }
 

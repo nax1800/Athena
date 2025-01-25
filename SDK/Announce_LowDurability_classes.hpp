@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_LowDurability.Announce_LowDurability_C
-// 0x0010 (0x0480 - 0x0470)
+// 0x0010 (0x0490 - 0x0480)
 class AAnnounce_LowDurability_C final : public AFortClientAnnouncement_Basic
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Announce_LowDurability(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(AAnnounce_LowDurability_C) == 0x000008, "Wrong alignment on AAnnounce_LowDurability_C");
-static_assert(sizeof(AAnnounce_LowDurability_C) == 0x000480, "Wrong size on AAnnounce_LowDurability_C");
-static_assert(offsetof(AAnnounce_LowDurability_C, UberGraphFrame) == 0x000470, "Member 'AAnnounce_LowDurability_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_LowDurability_C, DefaultSceneRoot) == 0x000478, "Member 'AAnnounce_LowDurability_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(AAnnounce_LowDurability_C) == 0x000490, "Wrong size on AAnnounce_LowDurability_C");
+static_assert(offsetof(AAnnounce_LowDurability_C, UberGraphFrame) == 0x000480, "Member 'AAnnounce_LowDurability_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AAnnounce_LowDurability_C, DefaultSceneRoot) == 0x000488, "Member 'AAnnounce_LowDurability_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

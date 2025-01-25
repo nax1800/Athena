@@ -76,7 +76,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(XpBoosts_C_Update_Total_Boost_Amounts) == 0x000008, "Wrong alignment on XpBoosts_C_Update_Total_Boost_Amounts");
 static_assert(sizeof(XpBoosts_C_Update_Total_Boost_Amounts) == 0x000098, "Wrong size on XpBoosts_C_Update_Total_Boost_Amounts");
@@ -90,7 +90,7 @@ static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntIn
 static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Get_Item) == 0x000080, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Less_IntInt_ReturnValue) == 0x00008C, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue12) == 0x000090, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue2) == 0x000090, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Update Total Boosts
 // 0x0020 (0x0020 - 0x0000)

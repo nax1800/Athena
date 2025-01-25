@@ -20,23 +20,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Athena_ShieldSmall.GA_Athena_ShieldSmall_C
-// 0x00A0 (0x0B88 - 0x0AE8)
+// 0x00A0 (0x0998 - 0x08F8)
 class UGA_Athena_ShieldSmall_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	struct FFortGameplayAbilityMontageInfo        AnimMontageInfo;                                   // 0x0AF8(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRotator                               SpawnHeading;                                      // 0x0B58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B64[0x4];                                      // 0x0B64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0B68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Projectile;                                        // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ShieldingAmount;                                   // 0x0B78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TriggerDuration;                                   // 0x0B7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SmallShieldCap;                                    // 0x0B80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	struct FFortGameplayAbilityMontageInfo        AnimMontageInfo;                                   // 0x0900(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRotator                               SpawnHeading;                                      // 0x0960(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_96C[0x4];                                      // 0x096C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0970(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Projectile;                                        // 0x0978(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ShieldingAmount;                                   // 0x0980(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TriggerDuration;                                   // 0x0984(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SmallShieldCap;                                    // 0x0988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_98C[0x4];                                      // 0x098C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ShieldSmallHolster;                                // 0x0990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Athena_ShieldSmall(int32 EntryPoint);
+	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbility();
 	void Triggered_0FAA9CFB4F74B18CA297E1B4800037A2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Cancelled_0FAA9CFB4F74B18CA297E1B4800037A2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
@@ -55,15 +57,16 @@ public:
 	}
 };
 static_assert(alignof(UGA_Athena_ShieldSmall_C) == 0x000008, "Wrong alignment on UGA_Athena_ShieldSmall_C");
-static_assert(sizeof(UGA_Athena_ShieldSmall_C) == 0x000B88, "Wrong size on UGA_Athena_ShieldSmall_C");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, UberGraphFrame) == 0x000AF0, "Member 'UGA_Athena_ShieldSmall_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, AnimMontageInfo) == 0x000AF8, "Member 'UGA_Athena_ShieldSmall_C::AnimMontageInfo' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, SpawnHeading) == 0x000B58, "Member 'UGA_Athena_ShieldSmall_C::SpawnHeading' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, PlayerPawn) == 0x000B68, "Member 'UGA_Athena_ShieldSmall_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, Projectile) == 0x000B70, "Member 'UGA_Athena_ShieldSmall_C::Projectile' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, ShieldingAmount) == 0x000B78, "Member 'UGA_Athena_ShieldSmall_C::ShieldingAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, TriggerDuration) == 0x000B7C, "Member 'UGA_Athena_ShieldSmall_C::TriggerDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ShieldSmall_C, SmallShieldCap) == 0x000B80, "Member 'UGA_Athena_ShieldSmall_C::SmallShieldCap' has a wrong offset!");
+static_assert(sizeof(UGA_Athena_ShieldSmall_C) == 0x000998, "Wrong size on UGA_Athena_ShieldSmall_C");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, UberGraphFrame) == 0x0008F8, "Member 'UGA_Athena_ShieldSmall_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, AnimMontageInfo) == 0x000900, "Member 'UGA_Athena_ShieldSmall_C::AnimMontageInfo' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, SpawnHeading) == 0x000960, "Member 'UGA_Athena_ShieldSmall_C::SpawnHeading' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, PlayerPawn) == 0x000970, "Member 'UGA_Athena_ShieldSmall_C::PlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, Projectile) == 0x000978, "Member 'UGA_Athena_ShieldSmall_C::Projectile' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, ShieldingAmount) == 0x000980, "Member 'UGA_Athena_ShieldSmall_C::ShieldingAmount' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, TriggerDuration) == 0x000984, "Member 'UGA_Athena_ShieldSmall_C::TriggerDuration' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, SmallShieldCap) == 0x000988, "Member 'UGA_Athena_ShieldSmall_C::SmallShieldCap' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_ShieldSmall_C, ShieldSmallHolster) == 0x000990, "Member 'UGA_Athena_ShieldSmall_C::ShieldSmallHolster' has a wrong offset!");
 
 }
 

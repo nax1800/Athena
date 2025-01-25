@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
@@ -20,14 +19,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MulchTileButton.MulchTileButton_C
-// 0x0020 (0x0858 - 0x0838)
+// 0x0020 (0x08E0 - 0x08C0)
 class UMulchTileButton_C final : public UFortMulchItemTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0838(0x0008)(Transient, DuplicateTransient)
-	class UWrapBox*                               InputActionWrapper;                                // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMenuAnchor*                            PopupMenuAnchor;                                   // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 WarningIcon;                                       // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
+	class UWrapBox*                               InputActionWrapper;                                // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMenuAnchor*                            PopupMenuAnchor;                                   // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 WarningIcon;                                       // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MulchTileButton(int32 EntryPoint);
@@ -48,11 +47,11 @@ public:
 	}
 };
 static_assert(alignof(UMulchTileButton_C) == 0x000008, "Wrong alignment on UMulchTileButton_C");
-static_assert(sizeof(UMulchTileButton_C) == 0x000858, "Wrong size on UMulchTileButton_C");
-static_assert(offsetof(UMulchTileButton_C, UberGraphFrame) == 0x000838, "Member 'UMulchTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchTileButton_C, InputActionWrapper) == 0x000840, "Member 'UMulchTileButton_C::InputActionWrapper' has a wrong offset!");
-static_assert(offsetof(UMulchTileButton_C, PopupMenuAnchor) == 0x000848, "Member 'UMulchTileButton_C::PopupMenuAnchor' has a wrong offset!");
-static_assert(offsetof(UMulchTileButton_C, WarningIcon) == 0x000850, "Member 'UMulchTileButton_C::WarningIcon' has a wrong offset!");
+static_assert(sizeof(UMulchTileButton_C) == 0x0008E0, "Wrong size on UMulchTileButton_C");
+static_assert(offsetof(UMulchTileButton_C, UberGraphFrame) == 0x0008C0, "Member 'UMulchTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMulchTileButton_C, InputActionWrapper) == 0x0008C8, "Member 'UMulchTileButton_C::InputActionWrapper' has a wrong offset!");
+static_assert(offsetof(UMulchTileButton_C, PopupMenuAnchor) == 0x0008D0, "Member 'UMulchTileButton_C::PopupMenuAnchor' has a wrong offset!");
+static_assert(offsetof(UMulchTileButton_C, WarningIcon) == 0x0008D8, "Member 'UMulchTileButton_C::WarningIcon' has a wrong offset!");
 
 }
 

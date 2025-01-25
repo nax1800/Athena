@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CommonUI_structs.hpp"
 
 
@@ -19,92 +19,97 @@ namespace SDK::Params
 {
 
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.ExecuteUbergraph_CollectionBookItemPicker
-// 0x0578 (0x0578 - 0x0000)
+// 0x0668 (0x0668 - 0x0000)
 struct CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  Temp_struct_Variable;                              // 0x0004(0x0004)(NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable;                                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortDialogResult                             Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Item, bool bIsSelected)> K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortItem*                              K2Node_CustomEvent_SelectedItem;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDONOTUSE_C*                            CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCommonInputActionData                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x0048(0x02D8)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0321(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_322[0x6];                                      // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bWaitingForLatentActionCompletion; // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogExternalLatentActionHandle  K2Node_CustomEvent_WaitingDialogHandle;            // 0x0334(0x0004)(NoDestructor)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0338(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0348(0x0010)(ZeroConstructor, NoDestructor)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCollectionBookRecycleSlotResultsWidget_C* CallFunc_Create_ReturnValue1;                      // 0x0360(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAccountItem*                       CallFunc_GetCurrentSlottedItem_ReturnValue;        // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAccountItem*                       CallFunc_GetCurrentSlottedItem_ReturnValue1;       // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue;              // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue1;             // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Get_Type_Text_Type;                       // 0x0390(0x0018)()
-	class FText                                   CallFunc_Get_Type_Text_Type1;                      // 0x03A8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x03C0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0400(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0440(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0450(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0460(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0478(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0058(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
+	TDelegate<void(class UObject* Item, bool bIsSelected)> K2Node_CreateDelegate_OutputDelegate;              // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortItem*                              K2Node_CustomEvent_SelectedItem;                   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortDialogExternalLatentActionHandle  Temp_struct_Variable;                              // 0x00E0(0x0004)(NoDestructor)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDONOTUSE_C*                            CallFunc_Create_ReturnValue;                       // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bWaitingForLatentActionCompletion; // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortDialogExternalLatentActionHandle  K2Node_CustomEvent_WaitingDialogHandle;            // 0x0104(0x0004)(NoDestructor)
+	struct FCommonInputActionData                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x0108(0x0380)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_489[0x7];                                      // 0x0489(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction;        // 0x0490(0x00C8)()
-	TArray<struct FConfirmationDialogAction>      K2Node_MakeArray_Array12;                          // 0x0558(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue; // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TArray<struct FConfirmationDialogAction>      K2Node_MakeArray_Array1;                           // 0x0558(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0568(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0578(0x0010)(ZeroConstructor, NoDestructor)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCollectionBookRecycleSlotResultsWidget_C* CallFunc_Create_ReturnValue1;                      // 0x0590(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAccountItem*                       CallFunc_GetCurrentSlottedItem_ReturnValue;        // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5A1[0x7];                                      // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAccountItem*                       CallFunc_GetCurrentSlottedItem_ReturnValue1;       // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue;              // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue; // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Get_Plural_Type_Text_Type;                // 0x05C0(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x05D8(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0618(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_629[0x7];                                      // 0x0629(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0630(0x0018)()
+	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue1;             // 0x0648(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Get_Type_Text_Type;                       // 0x0650(0x0018)()
 };
 static_assert(alignof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x000008, "Wrong alignment on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
-static_assert(sizeof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x000578, "Wrong size on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
+static_assert(sizeof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x000668, "Wrong size on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
 static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, EntryPoint) == 0x000000, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_struct_Variable) == 0x000004, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_bool_Variable) == 0x000008, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_name_Variable) == 0x000010, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_byte_Variable) == 0x000018, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_SwitchEnum_CmpSuccess) == 0x000019, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_SelectedItem) == 0x000030, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_SelectedItem' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Create_ReturnValue) == 0x000040, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetDataTableRowFromName_OutRow) == 0x000048, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000320, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_Result) == 0x000321, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_ResultName) == 0x000328, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_bWaitingForLatentActionCompletion) == 0x000330, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_bWaitingForLatentActionCompletion' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_WaitingDialogHandle) == 0x000334, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_WaitingDialogHandle' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate1) == 0x000338, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate12) == 0x000348, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000358, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Create_ReturnValue1) == 0x000360, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetCurrentSlottedItem_ReturnValue) == 0x000368, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetCurrentSlottedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_IsValid_ReturnValue) == 0x000370, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetCurrentSlottedItem_ReturnValue1) == 0x000378, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetCurrentSlottedItem_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetSelectedItem_ReturnValue) == 0x000380, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetSelectedItem_ReturnValue1) == 0x000388, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetSelectedItem_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Get_Type_Text_Type) == 0x000390, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Get_Type_Text_Type' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Get_Type_Text_Type1) == 0x0003A8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Get_Type_Text_Type1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_FormatArgumentData) == 0x0003C0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_FormatArgumentData1) == 0x000400, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array) == 0x000440, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array1) == 0x000450, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Format_ReturnValue) == 0x000460, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Format_ReturnValue1) == 0x000478, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_bool_Variable) == 0x000004, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_name_Variable) == 0x000008, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_byte_Variable) == 0x000010, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_FormatArgumentData1) == 0x000058, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array) == 0x000098, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Format_ReturnValue) == 0x0000A8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate) == 0x0000C0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_SelectedItem) == 0x0000D0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_SelectedItem' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_struct_Variable) == 0x0000E0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Create_ReturnValue) == 0x0000E8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_Result) == 0x0000F0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_Result' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_ResultName) == 0x0000F8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_ResultName' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_bWaitingForLatentActionCompletion) == 0x000100, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_bWaitingForLatentActionCompletion' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CustomEvent_WaitingDialogHandle) == 0x000104, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CustomEvent_WaitingDialogHandle' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetDataTableRowFromName_OutRow) == 0x000108, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000488, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_ConfirmationDialogAction) == 0x000490, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_ConfirmationDialogAction' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array12) == 0x000558, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue) == 0x000568, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_IsValid_ReturnValue1) == 0x000570, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array1) == 0x000558, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate1) == 0x000568, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_CreateDelegate_OutputDelegate2) == 0x000578, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000588, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Create_ReturnValue1) == 0x000590, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetCurrentSlottedItem_ReturnValue) == 0x000598, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetCurrentSlottedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_IsValid_ReturnValue) == 0x0005A0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetCurrentSlottedItem_ReturnValue1) == 0x0005A8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetCurrentSlottedItem_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetSelectedItem_ReturnValue) == 0x0005B0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue) == 0x0005B8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Get_Plural_Type_Text_Type) == 0x0005C0, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Get_Plural_Type_Text_Type' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeStruct_FormatArgumentData2) == 0x0005D8, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, K2Node_MakeArray_Array2) == 0x000618, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_IsValid_ReturnValue1) == 0x000628, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Format_ReturnValue1) == 0x000630, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetSelectedItem_ReturnValue1) == 0x000648, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetSelectedItem_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_Get_Type_Text_Type) == 0x000650, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_Get_Type_Text_Type' has a wrong offset!");
 
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.ShowSlotItemConfirmation
 // 0x0008 (0x0008 - 0x0000)
@@ -173,9 +178,9 @@ public:
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1234;      // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CollectionBookItemPicker_C_Get_Type_Text) == 0x000008, "Wrong alignment on CollectionBookItemPicker_C_Get_Type_Text");
 static_assert(sizeof(CollectionBookItemPicker_C_Get_Type_Text) == 0x000028, "Wrong size on CollectionBookItemPicker_C_Get_Type_Text");
@@ -185,9 +190,36 @@ static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_GetFil
 static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_GetType_ReturnValue) == 0x000021, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_GetType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000023, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000024, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000025, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue1234) == 0x000026, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000024, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000025, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000026, "Member 'CollectionBookItemPicker_C_Get_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
+
+// Function CollectionBookItemPicker.CollectionBookItemPicker_C.Get Plural Type Text
+// 0x0028 (0x0028 - 0x0000)
+struct CollectionBookItemPicker_C_Get_Plural_Type_Text final
+{
+public:
+	class UFortItem*                              Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Type;                                              // 0x0008(0x0018)(Parm, OutParm)
+	EFortInventoryFilter                          CallFunc_GetFilterCategory_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(CollectionBookItemPicker_C_Get_Plural_Type_Text) == 0x000008, "Wrong alignment on CollectionBookItemPicker_C_Get_Plural_Type_Text");
+static_assert(sizeof(CollectionBookItemPicker_C_Get_Plural_Type_Text) == 0x000028, "Wrong size on CollectionBookItemPicker_C_Get_Plural_Type_Text");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, Item) == 0x000000, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::Item' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, Type) == 0x000008, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::Type' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_GetFilterCategory_ReturnValue) == 0x000020, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_GetFilterCategory_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_GetType_ReturnValue) == 0x000021, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_GetType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000023, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000024, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000025, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(CollectionBookItemPicker_C_Get_Plural_Type_Text, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000026, "Member 'CollectionBookItemPicker_C_Get_Plural_Type_Text::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
 
 }
 

@@ -257,6 +257,20 @@ void UResults_Widget_C::BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_
 }
 
 
+// Function Results_Widget.Results_Widget_C.Xp Finished
+// (BlueprintCallable, BlueprintEvent)
+
+void UResults_Widget_C::Xp_Finished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Results_Widget_C", "Xp Finished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Results_Widget.Results_Widget_C.BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
 
@@ -280,20 +294,6 @@ void UResults_Widget_C::BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Results_Widget_C", "BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_Widget.Results_Widget_C.BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature
-// (BlueprintEvent)
-
-void UResults_Widget_C::BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_Widget_C", "BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -646,6 +646,49 @@ bool UResults_Widget_C::ShouldDisplayEndOfZoneCinematic()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Results_Widget.Results_Widget_C.AddCommanderXPWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UResults_Widget_C::AddCommanderXPWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Results_Widget_C", "AddCommanderXPWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Results_Widget.Results_Widget_C.GetCommanderXPWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    UseNewWidget                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UResults_CommanderXP_New_C*       CommanderXPNew_Widget_0                                (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UResults_CommanderXP_C*           CommanderXPOld_Widget_0                                (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UResults_Widget_C::GetCommanderXPWidget(bool* UseNewWidget, class UResults_CommanderXP_New_C** CommanderXPNew_Widget_0, class UResults_CommanderXP_C** CommanderXPOld_Widget_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Results_Widget_C", "GetCommanderXPWidget");
+
+	Params::Results_Widget_C_GetCommanderXPWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (UseNewWidget != nullptr)
+		*UseNewWidget = Parms.UseNewWidget;
+
+	if (CommanderXPNew_Widget_0 != nullptr)
+		*CommanderXPNew_Widget_0 = Parms.CommanderXPNew_Widget_0;
+
+	if (CommanderXPOld_Widget_0 != nullptr)
+		*CommanderXPOld_Widget_0 = Parms.CommanderXPOld_Widget_0;
 }
 
 }

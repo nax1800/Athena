@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Results_CommanderXP_Data_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "REsults_CommanderXP_MaterialData_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 
 
@@ -33,45 +33,48 @@ static_assert(sizeof(Results_CommanderXPBar_C_LeveledUp__DelegateSignature) == 0
 static_assert(offsetof(Results_CommanderXPBar_C_LeveledUp__DelegateSignature, NewLevel) == 0x000000, "Member 'Results_CommanderXPBar_C_LeveledUp__DelegateSignature::NewLevel' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
-static_assert(sizeof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000048, "Wrong size on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
+static_assert(sizeof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000050, "Wrong size on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, EntryPoint) == 0x000000, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue1) == 0x000005, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue12) == 0x000006, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000020, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue123) == 0x000024, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_SpawnSound2D_ReturnValue) == 0x000028, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Array_LastIndex_ReturnValue) == 0x000030, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000034, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, K2Node_Event_IsDesignTime) == 0x00003C, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue2) == 0x000020, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000024, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue3) == 0x000028, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, Temp_int_Variable) == 0x00002C, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_SpawnSound2D_ReturnValue) == 0x000030, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Array_LastIndex_ReturnValue) == 0x000038, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00003C, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, K2Node_Event_IsDesignTime) == 0x000044, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -92,73 +95,75 @@ public:
 	int32                                         CheckStartXP;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CheckEndXP;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TimePassed;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item;                           // 0x0018(0x0028)(HasGetValueTypeHash)
 	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item1;                          // 0x0040(0x0028)(HasGetValueTypeHash)
-	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item12;                         // 0x0068(0x0028)(HasGetValueTypeHash)
+	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item2;                          // 0x0068(0x0028)(HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetXpToCompleteLevel_ReturnValue;         // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data;        // 0x00A0(0x0028)(HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMin_ReturnValue;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpEaseInOut_ReturnValue;             // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetLevelProgress_ReturnValue;             // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetLevelProgress_ReturnValue1;            // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data;        // 0x00A8(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMin_ReturnValue;                         // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpEaseInOut_ReturnValue;             // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetLevelProgress_ReturnValue;             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetLevelProgress_ReturnValue1;            // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_CommanderXPBar_C_UpdateCount) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateCount");
 static_assert(sizeof(Results_CommanderXPBar_C_UpdateCount) == 0x000108, "Wrong size on Results_CommanderXPBar_C_UpdateCount");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CheckStartXP) == 0x000000, "Member 'Results_CommanderXPBar_C_UpdateCount::CheckStartXP' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CheckEndXP) == 0x000004, "Member 'Results_CommanderXPBar_C_UpdateCount::CheckEndXP' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, TimePassed) == 0x000008, "Member 'Results_CommanderXPBar_C_UpdateCount::TimePassed' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Variable) == 0x00000C, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item) == 0x000018, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item1) == 0x000040, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item12) == 0x000068, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item2) == 0x000068, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Add_IntInt_ReturnValue) == 0x000090, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Length_ReturnValue) == 0x000094, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetXpToCompleteLevel_ReturnValue) == 0x000098, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetXpToCompleteLevel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_IntInt_ReturnValue1) == 0x00009C, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, K2Node_MakeStruct_Results_CommanderXP_Data) == 0x0000A0, "Member 'Results_CommanderXPBar_C_UpdateCount::K2Node_MakeStruct_Results_CommanderXP_Data' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000C8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x0000CC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000D0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000D4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000D8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FMin_ReturnValue) == 0x0000DC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FInterpEaseInOut_ReturnValue) == 0x0000E0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FTrunc_ReturnValue) == 0x0000E4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue) == 0x0000E8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Loop_Counter_Variable) == 0x0000EC, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Less_IntInt_ReturnValue) == 0x0000F0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Add_IntInt_ReturnValue1) == 0x0000F4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000F8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue1) == 0x0000FC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000100, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Loop_Counter_Variable) == 0x0000A0, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, K2Node_MakeStruct_Results_CommanderXP_Data) == 0x0000A8, "Member 'Results_CommanderXPBar_C_UpdateCount::K2Node_MakeStruct_Results_CommanderXP_Data' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Add_IntInt_ReturnValue1) == 0x0000D4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000D8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x0000DC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000E0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000E4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000E8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FMin_ReturnValue) == 0x0000EC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FMin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FInterpEaseInOut_ReturnValue) == 0x0000F0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FTrunc_ReturnValue) == 0x0000F4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue) == 0x0000F8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000FC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue1) == 0x000100, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000104, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.Initialize
-// 0x0300 (0x0300 - 0x0000)
+// 0x0310 (0x0310 - 0x0000)
 struct Results_CommanderXPBar_C_Initialize final
 {
 public:
 	class UFortUIScoreReport*                     InScoreReport;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_PlayRate;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PlayRate_0;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortExperienceDelta                   ExperienceDelta;                                   // 0x000C(0x0024)(Edit, BlueprintVisible, NoDestructor)
 	EFortUIScoreType                              BonusScoreType;                                    // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -175,49 +180,54 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data1;       // 0x00D0(0x0028)(HasGetValueTypeHash)
-	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data12;      // 0x00F8(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data2;       // 0x00F8(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_126[0x2];                                      // 0x0126(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_LastIndex_ReturnValue1;             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue12;            // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item1;                          // 0x0130(0x0028)(HasGetValueTypeHash)
-	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item12;                         // 0x0158(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item123;                        // 0x0188(0x0028)(HasGetValueTypeHash)
-	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data123;     // 0x01B0(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data1234;    // 0x01E0(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue123;           // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item1234;                       // 0x0218(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue123;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234;               // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue1234;                // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data12345;   // 0x0250(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue12345;               // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetLevelProgress_ReturnValue;             // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue2;             // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item2;                          // 0x0160(0x0028)(HasGetValueTypeHash)
+	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item3;                          // 0x0188(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data3;       // 0x01B8(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data4;       // 0x01E8(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue3;             // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item4;                          // 0x0220(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FResults_CommanderXP_Data              K2Node_MakeStruct_Results_CommanderXP_Data5;       // 0x0258(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue5;                   // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetOwningPlayerPawn_ReturnValue;          // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x02A0(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x02CC(0x002C)(NoDestructor)
-	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x02B0(0x0028)(HasGetValueTypeHash)
+	float                                         CallFunc_GetLevelProgress_ReturnValue;             // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x02E0(0x002C)(NoDestructor)
+	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x030C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_CommanderXPBar_C_Initialize) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_Initialize");
-static_assert(sizeof(Results_CommanderXPBar_C_Initialize) == 0x000300, "Wrong size on Results_CommanderXPBar_C_Initialize");
+static_assert(sizeof(Results_CommanderXPBar_C_Initialize) == 0x000310, "Wrong size on Results_CommanderXPBar_C_Initialize");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_CommanderXPBar_C_Initialize::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, Param_PlayRate) == 0x000008, "Member 'Results_CommanderXPBar_C_Initialize::Param_PlayRate' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, PlayRate_0) == 0x000008, "Member 'Results_CommanderXPBar_C_Initialize::PlayRate_0' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, ExperienceDelta) == 0x00000C, "Member 'Results_CommanderXPBar_C_Initialize::ExperienceDelta' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, BonusScoreType) == 0x000030, "Member 'Results_CommanderXPBar_C_Initialize::BonusScoreType' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, LocalPlayerXPInfo) == 0x000034, "Member 'Results_CommanderXPBar_C_Initialize::LocalPlayerXPInfo' has a wrong offset!");
@@ -230,37 +240,39 @@ static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Re
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue1) == 0x0000C8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue) == 0x0000CC, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data1) == 0x0000D0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data12) == 0x0000F8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue12) == 0x000120, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data2) == 0x0000F8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue2) == 0x000120, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue1) == 0x000124, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue12) == 0x000125, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue2) == 0x000125, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue1) == 0x000128, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue12) == 0x00012C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue12' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item1) == 0x000130, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item12) == 0x000158, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue123) == 0x000180, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item123) == 0x000188, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data123) == 0x0001B0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001D8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data1234) == 0x0001E0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data1234' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue1) == 0x000208, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue12) == 0x00020C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue123) == 0x000210, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item1234) == 0x000218, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item1234' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue123) == 0x000240, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue1234) == 0x000244, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue1234) == 0x000248, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data12345) == 0x000250, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data12345' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue12345) == 0x000278, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00027C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetLevelProgress_ReturnValue) == 0x000280, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000288, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_AsFort_Player_State) == 0x000290, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue2) == 0x000158, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item2) == 0x000160, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item3) == 0x000188, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue3) == 0x0001B0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data3) == 0x0001B8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001E0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data4) == 0x0001E8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data4' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue1) == 0x000210, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue2) == 0x000214, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue3) == 0x000218, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item4) == 0x000220, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item4' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue3) == 0x000248, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue4) == 0x00024C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue4) == 0x000250, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data5) == 0x000258, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data5' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue5) == 0x000280, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000288, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000290, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_bSuccess) == 0x000298, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x0002A0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetScoreReportIndex_ReturnValue) == 0x0002C8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetScoreReportIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_OutXpInfo) == 0x0002CC, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_OutXpInfo' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_ReturnValue) == 0x0002F8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00029C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_AsFort_Player_State) == 0x0002A0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_bSuccess1) == 0x0002A8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x0002B0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetLevelProgress_ReturnValue) == 0x0002D8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetScoreReportIndex_ReturnValue) == 0x0002DC, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetScoreReportIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_OutXpInfo) == 0x0002E0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_OutXpInfo' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_ReturnValue) == 0x00030C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.SetSkippingToEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -303,8 +315,8 @@ public:
 	TScriptInterface<class IFortClientAnnouncement_ConversationCodeInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface1; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IFortClientAnnouncement_ConversationCodeInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface12; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IFortClientAnnouncement_ConversationCodeInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface2; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_CommanderXPBar_C_UpdateXpType) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateXpType");
 static_assert(sizeof(Results_CommanderXPBar_C_UpdateXpType) == 0x000088, "Wrong size on Results_CommanderXPBar_C_UpdateXpType");
@@ -318,8 +330,8 @@ static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, CallFunc_Greater_IntInt_ReturnValue) == 0x000051, "Member 'Results_CommanderXPBar_C_UpdateXpType::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface1) == 0x000058, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface1' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_bSuccess1) == 0x000068, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface12) == 0x000070, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_bSuccess12) == 0x000080, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface2) == 0x000070, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateXpType, K2Node_DynamicCast_bSuccess2) == 0x000080, "Member 'Results_CommanderXPBar_C_UpdateXpType::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.RandomizeDesignView
 // 0x0060 (0x0060 - 0x0000)
@@ -336,7 +348,7 @@ public:
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue1;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue12;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue2;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -352,7 +364,7 @@ static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Ma
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue1) == 0x000020, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue12) == 0x000030, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue2) == 0x000030, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, K2Node_MakeArray_Array) == 0x000038, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Array_Get_Item) == 0x000050, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Array_Get_Item' has a wrong offset!");
@@ -376,8 +388,8 @@ public:
 	struct FResults_CommanderXP_MaterialData      K2Node_MakeStruct_Results_CommanderXP_MaterialData; // 0x0020(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12;        // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue123;       // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -388,7 +400,7 @@ public:
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FResults_CommanderXP_MaterialData      CallFunc_Array_Get_Item;                           // 0x0050(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1234;      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue4;         // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -405,8 +417,8 @@ static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFu
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, K2Node_MakeStruct_Results_CommanderXP_MaterialData) == 0x000020, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::K2Node_MakeStruct_Results_CommanderXP_MaterialData' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000030, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x000031, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue12) == 0x000032, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue123) == 0x000033, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000032, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x000033, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000038, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_K2_GetScalarParameterValue_ReturnValue1) == 0x00003C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_K2_GetScalarParameterValue_ReturnValue1' has a wrong offset!");
@@ -415,7 +427,7 @@ static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFu
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000048, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Array_Get_Item) == 0x000050, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue1234) == 0x000064, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x000064, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Less_IntInt_ReturnValue) == 0x000065, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_BooleanAND_ReturnValue) == 0x000066, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
@@ -461,9 +473,9 @@ public:
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue1;            // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue1;               // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue12;              // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue12;           // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue123;             // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue2;               // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue2;            // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue3;               // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_CommanderXPBar_C_DebugSections) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_DebugSections");
 static_assert(sizeof(Results_CommanderXPBar_C_DebugSections) == 0x0000C0, "Wrong size on Results_CommanderXPBar_C_DebugSections");
@@ -478,9 +490,9 @@ static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Less_Int
 static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_NameToString_ReturnValue) == 0x000060, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue1) == 0x000070, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue1) == 0x000080, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue12) == 0x000090, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue12) == 0x0000A0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue123) == 0x0000B0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue2) == 0x000090, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue2) == 0x0000A0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue3) == 0x0000B0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue3' has a wrong offset!");
 
 }
 

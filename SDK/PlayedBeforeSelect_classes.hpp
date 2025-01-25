@@ -18,21 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayedBeforeSelect.PlayedBeforeSelect_C
-// 0x0038 (0x0458 - 0x0420)
+// 0x0038 (0x0358 - 0x0320)
 class UPlayedBeforeSelect_C final : public UFortPlayedBeforeSelect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                Border_Invite;                                     // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_6;                                 // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_InviteOnly;                   // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Border_Invite;                                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_6;                                 // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_InviteOnly;                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_PlayedBeforeSelect(int32 EntryPoint);
-	void Construct();
 	void OnActivated();
 
 public:
@@ -46,14 +45,14 @@ public:
 	}
 };
 static_assert(alignof(UPlayedBeforeSelect_C) == 0x000008, "Wrong alignment on UPlayedBeforeSelect_C");
-static_assert(sizeof(UPlayedBeforeSelect_C) == 0x000458, "Wrong size on UPlayedBeforeSelect_C");
-static_assert(offsetof(UPlayedBeforeSelect_C, UberGraphFrame) == 0x000420, "Member 'UPlayedBeforeSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, Intro) == 0x000428, "Member 'UPlayedBeforeSelect_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, Border_Invite) == 0x000430, "Member 'UPlayedBeforeSelect_C::Border_Invite' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, CommonTextBlock_1) == 0x000438, "Member 'UPlayedBeforeSelect_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, CommonTextBlock_6) == 0x000440, "Member 'UPlayedBeforeSelect_C::CommonTextBlock_6' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, CommonWidgetSwitcher_InviteOnly) == 0x000448, "Member 'UPlayedBeforeSelect_C::CommonWidgetSwitcher_InviteOnly' has a wrong offset!");
-static_assert(offsetof(UPlayedBeforeSelect_C, InviteEventTitle) == 0x000450, "Member 'UPlayedBeforeSelect_C::InviteEventTitle' has a wrong offset!");
+static_assert(sizeof(UPlayedBeforeSelect_C) == 0x000358, "Wrong size on UPlayedBeforeSelect_C");
+static_assert(offsetof(UPlayedBeforeSelect_C, UberGraphFrame) == 0x000320, "Member 'UPlayedBeforeSelect_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, Intro) == 0x000328, "Member 'UPlayedBeforeSelect_C::Intro' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, Border_Invite) == 0x000330, "Member 'UPlayedBeforeSelect_C::Border_Invite' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, CommonTextBlock_1) == 0x000338, "Member 'UPlayedBeforeSelect_C::CommonTextBlock_1' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, CommonTextBlock_6) == 0x000340, "Member 'UPlayedBeforeSelect_C::CommonTextBlock_6' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, CommonWidgetSwitcher_InviteOnly) == 0x000348, "Member 'UPlayedBeforeSelect_C::CommonWidgetSwitcher_InviteOnly' has a wrong offset!");
+static_assert(offsetof(UPlayedBeforeSelect_C, InviteEventTitle) == 0x000350, "Member 'UPlayedBeforeSelect_C::InviteEventTitle' has a wrong offset!");
 
 }
 

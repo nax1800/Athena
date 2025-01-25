@@ -117,9 +117,9 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadSubtitle(const class FText& Subtit
 // class UTexture2D*                       Image                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FText                             Subtitle                                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// EFortAnnouncementDisplayPreference      Param_DisplayPreference                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortAnnouncementDisplayPreference      DisplayPreference_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference Param_DisplayPreference)
+void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -131,7 +131,7 @@ void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, 
 	Parms.Image = Image;
 	Parms.Title = std::move(Title);
 	Parms.Subtitle = std::move(Subtitle);
-	Parms.Param_DisplayPreference = Param_DisplayPreference;
+	Parms.DisplayPreference_0 = DisplayPreference_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

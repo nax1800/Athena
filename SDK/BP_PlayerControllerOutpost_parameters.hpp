@@ -34,11 +34,11 @@ static_assert(offsetof(BP_PlayerControllerOutpost_C_ExecuteUbergraph_BP_PlayerCo
 struct BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost final
 {
 public:
-	bool                                          Param_GetHelp;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          GetHelp_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost) == 0x000001, "Wrong alignment on BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost");
 static_assert(sizeof(BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost) == 0x000001, "Wrong size on BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost");
-static_assert(offsetof(BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost, Param_GetHelp) == 0x000000, "Member 'BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost::Param_GetHelp' has a wrong offset!");
+static_assert(offsetof(BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost, GetHelp_0) == 0x000000, "Member 'BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost::GetHelp_0' has a wrong offset!");
 
 }
 

@@ -36,22 +36,22 @@ static_assert(offsetof(MicIndicator_C_ExecuteUbergraph_MicIndicator, K2Node_Even
 struct MicIndicator_C_OnPlayerMuted final
 {
 public:
-	bool                                          Param_bIsMuted;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsMuted_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MicIndicator_C_OnPlayerMuted) == 0x000001, "Wrong alignment on MicIndicator_C_OnPlayerMuted");
 static_assert(sizeof(MicIndicator_C_OnPlayerMuted) == 0x000001, "Wrong size on MicIndicator_C_OnPlayerMuted");
-static_assert(offsetof(MicIndicator_C_OnPlayerMuted, Param_bIsMuted) == 0x000000, "Member 'MicIndicator_C_OnPlayerMuted::Param_bIsMuted' has a wrong offset!");
+static_assert(offsetof(MicIndicator_C_OnPlayerMuted, bIsMuted_0) == 0x000000, "Member 'MicIndicator_C_OnPlayerMuted::bIsMuted_0' has a wrong offset!");
 
 // Function MicIndicator.MicIndicator_C.OnPlayerTalkingChanged
 // 0x0001 (0x0001 - 0x0000)
 struct MicIndicator_C_OnPlayerTalkingChanged final
 {
 public:
-	bool                                          Param_bIsTalking;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsTalking_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MicIndicator_C_OnPlayerTalkingChanged) == 0x000001, "Wrong alignment on MicIndicator_C_OnPlayerTalkingChanged");
 static_assert(sizeof(MicIndicator_C_OnPlayerTalkingChanged) == 0x000001, "Wrong size on MicIndicator_C_OnPlayerTalkingChanged");
-static_assert(offsetof(MicIndicator_C_OnPlayerTalkingChanged, Param_bIsTalking) == 0x000000, "Member 'MicIndicator_C_OnPlayerTalkingChanged::Param_bIsTalking' has a wrong offset!");
+static_assert(offsetof(MicIndicator_C_OnPlayerTalkingChanged, bIsTalking_0) == 0x000000, "Member 'MicIndicator_C_OnPlayerTalkingChanged::bIsTalking_0' has a wrong offset!");
 
 }
 

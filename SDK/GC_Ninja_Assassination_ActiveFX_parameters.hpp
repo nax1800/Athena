@@ -40,14 +40,14 @@ static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_ExecuteUbergraph_GC_Nin
 struct GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue final
 {
 public:
-	class AActor*                                 Param_MyTarget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 MyTarget_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             EventType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
 static_assert(alignof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue) == 0x000008, "Wrong alignment on GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue");
 static_assert(sizeof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue) == 0x0000C8, "Wrong size on GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue");
-static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue, Param_MyTarget) == 0x000000, "Member 'GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue::Param_MyTarget' has a wrong offset!");
+static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue, MyTarget_0) == 0x000000, "Member 'GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue::MyTarget_0' has a wrong offset!");
 static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue, EventType) == 0x000008, "Member 'GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue::EventType' has a wrong offset!");
 static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue, Parameters) == 0x000010, "Member 'GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue::Parameters' has a wrong offset!");
 
@@ -56,13 +56,13 @@ static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_K2_HandleGameplayCue, P
 struct GC_Ninja_Assassination_ActiveFX_C_WhileActive final
 {
 public:
-	class AActor*                                 Param_MyTarget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 MyTarget_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GC_Ninja_Assassination_ActiveFX_C_WhileActive) == 0x000008, "Wrong alignment on GC_Ninja_Assassination_ActiveFX_C_WhileActive");
 static_assert(sizeof(GC_Ninja_Assassination_ActiveFX_C_WhileActive) == 0x0000C8, "Wrong size on GC_Ninja_Assassination_ActiveFX_C_WhileActive");
-static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_WhileActive, Param_MyTarget) == 0x000000, "Member 'GC_Ninja_Assassination_ActiveFX_C_WhileActive::Param_MyTarget' has a wrong offset!");
+static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_WhileActive, MyTarget_0) == 0x000000, "Member 'GC_Ninja_Assassination_ActiveFX_C_WhileActive::MyTarget_0' has a wrong offset!");
 static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_WhileActive, Parameters) == 0x000008, "Member 'GC_Ninja_Assassination_ActiveFX_C_WhileActive::Parameters' has a wrong offset!");
 static_assert(offsetof(GC_Ninja_Assassination_ActiveFX_C_WhileActive, ReturnValue) == 0x0000C0, "Member 'GC_Ninja_Assassination_ActiveFX_C_WhileActive::ReturnValue' has a wrong offset!");
 

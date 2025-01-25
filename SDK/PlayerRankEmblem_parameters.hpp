@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -89,7 +89,7 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0078(0x0018)()
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue1;           // 0x0090(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00A8(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x00E8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00E8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0128(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -103,7 +103,7 @@ static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_Forma
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000078, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToText_ReturnValue1) == 0x000090, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToText_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData1) == 0x0000A8, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData12) == 0x0000E8, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData2) == 0x0000E8, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeArray_Array) == 0x000128, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Format_ReturnValue) == 0x000138, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000150, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");

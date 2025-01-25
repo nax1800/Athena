@@ -127,7 +127,7 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue1;       // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue12;      // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue2;       // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -156,7 +156,7 @@ static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_VSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00004C, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_EqualEqual_FloatFloat_ReturnValue1) == 0x00004D, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_EqualEqual_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_EqualEqual_FloatFloat_ReturnValue12) == 0x00004E, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_EqualEqual_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_EqualEqual_FloatFloat_ReturnValue2) == 0x00004E, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_EqualEqual_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_GetActorForwardVector_ReturnValue) == 0x000050, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_BooleanAND_ReturnValue) == 0x00005C, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_GetProjectedTeleportLocation, CallFunc_BooleanOR_ReturnValue) == 0x00005D, "Member 'AbilityFunctions_C_GetProjectedTeleportLocation::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
@@ -209,14 +209,11 @@ public:
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllTags_ReturnValue;                   // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllTags_ReturnValue1;                  // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllTags_ReturnValue12;                 // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B3[0x5];                                       // 0x00B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent) == 0x000008, "Wrong alignment on AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent");
 static_assert(sizeof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent) == 0x0000C8, "Wrong size on AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent");
@@ -225,13 +222,10 @@ static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, __W
 static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, ReturnValue) == 0x0000B0, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_HasAllTags_ReturnValue) == 0x0000B1, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_HasAllTags_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_HasAllTags_ReturnValue1) == 0x0000B2, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_HasAllTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_HasAllTags_ReturnValue12) == 0x0000B3, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_HasAllTags_ReturnValue12' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, K2Node_DynamicCast_AsFort_Pawn) == 0x0000B8, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
 static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_Not_PreBool_ReturnValue) == 0x0000C1, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_BooleanAND_ReturnValue) == 0x0000C2, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_BooleanAND_ReturnValue1) == 0x0000C3, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_BooleanAND_ReturnValue12) == 0x0000C4, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_BooleanAND_ReturnValue) == 0x0000C1, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent, CallFunc_BooleanAND_ReturnValue1) == 0x0000C2, "Member 'AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 
 }
 

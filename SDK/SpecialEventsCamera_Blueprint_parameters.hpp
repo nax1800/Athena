@@ -35,8 +35,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ABP_FortniteLobbyLightSwitcher_C*> CallFunc_GetAllActorsOfClass_OutActors12;          // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
-	class ABP_FortniteLobbyLightSwitcher_C*       CallFunc_Array_Get_Item12;                         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ABP_FortniteLobbyLightSwitcher_C*> CallFunc_GetAllActorsOfClass_OutActors2;           // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
+	class ABP_FortniteLobbyLightSwitcher_C*       CallFunc_Array_Get_Item2;                          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -56,8 +56,8 @@ static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialE
 static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Array_Get_Item1) == 0x000050, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Array_Get_Item1' has a wrong offset!");
 static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors12) == 0x000060, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors12' has a wrong offset!");
-static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Array_Get_Item12) == 0x000070, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors2) == 0x000060, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors2' has a wrong offset!");
+static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Array_Get_Item2) == 0x000070, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Array_Length_ReturnValue1) == 0x000078, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue1) == 0x00007C, "Member 'SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 

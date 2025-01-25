@@ -65,20 +65,20 @@ void UAthenaPickupStream_C::Construct()
 }
 
 
-// Function AthenaPickupStream.AthenaPickupStream_C.HandleItemPickUp
+// Function AthenaPickupStream.AthenaPickupStream_C.HandleItemPickup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortWorldItem*                   NewItem                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaPickupStream_C::HandleItemPickUp(class UFortWorldItem* NewItem, int32 Count)
+void UAthenaPickupStream_C::HandleItemPickup(class UFortWorldItem* NewItem, int32 Count)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPickupStream_C", "HandleItemPickUp");
+		Func = Class->GetFunction("AthenaPickupStream_C", "HandleItemPickup");
 
-	Params::AthenaPickupStream_C_HandleItemPickUp Parms{};
+	Params::AthenaPickupStream_C_HandleItemPickup Parms{};
 
 	Parms.NewItem = NewItem;
 	Parms.Count = Count;

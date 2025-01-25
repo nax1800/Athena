@@ -178,9 +178,9 @@ void ATheaterCamera_Blueprint_C::ReceiveTick(float DeltaSeconds)
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.SetTileFocus
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortTheaterMapTile*              Param_TargetTile                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortTheaterMapTile*              TargetTile_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATheaterCamera_Blueprint_C::SetTileFocus(class AFortTheaterMapTile* Param_TargetTile)
+void ATheaterCamera_Blueprint_C::SetTileFocus(class AFortTheaterMapTile* TargetTile_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -189,7 +189,7 @@ void ATheaterCamera_Blueprint_C::SetTileFocus(class AFortTheaterMapTile* Param_T
 
 	Params::TheaterCamera_Blueprint_C_SetTileFocus Parms{};
 
-	Parms.Param_TargetTile = Param_TargetTile;
+	Parms.TargetTile_0 = TargetTile_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -260,62 +260,6 @@ void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1(
 	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DEBUGFOVA__UpdateFunc
-// (BlueprintEvent)
-
-void ATheaterCamera_Blueprint_C::DEBUGFOVA__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TheaterCamera_Blueprint_C", "DEBUGFOVA__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DEBUGFOVA__FinishedFunc
-// (BlueprintEvent)
-
-void ATheaterCamera_Blueprint_C::DEBUGFOVA__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TheaterCamera_Blueprint_C", "DEBUGFOVA__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__UpdateFunc
-// (BlueprintEvent)
-
-void ATheaterCamera_Blueprint_C::InitializeFXMinusTL__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TheaterCamera_Blueprint_C", "InitializeFX-TL__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__FinishedFunc
-// (BlueprintEvent)
-
-void ATheaterCamera_Blueprint_C::InitializeFXMinusTL__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TheaterCamera_Blueprint_C", "InitializeFX-TL__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

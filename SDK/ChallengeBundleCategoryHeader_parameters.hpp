@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -43,52 +44,62 @@ static_assert(sizeof(ChallengeBundleCategoryHeader_C_PreConstruct) == 0x000001, 
 static_assert(offsetof(ChallengeBundleCategoryHeader_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ChallengeBundleCategoryHeader_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ChallengeBundleCategoryHeader.ChallengeBundleCategoryHeader_C.UpdateBundle
-// 0x01A0 (0x01A0 - 0x0000)
+// 0x0340 (0x0340 - 0x0000)
 struct ChallengeBundleCategoryHeader_C_UpdateBundle final
 {
 public:
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMcpProfileAthena*                  CallFunc_GetAthenaProfile_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasPurchasedSeasonBook_ReturnValue;       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortChallengeBundleInfo*               CallFunc_GetChallengeBundleInfo_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortChallengeBundleItemDefinition*     CallFunc_GetBundleDefinition_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EChallengeBundleVisualStyle                   CallFunc_GetVisualStyle_ReturnValue;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortChallengeBundleCategoryInfo*       CallFunc_GetOwningBundleCategoryInfo_ReturnValue;  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortChallengeBundleScheduleDefinition* CallFunc_GetFirstScheduleDefinition_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetCategoryName_ReturnValue;              // 0x0048(0x0018)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0060(0x0018)()
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0080(0x0088)()
-	bool                                          Temp_bool_Variable;                                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0110(0x0088)()
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0000(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0088(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x0110(0x0088)()
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortMcpProfileAthena*                  CallFunc_GetAthenaProfile_ReturnValue;             // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasPurchasedSeasonBook_ReturnValue;       // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B2[0x6];                                      // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortChallengeBundleInfo*               CallFunc_GetChallengeBundleInfo_ReturnValue;       // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortChallengeBundleItemDefinition*     CallFunc_GetBundleDefinition_ReturnValue;          // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EChallengeBundleVisualStyle                   CallFunc_GetVisualStyle_ReturnValue;               // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1CA[0x6];                                      // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortChallengeBundleCategoryInfo*       CallFunc_GetOwningBundleCategoryInfo_ReturnValue;  // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              CallFunc_GetExpirationDate_ExpirationDate;         // 0x01D8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetExpirationDate_ReturnValue;            // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortChallengeBundleScheduleDefinition* CallFunc_GetFirstScheduleDefinition_ReturnValue;   // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetCategoryName_ReturnValue;              // 0x01F0(0x0018)()
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0208(0x0018)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush3;                     // 0x0220(0x0088)()
+	bool                                          Temp_bool_Variable;                                // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush4;                     // 0x02B0(0x0088)()
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ChallengeBundleCategoryHeader_C_UpdateBundle) == 0x000008, "Wrong alignment on ChallengeBundleCategoryHeader_C_UpdateBundle");
-static_assert(sizeof(ChallengeBundleCategoryHeader_C_UpdateBundle) == 0x0001A0, "Wrong size on ChallengeBundleCategoryHeader_C_UpdateBundle");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_byte_Variable) == 0x000008, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetAthenaProfile_ReturnValue) == 0x000010, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetAthenaProfile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_HasPurchasedSeasonBook_ReturnValue) == 0x000018, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_HasPurchasedSeasonBook_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetChallengeBundleInfo_ReturnValue) == 0x000020, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetChallengeBundleInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetBundleDefinition_ReturnValue) == 0x000028, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetBundleDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetVisualStyle_ReturnValue) == 0x000030, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetVisualStyle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_SwitchEnum_CmpSuccess) == 0x000031, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetOwningBundleCategoryInfo_ReturnValue) == 0x000038, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetOwningBundleCategoryInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetFirstScheduleDefinition_ReturnValue) == 0x000040, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetFirstScheduleDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetCategoryName_ReturnValue) == 0x000048, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetCategoryName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_TextToUpper_ReturnValue) == 0x000060, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_byte_Variable1) == 0x000078, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush) == 0x000080, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_bool_Variable) == 0x000108, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush1) == 0x000110, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
-static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_Select_Default) == 0x000198, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_Select_Default' has a wrong offset!");
+static_assert(sizeof(ChallengeBundleCategoryHeader_C_UpdateBundle) == 0x000340, "Wrong size on ChallengeBundleCategoryHeader_C_UpdateBundle");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush) == 0x000000, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush1) == 0x000088, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush2) == 0x000110, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush2' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetContext_ReturnValue) == 0x000198, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_byte_Variable) == 0x0001A0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetAthenaProfile_ReturnValue) == 0x0001A8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetAthenaProfile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_HasPurchasedSeasonBook_ReturnValue) == 0x0001B0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_HasPurchasedSeasonBook_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_byte_Variable1) == 0x0001B1, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetChallengeBundleInfo_ReturnValue) == 0x0001B8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetChallengeBundleInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetBundleDefinition_ReturnValue) == 0x0001C0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetBundleDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetVisualStyle_ReturnValue) == 0x0001C8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetVisualStyle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_SwitchEnum_CmpSuccess) == 0x0001C9, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetOwningBundleCategoryInfo_ReturnValue) == 0x0001D0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetOwningBundleCategoryInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetExpirationDate_ExpirationDate) == 0x0001D8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetExpirationDate_ExpirationDate' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetExpirationDate_ReturnValue) == 0x0001E0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetExpirationDate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetFirstScheduleDefinition_ReturnValue) == 0x0001E8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetFirstScheduleDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_GetCategoryName_ReturnValue) == 0x0001F0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_GetCategoryName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, CallFunc_TextToUpper_ReturnValue) == 0x000208, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush3) == 0x000220, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush3' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, Temp_bool_Variable) == 0x0002A8, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_MakeStruct_SlateBrush4) == 0x0002B0, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_MakeStruct_SlateBrush4' has a wrong offset!");
+static_assert(offsetof(ChallengeBundleCategoryHeader_C_UpdateBundle, K2Node_Select_Default) == 0x000338, "Member 'ChallengeBundleCategoryHeader_C_UpdateBundle::K2Node_Select_Default' has a wrong offset!");
 
 }
 

@@ -163,10 +163,10 @@ void AHuskPawn_C::PortalFX()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class AActor*                           BT                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AHuskPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
+void AHuskPawn_C::PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
 {
 	static class UFunction* Func = nullptr;
 
@@ -180,8 +180,6 @@ void AHuskPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class AB
 	Parms.BT = BT;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -217,9 +215,9 @@ void AHuskPawn_C::PortalClear()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void AHuskPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList)
+void AHuskPawn_C::PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList)
 {
 	static class UFunction* Func = nullptr;
 
@@ -232,8 +230,6 @@ void AHuskPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class AB
 	Parms.BuildingActorList = std::move(BuildingActorList);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -498,11 +494,11 @@ void AHuskPawn_C::FlingerEnemyDied(class APawn* PawnThatDied)
 // Function HuskPawn.HuskPawn_C.AlertEnemySpawnedByFlinger
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Param_PushMomentum                                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          PushMomentum_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   PushDuration                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                            OwningFlinger                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AHuskPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& Param_PushMomentum, float PushDuration, class APawn* OwningFlinger)
+void AHuskPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& PushMomentum_0, float PushDuration, class APawn* OwningFlinger)
 {
 	static class UFunction* Func = nullptr;
 
@@ -511,7 +507,7 @@ void AHuskPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& Param_PushMom
 
 	Params::HuskPawn_C_AlertEnemySpawnedByFlinger Parms{};
 
-	Parms.Param_PushMomentum = std::move(Param_PushMomentum);
+	Parms.PushMomentum_0 = std::move(PushMomentum_0);
 	Parms.PushDuration = PushDuration;
 	Parms.OwningFlinger = OwningFlinger;
 

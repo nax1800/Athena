@@ -10,54 +10,55 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Melee_Generic.B_Melee_Generic_C
-// 0x00E0 (0x0B70 - 0x0A90)
-class AB_Melee_Generic_C : public AFortWeapon
+// 0x00E8 (0x0C10 - 0x0B28)
+class AB_Melee_Generic_C final : public AFortWeapon
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A90(0x0008)(Transient, DuplicateTransient)
-	bool                                          Has_Idle_Effect;                                   // 0x0A98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A99[0x7];                                      // 0x0A99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        Idle_Effect;                                       // 0x0AA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Effects_Color_Level;                               // 0x0AA8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Has_Swing_Effect;                                  // 0x0AB4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AB5[0x3];                                      // 0x0AB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        Swing_Effect;                                      // 0x0AB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Use_Effect_Color_Override;                         // 0x0AC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AC1[0x3];                                      // 0x0AC1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Main_Effects_Color_Lv;                             // 0x0AC4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Lv2_wpn;                                           // 0x0AD4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Lv3_Wpn;                                           // 0x0AD5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AD6[0x2];                                      // 0x0AD6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Main_Effects_Color2_Lv;                            // 0x0AD8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               AnimTrail_PSC;                                     // 0x0AE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               MeleeHeavy_PSC;                                    // 0x0AF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        MeleeHeavy_ParticleSystem;                         // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        WeaponDurabilityDestroyEffect;                     // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        WeaponDurabilityDestroyEffectIcon;                 // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseDestroyEffect;                                  // 0x0B10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B11[0x7];                                      // 0x0B11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   IdleFXAttachSocket;                                // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               IdleFXComponent;                                   // 0x0B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        AnimTrailsParticles;                               // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class FName                                   FirstSocketName;                                   // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class FName                                   Second_Socket_Name;                                // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	float                                         Width;                                             // 0x0B40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          UseAnimTrails;                                     // 0x0B44(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_B45[0x3];                                      // 0x0B45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   SwingFXSocket;                                     // 0x0B48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UAnimMontage*>                   PokeAnimations;                                    // 0x0B50(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UMaterialInstanceDynamic*               WeaponMID;                                         // 0x0B60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Alteration_Ambient_PS;                             // 0x0B68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B28(0x0008)(Transient, DuplicateTransient)
+	bool                                          Has_Idle_Effect;                                   // 0x0B30(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B31[0x7];                                      // 0x0B31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Idle_Effect;                                       // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Effects_Color_Level;                               // 0x0B40(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Has_Swing_Effect;                                  // 0x0B4C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B4D[0x3];                                      // 0x0B4D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Swing_Effect;                                      // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Use_Effect_Color_Override;                         // 0x0B58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B59[0x3];                                      // 0x0B59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Main_Effects_Color_Lv;                             // 0x0B5C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Lv2_wpn;                                           // 0x0B6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Lv3_Wpn;                                           // 0x0B6D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B6E[0x2];                                      // 0x0B6E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Main_Effects_Color2_Lv;                            // 0x0B70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               AnimTrail_PSC;                                     // 0x0B80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               MeleeHeavy_PSC;                                    // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        MeleeHeavy_ParticleSystem;                         // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        WeaponDurabilityDestroyEffect;                     // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        WeaponDurabilityDestroyEffectIcon;                 // 0x0BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseDestroyEffect;                                  // 0x0BA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BA9[0x7];                                      // 0x0BA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   IdleFXAttachSocket;                                // 0x0BB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               IdleFXComponent;                                   // 0x0BB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        AnimTrailsParticles;                               // 0x0BC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FName                                   FirstSocketName;                                   // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FName                                   Second_Socket_Name;                                // 0x0BD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	float                                         Width;                                             // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          UseAnimTrails;                                     // 0x0BDC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_BDD[0x3];                                      // 0x0BDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SwingFXSocket;                                     // 0x0BE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UAnimMontage*>                   PokeAnimations;                                    // 0x0BE8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UMaterialInstanceDynamic*               WeaponMID;                                         // 0x0BF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Alteration_Ambient_PS;                             // 0x0C00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             MeleeHeavy_Sound;                                  // 0x0C08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Melee_Generic(int32 EntryPoint);
@@ -91,35 +92,36 @@ public:
 	}
 };
 static_assert(alignof(AB_Melee_Generic_C) == 0x000008, "Wrong alignment on AB_Melee_Generic_C");
-static_assert(sizeof(AB_Melee_Generic_C) == 0x000B70, "Wrong size on AB_Melee_Generic_C");
-static_assert(offsetof(AB_Melee_Generic_C, UberGraphFrame) == 0x000A90, "Member 'AB_Melee_Generic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Has_Idle_Effect) == 0x000A98, "Member 'AB_Melee_Generic_C::Has_Idle_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Idle_Effect) == 0x000AA0, "Member 'AB_Melee_Generic_C::Idle_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Effects_Color_Level) == 0x000AA8, "Member 'AB_Melee_Generic_C::Effects_Color_Level' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Has_Swing_Effect) == 0x000AB4, "Member 'AB_Melee_Generic_C::Has_Swing_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_Effect) == 0x000AB8, "Member 'AB_Melee_Generic_C::Swing_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Use_Effect_Color_Override) == 0x000AC0, "Member 'AB_Melee_Generic_C::Use_Effect_Color_Override' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Main_Effects_Color_Lv) == 0x000AC4, "Member 'AB_Melee_Generic_C::Main_Effects_Color_Lv' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Lv2_wpn) == 0x000AD4, "Member 'AB_Melee_Generic_C::Lv2_wpn' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Lv3_Wpn) == 0x000AD5, "Member 'AB_Melee_Generic_C::Lv3_Wpn' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Main_Effects_Color2_Lv) == 0x000AD8, "Member 'AB_Melee_Generic_C::Main_Effects_Color2_Lv' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, AnimTrail_PSC) == 0x000AE8, "Member 'AB_Melee_Generic_C::AnimTrail_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_PSC) == 0x000AF0, "Member 'AB_Melee_Generic_C::MeleeHeavy_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_ParticleSystem) == 0x000AF8, "Member 'AB_Melee_Generic_C::MeleeHeavy_ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffect) == 0x000B00, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffectIcon) == 0x000B08, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, UseDestroyEffect) == 0x000B10, "Member 'AB_Melee_Generic_C::UseDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, IdleFXAttachSocket) == 0x000B18, "Member 'AB_Melee_Generic_C::IdleFXAttachSocket' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, IdleFXComponent) == 0x000B20, "Member 'AB_Melee_Generic_C::IdleFXComponent' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, AnimTrailsParticles) == 0x000B28, "Member 'AB_Melee_Generic_C::AnimTrailsParticles' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, FirstSocketName) == 0x000B30, "Member 'AB_Melee_Generic_C::FirstSocketName' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Second_Socket_Name) == 0x000B38, "Member 'AB_Melee_Generic_C::Second_Socket_Name' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Width) == 0x000B40, "Member 'AB_Melee_Generic_C::Width' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, UseAnimTrails) == 0x000B44, "Member 'AB_Melee_Generic_C::UseAnimTrails' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, SwingFXSocket) == 0x000B48, "Member 'AB_Melee_Generic_C::SwingFXSocket' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, PokeAnimations) == 0x000B50, "Member 'AB_Melee_Generic_C::PokeAnimations' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponMID) == 0x000B60, "Member 'AB_Melee_Generic_C::WeaponMID' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Alteration_Ambient_PS) == 0x000B68, "Member 'AB_Melee_Generic_C::Alteration_Ambient_PS' has a wrong offset!");
+static_assert(sizeof(AB_Melee_Generic_C) == 0x000C10, "Wrong size on AB_Melee_Generic_C");
+static_assert(offsetof(AB_Melee_Generic_C, UberGraphFrame) == 0x000B28, "Member 'AB_Melee_Generic_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Has_Idle_Effect) == 0x000B30, "Member 'AB_Melee_Generic_C::Has_Idle_Effect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Idle_Effect) == 0x000B38, "Member 'AB_Melee_Generic_C::Idle_Effect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Effects_Color_Level) == 0x000B40, "Member 'AB_Melee_Generic_C::Effects_Color_Level' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Has_Swing_Effect) == 0x000B4C, "Member 'AB_Melee_Generic_C::Has_Swing_Effect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Swing_Effect) == 0x000B50, "Member 'AB_Melee_Generic_C::Swing_Effect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Use_Effect_Color_Override) == 0x000B58, "Member 'AB_Melee_Generic_C::Use_Effect_Color_Override' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Main_Effects_Color_Lv) == 0x000B5C, "Member 'AB_Melee_Generic_C::Main_Effects_Color_Lv' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Lv2_wpn) == 0x000B6C, "Member 'AB_Melee_Generic_C::Lv2_wpn' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Lv3_Wpn) == 0x000B6D, "Member 'AB_Melee_Generic_C::Lv3_Wpn' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Main_Effects_Color2_Lv) == 0x000B70, "Member 'AB_Melee_Generic_C::Main_Effects_Color2_Lv' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, AnimTrail_PSC) == 0x000B80, "Member 'AB_Melee_Generic_C::AnimTrail_PSC' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_PSC) == 0x000B88, "Member 'AB_Melee_Generic_C::MeleeHeavy_PSC' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_ParticleSystem) == 0x000B90, "Member 'AB_Melee_Generic_C::MeleeHeavy_ParticleSystem' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffect) == 0x000B98, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffectIcon) == 0x000BA0, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, UseDestroyEffect) == 0x000BA8, "Member 'AB_Melee_Generic_C::UseDestroyEffect' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, IdleFXAttachSocket) == 0x000BB0, "Member 'AB_Melee_Generic_C::IdleFXAttachSocket' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, IdleFXComponent) == 0x000BB8, "Member 'AB_Melee_Generic_C::IdleFXComponent' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, AnimTrailsParticles) == 0x000BC0, "Member 'AB_Melee_Generic_C::AnimTrailsParticles' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, FirstSocketName) == 0x000BC8, "Member 'AB_Melee_Generic_C::FirstSocketName' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Second_Socket_Name) == 0x000BD0, "Member 'AB_Melee_Generic_C::Second_Socket_Name' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Width) == 0x000BD8, "Member 'AB_Melee_Generic_C::Width' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, UseAnimTrails) == 0x000BDC, "Member 'AB_Melee_Generic_C::UseAnimTrails' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, SwingFXSocket) == 0x000BE0, "Member 'AB_Melee_Generic_C::SwingFXSocket' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, PokeAnimations) == 0x000BE8, "Member 'AB_Melee_Generic_C::PokeAnimations' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, WeaponMID) == 0x000BF8, "Member 'AB_Melee_Generic_C::WeaponMID' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, Alteration_Ambient_PS) == 0x000C00, "Member 'AB_Melee_Generic_C::Alteration_Ambient_PS' has a wrong offset!");
+static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_Sound) == 0x000C08, "Member 'AB_Melee_Generic_C::MeleeHeavy_Sound' has a wrong offset!");
 
 }
 

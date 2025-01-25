@@ -407,9 +407,9 @@ void UGA_BoostJumpPack_C::SetCurrentBoostState(EJumpBoostPackState NewState)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EJumpBoostPackState                     PreviousState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EJumpBoostPackState                     Param_CurrentState                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EJumpBoostPackState                     CurrentState_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(EJumpBoostPackState PreviousState, EJumpBoostPackState Param_CurrentState)
+void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(EJumpBoostPackState PreviousState, EJumpBoostPackState CurrentState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -419,7 +419,7 @@ void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(EJumpBoostPackState Pre
 	Params::GA_BoostJumpPack_C_HandleCurrentBoostStateChanged Parms{};
 
 	Parms.PreviousState = PreviousState;
-	Parms.Param_CurrentState = Param_CurrentState;
+	Parms.CurrentState_0 = CurrentState_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -535,34 +535,6 @@ void UGA_BoostJumpPack_C::Stop_Regen_Effect()
 }
 
 
-// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Pop Jetpack Input Component
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UGA_BoostJumpPack_C::Pop_Jetpack_Input_Component()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Pop Jetpack Input Component");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Push Jetpack Input Component
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UGA_BoostJumpPack_C::Push_Jetpack_Input_Component()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Push Jetpack Input Component");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GA_BoostJumpPack.GA_BoostJumpPack_C.ProcessTriggerData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -625,20 +597,6 @@ void UGA_BoostJumpPack_C::OnFuelIsEmpty()
 }
 
 
-// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Cheat DBNO When Player Hits Exectute on Controller
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UGA_BoostJumpPack_C::Cheat_DBNO_When_Player_Hits_Exectute_on_Controller()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Cheat DBNO When Player Hits Exectute on Controller");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GA_BoostJumpPack.GA_BoostJumpPack_C.OnAbilityCanceled
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -662,6 +620,48 @@ void UGA_BoostJumpPack_C::SavePlayerPawn()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("GA_BoostJumpPack_C", "SavePlayerPawn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Reengage Hovering Movement
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGA_BoostJumpPack_C::Reengage_Hovering_Movement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Hovering Movement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Reengage Falling Movement
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGA_BoostJumpPack_C::Reengage_Falling_Movement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Falling Movement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Handle Jetpack Equipped
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UGA_BoostJumpPack_C::Handle_Jetpack_Equipped()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Handle Jetpack Equipped");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -731,7 +731,7 @@ void UGA_BoostJumpPack_C::GetMaxFuel(float* MaxFuel) const
 
 
 // Function GA_BoostJumpPack.GA_BoostJumpPack_C.K2_ShouldAbilityRespondToEvent
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // struct FGameplayAbilityActorInfo        ActorInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 // struct FGameplayEventData               Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -768,6 +768,75 @@ bool UGA_BoostJumpPack_C::IsBoostAllowed() const
 		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsBoostAllowed");
 
 	Params::GA_BoostJumpPack_C_IsBoostAllowed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.IsCurrentlyDead
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FGameplayTag                     TagOne                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UGA_BoostJumpPack_C::IsCurrentlyDead(const struct FGameplayTag& TagOne) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsCurrentlyDead");
+
+	Params::GA_BoostJumpPack_C_IsCurrentlyDead Parms{};
+
+	Parms.TagOne = std::move(TagOne);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Get Player Pawn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          Object                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerPawn*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class AFortPlayerPawn* UGA_BoostJumpPack_C::Get_Player_Pawn(class UObject* Object) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Get Player Pawn");
+
+	Params::GA_BoostJumpPack_C_Get_Player_Pawn Parms{};
+
+	Parms.Object = Object;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GA_BoostJumpPack.GA_BoostJumpPack_C.Reasons To Reset on Transition
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FGameplayTag                     Tag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UGA_BoostJumpPack_C::Reasons_To_Reset_on_Transition(const struct FGameplayTag& Tag) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reasons To Reset on Transition");
+
+	Params::GA_BoostJumpPack_C_Reasons_To_Reset_on_Transition Parms{};
+
+	Parms.Tag = std::move(Tag);
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params

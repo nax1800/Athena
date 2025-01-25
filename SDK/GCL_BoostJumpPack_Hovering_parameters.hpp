@@ -10,187 +10,176 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.ExecuteUbergraph_GCL_BoostJumpPack_Hovering
-// 0x0358 (0x0358 - 0x0000)
+// 0x0320 (0x0320 - 0x0000)
 struct GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue1;        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue1;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeUnclamped_ReturnValue;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFuelPercent_FuelPercent;               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue12;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFuelPercent_FuelPercent1;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue123;       // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x0058(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFuelPercent_FuelPercent12;             // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable; // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeUnclamped_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x0028(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue3;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue1;  // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue2;  // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x00E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0108(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1234;      // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0120(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0133(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123;                // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue1;  // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0140(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue12; // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0158(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0170(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FB[0x1];                                      // 0x01FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0204(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0210(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x021C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0228(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0248(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0260(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x026C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0278(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0284(0x000C)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetUpwardThrust_ReturnValue;              // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x02A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x02A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x02A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1234;                  // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FHitResult& Hit)>       K2Node_CreateDelegate_OutputDelegate;              // 0x02B0(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12345;                 // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C2[0x6];                                      // 0x02C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x02C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_IsValid_ReturnValue123456;                // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0100(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetUpwardThrust_ReturnValue;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x011E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Has_Been_Initd_Variable1;                // 0x011F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0128(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0138(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01E4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0228(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0234(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0240(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24D[0x3];                                      // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A[0x2];                                      // 0x025A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x025C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0268(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          Temp_bool_IsClosed_Variable1;                      // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x02F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F2[0x6];                                      // 0x02F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(struct FHitResult& Hit)>       K2Node_CreateDelegate_OutputDelegate;              // 0x02F8(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue4;         // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x030C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0319(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x031A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x031B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
-static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering) == 0x000358, "Wrong size on GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering) == 0x000320, "Wrong size on GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, EntryPoint) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetVelocity_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakVector_X) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakVector_Y) == 0x000018, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakVector_Z) == 0x00001C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000020, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_FInterpTo_ReturnValue) == 0x000024, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetWorldDeltaSeconds_ReturnValue1) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetWorldDeltaSeconds_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_FInterpTo_ReturnValue1) == 0x00002C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_FInterpTo_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsLocallyControlled_ReturnValue) == 0x000031, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_MapRangeUnclamped_ReturnValue) == 0x000038, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_MapRangeUnclamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetFuelPercent_FuelPercent) == 0x00003C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetFuelPercent_FuelPercent' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000040, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue12) == 0x000044, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetFuelPercent_FuelPercent1) == 0x000048, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetFuelPercent_FuelPercent1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00004C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue) == 0x00004D, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue1) == 0x00004E, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue123) == 0x000050, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_CustomEvent_Hit) == 0x000058, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000E0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetFuelPercent_FuelPercent12) == 0x0000E4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetFuelPercent_FuelPercent12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000E8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x0000F8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000100, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_object_Variable) == 0x000108, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue1234) == 0x000118, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_MakeArray_Array) == 0x000120, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000130, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue12) == 0x000131, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue) == 0x000132, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsPlaying_ReturnValue) == 0x000133, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue123) == 0x000134, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue1) == 0x000138, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSocketLocation_ReturnValue) == 0x000140, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue12) == 0x000150, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Add_VectorVector_ReturnValue) == 0x000158, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000168, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000170, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0001F8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_bBlockingHit) == 0x0001F9, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001FA, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Time) == 0x0001FC, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Distance) == 0x000200, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Location) == 0x000204, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_ImpactPoint) == 0x000210, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Normal) == 0x00021C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_ImpactNormal) == 0x000228, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_PhysMat) == 0x000238, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitActor) == 0x000240, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitComponent) == 0x000248, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitBoneName) == 0x000250, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitItem) == 0x000258, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_FaceIndex) == 0x00025C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_TraceStart) == 0x000260, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_TraceEnd) == 0x00026C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000278, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000284, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_VSize_ReturnValue) == 0x000290, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetUpwardThrust_ReturnValue) == 0x000294, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetUpwardThrust_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000298, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x00029C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002A0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue1) == 0x0002A4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_Has_Been_Initd_Variable) == 0x0002A5, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue12) == 0x0002A6, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue123) == 0x0002A7, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue1234) == 0x0002A8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_CreateDelegate_OutputDelegate) == 0x0002B0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue12345) == 0x0002C0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_IsClosed_Variable) == 0x0002C1, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x0002C8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue123456) == 0x000350, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue123456' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000006, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_IsClosed_Variable) == 0x000007, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_Event_DeltaSeconds) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_FInterpTo_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Not_PreBool_ReturnValue) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsLocallyControlled_ReturnValue) == 0x000015, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000018, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_MapRangeUnclamped_ReturnValue) == 0x00001C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_MapRangeUnclamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000020, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000024, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_CustomEvent_Hit) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_CustomEvent_Hit' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_Has_Been_Initd_Variable) == 0x0000B0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000B4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x0000B8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_MakeArray_Array) == 0x0000C0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x0000D0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0000D4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue1) == 0x0000D8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSkeletalMeshForPartType_ReturnValue2) == 0x0000E0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSkeletalMeshForPartType_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetSocketLocation_ReturnValue) == 0x0000E8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0000F8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Add_VectorVector_ReturnValue) == 0x000100, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_GetUpwardThrust_ReturnValue) == 0x00010C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_GetUpwardThrust_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000110, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue) == 0x000114, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000118, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue1) == 0x00011C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue2) == 0x00011D, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue3) == 0x00011E, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_Has_Been_Initd_Variable1) == 0x00011F, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_Has_Been_Initd_Variable1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue4) == 0x000120, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_object_Variable) == 0x000128, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000138, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0001C0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue5) == 0x0001C1, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_bBlockingHit) == 0x0001C2, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001C3, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Time) == 0x0001C4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Distance) == 0x0001C8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Location) == 0x0001CC, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_ImpactPoint) == 0x0001D8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_Normal) == 0x0001E4, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_ImpactNormal) == 0x0001F0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_PhysMat) == 0x000200, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitActor) == 0x000208, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitComponent) == 0x000210, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitBoneName) == 0x000218, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_HitItem) == 0x000220, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_FaceIndex) == 0x000224, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_TraceStart) == 0x000228, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BreakHitResult_TraceEnd) == 0x000234, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000240, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue6) == 0x00024C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_VSize_ReturnValue) == 0x000250, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000254, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsPlaying_ReturnValue) == 0x000258, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue) == 0x000259, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x00025C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000268, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, Temp_bool_IsClosed_Variable1) == 0x0002F0, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::Temp_bool_IsClosed_Variable1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_IsValid_ReturnValue7) == 0x0002F1, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, K2Node_CreateDelegate_OutputDelegate) == 0x0002F8, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Subtract_FloatFloat_ReturnValue4) == 0x000308, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Subtract_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00030C, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000318, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue1) == 0x000319, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue2) == 0x00031A, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering, CallFunc_BooleanAND_ReturnValue3) == 0x00031B, "Member 'GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.On Pawn Landed
 // 0x0088 (0x0088 - 0x0000)
@@ -287,20 +276,20 @@ public:
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue1;         // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue12;        // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue123;       // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue2;         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue3;         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue1234;      // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue4;         // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             K2Node_Select1_Default;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue1;          // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue12;         // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue123;        // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue1234;       // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue3;          // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue4;          // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled");
 static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled) == 0x0000A8, "Wrong size on GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled");
@@ -319,18 +308,18 @@ static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, Call
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, K2Node_Select_Default) == 0x000038, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000040, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue1) == 0x000048, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue12) == 0x000050, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue123) == 0x000058, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue2) == 0x000050, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue3) == 0x000058, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, Temp_bool_Variable1) == 0x000060, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue1234) == 0x000068, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue4) == 0x000068, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, K2Node_Select1_Default) == 0x000070, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue1) == 0x000078, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_RandomFloatInRange_ReturnValue) == 0x000080, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000084, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000088, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue12) == 0x000090, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue123) == 0x000098, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue1234) == 0x0000A0, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_RandomFloatInRange_ReturnValue2) == 0x000088, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue2) == 0x000090, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue3) == 0x000098, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue4) == 0x0000A0, "Member 'GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue4' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.GetFuelPercent
 // 0x0010 (0x0010 - 0x0000)
@@ -350,108 +339,143 @@ static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuelPercent, CallFunc_Get
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuelPercent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuelPercent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.GetFuel
-// 0x0018 (0x0018 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct GCL_BoostJumpPack_Hovering_C_GetFuel final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackFuel_ReturnValue;      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     FuelAttribute;                                     // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetFuel) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetFuel");
-static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetFuel) == 0x000018, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetFuel");
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetFuel) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetFuel");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetFuel) == 0x000038, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetFuel");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, Temp_bool_Variable) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetSimulatedJetpackFuel_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetSimulatedJetpackFuel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, K2Node_Select_Default) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, FuelAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::FuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000030, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_Hovering_C_GetFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.GetMaxFuel
-// 0x001C (0x001C - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct GCL_BoostJumpPack_Hovering_C_GetMaxFuel final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue;   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     MaxFuelAttribute;                                  // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetMaxFuel");
-static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel) == 0x00001C, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetMaxFuel");
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetMaxFuel");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel) == 0x000038, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetMaxFuel");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, Temp_bool_Variable) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, K2Node_Select_Default) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_FMax_ReturnValue) == 0x000018, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, MaxFuelAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::MaxFuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000030, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetMaxFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_Hovering_C_GetMaxFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.GetUpwardThrust
-// 0x001C (0x001C - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct GCL_BoostJumpPack_Hovering_C_GetUpwardThrust final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackUpwardThrust_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     UpwardThrustAttribute;                             // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetUpwardThrust");
-static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust) == 0x00001C, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetUpwardThrust");
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetUpwardThrust");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust) == 0x000038, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetUpwardThrust");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, Temp_bool_Variable) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetSimulatedJetpackUpwardThrust_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetSimulatedJetpackUpwardThrust_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetFloatAttribute_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, K2Node_Select_Default) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_FMax_ReturnValue) == 0x000018, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, UpwardThrustAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::UpwardThrustAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000030, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetUpwardThrust, CallFunc_GetFloatAttribute_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_Hovering_C_GetUpwardThrust::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.GetLateralThrust
-// 0x0018 (0x0018 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct GCL_BoostJumpPack_Hovering_C_GetLateralThrust final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackLateralThrust_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     LateralThurstAttribute;                            // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetLateralThrust");
-static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust) == 0x000018, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetLateralThrust");
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_GetLateralThrust");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust) == 0x000038, "Wrong size on GCL_BoostJumpPack_Hovering_C_GetLateralThrust");
 static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, Temp_bool_Variable) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetSimulatedJetpackLateralThrust_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetSimulatedJetpackLateralThrust_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x00000C, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetFloatAttribute_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, K2Node_Select_Default) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, LateralThurstAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::LateralThurstAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000030, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_GetLateralThrust, CallFunc_GetFloatAttribute_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_Hovering_C_GetLateralThrust::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
+
+// Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.CalculateUpwardVelocity
+// 0x0020 (0x0020 - 0x0000)
+struct GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity final
+{
+public:
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity) == 0x000020, "Wrong size on GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_GetVelocity_ReturnValue) == 0x000004, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_BreakVector_X) == 0x000010, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_BreakVector_Y) == 0x000014, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_BreakVector_Z) == 0x000018, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity, CallFunc_FInterpTo_ReturnValue) == 0x00001C, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateUpwardVelocity::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+
+// Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.CalculateFuelPercentage
+// 0x0004 (0x0004 - 0x0000)
+struct GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage final
+{
+public:
+	float                                         CallFunc_GetFuelPercent_FuelPercent;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage) == 0x000004, "Wrong size on GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage, CallFunc_GetFuelPercent_FuelPercent) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_CalculateFuelPercentage::CallFunc_GetFuelPercent_FuelPercent' has a wrong offset!");
+
+// Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.CacheRenderingDetailMode
+// 0x0004 (0x0004 - 0x0000)
+struct GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode final
+{
+public:
+	int32                                         CallFunc_GetRenderingDetailMode_ReturnValue;       // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode");
+static_assert(sizeof(GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode) == 0x000004, "Wrong size on GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode");
+static_assert(offsetof(GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode, CallFunc_GetRenderingDetailMode_ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_Hovering_C_CacheRenderingDetailMode::CallFunc_GetRenderingDetailMode_ReturnValue' has a wrong offset!");
 
 }
 

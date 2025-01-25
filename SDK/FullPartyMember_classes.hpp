@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -21,20 +21,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FullPartyMember.FullPartyMember_C
-// 0x02E8 (0x0540 - 0x0258)
+// 0x02F0 (0x0540 - 0x0250)
 class UFullPartyMember_C final : public UFortPlayerTrackerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           CONNECTED;                                         // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               Connecting;                                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       FortitudeDisplay;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_233;                                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Platform;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageEmpty;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               LeaderImageOverlay;                                // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MemberStateSwitcher;                               // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           CONNECTED;                                         // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               Connecting;                                        // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       FortitudeDisplay;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_233;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Platform;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageEmpty;                                        // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               LeaderImageOverlay;                                // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MemberStateSwitcher;                               // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMicIndicator_C*                        MicIndicator;                                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNormalBangWrapper_C*                   NormalBangWrapper_0;                               // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       OffenseDisplay;                                    // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               Open;                                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -94,16 +95,17 @@ public:
 };
 static_assert(alignof(UFullPartyMember_C) == 0x000008, "Wrong alignment on UFullPartyMember_C");
 static_assert(sizeof(UFullPartyMember_C) == 0x000540, "Wrong size on UFullPartyMember_C");
-static_assert(offsetof(UFullPartyMember_C, UberGraphFrame) == 0x000258, "Member 'UFullPartyMember_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, CONNECTED) == 0x000260, "Member 'UFullPartyMember_C::CONNECTED' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Connecting) == 0x000268, "Member 'UFullPartyMember_C::Connecting' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, FortitudeDisplay) == 0x000270, "Member 'UFullPartyMember_C::FortitudeDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_2) == 0x000278, "Member 'UFullPartyMember_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_233) == 0x000280, "Member 'UFullPartyMember_C::Image_233' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_Platform) == 0x000288, "Member 'UFullPartyMember_C::Image_Platform' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, ImageEmpty) == 0x000290, "Member 'UFullPartyMember_C::ImageEmpty' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, LeaderImageOverlay) == 0x000298, "Member 'UFullPartyMember_C::LeaderImageOverlay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, MemberStateSwitcher) == 0x0002A0, "Member 'UFullPartyMember_C::MemberStateSwitcher' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, UberGraphFrame) == 0x000250, "Member 'UFullPartyMember_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, CONNECTED) == 0x000258, "Member 'UFullPartyMember_C::CONNECTED' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, Connecting) == 0x000260, "Member 'UFullPartyMember_C::Connecting' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, FortitudeDisplay) == 0x000268, "Member 'UFullPartyMember_C::FortitudeDisplay' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, Image_2) == 0x000270, "Member 'UFullPartyMember_C::Image_2' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, Image_233) == 0x000278, "Member 'UFullPartyMember_C::Image_233' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, Image_Platform) == 0x000280, "Member 'UFullPartyMember_C::Image_Platform' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, ImageEmpty) == 0x000288, "Member 'UFullPartyMember_C::ImageEmpty' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, LeaderImageOverlay) == 0x000290, "Member 'UFullPartyMember_C::LeaderImageOverlay' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, MemberStateSwitcher) == 0x000298, "Member 'UFullPartyMember_C::MemberStateSwitcher' has a wrong offset!");
+static_assert(offsetof(UFullPartyMember_C, MicIndicator) == 0x0002A0, "Member 'UFullPartyMember_C::MicIndicator' has a wrong offset!");
 static_assert(offsetof(UFullPartyMember_C, NormalBangWrapper_0) == 0x0002A8, "Member 'UFullPartyMember_C::NormalBangWrapper_0' has a wrong offset!");
 static_assert(offsetof(UFullPartyMember_C, OffenseDisplay) == 0x0002B0, "Member 'UFullPartyMember_C::OffenseDisplay' has a wrong offset!");
 static_assert(offsetof(UFullPartyMember_C, Open) == 0x0002B8, "Member 'UFullPartyMember_C::Open' has a wrong offset!");

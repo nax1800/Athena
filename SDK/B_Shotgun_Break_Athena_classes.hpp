@@ -10,38 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "B_Shotgun_Generic_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "B_Shotgun_Standard_Athena_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Shotgun_Break_Athena.B_Shotgun_Break_Athena_C
-// 0x0060 (0x0EB8 - 0x0E58)
-class AB_Shotgun_Break_Athena_C final : public AB_Shotgun_Generic_C
+// 0x0058 (0x0FC8 - 0x0F70)
+class AB_Shotgun_Break_Athena_C final : public AB_Shotgun_Standard_Athena_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_Shotgun_Break_Athena_C;           // 0x0E58(0x0008)(Transient, DuplicateTransient)
-	bool                                          Debug;                                             // 0x0E60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E61[0x3];                                      // 0x0E61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FXTraceYawFullAngle;                               // 0x0E64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FXTracePitchFullAngle;                             // 0x0E68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                EndOfCenterFXTrace;                                // 0x0E6C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        AllFXTraceEndPoints;                               // 0x0E78(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FVector                                CurrentFXTraceEnd;                                 // 0x0E88(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CurrentFXTraceWasHit;                              // 0x0E94(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E95[0x3];                                      // 0x0E95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        AllFXTracerSpawnPoints;                            // 0x0E98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	bool                                          SpawnTracersInsteadOfDummyImpactFX;                // 0x0EA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EA9[0x3];                                      // 0x0EA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MysteriousRangeBufferForTracers;                   // 0x0EAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RangeLong;                                         // 0x0EB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Debug;                                             // 0x0F70(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F71[0x3];                                      // 0x0F71(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FXTraceYawFullAngle;                               // 0x0F74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FXTracePitchFullAngle;                             // 0x0F78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                EndOfCenterFXTrace;                                // 0x0F7C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        AllFXTraceEndPoints;                               // 0x0F88(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FVector                                CurrentFXTraceEnd;                                 // 0x0F98(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CurrentFXTraceWasHit;                              // 0x0FA4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FA5[0x3];                                      // 0x0FA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        AllFXTracerSpawnPoints;                            // 0x0FA8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	bool                                          SpawnTracersInsteadOfDummyImpactFX;                // 0x0FB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FB9[0x3];                                      // 0x0FB9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MysteriousRangeBufferForTracers;                   // 0x0FBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RangeLong;                                         // 0x0FC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_B_Shotgun_Break_Athena(int32 EntryPoint);
-	void OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire);
 	void UserConstructionScript();
 
 public:
@@ -55,19 +51,18 @@ public:
 	}
 };
 static_assert(alignof(AB_Shotgun_Break_Athena_C) == 0x000008, "Wrong alignment on AB_Shotgun_Break_Athena_C");
-static_assert(sizeof(AB_Shotgun_Break_Athena_C) == 0x000EB8, "Wrong size on AB_Shotgun_Break_Athena_C");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, UberGraphFrame_B_Shotgun_Break_Athena_C) == 0x000E58, "Member 'AB_Shotgun_Break_Athena_C::UberGraphFrame_B_Shotgun_Break_Athena_C' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, Debug) == 0x000E60, "Member 'AB_Shotgun_Break_Athena_C::Debug' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, FXTraceYawFullAngle) == 0x000E64, "Member 'AB_Shotgun_Break_Athena_C::FXTraceYawFullAngle' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, FXTracePitchFullAngle) == 0x000E68, "Member 'AB_Shotgun_Break_Athena_C::FXTracePitchFullAngle' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, EndOfCenterFXTrace) == 0x000E6C, "Member 'AB_Shotgun_Break_Athena_C::EndOfCenterFXTrace' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, AllFXTraceEndPoints) == 0x000E78, "Member 'AB_Shotgun_Break_Athena_C::AllFXTraceEndPoints' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, CurrentFXTraceEnd) == 0x000E88, "Member 'AB_Shotgun_Break_Athena_C::CurrentFXTraceEnd' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, CurrentFXTraceWasHit) == 0x000E94, "Member 'AB_Shotgun_Break_Athena_C::CurrentFXTraceWasHit' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, AllFXTracerSpawnPoints) == 0x000E98, "Member 'AB_Shotgun_Break_Athena_C::AllFXTracerSpawnPoints' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, SpawnTracersInsteadOfDummyImpactFX) == 0x000EA8, "Member 'AB_Shotgun_Break_Athena_C::SpawnTracersInsteadOfDummyImpactFX' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, MysteriousRangeBufferForTracers) == 0x000EAC, "Member 'AB_Shotgun_Break_Athena_C::MysteriousRangeBufferForTracers' has a wrong offset!");
-static_assert(offsetof(AB_Shotgun_Break_Athena_C, RangeLong) == 0x000EB0, "Member 'AB_Shotgun_Break_Athena_C::RangeLong' has a wrong offset!");
+static_assert(sizeof(AB_Shotgun_Break_Athena_C) == 0x000FC8, "Wrong size on AB_Shotgun_Break_Athena_C");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, Debug) == 0x000F70, "Member 'AB_Shotgun_Break_Athena_C::Debug' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, FXTraceYawFullAngle) == 0x000F74, "Member 'AB_Shotgun_Break_Athena_C::FXTraceYawFullAngle' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, FXTracePitchFullAngle) == 0x000F78, "Member 'AB_Shotgun_Break_Athena_C::FXTracePitchFullAngle' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, EndOfCenterFXTrace) == 0x000F7C, "Member 'AB_Shotgun_Break_Athena_C::EndOfCenterFXTrace' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, AllFXTraceEndPoints) == 0x000F88, "Member 'AB_Shotgun_Break_Athena_C::AllFXTraceEndPoints' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, CurrentFXTraceEnd) == 0x000F98, "Member 'AB_Shotgun_Break_Athena_C::CurrentFXTraceEnd' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, CurrentFXTraceWasHit) == 0x000FA4, "Member 'AB_Shotgun_Break_Athena_C::CurrentFXTraceWasHit' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, AllFXTracerSpawnPoints) == 0x000FA8, "Member 'AB_Shotgun_Break_Athena_C::AllFXTracerSpawnPoints' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, SpawnTracersInsteadOfDummyImpactFX) == 0x000FB8, "Member 'AB_Shotgun_Break_Athena_C::SpawnTracersInsteadOfDummyImpactFX' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, MysteriousRangeBufferForTracers) == 0x000FBC, "Member 'AB_Shotgun_Break_Athena_C::MysteriousRangeBufferForTracers' has a wrong offset!");
+static_assert(offsetof(AB_Shotgun_Break_Athena_C, RangeLong) == 0x000FC0, "Member 'AB_Shotgun_Break_Athena_C::RangeLong' has a wrong offset!");
 
 }
 

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CommonUI_structs.hpp"
 
 
@@ -22,7 +22,7 @@ namespace SDK::Params
 {
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.ExecuteUbergraph_AthenaCustomizationTab
-// 0x0108 (0x0108 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab final
 {
 public:
@@ -31,88 +31,94 @@ public:
 	int32                                         Temp_int_Variable1;                                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123;                              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item1;                          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bUsingGamepad;                        // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue1;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaBannerSelectModal_C*             CallFunc_Create_ReturnValue;                       // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAthenaCustomizationCategory CustomizationType, class FText BannerLabel, class FText CustomizationDescription, int32 SubslotIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EAthenaCustomizationCategory CustomizationType, class UCommonButton* Button, class FText BannerLabel, int32 Subslot_Index)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item12;                         // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item123;                        // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue123;              // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue123;               // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              K2Node_ComponentBoundEvent_SelectedItem;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HandleCancel_PassThrough;                 // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TryCommitSelectedItem_ReturnValue;        // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAthenaCustomizationSlotButtonWrapper_C*> K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bUsingGamepad;                        // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue1;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaBannerSelectModal_C*             CallFunc_Create_ReturnValue;                       // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAthenaCustomizationCategory CustomizationType, class FText BannerLabel, class FText CustomizationDescription, int32 SubslotIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EAthenaCustomizationCategory CustomizationType, class UCommonButton* Button, class FText BannerLabel, int32 Subslot_Index)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item1;                          // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item2;                          // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BD[0x3];                                       // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item3;                          // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              K2Node_ComponentBoundEvent_SelectedItem;           // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HandleCancel_PassThrough;                 // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TryCommitSelectedItem_ReturnValue;        // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaItemCustomizationSelector_C*     CallFunc_Create_ReturnValue1;                      // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UAthenaCustomizationSlotButtonWrapper_C*> K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab");
-static_assert(sizeof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab) == 0x000108, "Wrong size on AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab");
+static_assert(sizeof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab) == 0x000120, "Wrong size on AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab");
 static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, EntryPoint) == 0x000000, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable) == 0x000004, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable1) == 0x000008, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue1) == 0x000010, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable12) == 0x000014, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable123) == 0x000018, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue12) == 0x00001C, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue123) == 0x000020, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item) == 0x000030, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item1) == 0x000040, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue1) == 0x00004C, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue1) == 0x000050, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_Event_bUsingGamepad) == 0x000051, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_Event_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000058, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetUIManagerWidget_ReturnValue1) == 0x000060, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetUIManagerWidget_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetOwningPlayer_ReturnValue) == 0x000068, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button1234) == 0x000070, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Create_ReturnValue) == 0x000078, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_CreateDelegate_OutputDelegate) == 0x000080, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_CreateDelegate_OutputDelegate1) == 0x000090, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button123) == 0x0000A0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item12) == 0x0000A8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue12) == 0x0000B0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue12) == 0x0000B4, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item123) == 0x0000B8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue123) == 0x0000C0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue123) == 0x0000C4, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_SelectedItem) == 0x0000C8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button12) == 0x0000D0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_HandleCancel_PassThrough) == 0x0000D8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_HandleCancel_PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button1) == 0x0000E0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button) == 0x0000E8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_TryCommitSelectedItem_ReturnValue) == 0x0000F0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_TryCommitSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_MakeArray_Array) == 0x0000F8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable2) == 0x000014, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue2) == 0x000020, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetContext_ReturnValue1) == 0x000028, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item) == 0x000038, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue1) == 0x000040, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_Event_bUsingGamepad) == 0x000044, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_Event_bUsingGamepad' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue) == 0x000045, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000048, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetUIManagerWidget_ReturnValue1) == 0x000050, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetUIManagerWidget_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button4) == 0x000060, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Create_ReturnValue) == 0x000068, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_CreateDelegate_OutputDelegate) == 0x000070, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_CreateDelegate_OutputDelegate1) == 0x000080, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button3) == 0x000090, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, Temp_int_Variable3) == 0x000098, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Add_IntInt_ReturnValue3) == 0x00009C, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item1) == 0x0000A0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue1) == 0x0000A8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item2) == 0x0000B0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue2) == 0x0000B8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue2) == 0x0000BC, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Get_Item3) == 0x0000C0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Array_Length_ReturnValue3) == 0x0000C8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Less_IntInt_ReturnValue3) == 0x0000CC, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_SelectedItem) == 0x0000D0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button2) == 0x0000D8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_HandleCancel_PassThrough) == 0x0000E0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_HandleCancel_PassThrough' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button1) == 0x0000E8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_ComponentBoundEvent_Button) == 0x0000F0, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_TryCommitSelectedItem_ReturnValue) == 0x0000F8, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_TryCommitSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000100, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, CallFunc_Create_ReturnValue1) == 0x000108, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab, K2Node_MakeArray_Array) == 0x000110, "Member 'AthenaCustomizationTab_C_ExecuteUbergraph_AthenaCustomizationTab::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.BndEvt__ButtonConfirm_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -219,31 +225,36 @@ static_assert(offsetof(AthenaCustomizationTab_C_RegisterCancel, K2Node_CreateDel
 static_assert(offsetof(AthenaCustomizationTab_C_RegisterCancel, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'AthenaCustomizationTab_C_RegisterCancel::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.BeginPickingCustomization
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct AthenaCustomizationTab_C_BeginPickingCustomization final
 {
 public:
 	EAthenaCustomizationCategory                  Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          WidgetToReturnFocusTo;                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Param_HeaderText;                                  // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   HeaderText_0;                                      // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         Subslot_Index;                                     // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAthenaCustomizationCategory                  NewLocalVar_0;                                     // 0x002C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaCustomizationTab_C_BeginPickingCustomization) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_BeginPickingCustomization");
-static_assert(sizeof(AthenaCustomizationTab_C_BeginPickingCustomization) == 0x000098, "Wrong size on AthenaCustomizationTab_C_BeginPickingCustomization");
+static_assert(sizeof(AthenaCustomizationTab_C_BeginPickingCustomization) == 0x0000A8, "Wrong size on AthenaCustomizationTab_C_BeginPickingCustomization");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, Category) == 0x000000, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::Category' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, WidgetToReturnFocusTo) == 0x000008, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::WidgetToReturnFocusTo' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, Param_HeaderText) == 0x000010, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::Param_HeaderText' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, HeaderText_0) == 0x000010, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::HeaderText_0' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, Subslot_Index) == 0x000028, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::Subslot_Index' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, NewLocalVar_0) == 0x00002C, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::NewLocalVar_0' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, K2Node_MakeArray_Array) == 0x000070, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, CallFunc_Format_ReturnValue) == 0x000080, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, CallFunc_IsMobileGame_ReturnValue) == 0x000080, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, CallFunc_Format_ReturnValue) == 0x000088, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_BeginPickingCustomization, CallFunc_GetUIManagerWidget_ReturnValue) == 0x0000A0, "Member 'AthenaCustomizationTab_C_BeginPickingCustomization::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.EndPickingCustomization
 // 0x0020 (0x0020 - 0x0000)
@@ -271,7 +282,7 @@ static_assert(offsetof(AthenaCustomizationTab_C_EndPickingCustomization, CallFun
 static_assert(offsetof(AthenaCustomizationTab_C_EndPickingCustomization, K2Node_Select_Default) == 0x000018, "Member 'AthenaCustomizationTab_C_EndPickingCustomization::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.RefreshInputActions
-// 0x0060 (0x0060 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct AthenaCustomizationTab_C_RefreshInputActions final
 {
 public:
@@ -279,50 +290,89 @@ public:
 	EInputActionState                             Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputActionState                             Temp_byte_Variable1;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EInputActionState                             Temp_byte_Variable1234;                            // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EInputActionState                             Temp_byte_Variable12345;                           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInputActionState                             Temp_byte_Variable4;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EInputActionState                             Temp_byte_Variable5;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x0010)(NoDestructor)
-	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle1;             // 0x0030(0x0010)(NoDestructor)
-	EInputActionState                             K2Node_Select_Default;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle12;            // 0x0048(0x0010)(NoDestructor)
-	EInputActionState                             K2Node_Select12_Default;                           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0020(0x0010)(NoDestructor)
+	EInputActionState                             Temp_byte_Variable6;                               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle1;             // 0x0038(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0048(0x0010)(NoDestructor)
+	class UAthenaCosmeticAccountItem*             K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasMultipleVariants_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasCosmeticVariance_ReturnValue;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsItemDefRandomCustomizationSelector_ReturnValue; // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0078(0x0010)(NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInputActionState                             Temp_byte_Variable7;                               // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8B[0x5];                                       // 0x008B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle4;             // 0x0090(0x0010)(NoDestructor)
+	EInputActionState                             K2Node_Select_Default;                             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle5;             // 0x00A8(0x0010)(NoDestructor)
+	EInputActionState                             K2Node_Select1_Default;                            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle6;             // 0x00C0(0x0010)(NoDestructor)
+	EInputActionState                             K2Node_Select3_Default;                            // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaCustomizationTab_C_RefreshInputActions) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_RefreshInputActions");
-static_assert(sizeof(AthenaCustomizationTab_C_RefreshInputActions) == 0x000060, "Wrong size on AthenaCustomizationTab_C_RefreshInputActions");
+static_assert(sizeof(AthenaCustomizationTab_C_RefreshInputActions) == 0x0000D8, "Wrong size on AthenaCustomizationTab_C_RefreshInputActions");
 static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_bool_Variable) == 0x000000, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable) == 0x000001, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable1) == 0x000002, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_bool_Variable1) == 0x000003, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable12) == 0x000004, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable123) == 0x000005, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_bool_Variable12) == 0x000006, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable1234) == 0x000007, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable12345) == 0x000008, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable2) == 0x000004, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable3) == 0x000005, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_bool_Variable2) == 0x000006, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable4) == 0x000007, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable5) == 0x000008, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable5' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle) == 0x000018, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetFeatureState_OutFeatureState) == 0x000028, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetFeatureState_OutReason) == 0x000029, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002A, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_BooleanAND_ReturnValue) == 0x00002B, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle1) == 0x000030, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select_Default) == 0x000040, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_IsBROnly_ReturnValue) == 0x000041, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select1_Default) == 0x000042, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle12) == 0x000048, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select12_Default) == 0x000058, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_IsMobileGame_ReturnValue) == 0x000018, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetFeatureState_OutFeatureState) == 0x000019, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetFeatureState_OutReason) == 0x00001A, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001B, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle) == 0x000020, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable6) == 0x000030, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle1) == 0x000038, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle2) == 0x000048, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item) == 0x000058, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_HasMultipleVariants_ReturnValue) == 0x000061, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_HasMultipleVariants_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000068, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_HasCosmeticVariance_ReturnValue) == 0x000070, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_HasCosmeticVariance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_IsItemDefRandomCustomizationSelector_ReturnValue) == 0x000071, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_IsItemDefRandomCustomizationSelector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_Not_PreBool_ReturnValue) == 0x000072, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle3) == 0x000078, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_BooleanAND_ReturnValue) == 0x000088, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_byte_Variable7) == 0x000089, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, Temp_bool_Variable3) == 0x00008A, "Member 'AthenaCustomizationTab_C_RefreshInputActions::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle4) == 0x000090, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle4' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select_Default) == 0x0000A0, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_BooleanAND_ReturnValue1) == 0x0000A1, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, CallFunc_BooleanAND_ReturnValue2) == 0x0000A2, "Member 'AthenaCustomizationTab_C_RefreshInputActions::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle5) == 0x0000A8, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle5' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select1_Default) == 0x0000B8, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select2_Default) == 0x0000B9, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_MakeStruct_DataTableRowHandle6) == 0x0000C0, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_MakeStruct_DataTableRowHandle6' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RefreshInputActions, K2Node_Select3_Default) == 0x0000D0, "Member 'AthenaCustomizationTab_C_RefreshInputActions::K2Node_Select3_Default' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.ShowSavingModal
 // 0x00E0 (0x00E0 - 0x0000)
@@ -368,13 +418,16 @@ struct AthenaCustomizationTab_C_HandleSlotHovered final
 public:
 	EAthenaCustomizationCategory                  Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Param_HeaderText;                                  // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   Param_DescriptionText;                             // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   HeaderText_0;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   DescriptionText;                                   // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         SubslotIndex;                                      // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_GetFavoriteItemForCategory_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B[0x1];                                       // 0x004B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable1;                                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -384,18 +437,21 @@ public:
 static_assert(alignof(AthenaCustomizationTab_C_HandleSlotHovered) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_HandleSlotHovered");
 static_assert(sizeof(AthenaCustomizationTab_C_HandleSlotHovered) == 0x000060, "Wrong size on AthenaCustomizationTab_C_HandleSlotHovered");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Type) == 0x000000, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Type' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Param_HeaderText) == 0x000008, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Param_HeaderText' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Param_DescriptionText) == 0x000020, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Param_DescriptionText' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, HeaderText_0) == 0x000008, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::HeaderText_0' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, DescriptionText) == 0x000020, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::DescriptionText' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, SubslotIndex) == 0x000038, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::SubslotIndex' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00003C, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, CallFunc_GetFavoriteItemForCategory_ReturnValue) == 0x000040, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::CallFunc_GetFavoriteItemForCategory_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000048, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000049, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, CallFunc_BooleanOR_ReturnValue) == 0x00004A, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Temp_int_Variable) == 0x00004C, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Temp_int_Variable1) == 0x000050, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, Temp_bool_Variable) == 0x000054, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleSlotHovered, K2Node_Select_Default) == 0x000058, "Member 'AthenaCustomizationTab_C_HandleSlotHovered::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.ShowVaultItemByCategory
-// 0x0130 (0x0130 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct AthenaCustomizationTab_C_ShowVaultItemByCategory final
 {
 public:
@@ -404,47 +460,46 @@ public:
 	int32                                         SubslotIndex;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanShowEmpty;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              CallFunc_GetFavoriteItemForCategory_ReturnValue;   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0030(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpProfileAthena*                  CallFunc_GetAthenaProfile_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpProfileAthena*                  CallFunc_GetAthenaProfile_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              CallFunc_GetFavoriteItemForCategory_ReturnValue;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaCharacterItemDefinition*         CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0058(0x0028)(HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaCharacterItemDefinition*         CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortAthenaLoadout                     CallFunc_GetLoadoutForPlayer_ReturnValue;          // 0x00A0(0x0088)()
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortAthenaLoadout                     CallFunc_GetLoadoutForPlayer_ReturnValue;          // 0x0090(0x00C0)()
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaCustomizationTab_C_ShowVaultItemByCategory) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_ShowVaultItemByCategory");
-static_assert(sizeof(AthenaCustomizationTab_C_ShowVaultItemByCategory) == 0x000130, "Wrong size on AthenaCustomizationTab_C_ShowVaultItemByCategory");
+static_assert(sizeof(AthenaCustomizationTab_C_ShowVaultItemByCategory) == 0x000160, "Wrong size on AthenaCustomizationTab_C_ShowVaultItemByCategory");
 static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CustomizationType) == 0x000000, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CustomizationType' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, SubslotIndex) == 0x000004, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::SubslotIndex' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CanShowEmpty) == 0x000008, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CanShowEmpty' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000018, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetFavoriteItemForCategory_ReturnValue) == 0x000028, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetFavoriteItemForCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetGameAccountId_ReturnValue) == 0x000030, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000060, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000068, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue) == 0x000070, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetAthenaProfile_ReturnValue) == 0x000078, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetAthenaProfile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetAthenaProfile_ReturnValue) == 0x000018, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetAthenaProfile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetFavoriteItemForCategory_ReturnValue) == 0x000020, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetFavoriteItemForCategory_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000028, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000030, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetPlayerController_ReturnValue) == 0x000038, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000040, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue) == 0x000050, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetGameAccountId_ReturnValue) == 0x000058, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue1) == 0x000080, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue) == 0x000088, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue12) == 0x000090, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue123) == 0x000098, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetLoadoutForPlayer_ReturnValue) == 0x0000A0, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetLoadoutForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_IsValid_ReturnValue1) == 0x000128, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue2) == 0x000088, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetLoadoutForPlayer_ReturnValue) == 0x000090, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetLoadoutForPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_GetContext_ReturnValue3) == 0x000150, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_ShowVaultItemByCategory, CallFunc_IsValid_ReturnValue1) == 0x000158, "Member 'AthenaCustomizationTab_C_ShowVaultItemByCategory::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 
 // Function AthenaCustomizationTab.AthenaCustomizationTab_C.SetupBanner
 // 0x0040 (0x0040 - 0x0000)
@@ -470,34 +525,34 @@ struct AthenaCustomizationTab_C_SetItemDetailsToDisplay final
 {
 public:
 	class UFortItem*                              InputPin;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Param_HeaderText;                                  // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   Param_DescriptionText;                             // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   HeaderText_0;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   DescriptionText;                                   // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetSingleLineDescription_ReturnValue;     // 0x0048(0x0018)()
-	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0060(0x0018)()
-	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0080(0x0018)()
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0098(0x0080)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetRichDescription_ReturnValue;           // 0x0040(0x0018)()
+	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0058(0x0018)()
+	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0078(0x0018)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0090(0x0080)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue;       // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue1;      // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaCustomizationTab_C_SetItemDetailsToDisplay) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_SetItemDetailsToDisplay");
 static_assert(sizeof(AthenaCustomizationTab_C_SetItemDetailsToDisplay) == 0x000130, "Wrong size on AthenaCustomizationTab_C_SetItemDetailsToDisplay");
 static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, InputPin) == 0x000000, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::InputPin' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, Param_HeaderText) == 0x000008, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::Param_HeaderText' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, Param_DescriptionText) == 0x000020, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::Param_DescriptionText' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, HeaderText_0) == 0x000008, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::HeaderText_0' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, DescriptionText) == 0x000020, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::DescriptionText' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000038, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetSingleLineDescription_ReturnValue) == 0x000048, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetSingleLineDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDisplayName_ReturnValue) == 0x000060, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetRarity_ReturnValue) == 0x000078, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_TextToUpper_ReturnValue) == 0x000080, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_BPGetRarityData_ReturnValue) == 0x000098, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetRichDescription_ReturnValue) == 0x000040, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetRichDescription_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDisplayName_ReturnValue) == 0x000058, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetRarity_ReturnValue) == 0x000070, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_TextToUpper_ReturnValue) == 0x000078, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_BPGetRarityData_ReturnValue) == 0x000090, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_IsValid_ReturnValue) == 0x000110, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000118, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000120, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_SetItemDetailsToDisplay, CallFunc_GetDynamicFontMaterial_ReturnValue1) == 0x000128, "Member 'AthenaCustomizationTab_C_SetItemDetailsToDisplay::CallFunc_GetDynamicFontMaterial_ReturnValue1' has a wrong offset!");
 
@@ -544,6 +599,46 @@ static_assert(offsetof(AthenaCustomizationTab_C_HandleFavorite, K2Node_DynamicCa
 static_assert(offsetof(AthenaCustomizationTab_C_HandleFavorite, K2Node_SwitchEnum_CmpSuccess) == 0x000029, "Member 'AthenaCustomizationTab_C_HandleFavorite::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleFavorite, CallFunc_IsFavorite_ReturnValue) == 0x00002A, "Member 'AthenaCustomizationTab_C_HandleFavorite::CallFunc_IsFavorite_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaCustomizationTab_C_HandleFavorite, CallFunc_Not_PreBool_ReturnValue) == 0x00002B, "Member 'AthenaCustomizationTab_C_HandleFavorite::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.RegisterShiftCosmeticTier
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaCustomizationTab_C_RegisterShiftCosmeticTier final
+{
+public:
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
+};
+static_assert(alignof(AthenaCustomizationTab_C_RegisterShiftCosmeticTier) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_RegisterShiftCosmeticTier");
+static_assert(sizeof(AthenaCustomizationTab_C_RegisterShiftCosmeticTier) == 0x000020, "Wrong size on AthenaCustomizationTab_C_RegisterShiftCosmeticTier");
+static_assert(offsetof(AthenaCustomizationTab_C_RegisterShiftCosmeticTier, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaCustomizationTab_C_RegisterShiftCosmeticTier::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_RegisterShiftCosmeticTier, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'AthenaCustomizationTab_C_RegisterShiftCosmeticTier::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.HandleShiftCosmeticTier
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaCustomizationTab_C_HandleShiftCosmeticTier final
+{
+public:
+	bool                                          Passthrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaCosmeticAccountItem*             K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaCustomizationTab_C_HandleShiftCosmeticTier) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_HandleShiftCosmeticTier");
+static_assert(sizeof(AthenaCustomizationTab_C_HandleShiftCosmeticTier) == 0x000018, "Wrong size on AthenaCustomizationTab_C_HandleShiftCosmeticTier");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleShiftCosmeticTier, Passthrough) == 0x000000, "Member 'AthenaCustomizationTab_C_HandleShiftCosmeticTier::Passthrough' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleShiftCosmeticTier, K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item) == 0x000008, "Member 'AthenaCustomizationTab_C_HandleShiftCosmeticTier::K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item' has a wrong offset!");
+static_assert(offsetof(AthenaCustomizationTab_C_HandleShiftCosmeticTier, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'AthenaCustomizationTab_C_HandleShiftCosmeticTier::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function AthenaCustomizationTab.AthenaCustomizationTab_C.GetWidgetForFramingViewedItem
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaCustomizationTab_C_GetWidgetForFramingViewedItem final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaCustomizationTab_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong alignment on AthenaCustomizationTab_C_GetWidgetForFramingViewedItem");
+static_assert(sizeof(AthenaCustomizationTab_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong size on AthenaCustomizationTab_C_GetWidgetForFramingViewedItem");
+static_assert(offsetof(AthenaCustomizationTab_C_GetWidgetForFramingViewedItem, ReturnValue) == 0x000000, "Member 'AthenaCustomizationTab_C_GetWidgetForFramingViewedItem::ReturnValue' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_MimicRadialMelee.GAB_MimicRadialMelee_C
-// 0x0000 (0x0B20 - 0x0B20)
+// 0x0000 (0x0928 - 0x0928)
 class UGAB_MimicRadialMelee_C final : public UGAB_HuskBaseRadialMelee_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_MimicRadialMelee_C) == 0x000008, "Wrong alignment on UGAB_MimicRadialMelee_C");
-static_assert(sizeof(UGAB_MimicRadialMelee_C) == 0x000B20, "Wrong size on UGAB_MimicRadialMelee_C");
+static_assert(sizeof(UGAB_MimicRadialMelee_C) == 0x000928, "Wrong size on UGAB_MimicRadialMelee_C");
 
 }
 

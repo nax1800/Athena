@@ -65,6 +65,46 @@ void UPartyFinderListItem_New_C::ExecuteUbergraph_PartyFinderListItem_New(int32 
 }
 
 
+// Function PartyFinderListItem_New.PartyFinderListItem_New_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPartyFinderListItem_New_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PartyFinderListItem_New_C", "OnListItemObjectSet");
+
+	Params::PartyFinderListItem_New_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PartyFinderListItem_New.PartyFinderListItem_New_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UPartyFinderListItem_New_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PartyFinderListItem_New_C", "BP_OnItemExpansionChanged");
+
+	Params::PartyFinderListItem_New_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function PartyFinderListItem_New.PartyFinderListItem_New_C.BndEvt__DisplayFriendsButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -139,49 +179,49 @@ void UPartyFinderListItem_New_C::OnJoinPartyClicked(class UCommonButton* Button)
 }
 
 
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.OnUnhovered
+// Function PartyFinderListItem_New.PartyFinderListItem_New_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UPartyFinderListItem_New_C::OnUnhovered()
+void UPartyFinderListItem_New_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "OnUnhovered");
+		Func = Class->GetFunction("PartyFinderListItem_New_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.OnHovered
+// Function PartyFinderListItem_New.PartyFinderListItem_New_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UPartyFinderListItem_New_C::OnHovered()
+void UPartyFinderListItem_New_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "OnHovered");
+		Func = Class->GetFunction("PartyFinderListItem_New_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function PartyFinderListItem_New.PartyFinderListItem_New_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bSelected                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPartyFinderListItem_New_C::SetSelected(bool bSelected)
+void UPartyFinderListItem_New_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "SetSelected");
+		Func = Class->GetFunction("PartyFinderListItem_New_C", "BP_OnItemSelectionChanged");
 
-	Params::PartyFinderListItem_New_C_SetSelected Parms{};
+	Params::PartyFinderListItem_New_C_BP_OnItemSelectionChanged Parms{};
 
-	Parms.bSelected = bSelected;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -306,62 +346,6 @@ void UPartyFinderListItem_New_C::Construct()
 		Func = Class->GetFunction("PartyFinderListItem_New_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.ExpansionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UPartyFinderListItem_New_C::ExpansionChanged(bool bExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "ExpansionChanged");
-
-	Params::PartyFinderListItem_New_C_ExpansionChanged Parms{};
-
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.OnSocialItemSet
-// (Event, Protected, BlueprintEvent)
-
-void UPartyFinderListItem_New_C::OnSocialItemSet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "OnSocialItemSet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PartyFinderListItem_New.PartyFinderListItem_New_C.DialogResult_58DE7379408F85443A0936A25405A46F
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPartyFinderListItem_New_C::DialogResult_58DE7379408F85443A0936A25405A46F(EFortDialogResult Result, class FName ResultName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_New_C", "DialogResult_58DE7379408F85443A0936A25405A46F");
-
-	Params::PartyFinderListItem_New_C_DialogResult_58DE7379408F85443A0936A25405A46F Parms{};
-
-	Parms.Result = Result;
-	Parms.ResultName = ResultName;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

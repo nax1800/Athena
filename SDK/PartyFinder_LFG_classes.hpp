@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PartyFinder_LFG.PartyFinder_LFG_C
-// 0x0030 (0x0240 - 0x0210)
+// 0x0030 (0x0238 - 0x0208)
 class UPartyFinder_LFG_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       LFGSoftPrompt;                                     // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      LFGButton;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  LFGStatusDescription;                              // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UClass*                                 LFGToggleButtonStyle;                              // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CurLFGStatus;                                      // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       LFGSoftPrompt;                                     // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      LFGButton;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  LFGStatusDescription;                              // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                 LFGToggleButtonStyle;                              // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CurLFGStatus;                                      // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_PartyFinder_LFG(int32 EntryPoint);
@@ -51,13 +51,13 @@ public:
 	}
 };
 static_assert(alignof(UPartyFinder_LFG_C) == 0x000008, "Wrong alignment on UPartyFinder_LFG_C");
-static_assert(sizeof(UPartyFinder_LFG_C) == 0x000240, "Wrong size on UPartyFinder_LFG_C");
-static_assert(offsetof(UPartyFinder_LFG_C, UberGraphFrame) == 0x000210, "Member 'UPartyFinder_LFG_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_LFG_C, LFGSoftPrompt) == 0x000218, "Member 'UPartyFinder_LFG_C::LFGSoftPrompt' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_LFG_C, LFGButton) == 0x000220, "Member 'UPartyFinder_LFG_C::LFGButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_LFG_C, LFGStatusDescription) == 0x000228, "Member 'UPartyFinder_LFG_C::LFGStatusDescription' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_LFG_C, LFGToggleButtonStyle) == 0x000230, "Member 'UPartyFinder_LFG_C::LFGToggleButtonStyle' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_LFG_C, CurLFGStatus) == 0x000238, "Member 'UPartyFinder_LFG_C::CurLFGStatus' has a wrong offset!");
+static_assert(sizeof(UPartyFinder_LFG_C) == 0x000238, "Wrong size on UPartyFinder_LFG_C");
+static_assert(offsetof(UPartyFinder_LFG_C, UberGraphFrame) == 0x000208, "Member 'UPartyFinder_LFG_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_LFG_C, LFGSoftPrompt) == 0x000210, "Member 'UPartyFinder_LFG_C::LFGSoftPrompt' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_LFG_C, LFGButton) == 0x000218, "Member 'UPartyFinder_LFG_C::LFGButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_LFG_C, LFGStatusDescription) == 0x000220, "Member 'UPartyFinder_LFG_C::LFGStatusDescription' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_LFG_C, LFGToggleButtonStyle) == 0x000228, "Member 'UPartyFinder_LFG_C::LFGToggleButtonStyle' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_LFG_C, CurLFGStatus) == 0x000230, "Member 'UPartyFinder_LFG_C::CurLFGStatus' has a wrong offset!");
 
 }
 

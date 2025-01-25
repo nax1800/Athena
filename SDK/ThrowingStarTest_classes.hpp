@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ThrowingStarTest.ThrowingStarTest_C
-// 0x0000 (0x0080 - 0x0080)
+// 0x0000 (0x0050 - 0x0050)
 class UThrowingStarTest_C final : public UGameplayCueNotify_Static
 {
 public:
-	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
 
 public:
 	static class UClass* StaticClass()
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UThrowingStarTest_C>();
 	}
 };
-static_assert(alignof(UThrowingStarTest_C) == 0x000010, "Wrong alignment on UThrowingStarTest_C");
-static_assert(sizeof(UThrowingStarTest_C) == 0x000080, "Wrong size on UThrowingStarTest_C");
+static_assert(alignof(UThrowingStarTest_C) == 0x000008, "Wrong alignment on UThrowingStarTest_C");
+static_assert(sizeof(UThrowingStarTest_C) == 0x000050, "Wrong size on UThrowingStarTest_C");
 
 }
 

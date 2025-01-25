@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -18,15 +19,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaNews.AthenaNews_C
-// 0x0008 (0x0268 - 0x0260)
+// 0x0050 (0x02A8 - 0x0258)
 class UAthenaNews_C final : public UFortAthenaNewsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaNewsTile_C*                      AthenaNewsTile;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaNewsTile_C*                      AthenaNewsTile_1;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaNewsTile_C*                      AthenaNewsTile_2;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaNewsTile_Spotlight_C*            AthenaNewsTile_Spotlight;                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SpecialEventTitleImage;                            // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_MoTD_Layout;                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   UpdateStyle;                                       // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Construct();
+	void UpdateStyle__DelegateSignature(EAthenaNewsStyle NewStyle);
 	void ExecuteUbergraph_AthenaNews(int32 EntryPoint);
+	void HandleNewsStyle(EAthenaNewsStyle NewsStyle);
+	void BeginIntroSequence();
+	void ResetViewConfiguration();
+	void SingleItemConfiguration();
 
 public:
 	static class UClass* StaticClass()
@@ -39,8 +52,16 @@ public:
 	}
 };
 static_assert(alignof(UAthenaNews_C) == 0x000008, "Wrong alignment on UAthenaNews_C");
-static_assert(sizeof(UAthenaNews_C) == 0x000268, "Wrong size on UAthenaNews_C");
-static_assert(offsetof(UAthenaNews_C, UberGraphFrame) == 0x000260, "Member 'UAthenaNews_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UAthenaNews_C) == 0x0002A8, "Wrong size on UAthenaNews_C");
+static_assert(offsetof(UAthenaNews_C, UberGraphFrame) == 0x000258, "Member 'UAthenaNews_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, Intro) == 0x000260, "Member 'UAthenaNews_C::Intro' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, AthenaNewsTile) == 0x000268, "Member 'UAthenaNews_C::AthenaNewsTile' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_1) == 0x000270, "Member 'UAthenaNews_C::AthenaNewsTile_1' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_2) == 0x000278, "Member 'UAthenaNews_C::AthenaNewsTile_2' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_Spotlight) == 0x000280, "Member 'UAthenaNews_C::AthenaNewsTile_Spotlight' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, SpecialEventTitleImage) == 0x000288, "Member 'UAthenaNews_C::SpecialEventTitleImage' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, WidgetSwitcher_MoTD_Layout) == 0x000290, "Member 'UAthenaNews_C::WidgetSwitcher_MoTD_Layout' has a wrong offset!");
+static_assert(offsetof(UAthenaNews_C, UpdateStyle) == 0x000298, "Member 'UAthenaNews_C::UpdateStyle' has a wrong offset!");
 
 }
 

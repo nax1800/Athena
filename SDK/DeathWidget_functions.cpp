@@ -151,15 +151,15 @@ void UDeathWidget_C::ShowExtraLivesText()
 }
 
 
-// Function DeathWidget.DeathWidget_C.Prompt Out Anim
+// Function DeathWidget.DeathWidget_C.YouDied Anim
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UDeathWidget_C::Prompt_Out_Anim()
+void UDeathWidget_C::YouDied_Anim()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DeathWidget_C", "Prompt Out Anim");
+		Func = Class->GetFunction("DeathWidget_C", "YouDied Anim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,6 +179,20 @@ void UDeathWidget_C::Resurrection_Prompt_Anim()
 }
 
 
+// Function DeathWidget.DeathWidget_C.Prompt Out Anim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UDeathWidget_C::Prompt_Out_Anim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DeathWidget_C", "Prompt Out Anim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function DeathWidget.DeathWidget_C.Show Resurrect & Respawn Anim
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -193,15 +207,15 @@ void UDeathWidget_C::Show_Resurrect___Respawn_Anim()
 }
 
 
-// Function DeathWidget.DeathWidget_C.YouDied Anim
+// Function DeathWidget.DeathWidget_C.OnWatchdogTimerUpdate
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UDeathWidget_C::YouDied_Anim()
+void UDeathWidget_C::OnWatchdogTimerUpdate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DeathWidget_C", "YouDied Anim");
+		Func = Class->GetFunction("DeathWidget_C", "OnWatchdogTimerUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,120 +10,101 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaMapPanel.AthenaMapPanel_C.ExecuteUbergraph_AthenaMapPanel
-// 0x0018 (0x0018 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULocalPlayer*                           CallFunc_GetOwningLocalPlayer_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULocalPlayer*                           CallFunc_GetOwningLocalPlayer_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobileGame_ReturnValue1;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_bOpen;                          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CallFunc_MakeGameplayTagContainerFromTag_ReturnValue; // 0x0028(0x0020)()
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel) == 0x000008, "Wrong alignment on AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel");
-static_assert(sizeof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel) == 0x000018, "Wrong size on AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel");
+static_assert(sizeof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel) == 0x000050, "Wrong size on AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel");
 static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, EntryPoint) == 0x000000, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000008, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_IsBROnly_ReturnValue) == 0x000010, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, Temp_bool_Variable) == 0x000010, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, Temp_byte_Variable) == 0x000011, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, Temp_byte_Variable1) == 0x000012, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, K2Node_Select_Default) == 0x000013, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000018, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_IsMobileGame_ReturnValue1) == 0x000020, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_IsMobileGame_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, K2Node_CustomEvent_bOpen) == 0x000021, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::K2Node_CustomEvent_bOpen' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, Temp_byte_Variable2) == 0x000022, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, Temp_bool_Variable1) == 0x000023, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, CallFunc_MakeGameplayTagContainerFromTag_ReturnValue) == 0x000028, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::CallFunc_MakeGameplayTagContainerFromTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel, K2Node_Select1_Default) == 0x000048, "Member 'AthenaMapPanel_C_ExecuteUbergraph_AthenaMapPanel::K2Node_Select1_Default' has a wrong offset!");
+
+// Function AthenaMapPanel.AthenaMapPanel_C.OpenOrClose
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaMapPanel_C_OpenOrClose final
+{
+public:
+	bool                                          bOpen;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaMapPanel_C_OpenOrClose) == 0x000001, "Wrong alignment on AthenaMapPanel_C_OpenOrClose");
+static_assert(sizeof(AthenaMapPanel_C_OpenOrClose) == 0x000001, "Wrong size on AthenaMapPanel_C_OpenOrClose");
+static_assert(offsetof(AthenaMapPanel_C_OpenOrClose, bOpen) == 0x000000, "Member 'AthenaMapPanel_C_OpenOrClose::bOpen' has a wrong offset!");
 
 // Function AthenaMapPanel.AthenaMapPanel_C.OnTouchStarted
-// 0x0230 (0x0230 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct AthenaMapPanel_C_OnTouchStarted final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          InTouchEvent;                                      // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsTouchInputPlatform_ReturnValue;         // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMobilePlatform_ReturnValue;             // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_172[0x6];                                      // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0178(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
 };
 static_assert(alignof(AthenaMapPanel_C_OnTouchStarted) == 0x000008, "Wrong alignment on AthenaMapPanel_C_OnTouchStarted");
-static_assert(sizeof(AthenaMapPanel_C_OnTouchStarted) == 0x000230, "Wrong size on AthenaMapPanel_C_OnTouchStarted");
+static_assert(sizeof(AthenaMapPanel_C_OnTouchStarted) == 0x000228, "Wrong size on AthenaMapPanel_C_OnTouchStarted");
 static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, MyGeometry) == 0x000000, "Member 'AthenaMapPanel_C_OnTouchStarted::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, InTouchEvent) == 0x000038, "Member 'AthenaMapPanel_C_OnTouchStarted::InTouchEvent' has a wrong offset!");
 static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, ReturnValue) == 0x0000A8, "Member 'AthenaMapPanel_C_OnTouchStarted::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_IsBROnly_ReturnValue) == 0x000160, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_IsTouchInputPlatform_ReturnValue) == 0x000160, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_IsTouchInputPlatform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_GetContext_ReturnValue) == 0x000168, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_IsMobilePlatform_ReturnValue) == 0x000170, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_BooleanOR_ReturnValue) == 0x000171, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_Handled_ReturnValue) == 0x000178, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_OnTouchStarted, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'AthenaMapPanel_C_OnTouchStarted::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
-// Function AthenaMapPanel.AthenaMapPanel_C.OnTouchEnded
-// 0x0268 (0x0268 - 0x0000)
-struct AthenaMapPanel_C_OnTouchEnded final
+// Function AthenaMapPanel.AthenaMapPanel_C.OnKeyDown
+// 0x0128 (0x0128 - 0x0000)
+struct AthenaMapPanel_C_OnKeyDown final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          InTouchEvent;                                      // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
-	struct FVector2D                              CallFunc_PointerEvent_GetScreenSpacePosition_ReturnValue; // 0x0218(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x0228(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_AbsoluteToLocal_ReturnValue;              // 0x0260(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(AthenaMapPanel_C_OnTouchEnded) == 0x000008, "Wrong alignment on AthenaMapPanel_C_OnTouchEnded");
-static_assert(sizeof(AthenaMapPanel_C_OnTouchEnded) == 0x000268, "Wrong size on AthenaMapPanel_C_OnTouchEnded");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, MyGeometry) == 0x000000, "Member 'AthenaMapPanel_C_OnTouchEnded::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, InTouchEvent) == 0x000038, "Member 'AthenaMapPanel_C_OnTouchEnded::InTouchEvent' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, ReturnValue) == 0x0000A8, "Member 'AthenaMapPanel_C_OnTouchEnded::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'AthenaMapPanel_C_OnTouchEnded::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, CallFunc_PointerEvent_GetScreenSpacePosition_ReturnValue) == 0x000218, "Member 'AthenaMapPanel_C_OnTouchEnded::CallFunc_PointerEvent_GetScreenSpacePosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, CallFunc_GetContext_ReturnValue) == 0x000220, "Member 'AthenaMapPanel_C_OnTouchEnded::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, CallFunc_GetCachedGeometry_ReturnValue) == 0x000228, "Member 'AthenaMapPanel_C_OnTouchEnded::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_OnTouchEnded, CallFunc_AbsoluteToLocal_ReturnValue) == 0x000260, "Member 'AthenaMapPanel_C_OnTouchEnded::CallFunc_AbsoluteToLocal_ReturnValue' has a wrong offset!");
-
-// Function AthenaMapPanel.AthenaMapPanel_C.SetTriggerImages
-// 0x0460 (0x0460 - 0x0000)
-struct AthenaMapPanel_C_SetTriggerImages final
-{
-public:
-	bool                                          IsPS4;                                             // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Temp_struct_Variable;                              // 0x0008(0x0088)()
-	ECommonGamepadType                            Temp_byte_Variable;                                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Temp_struct_Variable1;                             // 0x0098(0x0088)()
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonGamepadType                            CallFunc_GetCurrentGamepadType_ReturnValue;        // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonGamepadType                            Temp_byte_Variable1;                               // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0130(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x01B8(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush12;                    // 0x0240(0x0088)()
-	struct FSlateBrush                            K2Node_Select_Default;                             // 0x02C8(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush123;                   // 0x0350(0x0088)()
-	struct FSlateBrush                            K2Node_Select1_Default;                            // 0x03D8(0x0088)()
-};
-static_assert(alignof(AthenaMapPanel_C_SetTriggerImages) == 0x000008, "Wrong alignment on AthenaMapPanel_C_SetTriggerImages");
-static_assert(sizeof(AthenaMapPanel_C_SetTriggerImages) == 0x000460, "Wrong size on AthenaMapPanel_C_SetTriggerImages");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, IsPS4) == 0x000000, "Member 'AthenaMapPanel_C_SetTriggerImages::IsPS4' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, Temp_struct_Variable) == 0x000008, "Member 'AthenaMapPanel_C_SetTriggerImages::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, Temp_byte_Variable) == 0x000090, "Member 'AthenaMapPanel_C_SetTriggerImages::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, Temp_struct_Variable1) == 0x000098, "Member 'AthenaMapPanel_C_SetTriggerImages::Temp_struct_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, CallFunc_GetContext_ReturnValue) == 0x000120, "Member 'AthenaMapPanel_C_SetTriggerImages::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, CallFunc_GetCurrentGamepadType_ReturnValue) == 0x000128, "Member 'AthenaMapPanel_C_SetTriggerImages::CallFunc_GetCurrentGamepadType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, Temp_byte_Variable1) == 0x000129, "Member 'AthenaMapPanel_C_SetTriggerImages::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_MakeStruct_SlateBrush) == 0x000130, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_MakeStruct_SlateBrush1) == 0x0001B8, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_MakeStruct_SlateBrush12) == 0x000240, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_MakeStruct_SlateBrush12' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_Select_Default) == 0x0002C8, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_MakeStruct_SlateBrush123) == 0x000350, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_MakeStruct_SlateBrush123' has a wrong offset!");
-static_assert(offsetof(AthenaMapPanel_C_SetTriggerImages, K2Node_Select1_Default) == 0x0003D8, "Member 'AthenaMapPanel_C_SetTriggerImages::K2Node_Select1_Default' has a wrong offset!");
+static_assert(alignof(AthenaMapPanel_C_OnKeyDown) == 0x000008, "Wrong alignment on AthenaMapPanel_C_OnKeyDown");
+static_assert(sizeof(AthenaMapPanel_C_OnKeyDown) == 0x000128, "Wrong size on AthenaMapPanel_C_OnKeyDown");
+static_assert(offsetof(AthenaMapPanel_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'AthenaMapPanel_C_OnKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'AthenaMapPanel_C_OnKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(AthenaMapPanel_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'AthenaMapPanel_C_OnKeyDown::ReturnValue' has a wrong offset!");
 
 }
 

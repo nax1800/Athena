@@ -13,21 +13,22 @@
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_Basic.Announcement_Basic_C
-// 0x0028 (0x0248 - 0x0220)
+// 0x0028 (0x0240 - 0x0218)
 class UAnnouncement_Basic_C final : public UFortAnnouncementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         HorizontalBoxRoot;                                 // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon;                                              // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortRichTextBlock*                     TextDetailText;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextTitleText;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalBox*                         HorizontalBoxRoot;                                 // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortRichTextBlock*                     TextDetailText;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextTitleText;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Announcement_Basic(int32 EntryPoint);
@@ -46,12 +47,12 @@ public:
 	}
 };
 static_assert(alignof(UAnnouncement_Basic_C) == 0x000008, "Wrong alignment on UAnnouncement_Basic_C");
-static_assert(sizeof(UAnnouncement_Basic_C) == 0x000248, "Wrong size on UAnnouncement_Basic_C");
-static_assert(offsetof(UAnnouncement_Basic_C, UberGraphFrame) == 0x000220, "Member 'UAnnouncement_Basic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, HorizontalBoxRoot) == 0x000228, "Member 'UAnnouncement_Basic_C::HorizontalBoxRoot' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, Icon) == 0x000230, "Member 'UAnnouncement_Basic_C::Icon' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, TextDetailText) == 0x000238, "Member 'UAnnouncement_Basic_C::TextDetailText' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, TextTitleText) == 0x000240, "Member 'UAnnouncement_Basic_C::TextTitleText' has a wrong offset!");
+static_assert(sizeof(UAnnouncement_Basic_C) == 0x000240, "Wrong size on UAnnouncement_Basic_C");
+static_assert(offsetof(UAnnouncement_Basic_C, UberGraphFrame) == 0x000218, "Member 'UAnnouncement_Basic_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAnnouncement_Basic_C, HorizontalBoxRoot) == 0x000220, "Member 'UAnnouncement_Basic_C::HorizontalBoxRoot' has a wrong offset!");
+static_assert(offsetof(UAnnouncement_Basic_C, Icon) == 0x000228, "Member 'UAnnouncement_Basic_C::Icon' has a wrong offset!");
+static_assert(offsetof(UAnnouncement_Basic_C, TextDetailText) == 0x000230, "Member 'UAnnouncement_Basic_C::TextDetailText' has a wrong offset!");
+static_assert(offsetof(UAnnouncement_Basic_C, TextTitleText) == 0x000238, "Member 'UAnnouncement_Basic_C::TextTitleText' has a wrong offset!");
 
 }
 

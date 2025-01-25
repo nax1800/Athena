@@ -134,9 +134,9 @@ void UGamepadKeyButton_C::UpdateContentAlignment()
 // Function GamepadKeyButton.GamepadKeyButton_C.SetContentAlignment
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EHorizontalAlignment                    Param_ContentAlignment                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHorizontalAlignment                    ContentAlignment_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGamepadKeyButton_C::SetContentAlignment(EHorizontalAlignment Param_ContentAlignment)
+void UGamepadKeyButton_C::SetContentAlignment(EHorizontalAlignment ContentAlignment_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -145,7 +145,7 @@ void UGamepadKeyButton_C::SetContentAlignment(EHorizontalAlignment Param_Content
 
 	Params::GamepadKeyButton_C_SetContentAlignment Parms{};
 
-	Parms.Param_ContentAlignment = Param_ContentAlignment;
+	Parms.ContentAlignment_0 = ContentAlignment_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

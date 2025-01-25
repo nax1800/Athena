@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "B_Prj_Athena_Grenade_Base_classes.hpp"
 #include "Engine_structs.hpp"
+#include "B_Prj_Athena_Grenade_Base_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Athena_SmokeGrenade.B_Prj_Athena_SmokeGrenade_C
-// 0x0010 (0x08C8 - 0x08B8)
+// 0x0010 (0x0770 - 0x0760)
 class AB_Prj_Athena_SmokeGrenade_C final : public AB_Prj_Athena_Grenade_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_Prj_Athena_SmokeGrenade_C;        // 0x08B8(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystem*                        P_SmokeGrenadeExplosion;                           // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_Prj_Athena_SmokeGrenade_C;        // 0x0760(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystem*                        P_SmokeGrenadeExplosion;                           // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Prj_Athena_SmokeGrenade(int32 EntryPoint);
@@ -44,9 +44,9 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Athena_SmokeGrenade_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_SmokeGrenade_C");
-static_assert(sizeof(AB_Prj_Athena_SmokeGrenade_C) == 0x0008C8, "Wrong size on AB_Prj_Athena_SmokeGrenade_C");
-static_assert(offsetof(AB_Prj_Athena_SmokeGrenade_C, UberGraphFrame_B_Prj_Athena_SmokeGrenade_C) == 0x0008B8, "Member 'AB_Prj_Athena_SmokeGrenade_C::UberGraphFrame_B_Prj_Athena_SmokeGrenade_C' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_SmokeGrenade_C, P_SmokeGrenadeExplosion) == 0x0008C0, "Member 'AB_Prj_Athena_SmokeGrenade_C::P_SmokeGrenadeExplosion' has a wrong offset!");
+static_assert(sizeof(AB_Prj_Athena_SmokeGrenade_C) == 0x000770, "Wrong size on AB_Prj_Athena_SmokeGrenade_C");
+static_assert(offsetof(AB_Prj_Athena_SmokeGrenade_C, UberGraphFrame_B_Prj_Athena_SmokeGrenade_C) == 0x000760, "Member 'AB_Prj_Athena_SmokeGrenade_C::UberGraphFrame_B_Prj_Athena_SmokeGrenade_C' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_SmokeGrenade_C, P_SmokeGrenadeExplosion) == 0x000768, "Member 'AB_Prj_Athena_SmokeGrenade_C::P_SmokeGrenadeExplosion' has a wrong offset!");
 
 }
 

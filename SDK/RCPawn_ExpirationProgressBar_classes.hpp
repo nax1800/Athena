@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RCPawn_ExpirationProgressBar.RCPawn_ExpirationProgressBar_C
-// 0x0000 (0x0228 - 0x0228)
+// 0x0000 (0x0248 - 0x0248)
 class URCPawn_ExpirationProgressBar_C final : public URemoteControlledPawnExpirationWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(URCPawn_ExpirationProgressBar_C) == 0x000008, "Wrong alignment on URCPawn_ExpirationProgressBar_C");
-static_assert(sizeof(URCPawn_ExpirationProgressBar_C) == 0x000228, "Wrong size on URCPawn_ExpirationProgressBar_C");
+static_assert(sizeof(URCPawn_ExpirationProgressBar_C) == 0x000248, "Wrong size on URCPawn_ExpirationProgressBar_C");
 
 }
 

@@ -51,6 +51,26 @@ void UGA_Athena_RCRocket_C::K2_ActivateAbility()
 }
 
 
+// Function GA_Athena_RCRocket.GA_Athena_RCRocket_C.Validate RC Pawn
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AB_PrjPawn_Athena_RCRocket_C*     RCPawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UGA_Athena_RCRocket_C::Validate_RC_Pawn(class AB_PrjPawn_Athena_RCRocket_C* RCPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Athena_RCRocket_C", "Validate RC Pawn");
+
+	Params::GA_Athena_RCRocket_C_Validate_RC_Pawn Parms{};
+
+	Parms.RCPawn = RCPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function GA_Athena_RCRocket.GA_Athena_RCRocket_C.GetAthenaPlayerController
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -171,6 +191,32 @@ struct FVector UGA_Athena_RCRocket_C::Calculate_Launch_Forward_Adjustment() cons
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function GA_Athena_RCRocket.GA_Athena_RCRocket_C.Adjust Location For Vehicle
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class AFortPlayerPawn*                  Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          InLocation                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          OutLocation                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UGA_Athena_RCRocket_C::Adjust_Location_For_Vehicle(class AFortPlayerPawn* Pawn, const struct FVector& InLocation, struct FVector* OutLocation) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Athena_RCRocket_C", "Adjust Location For Vehicle");
+
+	Params::GA_Athena_RCRocket_C_Adjust_Location_For_Vehicle Parms{};
+
+	Parms.Pawn = Pawn;
+	Parms.InLocation = std::move(InLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutLocation != nullptr)
+		*OutLocation = std::move(Parms.OutLocation);
 }
 
 }

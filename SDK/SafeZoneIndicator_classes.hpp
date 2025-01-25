@@ -10,57 +10,70 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass SafeZoneIndicator.SafeZoneIndicator_C
-// 0x0090 (0x0570 - 0x04E0)
+// 0x00B8 (0x05F0 - 0x0538)
 class ASafeZoneIndicator_C final : public AFortSafeZoneIndicator
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E0(0x0008)(Transient, DuplicateTransient)
-	float                                         StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C; // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C; // 0x04EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4ED[0x3];                                      // 0x04ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     StormFadeTimeline;                                 // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626; // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626; // 0x04FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4FD[0x3];                                      // 0x04FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     FadeSafeZoneVisuals;                               // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ShieldBoundaryAudio;                               // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             ShieldBoundaryLoopSound;                           // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bLocalPlayerOutside;                               // 0x0518(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_519[0x3];                                      // 0x0519(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AudioCrossfade;                                    // 0x051C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AudioPitchMod;                                     // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_524[0x4];                                      // 0x0524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             HoldingLoopSound;                                  // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        HoldingAudio;                                      // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AAthena_GameState_C*                    GameState;                                         // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HoldingStartTime;                                  // 0x0540(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_544[0x4];                                      // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             HoldingLoopTickSound;                              // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        HoldingTickAudio;                                  // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               SafeZoneMID;                                       // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AudioLowPassValue;                                 // 0x0560(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AudioStormFade;                                    // 0x0564(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HugeMovementFade;                                  // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NextSafeZoneSweepSpeed;                            // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0538(0x0008)(Transient, DuplicateTransient)
+	float                                         Pre_Damage_Audio_Ramp_Intensity_05A077AD4FED08F2426E5CA16BD41D7C; // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Pre_Damage_Audio_Ramp__Direction_05A077AD4FED08F2426E5CA16BD41D7C; // 0x0544(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_545[0x3];                                      // 0x0545(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Pre_Damage_Audio_Ramp;                             // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C; // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C; // 0x0554(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_555[0x3];                                      // 0x0555(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     StormFadeTimeline;                                 // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626; // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626; // 0x0564(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_565[0x3];                                      // 0x0565(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     FadeSafeZoneVisuals;                               // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ShieldBoundaryAudio;                               // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             ShieldBoundaryLoopSound;                           // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bLocalPlayerOutside;                               // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_581[0x3];                                      // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AudioCrossfade;                                    // 0x0584(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AudioPitchMod;                                     // 0x0588(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_58C[0x4];                                      // 0x058C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             HoldingLoopSound;                                  // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        HoldingAudio;                                      // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AAthena_GameState_C*                    GameState;                                         // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HoldingStartTime;                                  // 0x05A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             HoldingLoopTickSound;                              // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        HoldingTickAudio;                                  // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               SafeZoneMID;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AudioLowPassValue;                                 // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AudioStormFade;                                    // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HugeMovementFade;                                  // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NextSafeZoneSweepSpeed;                            // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           MegaStormDamageTimer;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         MegastormAudioDuration;                            // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MegastormAudioIntensity;                           // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bMegastormAudioActive;                             // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint);
+	void Start_Megastorm_Audio();
+	void Megastorm_Pre_Damage_Tell();
+	void ReceiveTick(float DeltaSeconds);
+	void OnBeginStartingStateEffectsEvent();
 	void ReceiveDestroyed();
 	void Stormy(float NewParam);
-	void ReceiveBeginPlay();
 	void ResetSafeZoneScale();
-	void ReceiveTick(float DeltaSeconds);
 	void Apply_Lowpass_to_Audio();
+	void ReceiveBeginPlay();
 	void OnSafeZoneStateChange(EFortSafeZoneState NewState, bool bInitial);
+	void Pre_Damage_Audio_Ramp__UpdateFunc();
+	void Pre_Damage_Audio_Ramp__FinishedFunc();
 	void StormFadeTimeline__UpdateFunc();
 	void StormFadeTimeline__FinishedFunc();
 	void FadeSafeZoneVisuals__UpdateFunc();
@@ -82,30 +95,37 @@ public:
 	}
 };
 static_assert(alignof(ASafeZoneIndicator_C) == 0x000008, "Wrong alignment on ASafeZoneIndicator_C");
-static_assert(sizeof(ASafeZoneIndicator_C) == 0x000570, "Wrong size on ASafeZoneIndicator_C");
-static_assert(offsetof(ASafeZoneIndicator_C, UberGraphFrame) == 0x0004E0, "Member 'ASafeZoneIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C) == 0x0004E8, "Member 'ASafeZoneIndicator_C::StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C) == 0x0004EC, "Member 'ASafeZoneIndicator_C::StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline) == 0x0004F0, "Member 'ASafeZoneIndicator_C::StormFadeTimeline' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626) == 0x0004F8, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626) == 0x0004FC, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals) == 0x000500, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, ShieldBoundaryAudio) == 0x000508, "Member 'ASafeZoneIndicator_C::ShieldBoundaryAudio' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, ShieldBoundaryLoopSound) == 0x000510, "Member 'ASafeZoneIndicator_C::ShieldBoundaryLoopSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, bLocalPlayerOutside) == 0x000518, "Member 'ASafeZoneIndicator_C::bLocalPlayerOutside' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, AudioCrossfade) == 0x00051C, "Member 'ASafeZoneIndicator_C::AudioCrossfade' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, AudioPitchMod) == 0x000520, "Member 'ASafeZoneIndicator_C::AudioPitchMod' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopSound) == 0x000528, "Member 'ASafeZoneIndicator_C::HoldingLoopSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingAudio) == 0x000530, "Member 'ASafeZoneIndicator_C::HoldingAudio' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, GameState) == 0x000538, "Member 'ASafeZoneIndicator_C::GameState' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingStartTime) == 0x000540, "Member 'ASafeZoneIndicator_C::HoldingStartTime' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopTickSound) == 0x000548, "Member 'ASafeZoneIndicator_C::HoldingLoopTickSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingTickAudio) == 0x000550, "Member 'ASafeZoneIndicator_C::HoldingTickAudio' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneMID) == 0x000558, "Member 'ASafeZoneIndicator_C::SafeZoneMID' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, AudioLowPassValue) == 0x000560, "Member 'ASafeZoneIndicator_C::AudioLowPassValue' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, AudioStormFade) == 0x000564, "Member 'ASafeZoneIndicator_C::AudioStormFade' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HugeMovementFade) == 0x000568, "Member 'ASafeZoneIndicator_C::HugeMovementFade' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, NextSafeZoneSweepSpeed) == 0x00056C, "Member 'ASafeZoneIndicator_C::NextSafeZoneSweepSpeed' has a wrong offset!");
+static_assert(sizeof(ASafeZoneIndicator_C) == 0x0005F0, "Wrong size on ASafeZoneIndicator_C");
+static_assert(offsetof(ASafeZoneIndicator_C, UberGraphFrame) == 0x000538, "Member 'ASafeZoneIndicator_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp_Intensity_05A077AD4FED08F2426E5CA16BD41D7C) == 0x000540, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp_Intensity_05A077AD4FED08F2426E5CA16BD41D7C' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp__Direction_05A077AD4FED08F2426E5CA16BD41D7C) == 0x000544, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__Direction_05A077AD4FED08F2426E5CA16BD41D7C' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp) == 0x000548, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C) == 0x000550, "Member 'ASafeZoneIndicator_C::StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C) == 0x000554, "Member 'ASafeZoneIndicator_C::StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline) == 0x000558, "Member 'ASafeZoneIndicator_C::StormFadeTimeline' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626) == 0x000560, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals_LERP_E671C79642CD40ABC82D55BF6EBA9626' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626) == 0x000564, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals__Direction_E671C79642CD40ABC82D55BF6EBA9626' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, FadeSafeZoneVisuals) == 0x000568, "Member 'ASafeZoneIndicator_C::FadeSafeZoneVisuals' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, ShieldBoundaryAudio) == 0x000570, "Member 'ASafeZoneIndicator_C::ShieldBoundaryAudio' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, ShieldBoundaryLoopSound) == 0x000578, "Member 'ASafeZoneIndicator_C::ShieldBoundaryLoopSound' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, bLocalPlayerOutside) == 0x000580, "Member 'ASafeZoneIndicator_C::bLocalPlayerOutside' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, AudioCrossfade) == 0x000584, "Member 'ASafeZoneIndicator_C::AudioCrossfade' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, AudioPitchMod) == 0x000588, "Member 'ASafeZoneIndicator_C::AudioPitchMod' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopSound) == 0x000590, "Member 'ASafeZoneIndicator_C::HoldingLoopSound' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HoldingAudio) == 0x000598, "Member 'ASafeZoneIndicator_C::HoldingAudio' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, GameState) == 0x0005A0, "Member 'ASafeZoneIndicator_C::GameState' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HoldingStartTime) == 0x0005A8, "Member 'ASafeZoneIndicator_C::HoldingStartTime' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopTickSound) == 0x0005B0, "Member 'ASafeZoneIndicator_C::HoldingLoopTickSound' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HoldingTickAudio) == 0x0005B8, "Member 'ASafeZoneIndicator_C::HoldingTickAudio' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneMID) == 0x0005C0, "Member 'ASafeZoneIndicator_C::SafeZoneMID' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, AudioLowPassValue) == 0x0005C8, "Member 'ASafeZoneIndicator_C::AudioLowPassValue' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, AudioStormFade) == 0x0005CC, "Member 'ASafeZoneIndicator_C::AudioStormFade' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, HugeMovementFade) == 0x0005D0, "Member 'ASafeZoneIndicator_C::HugeMovementFade' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, NextSafeZoneSweepSpeed) == 0x0005D4, "Member 'ASafeZoneIndicator_C::NextSafeZoneSweepSpeed' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, MegaStormDamageTimer) == 0x0005D8, "Member 'ASafeZoneIndicator_C::MegaStormDamageTimer' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, MegastormAudioDuration) == 0x0005E0, "Member 'ASafeZoneIndicator_C::MegastormAudioDuration' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, MegastormAudioIntensity) == 0x0005E4, "Member 'ASafeZoneIndicator_C::MegastormAudioIntensity' has a wrong offset!");
+static_assert(offsetof(ASafeZoneIndicator_C, bMegastormAudioActive) == 0x0005E8, "Member 'ASafeZoneIndicator_C::bMegastormAudioActive' has a wrong offset!");
 
 }
 

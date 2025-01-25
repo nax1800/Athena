@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -30,26 +30,26 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue123;                // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue3;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1234;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue12345;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue4;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue123456;             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue6;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FFortPrivateAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UFortItemDefinition* Definition, int32 Delta)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1234567;            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1234;          // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFortItemDefinition* Definition, int32 Delta)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue7;                  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	struct FFortPrivateAccountInfo                CallFunc_GetLocalAccountInfo_Result;               // 0x00B8(0x0038)(NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue12345678;           // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue8;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBoostsRoot_C*                          CallFunc_Create_ReturnValue;                       // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate12345;         // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate5;             // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints) == 0x000008, "Wrong alignment on TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints");
 static_assert(sizeof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints) == 0x000118, "Wrong size on TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints");
@@ -57,25 +57,25 @@ static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, E
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue12) == 0x000020, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue123) == 0x000028, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetInputManager_ReturnValue) == 0x000030, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CustomEvent_BoostAmount) == 0x000038, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CustomEvent_BoostAmount' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_ComponentBoundEvent_Button) == 0x000040, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue1234) == 0x000048, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue12345) == 0x000050, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue4) == 0x000048, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue5) == 0x000050, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate) == 0x000058, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue123456) == 0x000068, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue123456' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue6) == 0x000068, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate1) == 0x000070, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate12) == 0x000080, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate123) == 0x000090, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue1234567) == 0x0000A0, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate1234) == 0x0000A8, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate2) == 0x000080, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate3) == 0x000090, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue7) == 0x0000A0, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate4) == 0x0000A8, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetLocalAccountInfo_Result) == 0x0000B8, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetLocalAccountInfo_Result' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000F0, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue12345678) == 0x0000F8, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue12345678' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_GetContext_ReturnValue8) == 0x0000F8, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, CallFunc_Create_ReturnValue) == 0x000100, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate12345) == 0x000108, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints, K2Node_CreateDelegate_OutputDelegate5) == 0x000108, "Member 'TopBarSkillPoints_C_ExecuteUbergraph_TopBarSkillPoints::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 
 // Function TopBarSkillPoints.TopBarSkillPoints_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_36_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -118,20 +118,20 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12345678;                        // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789;                       // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234;                            // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12345678910;                     // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567891011;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable8;                               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable9;                               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable10;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable11;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -142,56 +142,56 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortTeamMemberInfo>            CallFunc_GetTeamMembers_TeamMembers;               // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0060(0x01F8)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12345;                           // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable5;                               // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocalPlayersUniqueID_ReturnValue;       // 0x025D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Has_Mission_Reward_Boost_Result;          // 0x025E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25F[0x1];                                      // 0x025F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789101112;                 // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_266[0x2];                                      // 0x0266(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Has_VIP_Badge_Result;                     // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x026D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x026D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Has_Founder_Badge_Result;                 // 0x026E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x026F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x0273(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select1234_Default;                         // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0273(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12345_Default;                        // 0x0276(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345678910111213;               // 0x0277(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123456;                          // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123456_Default;                       // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select5_Default;                            // 0x0276(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable13;                              // 0x0277(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable6;                               // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select6_Default;                            // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TopBarSkillPoints_C_Update_Boosts) == 0x000008, "Wrong alignment on TopBarSkillPoints_C_Update_Boosts");
 static_assert(sizeof(TopBarSkillPoints_C_Update_Boosts) == 0x000280, "Wrong size on TopBarSkillPoints_C_Update_Boosts");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable) == 0x000000, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable1) == 0x000001, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable) == 0x000002, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12) == 0x000003, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable123) == 0x000004, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable2) == 0x000003, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable3) == 0x000004, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable1) == 0x000005, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable1234) == 0x000006, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12345) == 0x000007, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable12) == 0x000008, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable123456) == 0x000009, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable1234567) == 0x00000A, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable123) == 0x00000B, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12345678) == 0x00000C, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable123456789) == 0x00000D, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable123456789' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable1234) == 0x00000E, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12345678910) == 0x00000F, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable1234567891011) == 0x000010, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable1234567891011' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable4) == 0x000006, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable5) == 0x000007, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable2) == 0x000008, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable6) == 0x000009, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable7) == 0x00000A, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable3) == 0x00000B, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable8) == 0x00000C, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable9) == 0x00000D, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable4) == 0x00000E, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable10) == 0x00000F, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable10' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable11) == 0x000010, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable11' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetRestXpBalance_ReturnValue) == 0x000028, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
@@ -200,33 +200,33 @@ static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Greater_IntIn
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Greater_IntInt_ReturnValue1) == 0x000031, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select_Default) == 0x000032, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select1_Default) == 0x000033, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetContext_ReturnValue12) == 0x000038, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000040, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_int_Array_Index_Variable) == 0x000048, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_GetTeamMembers_TeamMembers) == 0x000050, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Array_Get_Item) == 0x000060, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Array_Length_ReturnValue) == 0x000258, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable12345) == 0x00025C, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable12345' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable5) == 0x00025C, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable5' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_IsLocalPlayersUniqueID_ReturnValue) == 0x00025D, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_IsLocalPlayersUniqueID_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Has_Mission_Reward_Boost_Result) == 0x00025E, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Has_Mission_Reward_Boost_Result' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_int_Loop_Counter_Variable) == 0x000260, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable123456789101112) == 0x000264, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable123456789101112' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12) == 0x000264, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Less_IntInt_ReturnValue) == 0x000265, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Add_IntInt_ReturnValue) == 0x000268, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Has_VIP_Badge_Result) == 0x00026C, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Has_VIP_Badge_Result' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select12_Default) == 0x00026D, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select2_Default) == 0x00026D, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select2_Default' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_Has_Founder_Badge_Result) == 0x00026E, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_Has_Founder_Badge_Result' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue) == 0x00026F, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select123_Default) == 0x000270, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select3_Default) == 0x000270, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select3_Default' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue1) == 0x000271, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue12) == 0x000272, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue123) == 0x000273, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select1234_Default) == 0x000274, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select1234_Default' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue2) == 0x000272, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanOR_ReturnValue3) == 0x000273, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select4_Default) == 0x000274, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select4_Default' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, CallFunc_BooleanAND_ReturnValue) == 0x000275, "Member 'TopBarSkillPoints_C_Update_Boosts::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select12345_Default) == 0x000276, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select12345_Default' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable12345678910111213) == 0x000277, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable12345678910111213' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable123456) == 0x000278, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable123456' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select123456_Default) == 0x000279, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select123456_Default' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select5_Default) == 0x000276, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select5_Default' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_byte_Variable13) == 0x000277, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_byte_Variable13' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, Temp_bool_Variable6) == 0x000278, "Member 'TopBarSkillPoints_C_Update_Boosts::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Update_Boosts, K2Node_Select6_Default) == 0x000279, "Member 'TopBarSkillPoints_C_Update_Boosts::K2Node_Select6_Default' has a wrong offset!");
 
 // Function TopBarSkillPoints.TopBarSkillPoints_C.GetBonusExperienceTooltipWidget
 // 0x0070 (0x0070 - 0x0000)
@@ -296,7 +296,7 @@ public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12;        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0038(0x0018)()
 	int32                                         CallFunc_RestExperencePercentOfLevel_ReturnValue;  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -306,33 +306,33 @@ public:
 	int32                                         CallFunc_RestExperencePercentOfLevel_ReturnValue1; // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x00F0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00F0(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0130(0x0018)()
 	int32                                         CallFunc_BoostExperiencePercentOfLevel_ReturnValue1; // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x0150(0x0040)(HasGetValueTypeHash)
-	int32                                         CallFunc_BoostExperiencePercentOfLevel_ReturnValue12; // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0150(0x0040)(HasGetValueTypeHash)
+	int32                                         CallFunc_BoostExperiencePercentOfLevel_ReturnValue2; // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12;                          // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1234;          // 0x01A8(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue12;                     // 0x01E8(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array123;                         // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue123;                    // 0x0210(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12345;         // 0x0228(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1234;                        // 0x0268(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_RestExperencePercentOfLevel_ReturnValue12; // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01A8(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01E8(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0210(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0228(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x0268(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_RestExperencePercentOfLevel_ReturnValue2; // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue1234;                   // 0x0280(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123456;        // 0x0298(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12345;                       // 0x02D8(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1234567;       // 0x02E8(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue12345;                  // 0x0328(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array123456;                      // 0x0340(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue123456;                 // 0x0350(0x0018)()
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue123;       // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1234;      // 0x0369(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12345;     // 0x036A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue123456;    // 0x036B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_Format_ReturnValue4;                      // 0x0280(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0298(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array5;                           // 0x02D8(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x02E8(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue5;                      // 0x0328(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array6;                           // 0x0340(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue6;                      // 0x0350(0x0018)()
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue4;         // 0x0369(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue5;         // 0x036A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue6;         // 0x036B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TopBarSkillPoints_C_GetBonusExperienceDescription) == 0x000008, "Wrong alignment on TopBarSkillPoints_C_GetBonusExperienceDescription");
 static_assert(sizeof(TopBarSkillPoints_C_GetBonusExperienceDescription) == 0x000370, "Wrong size on TopBarSkillPoints_C_GetBonusExperienceDescription");
@@ -340,7 +340,7 @@ static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, Result
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000018, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x000019, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array) == 0x000020, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue12) == 0x000030, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000030, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue) == 0x000038, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_RestExperencePercentOfLevel_ReturnValue) == 0x000050, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_RestExperencePercentOfLevel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_BoostExperiencePercentOfLevel_ReturnValue) == 0x000054, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_BoostExperiencePercentOfLevel_ReturnValue' has a wrong offset!");
@@ -348,30 +348,30 @@ static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData1) == 0x000098, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_RestExperencePercentOfLevel_ReturnValue1) == 0x0000D8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_RestExperencePercentOfLevel_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array1) == 0x0000E0, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData12) == 0x0000F0, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData2) == 0x0000F0, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue1) == 0x000130, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_BoostExperiencePercentOfLevel_ReturnValue1) == 0x000148, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_BoostExperiencePercentOfLevel_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData123) == 0x000150, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_BoostExperiencePercentOfLevel_ReturnValue12) == 0x000190, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_BoostExperiencePercentOfLevel_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array12) == 0x000198, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData1234) == 0x0001A8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue12) == 0x0001E8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array123) == 0x000200, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue123) == 0x000210, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData12345) == 0x000228, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData12345' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array1234) == 0x000268, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_RestExperencePercentOfLevel_ReturnValue12) == 0x000278, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_RestExperencePercentOfLevel_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue1234) == 0x000280, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData123456) == 0x000298, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData123456' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array12345) == 0x0002D8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array12345' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData1234567) == 0x0002E8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData1234567' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue12345) == 0x000328, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array123456) == 0x000340, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array123456' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue123456) == 0x000350, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue123) == 0x000368, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue1234) == 0x000369, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue12345) == 0x00036A, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue123456) == 0x00036B, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue123456' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData3) == 0x000150, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_BoostExperiencePercentOfLevel_ReturnValue2) == 0x000190, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_BoostExperiencePercentOfLevel_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array2) == 0x000198, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData4) == 0x0001A8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue2) == 0x0001E8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array3) == 0x000200, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue3) == 0x000210, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData5) == 0x000228, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array4) == 0x000268, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_RestExperencePercentOfLevel_ReturnValue2) == 0x000278, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_RestExperencePercentOfLevel_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue4) == 0x000280, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData6) == 0x000298, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array5) == 0x0002D8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array5' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeStruct_FormatArgumentData7) == 0x0002E8, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue5) == 0x000328, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, K2Node_MakeArray_Array6) == 0x000340, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::K2Node_MakeArray_Array6' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_Format_ReturnValue6) == 0x000350, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_Format_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x000368, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x000369, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x00036A, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_GetBonusExperienceDescription, CallFunc_EqualEqual_NameName_ReturnValue6) == 0x00036B, "Member 'TopBarSkillPoints_C_GetBonusExperienceDescription::CallFunc_EqualEqual_NameName_ReturnValue6' has a wrong offset!");
 
 // Function TopBarSkillPoints.TopBarSkillPoints_C.RestExperencePercentOfLevel
 // 0x0030 (0x0030 - 0x0000)
@@ -385,7 +385,7 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetRestXpBalance_ReturnValue;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -399,7 +399,7 @@ static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000018, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_GetRestXpBalance_ReturnValue) == 0x00001C, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x000020, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000020, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_RestExperencePercentOfLevel, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'TopBarSkillPoints_C_RestExperencePercentOfLevel::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
@@ -416,7 +416,7 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetXpBoostBalance_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -430,7 +430,7 @@ static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFu
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000018, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_GetXpBoostBalance_ReturnValue) == 0x00001C, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_GetXpBoostBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x000020, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000020, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_BoostExperiencePercentOfLevel, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'TopBarSkillPoints_C_BoostExperiencePercentOfLevel::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
@@ -442,7 +442,7 @@ struct TopBarSkillPoints_C_Bind_Party_Delegates final
 public:
 	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -450,7 +450,7 @@ static_assert(alignof(TopBarSkillPoints_C_Bind_Party_Delegates) == 0x000008, "Wr
 static_assert(sizeof(TopBarSkillPoints_C_Bind_Party_Delegates) == 0x000040, "Wrong size on TopBarSkillPoints_C_Bind_Party_Delegates");
 static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Bind_Party_Delegates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000038, "Member 'TopBarSkillPoints_C_Bind_Party_Delegates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 
@@ -461,7 +461,7 @@ struct TopBarSkillPoints_C_Unbind_Party_Delegates final
 public:
 	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -469,7 +469,7 @@ static_assert(alignof(TopBarSkillPoints_C_Unbind_Party_Delegates) == 0x000008, "
 static_assert(sizeof(TopBarSkillPoints_C_Unbind_Party_Delegates) == 0x000040, "Wrong size on TopBarSkillPoints_C_Unbind_Party_Delegates");
 static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TopBarSkillPoints_C_Unbind_Party_Delegates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000038, "Member 'TopBarSkillPoints_C_Unbind_Party_Delegates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 

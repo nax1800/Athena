@@ -10,8 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -20,26 +18,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabAccessibilityOptions.TabAccessibilityOptions_C
-// 0x0028 (0x0288 - 0x0260)
+// 0x0048 (0x0298 - 0x0250)
 class UTabAccessibilityOptions_C final : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class URotatorSelector_C*                     ColorBlindMode;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsMenuSlider_C*                   ColorBlindStrength;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelector_C*                     HearingImpairedMode;                               // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           HearingSection;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UFortMultiSizeItemCard*                 Icon1;                                             // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 Icon2;                                             // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 Icon3;                                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 Icon4;                                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 Icon5;                                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TooltipDisplay;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UFortItemDefinition*>            CardItems;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_TabAccessibilityOptions(int32 EntryPoint);
-	void BndEvt__HearingImpairedMode_K2Node_ComponentBoundEvent_13_Selection_Changed__DelegateSignature(int32 Selected_Index);
-	void BndEvt__ColorBlindMode_K2Node_ComponentBoundEvent_11_Selection_Changed__DelegateSignature(int32 Selected_Index);
-	void BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature(float Slider_Value);
+	void BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget);
+	void BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
 	void CenterOnTab();
-	void UpdateOptionsTab();
 	void Construct();
-	void Update_Data();
 	void Initialize_Data();
+	void Setting_Value_Changed();
+	void UpdateOptionsTab();
 
 public:
 	static class UClass* StaticClass()
@@ -52,12 +52,15 @@ public:
 	}
 };
 static_assert(alignof(UTabAccessibilityOptions_C) == 0x000008, "Wrong alignment on UTabAccessibilityOptions_C");
-static_assert(sizeof(UTabAccessibilityOptions_C) == 0x000288, "Wrong size on UTabAccessibilityOptions_C");
-static_assert(offsetof(UTabAccessibilityOptions_C, UberGraphFrame) == 0x000260, "Member 'UTabAccessibilityOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabAccessibilityOptions_C, ColorBlindMode) == 0x000268, "Member 'UTabAccessibilityOptions_C::ColorBlindMode' has a wrong offset!");
-static_assert(offsetof(UTabAccessibilityOptions_C, ColorBlindStrength) == 0x000270, "Member 'UTabAccessibilityOptions_C::ColorBlindStrength' has a wrong offset!");
-static_assert(offsetof(UTabAccessibilityOptions_C, HearingImpairedMode) == 0x000278, "Member 'UTabAccessibilityOptions_C::HearingImpairedMode' has a wrong offset!");
-static_assert(offsetof(UTabAccessibilityOptions_C, HearingSection) == 0x000280, "Member 'UTabAccessibilityOptions_C::HearingSection' has a wrong offset!");
+static_assert(sizeof(UTabAccessibilityOptions_C) == 0x000298, "Wrong size on UTabAccessibilityOptions_C");
+static_assert(offsetof(UTabAccessibilityOptions_C, UberGraphFrame) == 0x000250, "Member 'UTabAccessibilityOptions_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, Icon1) == 0x000258, "Member 'UTabAccessibilityOptions_C::Icon1' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, Icon2) == 0x000260, "Member 'UTabAccessibilityOptions_C::Icon2' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, Icon3) == 0x000268, "Member 'UTabAccessibilityOptions_C::Icon3' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, Icon4) == 0x000270, "Member 'UTabAccessibilityOptions_C::Icon4' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, Icon5) == 0x000278, "Member 'UTabAccessibilityOptions_C::Icon5' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, TooltipDisplay) == 0x000280, "Member 'UTabAccessibilityOptions_C::TooltipDisplay' has a wrong offset!");
+static_assert(offsetof(UTabAccessibilityOptions_C, CardItems) == 0x000288, "Member 'UTabAccessibilityOptions_C::CardItems' has a wrong offset!");
 
 }
 

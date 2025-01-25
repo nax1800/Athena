@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Ninja_Tactical_MeleeHitsHeal.GE_Ninja_Tactical_MeleeHitsHeal_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGE_Ninja_Tactical_MeleeHitsHeal_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_Ninja_Tactical_MeleeHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000010, "Wrong alignment on UGE_Ninja_Tactical_MeleeHitsHeal_C");
-static_assert(sizeof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000670, "Wrong size on UGE_Ninja_Tactical_MeleeHitsHeal_C");
+static_assert(alignof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000008, "Wrong alignment on UGE_Ninja_Tactical_MeleeHitsHeal_C");
+static_assert(sizeof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000638, "Wrong size on UGE_Ninja_Tactical_MeleeHitsHeal_C");
 
 }
 

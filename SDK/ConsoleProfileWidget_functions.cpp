@@ -20,9 +20,9 @@ namespace SDK
 // Function ConsoleProfileWidget.ConsoleProfileWidget_C.SetDisplayName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_DisplayName                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             DisplayName_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UConsoleProfileWidget_C::SetDisplayName(const class FText& Param_DisplayName)
+void UConsoleProfileWidget_C::SetDisplayName(const class FText& DisplayName_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UConsoleProfileWidget_C::SetDisplayName(const class FText& Param_DisplayNam
 
 	Params::ConsoleProfileWidget_C_SetDisplayName Parms{};
 
-	Parms.Param_DisplayName = std::move(Param_DisplayName);
+	Parms.DisplayName_0 = std::move(DisplayName_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

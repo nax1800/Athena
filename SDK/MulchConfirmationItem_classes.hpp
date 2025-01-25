@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MulchConfirmationItem.MulchConfirmationItem_C
-// 0x0020 (0x0230 - 0x0210)
+// 0x0020 (0x0228 - 0x0208)
 class UMulchConfirmationItem_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItem*                              Item;                                              // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         Quantity;                                          // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItem*                              Item;                                              // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         Quantity;                                          // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -42,11 +42,11 @@ public:
 	}
 };
 static_assert(alignof(UMulchConfirmationItem_C) == 0x000008, "Wrong alignment on UMulchConfirmationItem_C");
-static_assert(sizeof(UMulchConfirmationItem_C) == 0x000230, "Wrong size on UMulchConfirmationItem_C");
-static_assert(offsetof(UMulchConfirmationItem_C, UberGraphFrame) == 0x000210, "Member 'UMulchConfirmationItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, ItemCard) == 0x000218, "Member 'UMulchConfirmationItem_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, Item) == 0x000220, "Member 'UMulchConfirmationItem_C::Item' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, Quantity) == 0x000228, "Member 'UMulchConfirmationItem_C::Quantity' has a wrong offset!");
+static_assert(sizeof(UMulchConfirmationItem_C) == 0x000228, "Wrong size on UMulchConfirmationItem_C");
+static_assert(offsetof(UMulchConfirmationItem_C, UberGraphFrame) == 0x000208, "Member 'UMulchConfirmationItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMulchConfirmationItem_C, ItemCard) == 0x000210, "Member 'UMulchConfirmationItem_C::ItemCard' has a wrong offset!");
+static_assert(offsetof(UMulchConfirmationItem_C, Item) == 0x000218, "Member 'UMulchConfirmationItem_C::Item' has a wrong offset!");
+static_assert(offsetof(UMulchConfirmationItem_C, Quantity) == 0x000220, "Member 'UMulchConfirmationItem_C::Quantity' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Pistol_AutoHeavy_Athena_Supp_Child.B_Pistol_AutoHeavy_Athena_Supp_Child_C
-// 0x0000 (0x0E58 - 0x0E58)
+// 0x0000 (0x0F78 - 0x0F78)
 class AB_Pistol_AutoHeavy_Athena_Supp_Child_C final : public AB_Pistol_AutoHeavy_Athena_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AB_Pistol_AutoHeavy_Athena_Supp_Child_C) == 0x000008, "Wrong alignment on AB_Pistol_AutoHeavy_Athena_Supp_Child_C");
-static_assert(sizeof(AB_Pistol_AutoHeavy_Athena_Supp_Child_C) == 0x000E58, "Wrong size on AB_Pistol_AutoHeavy_Athena_Supp_Child_C");
+static_assert(sizeof(AB_Pistol_AutoHeavy_Athena_Supp_Child_C) == 0x000F78, "Wrong size on AB_Pistol_AutoHeavy_Athena_Supp_Child_C");
 
 }
 

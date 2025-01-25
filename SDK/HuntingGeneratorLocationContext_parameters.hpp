@@ -65,7 +65,7 @@ public:
 	class AActor*                                 K2Node_DynamicCast_AsActor;                        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuntingGeneratorLocationContext_C_ProvideSingleLocation) == 0x000008, "Wrong alignment on HuntingGeneratorLocationContext_C_ProvideSingleLocation");
 static_assert(sizeof(HuntingGeneratorLocationContext_C_ProvideSingleLocation) == 0x000138, "Wrong size on HuntingGeneratorLocationContext_C_ProvideSingleLocation");
@@ -106,7 +106,7 @@ static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, 
 static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, CallFunc_GetValueAsObject_ReturnValue) == 0x000118, "Member 'HuntingGeneratorLocationContext_C_ProvideSingleLocation::CallFunc_GetValueAsObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, K2Node_DynamicCast_AsActor) == 0x000120, "Member 'HuntingGeneratorLocationContext_C_ProvideSingleLocation::K2Node_DynamicCast_AsActor' has a wrong offset!");
 static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, K2Node_DynamicCast_bSuccess1) == 0x000128, "Member 'HuntingGeneratorLocationContext_C_ProvideSingleLocation::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x00012C, "Member 'HuntingGeneratorLocationContext_C_ProvideSingleLocation::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(HuntingGeneratorLocationContext_C_ProvideSingleLocation, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x00012C, "Member 'HuntingGeneratorLocationContext_C_ProvideSingleLocation::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FortUIStylesheet_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortUIStylesheet_structs.hpp"
 #include "FortUITheme_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
@@ -240,7 +240,7 @@ public:
 	EFortStatValueDisplayType                     Temp_byte_Variable;                                // 0x0B60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B61[0x3];                                      // 0x0B61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0B64(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0B74(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0B74(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuffState                                Temp_byte_Variable1;                               // 0x0B84(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B85[0x3];                                      // 0x0B85(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0B88(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -257,7 +257,7 @@ static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Buff) == 0x000B40,
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable) == 0x000B50, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_byte_Variable) == 0x000B60, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable1) == 0x000B64, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable1' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable12) == 0x000B74, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable12' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable2) == 0x000B74, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable2' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Temp_byte_Variable1) == 0x000B84, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, K2Node_Select_Default) == 0x000B88, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, K2Node_Select1_Default) == 0x000B98, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::K2Node_Select1_Default' has a wrong offset!");
@@ -341,25 +341,25 @@ public:
 	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x01B8(0x0018)()
 	class FText                                   CallFunc_Array_Get_Item1;                          // 0x01D0(0x0018)()
-	struct FLinearColor                           CallFunc_Array_Get_Item12;                         // 0x01E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item2;                          // 0x01E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x01F8(0x0010)(ZeroConstructor, ReferenceParm)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           K2Node_MakeArray_Array1;                           // 0x0210(0x0010)(ZeroConstructor, ReferenceParm)
-	class FName                                   CallFunc_Array_Get_Item123;                        // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item3;                          // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FLinearColor>                   K2Node_MakeArray_Array12;                          // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_Array_Get_Item1234;                       // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FLinearColor>                   K2Node_MakeArray_Array2;                           // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Get_Item4;                          // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Array_Get_Item12345;                      // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Array_Get_Item5;                          // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x024D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_24E[0x2];                                      // 0x024E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 K2Node_MakeArray_Array123;                         // 0x0258(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<int32>                                 K2Node_MakeArray_Array3;                           // 0x0258(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EEvaluateCurveTableResult                     CallFunc_EvaluateCurveTableRow_OutResult;          // 0x026A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -367,8 +367,8 @@ public:
 	float                                         CallFunc_EvaluateCurveTableRow_OutXY;              // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array1234;                        // 0x0278(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class FText>                           K2Node_MakeArray_Array12345;                       // 0x0288(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class FText>                           K2Node_MakeArray_Array4;                           // 0x0278(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class FText>                           K2Node_MakeArray_Array5;                           // 0x0288(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
 static_assert(sizeof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x000298, "Wrong size on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
@@ -402,27 +402,27 @@ static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, T
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Add_IntInt_ReturnValue1) == 0x0001B0, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item1) == 0x0001D0, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item12) == 0x0001E8, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item2) == 0x0001E8, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array) == 0x0001F8, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000208, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array1) == 0x000210, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item123) == 0x000220, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item123' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item3) == 0x000220, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item3' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, Temp_int_Array_Index_Variable) == 0x000228, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array12) == 0x000230, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item1234) == 0x000240, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item1234' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array2) == 0x000230, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item4) == 0x000240, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item4' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, Temp_bool_True_if_break_was_hit_Variable) == 0x000244, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item12345) == 0x000248, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item12345' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item5) == 0x000248, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item5' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00024C, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Not_PreBool_ReturnValue) == 0x00024D, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Length_ReturnValue) == 0x000250, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array123) == 0x000258, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array123' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array3) == 0x000258, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array3' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Less_IntInt_ReturnValue) == 0x000268, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_BooleanAND_ReturnValue) == 0x000269, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_EvaluateCurveTableRow_OutResult) == 0x00026A, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_EvaluateCurveTableRow_OutXY) == 0x00026C, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_SwitchEnum_CmpSuccess) == 0x000270, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array1234) == 0x000278, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array1234' has a wrong offset!");
-static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array12345) == 0x000288, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array12345' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array4) == 0x000278, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array4' has a wrong offset!");
+static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, K2Node_MakeArray_Array5) == 0x000288, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::K2Node_MakeArray_Array5' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Conning Color For Specific Difficulty
 // 0x0038 (0x0038 - 0x0000)

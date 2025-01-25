@@ -37,6 +37,20 @@ void UAthenaQuickbarPrimary_C::ExecuteUbergraph_AthenaQuickbarPrimary(int32 Entr
 }
 
 
+// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaQuickbarPrimary_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarPrimary_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.AnimationFinished
 // (BlueprintCallable, BlueprintEvent)
 
@@ -77,9 +91,9 @@ void UAthenaQuickbarPrimary_C::OnQuickbarContentsChanged(EFortQuickBars Quickbar
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortQuickBars                          QuickbarIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaQuickbarPrimary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars QuickbarIndex, int32 Param_Slot)
+void UAthenaQuickbarPrimary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars QuickbarIndex, int32 Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -89,7 +103,7 @@ void UAthenaQuickbarPrimary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars Qu
 	Params::AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind Parms{};
 
 	Parms.QuickbarIndex = QuickbarIndex;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -184,40 +198,6 @@ void UAthenaQuickbarPrimary_C::HandleShowHideWeaponRail()
 }
 
 
-// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.UpdateQuickBarCaching
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    DesireCaching                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaQuickbarPrimary_C::UpdateQuickBarCaching(bool DesireCaching)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarPrimary_C", "UpdateQuickBarCaching");
-
-	Params::AthenaQuickbarPrimary_C_UpdateQuickBarCaching Parms{};
-
-	Parms.DesireCaching = DesireCaching;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UAthenaQuickbarPrimary_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarPrimary_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.Minimize
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -257,6 +237,26 @@ void UAthenaQuickbarPrimary_C::HandleKeybindsChanged()
 		Func = Class->GetFunction("AthenaQuickbarPrimary_C", "HandleKeybindsChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.UpdateQuickBarCaching
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    DesireCaching                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaQuickbarPrimary_C::UpdateQuickBarCaching(bool DesireCaching)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarPrimary_C", "UpdateQuickBarCaching");
+
+	Params::AthenaQuickbarPrimary_C_UpdateQuickBarCaching Parms{};
+
+	Parms.DesireCaching = DesireCaching;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

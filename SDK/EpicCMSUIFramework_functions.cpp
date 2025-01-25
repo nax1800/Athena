@@ -17,31 +17,6 @@
 namespace SDK
 {
 
-// Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged
-// (Final, Native, Private)
-// Parameters:
-// bool                                    bIsLoading                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEpicCMSTileBase::DynamicHandleIconLoadingStateChanged(bool bIsLoading)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileBase", "DynamicHandleIconLoadingStateChanged");
-
-	Params::EpicCMSTileBase_DynamicHandleIconLoadingStateChanged Parms{};
-
-	Parms.bIsLoading = bIsLoading;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function EpicCMSUIFramework.EpicCMSTileBase.Launch
 // (Final, Native, Protected, BlueprintCallable)
 

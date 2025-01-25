@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionPanelContent.MissionPanelContent_C
-// 0x0028 (0x0240 - 0x0218)
+// 0x0028 (0x0238 - 0x0210)
 class UMissionPanelContent_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UFortMultiSizeImage*                    MissionIcon;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MissionName;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MissionRewards;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           OverviewObjectives;                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UFortMultiSizeImage*                    MissionIcon;                                       // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MissionName;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MissionRewards;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           OverviewObjectives;                                // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MissionPanelContent(int32 EntryPoint);
@@ -48,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(UMissionPanelContent_C) == 0x000008, "Wrong alignment on UMissionPanelContent_C");
-static_assert(sizeof(UMissionPanelContent_C) == 0x000240, "Wrong size on UMissionPanelContent_C");
-static_assert(offsetof(UMissionPanelContent_C, UberGraphFrame) == 0x000218, "Member 'UMissionPanelContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionIcon) == 0x000220, "Member 'UMissionPanelContent_C::MissionIcon' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionName) == 0x000228, "Member 'UMissionPanelContent_C::MissionName' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionRewards) == 0x000230, "Member 'UMissionPanelContent_C::MissionRewards' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, OverviewObjectives) == 0x000238, "Member 'UMissionPanelContent_C::OverviewObjectives' has a wrong offset!");
+static_assert(sizeof(UMissionPanelContent_C) == 0x000238, "Wrong size on UMissionPanelContent_C");
+static_assert(offsetof(UMissionPanelContent_C, UberGraphFrame) == 0x000210, "Member 'UMissionPanelContent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMissionPanelContent_C, MissionIcon) == 0x000218, "Member 'UMissionPanelContent_C::MissionIcon' has a wrong offset!");
+static_assert(offsetof(UMissionPanelContent_C, MissionName) == 0x000220, "Member 'UMissionPanelContent_C::MissionName' has a wrong offset!");
+static_assert(offsetof(UMissionPanelContent_C, MissionRewards) == 0x000228, "Member 'UMissionPanelContent_C::MissionRewards' has a wrong offset!");
+static_assert(offsetof(UMissionPanelContent_C, OverviewObjectives) == 0x000230, "Member 'UMissionPanelContent_C::OverviewObjectives' has a wrong offset!");
 
 }
 

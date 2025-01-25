@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Teleport_Out.GC_Teleport_Out_C
-// 0x0010 (0x00C0 - 0x00B0)
+// 0x0008 (0x0088 - 0x0080)
 class UGC_Teleport_Out_C final : public UFortGameplayCueNotify_Simple
 {
 public:
-	float                                         Default_Play_Length;                               // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Default_Play_Length;                               // 0x0080(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -36,9 +36,9 @@ public:
 		return GetDefaultObjImpl<UGC_Teleport_Out_C>();
 	}
 };
-static_assert(alignof(UGC_Teleport_Out_C) == 0x000010, "Wrong alignment on UGC_Teleport_Out_C");
-static_assert(sizeof(UGC_Teleport_Out_C) == 0x0000C0, "Wrong size on UGC_Teleport_Out_C");
-static_assert(offsetof(UGC_Teleport_Out_C, Default_Play_Length) == 0x0000B0, "Member 'UGC_Teleport_Out_C::Default_Play_Length' has a wrong offset!");
+static_assert(alignof(UGC_Teleport_Out_C) == 0x000008, "Wrong alignment on UGC_Teleport_Out_C");
+static_assert(sizeof(UGC_Teleport_Out_C) == 0x000088, "Wrong size on UGC_Teleport_Out_C");
+static_assert(offsetof(UGC_Teleport_Out_C, Default_Play_Length) == 0x000080, "Member 'UGC_Teleport_Out_C::Default_Play_Length' has a wrong offset!");
 
 }
 

@@ -10,24 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass ProjectileHuskRanged.ProjectileHuskRanged_C
-// 0x0030 (0x0848 - 0x0818)
+// 0x0028 (0x06F0 - 0x06C8)
 class AProjectileHuskRanged_C final : public AFortProjectileBase
 {
 public:
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UAudioComponent*                        Ranged_Projectile_Sound;                           // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ProjectileParticleSystem;                          // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 GoalActor;                                         // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Exploded;                                          // 0x0840(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C8(0x0008)(Transient, DuplicateTransient)
+	class UAudioComponent*                        Ranged_Projectile_Sound;                           // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ProjectileParticleSystem;                          // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 GoalActor;                                         // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Exploded;                                          // 0x06E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ProjectileHuskRanged(int32 EntryPoint);
@@ -50,12 +49,12 @@ public:
 	}
 };
 static_assert(alignof(AProjectileHuskRanged_C) == 0x000008, "Wrong alignment on AProjectileHuskRanged_C");
-static_assert(sizeof(AProjectileHuskRanged_C) == 0x000848, "Wrong size on AProjectileHuskRanged_C");
-static_assert(offsetof(AProjectileHuskRanged_C, UberGraphFrame) == 0x000820, "Member 'AProjectileHuskRanged_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, Ranged_Projectile_Sound) == 0x000828, "Member 'AProjectileHuskRanged_C::Ranged_Projectile_Sound' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, ProjectileParticleSystem) == 0x000830, "Member 'AProjectileHuskRanged_C::ProjectileParticleSystem' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, GoalActor) == 0x000838, "Member 'AProjectileHuskRanged_C::GoalActor' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, Exploded) == 0x000840, "Member 'AProjectileHuskRanged_C::Exploded' has a wrong offset!");
+static_assert(sizeof(AProjectileHuskRanged_C) == 0x0006F0, "Wrong size on AProjectileHuskRanged_C");
+static_assert(offsetof(AProjectileHuskRanged_C, UberGraphFrame) == 0x0006C8, "Member 'AProjectileHuskRanged_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskRanged_C, Ranged_Projectile_Sound) == 0x0006D0, "Member 'AProjectileHuskRanged_C::Ranged_Projectile_Sound' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskRanged_C, ProjectileParticleSystem) == 0x0006D8, "Member 'AProjectileHuskRanged_C::ProjectileParticleSystem' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskRanged_C, GoalActor) == 0x0006E0, "Member 'AProjectileHuskRanged_C::GoalActor' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskRanged_C, Exploded) == 0x0006E8, "Member 'AProjectileHuskRanged_C::Exploded' has a wrong offset!");
 
 }
 

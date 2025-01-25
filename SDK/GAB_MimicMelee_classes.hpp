@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_MimicMelee.GAB_MimicMelee_C
-// 0x0008 (0x0B30 - 0x0B28)
+// 0x0008 (0x0938 - 0x0930)
 class UGAB_MimicMelee_C final : public UGAB_HuskMelee_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_MimicMelee_C;                   // 0x0B28(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_MimicMelee_C;                   // 0x0930(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GAB_MimicMelee(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(UGAB_MimicMelee_C) == 0x000008, "Wrong alignment on UGAB_MimicMelee_C");
-static_assert(sizeof(UGAB_MimicMelee_C) == 0x000B30, "Wrong size on UGAB_MimicMelee_C");
-static_assert(offsetof(UGAB_MimicMelee_C, UberGraphFrame_GAB_MimicMelee_C) == 0x000B28, "Member 'UGAB_MimicMelee_C::UberGraphFrame_GAB_MimicMelee_C' has a wrong offset!");
+static_assert(sizeof(UGAB_MimicMelee_C) == 0x000938, "Wrong size on UGAB_MimicMelee_C");
+static_assert(offsetof(UGAB_MimicMelee_C, UberGraphFrame_GAB_MimicMelee_C) == 0x000930, "Member 'UGAB_MimicMelee_C::UberGraphFrame_GAB_MimicMelee_C' has a wrong offset!");
 
 }
 

@@ -155,9 +155,9 @@ void UAthena_Matchmaking_GameModeButton_C::PreConstruct(bool IsDesignTime)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortPlaylistAthena*              PlaylistObj                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_bIsEnabled                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthena_Matchmaking_GameModeButton_C::SetupGameModeButton(class UFortPlaylistAthena* PlaylistObj, bool Param_bIsEnabled)
+void UAthena_Matchmaking_GameModeButton_C::SetupGameModeButton(class UFortPlaylistAthena* PlaylistObj, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -167,7 +167,7 @@ void UAthena_Matchmaking_GameModeButton_C::SetupGameModeButton(class UFortPlayli
 	Params::Athena_Matchmaking_GameModeButton_C_SetupGameModeButton Parms{};
 
 	Parms.PlaylistObj = PlaylistObj;
-	Parms.Param_bIsEnabled = Param_bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

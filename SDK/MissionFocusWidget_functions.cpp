@@ -118,5 +118,19 @@ void UMissionFocusWidget_C::UpdateVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function MissionFocusWidget.MissionFocusWidget_C.UpdateAutoRefreshTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UMissionFocusWidget_C::UpdateAutoRefreshTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MissionFocusWidget_C", "UpdateAutoRefreshTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

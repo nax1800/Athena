@@ -37,20 +37,20 @@ void UAthenaPickupManager_C::ExecuteUbergraph_AthenaPickupManager(int32 EntryPoi
 }
 
 
-// Function AthenaPickupManager.AthenaPickupManager_C.HandleItemPickUp
+// Function AthenaPickupManager.AthenaPickupManager_C.HandleItemPickup
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortWorldItem*                   NewItem                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaPickupManager_C::HandleItemPickUp(class UFortWorldItem* NewItem, int32 Count)
+void UAthenaPickupManager_C::HandleItemPickup(class UFortWorldItem* NewItem, int32 Count)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPickupManager_C", "HandleItemPickUp");
+		Func = Class->GetFunction("AthenaPickupManager_C", "HandleItemPickup");
 
-	Params::AthenaPickupManager_C_HandleItemPickUp Parms{};
+	Params::AthenaPickupManager_C_HandleItemPickup Parms{};
 
 	Parms.NewItem = NewItem;
 	Parms.Count = Count;

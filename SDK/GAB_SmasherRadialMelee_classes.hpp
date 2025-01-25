@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherRadialMelee.GAB_SmasherRadialMelee_C
-// 0x0020 (0x0B20 - 0x0B00)
+// 0x0020 (0x0928 - 0x0908)
 class UGAB_SmasherRadialMelee_C final : public UGAB_AIBaseMelee_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherRadialMelee_C;           // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 GE_SmasherMeleeSuccess;                            // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SmasherRotationRate;                               // 0x0B10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B14[0x4];                                      // 0x0B14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAbilityTask_MoveAI*                Move;                                              // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherRadialMelee_C;           // 0x0908(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 GE_SmasherMeleeSuccess;                            // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SmasherRotationRate;                               // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91C[0x4];                                      // 0x091C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAbilityTask_MoveAI*                Move;                                              // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherRadialMelee(int32 EntryPoint);
@@ -38,10 +38,10 @@ public:
 	void OnCancelled_1C768C2A4BDB2902BA3FDD92DD5F3C46();
 	void OnRequestFailed_1C768C2A4BDB2902BA3FDD92DD5F3C46();
 	void OnMoveFinished_1C768C2A4BDB2902BA3FDD92DD5F3C46(EPathFollowingResult Result, class AAIController* AIController);
-	void K2_ActivateAbility();
 	void Cancelled_2EFEB45748E11A8A846C14AD7ADF164D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Completed_2EFEB45748E11A8A846C14AD7ADF164D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Triggered_2EFEB45748E11A8A846C14AD7ADF164D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
+	void K2_ActivateAbility();
 
 public:
 	static class UClass* StaticClass()
@@ -54,11 +54,11 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherRadialMelee_C) == 0x000008, "Wrong alignment on UGAB_SmasherRadialMelee_C");
-static_assert(sizeof(UGAB_SmasherRadialMelee_C) == 0x000B20, "Wrong size on UGAB_SmasherRadialMelee_C");
-static_assert(offsetof(UGAB_SmasherRadialMelee_C, UberGraphFrame_GAB_SmasherRadialMelee_C) == 0x000B00, "Member 'UGAB_SmasherRadialMelee_C::UberGraphFrame_GAB_SmasherRadialMelee_C' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherRadialMelee_C, GE_SmasherMeleeSuccess) == 0x000B08, "Member 'UGAB_SmasherRadialMelee_C::GE_SmasherMeleeSuccess' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherRadialMelee_C, SmasherRotationRate) == 0x000B10, "Member 'UGAB_SmasherRadialMelee_C::SmasherRotationRate' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherRadialMelee_C, Move) == 0x000B18, "Member 'UGAB_SmasherRadialMelee_C::Move' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherRadialMelee_C) == 0x000928, "Wrong size on UGAB_SmasherRadialMelee_C");
+static_assert(offsetof(UGAB_SmasherRadialMelee_C, UberGraphFrame_GAB_SmasherRadialMelee_C) == 0x000908, "Member 'UGAB_SmasherRadialMelee_C::UberGraphFrame_GAB_SmasherRadialMelee_C' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherRadialMelee_C, GE_SmasherMeleeSuccess) == 0x000910, "Member 'UGAB_SmasherRadialMelee_C::GE_SmasherMeleeSuccess' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherRadialMelee_C, SmasherRotationRate) == 0x000918, "Member 'UGAB_SmasherRadialMelee_C::SmasherRotationRate' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherRadialMelee_C, Move) == 0x000920, "Member 'UGAB_SmasherRadialMelee_C::Move' has a wrong offset!");
 
 }
 

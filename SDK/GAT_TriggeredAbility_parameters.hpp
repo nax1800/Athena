@@ -41,5 +41,40 @@ static_assert(alignof(GAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent) == 0x0
 static_assert(sizeof(GAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent");
 static_assert(offsetof(GAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
+// Function GAT_TriggeredAbility.GAT_TriggeredAbility_C.SetHolsterWeaponWithName
+// 0x0030 (0x0030 - 0x0000)
+struct GAT_TriggeredAbility_C_SetHolsterWeaponWithName final
+{
+public:
+	class AFortPawn*                              Target_Fort_Pawn;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShouldHolster;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          PlayEquipAnim;                                     // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          ShowDebugPrintName;                                // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName) == 0x000008, "Wrong alignment on GAT_TriggeredAbility_C_SetHolsterWeaponWithName");
+static_assert(sizeof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName) == 0x000030, "Wrong size on GAT_TriggeredAbility_C_SetHolsterWeaponWithName");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, Target_Fort_Pawn) == 0x000000, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::Target_Fort_Pawn' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, ShouldHolster) == 0x000008, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::ShouldHolster' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, PlayEquipAnim) == 0x000009, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::PlayEquipAnim' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, ShowDebugPrintName) == 0x00000A, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::ShowDebugPrintName' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, CallFunc_GetObjectClass_ReturnValue) == 0x000010, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, CallFunc_GetClassDisplayName_ReturnValue) == 0x000018, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::CallFunc_GetClassDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_TriggeredAbility_C_SetHolsterWeaponWithName, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'GAT_TriggeredAbility_C_SetHolsterWeaponWithName::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+
+// Function GAT_TriggeredAbility.GAT_TriggeredAbility_C.TriggeredAbilitySetup
+// 0x0008 (0x0008 - 0x0000)
+struct GAT_TriggeredAbility_C_TriggeredAbilitySetup final
+{
+public:
+	class UAbilitySystemComponent*                Ability_System_Component;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GAT_TriggeredAbility_C_TriggeredAbilitySetup) == 0x000008, "Wrong alignment on GAT_TriggeredAbility_C_TriggeredAbilitySetup");
+static_assert(sizeof(GAT_TriggeredAbility_C_TriggeredAbilitySetup) == 0x000008, "Wrong size on GAT_TriggeredAbility_C_TriggeredAbilitySetup");
+static_assert(offsetof(GAT_TriggeredAbility_C_TriggeredAbilitySetup, Ability_System_Component) == 0x000000, "Member 'GAT_TriggeredAbility_C_TriggeredAbilitySetup::Ability_System_Component' has a wrong offset!");
+
 }
 

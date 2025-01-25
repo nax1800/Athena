@@ -70,9 +70,9 @@ void AMimic_Chest_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_18_ComponentBegi
 // Function Mimic_Chest.Mimic_Chest_C.BlueprintOnInteract
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        Param_InteractingPawn                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPawn*                        InteractingPawn_0                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMimic_Chest_C::BlueprintOnInteract(const class AFortPawn* Param_InteractingPawn)
+void AMimic_Chest_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,7 +81,7 @@ void AMimic_Chest_C::BlueprintOnInteract(const class AFortPawn* Param_Interactin
 
 	Params::Mimic_Chest_C_BlueprintOnInteract Parms{};
 
-	Parms.Param_InteractingPawn = Param_InteractingPawn;
+	Parms.InteractingPawn_0 = InteractingPawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -206,10 +206,10 @@ void AMimic_Chest_C::OnRep_bBlockedByStairs_()
 // Function Mimic_Chest.Mimic_Chest_C.BlueprintCanInteract
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class AFortPawn*                        Param_InteractingPawn                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPawn*                        InteractingPawn_0                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-bool AMimic_Chest_C::BlueprintCanInteract(const class AFortPawn* Param_InteractingPawn) const
+bool AMimic_Chest_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -218,7 +218,7 @@ bool AMimic_Chest_C::BlueprintCanInteract(const class AFortPawn* Param_Interacti
 
 	Params::Mimic_Chest_C_BlueprintCanInteract Parms{};
 
-	Parms.Param_InteractingPawn = Param_InteractingPawn;
+	Parms.InteractingPawn_0 = InteractingPawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -229,10 +229,10 @@ bool AMimic_Chest_C::BlueprintCanInteract(const class AFortPawn* Param_Interacti
 // Function Mimic_Chest.Mimic_Chest_C.BlueprintGetInteractionString
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class AFortPawn*                        Param_InteractingPawn                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPawn*                        InteractingPawn_0                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText AMimic_Chest_C::BlueprintGetInteractionString(const class AFortPawn* Param_InteractingPawn) const
+class FText AMimic_Chest_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -241,7 +241,7 @@ class FText AMimic_Chest_C::BlueprintGetInteractionString(const class AFortPawn*
 
 	Params::Mimic_Chest_C_BlueprintGetInteractionString Parms{};
 
-	Parms.Param_InteractingPawn = Param_InteractingPawn;
+	Parms.InteractingPawn_0 = InteractingPawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

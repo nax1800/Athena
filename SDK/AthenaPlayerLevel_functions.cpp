@@ -108,9 +108,9 @@ void UAthenaPlayerLevel_C::EventTrack_Leveled()
 // Function AthenaPlayerLevel.AthenaPlayerLevel_C.Play XP Reward Directly
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_XpToAdd                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   XpToAdd_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaPlayerLevel_C::Play_XP_Reward_Directly(int32 Param_XpToAdd)
+void UAthenaPlayerLevel_C::Play_XP_Reward_Directly(int32 XpToAdd_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -119,7 +119,7 @@ void UAthenaPlayerLevel_C::Play_XP_Reward_Directly(int32 Param_XpToAdd)
 
 	Params::AthenaPlayerLevel_C_Play_XP_Reward_Directly Parms{};
 
-	Parms.Param_XpToAdd = Param_XpToAdd;
+	Parms.XpToAdd_0 = XpToAdd_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -262,11 +262,11 @@ void UAthenaPlayerLevel_C::IsReadyForNextXpReward(bool* Ready)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   LevelXp                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_LevelXpForLevel                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LevelXpForLevel_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_MaxLevel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxLevel_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaPlayerLevel_C::UpdateXp(int32 LevelXp, int32 Param_LevelXpForLevel, int32 Level, int32 Param_MaxLevel)
+void UAthenaPlayerLevel_C::UpdateXp(int32 LevelXp, int32 LevelXpForLevel_0, int32 Level, int32 MaxLevel_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -276,9 +276,9 @@ void UAthenaPlayerLevel_C::UpdateXp(int32 LevelXp, int32 Param_LevelXpForLevel, 
 	Params::AthenaPlayerLevel_C_UpdateXp Parms{};
 
 	Parms.LevelXp = LevelXp;
-	Parms.Param_LevelXpForLevel = Param_LevelXpForLevel;
+	Parms.LevelXpForLevel_0 = LevelXpForLevel_0;
 	Parms.Level = Level;
-	Parms.Param_MaxLevel = Param_MaxLevel;
+	Parms.MaxLevel_0 = MaxLevel_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

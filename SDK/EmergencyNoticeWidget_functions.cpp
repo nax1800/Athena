@@ -51,6 +51,20 @@ void UEmergencyNoticeWidget_C::HideNotice()
 }
 
 
+// Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.Show Notice
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UEmergencyNoticeWidget_C::Show_Notice()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.ShowNotice
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "AIModule_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "AIModule_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
 
@@ -79,7 +79,7 @@ public:
 	class UParticleSystemComponent*               CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter;      // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x01FC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0210(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -145,7 +145,7 @@ static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter) == 0x0001F0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Add_ReturnValue1) == 0x0001F8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x0001FC, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Less_IntInt_ReturnValue12) == 0x000208, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Less_IntInt_ReturnValue2) == 0x000208, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Conv_VectorToTransform_ReturnValue) == 0x000210, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Conv_VectorToTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000240, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_FinishSpawningActor_ReturnValue) == 0x000248, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
@@ -598,7 +598,7 @@ public:
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue1;            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue1;               // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue12;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue2;               // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn) == 0x000008, "Wrong alignment on BluGloManager_C_PrintDebugInfoForBluGloToSpawn");
 static_assert(sizeof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn) == 0x000068, "Wrong size on BluGloManager_C_PrintDebugInfoForBluGloToSpawn");
@@ -608,7 +608,7 @@ static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_
 static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_Conv_IntToString_ReturnValue1) == 0x000028, "Member 'BluGloManager_C_PrintDebugInfoForBluGloToSpawn::CallFunc_Conv_IntToString_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'BluGloManager_C_PrintDebugInfoForBluGloToSpawn::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_Concat_StrStr_ReturnValue1) == 0x000048, "Member 'BluGloManager_C_PrintDebugInfoForBluGloToSpawn::CallFunc_Concat_StrStr_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_Concat_StrStr_ReturnValue12) == 0x000058, "Member 'BluGloManager_C_PrintDebugInfoForBluGloToSpawn::CallFunc_Concat_StrStr_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BluGloManager_C_PrintDebugInfoForBluGloToSpawn, CallFunc_Concat_StrStr_ReturnValue2) == 0x000058, "Member 'BluGloManager_C_PrintDebugInfoForBluGloToSpawn::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
 
 }
 

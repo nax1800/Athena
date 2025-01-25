@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK::Params
@@ -34,18 +34,18 @@ public:
 	float                                         CallFunc_BreakVector_Y;                            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam12;              // 0x0140(0x0080)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam2;               // 0x0140(0x0080)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x01D4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue12;      // 0x01E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue123;     // 0x01EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue2;       // 0x01E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue3;       // 0x01EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1F8[0x8];                                      // 0x01F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam123;             // 0x0200(0x0080)(IsPlainOldData, NoDestructor)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam1234;            // 0x0280(0x0080)(IsPlainOldData, NoDestructor)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam12345;           // 0x0300(0x0080)(IsPlainOldData, NoDestructor)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam123456;          // 0x0380(0x0080)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam3;               // 0x0200(0x0080)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam4;               // 0x0280(0x0080)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam5;               // 0x0300(0x0080)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam6;               // 0x0380(0x0080)(IsPlainOldData, NoDestructor)
 	float                                         Temp_float_Variable;                               // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array;                            // 0x0408(0x0010)(ZeroConstructor, ReferenceParm)
@@ -55,13 +55,13 @@ public:
 	uint8                                         Pad_41B[0x1];                                      // 0x041B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x041C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0428(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x0434(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0434(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue123;       // 0x0448(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x0448(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0454(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_455[0x3];                                      // 0x0455(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0458(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1234;      // 0x0464(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x0464(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0470(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x0478(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_484[0x4];                                      // 0x0484(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -75,11 +75,11 @@ public:
 	uint8                                         Pad_552[0x6];                                      // 0x0552(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0558(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0611(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0611(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_612[0x2];                                      // 0x0612(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue12;    // 0x0614(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0614(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0620(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue123;   // 0x0628(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue3;     // 0x0628(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0634(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -88,9 +88,9 @@ public:
 	uint8                                         Pad_651[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_EvaluateCurveTableRow_OutXY;              // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum12_CmpSuccess;                    // 0x065C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x065C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_65D[0x3];                                      // 0x065D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0660(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0660(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire) == 0x000010, "Wrong alignment on Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire");
 static_assert(sizeof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire) == 0x000670, "Wrong size on Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire");
@@ -102,17 +102,17 @@ static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_BreakVector_X) == 0x000130, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_BreakVector_Y) == 0x000134, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_BreakVector_Z) == 0x000138, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam12) == 0x000140, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam12' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam2) == 0x000140, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam2' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001C0, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x0001C4, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_MakeVector_ReturnValue) == 0x0001C8, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_MakeVector_ReturnValue1) == 0x0001D4, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_VectorVector_ReturnValue12) == 0x0001E0, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_VectorVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_VectorVector_ReturnValue123) == 0x0001EC, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_VectorVector_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam123) == 0x000200, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam123' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam1234) == 0x000280, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam1234' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam12345) == 0x000300, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam12345' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam123456) == 0x000380, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam123456' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_VectorVector_ReturnValue2) == 0x0001E0, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_VectorVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Multiply_VectorVector_ReturnValue3) == 0x0001EC, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Multiply_VectorVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam3) == 0x000200, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam3' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam4) == 0x000280, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam4' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam5) == 0x000300, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam5' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeStruct_ParticleSysParam6) == 0x000380, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeStruct_ParticleSysParam6' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, Temp_float_Variable) == 0x000400, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_MakeArray_Array) == 0x000408, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000418, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
@@ -120,12 +120,12 @@ static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_HasAuthority_ReturnValue) == 0x00041A, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00041C, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000428, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x000434, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x000434, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000440, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue123) == 0x000448, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue3) == 0x000448, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_IsValid_ReturnValue) == 0x000454, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000458, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue1234) == 0x000464, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetActorLocation_ReturnValue4) == 0x000464, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetActorLocation_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000470, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue1) == 0x000478, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000488, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
@@ -136,17 +136,17 @@ static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_GameplayCueEvent_EventType) == 0x000551, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_GameplayCueEvent_Parameters) == 0x000558, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_SwitchEnum1_CmpSuccess) == 0x000610, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_IsValid_ReturnValue12) == 0x000611, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue12) == 0x000614, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_IsValid_ReturnValue2) == 0x000611, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue2) == 0x000614, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000620, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue123) == 0x000628, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_GetComponentLocation_ReturnValue3) == 0x000628, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_GetComponentLocation_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000634, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_VSize_ReturnValue) == 0x000640, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_VSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_Event_Pawn) == 0x000648, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_Event_Pawn' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_EvaluateCurveTableRow_OutResult) == 0x000650, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_EvaluateCurveTableRow_OutXY) == 0x000654, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_FTrunc_ReturnValue) == 0x000658, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_SwitchEnum12_CmpSuccess) == 0x00065C, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_SwitchEnum12_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, K2Node_SwitchEnum2_CmpSuccess) == 0x00065C, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire, CallFunc_K2_SetTimer_ReturnValue) == 0x000660, "Member 'Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 
 // Function Trap_Floor_Player_Campfire.Trap_Floor_Player_Campfire_C.TriggerLaunchEffects
@@ -226,7 +226,7 @@ public:
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPointInBoxWithTransform_ReturnValue;    // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EA[0x2];                                       // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue12;    // 0x00EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x00EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPointInBoxWithTransform_ReturnValue1;   // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -256,7 +256,7 @@ static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_Less_Int
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_K2_GetComponentLocation_ReturnValue1) == 0x0000DC, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_K2_GetComponentLocation_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_IsDead_ReturnValue) == 0x0000E8, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_IsDead_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_IsPointInBoxWithTransform_ReturnValue) == 0x0000E9, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_IsPointInBoxWithTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_K2_GetComponentLocation_ReturnValue12) == 0x0000EC, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_K2_GetComponentLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_K2_GetComponentLocation_ReturnValue2) == 0x0000EC, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_K2_GetComponentLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_IsPointInBoxWithTransform_ReturnValue1) == 0x0000F8, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_IsPointInBoxWithTransform_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Player_Campfire_C_HealTicks, CallFunc_Less_IntInt_ReturnValue1) == 0x0000F9, "Member 'Trap_Floor_Player_Campfire_C_HealTicks::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 

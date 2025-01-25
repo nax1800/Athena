@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.SetIngredients
-// 0x0078 (0x0078 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct ItemInspectEvolutionIngredientsList_C_SetIngredients final
 {
 public:
@@ -30,15 +30,15 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0030(0x0030)()
-	class UItemInspectEvolutionIngredientsEntry_C* CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0030(0x0040)()
+	class UItemInspectEvolutionIngredientsEntry_C* CallFunc_Create_ReturnValue;                       // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectEvolutionIngredientsList_C_SetIngredients) == 0x000008, "Wrong alignment on ItemInspectEvolutionIngredientsList_C_SetIngredients");
-static_assert(sizeof(ItemInspectEvolutionIngredientsList_C_SetIngredients) == 0x000078, "Wrong size on ItemInspectEvolutionIngredientsList_C_SetIngredients");
+static_assert(sizeof(ItemInspectEvolutionIngredientsList_C_SetIngredients) == 0x000088, "Wrong size on ItemInspectEvolutionIngredientsList_C_SetIngredients");
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, Item) == 0x000000, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::Item' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, InIngredients) == 0x000008, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::InIngredients' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, Temp_int_Array_Index_Variable) == 0x000018, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -46,10 +46,10 @@ static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, Tem
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Array_Get_Item) == 0x000030, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Create_ReturnValue) == 0x000060, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Less_IntInt_ReturnValue) == 0x00006C, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_AddChild_ReturnValue) == 0x000070, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Create_ReturnValue) == 0x000070, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolutionIngredientsList_C_SetIngredients, CallFunc_AddChild_ReturnValue) == 0x000080, "Member 'ItemInspectEvolutionIngredientsList_C_SetIngredients::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.SetupItemLevelRequirement
 // 0x0120 (0x0120 - 0x0000)

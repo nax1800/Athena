@@ -37,20 +37,6 @@ void URewardsListEntry_C::ExecuteUbergraph_RewardsListEntry(int32 EntryPoint)
 }
 
 
-// Function RewardsListEntry.RewardsListEntry_C.ConfigForPeople
-// (BlueprintCallable, BlueprintEvent)
-
-void URewardsListEntry_C::ConfigForPeople()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardsListEntry_C", "ConfigForPeople");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function RewardsListEntry.RewardsListEntry_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void URewardsListEntry_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("RewardsListEntry_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RewardsListEntry.RewardsListEntry_C.ConfigForPeople
+// (BlueprintCallable, BlueprintEvent)
+
+void URewardsListEntry_C::ConfigForPeople()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardsListEntry_C", "ConfigForPeople");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -110,9 +110,9 @@ void URewardsListEntry_C::ConfigForSchematic()
 // Function RewardsListEntry.RewardsListEntry_C.ShowLabel
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_ShowLabel                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ShowLabel_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsListEntry_C::ShowLabel(bool Param_ShowLabel)
+void URewardsListEntry_C::ShowLabel(bool ShowLabel_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -121,7 +121,7 @@ void URewardsListEntry_C::ShowLabel(bool Param_ShowLabel)
 
 	Params::RewardsListEntry_C_ShowLabel Parms{};
 
-	Parms.Param_ShowLabel = Param_ShowLabel;
+	Parms.ShowLabel_0 = ShowLabel_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

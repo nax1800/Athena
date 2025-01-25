@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,9 +37,9 @@ public:
 	int32                                         CallFunc_GetNumPlayersInLocalParty_ReturnValue;    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0050(0x0018)()
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButto
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x000034, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, Temp_byte_Variable1) == 0x000038, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, CallFunc_Greater_IntInt_ReturnValue) == 0x000039, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, Temp_byte_Variable12) == 0x00003A, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, CallFunc_GetContext_ReturnValue12) == 0x000040, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, Temp_byte_Variable2) == 0x00003A, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, CallFunc_GetContext_ReturnValue2) == 0x000040, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, K2Node_ComponentBoundEvent_Button) == 0x000048, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, CallFunc_MakeLiteralText_ReturnValue) == 0x000050, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton, K2Node_CustomEvent_Result) == 0x000068, "Member 'ChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton::K2Node_CustomEvent_Result' has a wrong offset!");

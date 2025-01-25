@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // Enum Account.EExternalAccountType
-// NumValues: 0x0006
+// NumValues: 0x0007
 enum class EExternalAccountType : uint8
 {
 	None                                     = 0,
@@ -23,7 +23,8 @@ enum class EExternalAccountType : uint8
 	Google                                   = 2,
 	Epic_PSN                                 = 3,
 	Epic_XBL                                 = 4,
-	EExternalAccountType_MAX                 = 5,
+	Epic_Erebus                              = 5,
+	EExternalAccountType_MAX                 = 6,
 };
 
 // Enum Account.ECreateAccountResult
@@ -41,7 +42,7 @@ enum class ECreateAccountResult : uint8
 };
 
 // Enum Account.ELoginResult
-// NumValues: 0x0024
+// NumValues: 0x0026
 enum class ELoginResult : uint8
 {
 	NotStarted                               = 0,
@@ -71,19 +72,21 @@ enum class ELoginResult : uint8
 	GenericError                             = 24,
 	RejoinCheckFailure                       = 25,
 	ConnectionFailed                         = 26,
-	ExternalAuth_AddedAuthAssociation        = 27,
-	ExternalAuth_ConnectionTimeout           = 28,
-	ExternalAuth_AuthFailure                 = 29,
-	ExternalAuth_AssociationFailure          = 30,
-	ExternalAuth_MissingAuthAssociation      = 31,
-	FailedToCreateParty                      = 32,
-	ProfileQueryFailed                       = 33,
-	ClientSettingsDownloadFailed             = 34,
-	ELoginResult_MAX                         = 35,
+	NetworkConnectionUnavailable             = 27,
+	ExternalAuth_AddedAuthAssociation        = 28,
+	ExternalAuth_ConnectionTimeout           = 29,
+	ExternalAuth_AuthFailure                 = 30,
+	ExternalAuth_AssociationFailure          = 31,
+	ExternalAuth_MissingAuthAssociation      = 32,
+	FailedToCreateParty                      = 33,
+	ProfileQueryFailed                       = 34,
+	QueryKeychainFailed                      = 35,
+	ClientSettingsDownloadFailed             = 36,
+	ELoginResult_MAX                         = 37,
 };
 
 // Enum Account.EConsoleAuthLinkState
-// NumValues: 0x0007
+// NumValues: 0x0009
 enum class EConsoleAuthLinkState : uint8
 {
 	NotOnConsole                             = 0,
@@ -92,7 +95,9 @@ enum class EConsoleAuthLinkState : uint8
 	ThisEpicAccountLinked                    = 3,
 	OtherEpicAccountLinked                   = 4,
 	NoEpicAccountLinked                      = 5,
-	EConsoleAuthLinkState_MAX                = 6,
+	PrimaryIdNotLinked                       = 6,
+	SecondaryIdNotLinked                     = 7,
+	EConsoleAuthLinkState_MAX                = 8,
 };
 
 // ScriptStruct Account.OnlineAccountTexts_FailedLoginConsole
@@ -131,7 +136,7 @@ static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, UnableToStartPriv
 static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, UnexpectedError) == 0x000120, "Member 'FOnlineAccountTexts_FailedLoginConsole::UnexpectedError' has a wrong offset!");
 
 // ScriptStruct Account.OnlineAccountTexts
-// 0x0930 (0x0930 - 0x0000)
+// 0x0960 (0x0960 - 0x0000)
 struct FOnlineAccountTexts final
 {
 public:
@@ -192,38 +197,40 @@ public:
 	class FText                                   LostConnection;                                    // 0x0510(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FText                                   MCPTimeout;                                        // 0x0528(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FText                                   LightswitchCheckNetworkFailureMsg;                 // 0x0540(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   NoPlayEntitlement;                                 // 0x0558(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   NoServerAccess;                                    // 0x0570(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   PlayAccessRevoked;                                 // 0x0588(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   PremiumAccountName_Default;                        // 0x05A0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   PremiumAccountName_PS4;                            // 0x05B8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   PremiumAccountName_Switch;                         // 0x05D0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   PremiumAccountName_XboxOne;                        // 0x05E8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   RedeemOfflinePurchases;                            // 0x0600(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ServiceDowntime;                                   // 0x0618(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   SignInCompleting;                                  // 0x0630(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   SignIntoConsoleServices;                           // 0x0648(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   TokenExpired;                                      // 0x0660(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   UnableToConnect;                                   // 0x0678(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   UnableToJoinWaitingRoomLoginQueue;                 // 0x0690(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   UnexpectedConsoleAuthFailure;                      // 0x06A8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   UnlinkConsoleFailed;                               // 0x06C0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   UserLoginFailed;                                   // 0x06D8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   WaitingRoom;                                       // 0x06F0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   WaitingRoomError;                                  // 0x0708(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   WaitingRoomFailure;                                // 0x0720(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   WaitingRoomWaiting;                                // 0x0738(0x0018)(Edit, NativeAccessSpecifierPublic)
-	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x0750(0x0138)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   LoggingInExternalAuth;                             // 0x0888(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   CreateDeviceAuth;                                  // 0x08A0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ExtAuthCanceled;                                   // 0x08B8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ExtAuthFailure;                                    // 0x08D0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ExtAuthAssociationFailure;                         // 0x08E8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ExtAuthTimeout;                                    // 0x0900(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   ExtAuthMissingAuthAssociation;                     // 0x0918(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   NetworkConnectionUnavailable;                      // 0x0558(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   NoPlayEntitlement;                                 // 0x0570(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   NoServerAccess;                                    // 0x0588(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   PlayAccessRevoked;                                 // 0x05A0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   PremiumAccountName_Default;                        // 0x05B8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   PremiumAccountName_PS4;                            // 0x05D0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   PremiumAccountName_Switch;                         // 0x05E8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   PremiumAccountName_XboxOne;                        // 0x0600(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   RedeemOfflinePurchases;                            // 0x0618(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ServiceDowntime;                                   // 0x0630(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   SignInCompleting;                                  // 0x0648(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   SignIntoConsoleServices;                           // 0x0660(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   TokenExpired;                                      // 0x0678(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UnableToConnect;                                   // 0x0690(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UnableToJoinWaitingRoomLoginQueue;                 // 0x06A8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UnexpectedConsoleAuthFailure;                      // 0x06C0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UnlinkConsoleFailed;                               // 0x06D8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UserLoginFailed;                                   // 0x06F0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   WaitingRoom;                                       // 0x0708(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   WaitingRoomError;                                  // 0x0720(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   WaitingRoomFailure;                                // 0x0738(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   WaitingRoomWaiting;                                // 0x0750(0x0018)(Edit, NativeAccessSpecifierPublic)
+	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x0768(0x0138)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   LoggingInExternalAuth;                             // 0x08A0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   CreateDeviceAuth;                                  // 0x08B8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ExtAuthCanceled;                                   // 0x08D0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ExtAuthFailure;                                    // 0x08E8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ExtAuthAssociationFailure;                         // 0x0900(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ExtAuthTimeout;                                    // 0x0918(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ExtAuthMissingAuthAssociation;                     // 0x0930(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   UnableToQueryReceipts;                             // 0x0948(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FOnlineAccountTexts) == 0x000008, "Wrong alignment on FOnlineAccountTexts");
-static_assert(sizeof(FOnlineAccountTexts) == 0x000930, "Wrong size on FOnlineAccountTexts");
+static_assert(sizeof(FOnlineAccountTexts) == 0x000960, "Wrong size on FOnlineAccountTexts");
 static_assert(offsetof(FOnlineAccountTexts, AllGiftCodesUsed) == 0x000000, "Member 'FOnlineAccountTexts::AllGiftCodesUsed' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, AssociateConsoleAuth) == 0x000018, "Member 'FOnlineAccountTexts::AssociateConsoleAuth' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, AutoLoginFailed) == 0x000030, "Member 'FOnlineAccountTexts::AutoLoginFailed' has a wrong offset!");
@@ -281,35 +288,37 @@ static_assert(offsetof(FOnlineAccountTexts, LogoutCompleted) == 0x0004F8, "Membe
 static_assert(offsetof(FOnlineAccountTexts, LostConnection) == 0x000510, "Member 'FOnlineAccountTexts::LostConnection' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, MCPTimeout) == 0x000528, "Member 'FOnlineAccountTexts::MCPTimeout' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, LightswitchCheckNetworkFailureMsg) == 0x000540, "Member 'FOnlineAccountTexts::LightswitchCheckNetworkFailureMsg' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, NoPlayEntitlement) == 0x000558, "Member 'FOnlineAccountTexts::NoPlayEntitlement' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, NoServerAccess) == 0x000570, "Member 'FOnlineAccountTexts::NoServerAccess' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, PlayAccessRevoked) == 0x000588, "Member 'FOnlineAccountTexts::PlayAccessRevoked' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_Default) == 0x0005A0, "Member 'FOnlineAccountTexts::PremiumAccountName_Default' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_PS4) == 0x0005B8, "Member 'FOnlineAccountTexts::PremiumAccountName_PS4' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_Switch) == 0x0005D0, "Member 'FOnlineAccountTexts::PremiumAccountName_Switch' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_XboxOne) == 0x0005E8, "Member 'FOnlineAccountTexts::PremiumAccountName_XboxOne' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, RedeemOfflinePurchases) == 0x000600, "Member 'FOnlineAccountTexts::RedeemOfflinePurchases' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ServiceDowntime) == 0x000618, "Member 'FOnlineAccountTexts::ServiceDowntime' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, SignInCompleting) == 0x000630, "Member 'FOnlineAccountTexts::SignInCompleting' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, SignIntoConsoleServices) == 0x000648, "Member 'FOnlineAccountTexts::SignIntoConsoleServices' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, TokenExpired) == 0x000660, "Member 'FOnlineAccountTexts::TokenExpired' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, UnableToConnect) == 0x000678, "Member 'FOnlineAccountTexts::UnableToConnect' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, UnableToJoinWaitingRoomLoginQueue) == 0x000690, "Member 'FOnlineAccountTexts::UnableToJoinWaitingRoomLoginQueue' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, UnexpectedConsoleAuthFailure) == 0x0006A8, "Member 'FOnlineAccountTexts::UnexpectedConsoleAuthFailure' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, UnlinkConsoleFailed) == 0x0006C0, "Member 'FOnlineAccountTexts::UnlinkConsoleFailed' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, UserLoginFailed) == 0x0006D8, "Member 'FOnlineAccountTexts::UserLoginFailed' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, WaitingRoom) == 0x0006F0, "Member 'FOnlineAccountTexts::WaitingRoom' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, WaitingRoomError) == 0x000708, "Member 'FOnlineAccountTexts::WaitingRoomError' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, WaitingRoomFailure) == 0x000720, "Member 'FOnlineAccountTexts::WaitingRoomFailure' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, WaitingRoomWaiting) == 0x000738, "Member 'FOnlineAccountTexts::WaitingRoomWaiting' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, FailedLoginConsole) == 0x000750, "Member 'FOnlineAccountTexts::FailedLoginConsole' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, LoggingInExternalAuth) == 0x000888, "Member 'FOnlineAccountTexts::LoggingInExternalAuth' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, CreateDeviceAuth) == 0x0008A0, "Member 'FOnlineAccountTexts::CreateDeviceAuth' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ExtAuthCanceled) == 0x0008B8, "Member 'FOnlineAccountTexts::ExtAuthCanceled' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ExtAuthFailure) == 0x0008D0, "Member 'FOnlineAccountTexts::ExtAuthFailure' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ExtAuthAssociationFailure) == 0x0008E8, "Member 'FOnlineAccountTexts::ExtAuthAssociationFailure' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ExtAuthTimeout) == 0x000900, "Member 'FOnlineAccountTexts::ExtAuthTimeout' has a wrong offset!");
-static_assert(offsetof(FOnlineAccountTexts, ExtAuthMissingAuthAssociation) == 0x000918, "Member 'FOnlineAccountTexts::ExtAuthMissingAuthAssociation' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, NetworkConnectionUnavailable) == 0x000558, "Member 'FOnlineAccountTexts::NetworkConnectionUnavailable' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, NoPlayEntitlement) == 0x000570, "Member 'FOnlineAccountTexts::NoPlayEntitlement' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, NoServerAccess) == 0x000588, "Member 'FOnlineAccountTexts::NoServerAccess' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, PlayAccessRevoked) == 0x0005A0, "Member 'FOnlineAccountTexts::PlayAccessRevoked' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_Default) == 0x0005B8, "Member 'FOnlineAccountTexts::PremiumAccountName_Default' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_PS4) == 0x0005D0, "Member 'FOnlineAccountTexts::PremiumAccountName_PS4' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_Switch) == 0x0005E8, "Member 'FOnlineAccountTexts::PremiumAccountName_Switch' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, PremiumAccountName_XboxOne) == 0x000600, "Member 'FOnlineAccountTexts::PremiumAccountName_XboxOne' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, RedeemOfflinePurchases) == 0x000618, "Member 'FOnlineAccountTexts::RedeemOfflinePurchases' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ServiceDowntime) == 0x000630, "Member 'FOnlineAccountTexts::ServiceDowntime' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, SignInCompleting) == 0x000648, "Member 'FOnlineAccountTexts::SignInCompleting' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, SignIntoConsoleServices) == 0x000660, "Member 'FOnlineAccountTexts::SignIntoConsoleServices' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, TokenExpired) == 0x000678, "Member 'FOnlineAccountTexts::TokenExpired' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UnableToConnect) == 0x000690, "Member 'FOnlineAccountTexts::UnableToConnect' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UnableToJoinWaitingRoomLoginQueue) == 0x0006A8, "Member 'FOnlineAccountTexts::UnableToJoinWaitingRoomLoginQueue' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UnexpectedConsoleAuthFailure) == 0x0006C0, "Member 'FOnlineAccountTexts::UnexpectedConsoleAuthFailure' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UnlinkConsoleFailed) == 0x0006D8, "Member 'FOnlineAccountTexts::UnlinkConsoleFailed' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UserLoginFailed) == 0x0006F0, "Member 'FOnlineAccountTexts::UserLoginFailed' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, WaitingRoom) == 0x000708, "Member 'FOnlineAccountTexts::WaitingRoom' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, WaitingRoomError) == 0x000720, "Member 'FOnlineAccountTexts::WaitingRoomError' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, WaitingRoomFailure) == 0x000738, "Member 'FOnlineAccountTexts::WaitingRoomFailure' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, WaitingRoomWaiting) == 0x000750, "Member 'FOnlineAccountTexts::WaitingRoomWaiting' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, FailedLoginConsole) == 0x000768, "Member 'FOnlineAccountTexts::FailedLoginConsole' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, LoggingInExternalAuth) == 0x0008A0, "Member 'FOnlineAccountTexts::LoggingInExternalAuth' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, CreateDeviceAuth) == 0x0008B8, "Member 'FOnlineAccountTexts::CreateDeviceAuth' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ExtAuthCanceled) == 0x0008D0, "Member 'FOnlineAccountTexts::ExtAuthCanceled' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ExtAuthFailure) == 0x0008E8, "Member 'FOnlineAccountTexts::ExtAuthFailure' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ExtAuthAssociationFailure) == 0x000900, "Member 'FOnlineAccountTexts::ExtAuthAssociationFailure' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ExtAuthTimeout) == 0x000918, "Member 'FOnlineAccountTexts::ExtAuthTimeout' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, ExtAuthMissingAuthAssociation) == 0x000930, "Member 'FOnlineAccountTexts::ExtAuthMissingAuthAssociation' has a wrong offset!");
+static_assert(offsetof(FOnlineAccountTexts, UnableToQueryReceipts) == 0x000948, "Member 'FOnlineAccountTexts::UnableToQueryReceipts' has a wrong offset!");
 
 // ScriptStruct Account.GiftMessage
 // 0x0030 (0x0030 - 0x0000)

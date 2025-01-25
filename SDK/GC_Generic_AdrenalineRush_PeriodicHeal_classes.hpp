@@ -19,20 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Generic_AdrenalineRush_PeriodicHeal.GC_Generic_AdrenalineRush_PeriodicHeal_C
-// 0x0040 (0x0400 - 0x03C0)
+// 0x0038 (0x03D0 - 0x0398)
 class AGC_Generic_AdrenalineRush_PeriodicHeal_C final : public AGameplayCueNotify_Actor
 {
 public:
-	uint8                                         Pad_3B8[0x8];                                      // 0x03B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               HealVFX;                                           // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25; // 0x03D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25; // 0x03DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25; // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1[0x7];                                      // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Health_Sweep;                                      // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerPawn_Generic_C*                  GC_Target_Pawn;                                    // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               HealVFX;                                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25; // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25; // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25; // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B9[0x7];                                      // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Health_Sweep;                                      // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Generic_C*                  GC_Target_Pawn;                                    // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GC_Generic_AdrenalineRush_PeriodicHeal(int32 EntryPoint);
@@ -52,16 +51,16 @@ public:
 		return GetDefaultObjImpl<AGC_Generic_AdrenalineRush_PeriodicHeal_C>();
 	}
 };
-static_assert(alignof(AGC_Generic_AdrenalineRush_PeriodicHeal_C) == 0x000010, "Wrong alignment on AGC_Generic_AdrenalineRush_PeriodicHeal_C");
-static_assert(sizeof(AGC_Generic_AdrenalineRush_PeriodicHeal_C) == 0x000400, "Wrong size on AGC_Generic_AdrenalineRush_PeriodicHeal_C");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, UberGraphFrame) == 0x0003C0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, HealVFX) == 0x0003C8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::HealVFX' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, DefaultSceneRoot) == 0x0003D0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25) == 0x0003D8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25) == 0x0003DC, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25) == 0x0003E0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep) == 0x0003E8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, GC_Target_Pawn) == 0x0003F0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::GC_Target_Pawn' has a wrong offset!");
+static_assert(alignof(AGC_Generic_AdrenalineRush_PeriodicHeal_C) == 0x000008, "Wrong alignment on AGC_Generic_AdrenalineRush_PeriodicHeal_C");
+static_assert(sizeof(AGC_Generic_AdrenalineRush_PeriodicHeal_C) == 0x0003D0, "Wrong size on AGC_Generic_AdrenalineRush_PeriodicHeal_C");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, UberGraphFrame) == 0x000398, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, HealVFX) == 0x0003A0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::HealVFX' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, DefaultSceneRoot) == 0x0003A8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25) == 0x0003B0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep_SafetyOpacity_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25) == 0x0003B4, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep_Sweep_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25) == 0x0003B8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep__Direction_3240057E4D088EF0898241BE4DC90C25' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, Health_Sweep) == 0x0003C0, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::Health_Sweep' has a wrong offset!");
+static_assert(offsetof(AGC_Generic_AdrenalineRush_PeriodicHeal_C, GC_Target_Pawn) == 0x0003C8, "Member 'AGC_Generic_AdrenalineRush_PeriodicHeal_C::GC_Target_Pawn' has a wrong offset!");
 
 }
 

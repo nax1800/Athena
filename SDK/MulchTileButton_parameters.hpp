@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -78,36 +77,6 @@ public:
 static_assert(alignof(MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong alignment on MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
 static_assert(sizeof(MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong size on MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
 static_assert(offsetof(MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature, bIsOpen) == 0x000000, "Member 'MulchTileButton_C_BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature::bIsOpen' has a wrong offset!");
-
-// Function MulchTileButton.MulchTileButton_C.UpdateInputActionWrapperVisibility
-// 0x0018 (0x0018 - 0x0000)
-struct MulchTileButton_C_UpdateInputActionWrapperVisibility final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOpen_ReturnValue;                       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(MulchTileButton_C_UpdateInputActionWrapperVisibility) == 0x000008, "Wrong alignment on MulchTileButton_C_UpdateInputActionWrapperVisibility");
-static_assert(sizeof(MulchTileButton_C_UpdateInputActionWrapperVisibility) == 0x000018, "Wrong size on MulchTileButton_C_UpdateInputActionWrapperVisibility");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, Temp_bool_Variable) == 0x000000, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, Temp_byte_Variable) == 0x000001, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, Temp_byte_Variable1) == 0x000002, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_IsOpen_ReturnValue) == 0x000011, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_IsOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000013, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000014, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MulchTileButton_C_UpdateInputActionWrapperVisibility, K2Node_Select_Default) == 0x000015, "Member 'MulchTileButton_C_UpdateInputActionWrapperVisibility::K2Node_Select_Default' has a wrong offset!");
 
 }
 

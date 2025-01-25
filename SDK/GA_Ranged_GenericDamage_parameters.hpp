@@ -47,7 +47,7 @@ public:
 	class AFortWeapon*                            CallFunc_GetCurrentSourceWeapon_ReturnValue;       // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0120(0x00A8)()
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Ranged_GenericDamage_C_GetEventData) == 0x000008, "Wrong alignment on GA_Ranged_GenericDamage_C_GetEventData");
@@ -64,7 +64,7 @@ static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_
 static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_GetCurrentSourceWeapon_ReturnValue) == 0x000118, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_GetCurrentSourceWeapon_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, K2Node_MakeStruct_GameplayEventData) == 0x000120, "Member 'GA_Ranged_GenericDamage_C_GetEventData::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_ReturnValue1) == 0x0001C8, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_ReturnValue12) == 0x0001C9, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_ReturnValue2) == 0x0001C9, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_BooleanAND_ReturnValue) == 0x0001CA, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }

@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CommonUI_classes.hpp"
 
@@ -18,20 +20,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LobbyPlayerPadBottom.LobbyPlayerPadBottom_C
-// 0x0218 (0x0430 - 0x0218)
+// 0x0250 (0x0460 - 0x0210)
 class ULobbyPlayerPadBottom_C final : public UCommonUserWidget
 {
 public:
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 BattlePassBadge;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BattlePassBoostActiveIcon;                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BattlePassSelfXpGainLine;                          // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    Team_Member_Info;                                  // 0x0230(0x01F8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          Is_Local_Player;                                   // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Is_Friend;                                         // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UCommonTextBlock*                       BonusXPEvent;                                      // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HB_BattlePassXPPercentage;                         // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    Team_Member_Info;                                  // 0x0248(0x01F8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          Is_Local_Player;                                   // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Is_Friend;                                         // 0x0441(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_442[0x6];                                      // 0x0442(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BonusEventXpDisplayTitle;                          // 0x0448(0x0018)(Edit, BlueprintVisible)
 
 public:
-	void Refresh();
+	void ExecuteUbergraph_LobbyPlayerPadBottom(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 	void Set_Team_Member_Info(const struct FFortTeamMemberInfo& New_Team_Member_Info);
+	void Refresh();
+	void GetBattlePassInfo(int32* BattlePassSelfXpBoost, int32* BattlePassFriendXpBoost, bool* HasBattlePass);
+	void UpdateIsFriendAndLocal();
+	int32 GetBonusXPValue();
+	void UpdateHotfixableBonusEventTitle();
 
 public:
 	static class UClass* StaticClass()
@@ -44,13 +59,18 @@ public:
 	}
 };
 static_assert(alignof(ULobbyPlayerPadBottom_C) == 0x000008, "Wrong alignment on ULobbyPlayerPadBottom_C");
-static_assert(sizeof(ULobbyPlayerPadBottom_C) == 0x000430, "Wrong size on ULobbyPlayerPadBottom_C");
+static_assert(sizeof(ULobbyPlayerPadBottom_C) == 0x000460, "Wrong size on ULobbyPlayerPadBottom_C");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, UberGraphFrame) == 0x000210, "Member 'ULobbyPlayerPadBottom_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULobbyPlayerPadBottom_C, BattlePassBadge) == 0x000218, "Member 'ULobbyPlayerPadBottom_C::BattlePassBadge' has a wrong offset!");
 static_assert(offsetof(ULobbyPlayerPadBottom_C, BattlePassBoostActiveIcon) == 0x000220, "Member 'ULobbyPlayerPadBottom_C::BattlePassBoostActiveIcon' has a wrong offset!");
 static_assert(offsetof(ULobbyPlayerPadBottom_C, BattlePassSelfXpGainLine) == 0x000228, "Member 'ULobbyPlayerPadBottom_C::BattlePassSelfXpGainLine' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadBottom_C, Team_Member_Info) == 0x000230, "Member 'ULobbyPlayerPadBottom_C::Team_Member_Info' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadBottom_C, Is_Local_Player) == 0x000428, "Member 'ULobbyPlayerPadBottom_C::Is_Local_Player' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadBottom_C, Is_Friend) == 0x000429, "Member 'ULobbyPlayerPadBottom_C::Is_Friend' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, BonusXPEvent) == 0x000230, "Member 'ULobbyPlayerPadBottom_C::BonusXPEvent' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, HB_BattlePassXPPercentage) == 0x000238, "Member 'ULobbyPlayerPadBottom_C::HB_BattlePassXPPercentage' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, Image_0) == 0x000240, "Member 'ULobbyPlayerPadBottom_C::Image_0' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, Team_Member_Info) == 0x000248, "Member 'ULobbyPlayerPadBottom_C::Team_Member_Info' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, Is_Local_Player) == 0x000440, "Member 'ULobbyPlayerPadBottom_C::Is_Local_Player' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, Is_Friend) == 0x000441, "Member 'ULobbyPlayerPadBottom_C::Is_Friend' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadBottom_C, BonusEventXpDisplayTitle) == 0x000448, "Member 'ULobbyPlayerPadBottom_C::BonusEventXpDisplayTitle' has a wrong offset!");
 
 }
 

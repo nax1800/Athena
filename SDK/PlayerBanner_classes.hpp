@@ -10,34 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerBanner.PlayerBanner_C
-// 0x0088 (0x02D8 - 0x0250)
+// 0x0088 (0x02D0 - 0x0248)
 class UPlayerBanner_C final : public UFortAccountWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 BannerImage;                                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLoadGuard*                       LoadGuard;                                         // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SurroundImage;                                     // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLoadGuard*                       SurroundLoadGuard;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bUseLargeTexture;                                  // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       OwnerNetID;                                        // 0x0280(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class FName                                   CurrentBannerColorId;                              // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bShouldUseIconRepresentation;                      // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CurrentBannerIconId;                               // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SurroundEnabled;                                   // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInstanceConstant*>      BannerSurroundMats;                                // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 BannerImage;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLoadGuard*                       LoadGuard;                                         // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SurroundImage;                                     // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLoadGuard*                       SurroundLoadGuard;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bUseLargeTexture;                                  // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       OwnerNetID;                                        // 0x0278(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class FName                                   CurrentBannerColorId;                              // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShouldUseIconRepresentation;                      // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CurrentBannerIconId;                               // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SurroundEnabled;                                   // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceConstant*>      BannerSurroundMats;                                // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_PlayerBanner(int32 EntryPoint);
@@ -71,19 +71,19 @@ public:
 	}
 };
 static_assert(alignof(UPlayerBanner_C) == 0x000008, "Wrong alignment on UPlayerBanner_C");
-static_assert(sizeof(UPlayerBanner_C) == 0x0002D8, "Wrong size on UPlayerBanner_C");
-static_assert(offsetof(UPlayerBanner_C, UberGraphFrame) == 0x000250, "Member 'UPlayerBanner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, BannerImage) == 0x000258, "Member 'UPlayerBanner_C::BannerImage' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, LoadGuard) == 0x000260, "Member 'UPlayerBanner_C::LoadGuard' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundImage) == 0x000268, "Member 'UPlayerBanner_C::SurroundImage' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundLoadGuard) == 0x000270, "Member 'UPlayerBanner_C::SurroundLoadGuard' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bUseLargeTexture) == 0x000278, "Member 'UPlayerBanner_C::bUseLargeTexture' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, OwnerNetID) == 0x000280, "Member 'UPlayerBanner_C::OwnerNetID' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerColorId) == 0x0002A8, "Member 'UPlayerBanner_C::CurrentBannerColorId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bShouldUseIconRepresentation) == 0x0002B0, "Member 'UPlayerBanner_C::bShouldUseIconRepresentation' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerIconId) == 0x0002B8, "Member 'UPlayerBanner_C::CurrentBannerIconId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundEnabled) == 0x0002C0, "Member 'UPlayerBanner_C::SurroundEnabled' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, BannerSurroundMats) == 0x0002C8, "Member 'UPlayerBanner_C::BannerSurroundMats' has a wrong offset!");
+static_assert(sizeof(UPlayerBanner_C) == 0x0002D0, "Wrong size on UPlayerBanner_C");
+static_assert(offsetof(UPlayerBanner_C, UberGraphFrame) == 0x000248, "Member 'UPlayerBanner_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, BannerImage) == 0x000250, "Member 'UPlayerBanner_C::BannerImage' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, LoadGuard) == 0x000258, "Member 'UPlayerBanner_C::LoadGuard' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, SurroundImage) == 0x000260, "Member 'UPlayerBanner_C::SurroundImage' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, SurroundLoadGuard) == 0x000268, "Member 'UPlayerBanner_C::SurroundLoadGuard' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, bUseLargeTexture) == 0x000270, "Member 'UPlayerBanner_C::bUseLargeTexture' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, OwnerNetID) == 0x000278, "Member 'UPlayerBanner_C::OwnerNetID' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, CurrentBannerColorId) == 0x0002A0, "Member 'UPlayerBanner_C::CurrentBannerColorId' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, bShouldUseIconRepresentation) == 0x0002A8, "Member 'UPlayerBanner_C::bShouldUseIconRepresentation' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, CurrentBannerIconId) == 0x0002B0, "Member 'UPlayerBanner_C::CurrentBannerIconId' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, SurroundEnabled) == 0x0002B8, "Member 'UPlayerBanner_C::SurroundEnabled' has a wrong offset!");
+static_assert(offsetof(UPlayerBanner_C, BannerSurroundMats) == 0x0002C0, "Member 'UPlayerBanner_C::BannerSurroundMats' has a wrong offset!");
 
 }
 

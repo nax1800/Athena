@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -73,21 +73,21 @@ public:
 	struct FLinearColor                           BaseColor;                                         // 0x00F0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable;                               // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable1;                              // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12;                             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuffState                                Temp_byte_Variable;                                // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuffState                                Temp_byte_Variable1;                               // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11A[0x6];                                      // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortComparisonType                           Temp_byte_Variable12;                              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortComparisonType                           Temp_byte_Variable2;                               // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_TextText_ReturnValue;            // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_14B[0x1];                                      // 0x014B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select1_Default;                            // 0x014C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0160(0x0028)()
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x0188(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0188(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(StatsListItemWIdget_C_UpdateColors) == 0x000008, "Wrong alignment on StatsListItemWIdget_C_UpdateColors");
 static_assert(sizeof(StatsListItemWIdget_C_UpdateColors) == 0x000198, "Wrong size on StatsListItemWIdget_C_UpdateColors");
@@ -97,18 +97,18 @@ static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, BuffColor) == 0x0000E
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, BaseColor) == 0x0000F0, "Member 'StatsListItemWIdget_C_UpdateColors::BaseColor' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_class_Variable) == 0x000100, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_class_Variable1) == 0x000108, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_class_Variable12) == 0x000110, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_class_Variable12' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_class_Variable2) == 0x000110, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_class_Variable2' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_byte_Variable) == 0x000118, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_byte_Variable1) == 0x000119, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_Select_Default) == 0x000120, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, CallFunc_Get_Base___Buff_Colors_Base) == 0x000128, "Member 'StatsListItemWIdget_C_UpdateColors::CallFunc_Get_Base___Buff_Colors_Base' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, CallFunc_Get_Base___Buff_Colors_Buff) == 0x000138, "Member 'StatsListItemWIdget_C_UpdateColors::CallFunc_Get_Base___Buff_Colors_Buff' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_byte_Variable12) == 0x000148, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, Temp_byte_Variable2) == 0x000148, "Member 'StatsListItemWIdget_C_UpdateColors::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_SwitchEnum_CmpSuccess) == 0x000149, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, CallFunc_NotEqual_TextText_ReturnValue) == 0x00014A, "Member 'StatsListItemWIdget_C_UpdateColors::CallFunc_NotEqual_TextText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_Select1_Default) == 0x00014C, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_MakeStruct_SlateColor) == 0x000160, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_Select12_Default) == 0x000188, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateColors, K2Node_Select2_Default) == 0x000188, "Member 'StatsListItemWIdget_C_UpdateColors::K2Node_Select2_Default' has a wrong offset!");
 
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateType
 // 0x0080 (0x0080 - 0x0000)
@@ -161,29 +161,29 @@ public:
 	struct FFortDisplayAttribute                  LocalCurrentAttribute;                             // 0x0070(0x0070)(Edit, BlueprintVisible)
 	float                                         Temp_float_Variable;                               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable1;                              // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable12;                             // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable2;                              // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortClampState                               Temp_byte_Variable;                                // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x00ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x00EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x00EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortComparisonType                           Temp_byte_Variable1234;                            // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x00EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortComparisonType                           Temp_byte_Variable4;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable123;                            // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable1234;                           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable12345;                          // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable123456;                         // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortComparisonType                           Temp_byte_Variable12345;                           // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable3;                              // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable4;                              // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable5;                              // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable6;                              // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortComparisonType                           Temp_byte_Variable5;                               // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345678;                        // 0x010E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789;                       // 0x010F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable8;                               // 0x010E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable9;                               // 0x010F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortClampState                               Temp_byte_Variable12345678910;                     // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortClampState                               Temp_byte_Variable10;                              // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_113[0x1];                                      // 0x0113(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select123_Default;                          // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select3_Default;                            // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(StatsListItemWIdget_C_UpdateBuffArrows) == 0x000008, "Wrong alignment on StatsListItemWIdget_C_UpdateBuffArrows");
 static_assert(sizeof(StatsListItemWIdget_C_UpdateBuffArrows) == 0x000118, "Wrong size on StatsListItemWIdget_C_UpdateBuffArrows");
@@ -191,26 +191,26 @@ static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, CurrentAttribute)
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, LocalCurrentAttribute) == 0x000070, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::LocalCurrentAttribute' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable) == 0x0000E0, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable1) == 0x0000E4, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable1' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable12) == 0x0000E8, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable12' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable2) == 0x0000E8, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable2' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable) == 0x0000EC, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable1) == 0x0000ED, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable12) == 0x0000EE, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable123) == 0x0000EF, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable1234) == 0x0000F0, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable123) == 0x0000F4, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable123' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable1234) == 0x0000F8, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable1234' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable12345) == 0x0000FC, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable12345' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable123456) == 0x000100, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable123456' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable12345) == 0x000104, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable2) == 0x0000EE, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable3) == 0x0000EF, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable4) == 0x0000F0, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable3) == 0x0000F4, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable3' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable4) == 0x0000F8, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable4' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable5) == 0x0000FC, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable5' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_float_Variable6) == 0x000100, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_float_Variable6' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable5) == 0x000104, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable5' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select_Default) == 0x000108, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable123456) == 0x00010C, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable1234567) == 0x00010D, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable12345678) == 0x00010E, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable123456789) == 0x00010F, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable123456789' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable6) == 0x00010C, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable7) == 0x00010D, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable8) == 0x00010E, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable9) == 0x00010F, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable9' has a wrong offset!");
 static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select1_Default) == 0x000110, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select12_Default) == 0x000111, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable12345678910) == 0x000112, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select123_Default) == 0x000114, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select2_Default) == 0x000111, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, Temp_byte_Variable10) == 0x000112, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::Temp_byte_Variable10' has a wrong offset!");
+static_assert(offsetof(StatsListItemWIdget_C_UpdateBuffArrows, K2Node_Select3_Default) == 0x000114, "Member 'StatsListItemWIdget_C_UpdateBuffArrows::K2Node_Select3_Default' has a wrong offset!");
 
 // Function StatsListItemWIdget.StatsListItemWIdget_C.SetStatIcon
 // 0x0088 (0x0088 - 0x0000)

@@ -98,14 +98,12 @@ void UPlayerEmblemAndXp_C::Refresh(struct FFortPublicAccountInfo& FortPublicAcco
 // Parameters:
 // class UWidget*                          Container                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTextBlock*                       RewardText                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortMultiSizeItemCard*           RewardItemCard                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UImage*                           RewardImageWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonTextBlock*                 RewardCountTextBlock                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UDailyQuestRewardInfo_C*          RewardInfoWidget                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    HasReward                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortItemInstanceQuantityPair    RewardItem                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FFortItemQuantityPair            RewardItem                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                                   LevelRewarded                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPlayerEmblemAndXp_C::SetupReward(class UWidget* Container, class UTextBlock* RewardText, class UFortMultiSizeItemCard* RewardItemCard, class UImage* RewardImageWidget, class UCommonTextBlock* RewardCountTextBlock, bool HasReward, const struct FFortItemInstanceQuantityPair& RewardItem, int32 LevelRewarded)
+void UPlayerEmblemAndXp_C::SetupReward(class UWidget* Container, class UTextBlock* RewardText, class UDailyQuestRewardInfo_C* RewardInfoWidget, bool HasReward, const struct FFortItemQuantityPair& RewardItem, int32 LevelRewarded)
 {
 	static class UFunction* Func = nullptr;
 
@@ -116,9 +114,7 @@ void UPlayerEmblemAndXp_C::SetupReward(class UWidget* Container, class UTextBloc
 
 	Parms.Container = Container;
 	Parms.RewardText = RewardText;
-	Parms.RewardItemCard = RewardItemCard;
-	Parms.RewardImageWidget = RewardImageWidget;
-	Parms.RewardCountTextBlock = RewardCountTextBlock;
+	Parms.RewardInfoWidget = RewardInfoWidget;
 	Parms.HasReward = HasReward;
 	Parms.RewardItem = std::move(RewardItem);
 	Parms.LevelRewarded = LevelRewarded;

@@ -27,12 +27,12 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12345;                           // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123456;                          // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234567;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable5;                               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable6;                               // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable7;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EMovementMode                                 Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetBlackboardValueAsActor_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,12 +53,12 @@ static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Controlled
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, ReturnValue) == 0x000010, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable) == 0x000011, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable1) == 0x000012, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable12) == 0x000013, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable123) == 0x000014, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable1234) == 0x000015, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable12345) == 0x000016, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable123456) == 0x000017, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable123456' has a wrong offset!");
-static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable1234567) == 0x000018, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable1234567' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable2) == 0x000013, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable3) == 0x000014, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable4) == 0x000015, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable5) == 0x000016, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable5' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable6) == 0x000017, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_bool_Variable7) == 0x000018, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_bool_Variable7' has a wrong offset!");
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, Temp_byte_Variable) == 0x000019, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, CallFunc_GetBlackboardValueAsActor_ReturnValue) == 0x000020, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::CallFunc_GetBlackboardValueAsActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IsActorAirbornePawn_C_PerformConditionCheckAI, K2Node_DynamicCast_AsFort_Pawn) == 0x000028, "Member 'IsActorAirbornePawn_C_PerformConditionCheckAI::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");

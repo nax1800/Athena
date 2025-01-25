@@ -22,7 +22,7 @@ namespace SDK::Params
 struct DailyQuestWidget_C_SetQuestItem final
 {
 public:
-	class UFortQuestItem*                         Param_Quest;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortQuestItem*                         Quest_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -43,7 +43,7 @@ public:
 };
 static_assert(alignof(DailyQuestWidget_C_SetQuestItem) == 0x000008, "Wrong alignment on DailyQuestWidget_C_SetQuestItem");
 static_assert(sizeof(DailyQuestWidget_C_SetQuestItem) == 0x0000A8, "Wrong size on DailyQuestWidget_C_SetQuestItem");
-static_assert(offsetof(DailyQuestWidget_C_SetQuestItem, Param_Quest) == 0x000000, "Member 'DailyQuestWidget_C_SetQuestItem::Param_Quest' has a wrong offset!");
+static_assert(offsetof(DailyQuestWidget_C_SetQuestItem, Quest_0) == 0x000000, "Member 'DailyQuestWidget_C_SetQuestItem::Quest_0' has a wrong offset!");
 static_assert(offsetof(DailyQuestWidget_C_SetQuestItem, Temp_byte_Variable) == 0x000008, "Member 'DailyQuestWidget_C_SetQuestItem::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DailyQuestWidget_C_SetQuestItem, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'DailyQuestWidget_C_SetQuestItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyQuestWidget_C_SetQuestItem, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000010, "Member 'DailyQuestWidget_C_SetQuestItem::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");

@@ -27,7 +27,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetTurnTransitionMontageSectionNameAndYawRotationRate_MontageSectionName; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,9 +48,9 @@ public:
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetAIAbilityTarget_ReturnValue;           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition) == 0x000008, "Wrong alignment on GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition");
@@ -59,7 +59,7 @@ static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTrans
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000004, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_K2_CommitAbility_ReturnValue) == 0x000040, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_GetTurnTransitionMontageSectionNameAndYawRotationRate_MontageSectionName) == 0x000048, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_GetTurnTransitionMontageSectionNameAndYawRotationRate_MontageSectionName' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_GetTurnTransitionMontageSectionNameAndYawRotationRate_TurnYawRotationRate) == 0x000050, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_GetTurnTransitionMontageSectionNameAndYawRotationRate_TurnYawRotationRate' has a wrong offset!");
@@ -75,8 +75,8 @@ static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTrans
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_DynamicCast_bSuccess1) == 0x0000A0, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_GetAIAbilityTarget_ReturnValue) == 0x0000A8, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_GetAIAbilityTarget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_DynamicCast_AsFort_Pawn) == 0x0000B0, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_DynamicCast_bSuccess12) == 0x0000B8, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate123) == 0x0000C0, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_DynamicCast_bSuccess2) == 0x0000B8, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, K2Node_CreateDelegate_OutputDelegate3) == 0x0000C0, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition, CallFunc_IsValid_ReturnValue1) == 0x0000D0, "Member 'GAB_NPCTurnTransition_C_ExecuteUbergraph_GAB_NPCTurnTransition::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 
 }

@@ -303,9 +303,9 @@ void UResults_TeleportPadPlayer_C::SetIsValidPad()
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsValidPad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bIsValid                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsValid_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UResults_TeleportPadPlayer_C::IsValidPad(bool* Param_bIsValid)
+void UResults_TeleportPadPlayer_C::IsValidPad(bool* bIsValid_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -316,8 +316,8 @@ void UResults_TeleportPadPlayer_C::IsValidPad(bool* Param_bIsValid)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bIsValid != nullptr)
-		*Param_bIsValid = Parms.Param_bIsValid;
+	if (bIsValid_0 != nullptr)
+		*bIsValid_0 = Parms.bIsValid_0;
 }
 
 

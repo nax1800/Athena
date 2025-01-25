@@ -37,37 +37,25 @@ void AB_DualPistol_Athena_C::ExecuteUbergraph_B_DualPistol_Athena(int32 EntryPoi
 }
 
 
-// Function B_DualPistol_Athena.B_DualPistol_Athena_C.OnSetTargeting
-// (Event, Public, BlueprintEvent)
+// Function B_DualPistol_Athena.B_DualPistol_Athena_C.OnPlayWeaponFireFX
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewIsTargeting                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bPersistentFire                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bSecondaryFire                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_DualPistol_Athena_C::OnSetTargeting(bool bNewIsTargeting)
+void AB_DualPistol_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("B_DualPistol_Athena_C", "OnSetTargeting");
+		Func = Class->GetFunction("B_DualPistol_Athena_C", "OnPlayWeaponFireFX");
 
-	Params::B_DualPistol_Athena_C_OnSetTargeting Parms{};
+	Params::B_DualPistol_Athena_C_OnPlayWeaponFireFX Parms{};
 
-	Parms.bNewIsTargeting = bNewIsTargeting;
+	Parms.bPersistentFire = bPersistentFire;
+	Parms.bSecondaryFire = bSecondaryFire;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function B_DualPistol_Athena.B_DualPistol_Athena_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AB_DualPistol_Athena_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_DualPistol_Athena_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

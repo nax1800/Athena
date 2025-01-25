@@ -37,15 +37,15 @@ void UAthenaInventoryFortItemTileButton_C::ExecuteUbergraph_AthenaInventoryFortI
 }
 
 
-// Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.OnSelected
+// Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaInventoryFortItemTileButton_C::OnSelected()
+void UAthenaInventoryFortItemTileButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryFortItemTileButton_C", "OnSelected");
+		Func = Class->GetFunction("AthenaInventoryFortItemTileButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,18 +16,100 @@
 namespace SDK::Params
 {
 
-// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.OnWhileActiveParticleSystemDeactivate
-// 0x00C0 (0x00C0 - 0x0000)
-struct GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate final
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance
+// 0x0130 (0x0130 - 0x0000)
+struct GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance final
 {
 public:
-	class UParticleSystemComponent*               WhileActiveParticleSysComponent;                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_Reverse;                        // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_MyTarget;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_Event_EventType;                            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 K2Node_Event_Parameters;                           // 0x0030(0x00B8)(ConstParm, ContainsInstancedReference)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Ninja_C*                    K2Node_DynamicCast_AsPlayer_Pawn_Ninja;            // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Ninja_C*                    K2Node_DynamicCast_AsPlayer_Pawn_Ninja1;           // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_113[0x1];                                      // 0x0113(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable1;                    // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item1;                          // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate) == 0x000008, "Wrong alignment on GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate");
-static_assert(sizeof(GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate) == 0x0000C0, "Wrong size on GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate");
-static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate, WhileActiveParticleSysComponent) == 0x000000, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate::WhileActiveParticleSysComponent' has a wrong offset!");
-static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate, Parameters) == 0x000008, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate::Parameters' has a wrong offset!");
+static_assert(alignof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance) == 0x000008, "Wrong alignment on GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance");
+static_assert(sizeof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance) == 0x000130, "Wrong size on GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, EntryPoint) == 0x000000, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::EntryPoint' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_CustomEvent_Reverse) == 0x000005, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_CustomEvent_Reverse' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Array_Length_ReturnValue1) == 0x00000C, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_Event_MyTarget) == 0x000020, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_Event_MyTarget' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_Event_EventType) == 0x000028, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_Event_EventType' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_Event_Parameters) == 0x000030, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_Event_Parameters' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Array_Get_Item) == 0x0000E8, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_SwitchEnum_CmpSuccess) == 0x0000F0, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_DynamicCast_AsPlayer_Pawn_Ninja) == 0x0000F8, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_DynamicCast_AsPlayer_Pawn_Ninja' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_IsValid_ReturnValue) == 0x000101, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_DynamicCast_AsPlayer_Pawn_Ninja1) == 0x000108, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_DynamicCast_AsPlayer_Pawn_Ninja1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, K2Node_DynamicCast_bSuccess1) == 0x000110, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_IsValid_ReturnValue1) == 0x000111, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_IsDedicatedServer_ReturnValue1) == 0x000112, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, Temp_int_Array_Index_Variable1) == 0x000114, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::Temp_int_Array_Index_Variable1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Array_Get_Item1) == 0x000118, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, Temp_int_Loop_Counter_Variable1) == 0x000120, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Less_IntInt_ReturnValue1) == 0x000124, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance, CallFunc_Add_IntInt_ReturnValue1) == 0x000128, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.K2_HandleGameplayCue
+// 0x00C8 (0x00C8 - 0x0000)
+struct GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue final
+{
+public:
+	class AActor*                                 MyTarget_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             EventType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+};
+static_assert(alignof(GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue) == 0x000008, "Wrong alignment on GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue");
+static_assert(sizeof(GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue) == 0x0000C8, "Wrong size on GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue, MyTarget_0) == 0x000000, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue::MyTarget_0' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue, EventType) == 0x000008, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue::EventType' has a wrong offset!");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue, Parameters) == 0x000010, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue::Parameters' has a wrong offset!");
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.Shadow Stance Dissolve Timeline
+// 0x0001 (0x0001 - 0x0000)
+struct GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline final
+{
+public:
+	bool                                          Reverse;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline) == 0x000001, "Wrong alignment on GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline");
+static_assert(sizeof(GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline) == 0x000001, "Wrong size on GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline");
+static_assert(offsetof(GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline, Reverse) == 0x000000, "Member 'GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline::Reverse' has a wrong offset!");
 
 }
 

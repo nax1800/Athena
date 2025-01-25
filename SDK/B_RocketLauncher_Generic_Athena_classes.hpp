@@ -18,13 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_RocketLauncher_Generic_Athena.B_RocketLauncher_Generic_Athena_C
-// 0x0010 (0x0E68 - 0x0E58)
+// 0x0010 (0x0F80 - 0x0F70)
 class AB_RocketLauncher_Generic_Athena_C final : public AB_Ranged_Generic_C
 {
 public:
-	uint8                                         Pad_E54[0x4];                                      // 0x0E54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_RocketLauncher_Generic_Athena_C;  // 0x0E58(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               RearMuzzle;                                        // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_RocketLauncher_Generic_Athena_C;  // 0x0F70(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               RearMuzzle;                                        // 0x0F78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_RocketLauncher_Generic_Athena(int32 EntryPoint);
@@ -42,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(AB_RocketLauncher_Generic_Athena_C) == 0x000008, "Wrong alignment on AB_RocketLauncher_Generic_Athena_C");
-static_assert(sizeof(AB_RocketLauncher_Generic_Athena_C) == 0x000E68, "Wrong size on AB_RocketLauncher_Generic_Athena_C");
-static_assert(offsetof(AB_RocketLauncher_Generic_Athena_C, UberGraphFrame_B_RocketLauncher_Generic_Athena_C) == 0x000E58, "Member 'AB_RocketLauncher_Generic_Athena_C::UberGraphFrame_B_RocketLauncher_Generic_Athena_C' has a wrong offset!");
-static_assert(offsetof(AB_RocketLauncher_Generic_Athena_C, RearMuzzle) == 0x000E60, "Member 'AB_RocketLauncher_Generic_Athena_C::RearMuzzle' has a wrong offset!");
+static_assert(sizeof(AB_RocketLauncher_Generic_Athena_C) == 0x000F80, "Wrong size on AB_RocketLauncher_Generic_Athena_C");
+static_assert(offsetof(AB_RocketLauncher_Generic_Athena_C, UberGraphFrame_B_RocketLauncher_Generic_Athena_C) == 0x000F70, "Member 'AB_RocketLauncher_Generic_Athena_C::UberGraphFrame_B_RocketLauncher_Generic_Athena_C' has a wrong offset!");
+static_assert(offsetof(AB_RocketLauncher_Generic_Athena_C, RearMuzzle) == 0x000F78, "Member 'AB_RocketLauncher_Generic_Athena_C::RearMuzzle' has a wrong offset!");
 
 }
 

@@ -10,52 +10,61 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Athena_GasGrenade.B_Prj_Athena_GasGrenade_C
-// 0x0130 (0x0948 - 0x0818)
+// 0x0208 (0x08D0 - 0x06C8)
 class AB_Prj_Athena_GasGrenade_C final : public AFortProjectileBase
 {
 public:
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UCapsuleComponent*                      OverlapCapsule;                                    // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URotatingMovementComponent*             RotatingMovement;                                  // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               SmokeTrail_Particle;                               // 0x0838(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh;                                              // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        GrenadeFuse_AudioComponent;                        // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Effect_Distance;                                   // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Cue_DistantSound;                                  // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Cue_CloseSound;                                    // 0x0860(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ExplosionRadius;                                   // 0x0868(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentNumberOfBounces;                            // 0x086C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Cue_GrenadeFuseSound;                              // 0x0870(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BouncePawnAgainstPawnGravityScale;                 // 0x0878(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_87C[0x4];                                      // 0x087C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceFeedbackEffect*                   ExplosionForceFeedbackNear;                        // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UForceFeedbackEffect*                   ExplosionForceFeedbackFar;                         // 0x0888(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Cue_Bounce;                                        // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 AOE_DoT;                                           // 0x0898(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortGameplayEffectContainerSpec       AOE_DoT_ContainerSpec;                             // 0x08A0(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         DoT_TickRate;                                      // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_924[0x4];                                      // 0x0924(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectSpecHandle              Gas_AOE_DoT_Spec;                                  // 0x0928(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	float                                         GasDuration;                                       // 0x0940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C8(0x0008)(Transient, DuplicateTransient)
+	class UPostProcessComponent*                  PostProcessComponent;                              // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       PostProcessParentShape;                            // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SmokeVolumeMesh;                                   // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_GasGrenade_InnerSmoke;                           // 0x06E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        AudioReleaseSmoke;                                 // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      OverlapCapsule;                                    // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URotatingMovementComponent*             RotatingMovement;                                  // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               SmokeTrail_Particle;                               // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh;                                              // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        GrenadeFuse_AudioComponent;                        // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Effect_Distance;                                   // 0x0720(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         FadeSmokeTL_Float_2626207A4A43AC642A80FF89AC59D028; // 0x0728(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            FadeSmokeTL__Direction_2626207A4A43AC642A80FF89AC59D028; // 0x072C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72D[0x3];                                      // 0x072D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     FadeSmokeTL;                                       // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Cue_CloseSound;                                    // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DoT_TickRate;                                      // 0x0740(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasDuration;                                       // 0x0744(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasGrenadeLifespan;                                // 0x0748(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasDelayBeforeFadeIn;                              // 0x074C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasFadeOutTime;                                    // 0x0750(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasFadeInTime;                                     // 0x0754(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               SmokeVolumeMeshMID;                                // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GasGrenadeRadius;                                  // 0x0760(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_764[0x4];                                      // 0x0764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        Audio_ReleaseSmoke;                                // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CurrentTargetArray;                                // 0x0770(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AActor*>                         PreviousTargetArray;                               // 0x0780(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FGameplayEffectQuery                   NewVar_0;                                          // 0x0790(0x0138)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	float                                         SyncedDelay;                                       // 0x08C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Prj_Athena_GasGrenade(int32 EntryPoint);
-	void OnStop(const struct FHitResult& Hit);
-	void OnBounce(const struct FHitResult& Hit);
-	void Stop_Rotation();
+	void SyncedTimer();
+	void FadeOut();
+	void FadeIn();
 	void DamageTick();
-	void BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void Stop_Rotation();
+	void OnStop(const struct FHitResult& Hit);
+	void FadeSmokeTL__UpdateFunc();
+	void FadeSmokeTL__FinishedFunc();
 	void UserConstructionScript();
 
 public:
@@ -69,28 +78,36 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Athena_GasGrenade_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_GasGrenade_C");
-static_assert(sizeof(AB_Prj_Athena_GasGrenade_C) == 0x000948, "Wrong size on AB_Prj_Athena_GasGrenade_C");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, UberGraphFrame) == 0x000820, "Member 'AB_Prj_Athena_GasGrenade_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, OverlapCapsule) == 0x000828, "Member 'AB_Prj_Athena_GasGrenade_C::OverlapCapsule' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, RotatingMovement) == 0x000830, "Member 'AB_Prj_Athena_GasGrenade_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, SmokeTrail_Particle) == 0x000838, "Member 'AB_Prj_Athena_GasGrenade_C::SmokeTrail_Particle' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Mesh) == 0x000840, "Member 'AB_Prj_Athena_GasGrenade_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GrenadeFuse_AudioComponent) == 0x000848, "Member 'AB_Prj_Athena_GasGrenade_C::GrenadeFuse_AudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Effect_Distance) == 0x000850, "Member 'AB_Prj_Athena_GasGrenade_C::Effect_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Cue_DistantSound) == 0x000858, "Member 'AB_Prj_Athena_GasGrenade_C::Cue_DistantSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Cue_CloseSound) == 0x000860, "Member 'AB_Prj_Athena_GasGrenade_C::Cue_CloseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, ExplosionRadius) == 0x000868, "Member 'AB_Prj_Athena_GasGrenade_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, CurrentNumberOfBounces) == 0x00086C, "Member 'AB_Prj_Athena_GasGrenade_C::CurrentNumberOfBounces' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Cue_GrenadeFuseSound) == 0x000870, "Member 'AB_Prj_Athena_GasGrenade_C::Cue_GrenadeFuseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, BouncePawnAgainstPawnGravityScale) == 0x000878, "Member 'AB_Prj_Athena_GasGrenade_C::BouncePawnAgainstPawnGravityScale' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, ExplosionForceFeedbackNear) == 0x000880, "Member 'AB_Prj_Athena_GasGrenade_C::ExplosionForceFeedbackNear' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, ExplosionForceFeedbackFar) == 0x000888, "Member 'AB_Prj_Athena_GasGrenade_C::ExplosionForceFeedbackFar' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Cue_Bounce) == 0x000890, "Member 'AB_Prj_Athena_GasGrenade_C::Cue_Bounce' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, AOE_DoT) == 0x000898, "Member 'AB_Prj_Athena_GasGrenade_C::AOE_DoT' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, AOE_DoT_ContainerSpec) == 0x0008A0, "Member 'AB_Prj_Athena_GasGrenade_C::AOE_DoT_ContainerSpec' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, DoT_TickRate) == 0x000920, "Member 'AB_Prj_Athena_GasGrenade_C::DoT_TickRate' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Gas_AOE_DoT_Spec) == 0x000928, "Member 'AB_Prj_Athena_GasGrenade_C::Gas_AOE_DoT_Spec' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasDuration) == 0x000940, "Member 'AB_Prj_Athena_GasGrenade_C::GasDuration' has a wrong offset!");
+static_assert(sizeof(AB_Prj_Athena_GasGrenade_C) == 0x0008D0, "Wrong size on AB_Prj_Athena_GasGrenade_C");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, UberGraphFrame) == 0x0006C8, "Member 'AB_Prj_Athena_GasGrenade_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, PostProcessComponent) == 0x0006D0, "Member 'AB_Prj_Athena_GasGrenade_C::PostProcessComponent' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, PostProcessParentShape) == 0x0006D8, "Member 'AB_Prj_Athena_GasGrenade_C::PostProcessParentShape' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, SmokeVolumeMesh) == 0x0006E0, "Member 'AB_Prj_Athena_GasGrenade_C::SmokeVolumeMesh' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, P_GasGrenade_InnerSmoke) == 0x0006E8, "Member 'AB_Prj_Athena_GasGrenade_C::P_GasGrenade_InnerSmoke' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, AudioReleaseSmoke) == 0x0006F0, "Member 'AB_Prj_Athena_GasGrenade_C::AudioReleaseSmoke' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, OverlapCapsule) == 0x0006F8, "Member 'AB_Prj_Athena_GasGrenade_C::OverlapCapsule' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, RotatingMovement) == 0x000700, "Member 'AB_Prj_Athena_GasGrenade_C::RotatingMovement' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, SmokeTrail_Particle) == 0x000708, "Member 'AB_Prj_Athena_GasGrenade_C::SmokeTrail_Particle' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Mesh) == 0x000710, "Member 'AB_Prj_Athena_GasGrenade_C::Mesh' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GrenadeFuse_AudioComponent) == 0x000718, "Member 'AB_Prj_Athena_GasGrenade_C::GrenadeFuse_AudioComponent' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Effect_Distance) == 0x000720, "Member 'AB_Prj_Athena_GasGrenade_C::Effect_Distance' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, FadeSmokeTL_Float_2626207A4A43AC642A80FF89AC59D028) == 0x000728, "Member 'AB_Prj_Athena_GasGrenade_C::FadeSmokeTL_Float_2626207A4A43AC642A80FF89AC59D028' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, FadeSmokeTL__Direction_2626207A4A43AC642A80FF89AC59D028) == 0x00072C, "Member 'AB_Prj_Athena_GasGrenade_C::FadeSmokeTL__Direction_2626207A4A43AC642A80FF89AC59D028' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, FadeSmokeTL) == 0x000730, "Member 'AB_Prj_Athena_GasGrenade_C::FadeSmokeTL' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Cue_CloseSound) == 0x000738, "Member 'AB_Prj_Athena_GasGrenade_C::Cue_CloseSound' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, DoT_TickRate) == 0x000740, "Member 'AB_Prj_Athena_GasGrenade_C::DoT_TickRate' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasDuration) == 0x000744, "Member 'AB_Prj_Athena_GasGrenade_C::GasDuration' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasGrenadeLifespan) == 0x000748, "Member 'AB_Prj_Athena_GasGrenade_C::GasGrenadeLifespan' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasDelayBeforeFadeIn) == 0x00074C, "Member 'AB_Prj_Athena_GasGrenade_C::GasDelayBeforeFadeIn' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasFadeOutTime) == 0x000750, "Member 'AB_Prj_Athena_GasGrenade_C::GasFadeOutTime' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasFadeInTime) == 0x000754, "Member 'AB_Prj_Athena_GasGrenade_C::GasFadeInTime' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, SmokeVolumeMeshMID) == 0x000758, "Member 'AB_Prj_Athena_GasGrenade_C::SmokeVolumeMeshMID' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, GasGrenadeRadius) == 0x000760, "Member 'AB_Prj_Athena_GasGrenade_C::GasGrenadeRadius' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, Audio_ReleaseSmoke) == 0x000768, "Member 'AB_Prj_Athena_GasGrenade_C::Audio_ReleaseSmoke' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, CurrentTargetArray) == 0x000770, "Member 'AB_Prj_Athena_GasGrenade_C::CurrentTargetArray' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, PreviousTargetArray) == 0x000780, "Member 'AB_Prj_Athena_GasGrenade_C::PreviousTargetArray' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, NewVar_0) == 0x000790, "Member 'AB_Prj_Athena_GasGrenade_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_GasGrenade_C, SyncedDelay) == 0x0008C8, "Member 'AB_Prj_Athena_GasGrenade_C::SyncedDelay' has a wrong offset!");
 
 }
 

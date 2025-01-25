@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerPortalHorizontal.GAB_TakerPortalHorizontal_C
-// 0x0000 (0x0B80 - 0x0B80)
+// 0x0000 (0x0990 - 0x0990)
 class UGAB_TakerPortalHorizontal_C final : public UGAB_TakerPortalBase_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerPortalHorizontal_C) == 0x000008, "Wrong alignment on UGAB_TakerPortalHorizontal_C");
-static_assert(sizeof(UGAB_TakerPortalHorizontal_C) == 0x000B80, "Wrong size on UGAB_TakerPortalHorizontal_C");
+static_assert(sizeof(UGAB_TakerPortalHorizontal_C) == 0x000990, "Wrong size on UGAB_TakerPortalHorizontal_C");
 
 }
 

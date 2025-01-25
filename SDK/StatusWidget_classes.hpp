@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatusWidget.StatusWidget_C
-// 0x0000 (0x0240 - 0x0240)
+// 0x0000 (0x0320 - 0x0320)
 class UStatusWidget_C final : public UFortLoginStatus
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UStatusWidget_C) == 0x000008, "Wrong alignment on UStatusWidget_C");
-static_assert(sizeof(UStatusWidget_C) == 0x000240, "Wrong size on UStatusWidget_C");
+static_assert(sizeof(UStatusWidget_C) == 0x000320, "Wrong size on UStatusWidget_C");
 
 }
 

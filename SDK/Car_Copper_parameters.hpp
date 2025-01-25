@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,8 +28,8 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue1;     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScalarParameterValue_ReturnValue12;    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScalarParameterValue_ReturnValue123;   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetScalarParameterValue_ReturnValue2;     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetScalarParameterValue_ReturnValue3;     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -70,8 +70,8 @@ public:
 	float                                         CallFunc_BreakVector_Z;                            // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0148(0x0008)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0150(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,15 +83,15 @@ public:
 	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0184(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0190(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_Damage12;                             // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_Damage2;                              // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags12;                         // 0x01A0(0x0020)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum12;                           // 0x01C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags2;                          // 0x01A0(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum2;                            // 0x01C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_Event_HitInfo12;                            // 0x01D0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              K2Node_Event_InstigatedBy12;                       // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_DamageCauser12;                       // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext12;                      // 0x0268(0x0018)()
+	struct FHitResult                             K2Node_Event_HitInfo2;                             // 0x01D0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              K2Node_Event_InstigatedBy2;                        // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_DamageCauser2;                        // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext2;                       // 0x0268(0x0018)()
 	float                                         K2Node_Event_Damage1;                              // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  K2Node_Event_DamageTags1;                          // 0x0288(0x0020)(ConstParm)
@@ -105,7 +105,7 @@ public:
 	float                                         CallFunc_GetBuildingHealthPercentage_ReturnValue;  // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue12;                // 0x0380(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0380(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable1;                      // 0x0389(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x038A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -128,12 +128,12 @@ public:
 	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x0480(0x0018)()
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0499(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x049A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x049A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49B[0x5];                                      // 0x049B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x04AC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x04AC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4B9[0x3];                                      // 0x04B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortBounceData                        K2Node_Event_Data;                                 // 0x04BC(0x0030)(NoDestructor)
@@ -144,47 +144,47 @@ public:
 	float                                         CallFunc_BreakColor_G1;                            // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B1;                            // 0x0504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A1;                            // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R12;                           // 0x050C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G12;                           // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B12;                           // 0x0514(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A12;                           // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R2;                            // 0x050C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G2;                            // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B2;                            // 0x0514(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A2;                            // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x051C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12;                 // 0x0528(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0528(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0534(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0535(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0535(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_536[0x2];                                      // 0x0536(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakColor_R123;                          // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G123;                          // 0x053C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B123;                          // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A123;                          // 0x0544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R1234;                         // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G1234;                         // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B1234;                         // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A1234;                         // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue123;                // 0x0558(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue1234;               // 0x0564(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R12345;                        // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G12345;                        // 0x0574(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B12345;                        // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A12345;                        // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R123456;                       // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G123456;                       // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B123456;                       // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A123456;                       // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12345;              // 0x0590(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue123456;             // 0x059C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakColor_R3;                            // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G3;                            // 0x053C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B3;                            // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A3;                            // 0x0544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R4;                            // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G4;                            // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B4;                            // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A4;                            // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x0558(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue4;                  // 0x0564(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R5;                            // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G5;                            // 0x0574(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B5;                            // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A5;                            // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R6;                            // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G6;                            // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B6;                            // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A6;                            // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue5;                  // 0x0590(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue6;                  // 0x059C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5A9[0x3];                                      // 0x05A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakColor_R1234567;                      // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G1234567;                      // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B1234567;                      // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A1234567;                      // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R12345678;                     // 0x05BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G12345678;                     // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B12345678;                     // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A12345678;                     // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue1234567;            // 0x05CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12345678;           // 0x05D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R7;                            // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G7;                            // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B7;                            // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A7;                            // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R8;                            // 0x05BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G8;                            // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B8;                            // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A8;                            // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue7;                  // 0x05CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue8;                  // 0x05D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x05E4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue1;       // 0x05F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x05FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -199,104 +199,104 @@ public:
 	float                                         CallFunc_SelectFloat_ReturnValue1;                 // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0624(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1;        // 0x0630(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12;       // 0x063C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue123;      // 0x0648(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1234;     // 0x0654(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12345;    // 0x0660(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x063C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue3;        // 0x0648(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue4;        // 0x0654(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue5;        // 0x0660(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x066C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue1;            // 0x0678(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Temp_struct_Variable;                              // 0x0684(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0690(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_691[0x3];                                      // 0x0691(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                K2Node_Select1_Default;                            // 0x0694(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue12;      // 0x06A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue12;                      // 0x06AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue123;     // 0x06B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12;          // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue123;                     // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue12;                     // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue123;         // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue12;        // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue123;                    // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue12;                // 0x06D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue123;       // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue123456;   // 0x06DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue123;               // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1234567;  // 0x06EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12345678; // 0x06F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue123456789; // 0x0704(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12345678910; // 0x0710(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue12;           // 0x071C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1234567891011; // 0x0728(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue123;          // 0x0734(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue1234;         // 0x0740(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x06A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue2;                       // 0x06AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x06B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue3;                       // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue2;                      // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue3;                      // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue2;                 // 0x06D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue3;         // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue6;        // 0x06DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue3;                 // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue7;        // 0x06EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue8;        // 0x06F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue9;        // 0x0704(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue10;       // 0x0710(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x071C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue11;       // 0x0728(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x0734(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue4;            // 0x0740(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74C[0x4];                                      // 0x074C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0750(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue12345;        // 0x07D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue5;            // 0x07D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7E4[0x4];                                      // 0x07E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x07E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue123456;       // 0x0870(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue1234567;      // 0x087C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult12;     // 0x0888(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult123;    // 0x0910(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue123456789101112; // 0x0998(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue6;            // 0x0870(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue7;            // 0x087C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult2;      // 0x0888(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult3;      // 0x0910(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12;       // 0x0998(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x09A4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable1;                                // 0x09B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x09B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x09C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9C1[0x3];                                      // 0x09C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x09C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x09C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x09C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9C9[0x3];                                      // 0x09C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x09CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue12345678910111213; // 0x09D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue13;       // 0x09D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue1;    // 0x09DC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x09EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x09F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1234;      // 0x09F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x09F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9F2[0x2];                                      // 0x09F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x09F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x09F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x09FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9FD[0x3];                                      // 0x09FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue123456789;          // 0x0A00(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue1234;              // 0x0A0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue9;                  // 0x0A00(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue4;                 // 0x0A0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0A10(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0A18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0A1C(0x000C)(IsPlainOldData, NoDestructor)
-	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue12;   // 0x0A28(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue123;  // 0x0A30(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue2;    // 0x0A28(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue3;    // 0x0A30(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DoesSocketExist_ReturnValue1;             // 0x0A38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A39[0x7];                                      // 0x0A39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0A40(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x0A70(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0A7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0A7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_InverseTransformLocation_ReturnValue;     // 0x0A80(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0A8C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A8D[0x3];                                      // 0x0A8D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0A90(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue12345678;     // 0x0A9C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue8;            // 0x0A9C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x0AA8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AB4[0x4];                                      // 0x0AB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDecalComponent*                        CallFunc_SpawnDecalAtLocation_ReturnValue;         // 0x0AB8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue123;       // 0x0AC0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x0AC0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam; // 0x0ACC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_ACD[0x3];                                      // 0x0ACD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue; // 0x0AD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AD4[0x4];                                      // 0x0AD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue1234; // 0x0AD8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue4;    // 0x0AD8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0AE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue1;            // 0x0AE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AE5[0x3];                                      // 0x0AE5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x0AE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0AE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AEC[0x4];                                      // 0x0AEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item1;                          // 0x0AF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue12;           // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AF9[0x3];                                      // 0x0AF9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0AFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0AFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue1;            // 0x0B00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1234;      // 0x0B04(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue123456789;    // 0x0B10(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x0B04(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue9;            // 0x0B10(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam1; // 0x0B1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1D[0x3];                                      // 0x0B1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue1; // 0x0B20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -307,8 +307,8 @@ static_assert(sizeof(Car_Copper_C_ExecuteUbergraph_Car_Copper) == 0x000B30, "Wro
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, EntryPoint) == 0x000000, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000004, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue1) == 0x000008, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue12) == 0x00000C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue123) == 0x000010, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue2) == 0x00000C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetScalarParameterValue_ReturnValue3) == 0x000010, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetScalarParameterValue_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Array_LastIndex_ReturnValue) == 0x000014, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_bool_IsClosed_Variable) == 0x000018, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_bool_IsClosed_Variable' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_bool_Has_Been_Initd_Variable) == 0x000019, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
@@ -351,13 +351,13 @@ static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBui
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_DoesSocketExist_ReturnValue) == 0x000180, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetSocketLocation_ReturnValue) == 0x000184, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000190, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Damage12) == 0x000198, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Damage12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_DamageTags12) == 0x0001A0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_DamageTags12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Momentum12) == 0x0001C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Momentum12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_HitInfo12) == 0x0001D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_HitInfo12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_InstigatedBy12) == 0x000258, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_InstigatedBy12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_DamageCauser12) == 0x000260, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_DamageCauser12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_EffectContext12) == 0x000268, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_EffectContext12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Damage2) == 0x000198, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Damage2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_DamageTags2) == 0x0001A0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_DamageTags2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Momentum2) == 0x0001C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Momentum2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_HitInfo2) == 0x0001D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_HitInfo2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_InstigatedBy2) == 0x000258, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_InstigatedBy2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_DamageCauser2) == 0x000260, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_DamageCauser2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_EffectContext2) == 0x000268, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_EffectContext2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Damage1) == 0x000280, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Damage1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_DamageTags1) == 0x000288, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_DamageTags1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Momentum1) == 0x0002A8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Momentum1' has a wrong offset!");
@@ -368,7 +368,7 @@ static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Ef
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000368, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingHealthPercentage_ReturnValue) == 0x000374, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingHealthPercentage_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Less_FloatFloat_ReturnValue) == 0x000378, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetTimer_ReturnValue12) == 0x000380, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetTimer_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetTimer_ReturnValue2) == 0x000380, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetTimer_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000388, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_bool_IsClosed_Variable1) == 0x000389, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_bool_IsClosed_Variable1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BooleanAND_ReturnValue) == 0x00038A, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -387,10 +387,10 @@ static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Da
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_EffectContext) == 0x000480, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_EffectContext' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BooleanAND_ReturnValue1) == 0x000498, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_IsValid_ReturnValue1) == 0x000499, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BooleanAND_ReturnValue12) == 0x00049A, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BooleanAND_ReturnValue2) == 0x00049A, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetPawn_ReturnValue) == 0x0004A0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_IsValid_ReturnValue12) == 0x0004A8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x0004AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_IsValid_ReturnValue2) == 0x0004A8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x0004AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_bool_Variable) == 0x0004B8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Event_Data) == 0x0004BC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Event_Data' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Select_Default) == 0x0004EC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Select_Default' has a wrong offset!");
@@ -399,45 +399,45 @@ static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakC
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G1) == 0x000500, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B1) == 0x000504, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A1) == 0x000508, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R12) == 0x00050C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G12) == 0x000510, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B12) == 0x000514, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A12) == 0x000518, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R2) == 0x00050C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G2) == 0x000510, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B2) == 0x000514, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A2) == 0x000518, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue1) == 0x00051C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue12) == 0x000528, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue2) == 0x000528, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000534, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000535, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R123) == 0x000538, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G123) == 0x00053C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B123) == 0x000540, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A123) == 0x000544, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R1234) == 0x000548, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G1234) == 0x00054C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B1234) == 0x000550, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A1234) == 0x000554, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue123) == 0x000558, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue1234) == 0x000564, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R12345) == 0x000570, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R12345' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G12345) == 0x000574, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G12345' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B12345) == 0x000578, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B12345' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A12345) == 0x00057C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A12345' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R123456) == 0x000580, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G123456) == 0x000584, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B123456) == 0x000588, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A123456) == 0x00058C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue12345) == 0x000590, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue123456) == 0x00059C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x0005A8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R1234567) == 0x0005AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G1234567) == 0x0005B0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B1234567) == 0x0005B4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A1234567) == 0x0005B8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R12345678) == 0x0005BC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R12345678' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G12345678) == 0x0005C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G12345678' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B12345678) == 0x0005C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B12345678' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A12345678) == 0x0005C8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A12345678' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue1234567) == 0x0005CC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue12345678) == 0x0005D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue12345678' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000535, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R3) == 0x000538, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G3) == 0x00053C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B3) == 0x000540, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A3) == 0x000544, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R4) == 0x000548, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G4) == 0x00054C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B4) == 0x000550, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A4) == 0x000554, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue3) == 0x000558, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue4) == 0x000564, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R5) == 0x000570, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R5' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G5) == 0x000574, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G5' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B5) == 0x000578, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B5' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A5) == 0x00057C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A5' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R6) == 0x000580, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G6) == 0x000584, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B6) == 0x000588, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A6) == 0x00058C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue5) == 0x000590, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue6) == 0x00059C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0005A8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R7) == 0x0005AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G7) == 0x0005B0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B7) == 0x0005B4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A7) == 0x0005B8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_R8) == 0x0005BC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_R8' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_G8) == 0x0005C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_G8' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_B8) == 0x0005C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_B8' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_BreakColor_A8) == 0x0005C8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_BreakColor_A8' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue7) == 0x0005CC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue8) == 0x0005D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue8' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0005E4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue1) == 0x0005F0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_VSize_ReturnValue) == 0x0005FC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_VSize_ReturnValue' has a wrong offset!");
@@ -452,89 +452,89 @@ static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Select
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue1) == 0x000620, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000624, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue1) == 0x000630, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12) == 0x00063C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue123) == 0x000648, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue1234) == 0x000654, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12345) == 0x000660, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue2) == 0x00063C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue3) == 0x000648, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue4) == 0x000654, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue5) == 0x000660, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue) == 0x00066C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue1) == 0x000678, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_struct_Variable) == 0x000684, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_bool_Variable1) == 0x000690, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, K2Node_Select1_Default) == 0x000694, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue12) == 0x0006A0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_VSize_ReturnValue12) == 0x0006AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_VSize_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue123) == 0x0006B0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Divide_FloatFloat_ReturnValue12) == 0x0006BC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Divide_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_VSize_ReturnValue123) == 0x0006C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_VSize_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_FClamp_ReturnValue12) == 0x0006C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_FClamp_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Divide_FloatFloat_ReturnValue123) == 0x0006C8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Divide_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_FloatFloat_ReturnValue12) == 0x0006CC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_FClamp_ReturnValue123) == 0x0006D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_FClamp_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue12) == 0x0006D4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_FloatFloat_ReturnValue123) == 0x0006D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue123456) == 0x0006DC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue123) == 0x0006E8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue1234567) == 0x0006EC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12345678) == 0x0006F8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue123456789) == 0x000704, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12345678910) == 0x000710, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue12) == 0x00071C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue1234567891011) == 0x000728, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue123) == 0x000734, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue1234) == 0x000740, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue2) == 0x0006A0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_VSize_ReturnValue2) == 0x0006AC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_VSize_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_VectorVector_ReturnValue3) == 0x0006B0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_VectorVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x0006BC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_VSize_ReturnValue3) == 0x0006C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_VSize_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_FClamp_ReturnValue2) == 0x0006C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x0006C8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x0006CC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_FClamp_ReturnValue3) == 0x0006D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_FClamp_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue2) == 0x0006D4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x0006D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue6) == 0x0006DC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue3) == 0x0006E8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue7) == 0x0006EC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue8) == 0x0006F8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue9) == 0x000704, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue10) == 0x000710, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue2) == 0x00071C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue11) == 0x000728, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue3) == 0x000734, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue4) == 0x000740, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000750, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue12345) == 0x0007D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue5) == 0x0007D8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult1) == 0x0007E8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue123456) == 0x000870, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue1234567) == 0x00087C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult12) == 0x000888, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult123) == 0x000910, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue123456789101112) == 0x000998, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue123456789101112' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue6) == 0x000870, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue7) == 0x00087C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult2) == 0x000888, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_SetWorldLocation_SweepHitResult3) == 0x000910, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_SetWorldLocation_SweepHitResult3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12) == 0x000998, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0009A4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_int_Variable1) == 0x0009B4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Array_Get_Item) == 0x0009B8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0009C0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_IntInt_ReturnValue12) == 0x0009C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_IntInt_ReturnValue2) == 0x0009C4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_IsDedicatedServer_ReturnValue1) == 0x0009C8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0009CC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue12345678910111213) == 0x0009D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue12345678910111213' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorFloat_ReturnValue13) == 0x0009D0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorFloat_ReturnValue13' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Conv_VectorToLinearColor_ReturnValue1) == 0x0009DC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Conv_VectorToLinearColor_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomFloatInRange_ReturnValue) == 0x0009EC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetSubGame_ReturnValue) == 0x0009F0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue1234) == 0x0009F1, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x0009F1, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomFloat_ReturnValue) == 0x0009F4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Lerp_ReturnValue) == 0x0009F8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomBool_ReturnValue) == 0x0009FC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue123456789) == 0x000A00, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue1234) == 0x000A0C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeVector_ReturnValue9) == 0x000A00, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeVector_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SelectFloat_ReturnValue4) == 0x000A0C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SelectFloat_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000A10, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000A18, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_MakeRotator_ReturnValue) == 0x000A1C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue12) == 0x000A28, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue123) == 0x000A30, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue2) == 0x000A28, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue3) == 0x000A30, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_DoesSocketExist_ReturnValue1) == 0x000A38, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_DoesSocketExist_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000A40, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetSocketLocation_ReturnValue1) == 0x000A70, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000A7C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_RandomFloatInRange_ReturnValue2) == 0x000A7C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_InverseTransformLocation_ReturnValue) == 0x000A80, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_InverseTransformLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000A8C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000A90, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue12345678) == 0x000A9C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue12345678' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue8) == 0x000A9C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue8' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_TransformLocation_ReturnValue) == 0x000AA8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SpawnDecalAtLocation_ReturnValue) == 0x000AB8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SpawnDecalAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue123) == 0x000AC0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue3) == 0x000AC0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam) == 0x000ACC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue) == 0x000AD0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue1234) == 0x000AD8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetBuildingMeshComponent_ReturnValue4) == 0x000AD8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetBuildingMeshComponent_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_GetNumMaterials_ReturnValue) == 0x000AE0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_LessEqual_IntInt_ReturnValue1) == 0x000AE4, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_LessEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_int_Variable12) == 0x000AE8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_int_Variable12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, Temp_int_Variable2) == 0x000AE8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::Temp_int_Variable2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Array_Get_Item1) == 0x000AF0, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_LessEqual_IntInt_ReturnValue12) == 0x000AF8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_LessEqual_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_IntInt_ReturnValue123) == 0x000AFC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000AF8, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_IntInt_ReturnValue3) == 0x000AFC, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Conv_BoolToFloat_ReturnValue1) == 0x000B00, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Conv_BoolToFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue1234) == 0x000B04, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue123456789) == 0x000B10, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue123456789' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_K2_GetActorLocation_ReturnValue4) == 0x000B04, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_K2_GetActorLocation_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Add_VectorVector_ReturnValue9) == 0x000B10, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Add_VectorVector_ReturnValue9' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam1) == 0x000B1C, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SetCarAlarmEnabledBasedOnLocation_NewParam1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue1) == 0x000B20, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_SetCarAlarmEnabledBasedOnLocation_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_ExecuteUbergraph_Car_Copper, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x000B24, "Member 'Car_Copper_C_ExecuteUbergraph_Car_Copper::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
@@ -694,10 +694,10 @@ public:
 	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue1;                // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable12;                            // 0x0100(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             Temp_struct_Variable123;                           // 0x0130(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue12;               // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue123;              // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0100(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable3;                             // 0x0130(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue2;                // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue3;                // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInterface*>             CallFunc_GetIntenseWindMaterialsForPreview_Materials; // 0x0170(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_GetIntenseWindMaterialsForPreview_ReturnValue; // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -717,9 +717,9 @@ public:
 	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue1;    // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D8[0x8];                                      // 0x01D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable1234;                          // 0x01E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item12;                         // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue1234;             // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Temp_struct_Variable4;                             // 0x01E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item2;                          // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    CallFunc_AddComponent_ReturnValue4;                // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x022C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -734,7 +734,7 @@ public:
 	class UCurveLinearColor*                      CallFunc_GetWindPannerSpeedCurveForPreview_ReturnValue1; // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveLinearColor*                      CallFunc_GetWindSpeedCurveForPreview_ReturnValue1; // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0278(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_289[0x3];                                      // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakColor_R;                             // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -742,17 +742,17 @@ public:
 	float                                         CallFunc_BreakColor_A;                             // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue1;         // 0x029C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue12;   // 0x02B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue2;    // 0x02B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R1;                            // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G1;                            // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B1;                            // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A1;                            // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue1;                // 0x02C8(0x0010)(ZeroConstructor, ReferenceParm)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item123;                        // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item3;                          // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue1;  // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue123;  // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue3;    // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2F8[0x8];                                      // 0x02F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0300(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue1;          // 0x0330(0x0030)(IsPlainOldData, NoDestructor)
@@ -765,20 +765,20 @@ public:
 	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x03A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult1;     // 0x0430(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue12;         // 0x04C0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue123;        // 0x04F0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location12;                // 0x0520(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation12;                // 0x052C(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale12;                   // 0x0538(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue2;          // 0x04C0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue3;          // 0x04F0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location2;                 // 0x0520(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation2;                 // 0x052C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale2;                    // 0x0538(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_544[0x4];                                      // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult12;    // 0x0548(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_BreakTransform_Location123;               // 0x05D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation123;               // 0x05DC(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale123;                  // 0x05E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult2;     // 0x0548(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_BreakTransform_Location3;                 // 0x05D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation3;                 // 0x05DC(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale3;                    // 0x05E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5F4[0x4];                                      // 0x05F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult123;   // 0x05F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_DoesSocketExist_ReturnValue12;            // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_DoesSocketExist_ReturnValue123;           // 0x0681(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult3;     // 0x05F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_DoesSocketExist_ReturnValue2;             // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_DoesSocketExist_ReturnValue3;             // 0x0681(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0682(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Car_Copper_C_UserConstructionScript) == 0x000010, "Wrong alignment on Car_Copper_C_UserConstructionScript");
@@ -806,10 +806,10 @@ static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Less_IntInt
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable1) == 0x0000B0, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetMaterials_ReturnValue) == 0x0000E0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue1) == 0x0000F0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable12) == 0x000100, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable123) == 0x000130, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue12) == 0x000160, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue123) == 0x000168, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable2) == 0x000100, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable3) == 0x000130, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue2) == 0x000160, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue3) == 0x000168, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetIntenseWindMaterialsForPreview_Materials) == 0x000170, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetIntenseWindMaterialsForPreview_Materials' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetIntenseWindMaterialsForPreview_ReturnValue) == 0x000180, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetIntenseWindMaterialsForPreview_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue1) == 0x000184, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
@@ -824,9 +824,9 @@ static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_IsDedicated
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_IsValid_ReturnValue1) == 0x0001C1, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetBuildingMeshComponent_ReturnValue1) == 0x0001C8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetBuildingMeshComponent_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0001D0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable1234) == 0x0001E0, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Array_Get_Item12) == 0x000210, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue1234) == 0x000218, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, Temp_struct_Variable4) == 0x0001E0, "Member 'Car_Copper_C_UserConstructionScript::Temp_struct_Variable4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Array_Get_Item2) == 0x000210, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue4) == 0x000218, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000220, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000228, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x00022C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
@@ -839,23 +839,23 @@ static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_MakeColor_R
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetWindPannerSpeedCurveForPreview_ReturnValue1) == 0x000268, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetWindPannerSpeedCurveForPreview_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetWindSpeedCurveForPreview_ReturnValue1) == 0x000270, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetWindSpeedCurveForPreview_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetLinearColorValue_ReturnValue) == 0x000278, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_IsValid_ReturnValue12) == 0x000288, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_IsValid_ReturnValue2) == 0x000288, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_R) == 0x00028C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_R' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_G) == 0x000290, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_G' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_B) == 0x000294, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_B' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_A) == 0x000298, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_A' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetLinearColorValue_ReturnValue1) == 0x00029C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetLinearColorValue_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetBuildingMeshComponent_ReturnValue12) == 0x0002B0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetBuildingMeshComponent_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetBuildingMeshComponent_ReturnValue2) == 0x0002B0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetBuildingMeshComponent_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_R1) == 0x0002B8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_R1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_G1) == 0x0002BC, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_G1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_B1) == 0x0002C0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_B1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakColor_A1) == 0x0002C4, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakColor_A1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetMaterials_ReturnValue1) == 0x0002C8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetMaterials_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Array_Get_Item123) == 0x0002D8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue12) == 0x0002E0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Array_Get_Item3) == 0x0002D8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x0002E0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_GetScalarParameterValue_ReturnValue1) == 0x0002E8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_GetScalarParameterValue_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_Lerp_ReturnValue) == 0x0002EC, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetBuildingMeshComponent_ReturnValue123) == 0x0002F0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetBuildingMeshComponent_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetBuildingMeshComponent_ReturnValue3) == 0x0002F0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetBuildingMeshComponent_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue) == 0x000300, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue1) == 0x000330, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Location) == 0x000360, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Location' has a wrong offset!");
@@ -866,18 +866,18 @@ static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransf
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Scale1) == 0x00039C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Scale1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x0003A8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult1) == 0x000430, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue12) == 0x0004C0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue123) == 0x0004F0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Location12) == 0x000520, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Location12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Rotation12) == 0x00052C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Rotation12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Scale12) == 0x000538, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Scale12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult12) == 0x000548, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Location123) == 0x0005D0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Location123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Rotation123) == 0x0005DC, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Rotation123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Scale123) == 0x0005E8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Scale123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult123) == 0x0005F8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_DoesSocketExist_ReturnValue12) == 0x000680, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_DoesSocketExist_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_DoesSocketExist_ReturnValue123) == 0x000681, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_DoesSocketExist_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue2) == 0x0004C0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_GetSocketTransform_ReturnValue3) == 0x0004F0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_GetSocketTransform_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Location2) == 0x000520, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Location2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Rotation2) == 0x00052C, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Rotation2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Scale2) == 0x000538, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Scale2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult2) == 0x000548, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Location3) == 0x0005D0, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Location3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Rotation3) == 0x0005DC, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Rotation3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BreakTransform_Scale3) == 0x0005E8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BreakTransform_Scale3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_K2_SetWorldTransform_SweepHitResult3) == 0x0005F8, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_K2_SetWorldTransform_SweepHitResult3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_DoesSocketExist_ReturnValue2) == 0x000680, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_DoesSocketExist_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_DoesSocketExist_ReturnValue3) == 0x000681, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_DoesSocketExist_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue1) == 0x000682, "Member 'Car_Copper_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 
 // Function Car_Copper.Car_Copper_C.SetCarAlarmEnabledBasedOnLocation
@@ -905,16 +905,16 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue12;             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MaterialEditorSine_ReturnValue;           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue123;            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MaterialEditorSine_ReturnValue1;          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue123;       // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1234;           // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MaterialEditorSine_ReturnValue12;         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1234;      // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12345;     // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue4;              // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MaterialEditorSine_ReturnValue2;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue4;         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue5;         // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Fraction_ReturnValue;                     // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Abs_ReturnValue;                          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -940,16 +940,16 @@ static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue) == 0x000058, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue1) == 0x00005C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x000060, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue12) == 0x000064, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000064, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_MaterialEditorSine_ReturnValue) == 0x000068, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_MaterialEditorSine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x00006C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue123) == 0x000070, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x00006C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue3) == 0x000070, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_MaterialEditorSine_ReturnValue1) == 0x000074, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_MaterialEditorSine_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue123) == 0x000078, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue1234) == 0x00007C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_MaterialEditorSine_ReturnValue12) == 0x000080, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_MaterialEditorSine_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue1234) == 0x000084, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue12345) == 0x000088, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000078, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Add_FloatFloat_ReturnValue4) == 0x00007C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_MaterialEditorSine_ReturnValue2) == 0x000080, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_MaterialEditorSine_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue4) == 0x000084, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Multiply_FloatFloat_ReturnValue5) == 0x000088, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Multiply_FloatFloat_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Fraction_ReturnValue) == 0x00008C, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Fraction_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Abs_ReturnValue) == 0x000090, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Abs_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_SetCarAlarmEnabledBasedOnLocation, CallFunc_Less_FloatFloat_ReturnValue) == 0x000094, "Member 'Car_Copper_C_SetCarAlarmEnabledBasedOnLocation::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
@@ -994,7 +994,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1024,7 +1024,7 @@ static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, Temp_struct_Variable) 
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000030, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, Temp_bool_Variable) == 0x000034, "Member 'Car_Copper_C_Set_Light_Brightness::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x000038, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x00003C, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x00003C, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_BreakColor_R) == 0x000040, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_BreakColor_R' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_BreakColor_G) == 0x000044, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_BreakColor_G' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_BreakColor_B) == 0x000048, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_BreakColor_B' has a wrong offset!");
@@ -1048,16 +1048,16 @@ struct Car_Copper_C_Randomize_the_target_brightness_levels final
 public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue123;       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Car_Copper_C_Randomize_the_target_brightness_levels) == 0x000004, "Wrong alignment on Car_Copper_C_Randomize_the_target_brightness_levels");
 static_assert(sizeof(Car_Copper_C_Randomize_the_target_brightness_levels) == 0x000014, "Wrong size on Car_Copper_C_Randomize_the_target_brightness_levels");
 static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000000, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x000004, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x000008, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue123) == 0x00000C, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000008, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x00000C, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, CallFunc_RandomFloatInRange_ReturnValue) == 0x000010, "Member 'Car_Copper_C_Randomize_the_target_brightness_levels::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 
 // Function Car_Copper.Car_Copper_C.toggle light visibility
@@ -1069,10 +1069,10 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Car_Copper_C_Toggle_light_visibility) == 0x000001, "Wrong alignment on Car_Copper_C_Toggle_light_visibility");
 static_assert(sizeof(Car_Copper_C_Toggle_light_visibility) == 0x000008, "Wrong size on Car_Copper_C_Toggle_light_visibility");
@@ -1080,10 +1080,29 @@ static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, bNewVisibility) == 
 static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue1) == 0x000002, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue12) == 0x000004, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue123) == 0x000005, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue2) == 0x000004, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue3) == 0x000005, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue1) == 0x000006, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue12) == 0x000007, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue2) == 0x000007, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+
+// Function Car_Copper.Car_Copper_C.PlayJumpOnCarSound
+// 0x001C (0x001C - 0x0000)
+struct Car_Copper_C_PlayJumpOnCarSound final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Car_Copper_C_PlayJumpOnCarSound) == 0x000004, "Wrong alignment on Car_Copper_C_PlayJumpOnCarSound");
+static_assert(sizeof(Car_Copper_C_PlayJumpOnCarSound) == 0x00001C, "Wrong size on Car_Copper_C_PlayJumpOnCarSound");
+static_assert(offsetof(Car_Copper_C_PlayJumpOnCarSound, Location) == 0x000000, "Member 'Car_Copper_C_PlayJumpOnCarSound::Location' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_PlayJumpOnCarSound, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'Car_Copper_C_PlayJumpOnCarSound::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_PlayJumpOnCarSound, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000010, "Member 'Car_Copper_C_PlayJumpOnCarSound::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_PlayJumpOnCarSound, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000014, "Member 'Car_Copper_C_PlayJumpOnCarSound::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_PlayJumpOnCarSound, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000018, "Member 'Car_Copper_C_PlayJumpOnCarSound::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

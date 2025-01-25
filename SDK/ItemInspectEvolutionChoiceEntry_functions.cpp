@@ -101,15 +101,15 @@ void UItemInspectEvolutionChoiceEntry_C::ExecuteUbergraph_ItemInspectEvolutionCh
 }
 
 
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnSelected
+// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UItemInspectEvolutionChoiceEntry_C::OnSelected()
+void UItemInspectEvolutionChoiceEntry_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInspectEvolutionChoiceEntry_C", "OnSelected");
+		Func = Class->GetFunction("ItemInspectEvolutionChoiceEntry_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

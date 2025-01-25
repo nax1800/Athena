@@ -26,8 +26,8 @@ public:
 	class UClass*                                 Temp_class_Variable1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable12;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable123;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable3;                              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Selected;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,8 +40,8 @@ static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_bool_V
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable) == 0x000008, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable1) == 0x000010, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable1' has a wrong offset!");
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_bool_Variable1) == 0x000018, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable12) == 0x000020, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable12' has a wrong offset!");
-static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable123) == 0x000028, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable123' has a wrong offset!");
+static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable2) == 0x000020, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable2' has a wrong offset!");
+static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, Temp_class_Variable3) == 0x000028, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::Temp_class_Variable3' has a wrong offset!");
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, K2Node_CustomEvent_Selected) == 0x000030, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::K2Node_CustomEvent_Selected' has a wrong offset!");
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, K2Node_Select_Default) == 0x000038, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(MulchWarning_C_ExecuteUbergraph_MulchWarning, K2Node_Select1_Default) == 0x000040, "Member 'MulchWarning_C_ExecuteUbergraph_MulchWarning::K2Node_Select1_Default' has a wrong offset!");

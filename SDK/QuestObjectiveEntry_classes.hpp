@@ -12,32 +12,39 @@
 
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CommonUI_classes.hpp"
+#include "FortniteUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestObjectiveEntry.QuestObjectiveEntry_C
-// 0x0040 (0x0258 - 0x0218)
-class UQuestObjectiveEntry_C final : public UCommonUserWidget
+// 0x0058 (0x0288 - 0x0230)
+class UQuestObjectiveEntry_C final : public UFortQuestObjectiveEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Appear;                                            // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               BulletOverlay;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Checkmark;                                         // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QuestHudIcon;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UQuestProgressWidget_C*                 QuestProgressWidget;                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TaskName;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortQuestObjectiveInfo*                TrackedObjective;                                  // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Appear;                                            // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           _ProgressBar__Quest_Progress;                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               BulletOverlay;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CheckMark;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ProgressValue;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QuestHudIcon;                                      // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TaskName;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortQuestObjectiveInfo*                TrackedObjective;                                  // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LerpStartTime;                                     // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LerpTime;                                          // 0x027C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DisplayTime;                                       // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_QuestObjectiveEntry(int32 EntryPoint);
+	void ObjectiveInfoSet(const class UFortQuestObjectiveInfo* ObjectiveInfo, bool IsAnnouncement);
+	void StartDisplayingObjective();
 	void SetData(class UObject* InData);
-	void UpdateProgress(class UFortQuestObjectiveInfo* Objective, int32 AchievedCount);
-	void Update(class UFortQuestObjectiveInfo* Objective, int32 AchievedCount);
-	void PlayAppearAnimation();
+	void UpdateProgress();
+	void AppearAnimationFinished();
+	void LerpProgress();
+	void UpdateLerp();
 
 public:
 	static class UClass* StaticClass()
@@ -50,15 +57,19 @@ public:
 	}
 };
 static_assert(alignof(UQuestObjectiveEntry_C) == 0x000008, "Wrong alignment on UQuestObjectiveEntry_C");
-static_assert(sizeof(UQuestObjectiveEntry_C) == 0x000258, "Wrong size on UQuestObjectiveEntry_C");
-static_assert(offsetof(UQuestObjectiveEntry_C, UberGraphFrame) == 0x000218, "Member 'UQuestObjectiveEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, Appear) == 0x000220, "Member 'UQuestObjectiveEntry_C::Appear' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, BulletOverlay) == 0x000228, "Member 'UQuestObjectiveEntry_C::BulletOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, Checkmark) == 0x000230, "Member 'UQuestObjectiveEntry_C::Checkmark' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, QuestHudIcon) == 0x000238, "Member 'UQuestObjectiveEntry_C::QuestHudIcon' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, QuestProgressWidget) == 0x000240, "Member 'UQuestObjectiveEntry_C::QuestProgressWidget' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, TaskName) == 0x000248, "Member 'UQuestObjectiveEntry_C::TaskName' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, TrackedObjective) == 0x000250, "Member 'UQuestObjectiveEntry_C::TrackedObjective' has a wrong offset!");
+static_assert(sizeof(UQuestObjectiveEntry_C) == 0x000288, "Wrong size on UQuestObjectiveEntry_C");
+static_assert(offsetof(UQuestObjectiveEntry_C, UberGraphFrame) == 0x000230, "Member 'UQuestObjectiveEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, Appear) == 0x000238, "Member 'UQuestObjectiveEntry_C::Appear' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, _ProgressBar__Quest_Progress) == 0x000240, "Member 'UQuestObjectiveEntry_C::_ProgressBar__Quest_Progress' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, BulletOverlay) == 0x000248, "Member 'UQuestObjectiveEntry_C::BulletOverlay' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, CheckMark) == 0x000250, "Member 'UQuestObjectiveEntry_C::CheckMark' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, ProgressValue) == 0x000258, "Member 'UQuestObjectiveEntry_C::ProgressValue' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, QuestHudIcon) == 0x000260, "Member 'UQuestObjectiveEntry_C::QuestHudIcon' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, TaskName) == 0x000268, "Member 'UQuestObjectiveEntry_C::TaskName' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, TrackedObjective) == 0x000270, "Member 'UQuestObjectiveEntry_C::TrackedObjective' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, LerpStartTime) == 0x000278, "Member 'UQuestObjectiveEntry_C::LerpStartTime' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, LerpTime) == 0x00027C, "Member 'UQuestObjectiveEntry_C::LerpTime' has a wrong offset!");
+static_assert(offsetof(UQuestObjectiveEntry_C, DisplayTime) == 0x000280, "Member 'UQuestObjectiveEntry_C::DisplayTime' has a wrong offset!");
 
 }
 

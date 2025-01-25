@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function GA_Trap_FloorHoverboardSpeed.GA_Trap_FloorHoverboardSpeed_C.ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed final
 {
 public:
@@ -32,14 +32,14 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetDamageDelay_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0030(0x0018)()
-	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFireDelay_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x0054(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0030(0x0010)()
+	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFireDelay_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x004C(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed) == 0x000008, "Wrong alignment on GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed");
-static_assert(sizeof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed) == 0x000060, "Wrong size on GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed");
+static_assert(sizeof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed) == 0x000058, "Wrong size on GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed");
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, EntryPoint) == 0x000000, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetOwningActorFromActorInfo_ReturnValue) == 0x000008, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetOwningActorFromActorInfo_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetAbilityLevel_ReturnValue) == 0x000010, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetAbilityLevel_ReturnValue' has a wrong offset!");
@@ -48,10 +48,10 @@ static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_F
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000024, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetDamageDelay_ReturnValue) == 0x000028, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetDamageDelay_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000030, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000048, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetFireDelay_ReturnValue) == 0x000050, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetFireDelay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000054, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_K2_CommitAbility_ReturnValue) == 0x00005C, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000040, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_GetFireDelay_ReturnValue) == 0x000048, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_GetFireDelay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x00004C, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed, CallFunc_K2_CommitAbility_ReturnValue) == 0x000054, "Member 'GA_Trap_FloorHoverboardSpeed_C_ExecuteUbergraph_GA_Trap_FloorHoverboardSpeed::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
 
 }
 

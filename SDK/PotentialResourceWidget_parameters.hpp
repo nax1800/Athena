@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -68,44 +67,49 @@ static_assert(offsetof(PotentialResourceWidget_C_GetResourceCountAsText, K2Node_
 static_assert(offsetof(PotentialResourceWidget_C_GetResourceCountAsText, CallFunc_Format_ReturnValue) == 0x000090, "Member 'PotentialResourceWidget_C_GetResourceCountAsText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function PotentialResourceWidget.PotentialResourceWidget_C.SetupFont
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct PotentialResourceWidget_C_SetupFont final
 {
 public:
 	struct FSlateFontInfo                         TempFont;                                          // 0x0000(0x0058)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x005C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_HarvestWeakPoint_Color_StyleSheetOut; // 0x0070(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0080(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0090(0x0028)()
-	int32                                         K2Node_Select1_Default;                            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable1;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0080(0x0058)(HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select1_Default;                            // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       K2Node_Select2_Default;                            // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PotentialResourceWidget_C_SetupFont) == 0x000008, "Wrong alignment on PotentialResourceWidget_C_SetupFont");
-static_assert(sizeof(PotentialResourceWidget_C_SetupFont) == 0x0000C0, "Wrong size on PotentialResourceWidget_C_SetupFont");
+static_assert(sizeof(PotentialResourceWidget_C_SetupFont) == 0x0000E8, "Wrong size on PotentialResourceWidget_C_SetupFont");
 static_assert(offsetof(PotentialResourceWidget_C_SetupFont, TempFont) == 0x000000, "Member 'PotentialResourceWidget_C_SetupFont::TempFont' has a wrong offset!");
 static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_bool_Variable) == 0x000058, "Member 'PotentialResourceWidget_C_SetupFont::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_struct_Variable) == 0x00005C, "Member 'PotentialResourceWidget_C_SetupFont::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_bool_Variable1) == 0x00006C, "Member 'PotentialResourceWidget_C_SetupFont::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, CallFunc_Get_HarvestWeakPoint_Color_StyleSheetOut) == 0x000070, "Member 'PotentialResourceWidget_C_SetupFont::CallFunc_Get_HarvestWeakPoint_Color_StyleSheetOut' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_Select_Default) == 0x000080, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_MakeStruct_SlateColor) == 0x000090, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_Select1_Default) == 0x0000B8, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_object_Variable) == 0x000060, "Member 'PotentialResourceWidget_C_SetupFont::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_object_Variable1) == 0x000068, "Member 'PotentialResourceWidget_C_SetupFont::Temp_object_Variable1' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_bool_Variable1) == 0x000070, "Member 'PotentialResourceWidget_C_SetupFont::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_Select_Default) == 0x000078, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_MakeStruct_SlateFontInfo) == 0x000080, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, Temp_bool_Variable2) == 0x0000D8, "Member 'PotentialResourceWidget_C_SetupFont::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_Select1_Default) == 0x0000DC, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_SetupFont, K2Node_Select2_Default) == 0x0000E0, "Member 'PotentialResourceWidget_C_SetupFont::K2Node_Select2_Default' has a wrong offset!");
 
 // Function PotentialResourceWidget.PotentialResourceWidget_C.ShowPotentialResource
 // 0x0010 (0x0010 - 0x0000)
 struct PotentialResourceWidget_C_ShowPotentialResource final
 {
 public:
-	class UFortItem*                              Param_PotentialResource;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              PotentialResource_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWeakpointDamage;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PotentialResourceWidget_C_ShowPotentialResource) == 0x000008, "Wrong alignment on PotentialResourceWidget_C_ShowPotentialResource");
 static_assert(sizeof(PotentialResourceWidget_C_ShowPotentialResource) == 0x000010, "Wrong size on PotentialResourceWidget_C_ShowPotentialResource");
-static_assert(offsetof(PotentialResourceWidget_C_ShowPotentialResource, Param_PotentialResource) == 0x000000, "Member 'PotentialResourceWidget_C_ShowPotentialResource::Param_PotentialResource' has a wrong offset!");
+static_assert(offsetof(PotentialResourceWidget_C_ShowPotentialResource, PotentialResource_0) == 0x000000, "Member 'PotentialResourceWidget_C_ShowPotentialResource::PotentialResource_0' has a wrong offset!");
 static_assert(offsetof(PotentialResourceWidget_C_ShowPotentialResource, bWeakpointDamage) == 0x000008, "Member 'PotentialResourceWidget_C_ShowPotentialResource::bWeakpointDamage' has a wrong offset!");
 static_assert(offsetof(PotentialResourceWidget_C_ShowPotentialResource, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'PotentialResourceWidget_C_ShowPotentialResource::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 

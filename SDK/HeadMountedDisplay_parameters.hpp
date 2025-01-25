@@ -18,27 +18,6 @@
 namespace SDK::Params
 {
 
-// Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.AddDeviceVisualizationComponent
-// 0x0060 (0x0060 - 0x0000)
-struct HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0050(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent");
-static_assert(sizeof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent) == 0x000060, "Wrong size on HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent, Target) == 0x000000, "Member 'HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent::Target' has a wrong offset!");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent, XRDeviceId) == 0x000008, "Member 'HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent::XRDeviceId' has a wrong offset!");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent, bManualAttachment) == 0x000018, "Member 'HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent::bManualAttachment' has a wrong offset!");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent, RelativeTransform) == 0x000020, "Member 'HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent::RelativeTransform' has a wrong offset!");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent, ReturnValue) == 0x000050, "Member 'HeadMountedDisplayFunctionLibrary_AddDeviceVisualizationComponent::ReturnValue' has a wrong offset!");
-
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableHMD
 // 0x0002 (0x0002 - 0x0000)
 struct HeadMountedDisplayFunctionLibrary_EnableHMD final
@@ -241,7 +220,7 @@ public:
 	float                                         FarPlane;                                          // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsActive;                                          // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Param_Index;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters) == 0x000004, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters) == 0x00003C, "Wrong size on HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters");
@@ -255,7 +234,7 @@ static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParame
 static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters, NearPlane) == 0x00002C, "Member 'HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters::NearPlane' has a wrong offset!");
 static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters, FarPlane) == 0x000030, "Member 'HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters::FarPlane' has a wrong offset!");
 static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters, IsActive) == 0x000034, "Member 'HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters::IsActive' has a wrong offset!");
-static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters, Param_Index) == 0x000038, "Member 'HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters::Param_Index' has a wrong offset!");
+static_assert(offsetof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters, Index_0) == 0x000038, "Member 'HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters::Index_0' has a wrong offset!");
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingToWorldTransform
 // 0x0040 (0x0040 - 0x0000)
@@ -308,6 +287,20 @@ public:
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition) == 0x000001, "Wrong alignment on HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition) == 0x000001, "Wrong size on HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition");
 static_assert(offsetof(HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition, ReturnValue) == 0x000000, "Member 'HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition::ReturnValue' has a wrong offset!");
+
+// Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsDeviceTracking
+// 0x0018 (0x0018 - 0x0000)
+struct HeadMountedDisplayFunctionLibrary_IsDeviceTracking final
+{
+public:
+	struct FXRDeviceId                            XRDeviceId;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_IsDeviceTracking");
+static_assert(sizeof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking) == 0x000018, "Wrong size on HeadMountedDisplayFunctionLibrary_IsDeviceTracking");
+static_assert(offsetof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking, XRDeviceId) == 0x000000, "Member 'HeadMountedDisplayFunctionLibrary_IsDeviceTracking::XRDeviceId' has a wrong offset!");
+static_assert(offsetof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking, ReturnValue) == 0x000010, "Member 'HeadMountedDisplayFunctionLibrary_IsDeviceTracking::ReturnValue' has a wrong offset!");
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayConnected
 // 0x0001 (0x0001 - 0x0000)
@@ -661,6 +654,17 @@ static_assert(alignof(MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources)
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources");
 static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources, ReturnValue) == 0x000000, "Member 'MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources::ReturnValue' has a wrong offset!");
 
+// Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetActiveTrackingSystemName
+// 0x0008 (0x0008 - 0x0000)
+struct MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName");
+static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName) == 0x000008, "Wrong size on MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName");
+static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName, ReturnValue) == 0x000000, "Member 'MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName::ReturnValue' has a wrong offset!");
+
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMaximumMotionTrackedControllerCount
 // 0x0004 (0x0004 - 0x0000)
 struct MotionTrackedDeviceFunctionLibrary_GetMaximumMotionTrackedControllerCount final
@@ -682,6 +686,23 @@ public:
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount) == 0x000004, "Wrong size on MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount");
 static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount, ReturnValue) == 0x000000, "Member 'MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount::ReturnValue' has a wrong offset!");
+
+// Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionSourceTracking
+// 0x0018 (0x0018 - 0x0000)
+struct MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking final
+{
+public:
+	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SourceName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking");
+static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking) == 0x000018, "Wrong size on MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking");
+static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking, PlayerIndex) == 0x000000, "Member 'MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking, SourceName) == 0x000008, "Member 'MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking::SourceName' has a wrong offset!");
+static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking, ReturnValue) == 0x000010, "Member 'MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking::ReturnValue' has a wrong offset!");
 
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackedDeviceCountManagementNecessary
 // 0x0001 (0x0001 - 0x0000)
@@ -751,6 +772,100 @@ public:
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault) == 0x000001, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault) == 0x000001, "Wrong size on MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault");
 static_assert(offsetof(MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault, Enable) == 0x000000, "Member 'MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault::Enable' has a wrong offset!");
+
+// Function HeadMountedDisplay.XRAssetFunctionLibrary.AddDeviceVisualizationComponentBlocking
+// 0x0060 (0x0060 - 0x0000)
+struct XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0050(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking) == 0x000010, "Wrong alignment on XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking");
+static_assert(sizeof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking) == 0x000060, "Wrong size on XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking");
+static_assert(offsetof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking, Target) == 0x000000, "Member 'XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking::Target' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking, XRDeviceId) == 0x000008, "Member 'XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking::XRDeviceId' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking, bManualAttachment) == 0x000018, "Member 'XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking::bManualAttachment' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking, RelativeTransform) == 0x000020, "Member 'XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking::RelativeTransform' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking, ReturnValue) == 0x000050, "Member 'XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking::ReturnValue' has a wrong offset!");
+
+// Function HeadMountedDisplay.XRAssetFunctionLibrary.AddNamedDeviceVisualizationComponentBlocking
+// 0x0070 (0x0070 - 0x0000)
+struct XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SystemName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DeviceName;                                        // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FXRDeviceId                            XRDeviceId;                                        // 0x0050(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0060(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking) == 0x000010, "Wrong alignment on XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking");
+static_assert(sizeof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking) == 0x000070, "Wrong size on XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, Target) == 0x000000, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::Target' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, SystemName) == 0x000008, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::SystemName' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, DeviceName) == 0x000010, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::DeviceName' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, bManualAttachment) == 0x000018, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::bManualAttachment' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, RelativeTransform) == 0x000020, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::RelativeTransform' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, XRDeviceId) == 0x000050, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::XRDeviceId' has a wrong offset!");
+static_assert(offsetof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking, ReturnValue) == 0x000060, "Member 'XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking::ReturnValue' has a wrong offset!");
+
+// Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddDeviceVisualizationComponentAsync
+// 0x0060 (0x0060 - 0x0000)
+struct AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                    NewComponent;                                      // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAsyncTask_LoadXRDeviceVisComponent*    ReturnValue;                                       // 0x0058(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync) == 0x000010, "Wrong alignment on AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync");
+static_assert(sizeof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync) == 0x000060, "Wrong size on AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, Target) == 0x000000, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::Target' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, XRDeviceId) == 0x000008, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::XRDeviceId' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, bManualAttachment) == 0x000018, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::bManualAttachment' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, RelativeTransform) == 0x000020, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::RelativeTransform' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, NewComponent) == 0x000050, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::NewComponent' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync, ReturnValue) == 0x000058, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync::ReturnValue' has a wrong offset!");
+
+// Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddNamedDeviceVisualizationComponentAsync
+// 0x0070 (0x0070 - 0x0000)
+struct AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SystemName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DeviceName;                                        // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FXRDeviceId                            XRDeviceId;                                        // 0x0050(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                    NewComponent;                                      // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAsyncTask_LoadXRDeviceVisComponent*    ReturnValue;                                       // 0x0068(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync) == 0x000010, "Wrong alignment on AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync");
+static_assert(sizeof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync) == 0x000070, "Wrong size on AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, Target) == 0x000000, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::Target' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, SystemName) == 0x000008, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::SystemName' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, DeviceName) == 0x000010, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::DeviceName' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, bManualAttachment) == 0x000018, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::bManualAttachment' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, RelativeTransform) == 0x000020, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::RelativeTransform' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, XRDeviceId) == 0x000050, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::XRDeviceId' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, NewComponent) == 0x000060, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::NewComponent' has a wrong offset!");
+static_assert(offsetof(AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync, ReturnValue) == 0x000068, "Member 'AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync::ReturnValue' has a wrong offset!");
 
 }
 

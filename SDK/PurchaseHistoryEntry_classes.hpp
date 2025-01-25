@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -18,25 +19,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PurchaseHistoryEntry.PurchaseHistoryEntry_C
-// 0x0048 (0x0878 - 0x0830)
+// 0x0040 (0x08F0 - 0x08B0)
 class UPurchaseHistoryEntry_C final : public UFortPurchaseHistoryEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0830(0x0008)(Transient, DuplicateTransient)
-	class UBorder*                                Border_Cost;                                       // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          CommonBorder_ItemBackground;                       // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Currency1ItemImage;                                // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  Switcher_RefundStatus;                             // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Text_Purchased;                                    // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Text_Refunded;                                     // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          DEVisDisabled;                                     // 0x0870(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          CommonBorder_ItemBackground;                       // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Arrow;                                       // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  Switcher_RefundStatus;                             // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_Purchased;                                    // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_Refunded;                                     // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          DEVisDisabled;                                     // 0x08E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_PurchaseHistoryEntry(int32 EntryPoint);
+	void SetPurchaseText(const class FText& PurchaseText, bool bHasBeenRefunded);
 	void PreConstruct(bool IsDesignTime);
 	void DisableAppearance(bool IsDisabled);
-	void SetPurchaseText(const class FText& PurchaseText, bool bHasBeenRefunded);
 
 public:
 	static class UClass* StaticClass()
@@ -49,16 +49,15 @@ public:
 	}
 };
 static_assert(alignof(UPurchaseHistoryEntry_C) == 0x000008, "Wrong alignment on UPurchaseHistoryEntry_C");
-static_assert(sizeof(UPurchaseHistoryEntry_C) == 0x000878, "Wrong size on UPurchaseHistoryEntry_C");
-static_assert(offsetof(UPurchaseHistoryEntry_C, UberGraphFrame) == 0x000830, "Member 'UPurchaseHistoryEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Border_Cost) == 0x000838, "Member 'UPurchaseHistoryEntry_C::Border_Cost' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, CommonBorder_ItemBackground) == 0x000840, "Member 'UPurchaseHistoryEntry_C::CommonBorder_ItemBackground' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, CommonTextBlock_0) == 0x000848, "Member 'UPurchaseHistoryEntry_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Currency1ItemImage) == 0x000850, "Member 'UPurchaseHistoryEntry_C::Currency1ItemImage' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Switcher_RefundStatus) == 0x000858, "Member 'UPurchaseHistoryEntry_C::Switcher_RefundStatus' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Purchased) == 0x000860, "Member 'UPurchaseHistoryEntry_C::Text_Purchased' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Refunded) == 0x000868, "Member 'UPurchaseHistoryEntry_C::Text_Refunded' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, DEVisDisabled) == 0x000870, "Member 'UPurchaseHistoryEntry_C::DEVisDisabled' has a wrong offset!");
+static_assert(sizeof(UPurchaseHistoryEntry_C) == 0x0008F0, "Wrong size on UPurchaseHistoryEntry_C");
+static_assert(offsetof(UPurchaseHistoryEntry_C, UberGraphFrame) == 0x0008B0, "Member 'UPurchaseHistoryEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, CommonBorder_ItemBackground) == 0x0008B8, "Member 'UPurchaseHistoryEntry_C::CommonBorder_ItemBackground' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, CommonTextBlock_0) == 0x0008C0, "Member 'UPurchaseHistoryEntry_C::CommonTextBlock_0' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, Image_Arrow) == 0x0008C8, "Member 'UPurchaseHistoryEntry_C::Image_Arrow' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, Switcher_RefundStatus) == 0x0008D0, "Member 'UPurchaseHistoryEntry_C::Switcher_RefundStatus' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Purchased) == 0x0008D8, "Member 'UPurchaseHistoryEntry_C::Text_Purchased' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Refunded) == 0x0008E0, "Member 'UPurchaseHistoryEntry_C::Text_Refunded' has a wrong offset!");
+static_assert(offsetof(UPurchaseHistoryEntry_C, DEVisDisabled) == 0x0008E8, "Member 'UPurchaseHistoryEntry_C::DEVisDisabled' has a wrong offset!");
 
 }
 

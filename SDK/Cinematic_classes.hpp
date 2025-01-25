@@ -19,23 +19,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Cinematic.Cinematic_C
-// 0x0068 (0x0440 - 0x03D8)
+// 0x0060 (0x0370 - 0x0310)
 class UCinematic_C final : public UFortUIStateWidget_NUI
 {
 public:
-	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UNamedSlot*                             LocalizedAudioOnlyMovieSlot;                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetStack*                     MainContentStack;                                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             MovieSlot;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               OverlayMovieOverlay;                               // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USubtitles_C*                           Subtitles;                                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTeamMicStack_C*                        TeamMicStack;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBuildWatermark_C*                      Widget_BuildWatermark;                             // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMovieWidget_C*                         MovieWidget;                                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMediaSubtitlesPlayer*              SubtitlesPlayer;                                   // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CinematicMediaSoundWave;                           // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFinished;                                         // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(Transient, DuplicateTransient)
+	class UNamedSlot*                             LocalizedAudioOnlyMovieSlot;                       // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetStack*                     MainContentStack;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             MovieSlot;                                         // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               OverlayMovieOverlay;                               // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USubtitles_C*                           Subtitles;                                         // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTeamMicStack_C*                        TeamMicStack;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBuildWatermark_C*                      Widget_BuildWatermark;                             // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMovieWidget_C*                         MovieWidget;                                       // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMediaSubtitlesPlayer*              SubtitlesPlayer;                                   // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CinematicMediaSoundWave;                           // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFinished;                                         // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_Cinematic(int32 EntryPoint);
@@ -48,7 +47,7 @@ public:
 	void Destruct();
 	void HandleClientEvent_QueueCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent);
 	void Construct();
-	void ShowMovie(class UMediaSource* MediaSource, class UNamedSlot*& Param_MovieSlot, class UMovieWidget_C*& Param_MovieWidget);
+	void ShowMovie(class UMediaSource* MediaSource, class UNamedSlot*& MovieSlot_0, class UMovieWidget_C*& MovieWidget_0);
 	void ClearMovie();
 	void SkipMovie();
 	class UWidget* PopContentWidgetInternal(const struct FContentPushState& State);
@@ -70,19 +69,19 @@ public:
 	}
 };
 static_assert(alignof(UCinematic_C) == 0x000008, "Wrong alignment on UCinematic_C");
-static_assert(sizeof(UCinematic_C) == 0x000440, "Wrong size on UCinematic_C");
-static_assert(offsetof(UCinematic_C, UberGraphFrame) == 0x0003E0, "Member 'UCinematic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, LocalizedAudioOnlyMovieSlot) == 0x0003E8, "Member 'UCinematic_C::LocalizedAudioOnlyMovieSlot' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MainContentStack) == 0x0003F0, "Member 'UCinematic_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MovieSlot) == 0x0003F8, "Member 'UCinematic_C::MovieSlot' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, OverlayMovieOverlay) == 0x000400, "Member 'UCinematic_C::OverlayMovieOverlay' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, Subtitles) == 0x000408, "Member 'UCinematic_C::Subtitles' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, TeamMicStack) == 0x000410, "Member 'UCinematic_C::TeamMicStack' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, Widget_BuildWatermark) == 0x000418, "Member 'UCinematic_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MovieWidget) == 0x000420, "Member 'UCinematic_C::MovieWidget' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, SubtitlesPlayer) == 0x000428, "Member 'UCinematic_C::SubtitlesPlayer' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, CinematicMediaSoundWave) == 0x000430, "Member 'UCinematic_C::CinematicMediaSoundWave' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, bFinished) == 0x000438, "Member 'UCinematic_C::bFinished' has a wrong offset!");
+static_assert(sizeof(UCinematic_C) == 0x000370, "Wrong size on UCinematic_C");
+static_assert(offsetof(UCinematic_C, UberGraphFrame) == 0x000310, "Member 'UCinematic_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, LocalizedAudioOnlyMovieSlot) == 0x000318, "Member 'UCinematic_C::LocalizedAudioOnlyMovieSlot' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, MainContentStack) == 0x000320, "Member 'UCinematic_C::MainContentStack' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, MovieSlot) == 0x000328, "Member 'UCinematic_C::MovieSlot' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, OverlayMovieOverlay) == 0x000330, "Member 'UCinematic_C::OverlayMovieOverlay' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, Subtitles) == 0x000338, "Member 'UCinematic_C::Subtitles' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, TeamMicStack) == 0x000340, "Member 'UCinematic_C::TeamMicStack' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, Widget_BuildWatermark) == 0x000348, "Member 'UCinematic_C::Widget_BuildWatermark' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, MovieWidget) == 0x000350, "Member 'UCinematic_C::MovieWidget' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, SubtitlesPlayer) == 0x000358, "Member 'UCinematic_C::SubtitlesPlayer' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, CinematicMediaSoundWave) == 0x000360, "Member 'UCinematic_C::CinematicMediaSoundWave' has a wrong offset!");
+static_assert(offsetof(UCinematic_C, bFinished) == 0x000368, "Member 'UCinematic_C::bFinished' has a wrong offset!");
 
 }
 

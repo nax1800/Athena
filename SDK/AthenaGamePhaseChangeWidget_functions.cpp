@@ -95,10 +95,10 @@ void UAthenaGamePhaseChangeWidget_C::OnAnimationFinished(const class UWidgetAnim
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // EAthenaGamePhaseStep                    Step                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Param_MESSAGE                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FText                             Param_TimeText                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             MESSAGE_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             TimeText_0                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep Step, const class FText& Param_MESSAGE, const class FText& Param_TimeText)
+void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep Step, const class FText& MESSAGE_0, const class FText& TimeText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -108,8 +108,8 @@ void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep Step, 
 	Params::AthenaGamePhaseChangeWidget_C_UpdateMessaging Parms{};
 
 	Parms.Step = Step;
-	Parms.Param_MESSAGE = std::move(Param_MESSAGE);
-	Parms.Param_TimeText = std::move(Param_TimeText);
+	Parms.MESSAGE_0 = std::move(MESSAGE_0);
+	Parms.TimeText_0 = std::move(TimeText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

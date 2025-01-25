@@ -10,68 +10,74 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaReplayBrowserRenameDialog.AthenaReplayBrowserRenameDialog_C.OnConfirmRename__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature final
 {
 public:
-	class UAthenaReplayBrowserRowProxyInstance*   BrowserRowProxy;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   NewName;                                           // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   NewName;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature) == 0x000008, "Wrong alignment on AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature");
-static_assert(sizeof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature) == 0x000020, "Wrong size on AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature, BrowserRowProxy) == 0x000000, "Member 'AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature::BrowserRowProxy' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature, NewName) == 0x000008, "Member 'AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature::NewName' has a wrong offset!");
+static_assert(sizeof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature) == 0x000018, "Wrong size on AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature, NewName) == 0x000000, "Member 'AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature::NewName' has a wrong offset!");
 
 // Function AthenaReplayBrowserRenameDialog.AthenaReplayBrowserRenameDialog_C.ExecuteUbergraph_AthenaReplayBrowserRenameDialog
-// 0x0088 (0x0088 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0028(0x0018)()
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_ComponentBoundEvent_Text1;                  // 0x0048(0x0018)(ConstParm)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0018(0x0018)()
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_ComponentBoundEvent_Text1;                  // 0x0038(0x0018)(ConstParm)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Len_ReturnValue;                          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0068(0x0018)(ConstParm)
 	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue1;                 // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue1;                 // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_93[0x5];                                       // 0x0093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00A8(0x0018)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog) == 0x000008, "Wrong alignment on AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog");
-static_assert(sizeof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog) == 0x000088, "Wrong size on AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog");
+static_assert(sizeof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog) == 0x0000D0, "Wrong size on AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog");
 static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, EntryPoint) == 0x000000, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_IsValid_ReturnValue1) == 0x000005, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_Event_IsDesignTime) == 0x000006, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Button1) == 0x000018, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Button) == 0x000020, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetText_ReturnValue) == 0x000028, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetPlayerController_ReturnValue) == 0x000040, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Text1) == 0x000048, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Text1' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Button1) == 0x000008, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetText_ReturnValue) == 0x000018, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Text1) == 0x000038, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Text1' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_Conv_TextToString_ReturnValue) == 0x000050, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_TextIsEmpty_ReturnValue) == 0x000060, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_Len_ReturnValue) == 0x000064, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_Len_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_Text) == 0x000068, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
 static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_ComponentBoundEvent_CommitMethod) == 0x000080, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_TextIsEmpty_ReturnValue1) == 0x000081, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_TextIsEmpty_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_SwitchEnum_CmpSuccess) == 0x000082, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetUINavigationManager_ReturnValue) == 0x000088, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_SwitchEnum_CmpSuccess) == 0x000090, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_TextIsEmpty_ReturnValue1) == 0x000091, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_TextIsEmpty_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_Greater_IntInt_ReturnValue) == 0x000092, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetSubstring_ReturnValue) == 0x000098, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A8, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C0, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog, K2Node_Event_IsDesignTime) == 0x0000C8, "Member 'AthenaReplayBrowserRenameDialog_C_ExecuteUbergraph_AthenaReplayBrowserRenameDialog::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function AthenaReplayBrowserRenameDialog.AthenaReplayBrowserRenameDialog_C.BndEvt__NewNameTextBox_K2Node_ComponentBoundEvent_13_OnEditableTextCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)

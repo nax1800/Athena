@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -35,34 +35,34 @@ static_assert(offsetof(FortHeroSupportPerkWidget_C_ExecuteUbergraph_FortHeroSupp
 struct FortHeroSupportPerkWidget_C_Update final
 {
 public:
-	bool                                          Param_DisplayedOutsideOfHeroSquad;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          DisplayedOutsideOfHeroSquad_0;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortSupportBonusType                         TargetedSupportType;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortSupportBonusType                         Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortSupportBonusType                         Temp_byte_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0040(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0058(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0058(0x0018)()
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select1_Default;                            // 0x0078(0x0018)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FortHeroSupportPerkWidget_C_Update) == 0x000008, "Wrong alignment on FortHeroSupportPerkWidget_C_Update");
 static_assert(sizeof(FortHeroSupportPerkWidget_C_Update) == 0x000098, "Wrong size on FortHeroSupportPerkWidget_C_Update");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Param_DisplayedOutsideOfHeroSquad) == 0x000000, "Member 'FortHeroSupportPerkWidget_C_Update::Param_DisplayedOutsideOfHeroSquad' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, DisplayedOutsideOfHeroSquad_0) == 0x000000, "Member 'FortHeroSupportPerkWidget_C_Update::DisplayedOutsideOfHeroSquad_0' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, TargetedSupportType) == 0x000001, "Member 'FortHeroSupportPerkWidget_C_Update::TargetedSupportType' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_byte_Variable) == 0x000002, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_object_Variable) == 0x000008, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_object_Variable1) == 0x000010, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_object_Variable12) == 0x000018, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_object_Variable12' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_object_Variable2) == 0x000018, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_object_Variable2' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_byte_Variable1) == 0x000020, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_text_Variable) == 0x000028, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_text_Variable1) == 0x000040, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_text_Variable12) == 0x000058, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_text_Variable2) == 0x000058, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_text_Variable2' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, K2Node_Select_Default) == 0x000070, "Member 'FortHeroSupportPerkWidget_C_Update::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, K2Node_Select1_Default) == 0x000078, "Member 'FortHeroSupportPerkWidget_C_Update::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000090, "Member 'FortHeroSupportPerkWidget_C_Update::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -108,19 +108,19 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Temp_class_Variable;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234;                            // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12345;                           // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable5;                               // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable1;                                // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123456;                          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable6;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2B[0x1];                                       // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x002C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor1;                    // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -133,18 +133,18 @@ public:
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0068(0x0028)()
 	bool                                          CallFunc_IsPerkActive_ReturnValue1;                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_Select123_Default;                          // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_Select3_Default;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x00A0(0x0028)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00C8(0x0088)()
-	ESlateVisibility                              K2Node_Select1234_Default;                         // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0158(0x0088)()
-	struct FSlateBrush                            K2Node_Select12345_Default;                        // 0x01E0(0x0088)(ConstParm)
+	struct FSlateBrush                            K2Node_Select5_Default;                            // 0x01E0(0x0088)(ConstParm)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select123456_Default;                       // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select6_Default;                            // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x000008, "Wrong alignment on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
 static_assert(sizeof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x000270, "Wrong size on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
@@ -152,19 +152,19 @@ static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_boo
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable1) == 0x000001, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_class_Variable) == 0x000008, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_class_Variable1) == 0x000010, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable12) == 0x000018, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable2) == 0x000018, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable) == 0x000019, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable1) == 0x00001A, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable123) == 0x00001B, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable12) == 0x00001C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable123) == 0x00001D, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable1234) == 0x00001E, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable12345) == 0x00001F, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable12345' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable3) == 0x00001B, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable2) == 0x00001C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable3) == 0x00001D, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable4) == 0x00001E, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable5) == 0x00001F, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable5' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_int_Variable) == 0x000020, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_int_Variable1) == 0x000024, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_int_Variable1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable123456) == 0x000028, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable123456' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable1234) == 0x000029, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable12345) == 0x00002A, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable6) == 0x000028, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable4) == 0x000029, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_byte_Variable5) == 0x00002A, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_byte_Variable5' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_LinearColor) == 0x00002C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_LinearColor1) == 0x00003C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_LinearColor1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, CallFunc_IsPerkActive_ReturnValue) == 0x00004C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::CallFunc_IsPerkActive_ReturnValue' has a wrong offset!");
@@ -174,15 +174,15 @@ static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_S
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, CallFunc_IsInInvalidSlot_InInvalidSlot1) == 0x000061, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::CallFunc_IsInInvalidSlot_InInvalidSlot1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_SlateColor) == 0x000068, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, CallFunc_IsPerkActive_ReturnValue1) == 0x000090, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::CallFunc_IsPerkActive_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select12_Default) == 0x000091, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select123_Default) == 0x000098, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select2_Default) == 0x000091, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select3_Default) == 0x000098, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select3_Default' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_SlateColor1) == 0x0000A0, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_SlateBrush) == 0x0000C8, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select1234_Default) == 0x000150, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select1234_Default' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select4_Default) == 0x000150, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select4_Default' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_MakeStruct_SlateBrush1) == 0x000158, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select12345_Default) == 0x0001E0, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select12345_Default' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select5_Default) == 0x0001E0, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select5_Default' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, CallFunc_BooleanOR_ReturnValue) == 0x000268, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select123456_Default) == 0x00026C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select123456_Default' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, K2Node_Select6_Default) == 0x00026C, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::K2Node_Select6_Default' has a wrong offset!");
 
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateEmptyVisibility
 // 0x0005 (0x0005 - 0x0000)
@@ -232,7 +232,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPerkInCorrectSlot_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12;                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsHeroInSupportSlot_ReturnValue;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -244,7 +244,7 @@ static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_Not
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_Not_PreBool_ReturnValue1) == 0x000002, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_IsPerkInCorrectSlot_ReturnValue) == 0x000003, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_IsPerkInCorrectSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_Not_PreBool_ReturnValue12) == 0x000005, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_Not_PreBool_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_Not_PreBool_ReturnValue2) == 0x000005, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_IsHeroInSupportSlot_ReturnValue) == 0x000006, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_IsHeroInSupportSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_BooleanAND_ReturnValue1) == 0x000007, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_IsInInvalidSlot, CallFunc_BooleanOR_ReturnValue) == 0x000008, "Member 'FortHeroSupportPerkWidget_C_IsInInvalidSlot::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");

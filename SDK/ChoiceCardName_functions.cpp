@@ -20,10 +20,10 @@ namespace SDK
 // Function ChoiceCardName.ChoiceCardName_C.UpdateText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_DisplayText                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             DisplayText_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 // EFortRarity                             Rarity                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UChoiceCardName_C::UpdateText(const class FText& Param_DisplayText, EFortRarity Rarity)
+void UChoiceCardName_C::UpdateText(const class FText& DisplayText_0, EFortRarity Rarity)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UChoiceCardName_C::UpdateText(const class FText& Param_DisplayText, EFortRa
 
 	Params::ChoiceCardName_C_UpdateText Parms{};
 
-	Parms.Param_DisplayText = std::move(Param_DisplayText);
+	Parms.DisplayText_0 = std::move(DisplayText_0);
 	Parms.Rarity = Rarity;
 
 	UObject::ProcessEvent(Func, &Parms);

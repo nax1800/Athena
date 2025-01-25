@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass SK_MachineGun_Clip_Skeleton_AnimBlueprint.SK_MachineGun_Clip_Skeleton_AnimBlueprint_C
-// 0x0100 (0x0478 - 0x0378)
+// 0x00F0 (0x0448 - 0x0358)
 class USK_MachineGun_Clip_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD; // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E; // 0x03D0(0x0070)()
-	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF; // 0x0440(0x0038)()
+	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD; // 0x0368(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E; // 0x03A8(0x0068)()
+	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF; // 0x0410(0x0038)()
 
 public:
 	void ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C) == 0x000008, "Wrong alignment on USK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C) == 0x000478, "Wrong size on USK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000380, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD) == 0x000388, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E) == 0x0003D0, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF) == 0x000440, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF' has a wrong offset!");
+static_assert(sizeof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C) == 0x000448, "Wrong size on USK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
+static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000360, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD) == 0x000368, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD' has a wrong offset!");
+static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E) == 0x0003A8, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E' has a wrong offset!");
+static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF) == 0x000410, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF' has a wrong offset!");
 
 }
 

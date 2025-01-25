@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function B_StockBattleBus.B_StockBattleBus_C.ExecuteUbergraph_B_StockBattleBus
-// ()
+// (HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -34,48 +34,6 @@ void AB_StockBattleBus_C::ExecuteUbergraph_B_StockBattleBus(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function B_StockBattleBus.B_StockBattleBus_C.Bus Music Fader__FinishedFunc
-// (BlueprintEvent)
-
-void AB_StockBattleBus_C::Bus_Music_Fader__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_StockBattleBus_C", "Bus Music Fader__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function B_StockBattleBus.B_StockBattleBus_C.Bus Music Fader__UpdateFunc
-// (BlueprintEvent)
-
-void AB_StockBattleBus_C::Bus_Music_Fader__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_StockBattleBus_C", "Bus Music Fader__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function B_StockBattleBus.B_StockBattleBus_C.GrabAudioReferences
-// (BlueprintCallable, BlueprintEvent)
-
-void AB_StockBattleBus_C::GrabAudioReferences()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_StockBattleBus_C", "GrabAudioReferences");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -107,8 +65,112 @@ void AB_StockBattleBus_C::Start_Audio()
 }
 
 
+// Function B_StockBattleBus.B_StockBattleBus_C.ReceiveEndPlay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AB_StockBattleBus_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "ReceiveEndPlay");
+
+	Params::B_StockBattleBus_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.GrabAudioReferences
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_StockBattleBus_C::GrabAudioReferences()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "GrabAudioReferences");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.Light Flash Timeline__Loop__EventFunc
+// (BlueprintEvent)
+
+void AB_StockBattleBus_C::Light_Flash_Timeline__Loop__EventFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "Light Flash Timeline__Loop__EventFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.Light Flash Timeline__UpdateFunc
+// (BlueprintEvent)
+
+void AB_StockBattleBus_C::Light_Flash_Timeline__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "Light Flash Timeline__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.Light Flash Timeline__FinishedFunc
+// (BlueprintEvent)
+
+void AB_StockBattleBus_C::Light_Flash_Timeline__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "Light Flash Timeline__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.Bus Music Fader__UpdateFunc
+// (BlueprintEvent)
+
+void AB_StockBattleBus_C::Bus_Music_Fader__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "Bus Music Fader__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_StockBattleBus.B_StockBattleBus_C.Bus Music Fader__FinishedFunc
+// (BlueprintEvent)
+
+void AB_StockBattleBus_C::Bus_Music_Fader__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_StockBattleBus_C", "Bus Music Fader__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function B_StockBattleBus.B_StockBattleBus_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void AB_StockBattleBus_C::UserConstructionScript()
 {

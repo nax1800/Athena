@@ -303,5 +303,19 @@ struct FEventReply UPrivacyWidget_C::TapToClose(const struct FGeometry& MyGeomet
 	return Parms.ReturnValue;
 }
 
+
+// Function PrivacyWidget.PrivacyWidget_C.UpdateMobileHelpText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UPrivacyWidget_C::UpdateMobileHelpText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PrivacyWidget_C", "UpdateMobileHelpText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

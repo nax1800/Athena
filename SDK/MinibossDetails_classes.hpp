@@ -12,28 +12,28 @@
 
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteUI_classes.hpp"
 #include "Slate_structs.hpp"
+#include "FortniteUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MinibossDetails.MinibossDetails_C
-// 0x0050 (0x02B0 - 0x0260)
+// 0x0050 (0x02A8 - 0x0258)
 class UMinibossDetails_C final : public UFortHUDTargetUnderReticleWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       KillMinusAnimation;                                // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       OutroMinusAnimation;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       IntroMinusAnimation;                               // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBasicProgressBar_C*                    BasicProgressBar;                                  // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImagePortrait;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxShell;                                      // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextModifiers;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextName;                                          // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextUpgradeName;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       KillMinusAnimation;                                // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       OutroMinusAnimation;                               // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IntroMinusAnimation;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBasicProgressBar_C*                    BasicProgressBar;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImagePortrait;                                     // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxShell;                                      // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextModifiers;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextName;                                          // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextUpgradeName;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MinibossDetails(int32 EntryPoint);
@@ -65,17 +65,17 @@ public:
 	}
 };
 static_assert(alignof(UMinibossDetails_C) == 0x000008, "Wrong alignment on UMinibossDetails_C");
-static_assert(sizeof(UMinibossDetails_C) == 0x0002B0, "Wrong size on UMinibossDetails_C");
-static_assert(offsetof(UMinibossDetails_C, UberGraphFrame) == 0x000260, "Member 'UMinibossDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, KillMinusAnimation) == 0x000268, "Member 'UMinibossDetails_C::KillMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, OutroMinusAnimation) == 0x000270, "Member 'UMinibossDetails_C::OutroMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, IntroMinusAnimation) == 0x000278, "Member 'UMinibossDetails_C::IntroMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, BasicProgressBar) == 0x000280, "Member 'UMinibossDetails_C::BasicProgressBar' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, ImagePortrait) == 0x000288, "Member 'UMinibossDetails_C::ImagePortrait' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, SizeBoxShell) == 0x000290, "Member 'UMinibossDetails_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, TextModifiers) == 0x000298, "Member 'UMinibossDetails_C::TextModifiers' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, TextName) == 0x0002A0, "Member 'UMinibossDetails_C::TextName' has a wrong offset!");
-static_assert(offsetof(UMinibossDetails_C, TextUpgradeName) == 0x0002A8, "Member 'UMinibossDetails_C::TextUpgradeName' has a wrong offset!");
+static_assert(sizeof(UMinibossDetails_C) == 0x0002A8, "Wrong size on UMinibossDetails_C");
+static_assert(offsetof(UMinibossDetails_C, UberGraphFrame) == 0x000258, "Member 'UMinibossDetails_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, KillMinusAnimation) == 0x000260, "Member 'UMinibossDetails_C::KillMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, OutroMinusAnimation) == 0x000268, "Member 'UMinibossDetails_C::OutroMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, IntroMinusAnimation) == 0x000270, "Member 'UMinibossDetails_C::IntroMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, BasicProgressBar) == 0x000278, "Member 'UMinibossDetails_C::BasicProgressBar' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, ImagePortrait) == 0x000280, "Member 'UMinibossDetails_C::ImagePortrait' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, SizeBoxShell) == 0x000288, "Member 'UMinibossDetails_C::SizeBoxShell' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, TextModifiers) == 0x000290, "Member 'UMinibossDetails_C::TextModifiers' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, TextName) == 0x000298, "Member 'UMinibossDetails_C::TextName' has a wrong offset!");
+static_assert(offsetof(UMinibossDetails_C, TextUpgradeName) == 0x0002A0, "Member 'UMinibossDetails_C::TextUpgradeName' has a wrong offset!");
 
 }
 

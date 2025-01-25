@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HaveInviteSelect.HaveInviteSelect_C
-// 0x0030 (0x0440 - 0x0410)
+// 0x0030 (0x0348 - 0x0318)
 class UHaveInviteSelect_C final : public UFortHaveInviteSelect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_6;                                 // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_InviteOnly;                   // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_6;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_InviteOnly;                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HaveInviteSelect(int32 EntryPoint);
@@ -44,13 +44,13 @@ public:
 	}
 };
 static_assert(alignof(UHaveInviteSelect_C) == 0x000008, "Wrong alignment on UHaveInviteSelect_C");
-static_assert(sizeof(UHaveInviteSelect_C) == 0x000440, "Wrong size on UHaveInviteSelect_C");
-static_assert(offsetof(UHaveInviteSelect_C, UberGraphFrame) == 0x000410, "Member 'UHaveInviteSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHaveInviteSelect_C, Intro) == 0x000418, "Member 'UHaveInviteSelect_C::Intro' has a wrong offset!");
-static_assert(offsetof(UHaveInviteSelect_C, CommonTextBlock_1) == 0x000420, "Member 'UHaveInviteSelect_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UHaveInviteSelect_C, CommonTextBlock_6) == 0x000428, "Member 'UHaveInviteSelect_C::CommonTextBlock_6' has a wrong offset!");
-static_assert(offsetof(UHaveInviteSelect_C, CommonWidgetSwitcher_InviteOnly) == 0x000430, "Member 'UHaveInviteSelect_C::CommonWidgetSwitcher_InviteOnly' has a wrong offset!");
-static_assert(offsetof(UHaveInviteSelect_C, InviteEventTitle) == 0x000438, "Member 'UHaveInviteSelect_C::InviteEventTitle' has a wrong offset!");
+static_assert(sizeof(UHaveInviteSelect_C) == 0x000348, "Wrong size on UHaveInviteSelect_C");
+static_assert(offsetof(UHaveInviteSelect_C, UberGraphFrame) == 0x000318, "Member 'UHaveInviteSelect_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHaveInviteSelect_C, Intro) == 0x000320, "Member 'UHaveInviteSelect_C::Intro' has a wrong offset!");
+static_assert(offsetof(UHaveInviteSelect_C, CommonTextBlock_1) == 0x000328, "Member 'UHaveInviteSelect_C::CommonTextBlock_1' has a wrong offset!");
+static_assert(offsetof(UHaveInviteSelect_C, CommonTextBlock_6) == 0x000330, "Member 'UHaveInviteSelect_C::CommonTextBlock_6' has a wrong offset!");
+static_assert(offsetof(UHaveInviteSelect_C, CommonWidgetSwitcher_InviteOnly) == 0x000338, "Member 'UHaveInviteSelect_C::CommonWidgetSwitcher_InviteOnly' has a wrong offset!");
+static_assert(offsetof(UHaveInviteSelect_C, InviteEventTitle) == 0x000340, "Member 'UHaveInviteSelect_C::InviteEventTitle' has a wrong offset!");
 
 }
 

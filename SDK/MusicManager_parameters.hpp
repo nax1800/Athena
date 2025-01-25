@@ -10,257 +10,372 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function MusicManager.MusicManager_C.ExecuteUbergraph_MusicManager
-// 0x01E0 (0x01E0 - 0x0000)
+// 0x0288 (0x0288 - 0x0000)
 struct MusicManager_C_ExecuteUbergraph_MusicManager final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue;                 // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue;  // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12;       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue123;      // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1234;     // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue12;        // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12345;    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue12;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue123;       // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue123;        // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue1;                // 0x0070(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue1;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue1; // 0x0080(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue1;              // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue1;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue123456;   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1234;      // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UFortMusicVoice* Voice)> K2Node_CreateDelegate_OutputDelegate;              // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1234;       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue1;             // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue12;             // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue12;             // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue12;               // 0x00C8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue12; // 0x00D0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue12;         // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1234567;  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12345678; // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue12345;     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue123456789; // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue12345;      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue123456;    // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue123456;     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12;        // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue123;       // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1234;      // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12345;     // 0x00FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortDayPhase                                 K2Node_Event_CurrentDayPhase;                      // 0x00FF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortDayPhase                                 K2Node_Event_PreviousDayPhase;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bAtCreation;                          // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_103[0x1];                                      // 0x0103(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue1;         // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1234567;    // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10A[0x2];                                      // 0x010A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue12;        // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue123;       // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12345678910; // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearActiveEncounters_ReturnValue;       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue1234;      // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue1;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue12345678;   // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12A[0x2];                                      // 0x012A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue12345;     // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1234567891011; // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1234567;   // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue123456789;  // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue12;            // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue123;           // 0x013E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x013F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue123;            // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue123;            // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue123;            // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123;                // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_14E[0x2];                                      // 0x014E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0150(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0160(0x0008)(NoDestructor)
-	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue123;              // 0x0168(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue1234;             // 0x0170(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue123; // 0x0178(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue123;        // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UFortMusicAsset*                  CallFunc_GetAssetFromDayPhase_ReturnValue;         // 0x0188(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue1234;       // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicAsset*                        K2Node_Event_NewMusicAsset;                        // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicVoice*                        CallFunc_PlayMusicVoice_ReturnValue;               // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_Time1;                          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_Time;                           // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMusicVoice*                        K2Node_CustomEvent_Voice;                          // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue123456;    // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue1234567;   // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEventHeatPercent_ReturnValue12345678;  // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue12;             // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue123;            // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1234;           // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue12;            // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue123;           // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue12345678910; // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1234567891011; // 0x01DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue2;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue3;        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue2;          // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue1;                // 0x0038(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue4;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue5;        // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable1;                              // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue3;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue3;          // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue2;                // 0x0058(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue1;             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue6;        // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue3;                // 0x0068(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue4;         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue4;          // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable1;                               // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_76[0x2];                                       // 0x0076(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue7;        // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue5;         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue5;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_83[0x1];                                       // 0x0083(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable2;                              // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue2;             // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue4;         // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue5;         // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable3;                              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue1;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue2;        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue3;        // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue8;        // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue;  // 0x00C0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue;           // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDayPhase                                 K2Node_Event_CurrentDayPhase;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDayPhase                                 K2Node_Event_PreviousDayPhase;                     // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bAtCreation;                          // 0x00DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue9;        // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNearActiveEncounters_ReturnValue;       // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue10;       // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue6;         // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue6;          // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue3;             // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0108(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UFortMusicVoice* Voice)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
+	const class UFortMusicManagerBank*            CallFunc_GetMusicBank_ReturnValue4;                // 0x0120(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue1;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicAsset*                  CallFunc_GetAssetFromDayPhase_ReturnValue;         // 0x0130(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue1;              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue1;          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue1;              // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue1; // 0x0150(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue2;          // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue11;       // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicAsset*                        K2Node_Event_NewMusicAsset;                        // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicVoice*                        CallFunc_PlayMusicVoice_ReturnValue;               // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_Time1;                          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_Time;                           // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicVoice*                        K2Node_CustomEvent_Voice;                          // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue7;         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue7;          // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue2;             // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue3;             // 0x0196(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_197[0x1];                                      // 0x0197(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue2;              // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue3;              // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue2;              // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue3;              // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue3;              // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x01AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x01AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue2; // 0x01B0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UFortMusicAsset*                  CallFunc_GetAssetFromCombatIntensity_ReturnValue3; // 0x01B8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue3;          // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicVoice*                        CallFunc_ChangePrimaryMusic_ReturnValue4;          // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable4;                              // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable5;                              // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue1;             // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue8;          // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue9;          // 0x01DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue2;             // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue3;             // 0x01DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue10;         // 0x01DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue11;         // 0x01DF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue;          // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable6;                              // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable7;                              // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMusicManagerBank*                  K2Node_Event_NewBank;                              // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue1;         // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue2;         // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue4;             // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_205[0x3];                                      // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue3;         // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default;                             // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue12;         // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_211[0x3];                                      // 0x0211(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue4;         // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue13;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue5;         // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue6;         // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue7;         // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue8;         // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue14;         // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_23D[0x3];                                      // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue9;         // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue10;        // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue5;             // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue15;         // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_253[0x1];                                      // 0x0253(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select1_Default;                            // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue1;            // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue1;                   // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue11;        // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEventHeatPercent_ReturnValue12;        // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue6;             // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue7;             // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_272[0x2];                                      // 0x0272(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select2_Default;                            // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select3_Default;                            // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue2;                   // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue3;                   // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x000008, "Wrong alignment on MusicManager_C_ExecuteUbergraph_MusicManager");
-static_assert(sizeof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x0001E0, "Wrong size on MusicManager_C_ExecuteUbergraph_MusicManager");
+static_assert(sizeof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x000288, "Wrong size on MusicManager_C_ExecuteUbergraph_MusicManager");
 static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, EntryPoint) == 0x000000, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue) == 0x000004, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000004, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue) == 0x000008, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue) == 0x000018, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue) == 0x000020, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue) == 0x000028, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000030, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000034, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000038, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00003C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000040, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000044, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue12) == 0x000048, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x00004C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue123) == 0x000050, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue1234) == 0x000054, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue12) == 0x000058, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue12345) == 0x00005C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12) == 0x000060, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue123) == 0x000064, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue123) == 0x000068, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue1) == 0x000070, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue1) == 0x000078, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue1) == 0x000080, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue1) == 0x000088, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue1) == 0x000090, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue) == 0x000098, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue) == 0x000099, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue123456) == 0x00009C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue1234) == 0x0000A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CreateDelegate_OutputDelegate) == 0x0000A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue1234) == 0x0000B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue1) == 0x0000B9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue1) == 0x0000BA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue1) == 0x0000BB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue12) == 0x0000BC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue12) == 0x0000C0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue12) == 0x0000C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue12) == 0x0000D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue12) == 0x0000D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue1234567) == 0x0000E0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue12345678) == 0x0000E4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue12345) == 0x0000E8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue123456789) == 0x0000EC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12345) == 0x0000F0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue123456) == 0x0000F4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue123456) == 0x0000F8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0000F9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x0000FA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue12) == 0x0000FB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue123) == 0x0000FC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue1234) == 0x0000FD, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue12345) == 0x0000FE, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_CurrentDayPhase) == 0x0000FF, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_CurrentDayPhase' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_PreviousDayPhase) == 0x000100, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_PreviousDayPhase' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_bAtCreation) == 0x000101, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_bAtCreation' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue) == 0x000102, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue1) == 0x000104, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue) == 0x000108, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue1234567) == 0x000109, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue12) == 0x00010C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue123) == 0x000110, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue12345678910) == 0x000114, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_IsNearActiveEncounters_ReturnValue) == 0x000118, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_IsNearActiveEncounters_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue1234) == 0x00011C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue1) == 0x000120, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue) == 0x000124, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue1) == 0x000128, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12345678) == 0x000129, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue12345) == 0x00012C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000130, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue1234567891011) == 0x000134, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue1234567) == 0x000138, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue123456789) == 0x00013C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue12) == 0x00013D, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue123) == 0x00013E, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue12) == 0x00013F, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue12) == 0x000140, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue123) == 0x000144, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue123) == 0x000148, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue123) == 0x00014C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue123) == 0x00014D, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CreateDelegate_OutputDelegate1) == 0x000150, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000160, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue123) == 0x000168, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue1234) == 0x000170, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue123) == 0x000178, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue123) == 0x000180, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromDayPhase_ReturnValue) == 0x000188, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromDayPhase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue1234) == 0x000190, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_NewMusicAsset) == 0x000198, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_NewMusicAsset' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_PlayMusicVoice_ReturnValue) == 0x0001A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_PlayMusicVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Time1) == 0x0001A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Time1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Time) == 0x0001AC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Time' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001B0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x0001B4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Voice) == 0x0001B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Voice' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue123456) == 0x0001C0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue1234567) == 0x0001C4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue12345678) == 0x0001C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue12) == 0x0001CC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue123) == 0x0001D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue1234) == 0x0001D4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue12) == 0x0001D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue123) == 0x0001D9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12345678910) == 0x0001DA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue1234567891011) == 0x0001DB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue1234567891011' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000010, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000014, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000018, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00001C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000020, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x000024, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000028, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x00002C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000030, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue2) == 0x000034, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue1) == 0x000038, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable) == 0x000040, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue4) == 0x000044, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue5) == 0x000048, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable1) == 0x00004C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x000050, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue3) == 0x000054, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue2) == 0x000058, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable) == 0x000060, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue1) == 0x000061, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue6) == 0x000064, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue3) == 0x000068, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue4) == 0x000070, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue4) == 0x000074, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable1) == 0x000075, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue7) == 0x000078, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue5) == 0x00007C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue5) == 0x000080, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000081, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x000082, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable2) == 0x000084, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000088, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x000089, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue2) == 0x00008A, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x00008B, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x00008C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable3) == 0x000090, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000094, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetWorldDeltaSeconds_ReturnValue1) == 0x000098, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetWorldDeltaSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable2) == 0x00009C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetWorldDeltaSeconds_ReturnValue2) == 0x0000A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetWorldDeltaSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000A4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetWorldDeltaSeconds_ReturnValue3) == 0x0000A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetWorldDeltaSeconds_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue8) == 0x0000AC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000B0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue) == 0x0000B4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue) == 0x0000B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue) == 0x0000C0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue) == 0x0000C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue) == 0x0000D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_CurrentDayPhase) == 0x0000D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_CurrentDayPhase' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_PreviousDayPhase) == 0x0000D9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_PreviousDayPhase' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_bAtCreation) == 0x0000DA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_bAtCreation' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue) == 0x0000DB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue9) == 0x0000DC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_IsNearActiveEncounters_ReturnValue) == 0x0000E0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_IsNearActiveEncounters_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue10) == 0x0000E4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue1) == 0x0000E8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue6) == 0x0000EC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue6) == 0x0000F0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue3) == 0x0000F1, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CreateDelegate_OutputDelegate) == 0x0000F8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000108, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CreateDelegate_OutputDelegate1) == 0x000110, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetMusicBank_ReturnValue4) == 0x000120, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetMusicBank_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralByte_ReturnValue1) == 0x000128, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromDayPhase_ReturnValue) == 0x000130, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromDayPhase_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue1) == 0x000138, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue1) == 0x000140, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue1) == 0x000148, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue1) == 0x000150, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue2) == 0x000158, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue1) == 0x000160, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue1) == 0x000161, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue11) == 0x000164, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_NewMusicAsset) == 0x000168, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_NewMusicAsset' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_PlayMusicVoice_ReturnValue) == 0x000170, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_PlayMusicVoice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Time1) == 0x000178, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Time1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Time) == 0x00017C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Time' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000180, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000184, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_CustomEvent_Voice) == 0x000188, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_CustomEvent_Voice' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue7) == 0x000190, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue7) == 0x000194, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralByte_ReturnValue2) == 0x000195, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralByte_ReturnValue3) == 0x000196, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue2) == 0x000198, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_ByteToInt_ReturnValue3) == 0x00019C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_ByteToInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue2) == 0x0001A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue3) == 0x0001A4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue2) == 0x0001A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue3) == 0x0001A9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue2) == 0x0001AA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue3) == 0x0001AB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue2) == 0x0001B0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetAssetFromCombatIntensity_ReturnValue3) == 0x0001B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetAssetFromCombatIntensity_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue3) == 0x0001C0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_ChangePrimaryMusic_ReturnValue4) == 0x0001C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_ChangePrimaryMusic_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable4) == 0x0001D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable5) == 0x0001D4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue) == 0x0001D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue1) == 0x0001D9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue8) == 0x0001DA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue9) == 0x0001DB, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue2) == 0x0001DC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue3) == 0x0001DD, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue10) == 0x0001DE, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue11) == 0x0001DF, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue) == 0x0001E0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable3) == 0x0001E4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable6) == 0x0001E8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_float_Variable7) == 0x0001EC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_float_Variable7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_NewBank) == 0x0001F0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_NewBank' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue1) == 0x0001F8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue2) == 0x0001FC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue) == 0x000200, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue4) == 0x000204, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue3) == 0x000208, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select_Default) == 0x00020C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12) == 0x000210, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_FInterpTo_ReturnValue) == 0x000214, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue4) == 0x000218, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue13) == 0x00021C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue5) == 0x000220, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanOR_ReturnValue) == 0x000224, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue6) == 0x000228, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00022C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue7) == 0x000230, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue8) == 0x000234, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000238, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue14) == 0x00023C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000240, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue9) == 0x000244, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000248, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue10) == 0x00024C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue5) == 0x000250, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue15) == 0x000251, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanOR_ReturnValue1) == 0x000252, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select1_Default) == 0x000254, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Conv_BoolToFloat_ReturnValue1) == 0x000258, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Conv_BoolToFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_FInterpTo_ReturnValue1) == 0x00025C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_FInterpTo_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue11) == 0x000260, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue3) == 0x000264, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue12) == 0x000268, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x00026C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue6) == 0x000270, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue7) == 0x000271, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select2_Default) == 0x000274, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select3_Default) == 0x000278, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_FInterpTo_ReturnValue2) == 0x00027C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_FInterpTo_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_FInterpTo_ReturnValue3) == 0x000280, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_FInterpTo_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000284, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
+
+// Function MusicManager.MusicManager_C.OnMusicBankChanged
+// 0x0008 (0x0008 - 0x0000)
+struct MusicManager_C_OnMusicBankChanged final
+{
+public:
+	class UFortMusicManagerBank*                  NewBank;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(MusicManager_C_OnMusicBankChanged) == 0x000008, "Wrong alignment on MusicManager_C_OnMusicBankChanged");
+static_assert(sizeof(MusicManager_C_OnMusicBankChanged) == 0x000008, "Wrong size on MusicManager_C_OnMusicBankChanged");
+static_assert(offsetof(MusicManager_C_OnMusicBankChanged, NewBank) == 0x000000, "Member 'MusicManager_C_OnMusicBankChanged::NewBank' has a wrong offset!");
 
 // Function MusicManager.MusicManager_C.On Stinger Completed
 // 0x0008 (0x0008 - 0x0000)
@@ -311,13 +426,13 @@ static_assert(offsetof(MusicManager_C_PlayStinger, NewMusicAsset) == 0x000000, "
 struct MusicManager_C_OnDayPhaseChanged final
 {
 public:
-	EFortDayPhase                                 Param_CurrentDayPhase;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDayPhase                                 CurrentDayPhase_0;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortDayPhase                                 PreviousDayPhase;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bAtCreation;                                       // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MusicManager_C_OnDayPhaseChanged) == 0x000001, "Wrong alignment on MusicManager_C_OnDayPhaseChanged");
 static_assert(sizeof(MusicManager_C_OnDayPhaseChanged) == 0x000003, "Wrong size on MusicManager_C_OnDayPhaseChanged");
-static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, Param_CurrentDayPhase) == 0x000000, "Member 'MusicManager_C_OnDayPhaseChanged::Param_CurrentDayPhase' has a wrong offset!");
+static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, CurrentDayPhase_0) == 0x000000, "Member 'MusicManager_C_OnDayPhaseChanged::CurrentDayPhase_0' has a wrong offset!");
 static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, PreviousDayPhase) == 0x000001, "Member 'MusicManager_C_OnDayPhaseChanged::PreviousDayPhase' has a wrong offset!");
 static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, bAtCreation) == 0x000002, "Member 'MusicManager_C_OnDayPhaseChanged::bAtCreation' has a wrong offset!");
 

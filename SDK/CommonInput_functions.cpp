@@ -137,6 +137,31 @@ ECommonInputType UCommonInputContext::GetCurrentInputType() const
 }
 
 
+// Function CommonInput.CommonInputContext.GetDefaultInputType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ECommonInputType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ECommonInputType UCommonInputContext::GetDefaultInputType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CommonInputContext", "GetDefaultInputType");
+
+	Params::CommonInputContext_GetDefaultInputType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function CommonInput.CommonInputContext.IsUsingPointerInput
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:

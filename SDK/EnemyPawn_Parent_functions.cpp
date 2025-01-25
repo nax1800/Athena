@@ -557,12 +557,12 @@ void AEnemyPawn_Parent_C::PickColorFromAnArrayOfColors(TArray<struct FLinearColo
 
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDs
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             Parameter_Name                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Linear_Color                                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Vector_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEnemyPawn_Parent_C::SetVectorParameterOnAllCharacterMIDs(class FName Parameter_Name, const struct FLinearColor& Linear_Color)
+void AEnemyPawn_Parent_C::SetVectorParameterOnAllCharacterMIDs(class FName Parameter_Name, const struct FVector& Vector_Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -572,7 +572,7 @@ void AEnemyPawn_Parent_C::SetVectorParameterOnAllCharacterMIDs(class FName Param
 	Params::EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs Parms{};
 
 	Parms.Parameter_Name = Parameter_Name;
-	Parms.Linear_Color = std::move(Linear_Color);
+	Parms.Vector_Value = std::move(Vector_Value);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -600,20 +600,20 @@ void AEnemyPawn_Parent_C::SetScalarParameterOnAllCharacterMIDs(class FName Param
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveParticlesOnCharacterMesh
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveElementalParticles
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    Reset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AEnemyPawn_Parent_C::SetActiveParticlesOnCharacterMesh(bool Active, bool Reset)
+void AEnemyPawn_Parent_C::SetActiveElementalParticles(bool Active, bool Reset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetActiveParticlesOnCharacterMesh");
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetActiveElementalParticles");
 
-	Params::EnemyPawn_Parent_C_SetActiveParticlesOnCharacterMesh Parms{};
+	Params::EnemyPawn_Parent_C_SetActiveElementalParticles Parms{};
 
 	Parms.Active = Active;
 	Parms.Reset = Reset;
@@ -644,19 +644,19 @@ void AEnemyPawn_Parent_C::PlayAdditiveHitReacts(const struct FVector& Hit_Direct
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverrideMaterialAndCopyParametersOnCharacterMesh
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverrideMaterialAndCopyParametersOnCharacterElements
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMaterialInterface*               New_Material_To_Apply                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEnemyPawn_Parent_C::OverrideMaterialAndCopyParametersOnCharacterMesh(class UMaterialInterface* New_Material_To_Apply)
+void AEnemyPawn_Parent_C::OverrideMaterialAndCopyParametersOnCharacterElements(class UMaterialInterface* New_Material_To_Apply)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "OverrideMaterialAndCopyParametersOnCharacterMesh");
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "OverrideMaterialAndCopyParametersOnCharacterElements");
 
-	Params::EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterMesh Parms{};
+	Params::EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements Parms{};
 
 	Parms.New_Material_To_Apply = New_Material_To_Apply;
 
@@ -744,50 +744,6 @@ void AEnemyPawn_Parent_C::SpawnParticleSystemOnCharacterMesh(class UParticleSyst
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterFresnelGlowColors
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FLinearColor                     Inner_Color                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Outer_Color                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AEnemyPawn_Parent_C::SetCharacterFresnelGlowColors(const struct FLinearColor& Inner_Color, const struct FLinearColor& Outer_Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetCharacterFresnelGlowColors");
-
-	Params::EnemyPawn_Parent_C_SetCharacterFresnelGlowColors Parms{};
-
-	Parms.Inner_Color = std::move(Inner_Color);
-	Parms.Outer_Color = std::move(Outer_Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterEyeColors
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FLinearColor                     Eye_Color_Inner                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Eye_Color_Outer                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AEnemyPawn_Parent_C::SetCharacterEyeColors(const struct FLinearColor& Eye_Color_Inner, const struct FLinearColor& Eye_Color_Outer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetCharacterEyeColors");
-
-	Params::EnemyPawn_Parent_C_SetCharacterEyeColors Parms{};
-
-	Parms.Eye_Color_Inner = std::move(Eye_Color_Inner);
-	Parms.Eye_Color_Outer = std::move(Eye_Color_Outer);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.CharacterSpawnInSafetyCheck
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -802,57 +758,23 @@ void AEnemyPawn_Parent_C::CharacterSpawnInSafetyCheck()
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialOnCharacterMesh
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialOnCharacterElements
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Delay_in_Seconds                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEnemyPawn_Parent_C::RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds)
+void AEnemyPawn_Parent_C::RestorePreviousMaterialOnCharacterElements(float Delay_in_Seconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "RestorePreviousMaterialOnCharacterMesh");
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "RestorePreviousMaterialOnCharacterElements");
 
-	Params::EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterMesh Parms{};
+	Params::EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements Parms{};
 
 	Parms.Delay_in_Seconds = Delay_in_Seconds;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnMeshAttachedToCharacter
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UStaticMesh*                      Static_Mesh                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             Socket_Name                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                       Relative_Transform                                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// bool                                    Absolute_Location                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Absolute_Rotation                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Absolute_Scale                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UStaticMeshComponent*             Static_Mesh_Component_Reference                        (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AEnemyPawn_Parent_C::SpawnMeshAttachedToCharacter(class UStaticMesh* Static_Mesh, class FName Socket_Name, const struct FTransform& Relative_Transform, bool Absolute_Location, bool Absolute_Rotation, bool Absolute_Scale, class UStaticMeshComponent** Static_Mesh_Component_Reference)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "SpawnMeshAttachedToCharacter");
-
-	Params::EnemyPawn_Parent_C_SpawnMeshAttachedToCharacter Parms{};
-
-	Parms.Static_Mesh = Static_Mesh;
-	Parms.Socket_Name = Socket_Name;
-	Parms.Relative_Transform = std::move(Relative_Transform);
-	Parms.Absolute_Location = Absolute_Location;
-	Parms.Absolute_Rotation = Absolute_Rotation;
-	Parms.Absolute_Scale = Absolute_Scale;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Static_Mesh_Component_Reference != nullptr)
-		*Static_Mesh_Component_Reference = Parms.Static_Mesh_Component_Reference;
 }
 
 
@@ -878,87 +800,19 @@ void AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHeadHusk(bool ApplyPumpkin
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_SpecialEventHalloweenPumpkinHeadApplied
-// (HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AEnemyPawn_Parent_C::OnRep_SpecialEventHalloweenPumpkinHeadApplied()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "OnRep_SpecialEventHalloweenPumpkinHeadApplied");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverrideMaterialFromMapByMeshTag
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AEnemyPawn_Parent_C::OverrideMaterialFromMapByMeshTag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "OverrideMaterialFromMapByMeshTag");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverwriteKeysInMaterialMap
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UMaterialInterface*               Fire                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*               Ice                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*               Lightning                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*               Default                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AEnemyPawn_Parent_C::OverwriteKeysInMaterialMap(class UMaterialInterface* Fire, class UMaterialInterface* Ice, class UMaterialInterface* Lightning, class UMaterialInterface* Default)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "OverwriteKeysInMaterialMap");
-
-	Params::EnemyPawn_Parent_C_OverwriteKeysInMaterialMap Parms{};
-
-	Parms.Fire = Fire;
-	Parms.Ice = Ice;
-	Parms.Lightning = Lightning;
-	Parms.Default = Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestoreMaterialMapToDefaults
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AEnemyPawn_Parent_C::RestoreMaterialMapToDefaults()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "RestoreMaterialMapToDefaults");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.CreateDuplicateCharacterMesh
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.CreateDuplicateCharacterElements
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMaterialInterface*               Material_to_Apply                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEnemyPawn_Parent_C::CreateDuplicateCharacterMesh(class UMaterialInterface* Material_to_Apply)
+void AEnemyPawn_Parent_C::CreateDuplicateCharacterElements(class UMaterialInterface* Material_to_Apply)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "CreateDuplicateCharacterMesh");
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "CreateDuplicateCharacterElements");
 
-	Params::EnemyPawn_Parent_C_CreateDuplicateCharacterMesh Parms{};
+	Params::EnemyPawn_Parent_C_CreateDuplicateCharacterElements Parms{};
 
 	Parms.Material_to_Apply = Material_to_Apply;
 
@@ -986,19 +840,19 @@ void AEnemyPawn_Parent_C::SetDuplicateCharacterMeshHiddenInGame(bool Hidden)
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetParticlesOnCharacterMeshHiddenInGame
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetElementalParticlesHiddenInGame
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Hidden                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AEnemyPawn_Parent_C::SetParticlesOnCharacterMeshHiddenInGame(bool Hidden)
+void AEnemyPawn_Parent_C::SetElementalParticlesHiddenInGame(bool Hidden)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetParticlesOnCharacterMeshHiddenInGame");
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "SetElementalParticlesHiddenInGame");
 
-	Params::EnemyPawn_Parent_C_SetParticlesOnCharacterMeshHiddenInGame Parms{};
+	Params::EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame Parms{};
 
 	Parms.Hidden = Hidden;
 
@@ -1028,7 +882,7 @@ void AEnemyPawn_Parent_C::TransformHitLocationWorldSpaceToPreskinnedLocalSpace(s
 
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDsByMap
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TMap<class FName, struct FLinearColor>  Map                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
@@ -1098,6 +952,68 @@ void AEnemyPawn_Parent_C::SetMinibossLightHiddenInGame(bool Hidden)
 	Parms.Hidden = Hidden;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousPhysMaterialOnCharacterMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay_in_Seconds                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEnemyPawn_Parent_C::RestorePreviousPhysMaterialOnCharacterMesh(float Delay_in_Seconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "RestorePreviousPhysMaterialOnCharacterMesh");
+
+	Params::EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh Parms{};
+
+	Parms.Delay_in_Seconds = Delay_in_Seconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeleteDuplicateCharacterElements
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AEnemyPawn_Parent_C::DeleteDuplicateCharacterElements()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "DeleteDuplicateCharacterElements");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.DynamicMaterialArraySetup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UMaterialInterface*>       Array_to_Check                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UMaterialInstanceDynamic*> Array_to_Store                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UMaterialInterface*               New_Material                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              Mesh_to_Assign_New_Material                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEnemyPawn_Parent_C::DynamicMaterialArraySetup(TArray<class UMaterialInterface*>& Array_to_Check, const TArray<class UMaterialInstanceDynamic*>& Array_to_Store, class UMaterialInterface* New_Material, class UPrimitiveComponent* Mesh_to_Assign_New_Material)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnemyPawn_Parent_C", "DynamicMaterialArraySetup");
+
+	Params::EnemyPawn_Parent_C_DynamicMaterialArraySetup Parms{};
+
+	Parms.Array_to_Check = std::move(Array_to_Check);
+	Parms.Array_to_Store = std::move(Array_to_Store);
+	Parms.New_Material = New_Material;
+	Parms.Mesh_to_Assign_New_Material = Mesh_to_Assign_New_Material;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array_to_Check = std::move(Parms.Array_to_Check);
 }
 
 

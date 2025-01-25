@@ -21,9 +21,9 @@ namespace SDK
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   SacrificePoints                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_CurrentTier                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTier_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformResultInfo_C::OnTransformConfirmed__DelegateSignature(int32 SacrificePoints, int32 Param_CurrentTier)
+void UItemTransformResultInfo_C::OnTransformConfirmed__DelegateSignature(int32 SacrificePoints, int32 CurrentTier_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -33,7 +33,7 @@ void UItemTransformResultInfo_C::OnTransformConfirmed__DelegateSignature(int32 S
 	Params::ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature Parms{};
 
 	Parms.SacrificePoints = SacrificePoints;
-	Parms.Param_CurrentTier = Param_CurrentTier;
+	Parms.CurrentTier_0 = CurrentTier_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -251,10 +251,10 @@ int32 UItemTransformResultInfo_C::CalculateNextTier()
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.Get Transform Data
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_CurrentSacrificePoints                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_CurrentTier                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentSacrificePoints_0                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTier_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformResultInfo_C::Get_Transform_Data(int32* Param_CurrentSacrificePoints, int32* Param_CurrentTier)
+void UItemTransformResultInfo_C::Get_Transform_Data(int32* CurrentSacrificePoints_0, int32* CurrentTier_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -265,11 +265,11 @@ void UItemTransformResultInfo_C::Get_Transform_Data(int32* Param_CurrentSacrific
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_CurrentSacrificePoints != nullptr)
-		*Param_CurrentSacrificePoints = Parms.Param_CurrentSacrificePoints;
+	if (CurrentSacrificePoints_0 != nullptr)
+		*CurrentSacrificePoints_0 = Parms.CurrentSacrificePoints_0;
 
-	if (Param_CurrentTier != nullptr)
-		*Param_CurrentTier = Parms.Param_CurrentTier;
+	if (CurrentTier_0 != nullptr)
+		*CurrentTier_0 = Parms.CurrentTier_0;
 }
 
 

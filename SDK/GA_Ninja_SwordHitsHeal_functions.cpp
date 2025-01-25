@@ -37,51 +37,6 @@ void UGA_Ninja_SwordHitsHeal_C::ExecuteUbergraph_GA_Ninja_SwordHitsHeal(int32 En
 }
 
 
-// Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.K2_ActivateAbilityFromEvent
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FGameplayEventData               Param_EventData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& Param_EventData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
-
-	Params::GA_Ninja_SwordHitsHeal_C_K2_ActivateAbilityFromEvent Parms{};
-
-	Parms.Param_EventData = std::move(Param_EventData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.K2_ShouldAbilityRespondToEvent
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGameplayAbilityActorInfo        ActorInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
-// struct FGameplayEventData               Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UGA_Ninja_SwordHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
-
-	Params::GA_Ninja_SwordHitsHeal_C_K2_ShouldAbilityRespondToEvent Parms{};
-
-	Parms.ActorInfo = std::move(ActorInfo);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.SetupAbility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -99,6 +54,51 @@ void UGA_Ninja_SwordHitsHeal_C::SetupAbility(class UAbilitySystemComponent* Abil
 	Parms.AbilitySystem = AbilitySystem;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.K2_ActivateAbilityFromEvent
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FGameplayEventData               EventData_0                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
+
+	Params::GA_Ninja_SwordHitsHeal_C_K2_ActivateAbilityFromEvent Parms{};
+
+	Parms.EventData_0 = std::move(EventData_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.K2_ShouldAbilityRespondToEvent
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FGameplayAbilityActorInfo        ActorInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+// struct FGameplayEventData               Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UGA_Ninja_SwordHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::GA_Ninja_SwordHitsHeal_C_K2_ShouldAbilityRespondToEvent Parms{};
+
+	Parms.ActorInfo = std::move(ActorInfo);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

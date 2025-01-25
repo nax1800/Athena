@@ -191,9 +191,9 @@ void UAthenaLobbyPlayerPanelDetails_C::InitializeContextEvents()
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Param_TeamMemberInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo)
+void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -202,7 +202,7 @@ void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamM
 
 	Params::AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo Parms{};
 
-	Parms.Param_TeamMemberInfo = std::move(Param_TeamMemberInfo);
+	Parms.TeamMemberInfo_0 = std::move(TeamMemberInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

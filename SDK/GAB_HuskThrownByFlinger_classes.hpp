@@ -10,33 +10,32 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskThrownByFlinger.GAB_HuskThrownByFlinger_C
-// 0x0068 (0x0B50 - 0x0AE8)
+// 0x0060 (0x0958 - 0x08F8)
 class UGAB_HuskThrownByFlinger_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class AHuskPawn_C*                            HuskPawn;                                          // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPawn*                              FlingerPawn;                                       // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ZVelocityWhenShot;                                 // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         XYVelocityMaintainedWhenShot;                      // 0x0B0C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   HuskPawnCapsuleDefaultCollisionProfileName;        // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger; // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FireLocation;                                      // 0x0B20(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2C[0x4];                                      // 0x0B2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   MontageSectionFlyingLoop;                          // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HuskPawnOriginalGravityScale;                      // 0x0B38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B3C[0x4];                                      // 0x0B3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ECollisionResponse>                    StoredCollisionResponses;                          // 0x0B40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class AHuskPawn_C*                            HuskPawn;                                          // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPawn*                              FlingerPawn;                                       // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ZVelocityWhenShot;                                 // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         XYVelocityMaintainedWhenShot;                      // 0x0914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HuskPawnCapsuleDefaultCollisionProfileName;        // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger; // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FireLocation;                                      // 0x0928(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_934[0x4];                                      // 0x0934(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   MontageSectionFlyingLoop;                          // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HuskPawnOriginalGravityScale;                      // 0x0940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_944[0x4];                                      // 0x0944(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ECollisionResponse>                    StoredCollisionResponses;                          // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GAB_HuskThrownByFlinger(int32 EntryPoint);
@@ -73,18 +72,18 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskThrownByFlinger_C) == 0x000008, "Wrong alignment on UGAB_HuskThrownByFlinger_C");
-static_assert(sizeof(UGAB_HuskThrownByFlinger_C) == 0x000B50, "Wrong size on UGAB_HuskThrownByFlinger_C");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_HuskThrownByFlinger_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawn) == 0x000AF8, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, FlingerPawn) == 0x000B00, "Member 'UGAB_HuskThrownByFlinger_C::FlingerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, ZVelocityWhenShot) == 0x000B08, "Member 'UGAB_HuskThrownByFlinger_C::ZVelocityWhenShot' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, XYVelocityMaintainedWhenShot) == 0x000B0C, "Member 'UGAB_HuskThrownByFlinger_C::XYVelocityMaintainedWhenShot' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnCapsuleDefaultCollisionProfileName) == 0x000B10, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnCapsuleDefaultCollisionProfileName' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger) == 0x000B18, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, FireLocation) == 0x000B20, "Member 'UGAB_HuskThrownByFlinger_C::FireLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, MontageSectionFlyingLoop) == 0x000B30, "Member 'UGAB_HuskThrownByFlinger_C::MontageSectionFlyingLoop' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnOriginalGravityScale) == 0x000B38, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnOriginalGravityScale' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskThrownByFlinger_C, StoredCollisionResponses) == 0x000B40, "Member 'UGAB_HuskThrownByFlinger_C::StoredCollisionResponses' has a wrong offset!");
+static_assert(sizeof(UGAB_HuskThrownByFlinger_C) == 0x000958, "Wrong size on UGAB_HuskThrownByFlinger_C");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_HuskThrownByFlinger_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawn) == 0x000900, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, FlingerPawn) == 0x000908, "Member 'UGAB_HuskThrownByFlinger_C::FlingerPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, ZVelocityWhenShot) == 0x000910, "Member 'UGAB_HuskThrownByFlinger_C::ZVelocityWhenShot' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, XYVelocityMaintainedWhenShot) == 0x000914, "Member 'UGAB_HuskThrownByFlinger_C::XYVelocityMaintainedWhenShot' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnCapsuleDefaultCollisionProfileName) == 0x000918, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnCapsuleDefaultCollisionProfileName' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger) == 0x000920, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnCapsuleCollisionProfileNameWhenHeldByFlinger' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, FireLocation) == 0x000928, "Member 'UGAB_HuskThrownByFlinger_C::FireLocation' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, MontageSectionFlyingLoop) == 0x000938, "Member 'UGAB_HuskThrownByFlinger_C::MontageSectionFlyingLoop' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, HuskPawnOriginalGravityScale) == 0x000940, "Member 'UGAB_HuskThrownByFlinger_C::HuskPawnOriginalGravityScale' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskThrownByFlinger_C, StoredCollisionResponses) == 0x000948, "Member 'UGAB_HuskThrownByFlinger_C::StoredCollisionResponses' has a wrong offset!");
 
 }
 

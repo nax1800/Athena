@@ -216,11 +216,11 @@ void UJournalQuestDetails_C::StopConversation()
 // Function JournalQuestDetails.JournalQuestDetails_C.StartConversation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortConversation*                Param_Conversation                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortConversation*                Conversation_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestItem*                   QuestItem                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsOutro_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJournalQuestDetails_C::StartConversation(class UFortConversation* Param_Conversation, class UFortQuestItem* QuestItem, bool IsOutro_)
+void UJournalQuestDetails_C::StartConversation(class UFortConversation* Conversation_0, class UFortQuestItem* QuestItem, bool IsOutro_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -229,7 +229,7 @@ void UJournalQuestDetails_C::StartConversation(class UFortConversation* Param_Co
 
 	Params::JournalQuestDetails_C_StartConversation Parms{};
 
-	Parms.Param_Conversation = Param_Conversation;
+	Parms.Conversation_0 = Conversation_0;
 	Parms.QuestItem = QuestItem;
 	Parms.IsOutro_ = IsOutro_;
 
@@ -240,9 +240,9 @@ void UJournalQuestDetails_C::StartConversation(class UFortConversation* Param_Co
 // Function JournalQuestDetails.JournalQuestDetails_C.IsQuestAudioPlaying
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsQuestAudioPlaying                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsQuestAudioPlaying_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* Param_IsQuestAudioPlaying)
+void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* IsQuestAudioPlaying_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -253,8 +253,8 @@ void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* Param_IsQuestAudioPlaying
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsQuestAudioPlaying != nullptr)
-		*Param_IsQuestAudioPlaying = Parms.Param_IsQuestAudioPlaying;
+	if (IsQuestAudioPlaying_0 != nullptr)
+		*IsQuestAudioPlaying_0 = Parms.IsQuestAudioPlaying_0;
 }
 
 

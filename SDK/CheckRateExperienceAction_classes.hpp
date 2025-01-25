@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass CheckRateExperienceAction.CheckRateExperienceAction_C
-// 0x0010 (0x0388 - 0x0378)
+// 0x0010 (0x0398 - 0x0388)
 class ACheckRateExperienceAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CheckRateExperienceAction(int32 EntryPoint);
@@ -42,9 +42,9 @@ public:
 	}
 };
 static_assert(alignof(ACheckRateExperienceAction_C) == 0x000008, "Wrong alignment on ACheckRateExperienceAction_C");
-static_assert(sizeof(ACheckRateExperienceAction_C) == 0x000388, "Wrong size on ACheckRateExperienceAction_C");
-static_assert(offsetof(ACheckRateExperienceAction_C, UberGraphFrame) == 0x000378, "Member 'ACheckRateExperienceAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACheckRateExperienceAction_C, DefaultSceneRoot) == 0x000380, "Member 'ACheckRateExperienceAction_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ACheckRateExperienceAction_C) == 0x000398, "Wrong size on ACheckRateExperienceAction_C");
+static_assert(offsetof(ACheckRateExperienceAction_C, UberGraphFrame) == 0x000388, "Member 'ACheckRateExperienceAction_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ACheckRateExperienceAction_C, DefaultSceneRoot) == 0x000390, "Member 'ACheckRateExperienceAction_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

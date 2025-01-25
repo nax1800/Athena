@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTrackerTrackedQuestsList.QuestTrackerTrackedQuestsList_C
-// 0x0000 (0x0250 - 0x0250)
+// 0x0000 (0x0248 - 0x0248)
 class UQuestTrackerTrackedQuestsList_C final : public UFortQuestTrackerList
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(UQuestTrackerTrackedQuestsList_C) == 0x000008, "Wrong alignment on UQuestTrackerTrackedQuestsList_C");
-static_assert(sizeof(UQuestTrackerTrackedQuestsList_C) == 0x000250, "Wrong size on UQuestTrackerTrackedQuestsList_C");
+static_assert(sizeof(UQuestTrackerTrackedQuestsList_C) == 0x000248, "Wrong size on UQuestTrackerTrackedQuestsList_C");
 
 }
 

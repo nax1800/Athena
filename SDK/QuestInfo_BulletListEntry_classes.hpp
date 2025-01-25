@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C
-// 0x0020 (0x0238 - 0x0218)
+// 0x0020 (0x0230 - 0x0210)
 class UQuestInfo_BulletListEntry_C final : public UCommonUserWidget
 {
 public:
-	class UImage*                                 ImageBorder;                                       // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageEntryIcon;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxIcon;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextBoxEntryText;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageBorder;                                       // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageEntryIcon;                                    // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxIcon;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextBoxEntryText;                                  // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void InitBullet(const class FText& EntryText);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UQuestInfo_BulletListEntry_C) == 0x000008, "Wrong alignment on UQuestInfo_BulletListEntry_C");
-static_assert(sizeof(UQuestInfo_BulletListEntry_C) == 0x000238, "Wrong size on UQuestInfo_BulletListEntry_C");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageBorder) == 0x000218, "Member 'UQuestInfo_BulletListEntry_C::ImageBorder' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageEntryIcon) == 0x000220, "Member 'UQuestInfo_BulletListEntry_C::ImageEntryIcon' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, SizeBoxIcon) == 0x000228, "Member 'UQuestInfo_BulletListEntry_C::SizeBoxIcon' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, TextBoxEntryText) == 0x000230, "Member 'UQuestInfo_BulletListEntry_C::TextBoxEntryText' has a wrong offset!");
+static_assert(sizeof(UQuestInfo_BulletListEntry_C) == 0x000230, "Wrong size on UQuestInfo_BulletListEntry_C");
+static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageBorder) == 0x000210, "Member 'UQuestInfo_BulletListEntry_C::ImageBorder' has a wrong offset!");
+static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageEntryIcon) == 0x000218, "Member 'UQuestInfo_BulletListEntry_C::ImageEntryIcon' has a wrong offset!");
+static_assert(offsetof(UQuestInfo_BulletListEntry_C, SizeBoxIcon) == 0x000220, "Member 'UQuestInfo_BulletListEntry_C::SizeBoxIcon' has a wrong offset!");
+static_assert(offsetof(UQuestInfo_BulletListEntry_C, TextBoxEntryText) == 0x000228, "Member 'UQuestInfo_BulletListEntry_C::TextBoxEntryText' has a wrong offset!");
 
 }
 

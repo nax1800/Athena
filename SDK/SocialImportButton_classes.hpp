@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SocialImportButton.SocialImportButton_C
-// 0x0040 (0x0878 - 0x0838)
+// 0x0040 (0x0900 - 0x08C0)
 class USocialImportButton_C final : public UFortSocialImportButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0838(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                ContentBorder;                                     // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LeftSideImage;                                     // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             RightExtraContentSlot;                             // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   TextOverride;                                      // 0x0860(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                ContentBorder;                                     // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LeftSideImage;                                     // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             RightExtraContentSlot;                             // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   TextOverride;                                      // 0x08E8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_SocialImportButton(int32 EntryPoint);
@@ -45,13 +45,13 @@ public:
 	}
 };
 static_assert(alignof(USocialImportButton_C) == 0x000008, "Wrong alignment on USocialImportButton_C");
-static_assert(sizeof(USocialImportButton_C) == 0x000878, "Wrong size on USocialImportButton_C");
-static_assert(offsetof(USocialImportButton_C, UberGraphFrame) == 0x000838, "Member 'USocialImportButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialImportButton_C, CenterButtonTextWidget) == 0x000840, "Member 'USocialImportButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(USocialImportButton_C, ContentBorder) == 0x000848, "Member 'USocialImportButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(USocialImportButton_C, LeftSideImage) == 0x000850, "Member 'USocialImportButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(USocialImportButton_C, RightExtraContentSlot) == 0x000858, "Member 'USocialImportButton_C::RightExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(USocialImportButton_C, TextOverride) == 0x000860, "Member 'USocialImportButton_C::TextOverride' has a wrong offset!");
+static_assert(sizeof(USocialImportButton_C) == 0x000900, "Wrong size on USocialImportButton_C");
+static_assert(offsetof(USocialImportButton_C, UberGraphFrame) == 0x0008C0, "Member 'USocialImportButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USocialImportButton_C, CenterButtonTextWidget) == 0x0008C8, "Member 'USocialImportButton_C::CenterButtonTextWidget' has a wrong offset!");
+static_assert(offsetof(USocialImportButton_C, ContentBorder) == 0x0008D0, "Member 'USocialImportButton_C::ContentBorder' has a wrong offset!");
+static_assert(offsetof(USocialImportButton_C, LeftSideImage) == 0x0008D8, "Member 'USocialImportButton_C::LeftSideImage' has a wrong offset!");
+static_assert(offsetof(USocialImportButton_C, RightExtraContentSlot) == 0x0008E0, "Member 'USocialImportButton_C::RightExtraContentSlot' has a wrong offset!");
+static_assert(offsetof(USocialImportButton_C, TextOverride) == 0x0008E8, "Member 'USocialImportButton_C::TextOverride' has a wrong offset!");
 
 }
 

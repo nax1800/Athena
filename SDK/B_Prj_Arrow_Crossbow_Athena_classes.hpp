@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Arrow_Crossbow_Athena.B_Prj_Arrow_Crossbow_Athena_C
-// 0x0018 (0x0928 - 0x0910)
+// 0x0018 (0x07D0 - 0x07B8)
 class AB_Prj_Arrow_Crossbow_Athena_C final : public AFortProjectileAthena
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0910(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               P_Crossbow_Projectile;                             // 0x0918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        HitPlayerEffect;                                   // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x07B8(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               P_Crossbow_Projectile;                             // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        HitPlayerEffect;                                   // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Prj_Arrow_Crossbow_Athena(int32 EntryPoint);
@@ -43,10 +43,10 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Arrow_Crossbow_Athena_C) == 0x000008, "Wrong alignment on AB_Prj_Arrow_Crossbow_Athena_C");
-static_assert(sizeof(AB_Prj_Arrow_Crossbow_Athena_C) == 0x000928, "Wrong size on AB_Prj_Arrow_Crossbow_Athena_C");
-static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, UberGraphFrame) == 0x000910, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, P_Crossbow_Projectile) == 0x000918, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::P_Crossbow_Projectile' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, HitPlayerEffect) == 0x000920, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::HitPlayerEffect' has a wrong offset!");
+static_assert(sizeof(AB_Prj_Arrow_Crossbow_Athena_C) == 0x0007D0, "Wrong size on AB_Prj_Arrow_Crossbow_Athena_C");
+static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, UberGraphFrame) == 0x0007B8, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, P_Crossbow_Projectile) == 0x0007C0, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::P_Crossbow_Projectile' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Arrow_Crossbow_Athena_C, HitPlayerEffect) == 0x0007C8, "Member 'AB_Prj_Arrow_Crossbow_Athena_C::HitPlayerEffect' has a wrong offset!");
 
 }
 

@@ -10,147 +10,165 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
+#include "GameplayAbilities_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "StructRecyclingResource_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Constructor_BASE.B_Constructor_BASE_C
-// 0x0568 (0x1708 - 0x11A0)
+// 0x0728 (0x1630 - 0x0F08)
 class AB_Constructor_BASE_C final : public AFortConstructorBASE
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x11A0(0x0008)(Transient, DuplicateTransient)
-	class UAudioComponent*                        BaseEnergyComponentC;                              // 0x11A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        BaseEnergyComponentB;                              // 0x11B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        BaseEnergyComponentA;                              // 0x11B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_FeeltheBase_Chargup;                             // 0x11C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        FeelTheBaseTraceLocation;                          // 0x11C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x11D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Capsule;                                           // 0x11D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       Sphere_Collision_For_Anim;                         // 0x11E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 SK_Base_Device;                                    // 0x11E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortMiniMapComponent*                  FortMiniMap1;                                      // 0x11F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Workbench_Ticking;                                 // 0x11F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Root;                                              // 0x1200(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_BigBrother;                                     // 0x1208(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         BigBrotherAdditionalNodes;                         // 0x1228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_122C[0x4];                                     // 0x122C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             MiniMapIcon;                                       // 0x1230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Minimap_View_Distance;                             // 0x1238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_123C[0x4];                                     // 0x123C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_ElectrifiedFloors;                              // 0x1240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_Hyperthreading;                                 // 0x1248(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_SubroutineOptimization;                         // 0x1268(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_SubroutineOptimization;                         // 0x1288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_Recycling;                                      // 0x1290(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         ConnectedWood;                                     // 0x12B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ConnectedStone;                                    // 0x12B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ConnectedMetal;                                    // 0x12B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12BC[0x4];                                     // 0x12BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortWorldItemDefinition*               Wood;                                              // 0x12C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortWorldItemDefinition*               Stone;                                             // 0x12C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortWorldItemDefinition*               Metal;                                             // 0x12D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RecyclingMultiplier;                               // 0x12D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SpawnWood;                                         // 0x12DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SpawnStone;                                        // 0x12DD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SpawnMetal;                                        // 0x12DE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12DF[0x1];                                     // 0x12DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SpawnMax;                                          // 0x12E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HyperThreadingMultiplier;                          // 0x12E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_DefensiveIntegration;                           // 0x12E8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_DefensiveIntegration;                           // 0x1308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_AutomatedDefenses;                              // 0x1310(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         AutomatedDefenses_Additional_Nodes;                // 0x1330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1334[0x4];                                     // 0x1334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_TotalIntegration;                               // 0x1338(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_PowerModulation;                                // 0x1358(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_PowerModulation;                                // 0x1378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DefensiveIntegrationLevel;                         // 0x1380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1384[0x4];                                     // 0x1384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_LoftyArchitecture;                              // 0x1388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_LoftyArchitecture;                              // 0x1390(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_SafetyProtocols;                                // 0x13B0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_SafetyProtocols;                                // 0x13D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          BaseIsPlaced;                                      // 0x13D8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_13D9[0x3];                                     // 0x13D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NumPlayersNearBase;                                // 0x13DC(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BasePowerLevel;                                    // 0x13E0(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TotalResourcesSpawned;                             // 0x13E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ResourceLimit;                                     // 0x13E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13EC[0x4];                                     // 0x13EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_Overclocking;                                   // 0x13F0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_UpgradedPowerModulation;                        // 0x1410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_ElectrifiedFloors;                              // 0x1418(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_SlowUnit;                                       // 0x1438(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_SlowUnit;                                       // 0x1458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_ContainmentUnit;                                // 0x1460(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_Grant_TriggerReflectDamage_FromBASEWall;        // 0x1480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_StrongerExit;                                   // 0x1488(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_StrongerExit;                                   // 0x14A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_CardioFeedbackLoop;                             // 0x14B0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_ShieldCapacitor;                                // 0x14D0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_ShieldCapacitor;                                // 0x14F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStructRecyclingResource               StoredWood;                                        // 0x14F8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FStructRecyclingResource               StoredStone;                                       // 0x1508(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FStructRecyclingResource               StoredMetal;                                       // 0x1518(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         HyperthreadingResourceLimit;                       // 0x1528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MegaBASEAdditionalNodes;                           // 0x152C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_NeuroFeedbackLoop;                              // 0x1530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAbilitySystemComponent*                ConstructorAbilitySystemComponent;                 // 0x1538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_OutgoingHealAmp;                                // 0x1540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_FullyContained;                                 // 0x1548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Effect_Mesh_Comp;                                  // 0x1550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInterface*>             Inner_MIDs_Friendly;                               // 0x1558(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	float                                         Transition_Start_Delay;                            // 0x1568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_156C[0x4];                                     // 0x156C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             Outer_MIDs_Friendly;                               // 0x1570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_MegaBASE;                                       // 0x1580(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_NeuroFeedbackLoop;                              // 0x15A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_CardioFeedbackLoop;                             // 0x15C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_FullyContained;                                 // 0x15C8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          InitialStaticMeshAnimationIsComplete;              // 0x15E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15E9[0x7];                                     // 0x15E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             SoundResourcesCreated;                             // 0x15F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SoundResourcesCollected;                           // 0x15F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UStaticMeshComponent*>           EffectMeshArray;                                   // 0x1600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<class ABuildingSMActor*>               BuildingActorArray;                                // 0x1610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	float                                         DelayBeforeShowingMeshes;                          // 0x1620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DelayDisabled;                                     // 0x1624(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1625[0x3];                                     // 0x1625(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           DelayedMeshedTimer;                                // 0x1628(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UClass*                                 GE_TrapDamage;                                     // 0x1630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_TrapDamage;                                     // 0x1638(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_TrapReloadRate;                                 // 0x1658(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_TrapReloadRate;                                 // 0x1678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_Constructor_BASEOutgoingDamageMod;              // 0x1680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         T1Amount;                                          // 0x1688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         T2Amount;                                          // 0x168C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         T3Amount;                                          // 0x1690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RecyclingTimer;                                    // 0x1694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_FeelTheBase;                                    // 0x1698(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_FeelTheBase;                                    // 0x16B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerPawn_Constructor_C*              ConstructorPawn;                                   // 0x16C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               FeelTheBasePowerLevel1;                            // 0x16C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               FeelTheBasePowerLevel2;                            // 0x16D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               FeelTheBasePowerLevel3;                            // 0x16D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             EnergyBuildASound;                                 // 0x16E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             EnergyBuildBSound;                                 // 0x16E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             EnergyBuildCSound;                                 // 0x16F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             EnergyStageTransitionSound;                        // 0x16F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsPlayingLoopA;                                   // 0x1700(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0F08(0x0008)(Transient, DuplicateTransient)
+	class UAudioComponent*                        BaseEnergyComponentC;                              // 0x0F10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        BaseEnergyComponentB;                              // 0x0F18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        BaseEnergyComponentA;                              // 0x0F20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_FeeltheBase_Chargup;                             // 0x0F28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        FeelTheBaseTraceLocation;                          // 0x0F30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x0F38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Capsule;                                           // 0x0F40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere_Collision_For_Anim;                         // 0x0F48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SK_Base_Device;                                    // 0x0F50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortMiniMapComponent*                  FortMiniMap1;                                      // 0x0F58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Workbench_Ticking;                                 // 0x0F60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Root;                                              // 0x0F68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_BigBrother;                                     // 0x0F70(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         BigBrotherAdditionalNodes;                         // 0x0F90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F94[0x4];                                      // 0x0F94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             MiniMapIcon;                                       // 0x0F98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Minimap_View_Distance;                             // 0x0FA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FA4[0x4];                                      // 0x0FA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_ElectrifiedFloors;                              // 0x0FA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_Hyperthreading;                                 // 0x0FB0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_SubroutineOptimization;                         // 0x0FD0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_SubroutineOptimization;                         // 0x0FF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_Recycling;                                      // 0x0FF8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         ConnectedWood;                                     // 0x1018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ConnectedStone;                                    // 0x101C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ConnectedMetal;                                    // 0x1020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1024[0x4];                                     // 0x1024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortWorldItemDefinition*               Wood;                                              // 0x1028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortWorldItemDefinition*               Stone;                                             // 0x1030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortWorldItemDefinition*               Metal;                                             // 0x1038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RecyclingMultiplier;                               // 0x1040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SpawnWood;                                         // 0x1044(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SpawnStone;                                        // 0x1045(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SpawnMetal;                                        // 0x1046(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1047[0x1];                                     // 0x1047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpawnMax;                                          // 0x1048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HyperThreadingMultiplier;                          // 0x104C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_DefensiveIntegration;                           // 0x1050(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_DefensiveIntegration;                           // 0x1070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_AutomatedDefenses;                              // 0x1078(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         AutomatedDefenses_Additional_Nodes;                // 0x1098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109C[0x4];                                     // 0x109C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_TotalIntegration;                               // 0x10A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_PowerModulation;                                // 0x10C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_PowerModulation;                                // 0x10E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DefensiveIntegrationLevel;                         // 0x10E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10EC[0x4];                                     // 0x10EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_LoftyArchitecture;                              // 0x10F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_LoftyArchitecture;                              // 0x10F8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_SafetyProtocols;                                // 0x1118(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_SafetyProtocols;                                // 0x1138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          BaseIsPlaced;                                      // 0x1140(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_1141[0x3];                                     // 0x1141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NumPlayersNearBase;                                // 0x1144(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BasePowerLevel;                                    // 0x1148(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TotalResourcesSpawned;                             // 0x114C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ResourceLimit;                                     // 0x1150(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1154[0x4];                                     // 0x1154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_Overclocking;                                   // 0x1158(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_UpgradedPowerModulation;                        // 0x1178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ElectrifiedFloors;                              // 0x1180(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_SlowUnit;                                       // 0x11A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_SlowUnit;                                       // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ContainmentUnit;                                // 0x11C8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_Grant_TriggerReflectDamage_FromBASEWall;        // 0x11E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_StrongerExit;                                   // 0x11F0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_StrongerExit;                                   // 0x1210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_CardioFeedbackLoop;                             // 0x1218(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_ShieldCapacitor;                                // 0x1238(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_ShieldCapacitor;                                // 0x1258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStructRecyclingResource               StoredWood;                                        // 0x1260(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FStructRecyclingResource               StoredStone;                                       // 0x1270(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FStructRecyclingResource               StoredMetal;                                       // 0x1280(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         HyperthreadingResourceLimit;                       // 0x1290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MegaBASEAdditionalNodes;                           // 0x1294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_NeuroFeedbackLoop;                              // 0x1298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilitySystemComponent*                ConstructorAbilitySystemComponent;                 // 0x12A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_OutgoingHealAmp;                                // 0x12A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_FullyContained;                                 // 0x12B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Effect_Mesh_Comp;                                  // 0x12B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             Inner_MIDs_Friendly;                               // 0x12C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	float                                         Transition_Start_Delay;                            // 0x12D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12D4[0x4];                                     // 0x12D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             Outer_MIDs_Friendly;                               // 0x12D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_MegaBASE;                                       // 0x12E8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_NeuroFeedbackLoop;                              // 0x1308(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_CardioFeedbackLoop;                             // 0x1328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_FullyContained;                                 // 0x1330(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          InitialStaticMeshAnimationIsComplete;              // 0x1350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1351[0x7];                                     // 0x1351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             SoundResourcesCreated;                             // 0x1358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SoundResourcesCollected;                           // 0x1360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UStaticMeshComponent*>           EffectMeshArray;                                   // 0x1368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class ABuildingSMActor*>               BuildingActorArray;                                // 0x1378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	float                                         DelayBeforeShowingMeshes;                          // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DelayDisabled;                                     // 0x138C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_138D[0x3];                                     // 0x138D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           DelayedMeshedTimer;                                // 0x1390(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_TrapDamage;                                     // 0x1398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_TrapDamage;                                     // 0x13A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_TrapReloadRate;                                 // 0x13C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_TrapReloadRate;                                 // 0x13E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_Constructor_BASEOutgoingDamageMod;              // 0x13E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         T1Amount;                                          // 0x13F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         T2Amount;                                          // 0x13F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         T3Amount;                                          // 0x13F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RecyclingTimer;                                    // 0x13FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_FeelTheBase;                                    // 0x1400(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_FeelTheBase;                                    // 0x1420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Constructor_C*              ConstructorPawn;                                   // 0x1428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               FeelTheBasePowerLevel1;                            // 0x1430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               FeelTheBasePowerLevel2;                            // 0x1438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               FeelTheBasePowerLevel3;                            // 0x1440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             EnergyBuildASound;                                 // 0x1448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             EnergyBuildBSound;                                 // 0x1450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             EnergyBuildCSound;                                 // 0x1458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             EnergyStageTransitionSound;                        // 0x1460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsPlayingLoopA;                                   // 0x1468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1469[0x7];                                     // 0x1469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_Enduring_Machine;                               // 0x1470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_Enduring_Machine;                               // 0x1478(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_MegaBASE_T01;                                   // 0x1498(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_MegaBASE_T02;                                   // 0x14B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FScalableFloat                         MegaBASE_AdditionalNodes_T01;                      // 0x14D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FScalableFloat                         MegaBASE_AdditionalNodes_T02;                      // 0x1500(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_Recycling_T01;                                  // 0x1528(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_Recycling_T02;                                  // 0x1548(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FScalableFloat                         NewVar_0;                                          // 0x1568(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FScalableFloat                         NewVar_1;                                          // 0x1590(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_BASEMD;                                         // 0x15B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_BASEMD;                                         // 0x15D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ElectrifiedFloors_T01;                          // 0x15E0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_ElectrifiedFloors_T01;                          // 0x1600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ElectrifiedFloors_T02;                          // 0x1608(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_ElectrifiedFloors_T02;                          // 0x1628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint);
 	void BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundEvent_0_ParticleBurstSignature__DelegateSignature(class FName EventName, float EmitterTime, int32 ParticleCount);
 	void ResetFeelTheBaseGlow();
 	void FeelTheBaseGlow(bool Stack1, bool Stack2, bool Stack3);
-	void SaveOwner(class APlayerPawn_Constructor_C* Param_ConstructorPawn);
+	void SaveOwner(class APlayerPawn_Constructor_C* ConstructorPawn_0);
 	void ApplyTrapEffects();
 	void ShowHiddenMeshes();
 	void BaseIsReadyToAnimate();
@@ -166,24 +184,24 @@ public:
 	void Recycling();
 	void OnPlaced(class UAbilitySystemComponent* InstigatorAbilitySystemComponent);
 	void UserConstructionScript();
-	void SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* Param_NodesToAffect);
+	void SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* NodesToAffect_0);
 	void Setup_Base_Effect_Array(class UAbilitySystemComponent* Instigator_Ability_System, TArray<struct FBASEGameplayEffect>* BASEBuildingEffects, TArray<struct FBASEGameplayEffect>* BASEFriendlyEffects, TArray<struct FBASEGameplayEffect>* BASEHostileEffects);
-	void SetupBuildingEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* BuildingEffects);
-	void SetupFriendlyEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* FriendlyEffects);
-	void SetupHostileEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* HostileEffects);
+	void SetupBuildingEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* BuildingEffects);
+	void SetupFriendlyEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* FriendlyEffects);
+	void SetupHostileEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* HostileEffects);
 	void RecycleResources();
 	void OnRep_BaseIsPlaced();
-	void SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType Param_ResourceType);
+	void SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType ResourceType_0);
 	void AddResourceToStack(const struct FStructRecyclingResource& RecyclingResource, class UFortWorldItemDefinition* Stored_Resource, int32 AmountToSpawn, struct FStructRecyclingResource* SetValue);
 	void OnRep_CollectResources();
 	void SetDamageMultiplier();
-	void SetBaseVisualGlow(class UAbilitySystemComponent* Param_AbilitySystemComponent);
+	void SetBaseVisualGlow(class UAbilitySystemComponent* AbilitySystemComponent_0);
 	void BaseSelfApplyGameplaySpec(const struct FGameplayEffectSpecHandle& GE_Spec);
 	void OnRep_InitialStaticMeshAnimationIsComplete();
 	void GetTrapGEFromTag(const struct FGameplayTagContainer& InTag, class UClass** OutGE);
 	void SetupTrapEffects(class UAbilitySystemComponent* AbilityComponent);
 	void SetHealingMultiplier();
-	void SpawnResourceWithAmount(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType Param_ResourceType);
+	void SpawnResourceWithAmount(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType ResourceType_0);
 	void GetFeelTheBaseTraceLocation(struct FTransform* TraceLocation);
 	void UpdateAudioCrossfade(class USoundBase* Sound);
 
@@ -201,115 +219,131 @@ public:
 	}
 };
 static_assert(alignof(AB_Constructor_BASE_C) == 0x000008, "Wrong alignment on AB_Constructor_BASE_C");
-static_assert(sizeof(AB_Constructor_BASE_C) == 0x001708, "Wrong size on AB_Constructor_BASE_C");
-static_assert(offsetof(AB_Constructor_BASE_C, UberGraphFrame) == 0x0011A0, "Member 'AB_Constructor_BASE_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentC) == 0x0011A8, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentC' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentB) == 0x0011B0, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentB' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentA) == 0x0011B8, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentA' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, P_FeeltheBase_Chargup) == 0x0011C0, "Member 'AB_Constructor_BASE_C::P_FeeltheBase_Chargup' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBaseTraceLocation) == 0x0011C8, "Member 'AB_Constructor_BASE_C::FeelTheBaseTraceLocation' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Box) == 0x0011D0, "Member 'AB_Constructor_BASE_C::Box' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Capsule) == 0x0011D8, "Member 'AB_Constructor_BASE_C::Capsule' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Sphere_Collision_For_Anim) == 0x0011E0, "Member 'AB_Constructor_BASE_C::Sphere_Collision_For_Anim' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SK_Base_Device) == 0x0011E8, "Member 'AB_Constructor_BASE_C::SK_Base_Device' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, FortMiniMap1) == 0x0011F0, "Member 'AB_Constructor_BASE_C::FortMiniMap1' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Workbench_Ticking) == 0x0011F8, "Member 'AB_Constructor_BASE_C::Workbench_Ticking' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Root) == 0x001200, "Member 'AB_Constructor_BASE_C::Root' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_BigBrother) == 0x001208, "Member 'AB_Constructor_BASE_C::TC_BigBrother' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BigBrotherAdditionalNodes) == 0x001228, "Member 'AB_Constructor_BASE_C::BigBrotherAdditionalNodes' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, MiniMapIcon) == 0x001230, "Member 'AB_Constructor_BASE_C::MiniMapIcon' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Minimap_View_Distance) == 0x001238, "Member 'AB_Constructor_BASE_C::Minimap_View_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_ElectrifiedFloors) == 0x001240, "Member 'AB_Constructor_BASE_C::GE_ElectrifiedFloors' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_Hyperthreading) == 0x001248, "Member 'AB_Constructor_BASE_C::TC_Hyperthreading' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_SubroutineOptimization) == 0x001268, "Member 'AB_Constructor_BASE_C::TC_SubroutineOptimization' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_SubroutineOptimization) == 0x001288, "Member 'AB_Constructor_BASE_C::GE_SubroutineOptimization' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_Recycling) == 0x001290, "Member 'AB_Constructor_BASE_C::TC_Recycling' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ConnectedWood) == 0x0012B0, "Member 'AB_Constructor_BASE_C::ConnectedWood' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ConnectedStone) == 0x0012B4, "Member 'AB_Constructor_BASE_C::ConnectedStone' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ConnectedMetal) == 0x0012B8, "Member 'AB_Constructor_BASE_C::ConnectedMetal' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Wood) == 0x0012C0, "Member 'AB_Constructor_BASE_C::Wood' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Stone) == 0x0012C8, "Member 'AB_Constructor_BASE_C::Stone' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Metal) == 0x0012D0, "Member 'AB_Constructor_BASE_C::Metal' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, RecyclingMultiplier) == 0x0012D8, "Member 'AB_Constructor_BASE_C::RecyclingMultiplier' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SpawnWood) == 0x0012DC, "Member 'AB_Constructor_BASE_C::SpawnWood' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SpawnStone) == 0x0012DD, "Member 'AB_Constructor_BASE_C::SpawnStone' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SpawnMetal) == 0x0012DE, "Member 'AB_Constructor_BASE_C::SpawnMetal' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SpawnMax) == 0x0012E0, "Member 'AB_Constructor_BASE_C::SpawnMax' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, HyperThreadingMultiplier) == 0x0012E4, "Member 'AB_Constructor_BASE_C::HyperThreadingMultiplier' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_DefensiveIntegration) == 0x0012E8, "Member 'AB_Constructor_BASE_C::TC_DefensiveIntegration' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_DefensiveIntegration) == 0x001308, "Member 'AB_Constructor_BASE_C::GE_DefensiveIntegration' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_AutomatedDefenses) == 0x001310, "Member 'AB_Constructor_BASE_C::TC_AutomatedDefenses' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, AutomatedDefenses_Additional_Nodes) == 0x001330, "Member 'AB_Constructor_BASE_C::AutomatedDefenses_Additional_Nodes' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_TotalIntegration) == 0x001338, "Member 'AB_Constructor_BASE_C::TC_TotalIntegration' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_PowerModulation) == 0x001358, "Member 'AB_Constructor_BASE_C::TC_PowerModulation' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_PowerModulation) == 0x001378, "Member 'AB_Constructor_BASE_C::GE_PowerModulation' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, DefensiveIntegrationLevel) == 0x001380, "Member 'AB_Constructor_BASE_C::DefensiveIntegrationLevel' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_LoftyArchitecture) == 0x001388, "Member 'AB_Constructor_BASE_C::GE_LoftyArchitecture' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_LoftyArchitecture) == 0x001390, "Member 'AB_Constructor_BASE_C::TC_LoftyArchitecture' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_SafetyProtocols) == 0x0013B0, "Member 'AB_Constructor_BASE_C::TC_SafetyProtocols' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_SafetyProtocols) == 0x0013D0, "Member 'AB_Constructor_BASE_C::GE_SafetyProtocols' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BaseIsPlaced) == 0x0013D8, "Member 'AB_Constructor_BASE_C::BaseIsPlaced' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, NumPlayersNearBase) == 0x0013DC, "Member 'AB_Constructor_BASE_C::NumPlayersNearBase' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BasePowerLevel) == 0x0013E0, "Member 'AB_Constructor_BASE_C::BasePowerLevel' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TotalResourcesSpawned) == 0x0013E4, "Member 'AB_Constructor_BASE_C::TotalResourcesSpawned' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ResourceLimit) == 0x0013E8, "Member 'AB_Constructor_BASE_C::ResourceLimit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_Overclocking) == 0x0013F0, "Member 'AB_Constructor_BASE_C::TC_Overclocking' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_UpgradedPowerModulation) == 0x001410, "Member 'AB_Constructor_BASE_C::GE_UpgradedPowerModulation' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_ElectrifiedFloors) == 0x001418, "Member 'AB_Constructor_BASE_C::TC_ElectrifiedFloors' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_SlowUnit) == 0x001438, "Member 'AB_Constructor_BASE_C::TC_SlowUnit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_SlowUnit) == 0x001458, "Member 'AB_Constructor_BASE_C::GE_SlowUnit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_ContainmentUnit) == 0x001460, "Member 'AB_Constructor_BASE_C::TC_ContainmentUnit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_Grant_TriggerReflectDamage_FromBASEWall) == 0x001480, "Member 'AB_Constructor_BASE_C::GE_Grant_TriggerReflectDamage_FromBASEWall' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_StrongerExit) == 0x001488, "Member 'AB_Constructor_BASE_C::TC_StrongerExit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_StrongerExit) == 0x0014A8, "Member 'AB_Constructor_BASE_C::GE_StrongerExit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_CardioFeedbackLoop) == 0x0014B0, "Member 'AB_Constructor_BASE_C::TC_CardioFeedbackLoop' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_ShieldCapacitor) == 0x0014D0, "Member 'AB_Constructor_BASE_C::TC_ShieldCapacitor' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_ShieldCapacitor) == 0x0014F0, "Member 'AB_Constructor_BASE_C::GE_ShieldCapacitor' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, StoredWood) == 0x0014F8, "Member 'AB_Constructor_BASE_C::StoredWood' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, StoredStone) == 0x001508, "Member 'AB_Constructor_BASE_C::StoredStone' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, StoredMetal) == 0x001518, "Member 'AB_Constructor_BASE_C::StoredMetal' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, HyperthreadingResourceLimit) == 0x001528, "Member 'AB_Constructor_BASE_C::HyperthreadingResourceLimit' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, MegaBASEAdditionalNodes) == 0x00152C, "Member 'AB_Constructor_BASE_C::MegaBASEAdditionalNodes' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_NeuroFeedbackLoop) == 0x001530, "Member 'AB_Constructor_BASE_C::GE_NeuroFeedbackLoop' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ConstructorAbilitySystemComponent) == 0x001538, "Member 'AB_Constructor_BASE_C::ConstructorAbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_OutgoingHealAmp) == 0x001540, "Member 'AB_Constructor_BASE_C::GE_OutgoingHealAmp' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_FullyContained) == 0x001548, "Member 'AB_Constructor_BASE_C::GE_FullyContained' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Effect_Mesh_Comp) == 0x001550, "Member 'AB_Constructor_BASE_C::Effect_Mesh_Comp' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Inner_MIDs_Friendly) == 0x001558, "Member 'AB_Constructor_BASE_C::Inner_MIDs_Friendly' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Transition_Start_Delay) == 0x001568, "Member 'AB_Constructor_BASE_C::Transition_Start_Delay' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, Outer_MIDs_Friendly) == 0x001570, "Member 'AB_Constructor_BASE_C::Outer_MIDs_Friendly' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_MegaBASE) == 0x001580, "Member 'AB_Constructor_BASE_C::TC_MegaBASE' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_NeuroFeedbackLoop) == 0x0015A0, "Member 'AB_Constructor_BASE_C::TC_NeuroFeedbackLoop' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_CardioFeedbackLoop) == 0x0015C0, "Member 'AB_Constructor_BASE_C::GE_CardioFeedbackLoop' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_FullyContained) == 0x0015C8, "Member 'AB_Constructor_BASE_C::TC_FullyContained' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, InitialStaticMeshAnimationIsComplete) == 0x0015E8, "Member 'AB_Constructor_BASE_C::InitialStaticMeshAnimationIsComplete' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SoundResourcesCreated) == 0x0015F0, "Member 'AB_Constructor_BASE_C::SoundResourcesCreated' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, SoundResourcesCollected) == 0x0015F8, "Member 'AB_Constructor_BASE_C::SoundResourcesCollected' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, EffectMeshArray) == 0x001600, "Member 'AB_Constructor_BASE_C::EffectMeshArray' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, BuildingActorArray) == 0x001610, "Member 'AB_Constructor_BASE_C::BuildingActorArray' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, DelayBeforeShowingMeshes) == 0x001620, "Member 'AB_Constructor_BASE_C::DelayBeforeShowingMeshes' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, DelayDisabled) == 0x001624, "Member 'AB_Constructor_BASE_C::DelayDisabled' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, DelayedMeshedTimer) == 0x001628, "Member 'AB_Constructor_BASE_C::DelayedMeshedTimer' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_TrapDamage) == 0x001630, "Member 'AB_Constructor_BASE_C::GE_TrapDamage' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_TrapDamage) == 0x001638, "Member 'AB_Constructor_BASE_C::TC_TrapDamage' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_TrapReloadRate) == 0x001658, "Member 'AB_Constructor_BASE_C::TC_TrapReloadRate' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_TrapReloadRate) == 0x001678, "Member 'AB_Constructor_BASE_C::GE_TrapReloadRate' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_Constructor_BASEOutgoingDamageMod) == 0x001680, "Member 'AB_Constructor_BASE_C::GE_Constructor_BASEOutgoingDamageMod' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, T1Amount) == 0x001688, "Member 'AB_Constructor_BASE_C::T1Amount' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, T2Amount) == 0x00168C, "Member 'AB_Constructor_BASE_C::T2Amount' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, T3Amount) == 0x001690, "Member 'AB_Constructor_BASE_C::T3Amount' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, RecyclingTimer) == 0x001694, "Member 'AB_Constructor_BASE_C::RecyclingTimer' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, TC_FeelTheBase) == 0x001698, "Member 'AB_Constructor_BASE_C::TC_FeelTheBase' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, GE_FeelTheBase) == 0x0016B8, "Member 'AB_Constructor_BASE_C::GE_FeelTheBase' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, ConstructorPawn) == 0x0016C0, "Member 'AB_Constructor_BASE_C::ConstructorPawn' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel1) == 0x0016C8, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel1' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel2) == 0x0016D0, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel2' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel3) == 0x0016D8, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel3' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildASound) == 0x0016E0, "Member 'AB_Constructor_BASE_C::EnergyBuildASound' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildBSound) == 0x0016E8, "Member 'AB_Constructor_BASE_C::EnergyBuildBSound' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildCSound) == 0x0016F0, "Member 'AB_Constructor_BASE_C::EnergyBuildCSound' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, EnergyStageTransitionSound) == 0x0016F8, "Member 'AB_Constructor_BASE_C::EnergyStageTransitionSound' has a wrong offset!");
-static_assert(offsetof(AB_Constructor_BASE_C, bIsPlayingLoopA) == 0x001700, "Member 'AB_Constructor_BASE_C::bIsPlayingLoopA' has a wrong offset!");
+static_assert(sizeof(AB_Constructor_BASE_C) == 0x001630, "Wrong size on AB_Constructor_BASE_C");
+static_assert(offsetof(AB_Constructor_BASE_C, UberGraphFrame) == 0x000F08, "Member 'AB_Constructor_BASE_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentC) == 0x000F10, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentC' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentB) == 0x000F18, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentB' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BaseEnergyComponentA) == 0x000F20, "Member 'AB_Constructor_BASE_C::BaseEnergyComponentA' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, P_FeeltheBase_Chargup) == 0x000F28, "Member 'AB_Constructor_BASE_C::P_FeeltheBase_Chargup' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBaseTraceLocation) == 0x000F30, "Member 'AB_Constructor_BASE_C::FeelTheBaseTraceLocation' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Box) == 0x000F38, "Member 'AB_Constructor_BASE_C::Box' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Capsule) == 0x000F40, "Member 'AB_Constructor_BASE_C::Capsule' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Sphere_Collision_For_Anim) == 0x000F48, "Member 'AB_Constructor_BASE_C::Sphere_Collision_For_Anim' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SK_Base_Device) == 0x000F50, "Member 'AB_Constructor_BASE_C::SK_Base_Device' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, FortMiniMap1) == 0x000F58, "Member 'AB_Constructor_BASE_C::FortMiniMap1' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Workbench_Ticking) == 0x000F60, "Member 'AB_Constructor_BASE_C::Workbench_Ticking' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Root) == 0x000F68, "Member 'AB_Constructor_BASE_C::Root' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_BigBrother) == 0x000F70, "Member 'AB_Constructor_BASE_C::TC_BigBrother' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BigBrotherAdditionalNodes) == 0x000F90, "Member 'AB_Constructor_BASE_C::BigBrotherAdditionalNodes' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, MiniMapIcon) == 0x000F98, "Member 'AB_Constructor_BASE_C::MiniMapIcon' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Minimap_View_Distance) == 0x000FA0, "Member 'AB_Constructor_BASE_C::Minimap_View_Distance' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_ElectrifiedFloors) == 0x000FA8, "Member 'AB_Constructor_BASE_C::GE_ElectrifiedFloors' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Hyperthreading) == 0x000FB0, "Member 'AB_Constructor_BASE_C::TC_Hyperthreading' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_SubroutineOptimization) == 0x000FD0, "Member 'AB_Constructor_BASE_C::TC_SubroutineOptimization' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_SubroutineOptimization) == 0x000FF0, "Member 'AB_Constructor_BASE_C::GE_SubroutineOptimization' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Recycling) == 0x000FF8, "Member 'AB_Constructor_BASE_C::TC_Recycling' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ConnectedWood) == 0x001018, "Member 'AB_Constructor_BASE_C::ConnectedWood' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ConnectedStone) == 0x00101C, "Member 'AB_Constructor_BASE_C::ConnectedStone' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ConnectedMetal) == 0x001020, "Member 'AB_Constructor_BASE_C::ConnectedMetal' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Wood) == 0x001028, "Member 'AB_Constructor_BASE_C::Wood' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Stone) == 0x001030, "Member 'AB_Constructor_BASE_C::Stone' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Metal) == 0x001038, "Member 'AB_Constructor_BASE_C::Metal' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, RecyclingMultiplier) == 0x001040, "Member 'AB_Constructor_BASE_C::RecyclingMultiplier' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SpawnWood) == 0x001044, "Member 'AB_Constructor_BASE_C::SpawnWood' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SpawnStone) == 0x001045, "Member 'AB_Constructor_BASE_C::SpawnStone' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SpawnMetal) == 0x001046, "Member 'AB_Constructor_BASE_C::SpawnMetal' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SpawnMax) == 0x001048, "Member 'AB_Constructor_BASE_C::SpawnMax' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, HyperThreadingMultiplier) == 0x00104C, "Member 'AB_Constructor_BASE_C::HyperThreadingMultiplier' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_DefensiveIntegration) == 0x001050, "Member 'AB_Constructor_BASE_C::TC_DefensiveIntegration' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_DefensiveIntegration) == 0x001070, "Member 'AB_Constructor_BASE_C::GE_DefensiveIntegration' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_AutomatedDefenses) == 0x001078, "Member 'AB_Constructor_BASE_C::TC_AutomatedDefenses' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, AutomatedDefenses_Additional_Nodes) == 0x001098, "Member 'AB_Constructor_BASE_C::AutomatedDefenses_Additional_Nodes' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_TotalIntegration) == 0x0010A0, "Member 'AB_Constructor_BASE_C::TC_TotalIntegration' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_PowerModulation) == 0x0010C0, "Member 'AB_Constructor_BASE_C::TC_PowerModulation' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_PowerModulation) == 0x0010E0, "Member 'AB_Constructor_BASE_C::GE_PowerModulation' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, DefensiveIntegrationLevel) == 0x0010E8, "Member 'AB_Constructor_BASE_C::DefensiveIntegrationLevel' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_LoftyArchitecture) == 0x0010F0, "Member 'AB_Constructor_BASE_C::GE_LoftyArchitecture' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_LoftyArchitecture) == 0x0010F8, "Member 'AB_Constructor_BASE_C::TC_LoftyArchitecture' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_SafetyProtocols) == 0x001118, "Member 'AB_Constructor_BASE_C::TC_SafetyProtocols' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_SafetyProtocols) == 0x001138, "Member 'AB_Constructor_BASE_C::GE_SafetyProtocols' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BaseIsPlaced) == 0x001140, "Member 'AB_Constructor_BASE_C::BaseIsPlaced' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, NumPlayersNearBase) == 0x001144, "Member 'AB_Constructor_BASE_C::NumPlayersNearBase' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BasePowerLevel) == 0x001148, "Member 'AB_Constructor_BASE_C::BasePowerLevel' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TotalResourcesSpawned) == 0x00114C, "Member 'AB_Constructor_BASE_C::TotalResourcesSpawned' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ResourceLimit) == 0x001150, "Member 'AB_Constructor_BASE_C::ResourceLimit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Overclocking) == 0x001158, "Member 'AB_Constructor_BASE_C::TC_Overclocking' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_UpgradedPowerModulation) == 0x001178, "Member 'AB_Constructor_BASE_C::GE_UpgradedPowerModulation' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_ElectrifiedFloors) == 0x001180, "Member 'AB_Constructor_BASE_C::TC_ElectrifiedFloors' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_SlowUnit) == 0x0011A0, "Member 'AB_Constructor_BASE_C::TC_SlowUnit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_SlowUnit) == 0x0011C0, "Member 'AB_Constructor_BASE_C::GE_SlowUnit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_ContainmentUnit) == 0x0011C8, "Member 'AB_Constructor_BASE_C::TC_ContainmentUnit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_Grant_TriggerReflectDamage_FromBASEWall) == 0x0011E8, "Member 'AB_Constructor_BASE_C::GE_Grant_TriggerReflectDamage_FromBASEWall' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_StrongerExit) == 0x0011F0, "Member 'AB_Constructor_BASE_C::TC_StrongerExit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_StrongerExit) == 0x001210, "Member 'AB_Constructor_BASE_C::GE_StrongerExit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_CardioFeedbackLoop) == 0x001218, "Member 'AB_Constructor_BASE_C::TC_CardioFeedbackLoop' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_ShieldCapacitor) == 0x001238, "Member 'AB_Constructor_BASE_C::TC_ShieldCapacitor' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_ShieldCapacitor) == 0x001258, "Member 'AB_Constructor_BASE_C::GE_ShieldCapacitor' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, StoredWood) == 0x001260, "Member 'AB_Constructor_BASE_C::StoredWood' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, StoredStone) == 0x001270, "Member 'AB_Constructor_BASE_C::StoredStone' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, StoredMetal) == 0x001280, "Member 'AB_Constructor_BASE_C::StoredMetal' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, HyperthreadingResourceLimit) == 0x001290, "Member 'AB_Constructor_BASE_C::HyperthreadingResourceLimit' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, MegaBASEAdditionalNodes) == 0x001294, "Member 'AB_Constructor_BASE_C::MegaBASEAdditionalNodes' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_NeuroFeedbackLoop) == 0x001298, "Member 'AB_Constructor_BASE_C::GE_NeuroFeedbackLoop' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ConstructorAbilitySystemComponent) == 0x0012A0, "Member 'AB_Constructor_BASE_C::ConstructorAbilitySystemComponent' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_OutgoingHealAmp) == 0x0012A8, "Member 'AB_Constructor_BASE_C::GE_OutgoingHealAmp' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_FullyContained) == 0x0012B0, "Member 'AB_Constructor_BASE_C::GE_FullyContained' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Effect_Mesh_Comp) == 0x0012B8, "Member 'AB_Constructor_BASE_C::Effect_Mesh_Comp' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Inner_MIDs_Friendly) == 0x0012C0, "Member 'AB_Constructor_BASE_C::Inner_MIDs_Friendly' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Transition_Start_Delay) == 0x0012D0, "Member 'AB_Constructor_BASE_C::Transition_Start_Delay' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, Outer_MIDs_Friendly) == 0x0012D8, "Member 'AB_Constructor_BASE_C::Outer_MIDs_Friendly' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_MegaBASE) == 0x0012E8, "Member 'AB_Constructor_BASE_C::TC_MegaBASE' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_NeuroFeedbackLoop) == 0x001308, "Member 'AB_Constructor_BASE_C::TC_NeuroFeedbackLoop' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_CardioFeedbackLoop) == 0x001328, "Member 'AB_Constructor_BASE_C::GE_CardioFeedbackLoop' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_FullyContained) == 0x001330, "Member 'AB_Constructor_BASE_C::TC_FullyContained' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, InitialStaticMeshAnimationIsComplete) == 0x001350, "Member 'AB_Constructor_BASE_C::InitialStaticMeshAnimationIsComplete' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SoundResourcesCreated) == 0x001358, "Member 'AB_Constructor_BASE_C::SoundResourcesCreated' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, SoundResourcesCollected) == 0x001360, "Member 'AB_Constructor_BASE_C::SoundResourcesCollected' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, EffectMeshArray) == 0x001368, "Member 'AB_Constructor_BASE_C::EffectMeshArray' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, BuildingActorArray) == 0x001378, "Member 'AB_Constructor_BASE_C::BuildingActorArray' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, DelayBeforeShowingMeshes) == 0x001388, "Member 'AB_Constructor_BASE_C::DelayBeforeShowingMeshes' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, DelayDisabled) == 0x00138C, "Member 'AB_Constructor_BASE_C::DelayDisabled' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, DelayedMeshedTimer) == 0x001390, "Member 'AB_Constructor_BASE_C::DelayedMeshedTimer' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_TrapDamage) == 0x001398, "Member 'AB_Constructor_BASE_C::GE_TrapDamage' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_TrapDamage) == 0x0013A0, "Member 'AB_Constructor_BASE_C::TC_TrapDamage' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_TrapReloadRate) == 0x0013C0, "Member 'AB_Constructor_BASE_C::TC_TrapReloadRate' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_TrapReloadRate) == 0x0013E0, "Member 'AB_Constructor_BASE_C::GE_TrapReloadRate' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_Constructor_BASEOutgoingDamageMod) == 0x0013E8, "Member 'AB_Constructor_BASE_C::GE_Constructor_BASEOutgoingDamageMod' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, T1Amount) == 0x0013F0, "Member 'AB_Constructor_BASE_C::T1Amount' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, T2Amount) == 0x0013F4, "Member 'AB_Constructor_BASE_C::T2Amount' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, T3Amount) == 0x0013F8, "Member 'AB_Constructor_BASE_C::T3Amount' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, RecyclingTimer) == 0x0013FC, "Member 'AB_Constructor_BASE_C::RecyclingTimer' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_FeelTheBase) == 0x001400, "Member 'AB_Constructor_BASE_C::TC_FeelTheBase' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_FeelTheBase) == 0x001420, "Member 'AB_Constructor_BASE_C::GE_FeelTheBase' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, ConstructorPawn) == 0x001428, "Member 'AB_Constructor_BASE_C::ConstructorPawn' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel1) == 0x001430, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel1' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel2) == 0x001438, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel2' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, FeelTheBasePowerLevel3) == 0x001440, "Member 'AB_Constructor_BASE_C::FeelTheBasePowerLevel3' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildASound) == 0x001448, "Member 'AB_Constructor_BASE_C::EnergyBuildASound' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildBSound) == 0x001450, "Member 'AB_Constructor_BASE_C::EnergyBuildBSound' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, EnergyBuildCSound) == 0x001458, "Member 'AB_Constructor_BASE_C::EnergyBuildCSound' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, EnergyStageTransitionSound) == 0x001460, "Member 'AB_Constructor_BASE_C::EnergyStageTransitionSound' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, bIsPlayingLoopA) == 0x001468, "Member 'AB_Constructor_BASE_C::bIsPlayingLoopA' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_Enduring_Machine) == 0x001470, "Member 'AB_Constructor_BASE_C::GE_Enduring_Machine' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Enduring_Machine) == 0x001478, "Member 'AB_Constructor_BASE_C::TC_Enduring_Machine' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_MegaBASE_T01) == 0x001498, "Member 'AB_Constructor_BASE_C::TC_MegaBASE_T01' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_MegaBASE_T02) == 0x0014B8, "Member 'AB_Constructor_BASE_C::TC_MegaBASE_T02' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, MegaBASE_AdditionalNodes_T01) == 0x0014D8, "Member 'AB_Constructor_BASE_C::MegaBASE_AdditionalNodes_T01' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, MegaBASE_AdditionalNodes_T02) == 0x001500, "Member 'AB_Constructor_BASE_C::MegaBASE_AdditionalNodes_T02' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Recycling_T01) == 0x001528, "Member 'AB_Constructor_BASE_C::TC_Recycling_T01' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_Recycling_T02) == 0x001548, "Member 'AB_Constructor_BASE_C::TC_Recycling_T02' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, NewVar_0) == 0x001568, "Member 'AB_Constructor_BASE_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, NewVar_1) == 0x001590, "Member 'AB_Constructor_BASE_C::NewVar_1' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_BASEMD) == 0x0015B8, "Member 'AB_Constructor_BASE_C::TC_BASEMD' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_BASEMD) == 0x0015D8, "Member 'AB_Constructor_BASE_C::GE_BASEMD' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_ElectrifiedFloors_T01) == 0x0015E0, "Member 'AB_Constructor_BASE_C::TC_ElectrifiedFloors_T01' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_ElectrifiedFloors_T01) == 0x001600, "Member 'AB_Constructor_BASE_C::GE_ElectrifiedFloors_T01' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, TC_ElectrifiedFloors_T02) == 0x001608, "Member 'AB_Constructor_BASE_C::TC_ElectrifiedFloors_T02' has a wrong offset!");
+static_assert(offsetof(AB_Constructor_BASE_C, GE_ElectrifiedFloors_T02) == 0x001628, "Member 'AB_Constructor_BASE_C::GE_ElectrifiedFloors_T02' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
@@ -54,7 +54,7 @@ static_assert(sizeof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSigna
 static_assert(offsetof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
-// 0x0040 (0x0040 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct RewardsIcon_C_ExecuteUbergraph_RewardsIcon final
 {
 public:
@@ -63,18 +63,18 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_CustomEvent_percent;                        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_percent;                        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon) == 0x000008, "Wrong alignment on RewardsIcon_C_ExecuteUbergraph_RewardsIcon");
-static_assert(sizeof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon) == 0x000040, "Wrong size on RewardsIcon_C_ExecuteUbergraph_RewardsIcon");
+static_assert(sizeof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon) == 0x000038, "Wrong size on RewardsIcon_C_ExecuteUbergraph_RewardsIcon");
 static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, EntryPoint) == 0x000000, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::EntryPoint' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_Event_IsDesignTime) == 0x000028, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_CustomEvent_percent) == 0x00002C, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::K2Node_CustomEvent_percent' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_CustomEvent_percent) == 0x000038, "Member 'RewardsIcon_C_ExecuteUbergraph_RewardsIcon::K2Node_CustomEvent_percent' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.whiteFadeOut
 // 0x0004 (0x0004 - 0x0000)
@@ -112,24 +112,23 @@ static_assert(offsetof(RewardsIcon_C_PlayHideAnimation, K2Node_MakeStruct_Linear
 static_assert(offsetof(RewardsIcon_C_PlayHideAnimation, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'RewardsIcon_C_PlayHideAnimation::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PopulateFromReward
-// 0x0030 (0x0030 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RewardsIcon_C_PopulateFromReward final
 {
 public:
 	class UFortRewardNotificationData*            InRewardItem;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           TintColor;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             CallFunc_PopulateFromRandomLootLevel_Texture;      // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTexture2D*                             CallFunc_PopulateFromRandomLootLevel_Texture;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RewardsIcon_C_PopulateFromReward) == 0x000008, "Wrong alignment on RewardsIcon_C_PopulateFromReward");
-static_assert(sizeof(RewardsIcon_C_PopulateFromReward) == 0x000030, "Wrong size on RewardsIcon_C_PopulateFromReward");
+static_assert(sizeof(RewardsIcon_C_PopulateFromReward) == 0x000028, "Wrong size on RewardsIcon_C_PopulateFromReward");
 static_assert(offsetof(RewardsIcon_C_PopulateFromReward, InRewardItem) == 0x000000, "Member 'RewardsIcon_C_PopulateFromReward::InRewardItem' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PopulateFromReward, TintColor) == 0x000008, "Member 'RewardsIcon_C_PopulateFromReward::TintColor' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromReward, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'RewardsIcon_C_PopulateFromReward::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromReward, CallFunc_PopulateFromRandomLootLevel_Texture) == 0x000020, "Member 'RewardsIcon_C_PopulateFromReward::CallFunc_PopulateFromRandomLootLevel_Texture' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromReward, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'RewardsIcon_C_PopulateFromReward::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromReward, CallFunc_PopulateFromRandomLootLevel_Texture) == 0x000018, "Member 'RewardsIcon_C_PopulateFromReward::CallFunc_PopulateFromRandomLootLevel_Texture' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromReward, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'RewardsIcon_C_PopulateFromReward::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromReward, K2Node_SwitchEnum_CmpSuccess) == 0x000021, "Member 'RewardsIcon_C_PopulateFromReward::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.HandleSlideAnimationFinished
 // 0x0004 (0x0004 - 0x0000)
@@ -180,7 +179,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardsIcon_C_PlaySlideAnimation) == 0x000008, "Wrong alignment on RewardsIcon_C_PlaySlideAnimation");
@@ -312,7 +311,7 @@ static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, ReturnValue
 static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'RewardsIcon_C_On_ImageIcon_MouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.Play Hide Animation Sound
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct RewardsIcon_C_Play_Hide_Animation_Sound final
 {
 public:
@@ -320,29 +319,31 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12345;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123456;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234567;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000008, "Wrong alignment on RewardsIcon_C_Play_Hide_Animation_Sound");
-static_assert(sizeof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000050, "Wrong size on RewardsIcon_C_Play_Hide_Animation_Sound");
+static_assert(sizeof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000058, "Wrong size on RewardsIcon_C_Play_Hide_Animation_Sound");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable1) == 0x000010, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable12) == 0x000018, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable123) == 0x000020, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable1234) == 0x000028, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable12345) == 0x000030, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable123456) == 0x000038, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable1234567) == 0x000040, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, K2Node_Select_Default) == 0x000048, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable2) == 0x000018, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable3) == 0x000020, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable4) == 0x000028, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable5) == 0x000030, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable6) == 0x000038, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable7) == 0x000040, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable8) == 0x000048, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, K2Node_Select_Default) == 0x000050, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.Play Show Animation Sound
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct RewardsIcon_C_Play_Show_Animation_Sound final
 {
 public:
@@ -350,26 +351,28 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12345;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123456;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234567;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(RewardsIcon_C_Play_Show_Animation_Sound) == 0x000008, "Wrong alignment on RewardsIcon_C_Play_Show_Animation_Sound");
-static_assert(sizeof(RewardsIcon_C_Play_Show_Animation_Sound) == 0x000050, "Wrong size on RewardsIcon_C_Play_Show_Animation_Sound");
+static_assert(sizeof(RewardsIcon_C_Play_Show_Animation_Sound) == 0x000058, "Wrong size on RewardsIcon_C_Play_Show_Animation_Sound");
 static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable1) == 0x000010, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable12) == 0x000018, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable123) == 0x000020, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable1234) == 0x000028, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable12345) == 0x000030, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable123456) == 0x000038, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable1234567) == 0x000040, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, K2Node_Select_Default) == 0x000048, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable2) == 0x000018, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable3) == 0x000020, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable4) == 0x000028, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable5) == 0x000030, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable6) == 0x000038, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable7) == 0x000040, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, Temp_object_Variable8) == 0x000048, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_Play_Show_Animation_Sound, K2Node_Select_Default) == 0x000050, "Member 'RewardsIcon_C_Play_Show_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PopulateFromMissionAlertRewards
 // 0x0010 (0x0010 - 0x0000)
@@ -398,36 +401,40 @@ static_assert(offsetof(RewardsIcon_C_PopulateFromDifficultyIncreaseRewards, K2No
 static_assert(offsetof(RewardsIcon_C_PopulateFromDifficultyIncreaseRewards, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'RewardsIcon_C_PopulateFromDifficultyIncreaseRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PopulateFromGiftBoxData
-// 0x0050 (0x0050 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct RewardsIcon_C_PopulateFromGiftBoxData final
 {
 public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortRewardGiftBoxData*                 K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data;    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGiftBoxItemDefinition*             CallFunc_GetGiftBoxDefinition_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     K2Node_DynamicCast_AsMaterial_Interface;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortRewardGiftBoxData*                 K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data;    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGiftBoxItemDefinition*             CallFunc_GetGiftBoxDefinition_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RewardsIcon_C_PopulateFromGiftBoxData) == 0x000008, "Wrong alignment on RewardsIcon_C_PopulateFromGiftBoxData");
-static_assert(sizeof(RewardsIcon_C_PopulateFromGiftBoxData) == 0x000050, "Wrong size on RewardsIcon_C_PopulateFromGiftBoxData");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data) == 0x000008, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_GetGiftBoxDefinition_ReturnValue) == 0x000018, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_GetGiftBoxDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000020, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_AsMaterial_Interface) == 0x000028, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_AsMaterial_Interface' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_bSuccess1) == 0x000030, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_AsTexture_2D) == 0x000038, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_bSuccess12) == 0x000040, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000048, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(sizeof(RewardsIcon_C_PopulateFromGiftBoxData) == 0x000020, "Wrong size on RewardsIcon_C_PopulateFromGiftBoxData");
+static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data) == 0x000000, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_GetGiftBoxDefinition_ReturnValue) == 0x000010, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_GetGiftBoxDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromGiftBoxData, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000018, "Member 'RewardsIcon_C_PopulateFromGiftBoxData::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
+
+// Function RewardsIcon.RewardsIcon_C.PopulateFromItemCacheData
+// 0x0040 (0x0040 - 0x0000)
+struct RewardsIcon_C_PopulateFromItemCacheData final
+{
+public:
+	class UFortRewardItemCacheData*               K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data;  // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x0010(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(RewardsIcon_C_PopulateFromItemCacheData) == 0x000008, "Wrong alignment on RewardsIcon_C_PopulateFromItemCacheData");
+static_assert(sizeof(RewardsIcon_C_PopulateFromItemCacheData) == 0x000040, "Wrong size on RewardsIcon_C_PopulateFromItemCacheData");
+static_assert(offsetof(RewardsIcon_C_PopulateFromItemCacheData, K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data) == 0x000000, "Member 'RewardsIcon_C_PopulateFromItemCacheData::K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromItemCacheData, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'RewardsIcon_C_PopulateFromItemCacheData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromItemCacheData, CallFunc_GetLargePreviewImage_ReturnValue) == 0x000010, "Member 'RewardsIcon_C_PopulateFromItemCacheData::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RewardsIcon_C_PopulateFromItemCacheData, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'RewardsIcon_C_PopulateFromItemCacheData::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

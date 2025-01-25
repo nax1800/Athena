@@ -17,6 +17,197 @@
 namespace SDK
 {
 
+// Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bClampToEnds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
+
+	Params::PaperFlipbook_GetKeyFrameIndexAtTime Parms{};
+
+	Parms.Time = Time;
+	Parms.bClampToEnds = bClampToEnds;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.GetNumFrames
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UPaperFlipbook::GetNumFrames() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
+
+	Params::PaperFlipbook_GetNumFrames Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.GetNumKeyFrames
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UPaperFlipbook::GetNumKeyFrames() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
+
+	Params::PaperFlipbook_GetNumKeyFrames Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.GetSpriteAtFrame
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   FrameIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPaperSprite*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
+
+	Params::PaperFlipbook_GetSpriteAtFrame Parms{};
+
+	Parms.FrameIndex = FrameIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.GetSpriteAtTime
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bClampToEnds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPaperSprite*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnds) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
+
+	Params::PaperFlipbook_GetSpriteAtTime Parms{};
+
+	Parms.Time = Time;
+	Parms.bClampToEnds = bClampToEnds;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.GetTotalDuration
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UPaperFlipbook::GetTotalDuration() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
+
+	Params::PaperFlipbook_GetTotalDuration Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Index_0) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
+
+	Params::PaperFlipbook_IsValidKeyFrameIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Paper2D.PaperFlipbookComponent.GetFlipbook
 // (Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -802,197 +993,6 @@ bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, str
 }
 
 
-// Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bClampToEnds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
-
-	Params::PaperFlipbook_GetKeyFrameIndexAtTime Parms{};
-
-	Parms.Time = Time;
-	Parms.bClampToEnds = bClampToEnds;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.GetNumFrames
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UPaperFlipbook::GetNumFrames() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
-
-	Params::PaperFlipbook_GetNumFrames Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.GetNumKeyFrames
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UPaperFlipbook::GetNumKeyFrames() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
-
-	Params::PaperFlipbook_GetNumKeyFrames Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.GetSpriteAtFrame
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   FrameIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPaperSprite*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
-
-	Params::PaperFlipbook_GetSpriteAtFrame Parms{};
-
-	Parms.FrameIndex = FrameIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.GetSpriteAtTime
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bClampToEnds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPaperSprite*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnds) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
-
-	Params::PaperFlipbook_GetSpriteAtTime Parms{};
-
-	Parms.Time = Time;
-	Parms.bClampToEnds = bClampToEnds;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.GetTotalDuration
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UPaperFlipbook::GetTotalDuration() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
-
-	Params::PaperFlipbook_GetTotalDuration Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Param_Index) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
-
-	Params::PaperFlipbook_IsValidKeyFrameIndex Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1156,14 +1156,14 @@ class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 // Function Paper2D.PaperTileMapComponent.CreateNewTileMap
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_MapWidth                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_MapHeight                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_TileWidth                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_TileHeight                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MapWidth_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MapHeight_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   TileWidth_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   TileHeight_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   PixelsPerUnrealUnit                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bCreateLayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPaperTileMapComponent::CreateNewTileMap(int32 Param_MapWidth, int32 Param_MapHeight, int32 Param_TileWidth, int32 Param_TileHeight, float PixelsPerUnrealUnit, bool bCreateLayer)
+void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth_0, int32 MapHeight_0, int32 TileWidth_0, int32 TileHeight_0, float PixelsPerUnrealUnit, bool bCreateLayer)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1172,10 +1172,10 @@ void UPaperTileMapComponent::CreateNewTileMap(int32 Param_MapWidth, int32 Param_
 
 	Params::PaperTileMapComponent_CreateNewTileMap Parms{};
 
-	Parms.Param_MapWidth = Param_MapWidth;
-	Parms.Param_MapHeight = Param_MapHeight;
-	Parms.Param_TileWidth = Param_TileWidth;
-	Parms.Param_TileHeight = Param_TileHeight;
+	Parms.MapWidth_0 = MapWidth_0;
+	Parms.MapHeight_0 = MapHeight_0;
+	Parms.TileWidth_0 = TileWidth_0;
+	Parms.TileHeight_0 = TileHeight_0;
 	Parms.PixelsPerUnrealUnit = PixelsPerUnrealUnit;
 	Parms.bCreateLayer = bCreateLayer;
 
@@ -1191,11 +1191,11 @@ void UPaperTileMapComponent::CreateNewTileMap(int32 Param_MapWidth, int32 Param_
 // Function Paper2D.PaperTileMapComponent.GetMapSize
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   Param_MapWidth                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_MapHeight                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MapWidth_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MapHeight_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   NumLayers                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPaperTileMapComponent::GetMapSize(int32* Param_MapWidth, int32* Param_MapHeight, int32* NumLayers)
+void UPaperTileMapComponent::GetMapSize(int32* MapWidth_0, int32* MapHeight_0, int32* NumLayers)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1211,11 +1211,11 @@ void UPaperTileMapComponent::GetMapSize(int32* Param_MapWidth, int32* Param_MapH
 
 	Func->FunctionFlags = Flgs;
 
-	if (Param_MapWidth != nullptr)
-		*Param_MapWidth = Parms.Param_MapWidth;
+	if (MapWidth_0 != nullptr)
+		*MapWidth_0 = Parms.MapWidth_0;
 
-	if (Param_MapHeight != nullptr)
-		*Param_MapHeight = Parms.Param_MapHeight;
+	if (MapHeight_0 != nullptr)
+		*MapHeight_0 = Parms.MapHeight_0;
 
 	if (NumLayers != nullptr)
 		*NumLayers = Parms.NumLayers;

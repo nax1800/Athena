@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DisplayName.DisplayName_C
-// 0x0010 (0x0470 - 0x0460)
+// 0x0018 (0x0398 - 0x0380)
 class UDisplayName_C final : public UFortDisplayNameWidget
 {
 public:
-	class UEditableText*                          EditText_Number;                                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBox_Number;                                       // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          DisplayNameBorder;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEditableText*                          EditText_Number;                                   // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VBox_Number;                                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,9 +36,10 @@ public:
 	}
 };
 static_assert(alignof(UDisplayName_C) == 0x000008, "Wrong alignment on UDisplayName_C");
-static_assert(sizeof(UDisplayName_C) == 0x000470, "Wrong size on UDisplayName_C");
-static_assert(offsetof(UDisplayName_C, EditText_Number) == 0x000460, "Member 'UDisplayName_C::EditText_Number' has a wrong offset!");
-static_assert(offsetof(UDisplayName_C, VBox_Number) == 0x000468, "Member 'UDisplayName_C::VBox_Number' has a wrong offset!");
+static_assert(sizeof(UDisplayName_C) == 0x000398, "Wrong size on UDisplayName_C");
+static_assert(offsetof(UDisplayName_C, DisplayNameBorder) == 0x000380, "Member 'UDisplayName_C::DisplayNameBorder' has a wrong offset!");
+static_assert(offsetof(UDisplayName_C, EditText_Number) == 0x000388, "Member 'UDisplayName_C::EditText_Number' has a wrong offset!");
+static_assert(offsetof(UDisplayName_C, VBox_Number) == 0x000390, "Member 'UDisplayName_C::VBox_Number' has a wrong offset!");
 
 }
 

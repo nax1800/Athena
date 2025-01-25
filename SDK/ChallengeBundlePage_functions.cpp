@@ -37,6 +37,62 @@ void UChallengeBundlePage_C::ExecuteUbergraph_ChallengeBundlePage(int32 EntryPoi
 }
 
 
+// Function ChallengeBundlePage.ChallengeBundlePage_C.OnDeactivated
+// (Event, Protected, BlueprintEvent)
+
+void UChallengeBundlePage_C::OnDeactivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "OnDeactivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UChallengeBundlePage_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UChallengeBundlePage_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UChallengeBundlePage_C::OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ChallengeBundlePage.ChallengeBundlePage_C.BndEvt__SwipePanel_K2Node_ComponentBoundEvent_26_OnFortSwipeEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -60,6 +116,20 @@ void UChallengeBundlePage_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_11_On
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ChallengeBundlePage_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_11_OnFortSwipeEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.OnBundleUpdated
+// (Event, Protected, BlueprintEvent)
+
+void UChallengeBundlePage_C::OnBundleUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "OnBundleUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,34 +195,6 @@ void UChallengeBundlePage_C::BndEvt__PagePreviousButton_K2Node_ComponentBoundEve
 }
 
 
-// Function ChallengeBundlePage.ChallengeBundlePage_C.OnBundleUpdated
-// (Event, Protected, BlueprintEvent)
-
-void UChallengeBundlePage_C::OnBundleUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeBundlePage_C", "OnBundleUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ChallengeBundlePage.ChallengeBundlePage_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UChallengeBundlePage_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeBundlePage_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ChallengeBundlePage.ChallengeBundlePage_C.UpdateBundle
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -214,8 +256,9 @@ void UChallengeBundlePage_C::RegisterEventListeners()
 // Parameters:
 // class UFortQuestItem*                   Quest                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestItemDefinition*         QuestDefinition                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget*                     Panel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UChallengeBundlePage_C::CreateQuestWidget(class UFortQuestItem* Quest, class UFortQuestItemDefinition* QuestDefinition)
+void UChallengeBundlePage_C::CreateQuestWidget(class UFortQuestItem* Quest, class UFortQuestItemDefinition* QuestDefinition, class UPanelWidget* Panel)
 {
 	static class UFunction* Func = nullptr;
 
@@ -226,6 +269,7 @@ void UChallengeBundlePage_C::CreateQuestWidget(class UFortQuestItem* Quest, clas
 
 	Parms.Quest = Quest;
 	Parms.QuestDefinition = QuestDefinition;
+	Parms.Panel = Panel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -249,6 +293,118 @@ void UChallengeBundlePage_C::HandleBack(bool* Passthrough)
 
 	if (Passthrough != nullptr)
 		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.Play Intro
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UChallengeBundlePage_C::Play_Intro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "Play Intro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.Initial Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UChallengeBundlePage_C::Initial_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "Initial Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.UpdateQuestList
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EChallengeBundleQuestVisualStyle        Visual_Style                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget*                     Panel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget*                     Container                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    HasClaimableQuests                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UChallengeBundlePage_C::UpdateQuestList(EChallengeBundleQuestVisualStyle Visual_Style, class UPanelWidget* Panel, class UPanelWidget* Container, bool* HasClaimableQuests)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "UpdateQuestList");
+
+	Params::ChallengeBundlePage_C_UpdateQuestList Parms{};
+
+	Parms.Visual_Style = Visual_Style;
+	Parms.Panel = Panel;
+	Parms.Container = Container;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HasClaimableQuests != nullptr)
+		*HasClaimableQuests = Parms.HasClaimableQuests;
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.SetBackground
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UChallengeBundlePage_C::SetBackground()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "SetBackground");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.ConstructTimespanSource
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortTimerTimespanDataSource*     NewObject                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UChallengeBundlePage_C::ConstructTimespanSource(class UFortTimerTimespanDataSource** NewObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "ConstructTimespanSource");
+
+	Params::ChallengeBundlePage_C_ConstructTimespanSource Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewObject != nullptr)
+		*NewObject = Parms.NewObject;
+}
+
+
+// Function ChallengeBundlePage.ChallengeBundlePage_C.GetAthenaEventTime
+// (Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FTimespan                        Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+
+void UChallengeBundlePage_C::GetAthenaEventTime(struct FTimespan* Result) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeBundlePage_C", "GetAthenaEventTime");
+
+	Params::ChallengeBundlePage_C_GetAthenaEventTime Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
 }
 
 }

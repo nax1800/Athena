@@ -49,7 +49,7 @@ class UObject* UObject::FindObjectImpl(const std::string& FullName, EClassCastFl
 		if (!Object)
 			continue;
 		
-		if (Object->HasTypeFlag(RequiredType) && Object->GetFullName() == FullName || Object->HasTypeFlag(RequiredType) && Object->GetFullName().contains(FullName))
+		if (Object->HasTypeFlag(RequiredType) && Object->GetFullName() == FullName)
 			return Object;
 	}
 

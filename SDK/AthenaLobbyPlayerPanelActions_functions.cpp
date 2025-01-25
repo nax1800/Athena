@@ -65,26 +65,6 @@ void UAthenaLobbyPlayerPanelActions_C::ExecuteUbergraph_AthenaLobbyPlayerPanelAc
 }
 
 
-// Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonEmote_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonEmote_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyPlayerPanelActions_C", "BndEvt__ButtonEmote_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
-
-	Params::AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonEmote_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonMute_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -275,19 +255,19 @@ void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* IsLoca
 }
 
 
-// Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanFriend
+// Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanFriendInviteOrAccept
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                                    bCanFriend                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaLobbyPlayerPanelActions_C::CanFriend(bool* bCanFriend)
+void UAthenaLobbyPlayerPanelActions_C::CanFriendInviteOrAccept(bool* bCanFriend)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyPlayerPanelActions_C", "CanFriend");
+		Func = Class->GetFunction("AthenaLobbyPlayerPanelActions_C", "CanFriendInviteOrAccept");
 
-	Params::AthenaLobbyPlayerPanelActions_C_CanFriend Parms{};
+	Params::AthenaLobbyPlayerPanelActions_C_CanFriendInviteOrAccept Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -472,9 +452,9 @@ void UAthenaLobbyPlayerPanelActions_C::OnActiveFriendsCountUpdated(int32 ActiveF
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Param_TeamMemberInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo)
+void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -483,7 +463,7 @@ void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamM
 
 	Params::AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo Parms{};
 
-	Parms.Param_TeamMemberInfo = std::move(Param_TeamMemberInfo);
+	Parms.TeamMemberInfo_0 = std::move(TeamMemberInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -549,6 +529,20 @@ void UAthenaLobbyPlayerPanelActions_C::OnMutingChanged(const struct FUniqueNetId
 	Parms.NewParam1 = NewParam1;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.RefreshAddFriendButton
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobbyPlayerPanelActions_C::RefreshAddFriendButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanelActions_C", "RefreshAddFriendButton");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

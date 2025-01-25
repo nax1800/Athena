@@ -18,69 +18,73 @@ namespace SDK::Params
 {
 
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.ExecuteUbergraph_Tooltip-Basic-S
-// 0x0020 (0x0020 - 0x0000)
+// 0x0024 (0x0024 - 0x0000)
 struct TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234;                            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12345678;                        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789;                       // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue1;                 // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select1234_Default;                         // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable8;                               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable9;                               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue1;                 // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValidClass_ReturnValue1;                // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x000004, "Wrong alignment on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
-static_assert(sizeof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x000020, "Wrong size on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
+static_assert(sizeof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x000024, "Wrong size on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, EntryPoint) == 0x000000, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable) == 0x000004, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable) == 0x000005, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable1) == 0x000006, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable1) == 0x000007, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable12) == 0x000008, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable123) == 0x000009, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable12) == 0x00000A, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable1234) == 0x00000B, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable12345) == 0x00000C, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable123) == 0x00000D, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable123456) == 0x00000E, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable1234567) == 0x00000F, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable1234) == 0x000010, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable12345678) == 0x000011, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable123456789) == 0x000012, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable123456789' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_TextIsEmpty_ReturnValue) == 0x000013, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_TextIsEmpty_ReturnValue1) == 0x000014, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_TextIsEmpty_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_Not_PreBool_ReturnValue) == 0x000015, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_Not_PreBool_ReturnValue1) == 0x000016, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select_Default) == 0x000017, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select1_Default) == 0x000018, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select12_Default) == 0x00001B, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_BooleanOR_ReturnValue1) == 0x00001C, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select123_Default) == 0x00001D, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select1234_Default) == 0x00001E, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select1234_Default' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable) == 0x000004, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable1) == 0x000005, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable) == 0x000006, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable2) == 0x000007, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable3) == 0x000008, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable1) == 0x000009, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable4) == 0x00000A, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable5) == 0x00000B, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable2) == 0x00000C, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable6) == 0x00000D, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable7) == 0x00000E, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable3) == 0x00000F, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable8) == 0x000010, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable9) == 0x000011, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_TextIsEmpty_ReturnValue) == 0x000012, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_TextIsEmpty_ReturnValue1) == 0x000013, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_TextIsEmpty_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_Not_PreBool_ReturnValue) == 0x000014, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_Not_PreBool_ReturnValue1) == 0x000015, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select_Default) == 0x000016, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select1_Default) == 0x000017, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_BooleanOR_ReturnValue) == 0x000019, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_BooleanOR_ReturnValue1) == 0x00001A, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select2_Default) == 0x00001B, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select3_Default) == 0x00001C, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_IsValidClass_ReturnValue) == 0x00001D, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, CallFunc_IsValidClass_ReturnValue1) == 0x00001E, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::CallFunc_IsValidClass_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable4) == 0x00001F, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, K2Node_Select4_Default) == 0x000020, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::K2Node_Select4_Default' has a wrong offset!");
 
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Body Text
 // 0x0018 (0x0018 - 0x0000)

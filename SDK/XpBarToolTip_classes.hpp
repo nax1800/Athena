@@ -17,25 +17,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBarToolTip.XpBarToolTip_C
-// 0x00C8 (0x02E0 - 0x0218)
+// 0x00C8 (0x02D8 - 0x0210)
 class UXpBarToolTip_C final : public UCommonUserWidget
 {
 public:
-	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0218(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_2;                                 // 0x0220(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_29;                                // 0x0228(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_30;                                // 0x0230(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_31;                                // 0x0238(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_3;                                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_5;                                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   HeaderText;                                        // 0x0268(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   CommanderXPText;                                   // 0x0280(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   BoostXPText;                                       // 0x0298(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   RestedXPText;                                      // 0x02B0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   BodyText;                                          // 0x02C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0210(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_2;                                 // 0x0218(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_29;                                // 0x0220(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_30;                                // 0x0228(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_31;                                // 0x0230(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_3;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_5;                                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   HeaderText;                                        // 0x0260(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   CommanderXPText;                                   // 0x0278(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   BoostXPText;                                       // 0x0290(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   RestedXPText;                                      // 0x02A8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   BodyText;                                          // 0x02C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	class FText GetHeaderText();
@@ -55,22 +55,22 @@ public:
 	}
 };
 static_assert(alignof(UXpBarToolTip_C) == 0x000008, "Wrong alignment on UXpBarToolTip_C");
-static_assert(sizeof(UXpBarToolTip_C) == 0x0002E0, "Wrong size on UXpBarToolTip_C");
-static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_0) == 0x000218, "Member 'UXpBarToolTip_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_2) == 0x000220, "Member 'UXpBarToolTip_C::CommonTextBlock_2' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_29) == 0x000228, "Member 'UXpBarToolTip_C::CommonTextBlock_29' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_30) == 0x000230, "Member 'UXpBarToolTip_C::CommonTextBlock_30' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_31) == 0x000238, "Member 'UXpBarToolTip_C::CommonTextBlock_31' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, Image_0) == 0x000240, "Member 'UXpBarToolTip_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, Image_1) == 0x000248, "Member 'UXpBarToolTip_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, Image_2) == 0x000250, "Member 'UXpBarToolTip_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, Image_3) == 0x000258, "Member 'UXpBarToolTip_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, Image_5) == 0x000260, "Member 'UXpBarToolTip_C::Image_5' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, HeaderText) == 0x000268, "Member 'UXpBarToolTip_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, CommanderXPText) == 0x000280, "Member 'UXpBarToolTip_C::CommanderXPText' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, BoostXPText) == 0x000298, "Member 'UXpBarToolTip_C::BoostXPText' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, RestedXPText) == 0x0002B0, "Member 'UXpBarToolTip_C::RestedXPText' has a wrong offset!");
-static_assert(offsetof(UXpBarToolTip_C, BodyText) == 0x0002C8, "Member 'UXpBarToolTip_C::BodyText' has a wrong offset!");
+static_assert(sizeof(UXpBarToolTip_C) == 0x0002D8, "Wrong size on UXpBarToolTip_C");
+static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_0) == 0x000210, "Member 'UXpBarToolTip_C::CommonTextBlock_0' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_2) == 0x000218, "Member 'UXpBarToolTip_C::CommonTextBlock_2' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_29) == 0x000220, "Member 'UXpBarToolTip_C::CommonTextBlock_29' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_30) == 0x000228, "Member 'UXpBarToolTip_C::CommonTextBlock_30' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_31) == 0x000230, "Member 'UXpBarToolTip_C::CommonTextBlock_31' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, Image_0) == 0x000238, "Member 'UXpBarToolTip_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, Image_1) == 0x000240, "Member 'UXpBarToolTip_C::Image_1' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, Image_2) == 0x000248, "Member 'UXpBarToolTip_C::Image_2' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, Image_3) == 0x000250, "Member 'UXpBarToolTip_C::Image_3' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, Image_5) == 0x000258, "Member 'UXpBarToolTip_C::Image_5' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, HeaderText) == 0x000260, "Member 'UXpBarToolTip_C::HeaderText' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, CommanderXPText) == 0x000278, "Member 'UXpBarToolTip_C::CommanderXPText' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, BoostXPText) == 0x000290, "Member 'UXpBarToolTip_C::BoostXPText' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, RestedXPText) == 0x0002A8, "Member 'UXpBarToolTip_C::RestedXPText' has a wrong offset!");
+static_assert(offsetof(UXpBarToolTip_C, BodyText) == 0x0002C0, "Member 'UXpBarToolTip_C::BodyText' has a wrong offset!");
 
 }
 

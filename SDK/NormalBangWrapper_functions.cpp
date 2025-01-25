@@ -37,6 +37,28 @@ void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint)
 }
 
 
+// Function NormalBangWrapper.NormalBangWrapper_C.OnBangStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   Count_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
+
+	Params::NormalBangWrapper_C_OnBangStateChanged Parms{};
+
+	Parms.bEnabled = bEnabled;
+	Parms.Count_0 = Count_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function NormalBangWrapper.NormalBangWrapper_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -82,28 +104,6 @@ void UNormalBangWrapper_C::OnStopCallout()
 		Func = Class->GetFunction("NormalBangWrapper_C", "OnStopCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function NormalBangWrapper.NormalBangWrapper_C.OnBangStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_Count                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Param_Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
-
-	Params::NormalBangWrapper_C_OnBangStateChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.Param_Count = Param_Count;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -167,20 +167,6 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 }
 
 
-// Function NormalBangWrapper.NormalBangWrapper_C.InitialReset
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UNormalBangWrapper_C::InitialReset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function NormalBangWrapper.NormalBangWrapper_C.TriggerIntro
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -204,6 +190,20 @@ void UNormalBangWrapper_C::TriggerReset()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("NormalBangWrapper_C", "TriggerReset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NormalBangWrapper.NormalBangWrapper_C.InitialReset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UNormalBangWrapper_C::InitialReset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

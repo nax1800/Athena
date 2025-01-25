@@ -10,24 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_BaseDespawn.GAB_BaseDespawn_C
-// 0x0020 (0x0B08 - 0x0AE8)
+// 0x0018 (0x0910 - 0x08F8)
 class UGAB_BaseDespawn_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTag                           TC_GameplayEffectInstantDeathDespawn;              // 0x0AF8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayBeforeKill;                                   // 0x0B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         RiftRandom;                                        // 0x0B04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           TC_GameplayEffectInstantDeathDespawn;              // 0x0900(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayBeforeKill;                                   // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         RiftRandom;                                        // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_BaseDespawn(int32 EntryPoint);
@@ -44,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UGAB_BaseDespawn_C) == 0x000008, "Wrong alignment on UGAB_BaseDespawn_C");
-static_assert(sizeof(UGAB_BaseDespawn_C) == 0x000B08, "Wrong size on UGAB_BaseDespawn_C");
-static_assert(offsetof(UGAB_BaseDespawn_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_BaseDespawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, TC_GameplayEffectInstantDeathDespawn) == 0x000AF8, "Member 'UGAB_BaseDespawn_C::TC_GameplayEffectInstantDeathDespawn' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, DelayBeforeKill) == 0x000B00, "Member 'UGAB_BaseDespawn_C::DelayBeforeKill' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, RiftRandom) == 0x000B04, "Member 'UGAB_BaseDespawn_C::RiftRandom' has a wrong offset!");
+static_assert(sizeof(UGAB_BaseDespawn_C) == 0x000910, "Wrong size on UGAB_BaseDespawn_C");
+static_assert(offsetof(UGAB_BaseDespawn_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_BaseDespawn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_BaseDespawn_C, TC_GameplayEffectInstantDeathDespawn) == 0x000900, "Member 'UGAB_BaseDespawn_C::TC_GameplayEffectInstantDeathDespawn' has a wrong offset!");
+static_assert(offsetof(UGAB_BaseDespawn_C, DelayBeforeKill) == 0x000908, "Member 'UGAB_BaseDespawn_C::DelayBeforeKill' has a wrong offset!");
+static_assert(offsetof(UGAB_BaseDespawn_C, RiftRandom) == 0x00090C, "Member 'UGAB_BaseDespawn_C::RiftRandom' has a wrong offset!");
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -21,28 +21,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotGroup.SquadSlotGroup_C
-// 0x0140 (0x0358 - 0x0218)
+// 0x0140 (0x0350 - 0x0210)
 class USquadSlotGroup_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 GroupIconImage;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       GroupLabelTextBlock;                               // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               HeadingSizeBox;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         SquadSlotBox;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   GroupLabelText;                                    // 0x0248(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FMargin                                SquadSlotPadding;                                  // 0x0260(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	float                                         HeadingWidth;                                      // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bShowHeader;                                       // 0x0274(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TooltipDescription;                                // 0x0278(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   TooltipHeader;                                     // 0x0290(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                          bShowImageInHeader;                                // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            HeaderImageBrush;                                  // 0x02B0(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	UMulticastDelegateProperty_                   HandleMouseEnter;                                  // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   HandleMouseLeave;                                  // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 GroupIconImage;                                    // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       GroupLabelTextBlock;                               // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               HeadingSizeBox;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         SquadSlotBox;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   GroupLabelText;                                    // 0x0240(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FMargin                                SquadSlotPadding;                                  // 0x0258(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	float                                         HeadingWidth;                                      // 0x0268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShowHeader;                                       // 0x026C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_26D[0x3];                                      // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TooltipDescription;                                // 0x0270(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   TooltipHeader;                                     // 0x0288(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                          bShowImageInHeader;                                // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            HeaderImageBrush;                                  // 0x02A8(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	UMulticastDelegateProperty_                   HandleMouseEnter;                                  // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   HandleMouseLeave;                                  // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void HandleMouseEnter__DelegateSignature();
@@ -55,7 +55,7 @@ public:
 	void Update_Squad_Slot_Visibility();
 	class UWidget* Get_SquadSlotBox_ToolTipWidget();
 	void SelectSquadSlot(int32 SlotIndex);
-	void DarkenAllSlotsExceptIndex(int32 Param_Index);
+	void DarkenAllSlotsExceptIndex(int32 Index_0);
 	void RemoveDarkeningFromAllSlotsInGroup();
 
 public:
@@ -69,23 +69,23 @@ public:
 	}
 };
 static_assert(alignof(USquadSlotGroup_C) == 0x000008, "Wrong alignment on USquadSlotGroup_C");
-static_assert(sizeof(USquadSlotGroup_C) == 0x000358, "Wrong size on USquadSlotGroup_C");
-static_assert(offsetof(USquadSlotGroup_C, UberGraphFrame) == 0x000218, "Member 'USquadSlotGroup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupIconImage) == 0x000220, "Member 'USquadSlotGroup_C::GroupIconImage' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupLabelTextBlock) == 0x000228, "Member 'USquadSlotGroup_C::GroupLabelTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeadingSizeBox) == 0x000230, "Member 'USquadSlotGroup_C::HeadingSizeBox' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, Image_0) == 0x000238, "Member 'USquadSlotGroup_C::Image_0' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, SquadSlotBox) == 0x000240, "Member 'USquadSlotGroup_C::SquadSlotBox' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupLabelText) == 0x000248, "Member 'USquadSlotGroup_C::GroupLabelText' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, SquadSlotPadding) == 0x000260, "Member 'USquadSlotGroup_C::SquadSlotPadding' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeadingWidth) == 0x000270, "Member 'USquadSlotGroup_C::HeadingWidth' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, bShowHeader) == 0x000274, "Member 'USquadSlotGroup_C::bShowHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, TooltipDescription) == 0x000278, "Member 'USquadSlotGroup_C::TooltipDescription' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, TooltipHeader) == 0x000290, "Member 'USquadSlotGroup_C::TooltipHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, bShowImageInHeader) == 0x0002A8, "Member 'USquadSlotGroup_C::bShowImageInHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeaderImageBrush) == 0x0002B0, "Member 'USquadSlotGroup_C::HeaderImageBrush' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HandleMouseEnter) == 0x000338, "Member 'USquadSlotGroup_C::HandleMouseEnter' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HandleMouseLeave) == 0x000348, "Member 'USquadSlotGroup_C::HandleMouseLeave' has a wrong offset!");
+static_assert(sizeof(USquadSlotGroup_C) == 0x000350, "Wrong size on USquadSlotGroup_C");
+static_assert(offsetof(USquadSlotGroup_C, UberGraphFrame) == 0x000210, "Member 'USquadSlotGroup_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, GroupIconImage) == 0x000218, "Member 'USquadSlotGroup_C::GroupIconImage' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, GroupLabelTextBlock) == 0x000220, "Member 'USquadSlotGroup_C::GroupLabelTextBlock' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, HeadingSizeBox) == 0x000228, "Member 'USquadSlotGroup_C::HeadingSizeBox' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, Image_0) == 0x000230, "Member 'USquadSlotGroup_C::Image_0' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, SquadSlotBox) == 0x000238, "Member 'USquadSlotGroup_C::SquadSlotBox' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, GroupLabelText) == 0x000240, "Member 'USquadSlotGroup_C::GroupLabelText' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, SquadSlotPadding) == 0x000258, "Member 'USquadSlotGroup_C::SquadSlotPadding' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, HeadingWidth) == 0x000268, "Member 'USquadSlotGroup_C::HeadingWidth' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, bShowHeader) == 0x00026C, "Member 'USquadSlotGroup_C::bShowHeader' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, TooltipDescription) == 0x000270, "Member 'USquadSlotGroup_C::TooltipDescription' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, TooltipHeader) == 0x000288, "Member 'USquadSlotGroup_C::TooltipHeader' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, bShowImageInHeader) == 0x0002A0, "Member 'USquadSlotGroup_C::bShowImageInHeader' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, HeaderImageBrush) == 0x0002A8, "Member 'USquadSlotGroup_C::HeaderImageBrush' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, HandleMouseEnter) == 0x000330, "Member 'USquadSlotGroup_C::HandleMouseEnter' has a wrong offset!");
+static_assert(offsetof(USquadSlotGroup_C, HandleMouseLeave) == 0x000340, "Member 'USquadSlotGroup_C::HandleMouseLeave' has a wrong offset!");
 
 }
 

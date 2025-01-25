@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass SK_F_Ninja_01_Body_Skeleton_AnimBP.SK_F_Ninja_01_Body_Skeleton_AnimBP_C
-// 0x0140 (0x0570 - 0x0430)
+// 0x0138 (0x0568 - 0x0430)
 class USK_F_Ninja_01_Body_Skeleton_AnimBP_C final : public UCustomCharacterPartAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_1205956746F4C2F910A7F697B79629BF; // 0x0438(0x0048)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C; // 0x0480(0x00E8)(ContainsInstancedReference)
-	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_Root                         AnimGraphNode_Root_1205956746F4C2F910A7F697B79629BF; // 0x0438(0x0040)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C; // 0x0478(0x00E8)(ContainsInstancedReference)
+	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BlueprintInitializeAnimation();
@@ -44,11 +44,11 @@ public:
 	}
 };
 static_assert(alignof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C) == 0x000008, "Wrong alignment on USK_F_Ninja_01_Body_Skeleton_AnimBP_C");
-static_assert(sizeof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C) == 0x000570, "Wrong size on USK_F_Ninja_01_Body_Skeleton_AnimBP_C");
+static_assert(sizeof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C) == 0x000568, "Wrong size on USK_F_Ninja_01_Body_Skeleton_AnimBP_C");
 static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, UberGraphFrame) == 0x000430, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, AnimGraphNode_Root_1205956746F4C2F910A7F697B79629BF) == 0x000438, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::AnimGraphNode_Root_1205956746F4C2F910A7F697B79629BF' has a wrong offset!");
-static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C) == 0x000480, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C' has a wrong offset!");
-static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, MeshToCopy) == 0x000568, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::MeshToCopy' has a wrong offset!");
+static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C) == 0x000478, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::AnimGraphNode_CopyPoseFromMesh_1F1787404E7008182EF87F809FB4795C' has a wrong offset!");
+static_assert(offsetof(USK_F_Ninja_01_Body_Skeleton_AnimBP_C, MeshToCopy) == 0x000560, "Member 'USK_F_Ninja_01_Body_Skeleton_AnimBP_C::MeshToCopy' has a wrong offset!");
 
 }
 

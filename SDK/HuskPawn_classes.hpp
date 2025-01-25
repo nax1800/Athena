@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EnemyPawn_Parent_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
@@ -21,53 +21,55 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HuskPawn.HuskPawn_C
-// 0x01A0 (0x2180 - 0x1FE0)
-class AHuskPawn_C : public AEnemyPawn_Parent_C
+// 0x01A0 (0x21F0 - 0x2050)
+#pragma pack(push, 0x1)
+class alignas(0x10) AHuskPawn_C : public AEnemyPawn_Parent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_HuskPawn_C;                         // 0x1FE0(0x0008)(Transient, DuplicateTransient)
-	int32                                         HitCount;                                          // 0x1FE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastTakeHitTime;                                   // 0x1FEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          PushFromFlingerSpawn;                              // 0x1FF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FF1[0x7];                                     // 0x1FF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPawn*                              PawnThatSpawnedMe;                                 // 0x1FF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PawnThatSpawnedMeLocation;                         // 0x2000(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_200C[0x4];                                     // 0x200C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_HitReactionAdditiveSingleOneShot;               // 0x2010(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HitReactionAdditiveLoop;                        // 0x2030(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HitReactionFullBody;                            // 0x2050(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HitReactionBlockAll;                            // 0x2070(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HitReactionBlockMelee;                          // 0x2090(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HitReactionBlockRanged;                         // 0x20B0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          HitReactForMelee;                                  // 0x20D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HuskIsInFlingersHand;                              // 0x20D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HuskIsAirborne;                                    // 0x20D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20D3[0x1];                                     // 0x20D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                HuskFlingerHandOffset;                             // 0x20D4(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               HuskFlingerHandRotation;                           // 0x20E0(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
-	struct FVector                                HuskFlingerProjectileOffset;                       // 0x20EC(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               HuskFlingerProjectileRotation;                     // 0x20F8(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2104[0x4];                                     // 0x2104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        ImpactParticles_Default;                           // 0x2108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_HumanFlesh;                        // 0x2110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Wood;                              // 0x2118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Stone;                             // 0x2120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Metal;                             // 0x2128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          MeleeImpact_UseSocketTransforms;                   // 0x2130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2131[0x7];                                     // 0x2131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Impact_MeleeSocket;                                // 0x2138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHeadshot_HideHead;                               // 0x2140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2141[0x3];                                     // 0x2141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PreviousLargestDeathRadius;                        // 0x2144(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Death_Normal_Sound_HuskPawn_C;                     // 0x2148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Death_RedLaser_Sound;                              // 0x2150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Spawn_Dust_Particles;                              // 0x2158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SafetyTimerDuration;                               // 0x2160(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DeathFX_HQ;                                        // 0x2164(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2165[0x3];                                     // 0x2165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 ShieldSkeletalMesh;                                // 0x2168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AShielderSpringArm_C*                   ShieldArm;                                         // 0x2170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               Diffuse_Texture;                                   // 0x2178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2041[0x7];                                     // 0x2041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_HuskPawn_C;                         // 0x2048(0x0008)(Transient, DuplicateTransient)
+	int32                                         HitCount;                                          // 0x2050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastTakeHitTime;                                   // 0x2054(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          PushFromFlingerSpawn;                              // 0x2058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2059[0x7];                                     // 0x2059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              PawnThatSpawnedMe;                                 // 0x2060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PawnThatSpawnedMeLocation;                         // 0x2068(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2074[0x4];                                     // 0x2074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_HitReactionAdditiveSingleOneShot;               // 0x2078(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HitReactionAdditiveLoop;                        // 0x2098(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HitReactionFullBody;                            // 0x20B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HitReactionBlockAll;                            // 0x20D8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HitReactionBlockMelee;                          // 0x20F8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HitReactionBlockRanged;                         // 0x2118(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          HitReactForMelee;                                  // 0x2138(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HuskIsInFlingersHand;                              // 0x2139(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HuskIsAirborne;                                    // 0x213A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_213B[0x1];                                     // 0x213B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                HuskFlingerHandOffset;                             // 0x213C(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               HuskFlingerHandRotation;                           // 0x2148(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	struct FVector                                HuskFlingerProjectileOffset;                       // 0x2154(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               HuskFlingerProjectileRotation;                     // 0x2160(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_216C[0x4];                                     // 0x216C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        ImpactParticles_Default;                           // 0x2170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_HumanFlesh;                        // 0x2178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Wood;                              // 0x2180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Stone;                             // 0x2188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Metal;                             // 0x2190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          MeleeImpact_UseSocketTransforms;                   // 0x2198(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2199[0x7];                                     // 0x2199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Impact_MeleeSocket;                                // 0x21A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHeadshot_HideHead;                               // 0x21A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21A9[0x3];                                     // 0x21A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PreviousLargestDeathRadius;                        // 0x21AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Death_Normal_Sound_HuskPawn_C;                     // 0x21B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Death_RedLaser_Sound;                              // 0x21B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Spawn_Dust_Particles;                              // 0x21C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SafetyTimerDuration;                               // 0x21C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DeathFX_HQ;                                        // 0x21CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21CD[0x3];                                     // 0x21CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 ShieldSkeletalMesh;                                // 0x21D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AShielderSpringArm_C*                   ShieldArm;                                         // 0x21D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               Diffuse_Texture;                                   // 0x21E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HuskPawn(int32 EntryPoint);
@@ -77,10 +79,10 @@ public:
 	void GameplayCue_Impact_Physical_Creature(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void PortalCollision(bool Collide_);
 	void PortalFX();
-	void PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT);
+	void PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT);
 	void TakerSoulSuckInterrupted();
 	void PortalClear();
-	void PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList);
+	void PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList);
 	void TakerSoulSuckSoundEnd();
 	void TakerSoulSuckSoundBegin(bool Success);
 	void TakerAttackFSM(bool SuccessfulHit);
@@ -94,7 +96,7 @@ public:
 	void MantleEnd();
 	void MantleStart(const struct FVector& StartPos, const struct FVector& MidPos, const struct FVector& EndPos, bool LowWall, bool MidWall, bool FullWall, bool WindowWall);
 	void FlingerEnemyDied(class APawn* PawnThatDied);
-	void AlertEnemySpawnedByFlinger(const struct FVector& Param_PushMomentum, float PushDuration, class APawn* OwningFlinger);
+	void AlertEnemySpawnedByFlinger(const struct FVector& PushMomentum_0, float PushDuration, class APawn* OwningFlinger);
 	void CanFlingerSpawnAnEnemy(class AActor* ActorWhoAsked);
 	void FlingerCan_tSpawnAnEnemy();
 	void FlingerCanSpawnAnEnemy();
@@ -113,44 +115,45 @@ public:
 		return GetDefaultObjImpl<AHuskPawn_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AHuskPawn_C) == 0x000010, "Wrong alignment on AHuskPawn_C");
-static_assert(sizeof(AHuskPawn_C) == 0x002180, "Wrong size on AHuskPawn_C");
-static_assert(offsetof(AHuskPawn_C, UberGraphFrame_HuskPawn_C) == 0x001FE0, "Member 'AHuskPawn_C::UberGraphFrame_HuskPawn_C' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HitCount) == 0x001FE8, "Member 'AHuskPawn_C::HitCount' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, LastTakeHitTime) == 0x001FEC, "Member 'AHuskPawn_C::LastTakeHitTime' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, PushFromFlingerSpawn) == 0x001FF0, "Member 'AHuskPawn_C::PushFromFlingerSpawn' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, PawnThatSpawnedMe) == 0x001FF8, "Member 'AHuskPawn_C::PawnThatSpawnedMe' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, PawnThatSpawnedMeLocation) == 0x002000, "Member 'AHuskPawn_C::PawnThatSpawnedMeLocation' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionAdditiveSingleOneShot) == 0x002010, "Member 'AHuskPawn_C::TC_HitReactionAdditiveSingleOneShot' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionAdditiveLoop) == 0x002030, "Member 'AHuskPawn_C::TC_HitReactionAdditiveLoop' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionFullBody) == 0x002050, "Member 'AHuskPawn_C::TC_HitReactionFullBody' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockAll) == 0x002070, "Member 'AHuskPawn_C::TC_HitReactionBlockAll' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockMelee) == 0x002090, "Member 'AHuskPawn_C::TC_HitReactionBlockMelee' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockRanged) == 0x0020B0, "Member 'AHuskPawn_C::TC_HitReactionBlockRanged' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HitReactForMelee) == 0x0020D0, "Member 'AHuskPawn_C::HitReactForMelee' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskIsInFlingersHand) == 0x0020D1, "Member 'AHuskPawn_C::HuskIsInFlingersHand' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskIsAirborne) == 0x0020D2, "Member 'AHuskPawn_C::HuskIsAirborne' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskFlingerHandOffset) == 0x0020D4, "Member 'AHuskPawn_C::HuskFlingerHandOffset' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskFlingerHandRotation) == 0x0020E0, "Member 'AHuskPawn_C::HuskFlingerHandRotation' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskFlingerProjectileOffset) == 0x0020EC, "Member 'AHuskPawn_C::HuskFlingerProjectileOffset' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, HuskFlingerProjectileRotation) == 0x0020F8, "Member 'AHuskPawn_C::HuskFlingerProjectileRotation' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ImpactParticles_Default) == 0x002108, "Member 'AHuskPawn_C::ImpactParticles_Default' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ImpactParticles_HumanFlesh) == 0x002110, "Member 'AHuskPawn_C::ImpactParticles_HumanFlesh' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ImpactParticles_Wood) == 0x002118, "Member 'AHuskPawn_C::ImpactParticles_Wood' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ImpactParticles_Stone) == 0x002120, "Member 'AHuskPawn_C::ImpactParticles_Stone' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ImpactParticles_Metal) == 0x002128, "Member 'AHuskPawn_C::ImpactParticles_Metal' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, MeleeImpact_UseSocketTransforms) == 0x002130, "Member 'AHuskPawn_C::MeleeImpact_UseSocketTransforms' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, Impact_MeleeSocket) == 0x002138, "Member 'AHuskPawn_C::Impact_MeleeSocket' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, IsHeadshot_HideHead) == 0x002140, "Member 'AHuskPawn_C::IsHeadshot_HideHead' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, PreviousLargestDeathRadius) == 0x002144, "Member 'AHuskPawn_C::PreviousLargestDeathRadius' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, Death_Normal_Sound_HuskPawn_C) == 0x002148, "Member 'AHuskPawn_C::Death_Normal_Sound_HuskPawn_C' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, Death_RedLaser_Sound) == 0x002150, "Member 'AHuskPawn_C::Death_RedLaser_Sound' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, Spawn_Dust_Particles) == 0x002158, "Member 'AHuskPawn_C::Spawn_Dust_Particles' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, SafetyTimerDuration) == 0x002160, "Member 'AHuskPawn_C::SafetyTimerDuration' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, DeathFX_HQ) == 0x002164, "Member 'AHuskPawn_C::DeathFX_HQ' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ShieldSkeletalMesh) == 0x002168, "Member 'AHuskPawn_C::ShieldSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, ShieldArm) == 0x002170, "Member 'AHuskPawn_C::ShieldArm' has a wrong offset!");
-static_assert(offsetof(AHuskPawn_C, Diffuse_Texture) == 0x002178, "Member 'AHuskPawn_C::Diffuse_Texture' has a wrong offset!");
+static_assert(sizeof(AHuskPawn_C) == 0x0021F0, "Wrong size on AHuskPawn_C");
+static_assert(offsetof(AHuskPawn_C, UberGraphFrame_HuskPawn_C) == 0x002048, "Member 'AHuskPawn_C::UberGraphFrame_HuskPawn_C' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HitCount) == 0x002050, "Member 'AHuskPawn_C::HitCount' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, LastTakeHitTime) == 0x002054, "Member 'AHuskPawn_C::LastTakeHitTime' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, PushFromFlingerSpawn) == 0x002058, "Member 'AHuskPawn_C::PushFromFlingerSpawn' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, PawnThatSpawnedMe) == 0x002060, "Member 'AHuskPawn_C::PawnThatSpawnedMe' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, PawnThatSpawnedMeLocation) == 0x002068, "Member 'AHuskPawn_C::PawnThatSpawnedMeLocation' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionAdditiveSingleOneShot) == 0x002078, "Member 'AHuskPawn_C::TC_HitReactionAdditiveSingleOneShot' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionAdditiveLoop) == 0x002098, "Member 'AHuskPawn_C::TC_HitReactionAdditiveLoop' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionFullBody) == 0x0020B8, "Member 'AHuskPawn_C::TC_HitReactionFullBody' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockAll) == 0x0020D8, "Member 'AHuskPawn_C::TC_HitReactionBlockAll' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockMelee) == 0x0020F8, "Member 'AHuskPawn_C::TC_HitReactionBlockMelee' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, TC_HitReactionBlockRanged) == 0x002118, "Member 'AHuskPawn_C::TC_HitReactionBlockRanged' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HitReactForMelee) == 0x002138, "Member 'AHuskPawn_C::HitReactForMelee' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskIsInFlingersHand) == 0x002139, "Member 'AHuskPawn_C::HuskIsInFlingersHand' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskIsAirborne) == 0x00213A, "Member 'AHuskPawn_C::HuskIsAirborne' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskFlingerHandOffset) == 0x00213C, "Member 'AHuskPawn_C::HuskFlingerHandOffset' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskFlingerHandRotation) == 0x002148, "Member 'AHuskPawn_C::HuskFlingerHandRotation' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskFlingerProjectileOffset) == 0x002154, "Member 'AHuskPawn_C::HuskFlingerProjectileOffset' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, HuskFlingerProjectileRotation) == 0x002160, "Member 'AHuskPawn_C::HuskFlingerProjectileRotation' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ImpactParticles_Default) == 0x002170, "Member 'AHuskPawn_C::ImpactParticles_Default' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ImpactParticles_HumanFlesh) == 0x002178, "Member 'AHuskPawn_C::ImpactParticles_HumanFlesh' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ImpactParticles_Wood) == 0x002180, "Member 'AHuskPawn_C::ImpactParticles_Wood' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ImpactParticles_Stone) == 0x002188, "Member 'AHuskPawn_C::ImpactParticles_Stone' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ImpactParticles_Metal) == 0x002190, "Member 'AHuskPawn_C::ImpactParticles_Metal' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, MeleeImpact_UseSocketTransforms) == 0x002198, "Member 'AHuskPawn_C::MeleeImpact_UseSocketTransforms' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, Impact_MeleeSocket) == 0x0021A0, "Member 'AHuskPawn_C::Impact_MeleeSocket' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, IsHeadshot_HideHead) == 0x0021A8, "Member 'AHuskPawn_C::IsHeadshot_HideHead' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, PreviousLargestDeathRadius) == 0x0021AC, "Member 'AHuskPawn_C::PreviousLargestDeathRadius' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, Death_Normal_Sound_HuskPawn_C) == 0x0021B0, "Member 'AHuskPawn_C::Death_Normal_Sound_HuskPawn_C' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, Death_RedLaser_Sound) == 0x0021B8, "Member 'AHuskPawn_C::Death_RedLaser_Sound' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, Spawn_Dust_Particles) == 0x0021C0, "Member 'AHuskPawn_C::Spawn_Dust_Particles' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, SafetyTimerDuration) == 0x0021C8, "Member 'AHuskPawn_C::SafetyTimerDuration' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, DeathFX_HQ) == 0x0021CC, "Member 'AHuskPawn_C::DeathFX_HQ' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ShieldSkeletalMesh) == 0x0021D0, "Member 'AHuskPawn_C::ShieldSkeletalMesh' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, ShieldArm) == 0x0021D8, "Member 'AHuskPawn_C::ShieldArm' has a wrong offset!");
+static_assert(offsetof(AHuskPawn_C, Diffuse_Texture) == 0x0021E0, "Member 'AHuskPawn_C::Diffuse_Texture' has a wrong offset!");
 
 }
 

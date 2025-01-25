@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FriendCodeList.FriendCodeList_C
-// 0x0048 (0x0468 - 0x0420)
+// 0x0048 (0x0398 - 0x0350)
 class UFriendCodeList_C final : public UFortFriendCodeListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                B_ClickBlocker;                                    // 0x0430(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          Border_MainPanel;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                both;                                              // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CloseButton;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                Desc;                                              // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         EntryBody;                                         // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         RichTextBlock_0;                                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                B_ClickBlocker;                                    // 0x0360(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          Border_MainPanel;                                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                both;                                              // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CloseButton;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                Desc;                                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         EntryBody;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         RichTextBlock_0;                                   // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void BndEvt__both_K2Node_ComponentBoundEvent_54_OnButtonClickedEvent__DelegateSignature();
@@ -53,16 +53,16 @@ public:
 	}
 };
 static_assert(alignof(UFriendCodeList_C) == 0x000008, "Wrong alignment on UFriendCodeList_C");
-static_assert(sizeof(UFriendCodeList_C) == 0x000468, "Wrong size on UFriendCodeList_C");
-static_assert(offsetof(UFriendCodeList_C, UberGraphFrame) == 0x000420, "Member 'UFriendCodeList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, Intro) == 0x000428, "Member 'UFriendCodeList_C::Intro' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, B_ClickBlocker) == 0x000430, "Member 'UFriendCodeList_C::B_ClickBlocker' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, Border_MainPanel) == 0x000438, "Member 'UFriendCodeList_C::Border_MainPanel' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, both) == 0x000440, "Member 'UFriendCodeList_C::both' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, CloseButton) == 0x000448, "Member 'UFriendCodeList_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, Desc) == 0x000450, "Member 'UFriendCodeList_C::Desc' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, EntryBody) == 0x000458, "Member 'UFriendCodeList_C::EntryBody' has a wrong offset!");
-static_assert(offsetof(UFriendCodeList_C, RichTextBlock_0) == 0x000460, "Member 'UFriendCodeList_C::RichTextBlock_0' has a wrong offset!");
+static_assert(sizeof(UFriendCodeList_C) == 0x000398, "Wrong size on UFriendCodeList_C");
+static_assert(offsetof(UFriendCodeList_C, UberGraphFrame) == 0x000350, "Member 'UFriendCodeList_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, Intro) == 0x000358, "Member 'UFriendCodeList_C::Intro' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, B_ClickBlocker) == 0x000360, "Member 'UFriendCodeList_C::B_ClickBlocker' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, Border_MainPanel) == 0x000368, "Member 'UFriendCodeList_C::Border_MainPanel' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, both) == 0x000370, "Member 'UFriendCodeList_C::both' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, CloseButton) == 0x000378, "Member 'UFriendCodeList_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, Desc) == 0x000380, "Member 'UFriendCodeList_C::Desc' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, EntryBody) == 0x000388, "Member 'UFriendCodeList_C::EntryBody' has a wrong offset!");
+static_assert(offsetof(UFriendCodeList_C, RichTextBlock_0) == 0x000390, "Member 'UFriendCodeList_C::RichTextBlock_0' has a wrong offset!");
 
 }
 

@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
@@ -20,13 +19,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RadialPickerItem.RadialPickerItem_C
-// 0x0068 (0x0280 - 0x0218)
+// 0x0070 (0x0280 - 0x0210)
 class URadialPickerItem_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Selected;                                          // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderItemBorder;                                  // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       ImageIcon;                                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageItemNotSelected;                              // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ImageOrItemSwitcher;                               // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindWidget;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,11 +39,10 @@ public:
 	void On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
 	void ExecuteUbergraph_RadialPickerItem(int32 EntryPoint);
 	void Construct();
-	void SetImageAndLabelContent(const class FText& Text, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex);
+	void SetImageAndLabelContent(const class FText& Text, TSoftObjectPtr<class UTexture2D> Icon, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex);
 	void SetSelected(bool IsSelected);
 	void SetItemContent(class UFortItem* Item, bool Option_Enabled, int32 Radial_Item_Index);
 	void SetShowImageAndLabel(bool ShowImageAndLabel);
-	void SetKeybindVisibility();
 	struct FEventReply OnTouchStarted(const struct FGeometry& MyGeometry, const struct FPointerEvent& InTouchEvent);
 
 public:
@@ -58,9 +57,10 @@ public:
 };
 static_assert(alignof(URadialPickerItem_C) == 0x000008, "Wrong alignment on URadialPickerItem_C");
 static_assert(sizeof(URadialPickerItem_C) == 0x000280, "Wrong size on URadialPickerItem_C");
-static_assert(offsetof(URadialPickerItem_C, UberGraphFrame) == 0x000218, "Member 'URadialPickerItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URadialPickerItem_C, UberGraphFrame) == 0x000210, "Member 'URadialPickerItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URadialPickerItem_C, Selected) == 0x000218, "Member 'URadialPickerItem_C::Selected' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, BorderItemBorder) == 0x000220, "Member 'URadialPickerItem_C::BorderItemBorder' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, Image) == 0x000228, "Member 'URadialPickerItem_C::Image' has a wrong offset!");
+static_assert(offsetof(URadialPickerItem_C, ImageIcon) == 0x000228, "Member 'URadialPickerItem_C::ImageIcon' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, ImageItemNotSelected) == 0x000230, "Member 'URadialPickerItem_C::ImageItemNotSelected' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, ImageOrItemSwitcher) == 0x000238, "Member 'URadialPickerItem_C::ImageOrItemSwitcher' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, KeybindWidget) == 0x000240, "Member 'URadialPickerItem_C::KeybindWidget' has a wrong offset!");

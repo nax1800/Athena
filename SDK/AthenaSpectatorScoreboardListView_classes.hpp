@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -17,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaSpectatorScoreboardListView.AthenaSpectatorScoreboardListView_C
-// 0x0008 (0x0220 - 0x0218)
+// 0x0008 (0x0218 - 0x0210)
 class UAthenaSpectatorScoreboardListView_C final : public UCommonUserWidget
 {
 public:
-	class UCommonListView*                        List;                                              // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonListView*                        List;                                              // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ResetFocus();
@@ -37,8 +38,8 @@ public:
 	}
 };
 static_assert(alignof(UAthenaSpectatorScoreboardListView_C) == 0x000008, "Wrong alignment on UAthenaSpectatorScoreboardListView_C");
-static_assert(sizeof(UAthenaSpectatorScoreboardListView_C) == 0x000220, "Wrong size on UAthenaSpectatorScoreboardListView_C");
-static_assert(offsetof(UAthenaSpectatorScoreboardListView_C, List) == 0x000218, "Member 'UAthenaSpectatorScoreboardListView_C::List' has a wrong offset!");
+static_assert(sizeof(UAthenaSpectatorScoreboardListView_C) == 0x000218, "Wrong size on UAthenaSpectatorScoreboardListView_C");
+static_assert(offsetof(UAthenaSpectatorScoreboardListView_C, List) == 0x000210, "Member 'UAthenaSpectatorScoreboardListView_C::List' has a wrong offset!");
 
 }
 

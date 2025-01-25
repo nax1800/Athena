@@ -41,7 +41,7 @@ public:
 	bool                                          LoopTimer;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BasicProgressBar_C_Toggle_Timer_for_Secondary_Bar) == 0x000008, "Wrong alignment on BasicProgressBar_C_Toggle_Timer_for_Secondary_Bar");
 static_assert(sizeof(BasicProgressBar_C_Toggle_Timer_for_Secondary_Bar) == 0x000028, "Wrong size on BasicProgressBar_C_Toggle_Timer_for_Secondary_Bar");

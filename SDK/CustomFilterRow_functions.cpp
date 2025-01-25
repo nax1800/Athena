@@ -20,10 +20,10 @@ namespace SDK
 // Function CustomFilterRow.CustomFilterRow_C.OnCustomFilterToggled__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortInventoryCustomFilter              Param_Filter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortInventoryCustomFilter              Filter_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UCustomFilterRow_C::OnCustomFilterToggled__DelegateSignature(EFortInventoryCustomFilter Param_Filter, bool IsChecked)
+void UCustomFilterRow_C::OnCustomFilterToggled__DelegateSignature(EFortInventoryCustomFilter Filter_0, bool IsChecked)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UCustomFilterRow_C::OnCustomFilterToggled__DelegateSignature(EFortInventory
 
 	Params::CustomFilterRow_C_OnCustomFilterToggled__DelegateSignature Parms{};
 
-	Parms.Param_Filter = Param_Filter;
+	Parms.Filter_0 = Filter_0;
 	Parms.IsChecked = IsChecked;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -59,15 +59,15 @@ void UCustomFilterRow_C::ExecuteUbergraph_CustomFilterRow(int32 EntryPoint)
 }
 
 
-// Function CustomFilterRow.CustomFilterRow_C.OnClicked
+// Function CustomFilterRow.CustomFilterRow_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 
-void UCustomFilterRow_C::OnClicked()
+void UCustomFilterRow_C::BP_OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CustomFilterRow_C", "OnClicked");
+		Func = Class->GetFunction("CustomFilterRow_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

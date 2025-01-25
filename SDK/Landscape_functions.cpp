@@ -320,5 +320,30 @@ class UMaterialInstanceDynamic* ULandscapeComponent::GetMaterialInstanceDynamic(
 	return Parms.ReturnValue;
 }
 
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class USplineMeshComponent*>     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
+
+	Params::LandscapeSplinesComponent_GetSplineMeshComponents Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
 }
 

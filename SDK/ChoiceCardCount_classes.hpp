@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChoiceCardCount.ChoiceCardCount_C
-// 0x0020 (0x0238 - 0x0218)
+// 0x0020 (0x0230 - 0x0210)
 class UChoiceCardCount_C final : public UCommonUserWidget
 {
 public:
-	class UCommonTextBlock*                       TextHave;                                          // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   DisplayText;                                       // 0x0220(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UCommonTextBlock*                       TextHave;                                          // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   DisplayText;                                       // 0x0218(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void UpdateText(int32 InventoryCount);
@@ -38,9 +38,9 @@ public:
 	}
 };
 static_assert(alignof(UChoiceCardCount_C) == 0x000008, "Wrong alignment on UChoiceCardCount_C");
-static_assert(sizeof(UChoiceCardCount_C) == 0x000238, "Wrong size on UChoiceCardCount_C");
-static_assert(offsetof(UChoiceCardCount_C, TextHave) == 0x000218, "Member 'UChoiceCardCount_C::TextHave' has a wrong offset!");
-static_assert(offsetof(UChoiceCardCount_C, DisplayText) == 0x000220, "Member 'UChoiceCardCount_C::DisplayText' has a wrong offset!");
+static_assert(sizeof(UChoiceCardCount_C) == 0x000230, "Wrong size on UChoiceCardCount_C");
+static_assert(offsetof(UChoiceCardCount_C, TextHave) == 0x000210, "Member 'UChoiceCardCount_C::TextHave' has a wrong offset!");
+static_assert(offsetof(UChoiceCardCount_C, DisplayText) == 0x000218, "Member 'UChoiceCardCount_C::DisplayText' has a wrong offset!");
 
 }
 

@@ -12,27 +12,34 @@
 
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadSlotsView.HeroSquadSlotsView_C
-// 0x0020 (0x0320 - 0x0300)
+// 0x0038 (0x0330 - 0x02F8)
 class UHeroSquadSlotsView_C final : public UFortSquadSlotsView
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
-	class USquadSlotGroup_C*                      BonusSquadSlotGroup;                               // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USquadSlotGroup_C*                      DefendersSquadSlotGroup;                           // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USquadSlotGroup_C*                      PrimarySquadSlotGroup;                             // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Defenders_Squad_Intro;                             // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Bonus_Squad_Intro;                                 // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Primary_Intro;                                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USquadSlotGroup_C*                      BonusSquadSlotGroup;                               // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USquadSlotGroup_C*                      DefendersSquadSlotGroup;                           // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USquadSlotGroup_C*                      PrimarySquadSlotGroup;                             // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HeroSquadSlotsView(int32 EntryPoint);
 	void Construct();
 	class UFortSquadSlotSelectorButton* CreateAndAddSquadSlotButton(const int32 SquadSlotIndex, const struct FHomebaseSquadSlot& SquadSlotDefinition, class UWidget** OutSquadSlotButtonHost);
 	void HandleSquadNavigation(class FName SquadId, int32 SlotIndex);
-	void HighlightSlotByIndex(int32 Param_Index);
+	void HighlightSlotByIndex(int32 Index_0);
+	void Bonus();
+	void Defenders();
+	void Primary();
 	void UndarkenAllSlots();
 
 public:
@@ -46,11 +53,14 @@ public:
 	}
 };
 static_assert(alignof(UHeroSquadSlotsView_C) == 0x000008, "Wrong alignment on UHeroSquadSlotsView_C");
-static_assert(sizeof(UHeroSquadSlotsView_C) == 0x000320, "Wrong size on UHeroSquadSlotsView_C");
-static_assert(offsetof(UHeroSquadSlotsView_C, UberGraphFrame) == 0x000300, "Member 'UHeroSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, BonusSquadSlotGroup) == 0x000308, "Member 'UHeroSquadSlotsView_C::BonusSquadSlotGroup' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, DefendersSquadSlotGroup) == 0x000310, "Member 'UHeroSquadSlotsView_C::DefendersSquadSlotGroup' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, PrimarySquadSlotGroup) == 0x000318, "Member 'UHeroSquadSlotsView_C::PrimarySquadSlotGroup' has a wrong offset!");
+static_assert(sizeof(UHeroSquadSlotsView_C) == 0x000330, "Wrong size on UHeroSquadSlotsView_C");
+static_assert(offsetof(UHeroSquadSlotsView_C, UberGraphFrame) == 0x0002F8, "Member 'UHeroSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, Defenders_Squad_Intro) == 0x000300, "Member 'UHeroSquadSlotsView_C::Defenders_Squad_Intro' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, Bonus_Squad_Intro) == 0x000308, "Member 'UHeroSquadSlotsView_C::Bonus_Squad_Intro' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, Primary_Intro) == 0x000310, "Member 'UHeroSquadSlotsView_C::Primary_Intro' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, BonusSquadSlotGroup) == 0x000318, "Member 'UHeroSquadSlotsView_C::BonusSquadSlotGroup' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, DefendersSquadSlotGroup) == 0x000320, "Member 'UHeroSquadSlotsView_C::DefendersSquadSlotGroup' has a wrong offset!");
+static_assert(offsetof(UHeroSquadSlotsView_C, PrimarySquadSlotGroup) == 0x000328, "Member 'UHeroSquadSlotsView_C::PrimarySquadSlotGroup' has a wrong offset!");
 
 }
 

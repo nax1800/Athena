@@ -41,9 +41,9 @@ static_assert(offsetof(AthenaPickupStream_C_ExecuteUbergraph_AthenaPickupStream,
 static_assert(offsetof(AthenaPickupStream_C_ExecuteUbergraph_AthenaPickupStream, CallFunc_GetMessageManager_ReturnValue) == 0x000030, "Member 'AthenaPickupStream_C_ExecuteUbergraph_AthenaPickupStream::CallFunc_GetMessageManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaPickupStream_C_ExecuteUbergraph_AthenaPickupStream, K2Node_CreateDelegate_OutputDelegate1) == 0x000038, "Member 'AthenaPickupStream_C_ExecuteUbergraph_AthenaPickupStream::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 
-// Function AthenaPickupStream.AthenaPickupStream_C.HandleItemPickUp
+// Function AthenaPickupStream.AthenaPickupStream_C.HandleItemPickup
 // 0x0080 (0x0080 - 0x0000)
-struct AthenaPickupStream_C_HandleItemPickUp final
+struct AthenaPickupStream_C_HandleItemPickup final
 {
 public:
 	class UFortWorldItem*                         NewItem;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -65,21 +65,21 @@ public:
 	class UAthenaPickupMessageItem_C*             K2Node_DynamicCast_AsAthena_Pickup_Message_Item;   // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPickupStream_C_HandleItemPickUp) == 0x000008, "Wrong alignment on AthenaPickupStream_C_HandleItemPickUp");
-static_assert(sizeof(AthenaPickupStream_C_HandleItemPickUp) == 0x000080, "Wrong size on AthenaPickupStream_C_HandleItemPickUp");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, NewItem) == 0x000000, "Member 'AthenaPickupStream_C_HandleItemPickUp::NewItem' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, Count) == 0x000008, "Member 'AthenaPickupStream_C_HandleItemPickUp::Count' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_GetType_ReturnValue) == 0x000028, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_Conv_StringToName_ReturnValue) == 0x000048, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000050, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_BooleanOR_ReturnValue) == 0x000060, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, CallFunc_AddMessageItem_ReturnValue) == 0x000068, "Member 'AthenaPickupStream_C_HandleItemPickUp::CallFunc_AddMessageItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, K2Node_DynamicCast_AsAthena_Pickup_Message_Item) == 0x000070, "Member 'AthenaPickupStream_C_HandleItemPickUp::K2Node_DynamicCast_AsAthena_Pickup_Message_Item' has a wrong offset!");
-static_assert(offsetof(AthenaPickupStream_C_HandleItemPickUp, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AthenaPickupStream_C_HandleItemPickUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(alignof(AthenaPickupStream_C_HandleItemPickup) == 0x000008, "Wrong alignment on AthenaPickupStream_C_HandleItemPickup");
+static_assert(sizeof(AthenaPickupStream_C_HandleItemPickup) == 0x000080, "Wrong size on AthenaPickupStream_C_HandleItemPickup");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, NewItem) == 0x000000, "Member 'AthenaPickupStream_C_HandleItemPickup::NewItem' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, Count) == 0x000008, "Member 'AthenaPickupStream_C_HandleItemPickup::Count' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_GetType_ReturnValue) == 0x000028, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_GetType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_Conv_StringToName_ReturnValue) == 0x000048, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000050, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_BooleanOR_ReturnValue) == 0x000060, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, CallFunc_AddMessageItem_ReturnValue) == 0x000068, "Member 'AthenaPickupStream_C_HandleItemPickup::CallFunc_AddMessageItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, K2Node_DynamicCast_AsAthena_Pickup_Message_Item) == 0x000070, "Member 'AthenaPickupStream_C_HandleItemPickup::K2Node_DynamicCast_AsAthena_Pickup_Message_Item' has a wrong offset!");
+static_assert(offsetof(AthenaPickupStream_C_HandleItemPickup, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AthenaPickupStream_C_HandleItemPickup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaPickupStream.AthenaPickupStream_C.TryGetNextItem
 // 0x0038 (0x0038 - 0x0000)

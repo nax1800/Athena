@@ -10,36 +10,43 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_PlayerDBNO.GAB_PlayerDBNO_C
-// 0x00F0 (0x0BD8 - 0x0AE8)
+// 0x0160 (0x0A58 - 0x08F8)
 class UGAB_PlayerDBNO_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UAnimMontage*                           DeathMontage;                                      // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DeathHitDirection;                                 // 0x0B00(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             DeathHitResult;                                    // 0x0B10(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0B98(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x0BB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UAnimMontage*                           DeathMontage;                                      // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DeathHitDirection;                                 // 0x0908(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_914[0x4];                                      // 0x0914(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             DeathHitResult;                                    // 0x0918(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x09A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x09C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_DBNOSpeed;                                      // 0x09E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            DBNOSpeedHandle;                                   // 0x09E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         F_FailsafeDBNOSpeed;                               // 0x09F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9F4[0x4];                                      // 0x09F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, class FName>        MAP_DBNOSpeedRowNames;                             // 0x09F8(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class FName                                   N_DBNOSpeedRowName;                                // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HolsterId;                                         // 0x0A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_PlayerDBNO(int32 EntryPoint);
+	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
-	void OnCompleted_4B0F8658452931EE3B297A9E70C9C496();
-	void OnBlendOut_4B0F8658452931EE3B297A9E70C9C496();
-	void OnInterrupted_4B0F8658452931EE3B297A9E70C9C496();
-	void OnCancelled_4B0F8658452931EE3B297A9E70C9C496();
+	void Triggered_F61877974D2CED083195EF8A8CDA60C2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
+	void Cancelled_F61877974D2CED083195EF8A8CDA60C2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
+	void Completed_F61877974D2CED083195EF8A8CDA60C2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData);
 
 public:
@@ -53,13 +60,19 @@ public:
 	}
 };
 static_assert(alignof(UGAB_PlayerDBNO_C) == 0x000008, "Wrong alignment on UGAB_PlayerDBNO_C");
-static_assert(sizeof(UGAB_PlayerDBNO_C) == 0x000BD8, "Wrong size on UGAB_PlayerDBNO_C");
-static_assert(offsetof(UGAB_PlayerDBNO_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_PlayerDBNO_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathMontage) == 0x000AF8, "Member 'UGAB_PlayerDBNO_C::DeathMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitDirection) == 0x000B00, "Member 'UGAB_PlayerDBNO_C::DeathHitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitResult) == 0x000B10, "Member 'UGAB_PlayerDBNO_C::DeathHitResult' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DamageTags) == 0x000B98, "Member 'UGAB_PlayerDBNO_C::DamageTags' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, GameplayStatusAfflicted) == 0x000BB8, "Member 'UGAB_PlayerDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
+static_assert(sizeof(UGAB_PlayerDBNO_C) == 0x000A58, "Wrong size on UGAB_PlayerDBNO_C");
+static_assert(offsetof(UGAB_PlayerDBNO_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_PlayerDBNO_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, DeathMontage) == 0x000900, "Member 'UGAB_PlayerDBNO_C::DeathMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitDirection) == 0x000908, "Member 'UGAB_PlayerDBNO_C::DeathHitDirection' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitResult) == 0x000918, "Member 'UGAB_PlayerDBNO_C::DeathHitResult' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, DamageTags) == 0x0009A0, "Member 'UGAB_PlayerDBNO_C::DamageTags' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, GameplayStatusAfflicted) == 0x0009C0, "Member 'UGAB_PlayerDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, GE_DBNOSpeed) == 0x0009E0, "Member 'UGAB_PlayerDBNO_C::GE_DBNOSpeed' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, DBNOSpeedHandle) == 0x0009E8, "Member 'UGAB_PlayerDBNO_C::DBNOSpeedHandle' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, F_FailsafeDBNOSpeed) == 0x0009F0, "Member 'UGAB_PlayerDBNO_C::F_FailsafeDBNOSpeed' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, MAP_DBNOSpeedRowNames) == 0x0009F8, "Member 'UGAB_PlayerDBNO_C::MAP_DBNOSpeedRowNames' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, N_DBNOSpeedRowName) == 0x000A48, "Member 'UGAB_PlayerDBNO_C::N_DBNOSpeedRowName' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNO_C, HolsterId) == 0x000A50, "Member 'UGAB_PlayerDBNO_C::HolsterId' has a wrong offset!");
 
 }
 

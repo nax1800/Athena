@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TeamScoreDetailsContent.TeamScoreDetailsContent_C
-// 0x0038 (0x0258 - 0x0220)
+// 0x0038 (0x0250 - 0x0218)
 class UTeamScoreDetailsContent_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Image_2;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_3;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_4;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScoreBarsWidget_C*                     ScoreBarsWidget_0;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxScores;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Image_2;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_3;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_4;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScoreBarsWidget_C*                     ScoreBarsWidget_0;                                 // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxScores;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TeamScoreDetailsContent(int32 EntryPoint);
@@ -48,14 +48,14 @@ public:
 	}
 };
 static_assert(alignof(UTeamScoreDetailsContent_C) == 0x000008, "Wrong alignment on UTeamScoreDetailsContent_C");
-static_assert(sizeof(UTeamScoreDetailsContent_C) == 0x000258, "Wrong size on UTeamScoreDetailsContent_C");
-static_assert(offsetof(UTeamScoreDetailsContent_C, UberGraphFrame) == 0x000220, "Member 'UTeamScoreDetailsContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_2) == 0x000228, "Member 'UTeamScoreDetailsContent_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_3) == 0x000230, "Member 'UTeamScoreDetailsContent_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_4) == 0x000238, "Member 'UTeamScoreDetailsContent_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreBarsWidget_0) == 0x000240, "Member 'UTeamScoreDetailsContent_C::ScoreBarsWidget_0' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, VerticalBoxScores) == 0x000248, "Member 'UTeamScoreDetailsContent_C::VerticalBoxScores' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreReport) == 0x000250, "Member 'UTeamScoreDetailsContent_C::ScoreReport' has a wrong offset!");
+static_assert(sizeof(UTeamScoreDetailsContent_C) == 0x000250, "Wrong size on UTeamScoreDetailsContent_C");
+static_assert(offsetof(UTeamScoreDetailsContent_C, UberGraphFrame) == 0x000218, "Member 'UTeamScoreDetailsContent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, Image_2) == 0x000220, "Member 'UTeamScoreDetailsContent_C::Image_2' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, Image_3) == 0x000228, "Member 'UTeamScoreDetailsContent_C::Image_3' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, Image_4) == 0x000230, "Member 'UTeamScoreDetailsContent_C::Image_4' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreBarsWidget_0) == 0x000238, "Member 'UTeamScoreDetailsContent_C::ScoreBarsWidget_0' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, VerticalBoxScores) == 0x000240, "Member 'UTeamScoreDetailsContent_C::VerticalBoxScores' has a wrong offset!");
+static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreReport) == 0x000248, "Member 'UTeamScoreDetailsContent_C::ScoreReport' has a wrong offset!");
 
 }
 

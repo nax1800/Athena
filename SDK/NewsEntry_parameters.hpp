@@ -30,11 +30,11 @@ static_assert(offsetof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEven
 struct NewsEntry_C_HandleEntrySelected__DelegateSignature final
 {
 public:
-	class FText                                   Param_BodyText;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   BodyText_0;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(NewsEntry_C_HandleEntrySelected__DelegateSignature) == 0x000008, "Wrong alignment on NewsEntry_C_HandleEntrySelected__DelegateSignature");
 static_assert(sizeof(NewsEntry_C_HandleEntrySelected__DelegateSignature) == 0x000018, "Wrong size on NewsEntry_C_HandleEntrySelected__DelegateSignature");
-static_assert(offsetof(NewsEntry_C_HandleEntrySelected__DelegateSignature, Param_BodyText) == 0x000000, "Member 'NewsEntry_C_HandleEntrySelected__DelegateSignature::Param_BodyText' has a wrong offset!");
+static_assert(offsetof(NewsEntry_C_HandleEntrySelected__DelegateSignature, BodyText_0) == 0x000000, "Member 'NewsEntry_C_HandleEntrySelected__DelegateSignature::BodyText_0' has a wrong offset!");
 
 // Function NewsEntry.NewsEntry_C.ExecuteUbergraph_NewsEntry
 // 0x0010 (0x0010 - 0x0000)

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UIMapManager.UIMapManager_C
-// 0x0008 (0x0490 - 0x0488)
+// 0x0008 (0x0480 - 0x0478)
 class AUIMapManager_C final : public AFortInGameMapManager
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AUIMapManager_C) == 0x000008, "Wrong alignment on AUIMapManager_C");
-static_assert(sizeof(AUIMapManager_C) == 0x000490, "Wrong size on AUIMapManager_C");
-static_assert(offsetof(AUIMapManager_C, DefaultSceneRoot) == 0x000488, "Member 'AUIMapManager_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(AUIMapManager_C) == 0x000480, "Wrong size on AUIMapManager_C");
+static_assert(offsetof(AUIMapManager_C, DefaultSceneRoot) == 0x000478, "Member 'AUIMapManager_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

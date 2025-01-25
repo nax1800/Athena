@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function SmasherPawn.SmasherPawn_C.ExecuteUbergraph_SmasherPawn
-// 0x0DE0 (0x0DE0 - 0x0000)
+// 0x0DF0 (0x0DF0 - 0x0000)
 struct SmasherPawn_C_ExecuteUbergraph_SmasherPawn final
 {
 public:
@@ -29,9 +29,9 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             Temp_struct_Variable;                              // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -61,7 +61,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingProp*                          K2Node_DynamicCast_AsBuilding_Prop;                // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue1;     // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x018B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -78,13 +78,13 @@ public:
 	float                                         CallFunc_BreakVector_Z;                            // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue123;       // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1234;      // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue4;         // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12345;     // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue123456;    // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue5;         // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue6;         // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0292(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -119,11 +119,11 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x03E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x03F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AB_Rift_Portals_C*                      K2Node_DynamicCast_AsB_Rift_Portals;               // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_409[0x3];                                      // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x040C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0418(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x0424(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0424(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0430(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x0440(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -135,10 +135,10 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue1; // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0490(0x0030)(IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x04C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class UMaterialInstanceDynamic*               CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue12; // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType1234;             // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue2; // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType4;                // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters1234;            // 0x0558(0x00B8)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters4;               // 0x0558(0x00B8)(ContainsInstancedReference)
 	struct FHitResult                             CallFunc_GetHitResult_ReturnValue;                 // 0x0610(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_GetHitResult_ReturnValue1;                // 0x0698(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	EPhysicalSurface                              CallFunc_GetFortPhysicalSurface_ReturnValue;       // 0x0720(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -161,24 +161,24 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart1;               // 0x0788(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd1;                 // 0x0794(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue; // 0x07A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit12;            // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap12;         // 0x07A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit2;             // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap2;          // 0x07A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7AA[0x2];                                      // 0x07AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time12;                    // 0x07AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance12;                // 0x07B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location12;                // 0x07B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint12;             // 0x07C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal12;                  // 0x07CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal12;            // 0x07D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Time2;                     // 0x07AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance2;                 // 0x07B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location2;                 // 0x07B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint2;              // 0x07C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal2;                   // 0x07CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal2;             // 0x07D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7E4[0x4];                                      // 0x07E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat12;                 // 0x07E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor12;                // 0x07F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent12;            // 0x07F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName12;             // 0x0800(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem12;                 // 0x0808(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex12;               // 0x080C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart12;              // 0x0810(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd12;                // 0x081C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat2;                  // 0x07E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor2;                 // 0x07F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent2;             // 0x07F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName2;              // 0x0800(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem2;                  // 0x0808(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex2;                // 0x080C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart2;               // 0x0810(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd2;                 // 0x081C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0828(0x000C)(IsPlainOldData, NoDestructor)
 	uint8                                         Pad_834[0x4];                                      // 0x0834(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        K2Node_Select_Default;                             // 0x0838(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -190,7 +190,7 @@ public:
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0898(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8A4[0x4];                                      // 0x08A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)> K2Node_CreateDelegate_OutputDelegate1;             // 0x08A8(0x0010)(ZeroConstructor, NoDestructor)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue12;     // 0x08B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x08B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TryActivateAbilitiesByTag_ReturnValue;    // 0x08C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8C1[0x7];                                      // 0x08C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x08C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -205,68 +205,69 @@ public:
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x0998(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x09A0(0x0018)()
 	EFortDamageZone                               CallFunc_GetDamageZone_ReturnValue;                // 0x09B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType123;              // 0x09B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType3;                // 0x09B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9BA[0x6];                                      // 0x09BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters123;             // 0x09C0(0x00B8)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x09C0(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0A78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A79[0x7];                                      // 0x0A79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAIEncounterInfo*                   CallFunc_GetEncounterInfo_ReturnValue;             // 0x0A80(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0A88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType12;               // 0x0A89(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0A88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x0A89(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A8A[0x6];                                      // 0x0A8A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters12;              // 0x0A90(0x00B8)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0A90(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType1;                // 0x0B48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B49[0x7];                                      // 0x0B49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters1;               // 0x0B50(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x0C08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C09[0x7];                                      // 0x0C09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0C10(0x00B8)(ContainsInstancedReference)
-	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue; // 0x0CC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1; // 0x0CC9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0CCA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0CCB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue12; // 0x0CCC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0CCD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0CCE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CCF[0x1];                                      // 0x0CCF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0CD0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1234;                   // 0x0CD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CD9[0x7];                                      // 0x0CD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortAIPawn*                            K2Node_DynamicCast_AsFort_AIPawn;                  // 0x0CE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12345;                  // 0x0CE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortTeamAffiliation                          CallFunc_GetTeamAffiliation_ReturnValue;           // 0x0CE9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0CEA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CEB[0x1];                                      // 0x0CEB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_CalculateBumpMomentum_BumpMomentum;       // 0x0CEC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CalculateBumpMomentum_BumpMomentum1;      // 0x0CF8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234;                            // 0x0D04(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Select1_Default;                            // 0x0D05(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_ByteByte_ReturnValue;             // 0x0D06(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0D07(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0D08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D09[0x3];                                      // 0x0D09(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue1;                 // 0x0D0C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_CustomEvent_OverlappedComponent;            // 0x0D18(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_OtherActor;                     // 0x0D20(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_CustomEvent_OtherComp;                      // 0x0D28(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_OtherBodyIndex;                 // 0x0D30(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bFromSweep;                     // 0x0D34(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D35[0x3];                                      // 0x0D35(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_CustomEvent_SweepResult;                    // 0x0D38(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_VSize_ReturnValue1;                       // 0x0DC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC4[0x4];                                      // 0x0DC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0DC8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123456;                 // 0x0DD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x0DD1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self1_CastInput;   // 0x0CC8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue1;      // 0x0CD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue; // 0x0CD9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1; // 0x0CDA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0CDB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0CDC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue2; // 0x0CDD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0CDE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0CDF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0CE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0CE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CE9[0x7];                                      // 0x0CE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortAIPawn*                            K2Node_DynamicCast_AsFort_AIPawn;                  // 0x0CF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0CF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortTeamAffiliation                          CallFunc_GetTeamAffiliation_ReturnValue;           // 0x0CF9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0CFA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CFB[0x1];                                      // 0x0CFB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_CalculateBumpMomentum_BumpMomentum;       // 0x0CFC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_CalculateBumpMomentum_BumpMomentum1;      // 0x0D08(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x0D14(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Select1_Default;                            // 0x0D15(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_ByteByte_ReturnValue;             // 0x0D16(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0D17(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0D18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D19[0x3];                                      // 0x0D19(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetVelocity_ReturnValue1;                 // 0x0D1C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_CustomEvent_OverlappedComponent;            // 0x0D28(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_OtherActor;                     // 0x0D30(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_CustomEvent_OtherComp;                      // 0x0D38(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_OtherBodyIndex;                 // 0x0D40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bFromSweep;                     // 0x0D44(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D45[0x3];                                      // 0x0D45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_CustomEvent_SweepResult;                    // 0x0D48(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_VSize_ReturnValue1;                       // 0x0DD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DD4[0x4];                                      // 0x0DD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0DD8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0DE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x0DE1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn) == 0x000010, "Wrong alignment on SmasherPawn_C_ExecuteUbergraph_SmasherPawn");
-static_assert(sizeof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn) == 0x000DE0, "Wrong size on SmasherPawn_C_ExecuteUbergraph_SmasherPawn");
+static_assert(sizeof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn) == 0x000DF0, "Wrong size on SmasherPawn_C_ExecuteUbergraph_SmasherPawn");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, EntryPoint) == 0x000000, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable) == 0x000008, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable1) == 0x000010, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable12) == 0x000018, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable123) == 0x000020, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable1234) == 0x000028, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable2) == 0x000018, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable3) == 0x000020, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_object_Variable4) == 0x000028, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_struct_Variable) == 0x000030, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -290,7 +291,7 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Dynami
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsBuilding_Container) == 0x000170, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsBuilding_Container' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess1) == 0x000178, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsBuilding_Prop) == 0x000180, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsBuilding_Prop' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess12) == 0x000188, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess2) == 0x000188, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000189, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_EqualEqual_ObjectObject_ReturnValue1) == 0x00018A, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_EqualEqual_ObjectObject_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BooleanOR_ReturnValue) == 0x00018B, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
@@ -305,12 +306,12 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Brea
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakVector_Z) == 0x00026C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakVector_Z' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000270, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x000274, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x000278, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue123) == 0x00027C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue1234) == 0x000280, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000278, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x00027C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue4) == 0x000280, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable) == 0x000284, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue12345) == 0x000288, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue123456) == 0x00028C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue123456' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue5) == 0x000288, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Multiply_FloatFloat_ReturnValue6) == 0x00028C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Multiply_FloatFloat_ReturnValue6' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Less_FloatFloat_ReturnValue) == 0x000290, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable1) == 0x000291, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_IsDedicatedServer_ReturnValue) == 0x000292, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
@@ -340,10 +341,10 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Brea
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceStart) == 0x0003E8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceEnd) == 0x0003F4, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsB_Rift_Portals) == 0x000400, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsB_Rift_Portals' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess123) == 0x000408, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess3) == 0x000408, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00040C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000418, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x000424, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x000424, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000430, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_GetComponentLocation_ReturnValue1) == 0x000440, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_GetComponentLocation_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue) == 0x000450, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue' has a wrong offset!");
@@ -354,9 +355,9 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Conv
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue1) == 0x000488, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_MakeTransform_ReturnValue) == 0x000490, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x0004C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue12) == 0x000548, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType1234) == 0x000550, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType1234' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters1234) == 0x000558, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters1234' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue2) == 0x000548, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType4) == 0x000550, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType4' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters4) == 0x000558, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters4' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetHitResult_ReturnValue) == 0x000610, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetHitResult_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetHitResult_ReturnValue1) == 0x000698, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetHitResult_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetFortPhysicalSurface_ReturnValue) == 0x000720, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetFortPhysicalSurface_ReturnValue' has a wrong offset!");
@@ -377,22 +378,22 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Brea
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceStart1) == 0x000788, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceStart1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceEnd1) == 0x000794, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceEnd1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue) == 0x0007A0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_bBlockingHit12) == 0x0007A8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_bBlockingHit12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_bInitialOverlap12) == 0x0007A9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_bInitialOverlap12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Time12) == 0x0007AC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Time12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Distance12) == 0x0007B0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Distance12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Location12) == 0x0007B4, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Location12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_ImpactPoint12) == 0x0007C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_ImpactPoint12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Normal12) == 0x0007CC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Normal12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_ImpactNormal12) == 0x0007D8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_ImpactNormal12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_PhysMat12) == 0x0007E8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_PhysMat12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitActor12) == 0x0007F0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitActor12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitComponent12) == 0x0007F8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitComponent12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitBoneName12) == 0x000800, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitBoneName12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitItem12) == 0x000808, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitItem12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_FaceIndex12) == 0x00080C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_FaceIndex12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceStart12) == 0x000810, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceStart12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceEnd12) == 0x00081C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceEnd12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_bBlockingHit2) == 0x0007A8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_bBlockingHit2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_bInitialOverlap2) == 0x0007A9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_bInitialOverlap2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Time2) == 0x0007AC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Time2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Distance2) == 0x0007B0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Distance2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Location2) == 0x0007B4, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Location2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_ImpactPoint2) == 0x0007C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_ImpactPoint2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_Normal2) == 0x0007CC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_Normal2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_ImpactNormal2) == 0x0007D8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_ImpactNormal2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_PhysMat2) == 0x0007E8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_PhysMat2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitActor2) == 0x0007F0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitActor2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitComponent2) == 0x0007F8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitComponent2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitBoneName2) == 0x000800, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitBoneName2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_HitItem2) == 0x000808, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_HitItem2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_FaceIndex2) == 0x00080C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_FaceIndex2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceStart2) == 0x000810, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceStart2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakHitResult_TraceEnd2) == 0x00081C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakHitResult_TraceEnd2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_MakeRotFromX_ReturnValue) == 0x000828, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Select_Default) == 0x000838, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x000840, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
@@ -401,7 +402,7 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Brea
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakTransform_Rotation) == 0x00088C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakTransform_Rotation' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BreakTransform_Scale) == 0x000898, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BreakTransform_Scale' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CreateDelegate_OutputDelegate1) == 0x0008A8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue12) == 0x0008B8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue2) == 0x0008B8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_TryActivateAbilitiesByTag_ReturnValue) == 0x0008C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_TryActivateAbilitiesByTag_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_SpawnSoundAttached_ReturnValue) == 0x0008C8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasAuthority_ReturnValue1) == 0x0008D0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasAuthority_ReturnValue1' has a wrong offset!");
@@ -413,48 +414,50 @@ static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Event_
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Event_DamageCauser) == 0x000998, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_Event_DamageCauser' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Event_EffectContext) == 0x0009A0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_Event_EffectContext' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetDamageZone_ReturnValue) == 0x0009B8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetDamageZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType123) == 0x0009B9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType123' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters123) == 0x0009C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters123' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType3) == 0x0009B9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType3' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters3) == 0x0009C0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters3' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_SwitchEnum_CmpSuccess) == 0x000A78, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetEncounterInfo_ReturnValue) == 0x000A80, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetEncounterInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_IsValid_ReturnValue12) == 0x000A88, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType12) == 0x000A89, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters12) == 0x000A90, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_IsValid_ReturnValue2) == 0x000A88, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType2) == 0x000A89, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters2) == 0x000A90, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType1) == 0x000B48, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters1) == 0x000B50, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_EventType) == 0x000C08, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_GameplayCueEvent_Parameters) == 0x000C10, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue) == 0x000CC8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1) == 0x000CC9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Array_Contains_ReturnValue) == 0x000CCA, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable12) == 0x000CCB, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue12) == 0x000CCC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BooleanAND_ReturnValue) == 0x000CCD, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable123) == 0x000CCE, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000CD0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess1234) == 0x000CD8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess1234' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_AIPawn) == 0x000CE0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess12345) == 0x000CE8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess12345' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetTeamAffiliation_ReturnValue) == 0x000CE9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetTeamAffiliation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_SwitchEnum1_CmpSuccess) == 0x000CEA, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_CalculateBumpMomentum_BumpMomentum) == 0x000CEC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_CalculateBumpMomentum_BumpMomentum' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_CalculateBumpMomentum_BumpMomentum1) == 0x000CF8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_CalculateBumpMomentum_BumpMomentum1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable1234) == 0x000D04, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Select1_Default) == 0x000D05, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Greater_ByteByte_ReturnValue) == 0x000D06, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Greater_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Not_PreBool_ReturnValue) == 0x000D07, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BooleanAND_ReturnValue1) == 0x000D08, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetVelocity_ReturnValue1) == 0x000D0C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetVelocity_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OverlappedComponent) == 0x000D18, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherActor) == 0x000D20, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherComp) == 0x000D28, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherBodyIndex) == 0x000D30, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_bFromSweep) == 0x000D34, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_SweepResult) == 0x000D38, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_VSize_ReturnValue1) == 0x000DC0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_VSize_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_Pawn) == 0x000DC8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess123456) == 0x000DD0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess123456' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x000DD1, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasMatchingGameplayTag_self1_CastInput) == 0x000CC8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasMatchingGameplayTag_self1_CastInput' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasMatchingGameplayTag_ReturnValue1) == 0x000CD8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasMatchingGameplayTag_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue) == 0x000CD9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1) == 0x000CDA, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Array_Contains_ReturnValue) == 0x000CDB, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable2) == 0x000CDC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue2) == 0x000CDD, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_HasActiveAbilityWithAnyMatchingTag_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BooleanAND_ReturnValue) == 0x000CDE, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable3) == 0x000CDF, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000CE0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess4) == 0x000CE8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_AIPawn) == 0x000CF0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess5) == 0x000CF8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetTeamAffiliation_ReturnValue) == 0x000CF9, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetTeamAffiliation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_SwitchEnum1_CmpSuccess) == 0x000CFA, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_CalculateBumpMomentum_BumpMomentum) == 0x000CFC, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_CalculateBumpMomentum_BumpMomentum' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_CalculateBumpMomentum_BumpMomentum1) == 0x000D08, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_CalculateBumpMomentum_BumpMomentum1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, Temp_bool_Variable4) == 0x000D14, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_Select1_Default) == 0x000D15, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Greater_ByteByte_ReturnValue) == 0x000D16, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Greater_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Not_PreBool_ReturnValue) == 0x000D17, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_BooleanAND_ReturnValue1) == 0x000D18, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_GetVelocity_ReturnValue1) == 0x000D1C, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_GetVelocity_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OverlappedComponent) == 0x000D28, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherActor) == 0x000D30, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherComp) == 0x000D38, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_OtherBodyIndex) == 0x000D40, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_bFromSweep) == 0x000D44, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_CustomEvent_SweepResult) == 0x000D48, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_CustomEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_VSize_ReturnValue1) == 0x000DD0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_VSize_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_AsFort_Pawn) == 0x000DD8, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, K2Node_DynamicCast_bSuccess6) == 0x000DE0, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_ExecuteUbergraph_SmasherPawn, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x000DE1, "Member 'SmasherPawn_C_ExecuteUbergraph_SmasherPawn::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
 
 // Function SmasherPawn.SmasherPawn_C.OnPushCapsuleBeginOverlap
 // 0x00A8 (0x00A8 - 0x0000)
@@ -534,31 +537,6 @@ static_assert(sizeof(SmasherPawn_C_GameplayCue_NPC_Smasher_Charge) == 0x0000C0, 
 static_assert(offsetof(SmasherPawn_C_GameplayCue_NPC_Smasher_Charge, EventType) == 0x000000, "Member 'SmasherPawn_C_GameplayCue_NPC_Smasher_Charge::EventType' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_GameplayCue_NPC_Smasher_Charge, Parameters) == 0x000008, "Member 'SmasherPawn_C_GameplayCue_NPC_Smasher_Charge::Parameters' has a wrong offset!");
 
-// Function SmasherPawn.SmasherPawn_C.OnDamagePlayEffects
-// 0x00E8 (0x00E8 - 0x0000)
-struct SmasherPawn_C_OnDamagePlayEffects final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(SmasherPawn_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on SmasherPawn_C_OnDamagePlayEffects");
-static_assert(sizeof(SmasherPawn_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on SmasherPawn_C_OnDamagePlayEffects");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'SmasherPawn_C_OnDamagePlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'SmasherPawn_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'SmasherPawn_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, HitInfo) == 0x000038, "Member 'SmasherPawn_C_OnDamagePlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, InstigatedBy) == 0x0000C0, "Member 'SmasherPawn_C_OnDamagePlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, DamageCauser) == 0x0000C8, "Member 'SmasherPawn_C_OnDamagePlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'SmasherPawn_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
-
 // Function SmasherPawn.SmasherPawn_C.GameplayCue.Impact.Physical.Creature
 // 0x00C0 (0x00C0 - 0x0000)
 struct SmasherPawn_C_GameplayCue_Impact_Physical_Creature final
@@ -624,9 +602,9 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x009C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x00A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x00B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X12;                          // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y12;                          // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z12;                          // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X2;                           // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y2;                           // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z2;                           // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -660,40 +638,15 @@ static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_MakeVector_ReturnValue1) == 0x00009C, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_Normal_ReturnValue1) == 0x0000A8, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_Normal_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_Cross_VectorVector_ReturnValue) == 0x0000B4, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_X12) == 0x0000C0, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_X12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_Y12) == 0x0000C4, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_Y12' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_Z12) == 0x0000C8, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_Z12' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_X2) == 0x0000C0, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_X2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_Y2) == 0x0000C4, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_Y2' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_BreakVector_Z2) == 0x0000C8, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_BreakVector_Z2' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000CC, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_SelectFloat_ReturnValue) == 0x0000D0, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_MakeRotator_ReturnValue) == 0x0000D4, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_GreaterGreater_VectorRotator_ReturnValue) == 0x0000E0, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_GreaterGreater_VectorRotator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000EC, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SmasherPawn_C_CalculateBumpMomentum, CallFunc_SelectVector_ReturnValue) == 0x0000F8, "Member 'SmasherPawn_C_CalculateBumpMomentum::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
-
-// Function SmasherPawn.SmasherPawn_C.OnDeathPlayEffects
-// 0x00E8 (0x00E8 - 0x0000)
-struct SmasherPawn_C_OnDeathPlayEffects final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(SmasherPawn_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on SmasherPawn_C_OnDeathPlayEffects");
-static_assert(sizeof(SmasherPawn_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on SmasherPawn_C_OnDeathPlayEffects");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'SmasherPawn_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'SmasherPawn_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'SmasherPawn_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'SmasherPawn_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'SmasherPawn_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'SmasherPawn_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'SmasherPawn_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function SmasherPawn.SmasherPawn_C.PaceHitSoundsAndVocalizations
 // 0x0040 (0x0040 - 0x0000)
@@ -703,10 +656,10 @@ public:
 	EFortDamageZone                               Damage_Zone;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsTimerActive_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsTimerActive_ReturnValue1;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -829,6 +782,56 @@ public:
 static_assert(alignof(SmasherPawn_C_GetCollisionPredictionComponent) == 0x000008, "Wrong alignment on SmasherPawn_C_GetCollisionPredictionComponent");
 static_assert(sizeof(SmasherPawn_C_GetCollisionPredictionComponent) == 0x000008, "Wrong size on SmasherPawn_C_GetCollisionPredictionComponent");
 static_assert(offsetof(SmasherPawn_C_GetCollisionPredictionComponent, Collision_Prediction_Shape_Component) == 0x000000, "Member 'SmasherPawn_C_GetCollisionPredictionComponent::Collision_Prediction_Shape_Component' has a wrong offset!");
+
+// Function SmasherPawn.SmasherPawn_C.OnDamagePlayEffects
+// 0x00E8 (0x00E8 - 0x0000)
+struct SmasherPawn_C_OnDamagePlayEffects final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(SmasherPawn_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on SmasherPawn_C_OnDamagePlayEffects");
+static_assert(sizeof(SmasherPawn_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on SmasherPawn_C_OnDamagePlayEffects");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'SmasherPawn_C_OnDamagePlayEffects::Damage' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'SmasherPawn_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'SmasherPawn_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, HitInfo) == 0x000038, "Member 'SmasherPawn_C_OnDamagePlayEffects::HitInfo' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, InstigatedBy) == 0x0000C0, "Member 'SmasherPawn_C_OnDamagePlayEffects::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, DamageCauser) == 0x0000C8, "Member 'SmasherPawn_C_OnDamagePlayEffects::DamageCauser' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'SmasherPawn_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
+
+// Function SmasherPawn.SmasherPawn_C.OnDeathPlayEffects
+// 0x00E8 (0x00E8 - 0x0000)
+struct SmasherPawn_C_OnDeathPlayEffects final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(SmasherPawn_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on SmasherPawn_C_OnDeathPlayEffects");
+static_assert(sizeof(SmasherPawn_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on SmasherPawn_C_OnDeathPlayEffects");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'SmasherPawn_C_OnDeathPlayEffects::Damage' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'SmasherPawn_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'SmasherPawn_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'SmasherPawn_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'SmasherPawn_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'SmasherPawn_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
+static_assert(offsetof(SmasherPawn_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'SmasherPawn_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function SmasherPawn.SmasherPawn_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)

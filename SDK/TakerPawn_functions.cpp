@@ -37,6 +37,40 @@ void ATakerPawn_C::ExecuteUbergraph_TakerPawn(int32 EntryPoint)
 }
 
 
+// Function TakerPawn.TakerPawn_C.RestorePreviousMaterialDelay
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay_Amount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATakerPawn_C::RestorePreviousMaterialDelay(float Delay_Amount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TakerPawn_C", "RestorePreviousMaterialDelay");
+
+	Params::TakerPawn_C_RestorePreviousMaterialDelay Parms{};
+
+	Parms.Delay_Amount = Delay_Amount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TakerPawn.TakerPawn_C.RestorePreviousMaterialDelayCompleted
+// (BlueprintCallable, BlueprintEvent)
+
+void ATakerPawn_C::RestorePreviousMaterialDelayCompleted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TakerPawn_C", "RestorePreviousMaterialDelayCompleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function TakerPawn.TakerPawn_C.ReceivePossessed
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -595,10 +629,10 @@ void ATakerPawn_C::PortalFX()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class AActor*                           BT                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATakerPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
+void ATakerPawn_C::PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
 {
 	static class UFunction* Func = nullptr;
 
@@ -612,8 +646,6 @@ void ATakerPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class A
 	Parms.BT = BT;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -649,9 +681,9 @@ void ATakerPawn_C::PortalClear()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void ATakerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList)
+void ATakerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList)
 {
 	static class UFunction* Func = nullptr;
 
@@ -664,8 +696,6 @@ void ATakerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class A
 	Parms.BuildingActorList = std::move(BuildingActorList);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -1077,6 +1107,68 @@ void ATakerPawn_C::StopMaterialTimeline()
 		Func = Class->GetFunction("TakerPawn_C", "StopMaterialTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TakerPawn.TakerPawn_C.RestorePreviousMaterialOnCharacterMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay_in_Seconds                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATakerPawn_C::RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TakerPawn_C", "RestorePreviousMaterialOnCharacterMesh");
+
+	Params::TakerPawn_C_RestorePreviousMaterialOnCharacterMesh Parms{};
+
+	Parms.Delay_in_Seconds = Delay_in_Seconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TakerPawn.TakerPawn_C.OverrideMaterialAndCopyParametersOnCharacterMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UMaterialInterface*               New_Material_To_Apply                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATakerPawn_C::OverrideMaterialAndCopyParametersOnCharacterMesh(class UMaterialInterface* New_Material_To_Apply)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TakerPawn_C", "OverrideMaterialAndCopyParametersOnCharacterMesh");
+
+	Params::TakerPawn_C_OverrideMaterialAndCopyParametersOnCharacterMesh Parms{};
+
+	Parms.New_Material_To_Apply = New_Material_To_Apply;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TakerPawn.TakerPawn_C.SetScalarParameterOnAllCharacterMIDs
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Parameter_Name                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Scalar_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATakerPawn_C::SetScalarParameterOnAllCharacterMIDs(class FName Parameter_Name, float Scalar_Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TakerPawn_C", "SetScalarParameterOnAllCharacterMIDs");
+
+	Params::TakerPawn_C_SetScalarParameterOnAllCharacterMIDs Parms{};
+
+	Parms.Parameter_Name = Parameter_Name;
+	Parms.Scalar_Value = Scalar_Value;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

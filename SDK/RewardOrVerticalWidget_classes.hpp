@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardOrVerticalWidget.RewardOrVerticalWidget_C
-// 0x0000 (0x0828 - 0x0828)
+// 0x0000 (0x08B0 - 0x08B0)
 class URewardOrVerticalWidget_C final : public UFortRewardInfoButton
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(URewardOrVerticalWidget_C) == 0x000008, "Wrong alignment on URewardOrVerticalWidget_C");
-static_assert(sizeof(URewardOrVerticalWidget_C) == 0x000828, "Wrong size on URewardOrVerticalWidget_C");
+static_assert(sizeof(URewardOrVerticalWidget_C) == 0x0008B0, "Wrong size on URewardOrVerticalWidget_C");
 
 }
 

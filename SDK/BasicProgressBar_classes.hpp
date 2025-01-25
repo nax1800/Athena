@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BasicProgressBar.BasicProgressBar_C
-// 0x0050 (0x0268 - 0x0218)
+// 0x0050 (0x0260 - 0x0210)
 class UBasicProgressBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OutroMinusFadeMinusAnimation;                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       IntroMinusFadeMinusAnimation;                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       KillMinusFadeMinusAnimation;                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BorderOverlay;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HealthBar;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           HealthBarDeltaTimer;                               // 0x0248(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         DecrementAmount;                                   // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               DIMMinusHealthBar;                                 // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PrimaryMeterValue;                                 // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SecondaryMeterValue;                               // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OutroMinusFadeMinusAnimation;                      // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IntroMinusFadeMinusAnimation;                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       KillMinusFadeMinusAnimation;                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BorderOverlay;                                     // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HealthBar;                                         // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           HealthBarDeltaTimer;                               // 0x0240(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         DecrementAmount;                                   // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               DIMMinusHealthBar;                                 // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PrimaryMeterValue;                                 // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SecondaryMeterValue;                               // 0x025C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BasicProgressBar(int32 EntryPoint);
@@ -55,18 +55,18 @@ public:
 	}
 };
 static_assert(alignof(UBasicProgressBar_C) == 0x000008, "Wrong alignment on UBasicProgressBar_C");
-static_assert(sizeof(UBasicProgressBar_C) == 0x000268, "Wrong size on UBasicProgressBar_C");
-static_assert(offsetof(UBasicProgressBar_C, UberGraphFrame) == 0x000218, "Member 'UBasicProgressBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, OutroMinusFadeMinusAnimation) == 0x000220, "Member 'UBasicProgressBar_C::OutroMinusFadeMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, IntroMinusFadeMinusAnimation) == 0x000228, "Member 'UBasicProgressBar_C::IntroMinusFadeMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, KillMinusFadeMinusAnimation) == 0x000230, "Member 'UBasicProgressBar_C::KillMinusFadeMinusAnimation' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, BorderOverlay) == 0x000238, "Member 'UBasicProgressBar_C::BorderOverlay' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, HealthBar) == 0x000240, "Member 'UBasicProgressBar_C::HealthBar' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, HealthBarDeltaTimer) == 0x000248, "Member 'UBasicProgressBar_C::HealthBarDeltaTimer' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, DecrementAmount) == 0x000250, "Member 'UBasicProgressBar_C::DecrementAmount' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, DIMMinusHealthBar) == 0x000258, "Member 'UBasicProgressBar_C::DIMMinusHealthBar' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, PrimaryMeterValue) == 0x000260, "Member 'UBasicProgressBar_C::PrimaryMeterValue' has a wrong offset!");
-static_assert(offsetof(UBasicProgressBar_C, SecondaryMeterValue) == 0x000264, "Member 'UBasicProgressBar_C::SecondaryMeterValue' has a wrong offset!");
+static_assert(sizeof(UBasicProgressBar_C) == 0x000260, "Wrong size on UBasicProgressBar_C");
+static_assert(offsetof(UBasicProgressBar_C, UberGraphFrame) == 0x000210, "Member 'UBasicProgressBar_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, OutroMinusFadeMinusAnimation) == 0x000218, "Member 'UBasicProgressBar_C::OutroMinusFadeMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, IntroMinusFadeMinusAnimation) == 0x000220, "Member 'UBasicProgressBar_C::IntroMinusFadeMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, KillMinusFadeMinusAnimation) == 0x000228, "Member 'UBasicProgressBar_C::KillMinusFadeMinusAnimation' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, BorderOverlay) == 0x000230, "Member 'UBasicProgressBar_C::BorderOverlay' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, HealthBar) == 0x000238, "Member 'UBasicProgressBar_C::HealthBar' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, HealthBarDeltaTimer) == 0x000240, "Member 'UBasicProgressBar_C::HealthBarDeltaTimer' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, DecrementAmount) == 0x000248, "Member 'UBasicProgressBar_C::DecrementAmount' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, DIMMinusHealthBar) == 0x000250, "Member 'UBasicProgressBar_C::DIMMinusHealthBar' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, PrimaryMeterValue) == 0x000258, "Member 'UBasicProgressBar_C::PrimaryMeterValue' has a wrong offset!");
+static_assert(offsetof(UBasicProgressBar_C, SecondaryMeterValue) == 0x00025C, "Member 'UBasicProgressBar_C::SecondaryMeterValue' has a wrong offset!");
 
 }
 

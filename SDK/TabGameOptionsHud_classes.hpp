@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabGameOptionsHud.TabGameOptionsHud_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0260 - 0x0250)
 class UTabGameOptionsHud_C final : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       TooltipDisplayReference;                           // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       TooltipDisplayReference;                           // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TabGameOptionsHud(int32 EntryPoint);
@@ -45,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(UTabGameOptionsHud_C) == 0x000008, "Wrong alignment on UTabGameOptionsHud_C");
-static_assert(sizeof(UTabGameOptionsHud_C) == 0x000270, "Wrong size on UTabGameOptionsHud_C");
-static_assert(offsetof(UTabGameOptionsHud_C, UberGraphFrame) == 0x000260, "Member 'UTabGameOptionsHud_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsHud_C, TooltipDisplayReference) == 0x000268, "Member 'UTabGameOptionsHud_C::TooltipDisplayReference' has a wrong offset!");
+static_assert(sizeof(UTabGameOptionsHud_C) == 0x000260, "Wrong size on UTabGameOptionsHud_C");
+static_assert(offsetof(UTabGameOptionsHud_C, UberGraphFrame) == 0x000250, "Member 'UTabGameOptionsHud_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTabGameOptionsHud_C, TooltipDisplayReference) == 0x000258, "Member 'UTabGameOptionsHud_C::TooltipDisplayReference' has a wrong offset!");
 
 }
 

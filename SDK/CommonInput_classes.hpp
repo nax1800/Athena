@@ -10,23 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "BlueprintContext_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // Class CommonInput.CommonInputContext
-// 0x0098 (0x00C0 - 0x0028)
+// 0x0048 (0x0070 - 0x0028)
 class UCommonInputContext final : public UBlueprintContextBase
 {
 public:
 	UMulticastDelegateProperty_                   OnInputMethodChanged;                              // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x78];                                      // 0x0038(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
-	ECommonInputType                              CurrentInputType;                                  // 0x00B0(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ECommonGamepadType                            GamepadInputType;                                  // 0x00B1(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_B2[0xE];                                       // 0x00B2(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	ECommonInputType                              CurrentInputType;                                  // 0x0050(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ECommonGamepadType                            GamepadInputType;                                  // 0x0051(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_52[0x18];                                      // 0x0052(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsGamepadSimulatedClick;                          // 0x006A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void InputMethodChangedDelegate__DelegateSignature(ECommonInputType bNewInputType);
@@ -35,6 +37,7 @@ public:
 
 	ECommonGamepadType GetCurrentGamepadType() const;
 	ECommonInputType GetCurrentInputType() const;
+	ECommonInputType GetDefaultInputType() const;
 	bool IsUsingPointerInput() const;
 
 public:
@@ -48,10 +51,11 @@ public:
 	}
 };
 static_assert(alignof(UCommonInputContext) == 0x000008, "Wrong alignment on UCommonInputContext");
-static_assert(sizeof(UCommonInputContext) == 0x0000C0, "Wrong size on UCommonInputContext");
+static_assert(sizeof(UCommonInputContext) == 0x000070, "Wrong size on UCommonInputContext");
 static_assert(offsetof(UCommonInputContext, OnInputMethodChanged) == 0x000028, "Member 'UCommonInputContext::OnInputMethodChanged' has a wrong offset!");
-static_assert(offsetof(UCommonInputContext, CurrentInputType) == 0x0000B0, "Member 'UCommonInputContext::CurrentInputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputContext, GamepadInputType) == 0x0000B1, "Member 'UCommonInputContext::GamepadInputType' has a wrong offset!");
+static_assert(offsetof(UCommonInputContext, CurrentInputType) == 0x000050, "Member 'UCommonInputContext::CurrentInputType' has a wrong offset!");
+static_assert(offsetof(UCommonInputContext, GamepadInputType) == 0x000051, "Member 'UCommonInputContext::GamepadInputType' has a wrong offset!");
+static_assert(offsetof(UCommonInputContext, bIsGamepadSimulatedClick) == 0x00006A, "Member 'UCommonInputContext::bIsGamepadSimulatedClick' has a wrong offset!");
 
 }
 

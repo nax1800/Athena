@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortReplayNotification.FortReplayNotification_C
-// 0x0090 (0x02A8 - 0x0218)
+// 0x0090 (0x02A0 - 0x0210)
 class UFortReplayNotification_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          Border;                                            // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Notification;                                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	float                                         TimeToDisplay;                                     // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FadeInterpSpeed;                                   // 0x0234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFading;                                          // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RemainingTime;                                     // 0x023C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   FullyVisible;                                      // 0x0240(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   FullyHidden;                                       // 0x0258(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   GameOnly;                                          // 0x0270(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   ReplayOnly;                                        // 0x0288(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	ESlateVisibility                              PendingVisibility;                                 // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          Border;                                            // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Notification;                                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	float                                         TimeToDisplay;                                     // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FadeInterpSpeed;                                   // 0x022C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFading;                                          // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RemainingTime;                                     // 0x0234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   FullyVisible;                                      // 0x0238(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   FullyHidden;                                       // 0x0250(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   GameOnly;                                          // 0x0268(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   ReplayOnly;                                        // 0x0280(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	ESlateVisibility                              PendingVisibility;                                 // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FortReplayNotification(int32 EntryPoint);
@@ -46,9 +46,9 @@ public:
 	void TickFade(float DeltaTime);
 	void StartFading();
 	void TickRemainingTime(float DeltaTime);
-	void SetNotificationVisibility(ESlateVisibility Param_Visibility);
-	void IsVisibilityNotification(const class FText& Param_Notification, bool* Param_IsVisibilityNotification);
-	void GetVisibilityText(EHudVisibilityState Param_Visibility, class FText* Text);
+	void SetNotificationVisibility(ESlateVisibility Visibility_0);
+	void IsVisibilityNotification(const class FText& Notification_0, bool* IsVisibilityNotification_0);
+	void GetVisibilityText(EHudVisibilityState Visibility_0, class FText* Text);
 
 public:
 	static class UClass* StaticClass()
@@ -61,19 +61,19 @@ public:
 	}
 };
 static_assert(alignof(UFortReplayNotification_C) == 0x000008, "Wrong alignment on UFortReplayNotification_C");
-static_assert(sizeof(UFortReplayNotification_C) == 0x0002A8, "Wrong size on UFortReplayNotification_C");
-static_assert(offsetof(UFortReplayNotification_C, UberGraphFrame) == 0x000218, "Member 'UFortReplayNotification_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, Border) == 0x000220, "Member 'UFortReplayNotification_C::Border' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, Notification) == 0x000228, "Member 'UFortReplayNotification_C::Notification' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, TimeToDisplay) == 0x000230, "Member 'UFortReplayNotification_C::TimeToDisplay' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, FadeInterpSpeed) == 0x000234, "Member 'UFortReplayNotification_C::FadeInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, IsFading) == 0x000238, "Member 'UFortReplayNotification_C::IsFading' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, RemainingTime) == 0x00023C, "Member 'UFortReplayNotification_C::RemainingTime' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, FullyVisible) == 0x000240, "Member 'UFortReplayNotification_C::FullyVisible' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, FullyHidden) == 0x000258, "Member 'UFortReplayNotification_C::FullyHidden' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, GameOnly) == 0x000270, "Member 'UFortReplayNotification_C::GameOnly' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, ReplayOnly) == 0x000288, "Member 'UFortReplayNotification_C::ReplayOnly' has a wrong offset!");
-static_assert(offsetof(UFortReplayNotification_C, PendingVisibility) == 0x0002A0, "Member 'UFortReplayNotification_C::PendingVisibility' has a wrong offset!");
+static_assert(sizeof(UFortReplayNotification_C) == 0x0002A0, "Wrong size on UFortReplayNotification_C");
+static_assert(offsetof(UFortReplayNotification_C, UberGraphFrame) == 0x000210, "Member 'UFortReplayNotification_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, Border) == 0x000218, "Member 'UFortReplayNotification_C::Border' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, Notification) == 0x000220, "Member 'UFortReplayNotification_C::Notification' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, TimeToDisplay) == 0x000228, "Member 'UFortReplayNotification_C::TimeToDisplay' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, FadeInterpSpeed) == 0x00022C, "Member 'UFortReplayNotification_C::FadeInterpSpeed' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, IsFading) == 0x000230, "Member 'UFortReplayNotification_C::IsFading' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, RemainingTime) == 0x000234, "Member 'UFortReplayNotification_C::RemainingTime' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, FullyVisible) == 0x000238, "Member 'UFortReplayNotification_C::FullyVisible' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, FullyHidden) == 0x000250, "Member 'UFortReplayNotification_C::FullyHidden' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, GameOnly) == 0x000268, "Member 'UFortReplayNotification_C::GameOnly' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, ReplayOnly) == 0x000280, "Member 'UFortReplayNotification_C::ReplayOnly' has a wrong offset!");
+static_assert(offsetof(UFortReplayNotification_C, PendingVisibility) == 0x000298, "Member 'UFortReplayNotification_C::PendingVisibility' has a wrong offset!");
 
 }
 

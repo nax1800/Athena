@@ -22,22 +22,22 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234567;             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456789;           // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678910;         // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234567891011;       // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456789101112;     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678910111213;   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234567891011121314; // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456789101112131415; // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678910111213141516; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234567891011121314151617; // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue4;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue5;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue6;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue7;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue8;                   // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue9;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue10;                  // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue11;                  // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue13;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue14;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue15;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue16;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue17;                  // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -46,22 +46,22 @@ static_assert(sizeof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore) == 
 static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, EntryPoint) == 0x000000, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1) == 0x000005, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12) == 0x000006, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue123) == 0x000007, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1234) == 0x000008, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12345) == 0x000009, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue123456) == 0x00000A, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1234567) == 0x00000B, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12345678) == 0x00000C, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue123456789) == 0x00000D, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12345678910) == 0x00000E, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1234567891011) == 0x00000F, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue123456789101112) == 0x000010, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue123456789101112' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12345678910111213) == 0x000011, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12345678910111213' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1234567891011121314) == 0x000012, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1234567891011121314' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue123456789101112131415) == 0x000013, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue123456789101112131415' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12345678910111213141516) == 0x000014, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12345678910111213141516' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue1234567891011121314151617) == 0x000015, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue1234567891011121314151617' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue2) == 0x000006, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue3) == 0x000007, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue4) == 0x000008, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue5) == 0x000009, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue6) == 0x00000A, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue7) == 0x00000B, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue8) == 0x00000C, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue9) == 0x00000D, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue10) == 0x00000E, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue11) == 0x00000F, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue12) == 0x000010, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue13) == 0x000011, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue14) == 0x000012, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue15) == 0x000013, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue16) == 0x000014, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue16' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, CallFunc_BooleanOR_ReturnValue17) == 0x000015, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::CallFunc_BooleanOR_ReturnValue17' has a wrong offset!");
 static_assert(offsetof(Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'Results_TeamScore_C_ExecuteUbergraph_Results_TeamScore::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function Results_TeamScore.Results_TeamScore_C.BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
@@ -81,13 +81,13 @@ struct Results_TeamScore_C_Initialize final
 {
 public:
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UResults_TeamTotalScore_C*              Param_TeamTotalScore;                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_TeamTotalScore_C*              TeamTotalScore_0;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(Results_TeamScore_C_Initialize) == 0x000008, "Wrong alignment on Results_TeamScore_C_Initialize");
 static_assert(sizeof(Results_TeamScore_C_Initialize) == 0x000020, "Wrong size on Results_TeamScore_C_Initialize");
 static_assert(offsetof(Results_TeamScore_C_Initialize, ScoreReport) == 0x000000, "Member 'Results_TeamScore_C_Initialize::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_Initialize, Param_TeamTotalScore) == 0x000008, "Member 'Results_TeamScore_C_Initialize::Param_TeamTotalScore' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_Initialize, TeamTotalScore_0) == 0x000008, "Member 'Results_TeamScore_C_Initialize::TeamTotalScore_0' has a wrong offset!");
 static_assert(offsetof(Results_TeamScore_C_Initialize, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Results_TeamScore_C_Initialize::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function Results_TeamScore.Results_TeamScore_C.InitializeDelays
@@ -97,19 +97,19 @@ struct Results_TeamScore_C_InitializeDelays final
 public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue123;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1234;        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12345;       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue4;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue5;           // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_TeamScore_C_InitializeDelays) == 0x000004, "Wrong alignment on Results_TeamScore_C_InitializeDelays");
 static_assert(sizeof(Results_TeamScore_C_InitializeDelays) == 0x000018, "Wrong size on Results_TeamScore_C_InitializeDelays");
 static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000000, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000004, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue12) == 0x000008, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue123) == 0x00000C, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue1234) == 0x000010, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue12345) == 0x000014, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000008, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x00000C, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue4) == 0x000010, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_TeamScore_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue5) == 0x000014, "Member 'Results_TeamScore_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue5' has a wrong offset!");
 
 // Function Results_TeamScore.Results_TeamScore_C.Focus
 // 0x0008 (0x0008 - 0x0000)

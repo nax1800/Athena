@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaCompass.AthenaCompass_C
-// 0x0010 (0x0378 - 0x0368)
+// 0x0010 (0x03F8 - 0x03E8)
 class UAthenaCompass_C final : public UAthenaCompassBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0368(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 CompassImage_DONOTADDMOREWIDGETS;                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 CompassImage_DONOTADDMOREWIDGETS;                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UAthenaCompass_C) == 0x000008, "Wrong alignment on UAthenaCompass_C");
-static_assert(sizeof(UAthenaCompass_C) == 0x000378, "Wrong size on UAthenaCompass_C");
-static_assert(offsetof(UAthenaCompass_C, UberGraphFrame) == 0x000368, "Member 'UAthenaCompass_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, CompassImage_DONOTADDMOREWIDGETS) == 0x000370, "Member 'UAthenaCompass_C::CompassImage_DONOTADDMOREWIDGETS' has a wrong offset!");
+static_assert(sizeof(UAthenaCompass_C) == 0x0003F8, "Wrong size on UAthenaCompass_C");
+static_assert(offsetof(UAthenaCompass_C, UberGraphFrame) == 0x0003E8, "Member 'UAthenaCompass_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaCompass_C, CompassImage_DONOTADDMOREWIDGETS) == 0x0003F0, "Member 'UAthenaCompass_C::CompassImage_DONOTADDMOREWIDGETS' has a wrong offset!");
 
 }
 

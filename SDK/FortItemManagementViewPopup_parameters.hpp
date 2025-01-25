@@ -15,62 +15,48 @@ namespace SDK::Params
 {
 
 // Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.ExecuteUbergraph_FortItemManagementViewPopup
-// 0x0078 (0x0078 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen1;      // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen12;     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue; // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately; // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen123;    // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen2;      // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen3;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup");
-static_assert(sizeof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup) == 0x000078, "Wrong size on FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup");
+static_assert(sizeof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup) == 0x000070, "Wrong size on FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup");
 static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, EntryPoint) == 0x000000, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button123) == 0x000008, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000010, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button12) == 0x000028, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, CallFunc_GetChildAt_ReturnValue) == 0x000030, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button2) == 0x000010, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000018, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button1) == 0x000028, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen1) == 0x000038, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen1' has a wrong offset!");
 static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen12) == 0x000048, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen12' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess12) == 0x000050, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue) == 0x000051, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately) == 0x000052, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button1) == 0x000058, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen123) == 0x000068, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen123' has a wrong offset!");
-static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess123) == 0x000070, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-
-// Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature final
-{
-public:
-	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen2) == 0x000048, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen2' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess2) == 0x000050, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_SwitchEnum_CmpSuccess) == 0x000051, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_AsItem_Management_Screen3) == 0x000058, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_AsItem_Management_Screen3' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_DynamicCast_bSuccess3) == 0x000060, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup, K2Node_ComponentBoundEvent_Button3) == 0x000068, "Member 'FortItemManagementViewPopup_C_ExecuteUbergraph_FortItemManagementViewPopup::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
 
 // Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.BndEvt__CollectionBookCheckmarkButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -94,6 +80,17 @@ static_assert(alignof(FortItemManagementViewPopup_C_BndEvt__IconCheckmarkTextBut
 static_assert(sizeof(FortItemManagementViewPopup_C_BndEvt__IconCheckmarkTextButton_K2Node_ComponentBoundEvent_94_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortItemManagementViewPopup_C_BndEvt__IconCheckmarkTextButton_K2Node_ComponentBoundEvent_94_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FortItemManagementViewPopup_C_BndEvt__IconCheckmarkTextButton_K2Node_ComponentBoundEvent_94_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortItemManagementViewPopup_C_BndEvt__IconCheckmarkTextButton_K2Node_ComponentBoundEvent_94_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
+// Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortItemManagementViewPopup_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+
 // Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature final
@@ -104,6 +101,61 @@ public:
 static_assert(alignof(FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
 static_assert(sizeof(FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortItemManagementViewPopup_C_BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.CheckboxUpdate
+// 0x0070 (0x0070 - 0x0000)
+struct FortItemManagementViewPopup_C_CheckboxUpdate final
+{
+public:
+	class UImage*                                 CheckboxImage;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Check;                                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable;                              // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable1;                             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Select_Default;                             // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable;                               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable1;                              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select1_Default;                            // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortItemManagementViewPopup_C_CheckboxUpdate) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_CheckboxUpdate");
+static_assert(sizeof(FortItemManagementViewPopup_C_CheckboxUpdate) == 0x000070, "Wrong size on FortItemManagementViewPopup_C_CheckboxUpdate");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, CheckboxImage) == 0x000000, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::CheckboxImage' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Check) == 0x000008, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Check' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_bool_Variable) == 0x000009, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_string_Variable) == 0x000018, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_string_Variable' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_string_Variable1) == 0x000028, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_string_Variable1' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_bool_Variable1) == 0x000038, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, K2Node_Select_Default) == 0x000040, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, CallFunc_Concat_StrStr_ReturnValue) == 0x000050, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_float_Variable) == 0x000060, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, Temp_float_Variable1) == 0x000064, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::Temp_float_Variable1' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_CheckboxUpdate, K2Node_Select1_Default) == 0x000068, "Member 'FortItemManagementViewPopup_C_CheckboxUpdate::K2Node_Select1_Default' has a wrong offset!");
+
+// Function FortItemManagementViewPopup.FortItemManagementViewPopup_C.SetupCheckboxes
+// 0x0020 (0x0020 - 0x0000)
+struct FortItemManagementViewPopup_C_SetupCheckboxes final
+{
+public:
+	class UItemManagementScreen_C*                ItemManagementScreen;                              // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue; // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately; // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(FortItemManagementViewPopup_C_SetupCheckboxes) == 0x000008, "Wrong alignment on FortItemManagementViewPopup_C_SetupCheckboxes");
+static_assert(sizeof(FortItemManagementViewPopup_C_SetupCheckboxes) == 0x000020, "Wrong size on FortItemManagementViewPopup_C_SetupCheckboxes");
+static_assert(offsetof(FortItemManagementViewPopup_C_SetupCheckboxes, ItemManagementScreen) == 0x000000, "Member 'FortItemManagementViewPopup_C_SetupCheckboxes::ItemManagementScreen' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_SetupCheckboxes, CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue) == 0x000008, "Member 'FortItemManagementViewPopup_C_SetupCheckboxes::CallFunc_GetShouldShowCollectionBookIndicator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_SetupCheckboxes, CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately) == 0x000009, "Member 'FortItemManagementViewPopup_C_SetupCheckboxes::CallFunc_GetShouldPrioritizeFavorites_SortFavoritesSeparately' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_SetupCheckboxes, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000010, "Member 'FortItemManagementViewPopup_C_SetupCheckboxes::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
+static_assert(offsetof(FortItemManagementViewPopup_C_SetupCheckboxes, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'FortItemManagementViewPopup_C_SetupCheckboxes::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

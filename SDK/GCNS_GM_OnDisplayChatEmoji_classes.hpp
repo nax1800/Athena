@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNS_GM_OnDisplayChatEmoji.GCNS_GM_OnDisplayChatEmoji_C
-// 0x0010 (0x00C0 - 0x00B0)
+// 0x0010 (0x0090 - 0x0080)
 class UGCNS_GM_OnDisplayChatEmoji_C final : public UFortGameplayCueNotify_Simple
 {
 public:
-	struct FVector                                ParticleRelativeOffset;                            // 0x00B0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ParticleRelativeOffset;                            // 0x0080(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const;
@@ -37,9 +37,9 @@ public:
 		return GetDefaultObjImpl<UGCNS_GM_OnDisplayChatEmoji_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnDisplayChatEmoji_C) == 0x000010, "Wrong alignment on UGCNS_GM_OnDisplayChatEmoji_C");
-static_assert(sizeof(UGCNS_GM_OnDisplayChatEmoji_C) == 0x0000C0, "Wrong size on UGCNS_GM_OnDisplayChatEmoji_C");
-static_assert(offsetof(UGCNS_GM_OnDisplayChatEmoji_C, ParticleRelativeOffset) == 0x0000B0, "Member 'UGCNS_GM_OnDisplayChatEmoji_C::ParticleRelativeOffset' has a wrong offset!");
+static_assert(alignof(UGCNS_GM_OnDisplayChatEmoji_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnDisplayChatEmoji_C");
+static_assert(sizeof(UGCNS_GM_OnDisplayChatEmoji_C) == 0x000090, "Wrong size on UGCNS_GM_OnDisplayChatEmoji_C");
+static_assert(offsetof(UGCNS_GM_OnDisplayChatEmoji_C, ParticleRelativeOffset) == 0x000080, "Member 'UGCNS_GM_OnDisplayChatEmoji_C::ParticleRelativeOffset' has a wrong offset!");
 
 }
 

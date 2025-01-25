@@ -10,35 +10,36 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TopMenu_HelpButton.TopMenu_HelpButton_C
-// 0x0048 (0x0260 - 0x0218)
+// 0x0048 (0x0258 - 0x0210)
 class UTopMenu_HelpButton_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      HelpButtonInner;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxContainer;                                  // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnUpdateVisibility;                                // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnButtonHovered;                                   // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      HelpButtonInner;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxContainer;                                  // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnUpdateVisibility;                                // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnButtonHovered;                                   // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnClicked__DelegateSignature();
-	void OnUpdateVisibility__DelegateSignature(bool Param_Visibility);
+	void OnUpdateVisibility__DelegateSignature(bool Visibility_0);
 	void OnButtonHovered__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_TopMenu_HelpButton(int32 EntryPoint);
-	void OnFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason StateReason);
 	void BndEvt__HelpButtonInner_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void Construct();
+	void Destruct();
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 
 public:
@@ -52,13 +53,13 @@ public:
 	}
 };
 static_assert(alignof(UTopMenu_HelpButton_C) == 0x000008, "Wrong alignment on UTopMenu_HelpButton_C");
-static_assert(sizeof(UTopMenu_HelpButton_C) == 0x000260, "Wrong size on UTopMenu_HelpButton_C");
-static_assert(offsetof(UTopMenu_HelpButton_C, UberGraphFrame) == 0x000218, "Member 'UTopMenu_HelpButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTopMenu_HelpButton_C, HelpButtonInner) == 0x000220, "Member 'UTopMenu_HelpButton_C::HelpButtonInner' has a wrong offset!");
-static_assert(offsetof(UTopMenu_HelpButton_C, SizeBoxContainer) == 0x000228, "Member 'UTopMenu_HelpButton_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UTopMenu_HelpButton_C, OnClicked) == 0x000230, "Member 'UTopMenu_HelpButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(UTopMenu_HelpButton_C, OnUpdateVisibility) == 0x000240, "Member 'UTopMenu_HelpButton_C::OnUpdateVisibility' has a wrong offset!");
-static_assert(offsetof(UTopMenu_HelpButton_C, OnButtonHovered) == 0x000250, "Member 'UTopMenu_HelpButton_C::OnButtonHovered' has a wrong offset!");
+static_assert(sizeof(UTopMenu_HelpButton_C) == 0x000258, "Wrong size on UTopMenu_HelpButton_C");
+static_assert(offsetof(UTopMenu_HelpButton_C, UberGraphFrame) == 0x000210, "Member 'UTopMenu_HelpButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTopMenu_HelpButton_C, HelpButtonInner) == 0x000218, "Member 'UTopMenu_HelpButton_C::HelpButtonInner' has a wrong offset!");
+static_assert(offsetof(UTopMenu_HelpButton_C, SizeBoxContainer) == 0x000220, "Member 'UTopMenu_HelpButton_C::SizeBoxContainer' has a wrong offset!");
+static_assert(offsetof(UTopMenu_HelpButton_C, OnClicked) == 0x000228, "Member 'UTopMenu_HelpButton_C::OnClicked' has a wrong offset!");
+static_assert(offsetof(UTopMenu_HelpButton_C, OnUpdateVisibility) == 0x000238, "Member 'UTopMenu_HelpButton_C::OnUpdateVisibility' has a wrong offset!");
+static_assert(offsetof(UTopMenu_HelpButton_C, OnButtonHovered) == 0x000248, "Member 'UTopMenu_HelpButton_C::OnButtonHovered' has a wrong offset!");
 
 }
 

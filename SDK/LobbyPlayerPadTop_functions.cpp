@@ -17,315 +17,35 @@
 namespace SDK
 {
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaMemberLocationStateChanged
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop
+// (HasDefaults)
 // Parameters:
-// struct FUniqueNetIdRepl                 Member_Id                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// EFortPartyMemberLocation                Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULobbyPlayerPadTop_C::OnAthenaMemberLocationStateChanged(struct FUniqueNetIdRepl& Member_Id, EFortPartyMemberLocation Location)
+void ULobbyPlayerPadTop_C::ExecuteUbergraph_LobbyPlayerPadTop(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnAthenaMemberLocationStateChanged");
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "ExecuteUbergraph_LobbyPlayerPadTop");
 
-	Params::LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged Parms{};
+	Params::LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop Parms{};
 
-	Parms.Member_Id = std::move(Member_Id);
-	Parms.Location = Location;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Member_Id = std::move(Parms.Member_Id);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.UpdateMicIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::UpdateMicIcon()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "UpdateMicIcon");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerStoppedTalking
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::HandlePlayerStoppedTalking()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerStoppedTalking");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerMutingChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FUniqueNetIdRepl                 UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULobbyPlayerPadTop_C::HandlePlayerMutingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerMutingChanged");
-
-	Params::LobbyPlayerPadTop_C_HandlePlayerMutingChanged Parms{};
-
-	Parms.UniqueId = std::move(UniqueId);
-	Parms.IsTalking = IsTalking;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerTalkingChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FUniqueNetIdRepl                 UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULobbyPlayerPadTop_C::HandlePlayerTalkingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerTalkingChanged");
-
-	Params::LobbyPlayerPadTop_C_HandlePlayerTalkingChanged Parms{};
-
-	Parms.UniqueId = std::move(UniqueId);
-	Parms.IsTalking = IsTalking;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshAthenaReadyState
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Ready                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// EFortPartyMemberLocation                Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    LocationValid                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULobbyPlayerPadTop_C::RefreshAthenaReadyState(bool Ready, EFortPartyMemberLocation Location, bool LocationValid)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "RefreshAthenaReadyState");
-
-	Params::LobbyPlayerPadTop_C_RefreshAthenaReadyState Parms{};
-
-	Parms.Ready = Ready;
-	Parms.Location = Location;
-	Parms.LocationValid = LocationValid;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyStateChanged
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FUniqueNetIdRepl                 Member_Id                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// bool                                    Ready                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULobbyPlayerPadTop_C::OnAthenaReadyStateChanged(struct FUniqueNetIdRepl& Member_Id, bool Ready)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnAthenaReadyStateChanged");
-
-	Params::LobbyPlayerPadTop_C_OnAthenaReadyStateChanged Parms{};
-
-	Parms.Member_Id = std::move(Member_Id);
-	Parms.Ready = Ready;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Member_Id = std::move(Parms.Member_Id);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerUnhovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_PlayerIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULobbyPlayerPadTop_C::OnLobbyPlayerUnhovered(int32 Param_PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyPlayerUnhovered");
-
-	Params::LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered Parms{};
-
-	Parms.Param_PlayerIndex = Param_PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Initialize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_PlayerIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULobbyPlayerPadTop_C::Initialize(int32 Param_PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Initialize");
-
-	Params::LobbyPlayerPadTop_C_Initialize Parms{};
-
-	Parms.Param_PlayerIndex = Param_PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.InitializeContextEvents
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::InitializeContextEvents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "InitializeContextEvents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_PlayerIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULobbyPlayerPadTop_C::OnLobbyPlayerHovered(int32 Param_PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyPlayerHovered");
-
-	Params::LobbyPlayerPadTop_C_OnLobbyPlayerHovered Parms{};
-
-	Parms.Param_PlayerIndex = Param_PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FFortTeamMemberInfo              Param_TeamMemberInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ULobbyPlayerPadTop_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "SetTeamMemberInfo");
-
-	Params::LobbyPlayerPadTop_C_SetTeamMemberInfo Parms{};
-
-	Parms.Param_TeamMemberInfo = std::move(Param_TeamMemberInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Refresh
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::Refresh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Refresh");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshPlayerName
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::RefreshPlayerName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "RefreshPlayerName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULobbyPlayerPadTop_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "PreConstruct");
-
-	Params::LobbyPlayerPadTop_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void ULobbyPlayerPadTop_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyStarted
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyDisconnected
 // (BlueprintCallable, BlueprintEvent)
 
-void ULobbyPlayerPadTop_C::OnLobbyStarted()
+void ULobbyPlayerPadTop_C::OnLobbyDisconnected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyStarted");
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyDisconnected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -353,37 +73,355 @@ void ULobbyPlayerPadTop_C::OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRe
 }
 
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyDisconnected
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyStarted
 // (BlueprintCallable, BlueprintEvent)
 
-void ULobbyPlayerPadTop_C::OnLobbyDisconnected()
+void ULobbyPlayerPadTop_C::OnLobbyStarted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyDisconnected");
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop
-// (HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void ULobbyPlayerPadTop_C::ExecuteUbergraph_LobbyPlayerPadTop(int32 EntryPoint)
+void ULobbyPlayerPadTop_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadTop_C", "ExecuteUbergraph_LobbyPlayerPadTop");
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Construct");
 
-	Params::LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ULobbyPlayerPadTop_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "PreConstruct");
+
+	Params::LobbyPlayerPadTop_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshPlayerName
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::RefreshPlayerName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "RefreshPlayerName");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Refresh
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::Refresh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Refresh");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "SetTeamMemberInfo");
+
+	Params::LobbyPlayerPadTop_C_SetTeamMemberInfo Parms{};
+
+	Parms.TeamMemberInfo_0 = std::move(TeamMemberInfo_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::OnLobbyPlayerHovered(int32 PlayerIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyPlayerHovered");
+
+	Params::LobbyPlayerPadTop_C_OnLobbyPlayerHovered Parms{};
+
+	Parms.PlayerIndex_0 = PlayerIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.InitializeContextEvents
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::InitializeContextEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "InitializeContextEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Initialize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::Initialize(int32 PlayerIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "Initialize");
+
+	Params::LobbyPlayerPadTop_C_Initialize Parms{};
+
+	Parms.PlayerIndex_0 = PlayerIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerUnhovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::OnLobbyPlayerUnhovered(int32 PlayerIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnLobbyPlayerUnhovered");
+
+	Params::LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered Parms{};
+
+	Parms.PlayerIndex_0 = PlayerIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshAthenaReadyState
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 MemberId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::RefreshAthenaReadyState(const struct FUniqueNetIdRepl& MemberId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "RefreshAthenaReadyState");
+
+	Params::LobbyPlayerPadTop_C_RefreshAthenaReadyState Parms{};
+
+	Parms.MemberId = std::move(MemberId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerTalkingChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ULobbyPlayerPadTop_C::HandlePlayerTalkingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerTalkingChanged");
+
+	Params::LobbyPlayerPadTop_C_HandlePlayerTalkingChanged Parms{};
+
+	Parms.UniqueId = std::move(UniqueId);
+	Parms.IsTalking = IsTalking;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerMutingChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ULobbyPlayerPadTop_C::HandlePlayerMutingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerMutingChanged");
+
+	Params::LobbyPlayerPadTop_C_HandlePlayerMutingChanged Parms{};
+
+	Parms.UniqueId = std::move(UniqueId);
+	Parms.IsTalking = IsTalking;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerStoppedTalking
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::HandlePlayerStoppedTalking()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "HandlePlayerStoppedTalking");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.UpdateMicIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::UpdateMicIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "UpdateMicIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaNumAliveChanged
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 MemberId                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// int32                                   NumAlive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::OnAthenaNumAliveChanged(struct FUniqueNetIdRepl& MemberId, int32 NumAlive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnAthenaNumAliveChanged");
+
+	Params::LobbyPlayerPadTop_C_OnAthenaNumAliveChanged Parms{};
+
+	Parms.MemberId = std::move(MemberId);
+	Parms.NumAlive = NumAlive;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	MemberId = std::move(Parms.MemberId);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaTimeSpentInMatchChanged
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 MemberId                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// class FText                             Minutes                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             Seconds                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ULobbyPlayerPadTop_C::OnAthenaTimeSpentInMatchChanged(struct FUniqueNetIdRepl& MemberId, class FText& Minutes, class FText& Seconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnAthenaTimeSpentInMatchChanged");
+
+	Params::LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged Parms{};
+
+	Parms.MemberId = std::move(MemberId);
+	Parms.Minutes = std::move(Minutes);
+	Parms.Seconds = std::move(Seconds);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	MemberId = std::move(Parms.MemberId);
+	Minutes = std::move(Parms.Minutes);
+	Seconds = std::move(Parms.Seconds);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyTypeChanged
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FUniqueNetIdRepl                 MemberId                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// EAthenaPartyMemberReadyType             ReadyType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ULobbyPlayerPadTop_C::OnAthenaReadyTypeChanged(struct FUniqueNetIdRepl& MemberId, EAthenaPartyMemberReadyType ReadyType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "OnAthenaReadyTypeChanged");
+
+	Params::LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged Parms{};
+
+	Parms.MemberId = std::move(MemberId);
+	Parms.ReadyType = ReadyType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	MemberId = std::move(Parms.MemberId);
+}
+
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshChatDisabled
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ULobbyPlayerPadTop_C::RefreshChatDisabled()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyPlayerPadTop_C", "RefreshChatDisabled");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

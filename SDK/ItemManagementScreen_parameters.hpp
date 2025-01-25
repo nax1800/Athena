@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,143 +27,146 @@ struct ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	class FName                                   Temp_name_Variable;                                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortDialogResult                             Temp_byte_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
-	class FText                                   CallFunc_GetDescriptionText_ItemDescription;       // 0x0078(0x0018)()
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              K2Node_Event_Item1234;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortSchematicItem*                     K2Node_Event_SchematicItem;                        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue123;                // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue1234;               // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue12345;              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemManagementItemTileButton_C*        K2Node_DynamicCast_AsItem_Management_Item_Tile_Button; // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBoostsRoot_C*                          CallFunc_Create_ReturnValue;                       // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue123456;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1234567;            // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0100(0x01F8)(HasGetValueTypeHash)
-	EFortCraftFailCause                           CallFunc_CraftSchematic_FailCause;                 // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CraftSchematic_ReturnValue;               // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FA[0x6];                                      // 0x02FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UItemIconWidget_C*                      CallFunc_Create_ReturnValue1;                      // 0x0300(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortDialogResult                             Temp_byte_Variable1;                               // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0309(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A[0x6];                                      // 0x030A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortConsumableAccountItem*             K2Node_Event_ConsumableItem;                       // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              K2Node_Event_Item123;                              // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAsyncAction_MCPContextConsumeItem* CallFunc_ConsumeItem_ReturnValue;                  // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0328(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0340(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0380(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0398(0x0018)()
-	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1; // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanActivateOnOthers_ReturnValue;          // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x03B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanActivateOnSelf_ReturnValue;            // 0x03BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BB[0x5];                                      // 0x03BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              K2Node_Event_Item12;                               // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              K2Node_Event_Item1;                                // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              K2Node_Event_Item;                                 // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate123;           // 0x03D8(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable1;                               // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x03F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortDialogResult                             K2Node_CustomEvent_Result1;                        // 0x0401(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_402[0x6];                                      // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_ResultName1;                    // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetSelectedEquipSlot_Slot;                // 0x0410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0414(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0415(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0416(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_Force;                          // 0x0417(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0419(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	class FName                                   Temp_name_Variable;                                // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDescriptionText_ItemDescription;       // 0x0060(0x0018)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              K2Node_Event_Item4;                                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSchematicItem*                     K2Node_Event_SchematicItem;                        // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue4;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue5;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemManagementItemTileButton_C*        K2Node_DynamicCast_AsItem_Management_Item_Tile_Button; // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBoostsRoot_C*                          CallFunc_Create_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue6;                  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue7;                  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x00F0(0x01F8)(HasGetValueTypeHash)
+	EFortCraftFailCause                           CallFunc_CraftSchematic_FailCause;                 // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CraftSchematic_ReturnValue;               // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EA[0x6];                                      // 0x02EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemIconWidget_C*                      CallFunc_Create_ReturnValue1;                      // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             Temp_byte_Variable1;                               // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB[0x5];                                      // 0x02FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Temp_name_Variable1;                               // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortConsumableAccountItem*             K2Node_Event_ConsumableItem;                       // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              K2Node_Event_Item3;                                // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_MCPContextConsumeItem* CallFunc_ConsumeItem_ReturnValue;                  // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0320(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0338(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0378(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0390(0x0018)()
+	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1; // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanActivateOnOthers_ReturnValue;          // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x03B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanActivateOnSelf_ReturnValue;            // 0x03B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B3[0x5];                                      // 0x03B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              K2Node_Event_Item2;                                // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              K2Node_Event_Item1;                                // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              K2Node_Event_Item;                                 // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate2;             // 0x03D0(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortDialogResult                             K2Node_CustomEvent_Result1;                        // 0x03E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E5[0x3];                                      // 0x03E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_ResultName1;                    // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x03F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetSelectedEquipSlot_Slot;                // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0408(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_Force;                          // 0x0419(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x041A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x041B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x041C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000008, "Wrong alignment on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
 static_assert(sizeof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000420, "Wrong size on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
 static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, EntryPoint) == 0x000000, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Result) == 0x000018, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_ResultName) == 0x000020, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_name_Variable) == 0x000038, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_byte_Variable) == 0x000040, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000048, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000050, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate12) == 0x000068, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDescriptionText_ItemDescription) == 0x000078, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDescriptionText_ItemDescription' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue12) == 0x000090, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsInZone_ReturnValue) == 0x000098, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item1234) == 0x0000A0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item1234' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_SchematicItem) == 0x0000A8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_SchematicItem' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue123) == 0x0000B0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue1234) == 0x0000B8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue12345) == 0x0000C0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetInputManager_ReturnValue) == 0x0000C8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_AsItem_Management_Item_Tile_Button) == 0x0000D8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_AsItem_Management_Item_Tile_Button' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_bSuccess) == 0x0000E0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue) == 0x0000E8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue123456) == 0x0000F0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue1234567) == 0x0000F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000100, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_FailCause) == 0x0002F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_ReturnValue) == 0x0002F9, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue1) == 0x000300, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_byte_Variable1) == 0x000308, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000309, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_ConsumableItem) == 0x000310, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_ConsumableItem' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item123) == 0x000318, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item123' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ConsumeItem_ReturnValue) == 0x000320, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ConsumeItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDisplayName_ReturnValue) == 0x000328, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeStruct_FormatArgumentData) == 0x000340, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeArray_Array) == 0x000380, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue1) == 0x000390, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Format_ReturnValue) == 0x000398, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1) == 0x0003B0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnOthers_ReturnValue) == 0x0003B8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnOthers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue12) == 0x0003B9, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnSelf_ReturnValue) == 0x0003BA, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item12) == 0x0003C0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item1) == 0x0003C8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item) == 0x0003D0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate123) == 0x0003D8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetNumInStack_ReturnValue) == 0x0003E8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_name_Variable1) == 0x0003F0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_name_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0003F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_bSuccess1) == 0x000400, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Result1) == 0x000401, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Result1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_ResultName1) == 0x000408, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_ResultName1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetSelectedEquipSlot_Slot) == 0x000410, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetSelectedEquipSlot_Slot' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000414, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000415, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000416, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Force) == 0x000417, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Force' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Not_PreBool_ReturnValue1) == 0x000418, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_BooleanOR_ReturnValue) == 0x000419, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Result) == 0x000028, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Result' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_ResultName) == 0x000030, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_ResultName' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000038, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_name_Variable) == 0x000048, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_byte_Variable) == 0x000050, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000058, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDescriptionText_ItemDescription) == 0x000060, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDescriptionText_ItemDescription' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue2) == 0x000080, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue3) == 0x000088, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsInZone_ReturnValue) == 0x000090, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item4) == 0x000098, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item4' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_SchematicItem) == 0x0000A0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_SchematicItem' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue4) == 0x0000A8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue5) == 0x0000B0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetInputManager_ReturnValue) == 0x0000B8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000C0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_AsItem_Management_Item_Tile_Button) == 0x0000C8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_AsItem_Management_Item_Tile_Button' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue) == 0x0000D8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue6) == 0x0000E0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue7) == 0x0000E8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x0000F0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_FailCause) == 0x0002E8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_FailCause' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_ReturnValue) == 0x0002E9, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue1) == 0x0002F0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_byte_Variable1) == 0x0002F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_MakeLiteralByte_ReturnValue) == 0x0002F9, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002FA, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_name_Variable1) == 0x000300, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_name_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_ConsumableItem) == 0x000308, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_ConsumableItem' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item3) == 0x000310, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item3' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ConsumeItem_ReturnValue) == 0x000318, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ConsumeItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDisplayName_ReturnValue) == 0x000320, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeStruct_FormatArgumentData) == 0x000338, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeArray_Array) == 0x000378, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue1) == 0x000388, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Format_ReturnValue) == 0x000390, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1) == 0x0003A8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnOthers_ReturnValue) == 0x0003B0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnOthers_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue2) == 0x0003B1, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnSelf_ReturnValue) == 0x0003B2, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnSelf_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item2) == 0x0003B8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item1) == 0x0003C0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item) == 0x0003C8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate2) == 0x0003D0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetNumInStack_ReturnValue) == 0x0003E0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Result1) == 0x0003E4, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Result1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_ResultName1) == 0x0003E8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_ResultName1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0003F0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_bSuccess1) == 0x0003F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetSelectedEquipSlot_Slot) == 0x0003FC, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetSelectedEquipSlot_Slot' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000400, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate3) == 0x000408, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000418, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Force) == 0x000419, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Force' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Not_PreBool_ReturnValue) == 0x00041A, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Not_PreBool_ReturnValue1) == 0x00041B, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_BooleanOR_ReturnValue) == 0x00041C, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ShowWarningReadOnlyWIFE
 // 0x0001 (0x0001 - 0x0000)
@@ -416,8 +419,8 @@ struct ItemManagementScreen_C_SizeInventoryPanel final
 public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -426,8 +429,8 @@ static_assert(alignof(ItemManagementScreen_C_SizeInventoryPanel) == 0x000001, "W
 static_assert(sizeof(ItemManagementScreen_C_SizeInventoryPanel) == 0x000007, "Wrong size on ItemManagementScreen_C_SizeInventoryPanel");
 static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000000, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000001, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000002, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000003, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000002, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000003, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_BooleanOR_ReturnValue1) == 0x000005, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_BooleanAND_ReturnValue) == 0x000006, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -451,7 +454,7 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoveItemFromQuickBar_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue12;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -468,7 +471,7 @@ static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GuardActionF
 static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue1) == 0x000028, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_RemoveItemFromQuickBar_ReturnValue) == 0x000030, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_RemoveItemFromQuickBar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue12) == 0x000038, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetCurrentInputType_ReturnValue) == 0x000040, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
@@ -491,8 +494,8 @@ public:
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue12;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue123;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue3;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortCraftFailCause                           CallFunc_CraftAndSlotSchematic_FailCause;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CraftAndSlotSchematic_ReturnValue;        // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -512,8 +515,8 @@ static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CanCraftSch
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CanCraftSchematic_ReturnValue) == 0x000025, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CanCraftSchematic_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x000028, "Member 'ItemManagementScreen_C_CraftAndSlot::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'ItemManagementScreen_C_CraftAndSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue12) == 0x000038, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue123) == 0x000040, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue3) == 0x000040, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlotSchematic_FailCause) == 0x000048, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftAndSlotSchematic_FailCause' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlotSchematic_ReturnValue) == 0x000049, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftAndSlotSchematic_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetCurrentInputType_ReturnValue) == 0x00004A, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
@@ -606,7 +609,7 @@ public:
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GuardActionForReadOnlyWIFE_Proceed;       // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -620,7 +623,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemManagementScreen_C_CompleteItemTransfer) == 0x000008, "Wrong alignment on ItemManagementScreen_C_CompleteItemTransfer");
 static_assert(sizeof(ItemManagementScreen_C_CompleteItemTransfer) == 0x000070, "Wrong size on ItemManagementScreen_C_CompleteItemTransfer");
@@ -629,7 +632,7 @@ static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, Quantity) ==
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, IsDeposit) == 0x00000C, "Member 'ItemManagementScreen_C_CompleteItemTransfer::IsDeposit' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_GetNumInStack_ReturnValue) == 0x000010, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000014, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_GetSelectedItem_ReturnValue) == 0x000018, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000018, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000020, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_GuardActionForReadOnlyWIFE_Proceed) == 0x000021, "Member 'ItemManagementScreen_C_CompleteItemTransfer::CallFunc_GuardActionForReadOnlyWIFE_Proceed' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_AsFort_World_Item) == 0x000028, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
@@ -639,7 +642,7 @@ static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, CallFunc_Get
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_AsFort_Player_Controller_Deployable_Base) == 0x000050, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_AsFort_Player_Controller_Deployable_Base' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_bSuccess1) == 0x000058, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000060, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_bSuccess12) == 0x000068, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_CompleteItemTransfer, K2Node_DynamicCast_bSuccess2) == 0x000068, "Member 'ItemManagementScreen_C_CompleteItemTransfer::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleDrop
 // 0x0028 (0x0028 - 0x0000)
@@ -855,18 +858,18 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumInStack_ReturnValue1;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackOverflowFromAddingItem_ReturnValue; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumInStack_ReturnValue12;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumInStack_ReturnValue2;               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDeployableBaseOverflowFromAddingItem_ReturnValue; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue12;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetStorageOverflowFromAddingItem_ReturnValue; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerControllerDeployableBase*    K2Node_DynamicCast_AsFort_Player_Controller_Deployable_Base; // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue12;            // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ContainsItem_ReturnValue;                 // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemManagementScreen_C_GetMaxTransferCount) == 0x000008, "Wrong alignment on ItemManagementScreen_C_GetMaxTransferCount");
@@ -881,16 +884,16 @@ static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetC
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetNumInStack_ReturnValue1) == 0x000038, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetNumInStack_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetBackpackOverflowFromAddingItem_ReturnValue) == 0x00003C, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetBackpackOverflowFromAddingItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetNumInStack_ReturnValue12) == 0x000040, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetNumInStack_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetNumInStack_ReturnValue2) == 0x000040, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetNumInStack_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_Subtract_IntInt_ReturnValue) == 0x000044, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetDeployableBaseOverflowFromAddingItem_ReturnValue) == 0x000048, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetDeployableBaseOverflowFromAddingItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_Subtract_IntInt_ReturnValue1) == 0x00004C, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetContext_ReturnValue12) == 0x000050, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_GetStorageOverflowFromAddingItem_ReturnValue) == 0x000060, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_GetStorageOverflowFromAddingItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, K2Node_DynamicCast_AsFort_Player_Controller_Deployable_Base) == 0x000068, "Member 'ItemManagementScreen_C_GetMaxTransferCount::K2Node_DynamicCast_AsFort_Player_Controller_Deployable_Base' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, K2Node_DynamicCast_bSuccess1) == 0x000070, "Member 'ItemManagementScreen_C_GetMaxTransferCount::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_Subtract_IntInt_ReturnValue12) == 0x000074, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_Subtract_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000074, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_GetMaxTransferCount, CallFunc_ContainsItem_ReturnValue) == 0x000078, "Member 'ItemManagementScreen_C_GetMaxTransferCount::CallFunc_ContainsItem_ReturnValue' has a wrong offset!");
 
 }

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Engine_structs.hpp"
 #include "StructRecyclingResource_structs.hpp"
 
 
@@ -22,13 +22,12 @@ namespace SDK::Params
 {
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.ExecuteUbergraph_B_Constructor_BASE
-// 0x03C8 (0x03C8 - 0x0000)
+// 0x03D0 (0x03D0 - 0x0000)
 struct B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent1;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor1;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp1;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,127 +52,126 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue1;          // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABuildingSMActor*                       K2Node_Event_BuildingActor1;                       // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   K2Node_Event_EffectMeshComp1;                      // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABuildingSMActor*                       K2Node_Event_BuildingActor;                        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   K2Node_Event_EffectMeshComp;                       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0130(0x0010)(ZeroConstructor, ReferenceParm)
-	const class AFortPawn*                        K2Node_Event_InteractingPawn;                      // 0x0140(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetInstigatorController_ReturnValue;      // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput; // 0x0168(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource;         // 0x0178(0x0010)(HasGetValueTypeHash)
-	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput; // 0x0188(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource1;        // 0x0198(0x0010)(HasGetValueTypeHash)
-	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput; // 0x01A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource12;       // 0x01B8(0x0010)(HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CA[0x2];                                      // 0x01CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue1;                // 0x01D0(0x0010)(ZeroConstructor, ReferenceParm)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue1;                // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue12;               // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue1;                      // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item1;                          // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue12;         // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123;        // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x023C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item12;                         // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0250(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetAnimatingMID_ReturnValue;              // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue123;        // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SetupBaseDefaultValues_NodesToAffect;     // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects; // 0x0278(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects; // 0x0288(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEHostileEffects; // 0x0298(0x0010)(ZeroConstructor, ReferenceParm)
-	class UAbilitySystemComponent*                K2Node_Event_InstigatorAbilitySystemComponent;     // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable1;                    // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x02B8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02C8(0x0008)(NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable12;                  // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D9[0x3];                                      // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAuthority_ReturnValue12;               // 0x02E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E6[0x2];                                      // 0x02E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0118(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue1;          // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingSMActor*                       K2Node_Event_BuildingActor1;                       // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   K2Node_Event_EffectMeshComp1;                      // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingSMActor*                       K2Node_Event_BuildingActor;                        // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   K2Node_Event_EffectMeshComp;                       // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0148(0x0010)(ZeroConstructor, ReferenceParm)
+	const class AFortPawn*                        K2Node_Event_InteractingPawn;                      // 0x0158(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetInstigatorController_ReturnValue;      // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput; // 0x0180(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource;         // 0x0190(0x0010)(HasGetValueTypeHash)
+	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput; // 0x01A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource1;        // 0x01B0(0x0010)(HasGetValueTypeHash)
+	TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput; // 0x01C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStructRecyclingResource               K2Node_MakeStruct_StructRecyclingResource2;        // 0x01D0(0x0010)(HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E2[0x2];                                      // 0x01E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue1;                // 0x01E8(0x0010)(ZeroConstructor, ReferenceParm)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue2;                // 0x0218(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue1;                      // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item1;                          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue2;          // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0254(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item2;                          // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0268(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_279[0x3];                                      // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetAnimatingMID_ReturnValue;              // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue3;          // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SetupBaseDefaultValues_NodesToAffect;     // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects; // 0x0290(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects; // 0x02A0(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FBASEGameplayEffect>            CallFunc_Setup_Base_Effect_Array_BASEHostileEffects; // 0x02B0(0x0010)(ZeroConstructor, ReferenceParm)
+	class UAbilitySystemComponent*                K2Node_Event_InstigatorAbilitySystemComponent;     // 0x02C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable1;                    // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAuthority_ReturnValue1;                // 0x02E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E2[0x6];                                      // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue1;          // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item123;                        // 0x02F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABuildingSMActor*                       CallFunc_Array_Get_Item1234;                       // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item3;                          // 0x02F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingSMActor*                       CallFunc_Array_Get_Item4;                          // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_GetBuildingMeshComponent_ReturnValue;     // 0x0308(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue123;              // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable12;                   // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item12345;                      // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable123;                 // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue123;               // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_339[0x3];                                      // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234;               // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0341(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0342(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0343(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_344[0x4];                                      // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerPawn_Constructor_C*              K2Node_CustomEvent_ConstructorPawn;                // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Stack1;                         // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_Stack2;                         // 0x0351(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_Stack3;                         // 0x0352(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_353[0x1];                                      // 0x0353(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable123;                  // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item123456;                     // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x032C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32D[0x3];                                      // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item5;                          // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Constructor_C*              K2Node_CustomEvent_ConstructorPawn;                // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Stack1;                         // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_Stack2;                         // 0x0359(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_Stack3;                         // 0x035A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x035B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Array_Index_Variable3;                    // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item6;                          // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue1;     // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0370(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x0380(0x0008)(NoDestructor)
-	class FName                                   K2Node_ComponentBoundEvent_EventName;              // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_EmitterTime;            // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_ParticleCount;          // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399[0x3];                                      // 0x0399(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x039C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x03A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue12;    // 0x03B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAuthority_ReturnValue123;              // 0x03C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0378(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x0388(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_ComponentBoundEvent_EventName;              // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_EmitterTime;            // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_ParticleCount;          // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A1[0x3];                                      // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x03A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x03B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x03BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAuthority_ReturnValue2;                // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAuthority_ReturnValue3;                // 0x03CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE");
-static_assert(sizeof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE) == 0x0003C8, "Wrong size on B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE");
+static_assert(sizeof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE) == 0x0003D0, "Wrong size on B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, EntryPoint) == 0x000000, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue) == 0x000004, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_OverlappedComponent1) == 0x000008, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_OverlappedComponent1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_OtherActor1) == 0x000010, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_OtherActor1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_OtherComp1) == 0x000018, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_OtherComp1' has a wrong offset!");
@@ -193,105 +191,106 @@ static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE,
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Subtract_IntInt_ReturnValue) == 0x000100, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable) == 0x000104, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue) == 0x000108, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue1) == 0x00010C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_BuildingActor1) == 0x000110, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_BuildingActor1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_EffectMeshComp1) == 0x000118, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_EffectMeshComp1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_BuildingActor) == 0x000120, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_BuildingActor' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_EffectMeshComp) == 0x000128, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_EffectMeshComp' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue) == 0x000130, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_InteractingPawn) == 0x000140, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue) == 0x000148, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetInstigatorController_ReturnValue) == 0x000150, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000158, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_bSuccess12) == 0x000160, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput) == 0x000168, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource) == 0x000178, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput) == 0x000188, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource1) == 0x000198, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput) == 0x0001A8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource12) == 0x0001B8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_BooleanOR_ReturnValue) == 0x0001C8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_BooleanOR_ReturnValue1) == 0x0001C9, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_FTrunc_ReturnValue) == 0x0001CC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue1) == 0x0001D0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item) == 0x0001E0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0001E8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001F0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue1) == 0x0001F4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue1) == 0x0001F8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue12) == 0x000200, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue12) == 0x000210, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_FTrunc_ReturnValue1) == 0x000214, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_FTrunc_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item1) == 0x000218, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue) == 0x000220, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue12) == 0x000224, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000228, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_FloatFloat_ReturnValue) == 0x00022C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000230, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000234, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue123) == 0x000238, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00023C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item12) == 0x000248, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000250, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable) == 0x00025C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue) == 0x000260, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue1) == 0x000264, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetAnimatingMID_ReturnValue) == 0x000268, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetAnimatingMID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue123) == 0x000270, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_SetupBaseDefaultValues_NodesToAffect) == 0x000274, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_SetupBaseDefaultValues_NodesToAffect' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects) == 0x000278, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects) == 0x000288, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEHostileEffects) == 0x000298, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEHostileEffects' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_InstigatorAbilitySystemComponent) == 0x0002A8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_InstigatorAbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable1) == 0x0002B0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CreateDelegate_OutputDelegate) == 0x0002B8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0002C8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable1) == 0x0002D0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable12) == 0x0002D4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue1) == 0x0002D8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue12) == 0x0002DC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue123) == 0x0002E0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002E4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue12) == 0x0002E5, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CreateDelegate_OutputDelegate) == 0x000108, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000118, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue) == 0x000120, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue1) == 0x000124, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_BuildingActor1) == 0x000128, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_BuildingActor1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_EffectMeshComp1) == 0x000130, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_EffectMeshComp1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_BuildingActor) == 0x000138, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_BuildingActor' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_EffectMeshComp) == 0x000140, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_EffectMeshComp' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue) == 0x000148, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_InteractingPawn) == 0x000158, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_InteractingPawn' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue) == 0x000160, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetInstigatorController_ReturnValue) == 0x000168, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000170, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_bSuccess2) == 0x000178, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput) == 0x000180, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource) == 0x000190, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput) == 0x0001A0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource1) == 0x0001B0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput) == 0x0001C0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_MakeStruct_StructRecyclingResource2) == 0x0001D0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_MakeStruct_StructRecyclingResource2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_BooleanOR_ReturnValue) == 0x0001E0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_BooleanOR_ReturnValue1) == 0x0001E1, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_FTrunc_ReturnValue) == 0x0001E4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue1) == 0x0001E8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item) == 0x0001F8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000200, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000208, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue1) == 0x00020C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue) == 0x000210, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetMaterials_ReturnValue2) == 0x000218, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetMaterials_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue2) == 0x000228, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_FTrunc_ReturnValue1) == 0x00022C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_FTrunc_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item1) == 0x000230, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue) == 0x000238, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue2) == 0x00023C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000240, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_FloatFloat_ReturnValue) == 0x000244, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000248, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue2) == 0x00024C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000250, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000254, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item2) == 0x000260, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000268, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable) == 0x000274, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue) == 0x000278, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue1) == 0x00027C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetAnimatingMID_ReturnValue) == 0x000280, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetAnimatingMID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetRealTimeSeconds_ReturnValue3) == 0x000288, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetRealTimeSeconds_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_SetupBaseDefaultValues_NodesToAffect) == 0x00028C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_SetupBaseDefaultValues_NodesToAffect' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects) == 0x000290, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects) == 0x0002A0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Setup_Base_Effect_Array_BASEHostileEffects) == 0x0002B0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Setup_Base_Effect_Array_BASEHostileEffects' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_Event_InstigatorAbilitySystemComponent) == 0x0002C0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_Event_InstigatorAbilitySystemComponent' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable1) == 0x0002C8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable1) == 0x0002CC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable2) == 0x0002D0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue1) == 0x0002D4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue2) == 0x0002D8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue3) == 0x0002DC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002E0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue1) == 0x0002E1, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_SpawnSoundAttached_ReturnValue1) == 0x0002E8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_SpawnSoundAttached_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Add_ReturnValue) == 0x0002F0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Add_ReturnValue1) == 0x0002F4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item123) == 0x0002F8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item1234) == 0x000300, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item1234' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item3) == 0x0002F8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item4) == 0x000300, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item4' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_GetBuildingMeshComponent_ReturnValue) == 0x000308, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_GetBuildingMeshComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue123) == 0x000310, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue12) == 0x000314, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable12) == 0x000318, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item12345) == 0x000320, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item12345' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000328, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_bSuccess123) == 0x000330, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable123) == 0x000334, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue123) == 0x000338, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue1234) == 0x00033C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_bool_Variable) == 0x000340, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000341, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Not_PreBool_ReturnValue) == 0x000342, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_IsDedicatedServer_ReturnValue) == 0x000343, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_ConstructorPawn) == 0x000348, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_ConstructorPawn' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack1) == 0x000350, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack2) == 0x000351, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack2' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack3) == 0x000352, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack3' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable123) == 0x000354, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item123456) == 0x000358, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item123456' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000360, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Length_ReturnValue3) == 0x000310, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue2) == 0x000314, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Loop_Counter_Variable3) == 0x000318, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Less_IntInt_ReturnValue3) == 0x00031C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Add_IntInt_ReturnValue4) == 0x000320, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000324, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable2) == 0x000328, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_bool_Variable) == 0x00032C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item5) == 0x000330, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Not_PreBool_ReturnValue) == 0x000338, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000340, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_DynamicCast_bSuccess3) == 0x000348, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_ConstructorPawn) == 0x000350, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_ConstructorPawn' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack1) == 0x000358, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack2) == 0x000359, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CustomEvent_Stack3) == 0x00035A, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CustomEvent_Stack3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_IsDedicatedServer_ReturnValue) == 0x00035B, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, Temp_int_Array_Index_Variable3) == 0x00035C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::Temp_int_Array_Index_Variable3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_Array_Get_Item6) == 0x000360, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_Array_Get_Item6' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_ObjectObject_ReturnValue1) == 0x000368, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_ObjectObject_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CreateDelegate_OutputDelegate1) == 0x000370, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_SetTimerDelegate_ReturnValue1) == 0x000380, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_SetTimerDelegate_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_EventName) == 0x000388, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_EventName' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_EmitterTime) == 0x000390, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_EmitterTime' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_ParticleCount) == 0x000394, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_ParticleCount' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000398, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00039C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue1) == 0x0003A8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue12) == 0x0003B4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0003C0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue123) == 0x0003C1, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000370, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_CreateDelegate_OutputDelegate1) == 0x000378, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_SetTimerDelegate_ReturnValue1) == 0x000388, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_SetTimerDelegate_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_EventName) == 0x000390, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_EventName' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_EmitterTime) == 0x000398, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_EmitterTime' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, K2Node_ComponentBoundEvent_ParticleCount) == 0x00039C, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::K2Node_ComponentBoundEvent_ParticleCount' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0003A0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0003A4, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue1) == 0x0003B0, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_K2_GetComponentLocation_ReturnValue2) == 0x0003BC, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_K2_GetComponentLocation_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0003C8, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue2) == 0x0003C9, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE, CallFunc_HasAuthority_ReturnValue3) == 0x0003CA, "Member 'B_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE::CallFunc_HasAuthority_ReturnValue3' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundEvent_0_ParticleBurstSignature__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -328,11 +327,11 @@ static_assert(offsetof(B_Constructor_BASE_C_FeelTheBaseGlow, Stack3) == 0x000002
 struct B_Constructor_BASE_C_SaveOwner final
 {
 public:
-	class APlayerPawn_Constructor_C*              Param_ConstructorPawn;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Constructor_C*              ConstructorPawn_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_SaveOwner) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SaveOwner");
 static_assert(sizeof(B_Constructor_BASE_C_SaveOwner) == 0x000008, "Wrong size on B_Constructor_BASE_C_SaveOwner");
-static_assert(offsetof(B_Constructor_BASE_C_SaveOwner, Param_ConstructorPawn) == 0x000000, "Member 'B_Constructor_BASE_C_SaveOwner::Param_ConstructorPawn' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SaveOwner, ConstructorPawn_0) == 0x000000, "Member 'B_Constructor_BASE_C_SaveOwner::ConstructorPawn_0' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.BlueprintOnInteract
 // 0x0008 (0x0008 - 0x0000)
@@ -433,52 +432,75 @@ static_assert(sizeof(B_Constructor_BASE_C_OnPlaced) == 0x000008, "Wrong size on 
 static_assert(offsetof(B_Constructor_BASE_C_OnPlaced, InstigatorAbilitySystemComponent) == 0x000000, "Member 'B_Constructor_BASE_C_OnPlaced::InstigatorAbilitySystemComponent' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupBaseDefaultValues
-// 0x0098 (0x0098 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct B_Constructor_BASE_C_SetupBaseDefaultValues final
 {
 public:
 	class UAbilitySystemComponent*                Ability_System_Component;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_NodesToAffect;                               // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput; // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123; // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0078(0x0008)(NoDestructor)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput; // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234; // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NodesToAffect_0;                                   // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetValueAtLevel_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetValueAtLevel_ReturnValue1;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue1;                      // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue5;  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue6;  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue7;  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x00A0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue8;  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetupBaseDefaultValues) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetupBaseDefaultValues");
-static_assert(sizeof(B_Constructor_BASE_C_SetupBaseDefaultValues) == 0x000098, "Wrong size on B_Constructor_BASE_C_SetupBaseDefaultValues");
+static_assert(sizeof(B_Constructor_BASE_C_SetupBaseDefaultValues) == 0x0000C0, "Wrong size on B_Constructor_BASE_C_SetupBaseDefaultValues");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, Ability_System_Component) == 0x000000, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, Param_NodesToAffect) == 0x000008, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::Param_NodesToAffect' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000010, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000020, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue1) == 0x000028, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000030, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000040, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000048, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x000058, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput) == 0x000060, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue123) == 0x000070, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_K2_SetTimer_ReturnValue) == 0x000078, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput) == 0x000080, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234) == 0x000090, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue12) == 0x000094, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, NodesToAffect_0) == 0x000008, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::NodesToAffect_0' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_GetValueAtLevel_ReturnValue) == 0x00000C, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_FTrunc_ReturnValue) == 0x000010, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_GetValueAtLevel_ReturnValue1) == 0x000014, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_GetValueAtLevel_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_FTrunc_ReturnValue1) == 0x000018, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_FTrunc_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue1) == 0x000020, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000024, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000025, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_K2_SetTimer_ReturnValue) == 0x000028, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000030, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x000031, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000038, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x000048, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue2) == 0x00004C, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue3) == 0x000050, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000058, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue5) == 0x000068, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000070, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue6) == 0x000080, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x000088, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue7) == 0x000098, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_K2_SetTimer_ReturnValue1) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_K2_SetTimer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0000A8, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_HasAllMatchingGameplayTags_ReturnValue8) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_HasAllMatchingGameplayTags_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBaseDefaultValues, CallFunc_Add_IntInt_ReturnValue4) == 0x0000BC, "Member 'B_Constructor_BASE_C_SetupBaseDefaultValues::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.Setup Base Effect Array
 // 0x0068 (0x0068 - 0x0000)
@@ -508,7 +530,7 @@ static_assert(offsetof(B_Constructor_BASE_C_Setup_Base_Effect_Array, CallFunc_Se
 struct B_Constructor_BASE_C_SetupBuildingEffects final
 {
 public:
-	class UAbilitySystemComponent*                Param_AbilitySystemComponent;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilitySystemComponent*                AbilitySystemComponent_0;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBASEGameplayEffect>            BuildingEffects;                                   // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
 	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect;              // 0x0018(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -522,30 +544,30 @@ public:
 	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1;             // 0x0060(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123; // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect12;            // 0x00A8(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect2;             // 0x00A8(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput; // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect123;           // 0x00D8(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue123;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect3;             // 0x00D8(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1234;          // 0x00F0(0x0010)(NoDestructor)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345; // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect4;             // 0x00F0(0x0010)(NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue5;  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue1234;                // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetupBuildingEffects) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetupBuildingEffects");
 static_assert(sizeof(B_Constructor_BASE_C_SetupBuildingEffects) == 0x000118, "Wrong size on B_Constructor_BASE_C_SetupBuildingEffects");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, Param_AbilitySystemComponent) == 0x000000, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::Param_AbilitySystemComponent' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, AbilitySystemComponent_0) == 0x000000, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::AbilitySystemComponent_0' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, BuildingEffects) == 0x000008, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::BuildingEffects' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect) == 0x000018, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue) == 0x000028, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
@@ -555,27 +577,27 @@ static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAl
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000058, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect1) == 0x000060, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect1' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue1) == 0x000070, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000078, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x000088, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput) == 0x000090, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue123) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect12) == 0x0000A8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue12) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput) == 0x0000C0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect123) == 0x0000D8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue123) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect1234) == 0x0000F0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput) == 0x000100, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345) == 0x000110, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue1234) == 0x000114, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000078, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000088, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x000090, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect2) == 0x0000A8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue2) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0000C0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect3) == 0x0000D8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue3) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, K2Node_MakeStruct_BASEGameplayEffect4) == 0x0000F0, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::K2Node_MakeStruct_BASEGameplayEffect4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput) == 0x000100, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue5) == 0x000110, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupBuildingEffects, CallFunc_Array_Add_ReturnValue4) == 0x000114, "Member 'B_Constructor_BASE_C_SetupBuildingEffects::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupFriendlyEffects
-// 0x0120 (0x0120 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct B_Constructor_BASE_C_SetupFriendlyEffects final
 {
 public:
-	class UAbilitySystemComponent*                Param_AbilitySystemComponent;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilitySystemComponent*                AbilitySystemComponent_0;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBASEGameplayEffect>            FriendlyEffects;                                   // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
 	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect;              // 0x0018(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -583,101 +605,142 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1;             // 0x0048(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect12;            // 0x0060(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1;             // 0x0060(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect2;             // 0x0078(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect123;           // 0x00A8(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue123;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect3;             // 0x00A8(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput; // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput; // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234; // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect4;             // 0x00C0(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1234;          // 0x00F0(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue1234;                // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput; // 0x0108(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345; // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x00F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect5;             // 0x0108(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue5;                   // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput; // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue5;  // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput; // 0x0138(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue6;  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect6;             // 0x0150(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue6;                   // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput; // 0x0168(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue7;  // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetupFriendlyEffects) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetupFriendlyEffects");
-static_assert(sizeof(B_Constructor_BASE_C_SetupFriendlyEffects) == 0x000120, "Wrong size on B_Constructor_BASE_C_SetupFriendlyEffects");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, Param_AbilitySystemComponent) == 0x000000, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::Param_AbilitySystemComponent' has a wrong offset!");
+static_assert(sizeof(B_Constructor_BASE_C_SetupFriendlyEffects) == 0x000180, "Wrong size on B_Constructor_BASE_C_SetupFriendlyEffects");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, AbilitySystemComponent_0) == 0x000000, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::AbilitySystemComponent_0' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, FriendlyEffects) == 0x000008, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::FriendlyEffects' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect) == 0x000018, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue) == 0x000028, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000030, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000040, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect1) == 0x000048, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue1) == 0x000058, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect12) == 0x000060, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue12) == 0x000070, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000078, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000088, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000090, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect123) == 0x0000A8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue123) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput) == 0x0000C0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue123) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput) == 0x0000D8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect1234) == 0x0000F0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue1234) == 0x000100, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput) == 0x000108, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345) == 0x000118, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000048, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000058, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect1) == 0x000060, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue1) == 0x000070, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect2) == 0x000078, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue2) == 0x000088, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000090, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect3) == 0x0000A8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue3) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect4) == 0x0000C0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue4) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x0000D8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0000F0, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x000100, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect5) == 0x000108, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue5) == 0x000118, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput) == 0x000120, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue5) == 0x000130, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput) == 0x000138, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue6) == 0x000148, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, K2Node_MakeStruct_BASEGameplayEffect6) == 0x000150, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::K2Node_MakeStruct_BASEGameplayEffect6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_Array_Add_ReturnValue6) == 0x000160, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_Array_Add_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput) == 0x000168, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupFriendlyEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue7) == 0x000178, "Member 'B_Constructor_BASE_C_SetupFriendlyEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue7' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupHostileEffects
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct B_Constructor_BASE_C_SetupHostileEffects final
 {
 public:
-	class UAbilitySystemComponent*                Param_AbilitySystemComponent;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilitySystemComponent*                AbilitySystemComponent_0;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBASEGameplayEffect>            HostileEffects;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect;              // 0x0030(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1;             // 0x0048(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect12;            // 0x0078(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect;              // 0x0018(0x0010)(NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect1;             // 0x0040(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect2;             // 0x0088(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect3;             // 0x00A0(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBASEGameplayEffect                    K2Node_MakeStruct_BASEGameplayEffect4;             // 0x00D0(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetupHostileEffects) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetupHostileEffects");
-static_assert(sizeof(B_Constructor_BASE_C_SetupHostileEffects) == 0x0000A8, "Wrong size on B_Constructor_BASE_C_SetupHostileEffects");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, Param_AbilitySystemComponent) == 0x000000, "Member 'B_Constructor_BASE_C_SetupHostileEffects::Param_AbilitySystemComponent' has a wrong offset!");
+static_assert(sizeof(B_Constructor_BASE_C_SetupHostileEffects) == 0x000100, "Wrong size on B_Constructor_BASE_C_SetupHostileEffects");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, AbilitySystemComponent_0) == 0x000000, "Member 'B_Constructor_BASE_C_SetupHostileEffects::AbilitySystemComponent_0' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, HostileEffects) == 0x000008, "Member 'B_Constructor_BASE_C_SetupHostileEffects::HostileEffects' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000018, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000028, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect) == 0x000030, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue) == 0x000040, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect1) == 0x000048, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue1) == 0x000058, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000060, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000070, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect12) == 0x000078, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue12) == 0x000088, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000090, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect) == 0x000018, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000028, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000038, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect1) == 0x000040, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue) == 0x000050, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000058, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000068, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_RemoveItem_ReturnValue) == 0x000069, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue1) == 0x00006C, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000070, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000080, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect2) == 0x000088, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue2) == 0x000098, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect3) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue3) == 0x0000B0, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x0000C8, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, K2Node_MakeStruct_BASEGameplayEffect4) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetupHostileEffects::K2Node_MakeStruct_BASEGameplayEffect4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_Array_Add_ReturnValue4) == 0x0000E0, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetupHostileEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x0000F8, "Member 'B_Constructor_BASE_C_SetupHostileEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.RecycleResources
 // 0x000C (0x000C - 0x0000)
@@ -701,22 +764,22 @@ struct B_Constructor_BASE_C_SpawnResourceForRecycling final
 public:
 	class UFortWorldItemDefinition*               ItemDefinition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AmountToSpawn;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortResourceType                             Param_ResourceType;                                // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortResourceType                             ResourceType_0;                                    // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStructRecyclingResource               CallFunc_AddResourceToStack_SetValue;              // 0x0010(0x0010)(HasGetValueTypeHash)
 	struct FStructRecyclingResource               CallFunc_AddResourceToStack_SetValue1;             // 0x0020(0x0010)(HasGetValueTypeHash)
-	struct FStructRecyclingResource               CallFunc_AddResourceToStack_SetValue12;            // 0x0030(0x0010)(HasGetValueTypeHash)
+	struct FStructRecyclingResource               CallFunc_AddResourceToStack_SetValue2;             // 0x0030(0x0010)(HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_SpawnResourceForRecycling) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SpawnResourceForRecycling");
 static_assert(sizeof(B_Constructor_BASE_C_SpawnResourceForRecycling) == 0x000040, "Wrong size on B_Constructor_BASE_C_SpawnResourceForRecycling");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, ItemDefinition) == 0x000000, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, AmountToSpawn) == 0x000008, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::AmountToSpawn' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, Param_ResourceType) == 0x00000C, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::Param_ResourceType' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, ResourceType_0) == 0x00000C, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::ResourceType_0' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, K2Node_SwitchEnum_CmpSuccess) == 0x00000D, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, CallFunc_AddResourceToStack_SetValue) == 0x000010, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::CallFunc_AddResourceToStack_SetValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, CallFunc_AddResourceToStack_SetValue1) == 0x000020, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::CallFunc_AddResourceToStack_SetValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, CallFunc_AddResourceToStack_SetValue12) == 0x000030, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::CallFunc_AddResourceToStack_SetValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceForRecycling, CallFunc_AddResourceToStack_SetValue2) == 0x000030, "Member 'B_Constructor_BASE_C_SpawnResourceForRecycling::CallFunc_AddResourceToStack_SetValue2' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.AddResourceToStack
 // 0x0050 (0x0050 - 0x0000)
@@ -757,256 +820,249 @@ static_assert(sizeof(B_Constructor_BASE_C_OnRep_CollectResources) == 0x00000C, "
 static_assert(offsetof(B_Constructor_BASE_C_OnRep_CollectResources, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000000, "Member 'B_Constructor_BASE_C_OnRep_CollectResources::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetDamageMultiplier
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct B_Constructor_BASE_C_SetDamageMultiplier final
 {
 public:
 	struct FGameplayTagContainer                  TC_Empty;                                          // 0x0000(0x0020)(Edit, BlueprintVisible)
 	struct FGameplayTagContainer                  TC_AbilityDamage;                                  // 0x0020(0x0020)(Edit, BlueprintVisible)
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x0040(0x0018)()
-	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue;   // 0x0058(0x0018)()
-	bool                                          CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute; // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x0040(0x0010)()
+	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue;   // 0x0050(0x0010)()
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute; // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue; // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess; // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue; // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue1;  // 0x0098(0x0018)()
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue1;            // 0x00B8(0x0018)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue1;            // 0x0080(0x0010)()
+	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue1;  // 0x0090(0x0010)()
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetDamageMultiplier) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetDamageMultiplier");
-static_assert(sizeof(B_Constructor_BASE_C_SetDamageMultiplier) == 0x0000D8, "Wrong size on B_Constructor_BASE_C_SetDamageMultiplier");
+static_assert(sizeof(B_Constructor_BASE_C_SetDamageMultiplier) == 0x0000A8, "Wrong size on B_Constructor_BASE_C_SetDamageMultiplier");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, TC_Empty) == 0x000000, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::TC_Empty' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, TC_AbilityDamage) == 0x000020, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::TC_AbilityDamage' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_MakeOutgoingSpec_ReturnValue) == 0x000040, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_MakeOutgoingSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_AssignSetByCallerMagnitude_ReturnValue) == 0x000058, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_AssignSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute) == 0x000070, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_AssignSetByCallerMagnitude_ReturnValue) == 0x000050, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_AssignSetByCallerMagnitude_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000060, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000070, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute) == 0x000071, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue) == 0x000074, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess) == 0x000078, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue) == 0x00007C, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000080, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000090, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_AssignSetByCallerMagnitude_ReturnValue1) == 0x000098, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_AssignSetByCallerMagnitude_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_BooleanAND_ReturnValue) == 0x0000B0, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_MakeOutgoingSpec_ReturnValue1) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_MakeOutgoingSpec_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_MakeOutgoingSpec_ReturnValue1) == 0x000080, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_MakeOutgoingSpec_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_AssignSetByCallerMagnitude_ReturnValue1) == 0x000090, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_AssignSetByCallerMagnitude_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_BooleanAND_ReturnValue) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetDamageMultiplier, CallFunc_IsValid_ReturnValue) == 0x0000A1, "Member 'B_Constructor_BASE_C_SetDamageMultiplier::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetBaseVisualGlow
-// 0x0278 (0x0278 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct B_Constructor_BASE_C_SetBaseVisualGlow final
 {
 public:
-	class UAbilitySystemComponent*                Param_AbilitySystemComponent;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12;             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput; // 0x0068(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123; // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput; // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234; // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123;            // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1234;           // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput; // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345; // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput; // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123456; // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UAbilitySystemComponent*                AbilitySystemComponent_0;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput; // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1;  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1;              // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue2;              // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue3;              // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue4;              // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput; // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue5;  // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue5;              // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput; // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue6;  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12345;          // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123456;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput; // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567; // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput; // 0x00F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678; // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1234567;        // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12345678;       // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput; // 0x0110(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789; // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput; // 0x0128(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910; // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123456789;      // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12345678910;    // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput; // 0x0148(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011; // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput; // 0x0160(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112; // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue6;              // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput; // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue7;  // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue7;              // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput; // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue8;  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue8;              // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue9;  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue9;              // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput; // 0x0118(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue10; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue10;             // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput; // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue11; // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue11;             // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput; // 0x0148(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12; // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12;             // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput; // 0x0160(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue13; // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1234567891011;  // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123456789101112; // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput; // 0x0180(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213; // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput; // 0x0198(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314; // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12345678910111213; // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314; // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput; // 0x01B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415; // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput; // 0x01D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516; // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415; // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516; // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput; // 0x01F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617; // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput; // 0x0208(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718; // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_219[0x3];                                      // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617; // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718; // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234;               // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12345;              // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123456;             // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234567;            // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12345678;           // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123456789;          // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12345678910;        // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234567891011;      // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123456789101112;    // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12345678910111213;  // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234567891011121314; // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123456789101112131415; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue12345678910111213141516; // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234567891011121314151617; // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123456789101112131415161718; // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue13;             // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput; // 0x0178(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue14; // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_189[0x3];                                      // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue14;             // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput; // 0x0190(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue15; // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue15;             // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput; // 0x01A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue16; // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue16;             // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput; // 0x01C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue17; // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue17;             // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput; // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue18; // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue18;             // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue5;                  // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue6;                  // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue7;                  // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue8;                  // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue9;                  // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue10;                 // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue11;                 // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue13;                 // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue14;                 // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue15;                 // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue16;                 // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue17;                 // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue18;                 // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetBaseVisualGlow) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetBaseVisualGlow");
-static_assert(sizeof(B_Constructor_BASE_C_SetBaseVisualGlow) == 0x000278, "Wrong size on B_Constructor_BASE_C_SetBaseVisualGlow");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, Param_AbilitySystemComponent) == 0x000000, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::Param_AbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_FloatToString_ReturnValue) == 0x000008, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000018, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000028, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue) == 0x00002C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000030, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000040, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000048, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x000058, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1) == 0x00005C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12) == 0x000060, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput) == 0x000068, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123) == 0x000078, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput) == 0x000080, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234) == 0x000090, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123) == 0x000094, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1234) == 0x000098, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345) == 0x0000B0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123456) == 0x0000C8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12345) == 0x0000CC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123456) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput) == 0x0000D8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput) == 0x0000F0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678) == 0x000100, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1234567) == 0x000104, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12345678) == 0x000108, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput) == 0x000110, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789) == 0x000120, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput) == 0x000128, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910) == 0x000138, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123456789) == 0x00013C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12345678910) == 0x000140, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput) == 0x000148, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011) == 0x000158, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput) == 0x000160, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112) == 0x000170, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1234567891011) == 0x000174, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123456789101112) == 0x000178, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123456789101112' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput) == 0x000180, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213) == 0x000190, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput) == 0x000198, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314) == 0x0001A8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12345678910111213) == 0x0001AC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12345678910111213' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314) == 0x0001B0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput) == 0x0001B8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415) == 0x0001C8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput) == 0x0001D0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516) == 0x0001E0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415) == 0x0001E4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516) == 0x0001E8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput) == 0x0001F0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617) == 0x000200, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput) == 0x000208, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718) == 0x000218, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617) == 0x00021C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718) == 0x000220, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue) == 0x000224, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1) == 0x000228, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12) == 0x00022C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123) == 0x000230, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1234) == 0x000234, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12345) == 0x000238, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123456) == 0x00023C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1234567) == 0x000240, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12345678) == 0x000244, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123456789) == 0x000248, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12345678910) == 0x00024C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12345678910' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1234567891011) == 0x000250, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1234567891011' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123456789101112) == 0x000254, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123456789101112' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12345678910111213) == 0x000258, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12345678910111213' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1234567891011121314) == 0x00025C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1234567891011121314' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123456789101112131415) == 0x000260, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123456789101112131415' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12345678910111213141516) == 0x000264, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12345678910111213141516' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1234567891011121314151617) == 0x000268, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1234567891011121314151617' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue123456789101112131415161718) == 0x00026C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue123456789101112131415161718' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000270, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_FClamp_ReturnValue) == 0x000274, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(sizeof(B_Constructor_BASE_C_SetBaseVisualGlow) == 0x000240, "Wrong size on B_Constructor_BASE_C_SetBaseVisualGlow");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, AbilitySystemComponent_0) == 0x000000, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::AbilitySystemComponent_0' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, Temp_int_Variable) == 0x000008, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_FloatToString_ReturnValue) == 0x000010, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000020, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_FClamp_ReturnValue) == 0x000024, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000028, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000038, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue) == 0x00003C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput) == 0x000040, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000050, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue1) == 0x000054, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000058, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000068, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue2) == 0x00006C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x000070, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x000080, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue3) == 0x000084, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x000088, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x000098, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue4) == 0x00009C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput) == 0x0000A0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue5) == 0x0000B0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue5) == 0x0000B4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput) == 0x0000B8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue6) == 0x0000C8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue6) == 0x0000CC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput) == 0x0000D0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue7) == 0x0000E0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue7) == 0x0000E4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput) == 0x0000E8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue8) == 0x0000F8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue8) == 0x0000FC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput) == 0x000100, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue9) == 0x000110, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue9) == 0x000114, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput) == 0x000118, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue10) == 0x000128, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue10) == 0x00012C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput) == 0x000130, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue11) == 0x000140, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue11) == 0x000144, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput) == 0x000148, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue12) == 0x000158, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue12) == 0x00015C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput) == 0x000160, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue13) == 0x000170, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue13) == 0x000174, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput) == 0x000178, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue14) == 0x000188, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue14) == 0x00018C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput) == 0x000190, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue15) == 0x0001A0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue15) == 0x0001A4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput) == 0x0001A8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue16) == 0x0001B8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue16' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue16) == 0x0001BC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue16' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput) == 0x0001C0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue17) == 0x0001D0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue17' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue17) == 0x0001D4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue17' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput) == 0x0001D8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_HasAllMatchingGameplayTags_ReturnValue18) == 0x0001E8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_HasAllMatchingGameplayTags_ReturnValue18' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Conv_BoolToInt_ReturnValue18) == 0x0001EC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Conv_BoolToInt_ReturnValue18' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue) == 0x0001F0, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue1) == 0x0001F4, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue2) == 0x0001F8, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue3) == 0x0001FC, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue4) == 0x000200, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue5) == 0x000204, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue6) == 0x000208, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue7) == 0x00020C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue8) == 0x000210, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue9) == 0x000214, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue10) == 0x000218, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue11) == 0x00021C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue12) == 0x000220, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue13) == 0x000224, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue14) == 0x000228, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue15) == 0x00022C, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue16) == 0x000230, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue16' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue17) == 0x000234, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue17' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetBaseVisualGlow, CallFunc_Add_IntInt_ReturnValue18) == 0x000238, "Member 'B_Constructor_BASE_C_SetBaseVisualGlow::CallFunc_Add_IntInt_ReturnValue18' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.BaseSelfApplyGameplaySpec
-// 0x0028 (0x0028 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct B_Constructor_BASE_C_BaseSelfApplyGameplaySpec final
 {
 public:
-	struct FGameplayEffectSpecHandle              GE_Spec;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectSpecHandle              GE_Spec;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_BaseSelfApplyGameplaySpec");
-static_assert(sizeof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec) == 0x000028, "Wrong size on B_Constructor_BASE_C_BaseSelfApplyGameplaySpec");
+static_assert(sizeof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec) == 0x000020, "Wrong size on B_Constructor_BASE_C_BaseSelfApplyGameplaySpec");
 static_assert(offsetof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec, GE_Spec) == 0x000000, "Member 'B_Constructor_BASE_C_BaseSelfApplyGameplaySpec::GE_Spec' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000018, "Member 'B_Constructor_BASE_C_BaseSelfApplyGameplaySpec::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000020, "Member 'B_Constructor_BASE_C_BaseSelfApplyGameplaySpec::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000010, "Member 'B_Constructor_BASE_C_BaseSelfApplyGameplaySpec::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_BaseSelfApplyGameplaySpec, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000018, "Member 'B_Constructor_BASE_C_BaseSelfApplyGameplaySpec::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.GetTrapGEFromTag
 // 0x0050 (0x0050 - 0x0000)
@@ -1056,7 +1112,7 @@ static_assert(offsetof(B_Constructor_BASE_C_SetupTrapEffects, CallFunc_HasAllMat
 static_assert(offsetof(B_Constructor_BASE_C_SetupTrapEffects, CallFunc_HasAllMatchingGameplayTags_ReturnValue1) == 0x000060, "Member 'B_Constructor_BASE_C_SetupTrapEffects::CallFunc_HasAllMatchingGameplayTags_ReturnValue1' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetHealingMultiplier
-// 0x00A0 (0x00A0 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct B_Constructor_BASE_C_SetHealingMultiplier final
 {
 public:
@@ -1065,28 +1121,28 @@ public:
 	bool                                          CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute; // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x0048(0x0018)()
-	bool                                          CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess; // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue; // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue; // 0x0068(0x0018)()
-	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1; // 0x0080(0x0018)()
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x0048(0x0010)()
+	bool                                          CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess; // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue; // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue; // 0x0060(0x0010)()
+	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1; // 0x0070(0x0010)()
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Constructor_BASE_C_SetHealingMultiplier) == 0x000008, "Wrong alignment on B_Constructor_BASE_C_SetHealingMultiplier");
-static_assert(sizeof(B_Constructor_BASE_C_SetHealingMultiplier) == 0x0000A0, "Wrong size on B_Constructor_BASE_C_SetHealingMultiplier");
+static_assert(sizeof(B_Constructor_BASE_C_SetHealingMultiplier) == 0x000088, "Wrong size on B_Constructor_BASE_C_SetHealingMultiplier");
 static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, TC_Empty) == 0x000000, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::TC_Empty' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, TC_AbilityDamage) == 0x000020, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::TC_AbilityDamage' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute) == 0x000040, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue) == 0x000044, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_MakeOutgoingSpec_ReturnValue) == 0x000048, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_MakeOutgoingSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess) == 0x000060, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue) == 0x000064, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue) == 0x000068, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1) == 0x000080, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_BooleanAND_ReturnValue) == 0x000098, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_IsValid_ReturnValue) == 0x000099, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess) == 0x000058, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue) == 0x00005C, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue) == 0x000060, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1) == 0x000070, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_BooleanAND_ReturnValue) == 0x000080, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SetHealingMultiplier, CallFunc_IsValid_ReturnValue) == 0x000081, "Member 'B_Constructor_BASE_C_SetHealingMultiplier::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SpawnResourceWithAmount
 // 0x0020 (0x0020 - 0x0000)
@@ -1095,7 +1151,7 @@ struct B_Constructor_BASE_C_SpawnResourceWithAmount final
 public:
 	class UFortWorldItemDefinition*               ItemDefinition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AmountToSpawn;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortResourceType                             Param_ResourceType;                                // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortResourceType                             ResourceType_0;                                    // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1106,7 +1162,7 @@ static_assert(alignof(B_Constructor_BASE_C_SpawnResourceWithAmount) == 0x000008,
 static_assert(sizeof(B_Constructor_BASE_C_SpawnResourceWithAmount) == 0x000020, "Wrong size on B_Constructor_BASE_C_SpawnResourceWithAmount");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, ItemDefinition) == 0x000000, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, AmountToSpawn) == 0x000008, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::AmountToSpawn' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, Param_ResourceType) == 0x00000C, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::Param_ResourceType' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, ResourceType_0) == 0x00000C, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::ResourceType_0' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000010, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, CallFunc_FFloor_ReturnValue) == 0x000014, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::CallFunc_FFloor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_SpawnResourceWithAmount, CallFunc_Clamp_ReturnValue) == 0x000018, "Member 'B_Constructor_BASE_C_SpawnResourceWithAmount::CallFunc_Clamp_ReturnValue' has a wrong offset!");
@@ -1158,7 +1214,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -1168,7 +1224,7 @@ static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, InteractingPaw
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, ReturnValue) == 0x000008, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_Greater_IntInt_ReturnValue) == 0x000009, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_Greater_IntInt_ReturnValue1) == 0x00000A, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_Greater_IntInt_ReturnValue12) == 0x00000B, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_Greater_IntInt_ReturnValue2) == 0x00000B, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_BooleanOR_ReturnValue) == 0x00000C, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintCanInteract, CallFunc_BooleanOR_ReturnValue1) == 0x00000D, "Member 'B_Constructor_BASE_C_BlueprintCanInteract::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
 
@@ -1185,7 +1241,7 @@ public:
 	class FString                                 InteractionString;                                 // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00A0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x00E0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00E0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0018)()
 };
@@ -1199,7 +1255,7 @@ static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, WoodT
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, InteractionString) == 0x000050, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::InteractionString' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, K2Node_MakeStruct_FormatArgumentData1) == 0x0000A0, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, K2Node_MakeStruct_FormatArgumentData12) == 0x0000E0, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, K2Node_MakeStruct_FormatArgumentData2) == 0x0000E0, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, K2Node_MakeArray_Array) == 0x000120, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(B_Constructor_BASE_C_BlueprintGetInteractionString, CallFunc_Format_ReturnValue) == 0x000130, "Member 'B_Constructor_BASE_C_BlueprintGetInteractionString::CallFunc_Format_ReturnValue' has a wrong offset!");
 

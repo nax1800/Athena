@@ -18,19 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_RCRocket_Launcher_Athena.B_RCRocket_Launcher_Athena_C
-// 0x0020 (0x0E78 - 0x0E58)
+// 0x0020 (0x0F90 - 0x0F70)
 class AB_RCRocket_Launcher_Athena_C final : public AB_Ranged_Generic_C
 {
 public:
-	uint8                                         Pad_E54[0x4];                                      // 0x0E54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_RCRocket_Launcher_Athena_C;       // 0x0E58(0x0008)(Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                 RC;                                                // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               RearMuzzle;                                        // 0x0E68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayBeforeFX_End;                                 // 0x0E70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_RCRocket_Launcher_Athena_C;       // 0x0F70(0x0008)(Transient, DuplicateTransient)
+	class USkeletalMeshComponent*                 RC;                                                // 0x0F78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               RearMuzzle;                                        // 0x0F80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayBeforeFX_End;                                 // 0x0F88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_RCRocket_Launcher_Athena(int32 EntryPoint);
-	void ReceiveBeginPlay();
+	void OnWeaponVisibilityChanged(bool bVisible);
 	void SendMuzzleFlashFX();
 	void UserConstructionScript();
 
@@ -47,11 +46,11 @@ public:
 	}
 };
 static_assert(alignof(AB_RCRocket_Launcher_Athena_C) == 0x000008, "Wrong alignment on AB_RCRocket_Launcher_Athena_C");
-static_assert(sizeof(AB_RCRocket_Launcher_Athena_C) == 0x000E78, "Wrong size on AB_RCRocket_Launcher_Athena_C");
-static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, UberGraphFrame_B_RCRocket_Launcher_Athena_C) == 0x000E58, "Member 'AB_RCRocket_Launcher_Athena_C::UberGraphFrame_B_RCRocket_Launcher_Athena_C' has a wrong offset!");
-static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, RC) == 0x000E60, "Member 'AB_RCRocket_Launcher_Athena_C::RC' has a wrong offset!");
-static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, RearMuzzle) == 0x000E68, "Member 'AB_RCRocket_Launcher_Athena_C::RearMuzzle' has a wrong offset!");
-static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, DelayBeforeFX_End) == 0x000E70, "Member 'AB_RCRocket_Launcher_Athena_C::DelayBeforeFX_End' has a wrong offset!");
+static_assert(sizeof(AB_RCRocket_Launcher_Athena_C) == 0x000F90, "Wrong size on AB_RCRocket_Launcher_Athena_C");
+static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, UberGraphFrame_B_RCRocket_Launcher_Athena_C) == 0x000F70, "Member 'AB_RCRocket_Launcher_Athena_C::UberGraphFrame_B_RCRocket_Launcher_Athena_C' has a wrong offset!");
+static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, RC) == 0x000F78, "Member 'AB_RCRocket_Launcher_Athena_C::RC' has a wrong offset!");
+static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, RearMuzzle) == 0x000F80, "Member 'AB_RCRocket_Launcher_Athena_C::RearMuzzle' has a wrong offset!");
+static_assert(offsetof(AB_RCRocket_Launcher_Athena_C, DelayBeforeFX_End) == 0x000F88, "Member 'AB_RCRocket_Launcher_Athena_C::DelayBeforeFX_End' has a wrong offset!");
 
 }
 

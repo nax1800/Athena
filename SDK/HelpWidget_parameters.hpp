@@ -61,8 +61,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0097(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,8 +83,8 @@ static_assert(offsetof(HelpWidget_C_Init, Temp_bool_Variable) == 0x000094, "Memb
 static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable) == 0x000095, "Member 'HelpWidget_C_Init::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable1) == 0x000096, "Member 'HelpWidget_C_Init::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, Temp_bool_Variable1) == 0x000097, "Member 'HelpWidget_C_Init::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable12) == 0x000098, "Member 'HelpWidget_C_Init::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable123) == 0x000099, "Member 'HelpWidget_C_Init::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable2) == 0x000098, "Member 'HelpWidget_C_Init::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable3) == 0x000099, "Member 'HelpWidget_C_Init::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, CallFunc_Greater_IntInt_ReturnValue) == 0x00009A, "Member 'HelpWidget_C_Init::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, CallFunc_Greater_IntInt_ReturnValue1) == 0x00009B, "Member 'HelpWidget_C_Init::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, K2Node_Select_Default) == 0x00009C, "Member 'HelpWidget_C_Init::K2Node_Select_Default' has a wrong offset!");

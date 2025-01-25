@@ -21,7 +21,7 @@ namespace SDK
 class UTooltipLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output);
+	static void Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UClass* Header_Style, class UClass* Body_Style, class UObject* __WorldContext, class UUserWidget** Output);
 	static void Create_Custom_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output);
 	static void Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, const class FText& Tooltip_Text, class UObject* __WorldContext);
 	static void Create_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int32 OverrideQuantity, class UObject* __WorldContext, class UWidget** Return_Value);

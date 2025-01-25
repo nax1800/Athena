@@ -18,25 +18,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HelpListItem.HelpListItem_C
-// 0x0048 (0x0868 - 0x0820)
+// 0x0048 (0x08E8 - 0x08A0)
 class UHelpListItem_C final : public UFortHelpTreeItemBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Arrow;                                             // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         EntryHBox;                                         // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       EntryHeaderName;                                   // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HeaderHBox;                                        // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       HeaderText;                                        // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        PlayerHeaderSwitcher;                              // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   InviteJoinChanged;                                 // 0x0858(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Arrow;                                             // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         EntryHBox;                                         // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       EntryHeaderName;                                   // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HeaderHBox;                                        // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       HeaderText;                                        // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        PlayerHeaderSwitcher;                              // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   InviteJoinChanged;                                 // 0x08D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void InviteJoinChanged__DelegateSignature();
 	void ExecuteUbergraph_HelpListItem(int32 EntryPoint);
-	void OnHelpItemSet();
-	void Construct();
-	void ExpansionChanged(bool bExpanded);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void InitializeItem();
 	void SetupExpansion(bool Expanded);
 
@@ -51,15 +50,15 @@ public:
 	}
 };
 static_assert(alignof(UHelpListItem_C) == 0x000008, "Wrong alignment on UHelpListItem_C");
-static_assert(sizeof(UHelpListItem_C) == 0x000868, "Wrong size on UHelpListItem_C");
-static_assert(offsetof(UHelpListItem_C, UberGraphFrame) == 0x000820, "Member 'UHelpListItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, Arrow) == 0x000828, "Member 'UHelpListItem_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, EntryHBox) == 0x000830, "Member 'UHelpListItem_C::EntryHBox' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, EntryHeaderName) == 0x000838, "Member 'UHelpListItem_C::EntryHeaderName' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, HeaderHBox) == 0x000840, "Member 'UHelpListItem_C::HeaderHBox' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, HeaderText) == 0x000848, "Member 'UHelpListItem_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, PlayerHeaderSwitcher) == 0x000850, "Member 'UHelpListItem_C::PlayerHeaderSwitcher' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, InviteJoinChanged) == 0x000858, "Member 'UHelpListItem_C::InviteJoinChanged' has a wrong offset!");
+static_assert(sizeof(UHelpListItem_C) == 0x0008E8, "Wrong size on UHelpListItem_C");
+static_assert(offsetof(UHelpListItem_C, UberGraphFrame) == 0x0008A0, "Member 'UHelpListItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, Arrow) == 0x0008A8, "Member 'UHelpListItem_C::Arrow' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, EntryHBox) == 0x0008B0, "Member 'UHelpListItem_C::EntryHBox' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, EntryHeaderName) == 0x0008B8, "Member 'UHelpListItem_C::EntryHeaderName' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, HeaderHBox) == 0x0008C0, "Member 'UHelpListItem_C::HeaderHBox' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, HeaderText) == 0x0008C8, "Member 'UHelpListItem_C::HeaderText' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, PlayerHeaderSwitcher) == 0x0008D0, "Member 'UHelpListItem_C::PlayerHeaderSwitcher' has a wrong offset!");
+static_assert(offsetof(UHelpListItem_C, InviteJoinChanged) == 0x0008D8, "Member 'UHelpListItem_C::InviteJoinChanged' has a wrong offset!");
 
 }
 

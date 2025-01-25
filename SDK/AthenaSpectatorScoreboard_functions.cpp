@@ -65,20 +65,6 @@ void UAthenaSpectatorScoreboard_C::ResetFocus()
 }
 
 
-// Function AthenaSpectatorScoreboard.AthenaSpectatorScoreboard_C.UpdateListUI
-// (Event, Protected, BlueprintEvent)
-
-void UAthenaSpectatorScoreboard_C::UpdateListUI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorScoreboard_C", "UpdateListUI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaSpectatorScoreboard.AthenaSpectatorScoreboard_C.SetConsoleInputImages
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -90,6 +76,26 @@ void UAthenaSpectatorScoreboard_C::SetConsoleInputImages()
 		Func = Class->GetFunction("AthenaSpectatorScoreboard_C", "SetConsoleInputImages");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorScoreboard.AthenaSpectatorScoreboard_C.UpdateListUI
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UAthenaSpectatorScoreboard_C::UpdateListUI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorScoreboard_C", "UpdateListUI");
+
+	Params::AthenaSpectatorScoreboard_C_UpdateListUI Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HordeWaveModifiersWidget.HordeWaveModifiersWidget_C
-// 0x0030 (0x0250 - 0x0220)
+// 0x0030 (0x0248 - 0x0218)
 class UHordeWaveModifiersWidget_C final : public UFortUserWidget
 {
 public:
-	class UVerticalBox*                           ModifierVertBox;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UHordeWaveModifiersTile_C*>      ModifierWidgets;                                   // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	int32                                         CurPresentedIdx;                                   // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OnAllModifiersPresented;                           // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UVerticalBox*                           ModifierVertBox;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UHordeWaveModifiersTile_C*>      ModifierWidgets;                                   // 0x0220(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	int32                                         CurPresentedIdx;                                   // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnAllModifiersPresented;                           // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnAllModifiersPresented__DelegateSignature();
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UHordeWaveModifiersWidget_C) == 0x000008, "Wrong alignment on UHordeWaveModifiersWidget_C");
-static_assert(sizeof(UHordeWaveModifiersWidget_C) == 0x000250, "Wrong size on UHordeWaveModifiersWidget_C");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierVertBox) == 0x000220, "Member 'UHordeWaveModifiersWidget_C::ModifierVertBox' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierWidgets) == 0x000228, "Member 'UHordeWaveModifiersWidget_C::ModifierWidgets' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, CurPresentedIdx) == 0x000238, "Member 'UHordeWaveModifiersWidget_C::CurPresentedIdx' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, OnAllModifiersPresented) == 0x000240, "Member 'UHordeWaveModifiersWidget_C::OnAllModifiersPresented' has a wrong offset!");
+static_assert(sizeof(UHordeWaveModifiersWidget_C) == 0x000248, "Wrong size on UHordeWaveModifiersWidget_C");
+static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierVertBox) == 0x000218, "Member 'UHordeWaveModifiersWidget_C::ModifierVertBox' has a wrong offset!");
+static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierWidgets) == 0x000220, "Member 'UHordeWaveModifiersWidget_C::ModifierWidgets' has a wrong offset!");
+static_assert(offsetof(UHordeWaveModifiersWidget_C, CurPresentedIdx) == 0x000230, "Member 'UHordeWaveModifiersWidget_C::CurPresentedIdx' has a wrong offset!");
+static_assert(offsetof(UHordeWaveModifiersWidget_C, OnAllModifiersPresented) == 0x000238, "Member 'UHordeWaveModifiersWidget_C::OnAllModifiersPresented' has a wrong offset!");
 
 }
 

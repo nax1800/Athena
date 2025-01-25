@@ -51,6 +51,20 @@ void UMenuScreen_Athena_C::ExecuteUbergraph_MenuScreen_Athena(int32 EntryPoint)
 }
 
 
+// Function MenuScreen_Athena.MenuScreen_Athena_C.BlueprintInitializeAnimation
+// (Event, Public, BlueprintEvent)
+
+void UMenuScreen_Athena_C::BlueprintInitializeAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintInitializeAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MenuScreen_Athena.MenuScreen_Athena_C.BlueprintUpdateAnimation
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -94,20 +108,6 @@ void UMenuScreen_Athena_C::AnimNotify_playFacialAnim()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_playFacialAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MenuScreen_Athena.MenuScreen_Athena_C.BlueprintBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UMenuScreen_Athena_C::BlueprintBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

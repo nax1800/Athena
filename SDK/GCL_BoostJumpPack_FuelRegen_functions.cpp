@@ -192,7 +192,7 @@ bool AGCL_BoostJumpPack_FuelRegen_C::OnRemove(class AActor* MyTarget, const stru
 
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.CacheAttributes
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void AGCL_BoostJumpPack_FuelRegen_C::CacheAttributes()
 {
@@ -247,7 +247,7 @@ void AGCL_BoostJumpPack_FuelRegen_C::SetFuelRechargeAudioEnabled(bool Enabled)
 
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetFuel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -259,6 +259,47 @@ float AGCL_BoostJumpPack_FuelRegen_C::GetFuel()
 		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "GetFuel");
 
 	Params::GCL_BoostJumpPack_FuelRegen_C_GetFuel Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetReserveFuelPercent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   FuelPercent                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGCL_BoostJumpPack_FuelRegen_C::GetReserveFuelPercent(float* FuelPercent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "GetReserveFuelPercent");
+
+	Params::GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FuelPercent != nullptr)
+		*FuelPercent = Parms.FuelPercent;
+}
+
+
+// Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetReserveFuel
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float AGCL_BoostJumpPack_FuelRegen_C::GetReserveFuel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "GetReserveFuel");
+
+	Params::GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

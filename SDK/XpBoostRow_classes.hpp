@@ -10,34 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBoostRow.XpBoostRow_C
-// 0x0078 (0x02D0 - 0x0258)
+// 0x0078 (0x02C8 - 0x0250)
 class UXpBoostRow_C final : public UFortPlayerTrackerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       Boost;                                             // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BoostIcon;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      GiveXPButton;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       PlayerName;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsBoosted;                                         // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          IsPlayer;                                          // 0x0289(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          HasPartyMember;                                    // 0x028A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28B[0x5];                                      // 0x028B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       Player_Id;                                         // 0x0290(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         Current_Boost_Amount;                              // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   Boost_Amount_Changed;                              // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       Boost;                                             // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BoostIcon;                                         // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      GiveXPButton;                                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       PlayerName;                                        // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsBoosted;                                         // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsPlayer;                                          // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          HasPartyMember;                                    // 0x0282(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_283[0x5];                                      // 0x0283(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       Player_Id;                                         // 0x0288(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         Current_Boost_Amount;                              // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   Boost_Amount_Changed;                              // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void Boost_Amount_Changed__DelegateSignature();
@@ -65,19 +65,19 @@ public:
 	}
 };
 static_assert(alignof(UXpBoostRow_C) == 0x000008, "Wrong alignment on UXpBoostRow_C");
-static_assert(sizeof(UXpBoostRow_C) == 0x0002D0, "Wrong size on UXpBoostRow_C");
-static_assert(offsetof(UXpBoostRow_C, UberGraphFrame) == 0x000258, "Member 'UXpBoostRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Boost) == 0x000260, "Member 'UXpBoostRow_C::Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, BoostIcon) == 0x000268, "Member 'UXpBoostRow_C::BoostIcon' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, GiveXPButton) == 0x000270, "Member 'UXpBoostRow_C::GiveXPButton' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, PlayerBanner) == 0x000278, "Member 'UXpBoostRow_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, PlayerName) == 0x000280, "Member 'UXpBoostRow_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, IsBoosted) == 0x000288, "Member 'UXpBoostRow_C::IsBoosted' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, IsPlayer) == 0x000289, "Member 'UXpBoostRow_C::IsPlayer' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, HasPartyMember) == 0x00028A, "Member 'UXpBoostRow_C::HasPartyMember' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Player_Id) == 0x000290, "Member 'UXpBoostRow_C::Player_Id' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Current_Boost_Amount) == 0x0002B8, "Member 'UXpBoostRow_C::Current_Boost_Amount' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Boost_Amount_Changed) == 0x0002C0, "Member 'UXpBoostRow_C::Boost_Amount_Changed' has a wrong offset!");
+static_assert(sizeof(UXpBoostRow_C) == 0x0002C8, "Wrong size on UXpBoostRow_C");
+static_assert(offsetof(UXpBoostRow_C, UberGraphFrame) == 0x000250, "Member 'UXpBoostRow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, Boost) == 0x000258, "Member 'UXpBoostRow_C::Boost' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, BoostIcon) == 0x000260, "Member 'UXpBoostRow_C::BoostIcon' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, GiveXPButton) == 0x000268, "Member 'UXpBoostRow_C::GiveXPButton' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, PlayerBanner) == 0x000270, "Member 'UXpBoostRow_C::PlayerBanner' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, PlayerName) == 0x000278, "Member 'UXpBoostRow_C::PlayerName' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, IsBoosted) == 0x000280, "Member 'UXpBoostRow_C::IsBoosted' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, IsPlayer) == 0x000281, "Member 'UXpBoostRow_C::IsPlayer' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, HasPartyMember) == 0x000282, "Member 'UXpBoostRow_C::HasPartyMember' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, Player_Id) == 0x000288, "Member 'UXpBoostRow_C::Player_Id' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, Current_Boost_Amount) == 0x0002B0, "Member 'UXpBoostRow_C::Current_Boost_Amount' has a wrong offset!");
+static_assert(offsetof(UXpBoostRow_C, Boost_Amount_Changed) == 0x0002B8, "Member 'UXpBoostRow_C::Boost_Amount_Changed' has a wrong offset!");
 
 }
 

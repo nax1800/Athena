@@ -19,11 +19,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NormalBangWrapper.NormalBangWrapper_C
-// 0x0078 (0x02A8 - 0x0230)
+// 0x0090 (0x02B8 - 0x0228)
 class UNormalBangWrapper_C final : public UFortBangWrapper_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       IntroSuperBang;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Intro;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       TutorialGlow;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BigBang;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -36,23 +37,25 @@ public:
 	class UImage*                                 NoMinusCountMinus1;                                // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SmallBang;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SmallBangCount;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          TutorialBorder;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          UseSmallVersion;                                   // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Count;                                             // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USizeBox*                               SuperBang;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          TutorialBorder;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          UseSmallVersion;                                   // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Count;                                             // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseSuperBangNoCount;                              // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint);
+	void OnBangStateChanged(bool bEnabled, int32 Count_0);
 	void PreConstruct(bool IsDesignTime);
 	void OnStartCallout();
 	void OnStopCallout();
-	void OnBangStateChanged(bool bEnabled, int32 Param_Count);
 	void SetTutorialBorderStyle(class UClass* BorderStyle);
 	void Update_Bang_Icon_Version(int32 InCount);
 	void Adjust_Bang_Image_Translation(const struct FVector2D& Translation);
-	void InitialReset();
 	void TriggerIntro();
 	void TriggerReset();
+	void InitialReset();
 
 public:
 	static class UClass* StaticClass()
@@ -65,8 +68,9 @@ public:
 	}
 };
 static_assert(alignof(UNormalBangWrapper_C) == 0x000008, "Wrong alignment on UNormalBangWrapper_C");
-static_assert(sizeof(UNormalBangWrapper_C) == 0x0002A8, "Wrong size on UNormalBangWrapper_C");
-static_assert(offsetof(UNormalBangWrapper_C, UberGraphFrame) == 0x000230, "Member 'UNormalBangWrapper_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UNormalBangWrapper_C) == 0x0002B8, "Wrong size on UNormalBangWrapper_C");
+static_assert(offsetof(UNormalBangWrapper_C, UberGraphFrame) == 0x000228, "Member 'UNormalBangWrapper_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, IntroSuperBang) == 0x000230, "Member 'UNormalBangWrapper_C::IntroSuperBang' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, Intro) == 0x000238, "Member 'UNormalBangWrapper_C::Intro' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, TutorialGlow) == 0x000240, "Member 'UNormalBangWrapper_C::TutorialGlow' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, BigBang) == 0x000248, "Member 'UNormalBangWrapper_C::BigBang' has a wrong offset!");
@@ -79,9 +83,11 @@ static_assert(offsetof(UNormalBangWrapper_C, NoMinusCount) == 0x000278, "Member 
 static_assert(offsetof(UNormalBangWrapper_C, NoMinusCountMinus1) == 0x000280, "Member 'UNormalBangWrapper_C::NoMinusCountMinus1' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, SmallBang) == 0x000288, "Member 'UNormalBangWrapper_C::SmallBang' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, SmallBangCount) == 0x000290, "Member 'UNormalBangWrapper_C::SmallBangCount' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, TutorialBorder) == 0x000298, "Member 'UNormalBangWrapper_C::TutorialBorder' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, UseSmallVersion) == 0x0002A0, "Member 'UNormalBangWrapper_C::UseSmallVersion' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, Count) == 0x0002A4, "Member 'UNormalBangWrapper_C::Count' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, SuperBang) == 0x000298, "Member 'UNormalBangWrapper_C::SuperBang' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, TutorialBorder) == 0x0002A0, "Member 'UNormalBangWrapper_C::TutorialBorder' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, UseSmallVersion) == 0x0002A8, "Member 'UNormalBangWrapper_C::UseSmallVersion' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, Count) == 0x0002AC, "Member 'UNormalBangWrapper_C::Count' has a wrong offset!");
+static_assert(offsetof(UNormalBangWrapper_C, bUseSuperBangNoCount) == 0x0002B0, "Member 'UNormalBangWrapper_C::bUseSuperBangNoCount' has a wrong offset!");
 
 }
 

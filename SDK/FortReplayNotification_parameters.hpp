@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -129,7 +129,7 @@ static_assert(offsetof(FortReplayNotification_C_TickRemainingTime, CallFunc_Grea
 struct FortReplayNotification_C_SetNotificationVisibility final
 {
 public:
-	ESlateVisibility                              Param_Visibility;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
 	bool                                          CallFunc_IsVisibilityNotification_IsVisibilityNotification; // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -140,7 +140,7 @@ public:
 };
 static_assert(alignof(FortReplayNotification_C_SetNotificationVisibility) == 0x000008, "Wrong alignment on FortReplayNotification_C_SetNotificationVisibility");
 static_assert(sizeof(FortReplayNotification_C_SetNotificationVisibility) == 0x000028, "Wrong size on FortReplayNotification_C_SetNotificationVisibility");
-static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, Param_Visibility) == 0x000000, "Member 'FortReplayNotification_C_SetNotificationVisibility::Param_Visibility' has a wrong offset!");
+static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, Visibility_0) == 0x000000, "Member 'FortReplayNotification_C_SetNotificationVisibility::Visibility_0' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'FortReplayNotification_C_SetNotificationVisibility::CallFunc_GetText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, CallFunc_IsVisibilityNotification_IsVisibilityNotification) == 0x000020, "Member 'FortReplayNotification_C_SetNotificationVisibility::CallFunc_IsVisibilityNotification_IsVisibilityNotification' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, CallFunc_GetVisibility_ReturnValue) == 0x000021, "Member 'FortReplayNotification_C_SetNotificationVisibility::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
@@ -153,8 +153,8 @@ static_assert(offsetof(FortReplayNotification_C_SetNotificationVisibility, CallF
 struct FortReplayNotification_C_IsVisibilityNotification final
 {
 public:
-	class FText                                   Param_Notification;                                // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Param_IsVisibilityNotification;                    // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   Notification_0;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          IsVisibilityNotification_0;                        // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -168,8 +168,8 @@ public:
 };
 static_assert(alignof(FortReplayNotification_C_IsVisibilityNotification) == 0x000008, "Wrong alignment on FortReplayNotification_C_IsVisibilityNotification");
 static_assert(sizeof(FortReplayNotification_C_IsVisibilityNotification) == 0x000060, "Wrong size on FortReplayNotification_C_IsVisibilityNotification");
-static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, Param_Notification) == 0x000000, "Member 'FortReplayNotification_C_IsVisibilityNotification::Param_Notification' has a wrong offset!");
-static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, Param_IsVisibilityNotification) == 0x000018, "Member 'FortReplayNotification_C_IsVisibilityNotification::Param_IsVisibilityNotification' has a wrong offset!");
+static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, Notification_0) == 0x000000, "Member 'FortReplayNotification_C_IsVisibilityNotification::Notification_0' has a wrong offset!");
+static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, IsVisibilityNotification_0) == 0x000018, "Member 'FortReplayNotification_C_IsVisibilityNotification::IsVisibilityNotification_0' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'FortReplayNotification_C_IsVisibilityNotification::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'FortReplayNotification_C_IsVisibilityNotification::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'FortReplayNotification_C_IsVisibilityNotification::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -184,7 +184,7 @@ static_assert(offsetof(FortReplayNotification_C_IsVisibilityNotification, CallFu
 struct FortReplayNotification_C_GetVisibilityText final
 {
 public:
-	EHudVisibilityState                           Param_Visibility;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHudVisibilityState                           Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0008(0x0018)(Parm, OutParm)
 	EHudVisibilityState                           Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -193,7 +193,7 @@ public:
 };
 static_assert(alignof(FortReplayNotification_C_GetVisibilityText) == 0x000008, "Wrong alignment on FortReplayNotification_C_GetVisibilityText");
 static_assert(sizeof(FortReplayNotification_C_GetVisibilityText) == 0x000040, "Wrong size on FortReplayNotification_C_GetVisibilityText");
-static_assert(offsetof(FortReplayNotification_C_GetVisibilityText, Param_Visibility) == 0x000000, "Member 'FortReplayNotification_C_GetVisibilityText::Param_Visibility' has a wrong offset!");
+static_assert(offsetof(FortReplayNotification_C_GetVisibilityText, Visibility_0) == 0x000000, "Member 'FortReplayNotification_C_GetVisibilityText::Visibility_0' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_GetVisibilityText, Text) == 0x000008, "Member 'FortReplayNotification_C_GetVisibilityText::Text' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_GetVisibilityText, Temp_byte_Variable) == 0x000020, "Member 'FortReplayNotification_C_GetVisibilityText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FortReplayNotification_C_GetVisibilityText, K2Node_Select_Default) == 0x000028, "Member 'FortReplayNotification_C_GetVisibilityText::K2Node_Select_Default' has a wrong offset!");

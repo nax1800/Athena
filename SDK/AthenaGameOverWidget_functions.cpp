@@ -37,6 +37,60 @@ void UAthenaGameOverWidget_C::ExecuteUbergraph_AthenaGameOverWidget(int32 EntryP
 }
 
 
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.SpectatorStreamingChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSpectatorStreaming                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaGameOverWidget_C::SpectatorStreamingChanged(bool bSpectatorStreaming)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "SpectatorStreamingChanged");
+
+	Params::AthenaGameOverWidget_C_SpectatorStreamingChanged Parms{};
+
+	Parms.bSpectatorStreaming = bSpectatorStreaming;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.OnToggleFullscreenMap_Bind
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bFullscreenMapVisible                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaGameOverWidget_C::OnToggleFullscreenMap_Bind(bool bFullscreenMapVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "OnToggleFullscreenMap_Bind");
+
+	Params::AthenaGameOverWidget_C_OnToggleFullscreenMap_Bind Parms{};
+
+	Parms.bFullscreenMapVisible = bFullscreenMapVisible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaGameOverWidget_C::OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaGameOverWidget.AthenaGameOverWidget_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -108,20 +162,6 @@ void UAthenaGameOverWidget_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("AthenaGameOverWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaGameOverWidget.AthenaGameOverWidget_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UAthenaGameOverWidget_C::OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaGameOverWidget_C", "OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -401,7 +441,7 @@ void UAthenaGameOverWidget_C::SetKillersName(struct FFortPlayerDeathReport& Fort
 
 
 // Function AthenaGameOverWidget.AthenaGameOverWidget_C.CanFollowNextOrPreviousTeammate
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
@@ -460,27 +500,6 @@ void UAthenaGameOverWidget_C::InGameMatchmakingComplete(bool Success)
 }
 
 
-// Function AthenaGameOverWidget.AthenaGameOverWidget_C.Handle_ToggleMap
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaGameOverWidget_C::Handle_ToggleMap(bool* Passthrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaGameOverWidget_C", "Handle_ToggleMap");
-
-	Params::AthenaGameOverWidget_C_Handle_ToggleMap Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
-}
-
-
 // Function AthenaGameOverWidget.AthenaGameOverWidget_C.Handle_Matchmake
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -515,6 +534,101 @@ void UAthenaGameOverWidget_C::Handle_CancelMatchmaking(bool* Passthrough)
 		Func = Class->GetFunction("AthenaGameOverWidget_C", "Handle_CancelMatchmaking");
 
 	Params::AthenaGameOverWidget_C_Handle_CancelMatchmaking Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.OnWinningScoreDetermined
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Score                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaGameOverWidget_C::OnWinningScoreDetermined(int32 Score)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "OnWinningScoreDetermined");
+
+	Params::AthenaGameOverWidget_C_OnWinningScoreDetermined Parms{};
+
+	Parms.Score = Score;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.OnPlayerLost
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EEndOfMatchReason                       LostReason                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaGameOverWidget_C::OnPlayerLost(EEndOfMatchReason LostReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "OnPlayerLost");
+
+	Params::AthenaGameOverWidget_C_OnPlayerLost Parms{};
+
+	Parms.LostReason = LostReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.FocusPlayerSwitcher
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaGameOverWidget_C::FocusPlayerSwitcher()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "FocusPlayerSwitcher");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.CanFollowSpecialActor
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UAthenaGameOverWidget_C::CanFollowSpecialActor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "CanFollowSpecialActor");
+
+	Params::AthenaGameOverWidget_C_CanFollowSpecialActor Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaGameOverWidget.AthenaGameOverWidget_C.Handle_SpectateSpecialActor
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaGameOverWidget_C::Handle_SpectateSpecialActor(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaGameOverWidget_C", "Handle_SpectateSpecialActor");
+
+	Params::AthenaGameOverWidget_C_Handle_SpectateSpecialActor Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

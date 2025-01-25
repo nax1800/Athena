@@ -37,17 +37,23 @@ void UAthenaLocalPlayerHitPointInfo_C::ExecuteUbergraph_AthenaLocalPlayerHitPoin
 }
 
 
-// Function AthenaLocalPlayerHitPointInfo.AthenaLocalPlayerHitPointInfo_C.Construct
+// Function AthenaLocalPlayerHitPointInfo.AthenaLocalPlayerHitPointInfo_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaLocalPlayerHitPointInfo_C::Construct()
+void UAthenaLocalPlayerHitPointInfo_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLocalPlayerHitPointInfo_C", "Construct");
+		Func = Class->GetFunction("AthenaLocalPlayerHitPointInfo_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::AthenaLocalPlayerHitPointInfo_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

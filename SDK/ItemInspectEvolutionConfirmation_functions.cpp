@@ -34,9 +34,9 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionConfirm__DelegateSignature(
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionHovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Param_Item)
+void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -45,7 +45,7 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSign
 
 	Params::ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -54,9 +54,9 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSign
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionUnhovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Param_Item)
+void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65,7 +65,7 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSi
 
 	Params::ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -74,10 +74,10 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSi
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionSelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   RecipeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Param_Item, int32 RecipeIndex)
+void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Item_0, int32 RecipeIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,7 +86,7 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected__DelegateSig
 
 	Params::ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 	Parms.RecipeIndex = RecipeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -150,9 +150,9 @@ void UItemInspectEvolutionConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_Co
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetItemToRepresent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolutionConfirmation_C::SetItemToRepresent(class UFortItem* Param_Item)
+void UItemInspectEvolutionConfirmation_C::SetItemToRepresent(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -161,7 +161,7 @@ void UItemInspectEvolutionConfirmation_C::SetItemToRepresent(class UFortItem* Pa
 
 	Params::ItemInspectEvolutionConfirmation_C_SetItemToRepresent Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -192,10 +192,10 @@ void UItemInspectEvolutionConfirmation_C::SetEvolutionToRepresent(int32 Evolutio
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   RecipeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UFortItem* Param_Item, int32 RecipeIndex)
+void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UFortItem* Item_0, int32 RecipeIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -204,7 +204,7 @@ void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UF
 
 	Params::ItemInspectEvolutionConfirmation_C_HandleEvolutionOptionSelected Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 	Parms.RecipeIndex = RecipeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);

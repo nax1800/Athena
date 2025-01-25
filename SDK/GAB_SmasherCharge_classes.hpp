@@ -10,74 +10,74 @@
 
 #include "Basic.hpp"
 
+#include "AIModule_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "GameplayTags_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "AIModule_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherCharge.GAB_SmasherCharge_C
-// 0x01C0 (0x0CA8 - 0x0AE8)
+// 0x01D8 (0x0AD0 - 0x08F8)
 class UGAB_SmasherCharge_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class ASmasherPawn_C*                         SmasherPawn;                                       // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 BumpedActor;                                       // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BumpedActorNormal;                                 // 0x0B08(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BumpedActorImpactPoint;                            // 0x0B14(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BumpedActorImpactBufferHeight;                     // 0x0B20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BumpedActorSmasherVelocity;                        // 0x0B24(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BumpedActorExceptionZNormalThreshold;              // 0x0B30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Debug;                                             // 0x0B34(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          ChargingSpeedReached;                              // 0x0B35(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          LastCheckWasSlow;                                  // 0x0B36(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SmasherFaceplanted;                                // 0x0B37(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          WaitingForMeleeSwingTargetSelection;               // 0x0B38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          WaitingForChargeDamageTargetSelection;             // 0x0B39(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          ChargeDamageTargetSelectionDamagedSomething;       // 0x0B3A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          AbilityShouldEndASAP;                              // 0x0B3B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          AbilityEndingNow;                                  // 0x0B3C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B3D[0x3];                                      // 0x0B3D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         ActorsDamagedBySmasherCharge;                      // 0x0B40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	class UClass*                                 GE_SmasherReachedChargeSpeed;                      // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_SmasherFaceplant;                               // 0x0B58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EC_NPCAbilityAttackMeleeCharge;                    // 0x0B60(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         MinYawAngleToLaunchPawnsFromSmasherCharge;         // 0x0B68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PitchAngleToLaunchPawnsFromSmasherCharge;          // 0x0B6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SmasherChargeLaunchPawnVelocity;                   // 0x0B70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ChargeTimeoutTime;                                 // 0x0B74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CachedArrayOfHitActors;                            // 0x0B78(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          bTryingToPlayMeleeSwing;                           // 0x0B88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bCancelledMontage;                                 // 0x0B89(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B8A[0x2];                                      // 0x0B8A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SmasherChargeRotationRate;                         // 0x0B8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 PreviouslyBumpedActor;                             // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 LastDamagedActor;                                  // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ChargeMovementReachedGoalActor;                    // 0x0BA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          ChargeHitGoalActor;                                // 0x0BA1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BA2[0x2];                                      // 0x0BA2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FaceplantCheckTime;                                // 0x0BA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastCheckWasSlowTime;                              // 0x0BA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SmasherFaceplantedTime;                            // 0x0BAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackMeleeBump;     // 0x0BB0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_NPCBehaviorProbibitsAbilityAttackAny;           // 0x0BD0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                           GC_GameplayCueNPCSmasherCharge;                    // 0x0BF0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FFortFeedbackHandle                    SmasherChargingFeedback;                           // 0x0BF8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FGameplayTagContainer                  TC_NPCBehaviorDBNO;                                // 0x0C10(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_GameplayStatusDBNO;                             // 0x0C30(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AActor*                                 FaceplantActorIAmStandingOn;                       // 0x0C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAbilityTask_MoveAI*                ChargeMoveLocation;                                // 0x0C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAbilityTask_MoveAI*                ChargeMove;                                        // 0x0C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_ConstructorBullrushing;                         // 0x0C68(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         OverlappingFortPawns;                              // 0x0C88(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AActor*>                         OverlappingBuildingActors;                         // 0x0C98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class ASmasherPawn_C*                         SmasherPawn;                                       // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 BumpedActor;                                       // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BumpedActorNormal;                                 // 0x0910(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BumpedActorImpactPoint;                            // 0x091C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BumpedActorImpactBufferHeight;                     // 0x0928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BumpedActorSmasherVelocity;                        // 0x092C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BumpedActorExceptionZNormalThreshold;              // 0x0938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Debug;                                             // 0x093C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ChargingSpeedReached;                              // 0x093D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          LastCheckWasSlow;                                  // 0x093E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SmasherFaceplanted;                                // 0x093F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          WaitingForMeleeSwingTargetSelection;               // 0x0940(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          WaitingForChargeDamageTargetSelection;             // 0x0941(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ChargeDamageTargetSelectionDamagedSomething;       // 0x0942(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          AbilityShouldEndASAP;                              // 0x0943(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          AbilityEndingNow;                                  // 0x0944(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_945[0x3];                                      // 0x0945(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         ActorsDamagedBySmasherCharge;                      // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UClass*                                 GE_SmasherReachedChargeSpeed;                      // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_SmasherFaceplant;                               // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EC_NPCAbilityAttackMeleeCharge;                    // 0x0968(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         MinYawAngleToLaunchPawnsFromSmasherCharge;         // 0x0970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PitchAngleToLaunchPawnsFromSmasherCharge;          // 0x0974(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SmasherChargeLaunchPawnVelocity;                   // 0x0978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ChargeTimeoutTime;                                 // 0x097C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CachedArrayOfHitActors;                            // 0x0980(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          bTryingToPlayMeleeSwing;                           // 0x0990(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bCancelledMontage;                                 // 0x0991(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_992[0x2];                                      // 0x0992(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SmasherChargeRotationRate;                         // 0x0994(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 PreviouslyBumpedActor;                             // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 LastDamagedActor;                                  // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ChargeMovementReachedGoalActor;                    // 0x09A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ChargeHitGoalActor;                                // 0x09A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9AA[0x2];                                      // 0x09AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FaceplantCheckTime;                                // 0x09AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastCheckWasSlowTime;                              // 0x09B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SmasherFaceplantedTime;                            // 0x09B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackMeleeBump;     // 0x09B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_NPCBehaviorProbibitsAbilityAttackAny;           // 0x09D8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           GC_GameplayCueNPCSmasherCharge;                    // 0x09F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FFortFeedbackHandle                    SmasherChargingFeedback;                           // 0x0A00(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FGameplayTagContainer                  TC_NPCBehaviorDBNO;                                // 0x0A18(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_GameplayStatusDBNO;                             // 0x0A38(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AActor*                                 FaceplantActorIAmStandingOn;                       // 0x0A58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAbilityTask_MoveAI*                ChargeMoveLocation;                                // 0x0A60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAbilityTask_MoveAI*                ChargeMove;                                        // 0x0A68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ConstructorBullrushing;                         // 0x0A70(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         OverlappingFortPawns;                              // 0x0A90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AActor*>                         OverlappingBuildingActors;                         // 0x0AA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FGameplayTagContainer                  T_KnockbackImmune;                                 // 0x0AB0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherCharge(int32 EntryPoint);
@@ -140,55 +140,56 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherCharge_C) == 0x000008, "Wrong alignment on UGAB_SmasherCharge_C");
-static_assert(sizeof(UGAB_SmasherCharge_C) == 0x000CA8, "Wrong size on UGAB_SmasherCharge_C");
-static_assert(offsetof(UGAB_SmasherCharge_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_SmasherCharge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherPawn) == 0x000AF8, "Member 'UGAB_SmasherCharge_C::SmasherPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActor) == 0x000B00, "Member 'UGAB_SmasherCharge_C::BumpedActor' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorNormal) == 0x000B08, "Member 'UGAB_SmasherCharge_C::BumpedActorNormal' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorImpactPoint) == 0x000B14, "Member 'UGAB_SmasherCharge_C::BumpedActorImpactPoint' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorImpactBufferHeight) == 0x000B20, "Member 'UGAB_SmasherCharge_C::BumpedActorImpactBufferHeight' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorSmasherVelocity) == 0x000B24, "Member 'UGAB_SmasherCharge_C::BumpedActorSmasherVelocity' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorExceptionZNormalThreshold) == 0x000B30, "Member 'UGAB_SmasherCharge_C::BumpedActorExceptionZNormalThreshold' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, Debug) == 0x000B34, "Member 'UGAB_SmasherCharge_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargingSpeedReached) == 0x000B35, "Member 'UGAB_SmasherCharge_C::ChargingSpeedReached' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, LastCheckWasSlow) == 0x000B36, "Member 'UGAB_SmasherCharge_C::LastCheckWasSlow' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherFaceplanted) == 0x000B37, "Member 'UGAB_SmasherCharge_C::SmasherFaceplanted' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, WaitingForMeleeSwingTargetSelection) == 0x000B38, "Member 'UGAB_SmasherCharge_C::WaitingForMeleeSwingTargetSelection' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, WaitingForChargeDamageTargetSelection) == 0x000B39, "Member 'UGAB_SmasherCharge_C::WaitingForChargeDamageTargetSelection' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeDamageTargetSelectionDamagedSomething) == 0x000B3A, "Member 'UGAB_SmasherCharge_C::ChargeDamageTargetSelectionDamagedSomething' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, AbilityShouldEndASAP) == 0x000B3B, "Member 'UGAB_SmasherCharge_C::AbilityShouldEndASAP' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, AbilityEndingNow) == 0x000B3C, "Member 'UGAB_SmasherCharge_C::AbilityEndingNow' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ActorsDamagedBySmasherCharge) == 0x000B40, "Member 'UGAB_SmasherCharge_C::ActorsDamagedBySmasherCharge' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, GE_SmasherReachedChargeSpeed) == 0x000B50, "Member 'UGAB_SmasherCharge_C::GE_SmasherReachedChargeSpeed' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, GE_SmasherFaceplant) == 0x000B58, "Member 'UGAB_SmasherCharge_C::GE_SmasherFaceplant' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, EC_NPCAbilityAttackMeleeCharge) == 0x000B60, "Member 'UGAB_SmasherCharge_C::EC_NPCAbilityAttackMeleeCharge' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, MinYawAngleToLaunchPawnsFromSmasherCharge) == 0x000B68, "Member 'UGAB_SmasherCharge_C::MinYawAngleToLaunchPawnsFromSmasherCharge' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, PitchAngleToLaunchPawnsFromSmasherCharge) == 0x000B6C, "Member 'UGAB_SmasherCharge_C::PitchAngleToLaunchPawnsFromSmasherCharge' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargeLaunchPawnVelocity) == 0x000B70, "Member 'UGAB_SmasherCharge_C::SmasherChargeLaunchPawnVelocity' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeTimeoutTime) == 0x000B74, "Member 'UGAB_SmasherCharge_C::ChargeTimeoutTime' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, CachedArrayOfHitActors) == 0x000B78, "Member 'UGAB_SmasherCharge_C::CachedArrayOfHitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, bTryingToPlayMeleeSwing) == 0x000B88, "Member 'UGAB_SmasherCharge_C::bTryingToPlayMeleeSwing' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, bCancelledMontage) == 0x000B89, "Member 'UGAB_SmasherCharge_C::bCancelledMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargeRotationRate) == 0x000B8C, "Member 'UGAB_SmasherCharge_C::SmasherChargeRotationRate' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, PreviouslyBumpedActor) == 0x000B90, "Member 'UGAB_SmasherCharge_C::PreviouslyBumpedActor' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, LastDamagedActor) == 0x000B98, "Member 'UGAB_SmasherCharge_C::LastDamagedActor' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMovementReachedGoalActor) == 0x000BA0, "Member 'UGAB_SmasherCharge_C::ChargeMovementReachedGoalActor' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeHitGoalActor) == 0x000BA1, "Member 'UGAB_SmasherCharge_C::ChargeHitGoalActor' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, FaceplantCheckTime) == 0x000BA4, "Member 'UGAB_SmasherCharge_C::FaceplantCheckTime' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, LastCheckWasSlowTime) == 0x000BA8, "Member 'UGAB_SmasherCharge_C::LastCheckWasSlowTime' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherFaceplantedTime) == 0x000BAC, "Member 'UGAB_SmasherCharge_C::SmasherFaceplantedTime' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorProhibitsAbilityAttackMeleeBump) == 0x000BB0, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorProhibitsAbilityAttackMeleeBump' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorProbibitsAbilityAttackAny) == 0x000BD0, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorProbibitsAbilityAttackAny' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, GC_GameplayCueNPCSmasherCharge) == 0x000BF0, "Member 'UGAB_SmasherCharge_C::GC_GameplayCueNPCSmasherCharge' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargingFeedback) == 0x000BF8, "Member 'UGAB_SmasherCharge_C::SmasherChargingFeedback' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorDBNO) == 0x000C10, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorDBNO' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, TC_GameplayStatusDBNO) == 0x000C30, "Member 'UGAB_SmasherCharge_C::TC_GameplayStatusDBNO' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, FaceplantActorIAmStandingOn) == 0x000C50, "Member 'UGAB_SmasherCharge_C::FaceplantActorIAmStandingOn' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMoveLocation) == 0x000C58, "Member 'UGAB_SmasherCharge_C::ChargeMoveLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMove) == 0x000C60, "Member 'UGAB_SmasherCharge_C::ChargeMove' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, TC_ConstructorBullrushing) == 0x000C68, "Member 'UGAB_SmasherCharge_C::TC_ConstructorBullrushing' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, OverlappingFortPawns) == 0x000C88, "Member 'UGAB_SmasherCharge_C::OverlappingFortPawns' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherCharge_C, OverlappingBuildingActors) == 0x000C98, "Member 'UGAB_SmasherCharge_C::OverlappingBuildingActors' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherCharge_C) == 0x000AD0, "Wrong size on UGAB_SmasherCharge_C");
+static_assert(offsetof(UGAB_SmasherCharge_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_SmasherCharge_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherPawn) == 0x000900, "Member 'UGAB_SmasherCharge_C::SmasherPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActor) == 0x000908, "Member 'UGAB_SmasherCharge_C::BumpedActor' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorNormal) == 0x000910, "Member 'UGAB_SmasherCharge_C::BumpedActorNormal' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorImpactPoint) == 0x00091C, "Member 'UGAB_SmasherCharge_C::BumpedActorImpactPoint' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorImpactBufferHeight) == 0x000928, "Member 'UGAB_SmasherCharge_C::BumpedActorImpactBufferHeight' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorSmasherVelocity) == 0x00092C, "Member 'UGAB_SmasherCharge_C::BumpedActorSmasherVelocity' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, BumpedActorExceptionZNormalThreshold) == 0x000938, "Member 'UGAB_SmasherCharge_C::BumpedActorExceptionZNormalThreshold' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, Debug) == 0x00093C, "Member 'UGAB_SmasherCharge_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargingSpeedReached) == 0x00093D, "Member 'UGAB_SmasherCharge_C::ChargingSpeedReached' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, LastCheckWasSlow) == 0x00093E, "Member 'UGAB_SmasherCharge_C::LastCheckWasSlow' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherFaceplanted) == 0x00093F, "Member 'UGAB_SmasherCharge_C::SmasherFaceplanted' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, WaitingForMeleeSwingTargetSelection) == 0x000940, "Member 'UGAB_SmasherCharge_C::WaitingForMeleeSwingTargetSelection' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, WaitingForChargeDamageTargetSelection) == 0x000941, "Member 'UGAB_SmasherCharge_C::WaitingForChargeDamageTargetSelection' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeDamageTargetSelectionDamagedSomething) == 0x000942, "Member 'UGAB_SmasherCharge_C::ChargeDamageTargetSelectionDamagedSomething' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, AbilityShouldEndASAP) == 0x000943, "Member 'UGAB_SmasherCharge_C::AbilityShouldEndASAP' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, AbilityEndingNow) == 0x000944, "Member 'UGAB_SmasherCharge_C::AbilityEndingNow' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ActorsDamagedBySmasherCharge) == 0x000948, "Member 'UGAB_SmasherCharge_C::ActorsDamagedBySmasherCharge' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, GE_SmasherReachedChargeSpeed) == 0x000958, "Member 'UGAB_SmasherCharge_C::GE_SmasherReachedChargeSpeed' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, GE_SmasherFaceplant) == 0x000960, "Member 'UGAB_SmasherCharge_C::GE_SmasherFaceplant' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, EC_NPCAbilityAttackMeleeCharge) == 0x000968, "Member 'UGAB_SmasherCharge_C::EC_NPCAbilityAttackMeleeCharge' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, MinYawAngleToLaunchPawnsFromSmasherCharge) == 0x000970, "Member 'UGAB_SmasherCharge_C::MinYawAngleToLaunchPawnsFromSmasherCharge' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, PitchAngleToLaunchPawnsFromSmasherCharge) == 0x000974, "Member 'UGAB_SmasherCharge_C::PitchAngleToLaunchPawnsFromSmasherCharge' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargeLaunchPawnVelocity) == 0x000978, "Member 'UGAB_SmasherCharge_C::SmasherChargeLaunchPawnVelocity' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeTimeoutTime) == 0x00097C, "Member 'UGAB_SmasherCharge_C::ChargeTimeoutTime' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, CachedArrayOfHitActors) == 0x000980, "Member 'UGAB_SmasherCharge_C::CachedArrayOfHitActors' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, bTryingToPlayMeleeSwing) == 0x000990, "Member 'UGAB_SmasherCharge_C::bTryingToPlayMeleeSwing' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, bCancelledMontage) == 0x000991, "Member 'UGAB_SmasherCharge_C::bCancelledMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargeRotationRate) == 0x000994, "Member 'UGAB_SmasherCharge_C::SmasherChargeRotationRate' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, PreviouslyBumpedActor) == 0x000998, "Member 'UGAB_SmasherCharge_C::PreviouslyBumpedActor' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, LastDamagedActor) == 0x0009A0, "Member 'UGAB_SmasherCharge_C::LastDamagedActor' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMovementReachedGoalActor) == 0x0009A8, "Member 'UGAB_SmasherCharge_C::ChargeMovementReachedGoalActor' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeHitGoalActor) == 0x0009A9, "Member 'UGAB_SmasherCharge_C::ChargeHitGoalActor' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, FaceplantCheckTime) == 0x0009AC, "Member 'UGAB_SmasherCharge_C::FaceplantCheckTime' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, LastCheckWasSlowTime) == 0x0009B0, "Member 'UGAB_SmasherCharge_C::LastCheckWasSlowTime' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherFaceplantedTime) == 0x0009B4, "Member 'UGAB_SmasherCharge_C::SmasherFaceplantedTime' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorProhibitsAbilityAttackMeleeBump) == 0x0009B8, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorProhibitsAbilityAttackMeleeBump' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorProbibitsAbilityAttackAny) == 0x0009D8, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorProbibitsAbilityAttackAny' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, GC_GameplayCueNPCSmasherCharge) == 0x0009F8, "Member 'UGAB_SmasherCharge_C::GC_GameplayCueNPCSmasherCharge' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, SmasherChargingFeedback) == 0x000A00, "Member 'UGAB_SmasherCharge_C::SmasherChargingFeedback' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, TC_NPCBehaviorDBNO) == 0x000A18, "Member 'UGAB_SmasherCharge_C::TC_NPCBehaviorDBNO' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, TC_GameplayStatusDBNO) == 0x000A38, "Member 'UGAB_SmasherCharge_C::TC_GameplayStatusDBNO' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, FaceplantActorIAmStandingOn) == 0x000A58, "Member 'UGAB_SmasherCharge_C::FaceplantActorIAmStandingOn' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMoveLocation) == 0x000A60, "Member 'UGAB_SmasherCharge_C::ChargeMoveLocation' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, ChargeMove) == 0x000A68, "Member 'UGAB_SmasherCharge_C::ChargeMove' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, TC_ConstructorBullrushing) == 0x000A70, "Member 'UGAB_SmasherCharge_C::TC_ConstructorBullrushing' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, OverlappingFortPawns) == 0x000A90, "Member 'UGAB_SmasherCharge_C::OverlappingFortPawns' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, OverlappingBuildingActors) == 0x000AA0, "Member 'UGAB_SmasherCharge_C::OverlappingBuildingActors' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherCharge_C, T_KnockbackImmune) == 0x000AB0, "Member 'UGAB_SmasherCharge_C::T_KnockbackImmune' has a wrong offset!");
 
 }
 

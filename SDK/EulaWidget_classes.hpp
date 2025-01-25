@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass EulaWidget.EulaWidget_C
-// 0x0030 (0x0460 - 0x0430)
+// 0x0030 (0x0360 - 0x0330)
 class UEulaWidget_C final : public UFortEulaWidget
 {
 public:
-	class UHorizontalBox*                         HBox_Buttons;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone;                                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TitleText;                                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnEulaResponse;                                    // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          SelectedResponse;                                  // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UHorizontalBox*                         HBox_Buttons;                                      // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TitleText;                                         // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnEulaResponse;                                    // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          SelectedResponse;                                  // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void OnEulaResponse__DelegateSignature(bool Accepted);
@@ -41,12 +41,12 @@ public:
 	}
 };
 static_assert(alignof(UEulaWidget_C) == 0x000008, "Wrong alignment on UEulaWidget_C");
-static_assert(sizeof(UEulaWidget_C) == 0x000460, "Wrong size on UEulaWidget_C");
-static_assert(offsetof(UEulaWidget_C, HBox_Buttons) == 0x000430, "Member 'UEulaWidget_C::HBox_Buttons' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, SafeZone) == 0x000438, "Member 'UEulaWidget_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, TitleText) == 0x000440, "Member 'UEulaWidget_C::TitleText' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, OnEulaResponse) == 0x000448, "Member 'UEulaWidget_C::OnEulaResponse' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, SelectedResponse) == 0x000458, "Member 'UEulaWidget_C::SelectedResponse' has a wrong offset!");
+static_assert(sizeof(UEulaWidget_C) == 0x000360, "Wrong size on UEulaWidget_C");
+static_assert(offsetof(UEulaWidget_C, HBox_Buttons) == 0x000330, "Member 'UEulaWidget_C::HBox_Buttons' has a wrong offset!");
+static_assert(offsetof(UEulaWidget_C, SafeZone) == 0x000338, "Member 'UEulaWidget_C::SafeZone' has a wrong offset!");
+static_assert(offsetof(UEulaWidget_C, TitleText) == 0x000340, "Member 'UEulaWidget_C::TitleText' has a wrong offset!");
+static_assert(offsetof(UEulaWidget_C, OnEulaResponse) == 0x000348, "Member 'UEulaWidget_C::OnEulaResponse' has a wrong offset!");
+static_assert(offsetof(UEulaWidget_C, SelectedResponse) == 0x000358, "Member 'UEulaWidget_C::SelectedResponse' has a wrong offset!");
 
 }
 

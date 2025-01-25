@@ -10,24 +10,27 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Athena_PlayerController.Athena_PlayerController_C
-// 0x0010 (0x3520 - 0x3510)
+// 0x0018 (0x23D8 - 0x23C0)
 class AAthena_PlayerController_C final : public AFortPlayerControllerAthena
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3510(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        ListenerOverride;                                  // 0x3518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x23C0(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        ListenerOverride;                                  // 0x23C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        VictoryRoyaleAudio;                                // 0x23D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Athena_PlayerController(int32 EntryPoint);
-	void PlayWinEffects();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void PlayWinEffects(class APawn* FinisherPawn, const class UFortWeaponItemDefinition* FinishingWeapon, EDeathCause DeathCause);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 	bool IsLocalPlayerFriendsWithSquadMember(class AFortPlayerState* SquadMember);
@@ -43,9 +46,10 @@ public:
 	}
 };
 static_assert(alignof(AAthena_PlayerController_C) == 0x000008, "Wrong alignment on AAthena_PlayerController_C");
-static_assert(sizeof(AAthena_PlayerController_C) == 0x003520, "Wrong size on AAthena_PlayerController_C");
-static_assert(offsetof(AAthena_PlayerController_C, UberGraphFrame) == 0x003510, "Member 'AAthena_PlayerController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, ListenerOverride) == 0x003518, "Member 'AAthena_PlayerController_C::ListenerOverride' has a wrong offset!");
+static_assert(sizeof(AAthena_PlayerController_C) == 0x0023D8, "Wrong size on AAthena_PlayerController_C");
+static_assert(offsetof(AAthena_PlayerController_C, UberGraphFrame) == 0x0023C0, "Member 'AAthena_PlayerController_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AAthena_PlayerController_C, ListenerOverride) == 0x0023C8, "Member 'AAthena_PlayerController_C::ListenerOverride' has a wrong offset!");
+static_assert(offsetof(AAthena_PlayerController_C, VictoryRoyaleAudio) == 0x0023D0, "Member 'AAthena_PlayerController_C::VictoryRoyaleAudio' has a wrong offset!");
 
 }
 

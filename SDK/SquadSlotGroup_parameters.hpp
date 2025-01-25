@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -183,7 +183,7 @@ static_assert(offsetof(SquadSlotGroup_C_SelectSquadSlot, CallFunc_Less_IntInt_Re
 struct SquadSlotGroup_C_DarkenAllSlotsExceptIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -210,7 +210,7 @@ public:
 };
 static_assert(alignof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex) == 0x000008, "Wrong alignment on SquadSlotGroup_C_DarkenAllSlotsExceptIndex");
 static_assert(sizeof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex) == 0x000060, "Wrong size on SquadSlotGroup_C_DarkenAllSlotsExceptIndex");
-static_assert(offsetof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex, Param_Index) == 0x000000, "Member 'SquadSlotGroup_C_DarkenAllSlotsExceptIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex, Index_0) == 0x000000, "Member 'SquadSlotGroup_C_DarkenAllSlotsExceptIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'SquadSlotGroup_C_DarkenAllSlotsExceptIndex::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex, Temp_int_Variable) == 0x000008, "Member 'SquadSlotGroup_C_DarkenAllSlotsExceptIndex::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_DarkenAllSlotsExceptIndex, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x00000C, "Member 'SquadSlotGroup_C_DarkenAllSlotsExceptIndex::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");

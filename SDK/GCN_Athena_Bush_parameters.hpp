@@ -123,7 +123,7 @@ static_assert(offsetof(GCN_Athena_Bush_C_WhileActive, ReturnValue) == 0x0000C0, 
 struct GCN_Athena_Bush_C_Activated final
 {
 public:
-	class AActor*                                 Param_PlayerPawn;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 PlayerPawn_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0008(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPlayerPawnAthena*                  K2Node_DynamicCast_AsFort_Player_Pawn_Athena;      // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -133,7 +133,7 @@ public:
 };
 static_assert(alignof(GCN_Athena_Bush_C_Activated) == 0x000008, "Wrong alignment on GCN_Athena_Bush_C_Activated");
 static_assert(sizeof(GCN_Athena_Bush_C_Activated) == 0x0000B8, "Wrong size on GCN_Athena_Bush_C_Activated");
-static_assert(offsetof(GCN_Athena_Bush_C_Activated, Param_PlayerPawn) == 0x000000, "Member 'GCN_Athena_Bush_C_Activated::Param_PlayerPawn' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_Bush_C_Activated, PlayerPawn_0) == 0x000000, "Member 'GCN_Athena_Bush_C_Activated::PlayerPawn_0' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_Bush_C_Activated, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000008, "Member 'GCN_Athena_Bush_C_Activated::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_Bush_C_Activated, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000090, "Member 'GCN_Athena_Bush_C_Activated::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_Bush_C_Activated, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'GCN_Athena_Bush_C_Activated::K2Node_DynamicCast_bSuccess' has a wrong offset!");

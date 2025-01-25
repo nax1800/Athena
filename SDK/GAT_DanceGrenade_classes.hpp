@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAT_DanceGrenade.GAT_DanceGrenade_C
-// 0x0010 (0x0B10 - 0x0B00)
+// 0x0010 (0x0918 - 0x0908)
 class UGAT_DanceGrenade_C final : public UGAT_TriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_DanceGrenade_C;                 // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_DanceGrenade_C;                 // 0x0908(0x0008)(Transient, DuplicateTransient)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAT_DanceGrenade(int32 EntryPoint);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UGAT_DanceGrenade_C) == 0x000008, "Wrong alignment on UGAT_DanceGrenade_C");
-static_assert(sizeof(UGAT_DanceGrenade_C) == 0x000B10, "Wrong size on UGAT_DanceGrenade_C");
-static_assert(offsetof(UGAT_DanceGrenade_C, UberGraphFrame_GAT_DanceGrenade_C) == 0x000B00, "Member 'UGAT_DanceGrenade_C::UberGraphFrame_GAT_DanceGrenade_C' has a wrong offset!");
-static_assert(offsetof(UGAT_DanceGrenade_C, PlayerPawn) == 0x000B08, "Member 'UGAT_DanceGrenade_C::PlayerPawn' has a wrong offset!");
+static_assert(sizeof(UGAT_DanceGrenade_C) == 0x000918, "Wrong size on UGAT_DanceGrenade_C");
+static_assert(offsetof(UGAT_DanceGrenade_C, UberGraphFrame_GAT_DanceGrenade_C) == 0x000908, "Member 'UGAT_DanceGrenade_C::UberGraphFrame_GAT_DanceGrenade_C' has a wrong offset!");
+static_assert(offsetof(UGAT_DanceGrenade_C, PlayerPawn) == 0x000910, "Member 'UGAT_DanceGrenade_C::PlayerPawn' has a wrong offset!");
 
 }
 

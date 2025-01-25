@@ -10,29 +10,29 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuickbarSlot.QuickbarSlot_C
-// 0x0080 (0x0370 - 0x02F0)
+// 0x0088 (0x0370 - 0x02E8)
 class UQuickbarSlot_C : public UFortQuickBarSlotBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Selected;                                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimMaximize;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimMinimize;                                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _SizeBox__Item;                                    // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ItemLocked;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Selected;                                          // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimMaximize;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimMinimize;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               _SizeBox__Item;                                    // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ItemLocked;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaGadgetFuelGauge_C*               JetpackFuelGauge;                                  // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindTopCombo1;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindTopCombo2;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       QuickBarSlotInvalidationBox;                       // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,16 +49,16 @@ public:
 
 public:
 	void ExecuteUbergraph_QuickbarSlot(int32 EntryPoint);
-	void SetAnimatedBoxScaleFactor(float Param_AnimatedBoxScaleFactor);
+	void SetSlotSelected(bool bSelected);
+	void MinimizeSlot(bool bShouldSkipAnimation);
+	void MaximizeSlot(bool bShouldSkipAnimation);
+	void SetAnimatedBoxScaleFactor(float AnimatedBoxScaleFactor_0);
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void HandleMinimizeStarted();
 	void HandleMaximizeFinished();
 	void HandleMinimizeFinished();
 	void HandleMaximizeStarted();
-	void SetSelected(bool Param_Selected);
-	void Minimize(bool ShouldSkipAnimation);
-	void Maximize(bool ShouldSkipAnimation);
 	void InitializeCooldowns();
 	void OnCooldownStarted(EFortItemCooldownType CooldownType);
 	void OnCooldownStopped(EFortItemCooldownType CooldownType);
@@ -77,12 +77,13 @@ public:
 };
 static_assert(alignof(UQuickbarSlot_C) == 0x000008, "Wrong alignment on UQuickbarSlot_C");
 static_assert(sizeof(UQuickbarSlot_C) == 0x000370, "Wrong size on UQuickbarSlot_C");
-static_assert(offsetof(UQuickbarSlot_C, UberGraphFrame) == 0x0002F0, "Member 'UQuickbarSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, Selected) == 0x0002F8, "Member 'UQuickbarSlot_C::Selected' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, AnimMaximize) == 0x000300, "Member 'UQuickbarSlot_C::AnimMaximize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, AnimMinimize) == 0x000308, "Member 'UQuickbarSlot_C::AnimMinimize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, _SizeBox__Item) == 0x000310, "Member 'UQuickbarSlot_C::_SizeBox__Item' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, ItemLocked) == 0x000318, "Member 'UQuickbarSlot_C::ItemLocked' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, UberGraphFrame) == 0x0002E8, "Member 'UQuickbarSlot_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, Selected) == 0x0002F0, "Member 'UQuickbarSlot_C::Selected' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, AnimMaximize) == 0x0002F8, "Member 'UQuickbarSlot_C::AnimMaximize' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, AnimMinimize) == 0x000300, "Member 'UQuickbarSlot_C::AnimMinimize' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, _SizeBox__Item) == 0x000308, "Member 'UQuickbarSlot_C::_SizeBox__Item' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, ItemLocked) == 0x000310, "Member 'UQuickbarSlot_C::ItemLocked' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, JetpackFuelGauge) == 0x000318, "Member 'UQuickbarSlot_C::JetpackFuelGauge' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, KeybindTopCombo1) == 0x000320, "Member 'UQuickbarSlot_C::KeybindTopCombo1' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, KeybindTopCombo2) == 0x000328, "Member 'UQuickbarSlot_C::KeybindTopCombo2' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, QuickBarSlotInvalidationBox) == 0x000330, "Member 'UQuickbarSlot_C::QuickBarSlotInvalidationBox' has a wrong offset!");

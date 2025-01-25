@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -29,8 +29,8 @@ public:
 	float                                         PlayRate;                                          // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Param_Animation, float TotalDuration) const;
-	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Param_Animation) const;
+	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation_0, float TotalDuration) const;
+	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation_0) const;
 
 public:
 	static class UClass* StaticClass()

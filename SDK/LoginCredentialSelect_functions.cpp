@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function LoginCredentialSelect.LoginCredentialSelect_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ULoginCredentialSelect_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LoginCredentialSelect_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function LoginCredentialSelect.LoginCredentialSelect_C.ExecuteUbergraph_LoginCredentialSelect
 // ()
 // Parameters:
@@ -34,20 +48,6 @@ void ULoginCredentialSelect_C::ExecuteUbergraph_LoginCredentialSelect(int32 Entr
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LoginCredentialSelect.LoginCredentialSelect_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void ULoginCredentialSelect_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginCredentialSelect_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

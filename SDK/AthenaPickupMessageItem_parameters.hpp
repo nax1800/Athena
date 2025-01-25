@@ -10,8 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-
 
 namespace SDK::Params
 {
@@ -41,17 +39,17 @@ static_assert(sizeof(AthenaPickupMessageItem_C_OnStackSizeChanged) == 0x000004, 
 static_assert(offsetof(AthenaPickupMessageItem_C_OnStackSizeChanged, OldStackSize) == 0x000000, "Member 'AthenaPickupMessageItem_C_OnStackSizeChanged::OldStackSize' has a wrong offset!");
 
 // Function AthenaPickupMessageItem.AthenaPickupMessageItem_C.Setup
-// 0x0090 (0x0090 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct AthenaPickupMessageItem_C_Setup final
 {
 public:
-	class UFortItem*                              Param_Picked_Up_Item;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0008(0x0088)()
+	class UFortItem*                              Picked_Up_Item_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x0008(0x0028)(HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaPickupMessageItem_C_Setup) == 0x000008, "Wrong alignment on AthenaPickupMessageItem_C_Setup");
-static_assert(sizeof(AthenaPickupMessageItem_C_Setup) == 0x000090, "Wrong size on AthenaPickupMessageItem_C_Setup");
-static_assert(offsetof(AthenaPickupMessageItem_C_Setup, Param_Picked_Up_Item) == 0x000000, "Member 'AthenaPickupMessageItem_C_Setup::Param_Picked_Up_Item' has a wrong offset!");
-static_assert(offsetof(AthenaPickupMessageItem_C_Setup, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000008, "Member 'AthenaPickupMessageItem_C_Setup::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
+static_assert(sizeof(AthenaPickupMessageItem_C_Setup) == 0x000030, "Wrong size on AthenaPickupMessageItem_C_Setup");
+static_assert(offsetof(AthenaPickupMessageItem_C_Setup, Picked_Up_Item_0) == 0x000000, "Member 'AthenaPickupMessageItem_C_Setup::Picked_Up_Item_0' has a wrong offset!");
+static_assert(offsetof(AthenaPickupMessageItem_C_Setup, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000008, "Member 'AthenaPickupMessageItem_C_Setup::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
 
 }
 

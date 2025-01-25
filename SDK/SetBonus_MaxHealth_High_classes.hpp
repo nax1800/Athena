@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SetBonus_MaxHealth_High.SetBonus_MaxHealth_High_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class USetBonus_MaxHealth_High_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USetBonus_MaxHealth_High_C>();
 	}
 };
-static_assert(alignof(USetBonus_MaxHealth_High_C) == 0x000010, "Wrong alignment on USetBonus_MaxHealth_High_C");
-static_assert(sizeof(USetBonus_MaxHealth_High_C) == 0x000670, "Wrong size on USetBonus_MaxHealth_High_C");
+static_assert(alignof(USetBonus_MaxHealth_High_C) == 0x000008, "Wrong alignment on USetBonus_MaxHealth_High_C");
+static_assert(sizeof(USetBonus_MaxHealth_High_C) == 0x000638, "Wrong size on USetBonus_MaxHealth_High_C");
 
 }
 

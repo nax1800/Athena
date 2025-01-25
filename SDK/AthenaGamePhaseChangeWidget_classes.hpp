@@ -10,37 +10,37 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C
-// 0x0050 (0x0298 - 0x0248)
+// 0x0050 (0x0290 - 0x0240)
 class UAthenaGamePhaseChangeWidget_C final : public UAthenaHUDGamePhaseChangingBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       IconSlide;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       IconPulse;                                         // 0x0258(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ModeChanged;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           Content;                                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Feedback;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon;                                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MESSAGE;                                           // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TimeText;                                          // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bSimplifiedHUD;                                    // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       IconSlide;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IconPulse;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ModeChanged;                                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           Content;                                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         Feedback;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MESSAGE;                                           // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TimeText;                                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bSimplifiedHUD;                                    // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaGamePhaseChangeWidget(int32 EntryPoint);
 	void Construct();
 	void GamePhaseStepChanged(EAthenaGamePhaseStep Step);
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-	void UpdateMessaging(EAthenaGamePhaseStep Step, const class FText& Param_MESSAGE, const class FText& Param_TimeText);
+	void UpdateMessaging(EAthenaGamePhaseStep Step, const class FText& MESSAGE_0, const class FText& TimeText_0);
 	void PlayGamePhaseAlertSound(EAthenaGamePhaseStep Step);
 	void PlayIntroAnimation(EAthenaGamePhaseStep Step);
 	void SimplifiedAnimationFinished();
@@ -56,17 +56,17 @@ public:
 	}
 };
 static_assert(alignof(UAthenaGamePhaseChangeWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseChangeWidget_C");
-static_assert(sizeof(UAthenaGamePhaseChangeWidget_C) == 0x000298, "Wrong size on UAthenaGamePhaseChangeWidget_C");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, UberGraphFrame) == 0x000248, "Member 'UAthenaGamePhaseChangeWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconSlide) == 0x000250, "Member 'UAthenaGamePhaseChangeWidget_C::IconSlide' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconPulse) == 0x000258, "Member 'UAthenaGamePhaseChangeWidget_C::IconPulse' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, ModeChanged) == 0x000260, "Member 'UAthenaGamePhaseChangeWidget_C::ModeChanged' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Content) == 0x000268, "Member 'UAthenaGamePhaseChangeWidget_C::Content' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Feedback) == 0x000270, "Member 'UAthenaGamePhaseChangeWidget_C::Feedback' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Icon) == 0x000278, "Member 'UAthenaGamePhaseChangeWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, MESSAGE) == 0x000280, "Member 'UAthenaGamePhaseChangeWidget_C::MESSAGE' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, TimeText) == 0x000288, "Member 'UAthenaGamePhaseChangeWidget_C::TimeText' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, bSimplifiedHUD) == 0x000290, "Member 'UAthenaGamePhaseChangeWidget_C::bSimplifiedHUD' has a wrong offset!");
+static_assert(sizeof(UAthenaGamePhaseChangeWidget_C) == 0x000290, "Wrong size on UAthenaGamePhaseChangeWidget_C");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, UberGraphFrame) == 0x000240, "Member 'UAthenaGamePhaseChangeWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconSlide) == 0x000248, "Member 'UAthenaGamePhaseChangeWidget_C::IconSlide' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconPulse) == 0x000250, "Member 'UAthenaGamePhaseChangeWidget_C::IconPulse' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, ModeChanged) == 0x000258, "Member 'UAthenaGamePhaseChangeWidget_C::ModeChanged' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Content) == 0x000260, "Member 'UAthenaGamePhaseChangeWidget_C::Content' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Feedback) == 0x000268, "Member 'UAthenaGamePhaseChangeWidget_C::Feedback' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Icon) == 0x000270, "Member 'UAthenaGamePhaseChangeWidget_C::Icon' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, MESSAGE) == 0x000278, "Member 'UAthenaGamePhaseChangeWidget_C::MESSAGE' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, TimeText) == 0x000280, "Member 'UAthenaGamePhaseChangeWidget_C::TimeText' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, bSimplifiedHUD) == 0x000288, "Member 'UAthenaGamePhaseChangeWidget_C::bSimplifiedHUD' has a wrong offset!");
 
 }
 

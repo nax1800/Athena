@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_M1_DoorC.PBWA_M1_DoorC_C
-// 0x0000 (0x0EA0 - 0x0EA0)
+// 0x0000 (0x0C50 - 0x0C50)
 class APBWA_M1_DoorC_C final : public ABuildingWall
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(APBWA_M1_DoorC_C) == 0x000008, "Wrong alignment on APBWA_M1_DoorC_C");
-static_assert(sizeof(APBWA_M1_DoorC_C) == 0x000EA0, "Wrong size on APBWA_M1_DoorC_C");
+static_assert(sizeof(APBWA_M1_DoorC_C) == 0x000C50, "Wrong size on APBWA_M1_DoorC_C");
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ActiveModifiersPanelContent.ActiveModifiersPanelContent_C
-// 0x0010 (0x0228 - 0x0218)
+// 0x0010 (0x0220 - 0x0210)
 class UActiveModifiersPanelContent_C final : public UCommonUserWidget
 {
 public:
-	class UImage*                                 Image_0;                                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMissionDetailsModifierList_C*          MissionDetailsModifierList;                        // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMissionDetailsModifierList_C*          MissionDetailsModifierList;                        // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Init(TArray<class UFortGameplayModifierItemDefinition*>& InModifiers);
@@ -38,9 +38,9 @@ public:
 	}
 };
 static_assert(alignof(UActiveModifiersPanelContent_C) == 0x000008, "Wrong alignment on UActiveModifiersPanelContent_C");
-static_assert(sizeof(UActiveModifiersPanelContent_C) == 0x000228, "Wrong size on UActiveModifiersPanelContent_C");
-static_assert(offsetof(UActiveModifiersPanelContent_C, Image_0) == 0x000218, "Member 'UActiveModifiersPanelContent_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersPanelContent_C, MissionDetailsModifierList) == 0x000220, "Member 'UActiveModifiersPanelContent_C::MissionDetailsModifierList' has a wrong offset!");
+static_assert(sizeof(UActiveModifiersPanelContent_C) == 0x000220, "Wrong size on UActiveModifiersPanelContent_C");
+static_assert(offsetof(UActiveModifiersPanelContent_C, Image_0) == 0x000210, "Member 'UActiveModifiersPanelContent_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UActiveModifiersPanelContent_C, MissionDetailsModifierList) == 0x000218, "Member 'UActiveModifiersPanelContent_C::MissionDetailsModifierList' has a wrong offset!");
 
 }
 

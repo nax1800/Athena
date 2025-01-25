@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaMatchStatsScreen.AthenaMatchStatsScreen_C
-// 0x0018 (0x0408 - 0x03F0)
+// 0x0018 (0x0340 - 0x0328)
 class UAthenaMatchStatsScreen_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UAthenaMatchStatsPartial_C*             AthenaMatchStatsPartial;                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderTouchZone;                                   // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UAthenaMatchStatsPartial_C*             AthenaMatchStatsPartial;                           // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderTouchZone;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaMatchStatsScreen(int32 EntryPoint);
@@ -47,10 +47,10 @@ public:
 	}
 };
 static_assert(alignof(UAthenaMatchStatsScreen_C) == 0x000008, "Wrong alignment on UAthenaMatchStatsScreen_C");
-static_assert(sizeof(UAthenaMatchStatsScreen_C) == 0x000408, "Wrong size on UAthenaMatchStatsScreen_C");
-static_assert(offsetof(UAthenaMatchStatsScreen_C, UberGraphFrame) == 0x0003F0, "Member 'UAthenaMatchStatsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchStatsScreen_C, AthenaMatchStatsPartial) == 0x0003F8, "Member 'UAthenaMatchStatsScreen_C::AthenaMatchStatsPartial' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchStatsScreen_C, BorderTouchZone) == 0x000400, "Member 'UAthenaMatchStatsScreen_C::BorderTouchZone' has a wrong offset!");
+static_assert(sizeof(UAthenaMatchStatsScreen_C) == 0x000340, "Wrong size on UAthenaMatchStatsScreen_C");
+static_assert(offsetof(UAthenaMatchStatsScreen_C, UberGraphFrame) == 0x000328, "Member 'UAthenaMatchStatsScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchStatsScreen_C, AthenaMatchStatsPartial) == 0x000330, "Member 'UAthenaMatchStatsScreen_C::AthenaMatchStatsPartial' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchStatsScreen_C, BorderTouchZone) == 0x000338, "Member 'UAthenaMatchStatsScreen_C::BorderTouchZone' has a wrong offset!");
 
 }
 

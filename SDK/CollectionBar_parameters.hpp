@@ -36,7 +36,7 @@ static_assert(offsetof(CollectionBar_C_ExecuteUbergraph_CollectionBar, CallFunc_
 struct CollectionBar_C_GetProgressBarPercentage final
 {
 public:
-	int32                                         Param_AchievedCount;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         AchievedCount_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Percentage;                                        // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         BarRange;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -52,7 +52,7 @@ public:
 };
 static_assert(alignof(CollectionBar_C_GetProgressBarPercentage) == 0x000004, "Wrong alignment on CollectionBar_C_GetProgressBarPercentage");
 static_assert(sizeof(CollectionBar_C_GetProgressBarPercentage) == 0x000030, "Wrong size on CollectionBar_C_GetProgressBarPercentage");
-static_assert(offsetof(CollectionBar_C_GetProgressBarPercentage, Param_AchievedCount) == 0x000000, "Member 'CollectionBar_C_GetProgressBarPercentage::Param_AchievedCount' has a wrong offset!");
+static_assert(offsetof(CollectionBar_C_GetProgressBarPercentage, AchievedCount_0) == 0x000000, "Member 'CollectionBar_C_GetProgressBarPercentage::AchievedCount_0' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_GetProgressBarPercentage, Percentage) == 0x000004, "Member 'CollectionBar_C_GetProgressBarPercentage::Percentage' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_GetProgressBarPercentage, BarRange) == 0x000008, "Member 'CollectionBar_C_GetProgressBarPercentage::BarRange' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_GetProgressBarPercentage, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'CollectionBar_C_GetProgressBarPercentage::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -19,20 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Commando_InAPinch.GCN_Commando_InAPinch_C
-// 0x0020 (0x0460 - 0x0440)
+// 0x0010 (0x0430 - 0x0420)
 class AGCN_Commando_InAPinch_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystem*                        BulletAmbient;                                     // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Bullet_Effect;                                     // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               Bullet_Ambient;                                    // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GCN_Commando_InAPinch(int32 EntryPoint);
 	void K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void UserConstructionScript();
-
-	void OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const;
 
 public:
 	static class UClass* StaticClass()
@@ -44,11 +41,10 @@ public:
 		return GetDefaultObjImpl<AGCN_Commando_InAPinch_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_InAPinch_C) == 0x000010, "Wrong alignment on AGCN_Commando_InAPinch_C");
-static_assert(sizeof(AGCN_Commando_InAPinch_C) == 0x000460, "Wrong size on AGCN_Commando_InAPinch_C");
-static_assert(offsetof(AGCN_Commando_InAPinch_C, UberGraphFrame) == 0x000440, "Member 'AGCN_Commando_InAPinch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Commando_InAPinch_C, BulletAmbient) == 0x000448, "Member 'AGCN_Commando_InAPinch_C::BulletAmbient' has a wrong offset!");
-static_assert(offsetof(AGCN_Commando_InAPinch_C, Bullet_Effect) == 0x000450, "Member 'AGCN_Commando_InAPinch_C::Bullet_Effect' has a wrong offset!");
+static_assert(alignof(AGCN_Commando_InAPinch_C) == 0x000008, "Wrong alignment on AGCN_Commando_InAPinch_C");
+static_assert(sizeof(AGCN_Commando_InAPinch_C) == 0x000430, "Wrong size on AGCN_Commando_InAPinch_C");
+static_assert(offsetof(AGCN_Commando_InAPinch_C, UberGraphFrame) == 0x000420, "Member 'AGCN_Commando_InAPinch_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGCN_Commando_InAPinch_C, Bullet_Ambient) == 0x000428, "Member 'AGCN_Commando_InAPinch_C::Bullet_Ambient' has a wrong offset!");
 
 }
 

@@ -10,236 +10,240 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.ExecuteUbergraph_BP_Hex_PARENT
-// 0x05F8 (0x05F8 - 0x0000)
+// 0x0610 (0x0610 - 0x0000)
 struct BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTilePlayable_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_TeamPower;                      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_PersonalPower;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue123; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFrontEndCamera                               K2Node_CustomEvent_NewCamera;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFrontEndCamera                               K2Node_CustomEvent_OldCamera;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1234;      // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortQuestItem*                         CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTileValidForMarkedQuest_ReturnValue;    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasValidMissionData_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ATheaterCamera_Blueprint_C*>     CallFunc_GetAllActorsOfClass_OutActors;            // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTileHidden_ReturnValue;                 // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsTileLocked_ReturnValue;                 // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5E[0x2];                                       // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1;         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue1;         // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue1;           // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_93[0x5];                                       // 0x0093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName EventName, float EmitterTime, int32 ParticleTime, const struct FVector& Location, const struct FVector& Velocity, const struct FVector& Direction)> K2Node_CreateDelegate_OutputDelegate;              // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate1;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
-	class UObject*                                Temp_object_Variable;                              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue123;                // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               Temp_object_Variable1;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetTotalSkillPointsEarned_ReturnValue;    // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               Temp_object_Variable12;                            // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATheaterCamera_Blueprint_C*             CallFunc_Array_Get_Item;                           // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123;        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               K2Node_Select_Default;                             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1234;               // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color; // 0x0134(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid; // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0148(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0164(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue12345;              // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue123456;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 TeamPower, int32 PersonalPower)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0180(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x0190(0x0168)()
-	bool                                          CallFunc_GetTileMissionDetails_ReturnValue;        // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9[0x3];                                      // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x0300(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Get_Conning_Color_From_Difficulty_Value_Success; // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText; // 0x0318(0x0018)()
-	int32                                         CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue; // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_334[0x4];                                      // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1234567;            // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails1;    // 0x0340(0x0168)()
-	bool                                          CallFunc_GetTileMissionDetails_ReturnValue1;       // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A9[0x7];                                      // 0x04A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_EventName1;                     // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_EmitterTime1;                   // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location1;                      // 0x04BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Velocity1;                      // 0x04C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               K2Node_DynamicCast_AsTexture;                      // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_EventName;                      // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_EmitterTime;                    // 0x04F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ParticleTime;                   // 0x04F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location;                       // 0x04F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Velocity;                       // 0x0504(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Direction;                      // 0x0510(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x051C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51D[0x3];                                      // 0x051D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate1234;          // 0x0520(0x0010)(ZeroConstructor, NoDestructor)
-	class UMaterialInstanceDynamic*               K2Node_CustomEvent_Material_Instance_Dynamic;      // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_CustomEvent_Unique_Net_Id;                  // 0x0538(0x0028)(HasGetValueTypeHash)
-	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfoForPlayer_Result;          // 0x0560(0x0040)()
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue; // 0x05A8(0x0028)(HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue1;           // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue; // 0x05D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue; // 0x05E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTilePlayable_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFrontEndCamera                               K2Node_CustomEvent_NewCamera;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFrontEndCamera                               K2Node_CustomEvent_OldCamera;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortQuestItem*                         CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTileValidForMarkedQuest_ReturnValue;    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasValidMissionData_ReturnValue;          // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A[0x2];                                       // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTileHidden_ReturnValue;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsTileLocked_ReturnValue;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ATheaterCamera_Blueprint_C*>     CallFunc_GetAllActorsOfClass_OutActors;            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1;         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1;                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue1;         // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue1;           // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName EventName, float EmitterTime, int32 ParticleTime, const struct FVector& Location, const struct FVector& Velocity, const struct FVector& Direction)> K2Node_CreateDelegate_OutputDelegate;              // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate1;             // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue3;                  // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetTotalSkillPointsEarned_ReturnValue;    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ATheaterCamera_Blueprint_C*             CallFunc_Array_Get_Item;                           // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               Temp_object_Variable1;                             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               Temp_object_Variable2;                             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               K2Node_Select_Default;                             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue4;                  // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0150(0x0010)(ZeroConstructor, NoDestructor)
+	struct FLinearColor                           CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color; // 0x0160(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid; // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0180(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 TeamPower, int32 PersonalPower)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0190(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue6;                  // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x01A8(0x0168)()
+	bool                                          CallFunc_GetTileMissionDetails_ReturnValue;        // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0311(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_312[0x2];                                      // 0x0312(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x0318(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Get_Conning_Color_From_Difficulty_Value_Success; // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_329[0x7];                                      // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText; // 0x0330(0x0018)()
+	int32                                         CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue; // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34C[0x4];                                      // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue7;                  // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails1;    // 0x0358(0x0168)()
+	bool                                          CallFunc_GetTileMissionDetails_ReturnValue1;       // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_EventName1;                     // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_EmitterTime1;                   // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location1;                      // 0x04D4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Velocity1;                      // 0x04E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4EC[0x4];                                      // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               K2Node_DynamicCast_AsTexture;                      // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F9[0x7];                                      // 0x04F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_EventName;                      // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_EmitterTime;                    // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ParticleTime;                   // 0x050C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location;                       // 0x0510(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Velocity;                       // 0x051C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Direction;                      // 0x0528(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0534(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_535[0x3];                                      // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate4;             // 0x0538(0x0010)(ZeroConstructor, NoDestructor)
+	class UMaterialInstanceDynamic*               K2Node_CustomEvent_Material_Instance_Dynamic;      // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_CustomEvent_Unique_Net_Id;                  // 0x0550(0x0028)(HasGetValueTypeHash)
+	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfoForPlayer_Result;          // 0x0578(0x0040)()
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue1;           // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue; // 0x05C8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue; // 0x05D8(0x0028)(HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue; // 0x0600(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
-static_assert(sizeof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x0005F8, "Wrong size on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
+static_assert(sizeof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x000610, "Wrong size on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, EntryPoint) == 0x000000, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTilePlayable_ReturnValue) == 0x000004, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTilePlayable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_TeamPower) == 0x000008, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_TeamPower' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_PersonalPower) == 0x00000C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_PersonalPower' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000010, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000018, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue12) == 0x000020, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue123) == 0x000028, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_NewCamera) == 0x000030, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_NewCamera' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_OldCamera) == 0x000031, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_OldCamera' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000032, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000033, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000034, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue1234) == 0x000035, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest) == 0x000038, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_ReturnValue) == 0x000040, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_HasValidMissionData_ReturnValue) == 0x000041, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_HasValidMissionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue) == 0x000044, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetAllActorsOfClass_OutActors) == 0x000048, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileHidden_ReturnValue) == 0x00005C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileLocked_ReturnValue) == 0x00005D, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileLocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetCurrentInputType_ReturnValue) == 0x000070, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000071, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue1) == 0x000078, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue) == 0x000080, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue1) == 0x000088, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetCurrentInputType_ReturnValue1) == 0x000090, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetCurrentInputType_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_NotEqual_ByteByte_ReturnValue1) == 0x000091, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_NotEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue1) == 0x000092, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate) == 0x000098, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate1) == 0x0000A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable) == 0x0000B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Loaded) == 0x0000C0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_AsTexture_2D) == 0x0000C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue12) == 0x0000D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue123) == 0x0000E0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable1) == 0x0000E8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTotalSkillPointsEarned_ReturnValue) == 0x0000F0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTotalSkillPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable12) == 0x0000F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000100, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000104, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Array_Index_Variable) == 0x000108, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Get_Item) == 0x000110, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue123) == 0x000118, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_bool_Variable) == 0x00011C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_Select_Default) == 0x000120, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue1234) == 0x000128, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsValid_ReturnValue) == 0x000130, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color) == 0x000134, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid) == 0x000144, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate12) == 0x000148, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Loop_Counter_Variable) == 0x000158, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Less_IntInt_ReturnValue) == 0x00015C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Add_IntInt_ReturnValue) == 0x000160, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000164, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue12345) == 0x000170, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue123456) == 0x000178, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate123) == 0x000180, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails) == 0x000190, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue) == 0x0002F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0002FC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color) == 0x000300, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Success) == 0x000310, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Success' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText) == 0x000318, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue) == 0x000330, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue1234567) == 0x000338, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails1) == 0x000340, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue1) == 0x0004A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName1) == 0x0004B0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime1) == 0x0004B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location1) == 0x0004BC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity1) == 0x0004C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_AsTexture) == 0x0004D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_AsTexture' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_bSuccess1) == 0x0004E0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName) == 0x0004E8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime) == 0x0004F0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_ParticleTime) == 0x0004F4, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_ParticleTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location) == 0x0004F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity) == 0x000504, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Direction) == 0x000510, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Direction' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00051C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate1234) == 0x000520, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Material_Instance_Dynamic) == 0x000530, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Material_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Unique_Net_Id) == 0x000538, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Unique_Net_Id' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetHomeBaseInfoForPlayer_Result) == 0x000560, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetHomeBaseInfoForPlayer_Result' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_StringToName_ReturnValue) == 0x0005A0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue) == 0x0005A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_StringToName_ReturnValue1) == 0x0005D0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_StringToName_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue) == 0x0005D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue) == 0x0005E8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTilePlayable_ReturnValue) == 0x000010, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTilePlayable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000018, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000020, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000028, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000030, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_NewCamera) == 0x000038, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_NewCamera' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_OldCamera) == 0x000039, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_OldCamera' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x00003A, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00003B, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x00003C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x00003D, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest) == 0x000040, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_ReturnValue) == 0x000048, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_HasValidMissionData_ReturnValue) == 0x000049, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_HasValidMissionData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue) == 0x00004C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileHidden_ReturnValue) == 0x000050, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileLocked_ReturnValue) == 0x000051, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileLocked_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetAllActorsOfClass_OutActors) == 0x000058, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue) == 0x000070, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue) == 0x000078, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetCurrentInputType_ReturnValue) == 0x000080, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000081, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue1) == 0x000088, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue) == 0x000090, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue1) == 0x000098, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetCurrentInputType_ReturnValue1) == 0x0000A0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetCurrentInputType_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_NotEqual_ByteByte_ReturnValue1) == 0x0000A1, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_NotEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue1) == 0x0000A2, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable) == 0x0000A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Loaded) == 0x0000B0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_AsTexture_2D) == 0x0000B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate) == 0x0000C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate1) == 0x0000D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue2) == 0x0000E8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue3) == 0x0000F0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTotalSkillPointsEarned_ReturnValue) == 0x0000F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTotalSkillPointsEarned_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Array_Index_Variable) == 0x0000FC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Get_Item) == 0x000100, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000108, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue2) == 0x00010C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000110, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable1) == 0x000118, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_object_Variable2) == 0x000120, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_bool_Variable) == 0x000128, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_Select_Default) == 0x000130, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue4) == 0x000138, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsValid_ReturnValue) == 0x000140, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Loop_Counter_Variable) == 0x000144, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Less_IntInt_ReturnValue) == 0x000148, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Add_IntInt_ReturnValue) == 0x00014C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate2) == 0x000150, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color) == 0x000160, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid) == 0x000170, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue5) == 0x000178, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000180, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate3) == 0x000190, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue6) == 0x0001A0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails) == 0x0001A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue) == 0x000310, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_MakeLiteralByte_ReturnValue) == 0x000311, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000314, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color) == 0x000318, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Success) == 0x000328, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Success' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText) == 0x000330, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue) == 0x000348, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue7) == 0x000350, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails1) == 0x000358, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue1) == 0x0004C0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName1) == 0x0004C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime1) == 0x0004D0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location1) == 0x0004D4, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity1) == 0x0004E0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_AsTexture) == 0x0004F0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_AsTexture' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_bSuccess1) == 0x0004F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName) == 0x000500, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime) == 0x000508, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_ParticleTime) == 0x00050C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_ParticleTime' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location) == 0x000510, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity) == 0x00051C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Direction) == 0x000528, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Direction' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000534, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate4) == 0x000538, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Material_Instance_Dynamic) == 0x000548, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Material_Instance_Dynamic' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Unique_Net_Id) == 0x000550, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Unique_Net_Id' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetHomeBaseInfoForPlayer_Result) == 0x000578, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetHomeBaseInfoForPlayer_Result' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_StringToName_ReturnValue) == 0x0005B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_StringToName_ReturnValue1) == 0x0005C0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_StringToName_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue) == 0x0005C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerColorPrimaryColorFromRowName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue) == 0x0005D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue) == 0x000600, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetBannerColorSecondaryColorFromRowName_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.AsyncUpdateBanner
 // 0x0030 (0x0030 - 0x0000)
@@ -388,36 +392,45 @@ static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileExistsA) == 0x00
 static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileExistsB) == 0x00002C, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileExistsB' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleMissionAlert
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct BP_Hex_PARENT_C_HandleMissionAlert final
 {
 public:
 	struct FGameplayTagContainer                  CallFunc_GetMissionAlertVisualTags_ReturnValue;    // 0x0000(0x0020)()
-	struct FGameplayTagContainer                  CallFunc_GetMissionAlertVisualTags_ReturnValue1;   // 0x0020(0x0020)()
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMissionAlertIndicator_C*               K2Node_DynamicCast_AsMission_Alert_Indicator;      // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue;         // 0x0058(0x0048)()
-	bool                                          CallFunc_DoesContainerMatchTagQuery_ReturnValue;   // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsTileHidden_ReturnValue;                 // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsMissionAlertTile_ReturnValue;           // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue;         // 0x0020(0x0048)()
+	struct FGameplayTagContainer                  CallFunc_GetMissionAlertVisualTags_ReturnValue1;   // 0x0068(0x0020)()
+	bool                                          CallFunc_DoesContainerMatchTagQuery_ReturnValue;   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CallFunc_GetMissionAlertVisualTags_ReturnValue2;   // 0x0090(0x0020)()
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMissionAlertIndicator_C*               K2Node_DynamicCast_AsMission_Alert_Indicator;      // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue1;        // 0x00C8(0x0048)()
+	bool                                          CallFunc_DoesContainerMatchTagQuery_ReturnValue1;  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsTileHidden_ReturnValue;                 // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMissionAlertTile_ReturnValue;           // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_Hex_PARENT_C_HandleMissionAlert) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_HandleMissionAlert");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleMissionAlert) == 0x0000A8, "Wrong size on BP_Hex_PARENT_C_HandleMissionAlert");
+static_assert(sizeof(BP_Hex_PARENT_C_HandleMissionAlert) == 0x000118, "Wrong size on BP_Hex_PARENT_C_HandleMissionAlert");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetMissionAlertVisualTags_ReturnValue) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetMissionAlertVisualTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetMissionAlertVisualTags_ReturnValue1) == 0x000020, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetMissionAlertVisualTags_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000040, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_AsMission_Alert_Indicator) == 0x000048, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_AsMission_Alert_Indicator' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_MakeGameplayTagQuery_ReturnValue) == 0x000058, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_MakeGameplayTagQuery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_DoesContainerMatchTagQuery_ReturnValue) == 0x0000A0, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_DoesContainerMatchTagQuery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsTileHidden_ReturnValue) == 0x0000A1, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsMissionAlertTile_ReturnValue) == 0x0000A2, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsMissionAlertTile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_Not_PreBool_ReturnValue) == 0x0000A3, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanAND_ReturnValue) == 0x0000A4, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_MakeGameplayTagQuery_ReturnValue) == 0x000020, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_MakeGameplayTagQuery_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetMissionAlertVisualTags_ReturnValue1) == 0x000068, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetMissionAlertVisualTags_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_DoesContainerMatchTagQuery_ReturnValue) == 0x000088, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_DoesContainerMatchTagQuery_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetMissionAlertVisualTags_ReturnValue2) == 0x000090, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetMissionAlertVisualTags_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetUserWidgetObject_ReturnValue) == 0x0000B0, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_AsMission_Alert_Indicator) == 0x0000B8, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_AsMission_Alert_Indicator' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_MakeGameplayTagQuery_ReturnValue1) == 0x0000C8, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_MakeGameplayTagQuery_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_DoesContainerMatchTagQuery_ReturnValue1) == 0x000110, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_DoesContainerMatchTagQuery_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanOR_ReturnValue) == 0x000111, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsTileHidden_ReturnValue) == 0x000112, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsMissionAlertTile_ReturnValue) == 0x000113, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsMissionAlertTile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_Not_PreBool_ReturnValue) == 0x000114, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanAND_ReturnValue) == 0x000115, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleUpdatingBannerMesh
 // 0x0098 (0x0098 - 0x0000)

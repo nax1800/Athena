@@ -10,33 +10,32 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerEvade.GAB_TakerEvade_C
-// 0x0058 (0x0B40 - 0x0AE8)
+// 0x0050 (0x0948 - 0x08F8)
 class UGAB_TakerEvade_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class ATakerPawn_C*                           TakerPawn;                                         // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UEnvQuery*                              EQS_TakerEvade;                                    // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_WeaponRanged;                                   // 0x0B08(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Debug;                                             // 0x0B28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          RangedEvade;                                       // 0x0B29(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B2A[0x2];                                      // 0x0B2A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DistanceToAllowMeleeEvade;                         // 0x0B2C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DesiredEvadeDistance;                              // 0x0B30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RangedEvadePlayRate;                               // 0x0B34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MeleeEvadePlayRate;                                // 0x0B38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AnimatedEvadeDistance;                             // 0x0B3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class ATakerPawn_C*                           TakerPawn;                                         // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UEnvQuery*                              EQS_TakerEvade;                                    // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_WeaponRanged;                                   // 0x0910(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Debug;                                             // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          RangedEvade;                                       // 0x0931(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_932[0x2];                                      // 0x0932(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DistanceToAllowMeleeEvade;                         // 0x0934(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DesiredEvadeDistance;                              // 0x0938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RangedEvadePlayRate;                               // 0x093C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MeleeEvadePlayRate;                                // 0x0940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AnimatedEvadeDistance;                             // 0x0944(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_TakerEvade(int32 EntryPoint);
@@ -60,18 +59,18 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerEvade_C) == 0x000008, "Wrong alignment on UGAB_TakerEvade_C");
-static_assert(sizeof(UGAB_TakerEvade_C) == 0x000B40, "Wrong size on UGAB_TakerEvade_C");
-static_assert(offsetof(UGAB_TakerEvade_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_TakerEvade_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, TakerPawn) == 0x000AF8, "Member 'UGAB_TakerEvade_C::TakerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, EQS_TakerEvade) == 0x000B00, "Member 'UGAB_TakerEvade_C::EQS_TakerEvade' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, TC_WeaponRanged) == 0x000B08, "Member 'UGAB_TakerEvade_C::TC_WeaponRanged' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, Debug) == 0x000B28, "Member 'UGAB_TakerEvade_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, RangedEvade) == 0x000B29, "Member 'UGAB_TakerEvade_C::RangedEvade' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, DistanceToAllowMeleeEvade) == 0x000B2C, "Member 'UGAB_TakerEvade_C::DistanceToAllowMeleeEvade' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, DesiredEvadeDistance) == 0x000B30, "Member 'UGAB_TakerEvade_C::DesiredEvadeDistance' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, RangedEvadePlayRate) == 0x000B34, "Member 'UGAB_TakerEvade_C::RangedEvadePlayRate' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, MeleeEvadePlayRate) == 0x000B38, "Member 'UGAB_TakerEvade_C::MeleeEvadePlayRate' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerEvade_C, AnimatedEvadeDistance) == 0x000B3C, "Member 'UGAB_TakerEvade_C::AnimatedEvadeDistance' has a wrong offset!");
+static_assert(sizeof(UGAB_TakerEvade_C) == 0x000948, "Wrong size on UGAB_TakerEvade_C");
+static_assert(offsetof(UGAB_TakerEvade_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_TakerEvade_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, TakerPawn) == 0x000900, "Member 'UGAB_TakerEvade_C::TakerPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, EQS_TakerEvade) == 0x000908, "Member 'UGAB_TakerEvade_C::EQS_TakerEvade' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, TC_WeaponRanged) == 0x000910, "Member 'UGAB_TakerEvade_C::TC_WeaponRanged' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, Debug) == 0x000930, "Member 'UGAB_TakerEvade_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, RangedEvade) == 0x000931, "Member 'UGAB_TakerEvade_C::RangedEvade' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, DistanceToAllowMeleeEvade) == 0x000934, "Member 'UGAB_TakerEvade_C::DistanceToAllowMeleeEvade' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, DesiredEvadeDistance) == 0x000938, "Member 'UGAB_TakerEvade_C::DesiredEvadeDistance' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, RangedEvadePlayRate) == 0x00093C, "Member 'UGAB_TakerEvade_C::RangedEvadePlayRate' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, MeleeEvadePlayRate) == 0x000940, "Member 'UGAB_TakerEvade_C::MeleeEvadePlayRate' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerEvade_C, AnimatedEvadeDistance) == 0x000944, "Member 'UGAB_TakerEvade_C::AnimatedEvadeDistance' has a wrong offset!");
 
 }
 

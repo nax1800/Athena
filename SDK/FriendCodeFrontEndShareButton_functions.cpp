@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.BP_OnClicked
+// (Event, Protected, BlueprintEvent)
+
+void UFriendCodeFrontEndShareButton_C::BP_OnClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FriendCodeFrontEndShareButton_C", "BP_OnClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -48,20 +62,6 @@ void UFriendCodeFrontEndShareButton_C::ExecuteUbergraph_FriendCodeFrontEndShareB
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.OnClicked
-// (Event, Protected, BlueprintEvent)
-
-void UFriendCodeFrontEndShareButton_C::OnClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendCodeFrontEndShareButton_C", "OnClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

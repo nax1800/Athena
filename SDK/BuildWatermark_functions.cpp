@@ -37,6 +37,26 @@ void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int32 EntryPoint)
 }
 
 
+// Function BuildWatermark.BuildWatermark_C.HandlePlayerStateChanged
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UBuildWatermark_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
+
+	Params::BuildWatermark_C_HandlePlayerStateChanged Parms{};
+
+	Parms.PlayerInfo = std::move(PlayerInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BuildWatermark.BuildWatermark_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -65,26 +85,6 @@ void UBuildWatermark_C::HandlePartyJoined()
 }
 
 
-// Function BuildWatermark.BuildWatermark_C.HandlePlayerStateChanged
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FFortTeamMemberInfo              TeamInfo                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UBuildWatermark_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& TeamInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
-
-	Params::BuildWatermark_C_HandlePlayerStateChanged Parms{};
-
-	Parms.TeamInfo = std::move(TeamInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BuildWatermark.BuildWatermark_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -108,6 +108,44 @@ void UBuildWatermark_C::Update_Watermark()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BuildWatermark_C", "Update Watermark");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BuildWatermark.BuildWatermark_C.SetTextCollapseIfDefault
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTextBlock*                       Text_Widget                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             InputText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             DefaultText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UBuildWatermark_C::SetTextCollapseIfDefault(class UTextBlock* Text_Widget, const class FText& InputText, const class FText& DefaultText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuildWatermark_C", "SetTextCollapseIfDefault");
+
+	Params::BuildWatermark_C_SetTextCollapseIfDefault Parms{};
+
+	Parms.Text_Widget = Text_Widget;
+	Parms.InputText = std::move(InputText);
+	Parms.DefaultText = std::move(DefaultText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BuildWatermark.BuildWatermark_C.UpdateCalenderOffset
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBuildWatermark_C::UpdateCalenderOffset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuildWatermark_C", "UpdateCalenderOffset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

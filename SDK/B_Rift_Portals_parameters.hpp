@@ -33,7 +33,7 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0018(0x000C)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0034(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12;       // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123;        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue2;        // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Delay;                          // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,22 +60,22 @@ public:
 	bool                                          K2Node_CustomEvent_SpawnImpactParticles;           // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue123;      // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12;          // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue3;        // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue123;         // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0160(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x016C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0178(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0200(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1234;     // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue12345;    // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue4;        // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue5;        // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue1;                        // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue12;                       // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue2;                        // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0220(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -122,7 +122,7 @@ static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000010, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue1) == 0x000014, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeRotator_ReturnValue) == 0x000018, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000024, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue2) == 0x000024, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000028, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeVector_ReturnValue) == 0x000034, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000040, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
@@ -138,29 +138,29 @@ static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFun
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Length_ReturnValue) == 0x000104, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_MakeArray_Array) == 0x000108, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000118, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue12) == 0x00011C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue123) == 0x000120, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x00011C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000120, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000124, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000128, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_Delay) == 0x00012C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_Delay' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_RiftLightningDuration) == 0x000130, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_RiftLightningDuration' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_SpawnImpactParticles) == 0x000134, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_SpawnImpactParticles' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000138, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue123) == 0x000148, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue12) == 0x00014C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x000148, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x00014C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_FloatFloat_ReturnValue) == 0x000150, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000154, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000158, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue123) == 0x00015C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x00015C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeVector_ReturnValue1) == 0x000160, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00016C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000178, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_VectorVector_ReturnValue) == 0x000200, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue1234) == 0x00020C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue12345) == 0x000210, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue4) == 0x00020C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue5) == 0x000210, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue) == 0x000214, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue1) == 0x000218, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue12) == 0x00021C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue2) == 0x00021C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_LinearColorLerp_ReturnValue) == 0x000220, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Length_ReturnValue1) == 0x000230, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Less_IntInt_ReturnValue) == 0x000234, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
@@ -194,14 +194,14 @@ struct B_Rift_Portals_C_PatrolEnemySuckIn final
 {
 public:
 	float                                         Delay;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_RiftLightningDuration;                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Param_SpawnImpactParticles;                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         RiftLightningDuration_0;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SpawnImpactParticles_0;                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Rift_Portals_C_PatrolEnemySuckIn) == 0x000004, "Wrong alignment on B_Rift_Portals_C_PatrolEnemySuckIn");
 static_assert(sizeof(B_Rift_Portals_C_PatrolEnemySuckIn) == 0x00000C, "Wrong size on B_Rift_Portals_C_PatrolEnemySuckIn");
 static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, Delay) == 0x000000, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::Delay' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, Param_RiftLightningDuration) == 0x000004, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::Param_RiftLightningDuration' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, Param_SpawnImpactParticles) == 0x000008, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::Param_SpawnImpactParticles' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, RiftLightningDuration_0) == 0x000004, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::RiftLightningDuration_0' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, SpawnImpactParticles_0) == 0x000008, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::SpawnImpactParticles_0' has a wrong offset!");
 
 // Function B_Rift_Portals.B_Rift_Portals_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -237,44 +237,44 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue1;          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0054(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X1;                         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y1;                         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X12;                          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y12;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z12;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123;        // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X2;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y2;                           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z2;                           // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0078(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue1234;       // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue4;          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0088(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X12;                        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y12;                        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X2;                         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y2;                         // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0098(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12345;      // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X123;                       // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y123;                       // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X1234;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y1234;                      // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue5;          // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X3;                         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y3;                         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X4;                         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y4;                         // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123456;     // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue6;          // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x00CC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue1234567;    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue7;          // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue1;                // 0x00E0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X12345;                     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y12345;                     // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X123;                         // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y123;                         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z123;                         // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X5;                         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y5;                         // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X3;                           // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y3;                           // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z3;                           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue12345678;   // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue8;          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue123456789;  // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue9;          // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue123; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Rift_Portals_C_UserConstructionScript) == 0x000008, "Wrong alignment on B_Rift_Portals_C_UserConstructionScript");
@@ -295,42 +295,42 @@ static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomF
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X) == 0x000044, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y) == 0x000048, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue1) == 0x00004C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue12) == 0x000050, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue2) == 0x000050, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000054, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X1) == 0x000060, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X1' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y1) == 0x000064, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X12) == 0x000068, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y12) == 0x00006C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z12) == 0x000070, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue123) == 0x000074, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X2) == 0x000068, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y2) == 0x00006C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z2) == 0x000070, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000074, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue1) == 0x000078, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue1234) == 0x000084, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue4) == 0x000084, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector2D_ReturnValue) == 0x000088, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X12) == 0x000090, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y12) == 0x000094, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y12' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X2) == 0x000090, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y2) == 0x000094, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y2' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, K2Node_MakeStruct_LinearColor) == 0x000098, "Member 'B_Rift_Portals_C_UserConstructionScript::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue12345) == 0x0000A8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X123) == 0x0000AC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X123' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y123) == 0x0000B0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y123' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X1234) == 0x0000B4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X1234' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y1234) == 0x0000B8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y1234' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue5) == 0x0000A8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X3) == 0x0000AC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X3' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y3) == 0x0000B0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y3' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X4) == 0x0000B4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X4' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y4) == 0x0000B8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y4' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000BC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue123456) == 0x0000C8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue123456' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue6) == 0x0000C8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue6' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0000CC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue1234567) == 0x0000DC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue1234567' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue7) == 0x0000DC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue7' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector2D_ReturnValue1) == 0x0000E0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector2D_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X12345) == 0x0000E8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X12345' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y12345) == 0x0000EC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y12345' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X123) == 0x0000F0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X123' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y123) == 0x0000F4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y123' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z123) == 0x0000F8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z123' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X5) == 0x0000E8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X5' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y5) == 0x0000EC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y5' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X3) == 0x0000F0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X3' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y3) == 0x0000F4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y3' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z3) == 0x0000F8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z3' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000FC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue12345678) == 0x000100, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue12) == 0x000108, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue123456789) == 0x000110, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue123456789' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue8) == 0x000100, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000108, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue9) == 0x000110, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue9' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000114, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000118, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue123) == 0x000120, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000120, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetLightColor_ReturnValue) == 0x000128, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetLightColor_ReturnValue' has a wrong offset!");
 
 }

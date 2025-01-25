@@ -19,118 +19,129 @@ namespace SDK::Params
 {
 
 // Function GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C.ExecuteUbergraph_GAT_Athena_c4_Detonate
-// 0x0200 (0x0200 - 0x0000)
+// 0x01F8 (0x01F8 - 0x0000)
 struct GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable;                              // 0x0028(0x0020)()
-	struct FGameplayTag                           Temp_struct_Variable1;                             // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetAvatarActorFromActorInfo_ReturnValue;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue; // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0088(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x00A8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData1;                    // 0x00B0(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag1;                // 0x00D0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate1;             // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_GetTrackedGroupedActors_ReturnValue;      // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x0100(0x0040)(ContainsInstancedReference)
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AB_BGA_Athena_C4_C*                     K2Node_DynamicCast_AsB_BGA_Athena_C4;              // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn1;            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0168(0x0020)()
-	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0188(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19D[0x3];                                      // 0x019D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate12;            // 0x01A0(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable;                              // 0x0010(0x0020)()
+	struct FGameplayTag                           Temp_struct_Variable1;                             // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetAvatarActorFromActorInfo_ReturnValue;  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0070(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0090(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData1;                    // 0x0098(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag1;                // 0x00B8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_GetTrackedGroupedActors_ReturnValue;      // 0x00D8(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x00E8(0x0040)(ContainsInstancedReference)
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AB_BGA_Athena_C4_C*                     K2Node_DynamicCast_AsB_BGA_Athena_C4;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn1;            // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0150(0x0020)()
+	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0170(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_185[0x3];                                      // 0x0185(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_199[0x3];                                      // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue;   // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_K2_RemoveItemFromPlayer_ReturnValue;      // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EEvaluateCurveTableResult                     CallFunc_EvaluateCurveTableRow_OutResult;          // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AA[0x2];                                      // 0x01AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_EvaluateCurveTableRow_OutXY;              // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEvaluateCurveTableResult                     CallFunc_EvaluateCurveTableRow_OutResult1;         // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue;   // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_K2_RemoveItemFromPlayer_ReturnValue;      // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EEvaluateCurveTableResult                     CallFunc_EvaluateCurveTableRow_OutResult;          // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C2[0x2];                                      // 0x01C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_EvaluateCurveTableRow_OutXY;              // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEvaluateCurveTableResult                     CallFunc_EvaluateCurveTableRow_OutResult1;         // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C9[0x3];                                      // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_EvaluateCurveTableRow_OutXY1;             // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D2[0x6];                                      // 0x01D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData12;                   // 0x01D8(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag12;               // 0x01F8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_EvaluateCurveTableRow_OutXY1;             // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1BA[0x6];                                      // 0x01BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x01C0(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x01E0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x01E8(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate) == 0x000008, "Wrong alignment on GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate");
-static_assert(sizeof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate) == 0x000200, "Wrong size on GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate");
+static_assert(sizeof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate) == 0x0001F8, "Wrong size on GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate");
 static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, EntryPoint) == 0x000000, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_int_Array_Index_Variable) == 0x000020, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_struct_Variable) == 0x000028, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_struct_Variable1) == 0x000048, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_struct_Variable1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000050, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000058, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue) == 0x000068, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetController_ReturnValue) == 0x000070, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000078, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess1) == 0x000080, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_IsValid_ReturnValue) == 0x000081, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData) == 0x000088, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag) == 0x0000A8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData1) == 0x0000B0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag1) == 0x0000D0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate1) == 0x0000D8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Add_FloatFloat_ReturnValue) == 0x0000E8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetTrackedGroupedActors_ReturnValue) == 0x0000F0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetTrackedGroupedActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetActorInfo_ReturnValue) == 0x000100, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Array_Get_Item) == 0x000140, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsB_BGA_Athena_C4) == 0x000148, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsB_BGA_Athena_C4' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess12) == 0x000150, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Pawn1) == 0x000158, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Pawn1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess123) == 0x000160, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000168, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000188, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Array_Length_ReturnValue) == 0x000198, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Less_IntInt_ReturnValue) == 0x00019C, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate12) == 0x0001A0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_IsValid_ReturnValue1) == 0x0001B0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue) == 0x0001B4, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001B8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_RemoveItemFromPlayer_ReturnValue) == 0x0001BC, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_RemoveItemFromPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_CommitAbility_ReturnValue) == 0x0001C0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutResult) == 0x0001C1, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutXY) == 0x0001C4, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutResult1) == 0x0001C8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutResult1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutXY1) == 0x0001CC, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutXY1' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_SwitchEnum_CmpSuccess) == 0x0001D0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_SwitchEnum1_CmpSuccess) == 0x0001D1, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData12) == 0x0001D8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData12' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag12) == 0x0001F8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag12' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_struct_Variable) == 0x000010, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, Temp_struct_Variable1) == 0x000030, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::Temp_struct_Variable1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000038, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000040, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue) == 0x000050, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetController_ReturnValue) == 0x000058, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000060, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess1) == 0x000068, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_IsValid_ReturnValue) == 0x000069, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData) == 0x000070, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag) == 0x000090, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData1) == 0x000098, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag1) == 0x0000B8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate) == 0x0000C0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Add_FloatFloat_ReturnValue) == 0x0000D0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetTrackedGroupedActors_ReturnValue) == 0x0000D8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetTrackedGroupedActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_GetActorInfo_ReturnValue) == 0x0000E8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Array_Get_Item) == 0x000128, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsB_BGA_Athena_C4) == 0x000130, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsB_BGA_Athena_C4' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess2) == 0x000138, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_AsFort_Player_Pawn1) == 0x000140, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_AsFort_Player_Pawn1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_DynamicCast_bSuccess3) == 0x000148, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000150, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000170, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Array_Length_ReturnValue) == 0x000180, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_Less_IntInt_ReturnValue) == 0x000184, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate1) == 0x000188, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_IsValid_ReturnValue1) == 0x000198, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue) == 0x00019C, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001A0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_RemoveItemFromPlayer_ReturnValue) == 0x0001A4, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_RemoveItemFromPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_K2_CommitAbility_ReturnValue) == 0x0001A8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutResult) == 0x0001A9, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutXY) == 0x0001AC, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutResult1) == 0x0001B0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutResult1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, CallFunc_EvaluateCurveTableRow_OutXY1) == 0x0001B4, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::CallFunc_EvaluateCurveTableRow_OutXY1' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_SwitchEnum_CmpSuccess) == 0x0001B8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_SwitchEnum1_CmpSuccess) == 0x0001B9, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_TargetData2) == 0x0001C0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_TargetData2' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CustomEvent_ApplicationTag2) == 0x0001E0, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate, K2Node_CreateDelegate_OutputDelegate2) == 0x0001E8, "Member 'GAT_Athena_c4_Detonate_C_ExecuteUbergraph_GAT_Athena_c4_Detonate::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+
+// Function GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C.Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635
+// 0x0028 (0x0028 - 0x0000)
+struct GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635 final
+{
+public:
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635) == 0x000008, "Wrong alignment on GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635");
+static_assert(sizeof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635) == 0x000028, "Wrong size on GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635, TargetData) == 0x000000, "Member 'GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635::TargetData' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635, ApplicationTag) == 0x000020, "Member 'GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635::ApplicationTag' has a wrong offset!");
 
 // Function GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C.Cancelled_1CF0B54948FD6A9E1DB2B5BC49A0C635
 // 0x0028 (0x0028 - 0x0000)
@@ -158,18 +169,25 @@ static_assert(sizeof(GAT_Athena_c4_Detonate_C_Completed_1CF0B54948FD6A9E1DB2B5BC
 static_assert(offsetof(GAT_Athena_c4_Detonate_C_Completed_1CF0B54948FD6A9E1DB2B5BC49A0C635, TargetData) == 0x000000, "Member 'GAT_Athena_c4_Detonate_C_Completed_1CF0B54948FD6A9E1DB2B5BC49A0C635::TargetData' has a wrong offset!");
 static_assert(offsetof(GAT_Athena_c4_Detonate_C_Completed_1CF0B54948FD6A9E1DB2B5BC49A0C635, ApplicationTag) == 0x000020, "Member 'GAT_Athena_c4_Detonate_C_Completed_1CF0B54948FD6A9E1DB2B5BC49A0C635::ApplicationTag' has a wrong offset!");
 
-// Function GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C.Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635
+// Function GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C.Update Used Explosive Stat
 // 0x0028 (0x0028 - 0x0000)
-struct GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635 final
+struct GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635) == 0x000008, "Wrong alignment on GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635");
-static_assert(sizeof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635) == 0x000028, "Wrong size on GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635, TargetData) == 0x000000, "Member 'GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635::TargetData' has a wrong offset!");
-static_assert(offsetof(GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635, ApplicationTag) == 0x000020, "Member 'GAT_Athena_c4_Detonate_C_Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635::ApplicationTag' has a wrong offset!");
+static_assert(alignof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat) == 0x000008, "Wrong alignment on GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat");
+static_assert(sizeof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat) == 0x000028, "Wrong size on GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat, CallFunc_GetActivatingPawn_ReturnValue) == 0x000000, "Member 'GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat, CallFunc_GetController_ReturnValue) == 0x000008, "Member 'GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000018, "Member 'GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'GAT_Athena_c4_Detonate_C_Update_Used_Explosive_Stat::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

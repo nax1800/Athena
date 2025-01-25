@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -69,8 +69,8 @@ public:
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_212[0x2];                                      // 0x0212(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue12;             // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12;                 // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower) == 0x000008, "Wrong alignment on Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower");
 static_assert(sizeof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower) == 0x000228, "Wrong size on Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower");
@@ -111,8 +111,8 @@ static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Towe
 static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000200, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
 static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000210, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_BooleanOR_ReturnValue) == 0x000211, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_Add_FloatFloat_ReturnValue12) == 0x000214, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_Add_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_MakeVector_ReturnValue12) == 0x000218, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_MakeVector_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000214, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower, CallFunc_MakeVector_ReturnValue2) == 0x000218, "Member 'Prop_TirePile_Tower_C_ExecuteUbergraph_Prop_TirePile_Tower::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
 
 // Function Prop_TirePile_Tower.Prop_TirePile_Tower_C.BndEvt__Jump_Collision_K2Node_ComponentBoundEvent_252_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)

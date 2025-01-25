@@ -19,35 +19,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HelpWidget.HelpWidget_C
-// 0x0118 (0x04D8 - 0x03C0)
+// 0x0118 (0x0410 - 0x02F8)
 class UHelpWidget_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Arrow1Image;                                       // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow2Image;                                       // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonClose;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       DescriptionText;                                   // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Picture1Image;                                     // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Picture2Image;                                     // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Picture3Image;                                     // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextStep1;                                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextStep2;                                         // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextStep3;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TitleText;                                         // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VboxStep1;                                         // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VboxStep2;                                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VboxStep3;                                         // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Title;                                             // 0x0440(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Description;                                       // 0x0458(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Step1_Text;                                        // 0x0470(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Step2_Text;                                        // 0x0488(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Step3_Text;                                        // 0x04A0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UTexture2D*                             Step1_Picture;                                     // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UTexture2D*                             Step2_Picture;                                     // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UTexture2D*                             Step3_Picture;                                     // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         NumOfSteps;                                        // 0x04D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Arrow1Image;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow2Image;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonClose;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       DescriptionText;                                   // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Picture1Image;                                     // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Picture2Image;                                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Picture3Image;                                     // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextStep1;                                         // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextStep2;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextStep3;                                         // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TitleText;                                         // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VboxStep1;                                         // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VboxStep2;                                         // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VboxStep3;                                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Title;                                             // 0x0378(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Description;                                       // 0x0390(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Step1_Text;                                        // 0x03A8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Step2_Text;                                        // 0x03C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Step3_Text;                                        // 0x03D8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UTexture2D*                             Step1_Picture;                                     // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UTexture2D*                             Step2_Picture;                                     // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UTexture2D*                             Step3_Picture;                                     // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         NumOfSteps;                                        // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HelpWidget(int32 EntryPoint);
@@ -66,32 +66,32 @@ public:
 	}
 };
 static_assert(alignof(UHelpWidget_C) == 0x000008, "Wrong alignment on UHelpWidget_C");
-static_assert(sizeof(UHelpWidget_C) == 0x0004D8, "Wrong size on UHelpWidget_C");
-static_assert(offsetof(UHelpWidget_C, UberGraphFrame) == 0x0003C0, "Member 'UHelpWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Arrow1Image) == 0x0003C8, "Member 'UHelpWidget_C::Arrow1Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Arrow2Image) == 0x0003D0, "Member 'UHelpWidget_C::Arrow2Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, ButtonClose) == 0x0003D8, "Member 'UHelpWidget_C::ButtonClose' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, DescriptionText) == 0x0003E0, "Member 'UHelpWidget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Lightbox) == 0x0003E8, "Member 'UHelpWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture1Image) == 0x0003F0, "Member 'UHelpWidget_C::Picture1Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture2Image) == 0x0003F8, "Member 'UHelpWidget_C::Picture2Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture3Image) == 0x000400, "Member 'UHelpWidget_C::Picture3Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep1) == 0x000408, "Member 'UHelpWidget_C::TextStep1' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep2) == 0x000410, "Member 'UHelpWidget_C::TextStep2' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep3) == 0x000418, "Member 'UHelpWidget_C::TextStep3' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TitleText) == 0x000420, "Member 'UHelpWidget_C::TitleText' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep1) == 0x000428, "Member 'UHelpWidget_C::VboxStep1' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep2) == 0x000430, "Member 'UHelpWidget_C::VboxStep2' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep3) == 0x000438, "Member 'UHelpWidget_C::VboxStep3' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Title) == 0x000440, "Member 'UHelpWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Description) == 0x000458, "Member 'UHelpWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step1_Text) == 0x000470, "Member 'UHelpWidget_C::Step1_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step2_Text) == 0x000488, "Member 'UHelpWidget_C::Step2_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step3_Text) == 0x0004A0, "Member 'UHelpWidget_C::Step3_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step1_Picture) == 0x0004B8, "Member 'UHelpWidget_C::Step1_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step2_Picture) == 0x0004C0, "Member 'UHelpWidget_C::Step2_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step3_Picture) == 0x0004C8, "Member 'UHelpWidget_C::Step3_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, NumOfSteps) == 0x0004D0, "Member 'UHelpWidget_C::NumOfSteps' has a wrong offset!");
+static_assert(sizeof(UHelpWidget_C) == 0x000410, "Wrong size on UHelpWidget_C");
+static_assert(offsetof(UHelpWidget_C, UberGraphFrame) == 0x0002F8, "Member 'UHelpWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Arrow1Image) == 0x000300, "Member 'UHelpWidget_C::Arrow1Image' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Arrow2Image) == 0x000308, "Member 'UHelpWidget_C::Arrow2Image' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, ButtonClose) == 0x000310, "Member 'UHelpWidget_C::ButtonClose' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, DescriptionText) == 0x000318, "Member 'UHelpWidget_C::DescriptionText' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Lightbox) == 0x000320, "Member 'UHelpWidget_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Picture1Image) == 0x000328, "Member 'UHelpWidget_C::Picture1Image' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Picture2Image) == 0x000330, "Member 'UHelpWidget_C::Picture2Image' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Picture3Image) == 0x000338, "Member 'UHelpWidget_C::Picture3Image' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, TextStep1) == 0x000340, "Member 'UHelpWidget_C::TextStep1' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, TextStep2) == 0x000348, "Member 'UHelpWidget_C::TextStep2' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, TextStep3) == 0x000350, "Member 'UHelpWidget_C::TextStep3' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, TitleText) == 0x000358, "Member 'UHelpWidget_C::TitleText' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, VboxStep1) == 0x000360, "Member 'UHelpWidget_C::VboxStep1' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, VboxStep2) == 0x000368, "Member 'UHelpWidget_C::VboxStep2' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, VboxStep3) == 0x000370, "Member 'UHelpWidget_C::VboxStep3' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Title) == 0x000378, "Member 'UHelpWidget_C::Title' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Description) == 0x000390, "Member 'UHelpWidget_C::Description' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step1_Text) == 0x0003A8, "Member 'UHelpWidget_C::Step1_Text' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step2_Text) == 0x0003C0, "Member 'UHelpWidget_C::Step2_Text' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step3_Text) == 0x0003D8, "Member 'UHelpWidget_C::Step3_Text' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step1_Picture) == 0x0003F0, "Member 'UHelpWidget_C::Step1_Picture' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step2_Picture) == 0x0003F8, "Member 'UHelpWidget_C::Step2_Picture' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, Step3_Picture) == 0x000400, "Member 'UHelpWidget_C::Step3_Picture' has a wrong offset!");
+static_assert(offsetof(UHelpWidget_C, NumOfSteps) == 0x000408, "Member 'UHelpWidget_C::NumOfSteps' has a wrong offset!");
 
 }
 

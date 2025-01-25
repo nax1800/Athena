@@ -37,6 +37,20 @@ void UAthenaMatchStatsPartial_C::ExecuteUbergraph_AthenaMatchStatsPartial(int32 
 }
 
 
+// Function AthenaMatchStatsPartial.AthenaMatchStatsPartial_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaMatchStatsPartial_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaMatchStatsPartial_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaMatchStatsPartial.AthenaMatchStatsPartial_C.Play Xp Rewards
 // (BlueprintCallable, BlueprintEvent)
 

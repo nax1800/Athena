@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemRatingIndicator.ItemRatingIndicator_C
-// 0x0018 (0x0598 - 0x0580)
+// 0x0018 (0x0590 - 0x0578)
 class UItemRatingIndicator_C final : public UFortItemRatingIndicator
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0580(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 PowerRatingIconImage;                              // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UStatNumericTextBlock_C*                PowerRatingText;                                   // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0578(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 PowerRatingIconImage;                              // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UStatNumericTextBlock_C*                PowerRatingText;                                   // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemRatingIndicator(int32 EntryPoint);
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UItemRatingIndicator_C) == 0x000008, "Wrong alignment on UItemRatingIndicator_C");
-static_assert(sizeof(UItemRatingIndicator_C) == 0x000598, "Wrong size on UItemRatingIndicator_C");
-static_assert(offsetof(UItemRatingIndicator_C, UberGraphFrame) == 0x000580, "Member 'UItemRatingIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemRatingIndicator_C, PowerRatingIconImage) == 0x000588, "Member 'UItemRatingIndicator_C::PowerRatingIconImage' has a wrong offset!");
-static_assert(offsetof(UItemRatingIndicator_C, PowerRatingText) == 0x000590, "Member 'UItemRatingIndicator_C::PowerRatingText' has a wrong offset!");
+static_assert(sizeof(UItemRatingIndicator_C) == 0x000590, "Wrong size on UItemRatingIndicator_C");
+static_assert(offsetof(UItemRatingIndicator_C, UberGraphFrame) == 0x000578, "Member 'UItemRatingIndicator_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemRatingIndicator_C, PowerRatingIconImage) == 0x000580, "Member 'UItemRatingIndicator_C::PowerRatingIconImage' has a wrong offset!");
+static_assert(offsetof(UItemRatingIndicator_C, PowerRatingText) == 0x000588, "Member 'UItemRatingIndicator_C::PowerRatingText' has a wrong offset!");
 
 }
 

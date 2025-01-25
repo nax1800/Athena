@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function MissionDetailsModifierList.MissionDetailsModifierList_C.PopulateModifiers
-// 0x0180 (0x0180 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct MissionDetailsModifierList_C_PopulateModifiers final
 {
 public:
@@ -54,13 +54,15 @@ public:
 	class FText                                   CallFunc_GetShortDescription_ReturnValue;          // 0x0128(0x0018)()
 	class UTexture2D*                             CallFunc_GetBrushResourceAsTexture2D_ReturnValue;  // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0148(0x0018)()
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMissionDetailsModifierRow_C*           CallFunc_Create_ReturnValue;                       // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWrapBoxSlot*                           CallFunc_AddChildWrapBox_ReturnValue;              // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMissionDetailsModifierRow_C*           CallFunc_Create_ReturnValue;                       // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWrapBoxSlot*                           CallFunc_AddChildWrapBox_ReturnValue;              // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000008, "Wrong alignment on MissionDetailsModifierList_C_PopulateModifiers");
-static_assert(sizeof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000180, "Wrong size on MissionDetailsModifierList_C_PopulateModifiers");
+static_assert(sizeof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000188, "Wrong size on MissionDetailsModifierList_C_PopulateModifiers");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, UseTrunctatedList) == 0x000000, "Member 'MissionDetailsModifierList_C_PopulateModifiers::UseTrunctatedList' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, NameTextStyle) == 0x000008, "Member 'MissionDetailsModifierList_C_PopulateModifiers::NameTextStyle' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, DescriptionTextStyle) == 0x000010, "Member 'MissionDetailsModifierList_C_PopulateModifiers::DescriptionTextStyle' has a wrong offset!");
@@ -90,10 +92,11 @@ static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_GetShortDescription_ReturnValue) == 0x000128, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_GetShortDescription_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_GetBrushResourceAsTexture2D_ReturnValue) == 0x000140, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_GetBrushResourceAsTexture2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_GetDisplayName_ReturnValue) == 0x000148, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_Create_ReturnValue) == 0x000168, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_AddChildWrapBox_ReturnValue) == 0x000170, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_AddChildWrapBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_Not_PreBool_ReturnValue1) == 0x000160, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_GetOwningPlayer_ReturnValue) == 0x000168, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_Create_ReturnValue) == 0x000170, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000178, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, CallFunc_AddChildWrapBox_ReturnValue) == 0x000180, "Member 'MissionDetailsModifierList_C_PopulateModifiers::CallFunc_AddChildWrapBox_ReturnValue' has a wrong offset!");
 
 // Function MissionDetailsModifierList.MissionDetailsModifierList_C.CreateDebugModifiers
 // 0x0078 (0x0078 - 0x0000)

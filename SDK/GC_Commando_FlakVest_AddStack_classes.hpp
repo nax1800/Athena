@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Commando_FlakVest_AddStack.GC_Commando_FlakVest_AddStack_C
-// 0x0020 (0x00D0 - 0x00B0)
+// 0x0018 (0x0098 - 0x0080)
 class UGC_Commando_FlakVest_AddStack_C final : public UFortGameplayCueNotify_Simple
 {
 public:
-	float                                         F_MaxStacks;                                       // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        PS_Stacks;                                         // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        PS_MaxStacks;                                      // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         F_MaxStacks;                                       // 0x0080(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        PS_Stacks;                                         // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        PS_MaxStacks;                                      // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters) const;
@@ -40,11 +40,11 @@ public:
 		return GetDefaultObjImpl<UGC_Commando_FlakVest_AddStack_C>();
 	}
 };
-static_assert(alignof(UGC_Commando_FlakVest_AddStack_C) == 0x000010, "Wrong alignment on UGC_Commando_FlakVest_AddStack_C");
-static_assert(sizeof(UGC_Commando_FlakVest_AddStack_C) == 0x0000D0, "Wrong size on UGC_Commando_FlakVest_AddStack_C");
-static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, F_MaxStacks) == 0x0000B0, "Member 'UGC_Commando_FlakVest_AddStack_C::F_MaxStacks' has a wrong offset!");
-static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, PS_Stacks) == 0x0000B8, "Member 'UGC_Commando_FlakVest_AddStack_C::PS_Stacks' has a wrong offset!");
-static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, PS_MaxStacks) == 0x0000C0, "Member 'UGC_Commando_FlakVest_AddStack_C::PS_MaxStacks' has a wrong offset!");
+static_assert(alignof(UGC_Commando_FlakVest_AddStack_C) == 0x000008, "Wrong alignment on UGC_Commando_FlakVest_AddStack_C");
+static_assert(sizeof(UGC_Commando_FlakVest_AddStack_C) == 0x000098, "Wrong size on UGC_Commando_FlakVest_AddStack_C");
+static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, F_MaxStacks) == 0x000080, "Member 'UGC_Commando_FlakVest_AddStack_C::F_MaxStacks' has a wrong offset!");
+static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, PS_Stacks) == 0x000088, "Member 'UGC_Commando_FlakVest_AddStack_C::PS_Stacks' has a wrong offset!");
+static_assert(offsetof(UGC_Commando_FlakVest_AddStack_C, PS_MaxStacks) == 0x000090, "Member 'UGC_Commando_FlakVest_AddStack_C::PS_MaxStacks' has a wrong offset!");
 
 }
 

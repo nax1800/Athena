@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "ProgressBarType_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,7 +31,7 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(float HitPointStat)>           K2Node_CreateDelegate_OutputDelegate12;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(float HitPointStat)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x004C(0x0038)(IsPlainOldData, NoDestructor)
@@ -44,7 +44,7 @@ static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Create
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate12) == 0x000038, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate2) == 0x000038, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_IsDesignTime) == 0x000048, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_MyGeometry) == 0x00004C, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_InDeltaTime) == 0x000084, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_InDeltaTime' has a wrong offset!");
@@ -176,40 +176,40 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Temp_class_Variable;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x0024(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgressBarType                              Temp_byte_Variable12;                              // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgressBarType                              Temp_byte_Variable2;                               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable123;                           // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable1234;                          // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12345;                         // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgressBarType                              Temp_byte_Variable123;                             // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgressBarType                              Temp_byte_Variable3;                               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable123456;                        // 0x008C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable1234567;                       // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12345678;                      // 0x00AC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable6;                             // 0x008C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable7;                             // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable8;                             // 0x00AC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00BC(0x0010)(IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable1;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12;                            // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgressBarType                              Temp_byte_Variable1234;                            // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable2;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgressBarType                              Temp_byte_Variable4;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable123456789;                     // 0x00F4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12345678910;                   // 0x0104(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable1234567891011;                 // 0x0114(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgressBarType                              Temp_byte_Variable12345;                           // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable9;                             // 0x00F4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable10;                            // 0x0104(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable11;                            // 0x0114(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgressBarType                              Temp_byte_Variable5;                               // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable123456789101112;               // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12345678910111213;             // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable13;                            // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable1234567891011121314;           // 0x0150(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EProgressBarType                              Temp_byte_Variable123456;                          // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable14;                            // 0x0150(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EProgressBarType                              Temp_byte_Variable6;                               // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue1;          // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Blueprint_GetSizeX_ReturnValue;           // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -217,46 +217,46 @@ public:
 	int32                                         CallFunc_Blueprint_GetSizeY_ReturnValue;           // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0180(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_Select1_Default;                            // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Select12_Default;                           // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select123_Default;                          // 0x01A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select1234_Default;                         // 0x01B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12345_Default;                        // 0x01C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select123456_Default;                       // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select1_Default;                            // 0x0190(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Select2_Default;                            // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_Select3_Default;                            // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select4_Default;                            // 0x01B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x01C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HitPointBar_C_Initialize_Bar) == 0x000008, "Wrong alignment on HitPointBar_C_Initialize_Bar");
 static_assert(sizeof(HitPointBar_C_Initialize_Bar) == 0x0001E0, "Wrong size on HitPointBar_C_Initialize_Bar");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable) == 0x000000, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable) == 0x000008, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable1) == 0x000010, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable12) == 0x000018, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable12' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable2) == 0x000018, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable2' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable1) == 0x000020, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable) == 0x000024, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable1) == 0x000034, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable1' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12) == 0x000044, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable12) == 0x000054, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable123) == 0x000058, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable123' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable1234) == 0x000068, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable1234' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12345) == 0x000078, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12345' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable123) == 0x000088, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable123456) == 0x00008C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable123456' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable1234567) == 0x00009C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable1234567' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12345678) == 0x0000AC, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12345678' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable2) == 0x000044, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable2' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable2) == 0x000054, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable3) == 0x000058, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable3' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable4) == 0x000068, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable4' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable5) == 0x000078, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable5' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable3) == 0x000088, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable6) == 0x00008C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable6' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable7) == 0x00009C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable7' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable8) == 0x0000AC, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable8' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_MakeStruct_Margin) == 0x0000BC, "Member 'HitPointBar_C_Initialize_Bar::K2Node_MakeStruct_Margin' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable) == 0x0000D0, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0000D8, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable1) == 0x0000E0, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable12) == 0x0000E8, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable1234) == 0x0000F0, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable123456789) == 0x0000F4, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable123456789' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12345678910) == 0x000104, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable1234567891011) == 0x000114, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable1234567891011' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable12345) == 0x000124, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable123456789101112) == 0x000128, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable123456789101112' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12345678910111213) == 0x000138, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12345678910111213' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable2) == 0x0000E8, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable4) == 0x0000F0, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable9) == 0x0000F4, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable9' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable10) == 0x000104, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable10' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable11) == 0x000114, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable11' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable5) == 0x000124, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12) == 0x000128, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable13) == 0x000138, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable13' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000148, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable1234567891011121314) == 0x000150, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable1234567891011121314' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable123456) == 0x000160, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable123456' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable14) == 0x000150, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable14' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable6) == 0x000160, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable6' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue1) == 0x000168, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Blueprint_GetSizeX_ReturnValue) == 0x000170, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Blueprint_GetSizeX_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000174, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
@@ -264,11 +264,11 @@ static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Blueprint_GetSizeY
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x00017C, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select_Default) == 0x000180, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select1_Default) == 0x000190, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select12_Default) == 0x000198, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select123_Default) == 0x0001A0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select1234_Default) == 0x0001B0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select1234_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select12345_Default) == 0x0001C0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select12345_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select123456_Default) == 0x0001D0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select123456_Default' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select2_Default) == 0x0001A0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select3_Default) == 0x0001A8, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select4_Default) == 0x0001B0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select5_Default) == 0x0001C0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select5_Default' has a wrong offset!");
+static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select6_Default) == 0x0001D0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select6_Default' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update Delta Bar
 // 0x0008 (0x0008 - 0x0000)

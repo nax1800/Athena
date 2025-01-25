@@ -10,40 +10,40 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C
-// 0x0048 (0x08D0 - 0x0888)
+// 0x0048 (0x0958 - 0x0910)
 class UExpeditionSquadSlotButton_C final : public UFortSquadSlotSelectorButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0888(0x0008)(Transient, DuplicateTransient)
-	int32                                         SquadSlotIndex;                                    // 0x0890(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_894[0x4];                                      // 0x0894(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OnSquadSlotSelected;                               // 0x0898(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnSquadSlotUpdated;                                // 0x08A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnSquadSlotOpened;                                 // 0x08B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	EFortItemCardSize                             SlottedItemCardSize;                               // 0x08C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0910(0x0008)(Transient, DuplicateTransient)
+	int32                                         SquadSlotIndex;                                    // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_91C[0x4];                                      // 0x091C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnSquadSlotSelected;                               // 0x0920(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnSquadSlotUpdated;                                // 0x0930(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnSquadSlotOpened;                                 // 0x0940(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	EFortItemCardSize                             SlottedItemCardSize;                               // 0x0950(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void OnSquadSlotSelected__DelegateSignature(int32 Param_SquadSlotIndex);
+	void OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex_0);
 	void OnSquadSlotUpdated__DelegateSignature(class UFortItem* Item);
 	void OnSquadSlotOpened__DelegateSignature();
 	void ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint);
-	void Open_Squad_Slot(int32 Param_SquadSlotIndex);
+	void Open_Squad_Slot(int32 SquadSlotIndex_0);
 	void Destruct();
 	void Construct();
 	void BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_3_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);
-	void OnSelected();
+	void BP_OnSelected();
 	void HandlePostDifferentSquadSlotSetBP();
 	void SquadSlotWidgetUpdated();
 	void PreConstruct(bool IsDesignTime);
@@ -60,13 +60,13 @@ public:
 	}
 };
 static_assert(alignof(UExpeditionSquadSlotButton_C) == 0x000008, "Wrong alignment on UExpeditionSquadSlotButton_C");
-static_assert(sizeof(UExpeditionSquadSlotButton_C) == 0x0008D0, "Wrong size on UExpeditionSquadSlotButton_C");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, UberGraphFrame) == 0x000888, "Member 'UExpeditionSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, SquadSlotIndex) == 0x000890, "Member 'UExpeditionSquadSlotButton_C::SquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotSelected) == 0x000898, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotSelected' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotUpdated) == 0x0008A8, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotUpdated' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotOpened) == 0x0008B8, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotOpened' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, SlottedItemCardSize) == 0x0008C8, "Member 'UExpeditionSquadSlotButton_C::SlottedItemCardSize' has a wrong offset!");
+static_assert(sizeof(UExpeditionSquadSlotButton_C) == 0x000958, "Wrong size on UExpeditionSquadSlotButton_C");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, UberGraphFrame) == 0x000910, "Member 'UExpeditionSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, SquadSlotIndex) == 0x000918, "Member 'UExpeditionSquadSlotButton_C::SquadSlotIndex' has a wrong offset!");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotSelected) == 0x000920, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotSelected' has a wrong offset!");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotUpdated) == 0x000930, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotUpdated' has a wrong offset!");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotOpened) == 0x000940, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotOpened' has a wrong offset!");
+static_assert(offsetof(UExpeditionSquadSlotButton_C, SlottedItemCardSize) == 0x000950, "Member 'UExpeditionSquadSlotButton_C::SlottedItemCardSize' has a wrong offset!");
 
 }
 

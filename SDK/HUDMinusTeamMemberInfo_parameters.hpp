@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -50,100 +50,92 @@ static_assert(sizeof(HUDMinusTeamMemberInfo_C_OnPlayerInfoChanged) == 0x0001F8, 
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'HUDMinusTeamMemberInfo_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Update
-// 0x0318 (0x0318 - 0x0000)
+// 0x02C8 (0x02C8 - 0x0000)
 struct HUDMinusTeamMemberInfo_C_Update final
 {
 public:
 	struct FFortTeamMemberInfo                    UpdatedMemberInfo;                                 // 0x0000(0x01F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       PlayerPlatformNetId;                               // 0x01F8(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0220(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable;                               // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x025A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x025B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable;                                 // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable1;                                // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable1;                              // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0273(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_UniqueNetIdRepl_ReturnValue;      // 0x0276(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x0277(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable12;                               // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable123;                              // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12345;                           // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select1_Default;                            // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 CallFunc_GetTeamHitPointFractions_HealthFractions; // 0x02A0(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<float>                                 CallFunc_GetTeamHitPointFractions_ShieldFractions; // 0x02B0(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue12;                 // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInLocalPlayersParty_ReturnValue;        // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select12_Default;                           // 0x02D8(0x0028)(HasGetValueTypeHash)
-	class UClass*                                 K2Node_Select123_Default;                          // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0309(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30A[0x2];                                      // 0x030A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select1234_Default;                         // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0311(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12345_Default;                        // 0x0312(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x01F8(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable;                               // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0232(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0233(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Variable;                                 // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Temp_class_Variable1;                              // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x024A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x024B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x024D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x024E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24F[0x1];                                      // 0x024F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable2;                                // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select1_Default;                            // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_GetTeamHitPointFractions_HealthFractions; // 0x0278(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<float>                                 CallFunc_GetTeamHitPointFractions_ShieldFractions; // 0x0288(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue2;                  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInLocalPlayersParty_ReturnValue;        // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_Select2_Default;                            // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BA[0x2];                                      // 0x02BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select3_Default;                            // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x02C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HUDMinusTeamMemberInfo_C_Update) == 0x000008, "Wrong alignment on HUDMinusTeamMemberInfo_C_Update");
-static_assert(sizeof(HUDMinusTeamMemberInfo_C_Update) == 0x000318, "Wrong size on HUDMinusTeamMemberInfo_C_Update");
+static_assert(sizeof(HUDMinusTeamMemberInfo_C_Update) == 0x0002C8, "Wrong size on HUDMinusTeamMemberInfo_C_Update");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, UpdatedMemberInfo) == 0x000000, "Member 'HUDMinusTeamMemberInfo_C_Update::UpdatedMemberInfo' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, PlayerPlatformNetId) == 0x0001F8, "Member 'HUDMinusTeamMemberInfo_C_Update::PlayerPlatformNetId' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, PlayerNetId) == 0x000220, "Member 'HUDMinusTeamMemberInfo_C_Update::PlayerNetId' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_class_Variable) == 0x000248, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue) == 0x000250, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable) == 0x000258, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable) == 0x000259, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable1) == 0x00025A, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable1) == 0x00025B, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable) == 0x00025C, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable1) == 0x000260, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_class_Variable1) == 0x000268, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable12) == 0x000270, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable123) == 0x000271, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable12) == 0x000272, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsValid_ReturnValue) == 0x000273, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue) == 0x000274, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable123) == 0x000275, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsValid_UniqueNetIdRepl_ReturnValue) == 0x000276, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsValid_UniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable1234) == 0x000277, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable12) == 0x000278, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select_Default) == 0x00027C, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable123) == 0x000280, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable123' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable12345) == 0x000284, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue1) == 0x000288, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000290, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select1_Default) == 0x000298, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetTeamHitPointFractions_HealthFractions) == 0x0002A0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetTeamHitPointFractions_HealthFractions' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetTeamHitPointFractions_ShieldFractions) == 0x0002B0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetTeamHitPointFractions_ShieldFractions' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0002C0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue12) == 0x0002C8, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsInLocalPlayersParty_ReturnValue) == 0x0002D0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsInLocalPlayersParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select12_Default) == 0x0002D8, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select123_Default) == 0x000300, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsValid_ReturnValue1) == 0x000308, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_Greater_IntInt_ReturnValue) == 0x000309, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select1234_Default) == 0x00030C, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select1234_Default' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue1) == 0x000310, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue12) == 0x000311, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select12345_Default) == 0x000312, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select12345_Default' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, PlayerNetId) == 0x0001F8, "Member 'HUDMinusTeamMemberInfo_C_Update::PlayerNetId' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_class_Variable) == 0x000220, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_class_Variable' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue) == 0x000228, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable) == 0x000230, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable) == 0x000231, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable1) == 0x000232, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable1) == 0x000233, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable) == 0x000234, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable1) == 0x000238, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_class_Variable1) == 0x000240, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_class_Variable1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable2) == 0x000248, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable2) == 0x000249, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_byte_Variable3) == 0x00024A, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsValid_ReturnValue) == 0x00024B, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue) == 0x00024C, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable3) == 0x00024D, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select_Default) == 0x00024E, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable2) == 0x000250, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_int_Variable3) == 0x000254, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, Temp_bool_Variable4) == 0x000258, "Member 'HUDMinusTeamMemberInfo_C_Update::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue1) == 0x000260, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select1_Default) == 0x000268, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000270, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetTeamHitPointFractions_HealthFractions) == 0x000278, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetTeamHitPointFractions_HealthFractions' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetTeamHitPointFractions_ShieldFractions) == 0x000288, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetTeamHitPointFractions_ShieldFractions' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000298, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue2) == 0x0002A0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsInLocalPlayersParty_ReturnValue) == 0x0002A8, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsInLocalPlayersParty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select2_Default) == 0x0002B0, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_IsValid_ReturnValue1) == 0x0002B8, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_Greater_IntInt_ReturnValue) == 0x0002B9, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select3_Default) == 0x0002BC, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue1) == 0x0002C0, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue2) == 0x0002C1, "Member 'HUDMinusTeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select4_Default) == 0x0002C2, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select4_Default' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.SetHealth
 // 0x0010 (0x0010 - 0x0000)

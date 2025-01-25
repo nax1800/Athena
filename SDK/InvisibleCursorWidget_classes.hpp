@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InvisibleCursorWidget.InvisibleCursorWidget_C
-// 0x0000 (0x0210 - 0x0210)
+// 0x0000 (0x0208 - 0x0208)
 class UInvisibleCursorWidget_C final : public UUserWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UInvisibleCursorWidget_C) == 0x000008, "Wrong alignment on UInvisibleCursorWidget_C");
-static_assert(sizeof(UInvisibleCursorWidget_C) == 0x000210, "Wrong size on UInvisibleCursorWidget_C");
+static_assert(sizeof(UInvisibleCursorWidget_C) == 0x000208, "Wrong size on UInvisibleCursorWidget_C");
 
 }
 

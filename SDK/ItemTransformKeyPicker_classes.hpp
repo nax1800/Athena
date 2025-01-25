@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyPicker.ItemTransformKeyPicker_C
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x0350 - 0x0350)
 class UItemTransformKeyPicker_C final : public UFortTransformKeyPicker
 {
 public:
@@ -37,7 +37,7 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformKeyPicker_C) == 0x000008, "Wrong alignment on UItemTransformKeyPicker_C");
-static_assert(sizeof(UItemTransformKeyPicker_C) == 0x0002E0, "Wrong size on UItemTransformKeyPicker_C");
+static_assert(sizeof(UItemTransformKeyPicker_C) == 0x000350, "Wrong size on UItemTransformKeyPicker_C");
 
 }
 

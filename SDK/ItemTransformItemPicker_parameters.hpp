@@ -237,13 +237,13 @@ static_assert(offsetof(ItemTransformItemPicker_C_SetFilter, CallFunc_EqualEqual_
 struct ItemTransformItemPicker_C_OpenPicker final
 {
 public:
-	TArray<class UFortItem*>                      Param_SacrificeItems;                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortItem*>                      SacrificeItems_0;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	int32                                         SelectedSlot;                                      // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SelectTabByID_ReturnValue;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemTransformItemPicker_C_OpenPicker) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_OpenPicker");
 static_assert(sizeof(ItemTransformItemPicker_C_OpenPicker) == 0x000018, "Wrong size on ItemTransformItemPicker_C_OpenPicker");
-static_assert(offsetof(ItemTransformItemPicker_C_OpenPicker, Param_SacrificeItems) == 0x000000, "Member 'ItemTransformItemPicker_C_OpenPicker::Param_SacrificeItems' has a wrong offset!");
+static_assert(offsetof(ItemTransformItemPicker_C_OpenPicker, SacrificeItems_0) == 0x000000, "Member 'ItemTransformItemPicker_C_OpenPicker::SacrificeItems_0' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_OpenPicker, SelectedSlot) == 0x000010, "Member 'ItemTransformItemPicker_C_OpenPicker::SelectedSlot' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_OpenPicker, CallFunc_SelectTabByID_ReturnValue) == 0x000014, "Member 'ItemTransformItemPicker_C_OpenPicker::CallFunc_SelectTabByID_ReturnValue' has a wrong offset!");
 

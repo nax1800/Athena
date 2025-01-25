@@ -26,10 +26,10 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward");
@@ -38,8 +38,8 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEnd
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate123) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000050, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayDropAnimation
@@ -148,7 +148,7 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_SkipPopAnimation, CallFun
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_SkipPopAnimation, CallFunc_IsAnimationPlaying_ReturnValue1) == 0x000001, "Member 'FrontEndRewards_CurrentReward_C_SkipPopAnimation::CallFunc_IsAnimationPlaying_ReturnValue1' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Drop Animation Sound
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound final
 {
 public:
@@ -156,29 +156,31 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12345;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123456;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234567;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound) == 0x000050, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound) == 0x000058, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable1) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable12) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable123) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable1234) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable12345) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable123456) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable1234567) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, K2Node_Select_Default) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable2) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable3) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable4) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable5) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable6) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable7) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, Temp_object_Variable8) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound, K2Node_Select_Default) == 0x000050, "Member 'FrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Pop Animation Sound
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound final
 {
 public:
@@ -186,29 +188,31 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12345;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123456;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234567;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound) == 0x000050, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound) == 0x000058, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable1) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable12) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable123) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable1234) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable12345) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable123456) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable1234567) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, K2Node_Select_Default) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable2) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable3) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable4) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable5) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable6) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable7) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, Temp_object_Variable8) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound, K2Node_Select_Default) == 0x000050, "Member 'FrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Open Animation Sound
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound final
 {
 public:
@@ -216,26 +220,28 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12345;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123456;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable1234567;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound) == 0x000050, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound) == 0x000058, "Wrong size on FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable1) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable12) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable123) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable1234) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable12345) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable123456) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable1234567) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, K2Node_Select_Default) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable2) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable3) == 0x000020, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable4) == 0x000028, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable5) == 0x000030, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable6) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable7) == 0x000040, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, Temp_object_Variable8) == 0x000048, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, K2Node_Select_Default) == 0x000050, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Reset Canvas Panel Slot Alignment and Anchors
 // 0x0010 (0x0010 - 0x0000)

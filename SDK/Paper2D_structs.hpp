@@ -95,44 +95,32 @@ enum class ESpriteCollisionMode : uint8
 	ESpriteCollisionMode_MAX                 = 3,
 };
 
-// ScriptStruct Paper2D.PaperSpriteAtlasSlot
-// 0x0040 (0x0040 - 0x0000)
-struct FPaperSpriteAtlasSlot final
+// ScriptStruct Paper2D.PaperTerrainMaterialRule
+// 0x0038 (0x0038 - 0x0000)
+struct FPaperTerrainMaterialRule final
 {
 public:
-	TSoftObjectPtr<class UPaperSprite>            SpriteRef;                                         // 0x0000(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AtlasIndex;                                        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         X;                                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Y;                                                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Width;                                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Height;                                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           StartCap;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPaperSprite*>                   Body;                                              // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	class UPaperSprite*                           EndCap;                                            // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinimumAngle;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaximumAngle;                                      // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCollision;                                  // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CollisionOffset;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DrawOrder;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPaperSpriteAtlasSlot) == 0x000008, "Wrong alignment on FPaperSpriteAtlasSlot");
-static_assert(sizeof(FPaperSpriteAtlasSlot) == 0x000040, "Wrong size on FPaperSpriteAtlasSlot");
-static_assert(offsetof(FPaperSpriteAtlasSlot, SpriteRef) == 0x000000, "Member 'FPaperSpriteAtlasSlot::SpriteRef' has a wrong offset!");
-static_assert(offsetof(FPaperSpriteAtlasSlot, AtlasIndex) == 0x000028, "Member 'FPaperSpriteAtlasSlot::AtlasIndex' has a wrong offset!");
-static_assert(offsetof(FPaperSpriteAtlasSlot, X) == 0x00002C, "Member 'FPaperSpriteAtlasSlot::X' has a wrong offset!");
-static_assert(offsetof(FPaperSpriteAtlasSlot, Y) == 0x000030, "Member 'FPaperSpriteAtlasSlot::Y' has a wrong offset!");
-static_assert(offsetof(FPaperSpriteAtlasSlot, Width) == 0x000034, "Member 'FPaperSpriteAtlasSlot::Width' has a wrong offset!");
-static_assert(offsetof(FPaperSpriteAtlasSlot, Height) == 0x000038, "Member 'FPaperSpriteAtlasSlot::Height' has a wrong offset!");
-
-// ScriptStruct Paper2D.SpriteInstanceData
-// 0x0050 (0x0050 - 0x0000)
-struct FSpriteInstanceData final
-{
-public:
-	struct FMatrix                                Transform;                                         // 0x0000(0x0040)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class UPaperSprite*                           SourceSprite;                                      // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 VertexColor;                                       // 0x0048(0x0004)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaterialIndex;                                     // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSpriteInstanceData) == 0x000010, "Wrong alignment on FSpriteInstanceData");
-static_assert(sizeof(FSpriteInstanceData) == 0x000050, "Wrong size on FSpriteInstanceData");
-static_assert(offsetof(FSpriteInstanceData, Transform) == 0x000000, "Member 'FSpriteInstanceData::Transform' has a wrong offset!");
-static_assert(offsetof(FSpriteInstanceData, SourceSprite) == 0x000040, "Member 'FSpriteInstanceData::SourceSprite' has a wrong offset!");
-static_assert(offsetof(FSpriteInstanceData, VertexColor) == 0x000048, "Member 'FSpriteInstanceData::VertexColor' has a wrong offset!");
-static_assert(offsetof(FSpriteInstanceData, MaterialIndex) == 0x00004C, "Member 'FSpriteInstanceData::MaterialIndex' has a wrong offset!");
+static_assert(alignof(FPaperTerrainMaterialRule) == 0x000008, "Wrong alignment on FPaperTerrainMaterialRule");
+static_assert(sizeof(FPaperTerrainMaterialRule) == 0x000038, "Wrong size on FPaperTerrainMaterialRule");
+static_assert(offsetof(FPaperTerrainMaterialRule, StartCap) == 0x000000, "Member 'FPaperTerrainMaterialRule::StartCap' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, Body) == 0x000008, "Member 'FPaperTerrainMaterialRule::Body' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, EndCap) == 0x000018, "Member 'FPaperTerrainMaterialRule::EndCap' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, MinimumAngle) == 0x000020, "Member 'FPaperTerrainMaterialRule::MinimumAngle' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, MaximumAngle) == 0x000024, "Member 'FPaperTerrainMaterialRule::MaximumAngle' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, bEnableCollision) == 0x000028, "Member 'FPaperTerrainMaterialRule::bEnableCollision' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, CollisionOffset) == 0x00002C, "Member 'FPaperTerrainMaterialRule::CollisionOffset' has a wrong offset!");
+static_assert(offsetof(FPaperTerrainMaterialRule, DrawOrder) == 0x000030, "Member 'FPaperTerrainMaterialRule::DrawOrder' has a wrong offset!");
 
 // ScriptStruct Paper2D.IntMargin
 // 0x0010 (0x0010 - 0x0000)
@@ -179,32 +167,44 @@ static_assert(sizeof(FPaperFlipbookKeyFrame) == 0x000010, "Wrong size on FPaperF
 static_assert(offsetof(FPaperFlipbookKeyFrame, Sprite) == 0x000000, "Member 'FPaperFlipbookKeyFrame::Sprite' has a wrong offset!");
 static_assert(offsetof(FPaperFlipbookKeyFrame, FrameRun) == 0x000008, "Member 'FPaperFlipbookKeyFrame::FrameRun' has a wrong offset!");
 
-// ScriptStruct Paper2D.PaperTerrainMaterialRule
-// 0x0038 (0x0038 - 0x0000)
-struct FPaperTerrainMaterialRule final
+// ScriptStruct Paper2D.PaperSpriteAtlasSlot
+// 0x0040 (0x0040 - 0x0000)
+struct FPaperSpriteAtlasSlot final
 {
 public:
-	class UPaperSprite*                           StartCap;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPaperSprite*>                   Body;                                              // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	class UPaperSprite*                           EndCap;                                            // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinimumAngle;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaximumAngle;                                      // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCollision;                                  // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CollisionOffset;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DrawOrder;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UPaperSprite>            SpriteRef;                                         // 0x0000(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AtlasIndex;                                        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         X;                                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Y;                                                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Width;                                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Height;                                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPaperTerrainMaterialRule) == 0x000008, "Wrong alignment on FPaperTerrainMaterialRule");
-static_assert(sizeof(FPaperTerrainMaterialRule) == 0x000038, "Wrong size on FPaperTerrainMaterialRule");
-static_assert(offsetof(FPaperTerrainMaterialRule, StartCap) == 0x000000, "Member 'FPaperTerrainMaterialRule::StartCap' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, Body) == 0x000008, "Member 'FPaperTerrainMaterialRule::Body' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, EndCap) == 0x000018, "Member 'FPaperTerrainMaterialRule::EndCap' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, MinimumAngle) == 0x000020, "Member 'FPaperTerrainMaterialRule::MinimumAngle' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, MaximumAngle) == 0x000024, "Member 'FPaperTerrainMaterialRule::MaximumAngle' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, bEnableCollision) == 0x000028, "Member 'FPaperTerrainMaterialRule::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, CollisionOffset) == 0x00002C, "Member 'FPaperTerrainMaterialRule::CollisionOffset' has a wrong offset!");
-static_assert(offsetof(FPaperTerrainMaterialRule, DrawOrder) == 0x000030, "Member 'FPaperTerrainMaterialRule::DrawOrder' has a wrong offset!");
+static_assert(alignof(FPaperSpriteAtlasSlot) == 0x000008, "Wrong alignment on FPaperSpriteAtlasSlot");
+static_assert(sizeof(FPaperSpriteAtlasSlot) == 0x000040, "Wrong size on FPaperSpriteAtlasSlot");
+static_assert(offsetof(FPaperSpriteAtlasSlot, SpriteRef) == 0x000000, "Member 'FPaperSpriteAtlasSlot::SpriteRef' has a wrong offset!");
+static_assert(offsetof(FPaperSpriteAtlasSlot, AtlasIndex) == 0x000028, "Member 'FPaperSpriteAtlasSlot::AtlasIndex' has a wrong offset!");
+static_assert(offsetof(FPaperSpriteAtlasSlot, X) == 0x00002C, "Member 'FPaperSpriteAtlasSlot::X' has a wrong offset!");
+static_assert(offsetof(FPaperSpriteAtlasSlot, Y) == 0x000030, "Member 'FPaperSpriteAtlasSlot::Y' has a wrong offset!");
+static_assert(offsetof(FPaperSpriteAtlasSlot, Width) == 0x000034, "Member 'FPaperSpriteAtlasSlot::Width' has a wrong offset!");
+static_assert(offsetof(FPaperSpriteAtlasSlot, Height) == 0x000038, "Member 'FPaperSpriteAtlasSlot::Height' has a wrong offset!");
+
+// ScriptStruct Paper2D.SpriteInstanceData
+// 0x0050 (0x0050 - 0x0000)
+struct FSpriteInstanceData final
+{
+public:
+	struct FMatrix                                Transform;                                         // 0x0000(0x0040)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UPaperSprite*                           SourceSprite;                                      // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 VertexColor;                                       // 0x0048(0x0004)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaterialIndex;                                     // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSpriteInstanceData) == 0x000010, "Wrong alignment on FSpriteInstanceData");
+static_assert(sizeof(FSpriteInstanceData) == 0x000050, "Wrong size on FSpriteInstanceData");
+static_assert(offsetof(FSpriteInstanceData, Transform) == 0x000000, "Member 'FSpriteInstanceData::Transform' has a wrong offset!");
+static_assert(offsetof(FSpriteInstanceData, SourceSprite) == 0x000040, "Member 'FSpriteInstanceData::SourceSprite' has a wrong offset!");
+static_assert(offsetof(FSpriteInstanceData, VertexColor) == 0x000048, "Member 'FSpriteInstanceData::VertexColor' has a wrong offset!");
+static_assert(offsetof(FSpriteInstanceData, MaterialIndex) == 0x00004C, "Member 'FSpriteInstanceData::MaterialIndex' has a wrong offset!");
 
 // ScriptStruct Paper2D.PaperTileInfo
 // 0x0010 (0x0010 - 0x0000)

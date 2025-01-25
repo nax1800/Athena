@@ -37,15 +37,37 @@ void UAthenaDirectAcquisitionScreen_C::ExecuteUbergraph_AthenaDirectAcquisitionS
 }
 
 
-// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.OnUpdateOtherPlatformMTXMessage
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// bool                                    HasOtherPlatformCurrency                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                             CurrencyMessageLocText                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UAthenaDirectAcquisitionScreen_C::Construct()
+void UAthenaDirectAcquisitionScreen_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCurrency, const class FText& CurrencyMessageLocText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionScreen_C", "Construct");
+		Func = Class->GetFunction("AthenaDirectAcquisitionScreen_C", "OnUpdateOtherPlatformMTXMessage");
+
+	Params::AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage Parms{};
+
+	Parms.HasOtherPlatformCurrency = HasOtherPlatformCurrency;
+	Parms.CurrencyMessageLocText = std::move(CurrencyMessageLocText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.ClearOfferWidgets
+// (Event, Public, BlueprintEvent)
+
+void UAthenaDirectAcquisitionScreen_C::ClearOfferWidgets()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionScreen_C", "ClearOfferWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -138,27 +160,6 @@ void UAthenaDirectAcquisitionScreen_C::Focus()
 		Func = Class->GetFunction("AthenaDirectAcquisitionScreen_C", "Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.HandlePurchaseHistory
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaDirectAcquisitionScreen_C::HandlePurchaseHistory(bool* Passthrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionScreen_C", "HandlePurchaseHistory");
-
-	Params::AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
 }
 
 }

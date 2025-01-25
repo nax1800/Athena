@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FortniteWorldMap.FortniteWorldMap_C
-// 0x0000 (0x0330 - 0x0330)
+// 0x0000 (0x0340 - 0x0340)
 class AFortniteWorldMap_C final : public AFortLevelScriptActor
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AFortniteWorldMap_C) == 0x000008, "Wrong alignment on AFortniteWorldMap_C");
-static_assert(sizeof(AFortniteWorldMap_C) == 0x000330, "Wrong size on AFortniteWorldMap_C");
+static_assert(sizeof(AFortniteWorldMap_C) == 0x000340, "Wrong size on AFortniteWorldMap_C");
 
 }
 

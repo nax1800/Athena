@@ -23,7 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UFortWorldItem* NewItem, int32 Count)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -36,7 +36,7 @@ static_assert(sizeof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory) == 0x00
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, EntryPoint) == 0x000000, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate12) == 0x000028, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, CallFunc_GetContext_ReturnValue1) == 0x000040, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -81,7 +81,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortBluGloManager*                     CallFunc_GetBluGloManager_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetBluGloItemDefinition_ReturnValue;      // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumInInventory_ReturnValue;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,7 +98,7 @@ static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetContext_ReturnValue
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BluGloInventory_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_IsValid_ReturnValue1) == 0x000011, "Member 'BluGloInventory_C_Update::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetBluGloManager_ReturnValue) == 0x000018, "Member 'BluGloInventory_C_Update::CallFunc_GetBluGloManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloInventory_C_Update, CallFunc_IsValid_ReturnValue12) == 0x000020, "Member 'BluGloInventory_C_Update::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BluGloInventory_C_Update, CallFunc_IsValid_ReturnValue2) == 0x000020, "Member 'BluGloInventory_C_Update::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetBluGloItemDefinition_ReturnValue) == 0x000028, "Member 'BluGloInventory_C_Update::CallFunc_GetBluGloItemDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetNumInInventory_ReturnValue) == 0x000030, "Member 'BluGloInventory_C_Update::CallFunc_GetNumInInventory_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetNumInInventory_ReturnValue1) == 0x000034, "Member 'BluGloInventory_C_Update::CallFunc_GetNumInInventory_ReturnValue1' has a wrong offset!");

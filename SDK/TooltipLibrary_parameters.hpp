@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function TooltipLibrary.TooltipLibrary_C.Create Basic Tooltip
-// 0x0058 (0x0058 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct TooltipLibrary_C_Create_Basic_Tooltip final
 {
 public:
@@ -25,19 +25,23 @@ public:
 	class FText                                   Body_Text;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   Header_Text;                                       // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class USlateBrushAsset*                       Icon_Brush;                                        // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            Output;                                            // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTooltipMinusBasicMinusS_C*             CallFunc_Create_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Header_Style;                                      // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Body_Style;                                        // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            Output;                                            // 0x0058(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTooltipMinusBasicMinusS_C*             CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TooltipLibrary_C_Create_Basic_Tooltip) == 0x000008, "Wrong alignment on TooltipLibrary_C_Create_Basic_Tooltip");
-static_assert(sizeof(TooltipLibrary_C_Create_Basic_Tooltip) == 0x000058, "Wrong size on TooltipLibrary_C_Create_Basic_Tooltip");
+static_assert(sizeof(TooltipLibrary_C_Create_Basic_Tooltip) == 0x000068, "Wrong size on TooltipLibrary_C_Create_Basic_Tooltip");
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Owning_Player) == 0x000000, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Owning_Player' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Body_Text) == 0x000008, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Body_Text' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Header_Text) == 0x000020, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Header_Text' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Icon_Brush) == 0x000038, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Icon_Brush' has a wrong offset!");
-static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, __WorldContext) == 0x000040, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::__WorldContext' has a wrong offset!");
-static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Output) == 0x000048, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Output' has a wrong offset!");
-static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, CallFunc_Create_ReturnValue) == 0x000050, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Header_Style) == 0x000040, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Header_Style' has a wrong offset!");
+static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Body_Style) == 0x000048, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Body_Style' has a wrong offset!");
+static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, __WorldContext) == 0x000050, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::__WorldContext' has a wrong offset!");
+static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Output) == 0x000058, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::Output' has a wrong offset!");
+static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, CallFunc_Create_ReturnValue) == 0x000060, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function TooltipLibrary.TooltipLibrary_C.Create Custom Tooltip
 // 0x0048 (0x0048 - 0x0000)

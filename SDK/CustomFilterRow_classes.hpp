@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CustomFilterRow.CustomFilterRow_C
-// 0x0030 (0x0838 - 0x0808)
+// 0x0030 (0x08C0 - 0x0890)
 class UCustomFilterRow_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UCommonWidgetSwitcher*                  CheckStateSwitcher;                                // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       FilterText;                                        // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bIsChecked;                                        // 0x0820(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	EFortInventoryCustomFilter                    Filter;                                            // 0x0821(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_822[0x6];                                      // 0x0822(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OnCustomFilterToggled;                             // 0x0828(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UCommonWidgetSwitcher*                  CheckStateSwitcher;                                // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       FilterText;                                        // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bIsChecked;                                        // 0x08A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	EFortInventoryCustomFilter                    Filter;                                            // 0x08A9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_8AA[0x6];                                      // 0x08AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnCustomFilterToggled;                             // 0x08B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnCustomFilterToggled__DelegateSignature(EFortInventoryCustomFilter Param_Filter, bool IsChecked);
+	void OnCustomFilterToggled__DelegateSignature(EFortInventoryCustomFilter Filter_0, bool IsChecked);
 	void ExecuteUbergraph_CustomFilterRow(int32 EntryPoint);
-	void OnClicked();
+	void BP_OnClicked();
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void SetCheckedState(bool IsChecked);
@@ -50,13 +50,13 @@ public:
 	}
 };
 static_assert(alignof(UCustomFilterRow_C) == 0x000008, "Wrong alignment on UCustomFilterRow_C");
-static_assert(sizeof(UCustomFilterRow_C) == 0x000838, "Wrong size on UCustomFilterRow_C");
-static_assert(offsetof(UCustomFilterRow_C, UberGraphFrame) == 0x000808, "Member 'UCustomFilterRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCustomFilterRow_C, CheckStateSwitcher) == 0x000810, "Member 'UCustomFilterRow_C::CheckStateSwitcher' has a wrong offset!");
-static_assert(offsetof(UCustomFilterRow_C, FilterText) == 0x000818, "Member 'UCustomFilterRow_C::FilterText' has a wrong offset!");
-static_assert(offsetof(UCustomFilterRow_C, bIsChecked) == 0x000820, "Member 'UCustomFilterRow_C::bIsChecked' has a wrong offset!");
-static_assert(offsetof(UCustomFilterRow_C, Filter) == 0x000821, "Member 'UCustomFilterRow_C::Filter' has a wrong offset!");
-static_assert(offsetof(UCustomFilterRow_C, OnCustomFilterToggled) == 0x000828, "Member 'UCustomFilterRow_C::OnCustomFilterToggled' has a wrong offset!");
+static_assert(sizeof(UCustomFilterRow_C) == 0x0008C0, "Wrong size on UCustomFilterRow_C");
+static_assert(offsetof(UCustomFilterRow_C, UberGraphFrame) == 0x000890, "Member 'UCustomFilterRow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCustomFilterRow_C, CheckStateSwitcher) == 0x000898, "Member 'UCustomFilterRow_C::CheckStateSwitcher' has a wrong offset!");
+static_assert(offsetof(UCustomFilterRow_C, FilterText) == 0x0008A0, "Member 'UCustomFilterRow_C::FilterText' has a wrong offset!");
+static_assert(offsetof(UCustomFilterRow_C, bIsChecked) == 0x0008A8, "Member 'UCustomFilterRow_C::bIsChecked' has a wrong offset!");
+static_assert(offsetof(UCustomFilterRow_C, Filter) == 0x0008A9, "Member 'UCustomFilterRow_C::Filter' has a wrong offset!");
+static_assert(offsetof(UCustomFilterRow_C, OnCustomFilterToggled) == 0x0008B0, "Member 'UCustomFilterRow_C::OnCustomFilterToggled' has a wrong offset!");
 
 }
 

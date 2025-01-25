@@ -14,6 +14,7 @@
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -21,27 +22,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PanelButton.PanelButton_C
-// 0x0048 (0x0850 - 0x0808)
+// 0x0048 (0x08D8 - 0x0890)
 class UPanelButton_C : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UNamedSlot*                             ContentSlot;                                       // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UClass*                                 ControllerInputStyle;                              // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UClass*                                 MouseKeyboardStyle;                                // 0x0820(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x0828(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	EHorizontalAlignment                          InputActionHorizontalAlignment;                    // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EVerticalAlignment                            InputActionVerticalAlignment;                      // 0x0839(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_83A[0x2];                                      // 0x083A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              InputActionRenderTranslation;                      // 0x083C(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          InputActionUseRimBrush;                            // 0x0844(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_845[0x3];                                      // 0x0845(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              InputActionRimBrushSize;                           // 0x0848(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UNamedSlot*                             ContentSlot;                                       // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                 ControllerInputStyle;                              // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UClass*                                 MouseKeyboardStyle;                                // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x08B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	EHorizontalAlignment                          InputActionHorizontalAlignment;                    // 0x08C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EVerticalAlignment                            InputActionVerticalAlignment;                      // 0x08C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C2[0x2];                                      // 0x08C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              InputActionRenderTranslation;                      // 0x08C4(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InputActionUseRimBrush;                            // 0x08CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8CD[0x3];                                      // 0x08CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              InputActionRimBrushSize;                           // 0x08D0(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_PanelButton(int32 EntryPoint);
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void Construct();
 	void OnActionComplete();
 	void OnActionProgress(float HeldPercent);
@@ -64,17 +65,17 @@ public:
 	}
 };
 static_assert(alignof(UPanelButton_C) == 0x000008, "Wrong alignment on UPanelButton_C");
-static_assert(sizeof(UPanelButton_C) == 0x000850, "Wrong size on UPanelButton_C");
-static_assert(offsetof(UPanelButton_C, UberGraphFrame) == 0x000808, "Member 'UPanelButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ContentSlot) == 0x000810, "Member 'UPanelButton_C::ContentSlot' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ControllerInputStyle) == 0x000818, "Member 'UPanelButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, MouseKeyboardStyle) == 0x000820, "Member 'UPanelButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ButtonClickAction) == 0x000828, "Member 'UPanelButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionHorizontalAlignment) == 0x000838, "Member 'UPanelButton_C::InputActionHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionVerticalAlignment) == 0x000839, "Member 'UPanelButton_C::InputActionVerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionRenderTranslation) == 0x00083C, "Member 'UPanelButton_C::InputActionRenderTranslation' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionUseRimBrush) == 0x000844, "Member 'UPanelButton_C::InputActionUseRimBrush' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionRimBrushSize) == 0x000848, "Member 'UPanelButton_C::InputActionRimBrushSize' has a wrong offset!");
+static_assert(sizeof(UPanelButton_C) == 0x0008D8, "Wrong size on UPanelButton_C");
+static_assert(offsetof(UPanelButton_C, UberGraphFrame) == 0x000890, "Member 'UPanelButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, ContentSlot) == 0x000898, "Member 'UPanelButton_C::ContentSlot' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, ControllerInputStyle) == 0x0008A0, "Member 'UPanelButton_C::ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, MouseKeyboardStyle) == 0x0008A8, "Member 'UPanelButton_C::MouseKeyboardStyle' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, ButtonClickAction) == 0x0008B0, "Member 'UPanelButton_C::ButtonClickAction' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, InputActionHorizontalAlignment) == 0x0008C0, "Member 'UPanelButton_C::InputActionHorizontalAlignment' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, InputActionVerticalAlignment) == 0x0008C1, "Member 'UPanelButton_C::InputActionVerticalAlignment' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, InputActionRenderTranslation) == 0x0008C4, "Member 'UPanelButton_C::InputActionRenderTranslation' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, InputActionUseRimBrush) == 0x0008CC, "Member 'UPanelButton_C::InputActionUseRimBrush' has a wrong offset!");
+static_assert(offsetof(UPanelButton_C, InputActionRimBrushSize) == 0x0008D0, "Member 'UPanelButton_C::InputActionRimBrushSize' has a wrong offset!");
 
 }
 

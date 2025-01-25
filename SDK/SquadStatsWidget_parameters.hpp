@@ -86,17 +86,22 @@ static_assert(offsetof(SquadStatsWidget_C_BindDelegates, K2Node_DynamicCast_bSuc
 static_assert(offsetof(SquadStatsWidget_C_BindDelegates, CallFunc_GetRegisteredPlayerInfo_ReturnValue) == 0x000028, "Member 'SquadStatsWidget_C_BindDelegates::CallFunc_GetRegisteredPlayerInfo_ReturnValue' has a wrong offset!");
 
 // Function SquadStatsWidget.SquadStatsWidget_C.ToggleBetweenStats
-// 0x0008 (0x0008 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct SquadStatsWidget_C_ToggleBetweenStats final
 {
 public:
 	int32                                         NewIndex;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStatsListWidget_C*                     K2Node_DynamicCast_AsStats_List_Widget;            // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SquadStatsWidget_C_ToggleBetweenStats) == 0x000004, "Wrong alignment on SquadStatsWidget_C_ToggleBetweenStats");
-static_assert(sizeof(SquadStatsWidget_C_ToggleBetweenStats) == 0x000008, "Wrong size on SquadStatsWidget_C_ToggleBetweenStats");
+static_assert(alignof(SquadStatsWidget_C_ToggleBetweenStats) == 0x000008, "Wrong alignment on SquadStatsWidget_C_ToggleBetweenStats");
+static_assert(sizeof(SquadStatsWidget_C_ToggleBetweenStats) == 0x000018, "Wrong size on SquadStatsWidget_C_ToggleBetweenStats");
 static_assert(offsetof(SquadStatsWidget_C_ToggleBetweenStats, NewIndex) == 0x000000, "Member 'SquadStatsWidget_C_ToggleBetweenStats::NewIndex' has a wrong offset!");
-static_assert(offsetof(SquadStatsWidget_C_ToggleBetweenStats, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'SquadStatsWidget_C_ToggleBetweenStats::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SquadStatsWidget_C_ToggleBetweenStats, K2Node_DynamicCast_AsStats_List_Widget) == 0x000008, "Member 'SquadStatsWidget_C_ToggleBetweenStats::K2Node_DynamicCast_AsStats_List_Widget' has a wrong offset!");
+static_assert(offsetof(SquadStatsWidget_C_ToggleBetweenStats, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'SquadStatsWidget_C_ToggleBetweenStats::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(SquadStatsWidget_C_ToggleBetweenStats, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'SquadStatsWidget_C_ToggleBetweenStats::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function SquadStatsWidget.SquadStatsWidget_C.UnbindDelegates
 // 0x0038 (0x0038 - 0x0000)

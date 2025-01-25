@@ -34,7 +34,7 @@ public:
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable12;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable2;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -63,28 +63,28 @@ public:
 	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1; // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12; // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123; // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue12;       // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue123;      // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue12;        // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue12;         // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent2; // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent3; // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue3;        // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue2;         // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Conv_LinearColorToVector_ReturnValue;     // 0x00F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue123;       // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue123;        // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue3;         // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue3;          // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0118(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0128(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0128(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class APlayerPawn_Generic_C*                  K2Node_DynamicCast_AsPlayer_Pawn_Generic;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234; // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12345; // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent4; // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent5; // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable12;               // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Has_Been_Initd_Variable2;                // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123456; // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234567; // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent6; // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent7; // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running) == 0x000008, "Wrong alignment on GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running");
 static_assert(sizeof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running) == 0x000170, "Wrong size on GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running");
@@ -96,7 +96,7 @@ static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, Temp_bool_Has_Been_Initd_Variable) == 0x000021, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, K2Node_Event_DeltaSeconds) == 0x000024, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, Temp_bool_IsClosed_Variable12) == 0x000029, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::Temp_bool_IsClosed_Variable12' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, Temp_bool_IsClosed_Variable2) == 0x000029, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::Temp_bool_IsClosed_Variable2' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_FInterpTo_ReturnValue) == 0x00002C, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000030, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_FInterpEaseInOut_ReturnValue) == 0x000038, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
@@ -120,25 +120,25 @@ static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1) == 0x0000B0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0000B8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x0000C0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12) == 0x0000C8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123) == 0x0000D0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue12) == 0x0000D8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue123) == 0x0000E0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_GetRootComponent_ReturnValue12) == 0x0000E8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_GetRootComponent_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnSoundAttached_ReturnValue12) == 0x0000F0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnSoundAttached_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent2) == 0x0000C8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent2' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent3) == 0x0000D0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent3' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue2) == 0x0000D8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnEmitterAttached_ReturnValue3) == 0x0000E0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnEmitterAttached_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_GetRootComponent_ReturnValue2) == 0x0000E8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_GetRootComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnSoundAttached_ReturnValue2) == 0x0000F0, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnSoundAttached_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x0000F8, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_GetRootComponent_ReturnValue123) == 0x000108, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_GetRootComponent_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnSoundAttached_ReturnValue123) == 0x000110, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnSoundAttached_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_GetRootComponent_ReturnValue3) == 0x000108, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_GetRootComponent_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_SpawnSoundAttached_ReturnValue3) == 0x000110, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_SpawnSoundAttached_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, K2Node_CreateDelegate_OutputDelegate) == 0x000118, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000128, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000130, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234) == 0x000140, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12345) == 0x000148, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent12345' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent4) == 0x000140, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent4' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent5) == 0x000148, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent5' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000150, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, Temp_bool_Has_Been_Initd_Variable12) == 0x00015C, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::Temp_bool_Has_Been_Initd_Variable12' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123456) == 0x000160, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent123456' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234567) == 0x000168, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent1234567' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, Temp_bool_Has_Been_Initd_Variable2) == 0x00015C, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::Temp_bool_Has_Been_Initd_Variable2' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent6) == 0x000160, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent6' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running, CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent7) == 0x000168, "Member 'GCN_Hoverboard_Running_C_ExecuteUbergraph_GCN_Hoverboard_Running::CallFunc_GetHoverboardSkeletal_SK_HoverboardComponent7' has a wrong offset!");
 
 // Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -259,25 +259,25 @@ struct GCN_Hoverboard_Running_C_ClearSounds final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GCN_Hoverboard_Running_C_ClearSounds) == 0x000001, "Wrong alignment on GCN_Hoverboard_Running_C_ClearSounds");
 static_assert(sizeof(GCN_Hoverboard_Running_C_ClearSounds) == 0x000003, "Wrong size on GCN_Hoverboard_Running_C_ClearSounds");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ClearSounds, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'GCN_Hoverboard_Running_C_ClearSounds::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_ClearSounds, CallFunc_IsValid_ReturnValue1) == 0x000001, "Member 'GCN_Hoverboard_Running_C_ClearSounds::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCN_Hoverboard_Running_C_ClearSounds, CallFunc_IsValid_ReturnValue12) == 0x000002, "Member 'GCN_Hoverboard_Running_C_ClearSounds::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_ClearSounds, CallFunc_IsValid_ReturnValue2) == 0x000002, "Member 'GCN_Hoverboard_Running_C_ClearSounds::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.GetHoverboardSkeletal
 // 0x0010 (0x0010 - 0x0000)
 struct GCN_Hoverboard_Running_C_GetHoverboardSkeletal final
 {
 public:
-	class USkeletalMeshComponent*                 Param_SK_HoverboardComponent;                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SK_HoverboardComponent_0;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GCN_Hoverboard_Running_C_GetHoverboardSkeletal) == 0x000008, "Wrong alignment on GCN_Hoverboard_Running_C_GetHoverboardSkeletal");
 static_assert(sizeof(GCN_Hoverboard_Running_C_GetHoverboardSkeletal) == 0x000010, "Wrong size on GCN_Hoverboard_Running_C_GetHoverboardSkeletal");
-static_assert(offsetof(GCN_Hoverboard_Running_C_GetHoverboardSkeletal, Param_SK_HoverboardComponent) == 0x000000, "Member 'GCN_Hoverboard_Running_C_GetHoverboardSkeletal::Param_SK_HoverboardComponent' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_GetHoverboardSkeletal, SK_HoverboardComponent_0) == 0x000000, "Member 'GCN_Hoverboard_Running_C_GetHoverboardSkeletal::SK_HoverboardComponent_0' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_GetHoverboardSkeletal, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'GCN_Hoverboard_Running_C_GetHoverboardSkeletal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.GetPlayerLeanValuePercent
@@ -302,6 +302,36 @@ static_assert(offsetof(GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent, K2Nod
 static_assert(offsetof(GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00001C, "Member 'GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent, CallFunc_Abs_ReturnValue) == 0x000020, "Member 'GCN_Hoverboard_Running_C_GetPlayerLeanValuePercent::CallFunc_Abs_ReturnValue' has a wrong offset!");
+
+// Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.OnExecute
+// 0x00C8 (0x00C8 - 0x0000)
+struct GCN_Hoverboard_Running_C_OnExecute final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GCN_Hoverboard_Running_C_OnExecute) == 0x000008, "Wrong alignment on GCN_Hoverboard_Running_C_OnExecute");
+static_assert(sizeof(GCN_Hoverboard_Running_C_OnExecute) == 0x0000C8, "Wrong size on GCN_Hoverboard_Running_C_OnExecute");
+static_assert(offsetof(GCN_Hoverboard_Running_C_OnExecute, MyTarget) == 0x000000, "Member 'GCN_Hoverboard_Running_C_OnExecute::MyTarget' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_OnExecute, Parameters) == 0x000008, "Member 'GCN_Hoverboard_Running_C_OnExecute::Parameters' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'GCN_Hoverboard_Running_C_OnExecute::ReturnValue' has a wrong offset!");
+
+// Function GCN_Hoverboard_Running.GCN_Hoverboard_Running_C.WhileActive
+// 0x00C8 (0x00C8 - 0x0000)
+struct GCN_Hoverboard_Running_C_WhileActive final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GCN_Hoverboard_Running_C_WhileActive) == 0x000008, "Wrong alignment on GCN_Hoverboard_Running_C_WhileActive");
+static_assert(sizeof(GCN_Hoverboard_Running_C_WhileActive) == 0x0000C8, "Wrong size on GCN_Hoverboard_Running_C_WhileActive");
+static_assert(offsetof(GCN_Hoverboard_Running_C_WhileActive, MyTarget) == 0x000000, "Member 'GCN_Hoverboard_Running_C_WhileActive::MyTarget' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_WhileActive, Parameters) == 0x000008, "Member 'GCN_Hoverboard_Running_C_WhileActive::Parameters' has a wrong offset!");
+static_assert(offsetof(GCN_Hoverboard_Running_C_WhileActive, ReturnValue) == 0x0000C0, "Member 'GCN_Hoverboard_Running_C_WhileActive::ReturnValue' has a wrong offset!");
 
 }
 

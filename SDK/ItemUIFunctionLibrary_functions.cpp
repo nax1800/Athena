@@ -98,5 +98,31 @@ void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fra
 		*Formatted_Value = std::move(Parms.Formatted_Value);
 }
 
+
+// Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.IsNullItem
+// (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UObject*                          ItemObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Is_Null_Item                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemUIFunctionLibrary_C::IsNullItem(class UObject* ItemObject, class UObject* __WorldContext, bool* Is_Null_Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "IsNullItem");
+
+	Params::ItemUIFunctionLibrary_C_IsNullItem Parms{};
+
+	Parms.ItemObject = ItemObject;
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (Is_Null_Item != nullptr)
+		*Is_Null_Item = Parms.Is_Null_Item;
+}
+
 }
 

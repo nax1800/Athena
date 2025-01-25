@@ -12,21 +12,23 @@
 
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FullPartyMemberAthena.FullPartyMemberAthena_C
-// 0x0010 (0x0980 - 0x0970)
+// 0x0010 (0x09B0 - 0x09A0)
 class UFullPartyMemberAthena_C final : public UAthenaPartyMemberBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0970(0x0008)(Transient, DuplicateTransient)
-	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09A0(0x0008)(Transient, DuplicateTransient)
+	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x09A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FullPartyMemberAthena(int32 EntryPoint);
+	void OnFriendshipStatusDetermined(EFortFriendRequestStatus RequestStatus);
 	void OpenPartyFinder();
 	void SetBannerIconAndColor(const class FString& IconId, const class FString& ColorId);
 
@@ -41,9 +43,9 @@ public:
 	}
 };
 static_assert(alignof(UFullPartyMemberAthena_C) == 0x000008, "Wrong alignment on UFullPartyMemberAthena_C");
-static_assert(sizeof(UFullPartyMemberAthena_C) == 0x000980, "Wrong size on UFullPartyMemberAthena_C");
-static_assert(offsetof(UFullPartyMemberAthena_C, UberGraphFrame) == 0x000970, "Member 'UFullPartyMemberAthena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberAthena_C, PlayerBanner) == 0x000978, "Member 'UFullPartyMemberAthena_C::PlayerBanner' has a wrong offset!");
+static_assert(sizeof(UFullPartyMemberAthena_C) == 0x0009B0, "Wrong size on UFullPartyMemberAthena_C");
+static_assert(offsetof(UFullPartyMemberAthena_C, UberGraphFrame) == 0x0009A0, "Member 'UFullPartyMemberAthena_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFullPartyMemberAthena_C, PlayerBanner) == 0x0009A8, "Member 'UFullPartyMemberAthena_C::PlayerBanner' has a wrong offset!");
 
 }
 

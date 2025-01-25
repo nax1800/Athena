@@ -37,6 +37,34 @@ void UAthenaEquipProgress_C::ExecuteUbergraph_AthenaEquipProgress(int32 EntryPoi
 }
 
 
+// Function AthenaEquipProgress.AthenaEquipProgress_C.HideSelf
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaEquipProgress_C::HideSelf()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaEquipProgress_C", "HideSelf");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaEquipProgress.AthenaEquipProgress_C.VerifyCueCountIsClear
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaEquipProgress_C::VerifyCueCountIsClear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaEquipProgress_C", "VerifyCueCountIsClear");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaEquipProgress.AthenaEquipProgress_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 

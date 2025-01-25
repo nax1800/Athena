@@ -65,6 +65,26 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPos
 }
 
 
+// Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.OnThreatOverrideChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bForceThreatOn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bool bForceThreatOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatOverrideChanged");
+
+	Params::ThreatPostProcessManagerAndParticleBlueprint_C_OnThreatOverrideChanged Parms{};
+
+	Parms.bForceThreatOn = bForceThreatOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.ForceUpdateLensEffect
 // (BlueprintCallable, BlueprintEvent)
 

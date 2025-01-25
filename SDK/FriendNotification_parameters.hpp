@@ -21,13 +21,11 @@ struct FriendNotification_C_ExecuteUbergraph_FriendNotification final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsTencentBuild_ReturnValue;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000004, "Wrong alignment on FriendNotification_C_ExecuteUbergraph_FriendNotification");
 static_assert(sizeof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000008, "Wrong size on FriendNotification_C_ExecuteUbergraph_FriendNotification");
 static_assert(offsetof(FriendNotification_C_ExecuteUbergraph_FriendNotification, EntryPoint) == 0x000000, "Member 'FriendNotification_C_ExecuteUbergraph_FriendNotification::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ExecuteUbergraph_FriendNotification, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'FriendNotification_C_ExecuteUbergraph_FriendNotification::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FriendNotification_C_ExecuteUbergraph_FriendNotification, CallFunc_IsTencentBuild_ReturnValue) == 0x000005, "Member 'FriendNotification_C_ExecuteUbergraph_FriendNotification::CallFunc_IsTencentBuild_ReturnValue' has a wrong offset!");
 
 // Function FriendNotification.FriendNotification_C.ShowPartyInvites
 // 0x0040 (0x0040 - 0x0000)
@@ -43,7 +41,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPartyFinder_C*                         K2Node_DynamicCast_AsParty_Finder;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FriendNotification_C_ShowPartyInvites) == 0x000008, "Wrong alignment on FriendNotification_C_ShowPartyInvites");
@@ -55,8 +53,23 @@ static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_AsCommon_Activatable_Panel) == 0x000020, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_AsCommon_Activatable_Panel' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_bSuccess1) == 0x000028, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_AsParty_Finder) == 0x000030, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_AsParty_Finder' has a wrong offset!");
-static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_bSuccess12) == 0x000038, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_bSuccess2) == 0x000038, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'FriendNotification_C_ShowPartyInvites::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function FriendNotification.FriendNotification_C.JoinPartyInvite
+// 0x0018 (0x0018 - 0x0000)
+struct FriendNotification_C_JoinPartyInvite final
+{
+public:
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSocialItem*                        CallFunc_FindPartyInvite_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FriendNotification_C_JoinPartyInvite) == 0x000008, "Wrong alignment on FriendNotification_C_JoinPartyInvite");
+static_assert(sizeof(FriendNotification_C_JoinPartyInvite) == 0x000018, "Wrong size on FriendNotification_C_JoinPartyInvite");
+static_assert(offsetof(FriendNotification_C_JoinPartyInvite, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'FriendNotification_C_JoinPartyInvite::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FriendNotification_C_JoinPartyInvite, CallFunc_GetContext_ReturnValue1) == 0x000008, "Member 'FriendNotification_C_JoinPartyInvite::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FriendNotification_C_JoinPartyInvite, CallFunc_FindPartyInvite_ReturnValue) == 0x000010, "Member 'FriendNotification_C_JoinPartyInvite::CallFunc_FindPartyInvite_ReturnValue' has a wrong offset!");
 
 // Function FriendNotification.FriendNotification_C.ShowFriendInvites
 // 0x0010 (0x0010 - 0x0000)

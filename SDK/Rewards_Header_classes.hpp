@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Rewards_Header.Rewards_Header_C
-// 0x0038 (0x0250 - 0x0218)
+// 0x0038 (0x0248 - 0x0210)
 class URewards_Header_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AnimFadeSubHeader;                                 // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderSubHeader;                                   // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextBlockHeader;                                   // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextBlockSubHeader;                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          UseSubHeader;                                      // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortRewardNotificationData*            Reward;                                            // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       AnimFadeSubHeader;                                 // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderSubHeader;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextBlockHeader;                                   // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextBlockSubHeader;                                // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          UseSubHeader;                                      // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortRewardNotificationData*            Reward;                                            // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Rewards_Header(int32 EntryPoint);
@@ -55,14 +55,14 @@ public:
 	}
 };
 static_assert(alignof(URewards_Header_C) == 0x000008, "Wrong alignment on URewards_Header_C");
-static_assert(sizeof(URewards_Header_C) == 0x000250, "Wrong size on URewards_Header_C");
-static_assert(offsetof(URewards_Header_C, UberGraphFrame) == 0x000218, "Member 'URewards_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, AnimFadeSubHeader) == 0x000220, "Member 'URewards_Header_C::AnimFadeSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, BorderSubHeader) == 0x000228, "Member 'URewards_Header_C::BorderSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, TextBlockHeader) == 0x000230, "Member 'URewards_Header_C::TextBlockHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, TextBlockSubHeader) == 0x000238, "Member 'URewards_Header_C::TextBlockSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, UseSubHeader) == 0x000240, "Member 'URewards_Header_C::UseSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, Reward) == 0x000248, "Member 'URewards_Header_C::Reward' has a wrong offset!");
+static_assert(sizeof(URewards_Header_C) == 0x000248, "Wrong size on URewards_Header_C");
+static_assert(offsetof(URewards_Header_C, UberGraphFrame) == 0x000210, "Member 'URewards_Header_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, AnimFadeSubHeader) == 0x000218, "Member 'URewards_Header_C::AnimFadeSubHeader' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, BorderSubHeader) == 0x000220, "Member 'URewards_Header_C::BorderSubHeader' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, TextBlockHeader) == 0x000228, "Member 'URewards_Header_C::TextBlockHeader' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, TextBlockSubHeader) == 0x000230, "Member 'URewards_Header_C::TextBlockSubHeader' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, UseSubHeader) == 0x000238, "Member 'URewards_Header_C::UseSubHeader' has a wrong offset!");
+static_assert(offsetof(URewards_Header_C, Reward) == 0x000240, "Member 'URewards_Header_C::Reward' has a wrong offset!");
 
 }
 

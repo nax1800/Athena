@@ -10,139 +10,317 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.ExecuteUbergraph_FortReplayCameraSettingsTab
-// 0x0178 (0x0178 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue12;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue123;                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortSpectatorBlendType                       Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortSpectatorBlendType                       Temp_byte_Variable1;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortSpectatorBlendType                       Temp_byte_Variable2;                               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortSpectatorBlendType                       Temp_byte_Variable3;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortSpectatorCameraComponent*          CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortSpectatorCamComp_ThirdPerson*      K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortSpectatorCameraComponent*          CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerSpectating*        K2Node_Event_FortPlayerControllerSpectating;       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESpectatorCameraType                          K2Node_Event_CameraType;                           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortSpectatorCamComp_ThirdPerson*      K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1; // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class FText>                           K2Node_MakeArray_Array1;                           // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class FText>                           K2Node_MakeArray_Array12;                          // 0x00A0(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class FText>                           K2Node_MakeArray_Array123;                         // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_GetNameplatesEnabled_ReturnValue;         // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetOutlinesEnabled_ReturnValue;           // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue1;                   // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRelevancyZoneVisible_ReturnValue;      // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerControllerSpectating*        K2Node_Event_FortPlayerControllerSpectating;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESpectatorCameraType                          K2Node_Event_CameraType;                           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class FText>                           K2Node_MakeArray_Array1;                           // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class FText>                           K2Node_MakeArray_Array2;                           // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class FText>                           K2Node_MakeArray_Array3;                           // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index10;       // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index9;        // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8E[0x2];                                       // 0x008E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index8;        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index7;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue3;              // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index6;        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Slider_Value2;          // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index5;        // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue4;              // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index123456;   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue12;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index12345;    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TArray<class FText>                           K2Node_MakeArray_Array4;                           // 0x00D0(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          Temp_bool_Variable1;                               // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index1234;     // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index123;      // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue123;            // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index12;       // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Slider_Value;           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0100(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index1;        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1234;           // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array1234;                        // 0x0128(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_GetDamageFXEnabled_ReturnValue;           // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue123;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_Selected_Index;         // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12345;          // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14A[0x6];                                      // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array12345;                       // 0x0150(0x0010)(ZeroConstructor, ReferenceParm)
-	TDelegate<void(const struct FFortReplayFXState& FXState)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0160(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index4;        // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue5;              // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array5;                           // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FFortReplayFXState& FXState)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortSpectatorCameraComponent*          CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue; // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSpectatorCamComp_ThirdPerson*      K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person; // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortReplaySpectator*                   K2Node_DynamicCast_AsFort_Replay_Spectator;        // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue2;                  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortReplaySpectator*                   K2Node_DynamicCast_AsFort_Replay_Spectator1;       // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue3;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue4;                  // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue5;                  // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSpectatorCameraComponent*          CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1; // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSpectatorCamComp_ThirdPerson*      K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1; // 0x0188(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_GetNameplatesEnabled_ReturnValue;         // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetOutlinesEnabled_ReturnValue;           // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue1;                   // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortReplaySpectator*                   K2Node_DynamicCast_AsFort_Replay_Spectator2;       // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetRelevancyZoneVisible_ReturnValue;      // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C2[0x2];                                      // 0x01C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue2;                   // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable8;                               // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDamageFXEnabled_ReturnValue;           // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1CA[0x2];                                      // 0x01CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue3;                   // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index3;        // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue6;              // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array6;                           // 0x01D8(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_GetShareLensSettingsEnabled_ReturnValue;  // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue4;                   // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable9;                               // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index2;        // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortSpectatorBlendType                       K2Node_Select2_Default;                            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array7;                           // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
+	EFortSpectatorBlendType                       CallFunc_GetBlendType_ReturnValue;                 // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_211[0x3];                                      // 0x0211(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select3_Default;                            // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21A[0x2];                                      // 0x021A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_ComponentBoundEvent_Slider_Value1;          // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index1;        // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue7;              // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_229[0x3];                                      // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetStormEffectsEnabled_ReturnValue;       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue5;                   // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FText>                           K2Node_MakeArray_Array8;                           // 0x0238(0x0010)(ZeroConstructor, ReferenceParm)
+	float                                         K2Node_ComponentBoundEvent_Slider_Value;           // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array9;                           // 0x0250(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_GetMapWeaponTracersEnabled_ReturnValue;   // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_Selected_Index;         // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue6;                   // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue8;              // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab) == 0x000008, "Wrong alignment on FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab");
-static_assert(sizeof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab) == 0x000178, "Wrong size on FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab) == 0x000270, "Wrong size on FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab");
 static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, EntryPoint) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue12) == 0x000018, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue123) == 0x000020, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue) == 0x000030, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person) == 0x000038, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1) == 0x000048, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Event_FortPlayerControllerSpectating) == 0x000050, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Event_FortPlayerControllerSpectating' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Event_CameraType) == 0x000058, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Event_CameraType' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1) == 0x000060, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess1) == 0x000068, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000069, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate) == 0x000070, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array) == 0x000080, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array1) == 0x000090, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array12) == 0x0000A0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array123) == 0x0000B0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetNameplatesEnabled_ReturnValue) == 0x0000C0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetNameplatesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetOutlinesEnabled_ReturnValue) == 0x0000C1, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetOutlinesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue) == 0x0000C4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue1) == 0x0000C8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetRelevancyZoneVisible_ReturnValue) == 0x0000CC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetRelevancyZoneVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index123456) == 0x0000D0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index123456' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue12) == 0x0000D4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue) == 0x0000D8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index12345) == 0x0000DC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index12345' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue1) == 0x0000E0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index1234) == 0x0000E4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index1234' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue12) == 0x0000E8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index123) == 0x0000EC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue123) == 0x0000F0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index12) == 0x0000F4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Slider_Value) == 0x0000F8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate1) == 0x000100, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate12) == 0x000110, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index1) == 0x000120, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue1234) == 0x000124, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array1234) == 0x000128, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array1234' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetDamageFXEnabled_ReturnValue) == 0x000138, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetDamageFXEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue123) == 0x00013C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable) == 0x000140, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index) == 0x000144, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue12345) == 0x000148, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable1) == 0x000149, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array12345) == 0x000150, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array12345' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate123) == 0x000160, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_bool_Variable) == 0x000170, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select_Default) == 0x000171, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable) == 0x000004, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_int_Variable) == 0x000008, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_int_Variable1) == 0x00000C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_int_Variable2) == 0x000010, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_int_Variable3) == 0x000014, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable1) == 0x000018, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable2) == 0x000019, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable3) == 0x00001A, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_bool_Variable) == 0x00001B, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable4) == 0x00001C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable5) == 0x00001D, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable6) == 0x000028, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Event_FortPlayerControllerSpectating) == 0x000030, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Event_FortPlayerControllerSpectating' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Event_CameraType) == 0x000038, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Event_CameraType' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable7) == 0x000039, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003A, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array) == 0x000040, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array1) == 0x000050, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array2) == 0x000060, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array3) == 0x000070, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index10) == 0x000080, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index10' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue) == 0x000084, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index9) == 0x000088, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index9' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue1) == 0x00008C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select_Default) == 0x00008D, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index8) == 0x000090, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index8' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue2) == 0x000094, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index7) == 0x000098, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index7' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue3) == 0x00009C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index6) == 0x0000A0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index6' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Slider_Value2) == 0x0000A4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Slider_Value2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate) == 0x0000A8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate1) == 0x0000B8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index5) == 0x0000C8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue4) == 0x0000CC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array4) == 0x0000D0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_bool_Variable1) == 0x0000E0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index4) == 0x0000E4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue1) == 0x0000E8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue5) == 0x0000F0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array5) == 0x0000F8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select1_Default) == 0x000108, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate2) == 0x000110, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_IsValid_ReturnValue) == 0x000120, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue) == 0x000128, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person) == 0x000130, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Replay_Spectator) == 0x000140, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Replay_Spectator' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess1) == 0x000148, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue2) == 0x000150, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Replay_Spectator1) == 0x000158, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Replay_Spectator1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess2) == 0x000160, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue3) == 0x000168, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue4) == 0x000170, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetContext_ReturnValue5) == 0x000178, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1) == 0x000180, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetCurrentSpectatorCameraComponent_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1) == 0x000188, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Spectator_Cam_Comp_Third_Person1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess3) == 0x000190, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_CreateDelegate_OutputDelegate3) == 0x000198, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetNameplatesEnabled_ReturnValue) == 0x0001A8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetNameplatesEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue) == 0x0001AC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetOutlinesEnabled_ReturnValue) == 0x0001B0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetOutlinesEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue1) == 0x0001B4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_AsFort_Replay_Spectator2) == 0x0001B8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_AsFort_Replay_Spectator2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_DynamicCast_bSuccess4) == 0x0001C0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetRelevancyZoneVisible_ReturnValue) == 0x0001C1, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetRelevancyZoneVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue2) == 0x0001C4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable8) == 0x0001C8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetDamageFXEnabled_ReturnValue) == 0x0001C9, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetDamageFXEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue3) == 0x0001CC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index3) == 0x0001D0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index3' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue6) == 0x0001D4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array6) == 0x0001D8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array6' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetShareLensSettingsEnabled_ReturnValue) == 0x0001E8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetShareLensSettingsEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue4) == 0x0001EC, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_byte_Variable9) == 0x0001F0, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index2) == 0x0001F4, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select2_Default) == 0x0001F8, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array7) == 0x000200, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array7' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetBlendType_ReturnValue) == 0x000210, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetBlendType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select3_Default) == 0x000214, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, Temp_bool_Variable2) == 0x000218, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_Select4_Default) == 0x000219, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Slider_Value1) == 0x00021C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Slider_Value1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index1) == 0x000220, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index1' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_MapRangeClamped_ReturnValue) == 0x000224, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue7) == 0x000228, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00022C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetStormEffectsEnabled_ReturnValue) == 0x000230, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetStormEffectsEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue5) == 0x000234, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array8) == 0x000238, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array8' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Slider_Value) == 0x000248, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_MakeArray_Array9) == 0x000250, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_MakeArray_Array9' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_GetMapWeaponTracersEnabled_ReturnValue) == 0x000260, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_GetMapWeaponTracersEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, K2Node_ComponentBoundEvent_Selected_Index) == 0x000264, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::K2Node_ComponentBoundEvent_Selected_Index' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_SelectInt_ReturnValue6) == 0x000268, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_SelectInt_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab, CallFunc_Greater_IntInt_ReturnValue8) == 0x00026C, "Member 'FortReplayCameraSettingsTab_C_ExecuteUbergraph_FortReplayCameraSettingsTab::CallFunc_Greater_IntInt_ReturnValue8' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection Changed__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature final
+{
+public:
+	int32                                         Selected_Index;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature final
+{
+public:
+	float                                         Slider_Value;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection Changed__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature final
+{
+public:
+	int32                                         Selected_Index;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature final
+{
+public:
+	float                                         Slider_Value;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection Changed__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature final
+{
+public:
+	int32                                         Selected_Index;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature final
+{
+public:
+	int32                                         Selected_Index;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__HighQualityFX_K2Node_ComponentBoundEvent_10_Selection Changed__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -297,6 +475,61 @@ static_assert(alignof(FortReplayCameraSettingsTab_C_RefreshHighQualityFXState) =
 static_assert(sizeof(FortReplayCameraSettingsTab_C_RefreshHighQualityFXState) == 0x000018, "Wrong size on FortReplayCameraSettingsTab_C_RefreshHighQualityFXState");
 static_assert(offsetof(FortReplayCameraSettingsTab_C_RefreshHighQualityFXState, FX_State) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_RefreshHighQualityFXState::FX_State' has a wrong offset!");
 static_assert(offsetof(FortReplayCameraSettingsTab_C_RefreshHighQualityFXState, CallFunc_SelectInt_ReturnValue) == 0x000014, "Member 'FortReplayCameraSettingsTab_C_RefreshHighQualityFXState::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.HideBlendSettingsInReplays
+// 0x0018 (0x0018 - 0x0000)
+struct FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays final
+{
+public:
+	int32                                         CallFunc_GetConsoleVariableIntValue_ReturnValue;   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortReplaySpectator*                   K2Node_DynamicCast_AsFort_Replay_Spectator;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays) == 0x000008, "Wrong alignment on FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays) == 0x000018, "Wrong size on FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays, CallFunc_GetConsoleVariableIntValue_ReturnValue) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays::CallFunc_GetConsoleVariableIntValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays, K2Node_DynamicCast_AsFort_Replay_Spectator) == 0x000008, "Member 'FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays::K2Node_DynamicCast_AsFort_Replay_Spectator' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'FortReplayCameraSettingsTab_C_HideBlendSettingsInReplays::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.SetNameplateViewDistanceWidget
+// 0x0030 (0x0030 - 0x0000)
+struct FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget final
+{
+public:
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
+	float                                         CallFunc_GetNameplatesViewDistance_ReturnValue;    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget) == 0x000008, "Wrong alignment on FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget) == 0x000030, "Wrong size on FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget, CallFunc_MakeVector2D_ReturnValue) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget::CallFunc_GetText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget, CallFunc_GetNameplatesViewDistance_ReturnValue) == 0x000020, "Member 'FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget::CallFunc_GetNameplatesViewDistance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget, CallFunc_MapRangeClamped_ReturnValue) == 0x000028, "Member 'FortReplayCameraSettingsTab_C_SetNameplateViewDistanceWidget::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.SetOutsideSafeZoneOpacityWidget
+// 0x0030 (0x0030 - 0x0000)
+struct FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget final
+{
+public:
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetOutsideSafeZoneOpacity_ReturnValue;    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0010(0x0018)()
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget) == 0x000008, "Wrong alignment on FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget");
+static_assert(sizeof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget) == 0x000030, "Wrong size on FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget, CallFunc_MakeVector2D_ReturnValue) == 0x000000, "Member 'FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget, CallFunc_GetOutsideSafeZoneOpacity_ReturnValue) == 0x000008, "Member 'FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget::CallFunc_GetOutsideSafeZoneOpacity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget, CallFunc_GetText_ReturnValue) == 0x000010, "Member 'FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget::CallFunc_GetText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget, CallFunc_FClamp_ReturnValue) == 0x000028, "Member 'FortReplayCameraSettingsTab_C_SetOutsideSafeZoneOpacityWidget::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 
 }
 

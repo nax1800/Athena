@@ -24,7 +24,7 @@ public:
 	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void RECEIPT(const struct FPurchaseFlowReceiptParam& Param_RECEIPT);
+	void RECEIPT(const struct FPurchaseFlowReceiptParam& RECEIPT_0);
 	void RequestClose(const class FString& CloseInfo);
 
 public:

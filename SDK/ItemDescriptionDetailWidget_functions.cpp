@@ -37,6 +37,20 @@ void UItemDescriptionDetailWidget_C::ExecuteUbergraph_ItemDescriptionDetailWidge
 }
 
 
+// Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandlePreDifferentItemToDetailSet
+// (Event, Protected, BlueprintEvent)
+
+void UItemDescriptionDetailWidget_C::HandlePreDifferentItemToDetailSet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandlePreDifferentItemToDetailSet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandlePostDifferentItemToDetailSet
 // (Event, Protected, BlueprintEvent)
 
@@ -83,6 +97,30 @@ void UItemDescriptionDetailWidget_C::UpdateQuantityTextBlock()
 		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "UpdateQuantityTextBlock");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandleItemChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ItemChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    AmmoChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IngredientsChanged                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemDescriptionDetailWidget_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleItemChanged");
+
+	Params::ItemDescriptionDetailWidget_C_HandleItemChanged Parms{};
+
+	Parms.ItemChanged = ItemChanged;
+	Parms.AmmoChanged = AmmoChanged;
+	Parms.IngredientsChanged = IngredientsChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

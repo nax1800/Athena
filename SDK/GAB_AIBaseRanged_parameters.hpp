@@ -12,8 +12,8 @@
 
 #include "GameplayAbilities_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -72,7 +72,7 @@ public:
 	float                                         CallFunc_GetGameDifficulty_ReturnValue;            // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_EvaluateCurveTableRow_OutXY;              // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EvaluateCurveTableRow_ReturnValue;        // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x01D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x01D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D6[0x2];                                      // 0x01D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetProjectileInitialValues_outProjectileSpeed1; // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_GetProjectileInitialValues_outSpawnDirection1; // 0x01DC(0x000C)(IsPlainOldData, NoDestructor)
@@ -81,12 +81,12 @@ public:
 	class AActor*                                 CallFunc_GetProjectileInitialValues_HomingTarget1; // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData12;                   // 0x0200(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag12;               // 0x0220(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0200(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x0220(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortProjectileBase*                    CallFunc_SpawnProjectile_ReturnValue;              // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0238(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0238(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged) == 0x000008, "Wrong alignment on GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged");
 static_assert(sizeof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged) == 0x000248, "Wrong size on GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged");
@@ -129,17 +129,17 @@ static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2N
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_GetGameDifficulty_ReturnValue) == 0x0001CC, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_GetGameDifficulty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_EvaluateCurveTableRow_OutXY) == 0x0001D0, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_EvaluateCurveTableRow_ReturnValue) == 0x0001D4, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_EvaluateCurveTableRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_IsValid_ReturnValue12) == 0x0001D5, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_IsValid_ReturnValue2) == 0x0001D5, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_GetProjectileInitialValues_outProjectileSpeed1) == 0x0001D8, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_GetProjectileInitialValues_outProjectileSpeed1' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_GetProjectileInitialValues_outSpawnDirection1) == 0x0001DC, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_GetProjectileInitialValues_outSpawnDirection1' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_GetProjectileInitialValues_outProjectileGravity1) == 0x0001E8, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_GetProjectileInitialValues_outProjectileGravity1' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_GetProjectileInitialValues_HomingTarget1) == 0x0001F0, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_GetProjectileInitialValues_HomingTarget1' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001F8, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CustomEvent_TargetData12) == 0x000200, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CustomEvent_TargetData12' has a wrong offset!");
-static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CustomEvent_ApplicationTag12) == 0x000220, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CustomEvent_ApplicationTag12' has a wrong offset!");
+static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CustomEvent_TargetData2) == 0x000200, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CustomEvent_TargetData2' has a wrong offset!");
+static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CustomEvent_ApplicationTag2) == 0x000220, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_Select_Default) == 0x000228, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, CallFunc_SpawnProjectile_ReturnValue) == 0x000230, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::CallFunc_SpawnProjectile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CreateDelegate_OutputDelegate12) == 0x000238, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged, K2Node_CreateDelegate_OutputDelegate2) == 0x000238, "Member 'GAB_AIBaseRanged_C_ExecuteUbergraph_GAB_AIBaseRanged::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function GAB_AIBaseRanged.GAB_AIBaseRanged_C.Cancelled_2221E89D4148023005FB94B04BA06EF9
 // 0x0028 (0x0028 - 0x0000)

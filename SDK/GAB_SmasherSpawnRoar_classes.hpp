@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherSpawnRoar.GAB_SmasherSpawnRoar_C
-// 0x0000 (0x0AF8 - 0x0AF8)
+// 0x0000 (0x0900 - 0x0900)
 class UGAB_SmasherSpawnRoar_C final : public UGAB_SmasherRoar_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherSpawnRoar_C) == 0x000008, "Wrong alignment on UGAB_SmasherSpawnRoar_C");
-static_assert(sizeof(UGAB_SmasherSpawnRoar_C) == 0x000AF8, "Wrong size on UGAB_SmasherSpawnRoar_C");
+static_assert(sizeof(UGAB_SmasherSpawnRoar_C) == 0x000900, "Wrong size on UGAB_SmasherSpawnRoar_C");
 
 }
 

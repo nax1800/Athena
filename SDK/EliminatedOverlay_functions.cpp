@@ -37,6 +37,34 @@ void UEliminatedOverlay_C::ExecuteUbergraph_EliminatedOverlay(int32 EntryPoint)
 }
 
 
+// Function EliminatedOverlay.EliminatedOverlay_C.WinnerSwapComplete
+// (BlueprintCallable, BlueprintEvent)
+
+void UEliminatedOverlay_C::WinnerSwapComplete()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "WinnerSwapComplete");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.EventUpdateMultiWinner
+// (BlueprintCallable, BlueprintEvent)
+
+void UEliminatedOverlay_C::EventUpdateMultiWinner()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "EventUpdateMultiWinner");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function EliminatedOverlay.EliminatedOverlay_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -76,9 +104,9 @@ void UEliminatedOverlay_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 // Function EliminatedOverlay.EliminatedOverlay_C.OnPawnDied
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           Param_DeathReport                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FFortPlayerDeathReport           DeathReport_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UEliminatedOverlay_C::OnPawnDied(struct FFortPlayerDeathReport& Param_DeathReport)
+void UEliminatedOverlay_C::OnPawnDied(struct FFortPlayerDeathReport& DeathReport_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87,11 +115,11 @@ void UEliminatedOverlay_C::OnPawnDied(struct FFortPlayerDeathReport& Param_Death
 
 	Params::EliminatedOverlay_C_OnPawnDied Parms{};
 
-	Parms.Param_DeathReport = std::move(Param_DeathReport);
+	Parms.DeathReport_0 = std::move(DeathReport_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Param_DeathReport = std::move(Parms.Param_DeathReport);
+	DeathReport_0 = std::move(Parms.DeathReport_0);
 }
 
 
@@ -189,11 +217,10 @@ void UEliminatedOverlay_C::OnKillFeedUpdated()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FFortPlayerDeathReport           FortPlayerDeathReport                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class AFortPawn*                        KillerPawn                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    DidPlayerKillThemselves                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             KillerName                                             (Parm, OutParm)
 
-void UEliminatedOverlay_C::ProcessDeathReport(struct FFortPlayerDeathReport& FortPlayerDeathReport, class AFortPawn** KillerPawn, bool* DidPlayerKillThemselves, class FText* KillerName)
+void UEliminatedOverlay_C::ProcessDeathReport(struct FFortPlayerDeathReport& FortPlayerDeathReport, bool* DidPlayerKillThemselves, class FText* KillerName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -207,9 +234,6 @@ void UEliminatedOverlay_C::ProcessDeathReport(struct FFortPlayerDeathReport& For
 	UObject::ProcessEvent(Func, &Parms);
 
 	FortPlayerDeathReport = std::move(Parms.FortPlayerDeathReport);
-
-	if (KillerPawn != nullptr)
-		*KillerPawn = Parms.KillerPawn;
 
 	if (DidPlayerKillThemselves != nullptr)
 		*DidPlayerKillThemselves = Parms.DidPlayerKillThemselves;
@@ -261,23 +285,109 @@ void UEliminatedOverlay_C::StreamingLoadingChanged(bool bLoading)
 }
 
 
-// Function EliminatedOverlay.EliminatedOverlay_C.ViewTargetKillsChanged
+// Function EliminatedOverlay.EliminatedOverlay_C.Winning Score Determined
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Kills                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Score                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UEliminatedOverlay_C::ViewTargetKillsChanged(int32 Kills)
+void UEliminatedOverlay_C::Winning_Score_Determined(int32 Score)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("EliminatedOverlay_C", "ViewTargetKillsChanged");
+		Func = Class->GetFunction("EliminatedOverlay_C", "Winning Score Determined");
 
-	Params::EliminatedOverlay_C_ViewTargetKillsChanged Parms{};
+	Params::EliminatedOverlay_C_Winning_Score_Determined Parms{};
 
-	Parms.Kills = Kills;
+	Parms.Score = Score;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.OnPlayerLost
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EEndOfMatchReason                       LostReason                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UEliminatedOverlay_C::OnPlayerLost(EEndOfMatchReason LostReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "OnPlayerLost");
+
+	Params::EliminatedOverlay_C_OnPlayerLost Parms{};
+
+	Parms.LostReason = LostReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.UpdatePlayerLost
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UEliminatedOverlay_C::UpdatePlayerLost()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "UpdatePlayerLost");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.UpdateMultiwinner
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UEliminatedOverlay_C::UpdateMultiwinner()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "UpdateMultiwinner");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.GetMultiwinnerIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RequestedPosition                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ValidatedPosition                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UEliminatedOverlay_C::GetMultiwinnerIndex(int32 RequestedPosition, int32* ValidatedPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "GetMultiwinnerIndex");
+
+	Params::EliminatedOverlay_C_GetMultiwinnerIndex Parms{};
+
+	Parms.RequestedPosition = RequestedPosition;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ValidatedPosition != nullptr)
+		*ValidatedPosition = Parms.ValidatedPosition;
+}
+
+
+// Function EliminatedOverlay.EliminatedOverlay_C.HideWinnerAnnouncement
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UEliminatedOverlay_C::HideWinnerAnnouncement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EliminatedOverlay_C", "HideWinnerAnnouncement");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

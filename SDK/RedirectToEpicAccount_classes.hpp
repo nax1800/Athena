@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RedirectToEpicAccount.RedirectToEpicAccount_C
-// 0x0008 (0x0418 - 0x0410)
+// 0x0008 (0x0348 - 0x0340)
 class URedirectToEpicAccount_C final : public UFortRedirectToEpicAccountWidget
 {
 public:
-	class UImage*                                 Image_4;                                           // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_4;                                           // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(URedirectToEpicAccount_C) == 0x000008, "Wrong alignment on URedirectToEpicAccount_C");
-static_assert(sizeof(URedirectToEpicAccount_C) == 0x000418, "Wrong size on URedirectToEpicAccount_C");
-static_assert(offsetof(URedirectToEpicAccount_C, Image_4) == 0x000410, "Member 'URedirectToEpicAccount_C::Image_4' has a wrong offset!");
+static_assert(sizeof(URedirectToEpicAccount_C) == 0x000348, "Wrong size on URedirectToEpicAccount_C");
+static_assert(offsetof(URedirectToEpicAccount_C, Image_4) == 0x000340, "Member 'URedirectToEpicAccount_C::Image_4' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "TutorialHighlightData_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "TutorialHighlightData_structs.hpp"
 
 
 namespace SDK::Params

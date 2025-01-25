@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function GCN_Athena_DanceStun.GCN_Athena_DanceStun_C.ExecuteUbergraph_GCN_Athena_DanceStun
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun final
 {
 public:
@@ -30,9 +30,11 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0024(0x000C)(IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun) == 0x000008, "Wrong alignment on GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun");
-static_assert(sizeof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun) == 0x0000B8, "Wrong size on GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun");
+static_assert(sizeof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun) == 0x0000C0, "Wrong size on GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun");
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, EntryPoint) == 0x000000, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000004, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_Conv_FloatToVector_ReturnValue1) == 0x000010, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_Conv_FloatToVector_ReturnValue1' has a wrong offset!");
@@ -40,6 +42,8 @@ static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceS
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000020, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_MakeRotator_ReturnValue) == 0x000024, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x000030, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_IsValid_ReturnValue) == 0x0000B8, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun, CallFunc_IsValid_ReturnValue1) == 0x0000B9, "Member 'GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 
 // Function GCN_Athena_DanceStun.GCN_Athena_DanceStun_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -53,19 +57,24 @@ static_assert(sizeof(GCN_Athena_DanceStun_C_ReceiveTick) == 0x000004, "Wrong siz
 static_assert(offsetof(GCN_Athena_DanceStun_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'GCN_Athena_DanceStun_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function GCN_Athena_DanceStun.GCN_Athena_DanceStun_C.OnActive
-// 0x00C8 (0x00C8 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct GCN_Athena_DanceStun_C_OnActive final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawnAthena*                  K2Node_DynamicCast_AsFort_Player_Pawn_Athena;      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GCN_Athena_DanceStun_C_OnActive) == 0x000008, "Wrong alignment on GCN_Athena_DanceStun_C_OnActive");
-static_assert(sizeof(GCN_Athena_DanceStun_C_OnActive) == 0x0000C8, "Wrong size on GCN_Athena_DanceStun_C_OnActive");
+static_assert(sizeof(GCN_Athena_DanceStun_C_OnActive) == 0x0000D8, "Wrong size on GCN_Athena_DanceStun_C_OnActive");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnActive, MyTarget) == 0x000000, "Member 'GCN_Athena_DanceStun_C_OnActive::MyTarget' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnActive, Parameters) == 0x000008, "Member 'GCN_Athena_DanceStun_C_OnActive::Parameters' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnActive, ReturnValue) == 0x0000C0, "Member 'GCN_Athena_DanceStun_C_OnActive::ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_DanceStun_C_OnActive, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0000C8, "Member 'GCN_Athena_DanceStun_C_OnActive::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_DanceStun_C_OnActive, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'GCN_Athena_DanceStun_C_OnActive::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GCN_Athena_DanceStun.GCN_Athena_DanceStun_C.OnRemove
 // 0x00D8 (0x00D8 - 0x0000)
@@ -75,7 +84,8 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -84,6 +94,7 @@ static_assert(sizeof(GCN_Athena_DanceStun_C_OnRemove) == 0x0000D8, "Wrong size o
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, MyTarget) == 0x000000, "Member 'GCN_Athena_DanceStun_C_OnRemove::MyTarget' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, Parameters) == 0x000008, "Member 'GCN_Athena_DanceStun_C_OnRemove::Parameters' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, ReturnValue) == 0x0000C0, "Member 'GCN_Athena_DanceStun_C_OnRemove::ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, CallFunc_IsValid_ReturnValue) == 0x0000C1, "Member 'GCN_Athena_DanceStun_C_OnRemove::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x0000C8, "Member 'GCN_Athena_DanceStun_C_OnRemove::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
 static_assert(offsetof(GCN_Athena_DanceStun_C_OnRemove, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'GCN_Athena_DanceStun_C_OnRemove::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 

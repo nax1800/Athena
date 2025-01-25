@@ -10,34 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C
-// 0x0020 (0x0840 - 0x0820)
+// 0x0028 (0x08D0 - 0x08A8)
 class UAthenaInventoryEquipSlot_C final : public UAthenaInventoryEquipButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 DropTarget;                                        // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ItemLocked;                                        // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsDragHovered;                                     // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A8(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 DropTarget;                                        // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ItemLocked;                                        // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaGadgetFuelGauge_C*               JetpackFuelGauge;                                  // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsDragHovered;                                     // 0x08C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaInventoryEquipSlot(int32 EntryPoint);
 	void OnDragLeave(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
 	void OnInventoryItemSelected_Event_0(class UFortItem* Item);
-	void OnDoubleClicked();
-	void OnDeselected();
-	void OnSelected();
+	void BP_OnDoubleClicked();
+	void BP_OnDeselected();
+	void BP_OnSelected();
 	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnClicked();
+	void BP_OnClicked();
 	void OnQuickbarContentsChanged_Event_0(EFortQuickBars QuickbarIndex, const TArray<int32>& ChangedSlots);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
@@ -49,7 +50,10 @@ public:
 	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	bool OnDragOver(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
 	bool CanEquipFortItem(class UObject* Object);
-	void IsFocusOfDrop(bool* Param_IsDragHovered);
+	void IsFocusOfDrop(bool* IsDragHovered_0);
+	void Update_Athena_Gadget_Fuel_Widget(class UFortItem* ItemInSlot);
+	void Hide_Athena_Gadget_Fuel_Widget();
+	void Show_Athena_Gadget_Fuel_Widget(class UFortItem* Item);
 
 public:
 	static class UClass* StaticClass()
@@ -62,11 +66,12 @@ public:
 	}
 };
 static_assert(alignof(UAthenaInventoryEquipSlot_C) == 0x000008, "Wrong alignment on UAthenaInventoryEquipSlot_C");
-static_assert(sizeof(UAthenaInventoryEquipSlot_C) == 0x000840, "Wrong size on UAthenaInventoryEquipSlot_C");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, UberGraphFrame) == 0x000820, "Member 'UAthenaInventoryEquipSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, DropTarget) == 0x000828, "Member 'UAthenaInventoryEquipSlot_C::DropTarget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, ItemLocked) == 0x000830, "Member 'UAthenaInventoryEquipSlot_C::ItemLocked' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, IsDragHovered) == 0x000838, "Member 'UAthenaInventoryEquipSlot_C::IsDragHovered' has a wrong offset!");
+static_assert(sizeof(UAthenaInventoryEquipSlot_C) == 0x0008D0, "Wrong size on UAthenaInventoryEquipSlot_C");
+static_assert(offsetof(UAthenaInventoryEquipSlot_C, UberGraphFrame) == 0x0008A8, "Member 'UAthenaInventoryEquipSlot_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryEquipSlot_C, DropTarget) == 0x0008B0, "Member 'UAthenaInventoryEquipSlot_C::DropTarget' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryEquipSlot_C, ItemLocked) == 0x0008B8, "Member 'UAthenaInventoryEquipSlot_C::ItemLocked' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryEquipSlot_C, JetpackFuelGauge) == 0x0008C0, "Member 'UAthenaInventoryEquipSlot_C::JetpackFuelGauge' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryEquipSlot_C, IsDragHovered) == 0x0008C8, "Member 'UAthenaInventoryEquipSlot_C::IsDragHovered' has a wrong offset!");
 
 }
 

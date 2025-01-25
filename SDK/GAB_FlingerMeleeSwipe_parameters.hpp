@@ -27,8 +27,8 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData12;                   // 0x0020(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag12;               // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0020(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
@@ -36,7 +36,7 @@ public:
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag1;                // 0x0080(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0088(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x00A8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate12;            // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayTag                           Temp_struct_Variable;                              // 0x00C0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable1;                             // 0x00C8(0x0020)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_ApplyGameplayEffectContainer_ReturnValue; // 0x00E8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
@@ -63,9 +63,9 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0188(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x0194(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x01A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X12;                          // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y12;                          // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z12;                          // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X2;                           // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y2;                           // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z2;                           // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe) == 0x000008, "Wrong alignment on GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe");
@@ -73,15 +73,15 @@ static_assert(sizeof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSw
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, EntryPoint) == 0x000000, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_PlayMontageWaitTarget_ReturnValue) == 0x000018, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_PlayMontageWaitTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_TargetData12) == 0x000020, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_TargetData12' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_ApplicationTag12) == 0x000040, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_ApplicationTag12' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_TargetData2) == 0x000020, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_TargetData2' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_ApplicationTag2) == 0x000040, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CreateDelegate_OutputDelegate1) == 0x000050, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_TargetData1) == 0x000060, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_TargetData1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_ApplicationTag1) == 0x000080, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_ApplicationTag1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_TargetData) == 0x000088, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CustomEvent_ApplicationTag) == 0x0000A8, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CreateDelegate_OutputDelegate12) == 0x0000B0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, K2Node_CreateDelegate_OutputDelegate2) == 0x0000B0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, Temp_struct_Variable) == 0x0000C0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, Temp_struct_Variable1) == 0x0000C8, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::Temp_struct_Variable1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_ApplyGameplayEffectContainer_ReturnValue) == 0x0000E8, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_ApplyGameplayEffectContainer_ReturnValue' has a wrong offset!");
@@ -106,9 +106,9 @@ static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMelee
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_MakeVector_ReturnValue1) == 0x000188, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_Normal_ReturnValue1) == 0x000194, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_Normal_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_Cross_VectorVector_ReturnValue) == 0x0001A0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_X12) == 0x0001AC, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_X12' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_Y12) == 0x0001B0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_Y12' has a wrong offset!");
-static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_Z12) == 0x0001B4, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_Z12' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_X2) == 0x0001AC, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_X2' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_Y2) == 0x0001B0, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_Y2' has a wrong offset!");
+static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_BreakVector_Z2) == 0x0001B4, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_BreakVector_Z2' has a wrong offset!");
 static_assert(offsetof(GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001B8, "Member 'GAB_FlingerMeleeSwipe_C_ExecuteUbergraph_GAB_FlingerMeleeSwipe::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function GAB_FlingerMeleeSwipe.GAB_FlingerMeleeSwipe_C.Cancelled_75D3277A479B3F48D2AD2889328C3F32

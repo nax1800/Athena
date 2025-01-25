@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InterestIndicatorWidget.InterestIndicatorWidget_C
-// 0x0040 (0x02B8 - 0x0278)
+// 0x0040 (0x02B0 - 0x0270)
 class UInterestIndicatorWidget_C final : public UFortActorIndicatorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       NewAnimation_2;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       NewAnimation_1;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 backgroundpulse;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Center;                                            // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       DecriptionText;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Largespinring;                                     // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Smallspinring;                                     // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       NewAnimation_2;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       NewAnimation_1;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 backgroundpulse;                                   // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Center;                                            // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       DecriptionText;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Largespinring;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Smallspinring;                                     // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_InterestIndicatorWidget(int32 EntryPoint);
@@ -52,15 +52,15 @@ public:
 	}
 };
 static_assert(alignof(UInterestIndicatorWidget_C) == 0x000008, "Wrong alignment on UInterestIndicatorWidget_C");
-static_assert(sizeof(UInterestIndicatorWidget_C) == 0x0002B8, "Wrong size on UInterestIndicatorWidget_C");
-static_assert(offsetof(UInterestIndicatorWidget_C, UberGraphFrame) == 0x000278, "Member 'UInterestIndicatorWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_2) == 0x000280, "Member 'UInterestIndicatorWidget_C::NewAnimation_2' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_1) == 0x000288, "Member 'UInterestIndicatorWidget_C::NewAnimation_1' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, backgroundpulse) == 0x000290, "Member 'UInterestIndicatorWidget_C::backgroundpulse' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Center) == 0x000298, "Member 'UInterestIndicatorWidget_C::Center' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, DecriptionText) == 0x0002A0, "Member 'UInterestIndicatorWidget_C::DecriptionText' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Largespinring) == 0x0002A8, "Member 'UInterestIndicatorWidget_C::Largespinring' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Smallspinring) == 0x0002B0, "Member 'UInterestIndicatorWidget_C::Smallspinring' has a wrong offset!");
+static_assert(sizeof(UInterestIndicatorWidget_C) == 0x0002B0, "Wrong size on UInterestIndicatorWidget_C");
+static_assert(offsetof(UInterestIndicatorWidget_C, UberGraphFrame) == 0x000270, "Member 'UInterestIndicatorWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_2) == 0x000278, "Member 'UInterestIndicatorWidget_C::NewAnimation_2' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_1) == 0x000280, "Member 'UInterestIndicatorWidget_C::NewAnimation_1' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, backgroundpulse) == 0x000288, "Member 'UInterestIndicatorWidget_C::backgroundpulse' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, Center) == 0x000290, "Member 'UInterestIndicatorWidget_C::Center' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, DecriptionText) == 0x000298, "Member 'UInterestIndicatorWidget_C::DecriptionText' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, Largespinring) == 0x0002A0, "Member 'UInterestIndicatorWidget_C::Largespinring' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, Smallspinring) == 0x0002A8, "Member 'UInterestIndicatorWidget_C::Smallspinring' has a wrong offset!");
 
 }
 

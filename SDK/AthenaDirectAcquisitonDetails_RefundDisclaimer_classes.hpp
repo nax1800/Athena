@@ -11,17 +11,25 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaDirectAcquisitonDetails_RefundDisclaimer.AthenaDirectAcquisitonDetails_RefundDisclaimer_C
-// 0x0008 (0x0218 - 0x0210)
+// 0x0030 (0x0238 - 0x0208)
 class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C final : public UUserWidget
 {
 public:
-	class UHorizontalBox*                         HorizontalBoxDisclaimer;                           // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       DisclaimerText;                                    // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBoxDisclaimer;                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   OverrideText;                                      // 0x0220(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
+
+public:
+	void ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +42,11 @@ public:
 	}
 };
 static_assert(alignof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitonDetails_RefundDisclaimer_C");
-static_assert(sizeof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C) == 0x000218, "Wrong size on UAthenaDirectAcquisitonDetails_RefundDisclaimer_C");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, HorizontalBoxDisclaimer) == 0x000210, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::HorizontalBoxDisclaimer' has a wrong offset!");
+static_assert(sizeof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C) == 0x000238, "Wrong size on UAthenaDirectAcquisitonDetails_RefundDisclaimer_C");
+static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, UberGraphFrame) == 0x000208, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, DisclaimerText) == 0x000210, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::DisclaimerText' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, HorizontalBoxDisclaimer) == 0x000218, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::HorizontalBoxDisclaimer' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, OverrideText) == 0x000220, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::OverrideText' has a wrong offset!");
 
 }
 

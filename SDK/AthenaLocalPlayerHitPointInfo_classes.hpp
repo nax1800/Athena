@@ -18,17 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLocalPlayerHitPointInfo.AthenaLocalPlayerHitPointInfo_C
-// 0x0018 (0x0258 - 0x0240)
+// 0x0020 (0x0258 - 0x0238)
 class UAthenaLocalPlayerHitPointInfo_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
-	class UAthenaHitPointBar_C*                   HitPointBarHealth;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaHitPointBar_C*                   HitPointBarShield;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
+	class UAthenaHitPointBar_C*                   HitPointBarHealth;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaHitPointBar_C*                   HitPointBarShield;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          Use_Large_Format;                                  // 0x0250(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaLocalPlayerHitPointInfo(int32 EntryPoint);
-	void Construct();
+	void PreConstruct(bool IsDesignTime);
 	void SetViewModel(class UAthenaPlayerViewModel* ViewModel);
 
 public:
@@ -43,9 +44,10 @@ public:
 };
 static_assert(alignof(UAthenaLocalPlayerHitPointInfo_C) == 0x000008, "Wrong alignment on UAthenaLocalPlayerHitPointInfo_C");
 static_assert(sizeof(UAthenaLocalPlayerHitPointInfo_C) == 0x000258, "Wrong size on UAthenaLocalPlayerHitPointInfo_C");
-static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, UberGraphFrame) == 0x000240, "Member 'UAthenaLocalPlayerHitPointInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, HitPointBarHealth) == 0x000248, "Member 'UAthenaLocalPlayerHitPointInfo_C::HitPointBarHealth' has a wrong offset!");
-static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, HitPointBarShield) == 0x000250, "Member 'UAthenaLocalPlayerHitPointInfo_C::HitPointBarShield' has a wrong offset!");
+static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, UberGraphFrame) == 0x000238, "Member 'UAthenaLocalPlayerHitPointInfo_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, HitPointBarHealth) == 0x000240, "Member 'UAthenaLocalPlayerHitPointInfo_C::HitPointBarHealth' has a wrong offset!");
+static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, HitPointBarShield) == 0x000248, "Member 'UAthenaLocalPlayerHitPointInfo_C::HitPointBarShield' has a wrong offset!");
+static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, Use_Large_Format) == 0x000250, "Member 'UAthenaLocalPlayerHitPointInfo_C::Use_Large_Format' has a wrong offset!");
 
 }
 

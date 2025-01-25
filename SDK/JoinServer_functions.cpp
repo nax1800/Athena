@@ -466,9 +466,9 @@ void UJoinServer_C::ShowRejoinWindow()
 // Function JoinServer.JoinServer_C.HideRejoinWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_AbandonSession                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    AbandonSession_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJoinServer_C::HideRejoinWindow(bool Param_AbandonSession)
+void UJoinServer_C::HideRejoinWindow(bool AbandonSession_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -477,21 +477,21 @@ void UJoinServer_C::HideRejoinWindow(bool Param_AbandonSession)
 
 	Params::JoinServer_C_HideRejoinWindow Parms{};
 
-	Parms.Param_AbandonSession = Param_AbandonSession;
+	Parms.AbandonSession_0 = AbandonSession_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function JoinServer.JoinServer_C.ShowRejoiningProgress
+// Function JoinServer.JoinServer_C.RemoveRejoinWindowDuringRejoin
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UJoinServer_C::ShowRejoiningProgress()
+void UJoinServer_C::RemoveRejoinWindowDuringRejoin()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JoinServer_C", "ShowRejoiningProgress");
+		Func = Class->GetFunction("JoinServer_C", "RemoveRejoinWindowDuringRejoin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -533,6 +533,20 @@ void UJoinServer_C::ShowRetryRejoinWindow(const class FText& Failure, bool Allow
 }
 
 
+// Function JoinServer.JoinServer_C.ShowAbandoningProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UJoinServer_C::ShowAbandoningProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JoinServer_C", "ShowAbandoningProgress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function JoinServer.JoinServer_C.HandleLobbyConnectingToGame
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -547,17 +561,24 @@ void UJoinServer_C::HandleLobbyConnectingToGame()
 }
 
 
-// Function JoinServer.JoinServer_C.ShowAbandoningProgress
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function JoinServer.JoinServer_C.IsCampaignSubGame
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    Value                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJoinServer_C::ShowAbandoningProgress()
+void UJoinServer_C::IsCampaignSubGame(bool* Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JoinServer_C", "ShowAbandoningProgress");
+		Func = Class->GetFunction("JoinServer_C", "IsCampaignSubGame");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::JoinServer_C_IsCampaignSubGame Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Value != nullptr)
+		*Value = Parms.Value;
 }
 
 }

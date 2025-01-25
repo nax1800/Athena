@@ -52,13 +52,13 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaInventoryDragVisual_C_ShowDropIcon) == 0x000008, "Wrong alignment on AthenaInventoryDragVisual_C_ShowDropIcon");
@@ -68,12 +68,12 @@ static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_byte_Varia
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable) == 0x000008, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable1) == 0x000010, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable12) == 0x000018, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable123) == 0x000020, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable2) == 0x000018, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_object_Variable3) == 0x000020, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_object_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_bool_Variable) == 0x000028, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, K2Node_Select_Default) == 0x000030, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_byte_Variable1) == 0x000038, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_byte_Variable12) == 0x000039, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, Temp_byte_Variable2) == 0x000039, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ShowDropIcon, K2Node_Select1_Default) == 0x00003A, "Member 'AthenaInventoryDragVisual_C_ShowDropIcon::K2Node_Select1_Default' has a wrong offset!");
 
 }

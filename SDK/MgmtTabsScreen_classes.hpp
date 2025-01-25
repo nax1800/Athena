@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MgmtTabsScreen.MgmtTabsScreen_C
-// 0x0028 (0x03E8 - 0x03C0)
+// 0x0028 (0x0320 - 0x02F8)
 class UMgmtTabsScreen_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       PlayerHitThrob;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_6;                                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  TopTabContentWidgetSwitcher;                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   TopTabList;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       PlayerHitThrob;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_6;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  TopTabContentWidgetSwitcher;                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   TopTabList;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MgmtTabsScreen(int32 EntryPoint);
@@ -52,12 +52,12 @@ public:
 	}
 };
 static_assert(alignof(UMgmtTabsScreen_C) == 0x000008, "Wrong alignment on UMgmtTabsScreen_C");
-static_assert(sizeof(UMgmtTabsScreen_C) == 0x0003E8, "Wrong size on UMgmtTabsScreen_C");
-static_assert(offsetof(UMgmtTabsScreen_C, UberGraphFrame) == 0x0003C0, "Member 'UMgmtTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, PlayerHitThrob) == 0x0003C8, "Member 'UMgmtTabsScreen_C::PlayerHitThrob' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, SafeZone_6) == 0x0003D0, "Member 'UMgmtTabsScreen_C::SafeZone_6' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, TopTabContentWidgetSwitcher) == 0x0003D8, "Member 'UMgmtTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, TopTabList) == 0x0003E0, "Member 'UMgmtTabsScreen_C::TopTabList' has a wrong offset!");
+static_assert(sizeof(UMgmtTabsScreen_C) == 0x000320, "Wrong size on UMgmtTabsScreen_C");
+static_assert(offsetof(UMgmtTabsScreen_C, UberGraphFrame) == 0x0002F8, "Member 'UMgmtTabsScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMgmtTabsScreen_C, PlayerHitThrob) == 0x000300, "Member 'UMgmtTabsScreen_C::PlayerHitThrob' has a wrong offset!");
+static_assert(offsetof(UMgmtTabsScreen_C, SafeZone_6) == 0x000308, "Member 'UMgmtTabsScreen_C::SafeZone_6' has a wrong offset!");
+static_assert(offsetof(UMgmtTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000310, "Member 'UMgmtTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UMgmtTabsScreen_C, TopTabList) == 0x000318, "Member 'UMgmtTabsScreen_C::TopTabList' has a wrong offset!");
 
 }
 

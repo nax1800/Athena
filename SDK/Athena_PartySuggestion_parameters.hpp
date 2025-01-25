@@ -12,184 +12,13 @@
 
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function Athena_PartySuggestion.Athena_PartySuggestion_C.ExecuteUbergraph_Athena_PartySuggestion
-// 0x03E8 (0x03E8 - 0x0000)
-struct Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable1;                                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0010(0x0018)()
-	class FText                                   Temp_text_Variable1;                               // 0x0028(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0040(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0058(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0070(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123;                              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable1234;                             // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortSocialItem*>                CallFunc_Map_Values_Values;                        // 0x00A0(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          Temp_bool_Variable12;                              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortSocialItem*                        CallFunc_Array_Get_Item;                           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable12345;                            // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetCurrentPlatform_ReturnValue;           // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00D8(0x0018)()
-	int32                                         Temp_int_Variable123456;                           // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12345;                           // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_103[0x1];                                      // 0x0103(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable;                               // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123456;                          // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x010C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable1;                             // 0x011C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234567;                         // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable12345;                           // 0x0130(0x0018)()
-	class FText                                   Temp_text_Variable123456;                          // 0x0148(0x0018)()
-	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue1;                  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPartySuggestion                   K2Node_CustomEvent_Party_Suggestion_Struct;        // 0x0170(0x0080)()
-	struct FFortPartySuggestion                   K2Node_CustomEvent_PartySuggestionStruct;          // 0x01F0(0x0080)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default;                             // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0280(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0290(0x0008)(NoDestructor)
-	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable1234567;                          // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                              CallFunc_DateTimeMinValue_ReturnValue;             // 0x02A0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_DateTimeDateTime_ReturnValue;    // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetAnimationCurrentTime_ReturnValue;      // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1[0x3];                                      // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select1_Default;                            // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12345678;                        // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B9[0x3];                                      // 0x02B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select12_Default;                           // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x02C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x02C8(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_305[0x3];                                      // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30C[0x4];                                      // 0x030C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select123_Default;                          // 0x0310(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0328(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0368(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0378(0x0018)()
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_395[0x3];                                      // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FloatSpringInterp_ReturnValue;            // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x039C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39D[0x3];                                      // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select1234_Default;                         // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select12345_Default;                        // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               K2Node_Select123456_Default;                       // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               K2Node_Select1234567_Default;                      // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12345678_Default;                     // 0x03B8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CA[0x6];                                      // 0x03CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select123456789_Default;                    // 0x03D0(0x0018)()
-};
-static_assert(alignof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion");
-static_assert(sizeof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion) == 0x0003E8, "Wrong size on Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, EntryPoint) == 0x000000, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable) == 0x000004, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable1) == 0x000008, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable) == 0x000010, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable1) == 0x000028, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable12) == 0x000040, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable123) == 0x000058, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable1234) == 0x000070, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable) == 0x000088, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable12) == 0x00008C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable123) == 0x000090, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable123' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable1) == 0x000094, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable1234) == 0x000098, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable1234' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Map_Values_Values) == 0x0000A0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable12) == 0x0000B0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable12345) == 0x0000C0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable12345' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetCurrentPlatform_ReturnValue) == 0x0000C8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetCurrentPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetDisplayName_ReturnValue) == 0x0000D8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable123456) == 0x0000F0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable123456' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetContext_ReturnValue) == 0x0000F8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable123) == 0x000100, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable1234) == 0x000101, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable12345) == 0x000102, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_float_Variable) == 0x000104, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable123456) == 0x000108, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable123456' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_struct_Variable) == 0x00010C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_struct_Variable1) == 0x00011C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_struct_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable1234567) == 0x00012C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable1234567' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable12345) == 0x000130, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable123456) == 0x000148, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable123456' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetContext_ReturnValue1) == 0x000160, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_RandomBool_ReturnValue) == 0x000168, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CustomEvent_Party_Suggestion_Struct) == 0x000170, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CustomEvent_Party_Suggestion_Struct' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CustomEvent_PartySuggestionStruct) == 0x0001F0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CustomEvent_PartySuggestionStruct' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Greater_IntInt_ReturnValue) == 0x000270, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select_Default) == 0x000274, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetEndTime_ReturnValue) == 0x000278, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CreateDelegate_OutputDelegate) == 0x000280, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000290, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_K2_IsTimerActiveHandle_ReturnValue) == 0x000298, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_K2_IsTimerActiveHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable1234567) == 0x00029C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable1234567' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_DateTimeMinValue_ReturnValue) == 0x0002A0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_DateTimeMinValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_NotEqual_DateTimeDateTime_ReturnValue) == 0x0002A8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_NotEqual_DateTimeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x0002AC, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_IsAnimationPlaying_ReturnValue) == 0x0002B0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select1_Default) == 0x0002B4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable12345678) == 0x0002B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable12345678' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select12_Default) == 0x0002BC, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_ComponentBoundEvent_Button) == 0x0002C0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_MyGeometry) == 0x0002C8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_InDeltaTime) == 0x000300, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Less_FloatFloat_ReturnValue) == 0x000304, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000308, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select123_Default) == 0x000310, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_MakeStruct_FormatArgumentData) == 0x000328, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_MakeArray_Array) == 0x000368, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Format_ReturnValue) == 0x000378, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000390, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_BooleanAND_ReturnValue) == 0x000394, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_FloatSpringInterp_ReturnValue) == 0x000398, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_FloatSpringInterp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_IsDesignTime) == 0x00039C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select1234_Default) == 0x0003A0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select1234_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select12345_Default) == 0x0003A4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select12345_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select123456_Default) == 0x0003A8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select123456_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select1234567_Default) == 0x0003B0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select1234567_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select12345678_Default) == 0x0003B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select12345678_Default' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Greater_IntInt_ReturnValue1) == 0x0003C8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_BooleanOR_ReturnValue) == 0x0003C9, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select123456789_Default) == 0x0003D0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select123456789_Default' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.PartyFocused__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -201,6 +30,165 @@ public:
 static_assert(alignof(Athena_PartySuggestion_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_PartyFocused__DelegateSignature");
 static_assert(sizeof(Athena_PartySuggestion_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong size on Athena_PartySuggestion_C_PartyFocused__DelegateSignature");
 static_assert(offsetof(Athena_PartySuggestion_C_PartyFocused__DelegateSignature, FocusedPartyItem) == 0x000000, "Member 'Athena_PartySuggestion_C_PartyFocused__DelegateSignature::FocusedPartyItem' has a wrong offset!");
+
+// Function Athena_PartySuggestion.Athena_PartySuggestion_C.ExecuteUbergraph_Athena_PartySuggestion
+// 0x03F0 (0x03F0 - 0x0000)
+struct Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPartyInProgressEnabled_ReturnValue;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
+	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0068(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable2;                                // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortSocialItem*>                CallFunc_Map_Values_Values;                        // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          Temp_bool_Variable2;                               // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortSocialItem*                        CallFunc_Array_Get_Item;                           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetCurrentPlatform_ReturnValue;           // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00D0(0x0018)()
+	int32                                         Temp_int_Variable4;                                // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable4;                               // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable5;                               // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable;                               // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable6;                               // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0104(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0114(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue1;                  // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortPartySuggestion                   K2Node_CustomEvent_Party_Suggestion_Struct;        // 0x0138(0x00A0)()
+	class FText                                   CallFunc_GetPartySuggestionActionText_ActionText;  // 0x01D8(0x0018)()
+	bool                                          CallFunc_GetPartySuggestionActionText_ReturnValue; // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortPartySuggestion                   K2Node_CustomEvent_PartySuggestionStruct;          // 0x01F8(0x00A0)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default;                             // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x02A8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02B8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2C1[0x3];                                      // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable5;                                // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              CallFunc_DateTimeMinValue_ReturnValue;             // 0x02C8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_DateTimeDateTime_ReturnValue;    // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D2[0x2];                                      // 0x02D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetAnimationCurrentTime_ReturnValue;      // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D9[0x3];                                      // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select1_Default;                            // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x02E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x02E8(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select2_Default;                            // 0x0330(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0348(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0388(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0398(0x0018)()
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FloatSpringInterp_ReturnValue;            // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3BD[0x3];                                      // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select3_Default;                            // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select4_Default;                            // 0x03C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               K2Node_Select5_Default;                            // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               K2Node_Select6_Default;                            // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select7_Default;                            // 0x03D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue1;        // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion");
+static_assert(sizeof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion) == 0x0003F0, "Wrong size on Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, EntryPoint) == 0x000000, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::EntryPoint' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_IsPartyInProgressEnabled_ReturnValue) == 0x000004, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_IsPartyInProgressEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable) == 0x000008, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable1) == 0x000020, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable2) == 0x000038, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable3) == 0x000050, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_text_Variable4) == 0x000068, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable) == 0x000080, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable) == 0x000084, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable1) == 0x000088, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable1) == 0x00008C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable2) == 0x000090, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Map_Values_Values) == 0x000098, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable2) == 0x0000A8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable3) == 0x0000B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetCurrentPlatform_ReturnValue) == 0x0000C0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetCurrentPlatform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetDisplayName_ReturnValue) == 0x0000D0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable4) == 0x0000E8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable4' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetContext_ReturnValue) == 0x0000F0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable3) == 0x0000F8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable4) == 0x0000F9, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable5) == 0x0000FA, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable5' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_float_Variable) == 0x0000FC, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_bool_Variable6) == 0x000100, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_struct_Variable) == 0x000104, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_struct_Variable1) == 0x000114, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_struct_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetContext_ReturnValue1) == 0x000128, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetContext_ReturnValue2) == 0x000130, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CustomEvent_Party_Suggestion_Struct) == 0x000138, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CustomEvent_Party_Suggestion_Struct' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetPartySuggestionActionText_ActionText) == 0x0001D8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetPartySuggestionActionText_ActionText' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetPartySuggestionActionText_ReturnValue) == 0x0001F0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetPartySuggestionActionText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CustomEvent_PartySuggestionStruct) == 0x0001F8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CustomEvent_PartySuggestionStruct' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Greater_IntInt_ReturnValue) == 0x000298, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select_Default) == 0x00029C, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetEndTime_ReturnValue) == 0x0002A0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_CreateDelegate_OutputDelegate) == 0x0002A8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0002B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_K2_IsTimerActiveHandle_ReturnValue) == 0x0002C0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_K2_IsTimerActiveHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, Temp_int_Variable5) == 0x0002C4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::Temp_int_Variable5' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_DateTimeMinValue_ReturnValue) == 0x0002C8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_DateTimeMinValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_NotEqual_DateTimeDateTime_ReturnValue) == 0x0002D0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_NotEqual_DateTimeDateTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_BooleanAND_ReturnValue) == 0x0002D1, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x0002D4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_IsAnimationPlaying_ReturnValue) == 0x0002D8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select1_Default) == 0x0002DC, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_ComponentBoundEvent_Button) == 0x0002E0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_MyGeometry) == 0x0002E8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_InDeltaTime) == 0x000320, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Less_FloatFloat_ReturnValue) == 0x000324, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000328, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select2_Default) == 0x000330, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_MakeStruct_FormatArgumentData) == 0x000348, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_MakeArray_Array) == 0x000388, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_Format_ReturnValue) == 0x000398, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0003B0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_BooleanAND_ReturnValue1) == 0x0003B4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_FloatSpringInterp_ReturnValue) == 0x0003B8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_FloatSpringInterp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Event_IsDesignTime) == 0x0003BC, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select3_Default) == 0x0003C0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select4_Default) == 0x0003C4, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select5_Default) == 0x0003C8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select5_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select6_Default) == 0x0003D0, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select6_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, K2Node_Select7_Default) == 0x0003D8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::K2Node_Select7_Default' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion, CallFunc_RandomIntegerInRange_ReturnValue1) == 0x0003E8, "Member 'Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion::CallFunc_RandomIntegerInRange_ReturnValue1' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -238,25 +226,25 @@ static_assert(sizeof(Athena_PartySuggestion_C_BndEvt__IconTextButton_K2Node_Comp
 static_assert(offsetof(Athena_PartySuggestion_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_31_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Athena_PartySuggestion_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_31_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.UpdatePartySuggestion
-// 0x0080 (0x0080 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct Athena_PartySuggestion_C_UpdatePartySuggestion final
 {
 public:
-	struct FFortPartySuggestion                   PartySuggestionStruct;                             // 0x0000(0x0080)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFortPartySuggestion                   PartySuggestionStruct;                             // 0x0000(0x00A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(Athena_PartySuggestion_C_UpdatePartySuggestion) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_UpdatePartySuggestion");
-static_assert(sizeof(Athena_PartySuggestion_C_UpdatePartySuggestion) == 0x000080, "Wrong size on Athena_PartySuggestion_C_UpdatePartySuggestion");
+static_assert(sizeof(Athena_PartySuggestion_C_UpdatePartySuggestion) == 0x0000A0, "Wrong size on Athena_PartySuggestion_C_UpdatePartySuggestion");
 static_assert(offsetof(Athena_PartySuggestion_C_UpdatePartySuggestion, PartySuggestionStruct) == 0x000000, "Member 'Athena_PartySuggestion_C_UpdatePartySuggestion::PartySuggestionStruct' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.NewPartySuggestion
-// 0x0080 (0x0080 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct Athena_PartySuggestion_C_NewPartySuggestion final
 {
 public:
-	struct FFortPartySuggestion                   Party_Suggestion_Struct;                           // 0x0000(0x0080)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFortPartySuggestion                   Party_Suggestion_Struct;                           // 0x0000(0x00A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(Athena_PartySuggestion_C_NewPartySuggestion) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_NewPartySuggestion");
-static_assert(sizeof(Athena_PartySuggestion_C_NewPartySuggestion) == 0x000080, "Wrong size on Athena_PartySuggestion_C_NewPartySuggestion");
+static_assert(sizeof(Athena_PartySuggestion_C_NewPartySuggestion) == 0x0000A0, "Wrong size on Athena_PartySuggestion_C_NewPartySuggestion");
 static_assert(offsetof(Athena_PartySuggestion_C_NewPartySuggestion, Party_Suggestion_Struct) == 0x000000, "Member 'Athena_PartySuggestion_C_NewPartySuggestion::Party_Suggestion_Struct' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.OnMouseButtonDown_0
@@ -277,14 +265,14 @@ static_assert(offsetof(Athena_PartySuggestion_C_OnMouseButtonDown_0, ReturnValue
 static_assert(offsetof(Athena_PartySuggestion_C_OnMouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'Athena_PartySuggestion_C_OnMouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.InitNewPartySuggestion
-// 0x0080 (0x0080 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct Athena_PartySuggestion_C_InitNewPartySuggestion final
 {
 public:
-	struct FFortPartySuggestion                   NewPartySuggestion;                                // 0x0000(0x0080)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFortPartySuggestion                   NewPartySuggestion;                                // 0x0000(0x00A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(Athena_PartySuggestion_C_InitNewPartySuggestion) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_InitNewPartySuggestion");
-static_assert(sizeof(Athena_PartySuggestion_C_InitNewPartySuggestion) == 0x000080, "Wrong size on Athena_PartySuggestion_C_InitNewPartySuggestion");
+static_assert(sizeof(Athena_PartySuggestion_C_InitNewPartySuggestion) == 0x0000A0, "Wrong size on Athena_PartySuggestion_C_InitNewPartySuggestion");
 static_assert(offsetof(Athena_PartySuggestion_C_InitNewPartySuggestion, NewPartySuggestion) == 0x000000, "Member 'Athena_PartySuggestion_C_InitNewPartySuggestion::NewPartySuggestion' has a wrong offset!");
 
 // Function Athena_PartySuggestion.Athena_PartySuggestion_C.InitPhysAnim
@@ -342,27 +330,27 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue123; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1234; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1234;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue4; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Athena_PartySuggestion_C_SetupMIDReferences) == 0x000008, "Wrong alignment on Athena_PartySuggestion_C_SetupMIDReferences");
 static_assert(sizeof(Athena_PartySuggestion_C_SetupMIDReferences) == 0x000040, "Wrong size on Athena_PartySuggestion_C_SetupMIDReferences");
 static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue1) == 0x000010, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue12) == 0x000011, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue2) == 0x000011, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000018, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue12) == 0x000020, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue123) == 0x000028, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue1234) == 0x000030, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue123) == 0x000038, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue1234) == 0x000039, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000020, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000028, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_CreateDynamicMaterialInstance_ReturnValue4) == 0x000030, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_CreateDynamicMaterialInstance_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue3) == 0x000038, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Athena_PartySuggestion_C_SetupMIDReferences, CallFunc_IsValid_ReturnValue4) == 0x000039, "Member 'Athena_PartySuggestion_C_SetupMIDReferences::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
 
 }
 

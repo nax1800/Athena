@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookWidget.CollectionBookWidget_C
-// 0x0008 (0x0428 - 0x0420)
+// 0x0008 (0x0360 - 0x0358)
 class UCollectionBookWidget_C final : public UFortCollectionBookWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_CollectionBookWidget(int32 EntryPoint);
@@ -42,8 +42,8 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookWidget_C) == 0x000008, "Wrong alignment on UCollectionBookWidget_C");
-static_assert(sizeof(UCollectionBookWidget_C) == 0x000428, "Wrong size on UCollectionBookWidget_C");
-static_assert(offsetof(UCollectionBookWidget_C, UberGraphFrame) == 0x000420, "Member 'UCollectionBookWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UCollectionBookWidget_C) == 0x000360, "Wrong size on UCollectionBookWidget_C");
+static_assert(offsetof(UCollectionBookWidget_C, UberGraphFrame) == 0x000358, "Member 'UCollectionBookWidget_C::UberGraphFrame' has a wrong offset!");
 
 }
 

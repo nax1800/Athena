@@ -37,21 +37,21 @@ void UMessageCenterListItem_C::ExecuteUbergraph_MessageCenterListItem(int32 Entr
 }
 
 
-// Function MessageCenterListItem.MessageCenterListItem_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function MessageCenterListItem.MessageCenterListItem_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bSelected                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMessageCenterListItem_C::SetSelected(bool bSelected)
+void UMessageCenterListItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "SetSelected");
+		Func = Class->GetFunction("MessageCenterListItem_C", "BP_OnItemSelectionChanged");
 
-	Params::MessageCenterListItem_C_SetSelected Parms{};
+	Params::MessageCenterListItem_C_BP_OnItemSelectionChanged Parms{};
 
-	Parms.bSelected = bSelected;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,153 +71,55 @@ void UMessageCenterListItem_C::Construct()
 }
 
 
-// Function MessageCenterListItem.MessageCenterListItem_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function MessageCenterListItem.MessageCenterListItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMessageCenterListItem_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UMessageCenterListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "SetData");
+		Func = Class->GetFunction("MessageCenterListItem_C", "OnListItemObjectSet");
 
-	Params::MessageCenterListItem_C_SetData Parms{};
+	Params::MessageCenterListItem_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MessageCenterListItem.MessageCenterListItem_C.Reset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UMessageCenterListItem_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.ToggleExpansion
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UMessageCenterListItem_C::ToggleExpansion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "ToggleExpansion");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.SetIndexInList
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function MessageCenterListItem.MessageCenterListItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   InIndexInList                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMessageCenterListItem_C::SetIndexInList(int32 InIndexInList)
+void UMessageCenterListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "SetIndexInList");
+		Func = Class->GetFunction("MessageCenterListItem_C", "BP_OnItemExpansionChanged");
 
-	Params::MessageCenterListItem_C_SetIndexInList Parms{};
+	Params::MessageCenterListItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.InIndexInList = InIndexInList;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MessageCenterListItem.MessageCenterListItem_C.SetExpanded
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UMessageCenterListItem_C::SetExpanded(bool bExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "SetExpanded");
-
-	Params::MessageCenterListItem_C_SetExpanded Parms{};
-
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.RegisterOnClicked
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-
-void UMessageCenterListItem_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "RegisterOnClicked");
-
-	Params::MessageCenterListItem_C_RegisterOnClicked Parms{};
-
-	Parms.Callback = Callback;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.Private_OnExpanderArrowShiftClicked
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UMessageCenterListItem_C::Private_OnExpanderArrowShiftClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "Private_OnExpanderArrowShiftClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.OnReleaseToPool
+// Function MessageCenterListItem.MessageCenterListItem_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 
-void UMessageCenterListItem_C::OnReleaseToPool()
+void UMessageCenterListItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "OnReleaseToPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.OnAcquireFromPool
-// (Event, Protected, BlueprintEvent)
-
-void UMessageCenterListItem_C::OnAcquireFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "OnAcquireFromPool");
+		Func = Class->GetFunction("MessageCenterListItem_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -226,9 +128,9 @@ void UMessageCenterListItem_C::OnAcquireFromPool()
 // Function MessageCenterListItem.MessageCenterListItem_C.SetMessage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortUINotification*              Param_MESSAGE                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortUINotification*              MESSAGE_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMessageCenterListItem_C::SetMessage(class UFortUINotification* Param_MESSAGE)
+void UMessageCenterListItem_C::SetMessage(class UFortUINotification* MESSAGE_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -237,7 +139,7 @@ void UMessageCenterListItem_C::SetMessage(class UFortUINotification* Param_MESSA
 
 	Params::MessageCenterListItem_C_SetMessage Parms{};
 
-	Parms.Param_MESSAGE = Param_MESSAGE;
+	Parms.MESSAGE_0 = MESSAGE_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -265,79 +167,19 @@ void UMessageCenterListItem_C::ShowText(const class FText& Text, class UCommonTe
 }
 
 
-// Function MessageCenterListItem.MessageCenterListItem_C.GetData
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function MessageCenterListItem.MessageCenterListItem_C.GetListItemObject
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UObject* UMessageCenterListItem_C::GetData() const
+class UObject* UMessageCenterListItem_C::GetListItemObject() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "GetData");
+		Func = Class->GetFunction("MessageCenterListItem_C", "GetListItemObject");
 
-	Params::MessageCenterListItem_C_GetData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.IsItemExpanded
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UMessageCenterListItem_C::IsItemExpanded() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "IsItemExpanded");
-
-	Params::MessageCenterListItem_C_IsItemExpanded Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.DoesItemHaveChildren
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UMessageCenterListItem_C::DoesItemHaveChildren() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "DoesItemHaveChildren");
-
-	Params::MessageCenterListItem_C_DoesItemHaveChildren Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MessageCenterListItem.MessageCenterListItem_C.GetIndentLevel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UMessageCenterListItem_C::GetIndentLevel() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MessageCenterListItem_C", "GetIndentLevel");
-
-	Params::MessageCenterListItem_C_GetIndentLevel Parms{};
+	Params::MessageCenterListItem_C_GetListItemObject Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

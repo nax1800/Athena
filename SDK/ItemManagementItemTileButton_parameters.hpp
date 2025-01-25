@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -22,41 +22,40 @@ namespace SDK::Params
 {
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.ExecuteUbergraph_ItemManagementItemTileButton
-// 0x0128 (0x0128 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue;        // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable1;                              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue1;       // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_EquipSlot;                            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue1;       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         K2Node_Event_EquipSlot;                            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_CanItemBeMulched_OutRestrictionReason;    // 0x0048(0x0018)()
 	bool                                          CallFunc_CanItemBeMulched_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12;                // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_63[0x5];                                       // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0068(0x0070)(ConstParm)
 	class UDragDropOperation*                     K2Node_Event_Operation;                            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -65,75 +64,78 @@ public:
 	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue12;      // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue2;       // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F3[0x5];                                       // 0x00F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen1;      // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAccountItem*                       K2Node_DynamicCast_AsFort_Account_Item;            // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsOpen;                // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInventoryOverflowItem_ReturnValue;      // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsOpen;                // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x0126(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_126[0x2];                                      // 0x0126(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton");
-static_assert(sizeof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton) == 0x000128, "Wrong size on ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton");
+static_assert(sizeof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton) == 0x000138, "Wrong size on ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, EntryPoint) == 0x000000, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable) == 0x000004, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_float_Variable) == 0x000008, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable1) == 0x00000C, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable) == 0x00000D, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable1) == 0x00000E, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable12) == 0x00000F, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable12) == 0x000010, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable123) == 0x000011, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetCurrentInputType_ReturnValue) == 0x000020, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable) == 0x000005, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable1) == 0x000006, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable1) == 0x000007, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable2) == 0x000008, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable3) == 0x000009, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetCurrentInputType_ReturnValue) == 0x000018, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable2) == 0x00001A, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue) == 0x00001B, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_Not_PreBool_ReturnValue) == 0x00001C, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_SwitchEnum_CmpSuccess) == 0x00001D, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_float_Variable) == 0x000020, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_float_Variable1) == 0x000024, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_float_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue) == 0x000028, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_Not_PreBool_ReturnValue) == 0x000029, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_SwitchEnum_CmpSuccess) == 0x00002A, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable123) == 0x00002B, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue1) == 0x00002C, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x00002D, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_IsHovered_ReturnValue) == 0x00002E, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Event_EquipSlot) == 0x000030, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Event_EquipSlot' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select_Default) == 0x000034, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue1) == 0x000028, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_bool_Variable3) == 0x000029, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x00002A, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_IsHovered_ReturnValue) == 0x00002B, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Event_EquipSlot) == 0x00002C, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Event_EquipSlot' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select_Default) == 0x000030, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_MakeStruct_LinearColor) == 0x000034, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_CanItemBeMulched_OutRestrictionReason) == 0x000048, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_CanItemBeMulched_OutRestrictionReason' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_CanItemBeMulched_ReturnValue) == 0x000060, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_CanItemBeMulched_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_Not_PreBool_ReturnValue1) == 0x000061, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_Not_PreBool_ReturnValue12) == 0x000062, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_Not_PreBool_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_Not_PreBool_ReturnValue2) == 0x000062, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Event_PointerEvent) == 0x000068, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Event_PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Event_Operation) == 0x0000D8, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Event_Operation' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_BooleanAND_ReturnValue) == 0x0000E0, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_BooleanAND_ReturnValue1) == 0x0000E1, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0000E8, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess) == 0x0000F0, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue12) == 0x0000F1, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetItemManagementMode_ReturnValue2) == 0x0000F1, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetItemManagementMode_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_SwitchEnum1_CmpSuccess) == 0x0000F2, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_AsItem_Management_Screen) == 0x0000F8, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess1) == 0x000100, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_AsItem_Management_Screen1) == 0x000108, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_AsItem_Management_Screen1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess12) == 0x000110, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable1234) == 0x000111, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess2) == 0x000110, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_AsFort_Account_Item) == 0x000118, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess123) == 0x000120, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable12345) == 0x000121, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_DynamicCast_bSuccess3) == 0x000120, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_ComponentBoundEvent_bIsOpen) == 0x000121, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_ComponentBoundEvent_bIsOpen' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_IsInventoryOverflowItem_ReturnValue) == 0x000122, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_IsInventoryOverflowItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select1_Default) == 0x000123, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select12_Default) == 0x000124, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_ComponentBoundEvent_bIsOpen) == 0x000125, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_ComponentBoundEvent_bIsOpen' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select123_Default) == 0x000126, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select2_Default) == 0x000124, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable4) == 0x000125, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, CallFunc_GetPlayerController_ReturnValue) == 0x000128, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, Temp_byte_Variable5) == 0x000130, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton, K2Node_Select3_Default) == 0x000131, "Member 'ItemManagementItemTileButton_C_ExecuteUbergraph_ItemManagementItemTileButton::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -171,7 +173,7 @@ static_assert(sizeof(ItemManagementItemTileButton_C_HandleEquipSlotChanged) == 0
 static_assert(offsetof(ItemManagementItemTileButton_C_HandleEquipSlotChanged, EquipSlot) == 0x000000, "Member 'ItemManagementItemTileButton_C_HandleEquipSlotChanged::EquipSlot' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.UpdateMulchStateBox
-// 0x0078 (0x0078 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct ItemManagementItemTileButton_C_UpdateMulchStateBox final
 {
 public:
@@ -180,45 +182,33 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsItemMulchable_ReturnValue;              // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable1;                               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_CanItemBeMulched_OutRestrictionReason;    // 0x0028(0x0018)()
-	bool                                          CallFunc_CanItemBeMulched_ReturnValue;             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0048(0x0018)()
-	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue;        // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue1;       // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select1_Default;                            // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue;        // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemManagementItemTileButton_C_UpdateMulchStateBox) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_UpdateMulchStateBox");
-static_assert(sizeof(ItemManagementItemTileButton_C_UpdateMulchStateBox) == 0x000078, "Wrong size on ItemManagementItemTileButton_C_UpdateMulchStateBox");
+static_assert(sizeof(ItemManagementItemTileButton_C_UpdateMulchStateBox) == 0x000058, "Wrong size on ItemManagementItemTileButton_C_UpdateMulchStateBox");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_struct_Variable) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_struct_Variable1) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_struct_Variable1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_bool_Variable) == 0x000020, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_byte_Variable) == 0x000021, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_byte_Variable1) == 0x000022, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_bool_Variable1) == 0x000023, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_CanItemBeMulched_OutRestrictionReason) == 0x000028, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_CanItemBeMulched_OutRestrictionReason' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_CanItemBeMulched_ReturnValue) == 0x000040, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_CanItemBeMulched_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_Not_PreBool_ReturnValue) == 0x000041, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_Conv_IntToText_ReturnValue) == 0x000048, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_GetItemManagementMode_ReturnValue) == 0x000060, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_GetItemManagementMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000061, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_GetItemManagementMode_ReturnValue1) == 0x000062, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_GetItemManagementMode_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000063, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_BooleanAND_ReturnValue) == 0x000064, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_BooleanAND_ReturnValue1) == 0x000065, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, K2Node_Select_Default) == 0x000066, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, K2Node_Select1_Default) == 0x000068, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_IsItemMulchable_ReturnValue) == 0x000023, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_IsItemMulchable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, Temp_bool_Variable1) == 0x000024, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, K2Node_Select_Default) == 0x000040, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_Greater_IntInt_ReturnValue) == 0x000050, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_GetItemManagementMode_ReturnValue) == 0x000051, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_GetItemManagementMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000052, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, CallFunc_BooleanAND_ReturnValue) == 0x000053, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateMulchStateBox, K2Node_Select1_Default) == 0x000054, "Member 'ItemManagementItemTileButton_C_UpdateMulchStateBox::K2Node_Select1_Default' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.UpdateStyle
 // 0x0048 (0x0048 - 0x0000)
@@ -229,8 +219,8 @@ public:
 	class UClass*                                 Temp_class_Variable1;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable12;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable123;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable3;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -243,8 +233,8 @@ static_assert(sizeof(ItemManagementItemTileButton_C_UpdateStyle) == 0x000048, "W
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable1) == 0x000008, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_bool_Variable) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable12) == 0x000018, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable123) == 0x000020, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable123' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable2) == 0x000018, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_class_Variable3) == 0x000020, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_class_Variable3' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, Temp_bool_Variable1) == 0x000028, "Member 'ItemManagementItemTileButton_C_UpdateStyle::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, K2Node_Select_Default) == 0x000030, "Member 'ItemManagementItemTileButton_C_UpdateStyle::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateStyle, K2Node_Select1_Default) == 0x000038, "Member 'ItemManagementItemTileButton_C_UpdateStyle::K2Node_Select1_Default' has a wrong offset!");
@@ -290,7 +280,7 @@ static_assert(offsetof(ItemManagementItemTileButton_C_On_ItemWidgetHolder_MouseB
 static_assert(offsetof(ItemManagementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, CallFunc_Unhandled_ReturnValue1) == 0x0002F8, "Member 'ItemManagementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::CallFunc_Unhandled_ReturnValue1' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.OnDragDetected
-// 0x0120 (0x0120 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct ItemManagementItemTileButton_C_OnDragDetected final
 {
 public:
@@ -306,12 +296,10 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x00E0(0x0028)(HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTexture2D*                             CallFunc_GetOrLoadSynchronously_ReturnValue;       // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemManagementItemTileButton_C_OnDragDetected) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_OnDragDetected");
-static_assert(sizeof(ItemManagementItemTileButton_C_OnDragDetected) == 0x000120, "Wrong size on ItemManagementItemTileButton_C_OnDragDetected");
+static_assert(sizeof(ItemManagementItemTileButton_C_OnDragDetected) == 0x000110, "Wrong size on ItemManagementItemTileButton_C_OnDragDetected");
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'ItemManagementItemTileButton_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'ItemManagementItemTileButton_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, Operation) == 0x0000A8, "Member 'ItemManagementItemTileButton_C_OnDragDetected::Operation' has a wrong offset!");
@@ -322,9 +310,7 @@ static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_G
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_Create_ReturnValue) == 0x0000D0, "Member 'ItemManagementItemTileButton_C_OnDragDetected::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_IsValid_ReturnValue) == 0x0000D8, "Member 'ItemManagementItemTileButton_C_OnDragDetected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x0000E0, "Member 'ItemManagementItemTileButton_C_OnDragDetected::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000108, "Member 'ItemManagementItemTileButton_C_OnDragDetected::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, K2Node_DynamicCast_AsTexture_2D) == 0x000110, "Member 'ItemManagementItemTileButton_C_OnDragDetected::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, K2Node_DynamicCast_bSuccess1) == 0x000118, "Member 'ItemManagementItemTileButton_C_OnDragDetected::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_OnDragDetected, CallFunc_GetOrLoadSynchronously_ReturnValue) == 0x000108, "Member 'ItemManagementItemTileButton_C_OnDragDetected::CallFunc_GetOrLoadSynchronously_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.SetEquipSlotOverlay
 // 0x0008 (0x0008 - 0x0000)
@@ -350,14 +336,14 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -368,33 +354,33 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen1;      // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_GetData_ReturnValue;                      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_GetListItemObject_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              K2Node_DynamicCast_AsFort_Item;                    // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortSchematicItem*                     K2Node_DynamicCast_AsFort_Schematic_Item;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsEquipAvailable_EquipAvailable;          // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortCraftFailCause                           CallFunc_CanCraftSchematic_FailCause;              // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CanCraftSchematic_ReturnValue;            // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6F[0x1];                                       // 0x006F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetMaxTransferCount_Count;                // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0076(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0077(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0077(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility");
 static_assert(sizeof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility) == 0x000080, "Wrong size on ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility");
@@ -403,13 +389,13 @@ static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVis
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_IsInZone_ReturnValue) == 0x000011, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable12) == 0x000012, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable123) == 0x000013, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable2) == 0x000012, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable3) == 0x000013, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetContext_ReturnValue1) == 0x000018, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable1) == 0x000020, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable1234) == 0x000021, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable12345) == 0x000022, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable12) == 0x000023, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable4) == 0x000021, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable5) == 0x000022, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable2) == 0x000023, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000028, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_IsFrontendCraftingEnabled_ReturnValue) == 0x000031, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_IsFrontendCraftingEnabled_ReturnValue' has a wrong offset!");
@@ -418,42 +404,43 @@ static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVis
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_AsItem_Management_Screen1) == 0x000038, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_AsItem_Management_Screen1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable123456) == 0x000041, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable1234567) == 0x000042, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000043, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable6) == 0x000041, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable7) == 0x000042, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000043, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_BooleanOR_ReturnValue1) == 0x000044, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000045, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable123) == 0x000046, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetData_ReturnValue) == 0x000048, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000045, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable3) == 0x000046, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetListItemObject_ReturnValue) == 0x000048, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetListItemObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_AsFort_Item) == 0x000050, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_AsFort_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess12) == 0x000058, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000060, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess123) == 0x000068, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess3) == 0x000068, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_IsEquipAvailable_EquipAvailable) == 0x000069, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_IsEquipAvailable_EquipAvailable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_CanCraftSchematic_FailCause) == 0x00006A, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_CanCraftSchematic_FailCause' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_CanCraftSchematic_ReturnValue) == 0x00006B, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_CanCraftSchematic_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_BooleanAND_ReturnValue) == 0x00006C, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select_Default) == 0x00006D, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_BooleanOR_ReturnValue12) == 0x00006E, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_BooleanOR_ReturnValue2) == 0x00006E, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetMaxTransferCount_Count) == 0x000070, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetMaxTransferCount_Count' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select1_Default) == 0x000074, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_Greater_IntInt_ReturnValue) == 0x000075, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetType_ReturnValue) == 0x000076, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select12_Default) == 0x000077, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select2_Default) == 0x000077, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select2_Default' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000078, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select123_Default) == 0x000079, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select3_Default) == 0x000079, "Member 'ItemManagementItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.UpdateBangState
 // 0x0030 (0x0030 - 0x0000)
 struct ItemManagementItemTileButton_C_UpdateBangState final
 {
 public:
-	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SeenInFrontend_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SeenInFrontend_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanNOR_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAccountItem*                       K2Node_DynamicCast_AsFort_Account_Item;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -463,11 +450,12 @@ public:
 };
 static_assert(alignof(ItemManagementItemTileButton_C_UpdateBangState) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_UpdateBangState");
 static_assert(sizeof(ItemManagementItemTileButton_C_UpdateBangState) == 0x000030, "Wrong size on ItemManagementItemTileButton_C_UpdateBangState");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_AsFort_World_Item) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_SeenInFrontend_ReturnValue) == 0x000018, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_SeenInFrontend_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_IsInZone_ReturnValue) == 0x000019, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_IsInZone_ReturnValue) == 0x000009, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_AsFort_World_Item) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_SeenInFrontend_ReturnValue) == 0x000019, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_SeenInFrontend_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_BooleanNOR_ReturnValue) == 0x00001A, "Member 'ItemManagementItemTileButton_C_UpdateBangState::CallFunc_BooleanNOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_AsFort_Account_Item) == 0x000020, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, K2Node_DynamicCast_bSuccess1) == 0x000028, "Member 'ItemManagementItemTileButton_C_UpdateBangState::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
@@ -479,7 +467,7 @@ static_assert(offsetof(ItemManagementItemTileButton_C_UpdateBangState, CallFunc_
 struct ItemManagementItemTileButton_C_UpdateQuantityProduced final
 {
 public:
-	class UObject*                                CallFunc_GetData_ReturnValue;                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_GetListItemObject_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortSchematicItem*                     K2Node_DynamicCast_AsFort_Schematic_Item;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -492,7 +480,7 @@ public:
 };
 static_assert(alignof(ItemManagementItemTileButton_C_UpdateQuantityProduced) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_UpdateQuantityProduced");
 static_assert(sizeof(ItemManagementItemTileButton_C_UpdateQuantityProduced) == 0x000058, "Wrong size on ItemManagementItemTileButton_C_UpdateQuantityProduced");
-static_assert(offsetof(ItemManagementItemTileButton_C_UpdateQuantityProduced, CallFunc_GetData_ReturnValue) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateQuantityProduced::CallFunc_GetData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_UpdateQuantityProduced, CallFunc_GetListItemObject_ReturnValue) == 0x000000, "Member 'ItemManagementItemTileButton_C_UpdateQuantityProduced::CallFunc_GetListItemObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateQuantityProduced, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000008, "Member 'ItemManagementItemTileButton_C_UpdateQuantityProduced::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateQuantityProduced, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemManagementItemTileButton_C_UpdateQuantityProduced::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateQuantityProduced, CallFunc_GetSchematicQuantityProduced_ReturnValue) == 0x000014, "Member 'ItemManagementItemTileButton_C_UpdateQuantityProduced::CallFunc_GetSchematicQuantityProduced_ReturnValue' has a wrong offset!");
@@ -539,6 +527,30 @@ static_assert(offsetof(ItemManagementItemTileButton_C_UpdateCollectionBookIndica
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateCollectionBookIndicator, Temp_byte_Variable) == 0x000001, "Member 'ItemManagementItemTileButton_C_UpdateCollectionBookIndicator::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateCollectionBookIndicator, Temp_byte_Variable1) == 0x000002, "Member 'ItemManagementItemTileButton_C_UpdateCollectionBookIndicator::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemTileButton_C_UpdateCollectionBookIndicator, K2Node_Select_Default) == 0x000003, "Member 'ItemManagementItemTileButton_C_UpdateCollectionBookIndicator::K2Node_Select_Default' has a wrong offset!");
+
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.IsItemMulchable
+// 0x0028 (0x0028 - 0x0000)
+struct ItemManagementItemTileButton_C_IsItemMulchable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	EFortItemManagementMode                       CallFunc_GetItemManagementMode_ReturnValue;        // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_CanItemBeMulched_OutRestrictionReason;    // 0x0008(0x0018)()
+	bool                                          CallFunc_CanItemBeMulched_ReturnValue;             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ItemManagementItemTileButton_C_IsItemMulchable) == 0x000008, "Wrong alignment on ItemManagementItemTileButton_C_IsItemMulchable");
+static_assert(sizeof(ItemManagementItemTileButton_C_IsItemMulchable) == 0x000028, "Wrong size on ItemManagementItemTileButton_C_IsItemMulchable");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, ReturnValue) == 0x000000, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_GetItemManagementMode_ReturnValue) == 0x000001, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_GetItemManagementMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_CanItemBeMulched_OutRestrictionReason) == 0x000008, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_CanItemBeMulched_OutRestrictionReason' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_CanItemBeMulched_ReturnValue) == 0x000020, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_CanItemBeMulched_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_Not_PreBool_ReturnValue) == 0x000022, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementItemTileButton_C_IsItemMulchable, CallFunc_BooleanAND_ReturnValue) == 0x000023, "Member 'ItemManagementItemTileButton_C_IsItemMulchable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

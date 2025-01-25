@@ -21,7 +21,7 @@ namespace SDK
 class UAnimNotify_PlayFireFX_C final : public UAnimNotify
 {
 public:
-	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
+	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation) const;
 
 public:
 	static class UClass* StaticClass()

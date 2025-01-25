@@ -37,37 +37,37 @@ void UAthenaChallengeTreeEntry_C::ExecuteUbergraph_AthenaChallengeTreeEntry(int3
 }
 
 
-// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.OnHovered
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaChallengeTreeEntry_C::OnHovered()
+void UAthenaChallengeTreeEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "OnHovered");
+		Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "BP_OnItemExpansionChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::AthenaChallengeTreeEntry_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.ExpansionChanged
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaChallengeTreeEntry_C::ExpansionChanged(bool bExpanded)
+void UAthenaChallengeTreeEntry_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "ExpansionChanged");
+		Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "BP_OnHovered");
 
-	Params::AthenaChallengeTreeEntry_C_ExpansionChanged Parms{};
-
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -186,7 +186,7 @@ void UAthenaChallengeTreeEntry_C::UpdateReward()
 
 
 // Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.GetRewardToShow
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -202,6 +202,26 @@ class UFortItem* UAthenaChallengeTreeEntry_C::GetRewardToShow()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.SetTimespanSource
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TScriptInterface<class IFortTimespanDataSource>Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengeTreeEntry_C::SetTimespanSource(TScriptInterface<class IFortTimespanDataSource> Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "SetTimespanSource");
+
+	Params::AthenaChallengeTreeEntry_C_SetTimespanSource Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

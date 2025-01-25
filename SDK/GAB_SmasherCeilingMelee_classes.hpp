@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherCeilingMelee.GAB_SmasherCeilingMelee_C
-// 0x0000 (0x0B88 - 0x0B88)
+// 0x0000 (0x0990 - 0x0990)
 class UGAB_SmasherCeilingMelee_C final : public UGAB_SmasherMelee_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherCeilingMelee_C) == 0x000008, "Wrong alignment on UGAB_SmasherCeilingMelee_C");
-static_assert(sizeof(UGAB_SmasherCeilingMelee_C) == 0x000B88, "Wrong size on UGAB_SmasherCeilingMelee_C");
+static_assert(sizeof(UGAB_SmasherCeilingMelee_C) == 0x000990, "Wrong size on UGAB_SmasherCeilingMelee_C");
 
 }
 

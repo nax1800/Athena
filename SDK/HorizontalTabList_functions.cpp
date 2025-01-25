@@ -37,6 +37,28 @@ void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint)
 }
 
 
+// Function HorizontalTabList.HorizontalTabList_C.HandleTabRemoved
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
+
+	Params::HorizontalTabList_C_HandleTabRemoved Parms{};
+
+	Parms.TabNameID = TabNameID;
+	Parms.TabButton = TabButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HorizontalTabList.HorizontalTabList_C.HandleTabCreated
 // (Event, Protected, BlueprintEvent)
 // Parameters:

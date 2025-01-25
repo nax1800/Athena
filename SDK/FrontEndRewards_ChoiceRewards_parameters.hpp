@@ -23,13 +23,13 @@ namespace SDK::Params
 struct FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              Item;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature");
 static_assert(sizeof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature) == 0x000010, "Wrong size on FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature, Param_Index) == 0x000000, "Member 'FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature::Param_Index' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature, Index_0) == 0x000000, "Member 'FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature::Index_0' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature, Item) == 0x000008, "Member 'FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature::Item' has a wrong offset!");
 
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ExecuteUbergraph_FrontEndRewards_ChoiceRewards
@@ -46,8 +46,8 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards) == 0x000008, "Wrong alignment on FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards");
 static_assert(sizeof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards) == 0x000068, "Wrong size on FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards");
@@ -58,8 +58,8 @@ static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEnd
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_ComponentBoundEvent_Button1) == 0x000028, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_CreateDelegate_OutputDelegate1) == 0x000038, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_CreateDelegate_OutputDelegate12) == 0x000048, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_CreateDelegate_OutputDelegate123) == 0x000058, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_CreateDelegate_OutputDelegate2) == 0x000048, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards, K2Node_CreateDelegate_OutputDelegate3) == 0x000058, "Member 'FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.BndEvt__ButtonNope_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -265,7 +265,7 @@ struct FrontEndRewards_ChoiceRewards_C_HandleCardClicked final
 {
 public:
 	class URewards_ItemCard_C*                    ItemCard;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URewards_ItemCard_C*                    CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -278,7 +278,7 @@ public:
 static_assert(alignof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked) == 0x000008, "Wrong alignment on FrontEndRewards_ChoiceRewards_C_HandleCardClicked");
 static_assert(sizeof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked) == 0x000028, "Wrong size on FrontEndRewards_ChoiceRewards_C_HandleCardClicked");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, ItemCard) == 0x000000, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::ItemCard' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, Param_Index) == 0x000008, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::Param_Index' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, Index_0) == 0x000008, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::Index_0' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, CallFunc_Array_Get_Item) == 0x000010, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, CallFunc_Array_Find_ReturnValue) == 0x000018, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_HandleCardClicked, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00001C, "Member 'FrontEndRewards_ChoiceRewards_C_HandleCardClicked::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");

@@ -17,59 +17,64 @@ namespace SDK::Params
 {
 
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.ExecuteUbergraph_HeroSquadManagementScreen
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue;  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget1;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHeroSquadSlotsView_C*                  K2Node_DynamicCast_AsHero_Squad_Slots_View;        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget;           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USquadSlotDetailsPanel_C*               K2Node_DynamicCast_AsSquad_Slot_Details_Panel;     // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_SquadSlotIndex;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHeroSquadBonuses_C*                    K2Node_DynamicCast_AsHero_Squad_Bonuses;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget12;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1234;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1234;          // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue;  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget1;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USquadSlotDetailsPanel_C*               K2Node_DynamicCast_AsSquad_Slot_Details_Panel;     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_SquadSlotIndex;         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHeroSquadBonuses_C*                    K2Node_DynamicCast_AsHero_Squad_Bonuses;           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USquadStatsWidget_C*                    K2Node_DynamicCast_AsSquad_Stats_Widget2;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen) == 0x000008, "Wrong alignment on HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen");
-static_assert(sizeof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen) == 0x0000B0, "Wrong size on HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen");
+static_assert(sizeof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen) == 0x0000C0, "Wrong size on HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen");
 static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, EntryPoint) == 0x000000, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget) == 0x000018, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue) == 0x000024, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget1) == 0x000028, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget1' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsHero_Squad_Slots_View) == 0x000008, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsHero_Squad_Slots_View' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget) == 0x000028, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess1) == 0x000030, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000031, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Slot_Details_Panel) == 0x000038, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Slot_Details_Panel' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess12) == 0x000040, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_ComponentBoundEvent_SquadSlotIndex) == 0x000044, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_ComponentBoundEvent_SquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsHero_Squad_Bonuses) == 0x000048, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsHero_Squad_Bonuses' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess123) == 0x000050, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget12) == 0x000060, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess1234) == 0x000068, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess1234' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000070, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate12) == 0x000080, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate123) == 0x000090, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate1234) == 0x0000A0, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue) == 0x000034, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_GetIndexOfSelectedSquadSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget1) == 0x000038, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget1' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess2) == 0x000040, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000041, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Slot_Details_Panel) == 0x000048, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Slot_Details_Panel' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess3) == 0x000050, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_ComponentBoundEvent_SquadSlotIndex) == 0x000054, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_ComponentBoundEvent_SquadSlotIndex' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsHero_Squad_Bonuses) == 0x000058, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsHero_Squad_Bonuses' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess4) == 0x000060, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_AsSquad_Stats_Widget2) == 0x000070, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_AsSquad_Stats_Widget2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_DynamicCast_bSuccess5) == 0x000078, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000080, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate2) == 0x000090, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate3) == 0x0000A0, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen, K2Node_CreateDelegate_OutputDelegate4) == 0x0000B0, "Member 'HeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -159,7 +164,7 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USimpleSquadSlotButton_C*               K2Node_DynamicCast_AsSimple_Squad_Slot_Button1;    // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPerkEmpty_ReturnValue1;                 // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPerkUnlocked_ReturnValue1;              // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -176,7 +181,7 @@ static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, K2Node_DynamicCast_bSuccess1) == 0x000028, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, CallFunc_GetChildAt_ReturnValue1) == 0x000030, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::CallFunc_GetChildAt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, K2Node_DynamicCast_AsSimple_Squad_Slot_Button1) == 0x000038, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::K2Node_DynamicCast_AsSimple_Squad_Slot_Button1' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, K2Node_DynamicCast_bSuccess12) == 0x000040, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, K2Node_DynamicCast_bSuccess2) == 0x000040, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, CallFunc_IsPerkEmpty_ReturnValue1) == 0x000041, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::CallFunc_IsPerkEmpty_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, CallFunc_IsPerkUnlocked_ReturnValue1) == 0x000042, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::CallFunc_IsPerkUnlocked_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State, CallFunc_BooleanAND_ReturnValue1) == 0x000043, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
@@ -193,20 +198,20 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHeroSquadSlotsView_C*                  K2Node_DynamicCast_AsHero_Squad_Slots_View;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus12;           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus2;            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus123;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1234;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus3;            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus1234;         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12345;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus4;            // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus12345;        // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123456;                 // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus5;            // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State) == 0x000008, "Wrong alignment on HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State");
 static_assert(sizeof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State) == 0x000070, "Wrong size on HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State");
@@ -215,16 +220,16 @@ static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highl
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus1) == 0x000010, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess1) == 0x000018, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Slots_View) == 0x000020, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Slots_View' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess12) == 0x000028, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus12) == 0x000030, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess123) == 0x000038, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess2) == 0x000028, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus2) == 0x000030, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess3) == 0x000038, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_SwitchInteger_CmpSuccess) == 0x000039, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus123) == 0x000040, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus123' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess1234) == 0x000048, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess1234' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus1234) == 0x000050, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus1234' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess12345) == 0x000058, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess12345' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus12345) == 0x000060, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus12345' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess123456) == 0x000068, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess123456' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus3) == 0x000040, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus3' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess4) == 0x000048, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus4) == 0x000050, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus4' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess5) == 0x000058, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_AsHero_Squad_Bonus5) == 0x000060, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_AsHero_Squad_Bonus5' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess6) == 0x000068, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
 
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.UpdateSquadSlotInfoPanel
 // 0x0100 (0x0100 - 0x0000)
@@ -237,13 +242,13 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0010(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x0028(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue12;            // 0x0040(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue123;           // 0x0058(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue1234;          // 0x0070(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x0040(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue3;             // 0x0058(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue4;             // 0x0070(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0088(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue12345;         // 0x00A0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue123456;        // 0x00B8(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue1234567;       // 0x00D0(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue5;             // 0x00A0(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue6;             // 0x00B8(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue7;             // 0x00D0(0x0018)()
 	class FText                                   K2Node_Select1_Default;                            // 0x00E8(0x0018)()
 };
 static_assert(alignof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel) == 0x000008, "Wrong alignment on HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel");
@@ -253,13 +258,13 @@ static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, Tem
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, Temp_int_Variable1) == 0x000008, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue1) == 0x000028, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue12) == 0x000040, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue123) == 0x000058, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue1234) == 0x000070, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue2) == 0x000040, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue3) == 0x000058, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue4) == 0x000070, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, K2Node_Select_Default) == 0x000088, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue12345) == 0x0000A0, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue123456) == 0x0000B8, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue1234567) == 0x0000D0, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue1234567' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue5) == 0x0000A0, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue6) == 0x0000B8, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, CallFunc_MakeLiteralText_ReturnValue7) == 0x0000D0, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::CallFunc_MakeLiteralText_ReturnValue7' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, K2Node_Select1_Default) == 0x0000E8, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::K2Node_Select1_Default' has a wrong offset!");
 
 }

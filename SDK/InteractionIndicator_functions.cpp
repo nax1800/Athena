@@ -119,26 +119,6 @@ void UInteractionIndicator_C::ShowBasicInteractionWidget()
 }
 
 
-// Function InteractionIndicator.InteractionIndicator_C.HandleInteractionUpdated
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortInteractContextInfo*         Interaction                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UInteractionIndicator_C::HandleInteractionUpdated(class UFortInteractContextInfo* Interaction)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InteractionIndicator_C", "HandleInteractionUpdated");
-
-	Params::InteractionIndicator_C_HandleInteractionUpdated Parms{};
-
-	Parms.Interaction = Interaction;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function InteractionIndicator.InteractionIndicator_C.ShowDefenderBeaconWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

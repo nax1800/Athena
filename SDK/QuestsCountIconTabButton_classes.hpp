@@ -10,54 +10,54 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestsCountIconTabButton.QuestsCountIconTabButton_C
-// 0x0100 (0x0908 - 0x0808)
+// 0x0100 (0x0990 - 0x0890)
 class UQuestsCountIconTabButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UNormalBangWrapper_C*                   BangWrapper;                                       // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         ContentHB;                                         // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LeftSideImage;                                     // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   ButtonText;                                        // 0x0830(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x0848(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                          UseText;                                           // 0x08D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8D1[0x3];                                      // 0x08D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           SelectedIconTint;                                  // 0x08D4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DeselectedIconTint;                                // 0x08E4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           HoveredIconTint;                                   // 0x08F4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bBangEnabled;                                      // 0x0904(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UNormalBangWrapper_C*                   BangWrapper;                                       // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         ContentHB;                                         // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LeftSideImage;                                     // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   ButtonText;                                        // 0x08B8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08D0(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                          UseText;                                           // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_959[0x3];                                      // 0x0959(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           SelectedIconTint;                                  // 0x095C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DeselectedIconTint;                                // 0x096C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           HoveredIconTint;                                   // 0x097C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bBangEnabled;                                      // 0x098C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint);
-	void OnDisabled();
-	void OnEnabled();
+	void BP_OnDisabled();
+	void BP_OnEnabled();
 	void Handle_Quest_Count_Updated();
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void Construct();
-	void OnDeselected();
-	void OnSelected();
+	void BP_OnDeselected();
+	void BP_OnSelected();
 	void SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo);
 	void PreConstruct(bool IsDesignTime);
 	void OnCurrentTextStyleChanged();
-	void Set_Text(const class FText& Param_ButtonText);
-	void Set_Icon(const struct FSlateBrush& Param_IconBrush);
+	void Set_Text(const class FText& ButtonText_0);
+	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void ShowText();
 	void SetTutorialBorderStyle(class UClass* BorderStyle);
 	void Update_Text();
-	void Update_Bang_State(bool Param_bBangEnabled, int32 Count);
+	void Update_Bang_State(bool bBangEnabled_0, int32 Count);
 	void SetTutorialNameID(class FName InTutorialBangID);
 
 public:
@@ -71,19 +71,19 @@ public:
 	}
 };
 static_assert(alignof(UQuestsCountIconTabButton_C) == 0x000008, "Wrong alignment on UQuestsCountIconTabButton_C");
-static_assert(sizeof(UQuestsCountIconTabButton_C) == 0x000908, "Wrong size on UQuestsCountIconTabButton_C");
-static_assert(offsetof(UQuestsCountIconTabButton_C, UberGraphFrame) == 0x000808, "Member 'UQuestsCountIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, BangWrapper) == 0x000810, "Member 'UQuestsCountIconTabButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, CenterButtonTextWidget) == 0x000818, "Member 'UQuestsCountIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, ContentHB) == 0x000820, "Member 'UQuestsCountIconTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, LeftSideImage) == 0x000828, "Member 'UQuestsCountIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, ButtonText) == 0x000830, "Member 'UQuestsCountIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, IconBrush) == 0x000848, "Member 'UQuestsCountIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, UseText) == 0x0008D0, "Member 'UQuestsCountIconTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, SelectedIconTint) == 0x0008D4, "Member 'UQuestsCountIconTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, DeselectedIconTint) == 0x0008E4, "Member 'UQuestsCountIconTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, HoveredIconTint) == 0x0008F4, "Member 'UQuestsCountIconTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, bBangEnabled) == 0x000904, "Member 'UQuestsCountIconTabButton_C::bBangEnabled' has a wrong offset!");
+static_assert(sizeof(UQuestsCountIconTabButton_C) == 0x000990, "Wrong size on UQuestsCountIconTabButton_C");
+static_assert(offsetof(UQuestsCountIconTabButton_C, UberGraphFrame) == 0x000890, "Member 'UQuestsCountIconTabButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, BangWrapper) == 0x000898, "Member 'UQuestsCountIconTabButton_C::BangWrapper' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, CenterButtonTextWidget) == 0x0008A0, "Member 'UQuestsCountIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, ContentHB) == 0x0008A8, "Member 'UQuestsCountIconTabButton_C::ContentHB' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, LeftSideImage) == 0x0008B0, "Member 'UQuestsCountIconTabButton_C::LeftSideImage' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, ButtonText) == 0x0008B8, "Member 'UQuestsCountIconTabButton_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, IconBrush) == 0x0008D0, "Member 'UQuestsCountIconTabButton_C::IconBrush' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, UseText) == 0x000958, "Member 'UQuestsCountIconTabButton_C::UseText' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, SelectedIconTint) == 0x00095C, "Member 'UQuestsCountIconTabButton_C::SelectedIconTint' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, DeselectedIconTint) == 0x00096C, "Member 'UQuestsCountIconTabButton_C::DeselectedIconTint' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, HoveredIconTint) == 0x00097C, "Member 'UQuestsCountIconTabButton_C::HoveredIconTint' has a wrong offset!");
+static_assert(offsetof(UQuestsCountIconTabButton_C, bBangEnabled) == 0x00098C, "Member 'UQuestsCountIconTabButton_C::bBangEnabled' has a wrong offset!");
 
 }
 

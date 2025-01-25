@@ -10,26 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_GenericApplyPush.GAB_GenericApplyPush_C
-// 0x0030 (0x0B18 - 0x0AE8)
+// 0x0028 (0x0920 - 0x08F8)
 class UGAB_GenericApplyPush_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UAnimMontage*                           PushedMontage;                                     // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           PushAsideTag;                                      // 0x0B00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         Time;                                              // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGA_Constructor_BullRush_C*             GA_BullRush;                                       // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UAnimMontage*                           PushedMontage;                                     // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           PushAsideTag;                                      // 0x0908(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         Time;                                              // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_914[0x4];                                      // 0x0914(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGA_Constructor_BullRush_C*             GA_BullRush;                                       // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_GenericApplyPush(int32 EntryPoint);
@@ -55,12 +54,12 @@ public:
 	}
 };
 static_assert(alignof(UGAB_GenericApplyPush_C) == 0x000008, "Wrong alignment on UGAB_GenericApplyPush_C");
-static_assert(sizeof(UGAB_GenericApplyPush_C) == 0x000B18, "Wrong size on UGAB_GenericApplyPush_C");
-static_assert(offsetof(UGAB_GenericApplyPush_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_GenericApplyPush_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyPush_C, PushedMontage) == 0x000AF8, "Member 'UGAB_GenericApplyPush_C::PushedMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyPush_C, PushAsideTag) == 0x000B00, "Member 'UGAB_GenericApplyPush_C::PushAsideTag' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyPush_C, Time) == 0x000B08, "Member 'UGAB_GenericApplyPush_C::Time' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyPush_C, GA_BullRush) == 0x000B10, "Member 'UGAB_GenericApplyPush_C::GA_BullRush' has a wrong offset!");
+static_assert(sizeof(UGAB_GenericApplyPush_C) == 0x000920, "Wrong size on UGAB_GenericApplyPush_C");
+static_assert(offsetof(UGAB_GenericApplyPush_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_GenericApplyPush_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_GenericApplyPush_C, PushedMontage) == 0x000900, "Member 'UGAB_GenericApplyPush_C::PushedMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_GenericApplyPush_C, PushAsideTag) == 0x000908, "Member 'UGAB_GenericApplyPush_C::PushAsideTag' has a wrong offset!");
+static_assert(offsetof(UGAB_GenericApplyPush_C, Time) == 0x000910, "Member 'UGAB_GenericApplyPush_C::Time' has a wrong offset!");
+static_assert(offsetof(UGAB_GenericApplyPush_C, GA_BullRush) == 0x000918, "Member 'UGAB_GenericApplyPush_C::GA_BullRush' has a wrong offset!");
 
 }
 

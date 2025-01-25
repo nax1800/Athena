@@ -58,37 +58,37 @@ struct VaultWeaponPlacementHelper_C_InitializeContextEvents final
 public:
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1234;          // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate12345;         // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue12;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate123456;        // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1234;               // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue2;                  // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate6;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue4;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate1234567;       // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue12345;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate7;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(VaultWeaponPlacementHelper_C_InitializeContextEvents) == 0x000008, "Wrong alignment on VaultWeaponPlacementHelper_C_InitializeContextEvents");
 static_assert(sizeof(VaultWeaponPlacementHelper_C_InitializeContextEvents) == 0x0000B8, "Wrong size on VaultWeaponPlacementHelper_C_InitializeContextEvents");
 static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate123) == 0x000030, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue1) == 0x000048, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1234) == 0x000050, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate12345) == 0x000060, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue12) == 0x000070, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue123) == 0x000078, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate123456) == 0x000080, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate123456' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue1234) == 0x000090, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate4) == 0x000050, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate5) == 0x000060, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue2) == 0x000070, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue3) == 0x000078, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate6) == 0x000080, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue4) == 0x000090, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000098, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1234567) == 0x0000A0, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1234567' has a wrong offset!");
-static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue12345) == 0x0000B0, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate7) == 0x0000A0, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
+static_assert(offsetof(VaultWeaponPlacementHelper_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue5) == 0x0000B0, "Member 'VaultWeaponPlacementHelper_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
 
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnFrontEndCameraChanged
 // 0x0003 (0x0003 - 0x0000)

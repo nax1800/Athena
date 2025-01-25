@@ -18,23 +18,23 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_Summary.Results_Summary_C
-// 0x0070 (0x0288 - 0x0218)
+// 0x0070 (0x0280 - 0x0210)
 class UResults_Summary_C final : public UFortResultsSummaryScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ButtonClose;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUniformGridPanel*                      GridBadges;                                        // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageLootChest;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               OverlayRewards;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextLootLevel;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonNumericTextBlock*                TextTeamScore;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxPlayerScores;                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnReturnClicked;                                   // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         NumberGridBadgeRows;                               // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PointsPerLootLevel;                                // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UTexture2D*>                     ChestIcons;                                        // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ButtonClose;                                       // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUniformGridPanel*                      GridBadges;                                        // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageLootChest;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               OverlayRewards;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextLootLevel;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonNumericTextBlock*                TextTeamScore;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxPlayerScores;                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnReturnClicked;                                   // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                         NumberGridBadgeRows;                               // 0x0268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PointsPerLootLevel;                                // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UTexture2D*>                     ChestIcons;                                        // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void OnReturnClicked__DelegateSignature();
@@ -58,20 +58,20 @@ public:
 	}
 };
 static_assert(alignof(UResults_Summary_C) == 0x000008, "Wrong alignment on UResults_Summary_C");
-static_assert(sizeof(UResults_Summary_C) == 0x000288, "Wrong size on UResults_Summary_C");
-static_assert(offsetof(UResults_Summary_C, UberGraphFrame) == 0x000218, "Member 'UResults_Summary_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ButtonClose) == 0x000220, "Member 'UResults_Summary_C::ButtonClose' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, GridBadges) == 0x000228, "Member 'UResults_Summary_C::GridBadges' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ImageLootChest) == 0x000230, "Member 'UResults_Summary_C::ImageLootChest' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, OverlayRewards) == 0x000238, "Member 'UResults_Summary_C::OverlayRewards' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, SafeZone_0) == 0x000240, "Member 'UResults_Summary_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, TextLootLevel) == 0x000248, "Member 'UResults_Summary_C::TextLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, TextTeamScore) == 0x000250, "Member 'UResults_Summary_C::TextTeamScore' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, VerticalBoxPlayerScores) == 0x000258, "Member 'UResults_Summary_C::VerticalBoxPlayerScores' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, OnReturnClicked) == 0x000260, "Member 'UResults_Summary_C::OnReturnClicked' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, NumberGridBadgeRows) == 0x000270, "Member 'UResults_Summary_C::NumberGridBadgeRows' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, PointsPerLootLevel) == 0x000274, "Member 'UResults_Summary_C::PointsPerLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ChestIcons) == 0x000278, "Member 'UResults_Summary_C::ChestIcons' has a wrong offset!");
+static_assert(sizeof(UResults_Summary_C) == 0x000280, "Wrong size on UResults_Summary_C");
+static_assert(offsetof(UResults_Summary_C, UberGraphFrame) == 0x000210, "Member 'UResults_Summary_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, ButtonClose) == 0x000218, "Member 'UResults_Summary_C::ButtonClose' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, GridBadges) == 0x000220, "Member 'UResults_Summary_C::GridBadges' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, ImageLootChest) == 0x000228, "Member 'UResults_Summary_C::ImageLootChest' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, OverlayRewards) == 0x000230, "Member 'UResults_Summary_C::OverlayRewards' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, SafeZone_0) == 0x000238, "Member 'UResults_Summary_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, TextLootLevel) == 0x000240, "Member 'UResults_Summary_C::TextLootLevel' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, TextTeamScore) == 0x000248, "Member 'UResults_Summary_C::TextTeamScore' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, VerticalBoxPlayerScores) == 0x000250, "Member 'UResults_Summary_C::VerticalBoxPlayerScores' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, OnReturnClicked) == 0x000258, "Member 'UResults_Summary_C::OnReturnClicked' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, NumberGridBadgeRows) == 0x000268, "Member 'UResults_Summary_C::NumberGridBadgeRows' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, PointsPerLootLevel) == 0x00026C, "Member 'UResults_Summary_C::PointsPerLootLevel' has a wrong offset!");
+static_assert(offsetof(UResults_Summary_C, ChestIcons) == 0x000270, "Member 'UResults_Summary_C::ChestIcons' has a wrong offset!");
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MulchRefundItemQuantityList.MulchRefundItemQuantityList_C
-// 0x0010 (0x02A8 - 0x0298)
+// 0x0010 (0x02A0 - 0x0290)
 class UMulchRefundItemQuantityList_C final : public UFortItemQuantityListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           ContainerBox;                                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           ContainerBox;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void AddListEntry(class UFortItemQuantityListEntryBase* ListEntry);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UMulchRefundItemQuantityList_C) == 0x000008, "Wrong alignment on UMulchRefundItemQuantityList_C");
-static_assert(sizeof(UMulchRefundItemQuantityList_C) == 0x0002A8, "Wrong size on UMulchRefundItemQuantityList_C");
-static_assert(offsetof(UMulchRefundItemQuantityList_C, UberGraphFrame) == 0x000298, "Member 'UMulchRefundItemQuantityList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchRefundItemQuantityList_C, ContainerBox) == 0x0002A0, "Member 'UMulchRefundItemQuantityList_C::ContainerBox' has a wrong offset!");
+static_assert(sizeof(UMulchRefundItemQuantityList_C) == 0x0002A0, "Wrong size on UMulchRefundItemQuantityList_C");
+static_assert(offsetof(UMulchRefundItemQuantityList_C, UberGraphFrame) == 0x000290, "Member 'UMulchRefundItemQuantityList_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMulchRefundItemQuantityList_C, ContainerBox) == 0x000298, "Member 'UMulchRefundItemQuantityList_C::ContainerBox' has a wrong offset!");
 
 }
 

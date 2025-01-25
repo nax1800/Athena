@@ -228,12 +228,12 @@ void UQuantitySelector_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_C
 // Parameters:
 // int32                                   StartingCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   MaximumCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FText                             ButtonText                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FText                             AdditionalInfoText                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UQuantitySelector_C::SetSplitData(int32 StartingCount, int32 MaximumCount, class UFortItem* Param_Item, const class FText& TitleText, const class FText& ButtonText, const class FText& AdditionalInfoText)
+void UQuantitySelector_C::SetSplitData(int32 StartingCount, int32 MaximumCount, class UFortItem* Item_0, const class FText& TitleText, const class FText& ButtonText, const class FText& AdditionalInfoText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -244,7 +244,7 @@ void UQuantitySelector_C::SetSplitData(int32 StartingCount, int32 MaximumCount, 
 
 	Parms.StartingCount = StartingCount;
 	Parms.MaximumCount = MaximumCount;
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 	Parms.TitleText = std::move(TitleText);
 	Parms.ButtonText = std::move(ButtonText);
 	Parms.AdditionalInfoText = std::move(AdditionalInfoText);
@@ -365,7 +365,7 @@ void UQuantitySelector_C::SliderValueChanged()
 
 
 // Function QuantitySelector.QuantitySelector_C.SetupForInputMode
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsUsingGamepad                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -387,9 +387,9 @@ void UQuantitySelector_C::SetupForInputMode(bool IsUsingGamepad)
 // Function QuantitySelector.QuantitySelector_C.GetCurrentValue
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_CurrentValue                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentValue_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuantitySelector_C::GetCurrentValue(int32* Param_CurrentValue)
+void UQuantitySelector_C::GetCurrentValue(int32* CurrentValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -400,8 +400,8 @@ void UQuantitySelector_C::GetCurrentValue(int32* Param_CurrentValue)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_CurrentValue != nullptr)
-		*Param_CurrentValue = Parms.Param_CurrentValue;
+	if (CurrentValue_0 != nullptr)
+		*CurrentValue_0 = Parms.CurrentValue_0;
 }
 
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerCameraMode1P.PlayerCameraMode1P_C
-// 0x0000 (0x0118 - 0x0118)
+// 0x0000 (0x0C20 - 0x0C20)
 class UPlayerCameraMode1P_C : public UFortCameraMode_ThirdPerson
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPlayerCameraMode1P_C>();
 	}
 };
-static_assert(alignof(UPlayerCameraMode1P_C) == 0x000008, "Wrong alignment on UPlayerCameraMode1P_C");
-static_assert(sizeof(UPlayerCameraMode1P_C) == 0x000118, "Wrong size on UPlayerCameraMode1P_C");
+static_assert(alignof(UPlayerCameraMode1P_C) == 0x000010, "Wrong alignment on UPlayerCameraMode1P_C");
+static_assert(sizeof(UPlayerCameraMode1P_C) == 0x000C20, "Wrong size on UPlayerCameraMode1P_C");
 
 }
 

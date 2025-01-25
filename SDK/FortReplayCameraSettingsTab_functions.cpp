@@ -37,6 +37,126 @@ void UFortReplayCameraSettingsTab_C::ExecuteUbergraph_FortReplayCameraSettingsTa
 }
 
 
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection Changed__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature(float Slider_Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature Parms{};
+
+	Parms.Slider_Value = Slider_Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection Changed__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature(float Slider_Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature Parms{};
+
+	Parms.Slider_Value = Slider_Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection Changed__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFortReplayCameraSettingsTab_C::BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature");
+
+	Params::FortReplayCameraSettingsTab_C_BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.OnActivated
 // (Event, Protected, BlueprintEvent)
 
@@ -362,6 +482,48 @@ void UFortReplayCameraSettingsTab_C::RefreshHighQualityFXState(const struct FFor
 	Parms.FX_State = std::move(FX_State);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.HideBlendSettingsInReplays
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UFortReplayCameraSettingsTab_C::HideBlendSettingsInReplays()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "HideBlendSettingsInReplays");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.SetNameplateViewDistanceWidget
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UFortReplayCameraSettingsTab_C::SetNameplateViewDistanceWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "SetNameplateViewDistanceWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C.SetOutsideSafeZoneOpacityWidget
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UFortReplayCameraSettingsTab_C::SetOutsideSafeZoneOpacityWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayCameraSettingsTab_C", "SetOutsideSafeZoneOpacityWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

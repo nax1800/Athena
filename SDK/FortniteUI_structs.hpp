@@ -11,12 +11,13 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "GameSubCatalog_structs.hpp"
+#include "CommonUI_structs.hpp"
+#include "Engine_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK
@@ -69,6 +70,65 @@ enum class EFortAnimSpeed : uint8
 	EFortAnimSpeed_MAX                       = 3,
 };
 
+// Enum FortniteUI.EFortStoreState
+// NumValues: 0x0013
+enum class EFortStoreState : uint8
+{
+	Error                                    = 0,
+	Closed                                   = 1,
+	CardPackStore                            = 2,
+	CurrencyStore                            = 3,
+	WebPayment                               = 4,
+	PurchaseOpen                             = 5,
+	PackOpen                                 = 6,
+	CardEnter                                = 7,
+	CardBackReveal                           = 8,
+	CardFlip                                 = 9,
+	CardFrontReveal                          = 10,
+	CardExit                                 = 11,
+	SummaryAdd                               = 12,
+	PackDestroy                              = 13,
+	Summary                                  = 14,
+	PresentChoice                            = 15,
+	ChoiceMade                               = 16,
+	MAX_None                                 = 17,
+	EFortStoreState_MAX                      = 18,
+};
+
+// Enum FortniteUI.EFortUIState
+// NumValues: 0x000E
+enum class EFortUIState : uint8
+{
+	Invalid                                  = 0,
+	Login                                    = 1,
+	JoinServer                               = 2,
+	SubgameSelect                            = 3,
+	FrontEnd                                 = 4,
+	PvE_PostGame                             = 5,
+	PvP_PostGame                             = 6,
+	InGame                                   = 7,
+	Cinematic                                = 8,
+	Athena                                   = 9,
+	AthenaSpectator                          = 10,
+	Replay                                   = 11,
+	AthenaReplay                             = 12,
+	MAX                                      = 13,
+};
+
+// Enum FortniteUI.EInputPriority
+// NumValues: 0x0008
+enum class EInputPriority : uint8
+{
+	Normal                                   = 0,
+	Menu                                     = 1,
+	Chat                                     = 2,
+	Modal                                    = 3,
+	Confirmation                             = 4,
+	Error                                    = 5,
+	HUD                                      = 6,
+	EInputPriority_MAX                       = 7,
+};
+
 // Enum FortniteUI.EFortItemCardSize
 // NumValues: 0x0008
 enum class EFortItemCardSize : uint8
@@ -81,6 +141,18 @@ enum class EFortItemCardSize : uint8
 	XL                                       = 5,
 	XXL                                      = 6,
 	EFortItemCardSize_MAX                    = 7,
+};
+
+// Enum FortniteUI.EFortCollectionBookPopupButtonType
+// NumValues: 0x0006
+enum class EFortCollectionBookPopupButtonType : uint8
+{
+	SelectItem                               = 0,
+	Preview                                  = 1,
+	Purchase                                 = 2,
+	Unslot                                   = 3,
+	Back                                     = 4,
+	EFortCollectionBookPopupButtonType_MAX   = 5,
 };
 
 // Enum FortniteUI.ECollectionBookSectionNavTarget
@@ -145,26 +217,6 @@ enum class EFortHomebaseNodePurchaseRestrictionReason : uint8
 	EFortHomebaseNodePurchaseRestrictionReason_MAX = 4,
 };
 
-// Enum FortniteUI.EFortPickerMode
-// NumValues: 0x000E
-enum class EFortPickerMode : uint8
-{
-	BuildingCategory                         = 0,
-	TrapCategory                             = 1,
-	WeaponCategory                           = 2,
-	SocialCategory                           = 3,
-	Building                                 = 4,
-	Trap                                     = 5,
-	TrapRadial                               = 6,
-	Weapon                                   = 7,
-	Social                                   = 8,
-	DirectPickEmote                          = 9,
-	DirectPickSpray                          = 10,
-	SquadQuickChat                           = 11,
-	WeaponsSlotted                           = 12,
-	EFortPickerMode_MAX                      = 13,
-};
-
 // Enum FortniteUI.EFortUIFeatureStateReason
 // NumValues: 0x000A
 enum class EFortUIFeatureStateReason : uint8
@@ -193,53 +245,62 @@ enum class EFortUIFeatureState : uint8
 };
 
 // Enum FortniteUI.EFortUIFeature
-// NumValues: 0x002C
+// NumValues: 0x0035
 enum class EFortUIFeature : uint8
 {
 	ShowHome                                 = 0,
 	ShowPlay                                 = 1,
-	ShowHeros                                = 2,
-	ShowSquads                               = 3,
-	ShowArmory                               = 4,
-	ShowSkillTree                            = 5,
-	ShowStore                                = 6,
-	ShowQuests                               = 7,
-	ShowMainStore                            = 8,
-	ShowContextHelpMenu                      = 9,
-	ShowCampaign                             = 10,
-	ShowActiveBoost                          = 11,
-	ShowJournal                              = 12,
-	ShowPartyBar                             = 13,
-	ShowChatWindow                           = 14,
-	ShowFriendsMenu                          = 15,
-	ShowObjectives                           = 16,
-	ShowRatingIconsInTopbar                  = 17,
-	ShowAntiAddictionMessage                 = 18,
-	ShowMinorShutdownMessage                 = 19,
-	ShowHealthWarningScreen                  = 20,
-	ShowSimplifiedHUD                        = 21,
-	LargeHeaderFooterButtons                 = 22,
-	ShowAthenaFavoriting                     = 23,
-	ShowAthenaItemRandomization              = 24,
-	ShowAthenaChallenges                     = 25,
-	ShowBattlePassFAQ                        = 26,
-	ShowReplays                              = 27,
-	ShowAccountBoosts                        = 28,
-	ShowCustomerSupport                      = 29,
-	ShowGlobalChat                           = 30,
-	ShowEULA                                 = 31,
-	ShowEndOfZoneCinematic                   = 32,
-	ShowOnboardingCinematics                 = 33,
-	ShowFounderBannerIcons                   = 34,
-	ShowCurrentRegionInLobby                 = 35,
-	EnableFoundersDailyRewards               = 36,
-	EnableTwitchIntegration                  = 37,
-	EnableMatchmakingRegionSetting           = 38,
-	EnableLanguageSetting                    = 39,
-	EnableFriendCodeSetting                  = 40,
-	EnableEarlyAccessLoadingScreenBanner     = 41,
-	Max_None                                 = 42,
-	EFortUIFeature_MAX                       = 43,
+	ShowCommand                              = 2,
+	ShowHeros                                = 3,
+	ShowSquads                               = 4,
+	ShowArmory                               = 5,
+	ShowLocker                               = 6,
+	ShowSkillTree                            = 7,
+	ShowStore                                = 8,
+	ShowQuests                               = 9,
+	ShowMainStore                            = 10,
+	ShowContextHelpMenu                      = 11,
+	ShowCampaign                             = 12,
+	ShowActiveBoost                          = 13,
+	ShowJournal                              = 14,
+	ShowPartyBar                             = 15,
+	ShowChatWindow                           = 16,
+	ShowFriendsMenu                          = 17,
+	ShowObjectives                           = 18,
+	ShowRatingIconsInTopbar                  = 19,
+	ShowAntiAddictionMessage                 = 20,
+	ShowMinorShutdownMessage                 = 21,
+	ShowHealthWarningScreen                  = 22,
+	ShowSimplifiedHUD                        = 23,
+	LargeHeaderFooterButtons                 = 24,
+	ShowAthenaFavoriting                     = 25,
+	ShowAthenaItemRandomization              = 26,
+	ShowAthenaChallenges                     = 27,
+	ShowBattlePass                           = 28,
+	ShowBattlePassFAQ                        = 29,
+	ShowReplays                              = 30,
+	ShowProfileStatsUI                       = 31,
+	ShowAthenaItemShop                       = 32,
+	ShowAccountBoosts                        = 33,
+	ShowCustomerSupport                      = 34,
+	ShowGlobalChat                           = 35,
+	ShowEULA                                 = 36,
+	ShowEndOfZoneCinematic                   = 37,
+	ShowOnboardingCinematics                 = 38,
+	ShowFounderBannerIcons                   = 39,
+	ShowCurrentRegionInLobby                 = 40,
+	EnableFoundersDailyRewards               = 41,
+	EnableTwitchIntegration                  = 42,
+	EnableMatchmakingRegionSetting           = 43,
+	EnableLanguageSetting                    = 44,
+	EnableFriendCodeSetting                  = 45,
+	EnableEarlyAccessLoadingScreenBanner     = 46,
+	EnableAlterationModifications            = 47,
+	EnableSchematicRarityUpgrade             = 48,
+	EnableMissionActivationVote              = 49,
+	EnableLtmRetrieveTheData                 = 50,
+	Max_None                                 = 51,
+	EFortUIFeature_MAX                       = 52,
 };
 
 // Enum FortniteUI.EFlagStatus
@@ -249,20 +310,6 @@ enum class EFlagStatus : uint8
 	FlagPresent                              = 0,
 	FlagNotPresent                           = 1,
 	EFlagStatus_MAX                          = 2,
-};
-
-// Enum FortniteUI.EInputPriority
-// NumValues: 0x0008
-enum class EInputPriority : uint8
-{
-	Normal                                   = 0,
-	Menu                                     = 1,
-	Chat                                     = 2,
-	Modal                                    = 3,
-	Confirmation                             = 4,
-	Error                                    = 5,
-	HUD                                      = 6,
-	EInputPriority_MAX                       = 7,
 };
 
 // Enum FortniteUI.EFortInputMode
@@ -330,32 +377,8 @@ enum class EFortStatValueDisplayType : uint8
 	EFortStatValueDisplayType_MAX            = 6,
 };
 
-// Enum FortniteUI.EFortStoreState
-// NumValues: 0x0012
-enum class EFortStoreState : uint8
-{
-	Error                                    = 0,
-	Closed                                   = 1,
-	CardPackStore                            = 2,
-	CurrencyStore                            = 3,
-	WebPayment                               = 4,
-	PackOpen                                 = 5,
-	CardEnter                                = 6,
-	CardBackReveal                           = 7,
-	CardFlip                                 = 8,
-	CardFrontReveal                          = 9,
-	CardExit                                 = 10,
-	SummaryAdd                               = 11,
-	PackDestroy                              = 12,
-	Summary                                  = 13,
-	PresentChoice                            = 14,
-	ChoiceMade                               = 15,
-	MAX_None                                 = 16,
-	EFortStoreState_MAX                      = 17,
-};
-
 // Enum FortniteUI.EFortItemCooldownType
-// NumValues: 0x0006
+// NumValues: 0x0007
 enum class EFortItemCooldownType : uint8
 {
 	None                                     = 0,
@@ -363,7 +386,8 @@ enum class EFortItemCooldownType : uint8
 	ItemActivation                           = 2,
 	WeaponReloading                          = 3,
 	Death                                    = 4,
-	EFortItemCooldownType_MAX                = 5,
+	AthenaWeaponFireCooldown                 = 5,
+	EFortItemCooldownType_MAX                = 6,
 };
 
 // Enum FortniteUI.EFortTutorialGlowType
@@ -389,23 +413,13 @@ enum class EFortBangSize : uint8
 	EFortBangSize_MAX                        = 6,
 };
 
-// Enum FortniteUI.EFortUIState
-// NumValues: 0x000D
-enum class EFortUIState : uint8
+// Enum FortniteUI.EViewerNavigationDirection
+// NumValues: 0x0003
+enum class EViewerNavigationDirection : uint8
 {
-	Invalid                                  = 0,
-	Login                                    = 1,
-	JoinServer                               = 2,
-	SubgameSelect                            = 3,
-	FrontEnd                                 = 4,
-	PvE_PostGame                             = 5,
-	PvP_PostGame                             = 6,
-	InGame                                   = 7,
-	Cinematic                                = 8,
-	Athena                                   = 9,
-	AthenaSpectator                          = 10,
-	Replay                                   = 11,
-	MAX                                      = 12,
+	Previous                                 = 0,
+	Next                                     = 1,
+	EViewerNavigationDirection_MAX           = 2,
 };
 
 // Enum FortniteUI.EGridSortKind
@@ -420,16 +434,6 @@ enum class EGridSortKind : uint8
 	EGridSortKind_MAX                        = 5,
 };
 
-// Enum FortniteUI.ESquadSlotItemRestrictionReason
-// NumValues: 0x0004
-enum class ESquadSlotItemRestrictionReason : uint8
-{
-	VaultOverflow                            = 0,
-	MissingLeadershipForHeroType             = 1,
-	ReplacementWouldClearMandatorySlot       = 2,
-	ESquadSlotItemRestrictionReason_MAX      = 3,
-};
-
 // Enum FortniteUI.ESquadSlotSortType
 // NumValues: 0x0006
 enum class ESquadSlotSortType : uint8
@@ -440,6 +444,18 @@ enum class ESquadSlotSortType : uint8
 	ByBonus                                  = 3,
 	ByMatch                                  = 4,
 	ESquadSlotSortType_MAX                   = 5,
+};
+
+// Enum FortniteUI.EFortChallengeBundleInfoLockedReasonCode
+// NumValues: 0x0006
+enum class EFortChallengeBundleInfoLockedReasonCode : uint8
+{
+	Unlocked                                 = 0,
+	NoKnownUnlockMethod                      = 1,
+	PurchaseTheBattlePass                    = 2,
+	ReachSpecificTier                        = 3,
+	TimeLeftBeforeUnlock                     = 4,
+	EFortChallengeBundleInfoLockedReasonCode_MAX = 5,
 };
 
 // Enum FortniteUI.EEquippedWeaponDisplay
@@ -453,6 +469,17 @@ enum class EEquippedWeaponDisplay : uint8
 	EEquippedWeaponDisplay_MAX               = 4,
 };
 
+// Enum FortniteUI.EAthenaEventMatchInfoSortMethod
+// NumValues: 0x0005
+enum class EAthenaEventMatchInfoSortMethod : uint8
+{
+	Place                                    = 0,
+	Eliminations                             = 1,
+	Score                                    = 2,
+	Count                                    = 3,
+	EAthenaEventMatchInfoSortMethod_MAX      = 4,
+};
+
 // Enum FortniteUI.EAthenaPlayerActionAlert
 // NumValues: 0x0004
 enum class EAthenaPlayerActionAlert : uint8
@@ -461,6 +488,16 @@ enum class EAthenaPlayerActionAlert : uint8
 	PlayerKill                               = 1,
 	EnteredStorm                             = 2,
 	EAthenaPlayerActionAlert_MAX             = 3,
+};
+
+// Enum FortniteUI.EFortAthenaPlaylist
+// NumValues: 0x0004
+enum class EFortAthenaPlaylist : uint8
+{
+	AthenaSolo                               = 0,
+	AthenaDuo                                = 1,
+	AthenaSquad                              = 2,
+	EFortAthenaPlaylist_MAX                  = 3,
 };
 
 // Enum FortniteUI.EHealthBarType
@@ -473,6 +510,27 @@ enum class EHealthBarType : uint8
 	EHealthBarType_MAX                       = 3,
 };
 
+// Enum FortniteUI.EAthenaSpectatorHitPointBarType
+// NumValues: 0x0003
+enum class EAthenaSpectatorHitPointBarType : uint8
+{
+	Health                                   = 0,
+	Shield                                   = 1,
+	EAthenaSpectatorHitPointBarType_MAX      = 2,
+};
+
+// Enum FortniteUI.EScoreboardSortMethod
+// NumValues: 0x0006
+enum class EScoreboardSortMethod : uint8
+{
+	Team                                     = 0,
+	Name                                     = 1,
+	Kills                                    = 2,
+	State                                    = 3,
+	Count                                    = 4,
+	EScoreboardSortMethod_MAX                = 5,
+};
+
 // Enum FortniteUI.EBacchusHUDStateType
 // NumValues: 0x0004
 enum class EBacchusHUDStateType : uint8
@@ -481,6 +539,37 @@ enum class EBacchusHUDStateType : uint8
 	Hide                                     = 1,
 	Show                                     = 2,
 	EBacchusHUDStateType_MAX                 = 3,
+};
+
+// Enum FortniteUI.EComboSlotType
+// NumValues: 0x0005
+enum class EComboSlotType : uint8
+{
+	Primary                                  = 0,
+	Secondary                                = 1,
+	Combo                                    = 2,
+	COUNT                                    = 3,
+	EComboSlotType_MAX                       = 4,
+};
+
+// Enum FortniteUI.EBacchusSignalQuality
+// NumValues: 0x0005
+enum class EBacchusSignalQuality : uint8
+{
+	None                                     = 0,
+	Low                                      = 1,
+	Medium                                   = 2,
+	High                                     = 3,
+	EBacchusSignalQuality_MAX                = 4,
+};
+
+// Enum FortniteUI.EAthenaNewsStyle
+// NumValues: 0x0003
+enum class EAthenaNewsStyle : uint8
+{
+	None                                     = 0,
+	SpecialEvent                             = 1,
+	EAthenaNewsStyle_MAX                     = 2,
 };
 
 // Enum FortniteUI.ESubGameFilter
@@ -493,14 +582,24 @@ enum class ESubGameFilter : uint8
 	ESubGameFilter_MAX                       = 3,
 };
 
-// Enum FortniteUI.EFortPlayerControllerProcessing
+// Enum FortniteUI.EPlayerReportingStep
 // NumValues: 0x0004
-enum class EFortPlayerControllerProcessing : uint8
+enum class EPlayerReportingStep : uint8
 {
-	NoPlayerControllerProcessing             = 0,
-	LetPlayerControllerProcessFirst          = 1,
-	HandleAllInput                           = 2,
-	EFortPlayerControllerProcessing_MAX      = 3,
+	ReportingPlayer                          = 0,
+	ReportingReason                          = 1,
+	AdditionalInfo                           = 2,
+	EPlayerReportingStep_MAX                 = 3,
+};
+
+// Enum FortniteUI.EFortAlterationOptionType
+// NumValues: 0x0004
+enum class EFortAlterationOptionType : uint8
+{
+	Upgrade                                  = 0,
+	Replacement                              = 1,
+	Max_NONE                                 = 2,
+	EFortAlterationOptionType_MAX            = 3,
 };
 
 // Enum FortniteUI.EFortAlterationWidgetState
@@ -542,6 +641,15 @@ enum class EFortDefenderSlotType : uint8
 	EFortDefenderSlotType_MAX                = 3,
 };
 
+// Enum FortniteUI.EDynamicEntryPatternDirection
+// NumValues: 0x0003
+enum class EDynamicEntryPatternDirection : uint8
+{
+	FirstToLast                              = 0,
+	LastToFirst                              = 1,
+	EDynamicEntryPatternDirection_MAX        = 2,
+};
+
 // Enum FortniteUI.EFortExpeditionListSort
 // NumValues: 0x0004
 enum class EFortExpeditionListSort : uint8
@@ -552,8 +660,18 @@ enum class EFortExpeditionListSort : uint8
 	EFortExpeditionListSort_MAX              = 3,
 };
 
+// Enum FortniteUI.EShareButtonType
+// NumValues: 0x0004
+enum class EShareButtonType : uint8
+{
+	IOS                                      = 0,
+	Android                                  = 1,
+	Generic                                  = 2,
+	EShareButtonType_MAX                     = 3,
+};
+
 // Enum FortniteUI.EFrontEndRewardType
-// NumValues: 0x0009
+// NumValues: 0x000A
 enum class EFrontEndRewardType : uint8
 {
 	Mission                                  = 0,
@@ -564,7 +682,8 @@ enum class EFrontEndRewardType : uint8
 	MissionAlert                             = 5,
 	DifficultyIncrease                       = 6,
 	GiftBox                                  = 7,
-	EFrontEndRewardType_MAX                  = 8,
+	ItemCache                                = 8,
+	EFrontEndRewardType_MAX                  = 9,
 };
 
 // Enum FortniteUI.EFortUIGameFeedbackType
@@ -617,6 +736,17 @@ enum class ECenterPopupMessageStateEnum : uint8
 	WaitingForOutpostOwner                   = 2,
 	WaitingForPlayers                        = 3,
 	ECenterPopupMessageStateEnum_MAX         = 4,
+};
+
+// Enum FortniteUI.EBuildingFocusType
+// NumValues: 0x0005
+enum class EBuildingFocusType : uint8
+{
+	Contextual                               = 0,
+	Interactable                             = 1,
+	Normal                                   = 2,
+	Count                                    = 3,
+	EBuildingFocusType_MAX                   = 4,
 };
 
 // Enum FortniteUI.EConversionControlKeyRequest
@@ -756,6 +886,17 @@ enum class EFortMaterialProgressBarSection : uint8
 	EFortMaterialProgressBarSection_MAX      = 5,
 };
 
+// Enum FortniteUI.EFortMissionActivationWidgetState
+// NumValues: 0x0005
+enum class EFortMissionActivationWidgetState : uint8
+{
+	Default                                  = 0,
+	StartObjective                           = 1,
+	IncreaseDifficulty                       = 2,
+	Invalid                                  = 3,
+	EFortMissionActivationWidgetState_MAX    = 4,
+};
+
 // Enum FortniteUI.EFortFortMobileShareButtonOS
 // NumValues: 0x0003
 enum class EFortFortMobileShareButtonOS : uint8
@@ -795,6 +936,127 @@ enum class EFortNodePrerequisiteConnector : uint8
 	EFortNodePrerequisiteConnector_MAX       = 2,
 };
 
+// Enum FortniteUI.ESettingTab
+// NumValues: 0x000A
+enum class ESettingTab : uint8
+{
+	None                                     = 0,
+	Video                                    = 1,
+	Game                                     = 2,
+	Brightness                               = 3,
+	Audio                                    = 4,
+	Accessibility                            = 5,
+	Input                                    = 6,
+	Controller                               = 7,
+	Account                                  = 8,
+	ESettingTab_MAX                          = 9,
+};
+
+// Enum FortniteUI.ESettingType
+// NumValues: 0x0063
+enum class ESettingType : uint8
+{
+	None                                     = 0,
+	Header                                   = 1,
+	WindowMode                               = 2,
+	DisplayResolution                        = 3,
+	FrameRateLimit                           = 4,
+	VideoQuality                             = 5,
+	ThreeDResolution                         = 6,
+	ViewDistance                             = 7,
+	Shadows                                  = 8,
+	AntiAliasing                             = 9,
+	Textures                                 = 10,
+	Effects                                  = 11,
+	PostProcessing                           = 12,
+	VSync                                    = 13,
+	MotionBlur                               = 14,
+	ShowGrass                                = 15,
+	MobileFPSType                            = 16,
+	ShowFPS                                  = 17,
+	AllowLowPower                            = 18,
+	AllowVideoPlayback                       = 19,
+	RegionHeader                             = 20,
+	Language                                 = 21,
+	Region                                   = 22,
+	MouseSensitivityYaw                      = 23,
+	MouseSensitivityPitch                    = 24,
+	TouchDragSensitivity                     = 25,
+	ControllerLookSensitivityYaw             = 26,
+	ControllerLookSensitivityPitch           = 27,
+	MouseTargetingMultiplier                 = 28,
+	MouseScopedMultiplier                    = 29,
+	GamepadTargetingMultiplier               = 30,
+	GamepadScopedMultiplier                  = 31,
+	TouchDragTargetingSensitivity            = 32,
+	TouchDragScopedSensitivity               = 33,
+	TouchVerticalSensitivity                 = 34,
+	InvertPitch                              = 35,
+	InvertYaw                                = 36,
+	InvertPitchForMotion                     = 37,
+	InvertYawForMotion                       = 38,
+	GyroEnabled                              = 39,
+	GyroYawAxis                              = 40,
+	GyroSensitivity                          = 41,
+	GyroTargetingSensitivity                 = 42,
+	GyroScopedSensitivity                    = 43,
+	GyroHarvestingToolSensitivity            = 44,
+	SafeZone                                 = 45,
+	StreamerMode                             = 46,
+	HUDScale                                 = 47,
+	ShowViewerCount                          = 48,
+	FirstPersonCamera                        = 49,
+	PeripheralLighting                       = 50,
+	ShowGlobalChat                           = 51,
+	ConsoleUnlockedFPS                       = 52,
+	ToggleSprint                             = 53,
+	SprintByDefault                          = 54,
+	SprintCancelsReload                      = 55,
+	TapInteract                              = 56,
+	ToggleTargeting                          = 57,
+	AutoEquipBetterItems                     = 58,
+	EquipFirstBuildingPieceWhenSwappingQuickbars = 59,
+	EquipFirstBuildingPieceWhenSwappingQuickbarsAthena = 60,
+	AimAssist                                = 61,
+	EditModeAimAssist                        = 62,
+	TurboBuild                               = 63,
+	AutoChangeMaterial                       = 64,
+	GamepadAutoRun                           = 65,
+	CrossplayPreference                      = 66,
+	UseTapToShoot                            = 67,
+	AutoOpenDoors                            = 68,
+	AutoPickupWeapons                        = 69,
+	AutoPickupWeaponsConsolePC               = 70,
+	AutoSortConsumablesToRight               = 71,
+	ShowHeadAccessories                      = 72,
+	ShowBackpack                             = 73,
+	ForceFeedback                            = 74,
+	ReplayRecording                          = 75,
+	ReplayRecordingLargeTeams                = 76,
+	UsePowerSavingMode                       = 77,
+	ShadowPlayHighlights                     = 78,
+	GammaValue                               = 79,
+	MusicVolume                              = 80,
+	SoundFXVolume                            = 81,
+	DialogVolume                             = 82,
+	VoiceChatVolume                          = 83,
+	CinematicsVolume                         = 84,
+	Subtitles                                = 85,
+	Quality                                  = 86,
+	VoiceChat                                = 87,
+	PushToTalk                               = 88,
+	ProximityVoiceChat                       = 89,
+	VoiceChatInputDevice                     = 90,
+	VoiceChatOutputDevice                    = 91,
+	AllowBackgroundAudio                     = 92,
+	ColorBlindMode                           = 93,
+	ColorBlindStrength                       = 94,
+	IgnoreGamepadInput                       = 95,
+	VisualizeSoundEffects                    = 96,
+	VisualizeSoundEffectsHeader              = 97,
+	ESettingType_MAX                         = 98,
+};
+
 // Enum FortniteUI.EFortPerksWidgetState
 // NumValues: 0x0004
 enum class EFortPerksWidgetState : uint8
@@ -822,6 +1084,25 @@ enum class EItemRefundability : uint8
 	Refundable                               = 1,
 	AlreadyRefunded                          = 2,
 	EItemRefundability_MAX                   = 3,
+};
+
+// Enum FortniteUI.EPurchaseReturnStep
+// NumValues: 0x0004
+enum class EPurchaseReturnStep : uint8
+{
+	ItemSelection                            = 0,
+	ReasonSelection                          = 1,
+	FinalSubmission                          = 2,
+	EPurchaseReturnStep_MAX                  = 3,
+};
+
+// Enum FortniteUI.EQuestMapScreenMode
+// NumValues: 0x0003
+enum class EQuestMapScreenMode : uint8
+{
+	MainCampaign                             = 0,
+	Event                                    = 1,
+	EQuestMapScreenMode_MAX                  = 2,
 };
 
 // Enum FortniteUI.ERedeemCodeFailureReason
@@ -855,15 +1136,6 @@ enum class ESkillTreePageType : uint8
 	Research                                 = 1,
 	Event                                    = 2,
 	ESkillTreePageType_MAX                   = 3,
-};
-
-// Enum FortniteUI.ESocialImportPanelPlatform
-// NumValues: 0x0003
-enum class ESocialImportPanelPlatform : uint8
-{
-	Facebook                                 = 0,
-	VK                                       = 1,
-	ESocialImportPanelPlatform_MAX           = 2,
 };
 
 // Enum FortniteUI.ESocialImportPanelType
@@ -929,12 +1201,14 @@ enum class EFortUISurvivorSquadMatchType : uint8
 };
 
 // Enum FortniteUI.EFortControlType
-// NumValues: 0x0003
+// NumValues: 0x0005
 enum class EFortControlType : uint8
 {
-	CameraAndMovement                        = 0,
-	Picking                                  = 1,
-	EFortControlType_MAX                     = 2,
+	None                                     = 0,
+	CameraAndMovement                        = 1,
+	Picking                                  = 2,
+	COUNT                                    = 3,
+	EFortControlType_MAX                     = 4,
 };
 
 // Enum FortniteUI.EFortTouchControlRegion
@@ -977,7 +1251,7 @@ enum class EFortUINavigationOp : uint8
 };
 
 // Enum FortniteUI.EFortLoginAccountType
-// NumValues: 0x0007
+// NumValues: 0x0008
 enum class EFortLoginAccountType : uint8
 {
 	None                                     = 0,
@@ -986,7 +1260,23 @@ enum class EFortLoginAccountType : uint8
 	Google                                   = 3,
 	PSN                                      = 4,
 	XBLive                                   = 5,
-	EFortLoginAccountType_MAX                = 6,
+	Erebus                                   = 6,
+	EFortLoginAccountType_MAX                = 7,
+};
+
+// Enum FortniteUI.EPlayerReportReasons
+// NumValues: 0x0009
+enum class EPlayerReportReasons : uint8
+{
+	None                                     = 0,
+	Communication                            = 1,
+	Offensive                                = 2,
+	AFK                                      = 3,
+	IgnoringObjective                        = 4,
+	Harassment                               = 5,
+	Exploiting                               = 6,
+	TradeScam                                = 7,
+	EPlayerReportReasons_MAX                 = 8,
 };
 
 // Enum FortniteUI.EFortSocialPanelTab
@@ -1049,29 +1339,1027 @@ enum class EFortInventoryContext : uint8
 	EFortInventoryContext_MAX                = 4,
 };
 
-// ScriptStruct FortniteUI.RadialOptionData
-// 0x00A0 (0x00A0 - 0x0000)
-struct FRadialOptionData
+// Enum FortniteUI.EFortToastType
+// NumValues: 0x0004
+enum class EFortToastType : uint8
 {
-public:
-	class FText                                   Label;                                             // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Brush;                                             // 0x0018(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	Default                                  = 0,
+	Subdued                                  = 1,
+	Impactful                                = 2,
+	EFortToastType_MAX                       = 3,
 };
-static_assert(alignof(FRadialOptionData) == 0x000008, "Wrong alignment on FRadialOptionData");
-static_assert(sizeof(FRadialOptionData) == 0x0000A0, "Wrong size on FRadialOptionData");
-static_assert(offsetof(FRadialOptionData, Label) == 0x000000, "Member 'FRadialOptionData::Label' has a wrong offset!");
-static_assert(offsetof(FRadialOptionData, Brush) == 0x000018, "Member 'FRadialOptionData::Brush' has a wrong offset!");
 
-// ScriptStruct FortniteUI.ItemDefOptionData
-// 0x0008 (0x00A8 - 0x00A0)
-struct FItemDefOptionData final : public FRadialOptionData
+// Enum FortniteUI.EUpgradeInfoImageSize
+// NumValues: 0x0003
+enum class EUpgradeInfoImageSize : uint8
+{
+	Small                                    = 0,
+	Large                                    = 1,
+	EUpgradeInfoImageSize_MAX                = 2,
+};
+
+// Enum FortniteUI.EHeistExitCraftIconState
+// NumValues: 0x0005
+enum class EHeistExitCraftIconState : uint8
+{
+	None                                     = 0,
+	Incoming                                 = 1,
+	Spawned                                  = 2,
+	Exited                                   = 3,
+	EHeistExitCraftIconState_MAX             = 4,
+};
+
+// Enum FortniteUI.EHeistBlingIconState
+// NumValues: 0x0006
+enum class EHeistBlingIconState : uint8
+{
+	None                                     = 0,
+	SupplyDrop                               = 1,
+	PickupItem                               = 2,
+	CarriedEnemy                             = 3,
+	CarriedAlly                              = 4,
+	EHeistBlingIconState_MAX                 = 5,
+};
+
+// Enum FortniteUI.EHeistExitCraftUIState
+// NumValues: 0x0005
+enum class EHeistExitCraftUIState : uint8
+{
+	None                                     = 0,
+	OnTheWay                                 = 1,
+	Incoming                                 = 2,
+	Arrived                                  = 3,
+	EHeistExitCraftUIState_MAX               = 4,
+};
+
+// Enum FortniteUI.EMatchmakingInputSource
+// NumValues: 0x0004
+enum class EMatchmakingInputSource : uint8
+{
+	Local                                    = 0,
+	Remote                                   = 1,
+	Pool                                     = 2,
+	EMatchmakingInputSource_MAX              = 3,
+};
+
+// ScriptStruct FortniteUI.FortTabButtonLabelInfo
+// 0x00A0 (0x00A0 - 0x0000)
+struct FFortTabButtonLabelInfo
 {
 public:
-	class UObject*                                ItemDef;                                           // 0x00A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   DisplayName;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0018(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FItemDefOptionData) == 0x000008, "Wrong alignment on FItemDefOptionData");
-static_assert(sizeof(FItemDefOptionData) == 0x0000A8, "Wrong size on FItemDefOptionData");
-static_assert(offsetof(FItemDefOptionData, ItemDef) == 0x0000A0, "Member 'FItemDefOptionData::ItemDef' has a wrong offset!");
+static_assert(alignof(FFortTabButtonLabelInfo) == 0x000008, "Wrong alignment on FFortTabButtonLabelInfo");
+static_assert(sizeof(FFortTabButtonLabelInfo) == 0x0000A0, "Wrong size on FFortTabButtonLabelInfo");
+static_assert(offsetof(FFortTabButtonLabelInfo, DisplayName) == 0x000000, "Member 'FFortTabButtonLabelInfo::DisplayName' has a wrong offset!");
+static_assert(offsetof(FFortTabButtonLabelInfo, IconBrush) == 0x000018, "Member 'FFortTabButtonLabelInfo::IconBrush' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortAthenaItemManagementInventoryFilterTabLabelInfo
+// 0x0008 (0x00A8 - 0x00A0)
+struct FFortAthenaItemManagementInventoryFilterTabLabelInfo final : public FFortTabButtonLabelInfo
+{
+public:
+	class FName                                   FilterTabNameId;                                   // 0x00A0(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortAthenaItemManagementInventoryFilterTabLabelInfo) == 0x000008, "Wrong alignment on FFortAthenaItemManagementInventoryFilterTabLabelInfo");
+static_assert(sizeof(FFortAthenaItemManagementInventoryFilterTabLabelInfo) == 0x0000A8, "Wrong size on FFortAthenaItemManagementInventoryFilterTabLabelInfo");
+static_assert(offsetof(FFortAthenaItemManagementInventoryFilterTabLabelInfo, FilterTabNameId) == 0x0000A0, "Member 'FFortAthenaItemManagementInventoryFilterTabLabelInfo::FilterTabNameId' has a wrong offset!");
+
+// ScriptStruct FortniteUI.GridSortKey
+// 0x0018 (0x0018 - 0x0000)
+struct FGridSortKey final
+{
+public:
+	float                                         Number;                                            // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 String;                                            // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGridSortKey) == 0x000008, "Wrong alignment on FGridSortKey");
+static_assert(sizeof(FGridSortKey) == 0x000018, "Wrong size on FGridSortKey");
+static_assert(offsetof(FGridSortKey, Number) == 0x000000, "Member 'FGridSortKey::Number' has a wrong offset!");
+static_assert(offsetof(FGridSortKey, String) == 0x000008, "Member 'FGridSortKey::String' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortFocusedBuildingInfo
+// 0x0050 (0x0050 - 0x0000)
+struct FFortFocusedBuildingInfo final
+{
+public:
+	bool                                          bIsInteractable;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCanBePlayerEdited;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                IndicatorRelativeLocation;                         // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingHealthDisplayRule                HealthDisplayRule;                                 // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxHealth;                                         // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsAnyTrapAttached;                                // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsTrapAttachedFacingPlayer;                       // 0x0019(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsPreviewTrapAttached;                            // 0x001A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AttachedTrapMaxDurability;                         // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurrentLevel;                                      // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingInteraction                      InteractionType;                                   // 0x0024(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InteractionCost;                                   // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UpgradeBonus;                                      // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortResourceType                             BuildingMaterial;                                  // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsHostile;                                        // 0x0031(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ContextualText;                                    // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortFocusedBuildingInfo) == 0x000008, "Wrong alignment on FFortFocusedBuildingInfo");
+static_assert(sizeof(FFortFocusedBuildingInfo) == 0x000050, "Wrong size on FFortFocusedBuildingInfo");
+static_assert(offsetof(FFortFocusedBuildingInfo, bIsInteractable) == 0x000000, "Member 'FFortFocusedBuildingInfo::bIsInteractable' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, bCanBePlayerEdited) == 0x000001, "Member 'FFortFocusedBuildingInfo::bCanBePlayerEdited' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, IndicatorRelativeLocation) == 0x000004, "Member 'FFortFocusedBuildingInfo::IndicatorRelativeLocation' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, HealthDisplayRule) == 0x000010, "Member 'FFortFocusedBuildingInfo::HealthDisplayRule' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, MaxHealth) == 0x000014, "Member 'FFortFocusedBuildingInfo::MaxHealth' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, bIsAnyTrapAttached) == 0x000018, "Member 'FFortFocusedBuildingInfo::bIsAnyTrapAttached' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, bIsTrapAttachedFacingPlayer) == 0x000019, "Member 'FFortFocusedBuildingInfo::bIsTrapAttachedFacingPlayer' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, bIsPreviewTrapAttached) == 0x00001A, "Member 'FFortFocusedBuildingInfo::bIsPreviewTrapAttached' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, AttachedTrapMaxDurability) == 0x00001C, "Member 'FFortFocusedBuildingInfo::AttachedTrapMaxDurability' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, CurrentLevel) == 0x000020, "Member 'FFortFocusedBuildingInfo::CurrentLevel' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, InteractionType) == 0x000024, "Member 'FFortFocusedBuildingInfo::InteractionType' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, InteractionCost) == 0x000028, "Member 'FFortFocusedBuildingInfo::InteractionCost' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, UpgradeBonus) == 0x00002C, "Member 'FFortFocusedBuildingInfo::UpgradeBonus' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, BuildingMaterial) == 0x000030, "Member 'FFortFocusedBuildingInfo::BuildingMaterial' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, bIsHostile) == 0x000031, "Member 'FFortFocusedBuildingInfo::bIsHostile' has a wrong offset!");
+static_assert(offsetof(FFortFocusedBuildingInfo, ContextualText) == 0x000038, "Member 'FFortFocusedBuildingInfo::ContextualText' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortModalContainerSizeEntry
+// 0x001C (0x001C - 0x0000)
+struct FFortModalContainerSizeEntry final
+{
+public:
+	float                                         AbsoluteWidth;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TopPercent;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MiddlePercent;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BottomPercent;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VerticalPadding;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HorizontalPadding;                                 // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ContentPadding;                                    // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortModalContainerSizeEntry) == 0x000004, "Wrong alignment on FFortModalContainerSizeEntry");
+static_assert(sizeof(FFortModalContainerSizeEntry) == 0x00001C, "Wrong size on FFortModalContainerSizeEntry");
+static_assert(offsetof(FFortModalContainerSizeEntry, AbsoluteWidth) == 0x000000, "Member 'FFortModalContainerSizeEntry::AbsoluteWidth' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, TopPercent) == 0x000004, "Member 'FFortModalContainerSizeEntry::TopPercent' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, MiddlePercent) == 0x000008, "Member 'FFortModalContainerSizeEntry::MiddlePercent' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, BottomPercent) == 0x00000C, "Member 'FFortModalContainerSizeEntry::BottomPercent' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, VerticalPadding) == 0x000010, "Member 'FFortModalContainerSizeEntry::VerticalPadding' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, HorizontalPadding) == 0x000014, "Member 'FFortModalContainerSizeEntry::HorizontalPadding' has a wrong offset!");
+static_assert(offsetof(FFortModalContainerSizeEntry, ContentPadding) == 0x000018, "Member 'FFortModalContainerSizeEntry::ContentPadding' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortChallengeBundleInfoLockedReason
+// 0x0010 (0x0010 - 0x0000)
+struct FFortChallengeBundleInfoLockedReason final
+{
+public:
+	EFortChallengeBundleInfoLockedReasonCode      ReasonCode;                                        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RequiredTier;                                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              UnlockTimespanAfterStart;                          // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortChallengeBundleInfoLockedReason) == 0x000008, "Wrong alignment on FFortChallengeBundleInfoLockedReason");
+static_assert(sizeof(FFortChallengeBundleInfoLockedReason) == 0x000010, "Wrong size on FFortChallengeBundleInfoLockedReason");
+static_assert(offsetof(FFortChallengeBundleInfoLockedReason, ReasonCode) == 0x000000, "Member 'FFortChallengeBundleInfoLockedReason::ReasonCode' has a wrong offset!");
+static_assert(offsetof(FFortChallengeBundleInfoLockedReason, RequiredTier) == 0x000004, "Member 'FFortChallengeBundleInfoLockedReason::RequiredTier' has a wrong offset!");
+static_assert(offsetof(FFortChallengeBundleInfoLockedReason, UnlockTimespanAfterStart) == 0x000008, "Member 'FFortChallengeBundleInfoLockedReason::UnlockTimespanAfterStart' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortHUDState
+// 0x0013 (0x0013 - 0x0000)
+struct FFortHUDState final
+{
+public:
+	bool                                          bInBuildMode;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInCombatMode;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInEditMode;                                       // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsParachuteOpen;                                  // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsFreeFalling;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInLockedBus;                                      // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInUnlockedBus;                                    // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnTargeting;                                      // 0x0007(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnUsingScopeTargeting;                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnCanTarget;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnCanUseScopeTargeting;                           // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnCanUseSecondaryAbility;                         // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCanOpenChute;                                     // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCrouching;                                        // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDBNO;                                             // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsControllingRCPawn;                              // 0x000F(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsInVehicle;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDrivingVehicle;                                 // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCanSwapSeats;                                     // 0x0012(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortHUDState) == 0x000001, "Wrong alignment on FFortHUDState");
+static_assert(sizeof(FFortHUDState) == 0x000013, "Wrong size on FFortHUDState");
+static_assert(offsetof(FFortHUDState, bInBuildMode) == 0x000000, "Member 'FFortHUDState::bInBuildMode' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bInCombatMode) == 0x000001, "Member 'FFortHUDState::bInCombatMode' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bInEditMode) == 0x000002, "Member 'FFortHUDState::bInEditMode' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bIsParachuteOpen) == 0x000003, "Member 'FFortHUDState::bIsParachuteOpen' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bIsFreeFalling) == 0x000004, "Member 'FFortHUDState::bIsFreeFalling' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bInLockedBus) == 0x000005, "Member 'FFortHUDState::bInLockedBus' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bInUnlockedBus) == 0x000006, "Member 'FFortHUDState::bInUnlockedBus' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bOnTargeting) == 0x000007, "Member 'FFortHUDState::bOnTargeting' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bOnUsingScopeTargeting) == 0x000008, "Member 'FFortHUDState::bOnUsingScopeTargeting' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bOnCanTarget) == 0x000009, "Member 'FFortHUDState::bOnCanTarget' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bOnCanUseScopeTargeting) == 0x00000A, "Member 'FFortHUDState::bOnCanUseScopeTargeting' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bOnCanUseSecondaryAbility) == 0x00000B, "Member 'FFortHUDState::bOnCanUseSecondaryAbility' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bCanOpenChute) == 0x00000C, "Member 'FFortHUDState::bCanOpenChute' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bCrouching) == 0x00000D, "Member 'FFortHUDState::bCrouching' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bDBNO) == 0x00000E, "Member 'FFortHUDState::bDBNO' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bIsControllingRCPawn) == 0x00000F, "Member 'FFortHUDState::bIsControllingRCPawn' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bIsInVehicle) == 0x000010, "Member 'FFortHUDState::bIsInVehicle' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bIsDrivingVehicle) == 0x000011, "Member 'FFortHUDState::bIsDrivingVehicle' has a wrong offset!");
+static_assert(offsetof(FFortHUDState, bCanSwapSeats) == 0x000012, "Member 'FFortHUDState::bCanSwapSeats' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemFilterDefinition
+// 0x0080 (0x0080 - 0x0000)
+struct alignas(0x10) FFortItemFilterDefinition final
+{
+public:
+	uint8                                         Pad_0[0x80];                                       // 0x0000(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortItemFilterDefinition) == 0x000010, "Wrong alignment on FFortItemFilterDefinition");
+static_assert(sizeof(FFortItemFilterDefinition) == 0x000080, "Wrong size on FFortItemFilterDefinition");
+
+// ScriptStruct FortniteUI.FortFrontEndFeatureStruct
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FFortFrontEndFeatureStruct final
+{
+public:
+	EFortFrontEndFeatureState                     CurrentState;                                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortFrontEndFeatureState                     ForcedState;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortFrontEndFeatureStateReason               ForcedStateReason;                                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0008(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortFrontEndFeatureStruct) == 0x000008, "Wrong alignment on FFortFrontEndFeatureStruct");
+static_assert(sizeof(FFortFrontEndFeatureStruct) == 0x000018, "Wrong size on FFortFrontEndFeatureStruct");
+static_assert(offsetof(FFortFrontEndFeatureStruct, CurrentState) == 0x000000, "Member 'FFortFrontEndFeatureStruct::CurrentState' has a wrong offset!");
+static_assert(offsetof(FFortFrontEndFeatureStruct, ForcedState) == 0x000001, "Member 'FFortFrontEndFeatureStruct::ForcedState' has a wrong offset!");
+static_assert(offsetof(FFortFrontEndFeatureStruct, ForcedStateReason) == 0x000002, "Member 'FFortFrontEndFeatureStruct::ForcedStateReason' has a wrong offset!");
+static_assert(offsetof(FFortFrontEndFeatureStruct, ChangeDelegate) == 0x000008, "Member 'FFortFrontEndFeatureStruct::ChangeDelegate' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaTeamCountSlotData
+// 0x0038 (0x0038 - 0x0000)
+struct FAthenaTeamCountSlotData final
+{
+public:
+	class FText                                   TeamNameText;                                      // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   TeamCountText;                                     // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bIsMyTeam;                                         // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaTeamCountSlotData) == 0x000008, "Wrong alignment on FAthenaTeamCountSlotData");
+static_assert(sizeof(FAthenaTeamCountSlotData) == 0x000038, "Wrong size on FAthenaTeamCountSlotData");
+static_assert(offsetof(FAthenaTeamCountSlotData, TeamNameText) == 0x000000, "Member 'FAthenaTeamCountSlotData::TeamNameText' has a wrong offset!");
+static_assert(offsetof(FAthenaTeamCountSlotData, TeamCountText) == 0x000018, "Member 'FAthenaTeamCountSlotData::TeamCountText' has a wrong offset!");
+static_assert(offsetof(FAthenaTeamCountSlotData, bIsMyTeam) == 0x000030, "Member 'FAthenaTeamCountSlotData::bIsMyTeam' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemSorterDefinition
+// 0x0050 (0x0050 - 0x0000)
+struct alignas(0x10) FFortItemSorterDefinition final
+{
+public:
+	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortItemSorterDefinition) == 0x000010, "Wrong alignment on FFortItemSorterDefinition");
+static_assert(sizeof(FFortItemSorterDefinition) == 0x000050, "Wrong size on FFortItemSorterDefinition");
+
+// ScriptStruct FortniteUI.FortTabListRegistrationInfo
+// 0x00C8 (0x00C8 - 0x0000)
+struct FFortTabListRegistrationInfo final
+{
+public:
+	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHidden;                                           // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowedInZone;                                    // 0x0009(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0010(0x00A0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSubclassOf<class UCommonButton>              TabButtonType;                                     // 0x00B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UCommonUserWidget>          TabContentType;                                    // 0x00B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                CreatedTabContentWidget;                           // 0x00C0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortTabListRegistrationInfo) == 0x000008, "Wrong alignment on FFortTabListRegistrationInfo");
+static_assert(sizeof(FFortTabListRegistrationInfo) == 0x0000C8, "Wrong size on FFortTabListRegistrationInfo");
+static_assert(offsetof(FFortTabListRegistrationInfo, TabNameID) == 0x000000, "Member 'FFortTabListRegistrationInfo::TabNameID' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, bHidden) == 0x000008, "Member 'FFortTabListRegistrationInfo::bHidden' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, bAllowedInZone) == 0x000009, "Member 'FFortTabListRegistrationInfo::bAllowedInZone' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, TabLabelInfo) == 0x000010, "Member 'FFortTabListRegistrationInfo::TabLabelInfo' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, TabButtonType) == 0x0000B0, "Member 'FFortTabListRegistrationInfo::TabButtonType' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, TabContentType) == 0x0000B8, "Member 'FFortTabListRegistrationInfo::TabContentType' has a wrong offset!");
+static_assert(offsetof(FFortTabListRegistrationInfo, CreatedTabContentWidget) == 0x0000C0, "Member 'FFortTabListRegistrationInfo::CreatedTabContentWidget' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AttributeRequirement
+// 0x0020 (0x0020 - 0x0000)
+struct FAttributeRequirement final
+{
+public:
+	class FText                                   Name;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         Level;                                             // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRequirementsMet;                                  // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAttributeRequirement) == 0x000008, "Wrong alignment on FAttributeRequirement");
+static_assert(sizeof(FAttributeRequirement) == 0x000020, "Wrong size on FAttributeRequirement");
+static_assert(offsetof(FAttributeRequirement, Name) == 0x000000, "Member 'FAttributeRequirement::Name' has a wrong offset!");
+static_assert(offsetof(FAttributeRequirement, Level) == 0x000018, "Member 'FAttributeRequirement::Level' has a wrong offset!");
+static_assert(offsetof(FAttributeRequirement, bRequirementsMet) == 0x00001C, "Member 'FAttributeRequirement::bRequirementsMet' has a wrong offset!");
+
+// ScriptStruct FortniteUI.BuildingRequirements
+// 0x0028 (0x0028 - 0x0000)
+struct FBuildingRequirements final
+{
+public:
+	int32                                         RequiredAccountLevel;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurrentAccountLevel;                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAttributeRequirement>          AttributeRequirements;                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         RequiredPower;                                     // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurrentPower;                                      // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RequiredManufacturing;                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurrentManufacturing;                              // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FBuildingRequirements) == 0x000008, "Wrong alignment on FBuildingRequirements");
+static_assert(sizeof(FBuildingRequirements) == 0x000028, "Wrong size on FBuildingRequirements");
+static_assert(offsetof(FBuildingRequirements, RequiredAccountLevel) == 0x000000, "Member 'FBuildingRequirements::RequiredAccountLevel' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, CurrentAccountLevel) == 0x000004, "Member 'FBuildingRequirements::CurrentAccountLevel' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, AttributeRequirements) == 0x000008, "Member 'FBuildingRequirements::AttributeRequirements' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, RequiredPower) == 0x000018, "Member 'FBuildingRequirements::RequiredPower' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, CurrentPower) == 0x00001C, "Member 'FBuildingRequirements::CurrentPower' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, RequiredManufacturing) == 0x000020, "Member 'FBuildingRequirements::RequiredManufacturing' has a wrong offset!");
+static_assert(offsetof(FBuildingRequirements, CurrentManufacturing) == 0x000024, "Member 'FBuildingRequirements::CurrentManufacturing' has a wrong offset!");
+
+// ScriptStruct FortniteUI.ContentPushState
+// 0x0003 (0x0003 - 0x0000)
+struct FContentPushState final
+{
+public:
+	bool                                          bHideHeader;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHideFooter;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHideChatWidget;                                   // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FContentPushState) == 0x000001, "Wrong alignment on FContentPushState");
+static_assert(sizeof(FContentPushState) == 0x000003, "Wrong size on FContentPushState");
+static_assert(offsetof(FContentPushState, bHideHeader) == 0x000000, "Member 'FContentPushState::bHideHeader' has a wrong offset!");
+static_assert(offsetof(FContentPushState, bHideFooter) == 0x000001, "Member 'FContentPushState::bHideFooter' has a wrong offset!");
+static_assert(offsetof(FContentPushState, bHideChatWidget) == 0x000002, "Member 'FContentPushState::bHideChatWidget' has a wrong offset!");
+
+// ScriptStruct FortniteUI.UINavigationData
+// 0x0030 (0x0030 - 0x0000)
+struct FUINavigationData final
+{
+public:
+	class FText                                   DisplayName;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UObject*                                ObjectData;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   IdData;                                            // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IntData;                                           // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FUINavigationData) == 0x000008, "Wrong alignment on FUINavigationData");
+static_assert(sizeof(FUINavigationData) == 0x000030, "Wrong size on FUINavigationData");
+static_assert(offsetof(FUINavigationData, DisplayName) == 0x000000, "Member 'FUINavigationData::DisplayName' has a wrong offset!");
+static_assert(offsetof(FUINavigationData, ObjectData) == 0x000018, "Member 'FUINavigationData::ObjectData' has a wrong offset!");
+static_assert(offsetof(FUINavigationData, IdData) == 0x000020, "Member 'FUINavigationData::IdData' has a wrong offset!");
+static_assert(offsetof(FUINavigationData, IntData) == 0x000028, "Member 'FUINavigationData::IntData' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortHealthyGamingData
+// 0x0088 (0x0090 - 0x0008)
+struct FFortHealthyGamingData final : public FTableRowBase
+{
+public:
+	float                                         HealthWarningToastInterval;                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   HealthWarningToastDescriptionFormat;               // 0x0010(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   HealthWarningScreenText;                           // 0x0028(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   GameplayRestrictionText;                           // 0x0040(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         GameplayRestrictionWarningTimeOffset;              // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   AntiAddictionTotalDescriptionFormat;               // 0x0060(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          bUsePlayerTimeLimitSystem;                         // 0x0078(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TSoftObjectPtr<class UTexture2D>>      RatingIcons;                                       // 0x0080(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortHealthyGamingData) == 0x000008, "Wrong alignment on FFortHealthyGamingData");
+static_assert(sizeof(FFortHealthyGamingData) == 0x000090, "Wrong size on FFortHealthyGamingData");
+static_assert(offsetof(FFortHealthyGamingData, HealthWarningToastInterval) == 0x000008, "Member 'FFortHealthyGamingData::HealthWarningToastInterval' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, HealthWarningToastDescriptionFormat) == 0x000010, "Member 'FFortHealthyGamingData::HealthWarningToastDescriptionFormat' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, HealthWarningScreenText) == 0x000028, "Member 'FFortHealthyGamingData::HealthWarningScreenText' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, GameplayRestrictionText) == 0x000040, "Member 'FFortHealthyGamingData::GameplayRestrictionText' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, GameplayRestrictionWarningTimeOffset) == 0x000058, "Member 'FFortHealthyGamingData::GameplayRestrictionWarningTimeOffset' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, AntiAddictionTotalDescriptionFormat) == 0x000060, "Member 'FFortHealthyGamingData::AntiAddictionTotalDescriptionFormat' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, bUsePlayerTimeLimitSystem) == 0x000078, "Member 'FFortHealthyGamingData::bUsePlayerTimeLimitSystem' has a wrong offset!");
+static_assert(offsetof(FFortHealthyGamingData, RatingIcons) == 0x000080, "Member 'FFortHealthyGamingData::RatingIcons' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortUIStatStyle
+// 0x00C0 (0x00C0 - 0x0000)
+struct FFortUIStatStyle final
+{
+public:
+	class FText                                   Name;                                              // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   HighestText;                                       // 0x0018(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Icon;                                              // 0x0030(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	ECommonNumericType                            NumericType;                                       // 0x00B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinimalNotableValue;                               // 0x00BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortUIStatStyle) == 0x000008, "Wrong alignment on FFortUIStatStyle");
+static_assert(sizeof(FFortUIStatStyle) == 0x0000C0, "Wrong size on FFortUIStatStyle");
+static_assert(offsetof(FFortUIStatStyle, Name) == 0x000000, "Member 'FFortUIStatStyle::Name' has a wrong offset!");
+static_assert(offsetof(FFortUIStatStyle, HighestText) == 0x000018, "Member 'FFortUIStatStyle::HighestText' has a wrong offset!");
+static_assert(offsetof(FFortUIStatStyle, Icon) == 0x000030, "Member 'FFortUIStatStyle::Icon' has a wrong offset!");
+static_assert(offsetof(FFortUIStatStyle, NumericType) == 0x0000B8, "Member 'FFortUIStatStyle::NumericType' has a wrong offset!");
+static_assert(offsetof(FFortUIStatStyle, MinimalNotableValue) == 0x0000BC, "Member 'FFortUIStatStyle::MinimalNotableValue' has a wrong offset!");
+
+// ScriptStruct FortniteUI.StatGroupData
+// 0x00B0 (0x00B0 - 0x0000)
+struct FStatGroupData final
+{
+public:
+	class FText                                   GroupName;                                         // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Group;                                             // 0x0018(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x00A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChartValue;                                        // 0x00A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChartOrigionalValue;                               // 0x00A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FStatGroupData) == 0x000008, "Wrong alignment on FStatGroupData");
+static_assert(sizeof(FStatGroupData) == 0x0000B0, "Wrong size on FStatGroupData");
+static_assert(offsetof(FStatGroupData, GroupName) == 0x000000, "Member 'FStatGroupData::GroupName' has a wrong offset!");
+static_assert(offsetof(FStatGroupData, Group) == 0x000018, "Member 'FStatGroupData::Group' has a wrong offset!");
+static_assert(offsetof(FStatGroupData, Value) == 0x0000A0, "Member 'FStatGroupData::Value' has a wrong offset!");
+static_assert(offsetof(FStatGroupData, ChartValue) == 0x0000A4, "Member 'FStatGroupData::ChartValue' has a wrong offset!");
+static_assert(offsetof(FStatGroupData, ChartOrigionalValue) == 0x0000A8, "Member 'FStatGroupData::ChartOrigionalValue' has a wrong offset!");
+
+// ScriptStruct FortniteUI.SquadSlotSortTypes
+// 0x0010 (0x0010 - 0x0000)
+struct FSquadSlotSortTypes final
+{
+public:
+	TArray<ESquadSlotSortType>                    SortTypes;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSquadSlotSortTypes) == 0x000008, "Wrong alignment on FSquadSlotSortTypes");
+static_assert(sizeof(FSquadSlotSortTypes) == 0x000010, "Wrong size on FSquadSlotSortTypes");
+static_assert(offsetof(FSquadSlotSortTypes, SortTypes) == 0x000000, "Member 'FSquadSlotSortTypes::SortTypes' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaWinnerInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FAthenaWinnerInfo final
+{
+public:
+	class FString                                 BigNameWinnerName;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         WinnerNames;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAthenaWinnerInfo) == 0x000008, "Wrong alignment on FAthenaWinnerInfo");
+static_assert(sizeof(FAthenaWinnerInfo) == 0x000020, "Wrong size on FAthenaWinnerInfo");
+static_assert(offsetof(FAthenaWinnerInfo, BigNameWinnerName) == 0x000000, "Member 'FAthenaWinnerInfo::BigNameWinnerName' has a wrong offset!");
+static_assert(offsetof(FAthenaWinnerInfo, WinnerNames) == 0x000010, "Member 'FAthenaWinnerInfo::WinnerNames' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortNodeStyleData
+// 0x0668 (0x0670 - 0x0008)
+struct FFortNodeStyleData final : public FTableRowBase
+{
+public:
+	struct FFortMultiSizeBrush                    ActiveBrush;                                       // 0x0008(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    InactiveBrush;                                     // 0x0338(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UMediaSource*                           PreviewMediaSource;                                // 0x0668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortNodeStyleData) == 0x000008, "Wrong alignment on FFortNodeStyleData");
+static_assert(sizeof(FFortNodeStyleData) == 0x000670, "Wrong size on FFortNodeStyleData");
+static_assert(offsetof(FFortNodeStyleData, ActiveBrush) == 0x000008, "Member 'FFortNodeStyleData::ActiveBrush' has a wrong offset!");
+static_assert(offsetof(FFortNodeStyleData, InactiveBrush) == 0x000338, "Member 'FFortNodeStyleData::InactiveBrush' has a wrong offset!");
+static_assert(offsetof(FFortNodeStyleData, PreviewMediaSource) == 0x000668, "Member 'FFortNodeStyleData::PreviewMediaSource' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortLastMissionInfo
+// 0x0048 (0x0048 - 0x0000)
+struct FFortLastMissionInfo final
+{
+public:
+	class FText                                   TheaterName;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   MissionName;                                       // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Difficulty;                                        // 0x0030(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortLastMissionInfo) == 0x000008, "Wrong alignment on FFortLastMissionInfo");
+static_assert(sizeof(FFortLastMissionInfo) == 0x000048, "Wrong size on FFortLastMissionInfo");
+static_assert(offsetof(FFortLastMissionInfo, TheaterName) == 0x000000, "Member 'FFortLastMissionInfo::TheaterName' has a wrong offset!");
+static_assert(offsetof(FFortLastMissionInfo, MissionName) == 0x000018, "Member 'FFortLastMissionInfo::MissionName' has a wrong offset!");
+static_assert(offsetof(FFortLastMissionInfo, Difficulty) == 0x000030, "Member 'FFortLastMissionInfo::Difficulty' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortBackendVersion
+// 0x0098 (0x0098 - 0x0000)
+struct FFortBackendVersion final
+{
+public:
+	bool                                          bIsValid;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 App;                                               // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ModuleName;                                        // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Branch;                                            // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BuildDate;                                         // 0x0038(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ServerDate;                                        // 0x0048(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Build;                                             // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Changelist;                                        // 0x0068(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 OverridePropertiesVersion;                         // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Version;                                           // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortBackendVersion) == 0x000008, "Wrong alignment on FFortBackendVersion");
+static_assert(sizeof(FFortBackendVersion) == 0x000098, "Wrong size on FFortBackendVersion");
+static_assert(offsetof(FFortBackendVersion, bIsValid) == 0x000000, "Member 'FFortBackendVersion::bIsValid' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, App) == 0x000008, "Member 'FFortBackendVersion::App' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, ModuleName) == 0x000018, "Member 'FFortBackendVersion::ModuleName' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, Branch) == 0x000028, "Member 'FFortBackendVersion::Branch' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, BuildDate) == 0x000038, "Member 'FFortBackendVersion::BuildDate' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, ServerDate) == 0x000048, "Member 'FFortBackendVersion::ServerDate' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, Build) == 0x000058, "Member 'FFortBackendVersion::Build' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, Changelist) == 0x000068, "Member 'FFortBackendVersion::Changelist' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, OverridePropertiesVersion) == 0x000078, "Member 'FFortBackendVersion::OverridePropertiesVersion' has a wrong offset!");
+static_assert(offsetof(FFortBackendVersion, Version) == 0x000088, "Member 'FFortBackendVersion::Version' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_TierMeter_Configuration
+// 0x000C (0x000C - 0x0000)
+struct FFortItemCard_TierMeter_Configuration final
+{
+public:
+	struct FVector2D                              PipSize;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InterPipPadding;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_TierMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_TierMeter_Configuration");
+static_assert(sizeof(FFortItemCard_TierMeter_Configuration) == 0x00000C, "Wrong size on FFortItemCard_TierMeter_Configuration");
+static_assert(offsetof(FFortItemCard_TierMeter_Configuration, PipSize) == 0x000000, "Member 'FFortItemCard_TierMeter_Configuration::PipSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_TierMeter_Configuration, InterPipPadding) == 0x000008, "Member 'FFortItemCard_TierMeter_Configuration::InterPipPadding' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortUIFeatureStruct
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FFortUIFeatureStruct final
+{
+public:
+	EFortUIFeatureState                           CurrentState;                                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortUIFeatureState                           ForcedState;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortUIFeatureStateReason                     ForcedStateReason;                                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0008(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortUIFeatureStruct) == 0x000008, "Wrong alignment on FFortUIFeatureStruct");
+static_assert(sizeof(FFortUIFeatureStruct) == 0x000018, "Wrong size on FFortUIFeatureStruct");
+static_assert(offsetof(FFortUIFeatureStruct, CurrentState) == 0x000000, "Member 'FFortUIFeatureStruct::CurrentState' has a wrong offset!");
+static_assert(offsetof(FFortUIFeatureStruct, ForcedState) == 0x000001, "Member 'FFortUIFeatureStruct::ForcedState' has a wrong offset!");
+static_assert(offsetof(FFortUIFeatureStruct, ForcedStateReason) == 0x000002, "Member 'FFortUIFeatureStruct::ForcedStateReason' has a wrong offset!");
+static_assert(offsetof(FFortUIFeatureStruct, ChangeDelegate) == 0x000008, "Member 'FFortUIFeatureStruct::ChangeDelegate' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortActionBeingUnbound
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FFortActionBeingUnbound final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InputIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortActionBeingUnbound) == 0x000008, "Wrong alignment on FFortActionBeingUnbound");
+static_assert(sizeof(FFortActionBeingUnbound) == 0x000010, "Wrong size on FFortActionBeingUnbound");
+static_assert(offsetof(FFortActionBeingUnbound, ActionName) == 0x000000, "Member 'FFortActionBeingUnbound::ActionName' has a wrong offset!");
+static_assert(offsetof(FFortActionBeingUnbound, InputIndex) == 0x000008, "Member 'FFortActionBeingUnbound::InputIndex' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaReplayBrowserMatchStats
+// 0x0028 (0x0028 - 0x0000)
+struct FAthenaReplayBrowserMatchStats final
+{
+public:
+	int32                                         Hits;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Headshots;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Revives;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageTaken;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamagePlayers;                                     // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageStructures;                                  // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChestsOpened;                                      // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Distance;                                          // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaterialsGathered;                                 // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaterialsUsed;                                     // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAthenaReplayBrowserMatchStats) == 0x000004, "Wrong alignment on FAthenaReplayBrowserMatchStats");
+static_assert(sizeof(FAthenaReplayBrowserMatchStats) == 0x000028, "Wrong size on FAthenaReplayBrowserMatchStats");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, Hits) == 0x000000, "Member 'FAthenaReplayBrowserMatchStats::Hits' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, Headshots) == 0x000004, "Member 'FAthenaReplayBrowserMatchStats::Headshots' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, Revives) == 0x000008, "Member 'FAthenaReplayBrowserMatchStats::Revives' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamageTaken) == 0x00000C, "Member 'FAthenaReplayBrowserMatchStats::DamageTaken' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamagePlayers) == 0x000010, "Member 'FAthenaReplayBrowserMatchStats::DamagePlayers' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamageStructures) == 0x000014, "Member 'FAthenaReplayBrowserMatchStats::DamageStructures' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, ChestsOpened) == 0x000018, "Member 'FAthenaReplayBrowserMatchStats::ChestsOpened' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, Distance) == 0x00001C, "Member 'FAthenaReplayBrowserMatchStats::Distance' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, MaterialsGathered) == 0x000020, "Member 'FAthenaReplayBrowserMatchStats::MaterialsGathered' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserMatchStats, MaterialsUsed) == 0x000024, "Member 'FAthenaReplayBrowserMatchStats::MaterialsUsed' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaReplayBrowserRowData
+// 0x0090 (0x0090 - 0x0000)
+struct FAthenaReplayBrowserRowData final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              Date;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Version;                                           // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Size;                                              // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Mode;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Length;                                            // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Rank;                                              // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumPlayers;                                        // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Kills;                                             // 0x003C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Views;                                             // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Assists;                                           // 0x0044(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Accuracy;                                          // 0x0048(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsOld;                                            // 0x004C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAthenaReplayBrowserMatchStats         MatchStats;                                        // 0x0050(0x0028)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bIsSaved;                                          // 0x0078(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsCorrupt;                                        // 0x0079(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsFeatured;                                       // 0x007A(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7B[0x15];                                      // 0x007B(0x0015)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaReplayBrowserRowData) == 0x000008, "Wrong alignment on FAthenaReplayBrowserRowData");
+static_assert(sizeof(FAthenaReplayBrowserRowData) == 0x000090, "Wrong size on FAthenaReplayBrowserRowData");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Name) == 0x000000, "Member 'FAthenaReplayBrowserRowData::Name' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Date) == 0x000010, "Member 'FAthenaReplayBrowserRowData::Date' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Version) == 0x000018, "Member 'FAthenaReplayBrowserRowData::Version' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Size) == 0x00001C, "Member 'FAthenaReplayBrowserRowData::Size' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Mode) == 0x000020, "Member 'FAthenaReplayBrowserRowData::Mode' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Length) == 0x000030, "Member 'FAthenaReplayBrowserRowData::Length' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Rank) == 0x000034, "Member 'FAthenaReplayBrowserRowData::Rank' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, NumPlayers) == 0x000038, "Member 'FAthenaReplayBrowserRowData::NumPlayers' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Kills) == 0x00003C, "Member 'FAthenaReplayBrowserRowData::Kills' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Views) == 0x000040, "Member 'FAthenaReplayBrowserRowData::Views' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Assists) == 0x000044, "Member 'FAthenaReplayBrowserRowData::Assists' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, Accuracy) == 0x000048, "Member 'FAthenaReplayBrowserRowData::Accuracy' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, bIsOld) == 0x00004C, "Member 'FAthenaReplayBrowserRowData::bIsOld' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, MatchStats) == 0x000050, "Member 'FAthenaReplayBrowserRowData::MatchStats' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, bIsSaved) == 0x000078, "Member 'FAthenaReplayBrowserRowData::bIsSaved' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, bIsCorrupt) == 0x000079, "Member 'FAthenaReplayBrowserRowData::bIsCorrupt' has a wrong offset!");
+static_assert(offsetof(FAthenaReplayBrowserRowData, bIsFeatured) == 0x00007A, "Member 'FAthenaReplayBrowserRowData::bIsFeatured' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortDisplayAttribute
+// 0x0070 (0x0070 - 0x0000)
+struct FFortDisplayAttribute final
+{
+public:
+	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x0020)(BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Label;                                             // 0x0020(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Value;                                             // 0x0038(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   HoverText;                                         // 0x0050(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         NumericValue;                                      // 0x0068(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortStatValueDisplayType                     DisplayType;                                       // 0x006C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuffState                                BuffState;                                         // 0x006D(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortClampState                               ClampState;                                        // 0x006E(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortComparisonType                           ComparisonType;                                    // 0x006F(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortDisplayAttribute) == 0x000008, "Wrong alignment on FFortDisplayAttribute");
+static_assert(sizeof(FFortDisplayAttribute) == 0x000070, "Wrong size on FFortDisplayAttribute");
+static_assert(offsetof(FFortDisplayAttribute, Attribute) == 0x000000, "Member 'FFortDisplayAttribute::Attribute' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, Label) == 0x000020, "Member 'FFortDisplayAttribute::Label' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, Value) == 0x000038, "Member 'FFortDisplayAttribute::Value' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, HoverText) == 0x000050, "Member 'FFortDisplayAttribute::HoverText' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, NumericValue) == 0x000068, "Member 'FFortDisplayAttribute::NumericValue' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, DisplayType) == 0x00006C, "Member 'FFortDisplayAttribute::DisplayType' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, BuffState) == 0x00006D, "Member 'FFortDisplayAttribute::BuffState' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, ClampState) == 0x00006E, "Member 'FFortDisplayAttribute::ClampState' has a wrong offset!");
+static_assert(offsetof(FFortDisplayAttribute, ComparisonType) == 0x00006F, "Member 'FFortDisplayAttribute::ComparisonType' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortAttributeModifierDisplayData
+// 0x00A8 (0x00A8 - 0x0000)
+struct FFortAttributeModifierDisplayData final
+{
+public:
+	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGameplayModOp                                ModifierType;                                      // 0x0024(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagRequirements               SourceTags;                                        // 0x0028(0x0040)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagRequirements               TargetTags;                                        // 0x0068(0x0040)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortAttributeModifierDisplayData) == 0x000008, "Wrong alignment on FFortAttributeModifierDisplayData");
+static_assert(sizeof(FFortAttributeModifierDisplayData) == 0x0000A8, "Wrong size on FFortAttributeModifierDisplayData");
+static_assert(offsetof(FFortAttributeModifierDisplayData, Attribute) == 0x000000, "Member 'FFortAttributeModifierDisplayData::Attribute' has a wrong offset!");
+static_assert(offsetof(FFortAttributeModifierDisplayData, Value) == 0x000020, "Member 'FFortAttributeModifierDisplayData::Value' has a wrong offset!");
+static_assert(offsetof(FFortAttributeModifierDisplayData, ModifierType) == 0x000024, "Member 'FFortAttributeModifierDisplayData::ModifierType' has a wrong offset!");
+static_assert(offsetof(FFortAttributeModifierDisplayData, SourceTags) == 0x000028, "Member 'FFortAttributeModifierDisplayData::SourceTags' has a wrong offset!");
+static_assert(offsetof(FFortAttributeModifierDisplayData, TargetTags) == 0x000068, "Member 'FFortAttributeModifierDisplayData::TargetTags' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_Configuration
+// 0x0050 (0x0050 - 0x0000)
+struct FFortItemCard_PowerRatingBlock_Configuration
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                CustomRatingInternalPadding;                       // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              CustomRatingIconSize;                              // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   CustomRatingTextStyle;                             // 0x0020(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ComparisonIndicatorSize;                           // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_PowerRatingBlock_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_Configuration");
+static_assert(sizeof(FFortItemCard_PowerRatingBlock_Configuration) == 0x000050, "Wrong size on FFortItemCard_PowerRatingBlock_Configuration");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingInternalPadding) == 0x000008, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingInternalPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingIconSize) == 0x000018, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingIconSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingTextStyle) == 0x000020, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingTextStyle' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, ComparisonIndicatorSize) == 0x000048, "Member 'FFortItemCard_PowerRatingBlock_Configuration::ComparisonIndicatorSize' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration
+// 0x0160 (0x01B0 - 0x0050)
+struct FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration final : public FFortItemCard_PowerRatingBlock_Configuration
+{
+public:
+	struct FSlateBrush                            PersonnelPowerRatingIconBrush;                     // 0x0050(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   PersonnelPowerRatingTextStyle;                     // 0x00D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SchematicPowerRatingIconBrush;                     // 0x0100(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   SchematicPowerRatingTextStyle;                     // 0x0188(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration");
+static_assert(sizeof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration) == 0x0001B0, "Wrong size on FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, PersonnelPowerRatingIconBrush) == 0x000050, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::PersonnelPowerRatingIconBrush' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, PersonnelPowerRatingTextStyle) == 0x0000D8, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::PersonnelPowerRatingTextStyle' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, SchematicPowerRatingIconBrush) == 0x000100, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::SchematicPowerRatingIconBrush' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, SchematicPowerRatingTextStyle) == 0x000188, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::SchematicPowerRatingTextStyle' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortStateStyle
+// 0x0350 (0x0350 - 0x0000)
+struct FFortStateStyle final
+{
+public:
+	struct FFortMultiSizeBrush                    Brush;                                             // 0x0000(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PrimaryColor;                                      // 0x0330(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SecondaryColor;                                    // 0x0340(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortStateStyle) == 0x000008, "Wrong alignment on FFortStateStyle");
+static_assert(sizeof(FFortStateStyle) == 0x000350, "Wrong size on FFortStateStyle");
+static_assert(offsetof(FFortStateStyle, Brush) == 0x000000, "Member 'FFortStateStyle::Brush' has a wrong offset!");
+static_assert(offsetof(FFortStateStyle, PrimaryColor) == 0x000330, "Member 'FFortStateStyle::PrimaryColor' has a wrong offset!");
+static_assert(offsetof(FFortStateStyle, SecondaryColor) == 0x000340, "Member 'FFortStateStyle::SecondaryColor' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortReceivedItemLootInfo
+// 0x0028 (0x0028 - 0x0000)
+struct FFortReceivedItemLootInfo final
+{
+public:
+	class UFortItemDefinition*                    ItemDef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 TemplateId;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortItem*                              GeneratedItemInstance;                             // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortReceivedItemLootInfo) == 0x000008, "Wrong alignment on FFortReceivedItemLootInfo");
+static_assert(sizeof(FFortReceivedItemLootInfo) == 0x000028, "Wrong size on FFortReceivedItemLootInfo");
+static_assert(offsetof(FFortReceivedItemLootInfo, ItemDef) == 0x000000, "Member 'FFortReceivedItemLootInfo::ItemDef' has a wrong offset!");
+static_assert(offsetof(FFortReceivedItemLootInfo, Quantity) == 0x000008, "Member 'FFortReceivedItemLootInfo::Quantity' has a wrong offset!");
+static_assert(offsetof(FFortReceivedItemLootInfo, TemplateId) == 0x000010, "Member 'FFortReceivedItemLootInfo::TemplateId' has a wrong offset!");
+static_assert(offsetof(FFortReceivedItemLootInfo, GeneratedItemInstance) == 0x000020, "Member 'FFortReceivedItemLootInfo::GeneratedItemInstance' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortErrorInfo
+// 0x0070 (0x0070 - 0x0000)
+struct FFortErrorInfo final
+{
+public:
+	class FText                                   Operation;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   ErrorMessage;                                      // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FString                                 ErrorCode;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortErrorSeverity                            ErrorSeverity;                                     // 0x0040(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ContinueButtonText;                                // 0x0048(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60[0x10];                                      // 0x0060(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortErrorInfo) == 0x000008, "Wrong alignment on FFortErrorInfo");
+static_assert(sizeof(FFortErrorInfo) == 0x000070, "Wrong size on FFortErrorInfo");
+static_assert(offsetof(FFortErrorInfo, Operation) == 0x000000, "Member 'FFortErrorInfo::Operation' has a wrong offset!");
+static_assert(offsetof(FFortErrorInfo, ErrorMessage) == 0x000018, "Member 'FFortErrorInfo::ErrorMessage' has a wrong offset!");
+static_assert(offsetof(FFortErrorInfo, ErrorCode) == 0x000030, "Member 'FFortErrorInfo::ErrorCode' has a wrong offset!");
+static_assert(offsetof(FFortErrorInfo, ErrorSeverity) == 0x000040, "Member 'FFortErrorInfo::ErrorSeverity' has a wrong offset!");
+static_assert(offsetof(FFortErrorInfo, ContinueButtonText) == 0x000048, "Member 'FFortErrorInfo::ContinueButtonText' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaNews
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FAthenaNews final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaNews) == 0x000008, "Wrong alignment on FAthenaNews");
+static_assert(sizeof(FAthenaNews) == 0x000028, "Wrong size on FAthenaNews");
+
+// ScriptStruct FortniteUI.LeaderboardFilter
+// 0x0018 (0x0018 - 0x0000)
+struct FLeaderboardFilter final
+{
+public:
+	class UDataTable*                             LeaderboardDisplayData;                            // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FLeaderboardFilter) == 0x000008, "Wrong alignment on FLeaderboardFilter");
+static_assert(sizeof(FLeaderboardFilter) == 0x000018, "Wrong size on FLeaderboardFilter");
+static_assert(offsetof(FLeaderboardFilter, LeaderboardDisplayData) == 0x000000, "Member 'FLeaderboardFilter::LeaderboardDisplayData' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaLatestPlaylistData
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FAthenaLatestPlaylistData final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaLatestPlaylistData) == 0x000008, "Wrong alignment on FAthenaLatestPlaylistData");
+static_assert(sizeof(FAthenaLatestPlaylistData) == 0x000028, "Wrong size on FAthenaLatestPlaylistData");
+
+// ScriptStruct FortniteUI.AthenaPlaylistLeaderboardData
+// 0x0050 (0x0050 - 0x0000)
+struct FAthenaPlaylistLeaderboardData final
+{
+public:
+	class FName                                   StatId;                                            // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   StatDisplayName;                                   // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   TabDisplayName;                                    // 0x0020(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FString                                 BaseGameplayTag;                                   // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsGlobal;                                         // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaPlaylistLeaderboardData) == 0x000008, "Wrong alignment on FAthenaPlaylistLeaderboardData");
+static_assert(sizeof(FAthenaPlaylistLeaderboardData) == 0x000050, "Wrong size on FAthenaPlaylistLeaderboardData");
+static_assert(offsetof(FAthenaPlaylistLeaderboardData, StatId) == 0x000000, "Member 'FAthenaPlaylistLeaderboardData::StatId' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistLeaderboardData, StatDisplayName) == 0x000008, "Member 'FAthenaPlaylistLeaderboardData::StatDisplayName' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistLeaderboardData, TabDisplayName) == 0x000020, "Member 'FAthenaPlaylistLeaderboardData::TabDisplayName' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistLeaderboardData, BaseGameplayTag) == 0x000038, "Member 'FAthenaPlaylistLeaderboardData::BaseGameplayTag' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistLeaderboardData, bIsGlobal) == 0x000048, "Member 'FAthenaPlaylistLeaderboardData::bIsGlobal' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaLeaderboardData
+// 0x0018 (0x0020 - 0x0008)
+struct FAthenaLeaderboardData final : public FTableRowBase
+{
+public:
+	EFortAthenaPlaylist                           Playlist;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAthenaPlaylistLeaderboardData> Stats;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAthenaLeaderboardData) == 0x000008, "Wrong alignment on FAthenaLeaderboardData");
+static_assert(sizeof(FAthenaLeaderboardData) == 0x000020, "Wrong size on FAthenaLeaderboardData");
+static_assert(offsetof(FAthenaLeaderboardData, Playlist) == 0x000008, "Member 'FAthenaLeaderboardData::Playlist' has a wrong offset!");
+static_assert(offsetof(FAthenaLeaderboardData, Stats) == 0x000010, "Member 'FAthenaLeaderboardData::Stats' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemDelta
+// 0x0010 (0x0010 - 0x0000)
+struct FFortItemDelta final
+{
+public:
+	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BaseAmount;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DeltaAmount;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemDelta) == 0x000008, "Wrong alignment on FFortItemDelta");
+static_assert(sizeof(FFortItemDelta) == 0x000010, "Wrong size on FFortItemDelta");
+static_assert(offsetof(FFortItemDelta, ItemDefinition) == 0x000000, "Member 'FFortItemDelta::ItemDefinition' has a wrong offset!");
+static_assert(offsetof(FFortItemDelta, BaseAmount) == 0x000008, "Member 'FFortItemDelta::BaseAmount' has a wrong offset!");
+static_assert(offsetof(FFortItemDelta, DeltaAmount) == 0x00000C, "Member 'FFortItemDelta::DeltaAmount' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemListFilter
+// 0x0018 (0x0018 - 0x0000)
+struct FFortItemListFilter final
+{
+public:
+	class FString                                 SearchText;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortInventoryFilter                          FilterType;                                        // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInStorageVault;                                   // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIncludeVaultOverflow;                             // 0x0012(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortItemListFilter) == 0x000008, "Wrong alignment on FFortItemListFilter");
+static_assert(sizeof(FFortItemListFilter) == 0x000018, "Wrong size on FFortItemListFilter");
+static_assert(offsetof(FFortItemListFilter, SearchText) == 0x000000, "Member 'FFortItemListFilter::SearchText' has a wrong offset!");
+static_assert(offsetof(FFortItemListFilter, FilterType) == 0x000010, "Member 'FFortItemListFilter::FilterType' has a wrong offset!");
+static_assert(offsetof(FFortItemListFilter, bInStorageVault) == 0x000011, "Member 'FFortItemListFilter::bInStorageVault' has a wrong offset!");
+static_assert(offsetof(FFortItemListFilter, bIncludeVaultOverflow) == 0x000012, "Member 'FFortItemListFilter::bIncludeVaultOverflow' has a wrong offset!");
+
+// ScriptStruct FortniteUI.BackgroundColors
+// 0x0030 (0x0030 - 0x0000)
+struct FBackgroundColors final
+{
+public:
+	struct FLinearColor                           Color_0;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_1;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GridColor;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FBackgroundColors) == 0x000004, "Wrong alignment on FBackgroundColors");
+static_assert(sizeof(FBackgroundColors) == 0x000030, "Wrong size on FBackgroundColors");
+static_assert(offsetof(FBackgroundColors, Color_0) == 0x000000, "Member 'FBackgroundColors::Color_0' has a wrong offset!");
+static_assert(offsetof(FBackgroundColors, Color_1) == 0x000010, "Member 'FBackgroundColors::Color_1' has a wrong offset!");
+static_assert(offsetof(FBackgroundColors, GridColor) == 0x000020, "Member 'FBackgroundColors::GridColor' has a wrong offset!");
+
+// ScriptStruct FortniteUI.UnlockableVariantPreviewInfo
+// 0x0028 (0x0028 - 0x0000)
+struct FUnlockableVariantPreviewInfo final
+{
+public:
+	bool                                          bIsValid;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SetNumber;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SetCount;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   UnlockCondition;                                   // 0x0010(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FUnlockableVariantPreviewInfo) == 0x000008, "Wrong alignment on FUnlockableVariantPreviewInfo");
+static_assert(sizeof(FUnlockableVariantPreviewInfo) == 0x000028, "Wrong size on FUnlockableVariantPreviewInfo");
+static_assert(offsetof(FUnlockableVariantPreviewInfo, bIsValid) == 0x000000, "Member 'FUnlockableVariantPreviewInfo::bIsValid' has a wrong offset!");
+static_assert(offsetof(FUnlockableVariantPreviewInfo, SetNumber) == 0x000004, "Member 'FUnlockableVariantPreviewInfo::SetNumber' has a wrong offset!");
+static_assert(offsetof(FUnlockableVariantPreviewInfo, SetCount) == 0x000008, "Member 'FUnlockableVariantPreviewInfo::SetCount' has a wrong offset!");
+static_assert(offsetof(FUnlockableVariantPreviewInfo, UnlockCondition) == 0x000010, "Member 'FUnlockableVariantPreviewInfo::UnlockCondition' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaBossHealthData
+// 0x0030 (0x0030 - 0x0000)
+struct FAthenaBossHealthData final
+{
+public:
+	bool                                          bVisible;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowShields;                                      // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Name;                                              // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         Health;                                            // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HealthMax;                                         // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Shields;                                           // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShieldsMax;                                        // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAthenaBossHealthData) == 0x000008, "Wrong alignment on FAthenaBossHealthData");
+static_assert(sizeof(FAthenaBossHealthData) == 0x000030, "Wrong size on FAthenaBossHealthData");
+static_assert(offsetof(FAthenaBossHealthData, bVisible) == 0x000000, "Member 'FAthenaBossHealthData::bVisible' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, bShowShields) == 0x000001, "Member 'FAthenaBossHealthData::bShowShields' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, Name) == 0x000008, "Member 'FAthenaBossHealthData::Name' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, Health) == 0x000020, "Member 'FAthenaBossHealthData::Health' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, HealthMax) == 0x000024, "Member 'FAthenaBossHealthData::HealthMax' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, Shields) == 0x000028, "Member 'FAthenaBossHealthData::Shields' has a wrong offset!");
+static_assert(offsetof(FAthenaBossHealthData, ShieldsMax) == 0x00002C, "Member 'FAthenaBossHealthData::ShieldsMax' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortHeroNamesData
+// 0x0030 (0x0038 - 0x0008)
+struct FFortHeroNamesData final : public FTableRowBase
+{
+public:
+	class FString                                 FirstName;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 NickName;                                          // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LastName;                                          // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortHeroNamesData) == 0x000008, "Wrong alignment on FFortHeroNamesData");
+static_assert(sizeof(FFortHeroNamesData) == 0x000038, "Wrong size on FFortHeroNamesData");
+static_assert(offsetof(FFortHeroNamesData, FirstName) == 0x000008, "Member 'FFortHeroNamesData::FirstName' has a wrong offset!");
+static_assert(offsetof(FFortHeroNamesData, NickName) == 0x000018, "Member 'FFortHeroNamesData::NickName' has a wrong offset!");
+static_assert(offsetof(FFortHeroNamesData, LastName) == 0x000028, "Member 'FFortHeroNamesData::LastName' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortMtxGradient
+// 0x0020 (0x0020 - 0x0000)
+struct FFortMtxGradient final
+{
+public:
+	struct FLinearColor                           Start;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Stop;                                              // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortMtxGradient) == 0x000004, "Wrong alignment on FFortMtxGradient");
+static_assert(sizeof(FFortMtxGradient) == 0x000020, "Wrong size on FFortMtxGradient");
+static_assert(offsetof(FFortMtxGradient, Start) == 0x000000, "Member 'FFortMtxGradient::Start' has a wrong offset!");
+static_assert(offsetof(FFortMtxGradient, Stop) == 0x000010, "Member 'FFortMtxGradient::Stop' has a wrong offset!");
+
+// ScriptStruct FortniteUI.AthenaNewsEntry
+// 0x0048 (0x0048 - 0x0000)
+struct alignas(0x08) FAthenaNewsEntry final
+{
+public:
+	uint8                                         Pad_0[0x48];                                       // 0x0000(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaNewsEntry) == 0x000008, "Wrong alignment on FAthenaNewsEntry");
+static_assert(sizeof(FAthenaNewsEntry) == 0x000048, "Wrong size on FAthenaNewsEntry");
+
+// ScriptStruct FortniteUI.AthenaPlaylistEntry
+// 0x0058 (0x0058 - 0x0000)
+struct FAthenaPlaylistEntry final
+{
+public:
+	class FString                                 PlaylistName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisplayName;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Description;                                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Violator;                                          // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Image;                                             // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortMatchmakingTileStyle                     SpecialBorderId;                                   // 0x0050(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAthenaPlaylistEntry) == 0x000008, "Wrong alignment on FAthenaPlaylistEntry");
+static_assert(sizeof(FAthenaPlaylistEntry) == 0x000058, "Wrong size on FAthenaPlaylistEntry");
+static_assert(offsetof(FAthenaPlaylistEntry, PlaylistName) == 0x000000, "Member 'FAthenaPlaylistEntry::PlaylistName' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistEntry, DisplayName) == 0x000010, "Member 'FAthenaPlaylistEntry::DisplayName' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistEntry, Description) == 0x000020, "Member 'FAthenaPlaylistEntry::Description' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistEntry, Violator) == 0x000030, "Member 'FAthenaPlaylistEntry::Violator' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistEntry, Image) == 0x000040, "Member 'FAthenaPlaylistEntry::Image' has a wrong offset!");
+static_assert(offsetof(FAthenaPlaylistEntry, SpecialBorderId) == 0x000050, "Member 'FAthenaPlaylistEntry::SpecialBorderId' has a wrong offset!");
+
+// ScriptStruct FortniteUI.CharacterRanges
+// 0x0030 (0x0030 - 0x0000)
+struct FCharacterRanges final
+{
+public:
+	TArray<int32>                                 Ranges;                                            // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 SinglePoints;                                      // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ExcludedPoints;                                    // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FCharacterRanges) == 0x000008, "Wrong alignment on FCharacterRanges");
+static_assert(sizeof(FCharacterRanges) == 0x000030, "Wrong size on FCharacterRanges");
+static_assert(offsetof(FCharacterRanges, Ranges) == 0x000000, "Member 'FCharacterRanges::Ranges' has a wrong offset!");
+static_assert(offsetof(FCharacterRanges, SinglePoints) == 0x000010, "Member 'FCharacterRanges::SinglePoints' has a wrong offset!");
+static_assert(offsetof(FCharacterRanges, ExcludedPoints) == 0x000020, "Member 'FCharacterRanges::ExcludedPoints' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortDailyRewardsItemData
 // 0x0010 (0x0010 - 0x0000)
@@ -1122,118 +2410,6 @@ static_assert(offsetof(FFortDailyRewardsScheduleData, CalendarItems) == 0x000070
 static_assert(offsetof(FFortDailyRewardsScheduleData, HighValueItems) == 0x000080, "Member 'FFortDailyRewardsScheduleData::HighValueItems' has a wrong offset!");
 static_assert(offsetof(FFortDailyRewardsScheduleData, ClaimedToday) == 0x000090, "Member 'FFortDailyRewardsScheduleData::ClaimedToday' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortTabButtonLabelInfo
-// 0x00A0 (0x00A0 - 0x0000)
-struct FFortTabButtonLabelInfo
-{
-public:
-	class FText                                   DisplayName;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            IconBrush;                                         // 0x0018(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortTabButtonLabelInfo) == 0x000008, "Wrong alignment on FFortTabButtonLabelInfo");
-static_assert(sizeof(FFortTabButtonLabelInfo) == 0x0000A0, "Wrong size on FFortTabButtonLabelInfo");
-static_assert(offsetof(FFortTabButtonLabelInfo, DisplayName) == 0x000000, "Member 'FFortTabButtonLabelInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(FFortTabButtonLabelInfo, IconBrush) == 0x000018, "Member 'FFortTabButtonLabelInfo::IconBrush' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortTabListRegistrationInfo
-// 0x00C8 (0x00C8 - 0x0000)
-struct FFortTabListRegistrationInfo final
-{
-public:
-	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHidden;                                           // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowedInZone;                                    // 0x0009(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0010(0x00A0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSubclassOf<class UCommonButton>              TabButtonType;                                     // 0x00B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UCommonUserWidget>          TabContentType;                                    // 0x00B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                CreatedTabContentWidget;                           // 0x00C0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortTabListRegistrationInfo) == 0x000008, "Wrong alignment on FFortTabListRegistrationInfo");
-static_assert(sizeof(FFortTabListRegistrationInfo) == 0x0000C8, "Wrong size on FFortTabListRegistrationInfo");
-static_assert(offsetof(FFortTabListRegistrationInfo, TabNameID) == 0x000000, "Member 'FFortTabListRegistrationInfo::TabNameID' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, bHidden) == 0x000008, "Member 'FFortTabListRegistrationInfo::bHidden' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, bAllowedInZone) == 0x000009, "Member 'FFortTabListRegistrationInfo::bAllowedInZone' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, TabLabelInfo) == 0x000010, "Member 'FFortTabListRegistrationInfo::TabLabelInfo' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, TabButtonType) == 0x0000B0, "Member 'FFortTabListRegistrationInfo::TabButtonType' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, TabContentType) == 0x0000B8, "Member 'FFortTabListRegistrationInfo::TabContentType' has a wrong offset!");
-static_assert(offsetof(FFortTabListRegistrationInfo, CreatedTabContentWidget) == 0x0000C0, "Member 'FFortTabListRegistrationInfo::CreatedTabContentWidget' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_TierMeter_Configuration
-// 0x000C (0x000C - 0x0000)
-struct FFortItemCard_TierMeter_Configuration final
-{
-public:
-	struct FVector2D                              PipSize;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InterPipPadding;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_TierMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_TierMeter_Configuration");
-static_assert(sizeof(FFortItemCard_TierMeter_Configuration) == 0x00000C, "Wrong size on FFortItemCard_TierMeter_Configuration");
-static_assert(offsetof(FFortItemCard_TierMeter_Configuration, PipSize) == 0x000000, "Member 'FFortItemCard_TierMeter_Configuration::PipSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_TierMeter_Configuration, InterPipPadding) == 0x000008, "Member 'FFortItemCard_TierMeter_Configuration::InterPipPadding' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaTeamCountSlotData
-// 0x0038 (0x0038 - 0x0000)
-struct FAthenaTeamCountSlotData final
-{
-public:
-	class FText                                   TeamNameText;                                      // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   TeamCountText;                                     // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bIsMyTeam;                                         // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAthenaTeamCountSlotData) == 0x000008, "Wrong alignment on FAthenaTeamCountSlotData");
-static_assert(sizeof(FAthenaTeamCountSlotData) == 0x000038, "Wrong size on FAthenaTeamCountSlotData");
-static_assert(offsetof(FAthenaTeamCountSlotData, TeamNameText) == 0x000000, "Member 'FAthenaTeamCountSlotData::TeamNameText' has a wrong offset!");
-static_assert(offsetof(FAthenaTeamCountSlotData, TeamCountText) == 0x000018, "Member 'FAthenaTeamCountSlotData::TeamCountText' has a wrong offset!");
-static_assert(offsetof(FAthenaTeamCountSlotData, bIsMyTeam) == 0x000030, "Member 'FAthenaTeamCountSlotData::bIsMyTeam' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortFocusedBuildingInfo
-// 0x0050 (0x0050 - 0x0000)
-struct FFortFocusedBuildingInfo final
-{
-public:
-	bool                                          bIsInteractable;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCanBePlayerEdited;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                IndicatorRelativeLocation;                         // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingHealthDisplayRule                HealthDisplayRule;                                 // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxHealth;                                         // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsAnyTrapAttached;                                // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsTrapAttachedFacingPlayer;                       // 0x0019(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsPreviewTrapAttached;                            // 0x001A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AttachedTrapMaxDurability;                         // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurrentLevel;                                      // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingInteraction                      InteractionType;                                   // 0x0024(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InteractionCost;                                   // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UpgradeBonus;                                      // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortResourceType                             BuildingMaterial;                                  // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsHostile;                                        // 0x0031(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ContextualText;                                    // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortFocusedBuildingInfo) == 0x000008, "Wrong alignment on FFortFocusedBuildingInfo");
-static_assert(sizeof(FFortFocusedBuildingInfo) == 0x000050, "Wrong size on FFortFocusedBuildingInfo");
-static_assert(offsetof(FFortFocusedBuildingInfo, bIsInteractable) == 0x000000, "Member 'FFortFocusedBuildingInfo::bIsInteractable' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, bCanBePlayerEdited) == 0x000001, "Member 'FFortFocusedBuildingInfo::bCanBePlayerEdited' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, IndicatorRelativeLocation) == 0x000004, "Member 'FFortFocusedBuildingInfo::IndicatorRelativeLocation' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, HealthDisplayRule) == 0x000010, "Member 'FFortFocusedBuildingInfo::HealthDisplayRule' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, MaxHealth) == 0x000014, "Member 'FFortFocusedBuildingInfo::MaxHealth' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, bIsAnyTrapAttached) == 0x000018, "Member 'FFortFocusedBuildingInfo::bIsAnyTrapAttached' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, bIsTrapAttachedFacingPlayer) == 0x000019, "Member 'FFortFocusedBuildingInfo::bIsTrapAttachedFacingPlayer' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, bIsPreviewTrapAttached) == 0x00001A, "Member 'FFortFocusedBuildingInfo::bIsPreviewTrapAttached' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, AttachedTrapMaxDurability) == 0x00001C, "Member 'FFortFocusedBuildingInfo::AttachedTrapMaxDurability' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, CurrentLevel) == 0x000020, "Member 'FFortFocusedBuildingInfo::CurrentLevel' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, InteractionType) == 0x000024, "Member 'FFortFocusedBuildingInfo::InteractionType' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, InteractionCost) == 0x000028, "Member 'FFortFocusedBuildingInfo::InteractionCost' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, UpgradeBonus) == 0x00002C, "Member 'FFortFocusedBuildingInfo::UpgradeBonus' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, BuildingMaterial) == 0x000030, "Member 'FFortFocusedBuildingInfo::BuildingMaterial' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, bIsHostile) == 0x000031, "Member 'FFortFocusedBuildingInfo::bIsHostile' has a wrong offset!");
-static_assert(offsetof(FFortFocusedBuildingInfo, ContextualText) == 0x000038, "Member 'FFortFocusedBuildingInfo::ContextualText' has a wrong offset!");
-
 // ScriptStruct FortniteUI.FortDailyRewardsData
 // 0x0018 (0x0018 - 0x0000)
 struct FFortDailyRewardsData final
@@ -1250,439 +2426,18 @@ static_assert(offsetof(FFortDailyRewardsData, CurrentLoginDays) == 0x000000, "Me
 static_assert(offsetof(FFortDailyRewardsData, bCanClaim) == 0x000004, "Member 'FFortDailyRewardsData::bCanClaim' has a wrong offset!");
 static_assert(offsetof(FFortDailyRewardsData, Schedules) == 0x000008, "Member 'FFortDailyRewardsData::Schedules' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortNodeStyleData
-// 0x0668 (0x0670 - 0x0008)
-struct FFortNodeStyleData final : public FTableRowBase
+// ScriptStruct FortniteUI.FortItemCard_DurabilityMeter_Configuration
+// 0x0014 (0x0014 - 0x0000)
+struct FFortItemCard_DurabilityMeter_Configuration final
 {
 public:
-	struct FFortMultiSizeBrush                    ActiveBrush;                                       // 0x0008(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    InactiveBrush;                                     // 0x0338(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UMediaSource*                           PreviewMediaSource;                                // 0x0668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MeterThickness;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                MeterPadding;                                      // 0x0004(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFortNodeStyleData) == 0x000008, "Wrong alignment on FFortNodeStyleData");
-static_assert(sizeof(FFortNodeStyleData) == 0x000670, "Wrong size on FFortNodeStyleData");
-static_assert(offsetof(FFortNodeStyleData, ActiveBrush) == 0x000008, "Member 'FFortNodeStyleData::ActiveBrush' has a wrong offset!");
-static_assert(offsetof(FFortNodeStyleData, InactiveBrush) == 0x000338, "Member 'FFortNodeStyleData::InactiveBrush' has a wrong offset!");
-static_assert(offsetof(FFortNodeStyleData, PreviewMediaSource) == 0x000668, "Member 'FFortNodeStyleData::PreviewMediaSource' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortHUDState
-// 0x0010 (0x0010 - 0x0000)
-struct FFortHUDState final
-{
-public:
-	bool                                          bInBuildMode;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInCombatMode;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInEditMode;                                       // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsParachuteOpen;                                  // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsFreeFalling;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInLockedBus;                                      // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInUnlockedBus;                                    // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnTargeting;                                      // 0x0007(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnUsingScopeTargeting;                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnCanTarget;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnCanUseScopeTargeting;                           // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnCanUseSecondaryAbility;                         // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCanOpenChute;                                     // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCrouching;                                        // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDBNO;                                             // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsControllingRCPawn;                              // 0x000F(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortHUDState) == 0x000001, "Wrong alignment on FFortHUDState");
-static_assert(sizeof(FFortHUDState) == 0x000010, "Wrong size on FFortHUDState");
-static_assert(offsetof(FFortHUDState, bInBuildMode) == 0x000000, "Member 'FFortHUDState::bInBuildMode' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bInCombatMode) == 0x000001, "Member 'FFortHUDState::bInCombatMode' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bInEditMode) == 0x000002, "Member 'FFortHUDState::bInEditMode' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bIsParachuteOpen) == 0x000003, "Member 'FFortHUDState::bIsParachuteOpen' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bIsFreeFalling) == 0x000004, "Member 'FFortHUDState::bIsFreeFalling' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bInLockedBus) == 0x000005, "Member 'FFortHUDState::bInLockedBus' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bInUnlockedBus) == 0x000006, "Member 'FFortHUDState::bInUnlockedBus' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bOnTargeting) == 0x000007, "Member 'FFortHUDState::bOnTargeting' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bOnUsingScopeTargeting) == 0x000008, "Member 'FFortHUDState::bOnUsingScopeTargeting' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bOnCanTarget) == 0x000009, "Member 'FFortHUDState::bOnCanTarget' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bOnCanUseScopeTargeting) == 0x00000A, "Member 'FFortHUDState::bOnCanUseScopeTargeting' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bOnCanUseSecondaryAbility) == 0x00000B, "Member 'FFortHUDState::bOnCanUseSecondaryAbility' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bCanOpenChute) == 0x00000C, "Member 'FFortHUDState::bCanOpenChute' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bCrouching) == 0x00000D, "Member 'FFortHUDState::bCrouching' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bDBNO) == 0x00000E, "Member 'FFortHUDState::bDBNO' has a wrong offset!");
-static_assert(offsetof(FFortHUDState, bIsControllingRCPawn) == 0x00000F, "Member 'FFortHUDState::bIsControllingRCPawn' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortSurvivorSquadSelectorButtonSummaryStats
-// 0x0070 (0x0070 - 0x0000)
-struct FFortSurvivorSquadSelectorButtonSummaryStats final
-{
-public:
-	class FName                                   SquadId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     FortAttribute;                                     // 0x0008(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FortAttributeValue;                                // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAttribute                     FortTeamAttribute;                                 // 0x0030(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamFortAttributeValue;                            // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SquadPowerValue;                                   // 0x0054(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   FortAttributeName;                                 // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortSurvivorSquadSelectorButtonSummaryStats) == 0x000008, "Wrong alignment on FFortSurvivorSquadSelectorButtonSummaryStats");
-static_assert(sizeof(FFortSurvivorSquadSelectorButtonSummaryStats) == 0x000070, "Wrong size on FFortSurvivorSquadSelectorButtonSummaryStats");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, SquadId) == 0x000000, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::SquadId' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttribute) == 0x000008, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttribute' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttributeValue) == 0x000028, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttributeValue' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortTeamAttribute) == 0x000030, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortTeamAttribute' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, TeamFortAttributeValue) == 0x000050, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::TeamFortAttributeValue' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, SquadPowerValue) == 0x000054, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::SquadPowerValue' has a wrong offset!");
-static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttributeName) == 0x000058, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttributeName' has a wrong offset!");
-
-// ScriptStruct FortniteUI.SquadSlotSortTypes
-// 0x0010 (0x0010 - 0x0000)
-struct FSquadSlotSortTypes final
-{
-public:
-	TArray<ESquadSlotSortType>                    SortTypes;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSquadSlotSortTypes) == 0x000008, "Wrong alignment on FSquadSlotSortTypes");
-static_assert(sizeof(FSquadSlotSortTypes) == 0x000010, "Wrong size on FSquadSlotSortTypes");
-static_assert(offsetof(FSquadSlotSortTypes, SortTypes) == 0x000000, "Member 'FSquadSlotSortTypes::SortTypes' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortLastMissionInfo
-// 0x0048 (0x0048 - 0x0000)
-struct FFortLastMissionInfo final
-{
-public:
-	class FText                                   TheaterName;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   MissionName;                                       // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Difficulty;                                        // 0x0030(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortLastMissionInfo) == 0x000008, "Wrong alignment on FFortLastMissionInfo");
-static_assert(sizeof(FFortLastMissionInfo) == 0x000048, "Wrong size on FFortLastMissionInfo");
-static_assert(offsetof(FFortLastMissionInfo, TheaterName) == 0x000000, "Member 'FFortLastMissionInfo::TheaterName' has a wrong offset!");
-static_assert(offsetof(FFortLastMissionInfo, MissionName) == 0x000018, "Member 'FFortLastMissionInfo::MissionName' has a wrong offset!");
-static_assert(offsetof(FFortLastMissionInfo, Difficulty) == 0x000030, "Member 'FFortLastMissionInfo::Difficulty' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortHeroNamesData
-// 0x0030 (0x0038 - 0x0008)
-struct FFortHeroNamesData final : public FTableRowBase
-{
-public:
-	class FString                                 FirstName;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 NickName;                                          // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LastName;                                          // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortHeroNamesData) == 0x000008, "Wrong alignment on FFortHeroNamesData");
-static_assert(sizeof(FFortHeroNamesData) == 0x000038, "Wrong size on FFortHeroNamesData");
-static_assert(offsetof(FFortHeroNamesData, FirstName) == 0x000008, "Member 'FFortHeroNamesData::FirstName' has a wrong offset!");
-static_assert(offsetof(FFortHeroNamesData, NickName) == 0x000018, "Member 'FFortHeroNamesData::NickName' has a wrong offset!");
-static_assert(offsetof(FFortHeroNamesData, LastName) == 0x000028, "Member 'FFortHeroNamesData::LastName' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemFilterDefinition
-// 0x0060 (0x0060 - 0x0000)
-struct alignas(0x10) FFortItemFilterDefinition final
-{
-public:
-	uint8                                         Pad_0[0x60];                                       // 0x0000(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortItemFilterDefinition) == 0x000010, "Wrong alignment on FFortItemFilterDefinition");
-static_assert(sizeof(FFortItemFilterDefinition) == 0x000060, "Wrong size on FFortItemFilterDefinition");
-
-// ScriptStruct FortniteUI.HeroUIData
-// 0x0020 (0x0020 - 0x0000)
-struct FHeroUIData final
-{
-public:
-	class UFortHero*                              Hero;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         XPRequirementForCurrentLevel;                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         XPRequirementForNextLevel;                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RequiredXPToLevelUp;                               // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsMaxHeroLevel;                                   // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FHeroUIData) == 0x000008, "Wrong alignment on FHeroUIData");
-static_assert(sizeof(FHeroUIData) == 0x000020, "Wrong size on FHeroUIData");
-static_assert(offsetof(FHeroUIData, Hero) == 0x000000, "Member 'FHeroUIData::Hero' has a wrong offset!");
-static_assert(offsetof(FHeroUIData, bIsSelected) == 0x000008, "Member 'FHeroUIData::bIsSelected' has a wrong offset!");
-static_assert(offsetof(FHeroUIData, XPRequirementForCurrentLevel) == 0x00000C, "Member 'FHeroUIData::XPRequirementForCurrentLevel' has a wrong offset!");
-static_assert(offsetof(FHeroUIData, XPRequirementForNextLevel) == 0x000010, "Member 'FHeroUIData::XPRequirementForNextLevel' has a wrong offset!");
-static_assert(offsetof(FHeroUIData, RequiredXPToLevelUp) == 0x000014, "Member 'FHeroUIData::RequiredXPToLevelUp' has a wrong offset!");
-static_assert(offsetof(FHeroUIData, bIsMaxHeroLevel) == 0x000018, "Member 'FHeroUIData::bIsMaxHeroLevel' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortFrontEndFeatureStruct
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x08) FFortFrontEndFeatureStruct final
-{
-public:
-	EFortFrontEndFeatureState                     CurrentState;                                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortFrontEndFeatureState                     ForcedState;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortFrontEndFeatureStateReason               ForcedStateReason;                                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0008(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortFrontEndFeatureStruct) == 0x000008, "Wrong alignment on FFortFrontEndFeatureStruct");
-static_assert(sizeof(FFortFrontEndFeatureStruct) == 0x000018, "Wrong size on FFortFrontEndFeatureStruct");
-static_assert(offsetof(FFortFrontEndFeatureStruct, CurrentState) == 0x000000, "Member 'FFortFrontEndFeatureStruct::CurrentState' has a wrong offset!");
-static_assert(offsetof(FFortFrontEndFeatureStruct, ForcedState) == 0x000001, "Member 'FFortFrontEndFeatureStruct::ForcedState' has a wrong offset!");
-static_assert(offsetof(FFortFrontEndFeatureStruct, ForcedStateReason) == 0x000002, "Member 'FFortFrontEndFeatureStruct::ForcedStateReason' has a wrong offset!");
-static_assert(offsetof(FFortFrontEndFeatureStruct, ChangeDelegate) == 0x000008, "Member 'FFortFrontEndFeatureStruct::ChangeDelegate' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemSorterDefinition
-// 0x0050 (0x0050 - 0x0000)
-struct alignas(0x10) FFortItemSorterDefinition final
-{
-public:
-	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortItemSorterDefinition) == 0x000010, "Wrong alignment on FFortItemSorterDefinition");
-static_assert(sizeof(FFortItemSorterDefinition) == 0x000050, "Wrong size on FFortItemSorterDefinition");
-
-// ScriptStruct FortniteUI.FortMaterialProgressBarSectionStyle
-// 0x0040 (0x0040 - 0x0000)
-struct alignas(0x08) FFortMaterialProgressBarSectionStyle final
-{
-public:
-	bool                                          bGradientBar;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   BarParamName;                                      // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   BarColorOneParamName;                              // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   BarColorTwoParamName;                              // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BarColorOne;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BarColorTwo;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortMaterialProgressBarSectionStyle) == 0x000008, "Wrong alignment on FFortMaterialProgressBarSectionStyle");
-static_assert(sizeof(FFortMaterialProgressBarSectionStyle) == 0x000040, "Wrong size on FFortMaterialProgressBarSectionStyle");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, bGradientBar) == 0x000000, "Member 'FFortMaterialProgressBarSectionStyle::bGradientBar' has a wrong offset!");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarParamName) == 0x000008, "Member 'FFortMaterialProgressBarSectionStyle::BarParamName' has a wrong offset!");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorOneParamName) == 0x000010, "Member 'FFortMaterialProgressBarSectionStyle::BarColorOneParamName' has a wrong offset!");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorTwoParamName) == 0x000018, "Member 'FFortMaterialProgressBarSectionStyle::BarColorTwoParamName' has a wrong offset!");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorOne) == 0x000020, "Member 'FFortMaterialProgressBarSectionStyle::BarColorOne' has a wrong offset!");
-static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorTwo) == 0x000030, "Member 'FFortMaterialProgressBarSectionStyle::BarColorTwo' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortBackendVersion
-// 0x0098 (0x0098 - 0x0000)
-struct FFortBackendVersion final
-{
-public:
-	bool                                          bIsValid;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 App;                                               // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ModuleName;                                        // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Branch;                                            // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BuildDate;                                         // 0x0038(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ServerDate;                                        // 0x0048(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Build;                                             // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Changelist;                                        // 0x0068(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 OverridePropertiesVersion;                         // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Version;                                           // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortBackendVersion) == 0x000008, "Wrong alignment on FFortBackendVersion");
-static_assert(sizeof(FFortBackendVersion) == 0x000098, "Wrong size on FFortBackendVersion");
-static_assert(offsetof(FFortBackendVersion, bIsValid) == 0x000000, "Member 'FFortBackendVersion::bIsValid' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, App) == 0x000008, "Member 'FFortBackendVersion::App' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, ModuleName) == 0x000018, "Member 'FFortBackendVersion::ModuleName' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, Branch) == 0x000028, "Member 'FFortBackendVersion::Branch' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, BuildDate) == 0x000038, "Member 'FFortBackendVersion::BuildDate' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, ServerDate) == 0x000048, "Member 'FFortBackendVersion::ServerDate' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, Build) == 0x000058, "Member 'FFortBackendVersion::Build' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, Changelist) == 0x000068, "Member 'FFortBackendVersion::Changelist' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, OverridePropertiesVersion) == 0x000078, "Member 'FFortBackendVersion::OverridePropertiesVersion' has a wrong offset!");
-static_assert(offsetof(FFortBackendVersion, Version) == 0x000088, "Member 'FFortBackendVersion::Version' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortUIFeatureStruct
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x08) FFortUIFeatureStruct final
-{
-public:
-	EFortUIFeatureState                           CurrentState;                                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortUIFeatureState                           ForcedState;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortUIFeatureStateReason                     ForcedStateReason;                                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0008(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortUIFeatureStruct) == 0x000008, "Wrong alignment on FFortUIFeatureStruct");
-static_assert(sizeof(FFortUIFeatureStruct) == 0x000018, "Wrong size on FFortUIFeatureStruct");
-static_assert(offsetof(FFortUIFeatureStruct, CurrentState) == 0x000000, "Member 'FFortUIFeatureStruct::CurrentState' has a wrong offset!");
-static_assert(offsetof(FFortUIFeatureStruct, ForcedState) == 0x000001, "Member 'FFortUIFeatureStruct::ForcedState' has a wrong offset!");
-static_assert(offsetof(FFortUIFeatureStruct, ForcedStateReason) == 0x000002, "Member 'FFortUIFeatureStruct::ForcedStateReason' has a wrong offset!");
-static_assert(offsetof(FFortUIFeatureStruct, ChangeDelegate) == 0x000008, "Member 'FFortUIFeatureStruct::ChangeDelegate' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortDisplayAttribute
-// 0x0070 (0x0070 - 0x0000)
-struct FFortDisplayAttribute final
-{
-public:
-	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x0020)(BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Label;                                             // 0x0020(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Value;                                             // 0x0038(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   HoverText;                                         // 0x0050(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         NumericValue;                                      // 0x0068(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortStatValueDisplayType                     DisplayType;                                       // 0x006C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuffState                                BuffState;                                         // 0x006D(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortClampState                               ClampState;                                        // 0x006E(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortComparisonType                           ComparisonType;                                    // 0x006F(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortDisplayAttribute) == 0x000008, "Wrong alignment on FFortDisplayAttribute");
-static_assert(sizeof(FFortDisplayAttribute) == 0x000070, "Wrong size on FFortDisplayAttribute");
-static_assert(offsetof(FFortDisplayAttribute, Attribute) == 0x000000, "Member 'FFortDisplayAttribute::Attribute' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, Label) == 0x000020, "Member 'FFortDisplayAttribute::Label' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, Value) == 0x000038, "Member 'FFortDisplayAttribute::Value' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, HoverText) == 0x000050, "Member 'FFortDisplayAttribute::HoverText' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, NumericValue) == 0x000068, "Member 'FFortDisplayAttribute::NumericValue' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, DisplayType) == 0x00006C, "Member 'FFortDisplayAttribute::DisplayType' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, BuffState) == 0x00006D, "Member 'FFortDisplayAttribute::BuffState' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, ClampState) == 0x00006E, "Member 'FFortDisplayAttribute::ClampState' has a wrong offset!");
-static_assert(offsetof(FFortDisplayAttribute, ComparisonType) == 0x00006F, "Member 'FFortDisplayAttribute::ComparisonType' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_Configuration
-// 0x0050 (0x0050 - 0x0000)
-struct FFortItemCard_PowerRatingBlock_Configuration
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                CustomRatingInternalPadding;                       // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              CustomRatingIconSize;                              // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   CustomRatingTextStyle;                             // 0x0020(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ComparisonIndicatorSize;                           // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_PowerRatingBlock_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_Configuration");
-static_assert(sizeof(FFortItemCard_PowerRatingBlock_Configuration) == 0x000050, "Wrong size on FFortItemCard_PowerRatingBlock_Configuration");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingInternalPadding) == 0x000008, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingInternalPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingIconSize) == 0x000018, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingIconSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, CustomRatingTextStyle) == 0x000020, "Member 'FFortItemCard_PowerRatingBlock_Configuration::CustomRatingTextStyle' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_Configuration, ComparisonIndicatorSize) == 0x000048, "Member 'FFortItemCard_PowerRatingBlock_Configuration::ComparisonIndicatorSize' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortAttributeModifierDisplayData
-// 0x00A8 (0x00A8 - 0x0000)
-struct FFortAttributeModifierDisplayData final
-{
-public:
-	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Value;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGameplayModOp                                ModifierType;                                      // 0x0024(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagRequirements               SourceTags;                                        // 0x0028(0x0040)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagRequirements               TargetTags;                                        // 0x0068(0x0040)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortAttributeModifierDisplayData) == 0x000008, "Wrong alignment on FFortAttributeModifierDisplayData");
-static_assert(sizeof(FFortAttributeModifierDisplayData) == 0x0000A8, "Wrong size on FFortAttributeModifierDisplayData");
-static_assert(offsetof(FFortAttributeModifierDisplayData, Attribute) == 0x000000, "Member 'FFortAttributeModifierDisplayData::Attribute' has a wrong offset!");
-static_assert(offsetof(FFortAttributeModifierDisplayData, Value) == 0x000020, "Member 'FFortAttributeModifierDisplayData::Value' has a wrong offset!");
-static_assert(offsetof(FFortAttributeModifierDisplayData, ModifierType) == 0x000024, "Member 'FFortAttributeModifierDisplayData::ModifierType' has a wrong offset!");
-static_assert(offsetof(FFortAttributeModifierDisplayData, SourceTags) == 0x000028, "Member 'FFortAttributeModifierDisplayData::SourceTags' has a wrong offset!");
-static_assert(offsetof(FFortAttributeModifierDisplayData, TargetTags) == 0x000068, "Member 'FFortAttributeModifierDisplayData::TargetTags' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortErrorInfo
-// 0x0080 (0x0080 - 0x0000)
-struct alignas(0x10) FFortErrorInfo final
-{
-public:
-	class FText                                   Operation;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   ErrorMessage;                                      // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FString                                 ErrorCode;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_40[0x40];                                      // 0x0040(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortErrorInfo) == 0x000010, "Wrong alignment on FFortErrorInfo");
-static_assert(sizeof(FFortErrorInfo) == 0x000080, "Wrong size on FFortErrorInfo");
-static_assert(offsetof(FFortErrorInfo, Operation) == 0x000000, "Member 'FFortErrorInfo::Operation' has a wrong offset!");
-static_assert(offsetof(FFortErrorInfo, ErrorMessage) == 0x000018, "Member 'FFortErrorInfo::ErrorMessage' has a wrong offset!");
-static_assert(offsetof(FFortErrorInfo, ErrorCode) == 0x000030, "Member 'FFortErrorInfo::ErrorCode' has a wrong offset!");
-
-// ScriptStruct FortniteUI.EmptyHeroSlot
-// 0x0010 (0x0010 - 0x0000)
-struct FEmptyHeroSlot final
-{
-public:
-	class UFortHeroType*                          Type;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumAvailable;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHasMale;                                          // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHasFemale;                                        // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FEmptyHeroSlot) == 0x000008, "Wrong alignment on FEmptyHeroSlot");
-static_assert(sizeof(FEmptyHeroSlot) == 0x000010, "Wrong size on FEmptyHeroSlot");
-static_assert(offsetof(FEmptyHeroSlot, Type) == 0x000000, "Member 'FEmptyHeroSlot::Type' has a wrong offset!");
-static_assert(offsetof(FEmptyHeroSlot, NumAvailable) == 0x000008, "Member 'FEmptyHeroSlot::NumAvailable' has a wrong offset!");
-static_assert(offsetof(FEmptyHeroSlot, bHasMale) == 0x00000C, "Member 'FEmptyHeroSlot::bHasMale' has a wrong offset!");
-static_assert(offsetof(FEmptyHeroSlot, bHasFemale) == 0x00000D, "Member 'FEmptyHeroSlot::bHasFemale' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortStateStyle
-// 0x0350 (0x0350 - 0x0000)
-struct FFortStateStyle final
-{
-public:
-	struct FFortMultiSizeBrush                    Brush;                                             // 0x0000(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PrimaryColor;                                      // 0x0330(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SecondaryColor;                                    // 0x0340(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortStateStyle) == 0x000008, "Wrong alignment on FFortStateStyle");
-static_assert(sizeof(FFortStateStyle) == 0x000350, "Wrong size on FFortStateStyle");
-static_assert(offsetof(FFortStateStyle, Brush) == 0x000000, "Member 'FFortStateStyle::Brush' has a wrong offset!");
-static_assert(offsetof(FFortStateStyle, PrimaryColor) == 0x000330, "Member 'FFortStateStyle::PrimaryColor' has a wrong offset!");
-static_assert(offsetof(FFortStateStyle, SecondaryColor) == 0x000340, "Member 'FFortStateStyle::SecondaryColor' has a wrong offset!");
-
-// ScriptStruct FortniteUI.UINavigationData
-// 0x0030 (0x0030 - 0x0000)
-struct FUINavigationData final
-{
-public:
-	class FText                                   DisplayName;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UObject*                                ObjectData;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   IdData;                                            // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IntData;                                           // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FUINavigationData) == 0x000008, "Wrong alignment on FUINavigationData");
-static_assert(sizeof(FUINavigationData) == 0x000030, "Wrong size on FUINavigationData");
-static_assert(offsetof(FUINavigationData, DisplayName) == 0x000000, "Member 'FUINavigationData::DisplayName' has a wrong offset!");
-static_assert(offsetof(FUINavigationData, ObjectData) == 0x000018, "Member 'FUINavigationData::ObjectData' has a wrong offset!");
-static_assert(offsetof(FUINavigationData, IdData) == 0x000020, "Member 'FUINavigationData::IdData' has a wrong offset!");
-static_assert(offsetof(FUINavigationData, IntData) == 0x000028, "Member 'FUINavigationData::IntData' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortUIAlteration
-// 0x0018 (0x0018 - 0x0000)
-struct FFortUIAlteration final
-{
-public:
-	class UFortAlterationItemDefinition*          AlterationDef;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RequiredMinLevel;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsUpgrade;                                        // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CurrentItemLevel;                                  // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortRarity                                   Rarity;                                            // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUnlockedByEvolution;                              // 0x0015(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortUIAlteration) == 0x000008, "Wrong alignment on FFortUIAlteration");
-static_assert(sizeof(FFortUIAlteration) == 0x000018, "Wrong size on FFortUIAlteration");
-static_assert(offsetof(FFortUIAlteration, AlterationDef) == 0x000000, "Member 'FFortUIAlteration::AlterationDef' has a wrong offset!");
-static_assert(offsetof(FFortUIAlteration, RequiredMinLevel) == 0x000008, "Member 'FFortUIAlteration::RequiredMinLevel' has a wrong offset!");
-static_assert(offsetof(FFortUIAlteration, bIsUpgrade) == 0x00000C, "Member 'FFortUIAlteration::bIsUpgrade' has a wrong offset!");
-static_assert(offsetof(FFortUIAlteration, CurrentItemLevel) == 0x000010, "Member 'FFortUIAlteration::CurrentItemLevel' has a wrong offset!");
-static_assert(offsetof(FFortUIAlteration, Rarity) == 0x000014, "Member 'FFortUIAlteration::Rarity' has a wrong offset!");
-static_assert(offsetof(FFortUIAlteration, bUnlockedByEvolution) == 0x000015, "Member 'FFortUIAlteration::bUnlockedByEvolution' has a wrong offset!");
-
-// ScriptStruct FortniteUI.GridSortKey
-// 0x0018 (0x0018 - 0x0000)
-struct FGridSortKey final
-{
-public:
-	float                                         Number;                                            // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 String;                                            // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGridSortKey) == 0x000008, "Wrong alignment on FGridSortKey");
-static_assert(sizeof(FGridSortKey) == 0x000018, "Wrong size on FGridSortKey");
-static_assert(offsetof(FGridSortKey, Number) == 0x000000, "Member 'FGridSortKey::Number' has a wrong offset!");
-static_assert(offsetof(FGridSortKey, String) == 0x000008, "Member 'FGridSortKey::String' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_ItemInstance_Configuration
-// 0x00B0 (0x0100 - 0x0050)
-struct FFortItemCard_PowerRatingBlock_ItemInstance_Configuration final : public FFortItemCard_PowerRatingBlock_Configuration
-{
-public:
-	struct FSlateBrush                            PowerRatingIconBrush;                              // 0x0050(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   PowerRatingTextStyle;                              // 0x00D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_ItemInstance_Configuration");
-static_assert(sizeof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration) == 0x000100, "Wrong size on FFortItemCard_PowerRatingBlock_ItemInstance_Configuration");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration, PowerRatingIconBrush) == 0x000050, "Member 'FFortItemCard_PowerRatingBlock_ItemInstance_Configuration::PowerRatingIconBrush' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration, PowerRatingTextStyle) == 0x0000D8, "Member 'FFortItemCard_PowerRatingBlock_ItemInstance_Configuration::PowerRatingTextStyle' has a wrong offset!");
+static_assert(alignof(FFortItemCard_DurabilityMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_DurabilityMeter_Configuration");
+static_assert(sizeof(FFortItemCard_DurabilityMeter_Configuration) == 0x000014, "Wrong size on FFortItemCard_DurabilityMeter_Configuration");
+static_assert(offsetof(FFortItemCard_DurabilityMeter_Configuration, MeterThickness) == 0x000000, "Member 'FFortItemCard_DurabilityMeter_Configuration::MeterThickness' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_DurabilityMeter_Configuration, MeterPadding) == 0x000004, "Member 'FFortItemCard_DurabilityMeter_Configuration::MeterPadding' has a wrong offset!");
 
 // ScriptStruct FortniteUI.ExpeditionTabInfo
 // 0x00A8 (0x00A8 - 0x0000)
@@ -1697,252 +2452,21 @@ static_assert(sizeof(FExpeditionTabInfo) == 0x0000A8, "Wrong size on FExpedition
 static_assert(offsetof(FExpeditionTabInfo, TabNameID) == 0x000000, "Member 'FExpeditionTabInfo::TabNameID' has a wrong offset!");
 static_assert(offsetof(FExpeditionTabInfo, TabLabelInfo) == 0x000008, "Member 'FExpeditionTabInfo::TabLabelInfo' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortAthenaItemManagementInventoryFilterTabLabelInfo
-// 0x0008 (0x00A8 - 0x00A0)
-struct FFortAthenaItemManagementInventoryFilterTabLabelInfo final : public FFortTabButtonLabelInfo
-{
-public:
-	class FName                                   FilterTabNameId;                                   // 0x00A0(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortAthenaItemManagementInventoryFilterTabLabelInfo) == 0x000008, "Wrong alignment on FFortAthenaItemManagementInventoryFilterTabLabelInfo");
-static_assert(sizeof(FFortAthenaItemManagementInventoryFilterTabLabelInfo) == 0x0000A8, "Wrong size on FFortAthenaItemManagementInventoryFilterTabLabelInfo");
-static_assert(offsetof(FFortAthenaItemManagementInventoryFilterTabLabelInfo, FilterTabNameId) == 0x0000A0, "Member 'FFortAthenaItemManagementInventoryFilterTabLabelInfo::FilterTabNameId' has a wrong offset!");
-
-// ScriptStruct FortniteUI.LeaderboardFilter
-// 0x0018 (0x0018 - 0x0000)
-struct FLeaderboardFilter final
-{
-public:
-	class UDataTable*                             LeaderboardDisplayData;                            // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FLeaderboardFilter) == 0x000008, "Wrong alignment on FLeaderboardFilter");
-static_assert(sizeof(FLeaderboardFilter) == 0x000018, "Wrong size on FLeaderboardFilter");
-static_assert(offsetof(FLeaderboardFilter, LeaderboardDisplayData) == 0x000000, "Member 'FLeaderboardFilter::LeaderboardDisplayData' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaPlaylistLeaderboardData
-// 0x0050 (0x0050 - 0x0000)
-struct FAthenaPlaylistLeaderboardData final
-{
-public:
-	class FName                                   StatId;                                            // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   StatDisplayName;                                   // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   TabDisplayName;                                    // 0x0020(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FString                                 BaseGameplayTag;                                   // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsGlobal;                                         // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAthenaPlaylistLeaderboardData) == 0x000008, "Wrong alignment on FAthenaPlaylistLeaderboardData");
-static_assert(sizeof(FAthenaPlaylistLeaderboardData) == 0x000050, "Wrong size on FAthenaPlaylistLeaderboardData");
-static_assert(offsetof(FAthenaPlaylistLeaderboardData, StatId) == 0x000000, "Member 'FAthenaPlaylistLeaderboardData::StatId' has a wrong offset!");
-static_assert(offsetof(FAthenaPlaylistLeaderboardData, StatDisplayName) == 0x000008, "Member 'FAthenaPlaylistLeaderboardData::StatDisplayName' has a wrong offset!");
-static_assert(offsetof(FAthenaPlaylistLeaderboardData, TabDisplayName) == 0x000020, "Member 'FAthenaPlaylistLeaderboardData::TabDisplayName' has a wrong offset!");
-static_assert(offsetof(FAthenaPlaylistLeaderboardData, BaseGameplayTag) == 0x000038, "Member 'FAthenaPlaylistLeaderboardData::BaseGameplayTag' has a wrong offset!");
-static_assert(offsetof(FAthenaPlaylistLeaderboardData, bIsGlobal) == 0x000048, "Member 'FAthenaPlaylistLeaderboardData::bIsGlobal' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaLeaderboardData
-// 0x0018 (0x0020 - 0x0008)
-struct FAthenaLeaderboardData final : public FTableRowBase
-{
-public:
-	EFortAthenaPlaylist                           Playlist;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAthenaPlaylistLeaderboardData> Stats;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAthenaLeaderboardData) == 0x000008, "Wrong alignment on FAthenaLeaderboardData");
-static_assert(sizeof(FAthenaLeaderboardData) == 0x000020, "Wrong size on FAthenaLeaderboardData");
-static_assert(offsetof(FAthenaLeaderboardData, Playlist) == 0x000008, "Member 'FAthenaLeaderboardData::Playlist' has a wrong offset!");
-static_assert(offsetof(FAthenaLeaderboardData, Stats) == 0x000010, "Member 'FAthenaLeaderboardData::Stats' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AttributeRequirement
-// 0x0020 (0x0020 - 0x0000)
-struct FAttributeRequirement final
-{
-public:
-	class FText                                   Name;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         Level;                                             // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRequirementsMet;                                  // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAttributeRequirement) == 0x000008, "Wrong alignment on FAttributeRequirement");
-static_assert(sizeof(FAttributeRequirement) == 0x000020, "Wrong size on FAttributeRequirement");
-static_assert(offsetof(FAttributeRequirement, Name) == 0x000000, "Member 'FAttributeRequirement::Name' has a wrong offset!");
-static_assert(offsetof(FAttributeRequirement, Level) == 0x000018, "Member 'FAttributeRequirement::Level' has a wrong offset!");
-static_assert(offsetof(FAttributeRequirement, bRequirementsMet) == 0x00001C, "Member 'FAttributeRequirement::bRequirementsMet' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortMtxGradient
-// 0x0020 (0x0020 - 0x0000)
-struct FFortMtxGradient final
-{
-public:
-	struct FLinearColor                           Start;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Stop;                                              // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortMtxGradient) == 0x000004, "Wrong alignment on FFortMtxGradient");
-static_assert(sizeof(FFortMtxGradient) == 0x000020, "Wrong size on FFortMtxGradient");
-static_assert(offsetof(FFortMtxGradient, Start) == 0x000000, "Member 'FFortMtxGradient::Start' has a wrong offset!");
-static_assert(offsetof(FFortMtxGradient, Stop) == 0x000010, "Member 'FFortMtxGradient::Stop' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaReplayBrowserMatchStats
-// 0x0028 (0x0028 - 0x0000)
-struct FAthenaReplayBrowserMatchStats final
-{
-public:
-	int32                                         Hits;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Headshots;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Revives;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageTaken;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamagePlayers;                                     // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageStructures;                                  // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChestsOpened;                                      // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Distance;                                          // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaterialsGathered;                                 // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaterialsUsed;                                     // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAthenaReplayBrowserMatchStats) == 0x000004, "Wrong alignment on FAthenaReplayBrowserMatchStats");
-static_assert(sizeof(FAthenaReplayBrowserMatchStats) == 0x000028, "Wrong size on FAthenaReplayBrowserMatchStats");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, Hits) == 0x000000, "Member 'FAthenaReplayBrowserMatchStats::Hits' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, Headshots) == 0x000004, "Member 'FAthenaReplayBrowserMatchStats::Headshots' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, Revives) == 0x000008, "Member 'FAthenaReplayBrowserMatchStats::Revives' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamageTaken) == 0x00000C, "Member 'FAthenaReplayBrowserMatchStats::DamageTaken' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamagePlayers) == 0x000010, "Member 'FAthenaReplayBrowserMatchStats::DamagePlayers' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, DamageStructures) == 0x000014, "Member 'FAthenaReplayBrowserMatchStats::DamageStructures' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, ChestsOpened) == 0x000018, "Member 'FAthenaReplayBrowserMatchStats::ChestsOpened' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, Distance) == 0x00001C, "Member 'FAthenaReplayBrowserMatchStats::Distance' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, MaterialsGathered) == 0x000020, "Member 'FAthenaReplayBrowserMatchStats::MaterialsGathered' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserMatchStats, MaterialsUsed) == 0x000024, "Member 'FAthenaReplayBrowserMatchStats::MaterialsUsed' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaReplayBrowserRowData
-// 0x0090 (0x0090 - 0x0000)
-struct FAthenaReplayBrowserRowData final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Date;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Version;                                           // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Size;                                              // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Mode;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Length;                                            // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Rank;                                              // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumPlayers;                                        // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Kills;                                             // 0x003C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Views;                                             // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Assists;                                           // 0x0044(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Accuracy;                                          // 0x0048(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOld;                                             // 0x004C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAthenaReplayBrowserMatchStats         MatchStats;                                        // 0x0050(0x0028)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bIsSaved;                                          // 0x0078(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsCorrupt;                                        // 0x0079(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7A[0x16];                                      // 0x007A(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAthenaReplayBrowserRowData) == 0x000008, "Wrong alignment on FAthenaReplayBrowserRowData");
-static_assert(sizeof(FAthenaReplayBrowserRowData) == 0x000090, "Wrong size on FAthenaReplayBrowserRowData");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Name) == 0x000000, "Member 'FAthenaReplayBrowserRowData::Name' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Date) == 0x000010, "Member 'FAthenaReplayBrowserRowData::Date' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Version) == 0x000018, "Member 'FAthenaReplayBrowserRowData::Version' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Size) == 0x00001C, "Member 'FAthenaReplayBrowserRowData::Size' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Mode) == 0x000020, "Member 'FAthenaReplayBrowserRowData::Mode' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Length) == 0x000030, "Member 'FAthenaReplayBrowserRowData::Length' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Rank) == 0x000034, "Member 'FAthenaReplayBrowserRowData::Rank' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, NumPlayers) == 0x000038, "Member 'FAthenaReplayBrowserRowData::NumPlayers' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Kills) == 0x00003C, "Member 'FAthenaReplayBrowserRowData::Kills' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Views) == 0x000040, "Member 'FAthenaReplayBrowserRowData::Views' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Assists) == 0x000044, "Member 'FAthenaReplayBrowserRowData::Assists' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, Accuracy) == 0x000048, "Member 'FAthenaReplayBrowserRowData::Accuracy' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, IsOld) == 0x00004C, "Member 'FAthenaReplayBrowserRowData::IsOld' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, MatchStats) == 0x000050, "Member 'FAthenaReplayBrowserRowData::MatchStats' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, bIsSaved) == 0x000078, "Member 'FAthenaReplayBrowserRowData::bIsSaved' has a wrong offset!");
-static_assert(offsetof(FAthenaReplayBrowserRowData, bIsCorrupt) == 0x000079, "Member 'FAthenaReplayBrowserRowData::bIsCorrupt' has a wrong offset!");
-
-// ScriptStruct FortniteUI.AthenaNews
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FAthenaNews final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAthenaNews) == 0x000008, "Wrong alignment on FAthenaNews");
-static_assert(sizeof(FAthenaNews) == 0x000010, "Wrong size on FAthenaNews");
-
-// ScriptStruct FortniteUI.AthenaNewsEntry
+// ScriptStruct FortniteUI.GiftingErrorText
 // 0x0038 (0x0038 - 0x0000)
-struct alignas(0x08) FAthenaNewsEntry final
+struct FGiftingErrorText final
 {
 public:
-	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EOfferPurchaseError                           GiftingError;                                      // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ErrorTitle;                                        // 0x0008(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   ErrorDesc;                                         // 0x0020(0x0018)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAthenaNewsEntry) == 0x000008, "Wrong alignment on FAthenaNewsEntry");
-static_assert(sizeof(FAthenaNewsEntry) == 0x000038, "Wrong size on FAthenaNewsEntry");
-
-// ScriptStruct FortniteUI.FortItemListFilter
-// 0x0018 (0x0018 - 0x0000)
-struct FFortItemListFilter final
-{
-public:
-	class FString                                 SearchText;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortInventoryFilter                          FilterType;                                        // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInStorageVault;                                   // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIncludeVaultOverflow;                             // 0x0012(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortItemListFilter) == 0x000008, "Wrong alignment on FFortItemListFilter");
-static_assert(sizeof(FFortItemListFilter) == 0x000018, "Wrong size on FFortItemListFilter");
-static_assert(offsetof(FFortItemListFilter, SearchText) == 0x000000, "Member 'FFortItemListFilter::SearchText' has a wrong offset!");
-static_assert(offsetof(FFortItemListFilter, FilterType) == 0x000010, "Member 'FFortItemListFilter::FilterType' has a wrong offset!");
-static_assert(offsetof(FFortItemListFilter, bInStorageVault) == 0x000011, "Member 'FFortItemListFilter::bInStorageVault' has a wrong offset!");
-static_assert(offsetof(FFortItemListFilter, bIncludeVaultOverflow) == 0x000012, "Member 'FFortItemListFilter::bIncludeVaultOverflow' has a wrong offset!");
-
-// ScriptStruct FortniteUI.CharacterRanges
-// 0x0030 (0x0030 - 0x0000)
-struct FCharacterRanges final
-{
-public:
-	TArray<int32>                                 Ranges;                                            // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 SinglePoints;                                      // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ExcludedPoints;                                    // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCharacterRanges) == 0x000008, "Wrong alignment on FCharacterRanges");
-static_assert(sizeof(FCharacterRanges) == 0x000030, "Wrong size on FCharacterRanges");
-static_assert(offsetof(FCharacterRanges, Ranges) == 0x000000, "Member 'FCharacterRanges::Ranges' has a wrong offset!");
-static_assert(offsetof(FCharacterRanges, SinglePoints) == 0x000010, "Member 'FCharacterRanges::SinglePoints' has a wrong offset!");
-static_assert(offsetof(FCharacterRanges, ExcludedPoints) == 0x000020, "Member 'FCharacterRanges::ExcludedPoints' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_NameplateBorder_Configuration
-// 0x0098 (0x0098 - 0x0000)
-struct FFortItemCard_NameplateBorder_Configuration final
-{
-public:
-	struct FMargin                                Padding;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Brush;                                             // 0x0010(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_NameplateBorder_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_NameplateBorder_Configuration");
-static_assert(sizeof(FFortItemCard_NameplateBorder_Configuration) == 0x000098, "Wrong size on FFortItemCard_NameplateBorder_Configuration");
-static_assert(offsetof(FFortItemCard_NameplateBorder_Configuration, Padding) == 0x000000, "Member 'FFortItemCard_NameplateBorder_Configuration::Padding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_NameplateBorder_Configuration, Brush) == 0x000010, "Member 'FFortItemCard_NameplateBorder_Configuration::Brush' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortModalContainerSizeEntry
-// 0x001C (0x001C - 0x0000)
-struct FFortModalContainerSizeEntry final
-{
-public:
-	float                                         AbsoluteWidth;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TopPercent;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MiddlePercent;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BottomPercent;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VerticalPadding;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HorizontalPadding;                                 // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ContentPadding;                                    // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortModalContainerSizeEntry) == 0x000004, "Wrong alignment on FFortModalContainerSizeEntry");
-static_assert(sizeof(FFortModalContainerSizeEntry) == 0x00001C, "Wrong size on FFortModalContainerSizeEntry");
-static_assert(offsetof(FFortModalContainerSizeEntry, AbsoluteWidth) == 0x000000, "Member 'FFortModalContainerSizeEntry::AbsoluteWidth' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, TopPercent) == 0x000004, "Member 'FFortModalContainerSizeEntry::TopPercent' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, MiddlePercent) == 0x000008, "Member 'FFortModalContainerSizeEntry::MiddlePercent' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, BottomPercent) == 0x00000C, "Member 'FFortModalContainerSizeEntry::BottomPercent' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, VerticalPadding) == 0x000010, "Member 'FFortModalContainerSizeEntry::VerticalPadding' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, HorizontalPadding) == 0x000014, "Member 'FFortModalContainerSizeEntry::HorizontalPadding' has a wrong offset!");
-static_assert(offsetof(FFortModalContainerSizeEntry, ContentPadding) == 0x000018, "Member 'FFortModalContainerSizeEntry::ContentPadding' has a wrong offset!");
+static_assert(alignof(FGiftingErrorText) == 0x000008, "Wrong alignment on FGiftingErrorText");
+static_assert(sizeof(FGiftingErrorText) == 0x000038, "Wrong size on FGiftingErrorText");
+static_assert(offsetof(FGiftingErrorText, GiftingError) == 0x000000, "Member 'FGiftingErrorText::GiftingError' has a wrong offset!");
+static_assert(offsetof(FGiftingErrorText, ErrorTitle) == 0x000008, "Member 'FGiftingErrorText::ErrorTitle' has a wrong offset!");
+static_assert(offsetof(FGiftingErrorText, ErrorDesc) == 0x000020, "Member 'FGiftingErrorText::ErrorDesc' has a wrong offset!");
 
 // ScriptStruct FortniteUI.ConsumedCriteriaData
 // 0x0018 (0x0018 - 0x0000)
@@ -2036,93 +2560,6 @@ static_assert(offsetof(FFortMissionDetails, AssociatedCloudSaveItemDefinition) =
 static_assert(offsetof(FFortMissionDetails, GameplayModifiers) == 0x000148, "Member 'FFortMissionDetails::GameplayModifiers' has a wrong offset!");
 static_assert(offsetof(FFortMissionDetails, Objectives) == 0x000158, "Member 'FFortMissionDetails::Objectives' has a wrong offset!");
 
-// ScriptStruct FortniteUI.ItemDefinitionChangedStruct
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FItemDefinitionChangedStruct final
-{
-public:
-	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0000(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FItemDefinitionChangedStruct) == 0x000008, "Wrong alignment on FItemDefinitionChangedStruct");
-static_assert(sizeof(FItemDefinitionChangedStruct) == 0x000010, "Wrong size on FItemDefinitionChangedStruct");
-static_assert(offsetof(FItemDefinitionChangedStruct, ChangeDelegate) == 0x000000, "Member 'FItemDefinitionChangedStruct::ChangeDelegate' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_DurabilityMeter_Configuration
-// 0x0014 (0x0014 - 0x0000)
-struct FFortItemCard_DurabilityMeter_Configuration final
-{
-public:
-	float                                         MeterThickness;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                MeterPadding;                                      // 0x0004(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_DurabilityMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_DurabilityMeter_Configuration");
-static_assert(sizeof(FFortItemCard_DurabilityMeter_Configuration) == 0x000014, "Wrong size on FFortItemCard_DurabilityMeter_Configuration");
-static_assert(offsetof(FFortItemCard_DurabilityMeter_Configuration, MeterThickness) == 0x000000, "Member 'FFortItemCard_DurabilityMeter_Configuration::MeterThickness' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_DurabilityMeter_Configuration, MeterPadding) == 0x000004, "Member 'FFortItemCard_DurabilityMeter_Configuration::MeterPadding' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_StackCountBlock_Configuration
-// 0x0030 (0x0030 - 0x0000)
-struct FFortItemCard_StackCountBlock_Configuration final
-{
-public:
-	bool                                          bShowShorthandStackCount;                          // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftClassPtr<class UClass>                   TextStyle;                                         // 0x0008(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortItemCard_StackCountBlock_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_StackCountBlock_Configuration");
-static_assert(sizeof(FFortItemCard_StackCountBlock_Configuration) == 0x000030, "Wrong size on FFortItemCard_StackCountBlock_Configuration");
-static_assert(offsetof(FFortItemCard_StackCountBlock_Configuration, bShowShorthandStackCount) == 0x000000, "Member 'FFortItemCard_StackCountBlock_Configuration::bShowShorthandStackCount' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_StackCountBlock_Configuration, TextStyle) == 0x000008, "Member 'FFortItemCard_StackCountBlock_Configuration::TextStyle' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_XS_ItemInstance_Configuration
-// 0x0188 (0x0188 - 0x0000)
-struct FFortItemCard_XS_ItemInstance_Configuration final
-{
-public:
-	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                PowerRatingBlockPadding;                           // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_PowerRatingBlock_ItemInstance_Configuration PowerRatingBlock;                                  // 0x0020(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FVector2D                              BookmarkImageSize;                                 // 0x0120(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                TraitBoxPadding;                                   // 0x0128(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              FirstTraitSize;                                    // 0x0138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemCard_StackCountBlock_Configuration StackCountBlock;                                   // 0x0140(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FFortItemCard_DurabilityMeter_Configuration DurabilityMeter;                                   // 0x0170(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortItemCard_XS_ItemInstance_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_XS_ItemInstance_Configuration");
-static_assert(sizeof(FFortItemCard_XS_ItemInstance_Configuration) == 0x000188, "Wrong size on FFortItemCard_XS_ItemInstance_Configuration");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_XS_ItemInstance_Configuration::BackgroundPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, PowerRatingBlockPadding) == 0x000010, "Member 'FFortItemCard_XS_ItemInstance_Configuration::PowerRatingBlockPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, PowerRatingBlock) == 0x000020, "Member 'FFortItemCard_XS_ItemInstance_Configuration::PowerRatingBlock' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, BookmarkImageSize) == 0x000120, "Member 'FFortItemCard_XS_ItemInstance_Configuration::BookmarkImageSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, TraitBoxPadding) == 0x000128, "Member 'FFortItemCard_XS_ItemInstance_Configuration::TraitBoxPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, FirstTraitSize) == 0x000138, "Member 'FFortItemCard_XS_ItemInstance_Configuration::FirstTraitSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, StackCountBlock) == 0x000140, "Member 'FFortItemCard_XS_ItemInstance_Configuration::StackCountBlock' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, DurabilityMeter) == 0x000170, "Member 'FFortItemCard_XS_ItemInstance_Configuration::DurabilityMeter' has a wrong offset!");
-
-// ScriptStruct FortniteUI.BuildingRequirements
-// 0x0028 (0x0028 - 0x0000)
-struct FBuildingRequirements final
-{
-public:
-	int32                                         RequiredAccountLevel;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurrentAccountLevel;                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAttributeRequirement>          AttributeRequirements;                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         RequiredPower;                                     // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurrentPower;                                      // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RequiredManufacturing;                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurrentManufacturing;                              // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FBuildingRequirements) == 0x000008, "Wrong alignment on FBuildingRequirements");
-static_assert(sizeof(FBuildingRequirements) == 0x000028, "Wrong size on FBuildingRequirements");
-static_assert(offsetof(FBuildingRequirements, RequiredAccountLevel) == 0x000000, "Member 'FBuildingRequirements::RequiredAccountLevel' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, CurrentAccountLevel) == 0x000004, "Member 'FBuildingRequirements::CurrentAccountLevel' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, AttributeRequirements) == 0x000008, "Member 'FBuildingRequirements::AttributeRequirements' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, RequiredPower) == 0x000018, "Member 'FBuildingRequirements::RequiredPower' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, CurrentPower) == 0x00001C, "Member 'FBuildingRequirements::CurrentPower' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, RequiredManufacturing) == 0x000020, "Member 'FBuildingRequirements::RequiredManufacturing' has a wrong offset!");
-static_assert(offsetof(FBuildingRequirements, CurrentManufacturing) == 0x000024, "Member 'FBuildingRequirements::CurrentManufacturing' has a wrong offset!");
-
 // ScriptStruct FortniteUI.HeroStat
 // 0x0020 (0x0020 - 0x0000)
 struct FHeroStat final
@@ -2139,20 +2576,46 @@ static_assert(offsetof(FHeroStat, DisplayName) == 0x000000, "Member 'FHeroStat::
 static_assert(offsetof(FHeroStat, Value) == 0x000018, "Member 'FHeroStat::Value' has a wrong offset!");
 static_assert(offsetof(FHeroStat, bIsCategory) == 0x00001C, "Member 'FHeroStat::bIsCategory' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortItemDelta
+// ScriptStruct FortniteUI.EmptyHeroSlot
 // 0x0010 (0x0010 - 0x0000)
-struct FFortItemDelta final
+struct FEmptyHeroSlot final
 {
 public:
-	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BaseAmount;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DeltaAmount;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortHeroType*                          Type;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumAvailable;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHasMale;                                          // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHasFemale;                                        // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFortItemDelta) == 0x000008, "Wrong alignment on FFortItemDelta");
-static_assert(sizeof(FFortItemDelta) == 0x000010, "Wrong size on FFortItemDelta");
-static_assert(offsetof(FFortItemDelta, ItemDefinition) == 0x000000, "Member 'FFortItemDelta::ItemDefinition' has a wrong offset!");
-static_assert(offsetof(FFortItemDelta, BaseAmount) == 0x000008, "Member 'FFortItemDelta::BaseAmount' has a wrong offset!");
-static_assert(offsetof(FFortItemDelta, DeltaAmount) == 0x00000C, "Member 'FFortItemDelta::DeltaAmount' has a wrong offset!");
+static_assert(alignof(FEmptyHeroSlot) == 0x000008, "Wrong alignment on FEmptyHeroSlot");
+static_assert(sizeof(FEmptyHeroSlot) == 0x000010, "Wrong size on FEmptyHeroSlot");
+static_assert(offsetof(FEmptyHeroSlot, Type) == 0x000000, "Member 'FEmptyHeroSlot::Type' has a wrong offset!");
+static_assert(offsetof(FEmptyHeroSlot, NumAvailable) == 0x000008, "Member 'FEmptyHeroSlot::NumAvailable' has a wrong offset!");
+static_assert(offsetof(FEmptyHeroSlot, bHasMale) == 0x00000C, "Member 'FEmptyHeroSlot::bHasMale' has a wrong offset!");
+static_assert(offsetof(FEmptyHeroSlot, bHasFemale) == 0x00000D, "Member 'FEmptyHeroSlot::bHasFemale' has a wrong offset!");
+
+// ScriptStruct FortniteUI.HeroUIData
+// 0x0020 (0x0020 - 0x0000)
+struct FHeroUIData final
+{
+public:
+	class UFortHero*                              Hero;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         XPRequirementForCurrentLevel;                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         XPRequirementForNextLevel;                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RequiredXPToLevelUp;                               // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsMaxHeroLevel;                                   // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FHeroUIData) == 0x000008, "Wrong alignment on FHeroUIData");
+static_assert(sizeof(FHeroUIData) == 0x000020, "Wrong size on FHeroUIData");
+static_assert(offsetof(FHeroUIData, Hero) == 0x000000, "Member 'FHeroUIData::Hero' has a wrong offset!");
+static_assert(offsetof(FHeroUIData, bIsSelected) == 0x000008, "Member 'FHeroUIData::bIsSelected' has a wrong offset!");
+static_assert(offsetof(FHeroUIData, XPRequirementForCurrentLevel) == 0x00000C, "Member 'FHeroUIData::XPRequirementForCurrentLevel' has a wrong offset!");
+static_assert(offsetof(FHeroUIData, XPRequirementForNextLevel) == 0x000010, "Member 'FHeroUIData::XPRequirementForNextLevel' has a wrong offset!");
+static_assert(offsetof(FHeroUIData, RequiredXPToLevelUp) == 0x000014, "Member 'FHeroUIData::RequiredXPToLevelUp' has a wrong offset!");
+static_assert(offsetof(FHeroUIData, bIsMaxHeroLevel) == 0x000018, "Member 'FHeroUIData::bIsMaxHeroLevel' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortBasicMissionInfo
 // 0x0388 (0x0388 - 0x0000)
@@ -2189,16 +2652,30 @@ static_assert(sizeof(FFortKillerVisualInfo) == 0x0000A0, "Wrong size on FFortKil
 static_assert(offsetof(FFortKillerVisualInfo, KillerBrush) == 0x000000, "Member 'FFortKillerVisualInfo::KillerBrush' has a wrong offset!");
 static_assert(offsetof(FFortKillerVisualInfo, KillerName) == 0x000088, "Member 'FFortKillerVisualInfo::KillerName' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortItemCard_DefenderWeaponTypeIcon_Configuration
-// 0x0008 (0x0008 - 0x0000)
-struct FFortItemCard_DefenderWeaponTypeIcon_Configuration final
+// ScriptStruct FortniteUI.ItemDefinitionChangedStruct
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FItemDefinitionChangedStruct final
 {
 public:
-	struct FVector2D                              IconConstraints;                                   // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                   ChangeDelegate;                                    // 0x0000(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFortItemCard_DefenderWeaponTypeIcon_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_DefenderWeaponTypeIcon_Configuration");
-static_assert(sizeof(FFortItemCard_DefenderWeaponTypeIcon_Configuration) == 0x000008, "Wrong size on FFortItemCard_DefenderWeaponTypeIcon_Configuration");
-static_assert(offsetof(FFortItemCard_DefenderWeaponTypeIcon_Configuration, IconConstraints) == 0x000000, "Member 'FFortItemCard_DefenderWeaponTypeIcon_Configuration::IconConstraints' has a wrong offset!");
+static_assert(alignof(FItemDefinitionChangedStruct) == 0x000008, "Wrong alignment on FItemDefinitionChangedStruct");
+static_assert(sizeof(FItemDefinitionChangedStruct) == 0x000010, "Wrong size on FItemDefinitionChangedStruct");
+static_assert(offsetof(FItemDefinitionChangedStruct, ChangeDelegate) == 0x000000, "Member 'FItemDefinitionChangedStruct::ChangeDelegate' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_StackCountBlock_Configuration
+// 0x0030 (0x0030 - 0x0000)
+struct FFortItemCard_StackCountBlock_Configuration final
+{
+public:
+	bool                                          bShowShorthandStackCount;                          // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftClassPtr<class UClass>                   TextStyle;                                         // 0x0008(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_StackCountBlock_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_StackCountBlock_Configuration");
+static_assert(sizeof(FFortItemCard_StackCountBlock_Configuration) == 0x000030, "Wrong size on FFortItemCard_StackCountBlock_Configuration");
+static_assert(offsetof(FFortItemCard_StackCountBlock_Configuration, bShowShorthandStackCount) == 0x000000, "Member 'FFortItemCard_StackCountBlock_Configuration::bShowShorthandStackCount' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_StackCountBlock_Configuration, TextStyle) == 0x000008, "Member 'FFortItemCard_StackCountBlock_Configuration::TextStyle' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_XXS_ItemInstance_Configuration
 // 0x0030 (0x0030 - 0x0000)
@@ -2210,6 +2687,21 @@ public:
 static_assert(alignof(FFortItemCard_XXS_ItemInstance_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_XXS_ItemInstance_Configuration");
 static_assert(sizeof(FFortItemCard_XXS_ItemInstance_Configuration) == 0x000030, "Wrong size on FFortItemCard_XXS_ItemInstance_Configuration");
 static_assert(offsetof(FFortItemCard_XXS_ItemInstance_Configuration, StackCountBlock) == 0x000000, "Member 'FFortItemCard_XXS_ItemInstance_Configuration::StackCountBlock' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_M_TransformKey_Configuration
+// 0x0048 (0x0048 - 0x0000)
+struct FFortItemCard_M_TransformKey_Configuration final
+{
+public:
+	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_StackCountBlock_Configuration StackCountBlock;                                   // 0x0010(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FVector2D                              TransformKeyIconSize;                              // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_M_TransformKey_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_M_TransformKey_Configuration");
+static_assert(sizeof(FFortItemCard_M_TransformKey_Configuration) == 0x000048, "Wrong size on FFortItemCard_M_TransformKey_Configuration");
+static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_M_TransformKey_Configuration::BackgroundPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, StackCountBlock) == 0x000010, "Member 'FFortItemCard_M_TransformKey_Configuration::StackCountBlock' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, TransformKeyIconSize) == 0x000040, "Member 'FFortItemCard_M_TransformKey_Configuration::TransformKeyIconSize' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_XS_TransformKey_Configuration
 // 0x0048 (0x0048 - 0x0000)
@@ -2226,35 +2718,44 @@ static_assert(offsetof(FFortItemCard_XS_TransformKey_Configuration, BackgroundPa
 static_assert(offsetof(FFortItemCard_XS_TransformKey_Configuration, StackCountBlock) == 0x000010, "Member 'FFortItemCard_XS_TransformKey_Configuration::StackCountBlock' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_XS_TransformKey_Configuration, TransformKeyIconSize) == 0x000040, "Member 'FFortItemCard_XS_TransformKey_Configuration::TransformKeyIconSize' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortItemCard_LevelMeter_Configuration
-// 0x0014 (0x0014 - 0x0000)
-struct FFortItemCard_LevelMeter_Configuration final
+// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_ItemInstance_Configuration
+// 0x00B0 (0x0100 - 0x0050)
+struct FFortItemCard_PowerRatingBlock_ItemInstance_Configuration final : public FFortItemCard_PowerRatingBlock_Configuration
 {
 public:
-	float                                         MeterThickness;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                MeterPadding;                                      // 0x0004(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PowerRatingIconBrush;                              // 0x0050(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   PowerRatingTextStyle;                              // 0x00D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFortItemCard_LevelMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_LevelMeter_Configuration");
-static_assert(sizeof(FFortItemCard_LevelMeter_Configuration) == 0x000014, "Wrong size on FFortItemCard_LevelMeter_Configuration");
-static_assert(offsetof(FFortItemCard_LevelMeter_Configuration, MeterThickness) == 0x000000, "Member 'FFortItemCard_LevelMeter_Configuration::MeterThickness' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_LevelMeter_Configuration, MeterPadding) == 0x000004, "Member 'FFortItemCard_LevelMeter_Configuration::MeterPadding' has a wrong offset!");
+static_assert(alignof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_ItemInstance_Configuration");
+static_assert(sizeof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration) == 0x000100, "Wrong size on FFortItemCard_PowerRatingBlock_ItemInstance_Configuration");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration, PowerRatingIconBrush) == 0x000050, "Member 'FFortItemCard_PowerRatingBlock_ItemInstance_Configuration::PowerRatingIconBrush' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_PowerRatingBlock_ItemInstance_Configuration, PowerRatingTextStyle) == 0x0000D8, "Member 'FFortItemCard_PowerRatingBlock_ItemInstance_Configuration::PowerRatingTextStyle' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration
-// 0x0160 (0x01B0 - 0x0050)
-struct FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration final : public FFortItemCard_PowerRatingBlock_Configuration
+// ScriptStruct FortniteUI.FortItemCard_XS_ItemInstance_Configuration
+// 0x0188 (0x0188 - 0x0000)
+struct FFortItemCard_XS_ItemInstance_Configuration final
 {
 public:
-	struct FSlateBrush                            PersonnelPowerRatingIconBrush;                     // 0x0050(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   PersonnelPowerRatingTextStyle;                     // 0x00D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SchematicPowerRatingIconBrush;                     // 0x0100(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   SchematicPowerRatingTextStyle;                     // 0x0188(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                PowerRatingBlockPadding;                           // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_PowerRatingBlock_ItemInstance_Configuration PowerRatingBlock;                                  // 0x0020(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FVector2D                              BookmarkImageSize;                                 // 0x0120(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                TraitBoxPadding;                                   // 0x0128(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              FirstTraitSize;                                    // 0x0138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortItemCard_StackCountBlock_Configuration StackCountBlock;                                   // 0x0140(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortItemCard_DurabilityMeter_Configuration DurabilityMeter;                                   // 0x0170(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration");
-static_assert(sizeof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration) == 0x0001B0, "Wrong size on FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, PersonnelPowerRatingIconBrush) == 0x000050, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::PersonnelPowerRatingIconBrush' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, PersonnelPowerRatingTextStyle) == 0x0000D8, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::PersonnelPowerRatingTextStyle' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, SchematicPowerRatingIconBrush) == 0x000100, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::SchematicPowerRatingIconBrush' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration, SchematicPowerRatingTextStyle) == 0x000188, "Member 'FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration::SchematicPowerRatingTextStyle' has a wrong offset!");
+static_assert(alignof(FFortItemCard_XS_ItemInstance_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_XS_ItemInstance_Configuration");
+static_assert(sizeof(FFortItemCard_XS_ItemInstance_Configuration) == 0x000188, "Wrong size on FFortItemCard_XS_ItemInstance_Configuration");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_XS_ItemInstance_Configuration::BackgroundPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, PowerRatingBlockPadding) == 0x000010, "Member 'FFortItemCard_XS_ItemInstance_Configuration::PowerRatingBlockPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, PowerRatingBlock) == 0x000020, "Member 'FFortItemCard_XS_ItemInstance_Configuration::PowerRatingBlock' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, BookmarkImageSize) == 0x000120, "Member 'FFortItemCard_XS_ItemInstance_Configuration::BookmarkImageSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, TraitBoxPadding) == 0x000128, "Member 'FFortItemCard_XS_ItemInstance_Configuration::TraitBoxPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, FirstTraitSize) == 0x000138, "Member 'FFortItemCard_XS_ItemInstance_Configuration::FirstTraitSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, StackCountBlock) == 0x000140, "Member 'FFortItemCard_XS_ItemInstance_Configuration::StackCountBlock' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_XS_ItemInstance_Configuration, DurabilityMeter) == 0x000170, "Member 'FFortItemCard_XS_ItemInstance_Configuration::DurabilityMeter' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_DetailAreaBorder_Configuration
 // 0x0014 (0x0014 - 0x0000)
@@ -2268,44 +2769,6 @@ static_assert(alignof(FFortItemCard_DetailAreaBorder_Configuration) == 0x000004,
 static_assert(sizeof(FFortItemCard_DetailAreaBorder_Configuration) == 0x000014, "Wrong size on FFortItemCard_DetailAreaBorder_Configuration");
 static_assert(offsetof(FFortItemCard_DetailAreaBorder_Configuration, MinimumHeight) == 0x000000, "Member 'FFortItemCard_DetailAreaBorder_Configuration::MinimumHeight' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_DetailAreaBorder_Configuration, Padding) == 0x000004, "Member 'FFortItemCard_DetailAreaBorder_Configuration::Padding' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortItemCard_L_PersonnelAndSchematics_Configuration
-// 0x02C8 (0x02C8 - 0x0000)
-struct FFortItemCard_L_PersonnelAndSchematics_Configuration final
-{
-public:
-	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration PowerRatingBlock;                                  // 0x0010(0x01B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FVector2D                              BookmarkImageSize;                                 // 0x01C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemCard_NameplateBorder_Configuration Nameplate;                                         // 0x01C8(0x0098)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FVector2D                              ClassIconSize;                                     // 0x0260(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              LeadSurvivorTypeIconSize;                          // 0x0268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              FirstIconSlotSize;                                 // 0x0270(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PaddingBetweenIconSlots;                           // 0x0278(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              SecondIconSlotSize;                                // 0x027C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemCard_DefenderWeaponTypeIcon_Configuration DefenderWeaponTypeIcon;                            // 0x0284(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_DetailAreaBorder_Configuration DetailAreaBorder;                                  // 0x028C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_LevelMeter_Configuration LevelMeter;                                        // 0x02A0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         TierMeterLeftPadding;                              // 0x02B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemCard_TierMeter_Configuration  TierMeter;                                         // 0x02B8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFortItemCard_L_PersonnelAndSchematics_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_L_PersonnelAndSchematics_Configuration");
-static_assert(sizeof(FFortItemCard_L_PersonnelAndSchematics_Configuration) == 0x0002C8, "Wrong size on FFortItemCard_L_PersonnelAndSchematics_Configuration");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::BackgroundPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, PowerRatingBlock) == 0x000010, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::PowerRatingBlock' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, BookmarkImageSize) == 0x0001C0, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::BookmarkImageSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, Nameplate) == 0x0001C8, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::Nameplate' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, ClassIconSize) == 0x000260, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::ClassIconSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, LeadSurvivorTypeIconSize) == 0x000268, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::LeadSurvivorTypeIconSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, FirstIconSlotSize) == 0x000270, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::FirstIconSlotSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, PaddingBetweenIconSlots) == 0x000278, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::PaddingBetweenIconSlots' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, SecondIconSlotSize) == 0x00027C, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::SecondIconSlotSize' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, DefenderWeaponTypeIcon) == 0x000284, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::DefenderWeaponTypeIcon' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, DetailAreaBorder) == 0x00028C, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::DetailAreaBorder' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, LevelMeter) == 0x0002A0, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::LevelMeter' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, TierMeterLeftPadding) == 0x0002B4, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::TierMeterLeftPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, TierMeter) == 0x0002B8, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::TierMeter' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_XS_PersonnelAndSchematics_Configuration
 // 0x0034 (0x0034 - 0x0000)
@@ -2339,30 +2802,6 @@ static_assert(offsetof(FFortItemCard_S_TransformKey_Configuration, BackgroundPad
 static_assert(offsetof(FFortItemCard_S_TransformKey_Configuration, StackCountBlock) == 0x000010, "Member 'FFortItemCard_S_TransformKey_Configuration::StackCountBlock' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_S_TransformKey_Configuration, TransformKeyIconSize) == 0x000040, "Member 'FFortItemCard_S_TransformKey_Configuration::TransformKeyIconSize' has a wrong offset!");
 
-// ScriptStruct FortniteUI.PlatformPrefixIcon
-// 0x0018 (0x0018 - 0x0000)
-struct FPlatformPrefixIcon final
-{
-public:
-	class FString                                 Platform;                                          // 0x0000(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PrefixIcon;                                        // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPlatformPrefixIcon) == 0x000008, "Wrong alignment on FPlatformPrefixIcon");
-static_assert(sizeof(FPlatformPrefixIcon) == 0x000018, "Wrong size on FPlatformPrefixIcon");
-static_assert(offsetof(FPlatformPrefixIcon, Platform) == 0x000000, "Member 'FPlatformPrefixIcon::Platform' has a wrong offset!");
-static_assert(offsetof(FPlatformPrefixIcon, PrefixIcon) == 0x000010, "Member 'FPlatformPrefixIcon::PrefixIcon' has a wrong offset!");
-
-// ScriptStruct FortniteUI.PlatformPrefixIconList
-// 0x0010 (0x0010 - 0x0000)
-struct FPlatformPrefixIconList final
-{
-public:
-	TArray<struct FPlatformPrefixIcon>            PlatformPrefixIcons;                               // 0x0000(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPlatformPrefixIconList) == 0x000008, "Wrong alignment on FPlatformPrefixIconList");
-static_assert(sizeof(FPlatformPrefixIconList) == 0x000010, "Wrong size on FPlatformPrefixIconList");
-static_assert(offsetof(FPlatformPrefixIconList, PlatformPrefixIcons) == 0x000000, "Member 'FPlatformPrefixIconList::PlatformPrefixIcons' has a wrong offset!");
-
 // ScriptStruct FortniteUI.FortItemCard_S_ItemInstance_Configuration
 // 0x01A0 (0x01A0 - 0x0000)
 struct FFortItemCard_S_ItemInstance_Configuration final
@@ -2391,6 +2830,43 @@ static_assert(offsetof(FFortItemCard_S_ItemInstance_Configuration, FirstTraitSiz
 static_assert(offsetof(FFortItemCard_S_ItemInstance_Configuration, TierMeterPadding) == 0x000170, "Member 'FFortItemCard_S_ItemInstance_Configuration::TierMeterPadding' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_S_ItemInstance_Configuration, TierMeter) == 0x000180, "Member 'FFortItemCard_S_ItemInstance_Configuration::TierMeter' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_S_ItemInstance_Configuration, DurabilityMeter) == 0x00018C, "Member 'FFortItemCard_S_ItemInstance_Configuration::DurabilityMeter' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_LevelMeter_Configuration
+// 0x0014 (0x0014 - 0x0000)
+struct FFortItemCard_LevelMeter_Configuration final
+{
+public:
+	float                                         MeterThickness;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                MeterPadding;                                      // 0x0004(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_LevelMeter_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_LevelMeter_Configuration");
+static_assert(sizeof(FFortItemCard_LevelMeter_Configuration) == 0x000014, "Wrong size on FFortItemCard_LevelMeter_Configuration");
+static_assert(offsetof(FFortItemCard_LevelMeter_Configuration, MeterThickness) == 0x000000, "Member 'FFortItemCard_LevelMeter_Configuration::MeterThickness' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_LevelMeter_Configuration, MeterPadding) == 0x000004, "Member 'FFortItemCard_LevelMeter_Configuration::MeterPadding' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_NameplateBorder_Configuration
+// 0x0098 (0x0098 - 0x0000)
+struct FFortItemCard_NameplateBorder_Configuration final
+{
+public:
+	struct FMargin                                Padding;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0010(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_NameplateBorder_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_NameplateBorder_Configuration");
+static_assert(sizeof(FFortItemCard_NameplateBorder_Configuration) == 0x000098, "Wrong size on FFortItemCard_NameplateBorder_Configuration");
+static_assert(offsetof(FFortItemCard_NameplateBorder_Configuration, Padding) == 0x000000, "Member 'FFortItemCard_NameplateBorder_Configuration::Padding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_NameplateBorder_Configuration, Brush) == 0x000010, "Member 'FFortItemCard_NameplateBorder_Configuration::Brush' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_DefenderWeaponTypeIcon_Configuration
+// 0x0008 (0x0008 - 0x0000)
+struct FFortItemCard_DefenderWeaponTypeIcon_Configuration final
+{
+public:
+	struct FVector2D                              IconConstraints;                                   // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortItemCard_DefenderWeaponTypeIcon_Configuration) == 0x000004, "Wrong alignment on FFortItemCard_DefenderWeaponTypeIcon_Configuration");
+static_assert(sizeof(FFortItemCard_DefenderWeaponTypeIcon_Configuration) == 0x000008, "Wrong size on FFortItemCard_DefenderWeaponTypeIcon_Configuration");
+static_assert(offsetof(FFortItemCard_DefenderWeaponTypeIcon_Configuration, IconConstraints) == 0x000000, "Member 'FFortItemCard_DefenderWeaponTypeIcon_Configuration::IconConstraints' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_S_PersonnelAndSchematics_Configuration
 // 0x02C8 (0x02C8 - 0x0000)
@@ -2430,20 +2906,16 @@ static_assert(offsetof(FFortItemCard_S_PersonnelAndSchematics_Configuration, Lev
 static_assert(offsetof(FFortItemCard_S_PersonnelAndSchematics_Configuration, TierMeterLeftPadding) == 0x0002B4, "Member 'FFortItemCard_S_PersonnelAndSchematics_Configuration::TierMeterLeftPadding' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_S_PersonnelAndSchematics_Configuration, TierMeter) == 0x0002B8, "Member 'FFortItemCard_S_PersonnelAndSchematics_Configuration::TierMeter' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortItemCard_M_TransformKey_Configuration
-// 0x0048 (0x0048 - 0x0000)
-struct FFortItemCard_M_TransformKey_Configuration final
+// ScriptStruct FortniteUI.FortSquadIconData
+// 0x0330 (0x0338 - 0x0008)
+struct FFortSquadIconData final : public FTableRowBase
 {
 public:
-	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_StackCountBlock_Configuration StackCountBlock;                                   // 0x0010(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FVector2D                              TransformKeyIconSize;                              // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    Brush;                                             // 0x0008(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFortItemCard_M_TransformKey_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_M_TransformKey_Configuration");
-static_assert(sizeof(FFortItemCard_M_TransformKey_Configuration) == 0x000048, "Wrong size on FFortItemCard_M_TransformKey_Configuration");
-static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_M_TransformKey_Configuration::BackgroundPadding' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, StackCountBlock) == 0x000010, "Member 'FFortItemCard_M_TransformKey_Configuration::StackCountBlock' has a wrong offset!");
-static_assert(offsetof(FFortItemCard_M_TransformKey_Configuration, TransformKeyIconSize) == 0x000040, "Member 'FFortItemCard_M_TransformKey_Configuration::TransformKeyIconSize' has a wrong offset!");
+static_assert(alignof(FFortSquadIconData) == 0x000008, "Wrong alignment on FFortSquadIconData");
+static_assert(sizeof(FFortSquadIconData) == 0x000338, "Wrong size on FFortSquadIconData");
+static_assert(offsetof(FFortSquadIconData, Brush) == 0x000008, "Member 'FFortSquadIconData::Brush' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_M_ItemInstance_Configuration
 // 0x01B0 (0x01B0 - 0x0000)
@@ -2532,17 +3004,6 @@ static_assert(offsetof(FFortItemCard_L_TransformKey_Configuration, BackgroundPad
 static_assert(offsetof(FFortItemCard_L_TransformKey_Configuration, StackCountBlock) == 0x000010, "Member 'FFortItemCard_L_TransformKey_Configuration::StackCountBlock' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_L_TransformKey_Configuration, TransformKeyIconSize) == 0x000040, "Member 'FFortItemCard_L_TransformKey_Configuration::TransformKeyIconSize' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortSquadIconData
-// 0x0330 (0x0338 - 0x0008)
-struct FFortSquadIconData final : public FTableRowBase
-{
-public:
-	struct FFortMultiSizeBrush                    Brush;                                             // 0x0008(0x0330)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortSquadIconData) == 0x000008, "Wrong alignment on FFortSquadIconData");
-static_assert(sizeof(FFortSquadIconData) == 0x000338, "Wrong size on FFortSquadIconData");
-static_assert(offsetof(FFortSquadIconData, Brush) == 0x000008, "Member 'FFortSquadIconData::Brush' has a wrong offset!");
-
 // ScriptStruct FortniteUI.FortItemCard_L_ItemInstance_Configuration
 // 0x01B0 (0x01B0 - 0x0000)
 struct FFortItemCard_L_ItemInstance_Configuration final
@@ -2576,6 +3037,44 @@ static_assert(offsetof(FFortItemCard_L_ItemInstance_Configuration, SecondTraitSi
 static_assert(offsetof(FFortItemCard_L_ItemInstance_Configuration, TierMeterPadding) == 0x00017C, "Member 'FFortItemCard_L_ItemInstance_Configuration::TierMeterPadding' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_L_ItemInstance_Configuration, TierMeter) == 0x00018C, "Member 'FFortItemCard_L_ItemInstance_Configuration::TierMeter' has a wrong offset!");
 static_assert(offsetof(FFortItemCard_L_ItemInstance_Configuration, DurabilityMeter) == 0x000198, "Member 'FFortItemCard_L_ItemInstance_Configuration::DurabilityMeter' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortItemCard_L_PersonnelAndSchematics_Configuration
+// 0x02C8 (0x02C8 - 0x0000)
+struct FFortItemCard_L_PersonnelAndSchematics_Configuration final
+{
+public:
+	struct FMargin                                BackgroundPadding;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_PowerRatingBlock_PersonnelAndSchematics_Configuration PowerRatingBlock;                                  // 0x0010(0x01B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FVector2D                              BookmarkImageSize;                                 // 0x01C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortItemCard_NameplateBorder_Configuration Nameplate;                                         // 0x01C8(0x0098)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FVector2D                              ClassIconSize;                                     // 0x0260(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LeadSurvivorTypeIconSize;                          // 0x0268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              FirstIconSlotSize;                                 // 0x0270(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PaddingBetweenIconSlots;                           // 0x0278(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              SecondIconSlotSize;                                // 0x027C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortItemCard_DefenderWeaponTypeIcon_Configuration DefenderWeaponTypeIcon;                            // 0x0284(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_DetailAreaBorder_Configuration DetailAreaBorder;                                  // 0x028C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_LevelMeter_Configuration LevelMeter;                                        // 0x02A0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         TierMeterLeftPadding;                              // 0x02B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortItemCard_TierMeter_Configuration  TierMeter;                                         // 0x02B8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortItemCard_L_PersonnelAndSchematics_Configuration) == 0x000008, "Wrong alignment on FFortItemCard_L_PersonnelAndSchematics_Configuration");
+static_assert(sizeof(FFortItemCard_L_PersonnelAndSchematics_Configuration) == 0x0002C8, "Wrong size on FFortItemCard_L_PersonnelAndSchematics_Configuration");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, BackgroundPadding) == 0x000000, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::BackgroundPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, PowerRatingBlock) == 0x000010, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::PowerRatingBlock' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, BookmarkImageSize) == 0x0001C0, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::BookmarkImageSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, Nameplate) == 0x0001C8, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::Nameplate' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, ClassIconSize) == 0x000260, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::ClassIconSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, LeadSurvivorTypeIconSize) == 0x000268, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::LeadSurvivorTypeIconSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, FirstIconSlotSize) == 0x000270, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::FirstIconSlotSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, PaddingBetweenIconSlots) == 0x000278, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::PaddingBetweenIconSlots' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, SecondIconSlotSize) == 0x00027C, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::SecondIconSlotSize' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, DefenderWeaponTypeIcon) == 0x000284, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::DefenderWeaponTypeIcon' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, DetailAreaBorder) == 0x00028C, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::DetailAreaBorder' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, LevelMeter) == 0x0002A0, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::LevelMeter' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, TierMeterLeftPadding) == 0x0002B4, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::TierMeterLeftPadding' has a wrong offset!");
+static_assert(offsetof(FFortItemCard_L_PersonnelAndSchematics_Configuration, TierMeter) == 0x0002B8, "Member 'FFortItemCard_L_PersonnelAndSchematics_Configuration::TierMeter' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortItemCard_XL_TransformKey_Configuration
 // 0x0048 (0x0048 - 0x0000)
@@ -2703,23 +3202,27 @@ static_assert(sizeof(FFortItemEntryPreviewData) == 0x000008, "Wrong size on FFor
 static_assert(offsetof(FFortItemEntryPreviewData, Quantity) == 0x000000, "Member 'FFortItemEntryPreviewData::Quantity' has a wrong offset!");
 static_assert(offsetof(FFortItemEntryPreviewData, InspectMode) == 0x000004, "Member 'FFortItemEntryPreviewData::InspectMode' has a wrong offset!");
 
-// ScriptStruct FortniteUI.FortReceivedItemLootInfo
-// 0x0028 (0x0028 - 0x0000)
-struct FFortReceivedItemLootInfo final
+// ScriptStruct FortniteUI.FortMaterialProgressBarSectionStyle
+// 0x0040 (0x0040 - 0x0000)
+struct alignas(0x08) FFortMaterialProgressBarSectionStyle final
 {
 public:
-	class UFortItemDefinition*                    ItemDef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 TemplateId;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFortItem*                              GeneratedItemInstance;                             // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bGradientBar;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   BarParamName;                                      // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BarColorOneParamName;                              // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BarColorTwoParamName;                              // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BarColorOne;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BarColorTwo;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFortReceivedItemLootInfo) == 0x000008, "Wrong alignment on FFortReceivedItemLootInfo");
-static_assert(sizeof(FFortReceivedItemLootInfo) == 0x000028, "Wrong size on FFortReceivedItemLootInfo");
-static_assert(offsetof(FFortReceivedItemLootInfo, ItemDef) == 0x000000, "Member 'FFortReceivedItemLootInfo::ItemDef' has a wrong offset!");
-static_assert(offsetof(FFortReceivedItemLootInfo, Quantity) == 0x000008, "Member 'FFortReceivedItemLootInfo::Quantity' has a wrong offset!");
-static_assert(offsetof(FFortReceivedItemLootInfo, TemplateId) == 0x000010, "Member 'FFortReceivedItemLootInfo::TemplateId' has a wrong offset!");
-static_assert(offsetof(FFortReceivedItemLootInfo, GeneratedItemInstance) == 0x000020, "Member 'FFortReceivedItemLootInfo::GeneratedItemInstance' has a wrong offset!");
+static_assert(alignof(FFortMaterialProgressBarSectionStyle) == 0x000008, "Wrong alignment on FFortMaterialProgressBarSectionStyle");
+static_assert(sizeof(FFortMaterialProgressBarSectionStyle) == 0x000040, "Wrong size on FFortMaterialProgressBarSectionStyle");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, bGradientBar) == 0x000000, "Member 'FFortMaterialProgressBarSectionStyle::bGradientBar' has a wrong offset!");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarParamName) == 0x000008, "Member 'FFortMaterialProgressBarSectionStyle::BarParamName' has a wrong offset!");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorOneParamName) == 0x000010, "Member 'FFortMaterialProgressBarSectionStyle::BarColorOneParamName' has a wrong offset!");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorTwoParamName) == 0x000018, "Member 'FFortMaterialProgressBarSectionStyle::BarColorTwoParamName' has a wrong offset!");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorOne) == 0x000020, "Member 'FFortMaterialProgressBarSectionStyle::BarColorOne' has a wrong offset!");
+static_assert(offsetof(FFortMaterialProgressBarSectionStyle, BarColorTwo) == 0x000030, "Member 'FFortMaterialProgressBarSectionStyle::BarColorTwo' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortMaterialProgressBarSectionInfo
 // 0x0048 (0x0048 - 0x0000)
@@ -2796,6 +3299,37 @@ static_assert(offsetof(FFortCanvasProperties, ConnectorNonPurchasableColor) == 0
 static_assert(offsetof(FFortCanvasProperties, ConnectorTowardsSelectedColor) == 0x000058, "Member 'FFortCanvasProperties::ConnectorTowardsSelectedColor' has a wrong offset!");
 static_assert(offsetof(FFortCanvasProperties, BackgroundMaterial) == 0x000068, "Member 'FFortCanvasProperties::BackgroundMaterial' has a wrong offset!");
 
+// ScriptStruct FortniteUI.FortToastDisplayInfo
+// 0x0060 (0x0060 - 0x0000)
+struct FFortToastDisplayInfo final
+{
+public:
+	class FText                                   Header;                                            // 0x0000(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Body;                                              // 0x0018(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              Image;                                             // 0x0030(0x0028)(BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortToastType                                Type;                                              // 0x0058(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FFortToastDisplayInfo) == 0x000008, "Wrong alignment on FFortToastDisplayInfo");
+static_assert(sizeof(FFortToastDisplayInfo) == 0x000060, "Wrong size on FFortToastDisplayInfo");
+static_assert(offsetof(FFortToastDisplayInfo, Header) == 0x000000, "Member 'FFortToastDisplayInfo::Header' has a wrong offset!");
+static_assert(offsetof(FFortToastDisplayInfo, Body) == 0x000018, "Member 'FFortToastDisplayInfo::Body' has a wrong offset!");
+static_assert(offsetof(FFortToastDisplayInfo, Image) == 0x000030, "Member 'FFortToastDisplayInfo::Image' has a wrong offset!");
+static_assert(offsetof(FFortToastDisplayInfo, Type) == 0x000058, "Member 'FFortToastDisplayInfo::Type' has a wrong offset!");
+
+// ScriptStruct FortniteUI.StoreCallout
+// 0x0078 (0x0078 - 0x0000)
+struct FStoreCallout final
+{
+public:
+	struct FFortToastDisplayInfo                  ToastDisplayInfo;                                  // 0x0000(0x0060)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   ItemName;                                          // 0x0060(0x0018)(NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FStoreCallout) == 0x000008, "Wrong alignment on FStoreCallout");
+static_assert(sizeof(FStoreCallout) == 0x000078, "Wrong size on FStoreCallout");
+static_assert(offsetof(FStoreCallout, ToastDisplayInfo) == 0x000000, "Member 'FStoreCallout::ToastDisplayInfo' has a wrong offset!");
+static_assert(offsetof(FStoreCallout, ItemName) == 0x000060, "Member 'FStoreCallout::ItemName' has a wrong offset!");
+
 // ScriptStruct FortniteUI.FortUINodePrerequisite
 // 0x06B0 (0x06B0 - 0x0000)
 struct FFortUINodePrerequisite final
@@ -2818,6 +3352,116 @@ static_assert(offsetof(FFortUINodePrerequisite, bIsNodePage) == 0x000688, "Membe
 static_assert(offsetof(FFortUINodePrerequisite, MinRequiredNodesInPage) == 0x00068C, "Member 'FFortUINodePrerequisite::MinRequiredNodesInPage' has a wrong offset!");
 static_assert(offsetof(FFortUINodePrerequisite, OwnedNodesInPage) == 0x000690, "Member 'FFortUINodePrerequisite::OwnedNodesInPage' has a wrong offset!");
 static_assert(offsetof(FFortUINodePrerequisite, NodeType) == 0x000698, "Member 'FFortUINodePrerequisite::NodeType' has a wrong offset!");
+
+// ScriptStruct FortniteUI.PlatformOverrides
+// 0x0038 (0x0038 - 0x0000)
+struct FPlatformOverrides final
+{
+public:
+	bool                                          DisplayOnPlatform;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   PlatformDisplayText;                               // 0x0008(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   PlatformHoverText;                                 // 0x0020(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FPlatformOverrides) == 0x000008, "Wrong alignment on FPlatformOverrides");
+static_assert(sizeof(FPlatformOverrides) == 0x000038, "Wrong size on FPlatformOverrides");
+static_assert(offsetof(FPlatformOverrides, DisplayOnPlatform) == 0x000000, "Member 'FPlatformOverrides::DisplayOnPlatform' has a wrong offset!");
+static_assert(offsetof(FPlatformOverrides, PlatformDisplayText) == 0x000008, "Member 'FPlatformOverrides::PlatformDisplayText' has a wrong offset!");
+static_assert(offsetof(FPlatformOverrides, PlatformHoverText) == 0x000020, "Member 'FPlatformOverrides::PlatformHoverText' has a wrong offset!");
+
+// ScriptStruct FortniteUI.SliderSettings
+// 0x001C (0x001C - 0x0000)
+struct FSliderSettings final
+{
+public:
+	int32                                         MinIntegralDigits;                                 // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxIntegralDigits;                                 // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinFractionalDigits;                               // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxFractionalDigits;                               // 0x000C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSensitivityValue;                               // 0x0010(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxSensitivityValue;                               // 0x0014(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERoundingMode                                 RoundingMode;                                      // 0x0018(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FSliderSettings) == 0x000004, "Wrong alignment on FSliderSettings");
+static_assert(sizeof(FSliderSettings) == 0x00001C, "Wrong size on FSliderSettings");
+static_assert(offsetof(FSliderSettings, MinIntegralDigits) == 0x000000, "Member 'FSliderSettings::MinIntegralDigits' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, MaxIntegralDigits) == 0x000004, "Member 'FSliderSettings::MaxIntegralDigits' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, MinFractionalDigits) == 0x000008, "Member 'FSliderSettings::MinFractionalDigits' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, MaxFractionalDigits) == 0x00000C, "Member 'FSliderSettings::MaxFractionalDigits' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, MinSensitivityValue) == 0x000010, "Member 'FSliderSettings::MinSensitivityValue' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, MaxSensitivityValue) == 0x000014, "Member 'FSliderSettings::MaxSensitivityValue' has a wrong offset!");
+static_assert(offsetof(FSliderSettings, RoundingMode) == 0x000018, "Member 'FSliderSettings::RoundingMode' has a wrong offset!");
+
+// ScriptStruct FortniteUI.SettingData
+// 0x0188 (0x0188 - 0x0000)
+struct FSettingData final
+{
+public:
+	ESettingType                                  SettingType;                                       // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UFortOptionsMenuSetting>    SettingWidgetType;                                 // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   DisplayText;                                       // 0x0010(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   HoverText;                                         // 0x0028(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPlatformOverrides                     PlatformPCOverrides;                               // 0x0040(0x0038)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPlatformOverrides                     PlatformXboxOverrides;                             // 0x0078(0x0038)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPlatformOverrides                     PlatformPS4Overrides;                              // 0x00B0(0x0038)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPlatformOverrides                     PlatformSwitchOverrides;                           // 0x00E8(0x0038)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPlatformOverrides                     PlatformMobileOverrides;                           // 0x0120(0x0038)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<ESubGame>                              HiddenModes;                                       // 0x0158(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FSliderSettings                        SliderSettings;                                    // 0x0168(0x001C)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FSettingData) == 0x000008, "Wrong alignment on FSettingData");
+static_assert(sizeof(FSettingData) == 0x000188, "Wrong size on FSettingData");
+static_assert(offsetof(FSettingData, SettingType) == 0x000000, "Member 'FSettingData::SettingType' has a wrong offset!");
+static_assert(offsetof(FSettingData, SettingWidgetType) == 0x000008, "Member 'FSettingData::SettingWidgetType' has a wrong offset!");
+static_assert(offsetof(FSettingData, DisplayText) == 0x000010, "Member 'FSettingData::DisplayText' has a wrong offset!");
+static_assert(offsetof(FSettingData, HoverText) == 0x000028, "Member 'FSettingData::HoverText' has a wrong offset!");
+static_assert(offsetof(FSettingData, PlatformPCOverrides) == 0x000040, "Member 'FSettingData::PlatformPCOverrides' has a wrong offset!");
+static_assert(offsetof(FSettingData, PlatformXboxOverrides) == 0x000078, "Member 'FSettingData::PlatformXboxOverrides' has a wrong offset!");
+static_assert(offsetof(FSettingData, PlatformPS4Overrides) == 0x0000B0, "Member 'FSettingData::PlatformPS4Overrides' has a wrong offset!");
+static_assert(offsetof(FSettingData, PlatformSwitchOverrides) == 0x0000E8, "Member 'FSettingData::PlatformSwitchOverrides' has a wrong offset!");
+static_assert(offsetof(FSettingData, PlatformMobileOverrides) == 0x000120, "Member 'FSettingData::PlatformMobileOverrides' has a wrong offset!");
+static_assert(offsetof(FSettingData, HiddenModes) == 0x000158, "Member 'FSettingData::HiddenModes' has a wrong offset!");
+static_assert(offsetof(FSettingData, SliderSettings) == 0x000168, "Member 'FSettingData::SliderSettings' has a wrong offset!");
+
+// ScriptStruct FortniteUI.OptionsTabData
+// 0x0010 (0x0010 - 0x0000)
+struct FOptionsTabData final
+{
+public:
+	TArray<struct FSettingData>                   SettingDatas;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FOptionsTabData) == 0x000008, "Wrong alignment on FOptionsTabData");
+static_assert(sizeof(FOptionsTabData) == 0x000010, "Wrong size on FOptionsTabData");
+static_assert(offsetof(FOptionsTabData, SettingDatas) == 0x000000, "Member 'FOptionsTabData::SettingDatas' has a wrong offset!");
+
+// ScriptStruct FortniteUI.RadialOptionData
+// 0x00C8 (0x00C8 - 0x0000)
+struct FRadialOptionData
+{
+public:
+	class FText                                   Label;                                             // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0018(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              SoftIcon;                                          // 0x00A0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FRadialOptionData) == 0x000008, "Wrong alignment on FRadialOptionData");
+static_assert(sizeof(FRadialOptionData) == 0x0000C8, "Wrong size on FRadialOptionData");
+static_assert(offsetof(FRadialOptionData, Label) == 0x000000, "Member 'FRadialOptionData::Label' has a wrong offset!");
+static_assert(offsetof(FRadialOptionData, Brush) == 0x000018, "Member 'FRadialOptionData::Brush' has a wrong offset!");
+static_assert(offsetof(FRadialOptionData, SoftIcon) == 0x0000A0, "Member 'FRadialOptionData::SoftIcon' has a wrong offset!");
+
+// ScriptStruct FortniteUI.MapNoteOptionData
+// 0x0018 (0x00E0 - 0x00C8)
+struct FMapNoteOptionData final : public FRadialOptionData
+{
+public:
+	class FText                                   MapNoteText;                                       // 0x00C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMapNoteOptionData) == 0x000008, "Wrong alignment on FMapNoteOptionData");
+static_assert(sizeof(FMapNoteOptionData) == 0x0000E0, "Wrong size on FMapNoteOptionData");
+static_assert(offsetof(FMapNoteOptionData, MapNoteText) == 0x0000C8, "Member 'FMapNoteOptionData::MapNoteText' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortUIPerk
 // 0x0098 (0x0098 - 0x0000)
@@ -2866,103 +3510,115 @@ static_assert(offsetof(FFortUIPerkTier, CurrentHero) == 0x000010, "Member 'FFort
 static_assert(offsetof(FFortUIPerkTier, bIsUpgrade) == 0x000018, "Member 'FFortUIPerkTier::bIsUpgrade' has a wrong offset!");
 static_assert(offsetof(FFortUIPerkTier, bIsEvolution) == 0x000019, "Member 'FFortUIPerkTier::bIsEvolution' has a wrong offset!");
 
+// ScriptStruct FortniteUI.FortPickerTemporaryWheel
+// 0x0030 (0x0030 - 0x0000)
+struct FFortPickerTemporaryWheel final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortItemDefinition*>            Items;                                             // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortPickerTemporaryWheel) == 0x000008, "Wrong alignment on FFortPickerTemporaryWheel");
+static_assert(sizeof(FFortPickerTemporaryWheel) == 0x000030, "Wrong size on FFortPickerTemporaryWheel");
+static_assert(offsetof(FFortPickerTemporaryWheel, Items) == 0x000020, "Member 'FFortPickerTemporaryWheel::Items' has a wrong offset!");
+
 // ScriptStruct FortniteUI.SquadQuickChatOptionData
-// 0x0020 (0x00C0 - 0x00A0)
+// 0x0018 (0x00E0 - 0x00C8)
 struct FSquadQuickChatOptionData final : public FRadialOptionData
 {
 public:
-	struct FAthenaQuickChatActiveEntry            ChatEntry;                                         // 0x00A0(0x0018)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bEnabled;                                          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FAthenaQuickChatActiveEntry            ChatEntry;                                         // 0x00C8(0x0014)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bEnabled;                                          // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSquadQuickChatOptionData) == 0x000008, "Wrong alignment on FSquadQuickChatOptionData");
-static_assert(sizeof(FSquadQuickChatOptionData) == 0x0000C0, "Wrong size on FSquadQuickChatOptionData");
-static_assert(offsetof(FSquadQuickChatOptionData, ChatEntry) == 0x0000A0, "Member 'FSquadQuickChatOptionData::ChatEntry' has a wrong offset!");
-static_assert(offsetof(FSquadQuickChatOptionData, bEnabled) == 0x0000B8, "Member 'FSquadQuickChatOptionData::bEnabled' has a wrong offset!");
+static_assert(sizeof(FSquadQuickChatOptionData) == 0x0000E0, "Wrong size on FSquadQuickChatOptionData");
+static_assert(offsetof(FSquadQuickChatOptionData, ChatEntry) == 0x0000C8, "Member 'FSquadQuickChatOptionData::ChatEntry' has a wrong offset!");
+static_assert(offsetof(FSquadQuickChatOptionData, bEnabled) == 0x0000DC, "Member 'FSquadQuickChatOptionData::bEnabled' has a wrong offset!");
+
+// ScriptStruct FortniteUI.ItemDefOptionData
+// 0x0008 (0x00D0 - 0x00C8)
+struct FItemDefOptionData final : public FRadialOptionData
+{
+public:
+	class UObject*                                ItemDef;                                           // 0x00C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FItemDefOptionData) == 0x000008, "Wrong alignment on FItemDefOptionData");
+static_assert(sizeof(FItemDefOptionData) == 0x0000D0, "Wrong size on FItemDefOptionData");
+static_assert(offsetof(FItemDefOptionData, ItemDef) == 0x0000C8, "Member 'FItemDefOptionData::ItemDef' has a wrong offset!");
 
 // ScriptStruct FortniteUI.EmoteOptionData
-// 0x0008 (0x00A8 - 0x00A0)
+// 0x0008 (0x00D0 - 0x00C8)
 struct FEmoteOptionData final : public FRadialOptionData
 {
 public:
-	class FName                                   EmoteCommand;                                      // 0x00A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   EmoteCommand;                                      // 0x00C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FEmoteOptionData) == 0x000008, "Wrong alignment on FEmoteOptionData");
-static_assert(sizeof(FEmoteOptionData) == 0x0000A8, "Wrong size on FEmoteOptionData");
-static_assert(offsetof(FEmoteOptionData, EmoteCommand) == 0x0000A0, "Member 'FEmoteOptionData::EmoteCommand' has a wrong offset!");
-
-// ScriptStruct FortniteUI.MapNoteOptionData
-// 0x0018 (0x00B8 - 0x00A0)
-struct FMapNoteOptionData final : public FRadialOptionData
-{
-public:
-	class FText                                   MapNoteText;                                       // 0x00A0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMapNoteOptionData) == 0x000008, "Wrong alignment on FMapNoteOptionData");
-static_assert(sizeof(FMapNoteOptionData) == 0x0000B8, "Wrong size on FMapNoteOptionData");
-static_assert(offsetof(FMapNoteOptionData, MapNoteText) == 0x0000A0, "Member 'FMapNoteOptionData::MapNoteText' has a wrong offset!");
+static_assert(sizeof(FEmoteOptionData) == 0x0000D0, "Wrong size on FEmoteOptionData");
+static_assert(offsetof(FEmoteOptionData, EmoteCommand) == 0x0000C8, "Member 'FEmoteOptionData::EmoteCommand' has a wrong offset!");
 
 // ScriptStruct FortniteUI.SquadChatOptionData
-// 0x0018 (0x00B8 - 0x00A0)
+// 0x0018 (0x00E0 - 0x00C8)
 struct FSquadChatOptionData final : public FRadialOptionData
 {
 public:
-	class FText                                   ChatText;                                          // 0x00A0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   ChatText;                                          // 0x00C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSquadChatOptionData) == 0x000008, "Wrong alignment on FSquadChatOptionData");
-static_assert(sizeof(FSquadChatOptionData) == 0x0000B8, "Wrong size on FSquadChatOptionData");
-static_assert(offsetof(FSquadChatOptionData, ChatText) == 0x0000A0, "Member 'FSquadChatOptionData::ChatText' has a wrong offset!");
+static_assert(sizeof(FSquadChatOptionData) == 0x0000E0, "Wrong size on FSquadChatOptionData");
+static_assert(offsetof(FSquadChatOptionData, ChatText) == 0x0000C8, "Member 'FSquadChatOptionData::ChatText' has a wrong offset!");
 
 // ScriptStruct FortniteUI.ChatOptionData
-// 0x0018 (0x00B8 - 0x00A0)
+// 0x0018 (0x00E0 - 0x00C8)
 struct FChatOptionData final : public FRadialOptionData
 {
 public:
-	class FText                                   ChatText;                                          // 0x00A0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   ChatText;                                          // 0x00C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FChatOptionData) == 0x000008, "Wrong alignment on FChatOptionData");
-static_assert(sizeof(FChatOptionData) == 0x0000B8, "Wrong size on FChatOptionData");
-static_assert(offsetof(FChatOptionData, ChatText) == 0x0000A0, "Member 'FChatOptionData::ChatText' has a wrong offset!");
+static_assert(sizeof(FChatOptionData) == 0x0000E0, "Wrong size on FChatOptionData");
+static_assert(offsetof(FChatOptionData, ChatText) == 0x0000C8, "Member 'FChatOptionData::ChatText' has a wrong offset!");
 
 // ScriptStruct FortniteUI.ItemCategoryOptionData
-// 0x0018 (0x00B8 - 0x00A0)
+// 0x0018 (0x00E0 - 0x00C8)
 struct FItemCategoryOptionData final : public FRadialOptionData
 {
 public:
-	class FString                                 TemplatePrefix;                                    // 0x00A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EBuildingAttachmentType                       BuildingAttachmentType;                            // 0x00B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 TemplatePrefix;                                    // 0x00C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EBuildingAttachmentType                       BuildingAttachmentType;                            // 0x00D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FItemCategoryOptionData) == 0x000008, "Wrong alignment on FItemCategoryOptionData");
-static_assert(sizeof(FItemCategoryOptionData) == 0x0000B8, "Wrong size on FItemCategoryOptionData");
-static_assert(offsetof(FItemCategoryOptionData, TemplatePrefix) == 0x0000A0, "Member 'FItemCategoryOptionData::TemplatePrefix' has a wrong offset!");
-static_assert(offsetof(FItemCategoryOptionData, BuildingAttachmentType) == 0x0000B0, "Member 'FItemCategoryOptionData::BuildingAttachmentType' has a wrong offset!");
+static_assert(sizeof(FItemCategoryOptionData) == 0x0000E0, "Wrong size on FItemCategoryOptionData");
+static_assert(offsetof(FItemCategoryOptionData, TemplatePrefix) == 0x0000C8, "Member 'FItemCategoryOptionData::TemplatePrefix' has a wrong offset!");
+static_assert(offsetof(FItemCategoryOptionData, BuildingAttachmentType) == 0x0000D8, "Member 'FItemCategoryOptionData::BuildingAttachmentType' has a wrong offset!");
 
 // ScriptStruct FortniteUI.BuildingOptionData
-// 0x0018 (0x00B8 - 0x00A0)
+// 0x0018 (0x00E0 - 0x00C8)
 struct FBuildingOptionData final : public FRadialOptionData
 {
 public:
-	class FString                                 ClassSuffix;                                       // 0x00A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ClassMirrored;                                     // 0x00B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 ClassSuffix;                                       // 0x00C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ClassMirrored;                                     // 0x00D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBuildingOptionData) == 0x000008, "Wrong alignment on FBuildingOptionData");
-static_assert(sizeof(FBuildingOptionData) == 0x0000B8, "Wrong size on FBuildingOptionData");
-static_assert(offsetof(FBuildingOptionData, ClassSuffix) == 0x0000A0, "Member 'FBuildingOptionData::ClassSuffix' has a wrong offset!");
-static_assert(offsetof(FBuildingOptionData, ClassMirrored) == 0x0000B0, "Member 'FBuildingOptionData::ClassMirrored' has a wrong offset!");
+static_assert(sizeof(FBuildingOptionData) == 0x0000E0, "Wrong size on FBuildingOptionData");
+static_assert(offsetof(FBuildingOptionData, ClassSuffix) == 0x0000C8, "Member 'FBuildingOptionData::ClassSuffix' has a wrong offset!");
+static_assert(offsetof(FBuildingOptionData, ClassMirrored) == 0x0000D8, "Member 'FBuildingOptionData::ClassMirrored' has a wrong offset!");
 
 // ScriptStruct FortniteUI.BuildingCategoryOptionData
-// 0x0008 (0x00A8 - 0x00A0)
+// 0x0008 (0x00D0 - 0x00C8)
 struct FBuildingCategoryOptionData final : public FRadialOptionData
 {
 public:
-	EFortBuildingType                             BuildingType;                                      // 0x00A0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EFortBuildingType                             BuildingType;                                      // 0x00C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBuildingCategoryOptionData) == 0x000008, "Wrong alignment on FBuildingCategoryOptionData");
-static_assert(sizeof(FBuildingCategoryOptionData) == 0x0000A8, "Wrong size on FBuildingCategoryOptionData");
-static_assert(offsetof(FBuildingCategoryOptionData, BuildingType) == 0x0000A0, "Member 'FBuildingCategoryOptionData::BuildingType' has a wrong offset!");
+static_assert(sizeof(FBuildingCategoryOptionData) == 0x0000D0, "Wrong size on FBuildingCategoryOptionData");
+static_assert(offsetof(FBuildingCategoryOptionData, BuildingType) == 0x0000C8, "Member 'FBuildingCategoryOptionData::BuildingType' has a wrong offset!");
 
 // ScriptStruct FortniteUI.PlatformSupportDesc
 // 0x0020 (0x0020 - 0x0000)
@@ -3021,6 +3677,22 @@ static_assert(alignof(FFortSkillTreeNodeDisplayData) == 0x000008, "Wrong alignme
 static_assert(sizeof(FFortSkillTreeNodeDisplayData) == 0x000338, "Wrong size on FFortSkillTreeNodeDisplayData");
 static_assert(offsetof(FFortSkillTreeNodeDisplayData, Icon) == 0x000000, "Member 'FFortSkillTreeNodeDisplayData::Icon' has a wrong offset!");
 static_assert(offsetof(FFortSkillTreeNodeDisplayData, PreviewVideoMediaSource) == 0x000330, "Member 'FFortSkillTreeNodeDisplayData::PreviewVideoMediaSource' has a wrong offset!");
+
+// ScriptStruct FortniteUI.PotentialSpectatorTarget
+// 0x0010 (0x0010 - 0x0000)
+struct FPotentialSpectatorTarget final
+{
+public:
+	int32                                         Rank;                                              // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class AFortPlayerStateAthena>  PlayerState;                                       // 0x0004(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCurrentViewTarget;                                // 0x000C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FPotentialSpectatorTarget) == 0x000004, "Wrong alignment on FPotentialSpectatorTarget");
+static_assert(sizeof(FPotentialSpectatorTarget) == 0x000010, "Wrong size on FPotentialSpectatorTarget");
+static_assert(offsetof(FPotentialSpectatorTarget, Rank) == 0x000000, "Member 'FPotentialSpectatorTarget::Rank' has a wrong offset!");
+static_assert(offsetof(FPotentialSpectatorTarget, PlayerState) == 0x000004, "Member 'FPotentialSpectatorTarget::PlayerState' has a wrong offset!");
+static_assert(offsetof(FPotentialSpectatorTarget, bCurrentViewTarget) == 0x00000C, "Member 'FPotentialSpectatorTarget::bCurrentViewTarget' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortLandingPageDefenderSummaryInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -3098,7 +3770,7 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   SaleText;                                          // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int32                                         Price;                                             // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RegularPrice;                                      // 0x0054(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAccountItemDefinition*             CurrencyType;                                      // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         QuantityRemaining;                                 // 0x0060(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTimedOffer;                                       // 0x0064(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3114,6 +3786,7 @@ static_assert(offsetof(FCardPackOffer, MtxPrice) == 0x000030, "Member 'FCardPack
 static_assert(offsetof(FCardPackOffer, SaleType) == 0x000034, "Member 'FCardPackOffer::SaleType' has a wrong offset!");
 static_assert(offsetof(FCardPackOffer, SaleText) == 0x000038, "Member 'FCardPackOffer::SaleText' has a wrong offset!");
 static_assert(offsetof(FCardPackOffer, Price) == 0x000050, "Member 'FCardPackOffer::Price' has a wrong offset!");
+static_assert(offsetof(FCardPackOffer, RegularPrice) == 0x000054, "Member 'FCardPackOffer::RegularPrice' has a wrong offset!");
 static_assert(offsetof(FCardPackOffer, CurrencyType) == 0x000058, "Member 'FCardPackOffer::CurrencyType' has a wrong offset!");
 static_assert(offsetof(FCardPackOffer, QuantityRemaining) == 0x000060, "Member 'FCardPackOffer::QuantityRemaining' has a wrong offset!");
 static_assert(offsetof(FCardPackOffer, bTimedOffer) == 0x000064, "Member 'FCardPackOffer::bTimedOffer' has a wrong offset!");
@@ -3159,6 +3832,30 @@ static_assert(offsetof(FFortSurvivorSquadSelectorButtonPersonalityMatches, Total
 static_assert(offsetof(FFortSurvivorSquadSelectorButtonPersonalityMatches, HavePersonalityIcons) == 0x000008, "Member 'FFortSurvivorSquadSelectorButtonPersonalityMatches::HavePersonalityIcons' has a wrong offset!");
 static_assert(offsetof(FFortSurvivorSquadSelectorButtonPersonalityMatches, PersonalityIcons) == 0x000010, "Member 'FFortSurvivorSquadSelectorButtonPersonalityMatches::PersonalityIcons' has a wrong offset!");
 
+// ScriptStruct FortniteUI.FortSurvivorSquadSelectorButtonSummaryStats
+// 0x0070 (0x0070 - 0x0000)
+struct FFortSurvivorSquadSelectorButtonSummaryStats final
+{
+public:
+	class FName                                   SquadId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     FortAttribute;                                     // 0x0008(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FortAttributeValue;                                // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     FortTeamAttribute;                                 // 0x0030(0x0020)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamFortAttributeValue;                            // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SquadPowerValue;                                   // 0x0054(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   FortAttributeName;                                 // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortSurvivorSquadSelectorButtonSummaryStats) == 0x000008, "Wrong alignment on FFortSurvivorSquadSelectorButtonSummaryStats");
+static_assert(sizeof(FFortSurvivorSquadSelectorButtonSummaryStats) == 0x000070, "Wrong size on FFortSurvivorSquadSelectorButtonSummaryStats");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, SquadId) == 0x000000, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::SquadId' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttribute) == 0x000008, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttribute' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttributeValue) == 0x000028, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttributeValue' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortTeamAttribute) == 0x000030, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortTeamAttribute' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, TeamFortAttributeValue) == 0x000050, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::TeamFortAttributeValue' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, SquadPowerValue) == 0x000054, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::SquadPowerValue' has a wrong offset!");
+static_assert(offsetof(FFortSurvivorSquadSelectorButtonSummaryStats, FortAttributeName) == 0x000058, "Member 'FFortSurvivorSquadSelectorButtonSummaryStats::FortAttributeName' has a wrong offset!");
+
 // ScriptStruct FortniteUI.FortUISurvivorSquadStatMatch
 // 0x0370 (0x0370 - 0x0000)
 struct FFortUISurvivorSquadStatMatch final
@@ -3184,42 +3881,16 @@ static_assert(offsetof(FFortUISurvivorSquadStatMatch, MatchType) == 0x000368, "M
 static_assert(offsetof(FFortUISurvivorSquadStatMatch, PreviewEffect) == 0x000369, "Member 'FFortUISurvivorSquadStatMatch::PreviewEffect' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortSwipeDetector
-// 0x0140 (0x0140 - 0x0000)
-struct alignas(0x10) FFortSwipeDetector final
+// 0x0070 (0x0070 - 0x0000)
+struct alignas(0x08) FFortSwipeDetector final
 {
 public:
 	struct FVector2D                              SwipeThreshold;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x138];                                      // 0x0008(0x0138)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x68];                                       // 0x0008(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFortSwipeDetector) == 0x000010, "Wrong alignment on FFortSwipeDetector");
-static_assert(sizeof(FFortSwipeDetector) == 0x000140, "Wrong size on FFortSwipeDetector");
+static_assert(alignof(FFortSwipeDetector) == 0x000008, "Wrong alignment on FFortSwipeDetector");
+static_assert(sizeof(FFortSwipeDetector) == 0x000070, "Wrong size on FFortSwipeDetector");
 static_assert(offsetof(FFortSwipeDetector, SwipeThreshold) == 0x000000, "Member 'FFortSwipeDetector::SwipeThreshold' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortTimelineMarkerId
-// 0x0004 (0x0004 - 0x0000)
-struct FFortTimelineMarkerId final
-{
-public:
-	int32                                         MarkerId;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortTimelineMarkerId) == 0x000004, "Wrong alignment on FFortTimelineMarkerId");
-static_assert(sizeof(FFortTimelineMarkerId) == 0x000004, "Wrong size on FFortTimelineMarkerId");
-static_assert(offsetof(FFortTimelineMarkerId, MarkerId) == 0x000000, "Member 'FFortTimelineMarkerId::MarkerId' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortTimelineMarker
-// 0x000C (0x000C - 0x0000)
-struct FFortTimelineMarker final
-{
-public:
-	float                                         MarkerPositionSeconds;                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 MarkerColor;                                       // 0x0004(0x0004)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTimelineMarkerId                  MarkerId;                                          // 0x0008(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortTimelineMarker) == 0x000004, "Wrong alignment on FFortTimelineMarker");
-static_assert(sizeof(FFortTimelineMarker) == 0x00000C, "Wrong size on FFortTimelineMarker");
-static_assert(offsetof(FFortTimelineMarker, MarkerPositionSeconds) == 0x000000, "Member 'FFortTimelineMarker::MarkerPositionSeconds' has a wrong offset!");
-static_assert(offsetof(FFortTimelineMarker, MarkerColor) == 0x000004, "Member 'FFortTimelineMarker::MarkerColor' has a wrong offset!");
-static_assert(offsetof(FFortTimelineMarker, MarkerId) == 0x000008, "Member 'FFortTimelineMarker::MarkerId' has a wrong offset!");
 
 // ScriptStruct FortniteUI.TouchMove
 // 0x000C (0x000C - 0x0000)
@@ -3248,6 +3919,30 @@ static_assert(offsetof(FFortItemTransformFilterTabLabelInfo, FilterTabNameId) ==
 static_assert(offsetof(FFortItemTransformFilterTabLabelInfo, TabButtonLabelInfo) == 0x000008, "Member 'FFortItemTransformFilterTabLabelInfo::TabButtonLabelInfo' has a wrong offset!");
 static_assert(offsetof(FFortItemTransformFilterTabLabelInfo, ItemFilters) == 0x0000A8, "Member 'FFortItemTransformFilterTabLabelInfo::ItemFilters' has a wrong offset!");
 static_assert(offsetof(FFortItemTransformFilterTabLabelInfo, ItemType) == 0x0000B8, "Member 'FFortItemTransformFilterTabLabelInfo::ItemType' has a wrong offset!");
+
+// ScriptStruct FortniteUI.PlatformPrefixIcon
+// 0x0018 (0x0018 - 0x0000)
+struct FPlatformPrefixIcon final
+{
+public:
+	class FString                                 Platform;                                          // 0x0000(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PrefixIcon;                                        // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FPlatformPrefixIcon) == 0x000008, "Wrong alignment on FPlatformPrefixIcon");
+static_assert(sizeof(FPlatformPrefixIcon) == 0x000018, "Wrong size on FPlatformPrefixIcon");
+static_assert(offsetof(FPlatformPrefixIcon, Platform) == 0x000000, "Member 'FPlatformPrefixIcon::Platform' has a wrong offset!");
+static_assert(offsetof(FPlatformPrefixIcon, PrefixIcon) == 0x000010, "Member 'FPlatformPrefixIcon::PrefixIcon' has a wrong offset!");
+
+// ScriptStruct FortniteUI.PlatformPrefixIconList
+// 0x0010 (0x0010 - 0x0000)
+struct FPlatformPrefixIconList final
+{
+public:
+	TArray<struct FPlatformPrefixIcon>            PlatformPrefixIcons;                               // 0x0000(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FPlatformPrefixIconList) == 0x000008, "Wrong alignment on FPlatformPrefixIconList");
+static_assert(sizeof(FPlatformPrefixIconList) == 0x000010, "Wrong size on FPlatformPrefixIconList");
+static_assert(offsetof(FPlatformPrefixIconList, PlatformPrefixIcons) == 0x000000, "Member 'FPlatformPrefixIconList::PlatformPrefixIcons' has a wrong offset!");
 
 // ScriptStruct FortniteUI.FortUINavigationOperation
 // 0x0038 (0x0038 - 0x0000)
@@ -3318,49 +4013,6 @@ static_assert(offsetof(FFortUIXpInfo, InitialLevel) == 0x000000, "Member 'FFortU
 static_assert(offsetof(FFortUIXpInfo, InitialDisplayXp) == 0x000004, "Member 'FFortUIXpInfo::InitialDisplayXp' has a wrong offset!");
 static_assert(offsetof(FFortUIXpInfo, ChangeInXp) == 0x000008, "Member 'FFortUIXpInfo::ChangeInXp' has a wrong offset!");
 
-// ScriptStruct FortniteUI.ContentPushState
-// 0x0003 (0x0003 - 0x0000)
-struct FContentPushState final
-{
-public:
-	bool                                          bHideHeader;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHideFooter;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHideChatWidget;                                   // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FContentPushState) == 0x000001, "Wrong alignment on FContentPushState");
-static_assert(sizeof(FContentPushState) == 0x000003, "Wrong size on FContentPushState");
-static_assert(offsetof(FContentPushState, bHideHeader) == 0x000000, "Member 'FContentPushState::bHideHeader' has a wrong offset!");
-static_assert(offsetof(FContentPushState, bHideFooter) == 0x000001, "Member 'FContentPushState::bHideFooter' has a wrong offset!");
-static_assert(offsetof(FContentPushState, bHideChatWidget) == 0x000002, "Member 'FContentPushState::bHideChatWidget' has a wrong offset!");
-
-// ScriptStruct FortniteUI.FortHealthyGamingData
-// 0x0088 (0x0090 - 0x0008)
-struct FFortHealthyGamingData final : public FTableRowBase
-{
-public:
-	float                                         HealthWarningToastInterval;                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   HealthWarningToastDescriptionFormat;               // 0x0010(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   HealthWarningScreenText;                           // 0x0028(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   GameplayRestrictionText;                           // 0x0040(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         GameplayRestrictionWarningTimeOffset;              // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   AntiAddictionTotalDescriptionFormat;               // 0x0060(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          bUsePlayerTimeLimitSystem;                         // 0x0078(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSoftObjectPtr<class UTexture2D>>      RatingIcons;                                       // 0x0080(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFortHealthyGamingData) == 0x000008, "Wrong alignment on FFortHealthyGamingData");
-static_assert(sizeof(FFortHealthyGamingData) == 0x000090, "Wrong size on FFortHealthyGamingData");
-static_assert(offsetof(FFortHealthyGamingData, HealthWarningToastInterval) == 0x000008, "Member 'FFortHealthyGamingData::HealthWarningToastInterval' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, HealthWarningToastDescriptionFormat) == 0x000010, "Member 'FFortHealthyGamingData::HealthWarningToastDescriptionFormat' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, HealthWarningScreenText) == 0x000028, "Member 'FFortHealthyGamingData::HealthWarningScreenText' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, GameplayRestrictionText) == 0x000040, "Member 'FFortHealthyGamingData::GameplayRestrictionText' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, GameplayRestrictionWarningTimeOffset) == 0x000058, "Member 'FFortHealthyGamingData::GameplayRestrictionWarningTimeOffset' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, AntiAddictionTotalDescriptionFormat) == 0x000060, "Member 'FFortHealthyGamingData::AntiAddictionTotalDescriptionFormat' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, bUsePlayerTimeLimitSystem) == 0x000078, "Member 'FFortHealthyGamingData::bUsePlayerTimeLimitSystem' has a wrong offset!");
-static_assert(offsetof(FFortHealthyGamingData, RatingIcons) == 0x000080, "Member 'FFortHealthyGamingData::RatingIcons' has a wrong offset!");
-
 // ScriptStruct FortniteUI.FortDisplayModifier
 // 0x0038 (0x0038 - 0x0000)
 struct FFortDisplayModifier final
@@ -3378,6 +4030,87 @@ static_assert(offsetof(FFortDisplayModifier, Label) == 0x000000, "Member 'FFortD
 static_assert(offsetof(FFortDisplayModifier, Value) == 0x000018, "Member 'FFortDisplayModifier::Value' has a wrong offset!");
 static_assert(offsetof(FFortDisplayModifier, DisplayType) == 0x000030, "Member 'FFortDisplayModifier::DisplayType' has a wrong offset!");
 static_assert(offsetof(FFortDisplayModifier, BuffState) == 0x000031, "Member 'FFortDisplayModifier::BuffState' has a wrong offset!");
+
+// ScriptStruct FortniteUI.HomebaseNodeDisplayData
+// 0x0070 (0x0078 - 0x0008)
+struct FHomebaseNodeDisplayData final : public FTableRowBase
+{
+public:
+	class FText                                   Description;                                       // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              LargePreviewImage;                                 // 0x0020(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              SmallPreviewImage;                                 // 0x0048(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           PreviewVideoMediaSource;                           // 0x0070(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FHomebaseNodeDisplayData) == 0x000008, "Wrong alignment on FHomebaseNodeDisplayData");
+static_assert(sizeof(FHomebaseNodeDisplayData) == 0x000078, "Wrong size on FHomebaseNodeDisplayData");
+static_assert(offsetof(FHomebaseNodeDisplayData, Description) == 0x000008, "Member 'FHomebaseNodeDisplayData::Description' has a wrong offset!");
+static_assert(offsetof(FHomebaseNodeDisplayData, LargePreviewImage) == 0x000020, "Member 'FHomebaseNodeDisplayData::LargePreviewImage' has a wrong offset!");
+static_assert(offsetof(FHomebaseNodeDisplayData, SmallPreviewImage) == 0x000048, "Member 'FHomebaseNodeDisplayData::SmallPreviewImage' has a wrong offset!");
+static_assert(offsetof(FHomebaseNodeDisplayData, PreviewVideoMediaSource) == 0x000070, "Member 'FHomebaseNodeDisplayData::PreviewVideoMediaSource' has a wrong offset!");
+
+// ScriptStruct FortniteUI.FortVideoInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FFortVideoInfo final
+{
+public:
+	class FName                                   ID;                                                // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PreviewImage;                                      // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoSource;                                       // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULocalizedOverlays*                     SubtitleOverlays;                                  // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FFortVideoInfo) == 0x000008, "Wrong alignment on FFortVideoInfo");
+static_assert(sizeof(FFortVideoInfo) == 0x000020, "Wrong size on FFortVideoInfo");
+static_assert(offsetof(FFortVideoInfo, ID) == 0x000000, "Member 'FFortVideoInfo::ID' has a wrong offset!");
+static_assert(offsetof(FFortVideoInfo, PreviewImage) == 0x000008, "Member 'FFortVideoInfo::PreviewImage' has a wrong offset!");
+static_assert(offsetof(FFortVideoInfo, VideoSource) == 0x000010, "Member 'FFortVideoInfo::VideoSource' has a wrong offset!");
+static_assert(offsetof(FFortVideoInfo, SubtitleOverlays) == 0x000018, "Member 'FFortVideoInfo::SubtitleOverlays' has a wrong offset!");
+
+// ScriptStruct FortniteUI.HeistExitCraftIconData
+// 0x0010 (0x0010 - 0x0000)
+struct FHeistExitCraftIconData final
+{
+public:
+	int32                                         IconIndex;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeistExitCraftIconState                      IconState;                                         // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeistExitCraftIconState                      PrevIconState;                                     // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SecondsUntilIncoming;                              // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTeamHasBling;                                     // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FHeistExitCraftIconData) == 0x000004, "Wrong alignment on FHeistExitCraftIconData");
+static_assert(sizeof(FHeistExitCraftIconData) == 0x000010, "Wrong size on FHeistExitCraftIconData");
+static_assert(offsetof(FHeistExitCraftIconData, IconIndex) == 0x000000, "Member 'FHeistExitCraftIconData::IconIndex' has a wrong offset!");
+static_assert(offsetof(FHeistExitCraftIconData, IconState) == 0x000004, "Member 'FHeistExitCraftIconData::IconState' has a wrong offset!");
+static_assert(offsetof(FHeistExitCraftIconData, PrevIconState) == 0x000005, "Member 'FHeistExitCraftIconData::PrevIconState' has a wrong offset!");
+static_assert(offsetof(FHeistExitCraftIconData, SecondsUntilIncoming) == 0x000008, "Member 'FHeistExitCraftIconData::SecondsUntilIncoming' has a wrong offset!");
+static_assert(offsetof(FHeistExitCraftIconData, bTeamHasBling) == 0x00000C, "Member 'FHeistExitCraftIconData::bTeamHasBling' has a wrong offset!");
+
+// ScriptStruct FortniteUI.HeistBlingIconData
+// 0x0008 (0x0008 - 0x0000)
+struct FHeistBlingIconData final
+{
+public:
+	int32                                         IconIndex;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeistBlingIconState                          IconState;                                         // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeistBlingIconState                          PrevIconState;                                     // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FHeistBlingIconData) == 0x000004, "Wrong alignment on FHeistBlingIconData");
+static_assert(sizeof(FHeistBlingIconData) == 0x000008, "Wrong size on FHeistBlingIconData");
+static_assert(offsetof(FHeistBlingIconData, IconIndex) == 0x000000, "Member 'FHeistBlingIconData::IconIndex' has a wrong offset!");
+static_assert(offsetof(FHeistBlingIconData, IconState) == 0x000004, "Member 'FHeistBlingIconData::IconState' has a wrong offset!");
+static_assert(offsetof(FHeistBlingIconData, PrevIconState) == 0x000005, "Member 'FHeistBlingIconData::PrevIconState' has a wrong offset!");
+
+// ScriptStruct FortniteUI.PanZoomFingerState
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FPanZoomFingerState final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FPanZoomFingerState) == 0x000008, "Wrong alignment on FPanZoomFingerState");
+static_assert(sizeof(FPanZoomFingerState) == 0x000010, "Wrong size on FPanZoomFingerState");
 
 }
 

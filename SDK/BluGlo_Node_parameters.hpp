@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -72,8 +72,8 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0204(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12;                 // 0x0214(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue12;    // 0x0220(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0214(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0220(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0230(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x02B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
@@ -124,8 +124,8 @@ static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_Add_
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_FClamp_ReturnValue) == 0x000200, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_MakeVector_ReturnValue1) == 0x000204, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000210, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_MakeVector_ReturnValue12) == 0x000214, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_MakeVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_K2_GetComponentLocation_ReturnValue12) == 0x000220, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_K2_GetComponentLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_MakeVector_ReturnValue2) == 0x000214, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_K2_GetComponentLocation_ReturnValue2) == 0x000220, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_K2_GetComponentLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000230, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_K2_SetWorldLocation_SweepHitResult1) == 0x0002B8, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_K2_SetWorldLocation_SweepHitResult1' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput) == 0x000340, "Member 'BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node::CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput' has a wrong offset!");
@@ -135,12 +135,12 @@ static_assert(offsetof(BluGlo_Node_C_ExecuteUbergraph_BluGlo_Node, CallFunc_Give
 struct BluGlo_Node_C_ShowSpawnTrail final
 {
 public:
-	struct FVector                                Param_StartLocation;                               // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                StartLocation_0;                                   // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AnimDelay;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BluGlo_Node_C_ShowSpawnTrail) == 0x000004, "Wrong alignment on BluGlo_Node_C_ShowSpawnTrail");
 static_assert(sizeof(BluGlo_Node_C_ShowSpawnTrail) == 0x000010, "Wrong size on BluGlo_Node_C_ShowSpawnTrail");
-static_assert(offsetof(BluGlo_Node_C_ShowSpawnTrail, Param_StartLocation) == 0x000000, "Member 'BluGlo_Node_C_ShowSpawnTrail::Param_StartLocation' has a wrong offset!");
+static_assert(offsetof(BluGlo_Node_C_ShowSpawnTrail, StartLocation_0) == 0x000000, "Member 'BluGlo_Node_C_ShowSpawnTrail::StartLocation_0' has a wrong offset!");
 static_assert(offsetof(BluGlo_Node_C_ShowSpawnTrail, AnimDelay) == 0x00000C, "Member 'BluGlo_Node_C_ShowSpawnTrail::AnimDelay' has a wrong offset!");
 
 // Function BluGlo_Node.BluGlo_Node_C.HandleMissionEvent_LocateBluGlo

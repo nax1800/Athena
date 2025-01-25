@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -63,7 +63,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00E8(0x0018)()
 	int32                                         CallFunc_Get_Skill_Points_For_Next_Level_Next_Level_Skill_Points; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0108(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0108(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0148(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0158(0x0018)()
 };
@@ -77,12 +77,12 @@ static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeArray_Array) == 
 static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Format_ReturnValue) == 0x0000D0, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_MakeLiteralText_ReturnValue) == 0x0000E8, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Get_Skill_Points_For_Next_Level_Next_Level_Skill_Points) == 0x000100, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Get_Skill_Points_For_Next_Level_Next_Level_Skill_Points' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeStruct_FormatArgumentData12) == 0x000108, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeStruct_FormatArgumentData2) == 0x000108, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeArray_Array1) == 0x000148, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeArray_Array1' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Format_ReturnValue1) == 0x000158, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Format_ReturnValue1' has a wrong offset!");
 
 // Function XpBarXpText.XpBarXpText_C.Get Skill Points For Next Level
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct XpBarXpText_C_Get_Skill_Points_For_Next_Level final
 {
 public:
@@ -94,10 +94,10 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0068(0x0030)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0068(0x0040)()
 };
 static_assert(alignof(XpBarXpText_C_Get_Skill_Points_For_Next_Level) == 0x000008, "Wrong alignment on XpBarXpText_C_Get_Skill_Points_For_Next_Level");
-static_assert(sizeof(XpBarXpText_C_Get_Skill_Points_For_Next_Level) == 0x000098, "Wrong size on XpBarXpText_C_Get_Skill_Points_For_Next_Level");
+static_assert(sizeof(XpBarXpText_C_Get_Skill_Points_For_Next_Level) == 0x0000A8, "Wrong size on XpBarXpText_C_Get_Skill_Points_For_Next_Level");
 static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, Next_Level_Skill_Points) == 0x000000, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::Next_Level_Skill_Points' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetContext_ReturnValue1' has a wrong offset!");

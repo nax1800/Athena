@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -26,157 +26,243 @@ struct AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0028(0x0088)()
-	bool                                          CallFunc_CanFriend_CanFriend;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
+	class AFortPlayerStateAthena*                 K2Node_Event_PS10;                                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bTalking;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_PS9;                                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDBNO;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_PS8;                                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bReviving;                            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_PS7;                                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_PlayerName;                           // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0080(0x0018)()
+	class AFortPlayerStateAthena*                 K2Node_Event_PS6;                                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_HealthPercent;                        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_ShieldPercent;                        // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 K2Node_Event_PS5;                                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_Muted;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00C0(0x0028)()
-	bool                                          CallFunc_CanFriend_CanFriend1;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bTalking;                             // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bDBNO;                                // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bReviving;                            // 0x00EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_PlayerName;                           // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0100(0x0018)()
-	float                                         K2Node_Event_HealthPercent;                        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_ShieldPercent;                        // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_Muted;                                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_DeadStateChanged;                     // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_Disconnected;                         // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_123[0x5];                                      // 0x0123(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_CurrentPlatform;                      // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 K2Node_Event_PS4;                                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_DeadStateChanged;                     // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_PS3;                                  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_Disconnected;                         // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_PS2;                                  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_CurrentPlatform;                      // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 K2Node_Event_PS1;                                  // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bShowAnimation;                       // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_Event_InPlayerState;                        // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 K2Node_Event_PS;                                   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_NewGameModeIcon;                      // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetPinColor_ReturnValue;                  // 0x0118(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue;                   // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
 static_assert(sizeof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x000138, "Wrong size on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
 static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, EntryPoint) == 0x000000, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000010, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, Temp_int_Variable) == 0x00001C, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Select_Default) == 0x000028, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_CanFriend_CanFriend) == 0x0000B0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_CanFriend_CanFriend' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_ComponentBoundEvent_Button) == 0x0000B8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_MakeStruct_SlateColor) == 0x0000C0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_CanFriend_CanFriend1) == 0x0000E8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_CanFriend_CanFriend1' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bTalking) == 0x0000E9, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bTalking' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bDBNO) == 0x0000EA, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bDBNO' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bReviving) == 0x0000EB, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bReviving' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PlayerName) == 0x0000F0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PlayerName' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000100, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_HealthPercent) == 0x000118, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_HealthPercent' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_ShieldPercent) == 0x00011C, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_ShieldPercent' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_Muted) == 0x000120, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_Muted' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_DeadStateChanged) == 0x000121, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_DeadStateChanged' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_Disconnected) == 0x000122, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_Disconnected' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_CurrentPlatform) == 0x000128, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_CurrentPlatform' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_MakeStruct_SlateColor) == 0x000010, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS10) == 0x000038, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS10' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bTalking) == 0x000040, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bTalking' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS9) == 0x000048, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS9' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bDBNO) == 0x000050, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bDBNO' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS8) == 0x000058, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS8' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bReviving) == 0x000060, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bReviving' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS7) == 0x000068, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS7' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PlayerName) == 0x000070, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PlayerName' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000080, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS6) == 0x000098, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS6' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_HealthPercent) == 0x0000A0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_HealthPercent' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_ShieldPercent) == 0x0000A4, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_ShieldPercent' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS5) == 0x0000A8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS5' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_Muted) == 0x0000B0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_Muted' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS4) == 0x0000B8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS4' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_DeadStateChanged) == 0x0000C0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_DeadStateChanged' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS3) == 0x0000C8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS3' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_Disconnected) == 0x0000D0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_Disconnected' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS2) == 0x0000D8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS2' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_CurrentPlatform) == 0x0000E0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_CurrentPlatform' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS1) == 0x0000F0, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS1' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_bShowAnimation) == 0x0000F8, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_bShowAnimation' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_InPlayerState) == 0x000100, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_InPlayerState' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_PS) == 0x000108, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Event_NewGameModeIcon) == 0x000110, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Event_NewGameModeIcon' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_GetPinColor_ReturnValue) == 0x000118, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_GetPinColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, CallFunc_GetContext_ReturnValue) == 0x000130, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.OnGameModeIconChange
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaTeamMemberInfo_C_OnGameModeIconChange final
+{
+public:
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             NewGameModeIcon;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaTeamMemberInfo_C_OnGameModeIconChange) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_OnGameModeIconChange");
+static_assert(sizeof(AthenaTeamMemberInfo_C_OnGameModeIconChange) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_OnGameModeIconChange");
+static_assert(offsetof(AthenaTeamMemberInfo_C_OnGameModeIconChange, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_OnGameModeIconChange::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_OnGameModeIconChange, NewGameModeIcon) == 0x000008, "Member 'AthenaTeamMemberInfo_C_OnGameModeIconChange::NewGameModeIcon' has a wrong offset!");
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.OnPlayerStateChanged
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaTeamMemberInfo_C_OnPlayerStateChanged final
+{
+public:
+	class AFortPlayerStateAthena*                 InPlayerState;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaTeamMemberInfo_C_OnPlayerStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_OnPlayerStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_OnPlayerStateChanged) == 0x000008, "Wrong size on AthenaTeamMemberInfo_C_OnPlayerStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_OnPlayerStateChanged, InPlayerState) == 0x000000, "Member 'AthenaTeamMemberInfo_C_OnPlayerStateChanged::InPlayerState' has a wrong offset!");
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.OnDisplayAddFriend
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaTeamMemberInfo_C_OnDisplayAddFriend final
+{
+public:
+	bool                                          bShowAnimation;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaTeamMemberInfo_C_OnDisplayAddFriend) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_OnDisplayAddFriend");
+static_assert(sizeof(AthenaTeamMemberInfo_C_OnDisplayAddFriend) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_OnDisplayAddFriend");
+static_assert(offsetof(AthenaTeamMemberInfo_C_OnDisplayAddFriend, bShowAnimation) == 0x000000, "Member 'AthenaTeamMemberInfo_C_OnDisplayAddFriend::bShowAnimation' has a wrong offset!");
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.MapIndicatorPositionChanged
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaTeamMemberInfo_C_MapIndicatorPositionChanged final
+{
+public:
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaTeamMemberInfo_C_MapIndicatorPositionChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_MapIndicatorPositionChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_MapIndicatorPositionChanged) == 0x000008, "Wrong size on AthenaTeamMemberInfo_C_MapIndicatorPositionChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_MapIndicatorPositionChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_MapIndicatorPositionChanged::PS' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.PlayerPlatformChanged
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AthenaTeamMemberInfo_C_PlayerPlatformChanged final
 {
 public:
-	class FString                                 CurrentPlatform;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CurrentPlatform;                                   // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaTeamMemberInfo_C_PlayerPlatformChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_PlayerPlatformChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_PlayerPlatformChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_PlayerPlatformChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerPlatformChanged, CurrentPlatform) == 0x000000, "Member 'AthenaTeamMemberInfo_C_PlayerPlatformChanged::CurrentPlatform' has a wrong offset!");
+static_assert(sizeof(AthenaTeamMemberInfo_C_PlayerPlatformChanged) == 0x000018, "Wrong size on AthenaTeamMemberInfo_C_PlayerPlatformChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerPlatformChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_PlayerPlatformChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerPlatformChanged, CurrentPlatform) == 0x000008, "Member 'AthenaTeamMemberInfo_C_PlayerPlatformChanged::CurrentPlatform' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.DisconnectedStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_DisconnectedStateChanged final
 {
 public:
-	bool                                          Disconnected;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Disconnected;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_DisconnectedStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_DisconnectedStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_DisconnectedStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_DisconnectedStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_DisconnectedStateChanged, Disconnected) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DisconnectedStateChanged::Disconnected' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_DisconnectedStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_DisconnectedStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_DisconnectedStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_DisconnectedStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DisconnectedStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DisconnectedStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DisconnectedStateChanged, Disconnected) == 0x000008, "Member 'AthenaTeamMemberInfo_C_DisconnectedStateChanged::Disconnected' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.DeadStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_DeadStateChanged final
 {
 public:
-	bool                                          Param_DeadStateChanged;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Param_DeadStateChanged_0;                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_DeadStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_DeadStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_DeadStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_DeadStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_DeadStateChanged, Param_DeadStateChanged) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DeadStateChanged::Param_DeadStateChanged' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_DeadStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_DeadStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_DeadStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_DeadStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DeadStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DeadStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DeadStateChanged, Param_DeadStateChanged_0) == 0x000008, "Member 'AthenaTeamMemberInfo_C_DeadStateChanged::Param_DeadStateChanged_0' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.MutedStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_MutedStateChanged final
 {
 public:
-	bool                                          Param_Muted;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Muted_0;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_MutedStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_MutedStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_MutedStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_MutedStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_MutedStateChanged, Param_Muted) == 0x000000, "Member 'AthenaTeamMemberInfo_C_MutedStateChanged::Param_Muted' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_MutedStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_MutedStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_MutedStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_MutedStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_MutedStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_MutedStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_MutedStateChanged, Muted_0) == 0x000008, "Member 'AthenaTeamMemberInfo_C_MutedStateChanged::Muted_0' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.HitPointsChanged
-// 0x0008 (0x0008 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_HitPointsChanged final
 {
 public:
-	float                                         HealthPercent;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ShieldPercent;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HealthPercent;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ShieldPercent;                                     // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_HitPointsChanged) == 0x000004, "Wrong alignment on AthenaTeamMemberInfo_C_HitPointsChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_HitPointsChanged) == 0x000008, "Wrong size on AthenaTeamMemberInfo_C_HitPointsChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_HitPointsChanged, HealthPercent) == 0x000000, "Member 'AthenaTeamMemberInfo_C_HitPointsChanged::HealthPercent' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_HitPointsChanged, ShieldPercent) == 0x000004, "Member 'AthenaTeamMemberInfo_C_HitPointsChanged::ShieldPercent' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_HitPointsChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_HitPointsChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_HitPointsChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_HitPointsChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_HitPointsChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_HitPointsChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_HitPointsChanged, HealthPercent) == 0x000008, "Member 'AthenaTeamMemberInfo_C_HitPointsChanged::HealthPercent' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_HitPointsChanged, ShieldPercent) == 0x00000C, "Member 'AthenaTeamMemberInfo_C_HitPointsChanged::ShieldPercent' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.PlayerNameChanged
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AthenaTeamMemberInfo_C_PlayerNameChanged final
 {
 public:
-	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 PlayerName;                                        // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaTeamMemberInfo_C_PlayerNameChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_PlayerNameChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_PlayerNameChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_PlayerNameChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerNameChanged, PlayerName) == 0x000000, "Member 'AthenaTeamMemberInfo_C_PlayerNameChanged::PlayerName' has a wrong offset!");
+static_assert(sizeof(AthenaTeamMemberInfo_C_PlayerNameChanged) == 0x000018, "Wrong size on AthenaTeamMemberInfo_C_PlayerNameChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerNameChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_PlayerNameChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_PlayerNameChanged, PlayerName) == 0x000008, "Member 'AthenaTeamMemberInfo_C_PlayerNameChanged::PlayerName' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.BeingRevivedStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_BeingRevivedStateChanged final
 {
 public:
-	bool                                          bReviving;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReviving;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_BeingRevivedStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_BeingRevivedStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged, bReviving) == 0x000000, "Member 'AthenaTeamMemberInfo_C_BeingRevivedStateChanged::bReviving' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_BeingRevivedStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_BeingRevivedStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_BeingRevivedStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_BeingRevivedStateChanged, bReviving) == 0x000008, "Member 'AthenaTeamMemberInfo_C_BeingRevivedStateChanged::bReviving' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.DBNOStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_DBNOStateChanged final
 {
 public:
-	bool                                          bDBNO;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDBNO;                                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_DBNOStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_DBNOStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_DBNOStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_DBNOStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_DBNOStateChanged, bDBNO) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DBNOStateChanged::bDBNO' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_DBNOStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_DBNOStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_DBNOStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_DBNOStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DBNOStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_DBNOStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_DBNOStateChanged, bDBNO) == 0x000008, "Member 'AthenaTeamMemberInfo_C_DBNOStateChanged::bDBNO' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.TalkingStateChanged
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AthenaTeamMemberInfo_C_TalkingStateChanged final
 {
 public:
-	bool                                          bTalking;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortPlayerStateAthena*                 PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bTalking;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_TalkingStateChanged) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_TalkingStateChanged");
-static_assert(sizeof(AthenaTeamMemberInfo_C_TalkingStateChanged) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_TalkingStateChanged");
-static_assert(offsetof(AthenaTeamMemberInfo_C_TalkingStateChanged, bTalking) == 0x000000, "Member 'AthenaTeamMemberInfo_C_TalkingStateChanged::bTalking' has a wrong offset!");
+static_assert(alignof(AthenaTeamMemberInfo_C_TalkingStateChanged) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_TalkingStateChanged");
+static_assert(sizeof(AthenaTeamMemberInfo_C_TalkingStateChanged) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_TalkingStateChanged");
+static_assert(offsetof(AthenaTeamMemberInfo_C_TalkingStateChanged, PS) == 0x000000, "Member 'AthenaTeamMemberInfo_C_TalkingStateChanged::PS' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_TalkingStateChanged, bTalking) == 0x000008, "Member 'AthenaTeamMemberInfo_C_TalkingStateChanged::bTalking' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.BndEvt__AddFriendButton_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -307,102 +393,6 @@ static_assert(alignof(AthenaTeamMemberInfo_C_SetPlayerDisconnected) == 0x000008,
 static_assert(sizeof(AthenaTeamMemberInfo_C_SetPlayerDisconnected) == 0x000028, "Wrong size on AthenaTeamMemberInfo_C_SetPlayerDisconnected");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetPlayerDisconnected, K2Node_MakeStruct_SlateColor) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetPlayerDisconnected::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
-// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.CanFriend
-// 0x00D8 (0x00D8 - 0x0000)
-struct AthenaTeamMemberInfo_C_CanFriend final
-{
-public:
-	bool                                          Param_CanFriend;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bUseConsoleId;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       NetIdToUse;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortFriendRequestStatus                      Temp_byte_Variable;                                // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1234;                            // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Select_Default;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsPlayerOnPC_ReturnValue;                 // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortFriendRequestStatus                      CallFunc_GetConsoleFriendRequestStatusForPlayer_ReturnValue; // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortFriendRequestStatus                      CallFunc_GetMcpFriendRequestStatusForPlayer_ReturnValue; // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_UniqueNetIdRepl_ReturnValue;      // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12345;                           // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortFriendRequestStatus                      K2Node_Select1_Default;                            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select12_Default;                           // 0x0050(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsConsolePlatform_ReturnValue;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7B[0x5];                                       // 0x007B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x00A8(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AthenaTeamMemberInfo_C_CanFriend) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_CanFriend");
-static_assert(sizeof(AthenaTeamMemberInfo_C_CanFriend) == 0x0000D8, "Wrong size on AthenaTeamMemberInfo_C_CanFriend");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Param_CanFriend) == 0x000000, "Member 'AthenaTeamMemberInfo_C_CanFriend::Param_CanFriend' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, bUseConsoleId) == 0x000001, "Member 'AthenaTeamMemberInfo_C_CanFriend::bUseConsoleId' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, NetIdToUse) == 0x000008, "Member 'AthenaTeamMemberInfo_C_CanFriend::NetIdToUse' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable) == 0x000030, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_byte_Variable) == 0x000031, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable1) == 0x000032, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable12) == 0x000033, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable123) == 0x000034, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable1234) == 0x000035, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_Select_Default) == 0x000040, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_IsPlayerOnPC_ReturnValue) == 0x000041, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_IsPlayerOnPC_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_Not_PreBool_ReturnValue) == 0x000042, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_GetConsoleFriendRequestStatusForPlayer_ReturnValue) == 0x000043, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_GetConsoleFriendRequestStatusForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_GetMcpFriendRequestStatusForPlayer_ReturnValue) == 0x000044, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_GetMcpFriendRequestStatusForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_IsMobileGame_ReturnValue) == 0x000045, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_IsValid_UniqueNetIdRepl_ReturnValue) == 0x000046, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_IsValid_UniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, Temp_bool_Variable12345) == 0x000047, "Member 'AthenaTeamMemberInfo_C_CanFriend::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_Select1_Default) == 0x000048, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_IsValidNetID_ReturnValue) == 0x000049, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_Select12_Default) == 0x000050, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_IsConsolePlatform_ReturnValue) == 0x000078, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_IsConsolePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_BooleanOR_ReturnValue) == 0x000079, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_BooleanOR_ReturnValue1) == 0x00007A, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_GetOwningPlayer_ReturnValue) == 0x000080, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000088, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000098, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, K2Node_DynamicCast_bSuccess1) == 0x0000A0, "Member 'AthenaTeamMemberInfo_C_CanFriend::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_GetUniqueID_ReturnValue) == 0x0000A8, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_CanFriend, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x0000D0, "Member 'AthenaTeamMemberInfo_C_CanFriend::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
-
-// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SendFriendInvite
-// 0x0038 (0x0038 - 0x0000)
-struct AthenaTeamMemberInfo_C_SendFriendInvite final
-{
-public:
-	struct FUniqueNetIdRepl                       UniqueNetIdToUse;                                  // 0x0000(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTencentBuild_ReturnValue;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsolePlatform_ReturnValue;            // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanFriend_CanFriend;                      // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AthenaTeamMemberInfo_C_SendFriendInvite) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_SendFriendInvite");
-static_assert(sizeof(AthenaTeamMemberInfo_C_SendFriendInvite) == 0x000038, "Wrong size on AthenaTeamMemberInfo_C_SendFriendInvite");
-static_assert(offsetof(AthenaTeamMemberInfo_C_SendFriendInvite, UniqueNetIdToUse) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SendFriendInvite::UniqueNetIdToUse' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_SendFriendInvite, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaTeamMemberInfo_C_SendFriendInvite::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_SendFriendInvite, CallFunc_IsTencentBuild_ReturnValue) == 0x000030, "Member 'AthenaTeamMemberInfo_C_SendFriendInvite::CallFunc_IsTencentBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_SendFriendInvite, CallFunc_IsConsolePlatform_ReturnValue) == 0x000031, "Member 'AthenaTeamMemberInfo_C_SendFriendInvite::CallFunc_IsConsolePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_SendFriendInvite, CallFunc_CanFriend_CanFriend) == 0x000032, "Member 'AthenaTeamMemberInfo_C_SendFriendInvite::CallFunc_CanFriend_CanFriend' has a wrong offset!");
-
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdateUniqueID
 // 0x0050 (0x0050 - 0x0000)
 struct AthenaTeamMemberInfo_C_UpdateUniqueID final
@@ -430,22 +420,30 @@ static_assert(offsetof(AthenaTeamMemberInfo_C_InitSpeakerMaterial, CallFunc_GetO
 static_assert(offsetof(AthenaTeamMemberInfo_C_InitSpeakerMaterial, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_InitSpeakerMaterial::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.Mapping
-// 0x0018 (0x0018 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct AthenaTeamMemberInfo_C_Mapping final
 {
 public:
 	class AFortGameStateAthena*                   AthenaGameState;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor)
+	struct FVector2D                              CallFunc_GetMapIndicatorPos_ReturnValue;           // 0x0008(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaTeamMemberInfo_C_Mapping) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_Mapping");
-static_assert(sizeof(AthenaTeamMemberInfo_C_Mapping) == 0x000018, "Wrong size on AthenaTeamMemberInfo_C_Mapping");
+static_assert(sizeof(AthenaTeamMemberInfo_C_Mapping) == 0x000030, "Wrong size on AthenaTeamMemberInfo_C_Mapping");
 static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, AthenaGameState) == 0x000000, "Member 'AthenaTeamMemberInfo_C_Mapping::AthenaGameState' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_GetMapIndicatorPos_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_GetMapIndicatorPos_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_VSize2DSquared_ReturnValue) == 0x000018, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_VSize2DSquared_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00001C, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, Temp_int_Variable) == 0x000024, "Member 'AthenaTeamMemberInfo_C_Mapping::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaTeamMemberInfo_C_Mapping, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'AthenaTeamMemberInfo_C_Mapping::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

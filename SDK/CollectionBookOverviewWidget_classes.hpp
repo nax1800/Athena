@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookOverviewWidget.CollectionBookOverviewWidget_C
-// 0x0000 (0x0260 - 0x0260)
+// 0x0000 (0x0258 - 0x0258)
 class UCollectionBookOverviewWidget_C final : public UFortCollectionBookOverviewWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookOverviewWidget_C) == 0x000008, "Wrong alignment on UCollectionBookOverviewWidget_C");
-static_assert(sizeof(UCollectionBookOverviewWidget_C) == 0x000260, "Wrong size on UCollectionBookOverviewWidget_C");
+static_assert(sizeof(UCollectionBookOverviewWidget_C) == 0x000258, "Wrong size on UCollectionBookOverviewWidget_C");
 
 }
 

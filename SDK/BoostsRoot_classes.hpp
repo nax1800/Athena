@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CommonUI_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "FortniteUI_structs.hpp"
 
@@ -20,27 +19,26 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BoostsRoot.BoostsRoot_C
-// 0x0048 (0x0408 - 0x03C0)
+// 0x0048 (0x0340 - 0x02F8)
 class UBoostsRoot_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalTabList_C*                   BoostsTabs;                                        // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  CurrentTabSwitcher;                                // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title;                                             // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         SelectedOption;                                    // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Current_Tab;                                       // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Accept_Input;                                      // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Video_Tab_Selected;                                // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Apply_Visible;                                     // 0x03F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F3[0x5];                                      // 0x03F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortOptionsTab*>                AllTabWidgets;                                     // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalTabList_C*                   BoostsTabs;                                        // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  CurrentTabSwitcher;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title;                                             // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         SelectedOption;                                    // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Current_Tab;                                       // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Accept_Input;                                      // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Video_Tab_Selected;                                // 0x0329(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Apply_Visible;                                     // 0x032A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32B[0x5];                                      // 0x032B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortOptionsTab*>                AllTabWidgets;                                     // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_BoostsRoot(int32 EntryPoint);
 	void OnDeactivated();
-	void BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex);
 	void BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
 	void OnActivated();
 	void Destruct();
@@ -48,7 +46,6 @@ public:
 	void HandleBack(bool* Passthrough);
 	void Set_Input_Action_Handlers();
 	void HandleCursorModeChanging(bool IsEnabled);
-	void HandleStore(bool* Passthrough);
 	void SetAccountBoostsTabHiddenState();
 
 public:
@@ -62,17 +59,17 @@ public:
 	}
 };
 static_assert(alignof(UBoostsRoot_C) == 0x000008, "Wrong alignment on UBoostsRoot_C");
-static_assert(sizeof(UBoostsRoot_C) == 0x000408, "Wrong size on UBoostsRoot_C");
-static_assert(offsetof(UBoostsRoot_C, UberGraphFrame) == 0x0003C0, "Member 'UBoostsRoot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, BoostsTabs) == 0x0003C8, "Member 'UBoostsRoot_C::BoostsTabs' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, CurrentTabSwitcher) == 0x0003D0, "Member 'UBoostsRoot_C::CurrentTabSwitcher' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Title) == 0x0003D8, "Member 'UBoostsRoot_C::Title' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, SelectedOption) == 0x0003E0, "Member 'UBoostsRoot_C::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Current_Tab) == 0x0003E8, "Member 'UBoostsRoot_C::Current_Tab' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Accept_Input) == 0x0003F0, "Member 'UBoostsRoot_C::Accept_Input' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Video_Tab_Selected) == 0x0003F1, "Member 'UBoostsRoot_C::Video_Tab_Selected' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Apply_Visible) == 0x0003F2, "Member 'UBoostsRoot_C::Apply_Visible' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, AllTabWidgets) == 0x0003F8, "Member 'UBoostsRoot_C::AllTabWidgets' has a wrong offset!");
+static_assert(sizeof(UBoostsRoot_C) == 0x000340, "Wrong size on UBoostsRoot_C");
+static_assert(offsetof(UBoostsRoot_C, UberGraphFrame) == 0x0002F8, "Member 'UBoostsRoot_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, BoostsTabs) == 0x000300, "Member 'UBoostsRoot_C::BoostsTabs' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, CurrentTabSwitcher) == 0x000308, "Member 'UBoostsRoot_C::CurrentTabSwitcher' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, Title) == 0x000310, "Member 'UBoostsRoot_C::Title' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, SelectedOption) == 0x000318, "Member 'UBoostsRoot_C::SelectedOption' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, Current_Tab) == 0x000320, "Member 'UBoostsRoot_C::Current_Tab' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, Accept_Input) == 0x000328, "Member 'UBoostsRoot_C::Accept_Input' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, Video_Tab_Selected) == 0x000329, "Member 'UBoostsRoot_C::Video_Tab_Selected' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, Apply_Visible) == 0x00032A, "Member 'UBoostsRoot_C::Apply_Visible' has a wrong offset!");
+static_assert(offsetof(UBoostsRoot_C, AllTabWidgets) == 0x000330, "Member 'UBoostsRoot_C::AllTabWidgets' has a wrong offset!");
 
 }
 

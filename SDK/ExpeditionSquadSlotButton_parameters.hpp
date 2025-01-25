@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,11 +24,11 @@ namespace SDK::Params
 struct ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature final
 {
 public:
-	int32                                         Param_SquadSlotIndex;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SquadSlotIndex_0;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong alignment on ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature");
 static_assert(sizeof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong size on ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature, Param_SquadSlotIndex) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature::Param_SquadSlotIndex' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature, SquadSlotIndex_0) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature::SquadSlotIndex_0' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotUpdated__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -51,15 +51,15 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Temp_class_Variable;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable123;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable1234;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12345;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable123456;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable3;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable4;                              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable5;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable6;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 SquadSlotIndex)>         K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -84,15 +84,15 @@ static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSq
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_byte_Variable) == 0x000004, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable) == 0x000008, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable1) == 0x000010, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable12) == 0x000018, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable12' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable123) == 0x000020, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable123' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable1234) == 0x000028, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable1234' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable12345) == 0x000030, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable12345' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable123456) == 0x000038, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable123456' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable2) == 0x000018, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable2' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable3) == 0x000020, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable3' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable4) == 0x000028, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable4' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable5) == 0x000030, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable5' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable6) == 0x000038, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable6' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_bool_Variable) == 0x000050, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_byte_Variable1) == 0x000051, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_byte_Variable12) == 0x000052, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_byte_Variable2) == 0x000052, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetCurrentInputType_ReturnValue) == 0x000060, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, K2Node_Event_IsDesignTime) == 0x000061, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -112,11 +112,11 @@ static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSq
 struct ExpeditionSquadSlotButton_C_Open_Squad_Slot final
 {
 public:
-	int32                                         Param_SquadSlotIndex;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SquadSlotIndex_0;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ExpeditionSquadSlotButton_C_Open_Squad_Slot) == 0x000004, "Wrong alignment on ExpeditionSquadSlotButton_C_Open_Squad_Slot");
 static_assert(sizeof(ExpeditionSquadSlotButton_C_Open_Squad_Slot) == 0x000004, "Wrong size on ExpeditionSquadSlotButton_C_Open_Squad_Slot");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Open_Squad_Slot, Param_SquadSlotIndex) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_Open_Squad_Slot::Param_SquadSlotIndex' has a wrong offset!");
+static_assert(offsetof(ExpeditionSquadSlotButton_C_Open_Squad_Slot, SquadSlotIndex_0) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_Open_Squad_Slot::SquadSlotIndex_0' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_3_OnMenuOpenChangedEvent__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)

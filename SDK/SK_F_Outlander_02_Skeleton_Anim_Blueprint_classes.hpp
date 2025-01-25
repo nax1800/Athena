@@ -10,35 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass SK_F_Outlander_02_Skeleton_Anim_Blueprint.SK_F_Outlander_02_Skeleton_Anim_Blueprint_C
-// 0x1860 (0x1C90 - 0x0430)
+// 0x1930 (0x1D60 - 0x0430)
 class USK_F_Outlander_02_Skeleton_Anim_Blueprint_C final : public UCustomCharacterPartAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_A231BBBF42868E7DAF03CEB4C5774CAD; // 0x0438(0x0048)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7; // 0x0480(0x00E8)(ContainsInstancedReference)
-	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC; // 0x0568(0x0168)()
-	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C; // 0x06D0(0x0168)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6; // 0x0838(0x0048)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546; // 0x0880(0x0360)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807; // 0x0BE0(0x0048)()
-	uint8                                         Pad_C28[0x8];                                      // 0x0C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9; // 0x0C30(0x0360)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07; // 0x0F90(0x0360)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96; // 0x12F0(0x0360)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD; // 0x1650(0x0360)()
-	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA; // 0x19B0(0x0168)()
-	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351; // 0x1B18(0x0168)()
-	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x1C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_Root                         AnimGraphNode_Root_A231BBBF42868E7DAF03CEB4C5774CAD; // 0x0438(0x0040)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7; // 0x0478(0x00E8)(ContainsInstancedReference)
+	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC; // 0x0560(0x0168)()
+	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C; // 0x06C8(0x0168)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6; // 0x0830(0x0040)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546; // 0x0870(0x0390)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807; // 0x0C00(0x0040)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9; // 0x0C40(0x0390)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07; // 0x0FD0(0x0390)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96; // 0x1360(0x0390)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD; // 0x16F0(0x0390)()
+	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA; // 0x1A80(0x0168)()
+	struct FAnimNode_BoneDrivenController         AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351; // 0x1BE8(0x0168)()
+	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x1D50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SK_F_Outlander_02_Skeleton_Anim_Blueprint(int32 EntryPoint);
@@ -57,22 +56,22 @@ public:
 	}
 };
 static_assert(alignof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C) == 0x000010, "Wrong alignment on USK_F_Outlander_02_Skeleton_Anim_Blueprint_C");
-static_assert(sizeof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C) == 0x001C90, "Wrong size on USK_F_Outlander_02_Skeleton_Anim_Blueprint_C");
+static_assert(sizeof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C) == 0x001D60, "Wrong size on USK_F_Outlander_02_Skeleton_Anim_Blueprint_C");
 static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, UberGraphFrame) == 0x000430, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_Root_A231BBBF42868E7DAF03CEB4C5774CAD) == 0x000438, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_Root_A231BBBF42868E7DAF03CEB4C5774CAD' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7) == 0x000480, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC) == 0x000568, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C) == 0x0006D0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6) == 0x000838, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546) == 0x000880, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807) == 0x000BE0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9) == 0x000C30, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07) == 0x000F90, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96) == 0x0012F0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD) == 0x001650, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA) == 0x0019B0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351) == 0x001B18, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351' has a wrong offset!");
-static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, MeshToCopy) == 0x001C80, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::MeshToCopy' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7) == 0x000478, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_CopyPoseFromMesh_A1F2F506414045AFAEBE3AAA3AEA4BA7' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC) == 0x000560, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_6B75393649E9879CCA97C2A0F14635BC' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C) == 0x0006C8, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_BE5837EF4C2F5C9C0A8F1CB8D726840C' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6) == 0x000830, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_LocalToComponentSpace_42C1F1544D48F099739C33B2398D29B6' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546) == 0x000870, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_10AE448948DFDAC48D633A9115DE9546' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807) == 0x000C00, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_ComponentToLocalSpace_C2C423994AF0E2ACB767DBB2F2A9F807' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9) == 0x000C40, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_CD200A494CE2706612624D82C982B3A9' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07) == 0x000FD0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_EC6023534626A7FAFE689C8E45E86E07' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96) == 0x001360, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_EA3B9A5B407C0B0134CDBEBE3E9A5A96' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD) == 0x0016F0, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_AnimDynamics_FEDD4DD14777B86ABE0537A59A5135CD' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA) == 0x001A80, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_C5D99D0F44097D61E3DBD9A455D468EA' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351) == 0x001BE8, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::AnimGraphNode_BoneDrivenController_1D18CAEC448657ED9FCA44951F18E351' has a wrong offset!");
+static_assert(offsetof(USK_F_Outlander_02_Skeleton_Anim_Blueprint_C, MeshToCopy) == 0x001D50, "Member 'USK_F_Outlander_02_Skeleton_Anim_Blueprint_C::MeshToCopy' has a wrong offset!");
 
 }
 

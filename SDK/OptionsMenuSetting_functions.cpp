@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.SettingValueChanged__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuSetting_C::SettingValueChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SettingValueChanged__DelegateSignature");
-
-	Params::OptionsMenuSetting_C_SettingValueChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenuSetting.OptionsMenuSetting_C.ExecuteUbergraph_OptionsMenuSetting
 // (HasDefaults)
 // Parameters:
@@ -57,97 +37,95 @@ void UOptionsMenuSetting_C::ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function OptionsMenuSetting.OptionsMenuSetting_C.CenterOnWidget
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuSetting_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+void UOptionsMenuSetting_C::CenterOnWidget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenuSetting_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuSetting_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenuSetting_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.OnReleaseToPool
-// (Event, Protected, BlueprintEvent)
-
-void UOptionsMenuSetting_C::OnReleaseToPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnReleaseToPool");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "CenterOnWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.SetData
+// Function OptionsMenuSetting.OptionsMenuSetting_C.UpdateSetting
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonTextBlock*                 TooltipTextBlock                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuSetting_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UOptionsMenuSetting_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlock)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetData");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSetting");
 
-	Params::OptionsMenuSetting_C_SetData Parms{};
+	Params::OptionsMenuSetting_C_UpdateSetting Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.TooltipTextBlock = TooltipTextBlock;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature
+// Function OptionsMenuSetting.OptionsMenuSetting_C.BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuSetting_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature(int32 Value)
+void UOptionsMenuSetting_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
 
-	Params::OptionsMenuSetting_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature Parms{};
+	Params::OptionsMenuSetting_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature Parms{};
 
-	Parms.Value = Value;
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UOptionsMenuSetting_C::BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::OptionsMenuSetting_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature Parms{};
+
+	Parms.bIsOpen = bIsOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenuSetting_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnListItemObjectSet");
+
+	Params::OptionsMenuSetting_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -277,173 +255,57 @@ void UOptionsMenuSetting_C::Construct()
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.Reset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenuSetting_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.ToggleExpansion
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenuSetting_C::ToggleExpansion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "ToggleExpansion");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuSetting.OptionsMenuSetting_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bSelected                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenuSetting_C::SetSelected(bool bSelected)
+void UOptionsMenuSetting_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetSelected");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemSelectionChanged");
 
-	Params::OptionsMenuSetting_C_SetSelected Parms{};
+	Params::OptionsMenuSetting_C_BP_OnItemSelectionChanged Parms{};
 
-	Parms.bSelected = bSelected;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.SetIndexInList
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuSetting.OptionsMenuSetting_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   InIndexInList                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenuSetting_C::SetIndexInList(int32 InIndexInList)
+void UOptionsMenuSetting_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetIndexInList");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemExpansionChanged");
 
-	Params::OptionsMenuSetting_C_SetIndexInList Parms{};
+	Params::OptionsMenuSetting_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.InIndexInList = InIndexInList;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.SetExpanded
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenuSetting_C::SetExpanded(bool bExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetExpanded");
-
-	Params::OptionsMenuSetting_C_SetExpanded Parms{};
-
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.RegisterOnClicked
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-
-void UOptionsMenuSetting_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "RegisterOnClicked");
-
-	Params::OptionsMenuSetting_C_RegisterOnClicked Parms{};
-
-	Parms.Callback = Callback;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.Private_OnExpanderArrowShiftClicked
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenuSetting_C::Private_OnExpanderArrowShiftClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Private_OnExpanderArrowShiftClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.OnAcquireFromPool
+// Function OptionsMenuSetting.OptionsMenuSetting_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 
-void UOptionsMenuSetting_C::OnAcquireFromPool()
+void UOptionsMenuSetting_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnAcquireFromPool");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.Center on Widget
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenuSetting_C::Center_on_Widget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Center on Widget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.Update Setting
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonTextBlock*                 Tooltip_Text_Block                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuSetting_C::Update_Setting(class UCommonTextBlock* Tooltip_Text_Block)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Update Setting");
-
-	Params::OptionsMenuSetting_C_Update_Setting Parms{};
-
-	Parms.Tooltip_Text_Block = Tooltip_Text_Block;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -475,79 +337,101 @@ void UOptionsMenuSetting_C::HandlePawnSet()
 }
 
 
-// Function OptionsMenuSetting.OptionsMenuSetting_C.GetData
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function OptionsMenuSetting.OptionsMenuSetting_C.OnGetMenuContent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UOptionsMenuSetting_C::OnGetMenuContent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnGetMenuContent");
+
+	Params::OptionsMenuSetting_C_OnGetMenuContent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.Show Tooltip
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenuSetting_C::Show_Tooltip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Show Tooltip");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.Hide Tooltip
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenuSetting_C::Hide_Tooltip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Hide Tooltip");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.SetSliderTextRenderScale
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Scale_Normalized                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenuSetting_C::SetSliderTextRenderScale(float Scale_Normalized)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetSliderTextRenderScale");
+
+	Params::OptionsMenuSetting_C_SetSliderTextRenderScale Parms{};
+
+	Parms.Scale_Normalized = Scale_Normalized;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.SetDarkTabStyle
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenuSetting_C::SetDarkTabStyle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetDarkTabStyle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenuSetting.OptionsMenuSetting_C.GetListItemObject
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UObject* UOptionsMenuSetting_C::GetData() const
+class UObject* UOptionsMenuSetting_C::GetListItemObject() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "GetData");
+		Func = Class->GetFunction("OptionsMenuSetting_C", "GetListItemObject");
 
-	Params::OptionsMenuSetting_C_GetData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.IsItemExpanded
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UOptionsMenuSetting_C::IsItemExpanded() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "IsItemExpanded");
-
-	Params::OptionsMenuSetting_C_IsItemExpanded Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.DoesItemHaveChildren
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UOptionsMenuSetting_C::DoesItemHaveChildren() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "DoesItemHaveChildren");
-
-	Params::OptionsMenuSetting_C_DoesItemHaveChildren Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function OptionsMenuSetting.OptionsMenuSetting_C.GetIndentLevel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UOptionsMenuSetting_C::GetIndentLevel() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "GetIndentLevel");
-
-	Params::OptionsMenuSetting_C_GetIndentLevel Parms{};
+	Params::OptionsMenuSetting_C_GetListItemObject Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

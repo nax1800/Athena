@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BasicGradientFill.BasicGradientFill_C
-// 0x0040 (0x0260 - 0x0220)
+// 0x0040 (0x0258 - 0x0218)
 class UBasicGradientFill_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 ImageFill;                                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           Color_1;                                           // 0x0230(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FLinearColor                           Color_2;                                           // 0x0240(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector2D                              Brush_Size;                                        // 0x0250(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	float                                         Rotation;                                          // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 ImageFill;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FLinearColor                           Color_1;                                           // 0x0228(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           Color_2;                                           // 0x0238(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector2D                              Brush_Size;                                        // 0x0248(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	float                                         Rotation;                                          // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BasicGradientFill(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
-	void Set_Fill(const struct FLinearColor& Param_Color_1, const struct FLinearColor& Param_Color_2, float Rotation__0_Minus_1_);
-	void Set_Brush_Size(const struct FVector2D& Param_Brush_Size);
+	void Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0_Minus_1_);
+	void Set_Brush_Size(const struct FVector2D& Brush_Size_0);
 
 public:
 	static class UClass* StaticClass()
@@ -47,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(UBasicGradientFill_C) == 0x000008, "Wrong alignment on UBasicGradientFill_C");
-static_assert(sizeof(UBasicGradientFill_C) == 0x000260, "Wrong size on UBasicGradientFill_C");
-static_assert(offsetof(UBasicGradientFill_C, UberGraphFrame) == 0x000220, "Member 'UBasicGradientFill_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, ImageFill) == 0x000228, "Member 'UBasicGradientFill_C::ImageFill' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Color_1) == 0x000230, "Member 'UBasicGradientFill_C::Color_1' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Color_2) == 0x000240, "Member 'UBasicGradientFill_C::Color_2' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Brush_Size) == 0x000250, "Member 'UBasicGradientFill_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Rotation) == 0x000258, "Member 'UBasicGradientFill_C::Rotation' has a wrong offset!");
+static_assert(sizeof(UBasicGradientFill_C) == 0x000258, "Wrong size on UBasicGradientFill_C");
+static_assert(offsetof(UBasicGradientFill_C, UberGraphFrame) == 0x000218, "Member 'UBasicGradientFill_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBasicGradientFill_C, ImageFill) == 0x000220, "Member 'UBasicGradientFill_C::ImageFill' has a wrong offset!");
+static_assert(offsetof(UBasicGradientFill_C, Color_1) == 0x000228, "Member 'UBasicGradientFill_C::Color_1' has a wrong offset!");
+static_assert(offsetof(UBasicGradientFill_C, Color_2) == 0x000238, "Member 'UBasicGradientFill_C::Color_2' has a wrong offset!");
+static_assert(offsetof(UBasicGradientFill_C, Brush_Size) == 0x000248, "Member 'UBasicGradientFill_C::Brush_Size' has a wrong offset!");
+static_assert(offsetof(UBasicGradientFill_C, Rotation) == 0x000250, "Member 'UBasicGradientFill_C::Rotation' has a wrong offset!");
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // Function ThrowingStarTest.ThrowingStarTest_C.OnExecute
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class AActor*                           MyTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-bool UThrowingStarTest_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+bool UThrowingStarTest_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
 {
 	static class UFunction* Func = nullptr;
 

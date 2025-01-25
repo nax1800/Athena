@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -21,46 +21,46 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass IconTabButton.IconTabButton_C
-// 0x0158 (0x0960 - 0x0808)
+// 0x0158 (0x09E8 - 0x0890)
 class UIconTabButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UNormalBangWrapper_C*                   BangWrapper;                                       // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         ContentHB;                                         // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LeftSideImage;                                     // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxShell;                                      // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   ButtonText;                                        // 0x0838(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x0850(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                          UseText;                                           // 0x08D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8D9[0x3];                                      // 0x08D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           SelectedIconTint;                                  // 0x08DC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DeselectedIconTint;                                // 0x08EC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           HoveredIconTint;                                   // 0x08FC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bBangEnabled;                                      // 0x090C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          ChangeIconColorWhenSelected;                       // 0x090D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_90E[0x2];                                      // 0x090E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            SelectedIconColor;                                 // 0x0910(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            UnSelectedIconColor;                               // 0x0938(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UNormalBangWrapper_C*                   BangWrapper;                                       // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         ContentHB;                                         // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LeftSideImage;                                     // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxShell;                                      // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   ButtonText;                                        // 0x08C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08D8(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                          UseText;                                           // 0x0960(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_961[0x3];                                      // 0x0961(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           SelectedIconTint;                                  // 0x0964(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DeselectedIconTint;                                // 0x0974(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           HoveredIconTint;                                   // 0x0984(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bBangEnabled;                                      // 0x0994(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ChangeIconColorWhenSelected;                       // 0x0995(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_996[0x2];                                      // 0x0996(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            SelectedIconColor;                                 // 0x0998(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            UnSelectedIconColor;                               // 0x09C0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_IconTabButton(int32 EntryPoint);
 	void OnCurrentTextStyleChanged();
-	void OnDisabled();
-	void OnEnabled();
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnDisabled();
+	void BP_OnEnabled();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void Construct();
-	void OnDeselected();
-	void OnSelected();
+	void BP_OnDeselected();
+	void BP_OnSelected();
 	void SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo);
 	void PreConstruct(bool IsDesignTime);
-	void Set_Text(const class FText& Param_ButtonText);
-	void Set_Icon(const struct FSlateBrush& Param_IconBrush);
+	void Set_Text(const class FText& ButtonText_0);
+	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void ShowText();
 	void SetTutorialBorderStyle(class UClass* BorderStyle);
-	void Update_Bang_State(bool Param_bBangEnabled);
+	void Update_Bang_State(bool bBangEnabled_0);
 	void SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor);
 
 public:
@@ -74,23 +74,23 @@ public:
 	}
 };
 static_assert(alignof(UIconTabButton_C) == 0x000008, "Wrong alignment on UIconTabButton_C");
-static_assert(sizeof(UIconTabButton_C) == 0x000960, "Wrong size on UIconTabButton_C");
-static_assert(offsetof(UIconTabButton_C, UberGraphFrame) == 0x000808, "Member 'UIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, BangWrapper) == 0x000810, "Member 'UIconTabButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, CenterButtonTextWidget) == 0x000818, "Member 'UIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ContentHB) == 0x000820, "Member 'UIconTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, LeftSideImage) == 0x000828, "Member 'UIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SizeBoxShell) == 0x000830, "Member 'UIconTabButton_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ButtonText) == 0x000838, "Member 'UIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, IconBrush) == 0x000850, "Member 'UIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, UseText) == 0x0008D8, "Member 'UIconTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SelectedIconTint) == 0x0008DC, "Member 'UIconTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, DeselectedIconTint) == 0x0008EC, "Member 'UIconTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, HoveredIconTint) == 0x0008FC, "Member 'UIconTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, bBangEnabled) == 0x00090C, "Member 'UIconTabButton_C::bBangEnabled' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ChangeIconColorWhenSelected) == 0x00090D, "Member 'UIconTabButton_C::ChangeIconColorWhenSelected' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SelectedIconColor) == 0x000910, "Member 'UIconTabButton_C::SelectedIconColor' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, UnSelectedIconColor) == 0x000938, "Member 'UIconTabButton_C::UnSelectedIconColor' has a wrong offset!");
+static_assert(sizeof(UIconTabButton_C) == 0x0009E8, "Wrong size on UIconTabButton_C");
+static_assert(offsetof(UIconTabButton_C, UberGraphFrame) == 0x000890, "Member 'UIconTabButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, BangWrapper) == 0x000898, "Member 'UIconTabButton_C::BangWrapper' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, CenterButtonTextWidget) == 0x0008A0, "Member 'UIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, ContentHB) == 0x0008A8, "Member 'UIconTabButton_C::ContentHB' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, LeftSideImage) == 0x0008B0, "Member 'UIconTabButton_C::LeftSideImage' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, SizeBoxShell) == 0x0008B8, "Member 'UIconTabButton_C::SizeBoxShell' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, ButtonText) == 0x0008C0, "Member 'UIconTabButton_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, IconBrush) == 0x0008D8, "Member 'UIconTabButton_C::IconBrush' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, UseText) == 0x000960, "Member 'UIconTabButton_C::UseText' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, SelectedIconTint) == 0x000964, "Member 'UIconTabButton_C::SelectedIconTint' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, DeselectedIconTint) == 0x000974, "Member 'UIconTabButton_C::DeselectedIconTint' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, HoveredIconTint) == 0x000984, "Member 'UIconTabButton_C::HoveredIconTint' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, bBangEnabled) == 0x000994, "Member 'UIconTabButton_C::bBangEnabled' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, ChangeIconColorWhenSelected) == 0x000995, "Member 'UIconTabButton_C::ChangeIconColorWhenSelected' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, SelectedIconColor) == 0x000998, "Member 'UIconTabButton_C::SelectedIconColor' has a wrong offset!");
+static_assert(offsetof(UIconTabButton_C, UnSelectedIconColor) == 0x0009C0, "Member 'UIconTabButton_C::UnSelectedIconColor' has a wrong offset!");
 
 }
 

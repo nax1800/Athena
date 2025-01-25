@@ -19,38 +19,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginScreen.LoginScreen_C
-// 0x0060 (0x05B0 - 0x0550)
+// 0x0058 (0x0520 - 0x04C8)
 class ULoginScreen_C final : public UFortUIStateWidget_Login
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0550(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          BackBorder;                                        // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      BackButton;                                        // 0x0560(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BottomBorder;                                      // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ConsoleBack;                                       // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UConsoleProfileWidget_C*                ConsoleProfileWidget;                              // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_SplashArt;                                // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Text_Version;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBuildWatermark_C*                      Widget_BuildWatermark;                             // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class AFort_Entry_Music_Controller_BP_C*      FrontEnd_Music_Controller;                         // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUserWidget*                      AccountLinkWindow;                                 // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                PlatformSpecificBackBorder;                        // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C8(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          BackBorder;                                        // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      BackButton;                                        // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BottomBorder;                                      // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ConsoleBack;                                       // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UConsoleProfileWidget_C*                ConsoleProfileWidget;                              // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageSplashArt;                                    // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_Version;                                      // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBuildWatermark_C*                      Widget_BuildWatermark;                             // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class AFort_Entry_Music_Controller_BP_C*      FrontEnd_Music_Controller;                         // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                PlatformSpecificBackBorder;                        // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_LoginScreen(int32 EntryPoint);
 	void HideTopBarOptions();
 	void ShowBackBar();
-	void OnNeedsPurchaseOrAccountLinking(bool bLinkedAccountNeedsPurchase);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State);
-	void AccountLinking_RequestAutoLogin();
-	void AccountLinking_RequestSignIn();
-	void AccountLinking_LinkingFailed(const class FText& FailReason);
-	void AccountLinking_PopStatus();
-	void AccountLinking_PushStatus(const class FText& StatusText);
 	void OnEnterState(EFortUIState PreviousUIState);
 	void Construct();
-	void ShowAccountLinkingWindow();
 	class UWidget* PopContentWidgetInternal(const struct FContentPushState& State);
 
 public:
@@ -64,19 +56,18 @@ public:
 	}
 };
 static_assert(alignof(ULoginScreen_C) == 0x000008, "Wrong alignment on ULoginScreen_C");
-static_assert(sizeof(ULoginScreen_C) == 0x0005B0, "Wrong size on ULoginScreen_C");
-static_assert(offsetof(ULoginScreen_C, UberGraphFrame) == 0x000550, "Member 'ULoginScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BackBorder) == 0x000558, "Member 'ULoginScreen_C::BackBorder' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BackButton) == 0x000560, "Member 'ULoginScreen_C::BackButton' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BottomBorder) == 0x000568, "Member 'ULoginScreen_C::BottomBorder' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, ConsoleBack) == 0x000570, "Member 'ULoginScreen_C::ConsoleBack' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, ConsoleProfileWidget) == 0x000578, "Member 'ULoginScreen_C::ConsoleProfileWidget' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, ScaleBox_SplashArt) == 0x000580, "Member 'ULoginScreen_C::ScaleBox_SplashArt' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Text_Version) == 0x000588, "Member 'ULoginScreen_C::Text_Version' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Widget_BuildWatermark) == 0x000590, "Member 'ULoginScreen_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, FrontEnd_Music_Controller) == 0x000598, "Member 'ULoginScreen_C::FrontEnd_Music_Controller' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, AccountLinkWindow) == 0x0005A0, "Member 'ULoginScreen_C::AccountLinkWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, PlatformSpecificBackBorder) == 0x0005A8, "Member 'ULoginScreen_C::PlatformSpecificBackBorder' has a wrong offset!");
+static_assert(sizeof(ULoginScreen_C) == 0x000520, "Wrong size on ULoginScreen_C");
+static_assert(offsetof(ULoginScreen_C, UberGraphFrame) == 0x0004C8, "Member 'ULoginScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, BackBorder) == 0x0004D0, "Member 'ULoginScreen_C::BackBorder' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, BackButton) == 0x0004D8, "Member 'ULoginScreen_C::BackButton' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, BottomBorder) == 0x0004E0, "Member 'ULoginScreen_C::BottomBorder' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, ConsoleBack) == 0x0004E8, "Member 'ULoginScreen_C::ConsoleBack' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, ConsoleProfileWidget) == 0x0004F0, "Member 'ULoginScreen_C::ConsoleProfileWidget' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, ImageSplashArt) == 0x0004F8, "Member 'ULoginScreen_C::ImageSplashArt' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, Text_Version) == 0x000500, "Member 'ULoginScreen_C::Text_Version' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, Widget_BuildWatermark) == 0x000508, "Member 'ULoginScreen_C::Widget_BuildWatermark' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, FrontEnd_Music_Controller) == 0x000510, "Member 'ULoginScreen_C::FrontEnd_Music_Controller' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, PlatformSpecificBackBorder) == 0x000518, "Member 'ULoginScreen_C::PlatformSpecificBackBorder' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_TakerSoulSuckRelease.GE_TakerSoulSuckRelease_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGE_TakerSoulSuckRelease_C final : public UGET_Stun_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_TakerSoulSuckRelease_C>();
 	}
 };
-static_assert(alignof(UGE_TakerSoulSuckRelease_C) == 0x000010, "Wrong alignment on UGE_TakerSoulSuckRelease_C");
-static_assert(sizeof(UGE_TakerSoulSuckRelease_C) == 0x000670, "Wrong size on UGE_TakerSoulSuckRelease_C");
+static_assert(alignof(UGE_TakerSoulSuckRelease_C) == 0x000008, "Wrong alignment on UGE_TakerSoulSuckRelease_C");
+static_assert(sizeof(UGE_TakerSoulSuckRelease_C) == 0x000638, "Wrong size on UGE_TakerSoulSuckRelease_C");
 
 }
 

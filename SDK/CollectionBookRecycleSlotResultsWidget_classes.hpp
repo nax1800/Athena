@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookRecycleSlotResultsWidget.CollectionBookRecycleSlotResultsWidget_C
-// 0x0010 (0x0240 - 0x0230)
+// 0x0010 (0x0238 - 0x0228)
 class UCollectionBookRecycleSlotResultsWidget_C final : public UFortCollectionBookRecycleSlotResultsWidget
 {
 public:
-	class UCommonTextBlock*                       DisplayNameWidget;                                 // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       DisplayNameWidget;                                 // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,9 +35,9 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookRecycleSlotResultsWidget_C");
-static_assert(sizeof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000240, "Wrong size on UCollectionBookRecycleSlotResultsWidget_C");
-static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, DisplayNameWidget) == 0x000230, "Member 'UCollectionBookRecycleSlotResultsWidget_C::DisplayNameWidget' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, Image_2) == 0x000238, "Member 'UCollectionBookRecycleSlotResultsWidget_C::Image_2' has a wrong offset!");
+static_assert(sizeof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000238, "Wrong size on UCollectionBookRecycleSlotResultsWidget_C");
+static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, DisplayNameWidget) == 0x000228, "Member 'UCollectionBookRecycleSlotResultsWidget_C::DisplayNameWidget' has a wrong offset!");
+static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, Image_2) == 0x000230, "Member 'UCollectionBookRecycleSlotResultsWidget_C::Image_2' has a wrong offset!");
 
 }
 

@@ -430,9 +430,9 @@ void APartyCharacterPlacementHelper_C::PlayLobbyAnimation(int32 PartyMemberIndex
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.IsInLobby
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_IsInLobby                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsInLobby_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void APartyCharacterPlacementHelper_C::IsInLobby(bool* Param_IsInLobby)
+void APartyCharacterPlacementHelper_C::IsInLobby(bool* IsInLobby_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -443,8 +443,8 @@ void APartyCharacterPlacementHelper_C::IsInLobby(bool* Param_IsInLobby)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsInLobby != nullptr)
-		*Param_IsInLobby = Parms.Param_IsInLobby;
+	if (IsInLobby_0 != nullptr)
+		*IsInLobby_0 = Parms.IsInLobby_0;
 }
 
 
@@ -606,9 +606,9 @@ void APartyCharacterPlacementHelper_C::OnPartySuggestionChanged(int32 SlotIndex,
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnPartySuggestionAccept
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_PlayerID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PlayerID_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APartyCharacterPlacementHelper_C::OnPartySuggestionAccept(int32 Param_PlayerID)
+void APartyCharacterPlacementHelper_C::OnPartySuggestionAccept(int32 PlayerID_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -617,7 +617,7 @@ void APartyCharacterPlacementHelper_C::OnPartySuggestionAccept(int32 Param_Playe
 
 	Params::PartyCharacterPlacementHelper_C_OnPartySuggestionAccept Parms{};
 
-	Parms.Param_PlayerID = Param_PlayerID;
+	Parms.PlayerID_0 = PlayerID_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

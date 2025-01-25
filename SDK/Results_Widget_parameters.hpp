@@ -10,22 +10,21 @@
 
 #include "Basic.hpp"
 
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function Results_Widget.Results_Widget_C.ExecuteUbergraph_Results_Widget
-// 0x0118 (0x0118 - 0x0000)
+// 0x0148 (0x0148 - 0x0000)
 struct Results_Widget_C_ExecuteUbergraph_Results_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue; // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId1;              // 0x0008(0x0028)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName1;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x0040(0x0028)(HasGetValueTypeHash)
@@ -34,38 +33,49 @@ public:
 	float                                         CallFunc_GetRealTimeSeconds_ReturnValue1;          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue12;         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue123;        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue2;          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue3;          // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalMissionPointsEarned_ReturnValue;  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue1234;       // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue12345;      // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_B_Execution_Happened_Variable;           // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Play_ReturnValue;                         // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_A_Execution_Happened_Variable;           // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_UseVideos_bVideos;                        // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AE[0x2];                                       // 0x00AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetRealTimeSeconds_ReturnValue123456;     // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00C8(0x0020)(ConstParm, NoDestructor)
-	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
-	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0108(0x0008)(NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsDataFinalized_ReturnValue;              // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetCommanderXPWidget_UseNewWidget;        // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9E[0x2];                                       // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget; // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget; // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetCommanderXPWidget_UseNewWidget1;       // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget1; // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget1; // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue4;          // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue5;          // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_B_Execution_Happened_Variable;           // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Play_ReturnValue;                         // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_A_Execution_Happened_Variable;           // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_UseVideos_bVideos;                        // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D6[0x2];                                       // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetRealTimeSeconds_ReturnValue6;          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00F0(0x0020)(ConstParm, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Select_Default;                             // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDataFinalized_ReturnValue;              // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue; // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0130(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0140(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000008, "Wrong alignment on Results_Widget_C_ExecuteUbergraph_Results_Widget");
-static_assert(sizeof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000118, "Wrong size on Results_Widget_C_ExecuteUbergraph_Results_Widget");
+static_assert(sizeof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000148, "Wrong size on Results_Widget_C_ExecuteUbergraph_Results_Widget");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, EntryPoint) == 0x000000, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue) == 0x000004, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetId1) == 0x000008, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetId1' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetName1) == 0x000030, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetName1' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetId) == 0x000040, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetId' has a wrong offset!");
@@ -74,30 +84,39 @@ static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFun
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue1) == 0x00007C, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000080, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_SpawnSound2D_ReturnValue) == 0x000088, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue12) == 0x000090, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue123) == 0x000094, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue2) == 0x000090, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue3) == 0x000094, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetTotalMissionPointsEarned_ReturnValue) == 0x000098, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetTotalMissionPointsEarned_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x00009C, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue1234) == 0x0000A0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue12345) == 0x0000A4, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_B_Execution_Happened_Variable) == 0x0000A9, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_B_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_Play_ReturnValue) == 0x0000AA, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_A_Execution_Happened_Variable) == 0x0000AB, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_UseVideos_bVideos) == 0x0000AC, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_UseVideos_bVideos' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_BooleanAND_ReturnValue) == 0x0000AD, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue123456) == 0x0000B0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventSource) == 0x0000B8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventFocus) == 0x0000C0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_ClientEvent) == 0x0000C8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetContext_ReturnValue) == 0x0000E8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_CreateDelegate_OutputDelegate) == 0x0000F0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetInputManager_ReturnValue) == 0x000100, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000108, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_SwitchEnum_CmpSuccess) == 0x000110, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsDataFinalized_ReturnValue) == 0x000111, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsDataFinalized_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_IsClosed_Variable) == 0x000112, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_Has_Been_Initd_Variable) == 0x000113, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_UseNewWidget) == 0x00009D, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_UseNewWidget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget) == 0x0000A0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget) == 0x0000A8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_IsClosed_Variable) == 0x0000B0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_UseNewWidget1) == 0x0000B1, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_UseNewWidget1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget1) == 0x0000B8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget1) == 0x0000C0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue4) == 0x0000C8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue5) == 0x0000CC, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_B_Execution_Happened_Variable) == 0x0000D1, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_B_Execution_Happened_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_Play_ReturnValue) == 0x0000D2, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_Play_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_A_Execution_Happened_Variable) == 0x0000D3, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_UseVideos_bVideos) == 0x0000D4, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_UseVideos_bVideos' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_BooleanAND_ReturnValue) == 0x0000D5, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue6) == 0x0000D8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventSource) == 0x0000E0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventFocus) == 0x0000E8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_ClientEvent) == 0x0000F0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_Variable) == 0x000110, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_SwitchEnum_CmpSuccess) == 0x000111, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_Select_Default) == 0x000112, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsDataFinalized_ReturnValue) == 0x000113, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsDataFinalized_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetContext_ReturnValue) == 0x000118, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetInputManager_ReturnValue) == 0x000120, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_Has_Been_Initd_Variable) == 0x000128, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue) == 0x000129, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_ShouldDisplayEndOfZoneCinematic_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_CreateDelegate_OutputDelegate) == 0x000130, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000140, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.HandleClientEvent_PlayerLeftEvent
 // 0x0030 (0x0030 - 0x0000)
@@ -141,7 +160,7 @@ static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_Compon
 static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000028, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Initialize
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct Results_Widget_C_Initialize final
 {
 public:
@@ -149,33 +168,40 @@ public:
 	TArray<class UFortItem*>                      RewardData;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 	class FText                                   Temp_text_Variable;                                // 0x0018(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0030(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0048(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0060(0x0018)()
-	int32                                         CallFunc_GetTotalMissionPointsEarned_ReturnValue;  // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortCompletionResult                         Temp_byte_Variable;                                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIScoreReport*                     CallFunc_GetScoreReport_ReturnValue;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x0090(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0048(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0060(0x0018)()
+	bool                                          CallFunc_GetCommanderXPWidget_UseNewWidget;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget; // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget; // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetTotalMissionPointsEarned_ReturnValue;  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortCompletionResult                         Temp_byte_Variable;                                // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIScoreReport*                     CallFunc_GetScoreReport_ReturnValue;               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortCompletionResult                         CallFunc_GetZoneCompletionResult_ReturnValue;      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortItem*>                      CallFunc_GetRewardsByType_OutRewards;              // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
+	TArray<class UFortItem*>                      CallFunc_GetRewardsByType_OutRewards;              // 0x00C8(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(Results_Widget_C_Initialize) == 0x000008, "Wrong alignment on Results_Widget_C_Initialize");
-static_assert(sizeof(Results_Widget_C_Initialize) == 0x0000C0, "Wrong size on Results_Widget_C_Initialize");
+static_assert(sizeof(Results_Widget_C_Initialize) == 0x0000D8, "Wrong size on Results_Widget_C_Initialize");
 static_assert(offsetof(Results_Widget_C_Initialize, ScoreReport) == 0x000000, "Member 'Results_Widget_C_Initialize::ScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize, RewardData) == 0x000008, "Member 'Results_Widget_C_Initialize::RewardData' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable) == 0x000018, "Member 'Results_Widget_C_Initialize::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable1) == 0x000030, "Member 'Results_Widget_C_Initialize::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable12) == 0x000048, "Member 'Results_Widget_C_Initialize::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable123) == 0x000060, "Member 'Results_Widget_C_Initialize::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetTotalMissionPointsEarned_ReturnValue) == 0x000078, "Member 'Results_Widget_C_Initialize::CallFunc_GetTotalMissionPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_byte_Variable) == 0x00007C, "Member 'Results_Widget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'Results_Widget_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetScoreReport_ReturnValue) == 0x000088, "Member 'Results_Widget_C_Initialize::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, K2Node_Select_Default) == 0x000090, "Member 'Results_Widget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable2) == 0x000048, "Member 'Results_Widget_C_Initialize::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable3) == 0x000060, "Member 'Results_Widget_C_Initialize::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetCommanderXPWidget_UseNewWidget) == 0x000078, "Member 'Results_Widget_C_Initialize::CallFunc_GetCommanderXPWidget_UseNewWidget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget) == 0x000080, "Member 'Results_Widget_C_Initialize::CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget) == 0x000088, "Member 'Results_Widget_C_Initialize::CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetTotalMissionPointsEarned_ReturnValue) == 0x000090, "Member 'Results_Widget_C_Initialize::CallFunc_GetTotalMissionPointsEarned_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, Temp_byte_Variable) == 0x000094, "Member 'Results_Widget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000098, "Member 'Results_Widget_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetScoreReport_ReturnValue) == 0x0000A0, "Member 'Results_Widget_C_Initialize::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetZoneCompletionResult_ReturnValue) == 0x0000A8, "Member 'Results_Widget_C_Initialize::CallFunc_GetZoneCompletionResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetRewardsByType_OutRewards) == 0x0000B0, "Member 'Results_Widget_C_Initialize::CallFunc_GetRewardsByType_OutRewards' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, K2Node_Select_Default) == 0x0000B0, "Member 'Results_Widget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetRewardsByType_OutRewards) == 0x0000C8, "Member 'Results_Widget_C_Initialize::CallFunc_GetRewardsByType_OutRewards' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Initialize Video
 // 0x03E8 (0x03E8 - 0x0000)
@@ -304,15 +330,22 @@ static_assert(offsetof(Results_Widget_C_LogAnalytics, CallFunc_GetRealTimeSecond
 static_assert(offsetof(Results_Widget_C_LogAnalytics, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000018, "Member 'Results_Widget_C_LogAnalytics::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.OnInputSkip
-// 0x0001 (0x0001 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct Results_Widget_C_OnInputSkip final
 {
 public:
 	bool                                          bCommited;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetCommanderXPWidget_UseNewWidget;        // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_OnInputSkip) == 0x000001, "Wrong alignment on Results_Widget_C_OnInputSkip");
-static_assert(sizeof(Results_Widget_C_OnInputSkip) == 0x000001, "Wrong size on Results_Widget_C_OnInputSkip");
+static_assert(alignof(Results_Widget_C_OnInputSkip) == 0x000008, "Wrong alignment on Results_Widget_C_OnInputSkip");
+static_assert(sizeof(Results_Widget_C_OnInputSkip) == 0x000018, "Wrong size on Results_Widget_C_OnInputSkip");
 static_assert(offsetof(Results_Widget_C_OnInputSkip, bCommited) == 0x000000, "Member 'Results_Widget_C_OnInputSkip::bCommited' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_OnInputSkip, CallFunc_GetCommanderXPWidget_UseNewWidget) == 0x000001, "Member 'Results_Widget_C_OnInputSkip::CallFunc_GetCommanderXPWidget_UseNewWidget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_OnInputSkip, CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget) == 0x000008, "Member 'Results_Widget_C_OnInputSkip::CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_OnInputSkip, CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget) == 0x000010, "Member 'Results_Widget_C_OnInputSkip::CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.InitializeInput
 // 0x0010 (0x0010 - 0x0000)
@@ -326,24 +359,31 @@ static_assert(sizeof(Results_Widget_C_InitializeInput) == 0x000010, "Wrong size 
 static_assert(offsetof(Results_Widget_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Results_Widget_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Focus
-// 0x000C (0x000C - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_Widget_C_Focus final
 {
 public:
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue1;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue12;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetCommanderXPWidget_UseNewWidget;        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue1;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue2;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_Focus) == 0x000004, "Wrong alignment on Results_Widget_C_Focus");
-static_assert(sizeof(Results_Widget_C_Focus) == 0x00000C, "Wrong size on Results_Widget_C_Focus");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue) == 0x000000, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue1) == 0x000001, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'Results_Widget_C_Focus::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'Results_Widget_C_Focus::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue12) == 0x000009, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue12' has a wrong offset!");
+static_assert(alignof(Results_Widget_C_Focus) == 0x000008, "Wrong alignment on Results_Widget_C_Focus");
+static_assert(sizeof(Results_Widget_C_Focus) == 0x000028, "Wrong size on Results_Widget_C_Focus");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetCommanderXPWidget_UseNewWidget) == 0x000000, "Member 'Results_Widget_C_Focus::CallFunc_GetCommanderXPWidget_UseNewWidget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget) == 0x000008, "Member 'Results_Widget_C_Focus::CallFunc_GetCommanderXPWidget_CommanderXPNew_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget) == 0x000010, "Member 'Results_Widget_C_Focus::CallFunc_GetCommanderXPWidget_CommanderXPOld_Widget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue) == 0x000018, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue1) == 0x000019, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue2) == 0x00001A, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x00001C, "Member 'Results_Widget_C_Focus::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_Focus, K2Node_SwitchInteger_CmpSuccess) == 0x000020, "Member 'Results_Widget_C_Focus::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.UseVideos
 // 0x03A0 (0x03A0 - 0x0000)
@@ -386,6 +426,58 @@ static_assert(offsetof(Results_Widget_C_ShouldDisplayEndOfZoneCinematic, CallFun
 static_assert(offsetof(Results_Widget_C_ShouldDisplayEndOfZoneCinematic, CallFunc_GetFeatureState_OutFeatureState) == 0x000010, "Member 'Results_Widget_C_ShouldDisplayEndOfZoneCinematic::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ShouldDisplayEndOfZoneCinematic, CallFunc_GetFeatureState_OutReason) == 0x000011, "Member 'Results_Widget_C_ShouldDisplayEndOfZoneCinematic::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ShouldDisplayEndOfZoneCinematic, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'Results_Widget_C_ShouldDisplayEndOfZoneCinematic::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+
+// Function Results_Widget.Results_Widget_C.AddCommanderXPWidget
+// 0x0058 (0x0058 - 0x0000)
+struct Results_Widget_C_AddCommanderXPWidget final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortPrototypingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortPrototypingStatus                        CallFunc_GetPrototypingStatus_ReturnValue;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_New_C*             CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CallFunc_Create_ReturnValue1;                      // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue1;           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Results_Widget_C_AddCommanderXPWidget) == 0x000008, "Wrong alignment on Results_Widget_C_AddCommanderXPWidget");
+static_assert(sizeof(Results_Widget_C_AddCommanderXPWidget) == 0x000058, "Wrong size on Results_Widget_C_AddCommanderXPWidget");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Results_Widget_C_AddCommanderXPWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'Results_Widget_C_AddCommanderXPWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_GetPrototypingStatus_ReturnValue) == 0x000028, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_GetPrototypingStatus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000029, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_Create_ReturnValue) == 0x000038, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_Create_ReturnValue1) == 0x000040, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_AddChildToOverlay_ReturnValue) == 0x000048, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_AddChildToOverlay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_AddCommanderXPWidget, CallFunc_AddChildToOverlay_ReturnValue1) == 0x000050, "Member 'Results_Widget_C_AddCommanderXPWidget::CallFunc_AddChildToOverlay_ReturnValue1' has a wrong offset!");
+
+// Function Results_Widget.Results_Widget_C.GetCommanderXPWidget
+// 0x0028 (0x0028 - 0x0000)
+struct Results_Widget_C_GetCommanderXPWidget final
+{
+public:
+	bool                                          UseNewWidget;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UResults_CommanderXP_New_C*             CommanderXPNew_Widget_0;                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CommanderXPOld_Widget_0;                           // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPrototypingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortPrototypingStatus                        CallFunc_GetPrototypingStatus_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Results_Widget_C_GetCommanderXPWidget) == 0x000008, "Wrong alignment on Results_Widget_C_GetCommanderXPWidget");
+static_assert(sizeof(Results_Widget_C_GetCommanderXPWidget) == 0x000028, "Wrong size on Results_Widget_C_GetCommanderXPWidget");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, UseNewWidget) == 0x000000, "Member 'Results_Widget_C_GetCommanderXPWidget::UseNewWidget' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, CommanderXPNew_Widget_0) == 0x000008, "Member 'Results_Widget_C_GetCommanderXPWidget::CommanderXPNew_Widget_0' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, CommanderXPOld_Widget_0) == 0x000010, "Member 'Results_Widget_C_GetCommanderXPWidget::CommanderXPOld_Widget_0' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'Results_Widget_C_GetCommanderXPWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, CallFunc_GetPrototypingStatus_ReturnValue) == 0x000020, "Member 'Results_Widget_C_GetCommanderXPWidget::CallFunc_GetPrototypingStatus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_Widget_C_GetCommanderXPWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'Results_Widget_C_GetCommanderXPWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 }
 

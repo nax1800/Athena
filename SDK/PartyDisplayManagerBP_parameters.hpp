@@ -10,276 +10,314 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ExecuteUbergraph_PartyDisplayManagerBP
-// 0x0630 (0x0630 - 0x0000)
+// 0x06E0 (0x06E0 - 0x0000)
 struct PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable1;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              K2Node_Event_ItemToView;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetWeaponPlacementTransform_ReturnValue;  // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0060(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x006C(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0078(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0088(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x0110(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0198(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable12;                   // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              K2Node_Event_ItemWhoseAssetsWereLoaded;            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UObject*>                        K2Node_Event_LoadedAssets;                         // 0x01B8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition;   // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition1;  // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftClassPtr<class UClass>                   CallFunc_GetPreviewPrefabAsset_Asset;              // 0x01F0(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetPreviewPrefabAsset_ReturnValue;        // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Conv_SoftClassReferenceToClass_ReturnValue; // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UStaticMesh>             CallFunc_GetPreviewStaticMeshAsset_Asset;          // 0x0228(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetPreviewStaticMeshAsset_ReturnValue;    // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_ClassDynamicCast_AsActor;                   // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class USkeletalMesh>           CallFunc_GetPreviewSkeletalMeshAsset_Asset;        // 0x0270(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue;  // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            K2Node_DynamicCast_AsStatic_Mesh;                  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1; // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          K2Node_DynamicCast_AsSkeletal_Mesh;                // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C2[0x2];                                      // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Map_Find_Value;                           // 0x02C4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_Map_Find_Value1;                          // 0x02D4(0x000C)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue1;                    // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1[0x3];                                      // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Map_Find_Value12;                         // 0x02E4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue12;                   // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Map_Find_Value123;                        // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue123;                  // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        CallFunc_Map_Find_Value1234;                       // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue1234;                 // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  K2Node_MakeArray_Array;                            // 0x0318(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_Array_Get_Item;                           // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0338(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Map_Find_Value12345;                      // 0x0340(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue12345;                // 0x034C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_34D[0x3];                                      // 0x034D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_Map_Find_Value123456;                     // 0x0350(0x000C)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue123456;               // 0x035C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35D[0x3];                                      // 0x035D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Map_Find_Value1234567;                    // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue1234567;              // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_369[0x3];                                      // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Map_Find_Value12345678;                   // 0x036C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue12345678;             // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        CallFunc_Map_Find_Value123456789;                  // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue123456789;            // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  K2Node_MakeArray_Array1;                           // 0x0390(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_Array_Get_Item1;                          // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A1[0x3];                                      // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3AA[0x6];                                      // 0x03AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x03B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x03B8(0x0028)(HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue12; // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue; // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x03F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3FA[0x6];                                      // 0x03FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition12; // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetupPrefabVisuals_Success;               // 0x040C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_40D[0x3];                                      // 0x040D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0410(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	TArray<TSoftObjectPtr<class UObject>>         CallFunc_GetPreviewAssets_ReturnValue;             // 0x0498(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable12;                  // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4B1[0x3];                                      // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue; // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_NewVisible;                     // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1; // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1234;                  // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12345;                 // 0x04D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D2[0xE];                                      // 0x04D2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x04E0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location1;                 // 0x0510(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation1;                 // 0x051C(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale1;                    // 0x0528(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_534[0x4];                                      // 0x0534(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0538(0x0010)(ZeroConstructor, ReferenceParm)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0548(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_Array_Get_Item12;                         // 0x0550(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x055C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55D[0x3];                                      // 0x055D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 K2Node_DynamicCast_AsSkeletal_Mesh_Component;      // 0x0560(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue1;      // 0x0570(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue1;          // 0x0578(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Multiply_RotatorInt_ReturnValue;          // 0x0584(0x000C)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddActorLocalRotation_SweepHitResult;  // 0x0590(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SetupPrefabVisuals_Success1;              // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_619[0x7];                                      // 0x0619(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0620(0x0010)(ZeroConstructor, NoDestructor)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UFortItem*                              K2Node_Event_ItemWhoseAssetsWereLoaded;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        K2Node_Event_LoadedAssets;                         // 0x00A0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	struct FGuid                                  K2Node_Event_RequestId;                            // 0x00B0(0x0010)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition;   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition1;  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftClassPtr<class UClass>                   CallFunc_GetPreviewPrefabAsset_Asset;              // 0x00F0(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetPreviewPrefabAsset_ReturnValue;        // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Conv_SoftClassReferenceToClass_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UStaticMesh>             CallFunc_GetPreviewStaticMeshAsset_Asset;          // 0x0128(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetPreviewStaticMeshAsset_ReturnValue;    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsActor;                   // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class USkeletalMesh>           CallFunc_GetPreviewSkeletalMeshAsset_Asset;        // 0x0170(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue;  // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            K2Node_DynamicCast_AsStatic_Mesh;                  // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1; // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          K2Node_DynamicCast_AsSkeletal_Mesh;                // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C2[0x6];                                      // 0x01C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x01C8(0x0028)(HasGetValueTypeHash)
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue2; // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue; // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_20B[0x5];                                      // 0x020B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition2;  // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0220(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	TArray<TSoftObjectPtr<class UObject>>         CallFunc_GetPreviewAssets_ReturnValue;             // 0x02A8(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_NewVisible;                     // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BA[0x6];                                      // 0x02BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue; // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetWeaponPlacementTransform_ReturnValue;  // 0x02D0(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_301[0x3];                                      // 0x0301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0304(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0310(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x031C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0330(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location1;                 // 0x0360(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation1;                 // 0x036C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale1;                    // 0x0378(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0388(0x0010)(ZeroConstructor, ReferenceParm)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0398(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A4[0x4];                                      // 0x03A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue1;      // 0x03A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x03B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UFortItem*                              K2Node_Event_ItemToView;                           // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  K2Node_Event_RequestId1;                           // 0x0448(0x0010)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array1;                           // 0x0458(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	class AFortPlayerPawn*                        K2Node_Event_Pawn2;                                // 0x0468(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        K2Node_Event_Pawn1;                                // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0488(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex; // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue; // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena;           // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A9[0x7];                                      // 0x04A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue; // 0x04B0(0x0028)(HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_Event_Pawn;                                 // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PartyIndex;                           // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x04E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4EA[0x2];                                      // 0x04EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena1;          // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInCharacterCustomization_ReturnValue;   // 0x04F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4FA[0x2];                                      // 0x04FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_Array_Get_Item;                           // 0x0500(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 K2Node_DynamicCast_AsSkeletal_Mesh_Component;      // 0x0508(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0510(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_511[0x7];                                      // 0x0511(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              Temp_object_Variable;                              // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array2;                           // 0x0520(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue1;                // 0x0530(0x0030)(IsPlainOldData, NoDestructor)
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition3;  // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0568(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1; // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena2;          // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0600(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_611[0x7];                                      // 0x0611(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFrontendAnimInstance*                  K2Node_DynamicCast_AsFrontend_Anim_Instance;       // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess7;                      // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_621[0x3];                                      // 0x0621(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  Temp_struct_Variable;                              // 0x0624(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              K2Node_CustomEvent_Item;                           // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  K2Node_CustomEvent_RequestId;                      // 0x0640(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UFortItem* Item, const struct FGuid& RequestId)> K2Node_CreateDelegate_OutputDelegate;              // 0x0650(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortAsyncAction_PartyDisplayManager_SetupPrefabVisuals* CallFunc_SetupPrefabVisuals_ReturnValue;           // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_669[0x7];                                      // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x0670(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_679[0x7];                                      // 0x0679(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0689(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x068A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x068B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue2; // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0698(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue1;             // 0x06A8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6B9[0x3];                                      // 0x06B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x06BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue1;          // 0x06C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP) == 0x000010, "Wrong alignment on PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP");
-static_assert(sizeof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP) == 0x000630, "Wrong size on PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP");
+static_assert(sizeof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP) == 0x0006E0, "Wrong size on PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP");
 static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, EntryPoint) == 0x000000, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000004, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Array_Index_Variable) == 0x000010, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Array_Index_Variable1) == 0x00001C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Array_Index_Variable1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Loop_Counter_Variable1) == 0x000020, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Add_IntInt_ReturnValue1) == 0x000024, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_ItemToView) == 0x000028, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_ItemToView' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetWeaponPlacementTransform_ReturnValue) == 0x000030, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetWeaponPlacementTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Location) == 0x000060, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Rotation) == 0x00006C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Scale) == 0x000078, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000088, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetWorldLocation_SweepHitResult1) == 0x000110, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetWorldLocation_SweepHitResult1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000198, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsDedicatedServer_ReturnValue) == 0x0001A4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Array_Index_Variable12) == 0x0001A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Array_Index_Variable12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_ItemWhoseAssetsWereLoaded) == 0x0001B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_ItemWhoseAssetsWereLoaded' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_LoadedAssets) == 0x0001B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_LoadedAssets' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsDedicatedServer_ReturnValue1) == 0x0001C8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition) == 0x0001D0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue) == 0x0001D8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition1) == 0x0001E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Not_PreBool_ReturnValue) == 0x0001E8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewPrefabAsset_Asset) == 0x0001F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewPrefabAsset_Asset' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewPrefabAsset_ReturnValue) == 0x000218, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewPrefabAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftClassReferenceToClass_ReturnValue) == 0x000220, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftClassReferenceToClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewStaticMeshAsset_Asset) == 0x000228, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewStaticMeshAsset_Asset' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewStaticMeshAsset_ReturnValue) == 0x000250, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewStaticMeshAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_ClassDynamicCast_AsActor) == 0x000258, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_ClassDynamicCast_AsActor' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_ClassDynamicCast_bSuccess) == 0x000260, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000268, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewSkeletalMeshAsset_Asset) == 0x000270, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewSkeletalMeshAsset_Asset' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue) == 0x000298, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsStatic_Mesh) == 0x0002A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsStatic_Mesh' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess) == 0x0002A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1) == 0x0002B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsSkeletal_Mesh) == 0x0002B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsSkeletal_Mesh' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess1) == 0x0002C0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetRarity_ReturnValue) == 0x0002C1, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value) == 0x0002C4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue) == 0x0002D0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value1) == 0x0002D4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue1) == 0x0002E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value12) == 0x0002E4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue12) == 0x0002F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value123) == 0x0002F8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value123' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue123) == 0x000300, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value1234) == 0x000308, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value1234' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue1234) == 0x000310, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_MakeArray_Array) == 0x000318, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Get_Item) == 0x000328, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Length_ReturnValue) == 0x00032C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue1) == 0x000330, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000338, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value12345) == 0x000340, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value12345' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue12345) == 0x00034C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value123456) == 0x000350, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value123456' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue123456) == 0x00035C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value1234567) == 0x000360, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value1234567' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue1234567) == 0x000368, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value12345678) == 0x00036C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value12345678' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue12345678) == 0x000378, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_Value123456789) == 0x000380, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_Value123456789' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Map_Find_ReturnValue123456789) == 0x000388, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Map_Find_ReturnValue123456789' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_MakeArray_Array1) == 0x000390, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Get_Item1) == 0x0003A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Length_ReturnValue1) == 0x0003A4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Less_IntInt_ReturnValue) == 0x0003A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue12) == 0x0003A9, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x0003B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetLargePreviewImage_ReturnValue) == 0x0003B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue12) == 0x0003E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetSchematicCraftingResultBP_ReturnValue) == 0x0003E8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetSchematicCraftingResultBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsTexture_2D) == 0x0003F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess12) == 0x0003F8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue123) == 0x0003F9, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition12) == 0x000400, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_DeltaSeconds) == 0x000408, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SetupPrefabVisuals_Success) == 0x00040C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SetupPrefabVisuals_Success' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000410, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewAssets_ReturnValue) == 0x000498, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewAssets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0004A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Loop_Counter_Variable12) == 0x0004AC, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Loop_Counter_Variable12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Less_IntInt_ReturnValue1) == 0x0004B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Add_IntInt_ReturnValue12) == 0x0004B4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue) == 0x0004B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CustomEvent_NewVisible) == 0x0004C0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CustomEvent_NewVisible' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1) == 0x0004C8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue1234) == 0x0004D0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue12345) == 0x0004D1, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetTransform_ReturnValue) == 0x0004E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Location1) == 0x000510, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Location1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Rotation1) == 0x00051C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Rotation1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Scale1) == 0x000528, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Scale1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetChildrenComponents_Children) == 0x000538, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000548, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Get_Item12) == 0x000550, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Length_ReturnValue12) == 0x000558, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Less_IntInt_ReturnValue12) == 0x00055C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsSkeletal_Mesh_Component) == 0x000560, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsSkeletal_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess123) == 0x000568, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x000570, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_FloatToVector_ReturnValue1) == 0x000578, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_FloatToVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Multiply_RotatorInt_ReturnValue) == 0x000584, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Multiply_RotatorInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_AddActorLocalRotation_SweepHitResult) == 0x000590, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_AddActorLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SetupPrefabVisuals_Success1) == 0x000618, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SetupPrefabVisuals_Success1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CreateDelegate_OutputDelegate) == 0x000620, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000004, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000010, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_ItemWhoseAssetsWereLoaded) == 0x000098, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_ItemWhoseAssetsWereLoaded' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_LoadedAssets) == 0x0000A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_LoadedAssets' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_RequestId) == 0x0000B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_RequestId' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_MakeArray_Array) == 0x0000C0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition) == 0x0000D0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue) == 0x0000D8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition1) == 0x0000E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Not_PreBool_ReturnValue) == 0x0000E8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewPrefabAsset_Asset) == 0x0000F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewPrefabAsset_Asset' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewPrefabAsset_ReturnValue) == 0x000118, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewPrefabAsset_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftClassReferenceToClass_ReturnValue) == 0x000120, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftClassReferenceToClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewStaticMeshAsset_Asset) == 0x000128, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewStaticMeshAsset_Asset' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewStaticMeshAsset_ReturnValue) == 0x000150, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewStaticMeshAsset_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_ClassDynamicCast_AsActor) == 0x000158, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_ClassDynamicCast_AsActor' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_ClassDynamicCast_bSuccess) == 0x000160, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000168, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewSkeletalMeshAsset_Asset) == 0x000170, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewSkeletalMeshAsset_Asset' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue) == 0x000198, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsStatic_Mesh) == 0x0001A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsStatic_Mesh' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess) == 0x0001A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1) == 0x0001B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsSkeletal_Mesh) == 0x0001B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsSkeletal_Mesh' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess1) == 0x0001C0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetRarity_ReturnValue) == 0x0001C1, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetLargePreviewImage_ReturnValue) == 0x0001C8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue2) == 0x0001F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetSchematicCraftingResultBP_ReturnValue) == 0x0001F8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetSchematicCraftingResultBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsTexture_2D) == 0x000200, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess2) == 0x000208, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue1) == 0x000209, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsDedicatedServer_ReturnValue) == 0x00020A, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition2) == 0x000210, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_DeltaSeconds) == 0x000218, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000220, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPreviewAssets_ReturnValue) == 0x0002A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPreviewAssets_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0002B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CustomEvent_NewVisible) == 0x0002B9, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CustomEvent_NewVisible' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue) == 0x0002C0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetWeaponPlacementTransform_ReturnValue) == 0x0002D0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetWeaponPlacementTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue2) == 0x000300, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Location) == 0x000304, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Rotation) == 0x000310, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Scale) == 0x00031C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetTransform_ReturnValue) == 0x000330, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Location1) == 0x000360, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Location1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Rotation1) == 0x00036C, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Rotation1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_BreakTransform_Scale1) == 0x000378, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_BreakTransform_Scale1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetChildrenComponents_Children) == 0x000388, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000398, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Length_ReturnValue) == 0x0003A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x0003A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsDedicatedServer_ReturnValue1) == 0x0003B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetWorldLocation_SweepHitResult1) == 0x0003B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetWorldLocation_SweepHitResult1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_ItemToView) == 0x000440, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_ItemToView' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_RequestId1) == 0x000448, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_RequestId1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_MakeArray_Array1) == 0x000458, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_Pawn2) == 0x000468, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_Pawn2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000470, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue3) == 0x000478, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_Pawn1) == 0x000480, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_Pawn1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000488, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex) == 0x000494, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue) == 0x000498, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x0004A0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess3) == 0x0004A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue) == 0x0004B0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_Pawn) == 0x0004D8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_Pawn' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_Event_PartyIndex) == 0x0004E0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_Event_PartyIndex' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Loop_Counter_Variable) == 0x0004E4, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0004E8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Less_IntInt_ReturnValue) == 0x0004E9, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Add_IntInt_ReturnValue) == 0x0004EC, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsPlayer_Pawn_Athena1) == 0x0004F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsPlayer_Pawn_Athena1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess4) == 0x0004F8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsInCharacterCustomization_ReturnValue) == 0x0004F9, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsInCharacterCustomization_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_int_Array_Index_Variable) == 0x0004FC, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Array_Get_Item) == 0x000500, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsSkeletal_Mesh_Component) == 0x000508, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsSkeletal_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess5) == 0x000510, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_object_Variable) == 0x000518, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_MakeArray_Array2) == 0x000520, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetTransform_ReturnValue1) == 0x000530, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetTransform_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetItemDefinitionToShow_ItemDefinition3) == 0x000560, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetItemDefinitionToShow_ItemDefinition3' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x000568, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1) == 0x0005F0, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsPlayer_Pawn_Athena2) == 0x0005F8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsPlayer_Pawn_Athena2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess6) == 0x000600, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetAnimInstance_ReturnValue) == 0x000608, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue4) == 0x000610, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_AsFrontend_Anim_Instance) == 0x000618, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_AsFrontend_Anim_Instance' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_DynamicCast_bSuccess7) == 0x000620, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_DynamicCast_bSuccess7' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, Temp_struct_Variable) == 0x000624, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CustomEvent_Item) == 0x000638, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CustomEvent_Item' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CustomEvent_RequestId) == 0x000640, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CustomEvent_RequestId' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_CreateDelegate_OutputDelegate) == 0x000650, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SetupPrefabVisuals_ReturnValue) == 0x000660, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SetupPrefabVisuals_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue5) == 0x000668, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_SpawnEmitterAtLocation_ReturnValue2) == 0x000670, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_SpawnEmitterAtLocation_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetSubGame_ReturnValue) == 0x000678, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetContext_ReturnValue) == 0x000680, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000688, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000689, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x00068A, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, K2Node_SwitchEnum_CmpSuccess) == 0x00068B, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue2) == 0x000690, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_LinearColorLerp_ReturnValue) == 0x000698, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_LinearColorLerp_ReturnValue1) == 0x0006A8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_LinearColorLerp_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_IsValid_ReturnValue6) == 0x0006B8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0006BC, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP, CallFunc_Conv_FloatToVector_ReturnValue1) == 0x0006C8, "Member 'PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP::CallFunc_Conv_FloatToVector_ReturnValue1' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResOutPawnFromLobby
+// 0x0010 (0x0010 - 0x0000)
+struct PartyDisplayManagerBP_C_ResOutPawnFromLobby final
+{
+public:
+	class AFortPlayerPawn*                        Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PartyIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_ResOutPawnFromLobby) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_ResOutPawnFromLobby");
+static_assert(sizeof(PartyDisplayManagerBP_C_ResOutPawnFromLobby) == 0x000010, "Wrong size on PartyDisplayManagerBP_C_ResOutPawnFromLobby");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResOutPawnFromLobby, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_ResOutPawnFromLobby::Pawn' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResOutPawnFromLobby, PartyIndex) == 0x000008, "Member 'PartyDisplayManagerBP_C_ResOutPawnFromLobby::PartyIndex' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.OnPlayerPawnAddedToLobby
+// 0x0008 (0x0008 - 0x0000)
+struct PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby final
+{
+public:
+	class AFortPlayerPawn*                        Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby");
+static_assert(sizeof(PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby) == 0x000008, "Wrong size on PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby");
+static_assert(offsetof(PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby::Pawn' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.CharacterCustomizationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct PartyDisplayManagerBP_C_CharacterCustomizationFinished final
+{
+public:
+	class AFortPlayerPawn*                        Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_CharacterCustomizationFinished) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_CharacterCustomizationFinished");
+static_assert(sizeof(PartyDisplayManagerBP_C_CharacterCustomizationFinished) == 0x000008, "Wrong size on PartyDisplayManagerBP_C_CharacterCustomizationFinished");
+static_assert(offsetof(PartyDisplayManagerBP_C_CharacterCustomizationFinished, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_CharacterCustomizationFinished::Pawn' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.Set Character Parts Visibility
 // 0x0001 (0x0001 - 0x0000)
@@ -304,39 +342,60 @@ static_assert(sizeof(PartyDisplayManagerBP_C_ReceiveTick) == 0x000004, "Wrong si
 static_assert(offsetof(PartyDisplayManagerBP_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PartyDisplayManagerBP_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.HandleLoadingAssetsForItemCompleted
-// 0x0018 (0x0018 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted final
 {
 public:
 	class UFortItem*                              ItemWhoseAssetsWereLoaded;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UObject*>                        LoadedAssets;                                      // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FGuid                                  RequestId;                                         // 0x0018(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted");
-static_assert(sizeof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted) == 0x000018, "Wrong size on PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted");
+static_assert(sizeof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted) == 0x000028, "Wrong size on PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted");
 static_assert(offsetof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted, ItemWhoseAssetsWereLoaded) == 0x000000, "Member 'PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted::ItemWhoseAssetsWereLoaded' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted, LoadedAssets) == 0x000008, "Member 'PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted::LoadedAssets' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted, RequestId) == 0x000018, "Member 'PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted::RequestId' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ShowItem
-// 0x0008 (0x0008 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PartyDisplayManagerBP_C_ShowItem final
 {
 public:
 	class UFortItem*                              ItemToView;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  RequestId;                                         // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_ShowItem) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_ShowItem");
-static_assert(sizeof(PartyDisplayManagerBP_C_ShowItem) == 0x000008, "Wrong size on PartyDisplayManagerBP_C_ShowItem");
+static_assert(sizeof(PartyDisplayManagerBP_C_ShowItem) == 0x000018, "Wrong size on PartyDisplayManagerBP_C_ShowItem");
 static_assert(offsetof(PartyDisplayManagerBP_C_ShowItem, ItemToView) == 0x000000, "Member 'PartyDisplayManagerBP_C_ShowItem::ItemToView' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ShowItem, RequestId) == 0x000008, "Member 'PartyDisplayManagerBP_C_ShowItem::RequestId' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.Completed_01D864884864692DBB7035B0996A5437
+// 0x0018 (0x0018 - 0x0000)
+struct PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437 final
+{
+public:
+	class UFortItem*                              Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  RequestId;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437");
+static_assert(sizeof(PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437) == 0x000018, "Wrong size on PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437");
+static_assert(offsetof(PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437, Item) == 0x000000, "Member 'PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437::Item' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437, RequestId) == 0x000008, "Member 'PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437::RequestId' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetVisuals
-// 0x0001 (0x0001 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PartyDisplayManagerBP_C_ResetVisuals final
 {
 public:
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PartyDisplayManagerBP_C_ResetVisuals) == 0x000001, "Wrong alignment on PartyDisplayManagerBP_C_ResetVisuals");
-static_assert(sizeof(PartyDisplayManagerBP_C_ResetVisuals) == 0x000001, "Wrong size on PartyDisplayManagerBP_C_ResetVisuals");
-static_assert(offsetof(PartyDisplayManagerBP_C_ResetVisuals, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'PartyDisplayManagerBP_C_ResetVisuals::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(alignof(PartyDisplayManagerBP_C_ResetVisuals) == 0x000010, "Wrong alignment on PartyDisplayManagerBP_C_ResetVisuals");
+static_assert(sizeof(PartyDisplayManagerBP_C_ResetVisuals) == 0x0000C0, "Wrong size on PartyDisplayManagerBP_C_ResetVisuals");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetVisuals, CallFunc_MakeTransform_ReturnValue) == 0x000000, "Member 'PartyDisplayManagerBP_C_ResetVisuals::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetVisuals, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000030, "Member 'PartyDisplayManagerBP_C_ResetVisuals::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetVisuals, CallFunc_SetStaticMesh_ReturnValue) == 0x0000B8, "Member 'PartyDisplayManagerBP_C_ResetVisuals::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupSkeletalMeshVisuals
 // 0x00D0 (0x00D0 - 0x0000)
@@ -436,7 +495,7 @@ public:
 	struct FVector                                CallFunc_BreakTransform_Scale1;                    // 0x0128(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_134[0xC];                                      // 0x0134(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue1;               // 0x0140(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue12;              // 0x0170(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue2;               // 0x0170(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x01A0(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_GetItemPreviewOffset) == 0x000010, "Wrong alignment on PartyDisplayManagerBP_C_GetItemPreviewOffset");
@@ -459,7 +518,7 @@ static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_Br
 static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_BreakTransform_Rotation1) == 0x00011C, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_BreakTransform_Rotation1' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_BreakTransform_Scale1) == 0x000128, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_BreakTransform_Scale1' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_MakeTransform_ReturnValue1) == 0x000140, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_MakeTransform_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_MakeTransform_ReturnValue12) == 0x000170, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_MakeTransform_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_MakeTransform_ReturnValue2) == 0x000170, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_MakeTransform_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_GetItemPreviewOffset, CallFunc_ComposeTransforms_ReturnValue) == 0x0001A0, "Member 'PartyDisplayManagerBP_C_GetItemPreviewOffset::CallFunc_ComposeTransforms_ReturnValue' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.UpdatePreviewMeshTransforms
@@ -518,12 +577,12 @@ public:
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue;               // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_FindSubstring_ReturnValue1;               // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindSubstring_ReturnValue12;              // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindSubstring_ReturnValue2;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue1;              // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Conv_IntToBool_ReturnValue12;             // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Conv_IntToBool_ReturnValue2;              // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C6[0x2];                                       // 0x00C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FindSubstring_ReturnValue123;             // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Conv_IntToBool_ReturnValue123;            // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_FindSubstring_ReturnValue3;               // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Conv_IntToBool_ReturnValue3;              // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_SetUIOverrideVisuals) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_SetUIOverrideVisuals");
 static_assert(sizeof(PartyDisplayManagerBP_C_SetUIOverrideVisuals) == 0x0000D0, "Wrong size on PartyDisplayManagerBP_C_SetUIOverrideVisuals");
@@ -536,11 +595,11 @@ static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Fi
 static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000B0, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue) == 0x0000B8, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_FindSubstring_ReturnValue1) == 0x0000BC, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_FindSubstring_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_FindSubstring_ReturnValue12) == 0x0000C0, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_FindSubstring_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_FindSubstring_ReturnValue2) == 0x0000C0, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_FindSubstring_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue1) == 0x0000C4, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue12) == 0x0000C5, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_FindSubstring_ReturnValue123) == 0x0000C8, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_FindSubstring_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue123) == 0x0000CC, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue2) == 0x0000C5, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_FindSubstring_ReturnValue3) == 0x0000C8, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_FindSubstring_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_SetUIOverrideVisuals, CallFunc_Conv_IntToBool_ReturnValue3) == 0x0000CC, "Member 'PartyDisplayManagerBP_C_SetUIOverrideVisuals::CallFunc_Conv_IntToBool_ReturnValue3' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow
 // 0x0028 (0x0028 - 0x0000)
@@ -567,64 +626,34 @@ static_assert(offsetof(PartyDisplayManagerBP_C_GetItemDefinitionToShow, Temp_boo
 static_assert(offsetof(PartyDisplayManagerBP_C_GetItemDefinitionToShow, K2Node_Select_Default) == 0x000020, "Member 'PartyDisplayManagerBP_C_GetItemDefinitionToShow::K2Node_Select_Default' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetMeshForCurrentDisplayedItem
-// 0x0050 (0x0050 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem final
 {
 public:
 	class UMeshComponent*                         OutDisplayedMesh;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerParachute*                   K2Node_DynamicCast_AsFort_Player_Parachute;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetParachuteRootMesh_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class ICustomCharacterPartOwnerInterface> CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class ICustomCharacterPartOwnerInterface> CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerParachute*                   K2Node_DynamicCast_AsFort_Player_Parachute;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetParachuteRootMesh_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem");
-static_assert(sizeof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem) == 0x000050, "Wrong size on PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem");
+static_assert(sizeof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem) == 0x000048, "Wrong size on PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem");
 static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, OutDisplayedMesh) == 0x000000, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::OutDisplayedMesh' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue) == 0x000008, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, K2Node_DynamicCast_AsFort_Player_Parachute) == 0x000018, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::K2Node_DynamicCast_AsFort_Player_Parachute' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetParachuteRootMesh_ReturnValue) == 0x000028, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetParachuteRootMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput) == 0x000030, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue) == 0x000040, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue1) == 0x000048, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue12) == 0x000049, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-
-// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupPrefabVisuals
-// 0x00F0 (0x00F0 - 0x0000)
-struct PartyDisplayManagerBP_C_SetupPrefabVisuals final
-{
-public:
-	bool                                          Success;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsInCharacterCustomization_ReturnValue;   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionToShow_ItemDefinition;   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(PartyDisplayManagerBP_C_SetupPrefabVisuals) == 0x000010, "Wrong alignment on PartyDisplayManagerBP_C_SetupPrefabVisuals");
-static_assert(sizeof(PartyDisplayManagerBP_C_SetupPrefabVisuals) == 0x0000F0, "Wrong size on PartyDisplayManagerBP_C_SetupPrefabVisuals");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, Success) == 0x000000, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::Success' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue) == 0x000008, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x000010, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_IsInCharacterCustomization_ReturnValue) == 0x000019, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_IsInCharacterCustomization_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_GetAnimInstance_ReturnValue) == 0x000020, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_GetItemDefinitionToShow_ItemDefinition) == 0x000028, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_GetItemDefinitionToShow_ItemDefinition' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_GetTransform_ReturnValue) == 0x000030, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_SetupPrefabVisuals, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x000060, "Member 'PartyDisplayManagerBP_C_SetupPrefabVisuals::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput) == 0x000010, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue) == 0x000020, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, K2Node_DynamicCast_AsFort_Player_Parachute) == 0x000028, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::K2Node_DynamicCast_AsFort_Player_Parachute' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_GetParachuteRootMesh_ReturnValue) == 0x000038, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_GetParachuteRootMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue1) == 0x000041, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem, CallFunc_IsValid_ReturnValue2) == 0x000042, "Member 'PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetTeslaHackParticles
 // 0x0002 (0x0002 - 0x0000)
@@ -639,28 +668,182 @@ static_assert(sizeof(PartyDisplayManagerBP_C_ResetTeslaHackParticles) == 0x00000
 static_assert(offsetof(PartyDisplayManagerBP_C_ResetTeslaHackParticles, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'PartyDisplayManagerBP_C_ResetTeslaHackParticles::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyDisplayManagerBP_C_ResetTeslaHackParticles, CallFunc_IsValid_ReturnValue1) == 0x000001, "Member 'PartyDisplayManagerBP_C_ResetTeslaHackParticles::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 
-// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.PostSetupPrefabVisuals
-// 0x00B0 (0x00B0 - 0x0000)
-struct PartyDisplayManagerBP_C_PostSetupPrefabVisuals final
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.PartyMemberInProgressCheck
+// 0x0058 (0x0058 - 0x0000)
+struct PartyDisplayManagerBP_C_PartyMemberInProgressCheck final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaCosmeticItemDefinition*          K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_GetPreviewPawnRotationOffset_ReturnValue; // 0x001C(0x000C)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddActorLocalRotation_SweepHitResult;  // 0x0028(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPlayerPawn*                        Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerIndex;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue; // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsPartyInProgressEnabled_ReturnValue;     // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue; // 0x0028(0x0028)(HasGetValueTypeHash)
+	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_PostSetupPrefabVisuals");
-static_assert(sizeof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals) == 0x0000B0, "Wrong size on PartyDisplayManagerBP_C_PostSetupPrefabVisuals");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition) == 0x000010, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, CallFunc_GetPreviewPawnRotationOffset_ReturnValue) == 0x00001C, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::CallFunc_GetPreviewPawnRotationOffset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PartyDisplayManagerBP_C_PostSetupPrefabVisuals, CallFunc_K2_AddActorLocalRotation_SweepHitResult) == 0x000028, "Member 'PartyDisplayManagerBP_C_PostSetupPrefabVisuals::CallFunc_K2_AddActorLocalRotation_SweepHitResult' has a wrong offset!");
+static_assert(alignof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_PartyMemberInProgressCheck");
+static_assert(sizeof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck) == 0x000058, "Wrong size on PartyDisplayManagerBP_C_PartyMemberInProgressCheck");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::Pawn' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, PlayerIndex) == 0x000008, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000010, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex) == 0x000018, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue) == 0x00001C, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_IsPartyInProgressEnabled_ReturnValue) == 0x00001D, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_IsPartyInProgressEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue) == 0x000028, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000050, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x000051, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_PartyMemberInProgressCheck, K2Node_SwitchEnum_CmpSuccess) == 0x000052, "Member 'PartyDisplayManagerBP_C_PartyMemberInProgressCheck::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.HandlePartyMemberInProgressDisplayChanges
+// 0x00B8 (0x00B8 - 0x0000)
+struct PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges final
+{
+public:
+	class AFortPlayerPawn*                        Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_K2_GetTextureParameterValue_ReturnValue;  // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               CallFunc_K2_GetTextureParameterValue_ReturnValue1; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue;   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue1;  // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue2;  // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue3;  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue4;  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue5;  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue6;  // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue7;  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue8;  // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue9;  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_GetScalarParameterValue_ReturnValue10; // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges");
+static_assert(sizeof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges) == 0x0000B8, "Wrong size on PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::Pawn' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_GetChildrenComponents_Children) == 0x000010, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, Temp_int_Array_Index_Variable) == 0x000028, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, Temp_int_Variable) == 0x00002C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Array_Get_Item) == 0x000030, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, K2Node_DynamicCast_AsPrimitive_Component) == 0x000038, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Add_IntInt_ReturnValue1) == 0x000044, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_GetMaterial_ReturnValue) == 0x000048, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000050, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, K2Node_DynamicCast_bSuccess1) == 0x000058, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_GetNumMaterials_ReturnValue) == 0x00005C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetTextureParameterValue_ReturnValue) == 0x000060, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetTextureParameterValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_Subtract_IntInt_ReturnValue) == 0x000068, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetTextureParameterValue_ReturnValue1) == 0x000070, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetTextureParameterValue_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000078, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x00007C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue1) == 0x000080, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue2) == 0x000084, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue3) == 0x000088, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue4) == 0x00008C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue5) == 0x000090, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue6) == 0x000094, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue7) == 0x000098, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue8) == 0x00009C, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue9) == 0x0000A0, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_K2_GetScalarParameterValue_ReturnValue10) == 0x0000A4, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_K2_GetScalarParameterValue_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000B0, "Member 'PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.RestoreTeleportMIDsInProgress
+// 0x0058 (0x0058 - 0x0000)
+struct PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress final
+{
+public:
+	const class AFortPlayerPawn*                  Pawn;                                              // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue; // 0x0020(0x0028)(HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress");
+static_assert(sizeof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress) == 0x000058, "Wrong size on PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, Pawn) == 0x000000, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::Pawn' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex) == 0x000008, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue) == 0x00000C, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x000010, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_IsValid_ReturnValue1) == 0x00001A, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue) == 0x000020, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000050, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x000051, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress, K2Node_SwitchEnum_CmpSuccess) == 0x000052, "Member 'PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetPreScaleLocations
+// 0x0220 (0x0220 - 0x0000)
+struct PartyDisplayManagerBP_C_ResetPreScaleLocations final
+{
+public:
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0000(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult1;   // 0x0088(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult2;   // 0x0110(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult3;   // 0x0198(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_ResetPreScaleLocations) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_ResetPreScaleLocations");
+static_assert(sizeof(PartyDisplayManagerBP_C_ResetPreScaleLocations) == 0x000220, "Wrong size on PartyDisplayManagerBP_C_ResetPreScaleLocations");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetPreScaleLocations, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000000, "Member 'PartyDisplayManagerBP_C_ResetPreScaleLocations::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetPreScaleLocations, CallFunc_K2_SetRelativeLocation_SweepHitResult1) == 0x000088, "Member 'PartyDisplayManagerBP_C_ResetPreScaleLocations::CallFunc_K2_SetRelativeLocation_SweepHitResult1' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetPreScaleLocations, CallFunc_K2_SetRelativeLocation_SweepHitResult2) == 0x000110, "Member 'PartyDisplayManagerBP_C_ResetPreScaleLocations::CallFunc_K2_SetRelativeLocation_SweepHitResult2' has a wrong offset!");
+static_assert(offsetof(PartyDisplayManagerBP_C_ResetPreScaleLocations, CallFunc_K2_SetRelativeLocation_SweepHitResult3) == 0x000198, "Member 'PartyDisplayManagerBP_C_ResetPreScaleLocations::CallFunc_K2_SetRelativeLocation_SweepHitResult3' has a wrong offset!");
+
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetPrefabActorForCurrentDisplayedItem
+// 0x0008 (0x0008 - 0x0000)
+struct PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem final
+{
+public:
+	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem) == 0x000008, "Wrong alignment on PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem");
+static_assert(sizeof(PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem) == 0x000008, "Wrong size on PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem");
+static_assert(offsetof(PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem, ReturnValue) == 0x000000, "Member 'PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem::ReturnValue' has a wrong offset!");
 
 }
 

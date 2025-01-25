@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Ninja_MantisLeap_MantisStrikeFX.GC_Ninja_MantisLeap_MantisStrikeFX_C
-// 0x0010 (0x00C0 - 0x00B0)
+// 0x0010 (0x0090 - 0x0080)
 class UGC_Ninja_MantisLeap_MantisStrikeFX_C final : public UFortGameplayCueNotify_Simple
 {
 public:
-	class UParticleSystem*                        P_MantisStrikeImpact;                              // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             MantisStrikeImpactCue;                             // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        P_MantisStrikeImpact;                              // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             MantisStrikeImpactCue;                             // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -37,10 +37,10 @@ public:
 		return GetDefaultObjImpl<UGC_Ninja_MantisLeap_MantisStrikeFX_C>();
 	}
 };
-static_assert(alignof(UGC_Ninja_MantisLeap_MantisStrikeFX_C) == 0x000010, "Wrong alignment on UGC_Ninja_MantisLeap_MantisStrikeFX_C");
-static_assert(sizeof(UGC_Ninja_MantisLeap_MantisStrikeFX_C) == 0x0000C0, "Wrong size on UGC_Ninja_MantisLeap_MantisStrikeFX_C");
-static_assert(offsetof(UGC_Ninja_MantisLeap_MantisStrikeFX_C, P_MantisStrikeImpact) == 0x0000B0, "Member 'UGC_Ninja_MantisLeap_MantisStrikeFX_C::P_MantisStrikeImpact' has a wrong offset!");
-static_assert(offsetof(UGC_Ninja_MantisLeap_MantisStrikeFX_C, MantisStrikeImpactCue) == 0x0000B8, "Member 'UGC_Ninja_MantisLeap_MantisStrikeFX_C::MantisStrikeImpactCue' has a wrong offset!");
+static_assert(alignof(UGC_Ninja_MantisLeap_MantisStrikeFX_C) == 0x000008, "Wrong alignment on UGC_Ninja_MantisLeap_MantisStrikeFX_C");
+static_assert(sizeof(UGC_Ninja_MantisLeap_MantisStrikeFX_C) == 0x000090, "Wrong size on UGC_Ninja_MantisLeap_MantisStrikeFX_C");
+static_assert(offsetof(UGC_Ninja_MantisLeap_MantisStrikeFX_C, P_MantisStrikeImpact) == 0x000080, "Member 'UGC_Ninja_MantisLeap_MantisStrikeFX_C::P_MantisStrikeImpact' has a wrong offset!");
+static_assert(offsetof(UGC_Ninja_MantisLeap_MantisStrikeFX_C, MantisStrikeImpactCue) == 0x000088, "Member 'UGC_Ninja_MantisLeap_MantisStrikeFX_C::MantisStrikeImpactCue' has a wrong offset!");
 
 }
 

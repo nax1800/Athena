@@ -10,27 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InvitePopupMenu.InvitePopupMenu_C
-// 0x0090 (0x0470 - 0x03E0)
+// 0x00F0 (0x0400 - 0x0310)
 class UInvitePopupMenu_C final : public UCommonPopupMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CancelButton;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      InviteAsFriendButton;                              // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      InviteToPartyButton;                               // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       UniqueNetId;                                       // 0x0408(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       ConsoleUniqueNetId;                                // 0x0430(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
-	class FText                                   PlayerName;                                        // 0x0458(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CancelButton;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      InviteAsFriendButton;                              // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      InviteToPartyButton;                               // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       UniqueNetId;                                       // 0x0338(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       ConsoleUniqueNetId;                                // 0x0360(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	class FText                                   PlayerName;                                        // 0x0388(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   AddFriendText;                                     // 0x03A0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   AcceptInviteText;                                  // 0x03B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   SentInviteText;                                    // 0x03D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   AcceptedInviteText;                                // 0x03E8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_InvitePopupMenu(int32 EntryPoint);
@@ -38,7 +42,7 @@ public:
 	void BndEvt__CancelButton_K2Node_ComponentBoundEvent_153_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__InviteAsFriendButton_K2Node_ComponentBoundEvent_133_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__InviteToPartyButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void CanInviteToParty(bool* Param_CanInviteToParty);
+	void CanInviteToParty(bool* CanInviteToParty_0);
 	void CanAddAsFriend(bool* bCanFriendPlayer);
 	void InvitePlayerAsFriend();
 	void InvitePlayerToParty();
@@ -56,15 +60,19 @@ public:
 	}
 };
 static_assert(alignof(UInvitePopupMenu_C) == 0x000008, "Wrong alignment on UInvitePopupMenu_C");
-static_assert(sizeof(UInvitePopupMenu_C) == 0x000470, "Wrong size on UInvitePopupMenu_C");
-static_assert(offsetof(UInvitePopupMenu_C, UberGraphFrame) == 0x0003E0, "Member 'UInvitePopupMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, CancelButton) == 0x0003E8, "Member 'UInvitePopupMenu_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, InviteAsFriendButton) == 0x0003F0, "Member 'UInvitePopupMenu_C::InviteAsFriendButton' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, InviteToPartyButton) == 0x0003F8, "Member 'UInvitePopupMenu_C::InviteToPartyButton' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, MainButtonVerticalBox) == 0x000400, "Member 'UInvitePopupMenu_C::MainButtonVerticalBox' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, UniqueNetId) == 0x000408, "Member 'UInvitePopupMenu_C::UniqueNetId' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, ConsoleUniqueNetId) == 0x000430, "Member 'UInvitePopupMenu_C::ConsoleUniqueNetId' has a wrong offset!");
-static_assert(offsetof(UInvitePopupMenu_C, PlayerName) == 0x000458, "Member 'UInvitePopupMenu_C::PlayerName' has a wrong offset!");
+static_assert(sizeof(UInvitePopupMenu_C) == 0x000400, "Wrong size on UInvitePopupMenu_C");
+static_assert(offsetof(UInvitePopupMenu_C, UberGraphFrame) == 0x000310, "Member 'UInvitePopupMenu_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, CancelButton) == 0x000318, "Member 'UInvitePopupMenu_C::CancelButton' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, InviteAsFriendButton) == 0x000320, "Member 'UInvitePopupMenu_C::InviteAsFriendButton' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, InviteToPartyButton) == 0x000328, "Member 'UInvitePopupMenu_C::InviteToPartyButton' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, MainButtonVerticalBox) == 0x000330, "Member 'UInvitePopupMenu_C::MainButtonVerticalBox' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, UniqueNetId) == 0x000338, "Member 'UInvitePopupMenu_C::UniqueNetId' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, ConsoleUniqueNetId) == 0x000360, "Member 'UInvitePopupMenu_C::ConsoleUniqueNetId' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, PlayerName) == 0x000388, "Member 'UInvitePopupMenu_C::PlayerName' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, AddFriendText) == 0x0003A0, "Member 'UInvitePopupMenu_C::AddFriendText' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, AcceptInviteText) == 0x0003B8, "Member 'UInvitePopupMenu_C::AcceptInviteText' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, SentInviteText) == 0x0003D0, "Member 'UInvitePopupMenu_C::SentInviteText' has a wrong offset!");
+static_assert(offsetof(UInvitePopupMenu_C, AcceptedInviteText) == 0x0003E8, "Member 'UInvitePopupMenu_C::AcceptedInviteText' has a wrong offset!");
 
 }
 

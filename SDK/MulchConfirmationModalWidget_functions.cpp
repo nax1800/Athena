@@ -41,8 +41,9 @@ void UMulchConfirmationModalWidget_C::ExecuteUbergraph_MulchConfirmationModalWid
 // (BlueprintEvent)
 // Parameters:
 // class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMulchConfirmationModalWidget_C::BndEvt__RecycleItemTileView_K2Node_ComponentBoundEvent_21_OnListViewItemClicked__DelegateSignature(class UObject* Item)
+void UMulchConfirmationModalWidget_C::BndEvt__RecycleItemTileView_K2Node_ComponentBoundEvent_21_OnListViewItemClicked__DelegateSignature(class UObject* Item, bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
@@ -52,6 +53,7 @@ void UMulchConfirmationModalWidget_C::BndEvt__RecycleItemTileView_K2Node_Compone
 	Params::MulchConfirmationModalWidget_C_BndEvt__RecycleItemTileView_K2Node_ComponentBoundEvent_21_OnListViewItemClicked__DelegateSignature Parms{};
 
 	Parms.Item = Item;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

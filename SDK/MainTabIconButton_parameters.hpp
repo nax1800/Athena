@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,11 +27,11 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UClass*                                 CallFunc_GetCurrentTextStyleClass_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	class UClass*                                 CallFunc_GetCurrentTextStyleClass_ReturnValue1;    // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0068(0x00A0)(ConstParm)
@@ -44,10 +44,10 @@ static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, E
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, CallFunc_GetCurrentTextStyleClass_ReturnValue) == 0x000028, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::CallFunc_GetCurrentTextStyleClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, CallFunc_GetCurrentTextStyleClass_ReturnValue1) == 0x000040, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::CallFunc_GetCurrentTextStyleClass_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_Event_IsDesignTime) == 0x000048, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate123) == 0x000050, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000060, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, K2Node_Event_TabLabelInfo) == 0x000068, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::K2Node_Event_TabLabelInfo' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton, CallFunc_GetSelected_ReturnValue) == 0x000108, "Member 'MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
@@ -80,7 +80,7 @@ static_assert(offsetof(MainTabIconButton_C_PreConstruct, IsDesignTime) == 0x0000
 struct MainTabIconButton_C_Set_Text final
 {
 public:
-	class FText                                   Param_ButtonText;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   ButtonText_0;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -91,7 +91,7 @@ public:
 };
 static_assert(alignof(MainTabIconButton_C_Set_Text) == 0x000008, "Wrong alignment on MainTabIconButton_C_Set_Text");
 static_assert(sizeof(MainTabIconButton_C_Set_Text) == 0x000038, "Wrong size on MainTabIconButton_C_Set_Text");
-static_assert(offsetof(MainTabIconButton_C_Set_Text, Param_ButtonText) == 0x000000, "Member 'MainTabIconButton_C_Set_Text::Param_ButtonText' has a wrong offset!");
+static_assert(offsetof(MainTabIconButton_C_Set_Text, ButtonText_0) == 0x000000, "Member 'MainTabIconButton_C_Set_Text::ButtonText_0' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Set_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000018, "Member 'MainTabIconButton_C_Set_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Set_Text, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'MainTabIconButton_C_Set_Text::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Set_Text, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'MainTabIconButton_C_Set_Text::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -103,11 +103,11 @@ static_assert(offsetof(MainTabIconButton_C_Set_Text, CallFunc_Create_Basic_Toolt
 struct MainTabIconButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            Param_IconBrush;                                   // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(MainTabIconButton_C_Set_Icon) == 0x000008, "Wrong alignment on MainTabIconButton_C_Set_Icon");
 static_assert(sizeof(MainTabIconButton_C_Set_Icon) == 0x000088, "Wrong size on MainTabIconButton_C_Set_Icon");
-static_assert(offsetof(MainTabIconButton_C_Set_Icon, Param_IconBrush) == 0x000000, "Member 'MainTabIconButton_C_Set_Icon::Param_IconBrush' has a wrong offset!");
+static_assert(offsetof(MainTabIconButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'MainTabIconButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function MainTabIconButton.MainTabIconButton_C.SetTutorialBorderStyle
 // 0x0008 (0x0008 - 0x0000)
@@ -125,7 +125,7 @@ static_assert(offsetof(MainTabIconButton_C_SetTutorialBorderStyle, BorderStyle) 
 struct MainTabIconButton_C_Update_Bang_State final
 {
 public:
-	bool                                          Param_bBangEnabled;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bBangEnabled_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUIFeature                                UIFeature;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   UIFeatureRevealText;                               // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
@@ -135,7 +135,7 @@ public:
 };
 static_assert(alignof(MainTabIconButton_C_Update_Bang_State) == 0x000008, "Wrong alignment on MainTabIconButton_C_Update_Bang_State");
 static_assert(sizeof(MainTabIconButton_C_Update_Bang_State) == 0x000028, "Wrong size on MainTabIconButton_C_Update_Bang_State");
-static_assert(offsetof(MainTabIconButton_C_Update_Bang_State, Param_bBangEnabled) == 0x000000, "Member 'MainTabIconButton_C_Update_Bang_State::Param_bBangEnabled' has a wrong offset!");
+static_assert(offsetof(MainTabIconButton_C_Update_Bang_State, bBangEnabled_0) == 0x000000, "Member 'MainTabIconButton_C_Update_Bang_State::bBangEnabled_0' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Update_Bang_State, UIFeature) == 0x000001, "Member 'MainTabIconButton_C_Update_Bang_State::UIFeature' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Update_Bang_State, UIFeatureRevealText) == 0x000008, "Member 'MainTabIconButton_C_Update_Bang_State::UIFeatureRevealText' has a wrong offset!");
 static_assert(offsetof(MainTabIconButton_C_Update_Bang_State, CallFunc_GetIsEnabled_ReturnValue) == 0x000020, "Member 'MainTabIconButton_C_Update_Bang_State::CallFunc_GetIsEnabled_ReturnValue' has a wrong offset!");

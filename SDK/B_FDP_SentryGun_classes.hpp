@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_FDP_SentryGun.B_FDP_SentryGun_C
-// 0x0030 (0x04F0 - 0x04C0)
+// 0x0030 (0x04C0 - 0x0490)
 class AB_FDP_SentryGun_C final : public AFortDecoPreview
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   S_Turret_Aim_Range;                                // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   AmmoMesh;                                          // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Gun;                                               // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Base;                                              // 0x04E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      CollisionCapsule;                                  // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0490(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   S_Turret_Aim_Range;                                // 0x0498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   AmmoMesh;                                          // 0x04A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Gun;                                               // 0x04A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Base;                                              // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      CollisionCapsule;                                  // 0x04B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_FDP_SentryGun(int32 EntryPoint);
@@ -45,14 +45,14 @@ public:
 		return GetDefaultObjImpl<AB_FDP_SentryGun_C>();
 	}
 };
-static_assert(alignof(AB_FDP_SentryGun_C) == 0x000010, "Wrong alignment on AB_FDP_SentryGun_C");
-static_assert(sizeof(AB_FDP_SentryGun_C) == 0x0004F0, "Wrong size on AB_FDP_SentryGun_C");
-static_assert(offsetof(AB_FDP_SentryGun_C, UberGraphFrame) == 0x0004C0, "Member 'AB_FDP_SentryGun_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_FDP_SentryGun_C, S_Turret_Aim_Range) == 0x0004C8, "Member 'AB_FDP_SentryGun_C::S_Turret_Aim_Range' has a wrong offset!");
-static_assert(offsetof(AB_FDP_SentryGun_C, AmmoMesh) == 0x0004D0, "Member 'AB_FDP_SentryGun_C::AmmoMesh' has a wrong offset!");
-static_assert(offsetof(AB_FDP_SentryGun_C, Gun) == 0x0004D8, "Member 'AB_FDP_SentryGun_C::Gun' has a wrong offset!");
-static_assert(offsetof(AB_FDP_SentryGun_C, Base) == 0x0004E0, "Member 'AB_FDP_SentryGun_C::Base' has a wrong offset!");
-static_assert(offsetof(AB_FDP_SentryGun_C, CollisionCapsule) == 0x0004E8, "Member 'AB_FDP_SentryGun_C::CollisionCapsule' has a wrong offset!");
+static_assert(alignof(AB_FDP_SentryGun_C) == 0x000008, "Wrong alignment on AB_FDP_SentryGun_C");
+static_assert(sizeof(AB_FDP_SentryGun_C) == 0x0004C0, "Wrong size on AB_FDP_SentryGun_C");
+static_assert(offsetof(AB_FDP_SentryGun_C, UberGraphFrame) == 0x000490, "Member 'AB_FDP_SentryGun_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_FDP_SentryGun_C, S_Turret_Aim_Range) == 0x000498, "Member 'AB_FDP_SentryGun_C::S_Turret_Aim_Range' has a wrong offset!");
+static_assert(offsetof(AB_FDP_SentryGun_C, AmmoMesh) == 0x0004A0, "Member 'AB_FDP_SentryGun_C::AmmoMesh' has a wrong offset!");
+static_assert(offsetof(AB_FDP_SentryGun_C, Gun) == 0x0004A8, "Member 'AB_FDP_SentryGun_C::Gun' has a wrong offset!");
+static_assert(offsetof(AB_FDP_SentryGun_C, Base) == 0x0004B0, "Member 'AB_FDP_SentryGun_C::Base' has a wrong offset!");
+static_assert(offsetof(AB_FDP_SentryGun_C, CollisionCapsule) == 0x0004B8, "Member 'AB_FDP_SentryGun_C::CollisionCapsule' has a wrong offset!");
 
 }
 

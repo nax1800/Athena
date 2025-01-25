@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C
-// 0x0010 (0x0450 - 0x0440)
+// 0x0008 (0x0428 - 0x0420)
 class AGCN_Commando_IncendiaryRoundsDOT_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT(int32 EntryPoint);
@@ -39,9 +39,9 @@ public:
 		return GetDefaultObjImpl<AGCN_Commando_IncendiaryRoundsDOT_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000010, "Wrong alignment on AGCN_Commando_IncendiaryRoundsDOT_C");
-static_assert(sizeof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000450, "Wrong size on AGCN_Commando_IncendiaryRoundsDOT_C");
-static_assert(offsetof(AGCN_Commando_IncendiaryRoundsDOT_C, UberGraphFrame) == 0x000440, "Member 'AGCN_Commando_IncendiaryRoundsDOT_C::UberGraphFrame' has a wrong offset!");
+static_assert(alignof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000008, "Wrong alignment on AGCN_Commando_IncendiaryRoundsDOT_C");
+static_assert(sizeof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000428, "Wrong size on AGCN_Commando_IncendiaryRoundsDOT_C");
+static_assert(offsetof(AGCN_Commando_IncendiaryRoundsDOT_C, UberGraphFrame) == 0x000420, "Member 'AGCN_Commando_IncendiaryRoundsDOT_C::UberGraphFrame' has a wrong offset!");
 
 }
 

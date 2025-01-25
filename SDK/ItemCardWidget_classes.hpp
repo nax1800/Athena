@@ -19,26 +19,26 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCardWidget.ItemCardWidget_C
-// 0x0060 (0x0868 - 0x0808)
+// 0x0060 (0x08F0 - 0x0890)
 class UItemCardWidget_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Show;                                              // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 FortMultiSizeItemCard_0;                           // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnHoveredEvent;                                    // 0x0820(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FFortReceivedItemLootInfo              ItemReceivedInfo_BP;                               // 0x0830(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class USoundBase*                             SoundOnItemCardShow;                               // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Cscs;                                              // 0x0860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Show;                                              // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 FortMultiSizeItemCard_0;                           // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnHoveredEvent;                                    // 0x08A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FFortReceivedItemLootInfo              ItemReceivedInfo_BP;                               // 0x08B8(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class USoundBase*                             SoundOnItemCardShow;                               // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Cscs;                                              // 0x08E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void OnHoveredEvent__DelegateSignature(const struct FFortReceivedItemLootInfo& NewParam);
 	void ExecuteUbergraph_ItemCardWidget(int32 EntryPoint);
+	void BP_OnHovered();
 	void Construct();
 	void OnCentered();
 	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	void OnHovered();
 	void PlayShow(int32 Idx);
 
 public:
@@ -52,14 +52,14 @@ public:
 	}
 };
 static_assert(alignof(UItemCardWidget_C) == 0x000008, "Wrong alignment on UItemCardWidget_C");
-static_assert(sizeof(UItemCardWidget_C) == 0x000868, "Wrong size on UItemCardWidget_C");
-static_assert(offsetof(UItemCardWidget_C, UberGraphFrame) == 0x000808, "Member 'UItemCardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, Show) == 0x000810, "Member 'UItemCardWidget_C::Show' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, FortMultiSizeItemCard_0) == 0x000818, "Member 'UItemCardWidget_C::FortMultiSizeItemCard_0' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, OnHoveredEvent) == 0x000820, "Member 'UItemCardWidget_C::OnHoveredEvent' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, ItemReceivedInfo_BP) == 0x000830, "Member 'UItemCardWidget_C::ItemReceivedInfo_BP' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, SoundOnItemCardShow) == 0x000858, "Member 'UItemCardWidget_C::SoundOnItemCardShow' has a wrong offset!");
-static_assert(offsetof(UItemCardWidget_C, Cscs) == 0x000860, "Member 'UItemCardWidget_C::Cscs' has a wrong offset!");
+static_assert(sizeof(UItemCardWidget_C) == 0x0008F0, "Wrong size on UItemCardWidget_C");
+static_assert(offsetof(UItemCardWidget_C, UberGraphFrame) == 0x000890, "Member 'UItemCardWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, Show) == 0x000898, "Member 'UItemCardWidget_C::Show' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, FortMultiSizeItemCard_0) == 0x0008A0, "Member 'UItemCardWidget_C::FortMultiSizeItemCard_0' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, OnHoveredEvent) == 0x0008A8, "Member 'UItemCardWidget_C::OnHoveredEvent' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, ItemReceivedInfo_BP) == 0x0008B8, "Member 'UItemCardWidget_C::ItemReceivedInfo_BP' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, SoundOnItemCardShow) == 0x0008E0, "Member 'UItemCardWidget_C::SoundOnItemCardShow' has a wrong offset!");
+static_assert(offsetof(UItemCardWidget_C, Cscs) == 0x0008E8, "Member 'UItemCardWidget_C::Cscs' has a wrong offset!");
 
 }
 

@@ -552,5 +552,25 @@ void ACar_Copper_C::Toggle_light_visibility(bool bNewVisibility)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function Car_Copper.Car_Copper_C.PlayJumpOnCarSound
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar_Copper_C::PlayJumpOnCarSound(const struct FVector& Location)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Car_Copper_C", "PlayJumpOnCarSound");
+
+	Params::Car_Copper_C_PlayJumpOnCarSound Parms{};
+
+	Parms.Location = std::move(Location);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

@@ -34,9 +34,9 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionConfirm__DelegateSignatu
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.OnEvolutionOptionHovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Param_Item)
+void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -45,7 +45,7 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionHovered__DelegateS
 
 	Params::ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -54,9 +54,9 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionHovered__DelegateS
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.OnEvolutionOptionUnhovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Param_Item)
+void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65,7 +65,7 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionUnhovered__Delegat
 
 	Params::ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -74,10 +74,10 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionUnhovered__Delegat
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.OnEvolutionOptionSelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   RecipeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Param_Item, int32 RecipeIndex)
+void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Item_0, int32 RecipeIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,7 +86,7 @@ void UItemInspectEvolveRarityConfirmation_C::OnEvolutionOptionSelected__Delegate
 
 	Params::ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 	Parms.RecipeIndex = RecipeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -150,9 +150,9 @@ void UItemInspectEvolveRarityConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.SetItemToRepresent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::SetItemToRepresent(class UFortItem* Param_Item)
+void UItemInspectEvolveRarityConfirmation_C::SetItemToRepresent(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -161,7 +161,7 @@ void UItemInspectEvolveRarityConfirmation_C::SetItemToRepresent(class UFortItem*
 
 	Params::ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -192,10 +192,10 @@ void UItemInspectEvolveRarityConfirmation_C::SetEvolutionToRepresent(int32 Evolu
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.HandleEvolutionOptionSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   RecipeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::HandleEvolutionOptionSelected(class UFortItem* Param_Item, int32 RecipeIndex)
+void UItemInspectEvolveRarityConfirmation_C::HandleEvolutionOptionSelected(class UFortItem* Item_0, int32 RecipeIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -204,7 +204,7 @@ void UItemInspectEvolveRarityConfirmation_C::HandleEvolutionOptionSelected(class
 
 	Params::ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 	Parms.RecipeIndex = RecipeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -291,10 +291,10 @@ void UItemInspectEvolveRarityConfirmation_C::SetEvolutionRestrictions()
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.Get Temp Item Based on Current Level
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        NewItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectEvolveRarityConfirmation_C::Get_Temp_Item_Based_on_Current_Level(class UFortItem* Param_Item, class UFortItem** NewItem)
+void UItemInspectEvolveRarityConfirmation_C::Get_Temp_Item_Based_on_Current_Level(class UFortItem* Item_0, class UFortItem** NewItem)
 {
 	static class UFunction* Func = nullptr;
 
@@ -303,7 +303,7 @@ void UItemInspectEvolveRarityConfirmation_C::Get_Temp_Item_Based_on_Current_Leve
 
 	Params::ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerApplyKnockback.GAB_FlingerApplyKnockback_C
-// 0x0000 (0x0BD0 - 0x0BD0)
+// 0x0000 (0x09D8 - 0x09D8)
 class UGAB_FlingerApplyKnockback_C final : public UGAB_GenericApplyKnockback_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerApplyKnockback_C) == 0x000008, "Wrong alignment on UGAB_FlingerApplyKnockback_C");
-static_assert(sizeof(UGAB_FlingerApplyKnockback_C) == 0x000BD0, "Wrong size on UGAB_FlingerApplyKnockback_C");
+static_assert(sizeof(UGAB_FlingerApplyKnockback_C) == 0x0009D8, "Wrong size on UGAB_FlingerApplyKnockback_C");
 
 }
 

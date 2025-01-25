@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Commando_FlakVest_RemoveStack.GC_Commando_FlakVest_RemoveStack_C
-// 0x0000 (0x00B0 - 0x00B0)
+// 0x0000 (0x0080 - 0x0080)
 class UGC_Commando_FlakVest_RemoveStack_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGC_Commando_FlakVest_RemoveStack_C>();
 	}
 };
-static_assert(alignof(UGC_Commando_FlakVest_RemoveStack_C) == 0x000010, "Wrong alignment on UGC_Commando_FlakVest_RemoveStack_C");
-static_assert(sizeof(UGC_Commando_FlakVest_RemoveStack_C) == 0x0000B0, "Wrong size on UGC_Commando_FlakVest_RemoveStack_C");
+static_assert(alignof(UGC_Commando_FlakVest_RemoveStack_C) == 0x000008, "Wrong alignment on UGC_Commando_FlakVest_RemoveStack_C");
+static_assert(sizeof(UGC_Commando_FlakVest_RemoveStack_C) == 0x000080, "Wrong size on UGC_Commando_FlakVest_RemoveStack_C");
 
 }
 

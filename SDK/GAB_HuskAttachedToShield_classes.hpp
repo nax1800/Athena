@@ -10,26 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskAttachedToShield.GAB_HuskAttachedToShield_C
-// 0x0038 (0x0B20 - 0x0AE8)
+// 0x0030 (0x0928 - 0x08F8)
 class UGAB_HuskAttachedToShield_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UGA_Constructor_BullRush_C*             BullRush;                                          // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           HuskShield;                                        // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           Timer;                                             // 0x0B08(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         Time;                                              // 0x0B10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinimumAbilityTime;                                // 0x0B14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           DefaultShield;                                     // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UGA_Constructor_BullRush_C*             BullRush;                                          // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           HuskShield;                                        // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           Timer;                                             // 0x0910(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         Time;                                              // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinimumAbilityTime;                                // 0x091C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           DefaultShield;                                     // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_HuskAttachedToShield(int32 EntryPoint);
@@ -55,14 +54,14 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskAttachedToShield_C) == 0x000008, "Wrong alignment on UGAB_HuskAttachedToShield_C");
-static_assert(sizeof(UGAB_HuskAttachedToShield_C) == 0x000B20, "Wrong size on UGAB_HuskAttachedToShield_C");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_HuskAttachedToShield_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, BullRush) == 0x000AF8, "Member 'UGAB_HuskAttachedToShield_C::BullRush' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, HuskShield) == 0x000B00, "Member 'UGAB_HuskAttachedToShield_C::HuskShield' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, Timer) == 0x000B08, "Member 'UGAB_HuskAttachedToShield_C::Timer' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, Time) == 0x000B10, "Member 'UGAB_HuskAttachedToShield_C::Time' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, MinimumAbilityTime) == 0x000B14, "Member 'UGAB_HuskAttachedToShield_C::MinimumAbilityTime' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskAttachedToShield_C, DefaultShield) == 0x000B18, "Member 'UGAB_HuskAttachedToShield_C::DefaultShield' has a wrong offset!");
+static_assert(sizeof(UGAB_HuskAttachedToShield_C) == 0x000928, "Wrong size on UGAB_HuskAttachedToShield_C");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_HuskAttachedToShield_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, BullRush) == 0x000900, "Member 'UGAB_HuskAttachedToShield_C::BullRush' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, HuskShield) == 0x000908, "Member 'UGAB_HuskAttachedToShield_C::HuskShield' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, Timer) == 0x000910, "Member 'UGAB_HuskAttachedToShield_C::Timer' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, Time) == 0x000918, "Member 'UGAB_HuskAttachedToShield_C::Time' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, MinimumAbilityTime) == 0x00091C, "Member 'UGAB_HuskAttachedToShield_C::MinimumAbilityTime' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskAttachedToShield_C, DefaultShield) == 0x000920, "Member 'UGAB_HuskAttachedToShield_C::DefaultShield' has a wrong offset!");
 
 }
 

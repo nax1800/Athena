@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Constructor_FeelTheBase_HuskDeath.GCN_Constructor_FeelTheBase_HuskDeath_C
-// 0x0010 (0x00C0 - 0x00B0)
+// 0x0008 (0x0088 - 0x0080)
 class UGCN_Constructor_FeelTheBase_HuskDeath_C final : public UFortGameplayCueNotify_Simple
 {
 public:
-	float                                         ParticleVelocity;                                  // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ParticleVelocity;                                  // 0x0080(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -36,9 +36,9 @@ public:
 		return GetDefaultObjImpl<UGCN_Constructor_FeelTheBase_HuskDeath_C>();
 	}
 };
-static_assert(alignof(UGCN_Constructor_FeelTheBase_HuskDeath_C) == 0x000010, "Wrong alignment on UGCN_Constructor_FeelTheBase_HuskDeath_C");
-static_assert(sizeof(UGCN_Constructor_FeelTheBase_HuskDeath_C) == 0x0000C0, "Wrong size on UGCN_Constructor_FeelTheBase_HuskDeath_C");
-static_assert(offsetof(UGCN_Constructor_FeelTheBase_HuskDeath_C, ParticleVelocity) == 0x0000B0, "Member 'UGCN_Constructor_FeelTheBase_HuskDeath_C::ParticleVelocity' has a wrong offset!");
+static_assert(alignof(UGCN_Constructor_FeelTheBase_HuskDeath_C) == 0x000008, "Wrong alignment on UGCN_Constructor_FeelTheBase_HuskDeath_C");
+static_assert(sizeof(UGCN_Constructor_FeelTheBase_HuskDeath_C) == 0x000088, "Wrong size on UGCN_Constructor_FeelTheBase_HuskDeath_C");
+static_assert(offsetof(UGCN_Constructor_FeelTheBase_HuskDeath_C, ParticleVelocity) == 0x000080, "Member 'UGCN_Constructor_FeelTheBase_HuskDeath_C::ParticleVelocity' has a wrong offset!");
 
 }
 

@@ -150,9 +150,9 @@ void UFortReplayNotification_C::TickRemainingTime(float DeltaTime)
 // Function FortReplayNotification.FortReplayNotification_C.SetNotificationVisibility
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        Param_Visibility                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFortReplayNotification_C::SetNotificationVisibility(ESlateVisibility Param_Visibility)
+void UFortReplayNotification_C::SetNotificationVisibility(ESlateVisibility Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -161,7 +161,7 @@ void UFortReplayNotification_C::SetNotificationVisibility(ESlateVisibility Param
 
 	Params::FortReplayNotification_C_SetNotificationVisibility Parms{};
 
-	Parms.Param_Visibility = Param_Visibility;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -170,10 +170,10 @@ void UFortReplayNotification_C::SetNotificationVisibility(ESlateVisibility Param
 // Function FortReplayNotification.FortReplayNotification_C.IsVisibilityNotification
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_Notification                                     (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    Param_IsVisibilityNotification                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                             Notification_0                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    IsVisibilityNotification_0                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFortReplayNotification_C::IsVisibilityNotification(const class FText& Param_Notification, bool* Param_IsVisibilityNotification)
+void UFortReplayNotification_C::IsVisibilityNotification(const class FText& Notification_0, bool* IsVisibilityNotification_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -182,22 +182,22 @@ void UFortReplayNotification_C::IsVisibilityNotification(const class FText& Para
 
 	Params::FortReplayNotification_C_IsVisibilityNotification Parms{};
 
-	Parms.Param_Notification = std::move(Param_Notification);
+	Parms.Notification_0 = std::move(Notification_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsVisibilityNotification != nullptr)
-		*Param_IsVisibilityNotification = Parms.Param_IsVisibilityNotification;
+	if (IsVisibilityNotification_0 != nullptr)
+		*IsVisibilityNotification_0 = Parms.IsVisibilityNotification_0;
 }
 
 
 // Function FortReplayNotification.FortReplayNotification_C.GetVisibilityText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// EHudVisibilityState                     Param_Visibility                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHudVisibilityState                     Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             Text                                                   (Parm, OutParm)
 
-void UFortReplayNotification_C::GetVisibilityText(EHudVisibilityState Param_Visibility, class FText* Text)
+void UFortReplayNotification_C::GetVisibilityText(EHudVisibilityState Visibility_0, class FText* Text)
 {
 	static class UFunction* Func = nullptr;
 
@@ -206,7 +206,7 @@ void UFortReplayNotification_C::GetVisibilityText(EHudVisibilityState Param_Visi
 
 	Params::FortReplayNotification_C_GetVisibilityText Parms{};
 
-	Parms.Param_Visibility = Param_Visibility;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

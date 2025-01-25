@@ -10,29 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Commando_FragGrenade_Cluster.B_Prj_Commando_FragGrenade_Cluster_C
-// 0x0050 (0x0868 - 0x0818)
+// 0x0048 (0x0710 - 0x06C8)
 class AB_Prj_Commando_FragGrenade_Cluster_C final : public AFortProjectileBase
 {
 public:
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio1;                                            // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             BounceSound;                                       // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        P_Explosion;                                       // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             ExplosionSound;                                    // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ExplosionLocation;                                 // 0x0850(0x000C)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinExplosionDelay;                                 // 0x085C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MaxExplosionDelay;                                 // 0x0860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C8(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio1;                                            // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             BounceSound;                                       // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        P_Explosion;                                       // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             ExplosionSound;                                    // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ExplosionLocation;                                 // 0x06F8(0x000C)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinExplosionDelay;                                 // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MaxExplosionDelay;                                 // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster(int32 EntryPoint);
@@ -53,16 +52,16 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Commando_FragGrenade_Cluster_C) == 0x000008, "Wrong alignment on AB_Prj_Commando_FragGrenade_Cluster_C");
-static_assert(sizeof(AB_Prj_Commando_FragGrenade_Cluster_C) == 0x000868, "Wrong size on AB_Prj_Commando_FragGrenade_Cluster_C");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, UberGraphFrame) == 0x000820, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ParticleSystem1) == 0x000828, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, Audio1) == 0x000830, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::Audio1' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, BounceSound) == 0x000838, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::BounceSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, P_Explosion) == 0x000840, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::P_Explosion' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionSound) == 0x000848, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionLocation) == 0x000850, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MinExplosionDelay) == 0x00085C, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MinExplosionDelay' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MaxExplosionDelay) == 0x000860, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MaxExplosionDelay' has a wrong offset!");
+static_assert(sizeof(AB_Prj_Commando_FragGrenade_Cluster_C) == 0x000710, "Wrong size on AB_Prj_Commando_FragGrenade_Cluster_C");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, UberGraphFrame) == 0x0006C8, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ParticleSystem1) == 0x0006D0, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ParticleSystem1' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, Audio1) == 0x0006D8, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::Audio1' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, BounceSound) == 0x0006E0, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::BounceSound' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, P_Explosion) == 0x0006E8, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::P_Explosion' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionSound) == 0x0006F0, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionSound' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionLocation) == 0x0006F8, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionLocation' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MinExplosionDelay) == 0x000704, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MinExplosionDelay' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MaxExplosionDelay) == 0x000708, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MaxExplosionDelay' has a wrong offset!");
 
 }
 

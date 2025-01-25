@@ -22,7 +22,7 @@ namespace SDK
 class UMeshReconstructorBase final : public UObject
 {
 public:
-	struct FMRMeshConfiguration ConnectMRMesh(class UMRMeshComponent* Mesh);
+	void ConnectMRMesh(class UMRMeshComponent* Mesh);
 	void DisconnectMRMesh();
 	void PauseReconstruction();
 	void StartReconstruction();
@@ -45,22 +45,23 @@ static_assert(alignof(UMeshReconstructorBase) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UMeshReconstructorBase) == 0x000028, "Wrong size on UMeshReconstructorBase");
 
 // Class MRMesh.MRMeshComponent
-// 0x0050 (0x06A0 - 0x0650)
+// 0x0050 (0x05B0 - 0x0560)
 class UMRMeshComponent final : public UPrimitiveComponent
 {
 public:
-	uint8                                         Pad_650[0x8];                                      // 0x0650(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Material;                                          // 0x0658(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMeshReconstructorBase*                 MeshReconstructor;                                 // 0x0660(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bEnableCollision;                                  // 0x0668(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_669[0x7];                                      // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UBodySetup*>                     BodySetups;                                        // 0x0670(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_680[0x20];                                     // 0x0680(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_560[0x8];                                      // 0x0560(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Material;                                          // 0x0568(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCreateMeshProxySections;                          // 0x0570(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x0571(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_572[0x6];                                      // 0x0572(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UBodySetup*>                     BodySetups;                                        // 0x0578(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_588[0x28];                                     // 0x0588(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void ConnectReconstructor(class UMeshReconstructorBase* Reconstructor);
+	void Clear();
+	void ForceNavMeshUpdate();
 
-	class UMeshReconstructorBase* GetReconstructor() const;
+	bool IsConnected() const;
 
 public:
 	static class UClass* StaticClass()
@@ -72,12 +73,12 @@ public:
 		return GetDefaultObjImpl<UMRMeshComponent>();
 	}
 };
-static_assert(alignof(UMRMeshComponent) == 0x000010, "Wrong alignment on UMRMeshComponent");
-static_assert(sizeof(UMRMeshComponent) == 0x0006A0, "Wrong size on UMRMeshComponent");
-static_assert(offsetof(UMRMeshComponent, Material) == 0x000658, "Member 'UMRMeshComponent::Material' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, MeshReconstructor) == 0x000660, "Member 'UMRMeshComponent::MeshReconstructor' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bEnableCollision) == 0x000668, "Member 'UMRMeshComponent::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, BodySetups) == 0x000670, "Member 'UMRMeshComponent::BodySetups' has a wrong offset!");
+static_assert(alignof(UMRMeshComponent) == 0x000008, "Wrong alignment on UMRMeshComponent");
+static_assert(sizeof(UMRMeshComponent) == 0x0005B0, "Wrong size on UMRMeshComponent");
+static_assert(offsetof(UMRMeshComponent, Material) == 0x000568, "Member 'UMRMeshComponent::Material' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, bCreateMeshProxySections) == 0x000570, "Member 'UMRMeshComponent::bCreateMeshProxySections' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, bUpdateNavMeshOnMeshUpdate) == 0x000571, "Member 'UMRMeshComponent::bUpdateNavMeshOnMeshUpdate' has a wrong offset!");
+static_assert(offsetof(UMRMeshComponent, BodySetups) == 0x000578, "Member 'UMRMeshComponent::BodySetups' has a wrong offset!");
 
 }
 

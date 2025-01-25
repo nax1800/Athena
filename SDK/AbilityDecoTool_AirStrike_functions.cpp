@@ -94,9 +94,9 @@ void AAbilityDecoTool_AirStrike_C::PassInfo(int32 Power_Level)
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.BPPressSecondaryFire
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortDecoHelper*                  Param_FortDecoHelper                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortDecoHelper*                  FortDecoHelper_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAbilityDecoTool_AirStrike_C::BPPressSecondaryFire(class AFortDecoHelper* Param_FortDecoHelper)
+void AAbilityDecoTool_AirStrike_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +105,7 @@ void AAbilityDecoTool_AirStrike_C::BPPressSecondaryFire(class AFortDecoHelper* P
 
 	Params::AbilityDecoTool_AirStrike_C_BPPressSecondaryFire Parms{};
 
-	Parms.Param_FortDecoHelper = Param_FortDecoHelper;
+	Parms.FortDecoHelper_0 = FortDecoHelper_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -114,9 +114,9 @@ void AAbilityDecoTool_AirStrike_C::BPPressSecondaryFire(class AFortDecoHelper* P
 // Function AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C.BPOnSetDecoObjectPreview
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortDecoHelper*                  Param_FortDecoHelper                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortDecoHelper*                  FortDecoHelper_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAbilityDecoTool_AirStrike_C::BPOnSetDecoObjectPreview(class AFortDecoHelper* Param_FortDecoHelper)
+void AAbilityDecoTool_AirStrike_C::BPOnSetDecoObjectPreview(class AFortDecoHelper* FortDecoHelper_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -125,7 +125,7 @@ void AAbilityDecoTool_AirStrike_C::BPOnSetDecoObjectPreview(class AFortDecoHelpe
 
 	Params::AbilityDecoTool_AirStrike_C_BPOnSetDecoObjectPreview Parms{};
 
-	Parms.Param_FortDecoHelper = Param_FortDecoHelper;
+	Parms.FortDecoHelper_0 = FortDecoHelper_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

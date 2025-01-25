@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerRanged.GAB_FlingerRanged_C
-// 0x0030 (0x0B48 - 0x0B18)
+// 0x0030 (0x0950 - 0x0920)
 class UGAB_FlingerRanged_C final : public UGAB_AIBaseRanged_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_FlingerRanged_C;                // 0x0B18(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               ThrowFX;                                           // 0x0B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ThrowFXTemplate;                                   // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 FlingerMesh;                                       // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           GC_NPCRangedGrab;                                  // 0x0B38(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           GC_NPCRangedThrow;                                 // 0x0B40(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_FlingerRanged_C;                // 0x0920(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               ThrowFX;                                           // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ThrowFXTemplate;                                   // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 FlingerMesh;                                       // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           GC_NPCRangedGrab;                                  // 0x0940(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           GC_NPCRangedThrow;                                 // 0x0948(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_FlingerRanged(int32 EntryPoint);
@@ -48,13 +48,13 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerRanged_C) == 0x000008, "Wrong alignment on UGAB_FlingerRanged_C");
-static_assert(sizeof(UGAB_FlingerRanged_C) == 0x000B48, "Wrong size on UGAB_FlingerRanged_C");
-static_assert(offsetof(UGAB_FlingerRanged_C, UberGraphFrame_GAB_FlingerRanged_C) == 0x000B18, "Member 'UGAB_FlingerRanged_C::UberGraphFrame_GAB_FlingerRanged_C' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerRanged_C, ThrowFX) == 0x000B20, "Member 'UGAB_FlingerRanged_C::ThrowFX' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerRanged_C, ThrowFXTemplate) == 0x000B28, "Member 'UGAB_FlingerRanged_C::ThrowFXTemplate' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerRanged_C, FlingerMesh) == 0x000B30, "Member 'UGAB_FlingerRanged_C::FlingerMesh' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerRanged_C, GC_NPCRangedGrab) == 0x000B38, "Member 'UGAB_FlingerRanged_C::GC_NPCRangedGrab' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerRanged_C, GC_NPCRangedThrow) == 0x000B40, "Member 'UGAB_FlingerRanged_C::GC_NPCRangedThrow' has a wrong offset!");
+static_assert(sizeof(UGAB_FlingerRanged_C) == 0x000950, "Wrong size on UGAB_FlingerRanged_C");
+static_assert(offsetof(UGAB_FlingerRanged_C, UberGraphFrame_GAB_FlingerRanged_C) == 0x000920, "Member 'UGAB_FlingerRanged_C::UberGraphFrame_GAB_FlingerRanged_C' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerRanged_C, ThrowFX) == 0x000928, "Member 'UGAB_FlingerRanged_C::ThrowFX' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerRanged_C, ThrowFXTemplate) == 0x000930, "Member 'UGAB_FlingerRanged_C::ThrowFXTemplate' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerRanged_C, FlingerMesh) == 0x000938, "Member 'UGAB_FlingerRanged_C::FlingerMesh' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerRanged_C, GC_NPCRangedGrab) == 0x000940, "Member 'UGAB_FlingerRanged_C::GC_NPCRangedGrab' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerRanged_C, GC_NPCRangedThrow) == 0x000948, "Member 'UGAB_FlingerRanged_C::GC_NPCRangedThrow' has a wrong offset!");
 
 }
 

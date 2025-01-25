@@ -30,16 +30,27 @@ static_assert(sizeof(GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constru
 static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal, EntryPoint) == 0x000000, "Member 'GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal, K2Node_Event_EventData) == 0x000008, "Member 'GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal::K2Node_Event_EventData' has a wrong offset!");
 
+// Function GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C.SetupAbility
+// 0x0008 (0x0008 - 0x0000)
+struct GA_Constructor_HammerHitsHeal_C_SetupAbility final
+{
+public:
+	class UAbilitySystemComponent*                AbilitySystem;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GA_Constructor_HammerHitsHeal_C_SetupAbility) == 0x000008, "Wrong alignment on GA_Constructor_HammerHitsHeal_C_SetupAbility");
+static_assert(sizeof(GA_Constructor_HammerHitsHeal_C_SetupAbility) == 0x000008, "Wrong size on GA_Constructor_HammerHitsHeal_C_SetupAbility");
+static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_SetupAbility, AbilitySystem) == 0x000000, "Member 'GA_Constructor_HammerHitsHeal_C_SetupAbility::AbilitySystem' has a wrong offset!");
+
 // Function GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C.K2_ActivateAbilityFromEvent
 // 0x00A8 (0x00A8 - 0x0000)
 struct GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent final
 {
 public:
-	struct FGameplayEventData                     Param_EventData;                                   // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FGameplayEventData                     EventData_0;                                       // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 static_assert(alignof(GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent");
 static_assert(sizeof(GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent, Param_EventData) == 0x000000, "Member 'GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent::Param_EventData' has a wrong offset!");
+static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent, EventData_0) == 0x000000, "Member 'GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent::EventData_0' has a wrong offset!");
 
 // Function GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C.K2_ShouldAbilityRespondToEvent
 // 0x00F0 (0x00F0 - 0x0000)
@@ -57,17 +68,6 @@ static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondTo
 static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent, Payload) == 0x000040, "Member 'GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent::Payload' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent, ReturnValue) == 0x0000E8, "Member 'GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent::ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent, CallFunc_ShouldHammerHitsHealRespondToEvent_ReturnValue) == 0x0000E9, "Member 'GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent::CallFunc_ShouldHammerHitsHealRespondToEvent_ReturnValue' has a wrong offset!");
-
-// Function GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C.SetupAbility
-// 0x0008 (0x0008 - 0x0000)
-struct GA_Constructor_HammerHitsHeal_C_SetupAbility final
-{
-public:
-	class UAbilitySystemComponent*                AbilitySystem;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(GA_Constructor_HammerHitsHeal_C_SetupAbility) == 0x000008, "Wrong alignment on GA_Constructor_HammerHitsHeal_C_SetupAbility");
-static_assert(sizeof(GA_Constructor_HammerHitsHeal_C_SetupAbility) == 0x000008, "Wrong size on GA_Constructor_HammerHitsHeal_C_SetupAbility");
-static_assert(offsetof(GA_Constructor_HammerHitsHeal_C_SetupAbility, AbilitySystem) == 0x000000, "Member 'GA_Constructor_HammerHitsHeal_C_SetupAbility::AbilitySystem' has a wrong offset!");
 
 }
 

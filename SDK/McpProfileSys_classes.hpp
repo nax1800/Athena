@@ -54,7 +54,7 @@ static_assert(alignof(UMcpItemDefinitionBase) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UMcpItemDefinitionBase) == 0x000030, "Wrong size on UMcpItemDefinitionBase");
 
 // Class McpProfileSys.McpProfile
-// 0x0298 (0x02C0 - 0x0028)
+// 0x01B0 (0x01D8 - 0x0028)
 class UMcpProfile : public UObject
 {
 public:
@@ -74,7 +74,7 @@ public:
 	uint8                                         Pad_126[0x2];                                      // 0x0126(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              ProfileWriteLockExpireTime;                        // 0x0128(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         CommandRevision;                                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_134[0x18C];                                    // 0x0134(0x018C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_134[0xA4];                                     // 0x0134(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DeleteAllProfiles(struct FClientUrlContext* Context);
@@ -95,7 +95,7 @@ public:
 	}
 };
 static_assert(alignof(UMcpProfile) == 0x000008, "Wrong alignment on UMcpProfile");
-static_assert(sizeof(UMcpProfile) == 0x0002C0, "Wrong size on UMcpProfile");
+static_assert(sizeof(UMcpProfile) == 0x0001D8, "Wrong size on UMcpProfile");
 static_assert(offsetof(UMcpProfile, AllowSubscriptionToNotificationsService) == 0x000028, "Member 'UMcpProfile::AllowSubscriptionToNotificationsService' has a wrong offset!");
 static_assert(offsetof(UMcpProfile, DebugName) == 0x0000D0, "Member 'UMcpProfile::DebugName' has a wrong offset!");
 static_assert(offsetof(UMcpProfile, bProfileLockOperationPending) == 0x0000E0, "Member 'UMcpProfile::bProfileLockOperationPending' has a wrong offset!");
@@ -111,39 +111,39 @@ static_assert(offsetof(UMcpProfile, ProfileWriteLockExpireTime) == 0x000128, "Me
 static_assert(offsetof(UMcpProfile, CommandRevision) == 0x000130, "Member 'UMcpProfile::CommandRevision' has a wrong offset!");
 
 // Class McpProfileSys.McpProfileGroup
-// 0x02A8 (0x02D0 - 0x0028)
+// 0x0208 (0x0230 - 0x0028)
 class UMcpProfileGroup final : public UObject
 {
 public:
-	uint8                                         Pad_28[0xF0];                                      // 0x0028(0x00F0)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         DelayMcpResults;                                   // 0x0118(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         WeeklyIntervalStartDay;                            // 0x011C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<struct FProfileEntry>                  ProfileList;                                       // 0x0120(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	bool                                          bIsInitialized;                                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PlayerName;                                        // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsServer;                                         // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ProfileNotificationsStompTopic;                    // 0x0150(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_160[0x40];                                     // 0x0160(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 LastMcpVersion;                                    // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 LastContentVersion;                                // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FTimespan                              LocalTimeOffset;                                   // 0x01C0(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<struct FProfileHttpRequest>            PendingRequests;                                   // 0x01C8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1D8[0x10];                                     // 0x01D8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsProcessingRequestGenerator;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 LockCode;                                          // 0x01F0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMcpProfile*>                    LockedProfiles;                                    // 0x0200(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	class FString                                 LockedProfilesString;                              // 0x0210(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         ProfileWriteLockTimeoutSecs;                       // 0x0220(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bSubscribedToNotifications;                        // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ApplyStashEndPoint;                                // 0x0228(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bPendingInterceptedRequest;                        // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_239[0xF];                                      // 0x0239(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bSendProfileCommandRevisions;                      // 0x0248(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_249[0x87];                                     // 0x0249(0x0087)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0xC0];                                      // 0x0028(0x00C0)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         DelayMcpResults;                                   // 0x00E8(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         WeeklyIntervalStartDay;                            // 0x00EC(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FProfileEntry>                  ProfileList;                                       // 0x00F0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	bool                                          bIsInitialized;                                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PlayerName;                                        // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsServer;                                         // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ProfileNotificationsStompTopic;                    // 0x0120(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_130[0x40];                                     // 0x0130(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 LastMcpVersion;                                    // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 LastContentVersion;                                // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FTimespan                              LocalTimeOffset;                                   // 0x0190(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FProfileHttpRequest>            PendingRequests;                                   // 0x0198(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	bool                                          bIsProcessingRequestGenerator;                     // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 LockCode;                                          // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UMcpProfile*>                    LockedProfiles;                                    // 0x01C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	class FString                                 LockedProfilesString;                              // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         ProfileWriteLockTimeoutSecs;                       // 0x01E0(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bSubscribedToNotifications;                        // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ApplyStashEndPoint;                                // 0x01E8(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bPendingInterceptedRequest;                        // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F9[0xF];                                      // 0x01F9(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bSendProfileCommandRevisions;                      // 0x0208(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bAsyncParseProfileUpdates;                         // 0x0209(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_20A[0x26];                                     // 0x020A(0x0026)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -156,27 +156,28 @@ public:
 	}
 };
 static_assert(alignof(UMcpProfileGroup) == 0x000008, "Wrong alignment on UMcpProfileGroup");
-static_assert(sizeof(UMcpProfileGroup) == 0x0002D0, "Wrong size on UMcpProfileGroup");
-static_assert(offsetof(UMcpProfileGroup, DelayMcpResults) == 0x000118, "Member 'UMcpProfileGroup::DelayMcpResults' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, WeeklyIntervalStartDay) == 0x00011C, "Member 'UMcpProfileGroup::WeeklyIntervalStartDay' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileList) == 0x000120, "Member 'UMcpProfileGroup::ProfileList' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bIsInitialized) == 0x000130, "Member 'UMcpProfileGroup::bIsInitialized' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, PlayerName) == 0x000138, "Member 'UMcpProfileGroup::PlayerName' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bIsServer) == 0x000148, "Member 'UMcpProfileGroup::bIsServer' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileNotificationsStompTopic) == 0x000150, "Member 'UMcpProfileGroup::ProfileNotificationsStompTopic' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LastMcpVersion) == 0x0001A0, "Member 'UMcpProfileGroup::LastMcpVersion' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LastContentVersion) == 0x0001B0, "Member 'UMcpProfileGroup::LastContentVersion' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LocalTimeOffset) == 0x0001C0, "Member 'UMcpProfileGroup::LocalTimeOffset' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, PendingRequests) == 0x0001C8, "Member 'UMcpProfileGroup::PendingRequests' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bIsProcessingRequestGenerator) == 0x0001E8, "Member 'UMcpProfileGroup::bIsProcessingRequestGenerator' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockCode) == 0x0001F0, "Member 'UMcpProfileGroup::LockCode' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockedProfiles) == 0x000200, "Member 'UMcpProfileGroup::LockedProfiles' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockedProfilesString) == 0x000210, "Member 'UMcpProfileGroup::LockedProfilesString' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileWriteLockTimeoutSecs) == 0x000220, "Member 'UMcpProfileGroup::ProfileWriteLockTimeoutSecs' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bSubscribedToNotifications) == 0x000224, "Member 'UMcpProfileGroup::bSubscribedToNotifications' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ApplyStashEndPoint) == 0x000228, "Member 'UMcpProfileGroup::ApplyStashEndPoint' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bPendingInterceptedRequest) == 0x000238, "Member 'UMcpProfileGroup::bPendingInterceptedRequest' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bSendProfileCommandRevisions) == 0x000248, "Member 'UMcpProfileGroup::bSendProfileCommandRevisions' has a wrong offset!");
+static_assert(sizeof(UMcpProfileGroup) == 0x000230, "Wrong size on UMcpProfileGroup");
+static_assert(offsetof(UMcpProfileGroup, DelayMcpResults) == 0x0000E8, "Member 'UMcpProfileGroup::DelayMcpResults' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, WeeklyIntervalStartDay) == 0x0000EC, "Member 'UMcpProfileGroup::WeeklyIntervalStartDay' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, ProfileList) == 0x0000F0, "Member 'UMcpProfileGroup::ProfileList' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bIsInitialized) == 0x000100, "Member 'UMcpProfileGroup::bIsInitialized' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, PlayerName) == 0x000108, "Member 'UMcpProfileGroup::PlayerName' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bIsServer) == 0x000118, "Member 'UMcpProfileGroup::bIsServer' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, ProfileNotificationsStompTopic) == 0x000120, "Member 'UMcpProfileGroup::ProfileNotificationsStompTopic' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LastMcpVersion) == 0x000170, "Member 'UMcpProfileGroup::LastMcpVersion' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LastContentVersion) == 0x000180, "Member 'UMcpProfileGroup::LastContentVersion' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LocalTimeOffset) == 0x000190, "Member 'UMcpProfileGroup::LocalTimeOffset' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, PendingRequests) == 0x000198, "Member 'UMcpProfileGroup::PendingRequests' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bIsProcessingRequestGenerator) == 0x0001A8, "Member 'UMcpProfileGroup::bIsProcessingRequestGenerator' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LockCode) == 0x0001B0, "Member 'UMcpProfileGroup::LockCode' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LockedProfiles) == 0x0001C0, "Member 'UMcpProfileGroup::LockedProfiles' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, LockedProfilesString) == 0x0001D0, "Member 'UMcpProfileGroup::LockedProfilesString' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, ProfileWriteLockTimeoutSecs) == 0x0001E0, "Member 'UMcpProfileGroup::ProfileWriteLockTimeoutSecs' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bSubscribedToNotifications) == 0x0001E4, "Member 'UMcpProfileGroup::bSubscribedToNotifications' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, ApplyStashEndPoint) == 0x0001E8, "Member 'UMcpProfileGroup::ApplyStashEndPoint' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bPendingInterceptedRequest) == 0x0001F8, "Member 'UMcpProfileGroup::bPendingInterceptedRequest' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bSendProfileCommandRevisions) == 0x000208, "Member 'UMcpProfileGroup::bSendProfileCommandRevisions' has a wrong offset!");
+static_assert(offsetof(UMcpProfileGroup, bAsyncParseProfileUpdates) == 0x000209, "Member 'UMcpProfileGroup::bAsyncParseProfileUpdates' has a wrong offset!");
 
 // Class McpProfileSys.McpProfileManager
 // 0x0030 (0x0058 - 0x0028)

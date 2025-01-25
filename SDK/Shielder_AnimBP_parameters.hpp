@@ -18,59 +18,106 @@ namespace SDK::Params
 {
 
 // Function Shielder_AnimBP.Shielder_AnimBP_C.ExecuteUbergraph_Shielder_AnimBP
-// 0x0070 (0x0070 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetRelevantAnimTimeRemaining_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortAIPawn*                            K2Node_DynamicCast_AsFort_AIPawn;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EFortMovementStyle                            CallFunc_GetMovementStyle_ReturnValue;             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn;                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakVector_X;                            // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0050(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortMovementStyle                            CallFunc_GetMovementStyle_ReturnValue;             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakVector_X;                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPawnMovementComponent*                 CallFunc_GetMovementComponent_ReturnValue;         // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0054(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPawnMovementComponent*                 CallFunc_GetMovementComponent_ReturnValue;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn;                // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0070(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00AC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue1;        // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_InverseTransformDirection_ReturnValue;    // 0x00BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue2;        // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue3;        // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x00D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X1;                           // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y1;                           // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z1;                           // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x00FC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x0108(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue1;                   // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue4;        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0120(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VInterpTo_ReturnValue1;                   // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP) == 0x000008, "Wrong alignment on Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP");
-static_assert(sizeof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP) == 0x000070, "Wrong size on Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP");
+static_assert(alignof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP) == 0x000010, "Wrong alignment on Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP");
+static_assert(sizeof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP) == 0x000140, "Wrong size on Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, EntryPoint) == 0x000000, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Not_PreBool_ReturnValue1) == 0x000005, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000008, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00000C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Not_PreBool_ReturnValue1) == 0x00000D, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_Event_DeltaTimeX) == 0x000010, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000018, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_AsFort_AIPawn) == 0x000020, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetMovementStyle_ReturnValue) == 0x000029, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetMovementStyle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetVelocity_ReturnValue) == 0x00002C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_AsShielder_Pawn) == 0x000038, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_AsShielder_Pawn' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_X) == 0x000044, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Y) == 0x000048, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Z) == 0x00004C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_MakeVector2D_ReturnValue) == 0x000050, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetMovementStyle_ReturnValue) == 0x000058, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetMovementStyle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_X) == 0x000038, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Y) == 0x00003C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Z) == 0x000040, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetMovementComponent_ReturnValue) == 0x000048, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetMovementComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_IsFalling_ReturnValue) == 0x000050, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_MakeVector2D_ReturnValue) == 0x000054, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_VSize2D_ReturnValue) == 0x00005C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_VSize2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetMovementComponent_ReturnValue) == 0x000060, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetMovementComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_IsFalling_ReturnValue) == 0x000068, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_AsShielder_Pawn) == 0x000060, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_AsShielder_Pawn' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, K2Node_DynamicCast_bSuccess1) == 0x000068, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00006C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetTransform_ReturnValue) == 0x000070, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000A0, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000AC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetWorldDeltaSeconds_ReturnValue1) == 0x0000B8, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetWorldDeltaSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_InverseTransformDirection_ReturnValue) == 0x0000BC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_InverseTransformDirection_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetWorldDeltaSeconds_ReturnValue2) == 0x0000C8, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetWorldDeltaSeconds_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetWorldDeltaSeconds_ReturnValue3) == 0x0000CC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetWorldDeltaSeconds_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Divide_VectorFloat_ReturnValue) == 0x0000D0, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000DC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_X1) == 0x0000E8, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_X1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Y1) == 0x0000EC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Y1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_BreakVector_Z1) == 0x0000F0, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_BreakVector_Z1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_FInterpTo_ReturnValue) == 0x0000F4, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_IsValid_ReturnValue) == 0x0000F8, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x0000FC, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_VInterpTo_ReturnValue) == 0x000108, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_VInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_FInterpTo_ReturnValue1) == 0x000114, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_FInterpTo_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetWorldDeltaSeconds_ReturnValue4) == 0x000118, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetWorldDeltaSeconds_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_IsValid_ReturnValue1) == 0x00011C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_GetSocketLocation_ReturnValue) == 0x000120, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP, CallFunc_VInterpTo_ReturnValue1) == 0x00012C, "Member 'Shielder_AnimBP_C_ExecuteUbergraph_Shielder_AnimBP::CallFunc_VInterpTo_ReturnValue1' has a wrong offset!");
 
 // Function Shielder_AnimBP.Shielder_AnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)

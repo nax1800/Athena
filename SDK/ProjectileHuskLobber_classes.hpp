@@ -10,29 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass ProjectileHuskLobber.ProjectileHuskLobber_C
-// 0x00D8 (0x08F0 - 0x0818)
+// 0x00D0 (0x0798 - 0x06C8)
 class AProjectileHuskLobber_C final : public AFortProjectileBase
 {
 public:
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UAudioComponent*                        LobberProjLoopingSound;                            // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ProjectileParticleSystem;                          // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Effect_Explosion;                                  // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Pushed_Off_Location;                               // 0x0840(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84C[0x4];                                      // 0x084C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   ProjectileShot;                                    // 0x0850(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FHitResult                             HitResult;                                         // 0x0860(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Exploded;                                          // 0x08E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C8(0x0008)(Transient, DuplicateTransient)
+	class UAudioComponent*                        LobberProjLoopingSound;                            // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ProjectileParticleSystem;                          // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Effect_Explosion;                                  // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Pushed_Off_Location;                               // 0x06E8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6F4[0x4];                                      // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   ProjectileShot;                                    // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FHitResult                             HitResult;                                         // 0x0708(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          Exploded;                                          // 0x0790(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ProjectileShot__DelegateSignature(const struct FVector& Location);
@@ -54,15 +53,15 @@ public:
 	}
 };
 static_assert(alignof(AProjectileHuskLobber_C) == 0x000008, "Wrong alignment on AProjectileHuskLobber_C");
-static_assert(sizeof(AProjectileHuskLobber_C) == 0x0008F0, "Wrong size on AProjectileHuskLobber_C");
-static_assert(offsetof(AProjectileHuskLobber_C, UberGraphFrame) == 0x000820, "Member 'AProjectileHuskLobber_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, LobberProjLoopingSound) == 0x000828, "Member 'AProjectileHuskLobber_C::LobberProjLoopingSound' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, ProjectileParticleSystem) == 0x000830, "Member 'AProjectileHuskLobber_C::ProjectileParticleSystem' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, Effect_Explosion) == 0x000838, "Member 'AProjectileHuskLobber_C::Effect_Explosion' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, Pushed_Off_Location) == 0x000840, "Member 'AProjectileHuskLobber_C::Pushed_Off_Location' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, ProjectileShot) == 0x000850, "Member 'AProjectileHuskLobber_C::ProjectileShot' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, HitResult) == 0x000860, "Member 'AProjectileHuskLobber_C::HitResult' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskLobber_C, Exploded) == 0x0008E8, "Member 'AProjectileHuskLobber_C::Exploded' has a wrong offset!");
+static_assert(sizeof(AProjectileHuskLobber_C) == 0x000798, "Wrong size on AProjectileHuskLobber_C");
+static_assert(offsetof(AProjectileHuskLobber_C, UberGraphFrame) == 0x0006C8, "Member 'AProjectileHuskLobber_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, LobberProjLoopingSound) == 0x0006D0, "Member 'AProjectileHuskLobber_C::LobberProjLoopingSound' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, ProjectileParticleSystem) == 0x0006D8, "Member 'AProjectileHuskLobber_C::ProjectileParticleSystem' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, Effect_Explosion) == 0x0006E0, "Member 'AProjectileHuskLobber_C::Effect_Explosion' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, Pushed_Off_Location) == 0x0006E8, "Member 'AProjectileHuskLobber_C::Pushed_Off_Location' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, ProjectileShot) == 0x0006F8, "Member 'AProjectileHuskLobber_C::ProjectileShot' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, HitResult) == 0x000708, "Member 'AProjectileHuskLobber_C::HitResult' has a wrong offset!");
+static_assert(offsetof(AProjectileHuskLobber_C, Exploded) == 0x000790, "Member 'AProjectileHuskLobber_C::Exploded' has a wrong offset!");
 
 }
 

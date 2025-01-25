@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseWidget.AthenaGamePhaseWidget_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0268 - 0x0258)
 class UAthenaGamePhaseWidget_C final : public UAthenaGamePhaseWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Icon;                                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Icon;                                              // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaGamePhaseWidget(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UAthenaGamePhaseWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseWidget_C");
-static_assert(sizeof(UAthenaGamePhaseWidget_C) == 0x000270, "Wrong size on UAthenaGamePhaseWidget_C");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGamePhaseWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, Icon) == 0x000268, "Member 'UAthenaGamePhaseWidget_C::Icon' has a wrong offset!");
+static_assert(sizeof(UAthenaGamePhaseWidget_C) == 0x000268, "Wrong size on UAthenaGamePhaseWidget_C");
+static_assert(offsetof(UAthenaGamePhaseWidget_C, UberGraphFrame) == 0x000258, "Member 'UAthenaGamePhaseWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaGamePhaseWidget_C, Icon) == 0x000260, "Member 'UAthenaGamePhaseWidget_C::Icon' has a wrong offset!");
 
 }
 

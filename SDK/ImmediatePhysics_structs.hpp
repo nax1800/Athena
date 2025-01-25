@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -24,12 +24,12 @@ enum class ESimulationSpace : uint32
 {
 	ComponentSpace                           = 0,
 	WorldSpace                               = 1,
-	RootBoneSpace                            = 2,
+	BaseBoneSpace                            = 2,
 	ESimulationSpace_MAX                     = 3,
 };
 
 // ScriptStruct ImmediatePhysics.AnimNode_RigidBody
-// 0x0430 (0x0520 - 0x00F0)
+// 0x0480 (0x0570 - 0x00F0)
 struct alignas(0x10) FAnimNode_RigidBody final : public FAnimNode_SkeletalControlBase
 {
 public:
@@ -43,16 +43,18 @@ public:
 	bool                                          bEnableWorldGeometry;                              // 0x0135(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_136[0x2];                                      // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	ESimulationSpace                              SimulationSpace;                                   // 0x0138(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOverrideWorldGravity;                             // 0x013C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CachedBoundsScale;                                 // 0x0140(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTransferBoneVelocities;                           // 0x0144(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bFreezeIncomingPoseOnStart;                        // 0x0145(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bComponentSpaceSimulation;                         // 0x0146(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_147[0x3D9];                                    // 0x0147(0x03D9)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBoneReference                         BaseBoneRef;                                       // 0x0140(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bOverrideWorldGravity;                             // 0x0158(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CachedBoundsScale;                                 // 0x015C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTransferBoneVelocities;                           // 0x0160(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bFreezeIncomingPoseOnStart;                        // 0x0161(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bComponentSpaceSimulation;                         // 0x0162(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_163[0x40D];                                    // 0x0163(0x040D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAnimNode_RigidBody) == 0x000010, "Wrong alignment on FAnimNode_RigidBody");
-static_assert(sizeof(FAnimNode_RigidBody) == 0x000520, "Wrong size on FAnimNode_RigidBody");
+static_assert(sizeof(FAnimNode_RigidBody) == 0x000570, "Wrong size on FAnimNode_RigidBody");
 static_assert(offsetof(FAnimNode_RigidBody, OverridePhysicsAsset) == 0x0000F0, "Member 'FAnimNode_RigidBody::OverridePhysicsAsset' has a wrong offset!");
 static_assert(offsetof(FAnimNode_RigidBody, OverrideWorldGravity) == 0x0000F8, "Member 'FAnimNode_RigidBody::OverrideWorldGravity' has a wrong offset!");
 static_assert(offsetof(FAnimNode_RigidBody, ExternalForce) == 0x000104, "Member 'FAnimNode_RigidBody::ExternalForce' has a wrong offset!");
@@ -62,11 +64,12 @@ static_assert(offsetof(FAnimNode_RigidBody, ComponentAppliedLinearAccClamp) == 0
 static_assert(offsetof(FAnimNode_RigidBody, OverlapChannel) == 0x000134, "Member 'FAnimNode_RigidBody::OverlapChannel' has a wrong offset!");
 static_assert(offsetof(FAnimNode_RigidBody, bEnableWorldGeometry) == 0x000135, "Member 'FAnimNode_RigidBody::bEnableWorldGeometry' has a wrong offset!");
 static_assert(offsetof(FAnimNode_RigidBody, SimulationSpace) == 0x000138, "Member 'FAnimNode_RigidBody::SimulationSpace' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bOverrideWorldGravity) == 0x00013C, "Member 'FAnimNode_RigidBody::bOverrideWorldGravity' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, CachedBoundsScale) == 0x000140, "Member 'FAnimNode_RigidBody::CachedBoundsScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bTransferBoneVelocities) == 0x000144, "Member 'FAnimNode_RigidBody::bTransferBoneVelocities' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bFreezeIncomingPoseOnStart) == 0x000145, "Member 'FAnimNode_RigidBody::bFreezeIncomingPoseOnStart' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigidBody, bComponentSpaceSimulation) == 0x000146, "Member 'FAnimNode_RigidBody::bComponentSpaceSimulation' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, BaseBoneRef) == 0x000140, "Member 'FAnimNode_RigidBody::BaseBoneRef' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, bOverrideWorldGravity) == 0x000158, "Member 'FAnimNode_RigidBody::bOverrideWorldGravity' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, CachedBoundsScale) == 0x00015C, "Member 'FAnimNode_RigidBody::CachedBoundsScale' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, bTransferBoneVelocities) == 0x000160, "Member 'FAnimNode_RigidBody::bTransferBoneVelocities' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, bFreezeIncomingPoseOnStart) == 0x000161, "Member 'FAnimNode_RigidBody::bFreezeIncomingPoseOnStart' has a wrong offset!");
+static_assert(offsetof(FAnimNode_RigidBody, bComponentSpaceSimulation) == 0x000162, "Member 'FAnimNode_RigidBody::bComponentSpaceSimulation' has a wrong offset!");
 
 }
 

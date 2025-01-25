@@ -77,6 +77,28 @@ void UBP_FortExpeditionListView_C::ExecuteUbergraph_BP_FortExpeditionListView(in
 }
 
 
+// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature(class UObject* Item, bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FortExpeditionListView_C", "BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature");
+
+	Params::BP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_10_OnListViewItemClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -110,26 +132,6 @@ void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBo
 		Func = Class->GetFunction("BP_FortExpeditionListView_C", "BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature");
 
 	Params::BP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionListView_C", "BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature");
-
-	Params::BP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature Parms{};
 
 	Parms.Item = Item;
 

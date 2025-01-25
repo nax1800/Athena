@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaKillFeedItem.AthenaKillFeedItem_C
-// 0x0008 (0x0248 - 0x0240)
+// 0x0008 (0x0240 - 0x0238)
 class UAthenaKillFeedItem_C final : public UFortHUDElementWidget
 {
 public:
-	class URichTextBlock*                         KillText;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         KillText;                                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SetText(const class FText& Text);
@@ -37,8 +37,8 @@ public:
 	}
 };
 static_assert(alignof(UAthenaKillFeedItem_C) == 0x000008, "Wrong alignment on UAthenaKillFeedItem_C");
-static_assert(sizeof(UAthenaKillFeedItem_C) == 0x000248, "Wrong size on UAthenaKillFeedItem_C");
-static_assert(offsetof(UAthenaKillFeedItem_C, KillText) == 0x000240, "Member 'UAthenaKillFeedItem_C::KillText' has a wrong offset!");
+static_assert(sizeof(UAthenaKillFeedItem_C) == 0x000240, "Wrong size on UAthenaKillFeedItem_C");
+static_assert(offsetof(UAthenaKillFeedItem_C, KillText) == 0x000238, "Member 'UAthenaKillFeedItem_C::KillText' has a wrong offset!");
 
 }
 

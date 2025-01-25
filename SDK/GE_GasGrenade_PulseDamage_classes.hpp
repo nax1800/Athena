@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_GasGrenade_PulseDamage.GE_GasGrenade_PulseDamage_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGE_GasGrenade_PulseDamage_C final : public UGET_DirectBallisticDamage_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_GasGrenade_PulseDamage_C>();
 	}
 };
-static_assert(alignof(UGE_GasGrenade_PulseDamage_C) == 0x000010, "Wrong alignment on UGE_GasGrenade_PulseDamage_C");
-static_assert(sizeof(UGE_GasGrenade_PulseDamage_C) == 0x000670, "Wrong size on UGE_GasGrenade_PulseDamage_C");
+static_assert(alignof(UGE_GasGrenade_PulseDamage_C) == 0x000008, "Wrong alignment on UGE_GasGrenade_PulseDamage_C");
+static_assert(sizeof(UGE_GasGrenade_PulseDamage_C) == 0x000638, "Wrong size on UGE_GasGrenade_PulseDamage_C");
 
 }
 

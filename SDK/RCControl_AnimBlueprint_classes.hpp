@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass RCControl_AnimBlueprint.RCControl_AnimBlueprint_C
-// 0x0150 (0x04C8 - 0x0378)
+// 0x0158 (0x04B0 - 0x0358)
 class URCControl_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F; // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F; // 0x03D0(0x0070)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6; // 0x0440(0x0088)()
+	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F; // 0x0368(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F; // 0x03A8(0x0068)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6; // 0x0410(0x00A0)()
 
 public:
 	void ExecuteUbergraph_RCControl_AnimBlueprint(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(URCControl_AnimBlueprint_C) == 0x000008, "Wrong alignment on URCControl_AnimBlueprint_C");
-static_assert(sizeof(URCControl_AnimBlueprint_C) == 0x0004C8, "Wrong size on URCControl_AnimBlueprint_C");
-static_assert(offsetof(URCControl_AnimBlueprint_C, UberGraphFrame) == 0x000380, "Member 'URCControl_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F) == 0x000388, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F' has a wrong offset!");
-static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F) == 0x0003D0, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F' has a wrong offset!");
-static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6) == 0x000440, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6' has a wrong offset!");
+static_assert(sizeof(URCControl_AnimBlueprint_C) == 0x0004B0, "Wrong size on URCControl_AnimBlueprint_C");
+static_assert(offsetof(URCControl_AnimBlueprint_C, UberGraphFrame) == 0x000360, "Member 'URCControl_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F) == 0x000368, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_Root_4BFB0E834E31FC0B04D397BB0A2CC05F' has a wrong offset!");
+static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F) == 0x0003A8, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_Slot_7A5C24A747EADBE3AD2AB3A97C48278F' has a wrong offset!");
+static_assert(offsetof(URCControl_AnimBlueprint_C, AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6) == 0x000410, "Member 'URCControl_AnimBlueprint_C::AnimGraphNode_SequencePlayer_C507D3604F783A593D65ED90D3094EA6' has a wrong offset!");
 
 }
 

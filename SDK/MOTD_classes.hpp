@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MOTD.MOTD_C
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0328 - 0x0328)
 class UMOTD_C final : public UFortMOTDWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UMOTD_C) == 0x000008, "Wrong alignment on UMOTD_C");
-static_assert(sizeof(UMOTD_C) == 0x000420, "Wrong size on UMOTD_C");
+static_assert(sizeof(UMOTD_C) == 0x000328, "Wrong size on UMOTD_C");
 
 }
 

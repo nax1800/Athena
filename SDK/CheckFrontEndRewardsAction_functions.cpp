@@ -366,5 +366,19 @@ void ACheckFrontEndRewardsAction_C::PopulateNewGiftBoxes()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateItemCacheRewards
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACheckFrontEndRewardsAction_C::PopulateItemCacheRewards()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CheckFrontEndRewardsAction_C", "PopulateItemCacheRewards");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

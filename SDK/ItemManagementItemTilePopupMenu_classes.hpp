@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "ItemManagementItemTilePopupMenuButtons_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
@@ -23,33 +23,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementItemTilePopupMenu.ItemManagementItemTilePopupMenu_C
-// 0x00D0 (0x04B0 - 0x03E0)
+// 0x00D0 (0x03F0 - 0x0320)
 class UItemManagementItemTilePopupMenu_C final : public UFortItemManagementItemPopupMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeOut_;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FadeIn;                                            // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      BatchRecycleButton;                                // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonAddToCB;                                     // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CancelButton;                                      // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Checkmark;                                         // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CompareButton;                                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      InspectButton;                                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ToggleFavoriteButton;                              // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusCheckBox;                                  // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CollectionBookItemSlotId;                          // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanSlotItemInCollectionBook;                       // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_449[0x7];                                      // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CollectionBookConfirmationDialogTitle;             // 0x0450(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   CollectionBookConfirmationDialogMessage;           // 0x0468(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                    SlotItemInCollectionBookAction;                    // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    BackAction;                                        // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFortDialogExternalLatentActionHandle  CollectionBookLatentDialogHandle;                  // 0x04A0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	EItemManagementItemTilePopupMenuButtons       SelectedButton;                                    // 0x04A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              LastPosition;                                      // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       FadeOut_;                                          // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FadeIn;                                            // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      BatchRecycleButton;                                // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonAddToCB;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CancelButton;                                      // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CheckMark;                                         // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CompareButton;                                     // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      InspectButton;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ToggleFavoriteButton;                              // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MIDMinusCheckBox;                                  // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CollectionBookItemSlotId;                          // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanSlotItemInCollectionBook;                       // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CollectionBookConfirmationDialogTitle;             // 0x0390(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   CollectionBookConfirmationDialogMessage;           // 0x03A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDataTableRowHandle                    SlotItemInCollectionBookAction;                    // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BackAction;                                        // 0x03D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  CollectionBookLatentDialogHandle;                  // 0x03E0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	EItemManagementItemTilePopupMenuButtons       SelectedButton;                                    // 0x03E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E5[0x3];                                      // 0x03E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              LastPosition;                                      // 0x03E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemManagementItemTilePopupMenu(int32 EntryPoint);
@@ -89,28 +89,28 @@ public:
 	}
 };
 static_assert(alignof(UItemManagementItemTilePopupMenu_C) == 0x000008, "Wrong alignment on UItemManagementItemTilePopupMenu_C");
-static_assert(sizeof(UItemManagementItemTilePopupMenu_C) == 0x0004B0, "Wrong size on UItemManagementItemTilePopupMenu_C");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, UberGraphFrame) == 0x0003E0, "Member 'UItemManagementItemTilePopupMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, FadeOut_) == 0x0003E8, "Member 'UItemManagementItemTilePopupMenu_C::FadeOut_' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, FadeIn) == 0x0003F0, "Member 'UItemManagementItemTilePopupMenu_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, BatchRecycleButton) == 0x0003F8, "Member 'UItemManagementItemTilePopupMenu_C::BatchRecycleButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, ButtonAddToCB) == 0x000400, "Member 'UItemManagementItemTilePopupMenu_C::ButtonAddToCB' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CancelButton) == 0x000408, "Member 'UItemManagementItemTilePopupMenu_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, Checkmark) == 0x000410, "Member 'UItemManagementItemTilePopupMenu_C::Checkmark' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CompareButton) == 0x000418, "Member 'UItemManagementItemTilePopupMenu_C::CompareButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, InspectButton) == 0x000420, "Member 'UItemManagementItemTilePopupMenu_C::InspectButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, MainButtonVerticalBox) == 0x000428, "Member 'UItemManagementItemTilePopupMenu_C::MainButtonVerticalBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, ToggleFavoriteButton) == 0x000430, "Member 'UItemManagementItemTilePopupMenu_C::ToggleFavoriteButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, MIDMinusCheckBox) == 0x000438, "Member 'UItemManagementItemTilePopupMenu_C::MIDMinusCheckBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookItemSlotId) == 0x000440, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookItemSlotId' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CanSlotItemInCollectionBook) == 0x000448, "Member 'UItemManagementItemTilePopupMenu_C::CanSlotItemInCollectionBook' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookConfirmationDialogTitle) == 0x000450, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookConfirmationDialogTitle' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookConfirmationDialogMessage) == 0x000468, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookConfirmationDialogMessage' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, SlotItemInCollectionBookAction) == 0x000480, "Member 'UItemManagementItemTilePopupMenu_C::SlotItemInCollectionBookAction' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, BackAction) == 0x000490, "Member 'UItemManagementItemTilePopupMenu_C::BackAction' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookLatentDialogHandle) == 0x0004A0, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookLatentDialogHandle' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, SelectedButton) == 0x0004A4, "Member 'UItemManagementItemTilePopupMenu_C::SelectedButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTilePopupMenu_C, LastPosition) == 0x0004A8, "Member 'UItemManagementItemTilePopupMenu_C::LastPosition' has a wrong offset!");
+static_assert(sizeof(UItemManagementItemTilePopupMenu_C) == 0x0003F0, "Wrong size on UItemManagementItemTilePopupMenu_C");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, UberGraphFrame) == 0x000320, "Member 'UItemManagementItemTilePopupMenu_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, FadeOut_) == 0x000328, "Member 'UItemManagementItemTilePopupMenu_C::FadeOut_' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, FadeIn) == 0x000330, "Member 'UItemManagementItemTilePopupMenu_C::FadeIn' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, BatchRecycleButton) == 0x000338, "Member 'UItemManagementItemTilePopupMenu_C::BatchRecycleButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, ButtonAddToCB) == 0x000340, "Member 'UItemManagementItemTilePopupMenu_C::ButtonAddToCB' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CancelButton) == 0x000348, "Member 'UItemManagementItemTilePopupMenu_C::CancelButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CheckMark) == 0x000350, "Member 'UItemManagementItemTilePopupMenu_C::CheckMark' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CompareButton) == 0x000358, "Member 'UItemManagementItemTilePopupMenu_C::CompareButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, InspectButton) == 0x000360, "Member 'UItemManagementItemTilePopupMenu_C::InspectButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, MainButtonVerticalBox) == 0x000368, "Member 'UItemManagementItemTilePopupMenu_C::MainButtonVerticalBox' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, ToggleFavoriteButton) == 0x000370, "Member 'UItemManagementItemTilePopupMenu_C::ToggleFavoriteButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, MIDMinusCheckBox) == 0x000378, "Member 'UItemManagementItemTilePopupMenu_C::MIDMinusCheckBox' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookItemSlotId) == 0x000380, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookItemSlotId' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CanSlotItemInCollectionBook) == 0x000388, "Member 'UItemManagementItemTilePopupMenu_C::CanSlotItemInCollectionBook' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookConfirmationDialogTitle) == 0x000390, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookConfirmationDialogTitle' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookConfirmationDialogMessage) == 0x0003A8, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookConfirmationDialogMessage' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, SlotItemInCollectionBookAction) == 0x0003C0, "Member 'UItemManagementItemTilePopupMenu_C::SlotItemInCollectionBookAction' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, BackAction) == 0x0003D0, "Member 'UItemManagementItemTilePopupMenu_C::BackAction' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, CollectionBookLatentDialogHandle) == 0x0003E0, "Member 'UItemManagementItemTilePopupMenu_C::CollectionBookLatentDialogHandle' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, SelectedButton) == 0x0003E4, "Member 'UItemManagementItemTilePopupMenu_C::SelectedButton' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTilePopupMenu_C, LastPosition) == 0x0003E8, "Member 'UItemManagementItemTilePopupMenu_C::LastPosition' has a wrong offset!");
 
 }
 

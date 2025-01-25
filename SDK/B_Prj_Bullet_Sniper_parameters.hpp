@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.ExecuteUbergraph_B_Prj_Bullet_Sniper
-// 0x0140 (0x0140 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper final
 {
 public:
@@ -46,15 +46,22 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0108(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0114(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0138(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDecalComponent*                        CallFunc_SpawnDecalAtLocation_ReturnValue;         // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMobilePlatform_ReturnValue;             // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0153(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper) == 0x000008, "Wrong alignment on B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper) == 0x000140, "Wrong size on B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper");
+static_assert(sizeof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper) == 0x000160, "Wrong size on B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper");
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, EntryPoint) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_OtherActor) == 0x000008, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_OtherActor' has a wrong offset!");
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_OtherComp) == 0x000010, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_OtherComp' has a wrong offset!");
@@ -76,10 +83,16 @@ static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Snipe
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_FaceIndex) == 0x000104, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceStart) == 0x000108, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceEnd) == 0x000114, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, Temp_bool_Variable) == 0x000120, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000128, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_bSuccess) == 0x000130, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Select_Default) == 0x000138, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000120, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_bSuccess) == 0x000128, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00012C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000138, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_SpawnDecalAtLocation_ReturnValue) == 0x000148, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_SpawnDecalAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsDedicatedServer_ReturnValue) == 0x000150, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsMobilePlatform_ReturnValue) == 0x000151, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, Temp_bool_Variable) == 0x000152, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BooleanOR_ReturnValue) == 0x000153, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Select_Default) == 0x000158, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Select_Default' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.OnTouched
 // 0x00A0 (0x00A0 - 0x0000)

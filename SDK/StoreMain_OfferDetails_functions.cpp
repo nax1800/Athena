@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.ExecuteUbergraph_StoreMain_OfferDetails
-// (HasDefaults)
+// ()
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,26 @@ void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int32 En
 	Params::StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UStoreMain_OfferDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+
+	Params::StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -54,20 +74,6 @@ void UStoreMain_OfferDetails_C::BndEvt__BacchusCloseButton_K2Node_ComponentBound
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UStoreMain_OfferDetails_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -102,54 +108,6 @@ void UStoreMain_OfferDetails_C::HandlePurchaseComplete(bool bSuccess)
 	Parms.bSuccess = bSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UStoreMain_OfferDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
-
-	Params::StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.OnDeactivated
-// (Event, Protected, BlueprintEvent)
-
-void UStoreMain_OfferDetails_C::OnDeactivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnDeactivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UStoreMain_OfferDetails_C::OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -202,15 +160,29 @@ void UStoreMain_OfferDetails_C::PopDetails()
 }
 
 
-// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.BacchusInit
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.RegisterInput
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UStoreMain_OfferDetails_C::BacchusInit()
+void UStoreMain_OfferDetails_C::RegisterInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "BacchusInit");
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "RegisterInput");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.UnregisterInput
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UStoreMain_OfferDetails_C::UnregisterInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "UnregisterInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

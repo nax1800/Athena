@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,7 +27,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -37,12 +37,12 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue1;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234;                // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue4;                   // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UCommonNumericTextBlock*                K2Node_ComponentBoundEvent_NumericTextBlock;       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_HadCompleted;           // 0x0028(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345;               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue5;                   // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue1;         // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox");
@@ -50,7 +50,7 @@ static_assert(sizeof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBo
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, EntryPoint) == 0x000000, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue1) == 0x000005, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue12) == 0x000006, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue2) == 0x000006, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, K2Node_Event_IsDesignTime) == 0x00000C, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000010, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
@@ -58,12 +58,12 @@ static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScore
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_RandomIntegerInRange_ReturnValue1) == 0x000018, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_RandomIntegerInRange_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_Conv_IntToByte_ReturnValue) == 0x00001C, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_GetValidValue_ReturnValue) == 0x00001D, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue123) == 0x00001E, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue1234) == 0x00001F, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue3) == 0x00001E, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue4) == 0x00001F, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, K2Node_ComponentBoundEvent_NumericTextBlock) == 0x000020, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::K2Node_ComponentBoundEvent_NumericTextBlock' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, K2Node_ComponentBoundEvent_HadCompleted) == 0x000028, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::K2Node_ComponentBoundEvent_HadCompleted' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000029, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue12345) == 0x00002A, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_BooleanOR_ReturnValue5) == 0x00002A, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_BooleanOR_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox, CallFunc_NotEqual_FloatFloat_ReturnValue1) == 0x00002B, "Member 'Results_TeamScoreBox_C_ExecuteUbergraph_Results_TeamScoreBox::CallFunc_NotEqual_FloatFloat_ReturnValue1' has a wrong offset!");
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature
@@ -121,17 +121,17 @@ static_assert(offsetof(Results_TeamScoreBox_C_InitializeScoreType, K2Node_Switch
 struct Results_TeamScoreBox_C_Initialize final
 {
 public:
-	EFortUIScoreType                              Param_ScoreType;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIScoreType                              ScoreType_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Param_Score;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Param_PlayRate;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Score_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PlayRate_0;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_TeamScoreBox_C_Initialize) == 0x000004, "Wrong alignment on Results_TeamScoreBox_C_Initialize");
 static_assert(sizeof(Results_TeamScoreBox_C_Initialize) == 0x000010, "Wrong size on Results_TeamScoreBox_C_Initialize");
-static_assert(offsetof(Results_TeamScoreBox_C_Initialize, Param_ScoreType) == 0x000000, "Member 'Results_TeamScoreBox_C_Initialize::Param_ScoreType' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_Initialize, Param_Score) == 0x000004, "Member 'Results_TeamScoreBox_C_Initialize::Param_Score' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_Initialize, Param_PlayRate) == 0x000008, "Member 'Results_TeamScoreBox_C_Initialize::Param_PlayRate' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_Initialize, ScoreType_0) == 0x000000, "Member 'Results_TeamScoreBox_C_Initialize::ScoreType_0' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_Initialize, Score_0) == 0x000004, "Member 'Results_TeamScoreBox_C_Initialize::Score_0' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_Initialize, PlayRate_0) == 0x000008, "Member 'Results_TeamScoreBox_C_Initialize::PlayRate_0' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'Results_TeamScoreBox_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.FlashTextType
@@ -142,7 +142,7 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_TeamScoreBox_C_FlashTextType) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_FlashTextType");
 static_assert(sizeof(Results_TeamScoreBox_C_FlashTextType) == 0x000020, "Wrong size on Results_TeamScoreBox_C_FlashTextType");

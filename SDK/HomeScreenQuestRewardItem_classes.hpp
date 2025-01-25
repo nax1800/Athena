@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HomeScreenQuestRewardItem.HomeScreenQuestRewardItem_C
-// 0x0020 (0x0230 - 0x0210)
+// 0x0020 (0x0228 - 0x0208)
 class UHomeScreenQuestRewardItem_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UFortMultiSizeItemCard*                 FortItemCard_XS;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItem*                              Item;                                              // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         Quantity;                                          // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UFortMultiSizeItemCard*                 FortItemCard_XS;                                   // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItem*                              Item;                                              // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         Quantity;                                          // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -42,11 +42,11 @@ public:
 	}
 };
 static_assert(alignof(UHomeScreenQuestRewardItem_C) == 0x000008, "Wrong alignment on UHomeScreenQuestRewardItem_C");
-static_assert(sizeof(UHomeScreenQuestRewardItem_C) == 0x000230, "Wrong size on UHomeScreenQuestRewardItem_C");
-static_assert(offsetof(UHomeScreenQuestRewardItem_C, UberGraphFrame) == 0x000210, "Member 'UHomeScreenQuestRewardItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHomeScreenQuestRewardItem_C, FortItemCard_XS) == 0x000218, "Member 'UHomeScreenQuestRewardItem_C::FortItemCard_XS' has a wrong offset!");
-static_assert(offsetof(UHomeScreenQuestRewardItem_C, Item) == 0x000220, "Member 'UHomeScreenQuestRewardItem_C::Item' has a wrong offset!");
-static_assert(offsetof(UHomeScreenQuestRewardItem_C, Quantity) == 0x000228, "Member 'UHomeScreenQuestRewardItem_C::Quantity' has a wrong offset!");
+static_assert(sizeof(UHomeScreenQuestRewardItem_C) == 0x000228, "Wrong size on UHomeScreenQuestRewardItem_C");
+static_assert(offsetof(UHomeScreenQuestRewardItem_C, UberGraphFrame) == 0x000208, "Member 'UHomeScreenQuestRewardItem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHomeScreenQuestRewardItem_C, FortItemCard_XS) == 0x000210, "Member 'UHomeScreenQuestRewardItem_C::FortItemCard_XS' has a wrong offset!");
+static_assert(offsetof(UHomeScreenQuestRewardItem_C, Item) == 0x000218, "Member 'UHomeScreenQuestRewardItem_C::Item' has a wrong offset!");
+static_assert(offsetof(UHomeScreenQuestRewardItem_C, Quantity) == 0x000220, "Member 'UHomeScreenQuestRewardItem_C::Quantity' has a wrong offset!");
 
 }
 

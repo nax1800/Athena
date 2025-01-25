@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "IFFBoneConfig_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "PlayerPawn_Generic_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
@@ -21,53 +21,56 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Constructor.PlayerPawn_Constructor_C
-// 0x0110 (0x2130 - 0x2020)
+// 0x0100 (0x2440 - 0x2340)
 class APlayerPawn_Constructor_C final : public APlayerPawn_Generic_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Constructor_C;           // 0x2020(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   ServerShieldMesh;                                  // 0x2028(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          ShieldCollider;                                    // 0x2030(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ShieldMesh;                                        // 0x2038(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               IFFShield_Light;                                   // 0x2040(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          BullRushPoke;                                      // 0x2048(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47; // 0x2050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47; // 0x2054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47; // 0x2058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2059[0x7];                                     // 0x2059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TakeDamageTimeline;                                // 0x2060(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        P_Activate;                                        // 0x2068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 ShieldPlayerMesh;                                  // 0x2070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_IFF_ShieldFlicker;                             // 0x2078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   DamageFlash;                                       // 0x2080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   LineBrightness;                                    // 0x2088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        P_TIABExplosion;                                   // 0x2090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_TIAB;                                        // 0x2098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Kinetic_Overload;                            // 0x20A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Shield_Start;                                // 0x20A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Shield_Stop;                                 // 0x20B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Shield_Impact_0;                             // 0x20B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Finalized_IFF_BackPack_Offset;                     // 0x20C0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                IFF_Local_Offset_Without_Backpack;                 // 0x20CC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                IFF_Local_Offset_With_Back_Pack;                   // 0x20D8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20E4[0x4];                                     // 0x20E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   PlayArmAnim;                                       // 0x20E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class UPrimitiveComponent*>            AllIFFMeshes;                                      // 0x20F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UMaterialInterface*                     IFFMaterialParent;                                 // 0x2108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FIFFBoneConfig>                 IFFBoneConfigs;                                    // 0x2110(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class AB_Constructor_BASE_C*                  SavedBase;                                         // 0x2120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Constructor_C;           // 0x2338(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   ServerShieldMesh;                                  // 0x2340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          ShieldCollider;                                    // 0x2348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ShieldMesh;                                        // 0x2350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               IFFShield_Light;                                   // 0x2358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          BullRushPoke;                                      // 0x2360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47; // 0x2368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47; // 0x236C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47; // 0x2370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2371[0x7];                                     // 0x2371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     TakeDamageTimeline;                                // 0x2378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        P_Activate;                                        // 0x2380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 ShieldPlayerMesh;                                  // 0x2388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_IFF_ShieldFlicker;                             // 0x2390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   DamageFlash;                                       // 0x2398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   LineBrightness;                                    // 0x23A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        P_TIABExplosion;                                   // 0x23A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_TIAB;                                        // 0x23B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Kinetic_Overload;                            // 0x23B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Shield_Start;                                // 0x23C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Shield_Stop;                                 // 0x23C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Shield_Impact_0;                             // 0x23D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Finalized_IFF_BackPack_Offset;                     // 0x23D8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                IFF_Local_Offset_Without_Backpack;                 // 0x23E4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                IFF_Local_Offset_With_Back_Pack;                   // 0x23F0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23FC[0x4];                                     // 0x23FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   PlayArmAnim;                                       // 0x2400(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class UPrimitiveComponent*>            AllIFFMeshes;                                      // 0x2410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UMaterialInterface*                     IFFMaterialParent;                                 // 0x2420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FIFFBoneConfig>                 IFFBoneConfigs;                                    // 0x2428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class AB_Constructor_BASE_C*                  SavedBase;                                         // 0x2438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void PlayArmAnim__DelegateSignature();
 	void ExecuteUbergraph_PlayerPawn_Constructor(int32 EntryPoint);
-	void SetBase(class AB_Constructor_BASE_C* Param_SavedBase);
+	void SetBase(class AB_Constructor_BASE_C* SavedBase_0);
 	void ToggleShield(bool Toggle);
 	void MultiToggleShield(bool Toggle);
 	void SetMenuScreenClassName();
 	void TestEndIFF();
 	void PlayArm();
-	void TestIFF();
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void GameplayCue_Constructor_PlasmaPulse_IFFCoding(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void OnCharacterPartsReinitialized();
+	void TestIFF();
 	void GameplayCue_Constructor_KineticOverload_ActiveFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void GameplayCue_Constructor_ToInfinityAndBeyond_ActiveFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void GameplayCue_Damage(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
@@ -75,9 +78,6 @@ public:
 	void TakeDamageTimeline__FinishedFunc();
 	void SetIFFMeshesEnabled(bool IsEnabled);
 	void OnRep_SavedBase();
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void OnCharacterPartsReinitialized();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 
@@ -92,36 +92,36 @@ public:
 	}
 };
 static_assert(alignof(APlayerPawn_Constructor_C) == 0x000010, "Wrong alignment on APlayerPawn_Constructor_C");
-static_assert(sizeof(APlayerPawn_Constructor_C) == 0x002130, "Wrong size on APlayerPawn_Constructor_C");
-static_assert(offsetof(APlayerPawn_Constructor_C, UberGraphFrame_PlayerPawn_Constructor_C) == 0x002020, "Member 'APlayerPawn_Constructor_C::UberGraphFrame_PlayerPawn_Constructor_C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, ServerShieldMesh) == 0x002028, "Member 'APlayerPawn_Constructor_C::ServerShieldMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, ShieldCollider) == 0x002030, "Member 'APlayerPawn_Constructor_C::ShieldCollider' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, ShieldMesh) == 0x002038, "Member 'APlayerPawn_Constructor_C::ShieldMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, IFFShield_Light) == 0x002040, "Member 'APlayerPawn_Constructor_C::IFFShield_Light' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, BullRushPoke) == 0x002048, "Member 'APlayerPawn_Constructor_C::BullRushPoke' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47) == 0x002050, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47) == 0x002054, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47) == 0x002058, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline) == 0x002060, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, P_Activate) == 0x002068, "Member 'APlayerPawn_Constructor_C::P_Activate' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, ShieldPlayerMesh) == 0x002070, "Member 'APlayerPawn_Constructor_C::ShieldPlayerMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, MID_IFF_ShieldFlicker) == 0x002078, "Member 'APlayerPawn_Constructor_C::MID_IFF_ShieldFlicker' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, DamageFlash) == 0x002080, "Member 'APlayerPawn_Constructor_C::DamageFlash' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, LineBrightness) == 0x002088, "Member 'APlayerPawn_Constructor_C::LineBrightness' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, P_TIABExplosion) == 0x002090, "Member 'APlayerPawn_Constructor_C::P_TIABExplosion' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Sound_TIAB) == 0x002098, "Member 'APlayerPawn_Constructor_C::Sound_TIAB' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Kinetic_Overload) == 0x0020A0, "Member 'APlayerPawn_Constructor_C::Sound_Kinetic_Overload' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Start) == 0x0020A8, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Start' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Stop) == 0x0020B0, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Stop' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Impact_0) == 0x0020B8, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Impact_0' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, Finalized_IFF_BackPack_Offset) == 0x0020C0, "Member 'APlayerPawn_Constructor_C::Finalized_IFF_BackPack_Offset' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, IFF_Local_Offset_Without_Backpack) == 0x0020CC, "Member 'APlayerPawn_Constructor_C::IFF_Local_Offset_Without_Backpack' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, IFF_Local_Offset_With_Back_Pack) == 0x0020D8, "Member 'APlayerPawn_Constructor_C::IFF_Local_Offset_With_Back_Pack' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, PlayArmAnim) == 0x0020E8, "Member 'APlayerPawn_Constructor_C::PlayArmAnim' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, AllIFFMeshes) == 0x0020F8, "Member 'APlayerPawn_Constructor_C::AllIFFMeshes' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, IFFMaterialParent) == 0x002108, "Member 'APlayerPawn_Constructor_C::IFFMaterialParent' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, IFFBoneConfigs) == 0x002110, "Member 'APlayerPawn_Constructor_C::IFFBoneConfigs' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Constructor_C, SavedBase) == 0x002120, "Member 'APlayerPawn_Constructor_C::SavedBase' has a wrong offset!");
+static_assert(sizeof(APlayerPawn_Constructor_C) == 0x002440, "Wrong size on APlayerPawn_Constructor_C");
+static_assert(offsetof(APlayerPawn_Constructor_C, UberGraphFrame_PlayerPawn_Constructor_C) == 0x002338, "Member 'APlayerPawn_Constructor_C::UberGraphFrame_PlayerPawn_Constructor_C' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, ServerShieldMesh) == 0x002340, "Member 'APlayerPawn_Constructor_C::ServerShieldMesh' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, ShieldCollider) == 0x002348, "Member 'APlayerPawn_Constructor_C::ShieldCollider' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, ShieldMesh) == 0x002350, "Member 'APlayerPawn_Constructor_C::ShieldMesh' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, IFFShield_Light) == 0x002358, "Member 'APlayerPawn_Constructor_C::IFFShield_Light' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, BullRushPoke) == 0x002360, "Member 'APlayerPawn_Constructor_C::BullRushPoke' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47) == 0x002368, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline_LineBrightness_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47) == 0x00236C, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline_DamageFlash_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47) == 0x002370, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline__Direction_E993138E4A26ED909055A89FDA7BCA47' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, TakeDamageTimeline) == 0x002378, "Member 'APlayerPawn_Constructor_C::TakeDamageTimeline' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, P_Activate) == 0x002380, "Member 'APlayerPawn_Constructor_C::P_Activate' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, ShieldPlayerMesh) == 0x002388, "Member 'APlayerPawn_Constructor_C::ShieldPlayerMesh' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, MID_IFF_ShieldFlicker) == 0x002390, "Member 'APlayerPawn_Constructor_C::MID_IFF_ShieldFlicker' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, DamageFlash) == 0x002398, "Member 'APlayerPawn_Constructor_C::DamageFlash' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, LineBrightness) == 0x0023A0, "Member 'APlayerPawn_Constructor_C::LineBrightness' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, P_TIABExplosion) == 0x0023A8, "Member 'APlayerPawn_Constructor_C::P_TIABExplosion' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Sound_TIAB) == 0x0023B0, "Member 'APlayerPawn_Constructor_C::Sound_TIAB' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Kinetic_Overload) == 0x0023B8, "Member 'APlayerPawn_Constructor_C::Sound_Kinetic_Overload' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Start) == 0x0023C0, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Start' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Stop) == 0x0023C8, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Stop' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Sound_Shield_Impact_0) == 0x0023D0, "Member 'APlayerPawn_Constructor_C::Sound_Shield_Impact_0' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, Finalized_IFF_BackPack_Offset) == 0x0023D8, "Member 'APlayerPawn_Constructor_C::Finalized_IFF_BackPack_Offset' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, IFF_Local_Offset_Without_Backpack) == 0x0023E4, "Member 'APlayerPawn_Constructor_C::IFF_Local_Offset_Without_Backpack' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, IFF_Local_Offset_With_Back_Pack) == 0x0023F0, "Member 'APlayerPawn_Constructor_C::IFF_Local_Offset_With_Back_Pack' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, PlayArmAnim) == 0x002400, "Member 'APlayerPawn_Constructor_C::PlayArmAnim' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, AllIFFMeshes) == 0x002410, "Member 'APlayerPawn_Constructor_C::AllIFFMeshes' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, IFFMaterialParent) == 0x002420, "Member 'APlayerPawn_Constructor_C::IFFMaterialParent' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, IFFBoneConfigs) == 0x002428, "Member 'APlayerPawn_Constructor_C::IFFBoneConfigs' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Constructor_C, SavedBase) == 0x002438, "Member 'APlayerPawn_Constructor_C::SavedBase' has a wrong offset!");
 
 }
 

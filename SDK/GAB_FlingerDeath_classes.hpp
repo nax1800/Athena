@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerDeath.GAB_FlingerDeath_C
-// 0x0000 (0x0C80 - 0x0C80)
+// 0x0000 (0x0A88 - 0x0A88)
 class UGAB_FlingerDeath_C final : public UGAB_GenericDeath_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerDeath_C) == 0x000008, "Wrong alignment on UGAB_FlingerDeath_C");
-static_assert(sizeof(UGAB_FlingerDeath_C) == 0x000C80, "Wrong size on UGAB_FlingerDeath_C");
+static_assert(sizeof(UGAB_FlingerDeath_C) == 0x000A88, "Wrong size on UGAB_FlingerDeath_C");
 
 }
 

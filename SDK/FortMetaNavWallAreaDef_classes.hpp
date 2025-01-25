@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FortMetaNavWallAreaDef.FortMetaNavWallAreaDef_C
-// 0x0000 (0x0050 - 0x0050)
+// 0x0000 (0x0058 - 0x0058)
 class UFortMetaNavWallAreaDef_C final : public UFortMetaNavArea_Wall
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UFortMetaNavWallAreaDef_C) == 0x000008, "Wrong alignment on UFortMetaNavWallAreaDef_C");
-static_assert(sizeof(UFortMetaNavWallAreaDef_C) == 0x000050, "Wrong size on UFortMetaNavWallAreaDef_C");
+static_assert(sizeof(UFortMetaNavWallAreaDef_C) == 0x000058, "Wrong size on UFortMetaNavWallAreaDef_C");
 
 }
 

@@ -67,7 +67,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaWatchers_C_OnSpectatorCountChanged) == 0x000004, "Wrong alignment on AthenaWatchers_C_OnSpectatorCountChanged");
 static_assert(sizeof(AthenaWatchers_C_OnSpectatorCountChanged) == 0x000014, "Wrong size on AthenaWatchers_C_OnSpectatorCountChanged");
@@ -78,7 +78,7 @@ static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_Subtra
 static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaWatchers_C_OnSpectatorCountChanged::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_Greater_IntInt_ReturnValue) == 0x000011, "Member 'AthenaWatchers_C_OnSpectatorCountChanged::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_Greater_IntInt_ReturnValue1) == 0x000012, "Member 'AthenaWatchers_C_OnSpectatorCountChanged::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_Greater_IntInt_ReturnValue12) == 0x000013, "Member 'AthenaWatchers_C_OnSpectatorCountChanged::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaWatchers_C_OnSpectatorCountChanged, CallFunc_Greater_IntInt_ReturnValue2) == 0x000013, "Member 'AthenaWatchers_C_OnSpectatorCountChanged::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function AthenaWatchers.AthenaWatchers_C.UpdateSpectatorCountDisplay
 // 0x0028 (0x0028 - 0x0000)

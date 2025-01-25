@@ -37,6 +37,20 @@ void UItemManagementDetailsModeBox_C::ExecuteUbergraph_ItemManagementDetailsMode
 }
 
 
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementDetailsModeBox_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCraftItemFailed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -94,20 +108,6 @@ void UItemManagementDetailsModeBox_C::OnInputModeChanged(bool bUsingGamepad)
 	Parms.bUsingGamepad = bUsingGamepad;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UItemManagementDetailsModeBox_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemManagementDetailsModeBox_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

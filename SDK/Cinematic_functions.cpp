@@ -207,10 +207,10 @@ void UCinematic_C::Construct()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMediaSource*                     MediaSource                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNamedSlot*                       Param_MovieSlot                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMovieWidget_C*                   Param_MovieWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNamedSlot*                       MovieSlot_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMovieWidget_C*                   MovieWidget_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UNamedSlot*& Param_MovieSlot, class UMovieWidget_C*& Param_MovieWidget)
+void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UNamedSlot*& MovieSlot_0, class UMovieWidget_C*& MovieWidget_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -220,13 +220,13 @@ void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UNamedSlot*&
 	Params::Cinematic_C_ShowMovie Parms{};
 
 	Parms.MediaSource = MediaSource;
-	Parms.Param_MovieSlot = Param_MovieSlot;
-	Parms.Param_MovieWidget = Param_MovieWidget;
+	Parms.MovieSlot_0 = MovieSlot_0;
+	Parms.MovieWidget_0 = MovieWidget_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Param_MovieSlot = Parms.Param_MovieSlot;
-	Param_MovieWidget = Parms.Param_MovieWidget;
+	MovieSlot_0 = Parms.MovieSlot_0;
+	MovieWidget_0 = Parms.MovieWidget_0;
 }
 
 

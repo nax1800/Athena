@@ -19,38 +19,88 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ShielderSpringArm.ShielderSpringArm_C
-// 0x0080 (0x0398 - 0x0318)
+// 0x0178 (0x04A0 - 0x0328)
 class AShielderSpringArm_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
-	class UArrowComponent*                        ShielderAttachArrow;                               // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_ShielderSphere;                                  // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        SphereOffset;                                      // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       SpringArmProbeSizeDebugSphere;                     // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpringArmComponent*                    SpringArm;                                         // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        SpringArmRotationArrow;                            // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Debug;                                             // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_359[0x3];                                      // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ShielderInterpSpeedToNewSpringArmLocation;         // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPawn*                              AttachPawn;                                        // 0x0360(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector                                ShieldScaleFactor;                                 // 0x0368(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AShielderPawn_C*                        Shielder;                                          // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               ShieldMID;                                         // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_Super_Shielder;                                 // 0x0388(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               Beam_Emitter;                                      // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               P_ShielderBeam_Conjure;                            // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_ShielderBeamRelease;                             // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        ShielderAttachArrow;                               // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_ShielderSphere;                                  // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        SphereOffset;                                      // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       SpringArmProbeSizeDebugSphere;                     // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpringArmComponent*                    SpringArm;                                         // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        SpringArmRotationArrow;                            // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Conjure_BuildUp_LERP_Control_D12A3FA14BD8925FB490428AECE0CC59; // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Conjure_BuildUp__Direction_D12A3FA14BD8925FB490428AECE0CC59; // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37D[0x3];                                      // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Conjure_BuildUp;                                   // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BuildUp_Glow_880F290041EA80F7DABCA9A9D1E7D4D3;     // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BuildUp_SizeScale_880F290041EA80F7DABCA9A9D1E7D4D3; // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            BuildUp__Direction_880F290041EA80F7DABCA9A9D1E7D4D3; // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     BuildUp;                                           // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PulseRelease_Glow_81C0A31243317F0572A5D6ADB92BF32D; // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PulseRelease_SizeScale_81C0A31243317F0572A5D6ADB92BF32D; // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PulseRelease_Pulse_Control_81C0A31243317F0572A5D6ADB92BF32D; // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            PulseRelease__Direction_81C0A31243317F0572A5D6ADB92BF32D; // 0x03AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AD[0x3];                                      // 0x03AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     PulseRelease;                                      // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_Opacity_Control_96AC1ECB4A1F2D3473D191B196E7F98F; // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_96AC1ECB4A1F2D3473D191B196E7F98F; // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BD[0x3];                                      // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Debug;                                             // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C9[0x3];                                      // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ShielderInterpSpeedToNewSpringArmLocation;         // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPawn*                              AttachPawn;                                        // 0x03D0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector                                ShieldScaleFactor;                                 // 0x03D8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AShielderPawn_C*                        Shielder;                                          // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               ShieldMID;                                         // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_Super_Shielder;                                 // 0x03F8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               Beam_Emitter;                                      // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Shield_MID;                                        // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Beam_MID;                                          // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Sphere_Mesh_Scale_Adjustment;                      // 0x0418(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_424[0xC];                                      // 0x0424(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Transform;                                         // 0x0430(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 Shield_Mesh;                                       // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Conjure_Count;                                     // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TruMinusMid_Point;                                 // 0x046C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Radius;                                            // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47C[0x4];                                      // 0x047C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   SuperShield_Mesh;                                  // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TailAimTargetLocation;                             // 0x0488(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_494[0x4];                                      // 0x0494(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             SND_SuperShielderRelease;                          // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ShielderSpringArm(int32 EntryPoint);
+	void Conjure();
+	void Hit_Flash_FX();
+	void PulseBuildUp();
+	void ShieldMeshSetup();
+	void Pulse_Shielder_Release();
+	void FadeIn();
+	void FadeOut();
 	void Beam_Spawn(class AActor* Origin);
 	void Beam_Removal();
 	void ReceiveDestroyed();
-	void HitFlashFX();
 	void ReceiveTick(float DeltaSeconds);
+	void Conjure_BuildUp__UpdateFunc();
+	void Conjure_BuildUp__FinishedFunc();
+	void BuildUp__UpdateFunc();
+	void BuildUp__FinishedFunc();
+	void PulseRelease__UpdateFunc();
+	void PulseRelease__FinishedFunc();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
 	void UserConstructionScript();
+	void Spline_Points();
 
 public:
 	static class UClass* StaticClass()
@@ -62,24 +112,52 @@ public:
 		return GetDefaultObjImpl<AShielderSpringArm_C>();
 	}
 };
-static_assert(alignof(AShielderSpringArm_C) == 0x000008, "Wrong alignment on AShielderSpringArm_C");
-static_assert(sizeof(AShielderSpringArm_C) == 0x000398, "Wrong size on AShielderSpringArm_C");
-static_assert(offsetof(AShielderSpringArm_C, UberGraphFrame) == 0x000318, "Member 'AShielderSpringArm_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, ShielderAttachArrow) == 0x000320, "Member 'AShielderSpringArm_C::ShielderAttachArrow' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, P_ShielderSphere) == 0x000328, "Member 'AShielderSpringArm_C::P_ShielderSphere' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, SphereOffset) == 0x000330, "Member 'AShielderSpringArm_C::SphereOffset' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, SpringArmProbeSizeDebugSphere) == 0x000338, "Member 'AShielderSpringArm_C::SpringArmProbeSizeDebugSphere' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, SpringArm) == 0x000340, "Member 'AShielderSpringArm_C::SpringArm' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, SpringArmRotationArrow) == 0x000348, "Member 'AShielderSpringArm_C::SpringArmRotationArrow' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, DefaultSceneRoot) == 0x000350, "Member 'AShielderSpringArm_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, Debug) == 0x000358, "Member 'AShielderSpringArm_C::Debug' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, ShielderInterpSpeedToNewSpringArmLocation) == 0x00035C, "Member 'AShielderSpringArm_C::ShielderInterpSpeedToNewSpringArmLocation' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, AttachPawn) == 0x000360, "Member 'AShielderSpringArm_C::AttachPawn' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, ShieldScaleFactor) == 0x000368, "Member 'AShielderSpringArm_C::ShieldScaleFactor' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, Shielder) == 0x000378, "Member 'AShielderSpringArm_C::Shielder' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, ShieldMID) == 0x000380, "Member 'AShielderSpringArm_C::ShieldMID' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, Is_Super_Shielder) == 0x000388, "Member 'AShielderSpringArm_C::Is_Super_Shielder' has a wrong offset!");
-static_assert(offsetof(AShielderSpringArm_C, Beam_Emitter) == 0x000390, "Member 'AShielderSpringArm_C::Beam_Emitter' has a wrong offset!");
+static_assert(alignof(AShielderSpringArm_C) == 0x000010, "Wrong alignment on AShielderSpringArm_C");
+static_assert(sizeof(AShielderSpringArm_C) == 0x0004A0, "Wrong size on AShielderSpringArm_C");
+static_assert(offsetof(AShielderSpringArm_C, UberGraphFrame) == 0x000328, "Member 'AShielderSpringArm_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, P_ShielderBeam_Conjure) == 0x000330, "Member 'AShielderSpringArm_C::P_ShielderBeam_Conjure' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, P_ShielderBeamRelease) == 0x000338, "Member 'AShielderSpringArm_C::P_ShielderBeamRelease' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, ShielderAttachArrow) == 0x000340, "Member 'AShielderSpringArm_C::ShielderAttachArrow' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, P_ShielderSphere) == 0x000348, "Member 'AShielderSpringArm_C::P_ShielderSphere' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SphereOffset) == 0x000350, "Member 'AShielderSpringArm_C::SphereOffset' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SpringArmProbeSizeDebugSphere) == 0x000358, "Member 'AShielderSpringArm_C::SpringArmProbeSizeDebugSphere' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SpringArm) == 0x000360, "Member 'AShielderSpringArm_C::SpringArm' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SpringArmRotationArrow) == 0x000368, "Member 'AShielderSpringArm_C::SpringArmRotationArrow' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, DefaultSceneRoot) == 0x000370, "Member 'AShielderSpringArm_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Conjure_BuildUp_LERP_Control_D12A3FA14BD8925FB490428AECE0CC59) == 0x000378, "Member 'AShielderSpringArm_C::Conjure_BuildUp_LERP_Control_D12A3FA14BD8925FB490428AECE0CC59' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Conjure_BuildUp__Direction_D12A3FA14BD8925FB490428AECE0CC59) == 0x00037C, "Member 'AShielderSpringArm_C::Conjure_BuildUp__Direction_D12A3FA14BD8925FB490428AECE0CC59' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Conjure_BuildUp) == 0x000380, "Member 'AShielderSpringArm_C::Conjure_BuildUp' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, BuildUp_Glow_880F290041EA80F7DABCA9A9D1E7D4D3) == 0x000388, "Member 'AShielderSpringArm_C::BuildUp_Glow_880F290041EA80F7DABCA9A9D1E7D4D3' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, BuildUp_SizeScale_880F290041EA80F7DABCA9A9D1E7D4D3) == 0x00038C, "Member 'AShielderSpringArm_C::BuildUp_SizeScale_880F290041EA80F7DABCA9A9D1E7D4D3' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, BuildUp__Direction_880F290041EA80F7DABCA9A9D1E7D4D3) == 0x000390, "Member 'AShielderSpringArm_C::BuildUp__Direction_880F290041EA80F7DABCA9A9D1E7D4D3' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, BuildUp) == 0x000398, "Member 'AShielderSpringArm_C::BuildUp' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, PulseRelease_Glow_81C0A31243317F0572A5D6ADB92BF32D) == 0x0003A0, "Member 'AShielderSpringArm_C::PulseRelease_Glow_81C0A31243317F0572A5D6ADB92BF32D' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, PulseRelease_SizeScale_81C0A31243317F0572A5D6ADB92BF32D) == 0x0003A4, "Member 'AShielderSpringArm_C::PulseRelease_SizeScale_81C0A31243317F0572A5D6ADB92BF32D' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, PulseRelease_Pulse_Control_81C0A31243317F0572A5D6ADB92BF32D) == 0x0003A8, "Member 'AShielderSpringArm_C::PulseRelease_Pulse_Control_81C0A31243317F0572A5D6ADB92BF32D' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, PulseRelease__Direction_81C0A31243317F0572A5D6ADB92BF32D) == 0x0003AC, "Member 'AShielderSpringArm_C::PulseRelease__Direction_81C0A31243317F0572A5D6ADB92BF32D' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, PulseRelease) == 0x0003B0, "Member 'AShielderSpringArm_C::PulseRelease' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Timeline_0_Opacity_Control_96AC1ECB4A1F2D3473D191B196E7F98F) == 0x0003B8, "Member 'AShielderSpringArm_C::Timeline_0_Opacity_Control_96AC1ECB4A1F2D3473D191B196E7F98F' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Timeline_0__Direction_96AC1ECB4A1F2D3473D191B196E7F98F) == 0x0003BC, "Member 'AShielderSpringArm_C::Timeline_0__Direction_96AC1ECB4A1F2D3473D191B196E7F98F' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Timeline_0) == 0x0003C0, "Member 'AShielderSpringArm_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Debug) == 0x0003C8, "Member 'AShielderSpringArm_C::Debug' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, ShielderInterpSpeedToNewSpringArmLocation) == 0x0003CC, "Member 'AShielderSpringArm_C::ShielderInterpSpeedToNewSpringArmLocation' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, AttachPawn) == 0x0003D0, "Member 'AShielderSpringArm_C::AttachPawn' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, ShieldScaleFactor) == 0x0003D8, "Member 'AShielderSpringArm_C::ShieldScaleFactor' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Shielder) == 0x0003E8, "Member 'AShielderSpringArm_C::Shielder' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, ShieldMID) == 0x0003F0, "Member 'AShielderSpringArm_C::ShieldMID' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Is_Super_Shielder) == 0x0003F8, "Member 'AShielderSpringArm_C::Is_Super_Shielder' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Beam_Emitter) == 0x000400, "Member 'AShielderSpringArm_C::Beam_Emitter' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Shield_MID) == 0x000408, "Member 'AShielderSpringArm_C::Shield_MID' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Beam_MID) == 0x000410, "Member 'AShielderSpringArm_C::Beam_MID' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Sphere_Mesh_Scale_Adjustment) == 0x000418, "Member 'AShielderSpringArm_C::Sphere_Mesh_Scale_Adjustment' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Transform) == 0x000430, "Member 'AShielderSpringArm_C::Transform' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Shield_Mesh) == 0x000460, "Member 'AShielderSpringArm_C::Shield_Mesh' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Conjure_Count) == 0x000468, "Member 'AShielderSpringArm_C::Conjure_Count' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, TruMinusMid_Point) == 0x00046C, "Member 'AShielderSpringArm_C::TruMinusMid_Point' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, Radius) == 0x000478, "Member 'AShielderSpringArm_C::Radius' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SuperShield_Mesh) == 0x000480, "Member 'AShielderSpringArm_C::SuperShield_Mesh' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, TailAimTargetLocation) == 0x000488, "Member 'AShielderSpringArm_C::TailAimTargetLocation' has a wrong offset!");
+static_assert(offsetof(AShielderSpringArm_C, SND_SuperShielderRelease) == 0x000498, "Member 'AShielderSpringArm_C::SND_SuperShielderRelease' has a wrong offset!");
 
 }
 

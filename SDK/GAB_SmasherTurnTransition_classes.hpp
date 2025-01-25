@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherTurnTransition.GAB_SmasherTurnTransition_C
-// 0x0010 (0x0B40 - 0x0B30)
+// 0x0010 (0x0950 - 0x0940)
 class UGAB_SmasherTurnTransition_C final : public UFortGameplayAbility_AITurnTransition
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B30(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 GE_SmasherMeleeFailure;                            // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0940(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 GE_SmasherMeleeFailure;                            // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherTurnTransition(int32 EntryPoint);
@@ -44,9 +44,9 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherTurnTransition_C) == 0x000008, "Wrong alignment on UGAB_SmasherTurnTransition_C");
-static_assert(sizeof(UGAB_SmasherTurnTransition_C) == 0x000B40, "Wrong size on UGAB_SmasherTurnTransition_C");
-static_assert(offsetof(UGAB_SmasherTurnTransition_C, UberGraphFrame) == 0x000B30, "Member 'UGAB_SmasherTurnTransition_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherTurnTransition_C, GE_SmasherMeleeFailure) == 0x000B38, "Member 'UGAB_SmasherTurnTransition_C::GE_SmasherMeleeFailure' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherTurnTransition_C) == 0x000950, "Wrong size on UGAB_SmasherTurnTransition_C");
+static_assert(offsetof(UGAB_SmasherTurnTransition_C, UberGraphFrame) == 0x000940, "Member 'UGAB_SmasherTurnTransition_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherTurnTransition_C, GE_SmasherMeleeFailure) == 0x000948, "Member 'UGAB_SmasherTurnTransition_C::GE_SmasherMeleeFailure' has a wrong offset!");
 
 }
 

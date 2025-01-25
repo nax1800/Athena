@@ -142,10 +142,10 @@ void AMimic_Mission_C::OnInteractingPlayerDied_Event(class AActor* DamagedActor,
 // Function Mimic_Mission.Mimic_Mission_C.OnEncounterEnemySpawned
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortAIEncounterInfo*             Param_Encounter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortAIEncounterInfo*             Encounter_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortAIPawn*                      SpawnedEnemy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMimic_Mission_C::OnEncounterEnemySpawned(class UFortAIEncounterInfo* Param_Encounter, class AFortAIPawn* SpawnedEnemy)
+void AMimic_Mission_C::OnEncounterEnemySpawned(class UFortAIEncounterInfo* Encounter_0, class AFortAIPawn* SpawnedEnemy)
 {
 	static class UFunction* Func = nullptr;
 
@@ -154,7 +154,7 @@ void AMimic_Mission_C::OnEncounterEnemySpawned(class UFortAIEncounterInfo* Param
 
 	Params::Mimic_Mission_C_OnEncounterEnemySpawned Parms{};
 
-	Parms.Param_Encounter = Param_Encounter;
+	Parms.Encounter_0 = Encounter_0;
 	Parms.SpawnedEnemy = SpawnedEnemy;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -380,10 +380,10 @@ void AMimic_Mission_C::TryGiveRewards()
 // Function Mimic_Mission.Mimic_Mission_C.InitializeMimicChest
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AMimic_Chest_C*                   Param_MimicChest                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMimic_Chest_C*                   MimicChest_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bWakeOnDamage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AMimic_Mission_C::InitializeMimicChest(class AMimic_Chest_C* Param_MimicChest, bool bWakeOnDamage)
+void AMimic_Mission_C::InitializeMimicChest(class AMimic_Chest_C* MimicChest_0, bool bWakeOnDamage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -392,7 +392,7 @@ void AMimic_Mission_C::InitializeMimicChest(class AMimic_Chest_C* Param_MimicChe
 
 	Params::Mimic_Mission_C_InitializeMimicChest Parms{};
 
-	Parms.Param_MimicChest = Param_MimicChest;
+	Parms.MimicChest_0 = MimicChest_0;
 	Parms.bWakeOnDamage = bWakeOnDamage;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -430,9 +430,9 @@ void AMimic_Mission_C::OnChestInteract()
 // Function Mimic_Mission.Mimic_Mission_C.OnMimicSpawned
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AHuskPawn_Mimic_C*                Param_MimicPawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AHuskPawn_Mimic_C*                MimicPawn_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMimic_Mission_C::OnMimicSpawned(class AHuskPawn_Mimic_C* Param_MimicPawn)
+void AMimic_Mission_C::OnMimicSpawned(class AHuskPawn_Mimic_C* MimicPawn_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -441,7 +441,7 @@ void AMimic_Mission_C::OnMimicSpawned(class AHuskPawn_Mimic_C* Param_MimicPawn)
 
 	Params::Mimic_Mission_C_OnMimicSpawned Parms{};
 
-	Parms.Param_MimicPawn = Param_MimicPawn;
+	Parms.MimicPawn_0 = MimicPawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

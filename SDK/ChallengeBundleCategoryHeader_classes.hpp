@@ -10,29 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChallengeBundleCategoryHeader.ChallengeBundleCategoryHeader_C
-// 0x0048 (0x0418 - 0x03D0)
+// 0x0078 (0x0378 - 0x0300)
 class UChallengeBundleCategoryHeader_C final : public UFortChallengeBundleWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 BattlePassImage;                                   // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USpacer*                                BoundBreakSpacer;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BundleCategoryBorderCB;                            // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BundleCategoryName;                                // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USpacer*                                IconSpacer;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LockedIcon;                                        // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               VerticalSizeSB;                                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IconBreakBounds;                                   // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 BattlePassImage;                                   // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                BoundBreakSpacer;                                  // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BundleCategoryBorderCB;                            // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BundleCategoryName;                                // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Confetti;                                          // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           ConfettiVB;                                        // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        EffectSwitcher;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonDateTimeTextBlock*               ExpirationDate;                                    // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HeistShine;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                IconSpacer;                                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LockedIcon;                                        // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PizzaToppings;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               VerticalSizeSB;                                    // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IconBreakBounds;                                   // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ChallengeBundleCategoryHeader(int32 EntryPoint);
@@ -51,16 +57,22 @@ public:
 	}
 };
 static_assert(alignof(UChallengeBundleCategoryHeader_C) == 0x000008, "Wrong alignment on UChallengeBundleCategoryHeader_C");
-static_assert(sizeof(UChallengeBundleCategoryHeader_C) == 0x000418, "Wrong size on UChallengeBundleCategoryHeader_C");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, UberGraphFrame) == 0x0003D0, "Member 'UChallengeBundleCategoryHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, BattlePassImage) == 0x0003D8, "Member 'UChallengeBundleCategoryHeader_C::BattlePassImage' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, BoundBreakSpacer) == 0x0003E0, "Member 'UChallengeBundleCategoryHeader_C::BoundBreakSpacer' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, BundleCategoryBorderCB) == 0x0003E8, "Member 'UChallengeBundleCategoryHeader_C::BundleCategoryBorderCB' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, BundleCategoryName) == 0x0003F0, "Member 'UChallengeBundleCategoryHeader_C::BundleCategoryName' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, IconSpacer) == 0x0003F8, "Member 'UChallengeBundleCategoryHeader_C::IconSpacer' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, LockedIcon) == 0x000400, "Member 'UChallengeBundleCategoryHeader_C::LockedIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, VerticalSizeSB) == 0x000408, "Member 'UChallengeBundleCategoryHeader_C::VerticalSizeSB' has a wrong offset!");
-static_assert(offsetof(UChallengeBundleCategoryHeader_C, IconBreakBounds) == 0x000410, "Member 'UChallengeBundleCategoryHeader_C::IconBreakBounds' has a wrong offset!");
+static_assert(sizeof(UChallengeBundleCategoryHeader_C) == 0x000378, "Wrong size on UChallengeBundleCategoryHeader_C");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, UberGraphFrame) == 0x000300, "Member 'UChallengeBundleCategoryHeader_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, BattlePassImage) == 0x000308, "Member 'UChallengeBundleCategoryHeader_C::BattlePassImage' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, BoundBreakSpacer) == 0x000310, "Member 'UChallengeBundleCategoryHeader_C::BoundBreakSpacer' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, BundleCategoryBorderCB) == 0x000318, "Member 'UChallengeBundleCategoryHeader_C::BundleCategoryBorderCB' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, BundleCategoryName) == 0x000320, "Member 'UChallengeBundleCategoryHeader_C::BundleCategoryName' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, Confetti) == 0x000328, "Member 'UChallengeBundleCategoryHeader_C::Confetti' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, ConfettiVB) == 0x000330, "Member 'UChallengeBundleCategoryHeader_C::ConfettiVB' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, EffectSwitcher) == 0x000338, "Member 'UChallengeBundleCategoryHeader_C::EffectSwitcher' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, ExpirationDate) == 0x000340, "Member 'UChallengeBundleCategoryHeader_C::ExpirationDate' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, HeistShine) == 0x000348, "Member 'UChallengeBundleCategoryHeader_C::HeistShine' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, IconSpacer) == 0x000350, "Member 'UChallengeBundleCategoryHeader_C::IconSpacer' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, LockedIcon) == 0x000358, "Member 'UChallengeBundleCategoryHeader_C::LockedIcon' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, PizzaToppings) == 0x000360, "Member 'UChallengeBundleCategoryHeader_C::PizzaToppings' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, VerticalSizeSB) == 0x000368, "Member 'UChallengeBundleCategoryHeader_C::VerticalSizeSB' has a wrong offset!");
+static_assert(offsetof(UChallengeBundleCategoryHeader_C, IconBreakBounds) == 0x000370, "Member 'UChallengeBundleCategoryHeader_C::IconBreakBounds' has a wrong offset!");
 
 }
 

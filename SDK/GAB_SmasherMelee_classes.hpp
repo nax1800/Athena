@@ -10,35 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "GAB_AIBaseMelee_classes.hpp"
 #include "AIModule_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "GAB_AIBaseMelee_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherMelee.GAB_SmasherMelee_C
-// 0x0088 (0x0B88 - 0x0B00)
+// 0x0088 (0x0990 - 0x0908)
 class UGAB_SmasherMelee_C : public UGAB_AIBaseMelee_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherMelee_C;                 // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 GE_SmasherMeleeSuccess;                            // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_SmasherMeleeFailure;                            // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         AllHitActors;                                      // 0x0B18(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackMeleeBump;     // 0x0B28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackAny;           // 0x0B48(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         AllHitActorsAfterRemovingInvalidTargets;           // 0x0B68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	class UFortAbilityTask_MoveAI*                SmasherMove;                                       // 0x0B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_ConstructorBullrushing;                         // 0x0B80(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherMelee_C;                 // 0x0908(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 GE_SmasherMeleeSuccess;                            // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_SmasherMeleeFailure;                            // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         AllHitActors;                                      // 0x0920(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackMeleeBump;     // 0x0930(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_NPCBehaviorProhibitsAbilityAttackAny;           // 0x0950(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         AllHitActorsAfterRemovingInvalidTargets;           // 0x0970(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UFortAbilityTask_MoveAI*                SmasherMove;                                       // 0x0980(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TC_ConstructorBullrushing;                         // 0x0988(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherMelee(int32 EntryPoint);
 	void K2_OnEndAbility(bool bWasCancelled);
 	void MoveToLoop();
-	void K2_ActivateAbility();
 	void OnComplete_6E0FFA2F4367D5F26D5F5CB20E78DEFC();
 	void OnInterrupted_6E0FFA2F4367D5F26D5F5CB20E78DEFC();
 	void OnCancelled_6E0FFA2F4367D5F26D5F5CB20E78DEFC();
@@ -47,6 +46,7 @@ public:
 	void Cancelled_D4EB604A4AFDAD65E3461A86287A3EFE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Completed_D4EB604A4AFDAD65E3461A86287A3EFE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Triggered_D4EB604A4AFDAD65E3461A86287A3EFE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
+	void K2_ActivateAbility();
 
 public:
 	static class UClass* StaticClass()
@@ -59,16 +59,16 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherMelee_C) == 0x000008, "Wrong alignment on UGAB_SmasherMelee_C");
-static_assert(sizeof(UGAB_SmasherMelee_C) == 0x000B88, "Wrong size on UGAB_SmasherMelee_C");
-static_assert(offsetof(UGAB_SmasherMelee_C, UberGraphFrame_GAB_SmasherMelee_C) == 0x000B00, "Member 'UGAB_SmasherMelee_C::UberGraphFrame_GAB_SmasherMelee_C' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, GE_SmasherMeleeSuccess) == 0x000B08, "Member 'UGAB_SmasherMelee_C::GE_SmasherMeleeSuccess' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, GE_SmasherMeleeFailure) == 0x000B10, "Member 'UGAB_SmasherMelee_C::GE_SmasherMeleeFailure' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, AllHitActors) == 0x000B18, "Member 'UGAB_SmasherMelee_C::AllHitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, TC_NPCBehaviorProhibitsAbilityAttackMeleeBump) == 0x000B28, "Member 'UGAB_SmasherMelee_C::TC_NPCBehaviorProhibitsAbilityAttackMeleeBump' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, TC_NPCBehaviorProhibitsAbilityAttackAny) == 0x000B48, "Member 'UGAB_SmasherMelee_C::TC_NPCBehaviorProhibitsAbilityAttackAny' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, AllHitActorsAfterRemovingInvalidTargets) == 0x000B68, "Member 'UGAB_SmasherMelee_C::AllHitActorsAfterRemovingInvalidTargets' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, SmasherMove) == 0x000B78, "Member 'UGAB_SmasherMelee_C::SmasherMove' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherMelee_C, TC_ConstructorBullrushing) == 0x000B80, "Member 'UGAB_SmasherMelee_C::TC_ConstructorBullrushing' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherMelee_C) == 0x000990, "Wrong size on UGAB_SmasherMelee_C");
+static_assert(offsetof(UGAB_SmasherMelee_C, UberGraphFrame_GAB_SmasherMelee_C) == 0x000908, "Member 'UGAB_SmasherMelee_C::UberGraphFrame_GAB_SmasherMelee_C' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, GE_SmasherMeleeSuccess) == 0x000910, "Member 'UGAB_SmasherMelee_C::GE_SmasherMeleeSuccess' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, GE_SmasherMeleeFailure) == 0x000918, "Member 'UGAB_SmasherMelee_C::GE_SmasherMeleeFailure' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, AllHitActors) == 0x000920, "Member 'UGAB_SmasherMelee_C::AllHitActors' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, TC_NPCBehaviorProhibitsAbilityAttackMeleeBump) == 0x000930, "Member 'UGAB_SmasherMelee_C::TC_NPCBehaviorProhibitsAbilityAttackMeleeBump' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, TC_NPCBehaviorProhibitsAbilityAttackAny) == 0x000950, "Member 'UGAB_SmasherMelee_C::TC_NPCBehaviorProhibitsAbilityAttackAny' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, AllHitActorsAfterRemovingInvalidTargets) == 0x000970, "Member 'UGAB_SmasherMelee_C::AllHitActorsAfterRemovingInvalidTargets' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, SmasherMove) == 0x000980, "Member 'UGAB_SmasherMelee_C::SmasherMove' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherMelee_C, TC_ConstructorBullrushing) == 0x000988, "Member 'UGAB_SmasherMelee_C::TC_ConstructorBullrushing' has a wrong offset!");
 
 }
 

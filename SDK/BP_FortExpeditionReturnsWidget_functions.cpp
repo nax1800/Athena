@@ -20,9 +20,9 @@ namespace SDK
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.OnExpeditionCompleted__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionReturnsWidget_C::OnExpeditionCompleted__DelegateSignature(class UFortExpeditionItem* Param_Item)
+void UBP_FortExpeditionReturnsWidget_C::OnExpeditionCompleted__DelegateSignature(class UFortExpeditionItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UBP_FortExpeditionReturnsWidget_C::OnExpeditionCompleted__DelegateSignature
 
 	Params::BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -128,9 +128,9 @@ void UBP_FortExpeditionReturnsWidget_C::OnExpeditionInProgressUpdated()
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.Refresh In Progress Widgets
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionReturnsWidget_C::Refresh_In_Progress_Widgets(class UFortExpeditionItem* Param_Item)
+void UBP_FortExpeditionReturnsWidget_C::Refresh_In_Progress_Widgets(class UFortExpeditionItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -139,7 +139,7 @@ void UBP_FortExpeditionReturnsWidget_C::Refresh_In_Progress_Widgets(class UFortE
 
 	Params::BP_FortExpeditionReturnsWidget_C_Refresh_In_Progress_Widgets Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -148,9 +148,9 @@ void UBP_FortExpeditionReturnsWidget_C::Refresh_In_Progress_Widgets(class UFortE
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.Set Expedition Return Time
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Time(class UFortExpeditionItem* Param_Item)
+void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Time(class UFortExpeditionItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -159,7 +159,7 @@ void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Time(class UFortEx
 
 	Params::BP_FortExpeditionReturnsWidget_C_Set_Expedition_Return_Time Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -168,9 +168,9 @@ void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Time(class UFortEx
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.Set Expedition Return Progress
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Progress(class UFortExpeditionItem* Param_Item)
+void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Progress(class UFortExpeditionItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -179,7 +179,7 @@ void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Progress(class UFo
 
 	Params::BP_FortExpeditionReturnsWidget_C_Set_Expedition_Return_Progress Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -188,10 +188,10 @@ void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Progress(class UFo
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.Get Expedition Item Definition
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortExpeditionItem*              Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortExpeditionItemDefinition*    ItemDef                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionReturnsWidget_C::Get_Expedition_Item_Definition(class UFortExpeditionItem* Param_Item, class UFortExpeditionItemDefinition** ItemDef)
+void UBP_FortExpeditionReturnsWidget_C::Get_Expedition_Item_Definition(class UFortExpeditionItem* Item_0, class UFortExpeditionItemDefinition** ItemDef)
 {
 	static class UFunction* Func = nullptr;
 
@@ -200,7 +200,7 @@ void UBP_FortExpeditionReturnsWidget_C::Get_Expedition_Item_Definition(class UFo
 
 	Params::BP_FortExpeditionReturnsWidget_C_Get_Expedition_Item_Definition Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

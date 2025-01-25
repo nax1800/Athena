@@ -74,12 +74,12 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0050(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0068(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0080(0x0018)()
-	class FText                                   Temp_text_Variable123456;                          // 0x0098(0x0018)()
-	class FText                                   Temp_text_Variable1234567;                         // 0x00B0(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable5;                               // 0x0080(0x0018)()
+	class FText                                   Temp_text_Variable6;                               // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable7;                               // 0x00B0(0x0018)()
 	int32                                         Temp_int_Variable1;                                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -93,12 +93,12 @@ static_assert(offsetof(News_C_PopulateEntries, IsEmpty) == 0x000000, "Member 'Ne
 static_assert(offsetof(News_C_PopulateEntries, Temp_int_Variable) == 0x000004, "Member 'News_C_PopulateEntries::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable) == 0x000008, "Member 'News_C_PopulateEntries::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable1) == 0x000020, "Member 'News_C_PopulateEntries::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable12) == 0x000038, "Member 'News_C_PopulateEntries::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable123) == 0x000050, "Member 'News_C_PopulateEntries::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable1234) == 0x000068, "Member 'News_C_PopulateEntries::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable12345) == 0x000080, "Member 'News_C_PopulateEntries::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable123456) == 0x000098, "Member 'News_C_PopulateEntries::Temp_text_Variable123456' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable1234567) == 0x0000B0, "Member 'News_C_PopulateEntries::Temp_text_Variable1234567' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable2) == 0x000038, "Member 'News_C_PopulateEntries::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable3) == 0x000050, "Member 'News_C_PopulateEntries::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable4) == 0x000068, "Member 'News_C_PopulateEntries::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable5) == 0x000080, "Member 'News_C_PopulateEntries::Temp_text_Variable5' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable6) == 0x000098, "Member 'News_C_PopulateEntries::Temp_text_Variable6' has a wrong offset!");
+static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable7) == 0x0000B0, "Member 'News_C_PopulateEntries::Temp_text_Variable7' has a wrong offset!");
 static_assert(offsetof(News_C_PopulateEntries, Temp_int_Variable1) == 0x0000C8, "Member 'News_C_PopulateEntries::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(News_C_PopulateEntries, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000CC, "Member 'News_C_PopulateEntries::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(News_C_PopulateEntries, CallFunc_Add_IntInt_ReturnValue) == 0x0000D0, "Member 'News_C_PopulateEntries::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

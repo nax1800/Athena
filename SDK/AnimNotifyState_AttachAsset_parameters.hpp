@@ -20,7 +20,7 @@ struct AnimNotifyState_AttachAsset_C_Received_NotifyBegin final
 {
 public:
 	class USkeletalMeshComponent*                 MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequenceBase*                      Param_Animation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequenceBase*                      Animation_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalDuration;                                     // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -35,7 +35,7 @@ public:
 static_assert(alignof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin) == 0x000008, "Wrong alignment on AnimNotifyState_AttachAsset_C_Received_NotifyBegin");
 static_assert(sizeof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin) == 0x000040, "Wrong size on AnimNotifyState_AttachAsset_C_Received_NotifyBegin");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, MeshComp) == 0x000000, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, Param_Animation) == 0x000008, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::Param_Animation' has a wrong offset!");
+static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, Animation_0) == 0x000008, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::Animation_0' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, TotalDuration) == 0x000010, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::TotalDuration' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, ReturnValue) == 0x000014, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyBegin, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyBegin::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
@@ -51,7 +51,7 @@ struct AnimNotifyState_AttachAsset_C_Received_NotifyEnd final
 {
 public:
 	class USkeletalMeshComponent*                 MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequenceBase*                      Param_Animation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequenceBase*                      Animation_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,7 +61,7 @@ public:
 static_assert(alignof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd) == 0x000008, "Wrong alignment on AnimNotifyState_AttachAsset_C_Received_NotifyEnd");
 static_assert(sizeof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd) == 0x000030, "Wrong size on AnimNotifyState_AttachAsset_C_Received_NotifyEnd");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, MeshComp) == 0x000000, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, Param_Animation) == 0x000008, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::Param_Animation' has a wrong offset!");
+static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, Animation_0) == 0x000008, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::Animation_0' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, ReturnValue) == 0x000010, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_AttachAsset_C_Received_NotifyEnd, K2Node_DynamicCast_AsFort_Pawn) == 0x000020, "Member 'AnimNotifyState_AttachAsset_C_Received_NotifyEnd::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");

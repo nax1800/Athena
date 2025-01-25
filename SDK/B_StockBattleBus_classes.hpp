@@ -10,40 +10,56 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_StockBattleBus.B_StockBattleBus_C
-// 0x0060 (0x0380 - 0x0320)
+// 0x00A0 (0x03D8 - 0x0338)
 class AB_StockBattleBus_C final : public ABattleBusCosmeticInstanceBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Bus;                                               // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene;                                             // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   LaunchTheBalloon_van_generator;                    // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   BalloonFlame;                                      // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Apparatus;                                         // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Balloon;                                           // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A; // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A; // 0x035C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35D[0x3];                                      // 0x035D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Bus_Music_Fader;                                   // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             LoopingSound;                                      // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             LoopingMusic;                                      // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        BusMusic_Inst;                                     // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Bus;                                               // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Scene;                                             // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BalloonFlame;                                      // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Balloon;                                           // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Light_Flash_Timeline_Light3_7AB7DCFD4BB25B57EF475DAD841187C0; // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Light_Flash_Timeline_Light2_7AB7DCFD4BB25B57EF475DAD841187C0; // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Light_Flash_Timeline_Light1_7AB7DCFD4BB25B57EF475DAD841187C0; // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Light_Flash_Timeline__Direction_7AB7DCFD4BB25B57EF475DAD841187C0; // 0x036C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_36D[0x3];                                      // 0x036D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Light_Flash_Timeline;                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A; // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A; // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37D[0x3];                                      // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Bus_Music_Fader;                                   // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             LoopingSound;                                      // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             LoopingMusic;                                      // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        BusMusic_Inst;                                     // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        BusEngine_Inst;                                    // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MaterialWindows;                                   // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LightIndex;                                        // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B4[0x4];                                      // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           ParamNames;                                        // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	bool                                          EnableNewBusFX;                                    // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C9[0x7];                                      // 0x03C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AB_BusStorm_C*                          BusStormFX;                                        // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_B_StockBattleBus(int32 EntryPoint);
-	void Bus_Music_Fader__FinishedFunc();
-	void Bus_Music_Fader__UpdateFunc();
-	void GrabAudioReferences();
 	void ReceiveBeginPlay();
 	void Start_Audio();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void GrabAudioReferences();
+	void Light_Flash_Timeline__Loop__EventFunc();
+	void Light_Flash_Timeline__UpdateFunc();
+	void Light_Flash_Timeline__FinishedFunc();
+	void Bus_Music_Fader__UpdateFunc();
+	void Bus_Music_Fader__FinishedFunc();
 	void UserConstructionScript();
 
 public:
@@ -57,20 +73,29 @@ public:
 	}
 };
 static_assert(alignof(AB_StockBattleBus_C) == 0x000008, "Wrong alignment on AB_StockBattleBus_C");
-static_assert(sizeof(AB_StockBattleBus_C) == 0x000380, "Wrong size on AB_StockBattleBus_C");
-static_assert(offsetof(AB_StockBattleBus_C, UberGraphFrame) == 0x000320, "Member 'AB_StockBattleBus_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Bus) == 0x000328, "Member 'AB_StockBattleBus_C::Bus' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Scene) == 0x000330, "Member 'AB_StockBattleBus_C::Scene' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, LaunchTheBalloon_van_generator) == 0x000338, "Member 'AB_StockBattleBus_C::LaunchTheBalloon_van_generator' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, BalloonFlame) == 0x000340, "Member 'AB_StockBattleBus_C::BalloonFlame' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Apparatus) == 0x000348, "Member 'AB_StockBattleBus_C::Apparatus' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Balloon) == 0x000350, "Member 'AB_StockBattleBus_C::Balloon' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A) == 0x000358, "Member 'AB_StockBattleBus_C::Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A) == 0x00035C, "Member 'AB_StockBattleBus_C::Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader) == 0x000360, "Member 'AB_StockBattleBus_C::Bus_Music_Fader' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, LoopingSound) == 0x000368, "Member 'AB_StockBattleBus_C::LoopingSound' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, LoopingMusic) == 0x000370, "Member 'AB_StockBattleBus_C::LoopingMusic' has a wrong offset!");
-static_assert(offsetof(AB_StockBattleBus_C, BusMusic_Inst) == 0x000378, "Member 'AB_StockBattleBus_C::BusMusic_Inst' has a wrong offset!");
+static_assert(sizeof(AB_StockBattleBus_C) == 0x0003D8, "Wrong size on AB_StockBattleBus_C");
+static_assert(offsetof(AB_StockBattleBus_C, UberGraphFrame) == 0x000338, "Member 'AB_StockBattleBus_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Bus) == 0x000340, "Member 'AB_StockBattleBus_C::Bus' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Scene) == 0x000348, "Member 'AB_StockBattleBus_C::Scene' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, BalloonFlame) == 0x000350, "Member 'AB_StockBattleBus_C::BalloonFlame' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Balloon) == 0x000358, "Member 'AB_StockBattleBus_C::Balloon' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Light_Flash_Timeline_Light3_7AB7DCFD4BB25B57EF475DAD841187C0) == 0x000360, "Member 'AB_StockBattleBus_C::Light_Flash_Timeline_Light3_7AB7DCFD4BB25B57EF475DAD841187C0' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Light_Flash_Timeline_Light2_7AB7DCFD4BB25B57EF475DAD841187C0) == 0x000364, "Member 'AB_StockBattleBus_C::Light_Flash_Timeline_Light2_7AB7DCFD4BB25B57EF475DAD841187C0' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Light_Flash_Timeline_Light1_7AB7DCFD4BB25B57EF475DAD841187C0) == 0x000368, "Member 'AB_StockBattleBus_C::Light_Flash_Timeline_Light1_7AB7DCFD4BB25B57EF475DAD841187C0' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Light_Flash_Timeline__Direction_7AB7DCFD4BB25B57EF475DAD841187C0) == 0x00036C, "Member 'AB_StockBattleBus_C::Light_Flash_Timeline__Direction_7AB7DCFD4BB25B57EF475DAD841187C0' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Light_Flash_Timeline) == 0x000370, "Member 'AB_StockBattleBus_C::Light_Flash_Timeline' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A) == 0x000378, "Member 'AB_StockBattleBus_C::Bus_Music_Fader_Volume_A587597F47291E46479564BC14A7B45A' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A) == 0x00037C, "Member 'AB_StockBattleBus_C::Bus_Music_Fader__Direction_A587597F47291E46479564BC14A7B45A' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, Bus_Music_Fader) == 0x000380, "Member 'AB_StockBattleBus_C::Bus_Music_Fader' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, LoopingSound) == 0x000388, "Member 'AB_StockBattleBus_C::LoopingSound' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, LoopingMusic) == 0x000390, "Member 'AB_StockBattleBus_C::LoopingMusic' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, BusMusic_Inst) == 0x000398, "Member 'AB_StockBattleBus_C::BusMusic_Inst' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, BusEngine_Inst) == 0x0003A0, "Member 'AB_StockBattleBus_C::BusEngine_Inst' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, MaterialWindows) == 0x0003A8, "Member 'AB_StockBattleBus_C::MaterialWindows' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, LightIndex) == 0x0003B0, "Member 'AB_StockBattleBus_C::LightIndex' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, ParamNames) == 0x0003B8, "Member 'AB_StockBattleBus_C::ParamNames' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, EnableNewBusFX) == 0x0003C8, "Member 'AB_StockBattleBus_C::EnableNewBusFX' has a wrong offset!");
+static_assert(offsetof(AB_StockBattleBus_C, BusStormFX) == 0x0003D0, "Member 'AB_StockBattleBus_C::BusStormFX' has a wrong offset!");
 
 }
 

@@ -326,10 +326,10 @@ void URadialPicker_C::Event_AcceptOption()
 // Function RadialPicker.RadialPicker_C.InitializePicker
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortPickerMode                         Param_PickerMode                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortPickerMode                         PickerMode_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   InitialOption                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URadialPicker_C::InitializePicker(EFortPickerMode Param_PickerMode, int32 InitialOption)
+void URadialPicker_C::InitializePicker(EFortPickerMode PickerMode_0, int32 InitialOption)
 {
 	static class UFunction* Func = nullptr;
 
@@ -338,7 +338,7 @@ void URadialPicker_C::InitializePicker(EFortPickerMode Param_PickerMode, int32 I
 
 	Params::RadialPicker_C_InitializePicker Parms{};
 
-	Parms.Param_PickerMode = Param_PickerMode;
+	Parms.PickerMode_0 = PickerMode_0;
 	Parms.InitialOption = InitialOption;
 
 	UObject::ProcessEvent(Func, &Parms);

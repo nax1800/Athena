@@ -75,11 +75,12 @@ void URadialPickerItem_C::Construct()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                             Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// TSoftObjectPtr<class UTexture2D>        Icon                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // struct FSlateBrush                      Brush                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    Option_Enabled                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   RadialItemIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URadialPickerItem_C::SetImageAndLabelContent(const class FText& Text, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex)
+void URadialPickerItem_C::SetImageAndLabelContent(const class FText& Text, TSoftObjectPtr<class UTexture2D> Icon, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -89,6 +90,7 @@ void URadialPickerItem_C::SetImageAndLabelContent(const class FText& Text, const
 	Params::RadialPickerItem_C_SetImageAndLabelContent Parms{};
 
 	Parms.Text = std::move(Text);
+	Parms.Icon = Icon;
 	Parms.Brush = std::move(Brush);
 	Parms.Option_Enabled = Option_Enabled;
 	Parms.RadialItemIndex = RadialItemIndex;
@@ -158,20 +160,6 @@ void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
 	Parms.ShowImageAndLabel = ShowImageAndLabel;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function RadialPickerItem.RadialPickerItem_C.SetKeybindVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void URadialPickerItem_C::SetKeybindVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialPickerItem_C", "SetKeybindVisibility");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

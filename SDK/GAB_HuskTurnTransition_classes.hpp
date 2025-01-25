@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskTurnTransition.GAB_HuskTurnTransition_C
-// 0x0000 (0x0B40 - 0x0B40)
+// 0x0000 (0x0950 - 0x0950)
 class UGAB_HuskTurnTransition_C : public UGAB_NPCTurnTransition_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskTurnTransition_C) == 0x000008, "Wrong alignment on UGAB_HuskTurnTransition_C");
-static_assert(sizeof(UGAB_HuskTurnTransition_C) == 0x000B40, "Wrong size on UGAB_HuskTurnTransition_C");
+static_assert(sizeof(UGAB_HuskTurnTransition_C) == 0x000950, "Wrong size on UGAB_HuskTurnTransition_C");
 
 }
 

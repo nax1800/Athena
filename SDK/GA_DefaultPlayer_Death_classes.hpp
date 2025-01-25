@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GAB_GenericDeath_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C
-// 0x0008 (0x0C88 - 0x0C80)
+// 0x0008 (0x0A90 - 0x0A88)
 class UGA_DefaultPlayer_Death_C final : public UGAB_GenericDeath_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Death_C;           // 0x0C80(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Death_C;           // 0x0A88(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GA_DefaultPlayer_Death(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(UGA_DefaultPlayer_Death_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Death_C");
-static_assert(sizeof(UGA_DefaultPlayer_Death_C) == 0x000C88, "Wrong size on UGA_DefaultPlayer_Death_C");
-static_assert(offsetof(UGA_DefaultPlayer_Death_C, UberGraphFrame_GA_DefaultPlayer_Death_C) == 0x000C80, "Member 'UGA_DefaultPlayer_Death_C::UberGraphFrame_GA_DefaultPlayer_Death_C' has a wrong offset!");
+static_assert(sizeof(UGA_DefaultPlayer_Death_C) == 0x000A90, "Wrong size on UGA_DefaultPlayer_Death_C");
+static_assert(offsetof(UGA_DefaultPlayer_Death_C, UberGraphFrame_GA_DefaultPlayer_Death_C) == 0x000A88, "Member 'UGA_DefaultPlayer_Death_C::UberGraphFrame_GA_DefaultPlayer_Death_C' has a wrong offset!");
 
 }
 

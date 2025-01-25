@@ -71,20 +71,6 @@ void UGAB_SmasherMelee_C::MoveToLoop()
 }
 
 
-// Function GAB_SmasherMelee.GAB_SmasherMelee_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void UGAB_SmasherMelee_C::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SmasherMelee_C", "K2_ActivateAbility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GAB_SmasherMelee.GAB_SmasherMelee_C.OnComplete_6E0FFA2F4367D5F26D5F5CB20E78DEFC
 // (BlueprintCallable, BlueprintEvent)
 
@@ -226,6 +212,20 @@ void UGAB_SmasherMelee_C::Triggered_D4EB604A4AFDAD65E3461A86287A3EFE(const struc
 	Parms.ApplicationTag = std::move(ApplicationTag);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAB_SmasherMelee.GAB_SmasherMelee_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void UGAB_SmasherMelee_C::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAB_SmasherMelee_C", "K2_ActivateAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

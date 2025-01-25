@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,10 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,7 +45,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsFavorite_ReturnValue;                   // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0076(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0077(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -69,16 +69,16 @@ public:
 	bool                                          CallFunc_IsFavorite_ReturnValue1;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              CallFunc_GetItemInSlot_Item12;                     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              CallFunc_GetItemInSlot_Item2;                      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu) == 0x000008, "Wrong alignment on HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu");
 static_assert(sizeof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu) == 0x0000D0, "Wrong size on HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, EntryPoint) == 0x000000, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button1234) == 0x000010, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
-static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button123) == 0x000018, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
+static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button4) == 0x000010, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
+static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button3) == 0x000018, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button12) == 0x000028, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button2) == 0x000028, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button1) == 0x000030, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_ComponentBoundEvent_Button) == 0x000038, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_GetUINavigationManager_ReturnValue) == 0x000040, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
@@ -93,7 +93,7 @@ static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePo
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000071, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_IsFavorite_ReturnValue) == 0x000072, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_IsFavorite_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000073, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000074, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000074, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_BooleanOR_ReturnValue) == 0x000075, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_SwitchEnum_CmpSuccess) == 0x000076, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_BooleanOR_ReturnValue1) == 0x000077, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
@@ -112,7 +112,7 @@ static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePo
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, K2Node_Select1_Default) == 0x0000BC, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_IsFavorite_ReturnValue1) == 0x0000C0, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_IsFavorite_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_Not_PreBool_ReturnValue) == 0x0000C1, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_GetItemInSlot_Item12) == 0x0000C8, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_GetItemInSlot_Item12' has a wrong offset!");
+static_assert(offsetof(HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu, CallFunc_GetItemInSlot_Item2) == 0x0000C8, "Member 'HeroSquadTilePopupMenu_C_ExecuteUbergraph_HeroSquadTilePopupMenu::CallFunc_GetItemInSlot_Item2' has a wrong offset!");
 
 // Function HeroSquadTilePopupMenu.HeroSquadTilePopupMenu_C.BndEvt__AddToCollectionButton_K2Node_ComponentBoundEvent_230_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_structs.hpp"
 
 
@@ -22,72 +22,76 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLobby.AthenaLobby_C
-// 0x0120 (0x0580 - 0x0460)
+// 0x0130 (0x04A0 - 0x0370)
 class UAthenaLobby_C final : public UAthenaLobbyBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(Transient, DuplicateTransient)
-	class UAthenaMatchmakingPlay_C*               AthenaMatchmakingPlay;                             // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaToastWidget_C*                   AthenaToastWidget;                                 // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                Button_0;                                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USocialImportButton_C*                  Button_SocialImport;                               // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonGamepadSelect;                               // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDailyQuestsPanel_C*                    DailyQuestsPanel;                                  // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEmergencyNoticeWidget_C*               EmergencyNoticeWidget;                             // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPlayerEmblemAndXp_C*                   PlayerEmblemAndXp;                                 // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaLobbyPlayerPanel_C*              PlayerPanel;                                       // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ShadowPlayHighlights;                              // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputCancel;                                       // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	int32                                         SwitcherDetailsActiveIndex;                        // 0x04D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFortTeamMemberInfo>            TeamMembersInfo;                                   // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	int32                                         HoveredPlayerIndex;                                // 0x04E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4EC[0x4];                                      // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    InputScroll;                                       // 0x04F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	int32                                         SelectedPlayerIndex;                               // 0x0500(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_504[0x4];                                      // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 NavigationOrderToPlayerIndex;                      // 0x0508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FDataTableRowHandle                    PlaylistChange;                                    // 0x0518(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    FillChange;                                        // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InputNews;                                         // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InputCustomMatchmaking;                            // 0x0548(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         AthenaStoreToastHeartbeat;                         // 0x0558(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bTryStoreToast;                                    // 0x055C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55D[0x3];                                      // 0x055D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaNewsModal_C*                     NewsModal;                                         // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaHeadlessReminder_C*              HeadlessReminder;                                  // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPartyFinder_C*                         SpawnedPartyFinder;                                // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDpadUpKeyIsDown;                                  // 0x0578(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(Transient, DuplicateTransient)
+	class UAthenaMatchmakingPlay_C*               AthenaMatchmakingPlay;                             // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USocialImportButton_C*                  Button_SocialImport;                               // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonGamepadSelect;                               // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDailyQuestsPanel_C*                    DailyQuestsPanel;                                  // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEmergencyNoticeWidget_C*               EmergencyNoticeWidget;                             // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFriendLinkButton_C*                    FriendLinkButton;                                  // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMatchmakingRegionAndPool_C*            MatchmakingRegion;                                 // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPlayerEmblemAndXp_C*                   PlayerEmblemAndXp;                                 // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaLobbyPlayerPanel_C*              PlayerPanel;                                       // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaFrontEndRadialPicker_C*          RadialPicker;                                      // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ShadowPlayHighlights;                              // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFancyToastWidget_C*                    StoreToastWidget;                                  // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputCancel;                                       // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	int32                                         SwitcherDetailsActiveIndex;                        // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFortTeamMemberInfo>            TeamMembersInfo;                                   // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	int32                                         HoveredPlayerIndex;                                // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    InputScroll;                                       // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	int32                                         SelectedPlayerIndex;                               // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 NavigationOrderToPlayerIndex;                      // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FDataTableRowHandle                    InputNews;                                         // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputCustomMatchmaking;                            // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UAthenaNewsModal_C*                     NewsModal;                                         // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaHeadlessReminder_C*              HeadlessReminder;                                  // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPartyFinder_C*                         SpawnedPartyFinder;                                // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDpadUpKeyIsDown;                                  // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_471[0x7];                                      // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    InputEmote;                                        // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UStoreToastRequest*                     StoreToastRequest;                                 // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           TryShowToast;                                      // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         HoveredPlayerIndex_0;                              // 0x0498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaLobby(int32 EntryPoint);
+	void ClosePlayerPanel();
+	void TryToastAgainNextFrame();
+	void BndEvt__AthenaToastWidget_K2Node_ComponentBoundEvent_1_OnFinishedToast__DelegateSignature();
+	void AttemptToShowToast();
+	void DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedRequest);
+	void OnDeactivated();
+	void ShowMobileAutoFireScreen();
+	void Tester();
 	void AcceptPartySuggestion();
 	void ShowDailyNews();
 	void Destruct();
-	void Check_For_Gifts();
-	void Gifting_Complete();
-	void OnActivated();
 	void OnNavigationUp();
+	void OnActivated();
 	void Construct();
-	void Event_Abandon();
-	void BndEvt__Button_0_K2Node_ComponentBoundEvent_26_OnButtonPressedEvent__DelegateSignature();
-	void ShouldShowHeadlessReminder(bool bShouldShow);
-	void HeadlessReminderClosed(class UCommonActivatablePanel* NewParam);
 	void NewsPanelClosed(class UCommonActivatablePanel* Panel);
-	void ShowAthenaStoreToast();
-	void BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex);
 	void BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__PlayerPanel_K2Node_ComponentBoundEvent_308_OnClosed__DelegateSignature();
 	void OnBeginCursorOverPlayer(int32 PlayerIndex);
 	void OnPlayerClicked(int32 PlayerIndex);
-	void OnEndCursorOverPlayer(int32 PlayerIndex);
+	void Event_Abandon();
 	void BndEvt__ButtonTMPTEST_K2Node_ComponentBoundEvent_198_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnNavigationRight();
 	void OnNavigationLeft();
-	void DialogResult_156754AE468EF93DCA2009A412591BA7(EFortDialogResult Result, class FName ResultName);
+	void OnEndCursorOverPlayer(int32 PlayerIndex);
+	void BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex);
 	void OnSuccess_DA5E62624D068772EA890193344BA4AE();
 	void OnFailure_DA5E62624D068772EA890193344BA4AE();
+	void DialogResult_156754AE468EF93DCA2009A412591BA7(EFortDialogResult Result, class FName ResultName);
 	void Initialize();
 	void Refresh(int32 UpdatedPlayerIndex);
 	void OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo);
@@ -115,17 +119,21 @@ public:
 	void SetHoveredPlayer(int32 PlayerIndex);
 	void CanNavigatePlayers(bool* bCanNavigatePlayers);
 	void OnSelect(int32 PlayerIndex);
-	void IsLocalPlayer(int32 PlayerIndex, bool* Param_IsLocalPlayer);
-	void OnInputPlaylistChangeGamepad(bool* bCommited);
-	void OnInputFillChangeGamepad(bool* bCommited);
+	void IsLocalPlayer(int32 PlayerIndex, bool* IsLocalPlayer_0);
 	void OnInputNews(bool* bPassThrough);
 	void ShowModalNews();
 	void HighlightsCountChanged(int32 NewParam);
-	void OnInputCustomMatchmaking(bool* bPassThrough);
 	void StartAthenaLobbyMusic();
 	void OnPartyFinderClosed(class UCommonActivatablePanel* ActivatablePanel);
 	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
 	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnInputEmote(bool* Passthrough);
+	void RefreshAllPlayerHeroes();
+	void HandleOnPlayerLeaveUpdatePlayerPanel(int32 PlayerIndex);
+	void ShowPicker(EFortPickerMode Mode, int32 InitialOption, bool IgnoreFirstAccept);
+	void CloseEmotePicker();
+	void OnKeybindsChanged();
+	void ConfigureGenericLinkButton();
 
 public:
 	static class UClass* StaticClass()
@@ -138,36 +146,38 @@ public:
 	}
 };
 static_assert(alignof(UAthenaLobby_C) == 0x000008, "Wrong alignment on UAthenaLobby_C");
-static_assert(sizeof(UAthenaLobby_C) == 0x000580, "Wrong size on UAthenaLobby_C");
-static_assert(offsetof(UAthenaLobby_C, UberGraphFrame) == 0x000460, "Member 'UAthenaLobby_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, AthenaMatchmakingPlay) == 0x000468, "Member 'UAthenaLobby_C::AthenaMatchmakingPlay' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, AthenaToastWidget) == 0x000470, "Member 'UAthenaLobby_C::AthenaToastWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, BuildWatermark) == 0x000478, "Member 'UAthenaLobby_C::BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, Button_0) == 0x000480, "Member 'UAthenaLobby_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, Button_SocialImport) == 0x000488, "Member 'UAthenaLobby_C::Button_SocialImport' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, ButtonGamepadSelect) == 0x000490, "Member 'UAthenaLobby_C::ButtonGamepadSelect' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, DailyQuestsPanel) == 0x000498, "Member 'UAthenaLobby_C::DailyQuestsPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, EmergencyNoticeWidget) == 0x0004A0, "Member 'UAthenaLobby_C::EmergencyNoticeWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PlayerEmblemAndXp) == 0x0004A8, "Member 'UAthenaLobby_C::PlayerEmblemAndXp' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PlayerPanel) == 0x0004B0, "Member 'UAthenaLobby_C::PlayerPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, ShadowPlayHighlights) == 0x0004B8, "Member 'UAthenaLobby_C::ShadowPlayHighlights' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputCancel) == 0x0004C0, "Member 'UAthenaLobby_C::InputCancel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, SwitcherDetailsActiveIndex) == 0x0004D0, "Member 'UAthenaLobby_C::SwitcherDetailsActiveIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, TeamMembersInfo) == 0x0004D8, "Member 'UAthenaLobby_C::TeamMembersInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, HoveredPlayerIndex) == 0x0004E8, "Member 'UAthenaLobby_C::HoveredPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputScroll) == 0x0004F0, "Member 'UAthenaLobby_C::InputScroll' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, SelectedPlayerIndex) == 0x000500, "Member 'UAthenaLobby_C::SelectedPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, NavigationOrderToPlayerIndex) == 0x000508, "Member 'UAthenaLobby_C::NavigationOrderToPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PlaylistChange) == 0x000518, "Member 'UAthenaLobby_C::PlaylistChange' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, FillChange) == 0x000528, "Member 'UAthenaLobby_C::FillChange' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputNews) == 0x000538, "Member 'UAthenaLobby_C::InputNews' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputCustomMatchmaking) == 0x000548, "Member 'UAthenaLobby_C::InputCustomMatchmaking' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, AthenaStoreToastHeartbeat) == 0x000558, "Member 'UAthenaLobby_C::AthenaStoreToastHeartbeat' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, bTryStoreToast) == 0x00055C, "Member 'UAthenaLobby_C::bTryStoreToast' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, NewsModal) == 0x000560, "Member 'UAthenaLobby_C::NewsModal' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, HeadlessReminder) == 0x000568, "Member 'UAthenaLobby_C::HeadlessReminder' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, SpawnedPartyFinder) == 0x000570, "Member 'UAthenaLobby_C::SpawnedPartyFinder' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, bDpadUpKeyIsDown) == 0x000578, "Member 'UAthenaLobby_C::bDpadUpKeyIsDown' has a wrong offset!");
+static_assert(sizeof(UAthenaLobby_C) == 0x0004A0, "Wrong size on UAthenaLobby_C");
+static_assert(offsetof(UAthenaLobby_C, UberGraphFrame) == 0x000370, "Member 'UAthenaLobby_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, AthenaMatchmakingPlay) == 0x000378, "Member 'UAthenaLobby_C::AthenaMatchmakingPlay' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, BuildWatermark) == 0x000380, "Member 'UAthenaLobby_C::BuildWatermark' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, Button_SocialImport) == 0x000388, "Member 'UAthenaLobby_C::Button_SocialImport' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, ButtonGamepadSelect) == 0x000390, "Member 'UAthenaLobby_C::ButtonGamepadSelect' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, DailyQuestsPanel) == 0x000398, "Member 'UAthenaLobby_C::DailyQuestsPanel' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, EmergencyNoticeWidget) == 0x0003A0, "Member 'UAthenaLobby_C::EmergencyNoticeWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, FriendLinkButton) == 0x0003A8, "Member 'UAthenaLobby_C::FriendLinkButton' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, MatchmakingRegion) == 0x0003B0, "Member 'UAthenaLobby_C::MatchmakingRegion' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, PlayerEmblemAndXp) == 0x0003B8, "Member 'UAthenaLobby_C::PlayerEmblemAndXp' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, PlayerPanel) == 0x0003C0, "Member 'UAthenaLobby_C::PlayerPanel' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, RadialPicker) == 0x0003C8, "Member 'UAthenaLobby_C::RadialPicker' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, ShadowPlayHighlights) == 0x0003D0, "Member 'UAthenaLobby_C::ShadowPlayHighlights' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, StoreToastWidget) == 0x0003D8, "Member 'UAthenaLobby_C::StoreToastWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, InputCancel) == 0x0003E0, "Member 'UAthenaLobby_C::InputCancel' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, SwitcherDetailsActiveIndex) == 0x0003F0, "Member 'UAthenaLobby_C::SwitcherDetailsActiveIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, TeamMembersInfo) == 0x0003F8, "Member 'UAthenaLobby_C::TeamMembersInfo' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, HoveredPlayerIndex) == 0x000408, "Member 'UAthenaLobby_C::HoveredPlayerIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, InputScroll) == 0x000410, "Member 'UAthenaLobby_C::InputScroll' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, SelectedPlayerIndex) == 0x000420, "Member 'UAthenaLobby_C::SelectedPlayerIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, NavigationOrderToPlayerIndex) == 0x000428, "Member 'UAthenaLobby_C::NavigationOrderToPlayerIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, InputNews) == 0x000438, "Member 'UAthenaLobby_C::InputNews' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, InputCustomMatchmaking) == 0x000448, "Member 'UAthenaLobby_C::InputCustomMatchmaking' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, NewsModal) == 0x000458, "Member 'UAthenaLobby_C::NewsModal' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, HeadlessReminder) == 0x000460, "Member 'UAthenaLobby_C::HeadlessReminder' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, SpawnedPartyFinder) == 0x000468, "Member 'UAthenaLobby_C::SpawnedPartyFinder' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, bDpadUpKeyIsDown) == 0x000470, "Member 'UAthenaLobby_C::bDpadUpKeyIsDown' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, InputEmote) == 0x000478, "Member 'UAthenaLobby_C::InputEmote' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, StoreToastRequest) == 0x000488, "Member 'UAthenaLobby_C::StoreToastRequest' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, TryShowToast) == 0x000490, "Member 'UAthenaLobby_C::TryShowToast' has a wrong offset!");
+static_assert(offsetof(UAthenaLobby_C, HoveredPlayerIndex_0) == 0x000498, "Member 'UAthenaLobby_C::HoveredPlayerIndex_0' has a wrong offset!");
 
 }
 

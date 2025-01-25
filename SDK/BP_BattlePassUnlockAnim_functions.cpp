@@ -112,5 +112,25 @@ void UBP_BattlePassUnlockAnim_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function BP_BattlePassUnlockAnim.BP_BattlePassUnlockAnim_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UBP_BattlePassUnlockAnim_C::GetWidgetForFramingViewedItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "GetWidgetForFramingViewedItem");
+
+	Params::BP_BattlePassUnlockAnim_C_GetWidgetForFramingViewedItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

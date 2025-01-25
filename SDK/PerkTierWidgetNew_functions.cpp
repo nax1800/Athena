@@ -41,9 +41,9 @@ void UPerkTierWidgetNew_C::ExecuteUbergraph_PerkTierWidgetNew(int32 EntryPoint)
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // struct FFortUIPerk                      Perk                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// class UFortPerkWidget_NUI*              Param_PerkWidget                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortPerkWidget_NUI*              PerkWidget_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class UFortPerkWidget_NUI* Param_PerkWidget)
+void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class UFortPerkWidget_NUI* PerkWidget_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -53,7 +53,7 @@ void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class 
 	Params::PerkTierWidgetNew_C_OnGeneratePerk Parms{};
 
 	Parms.Perk = std::move(Perk);
-	Parms.Param_PerkWidget = Param_PerkWidget;
+	Parms.PerkWidget_0 = PerkWidget_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,12 +76,12 @@ void UPerkTierWidgetNew_C::Construct()
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.InitializeSettings
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIncludeName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_bIncludeDescription                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// EFortBrushSize                          Param_IconSize                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortUIPerkTier                  Param_FortPerkTier                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    bIncludeName_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIncludeDescription_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EFortBrushSize                          IconSize_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFortUIPerkTier                  FortPerkTier_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UPerkTierWidgetNew_C::InitializeSettings(bool Param_bIncludeName, bool Param_bIncludeDescription, EFortBrushSize Param_IconSize, const struct FFortUIPerkTier& Param_FortPerkTier)
+void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, EFortBrushSize IconSize_0, const struct FFortUIPerkTier& FortPerkTier_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -90,10 +90,10 @@ void UPerkTierWidgetNew_C::InitializeSettings(bool Param_bIncludeName, bool Para
 
 	Params::PerkTierWidgetNew_C_InitializeSettings Parms{};
 
-	Parms.Param_bIncludeName = Param_bIncludeName;
-	Parms.Param_bIncludeDescription = Param_bIncludeDescription;
-	Parms.Param_IconSize = Param_IconSize;
-	Parms.Param_FortPerkTier = std::move(Param_FortPerkTier);
+	Parms.bIncludeName_0 = bIncludeName_0;
+	Parms.bIncludeDescription_0 = bIncludeDescription_0;
+	Parms.IconSize_0 = IconSize_0;
+	Parms.FortPerkTier_0 = std::move(FortPerkTier_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

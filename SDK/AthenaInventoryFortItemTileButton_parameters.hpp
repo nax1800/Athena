@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "UMG_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -68,7 +68,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_GetData_ReturnValue;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_GetListItemObject_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              K2Node_DynamicCast_AsFort_Item;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,7 +85,7 @@ static_assert(sizeof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidget
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_byte_Variable1) == 0x000001, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, Temp_bool_Variable) == 0x000002, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetData_ReturnValue) == 0x000008, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetListItemObject_ReturnValue) == 0x000008, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetListItemObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_AsFort_Item) == 0x000010, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_AsFort_Item' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, CallFunc_GetType_ReturnValue) == 0x000019, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::CallFunc_GetType_ReturnValue' has a wrong offset!");

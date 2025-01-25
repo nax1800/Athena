@@ -11,22 +11,22 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemIconWidget.ItemIconWidget_C
-// 0x0020 (0x0230 - 0x0210)
+// 0x0020 (0x0228 - 0x0208)
 class UItemIconWidget_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Image;                                             // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItem*                              Item;                                              // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	EFortBrushSize                                BrushSize;                                         // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Image;                                             // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItem*                              Item;                                              // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	EFortBrushSize                                BrushSize;                                         // 0x0220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemIconWidget(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UItemIconWidget_C) == 0x000008, "Wrong alignment on UItemIconWidget_C");
-static_assert(sizeof(UItemIconWidget_C) == 0x000230, "Wrong size on UItemIconWidget_C");
-static_assert(offsetof(UItemIconWidget_C, UberGraphFrame) == 0x000210, "Member 'UItemIconWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, Image) == 0x000218, "Member 'UItemIconWidget_C::Image' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, Item) == 0x000220, "Member 'UItemIconWidget_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, BrushSize) == 0x000228, "Member 'UItemIconWidget_C::BrushSize' has a wrong offset!");
+static_assert(sizeof(UItemIconWidget_C) == 0x000228, "Wrong size on UItemIconWidget_C");
+static_assert(offsetof(UItemIconWidget_C, UberGraphFrame) == 0x000208, "Member 'UItemIconWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemIconWidget_C, Image) == 0x000210, "Member 'UItemIconWidget_C::Image' has a wrong offset!");
+static_assert(offsetof(UItemIconWidget_C, Item) == 0x000218, "Member 'UItemIconWidget_C::Item' has a wrong offset!");
+static_assert(offsetof(UItemIconWidget_C, BrushSize) == 0x000220, "Member 'UItemIconWidget_C::BrushSize' has a wrong offset!");
 
 }
 

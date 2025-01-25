@@ -41,7 +41,7 @@ static_assert(sizeof(ItemTransformSlotScreen_C_OnTransformButtonUpdated__Delegat
 static_assert(offsetof(ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature, TransformActive) == 0x000000, "Member 'ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature::TransformActive' has a wrong offset!");
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.ExecuteUbergraph_ItemTransformSlotScreen
-// 0x0048 (0x0048 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen final
 {
 public:
@@ -53,14 +53,11 @@ public:
 	class UFortItem*                              K2Node_ComponentBoundEvent_SelectedItem;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_TransformActive;        // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_CustomEvent_AssociatedButton1;              // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex1;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_CustomEvent_AssociatedButton;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_CustomEvent_AssociatedButton;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen");
-static_assert(sizeof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen) == 0x000048, "Wrong size on ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen");
+static_assert(sizeof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen) == 0x000038, "Wrong size on ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen");
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, EntryPoint) == 0x000000, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, CallFunc_GetSelectedButtonIndex_ReturnValue) == 0x000004, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::CallFunc_GetSelectedButtonIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, CallFunc_Array_Get_Item) == 0x000008, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::CallFunc_Array_Get_Item' has a wrong offset!");
@@ -68,23 +65,8 @@ static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformS
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_ComponentBoundEvent_CurrentTier) == 0x000014, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_ComponentBoundEvent_CurrentTier' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_ComponentBoundEvent_SelectedItem) == 0x000018, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_ComponentBoundEvent_TransformActive) == 0x000020, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_ComponentBoundEvent_TransformActive' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_AssociatedButton1) == 0x000028, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_AssociatedButton1' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_ButtonIndex1) == 0x000030, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_ButtonIndex1' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_AssociatedButton) == 0x000038, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_AssociatedButton' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_ButtonIndex) == 0x000040, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-
-// Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.HandleSlotButton_DoubleClicked
-// 0x0010 (0x0010 - 0x0000)
-struct ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked final
-{
-public:
-	class UCommonButton*                          AssociatedButton;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked");
-static_assert(sizeof(ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked) == 0x000010, "Wrong size on ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked");
-static_assert(offsetof(ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked, AssociatedButton) == 0x000000, "Member 'ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked::AssociatedButton' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked, ButtonIndex) == 0x000008, "Member 'ItemTransformSlotScreen_C_HandleSlotButton_DoubleClicked::ButtonIndex' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_AssociatedButton) == 0x000028, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_AssociatedButton' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen, K2Node_CustomEvent_ButtonIndex) == 0x000030, "Member 'ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.HandleSlotButton_Clicked
 // 0x0010 (0x0010 - 0x0000)
@@ -146,32 +128,30 @@ static_assert(sizeof(ItemTransformSlotScreen_C_OpenItemPicker) == 0x000004, "Wro
 static_assert(offsetof(ItemTransformSlotScreen_C_OpenItemPicker, CallFunc_GetSelectedButtonIndex_ReturnValue) == 0x000000, "Member 'ItemTransformSlotScreen_C_OpenItemPicker::CallFunc_GetSelectedButtonIndex_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.SetupSlotScreen
-// 0x0048 (0x0048 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ItemTransformSlotScreen_C_SetupSlotScreen final
 {
 public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue123;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue1234;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonGroup*                     CallFunc_SpawnObject_ReturnValue;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonGroup*                     CallFunc_SpawnObject_ReturnValue;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemTransformSlotScreen_C_SetupSlotScreen) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_SetupSlotScreen");
-static_assert(sizeof(ItemTransformSlotScreen_C_SetupSlotScreen) == 0x000048, "Wrong size on ItemTransformSlotScreen_C_SetupSlotScreen");
+static_assert(sizeof(ItemTransformSlotScreen_C_SetupSlotScreen) == 0x000038, "Wrong size on ItemTransformSlotScreen_C_SetupSlotScreen");
 static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue) == 0x000000, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue1) == 0x000004, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue12) == 0x000008, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue123) == 0x00000C, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue2) == 0x000008, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue3) == 0x00000C, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue1234) == 0x000020, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000028, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_SpawnObject_ReturnValue) == 0x000040, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_Array_Add_ReturnValue4) == 0x000020, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_SetupSlotScreen, CallFunc_SpawnObject_ReturnValue) == 0x000030, "Member 'ItemTransformSlotScreen_C_SetupSlotScreen::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.CloseItemPicker
 // 0x0004 (0x0004 - 0x0000)
@@ -208,8 +188,8 @@ static_assert(offsetof(ItemTransformSlotScreen_C_ResetScreen, CallFunc_Add_IntIn
 struct ItemTransformSlotScreen_C_Get_Transform_Data final
 {
 public:
-	class UFortItem*                              Param_SelectedKey;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UFortItem*>                      Param_SacrificeItems;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
+	class UFortItem*                              SelectedKey_0;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UFortItem*>                      SacrificeItems_0;                                  // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
 	int32                                         CurrentSacrificePoints;                            // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentTier;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Get_Transform_Data_CurrentSacrificePoints; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -217,8 +197,8 @@ public:
 };
 static_assert(alignof(ItemTransformSlotScreen_C_Get_Transform_Data) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_Get_Transform_Data");
 static_assert(sizeof(ItemTransformSlotScreen_C_Get_Transform_Data) == 0x000028, "Wrong size on ItemTransformSlotScreen_C_Get_Transform_Data");
-static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, Param_SelectedKey) == 0x000000, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::Param_SelectedKey' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, Param_SacrificeItems) == 0x000008, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::Param_SacrificeItems' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, SelectedKey_0) == 0x000000, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::SelectedKey_0' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, SacrificeItems_0) == 0x000008, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::SacrificeItems_0' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, CurrentSacrificePoints) == 0x000018, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::CurrentSacrificePoints' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, CurrentTier) == 0x00001C, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::CurrentTier' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, CallFunc_Get_Transform_Data_CurrentSacrificePoints) == 0x000020, "Member 'ItemTransformSlotScreen_C_Get_Transform_Data::CallFunc_Get_Transform_Data_CurrentSacrificePoints' has a wrong offset!");
@@ -229,14 +209,14 @@ static_assert(offsetof(ItemTransformSlotScreen_C_Get_Transform_Data, CallFunc_Ge
 struct ItemTransformSlotScreen_C_Navigate_to_Button final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          CallFunc_GetButtonAtIndex_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemTransformSlotScreen_C_Navigate_to_Button) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_Navigate_to_Button");
 static_assert(sizeof(ItemTransformSlotScreen_C_Navigate_to_Button) == 0x000018, "Wrong size on ItemTransformSlotScreen_C_Navigate_to_Button");
-static_assert(offsetof(ItemTransformSlotScreen_C_Navigate_to_Button, Param_Index) == 0x000000, "Member 'ItemTransformSlotScreen_C_Navigate_to_Button::Param_Index' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotScreen_C_Navigate_to_Button, Index_0) == 0x000000, "Member 'ItemTransformSlotScreen_C_Navigate_to_Button::Index_0' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_Navigate_to_Button, CallFunc_GetButtonAtIndex_ReturnValue) == 0x000008, "Member 'ItemTransformSlotScreen_C_Navigate_to_Button::CallFunc_GetButtonAtIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_Navigate_to_Button, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'ItemTransformSlotScreen_C_Navigate_to_Button::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 

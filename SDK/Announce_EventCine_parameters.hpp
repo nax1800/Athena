@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -36,8 +36,8 @@ public:
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0048(0x0020)(ConstParm, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x0008)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable1;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,7 +59,7 @@ static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine,
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_EventSource) == 0x000038, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_EventFocus) == 0x000040, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_ClientEvent) == 0x000048, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_CreateDelegate_OutputDelegate12) == 0x000068, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_CreateDelegate_OutputDelegate2) == 0x000068, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000078, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, Temp_bool_IsClosed_Variable1) == 0x000080, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::Temp_bool_IsClosed_Variable1' has a wrong offset!");
 static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000088, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");

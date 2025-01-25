@@ -10,39 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Mimic_Chest.Mimic_Chest_C
-// 0x0068 (0x0E10 - 0x0DA8)
+// 0x0060 (0x0BA8 - 0x0B48)
 class AMimic_Chest_C final : public ABuildingSMActor
 {
 public:
-	uint8                                         Pad_DA8[0x8];                                      // 0x0DA8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0DB0(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   S_Chest_SmokeSheet;                                // 0x0DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Capsule;                                           // 0x0DC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x0DC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortMiniMapComponent*                  FortMiniMap;                                       // 0x0DD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ChestAudio;                                        // 0x0DD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D;     // 0x0DE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D; // 0x0DE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DE5[0x3];                                      // 0x0DE5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TWITCH;                                            // 0x0DE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        InteractingPawn;                                   // 0x0DF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bBlockedByStairs_;                                 // 0x0DF8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_DF9[0x7];                                      // 0x0DF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Mimic_Chest_Shake_Sound;                           // 0x0E00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Mimic_Chest_Break_Sound;                           // 0x0E08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B48(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   S_Chest_SmokeSheet;                                // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Capsule;                                           // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortMiniMapComponent*                  FortMiniMap;                                       // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ChestAudio;                                        // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D;     // 0x0B78(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D; // 0x0B7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B7D[0x3];                                      // 0x0B7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     TWITCH;                                            // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        InteractingPawn;                                   // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bBlockedByStairs_;                                 // 0x0B90(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_B91[0x7];                                      // 0x0B91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Mimic_Chest_Shake_Sound;                           // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Mimic_Chest_Break_Sound;                           // 0x0BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Mimic_Chest(int32 EntryPoint);
 	void BndEvt__Capsule_K2Node_ComponentBoundEvent_18_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BlueprintOnInteract(const class AFortPawn* Param_InteractingPawn);
+	void BlueprintOnInteract(const class AFortPawn* InteractingPawn_0);
 	void ReceiveBeginPlay();
 	void BlueprintOnBeginInteract();
 	void OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext);
@@ -51,8 +50,8 @@ public:
 	void UserConstructionScript();
 	void OnRep_bBlockedByStairs_();
 
-	bool BlueprintCanInteract(const class AFortPawn* Param_InteractingPawn) const;
-	class FText BlueprintGetInteractionString(const class AFortPawn* Param_InteractingPawn) const;
+	bool BlueprintCanInteract(const class AFortPawn* InteractingPawn_0) const;
+	class FText BlueprintGetInteractionString(const class AFortPawn* InteractingPawn_0) const;
 
 public:
 	static class UClass* StaticClass()
@@ -65,20 +64,20 @@ public:
 	}
 };
 static_assert(alignof(AMimic_Chest_C) == 0x000008, "Wrong alignment on AMimic_Chest_C");
-static_assert(sizeof(AMimic_Chest_C) == 0x000E10, "Wrong size on AMimic_Chest_C");
-static_assert(offsetof(AMimic_Chest_C, UberGraphFrame) == 0x000DB0, "Member 'AMimic_Chest_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, S_Chest_SmokeSheet) == 0x000DB8, "Member 'AMimic_Chest_C::S_Chest_SmokeSheet' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Capsule) == 0x000DC0, "Member 'AMimic_Chest_C::Capsule' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Box) == 0x000DC8, "Member 'AMimic_Chest_C::Box' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, FortMiniMap) == 0x000DD0, "Member 'AMimic_Chest_C::FortMiniMap' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, ChestAudio) == 0x000DD8, "Member 'AMimic_Chest_C::ChestAudio' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D) == 0x000DE0, "Member 'AMimic_Chest_C::Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D) == 0x000DE4, "Member 'AMimic_Chest_C::Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, TWITCH) == 0x000DE8, "Member 'AMimic_Chest_C::TWITCH' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, InteractingPawn) == 0x000DF0, "Member 'AMimic_Chest_C::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, bBlockedByStairs_) == 0x000DF8, "Member 'AMimic_Chest_C::bBlockedByStairs_' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Mimic_Chest_Shake_Sound) == 0x000E00, "Member 'AMimic_Chest_C::Mimic_Chest_Shake_Sound' has a wrong offset!");
-static_assert(offsetof(AMimic_Chest_C, Mimic_Chest_Break_Sound) == 0x000E08, "Member 'AMimic_Chest_C::Mimic_Chest_Break_Sound' has a wrong offset!");
+static_assert(sizeof(AMimic_Chest_C) == 0x000BA8, "Wrong size on AMimic_Chest_C");
+static_assert(offsetof(AMimic_Chest_C, UberGraphFrame) == 0x000B48, "Member 'AMimic_Chest_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, S_Chest_SmokeSheet) == 0x000B50, "Member 'AMimic_Chest_C::S_Chest_SmokeSheet' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Capsule) == 0x000B58, "Member 'AMimic_Chest_C::Capsule' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Box) == 0x000B60, "Member 'AMimic_Chest_C::Box' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, FortMiniMap) == 0x000B68, "Member 'AMimic_Chest_C::FortMiniMap' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, ChestAudio) == 0x000B70, "Member 'AMimic_Chest_C::ChestAudio' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D) == 0x000B78, "Member 'AMimic_Chest_C::Twitch_Scale_CE105FFA4C580F811CE19C91346CC37D' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D) == 0x000B7C, "Member 'AMimic_Chest_C::Twitch__Direction_CE105FFA4C580F811CE19C91346CC37D' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, TWITCH) == 0x000B80, "Member 'AMimic_Chest_C::TWITCH' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, InteractingPawn) == 0x000B88, "Member 'AMimic_Chest_C::InteractingPawn' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, bBlockedByStairs_) == 0x000B90, "Member 'AMimic_Chest_C::bBlockedByStairs_' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Mimic_Chest_Shake_Sound) == 0x000B98, "Member 'AMimic_Chest_C::Mimic_Chest_Shake_Sound' has a wrong offset!");
+static_assert(offsetof(AMimic_Chest_C, Mimic_Chest_Break_Sound) == 0x000BA0, "Member 'AMimic_Chest_C::Mimic_Chest_Break_Sound' has a wrong offset!");
 
 }
 

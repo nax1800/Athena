@@ -93,17 +93,23 @@ void UTabInputOptions_C::ExecuteUbergraph_TabInputOptions(int32 EntryPoint)
 }
 
 
-// Function TabInputOptions.TabInputOptions_C.UpdateOptionsTab
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function TabInputOptions.TabInputOptions_C.HandleChangeBinding
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UTabInputOptions_C::UpdateOptionsTab()
+void UTabInputOptions_C::HandleChangeBinding(const struct FKey& NewKey)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabInputOptions_C", "UpdateOptionsTab");
+		Func = Class->GetFunction("TabInputOptions_C", "HandleChangeBinding");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::TabInputOptions_C_HandleChangeBinding Parms{};
+
+	Parms.NewKey = std::move(NewKey);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -121,13 +127,27 @@ void UTabInputOptions_C::Construct()
 }
 
 
+// Function TabInputOptions.TabInputOptions_C.UpdateOptionsTab
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UTabInputOptions_C::UpdateOptionsTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabInputOptions_C", "UpdateOptionsTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function TabInputOptions.TabInputOptions_C.Input Clicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Number_in_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Number_In_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Is_Primary_Button                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTabInputOptions_C::Input_Clicked(int32 Number_in_List, bool Is_Primary_Button)
+void UTabInputOptions_C::Input_Clicked(int32 Number_In_List, bool Is_Primary_Button)
 {
 	static class UFunction* Func = nullptr;
 
@@ -136,7 +156,7 @@ void UTabInputOptions_C::Input_Clicked(int32 Number_in_List, bool Is_Primary_But
 
 	Params::TabInputOptions_C_Input_Clicked Parms{};
 
-	Parms.Number_in_List = Number_in_List;
+	Parms.Number_In_List = Number_In_List;
 	Parms.Is_Primary_Button = Is_Primary_Button;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -160,10 +180,10 @@ void UTabInputOptions_C::ClearAndConstructKeybindList()
 // Function TabInputOptions.TabInputOptions_C.UnbindClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Number_in_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Number_In_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UOptionsMenuInput_C*              Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabInputOptions_C::UnbindClicked(int32 Number_in_List, class UOptionsMenuInput_C* Widget)
+void UTabInputOptions_C::UnbindClicked(int32 Number_In_List, class UOptionsMenuInput_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -172,7 +192,7 @@ void UTabInputOptions_C::UnbindClicked(int32 Number_in_List, class UOptionsMenuI
 
 	Params::TabInputOptions_C_UnbindClicked Parms{};
 
-	Parms.Number_in_List = Number_in_List;
+	Parms.Number_In_List = Number_In_List;
 	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -233,6 +253,28 @@ void UTabInputOptions_C::CenterOnTab()
 }
 
 
+// Function TabInputOptions.TabInputOptions_C.DialogResult_018CEC524FAF598D4D7A358441037217
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabInputOptions_C::DialogResult_018CEC524FAF598D4D7A358441037217(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabInputOptions_C", "DialogResult_018CEC524FAF598D4D7A358441037217");
+
+	Params::TabInputOptions_C_DialogResult_018CEC524FAF598D4D7A358441037217 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function TabInputOptions.TabInputOptions_C.Overlay Key Pressed
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -273,17 +315,27 @@ void UTabInputOptions_C::Set_Input_Enabled(bool Enabled)
 }
 
 
-// Function TabInputOptions.TabInputOptions_C.NewFunction_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function TabInputOptions.TabInputOptions_C.SetupDisplayOption
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InputIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UOptionsMenuInputDisplayOnly_C*   ReturnObject                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabInputOptions_C::NewFunction_0()
+void UTabInputOptions_C::SetupDisplayOption(int32 InputIndex, class UOptionsMenuInputDisplayOnly_C** ReturnObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabInputOptions_C", "NewFunction_0");
+		Func = Class->GetFunction("TabInputOptions_C", "SetupDisplayOption");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::TabInputOptions_C_SetupDisplayOption Parms{};
+
+	Parms.InputIndex = InputIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ReturnObject != nullptr)
+		*ReturnObject = Parms.ReturnObject;
 }
 
 }

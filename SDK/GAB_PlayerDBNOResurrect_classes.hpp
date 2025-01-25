@@ -10,28 +10,27 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C
-// 0x0048 (0x0B30 - 0x0AE8)
+// 0x0040 (0x0938 - 0x08F8)
 class UGAB_PlayerDBNOResurrect_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTag                           EC_AppliedEffect;                                  // 0x0AF8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         KnockbackMagnitude;                                // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         HitActors;                                         // 0x0B10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	class UClass*                                 KnockbackStunGE;                                   // 0x0B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 BP_VictoryDrone;                                   // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           EC_AppliedEffect;                                  // 0x0900(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         KnockbackMagnitude;                                // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_914[0x4];                                      // 0x0914(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         HitActors;                                         // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UClass*                                 KnockbackStunGE;                                   // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 BP_VictoryDrone;                                   // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_PlayerDBNOResurrect(int32 EntryPoint);
@@ -54,14 +53,14 @@ public:
 	}
 };
 static_assert(alignof(UGAB_PlayerDBNOResurrect_C) == 0x000008, "Wrong alignment on UGAB_PlayerDBNOResurrect_C");
-static_assert(sizeof(UGAB_PlayerDBNOResurrect_C) == 0x000B30, "Wrong size on UGAB_PlayerDBNOResurrect_C");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_PlayerDBNOResurrect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, EC_AppliedEffect) == 0x000AF8, "Member 'UGAB_PlayerDBNOResurrect_C::EC_AppliedEffect' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, PlayerPawn) == 0x000B00, "Member 'UGAB_PlayerDBNOResurrect_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, KnockbackMagnitude) == 0x000B08, "Member 'UGAB_PlayerDBNOResurrect_C::KnockbackMagnitude' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, HitActors) == 0x000B10, "Member 'UGAB_PlayerDBNOResurrect_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, KnockbackStunGE) == 0x000B20, "Member 'UGAB_PlayerDBNOResurrect_C::KnockbackStunGE' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, BP_VictoryDrone) == 0x000B28, "Member 'UGAB_PlayerDBNOResurrect_C::BP_VictoryDrone' has a wrong offset!");
+static_assert(sizeof(UGAB_PlayerDBNOResurrect_C) == 0x000938, "Wrong size on UGAB_PlayerDBNOResurrect_C");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_PlayerDBNOResurrect_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, EC_AppliedEffect) == 0x000900, "Member 'UGAB_PlayerDBNOResurrect_C::EC_AppliedEffect' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, PlayerPawn) == 0x000908, "Member 'UGAB_PlayerDBNOResurrect_C::PlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, KnockbackMagnitude) == 0x000910, "Member 'UGAB_PlayerDBNOResurrect_C::KnockbackMagnitude' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, HitActors) == 0x000918, "Member 'UGAB_PlayerDBNOResurrect_C::HitActors' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, KnockbackStunGE) == 0x000928, "Member 'UGAB_PlayerDBNOResurrect_C::KnockbackStunGE' has a wrong offset!");
+static_assert(offsetof(UGAB_PlayerDBNOResurrect_C, BP_VictoryDrone) == 0x000930, "Member 'UGAB_PlayerDBNOResurrect_C::BP_VictoryDrone' has a wrong offset!");
 
 }
 

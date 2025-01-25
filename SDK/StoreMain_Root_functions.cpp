@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function StoreMain_Root.StoreMain_Root_C.ExecuteUbergraph_StoreMain_Root
-// ()
+// (HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -37,15 +37,65 @@ void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint)
 }
 
 
-// Function StoreMain_Root.StoreMain_Root_C.NoOffersAvailable
-// (Event, Public, BlueprintEvent)
+// Function StoreMain_Root.StoreMain_Root_C.OnActivated
+// (Event, Protected, BlueprintEvent)
 
-void UStoreMain_Root_C::NoOffersAvailable()
+void UStoreMain_Root_C::OnActivated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
+		Func = Class->GetFunction("StoreMain_Root_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.OnUpdateOtherPlatformMTXMessage
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// bool                                    HasOtherPlatformCurrency                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                             CurrencyMessageLocText                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UStoreMain_Root_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCurrency, const class FText& CurrencyMessageLocText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnUpdateOtherPlatformMTXMessage");
+
+	Params::StoreMain_Root_C_OnUpdateOtherPlatformMTXMessage Parms{};
+
+	Parms.HasOtherPlatformCurrency = HasOtherPlatformCurrency;
+	Parms.CurrencyMessageLocText = std::move(CurrencyMessageLocText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.OnBeginOutro
+// (Event, Public, BlueprintEvent)
+
+void UStoreMain_Root_C::OnBeginOutro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnBeginOutro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.OnBeginIntro
+// (Event, Public, BlueprintEvent)
+
+void UStoreMain_Root_C::OnBeginIntro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnBeginIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,34 +143,6 @@ void UStoreMain_Root_C::Destruct()
 }
 
 
-// Function StoreMain_Root.StoreMain_Root_C.OnDeactivated
-// (Event, Protected, BlueprintEvent)
-
-void UStoreMain_Root_C::OnDeactivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnDeactivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UStoreMain_Root_C::OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function StoreMain_Root.StoreMain_Root_C.OnOffersGenerated
 // (Event, Public, BlueprintEvent)
 
@@ -152,6 +174,20 @@ void UStoreMain_Root_C::OnMtxOfferGenerated(class UFortMtxStoreOfferBase* MtxOff
 	Parms.MtxOffer = MtxOffer;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.NoOffersAvailable
+// (Event, Public, BlueprintEvent)
+
+void UStoreMain_Root_C::NoOffersAvailable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -224,17 +260,23 @@ void UStoreMain_Root_C::AboutToPushDetails()
 }
 
 
-// Function StoreMain_Root.StoreMain_Root_C.AboutToEnterChat
+// Function StoreMain_Root.StoreMain_Root_C.HandleChatEntered
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Entered_Chat                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UStoreMain_Root_C::AboutToEnterChat()
+void UStoreMain_Root_C::HandleChatEntered(bool Entered_Chat)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "AboutToEnterChat");
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleChatEntered");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::StoreMain_Root_C_HandleChatEntered Parms{};
+
+	Parms.Entered_Chat = Entered_Chat;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

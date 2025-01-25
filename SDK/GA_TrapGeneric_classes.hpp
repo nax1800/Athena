@@ -10,23 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_TrapGeneric.GA_TrapGeneric_C
-// 0x0038 (0x0B20 - 0x0AE8)
+// 0x0030 (0x0928 - 0x08F8)
 class UGA_TrapGeneric_C : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class ABuildingTrap*                          CeilingTrap;                                       // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CachedDamageTargets;                               // 0x0B00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AActor*>                         TargetArray;                                       // 0x0B10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class ABuildingTrap*                          CeilingTrap;                                       // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CachedDamageTargets;                               // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AActor*>                         TargetArray;                                       // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GA_TrapGeneric(int32 EntryPoint);
@@ -45,11 +44,11 @@ public:
 	}
 };
 static_assert(alignof(UGA_TrapGeneric_C) == 0x000008, "Wrong alignment on UGA_TrapGeneric_C");
-static_assert(sizeof(UGA_TrapGeneric_C) == 0x000B20, "Wrong size on UGA_TrapGeneric_C");
-static_assert(offsetof(UGA_TrapGeneric_C, UberGraphFrame) == 0x000AF0, "Member 'UGA_TrapGeneric_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, CeilingTrap) == 0x000AF8, "Member 'UGA_TrapGeneric_C::CeilingTrap' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, CachedDamageTargets) == 0x000B00, "Member 'UGA_TrapGeneric_C::CachedDamageTargets' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, TargetArray) == 0x000B10, "Member 'UGA_TrapGeneric_C::TargetArray' has a wrong offset!");
+static_assert(sizeof(UGA_TrapGeneric_C) == 0x000928, "Wrong size on UGA_TrapGeneric_C");
+static_assert(offsetof(UGA_TrapGeneric_C, UberGraphFrame) == 0x0008F8, "Member 'UGA_TrapGeneric_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGA_TrapGeneric_C, CeilingTrap) == 0x000900, "Member 'UGA_TrapGeneric_C::CeilingTrap' has a wrong offset!");
+static_assert(offsetof(UGA_TrapGeneric_C, CachedDamageTargets) == 0x000908, "Member 'UGA_TrapGeneric_C::CachedDamageTargets' has a wrong offset!");
+static_assert(offsetof(UGA_TrapGeneric_C, TargetArray) == 0x000918, "Member 'UGA_TrapGeneric_C::TargetArray' has a wrong offset!");
 
 }
 

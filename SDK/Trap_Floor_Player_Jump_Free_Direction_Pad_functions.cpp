@@ -150,5 +150,28 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function Trap_Floor_Player_Jump_Free_Direction_Pad.Trap_Floor_Player_Jump_Free_Direction_Pad_C.BP_ShouldTrigger
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// TArray<class AActor*>                   TouchingActors                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool ATrap_Floor_Player_Jump_Free_Direction_Pad_C::BP_ShouldTrigger(const TArray<class AActor*>& TouchingActors) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "BP_ShouldTrigger");
+
+	Params::Trap_Floor_Player_Jump_Free_Direction_Pad_C_BP_ShouldTrigger Parms{};
+
+	Parms.TouchingActors = std::move(TouchingActors);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

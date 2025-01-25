@@ -10,12 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,48 +28,49 @@ struct BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(float HitPointStat)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(float CurrentDurability, float MaxDurability)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class ABuildingActor* FocusedBuilding)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(struct FFortFocusedBuildingInfo& FocusedBuildingInfo)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1234;          // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class ABuildingActor* FocusedBuilding)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FFortFocusedBuildingInfo& FocusedBuildingInfo)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool bIsTargeting)>            K2Node_CreateDelegate_OutputDelegate12345;         // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bIsTargeting)>            K2Node_CreateDelegate_OutputDelegate5;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 InteractionCost)>        K2Node_CreateDelegate_OutputDelegate123456;        // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 InteractionCost)>        K2Node_CreateDelegate_OutputDelegate6;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class ABuildingTrap* BuildingAttachedTrap)> K2Node_CreateDelegate_OutputDelegate1234567;       // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class ABuildingTrap* BuildingAttachedTrap)> K2Node_CreateDelegate_OutputDelegate7;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortQuickBars QuickbarIndex, int32 Slot)> K2Node_CreateDelegate_OutputDelegate12345678;      // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EFortQuickBars QuickbarIndex, int32 Slot)> K2Node_CreateDelegate_OutputDelegate8;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator");
 static_assert(sizeof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator) == 0x0000D0, "Wrong size on BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, EntryPoint) == 0x000000, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate12) == 0x000028, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate123) == 0x000038, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate1234) == 0x000048, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate4) == 0x000048, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, Temp_byte_Variable) == 0x000058, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate12345) == 0x000060, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate5) == 0x000060, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, Temp_byte_Variable1) == 0x000070, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate123456) == 0x000078, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate123456' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate6) == 0x000078, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, Temp_bool_Variable) == 0x000088, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate1234567) == 0x000090, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate1234567' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate7) == 0x000090, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue) == 0x0000A0, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue1) == 0x0000A8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue12) == 0x0000B0, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate12345678) == 0x0000B8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate12345678' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_IsBROnly_ReturnValue) == 0x0000C8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_Select_Default) == 0x0000C9, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_Select_Default) == 0x0000A8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue1) == 0x0000B0, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue2) == 0x0000B8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, K2Node_CreateDelegate_OutputDelegate8) == 0x0000C0, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo
 // 0x0060 (0x0060 - 0x0000)
@@ -78,15 +80,15 @@ public:
 	struct FFortFocusedBuildingInfo               NewBuildingInfo;                                   // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EFortBuildingInteraction                      Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuildingHealthDisplayRule                Temp_byte_Variable12345678;                        // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789;                       // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345678910;                     // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuildingHealthDisplayRule                Temp_byte_Variable8;                               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable9;                               // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable10;                              // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -95,15 +97,15 @@ static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo) == 0x000060, "W
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, NewBuildingInfo) == 0x000000, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::NewBuildingInfo' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable) == 0x000050, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable1) == 0x000051, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable12) == 0x000052, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable123) == 0x000053, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable1234) == 0x000054, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable12345) == 0x000055, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable123456) == 0x000056, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable1234567) == 0x000057, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable12345678) == 0x000058, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable123456789) == 0x000059, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable123456789' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable12345678910) == 0x00005A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable12345678910' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable2) == 0x000052, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable3) == 0x000053, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable4) == 0x000054, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable5) == 0x000055, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable6) == 0x000056, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable7) == 0x000057, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable8) == 0x000058, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable9) == 0x000059, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable10) == 0x00005A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable10' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, K2Node_Select_Default) == 0x00005B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, K2Node_Select1_Default) == 0x00005C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::K2Node_Select1_Default' has a wrong offset!");
 
@@ -134,9 +136,10 @@ struct BuildingInfoIndicator_C_HandleBuildingHealthChanged final
 {
 public:
 	float                                         Health;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor)
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -145,7 +148,8 @@ public:
 static_assert(alignof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
 static_assert(sizeof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x000018, "Wrong size on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, Health) == 0x000000, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::Health' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000004, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000005, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_K2_SetTimer_ReturnValue) == 0x000008, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000011, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
@@ -166,25 +170,44 @@ static_assert(offsetof(BuildingInfoIndicator_C_HandleTrapDurabilityChanged, Curr
 static_assert(offsetof(BuildingInfoIndicator_C_HandleTrapDurabilityChanged, MaxDurability) == 0x000004, "Member 'BuildingInfoIndicator_C_HandleTrapDurabilityChanged::MaxDurability' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.Update Keybinds
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) BuildingInfoIndicator_C_Update_Keybinds final
+// 0x0068 (0x0068 - 0x0000)
+struct BuildingInfoIndicator_C_Update_Keybinds final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable1;                               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuildingInteraction                      InteractionType_Local;                             // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetPerformBuildingImprovementInteractionActionName_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetFireActionName_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetPerformBuildingEditInteractionActionName_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetRotatePrimitiveClockwiseActionName_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue4;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetChangeMaterialActionName_ReturnValue;  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetTrapConfirmActionName_ReturnValue;     // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BuildingInfoIndicator_C_Update_Keybinds) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_Update_Keybinds");
-static_assert(sizeof(BuildingInfoIndicator_C_Update_Keybinds) == 0x000028, "Wrong size on BuildingInfoIndicator_C_Update_Keybinds");
-static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_bool_Variable) == 0x000000, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_name_Variable) == 0x000008, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_name_Variable1) == 0x000010, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_name_Variable1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000018, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, K2Node_Select_Default) == 0x000020, "Member 'BuildingInfoIndicator_C_Update_Keybinds::K2Node_Select_Default' has a wrong offset!");
+static_assert(sizeof(BuildingInfoIndicator_C_Update_Keybinds) == 0x000068, "Wrong size on BuildingInfoIndicator_C_Update_Keybinds");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, InteractionType_Local) == 0x000000, "Member 'BuildingInfoIndicator_C_Update_Keybinds::InteractionType_Local' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_bool_Variable) == 0x000001, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetPerformBuildingImprovementInteractionActionName_ReturnValue) == 0x000010, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetPerformBuildingImprovementInteractionActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetFireActionName_ReturnValue) == 0x000018, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetFireActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, K2Node_Select_Default) == 0x000028, "Member 'BuildingInfoIndicator_C_Update_Keybinds::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetPerformBuildingEditInteractionActionName_ReturnValue) == 0x000030, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetPerformBuildingEditInteractionActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetRotatePrimitiveClockwiseActionName_ReturnValue) == 0x000040, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetRotatePrimitiveClockwiseActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetContext_ReturnValue3) == 0x000048, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetContext_ReturnValue4) == 0x000050, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetChangeMaterialActionName_ReturnValue) == 0x000058, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetChangeMaterialActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, CallFunc_GetTrapConfirmActionName_ReturnValue) == 0x000060, "Member 'BuildingInfoIndicator_C_Update_Keybinds::CallFunc_GetTrapConfirmActionName_ReturnValue' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandlePlayerTargetingChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -227,7 +250,7 @@ static_assert(offsetof(BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired, C
 static_assert(offsetof(BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo_InteractionWidgets
-// 0x0340 (0x0340 - 0x0000)
+// 0x0360 (0x0360 - 0x0000)
 struct BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets final
 {
 public:
@@ -240,7 +263,8 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InteractionCost;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortResourceType                             BuildingMaterial;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EFortBuildingInteraction                      InteractionType_Local;                             // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   BuildKeybindAction;                                // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlaceTrapAvailable;                                // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          TopTrapActive;                                     // 0x0019(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -249,123 +273,126 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12;                // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuildingInteraction                      Temp_byte_Variable12;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456;                          // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567;                         // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345678;                        // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuildingInteraction                      Temp_byte_Variable123456789;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortResourceItemDefinition*            CallFunc_GetResourceItemDefinition_ReturnValue;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuildingInteraction                      Temp_byte_Variable6;                               // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable8;                               // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortResourceItemDefinition*            CallFunc_GetResourceItemDefinition_ReturnValue;    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0068(0x0088)()
 	int32                                         CallFunc_GetResourceCount_ReturnValue;             // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EFortBuildingInteraction                      Temp_byte_Variable9;                               // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F6[0x2];                                       // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x00F8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12345678910;                     // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234567891011;                   // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x010B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable10;                              // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable11;                              // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x010B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABuildingSMActor*                       K2Node_DynamicCast_AsBuilding_SMActor;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789101112;                 // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345678910111213;               // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue123;               // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x012F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable123;                             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue1234;              // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123;                // 0x0133(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_136[0x2];                                      // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetBuildConfirmActionName_ReturnValue;    // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingSMActor*                       K2Node_DynamicCast_AsBuilding_SMActor;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0125(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable13;                              // 0x0126(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x0127(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue3;                 // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue4;                 // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x012F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortQuickBars                                CallFunc_GetQuickbarFocus_OutQuickBar;             // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetQuickbarFocus_OutSlot;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot;        // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot;  // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x014B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable14;                              // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14E[0x2];                                      // 0x014E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingSMActor*                       K2Node_DynamicCast_AsBuilding_SMActor1;            // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsTrapAvailableForBuilding_ReturnValue;   // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPlayerBuilt_ReturnValue;                // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1234;               // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12345;              // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1234;               // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetTrapPickerActionName_ReturnValue;      // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortQuickBars                                CallFunc_GetQuickbarFocus_OutQuickBar;             // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetQuickbarFocus_OutSlot;                 // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot;        // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot;  // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable1234567891011121314;             // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123456789101112131415;           // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1234;                            // 0x018B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue12345;              // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasTrapReadyForBuilding_ReturnValue;      // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select1234_Default;                         // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19A[0x6];                                      // 0x019A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetTrapAttachTypeName_ReturnValue;        // 0x01A0(0x0018)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x01B8(0x0018)()
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01E0(0x0040)(HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12345_Default;                        // 0x0220(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0240(0x0028)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0268(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0280(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x02C0(0x0010)(ZeroConstructor, ReferenceParm)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue123456;             // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x02D8(0x0018)()
-	EFortQuickBars                                CallFunc_GetQuickbarFocus_OutQuickBar1;            // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F1[0x3];                                      // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetQuickbarFocus_OutSlot1;                // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot1;       // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1; // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1234;      // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123456;             // 0x0301(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_302[0x6];                                      // 0x0302(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1234567;            // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12345;                           // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0311(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12345;             // 0x0312(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_313[0x5];                                      // 0x0313(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select123456_Default;                       // 0x0318(0x0018)()
-	bool                                          CallFunc_BooleanAND_ReturnValue1234567;            // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234;                // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12345678;           // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_333[0x5];                                      // 0x0333(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_Select1234567_Default;                      // 0x0338(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue5;                  // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable15;                              // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x015E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15F[0x1];                                      // 0x015F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue3;                  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasTrapReadyForBuilding_ReturnValue;      // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16A[0x6];                                      // 0x016A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetTrapAttachTypeName_ReturnValue;        // 0x0170(0x0018)()
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue4;                  // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0190(0x0018)()
+	EFortQuickBars                                CallFunc_GetQuickbarFocus_OutQuickBar1;            // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetQuickbarFocus_OutSlot1;                // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot1;       // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1; // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01B8(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_BooleanAND_ReturnValue6;                  // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0218(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0230(0x0040)(HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable5;                               // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0278(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0288(0x0018)()
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x02A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select5_Default;                            // 0x02B0(0x0018)()
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x02C8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x02D8(0x0028)()
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetTrapPickerActionName_ReturnValue;      // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue6;                  // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select7_Default;                            // 0x0320(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetBuildConfirmActionName_ReturnValue;    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue7;                  // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue8;                  // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue1;           // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetChangeMaterialActionName_ReturnValue;  // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue7;                  // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue4;                   // 0x0359(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue8;                  // 0x035A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
-static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x000340, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
+static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x000360, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Interactable) == 0x000000, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Interactable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CanBePlayerEdited) == 0x000001, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CanBePlayerEdited' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, IsAnyTrapAttached) == 0x000002, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::IsAnyTrapAttached' has a wrong offset!");
@@ -374,6 +401,7 @@ static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWid
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, InteractionType) == 0x000005, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::InteractionType' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, InteractionCost) == 0x000008, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::InteractionCost' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, BuildingMaterial) == 0x00000C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::BuildingMaterial' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, InteractionType_Local) == 0x00000D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::InteractionType_Local' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, BuildKeybindAction) == 0x000010, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::BuildKeybindAction' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, PlaceTrapAvailable) == 0x000018, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::PlaceTrapAvailable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, TopTrapActive) == 0x000019, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::TopTrapActive' has a wrong offset!");
@@ -381,105 +409,107 @@ static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWid
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, EditAvailable) == 0x00001B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::EditAvailable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable) == 0x00001C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000038, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000039, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_SwitchEnum_CmpSuccess) == 0x00003A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue) == 0x00003B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue) == 0x00003C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue1) == 0x00003D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue12) == 0x00003E, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue) == 0x00003F, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1) == 0x000040, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12) == 0x000041, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable123) == 0x000042, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1234) == 0x000043, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12345) == 0x000044, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable123456) == 0x000045, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1234567) == 0x000046, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12345678) == 0x000047, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetSubGame_ReturnValue) == 0x000048, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable) == 0x000049, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x00004A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_IsBROnly_ReturnValue) == 0x00004B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue1) == 0x00004C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable123456789) == 0x000058, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable123456789' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetResourceItemDefinition_ReturnValue) == 0x000060, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetResourceItemDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue1) == 0x000039, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue2) == 0x00003A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue) == 0x00003B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1) == 0x00003C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable2) == 0x00003D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable3) == 0x00003E, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable4) == 0x00003F, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable5) == 0x000040, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable6) == 0x000041, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable7) == 0x000042, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable8) == 0x000043, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable) == 0x000044, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetSubGame_ReturnValue) == 0x000045, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000050, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetResourceItemDefinition_ReturnValue) == 0x000058, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetResourceItemDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue1) == 0x000060, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000068, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetResourceCount_ReturnValue) == 0x0000F0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetResourceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Greater_IntInt_ReturnValue) == 0x0000F4, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable9) == 0x0000F4, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Greater_IntInt_ReturnValue) == 0x0000F5, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_struct_Variable) == 0x0000F8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable1) == 0x000108, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12345678910) == 0x000109, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1234567891011) == 0x00010A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1234567891011' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable12) == 0x00010B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_AsBuilding_SMActor) == 0x000110, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue1) == 0x000120, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable123456789101112) == 0x000128, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable123456789101112' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12345678910111213) == 0x000129, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12345678910111213' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue1) == 0x00012A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue12) == 0x00012B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue123) == 0x00012C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select_Default) == 0x00012D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select1_Default) == 0x00012E, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00012F, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable123) == 0x000130, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue1234) == 0x000131, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue12) == 0x000132, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue123) == 0x000133, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select12_Default) == 0x000134, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select123_Default) == 0x000135, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue12) == 0x000138, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetBuildConfirmActionName_ReturnValue) == 0x000140, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetBuildConfirmActionName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue123) == 0x000148, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable10) == 0x000109, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable10' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable11) == 0x00010A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable11' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable2) == 0x00010B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue1) == 0x000110, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_AsBuilding_SMActor) == 0x000118, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable12) == 0x000121, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000122, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_SwitchEnum_CmpSuccess) == 0x000123, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000124, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue) == 0x000125, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable13) == 0x000126, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable13' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable3) == 0x000127, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue1) == 0x000128, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue3) == 0x000129, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue2) == 0x00012A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select_Default) == 0x00012B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select1_Default) == 0x00012C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00012D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue4) == 0x00012E, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue2) == 0x00012F, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue2) == 0x000130, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutQuickBar) == 0x000138, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutQuickBar' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSlot) == 0x00013C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSlot' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSecondarySlot) == 0x000140, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSecondarySlot' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x000144, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000148, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue3) == 0x000149, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select2_Default) == 0x00014A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select3_Default) == 0x00014B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable14) == 0x00014C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable14' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue3) == 0x00014D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_AsBuilding_SMActor1) == 0x000150, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_AsBuilding_SMActor1' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_DynamicCast_bSuccess1) == 0x000158, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_IsTrapAvailableForBuilding_ReturnValue) == 0x000159, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_IsTrapAvailableForBuilding_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_IsPlayerBuilt_ReturnValue) == 0x00015A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_IsPlayerBuilt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue1234) == 0x00015B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue12345) == 0x00015C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue123) == 0x000160, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue1234) == 0x000168, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetTrapPickerActionName_ReturnValue) == 0x000170, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetTrapPickerActionName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutQuickBar) == 0x000178, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutQuickBar' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSlot) == 0x00017C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSlot' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSecondarySlot) == 0x000180, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSecondarySlot' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x000184, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000188, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable1234567891011121314) == 0x000189, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable1234567891011121314' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable123456789101112131415) == 0x00018A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable123456789101112131415' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable1234) == 0x00018B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue12345) == 0x000190, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_HasTrapReadyForBuilding_ReturnValue) == 0x000198, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_HasTrapReadyForBuilding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select1234_Default) == 0x000199, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select1234_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetTrapAttachTypeName_ReturnValue) == 0x0001A0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetTrapAttachTypeName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_TextToUpper_ReturnValue) == 0x0001B8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Get_Theme_Color_Theme_Color) == 0x0001D0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_FormatArgumentData) == 0x0001E0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select12345_Default) == 0x000220, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select12345_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeArray_Array) == 0x000230, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_SlateColor) == 0x000240, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Format_ReturnValue) == 0x000268, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_FormatArgumentData1) == 0x000280, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeArray_Array1) == 0x0002C0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue123456) == 0x0002D0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Format_ReturnValue1) == 0x0002D8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Format_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutQuickBar1) == 0x0002F0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutQuickBar1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSlot1) == 0x0002F4, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSlot1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSecondarySlot1) == 0x0002F8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSecondarySlot1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1) == 0x0002FC, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue1234) == 0x000300, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue123456) == 0x000301, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue1234567) == 0x000308, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable12345) == 0x000310, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_IsUsingGamepad_ReturnValue) == 0x000311, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Not_PreBool_ReturnValue12345) == 0x000312, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Not_PreBool_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select123456_Default) == 0x000318, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select123456_Default' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue1234567) == 0x000330, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue1234) == 0x000331, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue12345678) == 0x000332, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue12345678' has a wrong offset!");
-static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select1234567_Default) == 0x000338, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select1234567_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue4) == 0x00015B, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue5) == 0x00015C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_byte_Variable15) == 0x00015D, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_byte_Variable15' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable4) == 0x00015E, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue3) == 0x000160, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select4_Default) == 0x000168, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_HasTrapReadyForBuilding_ReturnValue) == 0x000169, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_HasTrapReadyForBuilding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetTrapAttachTypeName_ReturnValue) == 0x000170, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetTrapAttachTypeName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue4) == 0x000188, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_TextToUpper_ReturnValue) == 0x000190, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutQuickBar1) == 0x0001A8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutQuickBar1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSlot1) == 0x0001AC, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSlot1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutSecondarySlot1) == 0x0001B0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutSecondarySlot1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1) == 0x0001B4, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_FormatArgumentData) == 0x0001B8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x0001F8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeArray_Array) == 0x000200, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue6) == 0x000210, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Format_ReturnValue) == 0x000218, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_FormatArgumentData1) == 0x000230, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Temp_bool_Variable5) == 0x000270, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Temp_bool_Variable5' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeArray_Array1) == 0x000278, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Format_ReturnValue1) == 0x000288, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_Get_Theme_Color_Theme_Color) == 0x0002A0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select5_Default) == 0x0002B0, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select5_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select6_Default) == 0x0002C8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select6_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_MakeStruct_SlateColor) == 0x0002D8, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue5) == 0x000300, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetTrapPickerActionName_ReturnValue) == 0x000308, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetTrapPickerActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_IsMobileGame_ReturnValue) == 0x000310, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue6) == 0x000318, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, K2Node_Select7_Default) == 0x000320, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::K2Node_Select7_Default' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetBuildConfirmActionName_ReturnValue) == 0x000328, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetBuildConfirmActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue7) == 0x000330, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetCurrentInputType_ReturnValue) == 0x000338, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetContext_ReturnValue8) == 0x000340, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_NotEqual_ByteByte_ReturnValue1) == 0x000348, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_NotEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_GetChangeMaterialActionName_ReturnValue) == 0x000350, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_GetChangeMaterialActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue7) == 0x000358, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanOR_ReturnValue4) == 0x000359, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CallFunc_BooleanAND_ReturnValue8) == 0x00035A, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CallFunc_BooleanAND_ReturnValue8' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleAttachedTrapChanged
 // 0x0008 (0x0008 - 0x0000)

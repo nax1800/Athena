@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_IngameMap_SceneCaptureBlurryNew.B_IngameMap_SceneCaptureBlurryNew_C
-// 0x0008 (0x0338 - 0x0330)
+// 0x0008 (0x0348 - 0x0340)
 class AB_IngameMap_SceneCaptureBlurryNew_C final : public ASceneCapture2D
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_B_IngameMap_SceneCaptureBlurryNew(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AB_IngameMap_SceneCaptureBlurryNew_C) == 0x000008, "Wrong alignment on AB_IngameMap_SceneCaptureBlurryNew_C");
-static_assert(sizeof(AB_IngameMap_SceneCaptureBlurryNew_C) == 0x000338, "Wrong size on AB_IngameMap_SceneCaptureBlurryNew_C");
-static_assert(offsetof(AB_IngameMap_SceneCaptureBlurryNew_C, UberGraphFrame) == 0x000330, "Member 'AB_IngameMap_SceneCaptureBlurryNew_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(AB_IngameMap_SceneCaptureBlurryNew_C) == 0x000348, "Wrong size on AB_IngameMap_SceneCaptureBlurryNew_C");
+static_assert(offsetof(AB_IngameMap_SceneCaptureBlurryNew_C, UberGraphFrame) == 0x000340, "Member 'AB_IngameMap_SceneCaptureBlurryNew_C::UberGraphFrame' has a wrong offset!");
 
 }
 

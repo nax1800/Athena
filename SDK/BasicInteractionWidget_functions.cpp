@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BasicInteractionWidget.BasicInteractionWidget_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UBasicInteractionWidget_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BasicInteractionWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BasicInteractionWidget.BasicInteractionWidget_C.ExecuteUbergraph_BasicInteractionWidget
 // ()
 // Parameters:
@@ -51,6 +37,40 @@ void UBasicInteractionWidget_C::ExecuteUbergraph_BasicInteractionWidget(int32 En
 }
 
 
+// Function BasicInteractionWidget.BasicInteractionWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UBasicInteractionWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BasicInteractionWidget_C", "PreConstruct");
+
+	Params::BasicInteractionWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BasicInteractionWidget.BasicInteractionWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBasicInteractionWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BasicInteractionWidget_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BasicInteractionWidget.BasicInteractionWidget_C.InitBasicInteraction
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -68,9 +88,9 @@ void UBasicInteractionWidget_C::InitBasicInteraction()
 // Function BasicInteractionWidget.BasicInteractionWidget_C.UpdateDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Description                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Description_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UBasicInteractionWidget_C::UpdateDescription(const class FText& Param_Description)
+void UBasicInteractionWidget_C::UpdateDescription(const class FText& Description_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -79,7 +99,7 @@ void UBasicInteractionWidget_C::UpdateDescription(const class FText& Param_Descr
 
 	Params::BasicInteractionWidget_C_UpdateDescription Parms{};
 
-	Parms.Param_Description = std::move(Param_Description);
+	Parms.Description_0 = std::move(Description_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

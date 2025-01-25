@@ -420,7 +420,7 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(class FName Categor
 
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Setup Tileview For Colorswatches
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             CategoryRowName                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -444,9 +444,9 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(class FName
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Set Current Category
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_CurrentCategory                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CurrentCategory_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName Param_CurrentCategory)
+void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName CurrentCategory_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -455,7 +455,7 @@ void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName Param_Curre
 
 	Params::BP_LocalPlayerBannerEditor_C_Set_Current_Category Parms{};
 
-	Parms.Param_CurrentCategory = Param_CurrentCategory;
+	Parms.CurrentCategory_0 = CurrentCategory_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -548,9 +548,9 @@ void UBP_LocalPlayerBannerEditor_C::Increment_Color_Category_Index()
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Update Banner Color Tileview
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_CurrentCategory                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CurrentCategory_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName Param_CurrentCategory)
+void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName CurrentCategory_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -559,7 +559,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName Par
 
 	Params::BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview Parms{};
 
-	Parms.Param_CurrentCategory = Param_CurrentCategory;
+	Parms.CurrentCategory_0 = CurrentCategory_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -568,9 +568,9 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName Par
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Update Banner Icon Tileview
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_CurrentCategory                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CurrentCategory_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName Param_CurrentCategory)
+void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName CurrentCategory_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -579,7 +579,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName Para
 
 	Params::BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview Parms{};
 
-	Parms.Param_CurrentCategory = Param_CurrentCategory;
+	Parms.CurrentCategory_0 = CurrentCategory_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -651,9 +651,9 @@ void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left)
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Set Picking Tile State
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bPickingTile                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bPickingTile_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool Param_bPickingTile)
+void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool bPickingTile_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -662,7 +662,7 @@ void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool Param_bPickingTi
 
 	Params::BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State Parms{};
 
-	Parms.Param_bPickingTile = Param_bPickingTile;
+	Parms.bPickingTile_0 = bPickingTile_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

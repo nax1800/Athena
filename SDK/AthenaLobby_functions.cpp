@@ -37,6 +37,124 @@ void UAthenaLobby_C::ExecuteUbergraph_AthenaLobby(int32 EntryPoint)
 }
 
 
+// Function AthenaLobby.AthenaLobby_C.ClosePlayerPanel
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::ClosePlayerPanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "ClosePlayerPanel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.TryToastAgainNextFrame
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::TryToastAgainNextFrame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "TryToastAgainNextFrame");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.BndEvt__AthenaToastWidget_K2Node_ComponentBoundEvent_1_OnFinishedToast__DelegateSignature
+// (BlueprintEvent)
+
+void UAthenaLobby_C::BndEvt__AthenaToastWidget_K2Node_ComponentBoundEvent_1_OnFinishedToast__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__AthenaToastWidget_K2Node_ComponentBoundEvent_1_OnFinishedToast__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.AttemptToShowToast
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::AttemptToShowToast()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "AttemptToShowToast");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.DisplayStoreUpdated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UStoreToastRequest*               StoreUpdatedRequest                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaLobby_C::DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedRequest)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "DisplayStoreUpdated");
+
+	Params::AthenaLobby_C_DisplayStoreUpdated Parms{};
+
+	Parms.StoreUpdatedRequest = StoreUpdatedRequest;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnDeactivated
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaLobby_C::OnDeactivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "OnDeactivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.ShowMobileAutoFireScreen
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaLobby_C::ShowMobileAutoFireScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "ShowMobileAutoFireScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.tester
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::Tester()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "tester");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaLobby.AthenaLobby_C.AcceptPartySuggestion
 // (BlueprintCallable, BlueprintEvent)
 
@@ -79,29 +197,15 @@ void UAthenaLobby_C::Destruct()
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.Check For Gifts
-// (BlueprintCallable, BlueprintEvent)
+// Function AthenaLobby.AthenaLobby_C.OnNavigationUp
+// (Event, Public, BlueprintEvent)
 
-void UAthenaLobby_C::Check_For_Gifts()
+void UAthenaLobby_C::OnNavigationUp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "Check For Gifts");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.Gifting Complete
-// (BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobby_C::Gifting_Complete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "Gifting Complete");
+		Func = Class->GetFunction("AthenaLobby_C", "OnNavigationUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,20 +225,6 @@ void UAthenaLobby_C::OnActivated()
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.OnNavigationUp
-// (Event, Public, BlueprintEvent)
-
-void UAthenaLobby_C::OnNavigationUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnNavigationUp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaLobby.AthenaLobby_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -146,74 +236,6 @@ void UAthenaLobby_C::Construct()
 		Func = Class->GetFunction("AthenaLobby_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.Event Abandon
-// (BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobby_C::Event_Abandon()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "Event Abandon");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_26_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UAthenaLobby_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_26_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__Button_0_K2Node_ComponentBoundEvent_26_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.ShouldShowHeadlessReminder
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bShouldShow                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaLobby_C::ShouldShowHeadlessReminder(bool bShouldShow)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "ShouldShowHeadlessReminder");
-
-	Params::AthenaLobby_C_ShouldShowHeadlessReminder Parms{};
-
-	Parms.bShouldShow = bShouldShow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.HeadlessReminderClosed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonActivatablePanel*          NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaLobby_C::HeadlessReminderClosed(class UCommonActivatablePanel* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "HeadlessReminderClosed");
-
-	Params::AthenaLobby_C_HeadlessReminderClosed Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -232,42 +254,6 @@ void UAthenaLobby_C::NewsPanelClosed(class UCommonActivatablePanel* Panel)
 	Params::AthenaLobby_C_NewsPanelClosed Parms{};
 
 	Parms.Panel = Panel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.ShowAthenaStoreToast
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobby_C::ShowAthenaStoreToast()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "ShowAthenaStoreToast");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWidget*                          ActiveWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaLobby_C::BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
-
-	Params::AthenaLobby_C_BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature Parms{};
-
-	Parms.ActiveWidget = ActiveWidget;
-	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -347,23 +333,17 @@ void UAthenaLobby_C::OnPlayerClicked(int32 PlayerIndex)
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.OnEndCursorOverPlayer
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                                   PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function AthenaLobby.AthenaLobby_C.Event Abandon
+// (BlueprintCallable, BlueprintEvent)
 
-void UAthenaLobby_C::OnEndCursorOverPlayer(int32 PlayerIndex)
+void UAthenaLobby_C::Event_Abandon()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnEndCursorOverPlayer");
+		Func = Class->GetFunction("AthenaLobby_C", "Event Abandon");
 
-	Params::AthenaLobby_C_OnEndCursorOverPlayer Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -415,23 +395,43 @@ void UAthenaLobby_C::OnNavigationLeft()
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.DialogResult_156754AE468EF93DCA2009A412591BA7
-// (BlueprintCallable, BlueprintEvent)
+// Function AthenaLobby.AthenaLobby_C.OnEndCursorOverPlayer
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaLobby_C::DialogResult_156754AE468EF93DCA2009A412591BA7(EFortDialogResult Result, class FName ResultName)
+void UAthenaLobby_C::OnEndCursorOverPlayer(int32 PlayerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "DialogResult_156754AE468EF93DCA2009A412591BA7");
+		Func = Class->GetFunction("AthenaLobby_C", "OnEndCursorOverPlayer");
 
-	Params::AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7 Parms{};
+	Params::AthenaLobby_C_OnEndCursorOverPlayer Parms{};
 
-	Parms.Result = Result;
-	Parms.ResultName = ResultName;
+	Parms.PlayerIndex = PlayerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWidget*                          ActiveWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaLobby_C::BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::AthenaLobby_C_BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature Parms{};
+
+	Parms.ActiveWidget = ActiveWidget;
+	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -462,6 +462,28 @@ void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
 		Func = Class->GetFunction("AthenaLobby_C", "OnFailure_DA5E62624D068772EA890193344BA4AE");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.DialogResult_156754AE468EF93DCA2009A412591BA7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaLobby_C::DialogResult_156754AE468EF93DCA2009A412591BA7(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "DialogResult_156754AE468EF93DCA2009A412591BA7");
+
+	Params::AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -972,9 +994,9 @@ void UAthenaLobby_C::OnSelect(int32 PlayerIndex)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_IsLocalPlayer                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsLocalPlayer_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaLobby_C::IsLocalPlayer(int32 PlayerIndex, bool* Param_IsLocalPlayer)
+void UAthenaLobby_C::IsLocalPlayer(int32 PlayerIndex, bool* IsLocalPlayer_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -987,50 +1009,8 @@ void UAthenaLobby_C::IsLocalPlayer(int32 PlayerIndex, bool* Param_IsLocalPlayer)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsLocalPlayer != nullptr)
-		*Param_IsLocalPlayer = Parms.Param_IsLocalPlayer;
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.OnInputPlaylistChangeGamepad
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaLobby_C::OnInputPlaylistChangeGamepad(bool* bCommited)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnInputPlaylistChangeGamepad");
-
-	Params::AthenaLobby_C_OnInputPlaylistChangeGamepad Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bCommited != nullptr)
-		*bCommited = Parms.bCommited;
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.OnInputFillChangeGamepad
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaLobby_C::OnInputFillChangeGamepad(bool* bCommited)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnInputFillChangeGamepad");
-
-	Params::AthenaLobby_C_OnInputFillChangeGamepad Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bCommited != nullptr)
-		*bCommited = Parms.bCommited;
+	if (IsLocalPlayer_0 != nullptr)
+		*IsLocalPlayer_0 = Parms.IsLocalPlayer_0;
 }
 
 
@@ -1086,27 +1066,6 @@ void UAthenaLobby_C::HighlightsCountChanged(int32 NewParam)
 	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaLobby.AthenaLobby_C.OnInputCustomMatchmaking
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaLobby_C::OnInputCustomMatchmaking(bool* bPassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnInputCustomMatchmaking");
-
-	Params::AthenaLobby_C_OnInputCustomMatchmaking Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = Parms.bPassThrough;
 }
 
 
@@ -1191,6 +1150,127 @@ struct FEventReply UAthenaLobby_C::OnKeyUp(const struct FGeometry& MyGeometry, c
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnInputEmote
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaLobby_C::OnInputEmote(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "OnInputEmote");
+
+	Params::AthenaLobby_C_OnInputEmote Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.RefreshAllPlayerHeroes
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::RefreshAllPlayerHeroes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "RefreshAllPlayerHeroes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.HandleOnPlayerLeaveUpdatePlayerPanel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaLobby_C::HandleOnPlayerLeaveUpdatePlayerPanel(int32 PlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "HandleOnPlayerLeaveUpdatePlayerPanel");
+
+	Params::AthenaLobby_C_HandleOnPlayerLeaveUpdatePlayerPanel Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.ShowPicker
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortPickerMode                         Mode                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InitialOption                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFirstAccept                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaLobby_C::ShowPicker(EFortPickerMode Mode, int32 InitialOption, bool IgnoreFirstAccept)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "ShowPicker");
+
+	Params::AthenaLobby_C_ShowPicker Parms{};
+
+	Parms.Mode = Mode;
+	Parms.InitialOption = InitialOption;
+	Parms.IgnoreFirstAccept = IgnoreFirstAccept;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.CloseEmotePicker
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::CloseEmotePicker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "CloseEmotePicker");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnKeybindsChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::OnKeybindsChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "OnKeybindsChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.ConfigureGenericLinkButton
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLobby_C::ConfigureGenericLinkButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobby_C", "ConfigureGenericLinkButton");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

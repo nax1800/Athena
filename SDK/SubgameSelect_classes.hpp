@@ -20,16 +20,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SubgameSelect.SubgameSelect_C
-// 0x0030 (0x0408 - 0x03D8)
+// 0x0028 (0x0338 - 0x0310)
 class USubgameSelect_C final : public UFortUIStateWidget_NUI
 {
 public:
-	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UBottomBarWidget_C*                     BottomBar;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetStack*                     MainContentStack;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              TopBar;                                            // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(Transient, DuplicateTransient)
+	class UBottomBarWidget_C*                     BottomBar;                                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetStack*                     MainContentStack;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              TopBar;                                            // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SubgameSelect(int32 EntryPoint);
@@ -51,12 +50,12 @@ public:
 	}
 };
 static_assert(alignof(USubgameSelect_C) == 0x000008, "Wrong alignment on USubgameSelect_C");
-static_assert(sizeof(USubgameSelect_C) == 0x000408, "Wrong size on USubgameSelect_C");
-static_assert(offsetof(USubgameSelect_C, UberGraphFrame) == 0x0003E0, "Member 'USubgameSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BottomBar) == 0x0003E8, "Member 'USubgameSelect_C::BottomBar' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BuildWatermark) == 0x0003F0, "Member 'USubgameSelect_C::BuildWatermark' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, MainContentStack) == 0x0003F8, "Member 'USubgameSelect_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, TopBar) == 0x000400, "Member 'USubgameSelect_C::TopBar' has a wrong offset!");
+static_assert(sizeof(USubgameSelect_C) == 0x000338, "Wrong size on USubgameSelect_C");
+static_assert(offsetof(USubgameSelect_C, UberGraphFrame) == 0x000310, "Member 'USubgameSelect_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USubgameSelect_C, BottomBar) == 0x000318, "Member 'USubgameSelect_C::BottomBar' has a wrong offset!");
+static_assert(offsetof(USubgameSelect_C, BuildWatermark) == 0x000320, "Member 'USubgameSelect_C::BuildWatermark' has a wrong offset!");
+static_assert(offsetof(USubgameSelect_C, MainContentStack) == 0x000328, "Member 'USubgameSelect_C::MainContentStack' has a wrong offset!");
+static_assert(offsetof(USubgameSelect_C, TopBar) == 0x000330, "Member 'USubgameSelect_C::TopBar' has a wrong offset!");
 
 }
 

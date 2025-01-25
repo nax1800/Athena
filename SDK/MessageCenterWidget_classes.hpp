@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MessageCenterWidget.MessageCenterWidget_C
-// 0x0038 (0x0428 - 0x03F0)
+// 0x0038 (0x0358 - 0x0320)
 class UMessageCenterWidget_C final : public UFortUIMessagesPageBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ClearButton;                                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CloseButton;                                       // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       DescriptionText;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      OpenButton;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_2;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ClearButton;                                       // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CloseButton;                                       // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       DescriptionText;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      OpenButton;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_2;                                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MessageCenterWidget(int32 EntryPoint);
@@ -55,14 +55,14 @@ public:
 	}
 };
 static_assert(alignof(UMessageCenterWidget_C) == 0x000008, "Wrong alignment on UMessageCenterWidget_C");
-static_assert(sizeof(UMessageCenterWidget_C) == 0x000428, "Wrong size on UMessageCenterWidget_C");
-static_assert(offsetof(UMessageCenterWidget_C, UberGraphFrame) == 0x0003F0, "Member 'UMessageCenterWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, ClearButton) == 0x0003F8, "Member 'UMessageCenterWidget_C::ClearButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, CloseButton) == 0x000400, "Member 'UMessageCenterWidget_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, DescriptionText) == 0x000408, "Member 'UMessageCenterWidget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, Lightbox) == 0x000410, "Member 'UMessageCenterWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, OpenButton) == 0x000418, "Member 'UMessageCenterWidget_C::OpenButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, SafeZone_2) == 0x000420, "Member 'UMessageCenterWidget_C::SafeZone_2' has a wrong offset!");
+static_assert(sizeof(UMessageCenterWidget_C) == 0x000358, "Wrong size on UMessageCenterWidget_C");
+static_assert(offsetof(UMessageCenterWidget_C, UberGraphFrame) == 0x000320, "Member 'UMessageCenterWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, ClearButton) == 0x000328, "Member 'UMessageCenterWidget_C::ClearButton' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, CloseButton) == 0x000330, "Member 'UMessageCenterWidget_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, DescriptionText) == 0x000338, "Member 'UMessageCenterWidget_C::DescriptionText' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, Lightbox) == 0x000340, "Member 'UMessageCenterWidget_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, OpenButton) == 0x000348, "Member 'UMessageCenterWidget_C::OpenButton' has a wrong offset!");
+static_assert(offsetof(UMessageCenterWidget_C, SafeZone_2) == 0x000350, "Member 'UMessageCenterWidget_C::SafeZone_2' has a wrong offset!");
 
 }
 

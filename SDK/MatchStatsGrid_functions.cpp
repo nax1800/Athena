@@ -17,56 +17,12 @@
 namespace SDK
 {
 
-// Function MatchStatsGrid.MatchStatsGrid_C.SetStat (Float)
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonNumericTextBlock*          Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMatchStatsGrid_C::SetStat__Float_(class UCommonNumericTextBlock* Target, float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchStatsGrid_C", "SetStat (Float)");
-
-	Params::MatchStatsGrid_C_SetStat__Float_ Parms{};
-
-	Parms.Target = Target;
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MatchStatsGrid.MatchStatsGrid_C.SetStat (Integer)
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonNumericTextBlock*          Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMatchStatsGrid_C::SetStat__Integer_(class UCommonNumericTextBlock* Target, int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchStatsGrid_C", "SetStat (Integer)");
-
-	Params::MatchStatsGrid_C_SetStat__Integer_ Parms{};
-
-	Parms.Target = Target;
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function MatchStatsGrid.MatchStatsGrid_C.SetStats
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FAthenaMatchStats                AthenaMatchStats                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// class UAthenaMatchStatView*             AthenaMatchStats                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMatchStatsGrid_C::SetStats(struct FAthenaMatchStats& AthenaMatchStats)
+void UMatchStatsGrid_C::SetStats(class UAthenaMatchStatView* AthenaMatchStats)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,11 +31,9 @@ void UMatchStatsGrid_C::SetStats(struct FAthenaMatchStats& AthenaMatchStats)
 
 	Params::MatchStatsGrid_C_SetStats Parms{};
 
-	Parms.AthenaMatchStats = std::move(AthenaMatchStats);
+	Parms.AthenaMatchStats = AthenaMatchStats;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	AthenaMatchStats = std::move(Parms.AthenaMatchStats);
 }
 
 }

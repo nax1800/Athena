@@ -20,10 +20,10 @@ namespace SDK
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnRewardSelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_ChoiceRewards_C::OnRewardSelected__DelegateSignature(int32 Param_Index, class UFortItem* Item)
+void UFrontEndRewards_ChoiceRewards_C::OnRewardSelected__DelegateSignature(int32 Index_0, class UFortItem* Item)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UFrontEndRewards_ChoiceRewards_C::OnRewardSelected__DelegateSignature(int32
 
 	Params::FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.Item = Item;
 
 	UObject::ProcessEvent(Func, &Parms);

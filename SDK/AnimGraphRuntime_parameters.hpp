@@ -17,6 +17,57 @@
 namespace SDK::Params
 {
 
+// Function AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets
+// 0x0028 (0x0028 - 0x0000)
+struct KismetAnimationLibrary_K2_DirectionBetweenSockets final
+{
+public:
+	const class USkeletalMeshComponent*           Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketOrBoneNameFrom;                              // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketOrBoneNameTo;                                // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0018(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(KismetAnimationLibrary_K2_DirectionBetweenSockets) == 0x000008, "Wrong alignment on KismetAnimationLibrary_K2_DirectionBetweenSockets");
+static_assert(sizeof(KismetAnimationLibrary_K2_DirectionBetweenSockets) == 0x000028, "Wrong size on KismetAnimationLibrary_K2_DirectionBetweenSockets");
+static_assert(offsetof(KismetAnimationLibrary_K2_DirectionBetweenSockets, Component) == 0x000000, "Member 'KismetAnimationLibrary_K2_DirectionBetweenSockets::Component' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DirectionBetweenSockets, SocketOrBoneNameFrom) == 0x000008, "Member 'KismetAnimationLibrary_K2_DirectionBetweenSockets::SocketOrBoneNameFrom' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DirectionBetweenSockets, SocketOrBoneNameTo) == 0x000010, "Member 'KismetAnimationLibrary_K2_DirectionBetweenSockets::SocketOrBoneNameTo' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DirectionBetweenSockets, ReturnValue) == 0x000018, "Member 'KismetAnimationLibrary_K2_DirectionBetweenSockets::ReturnValue' has a wrong offset!");
+
+// Function AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange
+// 0x0038 (0x0038 - 0x0000)
+struct KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange final
+{
+public:
+	const class USkeletalMeshComponent*           Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketOrBoneNameA;                                 // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERelativeTransformSpace                       SocketSpaceA;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SocketOrBoneNameB;                                 // 0x0018(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERelativeTransformSpace                       SocketSpaceB;                                      // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRemapRange;                                       // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InRangeMin;                                        // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InRangeMax;                                        // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OutRangeMin;                                       // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OutRangeMax;                                       // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0034(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange) == 0x000008, "Wrong alignment on KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange");
+static_assert(sizeof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange) == 0x000038, "Wrong size on KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, Component) == 0x000000, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::Component' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, SocketOrBoneNameA) == 0x000008, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::SocketOrBoneNameA' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, SocketSpaceA) == 0x000010, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::SocketSpaceA' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, SocketOrBoneNameB) == 0x000018, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::SocketOrBoneNameB' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, SocketSpaceB) == 0x000020, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::SocketSpaceB' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, bRemapRange) == 0x000021, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::bRemapRange' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, InRangeMin) == 0x000024, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::InRangeMin' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, InRangeMax) == 0x000028, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::InRangeMax' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, OutRangeMin) == 0x00002C, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::OutRangeMin' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, OutRangeMax) == 0x000030, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::OutRangeMax' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange, ReturnValue) == 0x000034, "Member 'KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange::ReturnValue' has a wrong offset!");
+
 // Function AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt
 // 0x0090 (0x0090 - 0x0000)
 struct KismetAnimationLibrary_K2_LookAt final
@@ -41,6 +92,52 @@ static_assert(offsetof(KismetAnimationLibrary_K2_LookAt, bUseUpVector) == 0x0000
 static_assert(offsetof(KismetAnimationLibrary_K2_LookAt, UpVector) == 0x00004C, "Member 'KismetAnimationLibrary_K2_LookAt::UpVector' has a wrong offset!");
 static_assert(offsetof(KismetAnimationLibrary_K2_LookAt, ClampConeInDegree) == 0x000058, "Member 'KismetAnimationLibrary_K2_LookAt::ClampConeInDegree' has a wrong offset!");
 static_assert(offsetof(KismetAnimationLibrary_K2_LookAt, ReturnValue) == 0x000060, "Member 'KismetAnimationLibrary_K2_LookAt::ReturnValue' has a wrong offset!");
+
+// Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap
+// 0x0010 (0x0010 - 0x0000)
+struct KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMin;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMax;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap) == 0x000004, "Wrong alignment on KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap");
+static_assert(sizeof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap) == 0x000010, "Wrong size on KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap, Value) == 0x000000, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap::Value' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap, RangeOutMin) == 0x000004, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap::RangeOutMin' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap, RangeOutMax) == 0x000008, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap::RangeOutMax' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap, ReturnValue) == 0x00000C, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap::ReturnValue' has a wrong offset!");
+
+// Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap
+// 0x0030 (0x0030 - 0x0000)
+struct KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap final
+{
+public:
+	float                                         X;                                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Y;                                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Z;                                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMinX;                                      // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMaxX;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMinY;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMaxY;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMinZ;                                      // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeOutMaxZ;                                      // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0024(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap) == 0x000004, "Wrong alignment on KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap");
+static_assert(sizeof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap) == 0x000030, "Wrong size on KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, X) == 0x000000, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::X' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, Y) == 0x000004, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::Y' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, Z) == 0x000008, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::Z' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMinX) == 0x00000C, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMinX' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMaxX) == 0x000010, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMaxX' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMinY) == 0x000014, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMinY' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMaxY) == 0x000018, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMaxY' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMinZ) == 0x00001C, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMinZ' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, RangeOutMaxZ) == 0x000020, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::RangeOutMaxZ' has a wrong offset!");
+static_assert(offsetof(KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap, ReturnValue) == 0x000024, "Member 'KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap::ReturnValue' has a wrong offset!");
 
 // Function AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK
 // 0x0060 (0x0060 - 0x0000)

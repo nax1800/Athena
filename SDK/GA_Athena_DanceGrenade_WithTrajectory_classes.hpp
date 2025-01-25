@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Athena_DanceGrenade_WithTrajectory.GA_Athena_DanceGrenade_WithTrajectory_C
-// 0x0000 (0x0D58 - 0x0D58)
+// 0x0000 (0x0B68 - 0x0B68)
 class UGA_Athena_DanceGrenade_WithTrajectory_C final : public UGA_Athena_Grenade_WithTrajectory_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGA_Athena_DanceGrenade_WithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Athena_DanceGrenade_WithTrajectory_C");
-static_assert(sizeof(UGA_Athena_DanceGrenade_WithTrajectory_C) == 0x000D58, "Wrong size on UGA_Athena_DanceGrenade_WithTrajectory_C");
+static_assert(sizeof(UGA_Athena_DanceGrenade_WithTrajectory_C) == 0x000B68, "Wrong size on UGA_Athena_DanceGrenade_WithTrajectory_C");
 
 }
 

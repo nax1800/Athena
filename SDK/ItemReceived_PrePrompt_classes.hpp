@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -18,33 +19,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemReceived_PrePrompt.ItemReceived_PrePrompt_C
-// 0x0070 (0x0510 - 0x04A0)
-class UItemReceived_PrePrompt_C final : public UFortItemReceivedWidgetBase
+// 0x0080 (0x04A8 - 0x0428)
+class UItemReceived_PrePrompt_C final : public UFortItemReceivedPrePrompt
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       ScaleUP;                                           // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Scale;                                             // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Idle;                                              // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Init;                                              // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Image_GiftBox;                                     // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageRarityFlare;                                  // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      OpenButton;                                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Textfrom;                                          // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       UserMessage;                                       // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   PreTest;                                           // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0428(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       ScaleUP;                                           // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Scale;                                             // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Idle;                                              // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Init;                                              // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         FromField;                                         // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Image_GiftBox;                                     // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageRarityFlare;                                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      OpenButton;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_GiftTag;                                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_UserMsg;                                      // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Textfrom;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TopTitle;                                          // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          UserMessageBorder;                                 // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          FromSelf;                                          // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void PreTest__DelegateSignature();
 	void ExecuteUbergraph_ItemReceived_PrePrompt(int32 EntryPoint);
-	void BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_56_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void OnUserMsgFiltered(bool bSuccess, const class FString& SanitzedMsg);
+	void OnInitialized();
 	void CustomEvent_0();
-	void LargeImageLoaded(class UObject* Obj);
+	void OnGiftBoxItemSet(bool bFromSelf);
 	void OnActivated();
-	void OnGiftBoxItemSet();
-	void UpdateFromGiftBoxItem();
+	void BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_56_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void UpdateFromGiftBoxItem(bool bFromSelf);
+	void LargeImageLoaded(class UObject* Obj);
 
 public:
 	static class UClass* StaticClass()
@@ -57,20 +62,23 @@ public:
 	}
 };
 static_assert(alignof(UItemReceived_PrePrompt_C) == 0x000008, "Wrong alignment on UItemReceived_PrePrompt_C");
-static_assert(sizeof(UItemReceived_PrePrompt_C) == 0x000510, "Wrong size on UItemReceived_PrePrompt_C");
-static_assert(offsetof(UItemReceived_PrePrompt_C, UberGraphFrame) == 0x0004A0, "Member 'UItemReceived_PrePrompt_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, ScaleUP) == 0x0004A8, "Member 'UItemReceived_PrePrompt_C::ScaleUP' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, Scale) == 0x0004B0, "Member 'UItemReceived_PrePrompt_C::Scale' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, Idle) == 0x0004B8, "Member 'UItemReceived_PrePrompt_C::Idle' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, Init) == 0x0004C0, "Member 'UItemReceived_PrePrompt_C::Init' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, CommonTextBlock_0) == 0x0004C8, "Member 'UItemReceived_PrePrompt_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, CommonTextBlock_1) == 0x0004D0, "Member 'UItemReceived_PrePrompt_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, Image_GiftBox) == 0x0004D8, "Member 'UItemReceived_PrePrompt_C::Image_GiftBox' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, ImageRarityFlare) == 0x0004E0, "Member 'UItemReceived_PrePrompt_C::ImageRarityFlare' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, OpenButton) == 0x0004E8, "Member 'UItemReceived_PrePrompt_C::OpenButton' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, Textfrom) == 0x0004F0, "Member 'UItemReceived_PrePrompt_C::Textfrom' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, UserMessage) == 0x0004F8, "Member 'UItemReceived_PrePrompt_C::UserMessage' has a wrong offset!");
-static_assert(offsetof(UItemReceived_PrePrompt_C, PreTest) == 0x000500, "Member 'UItemReceived_PrePrompt_C::PreTest' has a wrong offset!");
+static_assert(sizeof(UItemReceived_PrePrompt_C) == 0x0004A8, "Wrong size on UItemReceived_PrePrompt_C");
+static_assert(offsetof(UItemReceived_PrePrompt_C, UberGraphFrame) == 0x000428, "Member 'UItemReceived_PrePrompt_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, ScaleUP) == 0x000430, "Member 'UItemReceived_PrePrompt_C::ScaleUP' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Scale) == 0x000438, "Member 'UItemReceived_PrePrompt_C::Scale' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Idle) == 0x000440, "Member 'UItemReceived_PrePrompt_C::Idle' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Init) == 0x000448, "Member 'UItemReceived_PrePrompt_C::Init' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, CommonTextBlock_0) == 0x000450, "Member 'UItemReceived_PrePrompt_C::CommonTextBlock_0' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, FromField) == 0x000458, "Member 'UItemReceived_PrePrompt_C::FromField' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Image_GiftBox) == 0x000460, "Member 'UItemReceived_PrePrompt_C::Image_GiftBox' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, ImageRarityFlare) == 0x000468, "Member 'UItemReceived_PrePrompt_C::ImageRarityFlare' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, OpenButton) == 0x000470, "Member 'UItemReceived_PrePrompt_C::OpenButton' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Overlay_GiftTag) == 0x000478, "Member 'UItemReceived_PrePrompt_C::Overlay_GiftTag' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Text_UserMsg) == 0x000480, "Member 'UItemReceived_PrePrompt_C::Text_UserMsg' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, Textfrom) == 0x000488, "Member 'UItemReceived_PrePrompt_C::Textfrom' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, TopTitle) == 0x000490, "Member 'UItemReceived_PrePrompt_C::TopTitle' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, UserMessageBorder) == 0x000498, "Member 'UItemReceived_PrePrompt_C::UserMessageBorder' has a wrong offset!");
+static_assert(offsetof(UItemReceived_PrePrompt_C, FromSelf) == 0x0004A0, "Member 'UItemReceived_PrePrompt_C::FromSelf' has a wrong offset!");
 
 }
 

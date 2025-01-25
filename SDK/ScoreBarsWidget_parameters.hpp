@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "CollectionMissionBadgeDisplayInfo_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -62,7 +62,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortMission*                           CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,7 +81,7 @@ static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_Add_Int
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_GetAllLoadedMissions_ReturnValue) == 0x000030, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_GetAllLoadedMissions_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_IsValid_ReturnValue1) == 0x000040, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_Array_Get_Item) == 0x000048, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_IsValid_ReturnValue12) == 0x000050, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_IsValid_ReturnValue2) == 0x000050, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_DoesImplementInterface_ReturnValue) == 0x000051, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleMissionsUpdated, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'ScoreBarsWidget_C_HandleMissionsUpdated::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
@@ -102,10 +102,10 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCollectionMissionBadgeDisplayInfo> CallFunc_GetScoreBadgeInfos_BadgeInfos;            // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FCollectionMissionBadgeDisplayInfo> CallFunc_GetScoreBadgeInfos_BadgeInfos1;           // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
-	TScriptInterface<class IScoreBadgeProviderMission_C> K2Node_DynamicCast_AsScore_Badge_Provider_Mission12; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IScoreBadgeProviderMission_C> K2Node_DynamicCast_AsScore_Badge_Provider_Mission2; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCollectionMissionBadgeDisplayInfo> CallFunc_GetScoreBadgeInfos_BadgeInfos12;          // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> CallFunc_GetScoreBadgeInfos_BadgeInfos2;           // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(ScoreBarsWidget_C_InitializeScoreBars) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_InitializeScoreBars");
 static_assert(sizeof(ScoreBarsWidget_C_InitializeScoreBars) == 0x000080, "Wrong size on ScoreBarsWidget_C_InitializeScoreBars");
@@ -116,9 +116,9 @@ static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast
 static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast_bSuccess1) == 0x000030, "Member 'ScoreBarsWidget_C_InitializeScoreBars::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, CallFunc_GetScoreBadgeInfos_BadgeInfos) == 0x000038, "Member 'ScoreBarsWidget_C_InitializeScoreBars::CallFunc_GetScoreBadgeInfos_BadgeInfos' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, CallFunc_GetScoreBadgeInfos_BadgeInfos1) == 0x000048, "Member 'ScoreBarsWidget_C_InitializeScoreBars::CallFunc_GetScoreBadgeInfos_BadgeInfos1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast_AsScore_Badge_Provider_Mission12) == 0x000058, "Member 'ScoreBarsWidget_C_InitializeScoreBars::K2Node_DynamicCast_AsScore_Badge_Provider_Mission12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast_bSuccess12) == 0x000068, "Member 'ScoreBarsWidget_C_InitializeScoreBars::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, CallFunc_GetScoreBadgeInfos_BadgeInfos12) == 0x000070, "Member 'ScoreBarsWidget_C_InitializeScoreBars::CallFunc_GetScoreBadgeInfos_BadgeInfos12' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast_AsScore_Badge_Provider_Mission2) == 0x000058, "Member 'ScoreBarsWidget_C_InitializeScoreBars::K2Node_DynamicCast_AsScore_Badge_Provider_Mission2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, K2Node_DynamicCast_bSuccess2) == 0x000068, "Member 'ScoreBarsWidget_C_InitializeScoreBars::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeScoreBars, CallFunc_GetScoreBadgeInfos_BadgeInfos2) == 0x000070, "Member 'ScoreBarsWidget_C_InitializeScoreBars::CallFunc_GetScoreBadgeInfos_BadgeInfos2' has a wrong offset!");
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.HasValidBadgeInfos
 // 0x0018 (0x0018 - 0x0000)
@@ -132,8 +132,8 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -144,8 +144,8 @@ static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Array_Leng
 static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Array_Length_ReturnValue1) == 0x000008, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Greater_IntInt_ReturnValue1) == 0x00000D, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Array_Length_ReturnValue12) == 0x000010, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Greater_IntInt_ReturnValue12) == 0x000014, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Array_Length_ReturnValue2) == 0x000010, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_Greater_IntInt_ReturnValue2) == 0x000014, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_BooleanAND_ReturnValue) == 0x000015, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HasValidBadgeInfos, CallFunc_BooleanAND_ReturnValue1) == 0x000016, "Member 'ScoreBarsWidget_C_HasValidBadgeInfos::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 
@@ -167,10 +167,10 @@ public:
 	int32                                         CallFunc_GetTotalScore_Score;                      // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalScore_Score1;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IScoreBadgeProviderMission_C> K2Node_DynamicCast_AsScore_Badge_Provider_Mission12; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IScoreBadgeProviderMission_C> K2Node_DynamicCast_AsScore_Badge_Provider_Mission2; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetTotalScore_Score12;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetTotalScore_Score2;                     // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ScoreBarsWidget_C_UpdateScoreTotals) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_UpdateScoreTotals");
 static_assert(sizeof(ScoreBarsWidget_C_UpdateScoreTotals) == 0x000060, "Wrong size on ScoreBarsWidget_C_UpdateScoreTotals");
@@ -183,9 +183,9 @@ static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_A
 static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_bSuccess1) == 0x000038, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, CallFunc_GetTotalScore_Score) == 0x00003C, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::CallFunc_GetTotalScore_Score' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, CallFunc_GetTotalScore_Score1) == 0x000040, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::CallFunc_GetTotalScore_Score1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_AsScore_Badge_Provider_Mission12) == 0x000048, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::K2Node_DynamicCast_AsScore_Badge_Provider_Mission12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_bSuccess12) == 0x000058, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, CallFunc_GetTotalScore_Score12) == 0x00005C, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::CallFunc_GetTotalScore_Score12' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_AsScore_Badge_Provider_Mission2) == 0x000048, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::K2Node_DynamicCast_AsScore_Badge_Provider_Mission2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UpdateScoreTotals, CallFunc_GetTotalScore_Score2) == 0x00005C, "Member 'ScoreBarsWidget_C_UpdateScoreTotals::CallFunc_GetTotalScore_Score2' has a wrong offset!");
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.HandleUpdateUI
 // 0x0010 (0x0010 - 0x0000)
@@ -209,13 +209,13 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue123;               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123;                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue3;                 // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x0088)(ConstParm)
 	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue1; // 0x0090(0x0088)(ConstParm)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue12; // 0x0118(0x0088)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2; // 0x0118(0x0088)(ConstParm)
 };
 static_assert(alignof(ScoreBarsWidget_C_InitializeIcons) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_InitializeIcons");
 static_assert(sizeof(ScoreBarsWidget_C_InitializeIcons) == 0x0001A0, "Wrong size on ScoreBarsWidget_C_InitializeIcons");
@@ -223,13 +223,13 @@ static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_R
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue1) == 0x000001, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue1) == 0x000003, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue12) == 0x000004, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue12) == 0x000005, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue123) == 0x000006, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue123) == 0x000007, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue2) == 0x000004, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue2) == 0x000005, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue3) == 0x000006, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue3) == 0x000007, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000008, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue1) == 0x000090, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue12) == 0x000118, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2) == 0x000118, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2' has a wrong offset!");
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.HandleScoreStatChanged
 // 0x0060 (0x0060 - 0x0000)
@@ -238,7 +238,7 @@ struct ScoreBarsWidget_C_HandleScoreStatChanged final
 public:
 	int32                                         Delta;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Param_Name;                                        // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   Name_0;                                            // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EFortReplicatedStat                           StatType;                                          // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStatCategory                                 StatCategory;                                      // 0x0021(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -254,7 +254,7 @@ public:
 static_assert(alignof(ScoreBarsWidget_C_HandleScoreStatChanged) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_HandleScoreStatChanged");
 static_assert(sizeof(ScoreBarsWidget_C_HandleScoreStatChanged) == 0x000060, "Wrong size on ScoreBarsWidget_C_HandleScoreStatChanged");
 static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, Delta) == 0x000000, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::Delta' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, Param_Name) == 0x000008, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::Param_Name' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, Name_0) == 0x000008, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::Name_0' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, StatType) == 0x000020, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::StatType' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, StatCategory) == 0x000021, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::StatCategory' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_HandleScoreStatChanged, CallFunc_GetEnumeratorName_ReturnValue) == 0x000028, "Member 'ScoreBarsWidget_C_HandleScoreStatChanged::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
@@ -326,9 +326,9 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIMessageManager*                  CallFunc_GetMessageManager_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(int32 StatDelta, class FText& StatName, EFortReplicatedStat StatType, EStatCategory StatCategory)> K2Node_CreateDelegate_OutputDelegate1234;          // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 StatDelta, class FText& StatName, EFortReplicatedStat StatType, EStatCategory StatCategory)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ScoreBarsWidget_C_RegisterForScoreStreamEvents) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_RegisterForScoreStreamEvents");
 static_assert(sizeof(ScoreBarsWidget_C_RegisterForScoreStreamEvents) == 0x000070, "Wrong size on ScoreBarsWidget_C_RegisterForScoreStreamEvents");
@@ -338,9 +338,9 @@ static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_Cr
 static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, CallFunc_GetMessageManager_bCreatedNew) == 0x000020, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::CallFunc_GetMessageManager_bCreatedNew' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, CallFunc_GetMessageManager_ReturnValue) == 0x000028, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::CallFunc_GetMessageManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000030, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate12) == 0x000040, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate123) == 0x000050, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate1234) == 0x000060, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000040, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_RegisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate4) == 0x000060, "Member 'ScoreBarsWidget_C_RegisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.HandleMessageDisplayed
 // 0x0020 (0x0020 - 0x0000)
@@ -386,9 +386,9 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(int32 StatDelta, class FText& StatName, EFortReplicatedStat StatType, EStatCategory StatCategory)> K2Node_CreateDelegate_OutputDelegate1234;          // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EStatCategory ChangedScoreCategory)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 StatDelta, class FText& StatName, EFortReplicatedStat StatType, EStatCategory StatCategory)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_UnregisterForScoreStreamEvents");
 static_assert(sizeof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents) == 0x000060, "Wrong size on ScoreBarsWidget_C_UnregisterForScoreStreamEvents");
@@ -396,9 +396,9 @@ static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, CallFun
 static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate123) == 0x000040, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate1234) == 0x000050, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(ScoreBarsWidget_C_UnregisterForScoreStreamEvents, K2Node_CreateDelegate_OutputDelegate4) == 0x000050, "Member 'ScoreBarsWidget_C_UnregisterForScoreStreamEvents::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 
 }
 

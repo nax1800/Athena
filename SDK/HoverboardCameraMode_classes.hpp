@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HoverboardCameraMode.HoverboardCameraMode_C
-// 0x0000 (0x0120 - 0x0120)
+// 0x0000 (0x0C20 - 0x0C20)
 class UHoverboardCameraMode_C final : public UFortHoverboardCameraMode
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UHoverboardCameraMode_C>();
 	}
 };
-static_assert(alignof(UHoverboardCameraMode_C) == 0x000008, "Wrong alignment on UHoverboardCameraMode_C");
-static_assert(sizeof(UHoverboardCameraMode_C) == 0x000120, "Wrong size on UHoverboardCameraMode_C");
+static_assert(alignof(UHoverboardCameraMode_C) == 0x000010, "Wrong alignment on UHoverboardCameraMode_C");
+static_assert(sizeof(UHoverboardCameraMode_C) == 0x000C20, "Wrong size on UHoverboardCameraMode_C");
 
 }
 

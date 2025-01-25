@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerApplyFullBodyHit.GAB_FlingerApplyFullBodyHit_C
-// 0x0018 (0x0B60 - 0x0B48)
+// 0x0018 (0x0968 - 0x0950)
 class UGAB_FlingerApplyFullBodyHit_C final : public UGAB_GenericApplyFullBodyHit_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_FlingerApplyFullBodyHit_C;      // 0x0B48(0x0008)(Transient, DuplicateTransient)
-	class FName                                   HitReactBack;                                      // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   HitReactSectionName;                               // 0x0B58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_FlingerApplyFullBodyHit_C;      // 0x0950(0x0008)(Transient, DuplicateTransient)
+	class FName                                   HitReactBack;                                      // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HitReactSectionName;                               // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_FlingerApplyFullBodyHit(int32 EntryPoint);
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerApplyFullBodyHit_C) == 0x000008, "Wrong alignment on UGAB_FlingerApplyFullBodyHit_C");
-static_assert(sizeof(UGAB_FlingerApplyFullBodyHit_C) == 0x000B60, "Wrong size on UGAB_FlingerApplyFullBodyHit_C");
-static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, UberGraphFrame_GAB_FlingerApplyFullBodyHit_C) == 0x000B48, "Member 'UGAB_FlingerApplyFullBodyHit_C::UberGraphFrame_GAB_FlingerApplyFullBodyHit_C' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, HitReactBack) == 0x000B50, "Member 'UGAB_FlingerApplyFullBodyHit_C::HitReactBack' has a wrong offset!");
-static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, HitReactSectionName) == 0x000B58, "Member 'UGAB_FlingerApplyFullBodyHit_C::HitReactSectionName' has a wrong offset!");
+static_assert(sizeof(UGAB_FlingerApplyFullBodyHit_C) == 0x000968, "Wrong size on UGAB_FlingerApplyFullBodyHit_C");
+static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, UberGraphFrame_GAB_FlingerApplyFullBodyHit_C) == 0x000950, "Member 'UGAB_FlingerApplyFullBodyHit_C::UberGraphFrame_GAB_FlingerApplyFullBodyHit_C' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, HitReactBack) == 0x000958, "Member 'UGAB_FlingerApplyFullBodyHit_C::HitReactBack' has a wrong offset!");
+static_assert(offsetof(UGAB_FlingerApplyFullBodyHit_C, HitReactSectionName) == 0x000960, "Member 'UGAB_FlingerApplyFullBodyHit_C::HitReactSectionName' has a wrong offset!");
 
 }
 

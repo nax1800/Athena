@@ -23,14 +23,14 @@ struct ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout) == 0x000008, "Wrong alignment on ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout");
 static_assert(sizeof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout) == 0x000018, "Wrong size on ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout, EntryPoint) == 0x000000, "Member 'ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout, K2Node_ComponentBoundEvent_Button1) == 0x000010, "Member 'ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout, K2Node_ComponentBoundEvent_Button1) == 0x000008, "Member 'ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -60,7 +60,8 @@ struct ItemInspectUpgradeCallout_C_Refresh final
 {
 public:
 	bool                                          CallFunc_HasEvolutions_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxLevel_ReturnValue;                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -68,6 +69,7 @@ public:
 static_assert(alignof(ItemInspectUpgradeCallout_C_Refresh) == 0x000004, "Wrong alignment on ItemInspectUpgradeCallout_C_Refresh");
 static_assert(sizeof(ItemInspectUpgradeCallout_C_Refresh) == 0x000010, "Wrong size on ItemInspectUpgradeCallout_C_Refresh");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_HasEvolutions_ReturnValue) == 0x000000, "Member 'ItemInspectUpgradeCallout_C_Refresh::CallFunc_HasEvolutions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'ItemInspectUpgradeCallout_C_Refresh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_GetLevel_ReturnValue) == 0x000004, "Member 'ItemInspectUpgradeCallout_C_Refresh::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_GetMaxLevel_ReturnValue) == 0x000008, "Member 'ItemInspectUpgradeCallout_C_Refresh::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'ItemInspectUpgradeCallout_C_Refresh::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
@@ -77,11 +79,11 @@ static_assert(offsetof(ItemInspectUpgradeCallout_C_Refresh, CallFunc_GreaterEqua
 struct ItemInspectUpgradeCallout_C_SetItemToRepresent final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectUpgradeCallout_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectUpgradeCallout_C_SetItemToRepresent");
 static_assert(sizeof(ItemInspectUpgradeCallout_C_SetItemToRepresent) == 0x000008, "Wrong size on ItemInspectUpgradeCallout_C_SetItemToRepresent");
-static_assert(offsetof(ItemInspectUpgradeCallout_C_SetItemToRepresent, Param_Item) == 0x000000, "Member 'ItemInspectUpgradeCallout_C_SetItemToRepresent::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_SetItemToRepresent, Item_0) == 0x000000, "Member 'ItemInspectUpgradeCallout_C_SetItemToRepresent::Item_0' has a wrong offset!");
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.OnShow
 // 0x0010 (0x0010 - 0x0000)
@@ -141,7 +143,7 @@ static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowUpgradeInfo, CallFunc_Get
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowUpgradeInfo, CallFunc_GetUpgradeCost_ReturnValue) == 0x000010, "Member 'ItemInspectUpgradeCallout_C_ShowUpgradeInfo::CallFunc_GetUpgradeCost_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ShowEvolutionInfo
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct ItemInspectUpgradeCallout_C_ShowEvolutionInfo final
 {
 public:
@@ -151,20 +153,20 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRecipe>                        CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue; // 0x0018(0x0010)(ZeroConstructor, ReferenceParm)
 	struct FRecipe                                CallFunc_Array_Get_Item;                           // 0x0028(0x0058)()
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item1;                          // 0x0080(0x0030)()
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item1;                          // 0x0080(0x0040)()
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo) == 0x000008, "Wrong alignment on ItemInspectUpgradeCallout_C_ShowEvolutionInfo");
-static_assert(sizeof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo) == 0x0000C0, "Wrong size on ItemInspectUpgradeCallout_C_ShowEvolutionInfo");
+static_assert(sizeof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo) == 0x0000D0, "Wrong size on ItemInspectUpgradeCallout_C_ShowEvolutionInfo");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_IsEvolutionReady_EvolutionReady) == 0x000000, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_IsEvolutionReady_EvolutionReady' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue) == 0x000018, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_Array_Get_Item) == 0x000028, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_Array_Get_Item1) == 0x000080, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetContext_ReturnValue1) == 0x0000B0, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000B8, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetContext_ReturnValue1) == 0x0000C0, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeCallout_C_ShowEvolutionInfo, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000C8, "Member 'ItemInspectUpgradeCallout_C_ShowEvolutionInfo::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsEvolutionReady
 // 0x0020 (0x0020 - 0x0000)

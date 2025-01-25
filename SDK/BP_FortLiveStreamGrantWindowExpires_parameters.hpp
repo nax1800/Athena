@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -36,17 +36,17 @@ public:
 	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           K2Node_CustomEvent_Names;                          // 0x0048(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TDelegate<void(float Seconds)>                K2Node_CreateDelegate_OutputDelegate1;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(TArray<class FText>& Names)>   K2Node_CreateDelegate_OutputDelegate123;           // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TArray<class FText>& Names)>   K2Node_CreateDelegate_OutputDelegate3;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimespan                              CallFunc_Subtract_TimespanTimespan_ReturnValue;    // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1234;          // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -54,8 +54,8 @@ public:
 	float                                         CallFunc_GetBroadcasterGrantWindowSecondsRemaining_ReturnValue; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12345;         // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x00C8(0x0008)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
@@ -72,19 +72,19 @@ static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000040, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CustomEvent_Names) == 0x000048, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CustomEvent_Names' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate1) == 0x000058, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate12) == 0x000068, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate123) == 0x000078, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate2) == 0x000068, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate3) == 0x000078, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Subtract_TimespanTimespan_ReturnValue) == 0x000088, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Subtract_TimespanTimespan_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GetTotalSeconds_ReturnValue) == 0x000090, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000094, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_BooleanAND_ReturnValue) == 0x000095, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate1234) == 0x000098, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate4) == 0x000098, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Array_Length_ReturnValue1) == 0x0000A8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000AC, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x0000AD, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GetBroadcasterGrantWindowSecondsRemaining_ReturnValue) == 0x0000B0, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GetBroadcasterGrantWindowSecondsRemaining_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000B4, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate12345) == 0x0000B8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
+static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate5) == 0x0000B8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_K2_SetTimerDelegate_ReturnValue1) == 0x0000C8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_K2_SetTimerDelegate_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 

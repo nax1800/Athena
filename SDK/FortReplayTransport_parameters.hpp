@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -21,142 +21,158 @@ namespace SDK::Params
 {
 
 // Function FortReplayTransport.FortReplayTransport_C.ExecuteUbergraph_FortReplayTransport
-// 0x02D0 (0x02D0 - 0x0000)
+// 0x02F0 (0x02F0 - 0x0000)
 struct FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable123;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue12;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1234;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234567891011;    // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345678910;      // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123456789;        // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345678;         // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234567;          // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123456;           // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345;            // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable1234;                          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_CustomEvent_NewMultiplier;                  // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Format_Playback_Multiplier_FormattedText; // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00C8(0x0018)()
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable1;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable2;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue4;                  // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue5;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortReplayContext*                     CallFunc_GetContext_ReturnValue6;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button11;               // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button10;               // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button9;                // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button8;                // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button7;                // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button6;                // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button5;                // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_NewMultiplier;                  // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Format_Playback_Multiplier_FormattedText; // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1;         // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating1; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue12;        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating12; // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonGamepadType                            Temp_byte_Variable;                                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue123;       // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue12345;              // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonGamepadType                            CallFunc_GetCurrentGamepadType_ReturnValue;        // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A[0x6];                                      // 0x015A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12345;                         // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0170(0x0088)()
-	bool                                          K2Node_CustomEvent_bNewPauseState;                 // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable123456;                        // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00E8(0x0018)()
+	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating; // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1;         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating1; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue2;         // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating2; // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable5;                             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue3;         // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonGamepadType                            Temp_byte_Variable;                                // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue7;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonGamepadType                            CallFunc_GetCurrentGamepadType_ReturnValue;        // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_172[0x6];                                      // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bNewPauseState;                 // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0188(0x0088)()
 	class USoundBase*                             K2Node_Select1_Default;                            // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0218(0x0010)(ZeroConstructor, NoDestructor)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1234;      // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating123; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsFollowedPlayerInBus_ReturnValue;        // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable1;                               // 0x023A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B[0x5];                                      // 0x023B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select12_Default;                           // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue1;        // 0x0248(0x0088)()
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable6;                             // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0228(0x0010)(ZeroConstructor, NoDestructor)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue4;         // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating3; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsFollowedPlayerInBus_ReturnValue;        // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable7;                             // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select2_Default;                            // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue1;        // 0x0268(0x0088)()
 };
 static_assert(alignof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport) == 0x000008, "Wrong alignment on FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport");
-static_assert(sizeof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport) == 0x0002D0, "Wrong size on FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport");
+static_assert(sizeof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport) == 0x0002F0, "Wrong size on FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport");
 static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, EntryPoint) == 0x000000, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable) == 0x000008, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable1) == 0x000010, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_bool_Variable) == 0x000028, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable12) == 0x000030, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable123) == 0x000038, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue12) == 0x000040, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue123) == 0x000048, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue1234) == 0x000050, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetCurrentInputType_ReturnValue) == 0x000058, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000059, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button1234567891011) == 0x000060, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button1234567891011' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button12345678910) == 0x000068, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button12345678910' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button123456789) == 0x000070, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button123456789' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button12345678) == 0x000078, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button12345678' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button1234567) == 0x000080, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button1234567' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button123456) == 0x000088, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button123456' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button12345) == 0x000090, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button12345' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button1234) == 0x000098, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable1234) == 0x0000A0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_Not_PreBool_ReturnValue) == 0x0000A8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CustomEvent_NewMultiplier) == 0x0000AC, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CustomEvent_NewMultiplier' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_Format_Playback_Multiplier_FormattedText) == 0x0000B0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_Format_Playback_Multiplier_FormattedText' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button123) == 0x0000C0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_Conv_StringToText_ReturnValue) == 0x0000C8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable) == 0x000010, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable1) == 0x000018, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable2) == 0x000020, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_bool_Variable) == 0x000038, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable3) == 0x000040, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable4) == 0x000048, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue4) == 0x000060, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue5) == 0x000068, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetCurrentInputType_ReturnValue) == 0x000070, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000071, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue6) == 0x000078, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button12) == 0x000080, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button11) == 0x000088, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button11' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button10) == 0x000090, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button10' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button9) == 0x000098, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button9' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button8) == 0x0000A0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button8' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button7) == 0x0000A8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button6) == 0x0000B0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button5) == 0x0000B8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CustomEvent_NewMultiplier) == 0x0000C0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CustomEvent_NewMultiplier' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button4) == 0x0000C8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_Format_Playback_Multiplier_FormattedText) == 0x0000D0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_Format_Playback_Multiplier_FormattedText' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue) == 0x0000E0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating) == 0x0000E8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess) == 0x0000F0, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button12) == 0x0000F8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue1) == 0x000100, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating1) == 0x000108, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess1) == 0x000110, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button1) == 0x000118, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue12) == 0x000120, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating12) == 0x000128, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess12) == 0x000130, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetUINavigationManager_ReturnValue) == 0x000138, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_byte_Variable) == 0x000140, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue123) == 0x000148, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue12345) == 0x000150, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetCurrentGamepadType_ReturnValue) == 0x000158, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetCurrentGamepadType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_SwitchEnum_CmpSuccess) == 0x000159, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_Select_Default) == 0x000160, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable12345) == 0x000168, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000170, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CustomEvent_bNewPauseState) == 0x0001F8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CustomEvent_bNewPauseState' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button) == 0x000200, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable123456) == 0x000208, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable123456' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_Conv_StringToText_ReturnValue) == 0x0000E8, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating) == 0x000100, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button3) == 0x000110, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue1) == 0x000118, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating1) == 0x000120, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess1) == 0x000128, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button2) == 0x000130, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue2) == 0x000138, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating2) == 0x000140, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess2) == 0x000148, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable5) == 0x000150, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue3) == 0x000158, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_byte_Variable) == 0x000160, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetContext_ReturnValue7) == 0x000168, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetCurrentGamepadType_ReturnValue) == 0x000170, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetCurrentGamepadType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_SwitchEnum_CmpSuccess) == 0x000171, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_Select_Default) == 0x000178, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CustomEvent_bNewPauseState) == 0x000180, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CustomEvent_bNewPauseState' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000188, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_Select1_Default) == 0x000210, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CreateDelegate_OutputDelegate) == 0x000218, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue1234) == 0x000228, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating123) == 0x000230, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess123) == 0x000238, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_IsFollowedPlayerInBus_ReturnValue) == 0x000239, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_IsFollowedPlayerInBus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_bool_Variable1) == 0x00023A, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_Select12_Default) == 0x000240, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_MakeBrushFromTexture_ReturnValue1) == 0x000248, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_MakeBrushFromTexture_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_ComponentBoundEvent_Button1) == 0x000218, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable6) == 0x000220, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_CreateDelegate_OutputDelegate) == 0x000228, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_GetPlayerController_ReturnValue4) == 0x000238, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_GetPlayerController_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_AsFort_Player_Controller_Spectating3) == 0x000240, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_AsFort_Player_Controller_Spectating3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_DynamicCast_bSuccess3) == 0x000248, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_IsFollowedPlayerInBus_ReturnValue) == 0x000249, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_IsFollowedPlayerInBus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_object_Variable7) == 0x000250, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, Temp_bool_Variable1) == 0x000258, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, K2Node_Select2_Default) == 0x000260, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport, CallFunc_MakeBrushFromTexture_ReturnValue1) == 0x000268, "Member 'FortReplayTransport_C_ExecuteUbergraph_FortReplayTransport::CallFunc_MakeBrushFromTexture_ReturnValue1' has a wrong offset!");
+
+// Function FortReplayTransport.FortReplayTransport_C.BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortReplayTransport_C_BndEvt__PlayerList_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.BndEvt__TimelineFocusMode_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -352,28 +368,34 @@ static_assert(offsetof(FortReplayTransport_C_Format_Playback_Multiplier, CallFun
 static_assert(offsetof(FortReplayTransport_C_Format_Playback_Multiplier, CallFunc_Conv_TextToString_ReturnValue) == 0x000098, "Member 'FortReplayTransport_C_Format_Playback_Multiplier::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.BindingsChanged
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortReplayTransport_C_BindingsChanged final
 {
 public:
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsSpectator;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetButtonsAllowedFocus_focusAllowed;      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AFortLiveSpectatorController*           K2Node_DynamicCast_AsFort_Live_Spectator_Controller; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetButtonsAllowedFocus_focusAllowed;      // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FortReplayTransport_C_BindingsChanged) == 0x000008, "Wrong alignment on FortReplayTransport_C_BindingsChanged");
-static_assert(sizeof(FortReplayTransport_C_BindingsChanged) == 0x000020, "Wrong size on FortReplayTransport_C_BindingsChanged");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetVisibility_ReturnValue) == 0x000008, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(sizeof(FortReplayTransport_C_BindingsChanged) == 0x000028, "Wrong size on FortReplayTransport_C_BindingsChanged");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, bIsSpectator) == 0x000000, "Member 'FortReplayTransport_C_BindingsChanged::bIsSpectator' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetCurrentInputType_ReturnValue) == 0x000018, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000019, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_SetButtonsAllowedFocus_focusAllowed) == 0x00001A, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_SetButtonsAllowedFocus_focusAllowed' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, K2Node_DynamicCast_AsFort_Live_Spectator_Controller) == 0x000018, "Member 'FortReplayTransport_C_BindingsChanged::K2Node_DynamicCast_AsFort_Live_Spectator_Controller' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'FortReplayTransport_C_BindingsChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetCurrentInputType_ReturnValue) == 0x000021, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_SetButtonsAllowedFocus_focusAllowed) == 0x000023, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_SetButtonsAllowedFocus_focusAllowed' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_GetVisibility_ReturnValue) == 0x000024, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_BindingsChanged, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000025, "Member 'FortReplayTransport_C_BindingsChanged::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.SetupHUDEvents
 // 0x0038 (0x0038 - 0x0000)
@@ -383,7 +405,7 @@ public:
 	TDelegate<void(class AFortPlayerControllerSpectating* SpectatorPC, class AFortPlayerState* NewFollowedPlayer)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class AFortPlayerControllerSpectating* SpectatorPC, ESpectatorCameraType NewCameraType)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortReplaySpectator*                   K2Node_DynamicCast_AsFort_Replay_Spectator;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerSpectating*        K2Node_DynamicCast_AsFort_Player_Controller_Spectating; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FortReplayTransport_C_SetupHUDEvents) == 0x000008, "Wrong alignment on FortReplayTransport_C_SetupHUDEvents");
@@ -391,7 +413,7 @@ static_assert(sizeof(FortReplayTransport_C_SetupHUDEvents) == 0x000038, "Wrong s
 static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'FortReplayTransport_C_SetupHUDEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'FortReplayTransport_C_SetupHUDEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'FortReplayTransport_C_SetupHUDEvents::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, K2Node_DynamicCast_AsFort_Replay_Spectator) == 0x000028, "Member 'FortReplayTransport_C_SetupHUDEvents::K2Node_DynamicCast_AsFort_Replay_Spectator' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, K2Node_DynamicCast_AsFort_Player_Controller_Spectating) == 0x000028, "Member 'FortReplayTransport_C_SetupHUDEvents::K2Node_DynamicCast_AsFort_Player_Controller_Spectating' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_SetupHUDEvents, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'FortReplayTransport_C_SetupHUDEvents::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.CameraTypeChanged
@@ -415,21 +437,26 @@ static_assert(offsetof(FortReplayTransport_C_CameraTypeChanged, CallFunc_GetFoll
 static_assert(offsetof(FortReplayTransport_C_CameraTypeChanged, CallFunc_GetCameraNameFromType_ReturnValue) == 0x000020, "Member 'FortReplayTransport_C_CameraTypeChanged::CallFunc_GetCameraNameFromType_ReturnValue' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.FollowedPlayerChanged
-// 0x0038 (0x0038 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FortReplayTransport_C_FollowedPlayerChanged final
 {
 public:
 	class AFortPlayerControllerSpectating*        PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerState*                       NewFollowedPlayer;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
+	class FString                                 Local_PlayerName;                                  // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
+	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FortReplayTransport_C_FollowedPlayerChanged) == 0x000008, "Wrong alignment on FortReplayTransport_C_FollowedPlayerChanged");
-static_assert(sizeof(FortReplayTransport_C_FollowedPlayerChanged) == 0x000038, "Wrong size on FortReplayTransport_C_FollowedPlayerChanged");
+static_assert(sizeof(FortReplayTransport_C_FollowedPlayerChanged) == 0x000050, "Wrong size on FortReplayTransport_C_FollowedPlayerChanged");
 static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, PlayerController) == 0x000000, "Member 'FortReplayTransport_C_FollowedPlayerChanged::PlayerController' has a wrong offset!");
 static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, NewFollowedPlayer) == 0x000008, "Member 'FortReplayTransport_C_FollowedPlayerChanged::NewFollowedPlayer' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, CallFunc_GetPlayerName_ReturnValue) == 0x000010, "Member 'FortReplayTransport_C_FollowedPlayerChanged::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'FortReplayTransport_C_FollowedPlayerChanged::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, Local_PlayerName) == 0x000010, "Member 'FortReplayTransport_C_FollowedPlayerChanged::Local_PlayerName' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'FortReplayTransport_C_FollowedPlayerChanged::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'FortReplayTransport_C_FollowedPlayerChanged::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FortReplayTransport_C_FollowedPlayerChanged, CallFunc_GetPlayerName_ReturnValue) == 0x000040, "Member 'FortReplayTransport_C_FollowedPlayerChanged::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
 
 // Function FortReplayTransport.FortReplayTransport_C.SetButtonsAllowedFocus
 // 0x0002 (0x0002 - 0x0000)

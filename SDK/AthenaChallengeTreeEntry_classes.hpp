@@ -19,44 +19,43 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C
-// 0x00E8 (0x0908 - 0x0820)
+// 0x00E0 (0x0980 - 0x08A0)
 class UAthenaChallengeTreeEntry_C final : public UFortChallengeBundleTreeItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UOverlay*                               BattleStars;                                       // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BattleStarsCheck;                                  // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        BattleStarSwitcher;                                // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BattleStarTracker;                                 // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BundleNumber;                                      // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               BundleSB;                                          // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BundleType;                                        // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UChallengeBundleCategoryHeader_C*       ChallengeBundleCategoryHeader;                     // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UChallengeProgressWidget_C*             ChallengeProgressWidget;                           // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 ChaseRewardCard;                                   // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ExpansionIndicator;                                // 0x0878(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          FillCB;                                            // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Glow;                                              // 0x0888(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          GradCB;                                            // 0x0890(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HeaderHB;                                          // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               ItemCardOverlay;                                   // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItemIcon*                          ItemIcon;                                          // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        LockCheckSwitcher;                                 // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       LockedText;                                        // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MainEntryTypeSwitcher;                             // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MiddleSectionSwitcher;                             // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MidSectionCompleteVB;                              // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MidSectionLockedVB;                                // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          OutlineCB;                                         // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          RewardBoxCB;                                       // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RewardSpacingLine;                                 // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortTokenType*                         MysteryItem;                                       // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UOverlay*                               BattleStars;                                       // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BattleStarsCheck;                                  // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        BattleStarSwitcher;                                // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BattleStarTracker;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BundleNumber;                                      // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               BundleSB;                                          // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BundleType;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UChallengeBundleCategoryHeader_C*       ChallengeBundleCategoryHeader;                     // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UChallengeProgressWidget_C*             ChallengeProgressWidget;                           // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 ChaseRewardCard;                                   // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ExpansionIndicator;                                // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          FillCB;                                            // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Glow;                                              // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          GradCB;                                            // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HeaderHB;                                          // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               ItemCardOverlay;                                   // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItemIcon*                          ItemIcon;                                          // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        LockCheckSwitcher;                                 // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UChallengeBundleLockedReasonDisplay_C*  LockedReasonDisplay;                               // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MainEntryTypeSwitcher;                             // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MiddleSectionSwitcher;                             // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MidSectionCompleteVB;                              // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MidSectionLockedVB;                                // 0x0958(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0960(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          OutlineCB;                                         // 0x0968(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          RewardBoxCB;                                       // 0x0970(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RewardSpacingLine;                                 // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaChallengeTreeEntry(int32 EntryPoint);
-	void OnHovered();
-	void ExpansionChanged(bool bExpanded);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnHovered();
 	void SetupAsChallengeBundle(class UFortChallengeBundleInfo* Bundle);
 	void SetupAsChallengeBundleSchedule(class UFortChallengeBundleCategoryInfo* Schedule);
 	void UpdateHeaderCategoryStyle(class UFortChallengeBundleCategoryInfo* CategoryInfo);
@@ -64,6 +63,7 @@ public:
 	void UpdateBundleData(class UFortChallengeBundleInfo* BundleInfo);
 	void UpdateReward();
 	class UFortItem* GetRewardToShow();
+	void SetTimespanSource(TScriptInterface<class IFortTimespanDataSource> Value);
 
 public:
 	static class UClass* StaticClass()
@@ -76,36 +76,35 @@ public:
 	}
 };
 static_assert(alignof(UAthenaChallengeTreeEntry_C) == 0x000008, "Wrong alignment on UAthenaChallengeTreeEntry_C");
-static_assert(sizeof(UAthenaChallengeTreeEntry_C) == 0x000908, "Wrong size on UAthenaChallengeTreeEntry_C");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, UberGraphFrame) == 0x000820, "Member 'UAthenaChallengeTreeEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStars) == 0x000828, "Member 'UAthenaChallengeTreeEntry_C::BattleStars' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarsCheck) == 0x000830, "Member 'UAthenaChallengeTreeEntry_C::BattleStarsCheck' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarSwitcher) == 0x000838, "Member 'UAthenaChallengeTreeEntry_C::BattleStarSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarTracker) == 0x000840, "Member 'UAthenaChallengeTreeEntry_C::BattleStarTracker' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleNumber) == 0x000848, "Member 'UAthenaChallengeTreeEntry_C::BundleNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleSB) == 0x000850, "Member 'UAthenaChallengeTreeEntry_C::BundleSB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleType) == 0x000858, "Member 'UAthenaChallengeTreeEntry_C::BundleType' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChallengeBundleCategoryHeader) == 0x000860, "Member 'UAthenaChallengeTreeEntry_C::ChallengeBundleCategoryHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChallengeProgressWidget) == 0x000868, "Member 'UAthenaChallengeTreeEntry_C::ChallengeProgressWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChaseRewardCard) == 0x000870, "Member 'UAthenaChallengeTreeEntry_C::ChaseRewardCard' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ExpansionIndicator) == 0x000878, "Member 'UAthenaChallengeTreeEntry_C::ExpansionIndicator' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, FillCB) == 0x000880, "Member 'UAthenaChallengeTreeEntry_C::FillCB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, Glow) == 0x000888, "Member 'UAthenaChallengeTreeEntry_C::Glow' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, GradCB) == 0x000890, "Member 'UAthenaChallengeTreeEntry_C::GradCB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, HeaderHB) == 0x000898, "Member 'UAthenaChallengeTreeEntry_C::HeaderHB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ItemCardOverlay) == 0x0008A0, "Member 'UAthenaChallengeTreeEntry_C::ItemCardOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, ItemIcon) == 0x0008A8, "Member 'UAthenaChallengeTreeEntry_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, LockCheckSwitcher) == 0x0008B0, "Member 'UAthenaChallengeTreeEntry_C::LockCheckSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, LockedText) == 0x0008B8, "Member 'UAthenaChallengeTreeEntry_C::LockedText' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, MainEntryTypeSwitcher) == 0x0008C0, "Member 'UAthenaChallengeTreeEntry_C::MainEntryTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, MiddleSectionSwitcher) == 0x0008C8, "Member 'UAthenaChallengeTreeEntry_C::MiddleSectionSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, MidSectionCompleteVB) == 0x0008D0, "Member 'UAthenaChallengeTreeEntry_C::MidSectionCompleteVB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, MidSectionLockedVB) == 0x0008D8, "Member 'UAthenaChallengeTreeEntry_C::MidSectionLockedVB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, NormalBangWrapper) == 0x0008E0, "Member 'UAthenaChallengeTreeEntry_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, OutlineCB) == 0x0008E8, "Member 'UAthenaChallengeTreeEntry_C::OutlineCB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, RewardBoxCB) == 0x0008F0, "Member 'UAthenaChallengeTreeEntry_C::RewardBoxCB' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, RewardSpacingLine) == 0x0008F8, "Member 'UAthenaChallengeTreeEntry_C::RewardSpacingLine' has a wrong offset!");
-static_assert(offsetof(UAthenaChallengeTreeEntry_C, MysteryItem) == 0x000900, "Member 'UAthenaChallengeTreeEntry_C::MysteryItem' has a wrong offset!");
+static_assert(sizeof(UAthenaChallengeTreeEntry_C) == 0x000980, "Wrong size on UAthenaChallengeTreeEntry_C");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, UberGraphFrame) == 0x0008A0, "Member 'UAthenaChallengeTreeEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStars) == 0x0008A8, "Member 'UAthenaChallengeTreeEntry_C::BattleStars' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarsCheck) == 0x0008B0, "Member 'UAthenaChallengeTreeEntry_C::BattleStarsCheck' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarSwitcher) == 0x0008B8, "Member 'UAthenaChallengeTreeEntry_C::BattleStarSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BattleStarTracker) == 0x0008C0, "Member 'UAthenaChallengeTreeEntry_C::BattleStarTracker' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleNumber) == 0x0008C8, "Member 'UAthenaChallengeTreeEntry_C::BundleNumber' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleSB) == 0x0008D0, "Member 'UAthenaChallengeTreeEntry_C::BundleSB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, BundleType) == 0x0008D8, "Member 'UAthenaChallengeTreeEntry_C::BundleType' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChallengeBundleCategoryHeader) == 0x0008E0, "Member 'UAthenaChallengeTreeEntry_C::ChallengeBundleCategoryHeader' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChallengeProgressWidget) == 0x0008E8, "Member 'UAthenaChallengeTreeEntry_C::ChallengeProgressWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ChaseRewardCard) == 0x0008F0, "Member 'UAthenaChallengeTreeEntry_C::ChaseRewardCard' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ExpansionIndicator) == 0x0008F8, "Member 'UAthenaChallengeTreeEntry_C::ExpansionIndicator' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, FillCB) == 0x000900, "Member 'UAthenaChallengeTreeEntry_C::FillCB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, Glow) == 0x000908, "Member 'UAthenaChallengeTreeEntry_C::Glow' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, GradCB) == 0x000910, "Member 'UAthenaChallengeTreeEntry_C::GradCB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, HeaderHB) == 0x000918, "Member 'UAthenaChallengeTreeEntry_C::HeaderHB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ItemCardOverlay) == 0x000920, "Member 'UAthenaChallengeTreeEntry_C::ItemCardOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, ItemIcon) == 0x000928, "Member 'UAthenaChallengeTreeEntry_C::ItemIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, LockCheckSwitcher) == 0x000930, "Member 'UAthenaChallengeTreeEntry_C::LockCheckSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, LockedReasonDisplay) == 0x000938, "Member 'UAthenaChallengeTreeEntry_C::LockedReasonDisplay' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, MainEntryTypeSwitcher) == 0x000940, "Member 'UAthenaChallengeTreeEntry_C::MainEntryTypeSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, MiddleSectionSwitcher) == 0x000948, "Member 'UAthenaChallengeTreeEntry_C::MiddleSectionSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, MidSectionCompleteVB) == 0x000950, "Member 'UAthenaChallengeTreeEntry_C::MidSectionCompleteVB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, MidSectionLockedVB) == 0x000958, "Member 'UAthenaChallengeTreeEntry_C::MidSectionLockedVB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, NormalBangWrapper) == 0x000960, "Member 'UAthenaChallengeTreeEntry_C::NormalBangWrapper' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, OutlineCB) == 0x000968, "Member 'UAthenaChallengeTreeEntry_C::OutlineCB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, RewardBoxCB) == 0x000970, "Member 'UAthenaChallengeTreeEntry_C::RewardBoxCB' has a wrong offset!");
+static_assert(offsetof(UAthenaChallengeTreeEntry_C, RewardSpacingLine) == 0x000978, "Member 'UAthenaChallengeTreeEntry_C::RewardSpacingLine' has a wrong offset!");
 
 }
 

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function B_Ranged_Generic.B_Ranged_Generic_C.onAimDownSightsChanged__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    AimDownsights                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AB_Ranged_Generic_C::OnAimDownSightsChanged__DelegateSignature(bool AimDownsights)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "onAimDownSightsChanged__DelegateSignature");
+
+	Params::B_Ranged_Generic_C_OnAimDownSightsChanged__DelegateSignature Parms{};
+
+	Parms.AimDownsights = AimDownsights;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ExecuteUbergraph_B_Ranged_Generic
 // (HasDefaults)
 // Parameters:
@@ -34,6 +54,96 @@ void AB_Ranged_Generic_C::ExecuteUbergraph_B_Ranged_Generic(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ForceScopeBackImmediatly
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::ForceScopeBackImmediatly()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "ForceScopeBackImmediatly");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ShellEjectionOff
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::ShellEjectionOff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "ShellEjectionOff");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.Bind on Effects Quality
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::Bind_on_Effects_Quality()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "Bind on Effects Quality");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ShellEjectionFixOn
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::ShellEjectionFixOn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "ShellEjectionFixOn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.PitchUpOnRateOfFireChange
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewRateOfFire                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AB_Ranged_Generic_C::PitchUpOnRateOfFireChange(float NewRateOfFire)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "PitchUpOnRateOfFireChange");
+
+	Params::B_Ranged_Generic_C_PitchUpOnRateOfFireChange Parms{};
+
+	Parms.NewRateOfFire = NewRateOfFire;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.BindFireRateChange
+// (BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::BindFireRateChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "BindFireRateChange");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -81,15 +191,21 @@ void AB_Ranged_Generic_C::UnhideFirstPersonStuffPart1()
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.UnhideFirstPersonStuffPart2
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Which_Call                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Ranged_Generic_C::UnhideFirstPersonStuffPart2()
+void AB_Ranged_Generic_C::UnhideFirstPersonStuffPart2(int32 Which_Call)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("B_Ranged_Generic_C", "UnhideFirstPersonStuffPart2");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::B_Ranged_Generic_C_UnhideFirstPersonStuffPart2 Parms{};
+
+	Parms.Which_Call = Which_Call;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -413,9 +529,9 @@ void AB_Ranged_Generic_C::OnWeaponAttached()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enable_Or_Disable                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_StencilBufferValue                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   StencilBufferValue_0                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Ranged_Generic_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int32 Param_StencilBufferValue)
+void AB_Ranged_Generic_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int32 StencilBufferValue_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -425,7 +541,7 @@ void AB_Ranged_Generic_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int
 	Params::B_Ranged_Generic_C_Update_Enemy_Custom_Depths Parms{};
 
 	Parms.Enable_Or_Disable = Enable_Or_Disable;
-	Parms.Param_StencilBufferValue = Param_StencilBufferValue;
+	Parms.StencilBufferValue_0 = StencilBufferValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -881,9 +997,8 @@ void AB_Ranged_Generic_C::ShowReticle()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Reset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Ranged_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Reset)
+void AB_Ranged_Generic_C::SetActiveAlterationIdleParticles(bool Active)
 {
 	static class UFunction* Func = nullptr;
 
@@ -893,7 +1008,6 @@ void AB_Ranged_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Res
 	Params::B_Ranged_Generic_C_SetActiveAlterationIdleParticles Parms{};
 
 	Parms.Active = Active;
-	Parms.Reset = Reset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -916,6 +1030,34 @@ void AB_Ranged_Generic_C::SetPostProcessParams(float InputPin)
 	Parms.InputPin = InputPin;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.StartScopedAudio
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::StartScopedAudio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "StartScopedAudio");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.StopScopedAudio
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AB_Ranged_Generic_C::StopScopedAudio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Ranged_Generic_C", "StopScopedAudio");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

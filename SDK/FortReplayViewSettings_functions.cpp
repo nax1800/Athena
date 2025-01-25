@@ -123,9 +123,9 @@ void UFortReplayViewSettings_C::Construct()
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortPlayerControllerSpectating*  PlayerController                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESpectatorCameraType                    Param_CameraType                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESpectatorCameraType                    CameraType_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFortReplayViewSettings_C::OnCameraTypeChanged(class AFortPlayerControllerSpectating* PlayerController, ESpectatorCameraType Param_CameraType)
+void UFortReplayViewSettings_C::OnCameraTypeChanged(class AFortPlayerControllerSpectating* PlayerController, ESpectatorCameraType CameraType_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -135,7 +135,7 @@ void UFortReplayViewSettings_C::OnCameraTypeChanged(class AFortPlayerControllerS
 	Params::FortReplayViewSettings_C_OnCameraTypeChanged Parms{};
 
 	Parms.PlayerController = PlayerController;
-	Parms.Param_CameraType = Param_CameraType;
+	Parms.CameraType_0 = CameraType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -152,6 +152,30 @@ void UFortReplayViewSettings_C::SwitchToValidTab()
 		Func = Class->GetFunction("FortReplayViewSettings_C", "SwitchToValidTab");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function FortReplayViewSettings.FortReplayViewSettings_C.CameraTypeToText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESpectatorCameraType                    CameraType_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             Text                                                   (Parm, OutParm)
+
+void UFortReplayViewSettings_C::CameraTypeToText(ESpectatorCameraType CameraType_0, class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FortReplayViewSettings_C", "CameraTypeToText");
+
+	Params::FortReplayViewSettings_C_CameraTypeToText Parms{};
+
+	Parms.CameraType_0 = CameraType_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
 }
 
 }

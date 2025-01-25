@@ -91,7 +91,7 @@ struct AccountBonuses_C_Update_Badges final
 public:
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue12;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAccountItem*                       CallFunc_GetAccountItemWithDefinition_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAccountBuffItem*                   K2Node_DynamicCast_AsFort_Account_Buff_Item;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -115,13 +115,13 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              CallFunc_UtcNow_ReturnValue;                       // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              CallFunc_Subtract_DateTimeDateTime_ReturnValue;    // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDays_ReturnValue;                      // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A8(0x0040)(HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0018)()
@@ -132,7 +132,7 @@ static_assert(alignof(AccountBonuses_C_Update_Badges) == 0x000008, "Wrong alignm
 static_assert(sizeof(AccountBonuses_C_Update_Badges) == 0x000120, "Wrong size on AccountBonuses_C_Update_Badges");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue1) == 0x000008, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue12) == 0x000010, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_DynamicCast_AsFort_Account_Buff_Item) == 0x000020, "Member 'AccountBonuses_C_Update_Badges::K2Node_DynamicCast_AsFort_Account_Buff_Item' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AccountBonuses_C_Update_Badges::K2Node_DynamicCast_bSuccess' has a wrong offset!");
@@ -152,11 +152,11 @@ static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetCombinedDescr
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Has_Founder_Badge_Result1) == 0x000081, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Has_Founder_Badge_Result1' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_Select_Default) == 0x000082, "Member 'AccountBonuses_C_Update_Badges::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_UtcNow_ReturnValue) == 0x000088, "Member 'AccountBonuses_C_Update_Badges::CallFunc_UtcNow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable12) == 0x000090, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable2) == 0x000090, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Subtract_DateTimeDateTime_ReturnValue) == 0x000098, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Subtract_DateTimeDateTime_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetDays_ReturnValue) == 0x0000A0, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetDays_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_MakeStruct_FormatArgumentData) == 0x0000A8, "Member 'AccountBonuses_C_Update_Badges::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable123) == 0x0000E8, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable3) == 0x0000E8, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_MakeArray_Array) == 0x0000F0, "Member 'AccountBonuses_C_Update_Badges::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Format_ReturnValue) == 0x000100, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_bool_Variable1) == 0x000118, "Member 'AccountBonuses_C_Update_Badges::Temp_bool_Variable1' has a wrong offset!");

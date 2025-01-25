@@ -106,45 +106,25 @@ void UXpReasonFeed_C::IsReadyForNextXpReward(bool* Ready)
 }
 
 
-// Function XpReasonFeed.XpReasonFeed_C.SetXpRewards
+// Function XpReasonFeed.XpReasonFeed_C.ImmediatelyShowXpRewards
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FAthenaMatchXpReward>     XpRewards                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void UXpReasonFeed_C::SetXpRewards(TArray<struct FAthenaMatchXpReward>& XpRewards)
+void UXpReasonFeed_C::ImmediatelyShowXpRewards(TArray<struct FAthenaMatchXpReward>& XpRewards)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("XpReasonFeed_C", "SetXpRewards");
+		Func = Class->GetFunction("XpReasonFeed_C", "ImmediatelyShowXpRewards");
 
-	Params::XpReasonFeed_C_SetXpRewards Parms{};
+	Params::XpReasonFeed_C_ImmediatelyShowXpRewards Parms{};
 
 	Parms.XpRewards = std::move(XpRewards);
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	XpRewards = std::move(Parms.XpRewards);
-}
-
-
-// Function XpReasonFeed.XpReasonFeed_C.ShowAllXpRewards
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UXpReasonFeed_C::ShowAllXpRewards(bool Show)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpReasonFeed_C", "ShowAllXpRewards");
-
-	Params::XpReasonFeed_C_ShowAllXpRewards Parms{};
-
-	Parms.Show = Show;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

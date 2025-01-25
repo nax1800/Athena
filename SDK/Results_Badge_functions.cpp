@@ -150,9 +150,9 @@ void UResults_Badge_C::SetItem(class UFortItem* Item)
 // Function Results_Badge.Results_Badge_C.HasValidItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_HasValidItem                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    HasValidItem_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UResults_Badge_C::HasValidItem(bool* Param_HasValidItem)
+void UResults_Badge_C::HasValidItem(bool* HasValidItem_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -163,17 +163,17 @@ void UResults_Badge_C::HasValidItem(bool* Param_HasValidItem)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_HasValidItem != nullptr)
-		*Param_HasValidItem = Parms.Param_HasValidItem;
+	if (HasValidItem_0 != nullptr)
+		*HasValidItem_0 = Parms.HasValidItem_0;
 }
 
 
 // Function Results_Badge.Results_Badge_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_PlayRate                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   PlayRate_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_Badge_C::Initialize(float Param_PlayRate)
+void UResults_Badge_C::Initialize(float PlayRate_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -182,7 +182,7 @@ void UResults_Badge_C::Initialize(float Param_PlayRate)
 
 	Params::Results_Badge_C_Initialize Parms{};
 
-	Parms.Param_PlayRate = Param_PlayRate;
+	Parms.PlayRate_0 = PlayRate_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

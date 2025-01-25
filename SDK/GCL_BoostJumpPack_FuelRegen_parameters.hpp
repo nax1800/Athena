@@ -39,10 +39,12 @@ public:
 	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue1;  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFuelPercent_FuelPercent12;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFuelPercent_FuelPercent2;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetReserveFuelPercent_FuelPercent;        // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
 static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen) == 0x000050, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
@@ -61,9 +63,10 @@ static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJ
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_GetSkeletalMeshForPartType_ReturnValue1) == 0x000038, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_GetSkeletalMeshForPartType_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_IsValid_ReturnValue1) == 0x000040, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, Temp_bool_IsClosed_Variable) == 0x000041, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_IsValid_ReturnValue12) == 0x000042, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_GetFuelPercent_FuelPercent12) == 0x000044, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_GetFuelPercent_FuelPercent12' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_IsValid_ReturnValue2) == 0x000042, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_GetFuelPercent_FuelPercent2) == 0x000044, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_GetFuelPercent_FuelPercent2' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000048, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen, CallFunc_GetReserveFuelPercent_FuelPercent) == 0x00004C, "Member 'GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen::CallFunc_GetReserveFuelPercent_FuelPercent' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -120,29 +123,34 @@ static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_OnRemove, CallFunc_IsValid_
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_OnRemove, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x0000C8, "Member 'GCL_BoostJumpPack_FuelRegen_C_OnRemove::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.CacheAttributes
-// 0x0018 (0x0018 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct GCL_BoostJumpPack_FuelRegen_C_CacheAttributes final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue;   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAttribute                     ReserveMaxFuelAttribute;                           // 0x0000(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FGameplayAttribute                     MaxFuelAttribute;                                  // 0x0020(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue1;  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute1; // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue1;           // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_CacheAttributes");
-static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes) == 0x000018, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_CacheAttributes");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, Temp_bool_Variable) == 0x000000, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue) == 0x000004, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetSimulatedJetpackMaxFuel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_ReturnValue) == 0x00000C, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, K2Node_Select_Default) == 0x000010, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_FMax_ReturnValue) == 0x000014, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_CacheAttributes");
+static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes) == 0x000060, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_CacheAttributes");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, ReserveMaxFuelAttribute) == 0x000000, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::ReserveMaxFuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, MaxFuelAttribute) == 0x000020, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::MaxFuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x000040, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000044, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_ReturnValue) == 0x000048, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_IsValid_ReturnValue) == 0x00004C, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetSimulatedAttributeValue_ReturnValue1) == 0x000050, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetSimulatedAttributeValue_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute1) == 0x000054, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute1' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_CacheAttributes, CallFunc_GetFloatAttribute_ReturnValue1) == 0x000058, "Member 'GCL_BoostJumpPack_FuelRegen_C_CacheAttributes::CallFunc_GetFloatAttribute_ReturnValue1' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetFuelPercent
 // 0x000C (0x000C - 0x0000)
@@ -175,7 +183,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue1;         // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue1;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -189,33 +197,71 @@ static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000018, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000020, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_K2_GetRootComponent_ReturnValue1) == 0x000028, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_K2_GetRootComponent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_IsValid_ReturnValue12) == 0x000030, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_IsValid_ReturnValue2) == 0x000030, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled, CallFunc_SpawnSoundAttached_ReturnValue1) == 0x000038, "Member 'GCL_BoostJumpPack_FuelRegen_C_SetFuelRechargeAudioEnabled::CallFunc_SpawnSoundAttached_ReturnValue1' has a wrong offset!");
 
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetFuel
-// 0x0018 (0x0018 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct GCL_BoostJumpPack_FuelRegen_C_GetFuel final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetSimulatedJetpackFuel_ReturnValue;      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     FuelAttribute;                                     // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_GetFuel) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_GetFuel");
-static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_GetFuel) == 0x000018, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_GetFuel");
+static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_GetFuel) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_GetFuel");
+static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_GetFuel) == 0x000038, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_GetFuel");
 static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, Temp_bool_Variable) == 0x000004, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetSimulatedJetpackFuel_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetSimulatedJetpackFuel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x00000C, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x000010, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, K2Node_Select_Default) == 0x000014, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, FuelAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::FuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000028, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetFuel, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetFuel::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
+
+// Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetReserveFuelPercent
+// 0x000C (0x000C - 0x0000)
+struct GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent final
+{
+public:
+	float                                         FuelPercent;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetReserveFuel_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent) == 0x000004, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent");
+static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent) == 0x00000C, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent, FuelPercent) == 0x000000, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent::FuelPercent' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent, CallFunc_GetReserveFuel_ReturnValue) == 0x000004, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent::CallFunc_GetReserveFuel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuelPercent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.GetReserveFuel
+// 0x0038 (0x0038 - 0x0000)
+struct GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     ReserveFuelAttribute;                              // 0x0008(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatAttribute_ReturnValue;            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetSimulatedAttributeValue_ReturnValue;   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel) == 0x000008, "Wrong alignment on GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel");
+static_assert(sizeof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel) == 0x000038, "Wrong size on GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, ReturnValue) == 0x000000, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, ReserveFuelAttribute) == 0x000008, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::ReserveFuelAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000028, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, CallFunc_GetFloatAttribute_ReturnValue) == 0x00002C, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel, CallFunc_GetSimulatedAttributeValue_ReturnValue) == 0x000034, "Member 'GCL_BoostJumpPack_FuelRegen_C_GetReserveFuel::CallFunc_GetSimulatedAttributeValue_ReturnValue' has a wrong offset!");
 
 }
 

@@ -21,32 +21,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass UIManager.UIManager_C
-// 0x00B0 (0x0490 - 0x03E0)
+// 0x00B0 (0x0430 - 0x0380)
 class UUIManager_C final : public UFortUIManagerWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UNamedSlot*                             Confirmation_Layer;                                // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             ControllerDisconnectedLayer;                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Error_Layer;                                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Modal_Layer;                                       // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UQuestTalkingHeadWidget_C*              QuestTalkingHeadWidget;                            // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             State_Content_Layer;                               // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             TalkingHeadLayer;                                  // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UToastDisplayArea_C*                    ToastDisplayArea;                                  // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             ToastDisplayLayer;                                 // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Tutorial_Layer;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTutorialOverlay_C*                     TutorialOverlay;                                   // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActivatablePanel*                CurrentModalWidget;                                // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UCommonActivatablePanel*>        ModalQueue;                                        // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FFortDialogDescription_NUI>     ConfirmationQueue;                                 // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
-	class UConfirmationWindow_C*                  ConfirmationWindow;                                // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UErrorWindow_C*                         ErrorWindow;                                       // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWebPurchase_C*                         WebPurchaseWindow;                                 // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UProgressModalWidget_C*                 ControllerDisconnectedModal;                       // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bClosingConfirmation;                              // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bClosingErrorDialog;                               // 0x0489(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bShouldTriggerCameraModeOnClose;                   // 0x048A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
+	class UNamedSlot*                             Confirmation_Layer;                                // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ControllerDisconnectedLayer;                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Error_Layer;                                       // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Modal_Layer;                                       // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UQuestTalkingHeadWidget_C*              QuestTalkingHeadWidget;                            // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             State_Content_Layer;                               // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             TalkingHeadLayer;                                  // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UToastDisplayArea_C*                    ToastDisplayArea;                                  // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ToastDisplayLayer;                                 // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Tutorial_Layer;                                    // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTutorialOverlay_C*                     TutorialOverlay;                                   // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActivatablePanel*                CurrentModalWidget;                                // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UCommonActivatablePanel*>        ModalQueue;                                        // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FFortDialogDescription_NUI>     ConfirmationQueue;                                 // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	class UConfirmationWindow_C*                  ConfirmationWindow;                                // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UErrorWindow_C*                         ErrorWindow;                                       // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWebPurchase_C*                         WebPurchaseWindow;                                 // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UProgressModalWidget_C*                 ControllerDisconnectedModal;                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bClosingConfirmation;                              // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bClosingErrorDialog;                               // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bShouldTriggerCameraModeOnClose;                   // 0x042A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_UIManager(int32 EntryPoint);
@@ -104,29 +104,29 @@ public:
 	}
 };
 static_assert(alignof(UUIManager_C) == 0x000008, "Wrong alignment on UUIManager_C");
-static_assert(sizeof(UUIManager_C) == 0x000490, "Wrong size on UUIManager_C");
-static_assert(offsetof(UUIManager_C, UberGraphFrame) == 0x0003E0, "Member 'UUIManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Confirmation_Layer) == 0x0003E8, "Member 'UUIManager_C::Confirmation_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ControllerDisconnectedLayer) == 0x0003F0, "Member 'UUIManager_C::ControllerDisconnectedLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Error_Layer) == 0x0003F8, "Member 'UUIManager_C::Error_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Modal_Layer) == 0x000400, "Member 'UUIManager_C::Modal_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, QuestTalkingHeadWidget) == 0x000408, "Member 'UUIManager_C::QuestTalkingHeadWidget' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, State_Content_Layer) == 0x000410, "Member 'UUIManager_C::State_Content_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, TalkingHeadLayer) == 0x000418, "Member 'UUIManager_C::TalkingHeadLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ToastDisplayArea) == 0x000420, "Member 'UUIManager_C::ToastDisplayArea' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ToastDisplayLayer) == 0x000428, "Member 'UUIManager_C::ToastDisplayLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Tutorial_Layer) == 0x000430, "Member 'UUIManager_C::Tutorial_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, TutorialOverlay) == 0x000438, "Member 'UUIManager_C::TutorialOverlay' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, CurrentModalWidget) == 0x000440, "Member 'UUIManager_C::CurrentModalWidget' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ModalQueue) == 0x000448, "Member 'UUIManager_C::ModalQueue' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ConfirmationQueue) == 0x000458, "Member 'UUIManager_C::ConfirmationQueue' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ConfirmationWindow) == 0x000468, "Member 'UUIManager_C::ConfirmationWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ErrorWindow) == 0x000470, "Member 'UUIManager_C::ErrorWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, WebPurchaseWindow) == 0x000478, "Member 'UUIManager_C::WebPurchaseWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ControllerDisconnectedModal) == 0x000480, "Member 'UUIManager_C::ControllerDisconnectedModal' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, bClosingConfirmation) == 0x000488, "Member 'UUIManager_C::bClosingConfirmation' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, bClosingErrorDialog) == 0x000489, "Member 'UUIManager_C::bClosingErrorDialog' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, bShouldTriggerCameraModeOnClose) == 0x00048A, "Member 'UUIManager_C::bShouldTriggerCameraModeOnClose' has a wrong offset!");
+static_assert(sizeof(UUIManager_C) == 0x000430, "Wrong size on UUIManager_C");
+static_assert(offsetof(UUIManager_C, UberGraphFrame) == 0x000380, "Member 'UUIManager_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, Confirmation_Layer) == 0x000388, "Member 'UUIManager_C::Confirmation_Layer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ControllerDisconnectedLayer) == 0x000390, "Member 'UUIManager_C::ControllerDisconnectedLayer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, Error_Layer) == 0x000398, "Member 'UUIManager_C::Error_Layer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, Modal_Layer) == 0x0003A0, "Member 'UUIManager_C::Modal_Layer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, QuestTalkingHeadWidget) == 0x0003A8, "Member 'UUIManager_C::QuestTalkingHeadWidget' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, State_Content_Layer) == 0x0003B0, "Member 'UUIManager_C::State_Content_Layer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, TalkingHeadLayer) == 0x0003B8, "Member 'UUIManager_C::TalkingHeadLayer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ToastDisplayArea) == 0x0003C0, "Member 'UUIManager_C::ToastDisplayArea' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ToastDisplayLayer) == 0x0003C8, "Member 'UUIManager_C::ToastDisplayLayer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, Tutorial_Layer) == 0x0003D0, "Member 'UUIManager_C::Tutorial_Layer' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, TutorialOverlay) == 0x0003D8, "Member 'UUIManager_C::TutorialOverlay' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, CurrentModalWidget) == 0x0003E0, "Member 'UUIManager_C::CurrentModalWidget' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ModalQueue) == 0x0003E8, "Member 'UUIManager_C::ModalQueue' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ConfirmationQueue) == 0x0003F8, "Member 'UUIManager_C::ConfirmationQueue' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ConfirmationWindow) == 0x000408, "Member 'UUIManager_C::ConfirmationWindow' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ErrorWindow) == 0x000410, "Member 'UUIManager_C::ErrorWindow' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, WebPurchaseWindow) == 0x000418, "Member 'UUIManager_C::WebPurchaseWindow' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, ControllerDisconnectedModal) == 0x000420, "Member 'UUIManager_C::ControllerDisconnectedModal' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, bClosingConfirmation) == 0x000428, "Member 'UUIManager_C::bClosingConfirmation' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, bClosingErrorDialog) == 0x000429, "Member 'UUIManager_C::bClosingErrorDialog' has a wrong offset!");
+static_assert(offsetof(UUIManager_C, bShouldTriggerCameraModeOnClose) == 0x00042A, "Member 'UUIManager_C::bShouldTriggerCameraModeOnClose' has a wrong offset!");
 
 }
 

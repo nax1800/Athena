@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -26,7 +26,7 @@ public:
 	bool                                          bAllowReplication;                                 // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
+	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation) const;
 
 public:
 	static class UClass* StaticClass()

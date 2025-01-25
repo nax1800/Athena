@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "B_Prj_Athena_Grenade_Base_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "B_Prj_Athena_Grenade_Base_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_Athena_DanceGrenade.B_Prj_Athena_DanceGrenade_C
-// 0x0028 (0x08E0 - 0x08B8)
+// 0x0028 (0x0788 - 0x0760)
 class AB_Prj_Athena_DanceGrenade_C final : public AB_Prj_Athena_Grenade_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_Prj_Athena_DanceGrenade_C;        // 0x08B8(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTagContainer                  StunAbility;                                       // 0x08C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_Prj_Athena_DanceGrenade_C;        // 0x0760(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTagContainer                  StunAbility;                                       // 0x0768(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_B_Prj_Athena_DanceGrenade(int32 EntryPoint);
-	void BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void OnBounce(const struct FHitResult& Hit);
+	void BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults);
 	void FuseEnded();
+	void OnBounce(const struct FHitResult& Hit);
 	void UserConstructionScript();
 
 public:
@@ -45,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_Athena_DanceGrenade_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_DanceGrenade_C");
-static_assert(sizeof(AB_Prj_Athena_DanceGrenade_C) == 0x0008E0, "Wrong size on AB_Prj_Athena_DanceGrenade_C");
-static_assert(offsetof(AB_Prj_Athena_DanceGrenade_C, UberGraphFrame_B_Prj_Athena_DanceGrenade_C) == 0x0008B8, "Member 'AB_Prj_Athena_DanceGrenade_C::UberGraphFrame_B_Prj_Athena_DanceGrenade_C' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_DanceGrenade_C, StunAbility) == 0x0008C0, "Member 'AB_Prj_Athena_DanceGrenade_C::StunAbility' has a wrong offset!");
+static_assert(sizeof(AB_Prj_Athena_DanceGrenade_C) == 0x000788, "Wrong size on AB_Prj_Athena_DanceGrenade_C");
+static_assert(offsetof(AB_Prj_Athena_DanceGrenade_C, UberGraphFrame_B_Prj_Athena_DanceGrenade_C) == 0x000760, "Member 'AB_Prj_Athena_DanceGrenade_C::UberGraphFrame_B_Prj_Athena_DanceGrenade_C' has a wrong offset!");
+static_assert(offsetof(AB_Prj_Athena_DanceGrenade_C, StunAbility) == 0x000768, "Member 'AB_Prj_Athena_DanceGrenade_C::StunAbility' has a wrong offset!");
 
 }
 

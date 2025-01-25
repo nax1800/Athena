@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -35,24 +35,24 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0068(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x00A8(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x00D0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0110(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0128(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x0138(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0138(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0178(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12;                          // 0x0190(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue12;                     // 0x01A0(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0190(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01A0(0x0018)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue12;            // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDailyRewardsItem_C*                    CallFunc_Create_ReturnValue1;                      // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDailyRewardsItem_C*                    CallFunc_Create_ReturnValue12;                     // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDailyRewardsItem_C*                    CallFunc_Create_ReturnValue2;                      // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue1;     // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue12;    // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue2;     // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x01F8(0x0008)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,12 +67,12 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item1;                          // 0x0248(0x0010)(NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -88,22 +88,22 @@ static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSched
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData1) == 0x000068, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_TextToUpper_ReturnValue) == 0x0000A8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeArray_Array) == 0x0000C0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData12) == 0x0000D0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData2) == 0x0000D0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Format_ReturnValue) == 0x000110, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeArray_Array1) == 0x000128, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData123) == 0x000138, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData3) == 0x000138, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Format_ReturnValue1) == 0x000178, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Format_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeArray_Array12) == 0x000190, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Format_ReturnValue12) == 0x0001A0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Format_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeArray_Array2) == 0x000190, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Format_ReturnValue2) == 0x0001A0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Format_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_GetOwningPlayer_ReturnValue1) == 0x0001B8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_GetOwningPlayer_ReturnValue12) == 0x0001C0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_GetOwningPlayer_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_GetOwningPlayer_ReturnValue2) == 0x0001C0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Create_ReturnValue1) == 0x0001C8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Create_ReturnValue12) == 0x0001D0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Create_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Create_ReturnValue2) == 0x0001D0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Create_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_AddChildToHorizontalBox_ReturnValue1) == 0x0001D8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_AddChildToHorizontalBox_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, Temp_int_Loop_Counter_Variable) == 0x0001E0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Less_IntInt_ReturnValue) == 0x0001E4, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Add_IntInt_ReturnValue) == 0x0001E8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_AddChildToHorizontalBox_ReturnValue12) == 0x0001F0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_AddChildToHorizontalBox_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_AddChildToHorizontalBox_ReturnValue2) == 0x0001F0, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_AddChildToHorizontalBox_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_SlateChildSize) == 0x0001F8, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Array_Length_ReturnValue1) == 0x000200, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Add_IntInt_ReturnValue1) == 0x000204, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
@@ -115,10 +115,10 @@ static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSched
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Array_Get_Item) == 0x000228, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Less_IntInt_ReturnValue1) == 0x000238, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Subtract_IntInt_ReturnValue) == 0x00023C, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Less_IntInt_ReturnValue12) == 0x000240, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Less_IntInt_ReturnValue2) == 0x000240, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Array_Get_Item1) == 0x000248, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Array_Get_Item1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_BooleanOR_ReturnValue) == 0x000258, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Add_IntInt_ReturnValue12) == 0x00025C, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Add_IntInt_ReturnValue2) == 0x00025C, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Subtract_IntInt_ReturnValue1) == 0x000260, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000264, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 

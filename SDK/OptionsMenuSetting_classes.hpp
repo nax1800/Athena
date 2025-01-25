@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -18,23 +19,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenuSetting.OptionsMenuSetting_C
-// 0x00C0 (0x02E8 - 0x0228)
+// 0x00B8 (0x02F8 - 0x0240)
 class UOptionsMenuSetting_C final : public UFortOptionsMenuSetting
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
-	class UButton*                                Button_0;                                          // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonLeft;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonRight;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAnalogSlider*                          MenuSlider;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxContainer;                                  // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SliderBackground;                                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       SliderText;                                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       SliderValue;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USpacer*                                SpacerBottom;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextRotator_C*                         TextRotator;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   SettingValueChanged;                               // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
+	class UButton*                                Button_0;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonTouchTooltip;                                // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMenuAnchor*                            MenuAnchorSettingDescription;                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAnalogSlider*                          MenuSlider;                                        // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxContainer;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxLabel;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SliderBackground;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       SliderText;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       SliderValue;                                       // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                SpacerBottom;                                      // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         Total_Width;                                       // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Slider_Texture;                                    // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,15 +46,19 @@ public:
 	float                                         MaxSensitivityValue;                               // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MinSensitivityValue;                               // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ERoundingMode                                 RoundingMode;                                      // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           Tooltip_Timer;                                     // 0x02E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          DisplayRenderScale;                                // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1[0x3];                                      // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PreviousValue;                                     // 0x02F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SettingValueChanged__DelegateSignature(float Slider_Value);
 	void ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint);
-	void BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void OnReleaseToPool();
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
-	void BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature(int32 Value);
+	void CenterOnWidget();
+	void UpdateSetting(class UCommonTextBlock* TooltipTextBlock);
+	void BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature();
@@ -63,23 +66,18 @@ public:
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void Construct();
-	void Reset();
-	void ToggleExpansion();
-	void SetSelected(bool bSelected);
-	void SetIndexInList(int32 InIndexInList);
-	void SetExpanded(bool bExpanded);
-	void RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback);
-	void Private_OnExpanderArrowShiftClicked();
-	void OnAcquireFromPool();
-	void Center_on_Widget();
-	void Update_Setting(class UCommonTextBlock* Tooltip_Text_Block);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnEntryReleased();
 	void UpdateSize();
 	void HandlePawnSet();
+	class UWidget* OnGetMenuContent();
+	void Show_Tooltip();
+	void Hide_Tooltip();
+	void SetSliderTextRenderScale(float Scale_Normalized);
+	void SetDarkTabStyle();
 
-	class UObject* GetData() const;
-	bool IsItemExpanded() const;
-	int32 DoesItemHaveChildren() const;
-	int32 GetIndentLevel() const;
+	class UObject* GetListItemObject() const;
 
 public:
 	static class UClass* StaticClass()
@@ -92,20 +90,18 @@ public:
 	}
 };
 static_assert(alignof(UOptionsMenuSetting_C) == 0x000008, "Wrong alignment on UOptionsMenuSetting_C");
-static_assert(sizeof(UOptionsMenuSetting_C) == 0x0002E8, "Wrong size on UOptionsMenuSetting_C");
-static_assert(offsetof(UOptionsMenuSetting_C, UberGraphFrame) == 0x000228, "Member 'UOptionsMenuSetting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, Button_0) == 0x000230, "Member 'UOptionsMenuSetting_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, ButtonLeft) == 0x000238, "Member 'UOptionsMenuSetting_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, ButtonRight) == 0x000240, "Member 'UOptionsMenuSetting_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, CommonWidgetSwitcher_0) == 0x000248, "Member 'UOptionsMenuSetting_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, MenuSlider) == 0x000250, "Member 'UOptionsMenuSetting_C::MenuSlider' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SizeBoxContainer) == 0x000258, "Member 'UOptionsMenuSetting_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SliderBackground) == 0x000260, "Member 'UOptionsMenuSetting_C::SliderBackground' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SliderText) == 0x000268, "Member 'UOptionsMenuSetting_C::SliderText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SliderValue) == 0x000270, "Member 'UOptionsMenuSetting_C::SliderValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SpacerBottom) == 0x000278, "Member 'UOptionsMenuSetting_C::SpacerBottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, TextRotator) == 0x000280, "Member 'UOptionsMenuSetting_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSetting_C, SettingValueChanged) == 0x000288, "Member 'UOptionsMenuSetting_C::SettingValueChanged' has a wrong offset!");
+static_assert(sizeof(UOptionsMenuSetting_C) == 0x0002F8, "Wrong size on UOptionsMenuSetting_C");
+static_assert(offsetof(UOptionsMenuSetting_C, UberGraphFrame) == 0x000240, "Member 'UOptionsMenuSetting_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, Button_0) == 0x000248, "Member 'UOptionsMenuSetting_C::Button_0' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, ButtonTouchTooltip) == 0x000250, "Member 'UOptionsMenuSetting_C::ButtonTouchTooltip' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, MenuAnchorSettingDescription) == 0x000258, "Member 'UOptionsMenuSetting_C::MenuAnchorSettingDescription' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, MenuSlider) == 0x000260, "Member 'UOptionsMenuSetting_C::MenuSlider' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SizeBoxContainer) == 0x000268, "Member 'UOptionsMenuSetting_C::SizeBoxContainer' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SizeBoxLabel) == 0x000270, "Member 'UOptionsMenuSetting_C::SizeBoxLabel' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SliderBackground) == 0x000278, "Member 'UOptionsMenuSetting_C::SliderBackground' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SliderText) == 0x000280, "Member 'UOptionsMenuSetting_C::SliderText' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SliderValue) == 0x000288, "Member 'UOptionsMenuSetting_C::SliderValue' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, SpacerBottom) == 0x000290, "Member 'UOptionsMenuSetting_C::SpacerBottom' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSetting_C, Total_Width) == 0x000298, "Member 'UOptionsMenuSetting_C::Total_Width' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSetting_C, Slider_Texture) == 0x0002A0, "Member 'UOptionsMenuSetting_C::Slider_Texture' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSetting_C, Tab_Tooltip_Text) == 0x0002A8, "Member 'UOptionsMenuSetting_C::Tab_Tooltip_Text' has a wrong offset!");
@@ -117,6 +113,9 @@ static_assert(offsetof(UOptionsMenuSetting_C, MaxFractionalDigits) == 0x0002D4, 
 static_assert(offsetof(UOptionsMenuSetting_C, MaxSensitivityValue) == 0x0002D8, "Member 'UOptionsMenuSetting_C::MaxSensitivityValue' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSetting_C, MinSensitivityValue) == 0x0002DC, "Member 'UOptionsMenuSetting_C::MinSensitivityValue' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSetting_C, RoundingMode) == 0x0002E0, "Member 'UOptionsMenuSetting_C::RoundingMode' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, Tooltip_Timer) == 0x0002E8, "Member 'UOptionsMenuSetting_C::Tooltip_Timer' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, DisplayRenderScale) == 0x0002F0, "Member 'UOptionsMenuSetting_C::DisplayRenderScale' has a wrong offset!");
+static_assert(offsetof(UOptionsMenuSetting_C, PreviousValue) == 0x0002F4, "Member 'UOptionsMenuSetting_C::PreviousValue' has a wrong offset!");
 
 }
 

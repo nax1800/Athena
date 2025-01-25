@@ -38,7 +38,7 @@ void ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher__DelegateSignature(class AB
 
 
 // Function BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone
-// ()
+// (HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -127,20 +127,6 @@ void ABP_VictoryDrone_C::UserConstructionScript()
 }
 
 
-// Function BP_VictoryDrone.BP_VictoryDrone_C.TriggerPlayerSpawnEffects
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_VictoryDrone_C::TriggerPlayerSpawnEffects()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "TriggerPlayerSpawnEffects");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_VictoryDrone.BP_VictoryDrone_C.InitDrone
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -155,15 +141,15 @@ void ABP_VictoryDrone_C::InitDrone()
 }
 
 
-// Function BP_VictoryDrone.BP_VictoryDrone_C.PlaySpawnOutAnim
+// Function BP_VictoryDrone.BP_VictoryDrone_C.PlaySpawnAnim
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_VictoryDrone_C::PlaySpawnOutAnim()
+void ABP_VictoryDrone_C::PlaySpawnAnim()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnOutAnim");
+		Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

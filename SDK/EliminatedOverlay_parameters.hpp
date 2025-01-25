@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -20,14 +21,14 @@ namespace SDK::Params
 {
 
 // Function EliminatedOverlay.EliminatedOverlay_C.ExecuteUbergraph_EliminatedOverlay
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 NewKills)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -38,7 +39,7 @@ public:
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
 	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x007C(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,15 +50,16 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bSpectatorStreaming)>     K2Node_CreateDelegate_OutputDelegate1;             // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
 	class AAthena_PlayerController_C*             K2Node_DynamicCast_AsAthena_Player_Controller;     // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x00E8(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay) == 0x000008, "Wrong alignment on EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay");
-static_assert(sizeof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay) == 0x0000F0, "Wrong size on EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay");
+static_assert(sizeof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay) == 0x000100, "Wrong size on EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, EntryPoint) == 0x000000, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000020, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_GetViewTarget_ReturnValue) == 0x000030, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
@@ -66,7 +68,7 @@ static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess1) == 0x000050, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000070, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess12) == 0x000078, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess2) == 0x000078, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_Event_MyGeometry) == 0x00007C, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_Event_InDeltaTime) == 0x0000B4, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_Event_InDeltaTime' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_IsAnimationPlaying_ReturnValue) == 0x0000B8, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
@@ -75,8 +77,9 @@ static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, C
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_GetOwningPlayer_ReturnValue1) == 0x0000C0, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_CreateDelegate_OutputDelegate1) == 0x0000C8, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_AsAthena_Player_Controller) == 0x0000D8, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_AsAthena_Player_Controller' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess123) == 0x0000E0, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_DynamicCast_bSuccess3) == 0x0000E0, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, CallFunc_K2_SetTimer_ReturnValue) == 0x0000E8, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay, K2Node_MakeArray_Array) == 0x0000F0, "Member 'EliminatedOverlay_C_ExecuteUbergraph_EliminatedOverlay::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -92,119 +95,238 @@ static_assert(offsetof(EliminatedOverlay_C_Tick, MyGeometry) == 0x000000, "Membe
 static_assert(offsetof(EliminatedOverlay_C_Tick, InDeltaTime) == 0x000038, "Member 'EliminatedOverlay_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.OnPawnDied
-// 0x00C8 (0x00C8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct EliminatedOverlay_C_OnPawnDied final
 {
 public:
-	struct FFortPlayerDeathReport                 Param_DeathReport;                                 // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FFortPlayerDeathReport                 DeathReport_0;                                     // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0058(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0070(0x0018)()
-	class AFortPawn*                              CallFunc_ProcessDeathReport_KillerPawn;            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ProcessDeathReport_DidPlayerKillThemselves; // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_ProcessDeathReport_KillerName;            // 0x0098(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
+	bool                                          CallFunc_ProcessDeathReport_DidPlayerKillThemselves; // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_ProcessDeathReport_KillerName;            // 0x0090(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x00A8(0x0018)()
 };
 static_assert(alignof(EliminatedOverlay_C_OnPawnDied) == 0x000008, "Wrong alignment on EliminatedOverlay_C_OnPawnDied");
-static_assert(sizeof(EliminatedOverlay_C_OnPawnDied) == 0x0000C8, "Wrong size on EliminatedOverlay_C_OnPawnDied");
-static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, Param_DeathReport) == 0x000000, "Member 'EliminatedOverlay_C_OnPawnDied::Param_DeathReport' has a wrong offset!");
+static_assert(sizeof(EliminatedOverlay_C_OnPawnDied) == 0x0000C0, "Wrong size on EliminatedOverlay_C_OnPawnDied");
+static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, DeathReport_0) == 0x000000, "Member 'EliminatedOverlay_C_OnPawnDied::DeathReport_0' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, Temp_bool_Variable) == 0x000050, "Member 'EliminatedOverlay_C_OnPawnDied::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, Temp_text_Variable) == 0x000058, "Member 'EliminatedOverlay_C_OnPawnDied::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, Temp_text_Variable1) == 0x000070, "Member 'EliminatedOverlay_C_OnPawnDied::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, CallFunc_ProcessDeathReport_KillerPawn) == 0x000088, "Member 'EliminatedOverlay_C_OnPawnDied::CallFunc_ProcessDeathReport_KillerPawn' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, CallFunc_ProcessDeathReport_DidPlayerKillThemselves) == 0x000090, "Member 'EliminatedOverlay_C_OnPawnDied::CallFunc_ProcessDeathReport_DidPlayerKillThemselves' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, CallFunc_ProcessDeathReport_KillerName) == 0x000098, "Member 'EliminatedOverlay_C_OnPawnDied::CallFunc_ProcessDeathReport_KillerName' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, K2Node_Select_Default) == 0x0000B0, "Member 'EliminatedOverlay_C_OnPawnDied::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, CallFunc_ProcessDeathReport_DidPlayerKillThemselves) == 0x000088, "Member 'EliminatedOverlay_C_OnPawnDied::CallFunc_ProcessDeathReport_DidPlayerKillThemselves' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, CallFunc_ProcessDeathReport_KillerName) == 0x000090, "Member 'EliminatedOverlay_C_OnPawnDied::CallFunc_ProcessDeathReport_KillerName' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_OnPawnDied, K2Node_Select_Default) == 0x0000A8, "Member 'EliminatedOverlay_C_OnPawnDied::K2Node_Select_Default' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.UpdatePlace
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x0288 (0x0288 - 0x0000)
 struct EliminatedOverlay_C_UpdatePlace final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
-	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0018)()
-	bool                                          CallFunc_IsSquadDead_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BA[0x2];                                       // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x00D8(0x0018)()
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable1;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_57[0x1];                                       // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDisplayScoreUI_ReturnValue;         // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
+	class UObject*                                K2Node_Select_Default;                             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select1_Default;                            // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x00E8(0x0018)()
+	class FText                                   Temp_text_Variable1;                               // 0x0100(0x0018)()
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0118(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select2_Default;                            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0148(0x0058)(HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x01A0(0x0028)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSquadDead_ReturnValue;                  // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1EB[0x5];                                      // 0x01EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x01F0(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0248(0x0018)()
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_262[0x2];                                      // 0x0262(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select5_Default;                            // 0x0270(0x0018)()
 };
 static_assert(alignof(EliminatedOverlay_C_UpdatePlace) == 0x000008, "Wrong alignment on EliminatedOverlay_C_UpdatePlace");
-static_assert(sizeof(EliminatedOverlay_C_UpdatePlace) == 0x0000F0, "Wrong size on EliminatedOverlay_C_UpdatePlace");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable) == 0x000000, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_text_Variable) == 0x000008, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_text_Variable1) == 0x000020, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeArray_Array) == 0x000080, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000090, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Format_ReturnValue) == 0x0000A0, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_IsSquadDead_ReturnValue) == 0x0000B8, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_IsSquadDead_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Not_PreBool_ReturnValue) == 0x0000B9, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Array_Length_ReturnValue) == 0x0000BC, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C0, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x0000C8, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_bSuccess1) == 0x0000D0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(sizeof(EliminatedOverlay_C_UpdatePlace) == 0x000288, "Wrong size on EliminatedOverlay_C_UpdatePlace");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_struct_Variable) == 0x000000, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_struct_Variable1) == 0x000010, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_struct_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_struct_Variable2) == 0x000020, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_struct_Variable2' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable) == 0x000030, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_object_Variable) == 0x000038, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_object_Variable1) == 0x000040, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_object_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable1) == 0x000048, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_int_Variable) == 0x00004C, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_int_Variable1) == 0x000050, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable2) == 0x000054, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_byte_Variable) == 0x000055, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_byte_Variable1) == 0x000056, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_ShouldDisplayScoreUI_ReturnValue) == 0x0000A0, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_ShouldDisplayScoreUI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeArray_Array) == 0x0000A8, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select_Default) == 0x0000D8, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select1_Default) == 0x0000E0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable3) == 0x0000E4, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_text_Variable) == 0x0000E8, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_text_Variable1) == 0x000100, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_text_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_struct_Variable3) == 0x000118, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_struct_Variable3' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_int_Variable2) == 0x000128, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_int_Variable3) == 0x00012C, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, Temp_bool_Variable4) == 0x000130, "Member 'EliminatedOverlay_C_UpdatePlace::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select2_Default) == 0x000134, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select3_Default) == 0x000138, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeStruct_SlateFontInfo) == 0x000148, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeStruct_SlateColor) == 0x0001A0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_GetOwningPlayer_ReturnValue) == 0x0001C8, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x0001D0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_bSuccess) == 0x0001D8, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x0001E0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_DynamicCast_bSuccess1) == 0x0001E8, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_IsSquadDead_ReturnValue) == 0x0001E9, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_IsSquadDead_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Not_PreBool_ReturnValue) == 0x0001EA, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeStruct_FormatArgumentData1) == 0x0001F0, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_MakeArray_Array1) == 0x000230, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Greater_IntInt_ReturnValue) == 0x000240, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Format_ReturnValue1) == 0x000248, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_BooleanAND_ReturnValue) == 0x000260, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select4_Default) == 0x000261, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Array_Length_ReturnValue) == 0x000264, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, CallFunc_Greater_IntInt_ReturnValue1) == 0x000268, "Member 'EliminatedOverlay_C_UpdatePlace::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlace, K2Node_Select5_Default) == 0x000270, "Member 'EliminatedOverlay_C_UpdatePlace::K2Node_Select5_Default' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.Winner Announced
-// 0x0040 (0x0040 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct EliminatedOverlay_C_Winner_Announced final
 {
 public:
 	class FString                                 InString;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	class FString                                 CallFunc_EscapeStringForRichText_ReturnValue;      // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0030(0x0018)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetWinnerText_ReturnText;                 // 0x0068(0x0018)()
+	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortTeam                                     CallFunc_GetActorTeam_ReturnValue;                 // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8A[0x2];                                       // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DisplayPlayerWonTime_ReturnValue;         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0040)(HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00E0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0018)()
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(EliminatedOverlay_C_Winner_Announced) == 0x000008, "Wrong alignment on EliminatedOverlay_C_Winner_Announced");
-static_assert(sizeof(EliminatedOverlay_C_Winner_Announced) == 0x000040, "Wrong size on EliminatedOverlay_C_Winner_Announced");
+static_assert(sizeof(EliminatedOverlay_C_Winner_Announced) == 0x000130, "Wrong size on EliminatedOverlay_C_Winner_Announced");
 static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, InString) == 0x000000, "Member 'EliminatedOverlay_C_Winner_Announced::InString' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetGameState_ReturnValue) == 0x000028, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000030, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_EscapeStringForRichText_ReturnValue) == 0x000020, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_EscapeStringForRichText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Conv_StringToText_ReturnValue) == 0x000030, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000058, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetWinnerText_ReturnText) == 0x000068, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetWinnerText_ReturnText' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000080, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_bSuccess1) == 0x000088, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetActorTeam_ReturnValue) == 0x000089, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Array_Length_ReturnValue) == 0x00008C, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetContext_ReturnValue1) == 0x000090, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Subtract_IntInt_ReturnValue) == 0x000098, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_DisplayPlayerWonTime_ReturnValue) == 0x00009C, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_DisplayPlayerWonTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000E0, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_MakeArray_Array) == 0x0000E8, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000F8, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Format_ReturnValue) == 0x000100, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_GetGameState_ReturnValue) == 0x000118, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000120, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, K2Node_DynamicCast_bSuccess2) == 0x000128, "Member 'EliminatedOverlay_C_Winner_Announced::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_Conv_IntToByte_ReturnValue) == 0x000129, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winner_Announced, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00012A, "Member 'EliminatedOverlay_C_Winner_Announced::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.UpdateYouPlacedBoxVisibility
-// 0x0007 (0x0007 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct EliminatedOverlay_C_UpdateYouPlacedBoxVisibility final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDisplayPlacement_ReturnValue;       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility) == 0x000001, "Wrong alignment on EliminatedOverlay_C_UpdateYouPlacedBoxVisibility");
-static_assert(sizeof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility) == 0x000007, "Wrong size on EliminatedOverlay_C_UpdateYouPlacedBoxVisibility");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_bool_Variable) == 0x000000, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_byte_Variable) == 0x000001, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_byte_Variable1) == 0x000002, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, K2Node_Select_Default) == 0x000006, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility) == 0x000008, "Wrong alignment on EliminatedOverlay_C_UpdateYouPlacedBoxVisibility");
+static_assert(sizeof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility) == 0x000018, "Wrong size on EliminatedOverlay_C_UpdateYouPlacedBoxVisibility");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_byte_Variable) == 0x000000, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_byte_Variable1) == 0x000001, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, Temp_bool_Variable) == 0x000002, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_ShouldDisplayPlacement_ReturnValue) == 0x000010, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_ShouldDisplayPlacement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_Greater_IntInt_ReturnValue) == 0x000012, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000013, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, CallFunc_BooleanAND_ReturnValue1) == 0x000014, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateYouPlacedBoxVisibility, K2Node_Select_Default) == 0x000015, "Member 'EliminatedOverlay_C_UpdateYouPlacedBoxVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.OnKillFeedUpdated
 // 0x0028 (0x0028 - 0x0000)
@@ -216,7 +338,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSquadDead_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(EliminatedOverlay_C_OnKillFeedUpdated) == 0x000008, "Wrong alignment on EliminatedOverlay_C_OnKillFeedUpdated");
@@ -229,47 +351,42 @@ static_assert(offsetof(EliminatedOverlay_C_OnKillFeedUpdated, CallFunc_K2_SetTim
 static_assert(offsetof(EliminatedOverlay_C_OnKillFeedUpdated, CallFunc_Not_PreBool_ReturnValue) == 0x000020, "Member 'EliminatedOverlay_C_OnKillFeedUpdated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.ProcessDeathReport
-// 0x0108 (0x0108 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct EliminatedOverlay_C_ProcessDeathReport final
 {
 public:
 	struct FFortPlayerDeathReport                 FortPlayerDeathReport;                             // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class AFortPawn*                              KillerPawn;                                        // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DidPlayerKillThemselves;                           // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   KillerName;                                        // 0x0060(0x0018)(Parm, OutParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsUsingStreamerMode_ReturnValue;          // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_BuildString_Int_ReturnValue;              // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B0(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue1;           // 0x00C8(0x0018)()
-	class FString                                 CallFunc_GetPlayerName_ReturnValue1;               // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue12;          // 0x00F0(0x0018)()
+	bool                                          DidPlayerKillThemselves;                           // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   KillerName;                                        // 0x0058(0x0018)(Parm, OutParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0090(0x0018)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_TryToFilterNameOfPlayerForStreamerMode_ReturnValue; // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue1;           // 0x00D0(0x0018)()
 };
 static_assert(alignof(EliminatedOverlay_C_ProcessDeathReport) == 0x000008, "Wrong alignment on EliminatedOverlay_C_ProcessDeathReport");
-static_assert(sizeof(EliminatedOverlay_C_ProcessDeathReport) == 0x000108, "Wrong size on EliminatedOverlay_C_ProcessDeathReport");
+static_assert(sizeof(EliminatedOverlay_C_ProcessDeathReport) == 0x0000E8, "Wrong size on EliminatedOverlay_C_ProcessDeathReport");
 static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, FortPlayerDeathReport) == 0x000000, "Member 'EliminatedOverlay_C_ProcessDeathReport::FortPlayerDeathReport' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, KillerPawn) == 0x000050, "Member 'EliminatedOverlay_C_ProcessDeathReport::KillerPawn' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, DidPlayerKillThemselves) == 0x000058, "Member 'EliminatedOverlay_C_ProcessDeathReport::DidPlayerKillThemselves' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, KillerName) == 0x000060, "Member 'EliminatedOverlay_C_ProcessDeathReport::KillerName' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000080, "Member 'EliminatedOverlay_C_ProcessDeathReport::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'EliminatedOverlay_C_ProcessDeathReport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_IsValid_ReturnValue) == 0x000089, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_IsUsingStreamerMode_ReturnValue) == 0x00008A, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_IsUsingStreamerMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00008B, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_BuildString_Int_ReturnValue) == 0x000090, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_BuildString_Int_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetPlayerName_ReturnValue) == 0x0000A0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_Conv_StringToText_ReturnValue1) == 0x0000C8, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_Conv_StringToText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetPlayerName_ReturnValue1) == 0x0000E0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetPlayerName_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_Conv_StringToText_ReturnValue12) == 0x0000F0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_Conv_StringToText_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, DidPlayerKillThemselves) == 0x000050, "Member 'EliminatedOverlay_C_ProcessDeathReport::DidPlayerKillThemselves' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, KillerName) == 0x000058, "Member 'EliminatedOverlay_C_ProcessDeathReport::KillerName' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetOwningPlayer_ReturnValue) == 0x000070, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetPlayerName_ReturnValue) == 0x000080, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_GetOwningPlayer_ReturnValue1) == 0x0000A8, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x0000B0, "Member 'EliminatedOverlay_C_ProcessDeathReport::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'EliminatedOverlay_C_ProcessDeathReport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000B9, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_TryToFilterNameOfPlayerForStreamerMode_ReturnValue) == 0x0000C0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_TryToFilterNameOfPlayerForStreamerMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_ProcessDeathReport, CallFunc_Conv_StringToText_ReturnValue1) == 0x0000D0, "Member 'EliminatedOverlay_C_ProcessDeathReport::CallFunc_Conv_StringToText_ReturnValue1' has a wrong offset!");
 
 // Function EliminatedOverlay.EliminatedOverlay_C.SetBannerForKiller
 // 0x0060 (0x0060 - 0x0000)
@@ -305,19 +422,133 @@ static_assert(offsetof(EliminatedOverlay_C_StreamingLoadingChanged, Temp_byte_Va
 static_assert(offsetof(EliminatedOverlay_C_StreamingLoadingChanged, Temp_byte_Variable1) == 0x000003, "Member 'EliminatedOverlay_C_StreamingLoadingChanged::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(EliminatedOverlay_C_StreamingLoadingChanged, K2Node_Select_Default) == 0x000004, "Member 'EliminatedOverlay_C_StreamingLoadingChanged::K2Node_Select_Default' has a wrong offset!");
 
-// Function EliminatedOverlay.EliminatedOverlay_C.ViewTargetKillsChanged
-// 0x0020 (0x0020 - 0x0000)
-struct EliminatedOverlay_C_ViewTargetKillsChanged final
+// Function EliminatedOverlay.EliminatedOverlay_C.Winning Score Determined
+// 0x0090 (0x0090 - 0x0000)
+struct EliminatedOverlay_C_Winning_Score_Determined final
 {
 public:
-	int32                                         Kills;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+	int32                                         Score;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B[0x5];                                       // 0x007B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDisplayScoreUI_ReturnValue;         // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EliminatedOverlay_C_ViewTargetKillsChanged) == 0x000008, "Wrong alignment on EliminatedOverlay_C_ViewTargetKillsChanged");
-static_assert(sizeof(EliminatedOverlay_C_ViewTargetKillsChanged) == 0x000020, "Wrong size on EliminatedOverlay_C_ViewTargetKillsChanged");
-static_assert(offsetof(EliminatedOverlay_C_ViewTargetKillsChanged, Kills) == 0x000000, "Member 'EliminatedOverlay_C_ViewTargetKillsChanged::Kills' has a wrong offset!");
-static_assert(offsetof(EliminatedOverlay_C_ViewTargetKillsChanged, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'EliminatedOverlay_C_ViewTargetKillsChanged::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(alignof(EliminatedOverlay_C_Winning_Score_Determined) == 0x000008, "Wrong alignment on EliminatedOverlay_C_Winning_Score_Determined");
+static_assert(sizeof(EliminatedOverlay_C_Winning_Score_Determined) == 0x000090, "Wrong size on EliminatedOverlay_C_Winning_Score_Determined");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, Score) == 0x000000, "Member 'EliminatedOverlay_C_Winning_Score_Determined::Score' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, Temp_bool_Variable) == 0x000004, "Member 'EliminatedOverlay_C_Winning_Score_Determined::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'EliminatedOverlay_C_Winning_Score_Determined::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, CallFunc_Greater_IntInt_ReturnValue) == 0x000048, "Member 'EliminatedOverlay_C_Winning_Score_Determined::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, K2Node_MakeArray_Array) == 0x000050, "Member 'EliminatedOverlay_C_Winning_Score_Determined::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, CallFunc_Format_ReturnValue) == 0x000060, "Member 'EliminatedOverlay_C_Winning_Score_Determined::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, Temp_byte_Variable) == 0x000078, "Member 'EliminatedOverlay_C_Winning_Score_Determined::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, Temp_byte_Variable1) == 0x000079, "Member 'EliminatedOverlay_C_Winning_Score_Determined::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, K2Node_Select_Default) == 0x00007A, "Member 'EliminatedOverlay_C_Winning_Score_Determined::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'EliminatedOverlay_C_Winning_Score_Determined::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_Winning_Score_Determined, CallFunc_ShouldDisplayScoreUI_ReturnValue) == 0x000088, "Member 'EliminatedOverlay_C_Winning_Score_Determined::CallFunc_ShouldDisplayScoreUI_ReturnValue' has a wrong offset!");
+
+// Function EliminatedOverlay.EliminatedOverlay_C.OnPlayerLost
+// 0x0002 (0x0002 - 0x0000)
+struct EliminatedOverlay_C_OnPlayerLost final
+{
+public:
+	EEndOfMatchReason                             LostReason;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(EliminatedOverlay_C_OnPlayerLost) == 0x000001, "Wrong alignment on EliminatedOverlay_C_OnPlayerLost");
+static_assert(sizeof(EliminatedOverlay_C_OnPlayerLost) == 0x000002, "Wrong size on EliminatedOverlay_C_OnPlayerLost");
+static_assert(offsetof(EliminatedOverlay_C_OnPlayerLost, LostReason) == 0x000000, "Member 'EliminatedOverlay_C_OnPlayerLost::LostReason' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_OnPlayerLost, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'EliminatedOverlay_C_OnPlayerLost::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+
+// Function EliminatedOverlay.EliminatedOverlay_C.UpdatePlayerLost
+// 0x0030 (0x0030 - 0x0000)
+struct EliminatedOverlay_C_UpdatePlayerLost final
+{
+public:
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDisplayPlacement_ReturnValue;       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerStateAthena*                 K2Node_DynamicCast_AsFort_Player_State_Athena;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(EliminatedOverlay_C_UpdatePlayerLost) == 0x000008, "Wrong alignment on EliminatedOverlay_C_UpdatePlayerLost");
+static_assert(sizeof(EliminatedOverlay_C_UpdatePlayerLost) == 0x000030, "Wrong size on EliminatedOverlay_C_UpdatePlayerLost");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'EliminatedOverlay_C_UpdatePlayerLost::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, CallFunc_ShouldDisplayPlacement_ReturnValue) == 0x000008, "Member 'EliminatedOverlay_C_UpdatePlayerLost::CallFunc_ShouldDisplayPlacement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'EliminatedOverlay_C_UpdatePlayerLost::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'EliminatedOverlay_C_UpdatePlayerLost::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000020, "Member 'EliminatedOverlay_C_UpdatePlayerLost::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'EliminatedOverlay_C_UpdatePlayerLost::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdatePlayerLost, CallFunc_Greater_IntInt_ReturnValue) == 0x000029, "Member 'EliminatedOverlay_C_UpdatePlayerLost::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+
+// Function EliminatedOverlay.EliminatedOverlay_C.UpdateMultiwinner
+// 0x0058 (0x0058 - 0x0000)
+struct EliminatedOverlay_C_UpdateMultiwinner final
+{
+public:
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMultiwinnerIndex_ValidatedPosition;    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Array_Get_Item;                           // 0x0018(0x0018)()
+	int32                                         CallFunc_GetMultiwinnerIndex_ValidatedPosition1;   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Array_Get_Item1;                          // 0x0038(0x0018)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(EliminatedOverlay_C_UpdateMultiwinner) == 0x000008, "Wrong alignment on EliminatedOverlay_C_UpdateMultiwinner");
+static_assert(sizeof(EliminatedOverlay_C_UpdateMultiwinner) == 0x000058, "Wrong size on EliminatedOverlay_C_UpdateMultiwinner");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, Temp_int_Variable) == 0x000000, "Member 'EliminatedOverlay_C_UpdateMultiwinner::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, Temp_int_Variable1) == 0x000004, "Member 'EliminatedOverlay_C_UpdateMultiwinner::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_GetMultiwinnerIndex_ValidatedPosition) == 0x000008, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_GetMultiwinnerIndex_ValidatedPosition' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, Temp_int_Variable2) == 0x000014, "Member 'EliminatedOverlay_C_UpdateMultiwinner::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_Array_Get_Item) == 0x000018, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_GetMultiwinnerIndex_ValidatedPosition1) == 0x000030, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_GetMultiwinnerIndex_ValidatedPosition1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_Array_Get_Item1) == 0x000038, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_UpdateMultiwinner, CallFunc_Add_IntInt_ReturnValue1) == 0x000050, "Member 'EliminatedOverlay_C_UpdateMultiwinner::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+
+// Function EliminatedOverlay.EliminatedOverlay_C.GetMultiwinnerIndex
+// 0x0030 (0x0030 - 0x0000)
+struct EliminatedOverlay_C_GetMultiwinnerIndex final
+{
+public:
+	int32                                         RequestedPosition;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ValidatedPosition;                                 // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(EliminatedOverlay_C_GetMultiwinnerIndex) == 0x000008, "Wrong alignment on EliminatedOverlay_C_GetMultiwinnerIndex");
+static_assert(sizeof(EliminatedOverlay_C_GetMultiwinnerIndex) == 0x000030, "Wrong size on EliminatedOverlay_C_GetMultiwinnerIndex");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, RequestedPosition) == 0x000000, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::RequestedPosition' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, ValidatedPosition) == 0x000004, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::ValidatedPosition' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, Temp_bool_Variable) == 0x000008, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000010, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(EliminatedOverlay_C_GetMultiwinnerIndex, K2Node_Select_Default) == 0x000028, "Member 'EliminatedOverlay_C_GetMultiwinnerIndex::K2Node_Select_Default' has a wrong offset!");
 
 }
 

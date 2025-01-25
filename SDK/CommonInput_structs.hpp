@@ -15,13 +15,14 @@ namespace SDK
 {
 
 // Enum CommonInput.ECommonGamepadType
-// NumValues: 0x0004
+// NumValues: 0x0005
 enum class ECommonGamepadType : uint8
 {
 	XboxOneController                        = 0,
 	PS4Controller                            = 1,
-	Count                                    = 2,
-	ECommonGamepadType_MAX                   = 3,
+	SwitchController                         = 2,
+	Count                                    = 3,
+	ECommonGamepadType_MAX                   = 4,
 };
 
 // Enum CommonInput.ECommonInputType

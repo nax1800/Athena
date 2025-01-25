@@ -10,38 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PartyFinder_ListItem_ButtonOptions.PartyFinder_ListItem_ButtonOptions_C
-// 0x00A8 (0x02B8 - 0x0210)
+// 0x00A8 (0x02B0 - 0x0208)
 class UPartyFinder_ListItem_ButtonOptions_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Hovered;                                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Athena_AcceptInviteButton;                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Athena_FriendItemButton;                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Athena_IgnoreInviteButton;                         // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      STW_InviteButton;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      STW_JoinButton;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID_Border;                                        // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInviteRequest;                                  // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   AcceptPartyInvite_Clicked;                         // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   InviteToParty_Clicked;                             // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   IgnoreInvite_Clicked;                              // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   JoinParty_Clicked;                                 // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          bSTW_Invite_Disabled;                              // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bSTW_Join_Disabled;                                // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A2[0x6];                                      // 0x02A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   STWInvite_Clicked;                                 // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Hovered;                                           // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Athena_AcceptInviteButton;                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Athena_FriendItemButton;                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Athena_IgnoreInviteButton;                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      STW_InviteButton;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      STW_JoinButton;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Border;                                        // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInviteRequest;                                  // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   AcceptPartyInvite_Clicked;                         // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   InviteToParty_Clicked;                             // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   IgnoreInvite_Clicked;                              // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   JoinParty_Clicked;                                 // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bSTW_Invite_Disabled;                              // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bSTW_Join_Disabled;                                // 0x0299(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29A[0x6];                                      // 0x029A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   STWInvite_Clicked;                                 // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void AcceptPartyInvite_Clicked__DelegateSignature(class UCommonButton* Button);
@@ -60,7 +60,7 @@ public:
 	void BndEvt__FriendItemOption_K2Node_ComponentBoundEvent_989_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void PreConstruct(bool IsDesignTime);
 	void SetupButtons(bool bIsInvite, bool bCanbeJoinedIfNotInvite);
-	void SetEnableButtons(bool Param_bIsEnabled);
+	void SetEnableButtons(bool bIsEnabled_0);
 	void NumPartyMembersInviteOrJoinText(int32 NumOfPartyMembers);
 
 public:
@@ -74,24 +74,24 @@ public:
 	}
 };
 static_assert(alignof(UPartyFinder_ListItem_ButtonOptions_C) == 0x000008, "Wrong alignment on UPartyFinder_ListItem_ButtonOptions_C");
-static_assert(sizeof(UPartyFinder_ListItem_ButtonOptions_C) == 0x0002B8, "Wrong size on UPartyFinder_ListItem_ButtonOptions_C");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, UberGraphFrame) == 0x000210, "Member 'UPartyFinder_ListItem_ButtonOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Hovered) == 0x000218, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_AcceptInviteButton) == 0x000220, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_AcceptInviteButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_FriendItemButton) == 0x000228, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_FriendItemButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_IgnoreInviteButton) == 0x000230, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_IgnoreInviteButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STW_InviteButton) == 0x000238, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STW_InviteButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STW_JoinButton) == 0x000240, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STW_JoinButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, WidgetSwitcher_0) == 0x000248, "Member 'UPartyFinder_ListItem_ButtonOptions_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, MID_Border) == 0x000250, "Member 'UPartyFinder_ListItem_ButtonOptions_C::MID_Border' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bIsInviteRequest) == 0x000258, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bIsInviteRequest' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, AcceptPartyInvite_Clicked) == 0x000260, "Member 'UPartyFinder_ListItem_ButtonOptions_C::AcceptPartyInvite_Clicked' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, InviteToParty_Clicked) == 0x000270, "Member 'UPartyFinder_ListItem_ButtonOptions_C::InviteToParty_Clicked' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, IgnoreInvite_Clicked) == 0x000280, "Member 'UPartyFinder_ListItem_ButtonOptions_C::IgnoreInvite_Clicked' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, JoinParty_Clicked) == 0x000290, "Member 'UPartyFinder_ListItem_ButtonOptions_C::JoinParty_Clicked' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bSTW_Invite_Disabled) == 0x0002A0, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bSTW_Invite_Disabled' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bSTW_Join_Disabled) == 0x0002A1, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bSTW_Join_Disabled' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STWInvite_Clicked) == 0x0002A8, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STWInvite_Clicked' has a wrong offset!");
+static_assert(sizeof(UPartyFinder_ListItem_ButtonOptions_C) == 0x0002B0, "Wrong size on UPartyFinder_ListItem_ButtonOptions_C");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, UberGraphFrame) == 0x000208, "Member 'UPartyFinder_ListItem_ButtonOptions_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Hovered) == 0x000210, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Hovered' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_AcceptInviteButton) == 0x000218, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_AcceptInviteButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_FriendItemButton) == 0x000220, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_FriendItemButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, Athena_IgnoreInviteButton) == 0x000228, "Member 'UPartyFinder_ListItem_ButtonOptions_C::Athena_IgnoreInviteButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STW_InviteButton) == 0x000230, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STW_InviteButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STW_JoinButton) == 0x000238, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STW_JoinButton' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, WidgetSwitcher_0) == 0x000240, "Member 'UPartyFinder_ListItem_ButtonOptions_C::WidgetSwitcher_0' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, MID_Border) == 0x000248, "Member 'UPartyFinder_ListItem_ButtonOptions_C::MID_Border' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bIsInviteRequest) == 0x000250, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bIsInviteRequest' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, AcceptPartyInvite_Clicked) == 0x000258, "Member 'UPartyFinder_ListItem_ButtonOptions_C::AcceptPartyInvite_Clicked' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, InviteToParty_Clicked) == 0x000268, "Member 'UPartyFinder_ListItem_ButtonOptions_C::InviteToParty_Clicked' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, IgnoreInvite_Clicked) == 0x000278, "Member 'UPartyFinder_ListItem_ButtonOptions_C::IgnoreInvite_Clicked' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, JoinParty_Clicked) == 0x000288, "Member 'UPartyFinder_ListItem_ButtonOptions_C::JoinParty_Clicked' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bSTW_Invite_Disabled) == 0x000298, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bSTW_Invite_Disabled' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, bSTW_Join_Disabled) == 0x000299, "Member 'UPartyFinder_ListItem_ButtonOptions_C::bSTW_Join_Disabled' has a wrong offset!");
+static_assert(offsetof(UPartyFinder_ListItem_ButtonOptions_C, STWInvite_Clicked) == 0x0002A0, "Member 'UPartyFinder_ListItem_ButtonOptions_C::STWInvite_Clicked' has a wrong offset!");
 
 }
 

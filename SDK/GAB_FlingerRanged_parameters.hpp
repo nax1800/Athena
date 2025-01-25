@@ -23,8 +23,8 @@ struct GAB_FlingerRanged_C_ExecuteUbergraph_GAB_FlingerRanged final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0010(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWasCancelled;                        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GAB_FlingerRanged_C_ExecuteUbergraph_GAB_FlingerRanged) == 0x000008, "Wrong alignment on GAB_FlingerRanged_C_ExecuteUbergraph_GAB_FlingerRanged");

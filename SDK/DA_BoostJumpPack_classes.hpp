@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass DA_BoostJumpPack.DA_BoostJumpPack_C
-// 0x0068 (0x0B78 - 0x0B10)
+// 0x0068 (0x0C18 - 0x0BB0)
 class ADA_BoostJumpPack_C final : public AFortCustomizableAbilityDecoTool
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B10(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTagContainer                  ErrorReason;                                       // 0x0B18(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  ErrorReasonGamepad;                                // 0x0B38(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  ErrorCannotUse;                                    // 0x0B58(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BB0(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTagContainer                  ErrorReason;                                       // 0x0BB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  ErrorReasonGamepad;                                // 0x0BD8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  ErrorCannotUse;                                    // 0x0BF8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_DA_BoostJumpPack(int32 EntryPoint);
@@ -47,11 +47,11 @@ public:
 	}
 };
 static_assert(alignof(ADA_BoostJumpPack_C) == 0x000008, "Wrong alignment on ADA_BoostJumpPack_C");
-static_assert(sizeof(ADA_BoostJumpPack_C) == 0x000B78, "Wrong size on ADA_BoostJumpPack_C");
-static_assert(offsetof(ADA_BoostJumpPack_C, UberGraphFrame) == 0x000B10, "Member 'ADA_BoostJumpPack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReason) == 0x000B18, "Member 'ADA_BoostJumpPack_C::ErrorReason' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReasonGamepad) == 0x000B38, "Member 'ADA_BoostJumpPack_C::ErrorReasonGamepad' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorCannotUse) == 0x000B58, "Member 'ADA_BoostJumpPack_C::ErrorCannotUse' has a wrong offset!");
+static_assert(sizeof(ADA_BoostJumpPack_C) == 0x000C18, "Wrong size on ADA_BoostJumpPack_C");
+static_assert(offsetof(ADA_BoostJumpPack_C, UberGraphFrame) == 0x000BB0, "Member 'ADA_BoostJumpPack_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReason) == 0x000BB8, "Member 'ADA_BoostJumpPack_C::ErrorReason' has a wrong offset!");
+static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReasonGamepad) == 0x000BD8, "Member 'ADA_BoostJumpPack_C::ErrorReasonGamepad' has a wrong offset!");
+static_assert(offsetof(ADA_BoostJumpPack_C, ErrorCannotUse) == 0x000BF8, "Member 'ADA_BoostJumpPack_C::ErrorCannotUse' has a wrong offset!");
 
 }
 

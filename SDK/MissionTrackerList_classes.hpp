@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionTrackerList.MissionTrackerList_C
-// 0x0000 (0x02A8 - 0x02A8)
+// 0x0000 (0x02A0 - 0x02A0)
 class UMissionTrackerList_C final : public UFortMissionTrackerList
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UMissionTrackerList_C) == 0x000008, "Wrong alignment on UMissionTrackerList_C");
-static_assert(sizeof(UMissionTrackerList_C) == 0x0002A8, "Wrong size on UMissionTrackerList_C");
+static_assert(sizeof(UMissionTrackerList_C) == 0x0002A0, "Wrong size on UMissionTrackerList_C");
 
 }
 

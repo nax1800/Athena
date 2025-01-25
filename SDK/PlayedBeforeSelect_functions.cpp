@@ -37,20 +37,6 @@ void UPlayedBeforeSelect_C::ExecuteUbergraph_PlayedBeforeSelect(int32 EntryPoint
 }
 
 
-// Function PlayedBeforeSelect.PlayedBeforeSelect_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UPlayedBeforeSelect_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayedBeforeSelect_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PlayedBeforeSelect.PlayedBeforeSelect_C.OnActivated
 // (Event, Protected, BlueprintEvent)
 

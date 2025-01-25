@@ -37,12 +37,12 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x0028(0x0028)()
 	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0050(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0060(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor12;                    // 0x0070(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor123;                   // 0x0098(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0070(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor3;                     // 0x0098(0x0028)()
 	struct FLinearColor                           CallFunc_Get_Debuff_Color_Color;                   // 0x00C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color1;             // 0x00D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor1234;                  // 0x00E0(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor12345;                 // 0x0108(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor4;                     // 0x00E0(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor5;                     // 0x0108(0x0028)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TooltipStatWidget_C_Init) == 0x000008, "Wrong alignment on TooltipStatWidget_C_Init");
@@ -51,12 +51,12 @@ static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor) =
 static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor1) == 0x000028, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
 static_assert(offsetof(TooltipStatWidget_C_Init, CallFunc_Get_Theme_Color_Theme_Color) == 0x000050, "Member 'TooltipStatWidget_C_Init::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
 static_assert(offsetof(TooltipStatWidget_C_Init, CallFunc_Get_Buff_Color_Color) == 0x000060, "Member 'TooltipStatWidget_C_Init::CallFunc_Get_Buff_Color_Color' has a wrong offset!");
-static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor12) == 0x000070, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor12' has a wrong offset!");
-static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor123) == 0x000098, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor123' has a wrong offset!");
+static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor2) == 0x000070, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
+static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor3) == 0x000098, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor3' has a wrong offset!");
 static_assert(offsetof(TooltipStatWidget_C_Init, CallFunc_Get_Debuff_Color_Color) == 0x0000C0, "Member 'TooltipStatWidget_C_Init::CallFunc_Get_Debuff_Color_Color' has a wrong offset!");
 static_assert(offsetof(TooltipStatWidget_C_Init, CallFunc_Get_Theme_Color_Theme_Color1) == 0x0000D0, "Member 'TooltipStatWidget_C_Init::CallFunc_Get_Theme_Color_Theme_Color1' has a wrong offset!");
-static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor1234) == 0x0000E0, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor1234' has a wrong offset!");
-static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor12345) == 0x000108, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor12345' has a wrong offset!");
+static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor4) == 0x0000E0, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor4' has a wrong offset!");
+static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_MakeStruct_SlateColor5) == 0x000108, "Member 'TooltipStatWidget_C_Init::K2Node_MakeStruct_SlateColor5' has a wrong offset!");
 static_assert(offsetof(TooltipStatWidget_C_Init, K2Node_SwitchEnum_CmpSuccess) == 0x000130, "Member 'TooltipStatWidget_C_Init::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 }

@@ -10,23 +10,37 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C
-// 0x0010 (0x0450 - 0x0440)
+// 0x0040 (0x0460 - 0x0420)
 class AGC_Abilities_Activation_Ninja_ShadowStance_C final : public AFortGameplayCueNotify_Looping
 {
 public:
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	float                                         Animate_Ninja_ShadowStance_Dissolve_Inverse_Translucent_Shader_Opacity_BB0AFCD34C230AA0288885A106CC422E; // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Animate_Ninja_ShadowStance_Dissolve_NinjaDissolve_BB0AFCD34C230AA0288885A106CC422E; // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Animate_Ninja_ShadowStance_Dissolve__Direction_BB0AFCD34C230AA0288885A106CC422E; // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_431[0x7];                                      // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Animate_Ninja_ShadowStance_Dissolve;               // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerPawn_Ninja_C*                    MyTarget;                                          // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Shadow_Stance_Material;                            // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Ninja_Dissolve_Material;                           // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ShadowStanceVisibility;                            // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance(int32 EntryPoint);
+	void K2_HandleGameplayCue(class AActor* MyTarget_0, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void Shadow_Stance_Dissolve_Timeline(bool Reverse);
+	void Animate_Ninja_ShadowStance_Dissolve__FinishedFunc();
+	void Animate_Ninja_ShadowStance_Dissolve__UpdateFunc();
 	void UserConstructionScript();
-
-	void OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const;
 
 public:
 	static class UClass* StaticClass()
@@ -38,9 +52,17 @@ public:
 		return GetDefaultObjImpl<AGC_Abilities_Activation_Ninja_ShadowStance_C>();
 	}
 };
-static_assert(alignof(AGC_Abilities_Activation_Ninja_ShadowStance_C) == 0x000010, "Wrong alignment on AGC_Abilities_Activation_Ninja_ShadowStance_C");
-static_assert(sizeof(AGC_Abilities_Activation_Ninja_ShadowStance_C) == 0x000450, "Wrong size on AGC_Abilities_Activation_Ninja_ShadowStance_C");
+static_assert(alignof(AGC_Abilities_Activation_Ninja_ShadowStance_C) == 0x000008, "Wrong alignment on AGC_Abilities_Activation_Ninja_ShadowStance_C");
+static_assert(sizeof(AGC_Abilities_Activation_Ninja_ShadowStance_C) == 0x000460, "Wrong size on AGC_Abilities_Activation_Ninja_ShadowStance_C");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, UberGraphFrame) == 0x000420, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Animate_Ninja_ShadowStance_Dissolve_Inverse_Translucent_Shader_Opacity_BB0AFCD34C230AA0288885A106CC422E) == 0x000428, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve_Inverse_Translucent_Shader_Opacity_BB0AFCD34C230AA0288885A106CC422E' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Animate_Ninja_ShadowStance_Dissolve_NinjaDissolve_BB0AFCD34C230AA0288885A106CC422E) == 0x00042C, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve_NinjaDissolve_BB0AFCD34C230AA0288885A106CC422E' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Animate_Ninja_ShadowStance_Dissolve__Direction_BB0AFCD34C230AA0288885A106CC422E) == 0x000430, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve__Direction_BB0AFCD34C230AA0288885A106CC422E' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Animate_Ninja_ShadowStance_Dissolve) == 0x000438, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve' has a wrong offset!");
 static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, MyTarget) == 0x000440, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::MyTarget' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Shadow_Stance_Material) == 0x000448, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Shadow_Stance_Material' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, Ninja_Dissolve_Material) == 0x000450, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::Ninja_Dissolve_Material' has a wrong offset!");
+static_assert(offsetof(AGC_Abilities_Activation_Ninja_ShadowStance_C, ShadowStanceVisibility) == 0x000458, "Member 'AGC_Abilities_Activation_Ninja_ShadowStance_C::ShadowStanceVisibility' has a wrong offset!");
 
 }
 

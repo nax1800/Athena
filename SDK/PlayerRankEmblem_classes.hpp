@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerRankEmblem.PlayerRankEmblem_C
-// 0x0020 (0x0238 - 0x0218)
+// 0x0020 (0x0230 - 0x0210)
 class UPlayerRankEmblem_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Flash;                                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          BindToLocalPlayerByDefault;                        // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Flash;                                             // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          BindToLocalPlayerByDefault;                        // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_PlayerRankEmblem(int32 EntryPoint);
@@ -46,11 +46,11 @@ public:
 	}
 };
 static_assert(alignof(UPlayerRankEmblem_C) == 0x000008, "Wrong alignment on UPlayerRankEmblem_C");
-static_assert(sizeof(UPlayerRankEmblem_C) == 0x000238, "Wrong size on UPlayerRankEmblem_C");
-static_assert(offsetof(UPlayerRankEmblem_C, UberGraphFrame) == 0x000218, "Member 'UPlayerRankEmblem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerRankEmblem_C, Flash) == 0x000220, "Member 'UPlayerRankEmblem_C::Flash' has a wrong offset!");
-static_assert(offsetof(UPlayerRankEmblem_C, PlayerBanner) == 0x000228, "Member 'UPlayerRankEmblem_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UPlayerRankEmblem_C, BindToLocalPlayerByDefault) == 0x000230, "Member 'UPlayerRankEmblem_C::BindToLocalPlayerByDefault' has a wrong offset!");
+static_assert(sizeof(UPlayerRankEmblem_C) == 0x000230, "Wrong size on UPlayerRankEmblem_C");
+static_assert(offsetof(UPlayerRankEmblem_C, UberGraphFrame) == 0x000210, "Member 'UPlayerRankEmblem_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UPlayerRankEmblem_C, Flash) == 0x000218, "Member 'UPlayerRankEmblem_C::Flash' has a wrong offset!");
+static_assert(offsetof(UPlayerRankEmblem_C, PlayerBanner) == 0x000220, "Member 'UPlayerRankEmblem_C::PlayerBanner' has a wrong offset!");
+static_assert(offsetof(UPlayerRankEmblem_C, BindToLocalPlayerByDefault) == 0x000228, "Member 'UPlayerRankEmblem_C::BindToLocalPlayerByDefault' has a wrong offset!");
 
 }
 

@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C
-// 0x0028 (0x0860 - 0x0838)
+// 0x0028 (0x08E8 - 0x08C0)
 class UItemTransformSlotItemPickerTileButton_C final : public UFortTransformSlotItemPickerTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0838(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           BottomBarBox;                                      // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ItemWidgetSwitcher;                                // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          NullItemBorder;                                    // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonNumericTextBlock*                SacrificePointText;                                // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           BottomBarBox;                                      // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ItemWidgetSwitcher;                                // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          NullItemBorder;                                    // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonNumericTextBlock*                SacrificePointText;                                // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemTransformSlotItemPickerTileButton(int32 EntryPoint);
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
+	void OnListItemObjectSet(class UObject* ListItemObject);
 
 public:
 	static class UClass* StaticClass()
@@ -43,12 +43,12 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformSlotItemPickerTileButton_C) == 0x000008, "Wrong alignment on UItemTransformSlotItemPickerTileButton_C");
-static_assert(sizeof(UItemTransformSlotItemPickerTileButton_C) == 0x000860, "Wrong size on UItemTransformSlotItemPickerTileButton_C");
-static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, UberGraphFrame) == 0x000838, "Member 'UItemTransformSlotItemPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, BottomBarBox) == 0x000840, "Member 'UItemTransformSlotItemPickerTileButton_C::BottomBarBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, ItemWidgetSwitcher) == 0x000848, "Member 'UItemTransformSlotItemPickerTileButton_C::ItemWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, NullItemBorder) == 0x000850, "Member 'UItemTransformSlotItemPickerTileButton_C::NullItemBorder' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, SacrificePointText) == 0x000858, "Member 'UItemTransformSlotItemPickerTileButton_C::SacrificePointText' has a wrong offset!");
+static_assert(sizeof(UItemTransformSlotItemPickerTileButton_C) == 0x0008E8, "Wrong size on UItemTransformSlotItemPickerTileButton_C");
+static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, UberGraphFrame) == 0x0008C0, "Member 'UItemTransformSlotItemPickerTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, BottomBarBox) == 0x0008C8, "Member 'UItemTransformSlotItemPickerTileButton_C::BottomBarBox' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, ItemWidgetSwitcher) == 0x0008D0, "Member 'UItemTransformSlotItemPickerTileButton_C::ItemWidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, NullItemBorder) == 0x0008D8, "Member 'UItemTransformSlotItemPickerTileButton_C::NullItemBorder' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, SacrificePointText) == 0x0008E0, "Member 'UItemTransformSlotItemPickerTileButton_C::SacrificePointText' has a wrong offset!");
 
 }
 

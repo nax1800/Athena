@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameSubCatalog_structs.hpp"
 
@@ -21,113 +21,133 @@ namespace SDK::Params
 {
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget
-// 0x01A8 (0x01A8 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUserWidget* Widget)>    K2Node_Event_Callback;                             // 0x0008(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	bool                                          K2Node_Event_bExpanded;                            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_InIndexInList;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bSelected;                            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitionOfferDetailsWidget_C* CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitionMTXDetails_C*   CallFunc_Create_ReturnValue1;                      // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_Event_InData;                               // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortDirectAcquisitionOfferInfo*        K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0098(0x0040)(HasGetValueTypeHash)
-	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue1;                // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortDirectAcquisitionOfferInfo*        CallFunc_Array_Get_Item;                           // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0100(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0140(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0150(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue1;          // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0188(0x0008)(NoDestructor)
-	bool                                          CallFunc_IsBROnly_ReturnValue1;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate1;             // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_Event_ListItemObject;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortDirectAcquisitionOfferInfo*        K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitionOfferDetailsWidget_C* CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitionMTXDetails_C*   CallFunc_Create_ReturnValue1;                      // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue1;          // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsSelected;                          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsExpanded;                          // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue1;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x009C(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetOfferIndexAndCountText_OfferIndex;     // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetOfferIndexAndCountText_OfferDisplayCount; // 0x00E8(0x0018)()
+	int32                                         CallFunc_GetOfferIndexAndCountText_NextOfferIndex; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount; // 0x0108(0x0018)()
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortDirectAcquisitionOfferInfo*        CallFunc_Array_Get_Item;                           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetOfferIndexAndCountText_OfferIndex1;    // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetOfferIndexAndCountText_OfferDisplayCount1; // 0x0138(0x0018)()
+	int32                                         CallFunc_GetOfferIndexAndCountText_NextOfferIndex1; // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount1; // 0x0158(0x0018)()
+	bool                                          CallFunc_HasGroupedOffers_ReturnValue;             // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasGroupedOffers_ReturnValue1;            // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_173[0x1];                                      // 0x0173(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget) == 0x0001A8, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget) == 0x000180, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, EntryPoint) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsBROnly_ReturnValue) == 0x000004, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_Callback) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_Callback' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_bExpanded) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_bExpanded' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_InIndexInList) == 0x00001C, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_InIndexInList' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_bSelected) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_bSelected' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferInfo_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Create_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Create_ReturnValue1) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_CustomEvent_bSuccess) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_InData) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_InData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_OwningList) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_OwningList' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00008C, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Array_Length_ReturnValue1) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferInfo_ReturnValue1) == 0x0000D8, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferInfo_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Array_Find_ReturnValue) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Percent_IntInt_ReturnValue) == 0x0000EC, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Add_IntInt_ReturnValue1) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_MakeStruct_FormatArgumentData1) == 0x000100, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_MakeArray_Array) == 0x000140, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Format_ReturnValue) == 0x000150, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000168, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetUIManagerWidget_ReturnValue1) == 0x000170, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetUIManagerWidget_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000178, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000188, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsBROnly_ReturnValue1) == 0x000190, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsBROnly_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferInfo_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_CustomEvent_bSuccess) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_CustomEvent_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_ListItemObject) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_ListItemObject' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_DynamicCast_AsFort_Direct_Acquisition_Offer_Info' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Create_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Create_ReturnValue1) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetUIManagerWidget_ReturnValue1) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetUIManagerWidget_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_bIsSelected) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_bIsSelected' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_bIsExpanded) == 0x000071, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_bIsExpanded' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsMobileGame_ReturnValue) == 0x000072, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsMobileGame_ReturnValue1) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsMobileGame_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_MyGeometry) == 0x00009C, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, K2Node_Event_InDeltaTime) == 0x0000D4, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000D8, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_IsValid_ReturnValue1) == 0x0000D9, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000DC, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_OfferIndex) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_OfferIndex' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_OfferDisplayCount) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_OfferDisplayCount' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_NextOfferIndex) == 0x000100, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_NextOfferIndex' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount) == 0x000108, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_FMax_ReturnValue) == 0x000120, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Array_Get_Item) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_OfferIndex1) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_OfferIndex1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_OfferDisplayCount1) == 0x000138, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_OfferDisplayCount1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_NextOfferIndex1) == 0x000150, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_NextOfferIndex1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount1) == 0x000158, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_HasGroupedOffers_ReturnValue) == 0x000170, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_HasGroupedOffers_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_HasGroupedOffers_ReturnValue1) == 0x000171, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_HasGroupedOffers_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x000172, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000174, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000178, "Member 'AthenaDirectAcquisitionOfferWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetData
-// 0x0010 (0x0010 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_SetData final
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct AthenaDirectAcquisitionOfferWidget_C_Tick final
 {
 public:
-	class UObject*                                InData;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_SetData) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_SetData");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_SetData) == 0x000010, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_SetData");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_SetData, InData) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_SetData::InData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_SetData, OwningList) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_SetData::OwningList' has a wrong offset!");
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_Tick) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_Tick");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_Tick) == 0x00003C, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_Tick");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Tick, InDeltaTime) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet) == 0x000008, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.HandleOfferPurchaseComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -140,70 +160,52 @@ static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_HandleOfferPurchaseCo
 static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_HandleOfferPurchaseComplete) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_HandleOfferPurchaseComplete");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_HandleOfferPurchaseComplete, bSuccess) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_HandleOfferPurchaseComplete::bSuccess' has a wrong offset!");
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetSelected
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_SetSelected final
+struct AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged final
 {
 public:
-	bool                                          bSelected;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_SetSelected) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_SetSelected");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_SetSelected) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_SetSelected");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_SetSelected, bSelected) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_SetSelected::bSelected' has a wrong offset!");
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetIndexInList
-// 0x0004 (0x0004 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_SetIndexInList final
-{
-public:
-	int32                                         InIndexInList;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_SetIndexInList) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_SetIndexInList");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_SetIndexInList) == 0x000004, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_SetIndexInList");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_SetIndexInList, InIndexInList) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_SetIndexInList::InIndexInList' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetExpanded
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_SetExpanded final
+struct AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged final
 {
 public:
-	bool                                          bExpanded;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_SetExpanded) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_SetExpanded");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_SetExpanded) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_SetExpanded");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_SetExpanded, bExpanded) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_SetExpanded::bExpanded' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.RegisterOnClicked
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked final
-{
-public:
-	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked) == 0x000010, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked, Callback) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_RegisterOnClicked::Callback' has a wrong offset!");
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.OfferSet
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct AthenaDirectAcquisitionOfferWidget_C_OfferSet final
 {
 public:
 	TDelegate<void(class UObject* Object)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetTileImage_ReturnValue;                 // 0x0018(0x0088)()
-	class UFortAccountItemDefinition*             CallFunc_GetFirstGrantItemDefinition_ReturnValue;  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x00A8(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_HasDisplayAsset_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            CallFunc_GetTileImage_ReturnValue;                 // 0x0020(0x0088)()
+	class UFortAccountItemDefinition*             CallFunc_GetFirstGrantItemDefinition_ReturnValue;  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasDisplayAsset_ReturnValue;              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x00B8(0x0028)(HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_OfferSet) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_OfferSet");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_OfferSet) == 0x0000D8, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_OfferSet");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_OfferSet) == 0x0000E0, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_OfferSet");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetOfferInfo_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetTileImage_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetTileImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetLargePreviewImage_ReturnValue) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_HasDisplayAsset_ReturnValue) == 0x0000D0, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_HasDisplayAsset_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetTileImage_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetTileImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_HasDisplayAsset_ReturnValue) == 0x0000B0, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_HasDisplayAsset_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_OfferSet, CallFunc_GetLargePreviewImage_ReturnValue) == 0x0000B8, "Member 'AthenaDirectAcquisitionOfferWidget_C_OfferSet::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.UpdateAvailability
 // 0x0148 (0x0148 - 0x0000)
@@ -216,8 +218,8 @@ public:
 	int32                                         Temp_int_Variable1;                                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable123;                              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable;                                // 0x0020(0x0018)()
 	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -227,23 +229,23 @@ public:
 	bool                                          CallFunc_IsOwned_ReturnValue;                      // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5B[0x1];                                       // 0x005B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetQuantityRemaining_ReturnValue;         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetQuantityRemaining_ReturnValue;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0068(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0080(0x0040)(HasGetValueTypeHash)
-	int32                                         K2Node_Select1_Default;                            // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00F8(0x0018)()
+	int32                                         K2Node_Select1_Default;                            // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00E0(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F8(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x0110(0x0018)()
-	bool                                          Temp_bool_Variable12;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select12_Default;                           // 0x0130(0x0018)()
+	class FText                                   K2Node_Select2_Default;                            // 0x0130(0x0018)()
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability");
 static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability) == 0x000148, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability");
@@ -251,8 +253,8 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, 
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable) == 0x000004, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable1) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_bool_Variable1) == 0x00000C, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable12) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable123) == 0x000014, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable2) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_int_Variable3) == 0x000014, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_int_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_text_Variable) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_GetOfferInfo_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
@@ -261,19 +263,19 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, 
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_IsUnique_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_IsOwned_ReturnValue) == 0x000059, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_IsOwned_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_BooleanOR_ReturnValue) == 0x00005A, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_GetQuantityRemaining_ReturnValue) == 0x00005C, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_GetQuantityRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select_Default) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select_Default) == 0x00005C, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_GetQuantityRemaining_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_GetQuantityRemaining_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000064, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_Conv_IntToText_ReturnValue) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_MakeStruct_FormatArgumentData) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select1_Default) == 0x0000C0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_MakeArray_Array) == 0x0000C8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x0000D8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_MakeLiteralText_ReturnValue) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select1_Default) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_MakeStruct_FormatArgumentData) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x0000C8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_MakeArray_Array) == 0x0000D0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_MakeLiteralText_ReturnValue) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, CallFunc_MakeLiteralText_ReturnValue1) == 0x000110, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_bool_Variable12) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select12_Default) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, Temp_bool_Variable2) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability, K2Node_Select2_Default) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateAvailability::K2Node_Select2_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetupPrice
 // 0x0030 (0x0030 - 0x0000)
@@ -306,36 +308,37 @@ public:
 	class UObject*                                LoadedObject;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded");
 static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded) == 0x000018, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded, LoadedObject) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded::LoadedObject' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded, K2Node_DynamicCast_AsTexture_2D) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000011, "Member 'AthenaDirectAcquisitionOfferWidget_C_LargeImageLoaded::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.UpdateName
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct AthenaDirectAcquisitionOfferWidget_C_UpdateName final
 {
 public:
 	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetItemTypeText_ReturnValue;              // 0x0008(0x0018)()
-	class FText                                   CallFunc_GetName_ReturnValue;                      // 0x0020(0x0018)()
-	bool                                          CallFunc_IsUnique_ReturnValue;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0040(0x0018)()
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsLockedByRequirement_ReturnValue;        // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_GetShortName_ReturnValue;                 // 0x0008(0x0018)()
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0020(0x0018)()
+	class FText                                   CallFunc_GetItemTypeText_ReturnValue;              // 0x0038(0x0018)()
+	bool                                          CallFunc_IsUnique_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLockedByRequirement_ReturnValue;        // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_UpdateName) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_UpdateName");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_UpdateName) == 0x000060, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_UpdateName");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_UpdateName) == 0x000058, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_UpdateName");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_GetItemTypeText_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_GetItemTypeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_GetName_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_GetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_IsUnique_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_TextToUpper_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_BooleanOR_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_IsLockedByRequirement_ReturnValue) == 0x000059, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_IsLockedByRequirement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_GetShortName_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_GetShortName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_TextToUpper_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_GetItemTypeText_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_GetItemTypeText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_IsUnique_ReturnValue) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_IsLockedByRequirement_ReturnValue) == 0x000051, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_IsLockedByRequirement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateName, CallFunc_BooleanOR_ReturnValue) == 0x000052, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateName::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.UpdateShortDescription
 // 0x0138 (0x0138 - 0x0000)
@@ -401,7 +404,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -418,7 +421,7 @@ public:
 	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0130(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0170(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0170(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01B0(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x01C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0018)()
@@ -435,7 +438,7 @@ static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price) == 0x0002
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, Temp_bool_Variable) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetContext_ReturnValue12) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetSubGame_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetOfferInfo_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
@@ -449,7 +452,7 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFun
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_GetNumInStack_ReturnValue) == 0x00012C, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData1) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData12) == 0x000170, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData2) == 0x000170, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_MakeArray_Array) == 0x0001B0, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_MakeArray_Array1) == 0x0001C0, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_MakeArray_Array1' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFunc_Format_ReturnValue) == 0x0001D0, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::CallFunc_Format_ReturnValue' has a wrong offset!");
@@ -461,7 +464,7 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, CallFun
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_Setup_Price, K2Node_Select_Default) == 0x000218, "Member 'AthenaDirectAcquisitionOfferWidget_C_Setup_Price::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.UpdateSaleStatus
-// 0x0218 (0x0218 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus final
 {
 public:
@@ -471,68 +474,76 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetSaleText_ReturnValue;                  // 0x0040(0x0018)()
-	class FString                                 CallFunc_GetBannerOverrideTag_ReturnValue;         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00A8(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0120(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0138(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetMetaAsBool_ReturnValue;                // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12;                          // 0x0180(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue12;                     // 0x0198(0x0018)()
-	int32                                         CallFunc_GetItemQuantity_ReturnValue;              // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetItemOfferCount_ReturnValue;            // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetSalePrice_SalePrice;                   // 0x01B8(0x0018)()
-	bool                                          CallFunc_GetSalePrice_ReturnValue;                 // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ECatalogSaleType                              CallFunc_GetSaleType_ReturnValue;                  // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x01D8(0x0018)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetNormalPrice_ReturnValue;               // 0x01F8(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetQuantityRemaining_ReturnValue;         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00B8(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F8(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0120(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0160(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0178(0x0010)(ZeroConstructor, ReferenceParm)
+	class FString                                 CallFunc_GetBannerOverrideTag_ReturnValue;         // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0198(0x0018)()
+	bool                                          CallFunc_GetMetaAsBool_ReturnValue;                // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetItemQuantity_ReturnValue;              // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetItemOfferCount_ReturnValue;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetSalePrice_SalePrice;                   // 0x01C0(0x0018)()
+	bool                                          CallFunc_GetSalePrice_ReturnValue;                 // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECatalogSaleType                              CallFunc_GetSaleType_ReturnValue;                  // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1DD[0x3];                                      // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x01E0(0x0018)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetNormalPrice_ReturnValue;               // 0x0200(0x0018)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus) == 0x000218, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus) == 0x000220, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, Temp_text_Variable) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, Temp_text_Variable1) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::Temp_text_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, Temp_byte_Variable) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetOfferInfo_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSaleText_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSaleText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetBannerOverrideTag_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetBannerOverrideTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData1) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array1) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue) == 0x000108, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue1) == 0x000120, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData12) == 0x000138, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetMetaAsBool_ReturnValue) == 0x000178, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetMetaAsBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array12) == 0x000180, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Not_PreBool_ReturnValue) == 0x000190, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue12) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetItemQuantity_ReturnValue) == 0x0001B0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetItemQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetItemOfferCount_ReturnValue) == 0x0001B4, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetItemOfferCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSalePrice_SalePrice) == 0x0001B8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSalePrice_ReturnValue) == 0x0001D0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Greater_IntInt_ReturnValue) == 0x0001D1, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSaleType_ReturnValue) == 0x0001D2, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSaleType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue) == 0x0001D3, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001D4, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_Select_Default) == 0x0001D8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0001F0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetNormalPrice_ReturnValue) == 0x0001F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetNormalPrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Not_PreBool_ReturnValue1) == 0x000210, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue1) == 0x000211, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetQuantityRemaining_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetQuantityRemaining_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData1) == 0x0000B8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array1) == 0x000110, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData2) == 0x000120, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue1) == 0x000160, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_MakeArray_Array2) == 0x000178, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetBannerOverrideTag_ReturnValue) == 0x000188, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetBannerOverrideTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Format_ReturnValue2) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Format_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetMetaAsBool_ReturnValue) == 0x0001B0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetMetaAsBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetItemQuantity_ReturnValue) == 0x0001B4, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetItemQuantity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Not_PreBool_ReturnValue) == 0x0001B8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetItemOfferCount_ReturnValue) == 0x0001BC, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetItemOfferCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSalePrice_SalePrice) == 0x0001C0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSalePrice_ReturnValue) == 0x0001D8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Greater_IntInt_ReturnValue1) == 0x0001D9, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetSaleType_ReturnValue) == 0x0001DA, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetSaleType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue) == 0x0001DB, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001DC, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, K2Node_Select_Default) == 0x0001E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0001F8, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_GetNormalPrice_ReturnValue) == 0x000200, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_GetNormalPrice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_Not_PreBool_ReturnValue1) == 0x000218, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue1) == 0x000219, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue2) == 0x00021A, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.SetupSaleInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -601,7 +612,7 @@ public:
 	class UFortAccountItemDefinition*             CallFunc_GetFirstGrantItemDefinition_ReturnValue;  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue12;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0040(0x0080)()
 };
 static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border");
@@ -613,7 +624,7 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, 
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_GetOfferInfo_ReturnValue1) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_GetOfferInfo_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_GetRarity_ReturnValue) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_GetDynamicMaterial_ReturnValue12) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_GetDynamicMaterial_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border, CallFunc_BPGetRarityData_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateStyle_Border::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.UpdateStyle_Sizing
@@ -662,49 +673,97 @@ static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateBadge, CallFun
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateBadge, CallFunc_HasDisplayAsset_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateBadge::CallFunc_HasDisplayAsset_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_UpdateBadge, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'AthenaDirectAcquisitionOfferWidget_C_UpdateBadge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetData
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetOfferIndexAndCountText
+// 0x01C0 (0x01C0 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText final
+{
+public:
+	int32                                         OfferIndex;                                        // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   OfferDisplayCount;                                 // 0x0008(0x0018)(Parm, OutParm)
+	int32                                         NextOfferIndex;                                    // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   NextOfferDisplayCount;                             // 0x0028(0x0018)(Parm, OutParm)
+	class UFortDirectAcquisitionOfferInfo*        CallFunc_GetOfferInfo_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0040)(HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00A0(0x0040)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue1;              // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00E8(0x0040)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0130(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0140(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x01A8(0x0018)()
+};
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText) == 0x0001C0, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, OfferIndex) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::OfferIndex' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, OfferDisplayCount) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::OfferDisplayCount' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, NextOfferIndex) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::NextOfferIndex' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, NextOfferDisplayCount) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::NextOfferDisplayCount' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_GetOfferInfo_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Array_Find_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Percent_IntInt_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData1) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue1) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Percent_IntInt_ReturnValue1) == 0x0000E4, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Percent_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData2) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue2) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeArray_Array) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData3) == 0x000140, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Format_ReturnValue) == 0x000180, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, K2Node_MakeArray_Array1) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText, CallFunc_Format_ReturnValue1) == 0x0001A8, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetOfferIndexAndCountText::CallFunc_Format_ReturnValue1' has a wrong offset!");
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.HasGroupedOffers
+// 0x000C (0x000C - 0x0000)
+struct AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers) == 0x00000C, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidget_C_HasGroupedOffers::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.TryToResetCarouselTimer
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer final
+{
+public:
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_TryToResetCarouselTimer::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetListItemObject
 // 0x0008 (0x0008 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_GetData final
+struct AthenaDirectAcquisitionOfferWidget_C_GetListItemObject final
 {
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_GetData) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_GetData");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_GetData) == 0x000008, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_GetData");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetData, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetData::ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.IsItemExpanded
-// 0x0001 (0x0001 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_IsItemExpanded::ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.DoesItemHaveChildren
-// 0x0004 (0x0004 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren) == 0x000004, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_DoesItemHaveChildren::ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C.GetIndentLevel
-// 0x0004 (0x0004 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel) == 0x000004, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetIndentLevel::ReturnValue' has a wrong offset!");
+static_assert(alignof(AthenaDirectAcquisitionOfferWidget_C_GetListItemObject) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidget_C_GetListItemObject");
+static_assert(sizeof(AthenaDirectAcquisitionOfferWidget_C_GetListItemObject) == 0x000008, "Wrong size on AthenaDirectAcquisitionOfferWidget_C_GetListItemObject");
+static_assert(offsetof(AthenaDirectAcquisitionOfferWidget_C_GetListItemObject, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidget_C_GetListItemObject::ReturnValue' has a wrong offset!");
 
 }
 

@@ -27,12 +27,12 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        Temp_object_Variable123;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable3;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -71,14 +71,14 @@ public:
 	bool                                          K2Node_Event_SuccessfulHit;                        // 0x00EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_Success;                              // 0x00EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class ABuildingActor*                         K2Node_Event_BuildingActor1;                       // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABuildingActor*>                 K2Node_Event_BuildingActorList1;                   // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class ABuildingActor*>                 K2Node_Event_BuildingActorList1;                   // 0x00F8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	class ABuildingActor*                         K2Node_Event_BuildingActor;                        // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABuildingActor*>                 K2Node_Event_BuildingActorList;                    // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class ABuildingActor*>                 K2Node_Event_BuildingActorList;                    // 0x0110(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	class AActor*                                 K2Node_Event_BT;                                   // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_Collide_;                             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType123;              // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType3;                // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters123;             // 0x0130(0x00B8)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x0130(0x00B8)(ContainsInstancedReference)
 	struct FHitResult                             CallFunc_GetHitResult_ReturnValue;                 // 0x01E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_GetHitResult_ReturnValue1;                // 0x0270(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	EPhysicalSurface                              CallFunc_GetFortPhysicalSurface_ReturnValue;       // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -122,13 +122,13 @@ public:
 	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0400(0x000C)(IsPlainOldData, NoDestructor)
 	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0410(0x0030)(IsPlainOldData, NoDestructor)
-	class UParticleSystem*                        Temp_object_Variable1234;                          // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable4;                             // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0448(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0454(0x000C)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0460(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType12;               // 0x046C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x046C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_46D[0x3];                                      // 0x046D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters12;              // 0x0470(0x00B8)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0470(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType1;                // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_529[0x7];                                      // 0x0529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters1;               // 0x0530(0x00B8)(ContainsInstancedReference)
@@ -139,18 +139,18 @@ public:
 	uint8                                         Pad_6A9[0x7];                                      // 0x06A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        K2Node_Select_Default;                             // 0x06B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue1;      // 0x06B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue12;     // 0x06C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x06C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuskPawn_C_ExecuteUbergraph_HuskPawn) == 0x000010, "Wrong alignment on HuskPawn_C_ExecuteUbergraph_HuskPawn");
 static_assert(sizeof(HuskPawn_C_ExecuteUbergraph_HuskPawn) == 0x0006D0, "Wrong size on HuskPawn_C_ExecuteUbergraph_HuskPawn");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, EntryPoint) == 0x000000, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable) == 0x000008, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable1) == 0x000010, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable12) == 0x000018, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable12' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable2) == 0x000018, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable2' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_IsDedicatedServer_ReturnValue) == 0x000021, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_IsValid_ReturnValue1) == 0x000022, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable123) == 0x000028, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable123' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable3) == 0x000028, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable3' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000030, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000040, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_K2_GetComponentScale_ReturnValue) == 0x000048, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
@@ -191,8 +191,8 @@ static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_Event_Buildi
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_Event_BuildingActorList) == 0x000110, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_Event_BuildingActorList' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_Event_BT) == 0x000120, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_Event_BT' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_Event_Collide_) == 0x000128, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_Event_Collide_' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType123) == 0x000129, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType123' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_Parameters123) == 0x000130, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_Parameters123' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType3) == 0x000129, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType3' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_Parameters3) == 0x000130, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_Parameters3' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_GetHitResult_ReturnValue) == 0x0001E8, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_GetHitResult_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_GetHitResult_ReturnValue1) == 0x000270, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_GetHitResult_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_GetFortPhysicalSurface_ReturnValue) == 0x0002F8, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_GetFortPhysicalSurface_ReturnValue' has a wrong offset!");
@@ -231,12 +231,12 @@ static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_BreakHitRe
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_BreakHitResult_TraceEnd1) == 0x0003F4, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_BreakHitResult_TraceEnd1' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_MakeRotFromX_ReturnValue) == 0x000400, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_GetSocketTransform_ReturnValue) == 0x000410, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable1234) == 0x000440, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_object_Variable4) == 0x000440, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_BreakTransform_Location) == 0x000448, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_BreakTransform_Location' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_BreakTransform_Rotation) == 0x000454, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_BreakTransform_Rotation' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_BreakTransform_Scale) == 0x000460, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType12) == 0x00046C, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType12' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_Parameters12) == 0x000470, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_Parameters12' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType2) == 0x00046C, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType2' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_Parameters2) == 0x000470, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_Parameters2' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType1) == 0x000528, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType1' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_Parameters1) == 0x000530, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_Parameters1' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueEvent_EventType) == 0x0005E8, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
@@ -244,7 +244,7 @@ static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_GameplayCueE
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, Temp_byte_Variable) == 0x0006A8, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, K2Node_Select_Default) == 0x0006B0, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x0006B8, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue12) == 0x0006C0, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_ExecuteUbergraph_HuskPawn, CallFunc_SpawnEmitterAtLocation_ReturnValue2) == 0x0006C0, "Member 'HuskPawn_C_ExecuteUbergraph_HuskPawn::CallFunc_SpawnEmitterAtLocation_ReturnValue2' has a wrong offset!");
 
 // Function HuskPawn.HuskPawn_C.GameplayCue.Damage.Shielded
 // 0x00C0 (0x00C0 - 0x0000)
@@ -319,7 +319,7 @@ struct HuskPawn_C_PortalGet final
 {
 public:
 	class ABuildingActor*                         BuildingActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class AActor*                                 BT;                                                // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuskPawn_C_PortalGet) == 0x000008, "Wrong alignment on HuskPawn_C_PortalGet");
@@ -334,7 +334,7 @@ struct HuskPawn_C_PortalAdd final
 {
 public:
 	class ABuildingActor*                         BuildingActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(HuskPawn_C_PortalAdd) == 0x000008, "Wrong alignment on HuskPawn_C_PortalAdd");
 static_assert(sizeof(HuskPawn_C_PortalAdd) == 0x000018, "Wrong size on HuskPawn_C_PortalAdd");
@@ -462,13 +462,13 @@ static_assert(offsetof(HuskPawn_C_FlingerEnemyDied, PawnThatDied) == 0x000000, "
 struct HuskPawn_C_AlertEnemySpawnedByFlinger final
 {
 public:
-	struct FVector                                Param_PushMomentum;                                // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PushMomentum_0;                                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PushDuration;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  OwningFlinger;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuskPawn_C_AlertEnemySpawnedByFlinger) == 0x000008, "Wrong alignment on HuskPawn_C_AlertEnemySpawnedByFlinger");
 static_assert(sizeof(HuskPawn_C_AlertEnemySpawnedByFlinger) == 0x000018, "Wrong size on HuskPawn_C_AlertEnemySpawnedByFlinger");
-static_assert(offsetof(HuskPawn_C_AlertEnemySpawnedByFlinger, Param_PushMomentum) == 0x000000, "Member 'HuskPawn_C_AlertEnemySpawnedByFlinger::Param_PushMomentum' has a wrong offset!");
+static_assert(offsetof(HuskPawn_C_AlertEnemySpawnedByFlinger, PushMomentum_0) == 0x000000, "Member 'HuskPawn_C_AlertEnemySpawnedByFlinger::PushMomentum_0' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_AlertEnemySpawnedByFlinger, PushDuration) == 0x00000C, "Member 'HuskPawn_C_AlertEnemySpawnedByFlinger::PushDuration' has a wrong offset!");
 static_assert(offsetof(HuskPawn_C_AlertEnemySpawnedByFlinger, OwningFlinger) == 0x000010, "Member 'HuskPawn_C_AlertEnemySpawnedByFlinger::OwningFlinger' has a wrong offset!");
 

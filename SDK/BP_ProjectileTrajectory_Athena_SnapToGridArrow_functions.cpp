@@ -37,6 +37,26 @@ void ABP_ProjectileTrajectory_Athena_SnapToGridArrow_C::ExecuteUbergraph_BP_Proj
 }
 
 
+// Function BP_ProjectileTrajectory_Athena_SnapToGridArrow.BP_ProjectileTrajectory_Athena_SnapToGridArrow_C.HandleGridSnapUpdates
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          NewLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ProjectileTrajectory_Athena_SnapToGridArrow_C::HandleGridSnapUpdates(const struct FVector& NewLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapToGridArrow_C", "HandleGridSnapUpdates");
+
+	Params::BP_ProjectileTrajectory_Athena_SnapToGridArrow_C_HandleGridSnapUpdates Parms{};
+
+	Parms.NewLocation = std::move(NewLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ProjectileTrajectory_Athena_SnapToGridArrow.BP_ProjectileTrajectory_Athena_SnapToGridArrow_C.SetTrajectorySpline
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -87,26 +107,6 @@ void ABP_ProjectileTrajectory_Athena_SnapToGridArrow_C::UserConstructionScript()
 		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapToGridArrow_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ProjectileTrajectory_Athena_SnapToGridArrow.BP_ProjectileTrajectory_Athena_SnapToGridArrow_C.HandleGridSnapUpdates
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          NewLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ProjectileTrajectory_Athena_SnapToGridArrow_C::HandleGridSnapUpdates(const struct FVector& NewLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapToGridArrow_C", "HandleGridSnapUpdates");
-
-	Params::BP_ProjectileTrajectory_Athena_SnapToGridArrow_C_HandleGridSnapUpdates Parms{};
-
-	Parms.NewLocation = std::move(NewLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

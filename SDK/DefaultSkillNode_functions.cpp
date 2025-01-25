@@ -37,57 +37,57 @@ void UDefaultSkillNode_C::ExecuteUbergraph_DefaultSkillNode(int32 EntryPoint)
 }
 
 
-// Function DefaultSkillNode.DefaultSkillNode_C.OnDeselected
+// Function DefaultSkillNode.DefaultSkillNode_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 
-void UDefaultSkillNode_C::OnDeselected()
+void UDefaultSkillNode_C::BP_OnDeselected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DefaultSkillNode_C", "OnDeselected");
+		Func = Class->GetFunction("DefaultSkillNode_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function DefaultSkillNode.DefaultSkillNode_C.OnSelected
+// Function DefaultSkillNode.DefaultSkillNode_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UDefaultSkillNode_C::OnSelected()
+void UDefaultSkillNode_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DefaultSkillNode_C", "OnSelected");
+		Func = Class->GetFunction("DefaultSkillNode_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function DefaultSkillNode.DefaultSkillNode_C.OnHovered
+// Function DefaultSkillNode.DefaultSkillNode_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UDefaultSkillNode_C::OnHovered()
+void UDefaultSkillNode_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DefaultSkillNode_C", "OnHovered");
+		Func = Class->GetFunction("DefaultSkillNode_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function DefaultSkillNode.DefaultSkillNode_C.OnUnhovered
+// Function DefaultSkillNode.DefaultSkillNode_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UDefaultSkillNode_C::OnUnhovered()
+void UDefaultSkillNode_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DefaultSkillNode_C", "OnUnhovered");
+		Func = Class->GetFunction("DefaultSkillNode_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

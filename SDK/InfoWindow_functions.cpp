@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function InfoWindow.InfoWindow_C.OnInfoIndowClosed__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UInfoWindow_C::OnInfoIndowClosed__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InfoWindow_C", "OnInfoIndowClosed__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function InfoWindow.InfoWindow_C.ExecuteUbergraph_InfoWindow
 // ()
 // Parameters:
@@ -185,9 +199,9 @@ void UInfoWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonB
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UFortItemDefinition*>      Info_Items                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Param_Title                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Title_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UInfoWindow_C::AddInfo(TArray<class UFortItemDefinition*>& Info_Items, const class FText& Param_Title)
+void UInfoWindow_C::AddInfo(TArray<class UFortItemDefinition*>& Info_Items, const class FText& Title_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -197,7 +211,7 @@ void UInfoWindow_C::AddInfo(TArray<class UFortItemDefinition*>& Info_Items, cons
 	Params::InfoWindow_C_AddInfo Parms{};
 
 	Parms.Info_Items = std::move(Info_Items);
-	Parms.Param_Title = std::move(Param_Title);
+	Parms.Title_0 = std::move(Title_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 

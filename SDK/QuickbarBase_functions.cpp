@@ -103,9 +103,9 @@ void UQuickbarBase_C::OnLocalPlayerDied(const struct FFortPlayerDeathReport& Dea
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortQuickBars                          QuickbarIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuickbarBase_C::OnQuickbarSecondarySlotFocusChanged_Event_0(EFortQuickBars QuickbarIndex, int32 Param_Slot)
+void UQuickbarBase_C::OnQuickbarSecondarySlotFocusChanged_Event_0(EFortQuickBars QuickbarIndex, int32 Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -115,7 +115,7 @@ void UQuickbarBase_C::OnQuickbarSecondarySlotFocusChanged_Event_0(EFortQuickBars
 	Params::QuickbarBase_C_OnQuickbarSecondarySlotFocusChanged_Event_0 Parms{};
 
 	Parms.QuickbarIndex = QuickbarIndex;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -167,9 +167,9 @@ void UQuickbarBase_C::OnQuickbarContentsChanged(EFortQuickBars QuickbarIndex, co
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortQuickBars                          QuickbarIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, int32 Param_Slot)
+void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, int32 Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -179,7 +179,7 @@ void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, i
 	Params::QuickbarBase_C_OnQuickbarSlotFocusChanged Parms{};
 
 	Parms.QuickbarIndex = QuickbarIndex;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -224,11 +224,11 @@ void UQuickbarBase_C::Construct()
 // Function QuickbarBase.QuickbarBase_C.Is Valid Slot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Is_Valid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   Array_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuickbarBase_C::Is_Valid_Slot(int32 Param_Slot, bool* Is_Valid, int32* Array_Index)
+void UQuickbarBase_C::Is_Valid_Slot(int32 Slot_0, bool* Is_Valid, int32* Array_Index)
 {
 	static class UFunction* Func = nullptr;
 
@@ -237,7 +237,7 @@ void UQuickbarBase_C::Is_Valid_Slot(int32 Param_Slot, bool* Is_Valid, int32* Arr
 
 	Params::QuickbarBase_C_Is_Valid_Slot Parms{};
 
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

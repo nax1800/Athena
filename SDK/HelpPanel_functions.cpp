@@ -249,5 +249,39 @@ void UHelpPanel_C::UnbindDelegates()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function HelpPanel.HelpPanel_C.SetSelectedItemByID
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SelectedItemID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHelpPanel_C::SetSelectedItemByID(class FName SelectedItemID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HelpPanel_C", "SetSelectedItemByID");
+
+	Params::HelpPanel_C_SetSelectedItemByID Parms{};
+
+	Parms.SelectedItemID = SelectedItemID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HelpPanel.HelpPanel_C.Setup Header
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHelpPanel_C::Setup_Header()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HelpPanel_C", "Setup Header");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

@@ -37,29 +37,29 @@ void UPanelButton_C::ExecuteUbergraph_PanelButton(int32 EntryPoint)
 }
 
 
-// Function PanelButton.PanelButton_C.OnUnhovered
+// Function PanelButton.PanelButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UPanelButton_C::OnUnhovered()
+void UPanelButton_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "OnUnhovered");
+		Func = Class->GetFunction("PanelButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PanelButton.PanelButton_C.OnHovered
+// Function PanelButton.PanelButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UPanelButton_C::OnHovered()
+void UPanelButton_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "OnHovered");
+		Func = Class->GetFunction("PanelButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

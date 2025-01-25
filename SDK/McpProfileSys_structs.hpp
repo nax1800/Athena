@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "JsonUtilities_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -27,6 +27,37 @@ enum class EServerClientFlag : uint8
 	Yes                                      = 3,
 	EServerClientFlag_MAX                    = 4,
 };
+
+// ScriptStruct McpProfileSys.BaseUrlContext
+// 0x0038 (0x0038 - 0x0000)
+struct alignas(0x08) FBaseUrlContext
+{
+public:
+	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FBaseUrlContext) == 0x000008, "Wrong alignment on FBaseUrlContext");
+static_assert(sizeof(FBaseUrlContext) == 0x000038, "Wrong size on FBaseUrlContext");
+
+// ScriptStruct McpProfileSys.DedicatedServerUrlContext
+// 0x0000 (0x0038 - 0x0038)
+struct FDedicatedServerUrlContext final : public FBaseUrlContext
+{
+};
+static_assert(alignof(FDedicatedServerUrlContext) == 0x000008, "Wrong alignment on FDedicatedServerUrlContext");
+static_assert(sizeof(FDedicatedServerUrlContext) == 0x000038, "Wrong size on FDedicatedServerUrlContext");
+
+// ScriptStruct McpProfileSys.McpChangeAttributesRequest
+// 0x0030 (0x0030 - 0x0000)
+struct FMcpChangeAttributesRequest final
+{
+public:
+	class FString                                 ItemId;                                            // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     Attributes;                                        // 0x0010(0x0020)(NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMcpChangeAttributesRequest) == 0x000008, "Wrong alignment on FMcpChangeAttributesRequest");
+static_assert(sizeof(FMcpChangeAttributesRequest) == 0x000030, "Wrong size on FMcpChangeAttributesRequest");
+static_assert(offsetof(FMcpChangeAttributesRequest, ItemId) == 0x000000, "Member 'FMcpChangeAttributesRequest::ItemId' has a wrong offset!");
+static_assert(offsetof(FMcpChangeAttributesRequest, Attributes) == 0x000010, "Member 'FMcpChangeAttributesRequest::Attributes' has a wrong offset!");
 
 // ScriptStruct McpProfileSys.McpLootEntry
 // 0x0058 (0x0058 - 0x0000)
@@ -48,34 +79,24 @@ static_assert(offsetof(FMcpLootEntry, Quantity) == 0x000020, "Member 'FMcpLootEn
 static_assert(offsetof(FMcpLootEntry, Attributes) == 0x000028, "Member 'FMcpLootEntry::Attributes' has a wrong offset!");
 static_assert(offsetof(FMcpLootEntry, ItemProfile) == 0x000048, "Member 'FMcpLootEntry::ItemProfile' has a wrong offset!");
 
-// ScriptStruct McpProfileSys.BaseUrlContext
-// 0x0070 (0x0070 - 0x0000)
-struct alignas(0x10) FBaseUrlContext
-{
-public:
-	uint8                                         Pad_0[0x70];                                       // 0x0000(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FBaseUrlContext) == 0x000010, "Wrong alignment on FBaseUrlContext");
-static_assert(sizeof(FBaseUrlContext) == 0x000070, "Wrong size on FBaseUrlContext");
-
 // ScriptStruct McpProfileSys.ClientUrlContext
-// 0x0000 (0x0070 - 0x0070)
+// 0x0000 (0x0038 - 0x0038)
 struct FClientUrlContext final : public FBaseUrlContext
 {
 };
-static_assert(alignof(FClientUrlContext) == 0x000010, "Wrong alignment on FClientUrlContext");
-static_assert(sizeof(FClientUrlContext) == 0x000070, "Wrong size on FClientUrlContext");
+static_assert(alignof(FClientUrlContext) == 0x000008, "Wrong alignment on FClientUrlContext");
+static_assert(sizeof(FClientUrlContext) == 0x000038, "Wrong size on FClientUrlContext");
 
 // ScriptStruct McpProfileSys.ProfileHttpRequest
-// 0x0070 (0x0070 - 0x0000)
-struct alignas(0x10) FProfileHttpRequest final
+// 0x0030 (0x0030 - 0x0000)
+struct FProfileHttpRequest final
 {
 public:
 	class UMcpProfile*                            SourceProfile;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x68];                                       // 0x0008(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x28];                                       // 0x0008(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProfileHttpRequest) == 0x000010, "Wrong alignment on FProfileHttpRequest");
-static_assert(sizeof(FProfileHttpRequest) == 0x000070, "Wrong size on FProfileHttpRequest");
+static_assert(alignof(FProfileHttpRequest) == 0x000008, "Wrong alignment on FProfileHttpRequest");
+static_assert(sizeof(FProfileHttpRequest) == 0x000030, "Wrong size on FProfileHttpRequest");
 static_assert(offsetof(FProfileHttpRequest, SourceProfile) == 0x000000, "Member 'FProfileHttpRequest::SourceProfile' has a wrong offset!");
 
 // ScriptStruct McpProfileSys.ProfileGroupEntry
@@ -107,20 +128,12 @@ static_assert(offsetof(FProfileEntry, ProfileObject) == 0x000010, "Member 'FProf
 static_assert(offsetof(FProfileEntry, bWaitingForRefreshAllProfilesResponse) == 0x000018, "Member 'FProfileEntry::bWaitingForRefreshAllProfilesResponse' has a wrong offset!");
 
 // ScriptStruct McpProfileSys.PublicUrlContext
-// 0x0000 (0x0070 - 0x0070)
+// 0x0000 (0x0038 - 0x0038)
 struct FPublicUrlContext final : public FBaseUrlContext
 {
 };
-static_assert(alignof(FPublicUrlContext) == 0x000010, "Wrong alignment on FPublicUrlContext");
-static_assert(sizeof(FPublicUrlContext) == 0x000070, "Wrong size on FPublicUrlContext");
-
-// ScriptStruct McpProfileSys.DedicatedServerUrlContext
-// 0x0000 (0x0070 - 0x0070)
-struct FDedicatedServerUrlContext final : public FBaseUrlContext
-{
-};
-static_assert(alignof(FDedicatedServerUrlContext) == 0x000010, "Wrong alignment on FDedicatedServerUrlContext");
-static_assert(sizeof(FDedicatedServerUrlContext) == 0x000070, "Wrong size on FDedicatedServerUrlContext");
+static_assert(alignof(FPublicUrlContext) == 0x000008, "Wrong alignment on FPublicUrlContext");
+static_assert(sizeof(FPublicUrlContext) == 0x000038, "Wrong size on FPublicUrlContext");
 
 // ScriptStruct McpProfileSys.McpAddItemRequest
 // 0x0048 (0x0048 - 0x0000)
@@ -164,19 +177,6 @@ static_assert(alignof(FMcpChangeQuantityRequest) == 0x000008, "Wrong alignment o
 static_assert(sizeof(FMcpChangeQuantityRequest) == 0x000018, "Wrong size on FMcpChangeQuantityRequest");
 static_assert(offsetof(FMcpChangeQuantityRequest, ItemId) == 0x000000, "Member 'FMcpChangeQuantityRequest::ItemId' has a wrong offset!");
 static_assert(offsetof(FMcpChangeQuantityRequest, DeltaQuantity) == 0x000010, "Member 'FMcpChangeQuantityRequest::DeltaQuantity' has a wrong offset!");
-
-// ScriptStruct McpProfileSys.McpChangeAttributesRequest
-// 0x0030 (0x0030 - 0x0000)
-struct FMcpChangeAttributesRequest final
-{
-public:
-	class FString                                 ItemId;                                            // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     Attributes;                                        // 0x0010(0x0020)(NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMcpChangeAttributesRequest) == 0x000008, "Wrong alignment on FMcpChangeAttributesRequest");
-static_assert(sizeof(FMcpChangeAttributesRequest) == 0x000030, "Wrong size on FMcpChangeAttributesRequest");
-static_assert(offsetof(FMcpChangeAttributesRequest, ItemId) == 0x000000, "Member 'FMcpChangeAttributesRequest::ItemId' has a wrong offset!");
-static_assert(offsetof(FMcpChangeAttributesRequest, Attributes) == 0x000010, "Member 'FMcpChangeAttributesRequest::Attributes' has a wrong offset!");
 
 // ScriptStruct McpProfileSys.McpProfileChangeRequest
 // 0x0058 (0x0058 - 0x0000)

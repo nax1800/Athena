@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -131,7 +131,7 @@ public:
 	bool                                          CallFunc_GuardActionForReadOnlyWIFE_Proceed;       // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DropItemOnQuickBar_ReturnValue;           // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -148,7 +148,7 @@ static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, K2Node_DynamicCast_AsFo
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, K2Node_DynamicCast_bSuccess1) == 0x0000D0, "Member 'ItemManagementEquipSlot_C_OnDrop::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, CallFunc_GuardActionForReadOnlyWIFE_Proceed) == 0x0000D1, "Member 'ItemManagementEquipSlot_C_OnDrop::CallFunc_GuardActionForReadOnlyWIFE_Proceed' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0000D8, "Member 'ItemManagementEquipSlot_C_OnDrop::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, K2Node_DynamicCast_bSuccess12) == 0x0000E0, "Member 'ItemManagementEquipSlot_C_OnDrop::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, K2Node_DynamicCast_bSuccess2) == 0x0000E0, "Member 'ItemManagementEquipSlot_C_OnDrop::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, CallFunc_GetContext_ReturnValue) == 0x0000E8, "Member 'ItemManagementEquipSlot_C_OnDrop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, CallFunc_DropItemOnQuickBar_ReturnValue) == 0x0000F0, "Member 'ItemManagementEquipSlot_C_OnDrop::CallFunc_DropItemOnQuickBar_ReturnValue' has a wrong offset!");
 
@@ -189,41 +189,37 @@ static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, CallFunc_Han
 static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, CallFunc_GetItemToDetail_ReturnValue) == 0x0003B0, "Member 'ItemManagementEquipSlot_C_OnMouseButtonDown::CallFunc_GetItemToDetail_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDragDetected
-// 0x0118 (0x0118 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct ItemManagementEquipSlot_C_OnDragDetected final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x00C8(0x0028)(HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x00D0(0x0028)(HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UItemDragIcon_C*                        CallFunc_Create_ReturnValue;                       // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_GetOrLoadSynchronously_ReturnValue;       // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemDragIcon_C*                        CallFunc_Create_ReturnValue;                       // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemManagementEquipSlot_C_OnDragDetected) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnDragDetected");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnDragDetected) == 0x000118, "Wrong size on ItemManagementEquipSlot_C_OnDragDetected");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnDragDetected) == 0x000110, "Wrong size on ItemManagementEquipSlot_C_OnDragDetected");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'ItemManagementEquipSlot_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, Operation) == 0x0000A8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::Operation' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0000B8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_IsValid_ReturnValue) == 0x0000C1, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x0000C8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0000F0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000C0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x0000D0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000F8, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_AsTexture_2D) == 0x000100, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, K2Node_DynamicCast_bSuccess1) == 0x000108, "Member 'ItemManagementEquipSlot_C_OnDragDetected::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_Create_ReturnValue) == 0x000110, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_GetOrLoadSynchronously_ReturnValue) == 0x000100, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_GetOrLoadSynchronously_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, CallFunc_Create_ReturnValue) == 0x000108, "Member 'ItemManagementEquipSlot_C_OnDragDetected::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.SetSelected
 // 0x0005 (0x0005 - 0x0000)

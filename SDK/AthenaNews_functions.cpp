@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function AthenaNews.AthenaNews_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function AthenaNews.AthenaNews_C.UpdateStyle__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EAthenaNewsStyle                        NewStyle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaNews_C::Construct()
+void UAthenaNews_C::UpdateStyle__DelegateSignature(EAthenaNewsStyle NewStyle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaNews_C", "Construct");
+		Func = Class->GetFunction("AthenaNews_C", "UpdateStyle__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::AthenaNews_C_UpdateStyle__DelegateSignature Parms{};
+
+	Parms.NewStyle = NewStyle;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -48,6 +54,68 @@ void UAthenaNews_C::ExecuteUbergraph_AthenaNews(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaNews.AthenaNews_C.HandleNewsStyle
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EAthenaNewsStyle                        NewsStyle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaNews_C::HandleNewsStyle(EAthenaNewsStyle NewsStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNews_C", "HandleNewsStyle");
+
+	Params::AthenaNews_C_HandleNewsStyle Parms{};
+
+	Parms.NewsStyle = NewsStyle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaNews.AthenaNews_C.BeginIntroSequence
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaNews_C::BeginIntroSequence()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNews_C", "BeginIntroSequence");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaNews.AthenaNews_C.ResetViewConfiguration
+// (Event, Public, BlueprintEvent)
+
+void UAthenaNews_C::ResetViewConfiguration()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNews_C", "ResetViewConfiguration");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaNews.AthenaNews_C.SingleItemConfiguration
+// (Event, Public, BlueprintEvent)
+
+void UAthenaNews_C::SingleItemConfiguration()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNews_C", "SingleItemConfiguration");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

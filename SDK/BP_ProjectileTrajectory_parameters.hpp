@@ -18,33 +18,51 @@ namespace SDK::Params
 {
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ExecuteUbergraph_BP_ProjectileTrajectory
-// 0x0060 (0x0060 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0020(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        K2Node_Event_SplinePoints;                         // 0x0008(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FVector>                        K2Node_Event_SplineTangents;                       // 0x0018(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	int32                                         Temp_int_Variable;                                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Temp_struct_Variable;                              // 0x0040(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory) == 0x000010, "Wrong alignment on BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory");
-static_assert(sizeof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory) == 0x000060, "Wrong size on BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory");
+static_assert(sizeof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory) == 0x000080, "Wrong size on BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory");
 static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, EntryPoint) == 0x000000, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_int_Variable) == 0x000004, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00000D, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_struct_Variable) == 0x000020, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_AddComponent_ReturnValue) == 0x000050, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000058, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, K2Node_Event_SplinePoints) == 0x000008, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::K2Node_Event_SplinePoints' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, K2Node_Event_SplineTangents) == 0x000018, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::K2Node_Event_SplineTangents' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_int_Variable) == 0x000028, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Subtract_IntInt_ReturnValue) == 0x00002C, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000031, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_struct_Variable) == 0x000040, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000078, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+
+// Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectoryFromNative
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ProjectileTrajectory_C_SetTrajectoryFromNative final
+{
+public:
+	TArray<struct FVector>                        SplinePoints;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FVector>                        SplineTangents;                                    // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+static_assert(alignof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_SetTrajectoryFromNative");
+static_assert(sizeof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative) == 0x000020, "Wrong size on BP_ProjectileTrajectory_C_SetTrajectoryFromNative");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative, SplinePoints) == 0x000000, "Member 'BP_ProjectileTrajectory_C_SetTrajectoryFromNative::SplinePoints' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative, SplineTangents) == 0x000010, "Member 'BP_ProjectileTrajectory_C_SetTrajectoryFromNative::SplineTangents' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectorySpline
 // 0x01C0 (0x01C0 - 0x0000)
@@ -71,28 +89,28 @@ public:
 	struct FVector                                CallFunc_Array_Get_Item;                           // 0x00F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Array_Get_Item1;                          // 0x0114(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item12;                         // 0x0120(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item2;                          // 0x0120(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0138(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0148(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1234;               // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Array_Get_Item123;                        // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item3;                          // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x0168(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue1;        // 0x0174(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x0180(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue1;    // 0x018C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetArriveTangentAtSplinePoint_ReturnValue; // 0x0198(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue; // 0x01A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USplineMeshComponent*                   CallFunc_Array_Get_Item1234;                       // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USplineMeshComponent*                   CallFunc_Array_Get_Item4;                          // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_ProjectileTrajectory_C_SetTrajectorySpline) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_SetTrajectorySpline");
 static_assert(sizeof(BP_ProjectileTrajectory_C_SetTrajectorySpline) == 0x0001C0, "Wrong size on BP_ProjectileTrajectory_C_SetTrajectorySpline");
@@ -114,27 +132,27 @@ static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_A
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_Loop_Counter_Variable1) == 0x0000F4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue1) == 0x000104, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue12) == 0x000108, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue123) == 0x00010C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue2) == 0x000108, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue3) == 0x00010C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_IntInt_ReturnValue) == 0x000110, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item1) == 0x000114, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item12) == 0x000120, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item2) == 0x000120, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00012C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Normal_ReturnValue) == 0x000138, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Normal_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_VSize_ReturnValue) == 0x000144, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_VSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000148, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue1234) == 0x000154, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue4) == 0x000154, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000158, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item123) == 0x00015C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item123' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item3) == 0x00015C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item3' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Normal_ReturnValue1) == 0x000168, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Normal_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_VectorFloat_ReturnValue1) == 0x000174, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_VectorFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x000180, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLocationAtSplinePoint_ReturnValue1) == 0x00018C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLocationAtSplinePoint_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetArriveTangentAtSplinePoint_ReturnValue) == 0x000198, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetArriveTangentAtSplinePoint_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue) == 0x0001A4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item1234) == 0x0001B0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item1234' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item4) == 0x0001B0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item4' has a wrong offset!");
 static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Length_ReturnValue1) == 0x0001B8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue12) == 0x0001BC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue2) == 0x0001BC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 
 }
 

@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass BP_Pistol_FC_SA.BP_Pistol_FC_SA_C
-// 0x0100 (0x0478 - 0x0378)
+// 0x00F0 (0x0448 - 0x0358)
 class UBP_Pistol_FC_SA_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D; // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA; // 0x03D0(0x0070)()
-	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88; // 0x0440(0x0038)()
+	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D; // 0x0368(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA; // 0x03A8(0x0068)()
+	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88; // 0x0410(0x0038)()
 
 public:
 	void ExecuteUbergraph_BP_Pistol_FC_SA(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UBP_Pistol_FC_SA_C) == 0x000008, "Wrong alignment on UBP_Pistol_FC_SA_C");
-static_assert(sizeof(UBP_Pistol_FC_SA_C) == 0x000478, "Wrong size on UBP_Pistol_FC_SA_C");
-static_assert(offsetof(UBP_Pistol_FC_SA_C, UberGraphFrame) == 0x000380, "Member 'UBP_Pistol_FC_SA_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D) == 0x000388, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA) == 0x0003D0, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88) == 0x000440, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88' has a wrong offset!");
+static_assert(sizeof(UBP_Pistol_FC_SA_C) == 0x000448, "Wrong size on UBP_Pistol_FC_SA_C");
+static_assert(offsetof(UBP_Pistol_FC_SA_C, UberGraphFrame) == 0x000360, "Member 'UBP_Pistol_FC_SA_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D) == 0x000368, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_Root_59F2F7924C02FD42668752B6AD5C5D7D' has a wrong offset!");
+static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA) == 0x0003A8, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_Slot_3C404E374989FC3E37A4538744D810DA' has a wrong offset!");
+static_assert(offsetof(UBP_Pistol_FC_SA_C, AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88) == 0x000410, "Member 'UBP_Pistol_FC_SA_C::AnimGraphNode_LocalRefPose_16F5A0174D756BCD3A56E2A54C593E88' has a wrong offset!");
 
 }
 

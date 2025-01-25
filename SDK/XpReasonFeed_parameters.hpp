@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,18 +23,18 @@ struct XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UXpReasonFeedItem_C*                    CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAthenaMatchXpReward                   K2Node_CustomEvent_Reward;                         // 0x0020(0x0020)(ConstParm)
+	struct FAthenaMatchXpReward                   K2Node_CustomEvent_Reward;                         // 0x0008(0x0020)(ConstParm)
+	class UUserWidget*                            CallFunc_BP_CreateEntry_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UXpReasonFeedItem_C*                    K2Node_DynamicCast_AsXp_Reason_Feed_Item;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed) == 0x000008, "Wrong alignment on XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed");
 static_assert(sizeof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed) == 0x000040, "Wrong size on XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed");
 static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, EntryPoint) == 0x000000, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::EntryPoint' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, CallFunc_Create_ReturnValue) == 0x000010, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, CallFunc_AddChildToOverlay_ReturnValue) == 0x000018, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::CallFunc_AddChildToOverlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, K2Node_CustomEvent_Reward) == 0x000020, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::K2Node_CustomEvent_Reward' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, K2Node_CustomEvent_Reward) == 0x000008, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::K2Node_CustomEvent_Reward' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, CallFunc_BP_CreateEntry_ReturnValue) == 0x000028, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::CallFunc_BP_CreateEntry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, K2Node_DynamicCast_AsXp_Reason_Feed_Item) == 0x000030, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::K2Node_DynamicCast_AsXp_Reason_Feed_Item' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'XpReasonFeed_C_ExecuteUbergraph_XpReasonFeed::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function XpReasonFeed.XpReasonFeed_C.Play Xp Reward
 // 0x0020 (0x0020 - 0x0000)
@@ -61,9 +60,9 @@ static_assert(sizeof(XpReasonFeed_C_IsReadyForNextXpReward) == 0x000002, "Wrong 
 static_assert(offsetof(XpReasonFeed_C_IsReadyForNextXpReward, Ready) == 0x000000, "Member 'XpReasonFeed_C_IsReadyForNextXpReward::Ready' has a wrong offset!");
 static_assert(offsetof(XpReasonFeed_C_IsReadyForNextXpReward, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'XpReasonFeed_C_IsReadyForNextXpReward::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
-// Function XpReasonFeed.XpReasonFeed_C.SetXpRewards
+// Function XpReasonFeed.XpReasonFeed_C.ImmediatelyShowXpRewards
 // 0x0060 (0x0060 - 0x0000)
-struct XpReasonFeed_C_SetXpRewards final
+struct XpReasonFeed_C_ImmediatelyShowXpRewards final
 {
 public:
 	TArray<struct FAthenaMatchXpReward>           XpRewards;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -75,41 +74,22 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UXpReasonFeedItem_C*                    CallFunc_Create_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_BP_CreateEntry_ReturnValue;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UXpReasonFeedItem_C*                    K2Node_DynamicCast_AsXp_Reason_Feed_Item;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(XpReasonFeed_C_SetXpRewards) == 0x000008, "Wrong alignment on XpReasonFeed_C_SetXpRewards");
-static_assert(sizeof(XpReasonFeed_C_SetXpRewards) == 0x000060, "Wrong size on XpReasonFeed_C_SetXpRewards");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, XpRewards) == 0x000000, "Member 'XpReasonFeed_C_SetXpRewards::XpRewards' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, Temp_int_Array_Index_Variable) == 0x000014, "Member 'XpReasonFeed_C_SetXpRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'XpReasonFeed_C_SetXpRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_Array_Get_Item) == 0x000020, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_Create_ReturnValue) == 0x000050, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_SetXpRewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000058, "Member 'XpReasonFeed_C_SetXpRewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-
-// Function XpReasonFeed.XpReasonFeed_C.ShowAllXpRewards
-// 0x0005 (0x0005 - 0x0000)
-struct XpReasonFeed_C_ShowAllXpRewards final
-{
-public:
-	bool                                          Show;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(XpReasonFeed_C_ShowAllXpRewards) == 0x000001, "Wrong alignment on XpReasonFeed_C_ShowAllXpRewards");
-static_assert(sizeof(XpReasonFeed_C_ShowAllXpRewards) == 0x000005, "Wrong size on XpReasonFeed_C_ShowAllXpRewards");
-static_assert(offsetof(XpReasonFeed_C_ShowAllXpRewards, Show) == 0x000000, "Member 'XpReasonFeed_C_ShowAllXpRewards::Show' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ShowAllXpRewards, Temp_bool_Variable) == 0x000001, "Member 'XpReasonFeed_C_ShowAllXpRewards::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ShowAllXpRewards, Temp_byte_Variable) == 0x000002, "Member 'XpReasonFeed_C_ShowAllXpRewards::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ShowAllXpRewards, Temp_byte_Variable1) == 0x000003, "Member 'XpReasonFeed_C_ShowAllXpRewards::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(XpReasonFeed_C_ShowAllXpRewards, K2Node_Select_Default) == 0x000004, "Member 'XpReasonFeed_C_ShowAllXpRewards::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(XpReasonFeed_C_ImmediatelyShowXpRewards) == 0x000008, "Wrong alignment on XpReasonFeed_C_ImmediatelyShowXpRewards");
+static_assert(sizeof(XpReasonFeed_C_ImmediatelyShowXpRewards) == 0x000060, "Wrong size on XpReasonFeed_C_ImmediatelyShowXpRewards");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, XpRewards) == 0x000000, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::XpRewards' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, Temp_int_Array_Index_Variable) == 0x000014, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, CallFunc_Array_Get_Item) == 0x000020, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, CallFunc_BP_CreateEntry_ReturnValue) == 0x000048, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::CallFunc_BP_CreateEntry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, K2Node_DynamicCast_AsXp_Reason_Feed_Item) == 0x000050, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::K2Node_DynamicCast_AsXp_Reason_Feed_Item' has a wrong offset!");
+static_assert(offsetof(XpReasonFeed_C_ImmediatelyShowXpRewards, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'XpReasonFeed_C_ImmediatelyShowXpRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

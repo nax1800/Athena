@@ -11,7 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -19,30 +19,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaReplayBrowserRow.AthenaReplayBrowserRow_C
-// 0x00A0 (0x08B8 - 0x0818)
+// 0x0120 (0x09C0 - 0x08A0)
 class UAthenaReplayBrowserRow_C final : public UAthenaReplayBrowserEntryWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0818(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          CommonBorder_1;                                    // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Date;                                              // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Kills;                                             // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Length;                                            // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Mode;                                              // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Name_AthenaReplayBrowserRow_C;                     // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Rank;                                              // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Size;                                              // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Version;                                           // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Views;                                             // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           Border_CorruptReplayBackground;                    // 0x0870(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Border_SavedReplayBackground;                      // 0x0880(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Border_UnsavedReplayBackground;                    // 0x0890(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 SavedReplayBrush;                                  // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CorruptedReplayBrush;                              // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 UnsavedReplayBrush;                                // 0x08B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          CommonBorder_1;                                    // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Date;                                              // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Kills;                                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Length;                                            // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Mode;                                              // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Name_0;                                            // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ProAmImage;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Rank;                                              // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               RowHeightSB;                                       // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Size;                                              // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Version;                                           // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Views;                                             // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                 SavedReplayBrush;                                  // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CorruptedReplayBrush;                              // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 UnsavedReplayBrush;                                // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 FeaturedReplayBrush;                               // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAthenaReplayBrowserRowData            DummyRowData;                                      // 0x0928(0x0090)(Edit, BlueprintVisible)
+	float                                         NormalRowHeight;                                   // 0x09B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FeaturedRowHeight;                                 // 0x09BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaReplayBrowserRow(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 	void OnReplayBrowserEntryDataSet();
 	void Refresh();
 	class FText FormatLengthText(float Seconds);
@@ -58,24 +62,27 @@ public:
 	}
 };
 static_assert(alignof(UAthenaReplayBrowserRow_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserRow_C");
-static_assert(sizeof(UAthenaReplayBrowserRow_C) == 0x0008B8, "Wrong size on UAthenaReplayBrowserRow_C");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, UberGraphFrame) == 0x000818, "Member 'UAthenaReplayBrowserRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, CommonBorder_1) == 0x000820, "Member 'UAthenaReplayBrowserRow_C::CommonBorder_1' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Date) == 0x000828, "Member 'UAthenaReplayBrowserRow_C::Date' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Kills) == 0x000830, "Member 'UAthenaReplayBrowserRow_C::Kills' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Length) == 0x000838, "Member 'UAthenaReplayBrowserRow_C::Length' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Mode) == 0x000840, "Member 'UAthenaReplayBrowserRow_C::Mode' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Name_AthenaReplayBrowserRow_C) == 0x000848, "Member 'UAthenaReplayBrowserRow_C::Name_AthenaReplayBrowserRow_C' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Rank) == 0x000850, "Member 'UAthenaReplayBrowserRow_C::Rank' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Size) == 0x000858, "Member 'UAthenaReplayBrowserRow_C::Size' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Version) == 0x000860, "Member 'UAthenaReplayBrowserRow_C::Version' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Views) == 0x000868, "Member 'UAthenaReplayBrowserRow_C::Views' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Border_CorruptReplayBackground) == 0x000870, "Member 'UAthenaReplayBrowserRow_C::Border_CorruptReplayBackground' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Border_SavedReplayBackground) == 0x000880, "Member 'UAthenaReplayBrowserRow_C::Border_SavedReplayBackground' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Border_UnsavedReplayBackground) == 0x000890, "Member 'UAthenaReplayBrowserRow_C::Border_UnsavedReplayBackground' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, SavedReplayBrush) == 0x0008A0, "Member 'UAthenaReplayBrowserRow_C::SavedReplayBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, CorruptedReplayBrush) == 0x0008A8, "Member 'UAthenaReplayBrowserRow_C::CorruptedReplayBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, UnsavedReplayBrush) == 0x0008B0, "Member 'UAthenaReplayBrowserRow_C::UnsavedReplayBrush' has a wrong offset!");
+static_assert(sizeof(UAthenaReplayBrowserRow_C) == 0x0009C0, "Wrong size on UAthenaReplayBrowserRow_C");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, UberGraphFrame) == 0x0008A0, "Member 'UAthenaReplayBrowserRow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, CommonBorder_1) == 0x0008A8, "Member 'UAthenaReplayBrowserRow_C::CommonBorder_1' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Date) == 0x0008B0, "Member 'UAthenaReplayBrowserRow_C::Date' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Kills) == 0x0008B8, "Member 'UAthenaReplayBrowserRow_C::Kills' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Length) == 0x0008C0, "Member 'UAthenaReplayBrowserRow_C::Length' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Mode) == 0x0008C8, "Member 'UAthenaReplayBrowserRow_C::Mode' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Name_0) == 0x0008D0, "Member 'UAthenaReplayBrowserRow_C::Name_0' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, ProAmImage) == 0x0008D8, "Member 'UAthenaReplayBrowserRow_C::ProAmImage' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Rank) == 0x0008E0, "Member 'UAthenaReplayBrowserRow_C::Rank' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, RowHeightSB) == 0x0008E8, "Member 'UAthenaReplayBrowserRow_C::RowHeightSB' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Size) == 0x0008F0, "Member 'UAthenaReplayBrowserRow_C::Size' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Version) == 0x0008F8, "Member 'UAthenaReplayBrowserRow_C::Version' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, Views) == 0x000900, "Member 'UAthenaReplayBrowserRow_C::Views' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, SavedReplayBrush) == 0x000908, "Member 'UAthenaReplayBrowserRow_C::SavedReplayBrush' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, CorruptedReplayBrush) == 0x000910, "Member 'UAthenaReplayBrowserRow_C::CorruptedReplayBrush' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, UnsavedReplayBrush) == 0x000918, "Member 'UAthenaReplayBrowserRow_C::UnsavedReplayBrush' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, FeaturedReplayBrush) == 0x000920, "Member 'UAthenaReplayBrowserRow_C::FeaturedReplayBrush' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, DummyRowData) == 0x000928, "Member 'UAthenaReplayBrowserRow_C::DummyRowData' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, NormalRowHeight) == 0x0009B8, "Member 'UAthenaReplayBrowserRow_C::NormalRowHeight' has a wrong offset!");
+static_assert(offsetof(UAthenaReplayBrowserRow_C, FeaturedRowHeight) == 0x0009BC, "Member 'UAthenaReplayBrowserRow_C::FeaturedRowHeight' has a wrong offset!");
 
 }
 

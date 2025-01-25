@@ -79,43 +79,43 @@ void UAthenaInventoryEquipSlot_C::OnInventoryItemSelected_Event_0(class UFortIte
 }
 
 
-// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDoubleClicked
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.BP_OnDoubleClicked
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaInventoryEquipSlot_C::OnDoubleClicked()
+void UAthenaInventoryEquipSlot_C::BP_OnDoubleClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "OnDoubleClicked");
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "BP_OnDoubleClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDeselected
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaInventoryEquipSlot_C::OnDeselected()
+void UAthenaInventoryEquipSlot_C::BP_OnDeselected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "OnDeselected");
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnSelected
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaInventoryEquipSlot_C::OnSelected()
+void UAthenaInventoryEquipSlot_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "OnSelected");
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,15 +141,15 @@ void UAthenaInventoryEquipSlot_C::OnAddedToFocusPath(const struct FFocusEvent& I
 }
 
 
-// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnClicked
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaInventoryEquipSlot_C::OnClicked()
+void UAthenaInventoryEquipSlot_C::BP_OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "OnClicked");
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -392,9 +392,9 @@ bool UAthenaInventoryEquipSlot_C::CanEquipFortItem(class UObject* Object)
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.IsFocusOfDrop
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_IsDragHovered                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDragHovered_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaInventoryEquipSlot_C::IsFocusOfDrop(bool* Param_IsDragHovered)
+void UAthenaInventoryEquipSlot_C::IsFocusOfDrop(bool* IsDragHovered_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -405,8 +405,62 @@ void UAthenaInventoryEquipSlot_C::IsFocusOfDrop(bool* Param_IsDragHovered)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_IsDragHovered != nullptr)
-		*Param_IsDragHovered = Parms.Param_IsDragHovered;
+	if (IsDragHovered_0 != nullptr)
+		*IsDragHovered_0 = Parms.IsDragHovered_0;
+}
+
+
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.Update Athena Gadget Fuel Widget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortItem*                        ItemInSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaInventoryEquipSlot_C::Update_Athena_Gadget_Fuel_Widget(class UFortItem* ItemInSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "Update Athena Gadget Fuel Widget");
+
+	Params::AthenaInventoryEquipSlot_C_Update_Athena_Gadget_Fuel_Widget Parms{};
+
+	Parms.ItemInSlot = ItemInSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.Hide Athena Gadget Fuel Widget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaInventoryEquipSlot_C::Hide_Athena_Gadget_Fuel_Widget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "Hide Athena Gadget Fuel Widget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.Show Athena Gadget Fuel Widget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortItem*                        Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaInventoryEquipSlot_C::Show_Athena_Gadget_Fuel_Widget(class UFortItem* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaInventoryEquipSlot_C", "Show Athena Gadget Fuel Widget");
+
+	Params::AthenaInventoryEquipSlot_C_Show_Athena_Gadget_Fuel_Widget Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

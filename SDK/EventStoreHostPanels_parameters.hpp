@@ -36,7 +36,7 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetWidgetAtIndex_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDetailsHostPanel*              K2Node_DynamicCast_AsFort_Item_Details_Host_Panel1; // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels) == 0x000008, "Wrong alignment on EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels");
 static_assert(sizeof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels) == 0x000060, "Wrong size on EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels");
@@ -52,7 +52,7 @@ static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPan
 static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000048, "Member 'EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels, K2Node_DynamicCast_AsFort_Item_Details_Host_Panel1) == 0x000050, "Member 'EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels::K2Node_DynamicCast_AsFort_Item_Details_Host_Panel1' has a wrong offset!");
-static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels, K2Node_DynamicCast_bSuccess12) == 0x000058, "Member 'EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'EventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function EventStoreHostPanels.EventStoreHostPanels_C.BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)

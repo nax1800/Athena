@@ -29,7 +29,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails) == 0x000008, "Wrong alignment on ZoneDetails_C_ExecuteUbergraph_ZoneDetails");
 static_assert(sizeof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails) == 0x000048, "Wrong size on ZoneDetails_C_ExecuteUbergraph_ZoneDetails");
@@ -38,7 +38,7 @@ static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, CallFunc_GetC
 static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate1) == 0x000028, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate12) == 0x000038, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate2) == 0x000038, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function ZoneDetails.ZoneDetails_C.Update
 // 0x0458 (0x0458 - 0x0000)

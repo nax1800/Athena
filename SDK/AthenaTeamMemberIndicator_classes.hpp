@@ -29,10 +29,10 @@ public:
 
 public:
 	void ExecuteUbergraph_AthenaTeamMemberIndicator(int32 EntryPoint);
-	void PlayerNameChanged(const class FString& Param_PlayerName);
-	void BeingRevivedStateChanged(bool bReviving);
-	void TalkingStateChanged(bool bTalking);
-	void DBNOStateChanged(bool bDBNO);
+	void PlayerNameChanged(class AFortPlayerStateAthena* PS, const class FString& PlayerName_0);
+	void BeingRevivedStateChanged(class AFortPlayerStateAthena* PS, bool bReviving);
+	void TalkingStateChanged(class AFortPlayerStateAthena* PS, bool bTalking);
+	void DBNOStateChanged(class AFortPlayerStateAthena* PS, bool bDBNO);
 
 public:
 	static class UClass* StaticClass()

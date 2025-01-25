@@ -17,9 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_NPC_Lightning.GCN_NPC_Lightning_C
-// 0x0000 (0x0440 - 0x0440)
+// 0x0000 (0x0420 - 0x0420)
 class AGCN_NPC_Lightning_C final : public AFortGameplayCueNotify_Looping
 {
+public:
+	void UserConstructionScript();
+	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -30,8 +34,8 @@ public:
 		return GetDefaultObjImpl<AGCN_NPC_Lightning_C>();
 	}
 };
-static_assert(alignof(AGCN_NPC_Lightning_C) == 0x000010, "Wrong alignment on AGCN_NPC_Lightning_C");
-static_assert(sizeof(AGCN_NPC_Lightning_C) == 0x000440, "Wrong size on AGCN_NPC_Lightning_C");
+static_assert(alignof(AGCN_NPC_Lightning_C) == 0x000008, "Wrong alignment on AGCN_NPC_Lightning_C");
+static_assert(sizeof(AGCN_NPC_Lightning_C) == 0x000420, "Wrong size on AGCN_NPC_Lightning_C");
 
 }
 

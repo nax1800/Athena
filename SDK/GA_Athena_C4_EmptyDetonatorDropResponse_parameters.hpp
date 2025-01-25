@@ -95,10 +95,10 @@ public:
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue1;              // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x015E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x015F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue123;                // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0162(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1234;               // 0x0163(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x0163(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent) == 0x000008, "Wrong alignment on GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent");
@@ -124,10 +124,10 @@ static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilit
 static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_Conv_IntToBool_ReturnValue1) == 0x00015D, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_Conv_IntToBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue) == 0x00015E, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue1) == 0x00015F, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue12) == 0x000160, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue123) == 0x000161, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue2) == 0x000160, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue3) == 0x000161, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, K2Node_SwitchEnum1_CmpSuccess) == 0x000162, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue1234) == 0x000163, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue4) == 0x000163, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanOR_ReturnValue) == 0x000164, "Member 'GA_Athena_C4_EmptyDetonatorDropResponse_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 }

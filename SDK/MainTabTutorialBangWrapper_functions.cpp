@@ -145,9 +145,9 @@ void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime)
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_Count                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Count_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Param_Count)
+void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -157,7 +157,7 @@ void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Para
 	Params::MainTabTutorialBangWrapper_C_OnBangStateChanged Parms{};
 
 	Parms.bEnabled = bEnabled;
-	Parms.Param_Count = Param_Count;
+	Parms.Count_0 = Count_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

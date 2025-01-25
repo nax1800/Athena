@@ -10,26 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskBaseRadialMelee.GAB_HuskBaseRadialMelee_C
-// 0x0038 (0x0B20 - 0x0AE8)
+// 0x0030 (0x0928 - 0x08F8)
 class UGAB_HuskBaseRadialMelee_C : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class FName                                   MontageSectionToPlay;                              // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Debug;                                             // 0x0B00(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B01[0x7];                                      // 0x0B01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   AttackToLeftMontageSection;                        // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   AttackToRightMontageSection;                       // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_AIBaseMeleeFrustration_Reset;                   // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class FName                                   MontageSectionToPlay;                              // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Debug;                                             // 0x0908(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_909[0x7];                                      // 0x0909(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   AttackToLeftMontageSection;                        // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   AttackToRightMontageSection;                       // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_AIBaseMeleeFrustration_Reset;                   // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_HuskBaseRadialMelee(int32 EntryPoint);
@@ -51,13 +50,13 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskBaseRadialMelee_C) == 0x000008, "Wrong alignment on UGAB_HuskBaseRadialMelee_C");
-static_assert(sizeof(UGAB_HuskBaseRadialMelee_C) == 0x000B20, "Wrong size on UGAB_HuskBaseRadialMelee_C");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_HuskBaseRadialMelee_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, MontageSectionToPlay) == 0x000AF8, "Member 'UGAB_HuskBaseRadialMelee_C::MontageSectionToPlay' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, Debug) == 0x000B00, "Member 'UGAB_HuskBaseRadialMelee_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, AttackToLeftMontageSection) == 0x000B08, "Member 'UGAB_HuskBaseRadialMelee_C::AttackToLeftMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, AttackToRightMontageSection) == 0x000B10, "Member 'UGAB_HuskBaseRadialMelee_C::AttackToRightMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, GE_AIBaseMeleeFrustration_Reset) == 0x000B18, "Member 'UGAB_HuskBaseRadialMelee_C::GE_AIBaseMeleeFrustration_Reset' has a wrong offset!");
+static_assert(sizeof(UGAB_HuskBaseRadialMelee_C) == 0x000928, "Wrong size on UGAB_HuskBaseRadialMelee_C");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_HuskBaseRadialMelee_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, MontageSectionToPlay) == 0x000900, "Member 'UGAB_HuskBaseRadialMelee_C::MontageSectionToPlay' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, Debug) == 0x000908, "Member 'UGAB_HuskBaseRadialMelee_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, AttackToLeftMontageSection) == 0x000910, "Member 'UGAB_HuskBaseRadialMelee_C::AttackToLeftMontageSection' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, AttackToRightMontageSection) == 0x000918, "Member 'UGAB_HuskBaseRadialMelee_C::AttackToRightMontageSection' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskBaseRadialMelee_C, GE_AIBaseMeleeFrustration_Reset) == 0x000920, "Member 'UGAB_HuskBaseRadialMelee_C::GE_AIBaseMeleeFrustration_Reset' has a wrong offset!");
 
 }
 

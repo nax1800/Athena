@@ -19,17 +19,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BacchusControlsHelp.BacchusControlsHelp_C
-// 0x0038 (0x03F8 - 0x03C0)
+// 0x0048 (0x0340 - 0x02F8)
 class UBacchusControlsHelp_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ButtonSwitcher;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         PanelButton;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SBBuilding;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SBCombat;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  SwitcherHelp;                                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ButtonSwitcher;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  CombatModeSwitcher;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPanelButton_C*                         PanelButton;                                       // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBBuilding;                                        // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBCombat;                                          // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBCombatFireButton;                                // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  SwitcherHelp;                                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BacchusControlsHelp(int32 EntryPoint);
@@ -37,6 +39,8 @@ public:
 	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_29_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void Construct();
 	void Handle_Close();
+	void OnActivated();
+	void Update();
 
 public:
 	static class UClass* StaticClass()
@@ -49,14 +53,16 @@ public:
 	}
 };
 static_assert(alignof(UBacchusControlsHelp_C) == 0x000008, "Wrong alignment on UBacchusControlsHelp_C");
-static_assert(sizeof(UBacchusControlsHelp_C) == 0x0003F8, "Wrong size on UBacchusControlsHelp_C");
-static_assert(offsetof(UBacchusControlsHelp_C, UberGraphFrame) == 0x0003C0, "Member 'UBacchusControlsHelp_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, ButtonSwitcher) == 0x0003C8, "Member 'UBacchusControlsHelp_C::ButtonSwitcher' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, Lightbox) == 0x0003D0, "Member 'UBacchusControlsHelp_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, PanelButton) == 0x0003D8, "Member 'UBacchusControlsHelp_C::PanelButton' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, SBBuilding) == 0x0003E0, "Member 'UBacchusControlsHelp_C::SBBuilding' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, SBCombat) == 0x0003E8, "Member 'UBacchusControlsHelp_C::SBCombat' has a wrong offset!");
-static_assert(offsetof(UBacchusControlsHelp_C, SwitcherHelp) == 0x0003F0, "Member 'UBacchusControlsHelp_C::SwitcherHelp' has a wrong offset!");
+static_assert(sizeof(UBacchusControlsHelp_C) == 0x000340, "Wrong size on UBacchusControlsHelp_C");
+static_assert(offsetof(UBacchusControlsHelp_C, UberGraphFrame) == 0x0002F8, "Member 'UBacchusControlsHelp_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, ButtonSwitcher) == 0x000300, "Member 'UBacchusControlsHelp_C::ButtonSwitcher' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, CombatModeSwitcher) == 0x000308, "Member 'UBacchusControlsHelp_C::CombatModeSwitcher' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, Lightbox) == 0x000310, "Member 'UBacchusControlsHelp_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, PanelButton) == 0x000318, "Member 'UBacchusControlsHelp_C::PanelButton' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, SBBuilding) == 0x000320, "Member 'UBacchusControlsHelp_C::SBBuilding' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, SBCombat) == 0x000328, "Member 'UBacchusControlsHelp_C::SBCombat' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, SBCombatFireButton) == 0x000330, "Member 'UBacchusControlsHelp_C::SBCombatFireButton' has a wrong offset!");
+static_assert(offsetof(UBacchusControlsHelp_C, SwitcherHelp) == 0x000338, "Member 'UBacchusControlsHelp_C::SwitcherHelp' has a wrong offset!");
 
 }
 

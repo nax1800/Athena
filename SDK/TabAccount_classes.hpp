@@ -10,63 +10,84 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabAccount.TabAccount_C
-// 0x00E8 (0x0310 - 0x0228)
+// 0x0158 (0x03A0 - 0x0248)
 class UTabAccount_C final : public UFortAccountOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       AccountLinkText;                                   // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderBonusesBottomEdge;                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Button_AccountLinking;                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Button_CustomerService;                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Button_Logout;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          CommonBorder_5;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_5;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_7;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_9;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  ConfigurationSwitcher;                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CopyCustomerIDButton;                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CopyEpicAccountIDButton;                           // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         DefaultConfigurationBox;                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       EpicId;                                            // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortTwitchLogin_C*                     FortTwitchLogin;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HorizontalBox_6;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HorizontalBox_7;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       RailId;                                            // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       StaticURLText;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         TencentRailInfoHBox;                               // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TooltipTextBox;                                    // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      URLButton;                                         // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBox_AccountInfo;                                  // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBox_DesktopOptions;                               // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBox_MobileOptions;                                // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBox_TwitchSettings;                               // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           WebsiteConfigurationBox;                           // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           AccountInfoHeader;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       AccountLinkText;                                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderBonusesBottomEdge;                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Button_AccountLinking;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Button_CustomerService;                            // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Button_Logout;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Button_RefundRequest;                              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          CommonBorder_2;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          CommonBorder_5;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_5;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_7;                                 // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_9;                                 // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  ConfigurationSwitcher;                             // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           ContentHeader;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CopyCustomerIDButton;                              // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CopyEpicAccountIDButton;                           // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         DefaultConfigurationBox;                           // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           DesktopConsoleOptions;                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       EpicId;                                            // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortTwitchLogin_C*                     FortTwitchLogin;                                   // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBox_6;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBox_7;                                   // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelector_C*                     LeaderboardPrivacy;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       LifetimeRefundDesc;                                // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MobileOptions;                                     // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           PrivacySettings;                                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       RailId;                                            // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelector_C*                     ReceiveGiftToggle;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           RefundRequest;                                     // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelector_C*                     SamsungStoreToggle;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       StaticURLText;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         TencentRailInfoHBox;                               // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_RemainingRefunds;                             // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TooltipTextBox;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           UninstallSTW;                                      // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      UninstallStWButton;                                // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       UninstallSTWDesc;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      URLButton;                                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VBox_TwitchSettings;                               // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           WebsiteConfigurationBox;                           // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	float                                         StWUninstallProgres;                               // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TabAccount(int32 EntryPoint);
+	void BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void OnReadPrivacySettings(bool bSuccess, const struct FMcpPrivacySettings& Settings);
+	void BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void SetRefundRequestText(int32 RefundsRemaining, int32 TotalRefunds, int32 DaysToRefund);
+	void UpdateOptionsTab();
+	void BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText);
+	void BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText);
-	void Construct();
 	void CenterOnTab();
-	void UpdateOptionsTab();
+	void BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void Construct();
 	void DialogResult_38AE683A4765B23E84C880991D01C356(EFortDialogResult Result, class FName ResultName);
 	void Update_Data();
 	void Initialize_Data();
@@ -75,6 +96,10 @@ public:
 	struct FFortAnalyticsEventAttribute Build_Player_Id_Analytic_Attribute();
 	void InitializeWebsiteConfiguration();
 	class FText GetTencentId();
+	void OnStWContentUninstalled();
+	int32 PrivacySettingsToSelection();
+	void PrivacySettingsFromSelection(int32 A, struct FMcpPrivacySettings* McpPrivacySettings);
+	void CenterAppropriateWidget();
 
 public:
 	static class UClass* StaticClass()
@@ -87,36 +112,50 @@ public:
 	}
 };
 static_assert(alignof(UTabAccount_C) == 0x000008, "Wrong alignment on UTabAccount_C");
-static_assert(sizeof(UTabAccount_C) == 0x000310, "Wrong size on UTabAccount_C");
-static_assert(offsetof(UTabAccount_C, UberGraphFrame) == 0x000228, "Member 'UTabAccount_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, AccountLinkText) == 0x000230, "Member 'UTabAccount_C::AccountLinkText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, BorderBonusesBottomEdge) == 0x000238, "Member 'UTabAccount_C::BorderBonusesBottomEdge' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_AccountLinking) == 0x000240, "Member 'UTabAccount_C::Button_AccountLinking' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_CustomerService) == 0x000248, "Member 'UTabAccount_C::Button_CustomerService' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_Logout) == 0x000250, "Member 'UTabAccount_C::Button_Logout' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonBorder_5) == 0x000258, "Member 'UTabAccount_C::CommonBorder_5' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_5) == 0x000260, "Member 'UTabAccount_C::CommonTextBlock_5' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_7) == 0x000268, "Member 'UTabAccount_C::CommonTextBlock_7' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_9) == 0x000270, "Member 'UTabAccount_C::CommonTextBlock_9' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ConfigurationSwitcher) == 0x000278, "Member 'UTabAccount_C::ConfigurationSwitcher' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CopyCustomerIDButton) == 0x000280, "Member 'UTabAccount_C::CopyCustomerIDButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CopyEpicAccountIDButton) == 0x000288, "Member 'UTabAccount_C::CopyEpicAccountIDButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, DefaultConfigurationBox) == 0x000290, "Member 'UTabAccount_C::DefaultConfigurationBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, EpicId) == 0x000298, "Member 'UTabAccount_C::EpicId' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, FortTwitchLogin) == 0x0002A0, "Member 'UTabAccount_C::FortTwitchLogin' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, HorizontalBox_6) == 0x0002A8, "Member 'UTabAccount_C::HorizontalBox_6' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, HorizontalBox_7) == 0x0002B0, "Member 'UTabAccount_C::HorizontalBox_7' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Image_0) == 0x0002B8, "Member 'UTabAccount_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RailId) == 0x0002C0, "Member 'UTabAccount_C::RailId' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, StaticURLText) == 0x0002C8, "Member 'UTabAccount_C::StaticURLText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, TencentRailInfoHBox) == 0x0002D0, "Member 'UTabAccount_C::TencentRailInfoHBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, TooltipTextBox) == 0x0002D8, "Member 'UTabAccount_C::TooltipTextBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, URLButton) == 0x0002E0, "Member 'UTabAccount_C::URLButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, VBox_AccountInfo) == 0x0002E8, "Member 'UTabAccount_C::VBox_AccountInfo' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, VBox_DesktopOptions) == 0x0002F0, "Member 'UTabAccount_C::VBox_DesktopOptions' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, VBox_MobileOptions) == 0x0002F8, "Member 'UTabAccount_C::VBox_MobileOptions' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, VBox_TwitchSettings) == 0x000300, "Member 'UTabAccount_C::VBox_TwitchSettings' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, WebsiteConfigurationBox) == 0x000308, "Member 'UTabAccount_C::WebsiteConfigurationBox' has a wrong offset!");
+static_assert(sizeof(UTabAccount_C) == 0x0003A0, "Wrong size on UTabAccount_C");
+static_assert(offsetof(UTabAccount_C, UberGraphFrame) == 0x000248, "Member 'UTabAccount_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, AccountInfoHeader) == 0x000250, "Member 'UTabAccount_C::AccountInfoHeader' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, AccountLinkText) == 0x000258, "Member 'UTabAccount_C::AccountLinkText' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, BorderBonusesBottomEdge) == 0x000260, "Member 'UTabAccount_C::BorderBonusesBottomEdge' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Button_AccountLinking) == 0x000268, "Member 'UTabAccount_C::Button_AccountLinking' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Button_CustomerService) == 0x000270, "Member 'UTabAccount_C::Button_CustomerService' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Button_Logout) == 0x000278, "Member 'UTabAccount_C::Button_Logout' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Button_RefundRequest) == 0x000280, "Member 'UTabAccount_C::Button_RefundRequest' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CommonBorder_2) == 0x000288, "Member 'UTabAccount_C::CommonBorder_2' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CommonBorder_5) == 0x000290, "Member 'UTabAccount_C::CommonBorder_5' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CommonTextBlock_5) == 0x000298, "Member 'UTabAccount_C::CommonTextBlock_5' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CommonTextBlock_7) == 0x0002A0, "Member 'UTabAccount_C::CommonTextBlock_7' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CommonTextBlock_9) == 0x0002A8, "Member 'UTabAccount_C::CommonTextBlock_9' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, ConfigurationSwitcher) == 0x0002B0, "Member 'UTabAccount_C::ConfigurationSwitcher' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, ContentHeader) == 0x0002B8, "Member 'UTabAccount_C::ContentHeader' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CopyCustomerIDButton) == 0x0002C0, "Member 'UTabAccount_C::CopyCustomerIDButton' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, CopyEpicAccountIDButton) == 0x0002C8, "Member 'UTabAccount_C::CopyEpicAccountIDButton' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, DefaultConfigurationBox) == 0x0002D0, "Member 'UTabAccount_C::DefaultConfigurationBox' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, DesktopConsoleOptions) == 0x0002D8, "Member 'UTabAccount_C::DesktopConsoleOptions' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, EpicId) == 0x0002E0, "Member 'UTabAccount_C::EpicId' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, FortTwitchLogin) == 0x0002E8, "Member 'UTabAccount_C::FortTwitchLogin' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, HorizontalBox_6) == 0x0002F0, "Member 'UTabAccount_C::HorizontalBox_6' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, HorizontalBox_7) == 0x0002F8, "Member 'UTabAccount_C::HorizontalBox_7' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Image_0) == 0x000300, "Member 'UTabAccount_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, LeaderboardPrivacy) == 0x000308, "Member 'UTabAccount_C::LeaderboardPrivacy' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, LifetimeRefundDesc) == 0x000310, "Member 'UTabAccount_C::LifetimeRefundDesc' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, MobileOptions) == 0x000318, "Member 'UTabAccount_C::MobileOptions' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, PrivacySettings) == 0x000320, "Member 'UTabAccount_C::PrivacySettings' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, RailId) == 0x000328, "Member 'UTabAccount_C::RailId' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, ReceiveGiftToggle) == 0x000330, "Member 'UTabAccount_C::ReceiveGiftToggle' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, RefundRequest) == 0x000338, "Member 'UTabAccount_C::RefundRequest' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, SamsungStoreToggle) == 0x000340, "Member 'UTabAccount_C::SamsungStoreToggle' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, StaticURLText) == 0x000348, "Member 'UTabAccount_C::StaticURLText' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, TencentRailInfoHBox) == 0x000350, "Member 'UTabAccount_C::TencentRailInfoHBox' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, Text_RemainingRefunds) == 0x000358, "Member 'UTabAccount_C::Text_RemainingRefunds' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, TooltipTextBox) == 0x000360, "Member 'UTabAccount_C::TooltipTextBox' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, UninstallSTW) == 0x000368, "Member 'UTabAccount_C::UninstallSTW' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, UninstallStWButton) == 0x000370, "Member 'UTabAccount_C::UninstallStWButton' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, UninstallSTWDesc) == 0x000378, "Member 'UTabAccount_C::UninstallSTWDesc' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, URLButton) == 0x000380, "Member 'UTabAccount_C::URLButton' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, VBox_TwitchSettings) == 0x000388, "Member 'UTabAccount_C::VBox_TwitchSettings' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, WebsiteConfigurationBox) == 0x000390, "Member 'UTabAccount_C::WebsiteConfigurationBox' has a wrong offset!");
+static_assert(offsetof(UTabAccount_C, StWUninstallProgres) == 0x000398, "Member 'UTabAccount_C::StWUninstallProgres' has a wrong offset!");
 
 }
 

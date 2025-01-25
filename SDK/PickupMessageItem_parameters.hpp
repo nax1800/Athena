@@ -65,13 +65,13 @@ static_assert(offsetof(PickupMessageItem_C_Refresh_Count, K2Node_Select_Default)
 struct PickupMessageItem_C_Setup final
 {
 public:
-	class UFortItem*                              Param_Picked_Up_Item;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Picked_Up_Item_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
 	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0020(0x0088)()
 };
 static_assert(alignof(PickupMessageItem_C_Setup) == 0x000008, "Wrong alignment on PickupMessageItem_C_Setup");
 static_assert(sizeof(PickupMessageItem_C_Setup) == 0x0000A8, "Wrong size on PickupMessageItem_C_Setup");
-static_assert(offsetof(PickupMessageItem_C_Setup, Param_Picked_Up_Item) == 0x000000, "Member 'PickupMessageItem_C_Setup::Param_Picked_Up_Item' has a wrong offset!");
+static_assert(offsetof(PickupMessageItem_C_Setup, Picked_Up_Item_0) == 0x000000, "Member 'PickupMessageItem_C_Setup::Picked_Up_Item_0' has a wrong offset!");
 static_assert(offsetof(PickupMessageItem_C_Setup, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'PickupMessageItem_C_Setup::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PickupMessageItem_C_Setup, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000020, "Member 'PickupMessageItem_C_Setup::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 

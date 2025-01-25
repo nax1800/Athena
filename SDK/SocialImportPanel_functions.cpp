@@ -52,7 +52,7 @@ void USocialImportPanel_C::OnActivated()
 
 
 // Function SocialImportPanel.SocialImportPanel_C.OnPanelTypeSet
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 // Parameters:
 // ESocialImportPanelType                  NewType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -72,7 +72,7 @@ void USocialImportPanel_C::OnPanelTypeSet(ESocialImportPanelType NewType)
 
 
 // Function SocialImportPanel.SocialImportPanel_C.OnClaimViewRequested
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 
 void USocialImportPanel_C::OnClaimViewRequested()
 {
@@ -86,7 +86,7 @@ void USocialImportPanel_C::OnClaimViewRequested()
 
 
 // Function SocialImportPanel.SocialImportPanel_C.OnImportViewRequested
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 
 void USocialImportPanel_C::OnImportViewRequested()
 {
@@ -100,7 +100,7 @@ void USocialImportPanel_C::OnImportViewRequested()
 
 
 // Function SocialImportPanel.SocialImportPanel_C.OnLauncherImportOpened
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 
 void USocialImportPanel_C::OnLauncherImportOpened()
 {
@@ -114,7 +114,7 @@ void USocialImportPanel_C::OnLauncherImportOpened()
 
 
 // Function SocialImportPanel.SocialImportPanel_C.OnWaitingViewRequested
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 
 void USocialImportPanel_C::OnWaitingViewRequested()
 {

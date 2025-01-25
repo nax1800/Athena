@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -35,7 +35,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Event_InitObject;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CardFrontRevealComplete_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront) == 0x000008, "Wrong alignment on StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront");
@@ -48,7 +48,7 @@ static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront,
 static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetCard_ReturnValue) == 0x000038, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetCard_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, K2Node_SwitchEnum_CmpSuccess) == 0x000039, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, K2Node_Event_InitObject) == 0x000040, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::K2Node_Event_InitObject' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetContext_ReturnValue12) == 0x000048, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_CardFrontRevealComplete_ReturnValue) == 0x000050, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_CardFrontRevealComplete_ReturnValue' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.InitFromObject
@@ -107,20 +107,20 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   Temp_text_Variable;                                // 0x0018(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0030(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0048(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0060(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0078(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0090(0x0018)()
-	class FText                                   Temp_text_Variable123456;                          // 0x00A8(0x0018)()
-	class FText                                   Temp_text_Variable1234567;                         // 0x00C0(0x0018)()
-	class FText                                   Temp_text_Variable12345678;                        // 0x00D8(0x0018)()
-	class FText                                   Temp_text_Variable123456789;                       // 0x00F0(0x0018)()
-	class FText                                   Temp_text_Variable12345678910;                     // 0x0108(0x0018)()
-	class FText                                   Temp_text_Variable1234567891011;                   // 0x0120(0x0018)()
-	class FText                                   Temp_text_Variable123456789101112;                 // 0x0138(0x0018)()
-	class FText                                   Temp_text_Variable12345678910111213;               // 0x0150(0x0018)()
-	class FText                                   Temp_text_Variable1234567891011121314;             // 0x0168(0x0018)()
-	class FText                                   Temp_text_Variable123456789101112131415;           // 0x0180(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0048(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0060(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0078(0x0018)()
+	class FText                                   Temp_text_Variable5;                               // 0x0090(0x0018)()
+	class FText                                   Temp_text_Variable6;                               // 0x00A8(0x0018)()
+	class FText                                   Temp_text_Variable7;                               // 0x00C0(0x0018)()
+	class FText                                   Temp_text_Variable8;                               // 0x00D8(0x0018)()
+	class FText                                   Temp_text_Variable9;                               // 0x00F0(0x0018)()
+	class FText                                   Temp_text_Variable10;                              // 0x0108(0x0018)()
+	class FText                                   Temp_text_Variable11;                              // 0x0120(0x0018)()
+	class FText                                   Temp_text_Variable12;                              // 0x0138(0x0018)()
+	class FText                                   Temp_text_Variable13;                              // 0x0150(0x0018)()
+	class FText                                   Temp_text_Variable14;                              // 0x0168(0x0018)()
+	class FText                                   Temp_text_Variable15;                              // 0x0180(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortInventoryFilter                          Temp_byte_Variable;                                // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19A[0x6];                                      // 0x019A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -148,20 +148,20 @@ static_assert(sizeof(StoreItemCardFront_C_Get_Card_Name_Text) == 0x000390, "Wron
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, ReturnValue) == 0x000000, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::ReturnValue' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable) == 0x000018, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable1) == 0x000030, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12) == 0x000048, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable123) == 0x000060, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable1234) == 0x000078, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12345) == 0x000090, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable123456) == 0x0000A8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable123456' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable1234567) == 0x0000C0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable1234567' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12345678) == 0x0000D8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12345678' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable123456789) == 0x0000F0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable123456789' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12345678910) == 0x000108, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable1234567891011) == 0x000120, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable1234567891011' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable123456789101112) == 0x000138, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable123456789101112' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12345678910111213) == 0x000150, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12345678910111213' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable1234567891011121314) == 0x000168, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable1234567891011121314' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable123456789101112131415) == 0x000180, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable123456789101112131415' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable2) == 0x000048, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable3) == 0x000060, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable4) == 0x000078, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable5) == 0x000090, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable5' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable6) == 0x0000A8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable6' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable7) == 0x0000C0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable7' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable8) == 0x0000D8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable8' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable9) == 0x0000F0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable9' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable10) == 0x000108, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable10' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable11) == 0x000120, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable11' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12) == 0x000138, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable13) == 0x000150, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable13' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable14) == 0x000168, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable14' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable15) == 0x000180, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable15' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_bool_Variable) == 0x000198, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_byte_Variable) == 0x000199, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetEmptyText_ReturnValue) == 0x0001A0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
@@ -190,22 +190,22 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0020(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0050(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0068(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0080(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0098(0x0018)()
-	class FText                                   Temp_text_Variable123456;                          // 0x00B0(0x0018)()
-	class FText                                   Temp_text_Variable1234567;                         // 0x00C8(0x0018)()
-	class FText                                   Temp_text_Variable12345678;                        // 0x00E0(0x0018)()
-	class FText                                   Temp_text_Variable123456789;                       // 0x00F8(0x0018)()
-	class FText                                   Temp_text_Variable12345678910;                     // 0x0110(0x0018)()
-	class FText                                   Temp_text_Variable1234567891011;                   // 0x0128(0x0018)()
-	class FText                                   Temp_text_Variable123456789101112;                 // 0x0140(0x0018)()
-	class FText                                   Temp_text_Variable12345678910111213;               // 0x0158(0x0018)()
-	class FText                                   Temp_text_Variable1234567891011121314;             // 0x0170(0x0018)()
-	class FText                                   Temp_text_Variable123456789101112131415;           // 0x0188(0x0018)()
-	class FText                                   Temp_text_Variable12345678910111213141516;         // 0x01A0(0x0018)()
-	class FText                                   Temp_text_Variable1234567891011121314151617;       // 0x01B8(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0080(0x0018)()
+	class FText                                   Temp_text_Variable5;                               // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable6;                               // 0x00B0(0x0018)()
+	class FText                                   Temp_text_Variable7;                               // 0x00C8(0x0018)()
+	class FText                                   Temp_text_Variable8;                               // 0x00E0(0x0018)()
+	class FText                                   Temp_text_Variable9;                               // 0x00F8(0x0018)()
+	class FText                                   Temp_text_Variable10;                              // 0x0110(0x0018)()
+	class FText                                   Temp_text_Variable11;                              // 0x0128(0x0018)()
+	class FText                                   Temp_text_Variable12;                              // 0x0140(0x0018)()
+	class FText                                   Temp_text_Variable13;                              // 0x0158(0x0018)()
+	class FText                                   Temp_text_Variable14;                              // 0x0170(0x0018)()
+	class FText                                   Temp_text_Variable15;                              // 0x0188(0x0018)()
+	class FText                                   Temp_text_Variable16;                              // 0x01A0(0x0018)()
+	class FText                                   Temp_text_Variable17;                              // 0x01B8(0x0018)()
 	EFortInventoryFilter                          CallFunc_GetFilterCategory_ReturnValue;            // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x01D8(0x0018)()
@@ -216,22 +216,22 @@ static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, OutText) == 0x000000,
 static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_byte_Variable) == 0x000018, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable) == 0x000020, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1) == 0x000038, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12) == 0x000050, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable123) == 0x000068, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1234) == 0x000080, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12345) == 0x000098, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable123456) == 0x0000B0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable123456' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1234567) == 0x0000C8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1234567' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12345678) == 0x0000E0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12345678' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable123456789) == 0x0000F8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable123456789' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12345678910) == 0x000110, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12345678910' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1234567891011) == 0x000128, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1234567891011' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable123456789101112) == 0x000140, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable123456789101112' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12345678910111213) == 0x000158, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12345678910111213' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1234567891011121314) == 0x000170, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1234567891011121314' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable123456789101112131415) == 0x000188, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable123456789101112131415' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12345678910111213141516) == 0x0001A0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12345678910111213141516' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable1234567891011121314151617) == 0x0001B8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable1234567891011121314151617' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable2) == 0x000050, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable3) == 0x000068, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable4) == 0x000080, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable5) == 0x000098, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable5' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable6) == 0x0000B0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable6' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable7) == 0x0000C8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable7' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable8) == 0x0000E0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable8' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable9) == 0x0000F8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable9' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable10) == 0x000110, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable10' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable11) == 0x000128, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable11' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12) == 0x000140, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable13) == 0x000158, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable13' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable14) == 0x000170, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable14' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable15) == 0x000188, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable15' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable16) == 0x0001A0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable16' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable17) == 0x0001B8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable17' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, CallFunc_GetFilterCategory_ReturnValue) == 0x0001D0, "Member 'StoreItemCardFront_C_Get_Type_Text::CallFunc_GetFilterCategory_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, K2Node_Select_Default) == 0x0001D8, "Member 'StoreItemCardFront_C_Get_Type_Text::K2Node_Select_Default' has a wrong offset!");
 

@@ -71,15 +71,29 @@ void UTopBar_C::ExecuteUbergraph_TopBar(int32 EntryPoint)
 }
 
 
-// Function TopBar.TopBar_C.On Social Panel Closed
-// (BlueprintCallable, BlueprintEvent)
+// Function TopBar.TopBar_C.BndEvt__SocialPanel_K2Node_ComponentBoundEvent_0_SocialPanelCloseRequested__DelegateSignature
+// (BlueprintEvent)
 
-void UTopBar_C::On_Social_Panel_Closed()
+void UTopBar_C::BndEvt__SocialPanel_K2Node_ComponentBoundEvent_0_SocialPanelCloseRequested__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "On Social Panel Closed");
+		Func = Class->GetFunction("TopBar_C", "BndEvt__SocialPanel_K2Node_ComponentBoundEvent_0_SocialPanelCloseRequested__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TopBar.TopBar_C.BndEvt__MainMenu_K2Node_ComponentBoundEvent_5_OnRequestShowPlayerReportWidget__DelegateSignature
+// (BlueprintEvent)
+
+void UTopBar_C::BndEvt__MainMenu_K2Node_ComponentBoundEvent_5_OnRequestShowPlayerReportWidget__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TopBar_C", "BndEvt__MainMenu_K2Node_ComponentBoundEvent_5_OnRequestShowPlayerReportWidget__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,6 +108,20 @@ void UTopBar_C::BndEvt__MainMenu_K2Node_ComponentBoundEvent_0_OnRequestShowSocia
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TopBar_C", "BndEvt__MainMenu_K2Node_ComponentBoundEvent_0_OnRequestShowSocialWidget__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TopBar.TopBar_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UTopBar_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TopBar_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,17 +161,23 @@ void UTopBar_C::AddIconToScreen(class UCommonLazyImage* Image)
 }
 
 
-// Function TopBar.TopBar_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function TopBar.TopBar_C.BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTopBar_C::Construct()
+void UTopBar_C::BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "Construct");
+		Func = Class->GetFunction("TopBar_C", "BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -258,26 +292,6 @@ void UTopBar_C::PreConstruct(bool IsDesignTime)
 	Params::TopBar_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TopBar.TopBar_C.BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTopBar_C::BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature");
-
-	Params::TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -713,15 +727,15 @@ void UTopBar_C::ForceMenuClosed()
 }
 
 
-// Function TopBar.TopBar_C.HideMTXPlusButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function TopBar.TopBar_C.UpdateMTXButton
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UTopBar_C::HideMTXPlusButton()
+void UTopBar_C::UpdateMTXButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "HideMTXPlusButton");
+		Func = Class->GetFunction("TopBar_C", "UpdateMTXButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -772,9 +786,9 @@ void UTopBar_C::ConfigureVisibleItemsForSubGame()
 // Function TopBar.TopBar_C.Set Header Visibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Visibility                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTopBar_C::Set_Header_Visibility(bool Param_Visibility)
+void UTopBar_C::Set_Header_Visibility(bool Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -783,7 +797,7 @@ void UTopBar_C::Set_Header_Visibility(bool Param_Visibility)
 
 	Params::TopBar_C_Set_Header_Visibility Parms{};
 
-	Parms.Param_Visibility = Param_Visibility;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -853,6 +867,20 @@ struct FEventReply UTopBar_C::On_TouchZone_MouseButtonDown_0(const struct FGeome
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function TopBar.TopBar_C.AddTopBarDetailsWidget
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UTopBar_C::AddTopBarDetailsWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TopBar_C", "AddTopBarDetailsWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

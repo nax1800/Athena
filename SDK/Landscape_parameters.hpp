@@ -168,5 +168,16 @@ static_assert(sizeof(LandscapeComponent_GetMaterialInstanceDynamic) == 0x000010,
 static_assert(offsetof(LandscapeComponent_GetMaterialInstanceDynamic, InIndex) == 0x000000, "Member 'LandscapeComponent_GetMaterialInstanceDynamic::InIndex' has a wrong offset!");
 static_assert(offsetof(LandscapeComponent_GetMaterialInstanceDynamic, ReturnValue) == 0x000008, "Member 'LandscapeComponent_GetMaterialInstanceDynamic::ReturnValue' has a wrong offset!");
 
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// 0x0010 (0x0010 - 0x0000)
+struct LandscapeSplinesComponent_GetSplineMeshComponents final
+{
+public:
+	TArray<class USplineMeshComponent*>           ReturnValue;                                       // 0x0000(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(LandscapeSplinesComponent_GetSplineMeshComponents) == 0x000008, "Wrong alignment on LandscapeSplinesComponent_GetSplineMeshComponents");
+static_assert(sizeof(LandscapeSplinesComponent_GetSplineMeshComponents) == 0x000010, "Wrong size on LandscapeSplinesComponent_GetSplineMeshComponents");
+static_assert(offsetof(LandscapeSplinesComponent_GetSplineMeshComponents, ReturnValue) == 0x000000, "Member 'LandscapeSplinesComponent_GetSplineMeshComponents::ReturnValue' has a wrong offset!");
+
 }
 

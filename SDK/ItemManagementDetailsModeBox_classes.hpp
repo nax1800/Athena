@@ -10,35 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C
-// 0x0028 (0x0428 - 0x0400)
+// 0x0028 (0x0360 - 0x0338)
 class UItemManagementDetailsModeBox_C final : public UFortItemDetailsModeActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalTabList_C*                   DetailPanelTabList;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               ItemSelected;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           NoSelectionDetailsBox;                             // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDateTime                              LastDesiredReadOnlyModeWIFE;                       // 0x0420(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalTabList_C*                   DetailPanelTabList;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ItemSelected;                                      // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           NoSelectionDetailsBox;                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDateTime                              LastDesiredReadOnlyModeWIFE;                       // 0x0358(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemManagementDetailsModeBox(int32 EntryPoint);
+	void OnInitialized();
 	void HandleCraftItemFailed(EFortCraftFailCause FailureCause);
 	void OnDestroyItem(class UFortItem* Item);
 	void OnInputModeChanged(bool bUsingGamepad);
-	void Construct();
 	void OnDeactivated();
 	void BndEvt__DetailPanelTabListMinusMSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
 	void HandleConsumeItemProgressChangedBP();
@@ -115,12 +115,12 @@ public:
 	}
 };
 static_assert(alignof(UItemManagementDetailsModeBox_C) == 0x000008, "Wrong alignment on UItemManagementDetailsModeBox_C");
-static_assert(sizeof(UItemManagementDetailsModeBox_C) == 0x000428, "Wrong size on UItemManagementDetailsModeBox_C");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, UberGraphFrame) == 0x000400, "Member 'UItemManagementDetailsModeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList) == 0x000408, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, ItemSelected) == 0x000410, "Member 'UItemManagementDetailsModeBox_C::ItemSelected' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, NoSelectionDetailsBox) == 0x000418, "Member 'UItemManagementDetailsModeBox_C::NoSelectionDetailsBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, LastDesiredReadOnlyModeWIFE) == 0x000420, "Member 'UItemManagementDetailsModeBox_C::LastDesiredReadOnlyModeWIFE' has a wrong offset!");
+static_assert(sizeof(UItemManagementDetailsModeBox_C) == 0x000360, "Wrong size on UItemManagementDetailsModeBox_C");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, UberGraphFrame) == 0x000338, "Member 'UItemManagementDetailsModeBox_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList) == 0x000340, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, ItemSelected) == 0x000348, "Member 'UItemManagementDetailsModeBox_C::ItemSelected' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, NoSelectionDetailsBox) == 0x000350, "Member 'UItemManagementDetailsModeBox_C::NoSelectionDetailsBox' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, LastDesiredReadOnlyModeWIFE) == 0x000358, "Member 'UItemManagementDetailsModeBox_C::LastDesiredReadOnlyModeWIFE' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TrapTool_ContextTrap_Athena.TrapTool_ContextTrap_Athena_C
-// 0x0000 (0x0AE8 - 0x0AE8)
+// 0x0000 (0x0B88 - 0x0B88)
 class ATrapTool_ContextTrap_Athena_C final : public AFortDecoTool_ContextTrap
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ATrapTool_ContextTrap_Athena_C) == 0x000008, "Wrong alignment on ATrapTool_ContextTrap_Athena_C");
-static_assert(sizeof(ATrapTool_ContextTrap_Athena_C) == 0x000AE8, "Wrong size on ATrapTool_ContextTrap_Athena_C");
+static_assert(sizeof(ATrapTool_ContextTrap_Athena_C) == 0x000B88, "Wrong size on ATrapTool_ContextTrap_Athena_C");
 
 }
 

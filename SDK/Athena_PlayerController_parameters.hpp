@@ -11,29 +11,106 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function Athena_PlayerController.Athena_PlayerController_C.ExecuteUbergraph_Athena_PlayerController
-// 0x0050 (0x0050 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0xB];                                        // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class UAmbientControllerComponent_Athena_C*   CallFunc_AddComponent_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundCue*                              CallFunc_GetVictoryMusic_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_Event_FinisherPawn;                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UFortWeaponItemDefinition*        K2Node_Event_FinishingWeapon;                      // 0x0038(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDeathCause                                   K2Node_Event_DeathCause;                           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetWeaponActorClass_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsFort_Weapon_Ranged_Dual; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsB_Ranged_Generic;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess1;                 // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue1;                // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000010, "Wrong alignment on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
-static_assert(sizeof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000050, "Wrong size on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
+static_assert(alignof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000008, "Wrong alignment on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
+static_assert(sizeof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000090, "Wrong size on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
 static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, EntryPoint) == 0x000000, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000004, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, Temp_struct_Variable) == 0x000010, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_AddComponent_ReturnValue) == 0x000040, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_Event_EndPlayReason) == 0x000004, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_Event_EndPlayReason' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_GetVictoryMusic_ReturnValue) == 0x000018, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_GetVictoryMusic_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_SpawnSound2D_ReturnValue) == 0x000020, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsValid_ReturnValue1) == 0x000028, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_Event_FinisherPawn) == 0x000030, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_Event_FinisherPawn' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_Event_FinishingWeapon) == 0x000038, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_Event_FinishingWeapon' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_Event_DeathCause) == 0x000040, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_Event_DeathCause' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000042, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_GetWeaponActorClass_ReturnValue) == 0x000048, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_GetWeaponActorClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanOR_ReturnValue) == 0x000050, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_ClassDynamicCast_AsFort_Weapon_Ranged_Dual) == 0x000058, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_ClassDynamicCast_AsFort_Weapon_Ranged_Dual' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_ClassDynamicCast_bSuccess) == 0x000060, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_Not_PreBool_ReturnValue) == 0x000061, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_ClassDynamicCast_AsB_Ranged_Generic) == 0x000068, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_ClassDynamicCast_AsB_Ranged_Generic' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_ClassDynamicCast_bSuccess1) == 0x000070, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_ClassDynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000071, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanOR_ReturnValue1) == 0x000072, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_K2_GetPawn_ReturnValue) == 0x000078, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000080, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanAND_ReturnValue) == 0x000081, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanAND_ReturnValue1) == 0x000082, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_SpawnSound2D_ReturnValue1) == 0x000088, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_SpawnSound2D_ReturnValue1' has a wrong offset!");
+
+// Function Athena_PlayerController.Athena_PlayerController_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct Athena_PlayerController_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Athena_PlayerController_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on Athena_PlayerController_C_ReceiveEndPlay");
+static_assert(sizeof(Athena_PlayerController_C_ReceiveEndPlay) == 0x000001, "Wrong size on Athena_PlayerController_C_ReceiveEndPlay");
+static_assert(offsetof(Athena_PlayerController_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'Athena_PlayerController_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+
+// Function Athena_PlayerController.Athena_PlayerController_C.PlayWinEffects
+// 0x0018 (0x0018 - 0x0000)
+struct Athena_PlayerController_C_PlayWinEffects final
+{
+public:
+	class APawn*                                  FinisherPawn;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UFortWeaponItemDefinition*        FinishingWeapon;                                   // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDeathCause                                   DeathCause;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Athena_PlayerController_C_PlayWinEffects) == 0x000008, "Wrong alignment on Athena_PlayerController_C_PlayWinEffects");
+static_assert(sizeof(Athena_PlayerController_C_PlayWinEffects) == 0x000018, "Wrong size on Athena_PlayerController_C_PlayWinEffects");
+static_assert(offsetof(Athena_PlayerController_C_PlayWinEffects, FinisherPawn) == 0x000000, "Member 'Athena_PlayerController_C_PlayWinEffects::FinisherPawn' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_PlayWinEffects, FinishingWeapon) == 0x000008, "Member 'Athena_PlayerController_C_PlayWinEffects::FinishingWeapon' has a wrong offset!");
+static_assert(offsetof(Athena_PlayerController_C_PlayWinEffects, DeathCause) == 0x000010, "Member 'Athena_PlayerController_C_PlayWinEffects::DeathCause' has a wrong offset!");
 
 // Function Athena_PlayerController.Athena_PlayerController_C.IsLocalPlayerFriendsWithSquadMember
 // 0x0218 (0x0218 - 0x0000)

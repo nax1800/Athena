@@ -22,14 +22,14 @@ namespace SDK::Params
 struct FrontEndRewards_Conversation_VO_C_PopulateFromConversation final
 {
 public:
-	class UFortConversation*                      Param_Conversation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortConversation*                      Conversation_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidConversation_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation) == 0x000008, "Wrong alignment on FrontEndRewards_Conversation_VO_C_PopulateFromConversation");
 static_assert(sizeof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation) == 0x000020, "Wrong size on FrontEndRewards_Conversation_VO_C_PopulateFromConversation");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, Param_Conversation) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::Param_Conversation' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, Conversation_0) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::Conversation_0' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, CallFunc_IsValidConversation_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::CallFunc_IsValidConversation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 

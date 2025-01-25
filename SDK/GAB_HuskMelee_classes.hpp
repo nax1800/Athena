@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskMelee.GAB_HuskMelee_C
-// 0x0028 (0x0B28 - 0x0B00)
+// 0x0028 (0x0930 - 0x0908)
 class UGAB_HuskMelee_C : public UGAB_AIBaseMelee_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_HuskMelee_C;                    // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	class UFortAbilityTask_MoveAI*                HuskMove;                                          // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         HitActors;                                         // 0x0B10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	class UClass*                                 GE_AIBaseMeleeFrustration_Reset;                   // 0x0B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_HuskMelee_C;                    // 0x0908(0x0008)(Transient, DuplicateTransient)
+	class UFortAbilityTask_MoveAI*                HuskMove;                                          // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         HitActors;                                         // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UClass*                                 GE_AIBaseMeleeFrustration_Reset;                   // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_HuskMelee(int32 EntryPoint);
@@ -54,11 +54,11 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskMelee_C) == 0x000008, "Wrong alignment on UGAB_HuskMelee_C");
-static_assert(sizeof(UGAB_HuskMelee_C) == 0x000B28, "Wrong size on UGAB_HuskMelee_C");
-static_assert(offsetof(UGAB_HuskMelee_C, UberGraphFrame_GAB_HuskMelee_C) == 0x000B00, "Member 'UGAB_HuskMelee_C::UberGraphFrame_GAB_HuskMelee_C' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskMelee_C, HuskMove) == 0x000B08, "Member 'UGAB_HuskMelee_C::HuskMove' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskMelee_C, HitActors) == 0x000B10, "Member 'UGAB_HuskMelee_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskMelee_C, GE_AIBaseMeleeFrustration_Reset) == 0x000B20, "Member 'UGAB_HuskMelee_C::GE_AIBaseMeleeFrustration_Reset' has a wrong offset!");
+static_assert(sizeof(UGAB_HuskMelee_C) == 0x000930, "Wrong size on UGAB_HuskMelee_C");
+static_assert(offsetof(UGAB_HuskMelee_C, UberGraphFrame_GAB_HuskMelee_C) == 0x000908, "Member 'UGAB_HuskMelee_C::UberGraphFrame_GAB_HuskMelee_C' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskMelee_C, HuskMove) == 0x000910, "Member 'UGAB_HuskMelee_C::HuskMove' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskMelee_C, HitActors) == 0x000918, "Member 'UGAB_HuskMelee_C::HitActors' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskMelee_C, GE_AIBaseMeleeFrustration_Reset) == 0x000928, "Member 'UGAB_HuskMelee_C::GE_AIBaseMeleeFrustration_Reset' has a wrong offset!");
 
 }
 

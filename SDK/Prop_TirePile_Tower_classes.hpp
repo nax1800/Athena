@@ -10,31 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Prop_TirePile_Tower.Prop_TirePile_Tower_C
-// 0x0050 (0x0E48 - 0x0DF8)
+// 0x0048 (0x0BE0 - 0x0B98)
 class AProp_TirePile_Tower_C final : public ABuildingProp
 {
 public:
-	uint8                                         Pad_DF8[0x8];                                      // 0x0DF8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0E00(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Jump_Collision;                                    // 0x0E08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Ceiling;                                           // 0x0E10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E11[0x3];                                      // 0x0E11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BounceHeight;                                      // 0x0E14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         JumpHeight;                                        // 0x0E18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FinalBounceJumpHeight;                             // 0x0E1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UForceFeedbackEffect*                   LaunchForceFeedback;                               // 0x0E20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        OverlapPawn;                                       // 0x0E28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerController*                  OverlapController;                                 // 0x0E30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_PlayerLaunched;                                 // 0x0E38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             TireSound;                                         // 0x0E40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B98(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Jump_Collision;                                    // 0x0BA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Ceiling;                                           // 0x0BA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BA9[0x3];                                      // 0x0BA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BounceHeight;                                      // 0x0BAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         JumpHeight;                                        // 0x0BB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FinalBounceJumpHeight;                             // 0x0BB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceFeedbackEffect*                   LaunchForceFeedback;                               // 0x0BB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        OverlapPawn;                                       // 0x0BC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  OverlapController;                                 // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_PlayerLaunched;                                 // 0x0BD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             TireSound;                                         // 0x0BD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Prop_TirePile_Tower(int32 EntryPoint);
@@ -52,18 +51,18 @@ public:
 	}
 };
 static_assert(alignof(AProp_TirePile_Tower_C) == 0x000008, "Wrong alignment on AProp_TirePile_Tower_C");
-static_assert(sizeof(AProp_TirePile_Tower_C) == 0x000E48, "Wrong size on AProp_TirePile_Tower_C");
-static_assert(offsetof(AProp_TirePile_Tower_C, UberGraphFrame) == 0x000E00, "Member 'AProp_TirePile_Tower_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, Jump_Collision) == 0x000E08, "Member 'AProp_TirePile_Tower_C::Jump_Collision' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, Ceiling) == 0x000E10, "Member 'AProp_TirePile_Tower_C::Ceiling' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, BounceHeight) == 0x000E14, "Member 'AProp_TirePile_Tower_C::BounceHeight' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, JumpHeight) == 0x000E18, "Member 'AProp_TirePile_Tower_C::JumpHeight' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, FinalBounceJumpHeight) == 0x000E1C, "Member 'AProp_TirePile_Tower_C::FinalBounceJumpHeight' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, LaunchForceFeedback) == 0x000E20, "Member 'AProp_TirePile_Tower_C::LaunchForceFeedback' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, OverlapPawn) == 0x000E28, "Member 'AProp_TirePile_Tower_C::OverlapPawn' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, OverlapController) == 0x000E30, "Member 'AProp_TirePile_Tower_C::OverlapController' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, GE_PlayerLaunched) == 0x000E38, "Member 'AProp_TirePile_Tower_C::GE_PlayerLaunched' has a wrong offset!");
-static_assert(offsetof(AProp_TirePile_Tower_C, TireSound) == 0x000E40, "Member 'AProp_TirePile_Tower_C::TireSound' has a wrong offset!");
+static_assert(sizeof(AProp_TirePile_Tower_C) == 0x000BE0, "Wrong size on AProp_TirePile_Tower_C");
+static_assert(offsetof(AProp_TirePile_Tower_C, UberGraphFrame) == 0x000B98, "Member 'AProp_TirePile_Tower_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, Jump_Collision) == 0x000BA0, "Member 'AProp_TirePile_Tower_C::Jump_Collision' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, Ceiling) == 0x000BA8, "Member 'AProp_TirePile_Tower_C::Ceiling' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, BounceHeight) == 0x000BAC, "Member 'AProp_TirePile_Tower_C::BounceHeight' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, JumpHeight) == 0x000BB0, "Member 'AProp_TirePile_Tower_C::JumpHeight' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, FinalBounceJumpHeight) == 0x000BB4, "Member 'AProp_TirePile_Tower_C::FinalBounceJumpHeight' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, LaunchForceFeedback) == 0x000BB8, "Member 'AProp_TirePile_Tower_C::LaunchForceFeedback' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, OverlapPawn) == 0x000BC0, "Member 'AProp_TirePile_Tower_C::OverlapPawn' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, OverlapController) == 0x000BC8, "Member 'AProp_TirePile_Tower_C::OverlapController' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, GE_PlayerLaunched) == 0x000BD0, "Member 'AProp_TirePile_Tower_C::GE_PlayerLaunched' has a wrong offset!");
+static_assert(offsetof(AProp_TirePile_Tower_C, TireSound) == 0x000BD8, "Member 'AProp_TirePile_Tower_C::TireSound' has a wrong offset!");
 
 }
 

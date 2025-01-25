@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -38,8 +38,8 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0070(0x0388)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -57,8 +57,8 @@ static_assert(sizeof(Results_TopPanel_C_Initialize) == 0x0004C8, "Wrong size on 
 static_assert(offsetof(Results_TopPanel_C_Initialize, CompletionResult) == 0x000000, "Member 'Results_TopPanel_C_Initialize::CompletionResult' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable) == 0x000008, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable1) == 0x000020, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable12) == 0x000038, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable123) == 0x000050, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable123' has a wrong offset!");
+static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable2) == 0x000038, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable3) == 0x000050, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable3' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000070, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003F8, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");

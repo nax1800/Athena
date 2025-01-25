@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,15 +26,15 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Temp_string_Variable;                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Temp_string_Variable1;                             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable12;                            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable123;                           // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable2;                             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable3;                             // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue1;               // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue12;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue2;               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 K2Node_Select_Default;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0078(0x0018)()
@@ -54,15 +54,15 @@ static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerS
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Variable) == 0x000004, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable) == 0x000008, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable1) == 0x000018, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable1' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable12) == 0x000028, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable12' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable123) == 0x000038, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable123' has a wrong offset!");
+static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable2) == 0x000028, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable2' has a wrong offset!");
+static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable3) == 0x000038, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable3' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Array_Index_Variable) == 0x000048, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue) == 0x00004C, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000054, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue1) == 0x00005C, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue12) == 0x000060, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue2) == 0x000060, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x000064, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, K2Node_Select_Default) == 0x000068, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_StringToText_ReturnValue) == 0x000078, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");

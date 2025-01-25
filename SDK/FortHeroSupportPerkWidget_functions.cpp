@@ -96,10 +96,10 @@ void UFortHeroSupportPerkWidget_C::OnHeroUpdated()
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_DisplayedOutsideOfHeroSquad                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    DisplayedOutsideOfHeroSquad_0                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortSupportBonusType                   TargetedSupportType                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFortHeroSupportPerkWidget_C::Update(bool Param_DisplayedOutsideOfHeroSquad, EFortSupportBonusType TargetedSupportType)
+void UFortHeroSupportPerkWidget_C::Update(bool DisplayedOutsideOfHeroSquad_0, EFortSupportBonusType TargetedSupportType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -108,7 +108,7 @@ void UFortHeroSupportPerkWidget_C::Update(bool Param_DisplayedOutsideOfHeroSquad
 
 	Params::FortHeroSupportPerkWidget_C_Update Parms{};
 
-	Parms.Param_DisplayedOutsideOfHeroSquad = Param_DisplayedOutsideOfHeroSquad;
+	Parms.DisplayedOutsideOfHeroSquad_0 = DisplayedOutsideOfHeroSquad_0;
 	Parms.TargetedSupportType = TargetedSupportType;
 
 	UObject::ProcessEvent(Func, &Parms);

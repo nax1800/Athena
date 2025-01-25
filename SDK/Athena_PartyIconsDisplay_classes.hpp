@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Athena_PartyIconsDisplay.Athena_PartyIconsDisplay_C
-// 0x0040 (0x0250 - 0x0210)
+// 0x0040 (0x0248 - 0x0208)
 class UAthena_PartyIconsDisplay_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UBorder*                                Border_0;                                          // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_3;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         PreviewIndex;                                      // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bUseDarkBorder;                                    // 0x024C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UBorder*                                Border_0;                                          // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_3;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         PreviewIndex;                                      // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseDarkBorder;                                    // 0x0244(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_Athena_PartyIconsDisplay(int32 EntryPoint);
@@ -49,16 +49,16 @@ public:
 	}
 };
 static_assert(alignof(UAthena_PartyIconsDisplay_C) == 0x000008, "Wrong alignment on UAthena_PartyIconsDisplay_C");
-static_assert(sizeof(UAthena_PartyIconsDisplay_C) == 0x000250, "Wrong size on UAthena_PartyIconsDisplay_C");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, UberGraphFrame) == 0x000210, "Member 'UAthena_PartyIconsDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, Border_0) == 0x000218, "Member 'UAthena_PartyIconsDisplay_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_0) == 0x000220, "Member 'UAthena_PartyIconsDisplay_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_1) == 0x000228, "Member 'UAthena_PartyIconsDisplay_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_2) == 0x000230, "Member 'UAthena_PartyIconsDisplay_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_3) == 0x000238, "Member 'UAthena_PartyIconsDisplay_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, WidgetSwitcher_0) == 0x000240, "Member 'UAthena_PartyIconsDisplay_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, PreviewIndex) == 0x000248, "Member 'UAthena_PartyIconsDisplay_C::PreviewIndex' has a wrong offset!");
-static_assert(offsetof(UAthena_PartyIconsDisplay_C, bUseDarkBorder) == 0x00024C, "Member 'UAthena_PartyIconsDisplay_C::bUseDarkBorder' has a wrong offset!");
+static_assert(sizeof(UAthena_PartyIconsDisplay_C) == 0x000248, "Wrong size on UAthena_PartyIconsDisplay_C");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, UberGraphFrame) == 0x000208, "Member 'UAthena_PartyIconsDisplay_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, Border_0) == 0x000210, "Member 'UAthena_PartyIconsDisplay_C::Border_0' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_0) == 0x000218, "Member 'UAthena_PartyIconsDisplay_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_1) == 0x000220, "Member 'UAthena_PartyIconsDisplay_C::Image_1' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_2) == 0x000228, "Member 'UAthena_PartyIconsDisplay_C::Image_2' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, Image_3) == 0x000230, "Member 'UAthena_PartyIconsDisplay_C::Image_3' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, WidgetSwitcher_0) == 0x000238, "Member 'UAthena_PartyIconsDisplay_C::WidgetSwitcher_0' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, PreviewIndex) == 0x000240, "Member 'UAthena_PartyIconsDisplay_C::PreviewIndex' has a wrong offset!");
+static_assert(offsetof(UAthena_PartyIconsDisplay_C, bUseDarkBorder) == 0x000244, "Member 'UAthena_PartyIconsDisplay_C::bUseDarkBorder' has a wrong offset!");
 
 }
 

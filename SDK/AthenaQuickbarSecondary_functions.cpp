@@ -51,6 +51,20 @@ void UAthenaQuickbarSecondary_C::AnimationFinished()
 }
 
 
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaQuickbarSecondary_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.OnQuickbarContentsChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -77,9 +91,9 @@ void UAthenaQuickbarSecondary_C::OnQuickbarContentsChanged(EFortQuickBars Quickb
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortQuickBars                          QuickbarIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaQuickbarSecondary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars QuickbarIndex, int32 Param_Slot)
+void UAthenaQuickbarSecondary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars QuickbarIndex, int32 Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -89,23 +103,9 @@ void UAthenaQuickbarSecondary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars 
 	Params::AthenaQuickbarSecondary_C_OnQuickBarSlotFocusChanged_Bind Parms{};
 
 	Parms.QuickbarIndex = QuickbarIndex;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -138,6 +138,74 @@ void UAthenaQuickbarSecondary_C::HandleInputMethodChanged_Bind(bool bUsingGamepa
 	Params::AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Show Secondary Quickbar Rail
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaQuickbarSecondary_C::Show_Secondary_Quickbar_Rail(bool Show)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "Show Secondary Quickbar Rail");
+
+	Params::AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail Parms{};
+
+	Parms.Show = Show;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleKeyBindsChange
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaQuickbarSecondary_C::HandleKeyBindsChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleKeyBindsChange");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaQuickbarSecondary_C::HandleShowHideRail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleShowHideRail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.UpdateQuickBarCaching
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Desire_Caching                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaQuickbarSecondary_C::UpdateQuickBarCaching(bool Desire_Caching)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "UpdateQuickBarCaching");
+
+	Params::AthenaQuickbarSecondary_C_UpdateQuickBarCaching Parms{};
+
+	Parms.Desire_Caching = Desire_Caching;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -182,102 +250,6 @@ void UAthenaQuickbarSecondary_C::Maximize()
 		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "Maximize");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Show Secondary Quickbar Rail
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaQuickbarSecondary_C::Show_Secondary_Quickbar_Rail(bool Show)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "Show Secondary Quickbar Rail");
-
-	Params::AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail Parms{};
-
-	Parms.Show = Show;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleKeyBindsChange
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleKeyBindsChange()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleKeyBindsChange");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMinimizeHiding
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleMinimizeHiding()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleMinimizeHiding");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleShowHideRail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleShowHideRail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMaximizeShowing
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleMaximizeShowing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "HandleMaximizeShowing");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.UpdateQuickBarCaching
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Desire_Caching                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaQuickbarSecondary_C::UpdateQuickBarCaching(bool Desire_Caching)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaQuickbarSecondary_C", "UpdateQuickBarCaching");
-
-	Params::AthenaQuickbarSecondary_C_UpdateQuickBarCaching Parms{};
-
-	Parms.Desire_Caching = Desire_Caching;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

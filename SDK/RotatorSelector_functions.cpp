@@ -57,6 +57,26 @@ void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int32 EntryPoint)
 }
 
 
+// Function RotatorSelector.RotatorSelector_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URotatorSelector_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RotatorSelector_C", "PreConstruct");
+
+	Params::RotatorSelector_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function RotatorSelector.RotatorSelector_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -293,6 +313,26 @@ void URotatorSelector_C::Update_Size()
 		Func = Class->GetFunction("RotatorSelector_C", "Update Size");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RotatorSelector.RotatorSelector_C.Show Param Name
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URotatorSelector_C::Show_Param_Name(bool Show)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RotatorSelector_C", "Show Param Name");
+
+	Params::RotatorSelector_C_Show_Param_Name Parms{};
+
+	Parms.Show = Show;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

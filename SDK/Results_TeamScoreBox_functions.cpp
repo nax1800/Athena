@@ -250,11 +250,11 @@ void UResults_TeamScoreBox_C::InitializeScoreType()
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortUIScoreType                        Param_ScoreType                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Score                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_PlayRate                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortUIScoreType                        ScoreType_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Score_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   PlayRate_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_TeamScoreBox_C::Initialize(EFortUIScoreType Param_ScoreType, int32 Param_Score, float Param_PlayRate)
+void UResults_TeamScoreBox_C::Initialize(EFortUIScoreType ScoreType_0, int32 Score_0, float PlayRate_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -263,9 +263,9 @@ void UResults_TeamScoreBox_C::Initialize(EFortUIScoreType Param_ScoreType, int32
 
 	Params::Results_TeamScoreBox_C_Initialize Parms{};
 
-	Parms.Param_ScoreType = Param_ScoreType;
-	Parms.Param_Score = Param_Score;
-	Parms.Param_PlayRate = Param_PlayRate;
+	Parms.ScoreType_0 = ScoreType_0;
+	Parms.Score_0 = Score_0;
+	Parms.PlayRate_0 = PlayRate_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

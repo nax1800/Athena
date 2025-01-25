@@ -36,7 +36,7 @@ public:
 	struct FVector                                K2Node_Event_HitLocation;                          // 0x00B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_HitNormal;                            // 0x00C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_NormalImpulse;                        // 0x00CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_Hit12;                                // 0x00D8(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_Event_Hit2;                                 // 0x00D8(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             K2Node_Event_Hit1;                                 // 0x0160(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage) == 0x000008, "Wrong alignment on B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage");
@@ -52,7 +52,7 @@ static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Ba
 static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_HitLocation) == 0x0000B4, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_HitLocation' has a wrong offset!");
 static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_HitNormal) == 0x0000C0, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_HitNormal' has a wrong offset!");
 static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_NormalImpulse) == 0x0000CC, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_Hit12) == 0x0000D8, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_Hit12' has a wrong offset!");
+static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_Hit2) == 0x0000D8, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_Hit2' has a wrong offset!");
 static_assert(offsetof(B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage, K2Node_Event_Hit1) == 0x000160, "Member 'B_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage::K2Node_Event_Hit1' has a wrong offset!");
 
 // Function B_Proj_Athena_Bandage.B_Proj_Athena_Bandage_C.OnBounce

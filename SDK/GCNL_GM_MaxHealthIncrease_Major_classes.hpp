@@ -17,12 +17,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C
-// 0x0000 (0x0440 - 0x0440)
+// 0x0008 (0x0428 - 0x0420)
 class AGCNL_GM_MaxHealthIncrease_Major_C final : public AFortGameplayCueNotify_Looping
 {
 public:
+	float                                         Restore_Delay;                                     // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
 	void UserConstructionScript();
 	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +38,9 @@ public:
 		return GetDefaultObjImpl<AGCNL_GM_MaxHealthIncrease_Major_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000010, "Wrong alignment on AGCNL_GM_MaxHealthIncrease_Major_C");
-static_assert(sizeof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000440, "Wrong size on AGCNL_GM_MaxHealthIncrease_Major_C");
+static_assert(alignof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000008, "Wrong alignment on AGCNL_GM_MaxHealthIncrease_Major_C");
+static_assert(sizeof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000428, "Wrong size on AGCNL_GM_MaxHealthIncrease_Major_C");
+static_assert(offsetof(AGCNL_GM_MaxHealthIncrease_Major_C, Restore_Delay) == 0x000420, "Member 'AGCNL_GM_MaxHealthIncrease_Major_C::Restore_Delay' has a wrong offset!");
 
 }
 

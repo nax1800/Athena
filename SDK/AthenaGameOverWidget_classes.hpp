@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CommonUI_structs.hpp"
 
 
@@ -21,50 +21,43 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGameOverWidget.AthenaGameOverWidget_C
-// 0x0138 (0x0528 - 0x03F0)
-class UAthenaGameOverWidget_C final : public UFortActivatablePanel
+// 0x00E8 (0x0410 - 0x0328)
+class UAthenaGameOverWidget_C final : public UAthenaGameOverDisplay
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UAthenaGamePhaseWidget_C*               AthenaGamePhaseWidget;                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaIndicatorLayer_C*                AthenaIndicatorLayer;                              // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaKillFeedWidget_C*                AthenaKillFeedWidget;                              // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaLocalPlayerHitPointInfo_C*       AthenaLocalPlayerHitPointInfo;                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaSessionId_C*                     AthenaSessionId;                                   // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaTalkingList_C*                   AthenaTalkingList;                                 // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaViewTargetHitPointInfo_C*        AthenaViewTargetHitPointInfo;                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaWatchers_C*                      AthenaWatchers;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEliminatedOverlay_C*                   EliminatedOverlay;                                 // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        GameOverSwitcher;                                  // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        HealthBarSwitcher;                                 // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaMinimapContainer_C*              MinimapContainer;                                  // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      OpenShadowPlayHighlights;                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaSquadList_C*                     TeamInfo;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWinnerOverlay_C*                       WinnerOverlay;                                     // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    Input_ReturnToLobby;                               // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_NextTeammate;                                // 0x0488(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_PreviousTeammate;                            // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_ReportPlayer;                                // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_ViewMatchStats;                              // 0x04B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          ForceSpectatorSetupForReportingPlayer;             // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   KillersName;                                       // 0x04D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          DeadAndSpectating;                                 // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    Input_ToggleMap;                                   // 0x04F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_Matchmake;                                   // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_CancelMatchmaking;                           // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          MatchmakingComplete;                               // 0x0520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UEliminatedOverlay_C*                   EliminatedOverlay;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        GameOverSwitcher;                                  // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      OpenShadowPlayHighlights;                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpectatedPlayerSwitcher_C*             SpectatedPlayerSwitcher;                           // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWinnerOverlay_C*                       WinnerOverlay;                                     // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    Input_ReturnToLobby;                               // 0x0360(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_NextTeammate;                                // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_PreviousTeammate;                            // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_ReportPlayer;                                // 0x0390(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_ViewMatchStats;                              // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          ForceSpectatorSetupForReportingPlayer;             // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   KillersName;                                       // 0x03B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          DeadAndSpectating;                                 // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D1[0x7];                                      // 0x03D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    Input_Matchmake;                                   // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_CancelMatchmaking;                           // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          MatchmakingComplete;                               // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    Input_FollowSpecialActor;                          // 0x0400(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaGameOverWidget(int32 EntryPoint);
+	void SpectatorStreamingChanged(bool bSpectatorStreaming);
+	void OnToggleFullscreenMap_Bind(bool bFullscreenMapVisible);
+	void OnActivated();
 	void Destruct();
 	void OnDeactivated();
 	void BndEvt__OpenShadowPlayHighlights_K2Node_ComponentBoundEvent_188_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void On_Kill_Feed_Updated();
 	void Construct();
-	void OnActivated();
 	void OnPawnDied(struct FFortPlayerDeathReport& DeathReport);
 	void OnPlaceChanged();
 	void OnViewTargetChanged();
@@ -83,9 +76,13 @@ public:
 	bool CanFollowNextOrPreviousTeammate();
 	void SetViewModel(class UAthenaPlayerViewModel* ViewModel);
 	void InGameMatchmakingComplete(bool Success);
-	void Handle_ToggleMap(bool* Passthrough);
 	void Handle_Matchmake(bool* Passthrough);
 	void Handle_CancelMatchmaking(bool* Passthrough);
+	void OnWinningScoreDetermined(int32 Score);
+	void OnPlayerLost(EEndOfMatchReason LostReason);
+	void FocusPlayerSwitcher();
+	bool CanFollowSpecialActor();
+	void Handle_SpectateSpecialActor(bool* Passthrough);
 
 public:
 	static class UClass* StaticClass()
@@ -98,36 +95,26 @@ public:
 	}
 };
 static_assert(alignof(UAthenaGameOverWidget_C) == 0x000008, "Wrong alignment on UAthenaGameOverWidget_C");
-static_assert(sizeof(UAthenaGameOverWidget_C) == 0x000528, "Wrong size on UAthenaGameOverWidget_C");
-static_assert(offsetof(UAthenaGameOverWidget_C, UberGraphFrame) == 0x0003F0, "Member 'UAthenaGameOverWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaGamePhaseWidget) == 0x0003F8, "Member 'UAthenaGameOverWidget_C::AthenaGamePhaseWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaIndicatorLayer) == 0x000400, "Member 'UAthenaGameOverWidget_C::AthenaIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaKillFeedWidget) == 0x000408, "Member 'UAthenaGameOverWidget_C::AthenaKillFeedWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaLocalPlayerHitPointInfo) == 0x000410, "Member 'UAthenaGameOverWidget_C::AthenaLocalPlayerHitPointInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaSessionId) == 0x000418, "Member 'UAthenaGameOverWidget_C::AthenaSessionId' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaTalkingList) == 0x000420, "Member 'UAthenaGameOverWidget_C::AthenaTalkingList' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaViewTargetHitPointInfo) == 0x000428, "Member 'UAthenaGameOverWidget_C::AthenaViewTargetHitPointInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, AthenaWatchers) == 0x000430, "Member 'UAthenaGameOverWidget_C::AthenaWatchers' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, EliminatedOverlay) == 0x000438, "Member 'UAthenaGameOverWidget_C::EliminatedOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, GameOverSwitcher) == 0x000440, "Member 'UAthenaGameOverWidget_C::GameOverSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, HealthBarSwitcher) == 0x000448, "Member 'UAthenaGameOverWidget_C::HealthBarSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, MinimapContainer) == 0x000450, "Member 'UAthenaGameOverWidget_C::MinimapContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, OpenShadowPlayHighlights) == 0x000458, "Member 'UAthenaGameOverWidget_C::OpenShadowPlayHighlights' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, SafeZone_0) == 0x000460, "Member 'UAthenaGameOverWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, TeamInfo) == 0x000468, "Member 'UAthenaGameOverWidget_C::TeamInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, WinnerOverlay) == 0x000470, "Member 'UAthenaGameOverWidget_C::WinnerOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_ReturnToLobby) == 0x000478, "Member 'UAthenaGameOverWidget_C::Input_ReturnToLobby' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_NextTeammate) == 0x000488, "Member 'UAthenaGameOverWidget_C::Input_NextTeammate' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_PreviousTeammate) == 0x000498, "Member 'UAthenaGameOverWidget_C::Input_PreviousTeammate' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_ReportPlayer) == 0x0004A8, "Member 'UAthenaGameOverWidget_C::Input_ReportPlayer' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_ViewMatchStats) == 0x0004B8, "Member 'UAthenaGameOverWidget_C::Input_ViewMatchStats' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, ForceSpectatorSetupForReportingPlayer) == 0x0004C8, "Member 'UAthenaGameOverWidget_C::ForceSpectatorSetupForReportingPlayer' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, KillersName) == 0x0004D0, "Member 'UAthenaGameOverWidget_C::KillersName' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, DeadAndSpectating) == 0x0004E8, "Member 'UAthenaGameOverWidget_C::DeadAndSpectating' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_ToggleMap) == 0x0004F0, "Member 'UAthenaGameOverWidget_C::Input_ToggleMap' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_Matchmake) == 0x000500, "Member 'UAthenaGameOverWidget_C::Input_Matchmake' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, Input_CancelMatchmaking) == 0x000510, "Member 'UAthenaGameOverWidget_C::Input_CancelMatchmaking' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverWidget_C, MatchmakingComplete) == 0x000520, "Member 'UAthenaGameOverWidget_C::MatchmakingComplete' has a wrong offset!");
+static_assert(sizeof(UAthenaGameOverWidget_C) == 0x000410, "Wrong size on UAthenaGameOverWidget_C");
+static_assert(offsetof(UAthenaGameOverWidget_C, UberGraphFrame) == 0x000328, "Member 'UAthenaGameOverWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, EliminatedOverlay) == 0x000330, "Member 'UAthenaGameOverWidget_C::EliminatedOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, GameOverSwitcher) == 0x000338, "Member 'UAthenaGameOverWidget_C::GameOverSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, OpenShadowPlayHighlights) == 0x000340, "Member 'UAthenaGameOverWidget_C::OpenShadowPlayHighlights' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, SafeZone_0) == 0x000348, "Member 'UAthenaGameOverWidget_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, SpectatedPlayerSwitcher) == 0x000350, "Member 'UAthenaGameOverWidget_C::SpectatedPlayerSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, WinnerOverlay) == 0x000358, "Member 'UAthenaGameOverWidget_C::WinnerOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_ReturnToLobby) == 0x000360, "Member 'UAthenaGameOverWidget_C::Input_ReturnToLobby' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_NextTeammate) == 0x000370, "Member 'UAthenaGameOverWidget_C::Input_NextTeammate' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_PreviousTeammate) == 0x000380, "Member 'UAthenaGameOverWidget_C::Input_PreviousTeammate' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_ReportPlayer) == 0x000390, "Member 'UAthenaGameOverWidget_C::Input_ReportPlayer' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_ViewMatchStats) == 0x0003A0, "Member 'UAthenaGameOverWidget_C::Input_ViewMatchStats' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, ForceSpectatorSetupForReportingPlayer) == 0x0003B0, "Member 'UAthenaGameOverWidget_C::ForceSpectatorSetupForReportingPlayer' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, KillersName) == 0x0003B8, "Member 'UAthenaGameOverWidget_C::KillersName' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, DeadAndSpectating) == 0x0003D0, "Member 'UAthenaGameOverWidget_C::DeadAndSpectating' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_Matchmake) == 0x0003D8, "Member 'UAthenaGameOverWidget_C::Input_Matchmake' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_CancelMatchmaking) == 0x0003E8, "Member 'UAthenaGameOverWidget_C::Input_CancelMatchmaking' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, MatchmakingComplete) == 0x0003F8, "Member 'UAthenaGameOverWidget_C::MatchmakingComplete' has a wrong offset!");
+static_assert(offsetof(UAthenaGameOverWidget_C, Input_FollowSpecialActor) == 0x000400, "Member 'UAthenaGameOverWidget_C::Input_FollowSpecialActor' has a wrong offset!");
 
 }
 

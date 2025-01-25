@@ -10,25 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookItemPicker.CollectionBookItemPicker_C
-// 0x0060 (0x0300 - 0x02A0)
+// 0x0078 (0x0360 - 0x02E8)
 class UCollectionBookItemPicker_C final : public UFortCollectionBookPicker
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(Transient, DuplicateTransient)
-	struct FDataTableRowHandle                    BackInputActionName;                               // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class FText                                   ConfirmSlotItemTitle;                              // 0x02B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   ConfirmSlotItemMessage;                            // 0x02D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                    ConfirmInputActionName;                            // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UCollectionBookRecycleSlotResultsWidget_C* RecycleSlotItemWidget;                             // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(Transient, DuplicateTransient)
+	struct FDataTableRowHandle                    BackInputActionName;                               // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class FText                                   ConfirmSlotItemTitle;                              // 0x0300(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   ConfirmSlotItemMessage;                            // 0x0318(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDataTableRowHandle                    ConfirmInputActionName;                            // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UCollectionBookRecycleSlotResultsWidget_C* RecycleSlotItemWidget;                             // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ItemTypeText;                                      // 0x0348(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_CollectionBookItemPicker(int32 EntryPoint);
@@ -38,6 +39,7 @@ public:
 	void HandleItemSelected(class UObject* ItemSelected, bool IsSelected);
 	void HandleCommitAction(bool* Passthrough);
 	void Get_Type_Text(class UFortItem* Item, class FText* Type);
+	void Get_Plural_Type_Text(class UFortItem* Item, class FText* Type);
 
 public:
 	static class UClass* StaticClass()
@@ -50,13 +52,14 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookItemPicker_C) == 0x000008, "Wrong alignment on UCollectionBookItemPicker_C");
-static_assert(sizeof(UCollectionBookItemPicker_C) == 0x000300, "Wrong size on UCollectionBookItemPicker_C");
-static_assert(offsetof(UCollectionBookItemPicker_C, UberGraphFrame) == 0x0002A0, "Member 'UCollectionBookItemPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookItemPicker_C, BackInputActionName) == 0x0002A8, "Member 'UCollectionBookItemPicker_C::BackInputActionName' has a wrong offset!");
-static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmSlotItemTitle) == 0x0002B8, "Member 'UCollectionBookItemPicker_C::ConfirmSlotItemTitle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmSlotItemMessage) == 0x0002D0, "Member 'UCollectionBookItemPicker_C::ConfirmSlotItemMessage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmInputActionName) == 0x0002E8, "Member 'UCollectionBookItemPicker_C::ConfirmInputActionName' has a wrong offset!");
-static_assert(offsetof(UCollectionBookItemPicker_C, RecycleSlotItemWidget) == 0x0002F8, "Member 'UCollectionBookItemPicker_C::RecycleSlotItemWidget' has a wrong offset!");
+static_assert(sizeof(UCollectionBookItemPicker_C) == 0x000360, "Wrong size on UCollectionBookItemPicker_C");
+static_assert(offsetof(UCollectionBookItemPicker_C, UberGraphFrame) == 0x0002E8, "Member 'UCollectionBookItemPicker_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, BackInputActionName) == 0x0002F0, "Member 'UCollectionBookItemPicker_C::BackInputActionName' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmSlotItemTitle) == 0x000300, "Member 'UCollectionBookItemPicker_C::ConfirmSlotItemTitle' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmSlotItemMessage) == 0x000318, "Member 'UCollectionBookItemPicker_C::ConfirmSlotItemMessage' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmInputActionName) == 0x000330, "Member 'UCollectionBookItemPicker_C::ConfirmInputActionName' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, RecycleSlotItemWidget) == 0x000340, "Member 'UCollectionBookItemPicker_C::RecycleSlotItemWidget' has a wrong offset!");
+static_assert(offsetof(UCollectionBookItemPicker_C, ItemTypeText) == 0x000348, "Member 'UCollectionBookItemPicker_C::ItemTypeText' has a wrong offset!");
 
 }
 

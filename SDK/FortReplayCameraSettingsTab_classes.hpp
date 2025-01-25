@@ -11,30 +11,43 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortReplayCameraSettingsTab.FortReplayCameraSettingsTab_C
-// 0x0040 (0x0440 - 0x0400)
+// 0x0078 (0x03A8 - 0x0330)
 class UFortReplayCameraSettingsTab_C final : public UFortReplayViewSettingsTabBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class URotatorSelectorReplaySettings_C*       DamageEffects;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelectorReplaySettings_C*       HighQualityFX;                                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelectorReplaySettings_C*       NamePlates;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelectorReplaySettings_C*       PlayerOutlines;                                    // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelectorReplaySettings_C*       RelevancyZone;                                     // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelectorReplaySettings_C*       TPAutoFollow;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsMenuSliderReplay_C*             TPDistanceToSubject;                               // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
+	class URotatorSelectorReplaySettings_C*       BlendSettings;                                     // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       DamageEffects;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       HighQualityFX;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       MapWeaponTracers;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       NamePlates;                                        // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsMenuSliderReplay_C*             NameViewDistance;                                  // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsMenuSliderReplay_C*             OutsideSafeZoneOpacity;                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       PlayerOutlines;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       RelevancyZone;                                     // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       ShareLensSettings;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       StormEffects;                                      // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelectorReplaySettings_C*       TPAutoFollow;                                      // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsMenuSliderReplay_C*             TPDistanceToSubject;                               // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	float                                         MaxNameplateViewDistanceMeters;                    // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FortReplayCameraSettingsTab(int32 EntryPoint);
+	void BndEvt__MapWeaponTracers_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__OutsideSafeZoneOpacity_K2Node_ComponentBoundEvent_6_SliderChanged__DelegateSignature(float Slider_Value);
+	void BndEvt__StormEffects_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__NameViewDistance_K2Node_ComponentBoundEvent_3_SliderChanged__DelegateSignature(float Slider_Value);
+	void BndEvt__BlendSettings_K2Node_ComponentBoundEvent_2_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__ShareLensSettings_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void OnActivated();
 	void Construct();
 	void BndEvt__HighQualityFX_K2Node_ComponentBoundEvent_10_Selection_Changed__DelegateSignature(int32 Selected_Index);
@@ -54,6 +67,9 @@ public:
 	void SetTPDistanceToSubjectWidget();
 	void SetTPAutoFollowWidget();
 	void RefreshHighQualityFXState(const struct FFortReplayFXState& FX_State);
+	void HideBlendSettingsInReplays();
+	void SetNameplateViewDistanceWidget();
+	void SetOutsideSafeZoneOpacityWidget();
 
 public:
 	static class UClass* StaticClass()
@@ -66,15 +82,22 @@ public:
 	}
 };
 static_assert(alignof(UFortReplayCameraSettingsTab_C) == 0x000008, "Wrong alignment on UFortReplayCameraSettingsTab_C");
-static_assert(sizeof(UFortReplayCameraSettingsTab_C) == 0x000440, "Wrong size on UFortReplayCameraSettingsTab_C");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, UberGraphFrame) == 0x000400, "Member 'UFortReplayCameraSettingsTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, DamageEffects) == 0x000408, "Member 'UFortReplayCameraSettingsTab_C::DamageEffects' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, HighQualityFX) == 0x000410, "Member 'UFortReplayCameraSettingsTab_C::HighQualityFX' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, NamePlates) == 0x000418, "Member 'UFortReplayCameraSettingsTab_C::NamePlates' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, PlayerOutlines) == 0x000420, "Member 'UFortReplayCameraSettingsTab_C::PlayerOutlines' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, RelevancyZone) == 0x000428, "Member 'UFortReplayCameraSettingsTab_C::RelevancyZone' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, TPAutoFollow) == 0x000430, "Member 'UFortReplayCameraSettingsTab_C::TPAutoFollow' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSettingsTab_C, TPDistanceToSubject) == 0x000438, "Member 'UFortReplayCameraSettingsTab_C::TPDistanceToSubject' has a wrong offset!");
+static_assert(sizeof(UFortReplayCameraSettingsTab_C) == 0x0003A8, "Wrong size on UFortReplayCameraSettingsTab_C");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, UberGraphFrame) == 0x000330, "Member 'UFortReplayCameraSettingsTab_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, BlendSettings) == 0x000338, "Member 'UFortReplayCameraSettingsTab_C::BlendSettings' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, DamageEffects) == 0x000340, "Member 'UFortReplayCameraSettingsTab_C::DamageEffects' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, HighQualityFX) == 0x000348, "Member 'UFortReplayCameraSettingsTab_C::HighQualityFX' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, MapWeaponTracers) == 0x000350, "Member 'UFortReplayCameraSettingsTab_C::MapWeaponTracers' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, NamePlates) == 0x000358, "Member 'UFortReplayCameraSettingsTab_C::NamePlates' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, NameViewDistance) == 0x000360, "Member 'UFortReplayCameraSettingsTab_C::NameViewDistance' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, OutsideSafeZoneOpacity) == 0x000368, "Member 'UFortReplayCameraSettingsTab_C::OutsideSafeZoneOpacity' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, PlayerOutlines) == 0x000370, "Member 'UFortReplayCameraSettingsTab_C::PlayerOutlines' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, RelevancyZone) == 0x000378, "Member 'UFortReplayCameraSettingsTab_C::RelevancyZone' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, ShareLensSettings) == 0x000380, "Member 'UFortReplayCameraSettingsTab_C::ShareLensSettings' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, StormEffects) == 0x000388, "Member 'UFortReplayCameraSettingsTab_C::StormEffects' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, TPAutoFollow) == 0x000390, "Member 'UFortReplayCameraSettingsTab_C::TPAutoFollow' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, TPDistanceToSubject) == 0x000398, "Member 'UFortReplayCameraSettingsTab_C::TPDistanceToSubject' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSettingsTab_C, MaxNameplateViewDistanceMeters) == 0x0003A0, "Member 'UFortReplayCameraSettingsTab_C::MaxNameplateViewDistanceMeters' has a wrong offset!");
 
 }
 

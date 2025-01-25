@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "CommonInput_structs.hpp"
 
 
@@ -73,30 +73,43 @@ static_assert(offsetof(AbilitiesPageTile_C_SetAbilityItemInfo, K2Node_DynamicCas
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityItemInfo, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000040, "Member 'AbilitiesPageTile_C_SetAbilityItemInfo::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.UpdateKeyBinding
-// 0x0020 (0x0020 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct AbilitiesPageTile_C_UpdateKeyBinding final
 {
 public:
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FName                                   AbilityActionName;                                 // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetGadget2ActionName_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetGadget1ActionName_ReturnValue;         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetAbility3ActionName_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetAbility1ActionName_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetAbility2ActionName_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue3;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AbilitiesPageTile_C_UpdateKeyBinding) == 0x000008, "Wrong alignment on AbilitiesPageTile_C_UpdateKeyBinding");
-static_assert(sizeof(AbilitiesPageTile_C_UpdateKeyBinding) == 0x000020, "Wrong size on AbilitiesPageTile_C_UpdateKeyBinding");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetCurrentInputType_ReturnValue) == 0x000008, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, K2Node_SwitchInteger_CmpSuccess) == 0x00000A, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsValid_ReturnValue1) == 0x000019, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsValid_ReturnValue12) == 0x00001A, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(sizeof(AbilitiesPageTile_C_UpdateKeyBinding) == 0x000068, "Wrong size on AbilitiesPageTile_C_UpdateKeyBinding");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, AbilityActionName) == 0x000000, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::AbilityActionName' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue1) == 0x000018, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetGadget2ActionName_ReturnValue) == 0x000028, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetGadget2ActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetGadget1ActionName_ReturnValue) == 0x000030, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetGadget1ActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetAbility3ActionName_ReturnValue) == 0x000040, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetAbility3ActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetAbility1ActionName_ReturnValue) == 0x000048, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetAbility1ActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetAbility2ActionName_ReturnValue) == 0x000050, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetAbility2ActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_GetCurrentInputType_ReturnValue) == 0x000060, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000061, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityPerkInfo
 // 0x0168 (0x0168 - 0x0000)

@@ -37,6 +37,26 @@ void UAthenaIndicatorLayer_C::ExecuteUbergraph_AthenaIndicatorLayer(int32 EntryP
 }
 
 
+// Function AthenaIndicatorLayer.AthenaIndicatorLayer_C.SetDataSource
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAthenaPlayerViewModel*           PlayerViewModel                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaIndicatorLayer_C::SetDataSource(class UAthenaPlayerViewModel* PlayerViewModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaIndicatorLayer_C", "SetDataSource");
+
+	Params::AthenaIndicatorLayer_C_SetDataSource Parms{};
+
+	Parms.PlayerViewModel = PlayerViewModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaIndicatorLayer.AthenaIndicatorLayer_C.SquadIndicatorsChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:

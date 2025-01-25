@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaSeasonLevelHeaderWidget.AthenaSeasonLevelHeaderWidget_C
-// 0x0018 (0x0248 - 0x0230)
+// 0x0018 (0x0240 - 0x0228)
 class UAthenaSeasonLevelHeaderWidget_C final : public USeasonPassLevelWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       HeaderNumber;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          PaidHeaderBorder;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       HeaderNumber;                                      // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          PaidHeaderBorder;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaSeasonLevelHeaderWidget(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(UAthenaSeasonLevelHeaderWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonLevelHeaderWidget_C");
-static_assert(sizeof(UAthenaSeasonLevelHeaderWidget_C) == 0x000248, "Wrong size on UAthenaSeasonLevelHeaderWidget_C");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, UberGraphFrame) == 0x000230, "Member 'UAthenaSeasonLevelHeaderWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, HeaderNumber) == 0x000238, "Member 'UAthenaSeasonLevelHeaderWidget_C::HeaderNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, PaidHeaderBorder) == 0x000240, "Member 'UAthenaSeasonLevelHeaderWidget_C::PaidHeaderBorder' has a wrong offset!");
+static_assert(sizeof(UAthenaSeasonLevelHeaderWidget_C) == 0x000240, "Wrong size on UAthenaSeasonLevelHeaderWidget_C");
+static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, UberGraphFrame) == 0x000228, "Member 'UAthenaSeasonLevelHeaderWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, HeaderNumber) == 0x000230, "Member 'UAthenaSeasonLevelHeaderWidget_C::HeaderNumber' has a wrong offset!");
+static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, PaidHeaderBorder) == 0x000238, "Member 'UAthenaSeasonLevelHeaderWidget_C::PaidHeaderBorder' has a wrong offset!");
 
 }
 

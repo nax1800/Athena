@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ExecuteUbergraph_ConfirmationWindow
-// 0x0040 (0x0040 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow final
 {
 public:
@@ -32,15 +32,17 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue1;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow) == 0x000008, "Wrong alignment on ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow");
-static_assert(sizeof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow) == 0x000040, "Wrong size on ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow");
+static_assert(sizeof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow) == 0x000048, "Wrong size on ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, EntryPoint) == 0x000000, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_Event_IsDesignTime) == 0x000028, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, CallFunc_GetUINavigationManager_ReturnValue) == 0x000038, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, CallFunc_GetUINavigationManager_ReturnValue1) == 0x000040, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::CallFunc_GetUINavigationManager_ReturnValue1' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -54,14 +56,14 @@ static_assert(sizeof(ConfirmationWindow_C_PreConstruct) == 0x000001, "Wrong size
 static_assert(offsetof(ConfirmationWindow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ConfirmationWindow_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.SetDescription
-// 0x0180 (0x0180 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct ConfirmationWindow_C_SetDescription final
 {
 public:
-	struct FFortDialogDescription_NUI             NewDescription;                                    // 0x0000(0x0180)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             NewDescription;                                    // 0x0000(0x0118)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(ConfirmationWindow_C_SetDescription) == 0x000010, "Wrong alignment on ConfirmationWindow_C_SetDescription");
-static_assert(sizeof(ConfirmationWindow_C_SetDescription) == 0x000180, "Wrong size on ConfirmationWindow_C_SetDescription");
+static_assert(alignof(ConfirmationWindow_C_SetDescription) == 0x000008, "Wrong alignment on ConfirmationWindow_C_SetDescription");
+static_assert(sizeof(ConfirmationWindow_C_SetDescription) == 0x000118, "Wrong size on ConfirmationWindow_C_SetDescription");
 static_assert(offsetof(ConfirmationWindow_C_SetDescription, NewDescription) == 0x000000, "Member 'ConfirmationWindow_C_SetDescription::NewDescription' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.AddConfirmButtons
@@ -216,7 +218,7 @@ public:
 	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate1;             // 0x01F0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue12;                  // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetInputPriority_ReturnValue;             // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ConfirmationWindow_C_AddSingleConfirmButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_AddSingleConfirmButton");
@@ -235,7 +237,7 @@ static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_Get
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_Array_Add_ReturnValue1) == 0x0001E8, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, K2Node_CreateDelegate_OutputDelegate1) == 0x0001F0, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_GetContext_ReturnValue) == 0x000200, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_Array_Add_ReturnValue12) == 0x000208, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_Array_Add_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_Array_Add_ReturnValue2) == 0x000208, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_GetInputPriority_ReturnValue) == 0x00020C, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_GetInputPriority_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.GetInputAction

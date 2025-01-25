@@ -38,7 +38,7 @@ void UAthenaSpectatorScoreboardRowWidget_C::ExecuteUbergraph_AthenaSpectatorScor
 
 
 // Function AthenaSpectatorScoreboardRowWidget.AthenaSpectatorScoreboardRowWidget_C.OnEntryDataSet
-// (Event, Public, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 
 void UAthenaSpectatorScoreboardRowWidget_C::OnEntryDataSet()
 {

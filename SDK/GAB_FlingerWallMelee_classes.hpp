@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerWallMelee.GAB_FlingerWallMelee_C
-// 0x0000 (0x0B00 - 0x0B00)
+// 0x0000 (0x0908 - 0x0908)
 class UGAB_FlingerWallMelee_C final : public UGAB_AIBaseMelee_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerWallMelee_C) == 0x000008, "Wrong alignment on UGAB_FlingerWallMelee_C");
-static_assert(sizeof(UGAB_FlingerWallMelee_C) == 0x000B00, "Wrong size on UGAB_FlingerWallMelee_C");
+static_assert(sizeof(UGAB_FlingerWallMelee_C) == 0x000908, "Wrong size on UGAB_FlingerWallMelee_C");
 
 }
 

@@ -18,14 +18,15 @@ namespace SDK
 {
 
 // Class LinearTimecode.LinearTimecodeComponent
-// 0x0070 (0x0300 - 0x0290)
+// 0x0068 (0x02A0 - 0x0238)
 class ULinearTimecodeComponent final : public USceneComponent
 {
 public:
-	class UMediaPlayer*                           MediaPlayer;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDropTimecode                          DropTimecode;                                      // 0x0298(0x0028)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                   OnTimecodeChange;                                  // 0x02C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D0[0x30];                                     // 0x02D0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMediaPlayer*                           MediaPlayer;                                       // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDropTimecode                          DropTimecode;                                      // 0x0240(0x001C)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnTimecodeChange;                                  // 0x0260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_270[0x30];                                     // 0x0270(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void GetDropTimeCodeFrameNumber(const struct FDropTimecode& Timecode, int32* FrameNumber);
@@ -44,10 +45,10 @@ public:
 	}
 };
 static_assert(alignof(ULinearTimecodeComponent) == 0x000008, "Wrong alignment on ULinearTimecodeComponent");
-static_assert(sizeof(ULinearTimecodeComponent) == 0x000300, "Wrong size on ULinearTimecodeComponent");
-static_assert(offsetof(ULinearTimecodeComponent, MediaPlayer) == 0x000290, "Member 'ULinearTimecodeComponent::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(ULinearTimecodeComponent, DropTimecode) == 0x000298, "Member 'ULinearTimecodeComponent::DropTimecode' has a wrong offset!");
-static_assert(offsetof(ULinearTimecodeComponent, OnTimecodeChange) == 0x0002C0, "Member 'ULinearTimecodeComponent::OnTimecodeChange' has a wrong offset!");
+static_assert(sizeof(ULinearTimecodeComponent) == 0x0002A0, "Wrong size on ULinearTimecodeComponent");
+static_assert(offsetof(ULinearTimecodeComponent, MediaPlayer) == 0x000238, "Member 'ULinearTimecodeComponent::MediaPlayer' has a wrong offset!");
+static_assert(offsetof(ULinearTimecodeComponent, DropTimecode) == 0x000240, "Member 'ULinearTimecodeComponent::DropTimecode' has a wrong offset!");
+static_assert(offsetof(ULinearTimecodeComponent, OnTimecodeChange) == 0x000260, "Member 'ULinearTimecodeComponent::OnTimecodeChange' has a wrong offset!");
 
 // Class LinearTimecode.DropTimecodeToStringConversion
 // 0x0000 (0x0028 - 0x0028)

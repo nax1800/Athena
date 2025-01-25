@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCL_Constructor_Firewall_Cooldown.GCL_Constructor_Firewall_Cooldown_C
-// 0x0000 (0x0440 - 0x0440)
+// 0x0000 (0x0420 - 0x0420)
 class AGCL_Constructor_Firewall_Cooldown_C final : public AFortGameplayCueNotify_Looping
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<AGCL_Constructor_Firewall_Cooldown_C>();
 	}
 };
-static_assert(alignof(AGCL_Constructor_Firewall_Cooldown_C) == 0x000010, "Wrong alignment on AGCL_Constructor_Firewall_Cooldown_C");
-static_assert(sizeof(AGCL_Constructor_Firewall_Cooldown_C) == 0x000440, "Wrong size on AGCL_Constructor_Firewall_Cooldown_C");
+static_assert(alignof(AGCL_Constructor_Firewall_Cooldown_C) == 0x000008, "Wrong alignment on AGCL_Constructor_Firewall_Cooldown_C");
+static_assert(sizeof(AGCL_Constructor_Firewall_Cooldown_C) == 0x000420, "Wrong size on AGCL_Constructor_Firewall_Cooldown_C");
 
 }
 

@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortReplayCameraSelectionMenu.FortReplayCameraSelectionMenu_C
-// 0x0010 (0x0220 - 0x0210)
+// 0x0010 (0x0218 - 0x0208)
 class UFortReplayCameraSelectionMenu_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           CameraList;                                        // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           CameraList;                                        // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FortReplayCameraSelectionMenu(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UFortReplayCameraSelectionMenu_C) == 0x000008, "Wrong alignment on UFortReplayCameraSelectionMenu_C");
-static_assert(sizeof(UFortReplayCameraSelectionMenu_C) == 0x000220, "Wrong size on UFortReplayCameraSelectionMenu_C");
-static_assert(offsetof(UFortReplayCameraSelectionMenu_C, UberGraphFrame) == 0x000210, "Member 'UFortReplayCameraSelectionMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortReplayCameraSelectionMenu_C, CameraList) == 0x000218, "Member 'UFortReplayCameraSelectionMenu_C::CameraList' has a wrong offset!");
+static_assert(sizeof(UFortReplayCameraSelectionMenu_C) == 0x000218, "Wrong size on UFortReplayCameraSelectionMenu_C");
+static_assert(offsetof(UFortReplayCameraSelectionMenu_C, UberGraphFrame) == 0x000208, "Member 'UFortReplayCameraSelectionMenu_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFortReplayCameraSelectionMenu_C, CameraList) == 0x000210, "Member 'UFortReplayCameraSelectionMenu_C::CameraList' has a wrong offset!");
 
 }
 

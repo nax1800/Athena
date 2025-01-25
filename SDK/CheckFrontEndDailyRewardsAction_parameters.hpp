@@ -38,14 +38,14 @@ public:
 	bool                                          CallFunc_IsPendingLogout_ReturnValue;              // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Daily_Rewards_Open_bRunning;              // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortStoreState                               CallFunc_GetStoreState_ReturnValue;                // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsFrontEndRewards_Running_IsRunning;      // 0x0093(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue123;                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1234;               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue3;                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue4;                  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInLobby_ReturnValue;                    // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortFrontEndFeatureState                     CallFunc_GetFeatureState_OutFeatureState;          // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortFrontEndFeatureStateReason               CallFunc_GetFeatureState_OutReason;                // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,13 +70,13 @@ static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckF
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetSubGame_ReturnValue) == 0x000080, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_IsPendingLogout_ReturnValue) == 0x000081, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_IsPendingLogout_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_Not_PreBool_ReturnValue) == 0x000082, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue12) == 0x000088, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue2) == 0x000088, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_Daily_Rewards_Open_bRunning) == 0x000090, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_Daily_Rewards_Open_bRunning' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetStoreState_ReturnValue) == 0x000091, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetStoreState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000092, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_IsFrontEndRewards_Running_IsRunning) == 0x000093, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_IsFrontEndRewards_Running_IsRunning' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue123) == 0x000098, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue1234) == 0x0000A0, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue3) == 0x000098, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue4) == 0x0000A0, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_IsInLobby_ReturnValue) == 0x0000A8, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_IsInLobby_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetFeatureState_OutFeatureState) == 0x0000A9, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetFeatureState_OutReason) == 0x0000AA, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
@@ -113,33 +113,36 @@ static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_Execute) == 0x000030, "Wr
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Execute, Params_0) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_Execute::Params_0' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ShowDailyRewards
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_ShowDailyRewards final
 {
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDailyRewards_C*                        K2Node_DynamicCast_AsDaily_Rewards;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDailyRewards_C*                        K2Node_DynamicCast_AsDaily_Rewards;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x000048, "Wrong size on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x000050, "Wrong size on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetCachedWidget_ReturnValue) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_DynamicCast_AsDaily_Rewards) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_DynamicCast_AsDaily_Rewards' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetContext_ReturnValue1) == 0x000038, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_IsInZone_ReturnValue) == 0x000040, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_IsInViewport_ReturnValue) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetCachedWidget_ReturnValue) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_DynamicCast_AsDaily_Rewards) == 0x000028, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_DynamicCast_AsDaily_Rewards' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetContext_ReturnValue1) == 0x000040, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_IsInZone_ReturnValue) == 0x000048, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Daily Rewards Open
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open final
 {
 public:
@@ -147,19 +150,22 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDailyRewards_C*                        K2Node_DynamicCast_AsDaily_Rewards;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDailyRewards_C*                        K2Node_DynamicCast_AsDaily_Rewards;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open) == 0x000028, "Wrong size on CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open) == 0x000030, "Wrong size on CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, bRunning) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::bRunning' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, K2Node_DynamicCast_AsDaily_Rewards) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::K2Node_DynamicCast_AsDaily_Rewards' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, CallFunc_IsInViewport_ReturnValue) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, K2Node_DynamicCast_AsDaily_Rewards) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::K2Node_DynamicCast_AsDaily_Rewards' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'CheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.IsFrontEndRewards Running
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running final
 {
 public:
@@ -167,16 +173,19 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFrontEndRewards_Widget_C*              K2Node_DynamicCast_AsFront_End_Rewards_Widget;     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFrontEndRewards_Widget_C*              K2Node_DynamicCast_AsFront_End_Rewards_Widget;     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running) == 0x000028, "Wrong size on CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running) == 0x000030, "Wrong size on CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, IsRunning) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::IsRunning' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, K2Node_DynamicCast_AsFront_End_Rewards_Widget) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::K2Node_DynamicCast_AsFront_End_Rewards_Widget' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, CallFunc_IsInViewport_ReturnValue) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, K2Node_DynamicCast_AsFront_End_Rewards_Widget) == 0x000020, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::K2Node_DynamicCast_AsFront_End_Rewards_Widget' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'CheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

@@ -10,20 +10,52 @@
 
 #include "Basic.hpp"
 
+#include "FortniteUI_structs.hpp"
+
 
 namespace SDK::Params
 {
 
+// Function AthenaNews.AthenaNews_C.UpdateStyle__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaNews_C_UpdateStyle__DelegateSignature final
+{
+public:
+	EAthenaNewsStyle                              NewStyle;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaNews_C_UpdateStyle__DelegateSignature) == 0x000001, "Wrong alignment on AthenaNews_C_UpdateStyle__DelegateSignature");
+static_assert(sizeof(AthenaNews_C_UpdateStyle__DelegateSignature) == 0x000001, "Wrong size on AthenaNews_C_UpdateStyle__DelegateSignature");
+static_assert(offsetof(AthenaNews_C_UpdateStyle__DelegateSignature, NewStyle) == 0x000000, "Member 'AthenaNews_C_UpdateStyle__DelegateSignature::NewStyle' has a wrong offset!");
+
 // Function AthenaNews.AthenaNews_C.ExecuteUbergraph_AthenaNews
-// 0x0004 (0x0004 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct AthenaNews_C_ExecuteUbergraph_AthenaNews final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EAthenaNewsStyle                              K2Node_Event_NewsStyle;                            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000004, "Wrong alignment on AthenaNews_C_ExecuteUbergraph_AthenaNews");
-static_assert(sizeof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000004, "Wrong size on AthenaNews_C_ExecuteUbergraph_AthenaNews");
+static_assert(sizeof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x00000C, "Wrong size on AthenaNews_C_ExecuteUbergraph_AthenaNews");
 static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, EntryPoint) == 0x000000, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::EntryPoint' has a wrong offset!");
+static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, K2Node_Event_NewsStyle) == 0x000009, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::K2Node_Event_NewsStyle' has a wrong offset!");
+static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, K2Node_SwitchEnum_CmpSuccess) == 0x00000A, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function AthenaNews.AthenaNews_C.HandleNewsStyle
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaNews_C_HandleNewsStyle final
+{
+public:
+	EAthenaNewsStyle                              NewsStyle;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaNews_C_HandleNewsStyle) == 0x000001, "Wrong alignment on AthenaNews_C_HandleNewsStyle");
+static_assert(sizeof(AthenaNews_C_HandleNewsStyle) == 0x000001, "Wrong size on AthenaNews_C_HandleNewsStyle");
+static_assert(offsetof(AthenaNews_C_HandleNewsStyle, NewsStyle) == 0x000000, "Member 'AthenaNews_C_HandleNewsStyle::NewsStyle' has a wrong offset!");
 
 }
 

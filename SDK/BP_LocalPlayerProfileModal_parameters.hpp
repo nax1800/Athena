@@ -133,13 +133,13 @@ struct alignas(0x08) BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers fi
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers) == 0x000008, "Wrong alignment on BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers");
 static_assert(sizeof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers) == 0x000030, "Wrong size on BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandlePreviousAction
 // 0x000C (0x000C - 0x0000)

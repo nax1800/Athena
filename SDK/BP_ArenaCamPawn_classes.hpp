@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ArenaCamPawn.BP_ArenaCamPawn_C
-// 0x0000 (0x0450 - 0x0450)
+// 0x0000 (0x0460 - 0x0460)
 class ABP_ArenaCamPawn_C final : public AArenaCamPawn
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_ArenaCamPawn_C) == 0x000008, "Wrong alignment on ABP_ArenaCamPawn_C");
-static_assert(sizeof(ABP_ArenaCamPawn_C) == 0x000450, "Wrong size on ABP_ArenaCamPawn_C");
+static_assert(sizeof(ABP_ArenaCamPawn_C) == 0x000460, "Wrong size on ABP_ArenaCamPawn_C");
 
 }
 

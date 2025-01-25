@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Trap_Floor_Hoverboard_Speed.Trap_Floor_Hoverboard_Speed_C
-// 0x0050 (0x0F50 - 0x0F00)
+// 0x0050 (0x0D00 - 0x0CB0)
 class ATrap_Floor_Hoverboard_Speed_C final : public ABuildingTrapFloor_Hoverboard
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0F00(0x0008)(Transient, DuplicateTransient)
-	class UDecalComponent*                        Decal;                                             // 0x0F08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_SpeedBoost_Idle;                                 // 0x0F10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Trigger;                                           // 0x0F18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene1;                                            // 0x0F20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Placed_Sound;                                 // 0x0F28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Ready_Sound;                                  // 0x0F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Fire_Sound;                                   // 0x0F38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Reload_Sound;                                 // 0x0F40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Explode_Sound;                                // 0x0F48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0CB0(0x0008)(Transient, DuplicateTransient)
+	class UDecalComponent*                        Decal;                                             // 0x0CB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_SpeedBoost_Idle;                                 // 0x0CC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Trigger;                                           // 0x0CC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Scene1;                                            // 0x0CD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Placed_Sound;                                 // 0x0CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Ready_Sound;                                  // 0x0CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Fire_Sound;                                   // 0x0CE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Reload_Sound;                                 // 0x0CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Explode_Sound;                                // 0x0CF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Trap_Floor_Hoverboard_Speed(int32 EntryPoint);
@@ -54,17 +54,17 @@ public:
 	}
 };
 static_assert(alignof(ATrap_Floor_Hoverboard_Speed_C) == 0x000008, "Wrong alignment on ATrap_Floor_Hoverboard_Speed_C");
-static_assert(sizeof(ATrap_Floor_Hoverboard_Speed_C) == 0x000F50, "Wrong size on ATrap_Floor_Hoverboard_Speed_C");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, UberGraphFrame) == 0x000F00, "Member 'ATrap_Floor_Hoverboard_Speed_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Decal) == 0x000F08, "Member 'ATrap_Floor_Hoverboard_Speed_C::Decal' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, P_SpeedBoost_Idle) == 0x000F10, "Member 'ATrap_Floor_Hoverboard_Speed_C::P_SpeedBoost_Idle' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trigger) == 0x000F18, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Scene1) == 0x000F20, "Member 'ATrap_Floor_Hoverboard_Speed_C::Scene1' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Placed_Sound) == 0x000F28, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Placed_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Ready_Sound) == 0x000F30, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Ready_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Fire_Sound) == 0x000F38, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Fire_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Reload_Sound) == 0x000F40, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Reload_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Explode_Sound) == 0x000F48, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Explode_Sound' has a wrong offset!");
+static_assert(sizeof(ATrap_Floor_Hoverboard_Speed_C) == 0x000D00, "Wrong size on ATrap_Floor_Hoverboard_Speed_C");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, UberGraphFrame) == 0x000CB0, "Member 'ATrap_Floor_Hoverboard_Speed_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Decal) == 0x000CB8, "Member 'ATrap_Floor_Hoverboard_Speed_C::Decal' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, P_SpeedBoost_Idle) == 0x000CC0, "Member 'ATrap_Floor_Hoverboard_Speed_C::P_SpeedBoost_Idle' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trigger) == 0x000CC8, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trigger' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Scene1) == 0x000CD0, "Member 'ATrap_Floor_Hoverboard_Speed_C::Scene1' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Placed_Sound) == 0x000CD8, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Placed_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Ready_Sound) == 0x000CE0, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Ready_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Fire_Sound) == 0x000CE8, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Fire_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Reload_Sound) == 0x000CF0, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Reload_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Hoverboard_Speed_C, Trap_Explode_Sound) == 0x000CF8, "Member 'ATrap_Floor_Hoverboard_Speed_C::Trap_Explode_Sound' has a wrong offset!");
 
 }
 

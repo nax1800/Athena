@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherRoar.GAB_SmasherRoar_C
-// 0x0000 (0x0AF8 - 0x0AF8)
+// 0x0000 (0x0900 - 0x0900)
 class UGAB_SmasherRoar_C : public UGAB_AIBaseSimpleMontage_C
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherRoar_C) == 0x000008, "Wrong alignment on UGAB_SmasherRoar_C");
-static_assert(sizeof(UGAB_SmasherRoar_C) == 0x000AF8, "Wrong size on UGAB_SmasherRoar_C");
+static_assert(sizeof(UGAB_SmasherRoar_C) == 0x000900, "Wrong size on UGAB_SmasherRoar_C");
 
 }
 

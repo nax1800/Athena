@@ -21,33 +21,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaEquippedItemWidget.AthenaEquippedItemWidget_C
-// 0x0068 (0x02D8 - 0x0270)
+// 0x0068 (0x03D8 - 0x0370)
 class UAthenaEquippedItemWidget_C final : public UAthenaEquippedItemBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 AmmoIcon;                                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MagazineAmmoCount;                                 // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             OutOfAmmo;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ResourceCount;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ResourceIcon;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Split1;                                            // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       StandAloneAmmoCount;                               // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       SurplusAmmoCount;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  SwitcherContent;                                   // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 UtilityItemImage;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           OutOfAmmoColor;                                    // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 AmmoIcon;                                          // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MagazineAmmoCount;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             OutOfAmmo;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ResourceCount;                                     // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ResourceIcon;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Split1;                                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       StandAloneAmmoCount;                               // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       SurplusAmmoCount;                                  // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  SwitcherContent;                                   // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 UtilityItemImage;                                  // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FLinearColor                           OutOfAmmoColor;                                    // 0x03C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaEquippedItemWidget(int32 EntryPoint);
+	void Construct();
 	void UtilityItemTypeChanged(class AFortWeapon* Weapon, class UFortWeaponItemDefinition* Item);
 	void UtilityItemCountChanged(int32 Remaining);
-	void AmmoChanged(int32 Param_MagazineAmmoCount, int32 BackupAmmoCount, int32 TotalRemaining);
+	void AmmoChanged(int32 MagazineAmmoCount_0, int32 BackupAmmoCount, int32 TotalRemaining);
 	void HasAmmoChanged(bool bHasAmmo);
 	void WeaponTypeChanged(EEquippedWeaponDisplay Mode);
-	void ResourceTypeChanged(class UFortResourceItemDefinition* Item, int32 Param_ResourceCount);
+	void ResourceTypeChanged(class UFortResourceItemDefinition* Item, int32 ResourceCount_0);
 	void AmmoTypeChanged(class AFortWeaponRanged* RangedWeapon, class UFortWorldItemDefinition* Item);
-	void ResourceCountChanged(int32 Param_ResourceCount);
+	void ResourceCountChanged(int32 ResourceCount_0);
 	void UpdateWidgetColor(bool HasAmmo);
 
 	void GetCurrentAmmoText(int32 CurrentAmmoCount, class FText* CurrentAmmoText) const;
@@ -64,19 +65,19 @@ public:
 	}
 };
 static_assert(alignof(UAthenaEquippedItemWidget_C) == 0x000008, "Wrong alignment on UAthenaEquippedItemWidget_C");
-static_assert(sizeof(UAthenaEquippedItemWidget_C) == 0x0002D8, "Wrong size on UAthenaEquippedItemWidget_C");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, UberGraphFrame) == 0x000270, "Member 'UAthenaEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, AmmoIcon) == 0x000278, "Member 'UAthenaEquippedItemWidget_C::AmmoIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, MagazineAmmoCount) == 0x000280, "Member 'UAthenaEquippedItemWidget_C::MagazineAmmoCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, OutOfAmmo) == 0x000288, "Member 'UAthenaEquippedItemWidget_C::OutOfAmmo' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, ResourceCount) == 0x000290, "Member 'UAthenaEquippedItemWidget_C::ResourceCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, ResourceIcon) == 0x000298, "Member 'UAthenaEquippedItemWidget_C::ResourceIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, Split1) == 0x0002A0, "Member 'UAthenaEquippedItemWidget_C::Split1' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, StandAloneAmmoCount) == 0x0002A8, "Member 'UAthenaEquippedItemWidget_C::StandAloneAmmoCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, SurplusAmmoCount) == 0x0002B0, "Member 'UAthenaEquippedItemWidget_C::SurplusAmmoCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, SwitcherContent) == 0x0002B8, "Member 'UAthenaEquippedItemWidget_C::SwitcherContent' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, UtilityItemImage) == 0x0002C0, "Member 'UAthenaEquippedItemWidget_C::UtilityItemImage' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, OutOfAmmoColor) == 0x0002C8, "Member 'UAthenaEquippedItemWidget_C::OutOfAmmoColor' has a wrong offset!");
+static_assert(sizeof(UAthenaEquippedItemWidget_C) == 0x0003D8, "Wrong size on UAthenaEquippedItemWidget_C");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, UberGraphFrame) == 0x000370, "Member 'UAthenaEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, AmmoIcon) == 0x000378, "Member 'UAthenaEquippedItemWidget_C::AmmoIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, MagazineAmmoCount) == 0x000380, "Member 'UAthenaEquippedItemWidget_C::MagazineAmmoCount' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, OutOfAmmo) == 0x000388, "Member 'UAthenaEquippedItemWidget_C::OutOfAmmo' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, ResourceCount) == 0x000390, "Member 'UAthenaEquippedItemWidget_C::ResourceCount' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, ResourceIcon) == 0x000398, "Member 'UAthenaEquippedItemWidget_C::ResourceIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, Split1) == 0x0003A0, "Member 'UAthenaEquippedItemWidget_C::Split1' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, StandAloneAmmoCount) == 0x0003A8, "Member 'UAthenaEquippedItemWidget_C::StandAloneAmmoCount' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, SurplusAmmoCount) == 0x0003B0, "Member 'UAthenaEquippedItemWidget_C::SurplusAmmoCount' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, SwitcherContent) == 0x0003B8, "Member 'UAthenaEquippedItemWidget_C::SwitcherContent' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, UtilityItemImage) == 0x0003C0, "Member 'UAthenaEquippedItemWidget_C::UtilityItemImage' has a wrong offset!");
+static_assert(offsetof(UAthenaEquippedItemWidget_C, OutOfAmmoColor) == 0x0003C8, "Member 'UAthenaEquippedItemWidget_C::OutOfAmmoColor' has a wrong offset!");
 
 }
 

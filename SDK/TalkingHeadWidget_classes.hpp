@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TalkingHeadWidget.TalkingHeadWidget_C
-// 0x0028 (0x0268 - 0x0240)
+// 0x0028 (0x0260 - 0x0238)
 class UTalkingHeadWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 TalkingHeadIcon;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextName;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextSubtitles;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxRoot;                                   // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 TalkingHeadIcon;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextName;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextSubtitles;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxRoot;                                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TalkingHeadWidget(int32 EntryPoint);
@@ -50,12 +50,12 @@ public:
 	}
 };
 static_assert(alignof(UTalkingHeadWidget_C) == 0x000008, "Wrong alignment on UTalkingHeadWidget_C");
-static_assert(sizeof(UTalkingHeadWidget_C) == 0x000268, "Wrong size on UTalkingHeadWidget_C");
-static_assert(offsetof(UTalkingHeadWidget_C, UberGraphFrame) == 0x000240, "Member 'UTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TalkingHeadIcon) == 0x000248, "Member 'UTalkingHeadWidget_C::TalkingHeadIcon' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TextName) == 0x000250, "Member 'UTalkingHeadWidget_C::TextName' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TextSubtitles) == 0x000258, "Member 'UTalkingHeadWidget_C::TextSubtitles' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, VerticalBoxRoot) == 0x000260, "Member 'UTalkingHeadWidget_C::VerticalBoxRoot' has a wrong offset!");
+static_assert(sizeof(UTalkingHeadWidget_C) == 0x000260, "Wrong size on UTalkingHeadWidget_C");
+static_assert(offsetof(UTalkingHeadWidget_C, UberGraphFrame) == 0x000238, "Member 'UTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTalkingHeadWidget_C, TalkingHeadIcon) == 0x000240, "Member 'UTalkingHeadWidget_C::TalkingHeadIcon' has a wrong offset!");
+static_assert(offsetof(UTalkingHeadWidget_C, TextName) == 0x000248, "Member 'UTalkingHeadWidget_C::TextName' has a wrong offset!");
+static_assert(offsetof(UTalkingHeadWidget_C, TextSubtitles) == 0x000250, "Member 'UTalkingHeadWidget_C::TextSubtitles' has a wrong offset!");
+static_assert(offsetof(UTalkingHeadWidget_C, VerticalBoxRoot) == 0x000258, "Member 'UTalkingHeadWidget_C::VerticalBoxRoot' has a wrong offset!");
 
 }
 

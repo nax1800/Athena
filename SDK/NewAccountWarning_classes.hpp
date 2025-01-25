@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NewAccountWarning.NewAccountWarning_C
-// 0x0010 (0x0460 - 0x0450)
+// 0x0010 (0x0338 - 0x0328)
 class UNewAccountWarning_C final : public UFortNewAccountWarning
 {
 public:
-	class UCommonTextBlock*                       CommonTextBlock_2;                                 // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_3;                                 // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_2;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_3;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,9 +35,9 @@ public:
 	}
 };
 static_assert(alignof(UNewAccountWarning_C) == 0x000008, "Wrong alignment on UNewAccountWarning_C");
-static_assert(sizeof(UNewAccountWarning_C) == 0x000460, "Wrong size on UNewAccountWarning_C");
-static_assert(offsetof(UNewAccountWarning_C, CommonTextBlock_2) == 0x000450, "Member 'UNewAccountWarning_C::CommonTextBlock_2' has a wrong offset!");
-static_assert(offsetof(UNewAccountWarning_C, CommonTextBlock_3) == 0x000458, "Member 'UNewAccountWarning_C::CommonTextBlock_3' has a wrong offset!");
+static_assert(sizeof(UNewAccountWarning_C) == 0x000338, "Wrong size on UNewAccountWarning_C");
+static_assert(offsetof(UNewAccountWarning_C, CommonTextBlock_2) == 0x000328, "Member 'UNewAccountWarning_C::CommonTextBlock_2' has a wrong offset!");
+static_assert(offsetof(UNewAccountWarning_C, CommonTextBlock_3) == 0x000330, "Member 'UNewAccountWarning_C::CommonTextBlock_3' has a wrong offset!");
 
 }
 

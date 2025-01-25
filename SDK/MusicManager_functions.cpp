@@ -37,6 +37,40 @@ void AMusicManager_C::ExecuteUbergraph_MusicManager(int32 EntryPoint)
 }
 
 
+// Function MusicManager.MusicManager_C.OnMusicBankChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UFortMusicManagerBank*            NewBank                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMusicManager_C::OnMusicBankChanged(class UFortMusicManagerBank* NewBank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MusicManager_C", "OnMusicBankChanged");
+
+	Params::MusicManager_C_OnMusicBankChanged Parms{};
+
+	Parms.NewBank = NewBank;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MusicManager.MusicManager_C.Gather Combat Graph Tresholds
+// (BlueprintCallable, BlueprintEvent)
+
+void AMusicManager_C::Gather_Combat_Graph_Tresholds()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MusicManager_C", "Gather Combat Graph Tresholds");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MusicManager.MusicManager_C.On Stinger Completed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -176,11 +210,11 @@ void AMusicManager_C::OnUpdateMusic()
 // Function MusicManager.MusicManager_C.OnDayPhaseChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// EFortDayPhase                           Param_CurrentDayPhase                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortDayPhase                           CurrentDayPhase_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EFortDayPhase                           PreviousDayPhase                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bAtCreation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AMusicManager_C::OnDayPhaseChanged(EFortDayPhase Param_CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation)
+void AMusicManager_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase_0, EFortDayPhase PreviousDayPhase, bool bAtCreation)
 {
 	static class UFunction* Func = nullptr;
 
@@ -189,7 +223,7 @@ void AMusicManager_C::OnDayPhaseChanged(EFortDayPhase Param_CurrentDayPhase, EFo
 
 	Params::MusicManager_C_OnDayPhaseChanged Parms{};
 
-	Parms.Param_CurrentDayPhase = Param_CurrentDayPhase;
+	Parms.CurrentDayPhase_0 = CurrentDayPhase_0;
 	Parms.PreviousDayPhase = PreviousDayPhase;
 	Parms.bAtCreation = bAtCreation;
 

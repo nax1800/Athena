@@ -36,6 +36,87 @@ static_assert(offsetof(FChatChromeColorScheme, TabFontColor) == 0x000020, "Membe
 static_assert(offsetof(FChatChromeColorScheme, TabFontColorInverted) == 0x000030, "Member 'FChatChromeColorScheme::TabFontColorInverted' has a wrong offset!");
 static_assert(offsetof(FChatChromeColorScheme, ChatBackgroundColor) == 0x000040, "Member 'FChatChromeColorScheme::ChatBackgroundColor' has a wrong offset!");
 
+// ScriptStruct SocialTypes.SocialListMargins
+// 0x0200 (0x0200 - 0x0000)
+struct FSocialListMargins final
+{
+public:
+	struct FVector2D                              UserPresenceImageSize;                             // 0x0000(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                HeaderButtonMargin;                                // 0x0008(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListMargin;                                 // 0x0018(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListNoFriendsMargin;                        // 0x0028(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListHeaderMargin;                           // 0x0038(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListHeaderCountMargin;                      // 0x0048(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                HeaderButtonContentMargin;                         // 0x0058(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemMargin;                                  // 0x0068(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemStatusMargin;                            // 0x0078(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipStatusMargin;                             // 0x0088(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemPresenceMargin;                          // 0x0098(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemPlatformMargin;                          // 0x00A8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemTextScrollerMargin;                      // 0x00B8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationBorderMargin;                          // 0x00C8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationButtonMargin;                          // 0x00D8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationButtonContentMargin;                   // 0x00E8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                NoneFriendContentMargin;                           // 0x00F8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         NoneFriendContentHeight;                           // 0x0108(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NoneFriendIconWidth;                               // 0x010C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuBackIconMargin;                             // 0x0110(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuPageIconMargin;                             // 0x0120(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                RadioSettingTitleMargin;                           // 0x0130(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSearchIconMargin;                           // 0x0140(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSearchTextMargin;                           // 0x0150(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuBackButtonMargin;                           // 0x0160(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSettingButtonMargin;                        // 0x0170(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuListMargin;                                 // 0x0180(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         SubMenuSeperatorThickness;                         // 0x0190(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PresenceSeperatorThickness;                        // 0x0194(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipMargin;                                   // 0x0198(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipPresenceMargin;                           // 0x01A8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipSeperatorMargin;                          // 0x01B8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ToolTipMargin;                                     // 0x01C8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TipStatusMargin;                                   // 0x01D8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                AddButtonMargin;                                   // 0x01E8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              AddButtonSpacing;                                  // 0x01F8(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSocialListMargins) == 0x000004, "Wrong alignment on FSocialListMargins");
+static_assert(sizeof(FSocialListMargins) == 0x000200, "Wrong size on FSocialListMargins");
+static_assert(offsetof(FSocialListMargins, UserPresenceImageSize) == 0x000000, "Member 'FSocialListMargins::UserPresenceImageSize' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, HeaderButtonMargin) == 0x000008, "Member 'FSocialListMargins::HeaderButtonMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendsListMargin) == 0x000018, "Member 'FSocialListMargins::FriendsListMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendsListNoFriendsMargin) == 0x000028, "Member 'FSocialListMargins::FriendsListNoFriendsMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendsListHeaderMargin) == 0x000038, "Member 'FSocialListMargins::FriendsListHeaderMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendsListHeaderCountMargin) == 0x000048, "Member 'FSocialListMargins::FriendsListHeaderCountMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, HeaderButtonContentMargin) == 0x000058, "Member 'FSocialListMargins::HeaderButtonContentMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendItemMargin) == 0x000068, "Member 'FSocialListMargins::FriendItemMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendItemStatusMargin) == 0x000078, "Member 'FSocialListMargins::FriendItemStatusMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendTipStatusMargin) == 0x000088, "Member 'FSocialListMargins::FriendTipStatusMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendItemPresenceMargin) == 0x000098, "Member 'FSocialListMargins::FriendItemPresenceMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendItemPlatformMargin) == 0x0000A8, "Member 'FSocialListMargins::FriendItemPlatformMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendItemTextScrollerMargin) == 0x0000B8, "Member 'FSocialListMargins::FriendItemTextScrollerMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, ConfirmationBorderMargin) == 0x0000C8, "Member 'FSocialListMargins::ConfirmationBorderMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, ConfirmationButtonMargin) == 0x0000D8, "Member 'FSocialListMargins::ConfirmationButtonMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, ConfirmationButtonContentMargin) == 0x0000E8, "Member 'FSocialListMargins::ConfirmationButtonContentMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, NoneFriendContentMargin) == 0x0000F8, "Member 'FSocialListMargins::NoneFriendContentMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, NoneFriendContentHeight) == 0x000108, "Member 'FSocialListMargins::NoneFriendContentHeight' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, NoneFriendIconWidth) == 0x00010C, "Member 'FSocialListMargins::NoneFriendIconWidth' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuBackIconMargin) == 0x000110, "Member 'FSocialListMargins::SubMenuBackIconMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuPageIconMargin) == 0x000120, "Member 'FSocialListMargins::SubMenuPageIconMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, RadioSettingTitleMargin) == 0x000130, "Member 'FSocialListMargins::RadioSettingTitleMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuSearchIconMargin) == 0x000140, "Member 'FSocialListMargins::SubMenuSearchIconMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuSearchTextMargin) == 0x000150, "Member 'FSocialListMargins::SubMenuSearchTextMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuBackButtonMargin) == 0x000160, "Member 'FSocialListMargins::SubMenuBackButtonMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuSettingButtonMargin) == 0x000170, "Member 'FSocialListMargins::SubMenuSettingButtonMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuListMargin) == 0x000180, "Member 'FSocialListMargins::SubMenuListMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, SubMenuSeperatorThickness) == 0x000190, "Member 'FSocialListMargins::SubMenuSeperatorThickness' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, PresenceSeperatorThickness) == 0x000194, "Member 'FSocialListMargins::PresenceSeperatorThickness' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendTipMargin) == 0x000198, "Member 'FSocialListMargins::FriendTipMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendTipPresenceMargin) == 0x0001A8, "Member 'FSocialListMargins::FriendTipPresenceMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, FriendTipSeperatorMargin) == 0x0001B8, "Member 'FSocialListMargins::FriendTipSeperatorMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, ToolTipMargin) == 0x0001C8, "Member 'FSocialListMargins::ToolTipMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, TipStatusMargin) == 0x0001D8, "Member 'FSocialListMargins::TipStatusMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, AddButtonMargin) == 0x0001E8, "Member 'FSocialListMargins::AddButtonMargin' has a wrong offset!");
+static_assert(offsetof(FSocialListMargins, AddButtonSpacing) == 0x0001F8, "Member 'FSocialListMargins::AddButtonSpacing' has a wrong offset!");
+
 // ScriptStruct SocialTypes.ChatChromeStyle
 // 0x07C8 (0x07C8 - 0x0000)
 struct FChatChromeStyle final
@@ -219,87 +300,6 @@ static_assert(offsetof(FChatStyle, ChatMenuBackgroundBrush) == 0x0012B8, "Member
 static_assert(offsetof(FChatStyle, FriendActionPadding) == 0x001340, "Member 'FChatStyle::FriendActionPadding' has a wrong offset!");
 static_assert(offsetof(FChatStyle, FriendActionHeaderPadding) == 0x001350, "Member 'FChatStyle::FriendActionHeaderPadding' has a wrong offset!");
 static_assert(offsetof(FChatStyle, FriendActionStatusMargin) == 0x001360, "Member 'FChatStyle::FriendActionStatusMargin' has a wrong offset!");
-
-// ScriptStruct SocialTypes.SocialListMargins
-// 0x0200 (0x0200 - 0x0000)
-struct FSocialListMargins final
-{
-public:
-	struct FVector2D                              UserPresenceImageSize;                             // 0x0000(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                HeaderButtonMargin;                                // 0x0008(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListMargin;                                 // 0x0018(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListNoFriendsMargin;                        // 0x0028(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListHeaderMargin;                           // 0x0038(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListHeaderCountMargin;                      // 0x0048(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                HeaderButtonContentMargin;                         // 0x0058(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemMargin;                                  // 0x0068(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemStatusMargin;                            // 0x0078(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipStatusMargin;                             // 0x0088(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemPresenceMargin;                          // 0x0098(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemPlatformMargin;                          // 0x00A8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemTextScrollerMargin;                      // 0x00B8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationBorderMargin;                          // 0x00C8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationButtonMargin;                          // 0x00D8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationButtonContentMargin;                   // 0x00E8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                NoneFriendContentMargin;                           // 0x00F8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         NoneFriendContentHeight;                           // 0x0108(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NoneFriendIconWidth;                               // 0x010C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuBackIconMargin;                             // 0x0110(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuPageIconMargin;                             // 0x0120(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                RadioSettingTitleMargin;                           // 0x0130(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSearchIconMargin;                           // 0x0140(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSearchTextMargin;                           // 0x0150(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuBackButtonMargin;                           // 0x0160(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSettingButtonMargin;                        // 0x0170(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuListMargin;                                 // 0x0180(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         SubMenuSeperatorThickness;                         // 0x0190(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PresenceSeperatorThickness;                        // 0x0194(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipMargin;                                   // 0x0198(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipPresenceMargin;                           // 0x01A8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipSeperatorMargin;                          // 0x01B8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ToolTipMargin;                                     // 0x01C8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                TipStatusMargin;                                   // 0x01D8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                AddButtonMargin;                                   // 0x01E8(0x0010)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              AddButtonSpacing;                                  // 0x01F8(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSocialListMargins) == 0x000004, "Wrong alignment on FSocialListMargins");
-static_assert(sizeof(FSocialListMargins) == 0x000200, "Wrong size on FSocialListMargins");
-static_assert(offsetof(FSocialListMargins, UserPresenceImageSize) == 0x000000, "Member 'FSocialListMargins::UserPresenceImageSize' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, HeaderButtonMargin) == 0x000008, "Member 'FSocialListMargins::HeaderButtonMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendsListMargin) == 0x000018, "Member 'FSocialListMargins::FriendsListMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendsListNoFriendsMargin) == 0x000028, "Member 'FSocialListMargins::FriendsListNoFriendsMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendsListHeaderMargin) == 0x000038, "Member 'FSocialListMargins::FriendsListHeaderMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendsListHeaderCountMargin) == 0x000048, "Member 'FSocialListMargins::FriendsListHeaderCountMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, HeaderButtonContentMargin) == 0x000058, "Member 'FSocialListMargins::HeaderButtonContentMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendItemMargin) == 0x000068, "Member 'FSocialListMargins::FriendItemMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendItemStatusMargin) == 0x000078, "Member 'FSocialListMargins::FriendItemStatusMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendTipStatusMargin) == 0x000088, "Member 'FSocialListMargins::FriendTipStatusMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendItemPresenceMargin) == 0x000098, "Member 'FSocialListMargins::FriendItemPresenceMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendItemPlatformMargin) == 0x0000A8, "Member 'FSocialListMargins::FriendItemPlatformMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendItemTextScrollerMargin) == 0x0000B8, "Member 'FSocialListMargins::FriendItemTextScrollerMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, ConfirmationBorderMargin) == 0x0000C8, "Member 'FSocialListMargins::ConfirmationBorderMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, ConfirmationButtonMargin) == 0x0000D8, "Member 'FSocialListMargins::ConfirmationButtonMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, ConfirmationButtonContentMargin) == 0x0000E8, "Member 'FSocialListMargins::ConfirmationButtonContentMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, NoneFriendContentMargin) == 0x0000F8, "Member 'FSocialListMargins::NoneFriendContentMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, NoneFriendContentHeight) == 0x000108, "Member 'FSocialListMargins::NoneFriendContentHeight' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, NoneFriendIconWidth) == 0x00010C, "Member 'FSocialListMargins::NoneFriendIconWidth' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuBackIconMargin) == 0x000110, "Member 'FSocialListMargins::SubMenuBackIconMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuPageIconMargin) == 0x000120, "Member 'FSocialListMargins::SubMenuPageIconMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, RadioSettingTitleMargin) == 0x000130, "Member 'FSocialListMargins::RadioSettingTitleMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuSearchIconMargin) == 0x000140, "Member 'FSocialListMargins::SubMenuSearchIconMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuSearchTextMargin) == 0x000150, "Member 'FSocialListMargins::SubMenuSearchTextMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuBackButtonMargin) == 0x000160, "Member 'FSocialListMargins::SubMenuBackButtonMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuSettingButtonMargin) == 0x000170, "Member 'FSocialListMargins::SubMenuSettingButtonMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuListMargin) == 0x000180, "Member 'FSocialListMargins::SubMenuListMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, SubMenuSeperatorThickness) == 0x000190, "Member 'FSocialListMargins::SubMenuSeperatorThickness' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, PresenceSeperatorThickness) == 0x000194, "Member 'FSocialListMargins::PresenceSeperatorThickness' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendTipMargin) == 0x000198, "Member 'FSocialListMargins::FriendTipMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendTipPresenceMargin) == 0x0001A8, "Member 'FSocialListMargins::FriendTipPresenceMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, FriendTipSeperatorMargin) == 0x0001B8, "Member 'FSocialListMargins::FriendTipSeperatorMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, ToolTipMargin) == 0x0001C8, "Member 'FSocialListMargins::ToolTipMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, TipStatusMargin) == 0x0001D8, "Member 'FSocialListMargins::TipStatusMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, AddButtonMargin) == 0x0001E8, "Member 'FSocialListMargins::AddButtonMargin' has a wrong offset!");
-static_assert(offsetof(FSocialListMargins, AddButtonSpacing) == 0x0001F8, "Member 'FSocialListMargins::AddButtonSpacing' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialListStyle
 // 0x2700 (0x2700 - 0x0000)

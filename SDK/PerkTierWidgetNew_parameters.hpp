@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -50,30 +50,30 @@ struct PerkTierWidgetNew_C_OnGeneratePerk final
 {
 public:
 	struct FFortUIPerk                            Perk;                                              // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UFortPerkWidget_NUI*                    Param_PerkWidget;                                  // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPerkWidget_NUI*                    PerkWidget_0;                                      // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PerkTierWidgetNew_C_OnGeneratePerk) == 0x000008, "Wrong alignment on PerkTierWidgetNew_C_OnGeneratePerk");
 static_assert(sizeof(PerkTierWidgetNew_C_OnGeneratePerk) == 0x0000A0, "Wrong size on PerkTierWidgetNew_C_OnGeneratePerk");
 static_assert(offsetof(PerkTierWidgetNew_C_OnGeneratePerk, Perk) == 0x000000, "Member 'PerkTierWidgetNew_C_OnGeneratePerk::Perk' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_OnGeneratePerk, Param_PerkWidget) == 0x000098, "Member 'PerkTierWidgetNew_C_OnGeneratePerk::Param_PerkWidget' has a wrong offset!");
+static_assert(offsetof(PerkTierWidgetNew_C_OnGeneratePerk, PerkWidget_0) == 0x000098, "Member 'PerkTierWidgetNew_C_OnGeneratePerk::PerkWidget_0' has a wrong offset!");
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.InitializeSettings
 // 0x0028 (0x0028 - 0x0000)
 struct PerkTierWidgetNew_C_InitializeSettings final
 {
 public:
-	bool                                          Param_bIncludeName;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_bIncludeDescription;                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortBrushSize                                Param_IconSize;                                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIncludeName_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIncludeDescription_0;                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortBrushSize                                IconSize_0;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerkTier                        Param_FortPerkTier;                                // 0x0008(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FFortUIPerkTier                        FortPerkTier_0;                                    // 0x0008(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 static_assert(alignof(PerkTierWidgetNew_C_InitializeSettings) == 0x000008, "Wrong alignment on PerkTierWidgetNew_C_InitializeSettings");
 static_assert(sizeof(PerkTierWidgetNew_C_InitializeSettings) == 0x000028, "Wrong size on PerkTierWidgetNew_C_InitializeSettings");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, Param_bIncludeName) == 0x000000, "Member 'PerkTierWidgetNew_C_InitializeSettings::Param_bIncludeName' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, Param_bIncludeDescription) == 0x000001, "Member 'PerkTierWidgetNew_C_InitializeSettings::Param_bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, Param_IconSize) == 0x000002, "Member 'PerkTierWidgetNew_C_InitializeSettings::Param_IconSize' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, Param_FortPerkTier) == 0x000008, "Member 'PerkTierWidgetNew_C_InitializeSettings::Param_FortPerkTier' has a wrong offset!");
+static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, bIncludeName_0) == 0x000000, "Member 'PerkTierWidgetNew_C_InitializeSettings::bIncludeName_0' has a wrong offset!");
+static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, bIncludeDescription_0) == 0x000001, "Member 'PerkTierWidgetNew_C_InitializeSettings::bIncludeDescription_0' has a wrong offset!");
+static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, IconSize_0) == 0x000002, "Member 'PerkTierWidgetNew_C_InitializeSettings::IconSize_0' has a wrong offset!");
+static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, FortPerkTier_0) == 0x000008, "Member 'PerkTierWidgetNew_C_InitializeSettings::FortPerkTier_0' has a wrong offset!");
 
 }
 

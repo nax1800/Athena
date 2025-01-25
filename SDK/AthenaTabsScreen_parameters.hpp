@@ -10,153 +10,199 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.ExecuteUbergraph_AthenaTabsScreen
-// 0x02E8 (0x02E8 - 0x0000)
+// 0x0338 (0x0338 - 0x0000)
 struct AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue; // 0x0010(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	class FName                                   K2Node_CustomEvent_TabId1;                         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUserWidget*                      K2Node_CustomEvent_TabWidget;                      // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStoreMain_Root_C*                      K2Node_DynamicCast_AsStore_Main_Root;              // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
-	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List;          // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List1;         // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1;     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName TabId, class UCommonUserWidget* TabWidget)> K2Node_CreateDelegate_OutputDelegate;              // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00B0(0x0010)(IsPlainOldData, NoDestructor)
-	struct FMargin                                K2Node_MakeStruct_Margin1;                         // 0x00C0(0x0010)(IsPlainOldData, NoDestructor)
-	class UVerticalBoxSlot*                       CallFunc_SlotAsVerticalBoxSlot_ReturnValue;        // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D8(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x0100(0x0028)()
-	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTabListRegistrationInfo           CallFunc_GetPreregisteredTabInfo_OutTabInfo;       // 0x0130(0x00C8)(ContainsInstancedReference)
-	bool                                          CallFunc_GetPreregisteredTabInfo_ReturnValue;      // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_ComponentBoundEvent_TabId1;                 // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UIconTabButton_C*                       K2Node_DynamicCast_AsIcon_Tab_Button;              // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue12;        // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x021B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable;                                // 0x0220(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 ActiveFriendsCount)>     K2Node_CreateDelegate_OutputDelegate1;             // 0x0228(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List12;        // 0x0240(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1234;                   // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List123;       // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12345;                  // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ActiveFriendsCount;             // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortSocialItem*>                CallFunc_GetActiveFriendsList_OutActiveFriends;    // 0x0270(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0280(0x0018)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue1;              // 0x02A0(0x0018)()
-	class FName                                   K2Node_CustomEvent_TabId;                          // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_CustomEvent_NewParam;                       // 0x02C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortLeaderboardContext*                CallFunc_GetContext_ReturnValue1;                  // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShowLeaderboards_ReturnValue;          // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue123;       // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3[0x5];                                      // 0x02D3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x02E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x02E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FName                                   K2Node_ComponentBoundEvent_TabId1;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UIconTabButton_C*                       K2Node_DynamicCast_AsIcon_Tab_Button;              // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue1;         // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
+	class FName                                   K2Node_CustomEvent_TabId1;                         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonUserWidget*                      K2Node_CustomEvent_TabWidget;                      // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStoreMain_Root_C*                      K2Node_DynamicCast_AsStore_Main_Root;              // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortTabListRegistrationInfo           CallFunc_GetPreregisteredTabInfo_OutTabInfo;       // 0x0068(0x00C8)(ContainsInstancedReference)
+	bool                                          CallFunc_GetPreregisteredTabInfo_ReturnValue;      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List;          // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List1;         // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_152[0x6];                                      // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1;     // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0170(0x0010)(IsPlainOldData, NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin1;                         // 0x0180(0x0010)(IsPlainOldData, NoDestructor)
+	class UVerticalBoxSlot*                       CallFunc_SlotAsVerticalBoxSlot_ReturnValue;        // 0x0190(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x01A0(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x01C8(0x0028)()
+	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable1;                    // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName TabId, class UCommonUserWidget* TabWidget)> K2Node_CreateDelegate_OutputDelegate;              // 0x0200(0x0010)(ZeroConstructor, NoDestructor)
+	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List2;         // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalTabList_C*                   K2Node_DynamicCast_AsHorizontal_Tab_List3;         // 0x0220(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_229[0x3];                                      // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_ActiveFriendsCount;             // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0230(0x0018)()
+	class FName                                   K2Node_CustomEvent_TabId;                          // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_CustomEvent_NewParam;                       // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue4;         // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x025A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SelectTabByID_ReturnValue;                // 0x025B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetActiveWidget_ReturnValue;              // 0x0260(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCareerScreen_C*                        K2Node_DynamicCast_AsCareer_Screen;                // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FRuntimeOptionTabStateInfo>     CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue; // 0x0288(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	TDelegate<void(int32 ActiveFriendsCount)>     K2Node_CreateDelegate_OutputDelegate1;             // 0x0298(0x0010)(ZeroConstructor, NoDestructor)
+	struct FRuntimeOptionTabStateInfo             CallFunc_Array_Get_Item;                           // 0x02A8(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue5;         // 0x02BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BF[0x1];                                      // 0x02BF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortSocialItem*>                CallFunc_GetActiveFriendsList_OutActiveFriends;    // 0x02D0(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue1;              // 0x02E8(0x0018)()
+	class UFortLeaderboardContext*                CallFunc_GetContext_ReturnValue1;                  // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShowLeaderboards_ReturnValue;          // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          CallFunc_Array_Get_Item1;                          // 0x0318(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item2;                          // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0333(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
-static_assert(sizeof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x0002E8, "Wrong size on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
+static_assert(sizeof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x000338, "Wrong size on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
 static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, EntryPoint) == 0x000000, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000008, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue) == 0x000010, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabId1) == 0x000020, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabId1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabWidget) == 0x000028, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabWidget' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsStore_Main_Root) == 0x000030, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsStore_Main_Root' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000039, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_Button1) == 0x000040, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_Button) == 0x000050, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeArray_Array) == 0x000058, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List) == 0x000068, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess1) == 0x000070, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List1) == 0x000078, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess12) == 0x000080, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_Event_IsDesignTime) == 0x000081, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000088, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1) == 0x000090, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsValid_ReturnValue1) == 0x000098, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CreateDelegate_OutputDelegate) == 0x0000A0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_Margin) == 0x0000B0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_Margin1) == 0x0000C0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_Margin1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x0000D0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_SlateColor) == 0x0000D8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_SlateColor1) == 0x000100, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabId) == 0x000128, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetPreregisteredTabInfo_OutTabInfo) == 0x000130, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetPreregisteredTabInfo_OutTabInfo' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetPreregisteredTabInfo_ReturnValue) == 0x0001F8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetPreregisteredTabInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabId1) == 0x000200, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabId1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabButton) == 0x000208, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsIcon_Tab_Button) == 0x000210, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsIcon_Tab_Button' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess123) == 0x000218, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x000219, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue12) == 0x00021A, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsBROnly_ReturnValue) == 0x00021B, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, Temp_name_Variable) == 0x000220, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000228, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Contains_ReturnValue) == 0x000238, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List12) == 0x000240, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List12' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess1234) == 0x000248, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess1234' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List123) == 0x000250, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List123' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess12345) == 0x000258, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess12345' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue) == 0x000260, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_ActiveFriendsCount) == 0x000268, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_ActiveFriendsCount' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetActiveFriendsList_OutActiveFriends) == 0x000270, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetActiveFriendsList_OutActiveFriends' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Conv_IntToText_ReturnValue) == 0x000280, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Length_ReturnValue) == 0x000298, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Conv_IntToText_ReturnValue1) == 0x0002A0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Conv_IntToText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabId) == 0x0002B8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabId' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_NewParam) == 0x0002C0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_NewParam' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue1) == 0x0002C8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_CanShowLeaderboards_ReturnValue) == 0x0002D0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_CanShowLeaderboards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue123) == 0x0002D1, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_BooleanAND_ReturnValue) == 0x0002D2, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue12) == 0x0002D8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetFeatureState_OutFeatureState) == 0x0002E0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetFeatureState_OutReason) == 0x0002E1, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
-static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_SwitchEnum_CmpSuccess) == 0x0002E2, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabId1) == 0x000008, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabId1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabButton) == 0x000010, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabId) == 0x000018, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsIcon_Tab_Button) == 0x000020, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsIcon_Tab_Button' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000029, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue1) == 0x00002A, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeArray_Array) == 0x000030, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabId1) == 0x000040, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabId1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabWidget) == 0x000048, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabWidget' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsStore_Main_Root) == 0x000050, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsStore_Main_Root' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess1) == 0x000058, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000059, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsValid_ReturnValue) == 0x00005A, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetPreregisteredTabInfo_OutTabInfo) == 0x000068, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetPreregisteredTabInfo_OutTabInfo' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetPreregisteredTabInfo_ReturnValue) == 0x000130, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetPreregisteredTabInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List) == 0x000138, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess2) == 0x000140, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List1) == 0x000148, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess3) == 0x000150, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_Event_IsDesignTime) == 0x000151, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000158, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1) == 0x000160, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsValid_ReturnValue1) == 0x000168, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, Temp_int_Array_Index_Variable) == 0x00016C, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_Margin) == 0x000170, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_Margin' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_Margin1) == 0x000180, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_Margin1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x000190, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, Temp_int_Loop_Counter_Variable) == 0x000198, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Add_IntInt_ReturnValue) == 0x00019C, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_SlateColor) == 0x0001A0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_MakeStruct_SlateColor1) == 0x0001C8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, Temp_int_Loop_Counter_Variable1) == 0x0001F0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, Temp_int_Array_Index_Variable1) == 0x0001F4, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::Temp_int_Array_Index_Variable1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Add_IntInt_ReturnValue1) == 0x0001F8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000200, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List2) == 0x000210, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess4) == 0x000218, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsHorizontal_Tab_List3) == 0x000220, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsHorizontal_Tab_List3' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess5) == 0x000228, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_ActiveFriendsCount) == 0x00022C, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_ActiveFriendsCount' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Conv_IntToText_ReturnValue) == 0x000230, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_TabId) == 0x000248, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_TabId' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CustomEvent_NewParam) == 0x000250, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CustomEvent_NewParam' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x000258, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x000259, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_BooleanOR_ReturnValue) == 0x00025A, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_SelectTabByID_ReturnValue) == 0x00025B, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_SelectTabByID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetActiveWidget_ReturnValue) == 0x000260, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000268, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_AsCareer_Screen) == 0x000270, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_AsCareer_Screen' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_DynamicCast_bSuccess6) == 0x000278, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000280, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue) == 0x000288, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_CreateDelegate_OutputDelegate1) == 0x000298, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Get_Item) == 0x0002A8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Length_ReturnValue) == 0x0002B8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Less_IntInt_ReturnValue) == 0x0002BC, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002BD, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x0002BE, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue) == 0x0002C0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_BooleanAND_ReturnValue) == 0x0002C8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetActiveFriendsList_OutActiveFriends) == 0x0002D0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetActiveFriendsList_OutActiveFriends' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Length_ReturnValue1) == 0x0002E0, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Conv_IntToText_ReturnValue1) == 0x0002E8, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Conv_IntToText_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue1) == 0x000300, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_CanShowLeaderboards_ReturnValue) == 0x000308, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_CanShowLeaderboards_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Add_ReturnValue) == 0x00030C, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Add_ReturnValue1) == 0x000310, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Get_Item1) == 0x000318, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Length_ReturnValue2) == 0x000320, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Less_IntInt_ReturnValue1) == 0x000324, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetContext_ReturnValue2) == 0x000328, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_Array_Get_Item2) == 0x000330, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetFeatureState_OutFeatureState) == 0x000331, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, CallFunc_GetFeatureState_OutReason) == 0x000332, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
+static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_SwitchEnum_CmpSuccess) == 0x000333, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.DisableTabsHotfixedOffTabs
 // 0x0010 (0x0010 - 0x0000)
@@ -203,17 +249,6 @@ public:
 static_assert(alignof(AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature");
 static_assert(sizeof(AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaTabsScreen_C_BndEvt__Social_K2Node_ComponentBoundEvent_89_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
-
-// Function AthenaTabsScreen.AthenaTabsScreen_C.BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature final
-{
-public:
-	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaTabsScreen_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.HandleTabContentCreated
 // 0x0010 (0x0010 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_BG_ArchwayLargeSupport.PBWA_BG_ArchwayLargeSupport_C
-// 0x0000 (0x0EA0 - 0x0EA0)
+// 0x0000 (0x0C50 - 0x0C50)
 class APBWA_BG_ArchwayLargeSupport_C final : public ABuildingWall
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(APBWA_BG_ArchwayLargeSupport_C) == 0x000008, "Wrong alignment on APBWA_BG_ArchwayLargeSupport_C");
-static_assert(sizeof(APBWA_BG_ArchwayLargeSupport_C) == 0x000EA0, "Wrong size on APBWA_BG_ArchwayLargeSupport_C");
+static_assert(sizeof(APBWA_BG_ArchwayLargeSupport_C) == 0x000C50, "Wrong size on APBWA_BG_ArchwayLargeSupport_C");
 
 }
 

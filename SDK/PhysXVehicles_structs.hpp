@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -41,16 +41,6 @@ enum class EVehicleDifferential4W : uint8
 	EVehicleDifferential4W_MAX               = 6,
 };
 
-// ScriptStruct PhysXVehicles.AnimNode_WheelHandler
-// 0x0018 (0x0108 - 0x00F0)
-struct FAnimNode_WheelHandler final : public FAnimNode_SkeletalControlBase
-{
-public:
-	uint8                                         Pad_F0[0x18];                                      // 0x00F0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAnimNode_WheelHandler) == 0x000008, "Wrong alignment on FAnimNode_WheelHandler");
-static_assert(sizeof(FAnimNode_WheelHandler) == 0x000108, "Wrong size on FAnimNode_WheelHandler");
-
 // ScriptStruct PhysXVehicles.ReplicatedVehicleState
 // 0x0014 (0x0014 - 0x0000)
 struct FReplicatedVehicleState final
@@ -70,6 +60,31 @@ static_assert(offsetof(FReplicatedVehicleState, BrakeInput) == 0x000008, "Member
 static_assert(offsetof(FReplicatedVehicleState, HandbrakeInput) == 0x00000C, "Member 'FReplicatedVehicleState::HandbrakeInput' has a wrong offset!");
 static_assert(offsetof(FReplicatedVehicleState, CurrentGear) == 0x000010, "Member 'FReplicatedVehicleState::CurrentGear' has a wrong offset!");
 
+// ScriptStruct PhysXVehicles.AnimNode_WheelHandler
+// 0x0018 (0x0108 - 0x00F0)
+struct FAnimNode_WheelHandler final : public FAnimNode_SkeletalControlBase
+{
+public:
+	uint8                                         Pad_F0[0x18];                                      // 0x00F0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAnimNode_WheelHandler) == 0x000008, "Wrong alignment on FAnimNode_WheelHandler");
+static_assert(sizeof(FAnimNode_WheelHandler) == 0x000108, "Wrong size on FAnimNode_WheelHandler");
+
+// ScriptStruct PhysXVehicles.VehicleGearData
+// 0x000C (0x000C - 0x0000)
+struct FVehicleGearData final
+{
+public:
+	float                                         Ratio;                                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownRatio;                                         // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpRatio;                                           // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FVehicleGearData) == 0x000004, "Wrong alignment on FVehicleGearData");
+static_assert(sizeof(FVehicleGearData) == 0x00000C, "Wrong size on FVehicleGearData");
+static_assert(offsetof(FVehicleGearData, Ratio) == 0x000000, "Member 'FVehicleGearData::Ratio' has a wrong offset!");
+static_assert(offsetof(FVehicleGearData, DownRatio) == 0x000004, "Member 'FVehicleGearData::DownRatio' has a wrong offset!");
+static_assert(offsetof(FVehicleGearData, UpRatio) == 0x000008, "Member 'FVehicleGearData::UpRatio' has a wrong offset!");
+
 // ScriptStruct PhysXVehicles.TireConfigMaterialFriction
 // 0x0010 (0x0010 - 0x0000)
 struct FTireConfigMaterialFriction final
@@ -85,14 +100,14 @@ static_assert(offsetof(FTireConfigMaterialFriction, PhysicalMaterial) == 0x00000
 static_assert(offsetof(FTireConfigMaterialFriction, FrictionScale) == 0x000008, "Member 'FTireConfigMaterialFriction::FrictionScale' has a wrong offset!");
 
 // ScriptStruct PhysXVehicles.VehicleAnimInstanceProxy
-// 0x0010 (0x05A0 - 0x0590)
+// 0x0010 (0x05F0 - 0x05E0)
 struct FVehicleAnimInstanceProxy final : public FAnimInstanceProxy
 {
 public:
-	uint8                                         Pad_590[0x10];                                     // 0x0590(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5E0[0x10];                                     // 0x05E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVehicleAnimInstanceProxy) == 0x000010, "Wrong alignment on FVehicleAnimInstanceProxy");
-static_assert(sizeof(FVehicleAnimInstanceProxy) == 0x0005A0, "Wrong size on FVehicleAnimInstanceProxy");
+static_assert(sizeof(FVehicleAnimInstanceProxy) == 0x0005F0, "Wrong size on FVehicleAnimInstanceProxy");
 
 // ScriptStruct PhysXVehicles.VehicleInputRate
 // 0x0008 (0x0008 - 0x0000)
@@ -124,21 +139,6 @@ static_assert(offsetof(FWheelSetup, WheelClass) == 0x000000, "Member 'FWheelSetu
 static_assert(offsetof(FWheelSetup, BoneName) == 0x000008, "Member 'FWheelSetup::BoneName' has a wrong offset!");
 static_assert(offsetof(FWheelSetup, AdditionalOffset) == 0x000010, "Member 'FWheelSetup::AdditionalOffset' has a wrong offset!");
 static_assert(offsetof(FWheelSetup, bDisableSteering) == 0x00001C, "Member 'FWheelSetup::bDisableSteering' has a wrong offset!");
-
-// ScriptStruct PhysXVehicles.VehicleGearData
-// 0x000C (0x000C - 0x0000)
-struct FVehicleGearData final
-{
-public:
-	float                                         Ratio;                                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownRatio;                                         // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpRatio;                                           // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FVehicleGearData) == 0x000004, "Wrong alignment on FVehicleGearData");
-static_assert(sizeof(FVehicleGearData) == 0x00000C, "Wrong size on FVehicleGearData");
-static_assert(offsetof(FVehicleGearData, Ratio) == 0x000000, "Member 'FVehicleGearData::Ratio' has a wrong offset!");
-static_assert(offsetof(FVehicleGearData, DownRatio) == 0x000004, "Member 'FVehicleGearData::DownRatio' has a wrong offset!");
-static_assert(offsetof(FVehicleGearData, UpRatio) == 0x000008, "Member 'FVehicleGearData::UpRatio' has a wrong offset!");
 
 // ScriptStruct PhysXVehicles.VehicleTransmissionData
 // 0x0030 (0x0030 - 0x0000)

@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_QuestExpiresWidget.BP_QuestExpiresWidget_C
-// 0x0020 (0x0248 - 0x0228)
+// 0x0020 (0x0240 - 0x0220)
 class UBP_QuestExpiresWidget_C final : public UFortQuestExpiresWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       QuestExpires;                                      // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UClass*                                 Style;                                             // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          bBreifText;                                        // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bTempDoesExpire;                                   // 0x0241(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       QuestExpires;                                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                 Style;                                             // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          bBreifText;                                        // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bTempDoesExpire;                                   // 0x0239(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_QuestExpiresWidget(int32 EntryPoint);
@@ -48,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(UBP_QuestExpiresWidget_C) == 0x000008, "Wrong alignment on UBP_QuestExpiresWidget_C");
-static_assert(sizeof(UBP_QuestExpiresWidget_C) == 0x000248, "Wrong size on UBP_QuestExpiresWidget_C");
-static_assert(offsetof(UBP_QuestExpiresWidget_C, UberGraphFrame) == 0x000228, "Member 'UBP_QuestExpiresWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_QuestExpiresWidget_C, QuestExpires) == 0x000230, "Member 'UBP_QuestExpiresWidget_C::QuestExpires' has a wrong offset!");
-static_assert(offsetof(UBP_QuestExpiresWidget_C, Style) == 0x000238, "Member 'UBP_QuestExpiresWidget_C::Style' has a wrong offset!");
-static_assert(offsetof(UBP_QuestExpiresWidget_C, bBreifText) == 0x000240, "Member 'UBP_QuestExpiresWidget_C::bBreifText' has a wrong offset!");
-static_assert(offsetof(UBP_QuestExpiresWidget_C, bTempDoesExpire) == 0x000241, "Member 'UBP_QuestExpiresWidget_C::bTempDoesExpire' has a wrong offset!");
+static_assert(sizeof(UBP_QuestExpiresWidget_C) == 0x000240, "Wrong size on UBP_QuestExpiresWidget_C");
+static_assert(offsetof(UBP_QuestExpiresWidget_C, UberGraphFrame) == 0x000220, "Member 'UBP_QuestExpiresWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_QuestExpiresWidget_C, QuestExpires) == 0x000228, "Member 'UBP_QuestExpiresWidget_C::QuestExpires' has a wrong offset!");
+static_assert(offsetof(UBP_QuestExpiresWidget_C, Style) == 0x000230, "Member 'UBP_QuestExpiresWidget_C::Style' has a wrong offset!");
+static_assert(offsetof(UBP_QuestExpiresWidget_C, bBreifText) == 0x000238, "Member 'UBP_QuestExpiresWidget_C::bBreifText' has a wrong offset!");
+static_assert(offsetof(UBP_QuestExpiresWidget_C, bTempDoesExpire) == 0x000239, "Member 'UBP_QuestExpiresWidget_C::bTempDoesExpire' has a wrong offset!");
 
 }
 

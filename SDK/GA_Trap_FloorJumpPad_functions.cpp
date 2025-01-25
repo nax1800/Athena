@@ -40,10 +40,10 @@ void UGA_Trap_FloorJumpPad_C::ExecuteUbergraph_GA_Trap_FloorJumpPad(int32 EntryP
 // Function GA_Trap_FloorJumpPad.GA_Trap_FloorJumpPad_C.Cancelled_E91C59AB43D826926CE5CEAA22E84570
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle Param_TargetData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FGameplayAbilityTargetDataHandle TargetData_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FGameplayTag                     ApplicationTag                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Trap_FloorJumpPad_C::Cancelled_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& Param_TargetData, const struct FGameplayTag& ApplicationTag)
+void UGA_Trap_FloorJumpPad_C::Cancelled_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& TargetData_0, const struct FGameplayTag& ApplicationTag)
 {
 	static class UFunction* Func = nullptr;
 
@@ -52,7 +52,7 @@ void UGA_Trap_FloorJumpPad_C::Cancelled_E91C59AB43D826926CE5CEAA22E84570(const s
 
 	Params::GA_Trap_FloorJumpPad_C_Cancelled_E91C59AB43D826926CE5CEAA22E84570 Parms{};
 
-	Parms.Param_TargetData = std::move(Param_TargetData);
+	Parms.TargetData_0 = std::move(TargetData_0);
 	Parms.ApplicationTag = std::move(ApplicationTag);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -96,10 +96,10 @@ void UGA_Trap_FloorJumpPad_C::PlayPlayerFX(class AFortPlayerPawn* Player)
 // Function GA_Trap_FloorJumpPad.GA_Trap_FloorJumpPad_C.Targeted_E91C59AB43D826926CE5CEAA22E84570
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle Param_TargetData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FGameplayAbilityTargetDataHandle TargetData_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FGameplayTag                     ApplicationTag                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Trap_FloorJumpPad_C::Targeted_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& Param_TargetData, const struct FGameplayTag& ApplicationTag)
+void UGA_Trap_FloorJumpPad_C::Targeted_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& TargetData_0, const struct FGameplayTag& ApplicationTag)
 {
 	static class UFunction* Func = nullptr;
 
@@ -108,7 +108,7 @@ void UGA_Trap_FloorJumpPad_C::Targeted_E91C59AB43D826926CE5CEAA22E84570(const st
 
 	Params::GA_Trap_FloorJumpPad_C_Targeted_E91C59AB43D826926CE5CEAA22E84570 Parms{};
 
-	Parms.Param_TargetData = std::move(Param_TargetData);
+	Parms.TargetData_0 = std::move(TargetData_0);
 	Parms.ApplicationTag = std::move(ApplicationTag);
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -37,6 +37,26 @@ void UCollectionBookPageListWidget_C::ExecuteUbergraph_CollectionBookPageListWid
 }
 
 
+// Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UCollectionBookPageListWidget_C::BP_OnItemExpansionChanged(bool bIsExpanded_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CollectionBookPageListWidget_C", "BP_OnItemExpansionChanged");
+
+	Params::CollectionBookPageListWidget_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded_0 = bIsExpanded_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnCategoryDetailsUpdated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -124,26 +144,6 @@ void UCollectionBookPageListWidget_C::PreConstruct(bool IsDesignTime)
 	Params::CollectionBookPageListWidget_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnExpansionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UCollectionBookPageListWidget_C::OnExpansionChanged(bool bExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CollectionBookPageListWidget_C", "OnExpansionChanged");
-
-	Params::CollectionBookPageListWidget_C_OnExpansionChanged Parms{};
-
-	Parms.bExpanded = bExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

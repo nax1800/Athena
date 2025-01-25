@@ -71,6 +71,17 @@ static_assert(alignof(CommonInputContext_GetCurrentInputType) == 0x000001, "Wron
 static_assert(sizeof(CommonInputContext_GetCurrentInputType) == 0x000001, "Wrong size on CommonInputContext_GetCurrentInputType");
 static_assert(offsetof(CommonInputContext_GetCurrentInputType, ReturnValue) == 0x000000, "Member 'CommonInputContext_GetCurrentInputType::ReturnValue' has a wrong offset!");
 
+// Function CommonInput.CommonInputContext.GetDefaultInputType
+// 0x0001 (0x0001 - 0x0000)
+struct CommonInputContext_GetDefaultInputType final
+{
+public:
+	ECommonInputType                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(CommonInputContext_GetDefaultInputType) == 0x000001, "Wrong alignment on CommonInputContext_GetDefaultInputType");
+static_assert(sizeof(CommonInputContext_GetDefaultInputType) == 0x000001, "Wrong size on CommonInputContext_GetDefaultInputType");
+static_assert(offsetof(CommonInputContext_GetDefaultInputType, ReturnValue) == 0x000000, "Member 'CommonInputContext_GetDefaultInputType::ReturnValue' has a wrong offset!");
+
 // Function CommonInput.CommonInputContext.IsUsingPointerInput
 // 0x0001 (0x0001 - 0x0000)
 struct CommonInputContext_IsUsingPointerInput final

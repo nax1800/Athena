@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaWatcherEye.AthenaWatcherEye_C
-// 0x0048 (0x0258 - 0x0210)
+// 0x0048 (0x0250 - 0x0208)
 class UAthenaWatcherEye_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Mad;                                               // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Blink_New;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Surprise;                                          // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Blink;                                             // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       LookAround;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Open;                                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 I_Watcher;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           WatcherFinishedTransitionTimer;                    // 0x0250(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Mad;                                               // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Blink_New;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Surprise;                                          // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Blink;                                             // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       LookAround;                                        // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Open;                                              // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 I_Watcher;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           WatcherFinishedTransitionTimer;                    // 0x0248(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaWatcherEye(int32 EntryPoint);
@@ -53,16 +53,16 @@ public:
 	}
 };
 static_assert(alignof(UAthenaWatcherEye_C) == 0x000008, "Wrong alignment on UAthenaWatcherEye_C");
-static_assert(sizeof(UAthenaWatcherEye_C) == 0x000258, "Wrong size on UAthenaWatcherEye_C");
-static_assert(offsetof(UAthenaWatcherEye_C, UberGraphFrame) == 0x000210, "Member 'UAthenaWatcherEye_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, Mad) == 0x000218, "Member 'UAthenaWatcherEye_C::Mad' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, Blink_New) == 0x000220, "Member 'UAthenaWatcherEye_C::Blink_New' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, Surprise) == 0x000228, "Member 'UAthenaWatcherEye_C::Surprise' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, Blink) == 0x000230, "Member 'UAthenaWatcherEye_C::Blink' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, LookAround) == 0x000238, "Member 'UAthenaWatcherEye_C::LookAround' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, Open) == 0x000240, "Member 'UAthenaWatcherEye_C::Open' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, I_Watcher) == 0x000248, "Member 'UAthenaWatcherEye_C::I_Watcher' has a wrong offset!");
-static_assert(offsetof(UAthenaWatcherEye_C, WatcherFinishedTransitionTimer) == 0x000250, "Member 'UAthenaWatcherEye_C::WatcherFinishedTransitionTimer' has a wrong offset!");
+static_assert(sizeof(UAthenaWatcherEye_C) == 0x000250, "Wrong size on UAthenaWatcherEye_C");
+static_assert(offsetof(UAthenaWatcherEye_C, UberGraphFrame) == 0x000208, "Member 'UAthenaWatcherEye_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, Mad) == 0x000210, "Member 'UAthenaWatcherEye_C::Mad' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, Blink_New) == 0x000218, "Member 'UAthenaWatcherEye_C::Blink_New' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, Surprise) == 0x000220, "Member 'UAthenaWatcherEye_C::Surprise' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, Blink) == 0x000228, "Member 'UAthenaWatcherEye_C::Blink' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, LookAround) == 0x000230, "Member 'UAthenaWatcherEye_C::LookAround' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, Open) == 0x000238, "Member 'UAthenaWatcherEye_C::Open' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, I_Watcher) == 0x000240, "Member 'UAthenaWatcherEye_C::I_Watcher' has a wrong offset!");
+static_assert(offsetof(UAthenaWatcherEye_C, WatcherFinishedTransitionTimer) == 0x000248, "Member 'UAthenaWatcherEye_C::WatcherFinishedTransitionTimer' has a wrong offset!");
 
 }
 

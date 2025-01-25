@@ -10,54 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
+#include "PhysXVehicles_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "PhysXVehicles_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
 {
 
-// Class PhysXVehicles.WheeledVehicle
-// 0x0010 (0x0388 - 0x0378)
-class AWheeledVehicle final : public APawn
-{
-public:
-	class USkeletalMeshComponent*                 Mesh;                                              // 0x0378(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UWheeledVehicleMovementComponent*       VehicleMovement;                                   // 0x0380(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WheeledVehicle">();
-	}
-	static class AWheeledVehicle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AWheeledVehicle>();
-	}
-};
-static_assert(alignof(AWheeledVehicle) == 0x000008, "Wrong alignment on AWheeledVehicle");
-static_assert(sizeof(AWheeledVehicle) == 0x000388, "Wrong size on AWheeledVehicle");
-static_assert(offsetof(AWheeledVehicle, Mesh) == 0x000378, "Member 'AWheeledVehicle::Mesh' has a wrong offset!");
-static_assert(offsetof(AWheeledVehicle, VehicleMovement) == 0x000380, "Member 'AWheeledVehicle::VehicleMovement' has a wrong offset!");
-
 // Class PhysXVehicles.WheeledVehicleMovementComponent
-// 0x0168 (0x02E0 - 0x0178)
+// 0x0158 (0x02D0 - 0x0178)
 class UWheeledVehicleMovementComponent : public UPawnMovementComponent
 {
 public:
 	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bDeprecatedSpringOffsetMode : 1;                   // 0x0180(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FWheelSetup>                    WheelSetups;                                       // 0x0188(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         Mass;                                              // 0x0198(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DragCoefficient;                                   // 0x019C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChassisWidth;                                      // 0x01A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChassisHeight;                                     // 0x01A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReverseAsBrake;                                   // 0x01A8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bReverseAsBrake : 1;                               // 0x0180(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bUseRVOAvoidance : 1;                              // 0x0180(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRawHandbrakeInput : 1;                            // 0x0180(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bRawGearUpInput : 1;                               // 0x0180(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bRawGearDownInput : 1;                             // 0x0180(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         BitPad_180_6 : 2;                                  // 0x0180(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bWasAvoidanceUpdated : 1;                          // 0x0184(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_185[0x3];                                      // 0x0185(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Mass;                                              // 0x0188(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FWheelSetup>                    WheelSetups;                                       // 0x0190(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         DragCoefficient;                                   // 0x01A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChassisWidth;                                      // 0x01A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChassisHeight;                                     // 0x01A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DragArea;                                          // 0x01AC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EstimatedMaxEngineSpeed;                           // 0x01B0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxEngineRPM;                                      // 0x01B4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -73,42 +57,35 @@ public:
 	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVehicleWheel*>                  Wheels;                                            // 0x01E8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DuplicateTransient, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1F8[0x18];                                     // 0x01F8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bUseRVOAvoidance : 1;                              // 0x0210(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_211[0x3];                                      // 0x0211(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RVOAvoidanceRadius;                                // 0x0214(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RVOAvoidanceHeight;                                // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AvoidanceConsiderationRadius;                      // 0x021C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RVOSteeringStep;                                   // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RVOThrottleStep;                                   // 0x0224(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AvoidanceUID;                                      // 0x0228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FNavAvoidanceMask                      AvoidanceGroup;                                    // 0x022C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FNavAvoidanceMask                      GroupsToAvoid;                                     // 0x0230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FNavAvoidanceMask                      GroupsToIgnore;                                    // 0x0234(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	float                                         AvoidanceWeight;                                   // 0x0238(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                PendingLaunchVelocity;                             // 0x023C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FReplicatedVehicleState                ReplicatedState;                                   // 0x0248(0x0014)(Net, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RawSteeringInput;                                  // 0x0260(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RawThrottleInput;                                  // 0x0264(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RawBrakeInput;                                     // 0x0268(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         bRawHandbrakeInput : 1;                            // 0x026C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bRawGearUpInput : 1;                               // 0x026C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bRawGearDownInput : 1;                             // 0x026C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_26D[0x3];                                      // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SteeringInput;                                     // 0x0270(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ThrottleInput;                                     // 0x0274(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BrakeInput;                                        // 0x0278(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         HandbrakeInput;                                    // 0x027C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         IdleBrakeInput;                                    // 0x0280(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopThreshold;                                     // 0x0284(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         WrongDirectionThreshold;                           // 0x0288(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVehicleInputRate                      ThrottleInputRate;                                 // 0x028C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	struct FVehicleInputRate                      BrakeInputRate;                                    // 0x0294(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	struct FVehicleInputRate                      HandbrakeInputRate;                                // 0x029C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	struct FVehicleInputRate                      SteeringInputRate;                                 // 0x02A4(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	uint8                                         bWasAvoidanceUpdated : 1;                          // 0x02AC(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_2AD[0x2B];                                     // 0x02AD(0x002B)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            OverrideController;                                // 0x02D8(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RVOAvoidanceRadius;                                // 0x0210(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RVOAvoidanceHeight;                                // 0x0214(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AvoidanceConsiderationRadius;                      // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RVOSteeringStep;                                   // 0x021C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RVOThrottleStep;                                   // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AvoidanceUID;                                      // 0x0224(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      AvoidanceGroup;                                    // 0x0228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      GroupsToAvoid;                                     // 0x022C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      GroupsToIgnore;                                    // 0x0230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	float                                         AvoidanceWeight;                                   // 0x0234(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                PendingLaunchVelocity;                             // 0x0238(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReplicatedVehicleState                ReplicatedState;                                   // 0x0244(0x0014)(Net, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_258[0x4];                                      // 0x0258(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RawSteeringInput;                                  // 0x025C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RawThrottleInput;                                  // 0x0260(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RawBrakeInput;                                     // 0x0264(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SteeringInput;                                     // 0x0268(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ThrottleInput;                                     // 0x026C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BrakeInput;                                        // 0x0270(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         HandbrakeInput;                                    // 0x0274(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         IdleBrakeInput;                                    // 0x0278(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopThreshold;                                     // 0x027C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         WrongDirectionThreshold;                           // 0x0280(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVehicleInputRate                      ThrottleInputRate;                                 // 0x0284(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	struct FVehicleInputRate                      BrakeInputRate;                                    // 0x028C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	struct FVehicleInputRate                      HandbrakeInputRate;                                // 0x0294(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	struct FVehicleInputRate                      SteeringInputRate;                                 // 0x029C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A4[0x24];                                     // 0x02A4(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            OverrideController;                                // 0x02C8(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32 CurrentGear);
@@ -146,13 +123,12 @@ public:
 	}
 };
 static_assert(alignof(UWheeledVehicleMovementComponent) == 0x000008, "Wrong alignment on UWheeledVehicleMovementComponent");
-static_assert(sizeof(UWheeledVehicleMovementComponent) == 0x0002E0, "Wrong size on UWheeledVehicleMovementComponent");
-static_assert(offsetof(UWheeledVehicleMovementComponent, WheelSetups) == 0x000188, "Member 'UWheeledVehicleMovementComponent::WheelSetups' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, Mass) == 0x000198, "Member 'UWheeledVehicleMovementComponent::Mass' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, DragCoefficient) == 0x00019C, "Member 'UWheeledVehicleMovementComponent::DragCoefficient' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, ChassisWidth) == 0x0001A0, "Member 'UWheeledVehicleMovementComponent::ChassisWidth' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, ChassisHeight) == 0x0001A4, "Member 'UWheeledVehicleMovementComponent::ChassisHeight' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, bReverseAsBrake) == 0x0001A8, "Member 'UWheeledVehicleMovementComponent::bReverseAsBrake' has a wrong offset!");
+static_assert(sizeof(UWheeledVehicleMovementComponent) == 0x0002D0, "Wrong size on UWheeledVehicleMovementComponent");
+static_assert(offsetof(UWheeledVehicleMovementComponent, Mass) == 0x000188, "Member 'UWheeledVehicleMovementComponent::Mass' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, WheelSetups) == 0x000190, "Member 'UWheeledVehicleMovementComponent::WheelSetups' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, DragCoefficient) == 0x0001A0, "Member 'UWheeledVehicleMovementComponent::DragCoefficient' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, ChassisWidth) == 0x0001A4, "Member 'UWheeledVehicleMovementComponent::ChassisWidth' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, ChassisHeight) == 0x0001A8, "Member 'UWheeledVehicleMovementComponent::ChassisHeight' has a wrong offset!");
 static_assert(offsetof(UWheeledVehicleMovementComponent, DragArea) == 0x0001AC, "Member 'UWheeledVehicleMovementComponent::DragArea' has a wrong offset!");
 static_assert(offsetof(UWheeledVehicleMovementComponent, EstimatedMaxEngineSpeed) == 0x0001B0, "Member 'UWheeledVehicleMovementComponent::EstimatedMaxEngineSpeed' has a wrong offset!");
 static_assert(offsetof(UWheeledVehicleMovementComponent, MaxEngineRPM) == 0x0001B4, "Member 'UWheeledVehicleMovementComponent::MaxEngineRPM' has a wrong offset!");
@@ -166,67 +142,36 @@ static_assert(offsetof(UWheeledVehicleMovementComponent, ThresholdLongitudinalSp
 static_assert(offsetof(UWheeledVehicleMovementComponent, LowForwardSpeedSubStepCount) == 0x0001DC, "Member 'UWheeledVehicleMovementComponent::LowForwardSpeedSubStepCount' has a wrong offset!");
 static_assert(offsetof(UWheeledVehicleMovementComponent, HighForwardSpeedSubStepCount) == 0x0001E0, "Member 'UWheeledVehicleMovementComponent::HighForwardSpeedSubStepCount' has a wrong offset!");
 static_assert(offsetof(UWheeledVehicleMovementComponent, Wheels) == 0x0001E8, "Member 'UWheeledVehicleMovementComponent::Wheels' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RVOAvoidanceRadius) == 0x000214, "Member 'UWheeledVehicleMovementComponent::RVOAvoidanceRadius' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RVOAvoidanceHeight) == 0x000218, "Member 'UWheeledVehicleMovementComponent::RVOAvoidanceHeight' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceConsiderationRadius) == 0x00021C, "Member 'UWheeledVehicleMovementComponent::AvoidanceConsiderationRadius' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RVOSteeringStep) == 0x000220, "Member 'UWheeledVehicleMovementComponent::RVOSteeringStep' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RVOThrottleStep) == 0x000224, "Member 'UWheeledVehicleMovementComponent::RVOThrottleStep' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceUID) == 0x000228, "Member 'UWheeledVehicleMovementComponent::AvoidanceUID' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceGroup) == 0x00022C, "Member 'UWheeledVehicleMovementComponent::AvoidanceGroup' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, GroupsToAvoid) == 0x000230, "Member 'UWheeledVehicleMovementComponent::GroupsToAvoid' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, GroupsToIgnore) == 0x000234, "Member 'UWheeledVehicleMovementComponent::GroupsToIgnore' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceWeight) == 0x000238, "Member 'UWheeledVehicleMovementComponent::AvoidanceWeight' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, PendingLaunchVelocity) == 0x00023C, "Member 'UWheeledVehicleMovementComponent::PendingLaunchVelocity' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, ReplicatedState) == 0x000248, "Member 'UWheeledVehicleMovementComponent::ReplicatedState' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RawSteeringInput) == 0x000260, "Member 'UWheeledVehicleMovementComponent::RawSteeringInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RawThrottleInput) == 0x000264, "Member 'UWheeledVehicleMovementComponent::RawThrottleInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, RawBrakeInput) == 0x000268, "Member 'UWheeledVehicleMovementComponent::RawBrakeInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, SteeringInput) == 0x000270, "Member 'UWheeledVehicleMovementComponent::SteeringInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, ThrottleInput) == 0x000274, "Member 'UWheeledVehicleMovementComponent::ThrottleInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, BrakeInput) == 0x000278, "Member 'UWheeledVehicleMovementComponent::BrakeInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, HandbrakeInput) == 0x00027C, "Member 'UWheeledVehicleMovementComponent::HandbrakeInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, IdleBrakeInput) == 0x000280, "Member 'UWheeledVehicleMovementComponent::IdleBrakeInput' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, StopThreshold) == 0x000284, "Member 'UWheeledVehicleMovementComponent::StopThreshold' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, WrongDirectionThreshold) == 0x000288, "Member 'UWheeledVehicleMovementComponent::WrongDirectionThreshold' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, ThrottleInputRate) == 0x00028C, "Member 'UWheeledVehicleMovementComponent::ThrottleInputRate' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, BrakeInputRate) == 0x000294, "Member 'UWheeledVehicleMovementComponent::BrakeInputRate' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, HandbrakeInputRate) == 0x00029C, "Member 'UWheeledVehicleMovementComponent::HandbrakeInputRate' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, SteeringInputRate) == 0x0002A4, "Member 'UWheeledVehicleMovementComponent::SteeringInputRate' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent, OverrideController) == 0x0002D8, "Member 'UWheeledVehicleMovementComponent::OverrideController' has a wrong offset!");
-
-// Class PhysXVehicles.WheeledVehicleMovementComponent4W
-// 0x0160 (0x0440 - 0x02E0)
-class UWheeledVehicleMovementComponent4W : public UWheeledVehicleMovementComponent
-{
-public:
-	struct FVehicleEngineData                     EngineSetup;                                       // 0x02E0(0x0090)(Edit, NativeAccessSpecifierPublic)
-	struct FVehicleDifferential4WData             DifferentialSetup;                                 // 0x0370(0x001C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38C[0x4];                                      // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVehicleTransmissionData               TransmissionSetup;                                 // 0x0390(0x0030)(Edit, NativeAccessSpecifierPublic)
-	struct FRuntimeFloatCurve                     SteeringCurve;                                     // 0x03C0(0x0078)(Edit, NativeAccessSpecifierPublic)
-	float                                         AckermannAccuracy;                                 // 0x0438(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WheeledVehicleMovementComponent4W">();
-	}
-	static class UWheeledVehicleMovementComponent4W* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWheeledVehicleMovementComponent4W>();
-	}
-};
-static_assert(alignof(UWheeledVehicleMovementComponent4W) == 0x000008, "Wrong alignment on UWheeledVehicleMovementComponent4W");
-static_assert(sizeof(UWheeledVehicleMovementComponent4W) == 0x000440, "Wrong size on UWheeledVehicleMovementComponent4W");
-static_assert(offsetof(UWheeledVehicleMovementComponent4W, EngineSetup) == 0x0002E0, "Member 'UWheeledVehicleMovementComponent4W::EngineSetup' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent4W, DifferentialSetup) == 0x000370, "Member 'UWheeledVehicleMovementComponent4W::DifferentialSetup' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent4W, TransmissionSetup) == 0x000390, "Member 'UWheeledVehicleMovementComponent4W::TransmissionSetup' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent4W, SteeringCurve) == 0x0003C0, "Member 'UWheeledVehicleMovementComponent4W::SteeringCurve' has a wrong offset!");
-static_assert(offsetof(UWheeledVehicleMovementComponent4W, AckermannAccuracy) == 0x000438, "Member 'UWheeledVehicleMovementComponent4W::AckermannAccuracy' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RVOAvoidanceRadius) == 0x000210, "Member 'UWheeledVehicleMovementComponent::RVOAvoidanceRadius' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RVOAvoidanceHeight) == 0x000214, "Member 'UWheeledVehicleMovementComponent::RVOAvoidanceHeight' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceConsiderationRadius) == 0x000218, "Member 'UWheeledVehicleMovementComponent::AvoidanceConsiderationRadius' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RVOSteeringStep) == 0x00021C, "Member 'UWheeledVehicleMovementComponent::RVOSteeringStep' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RVOThrottleStep) == 0x000220, "Member 'UWheeledVehicleMovementComponent::RVOThrottleStep' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceUID) == 0x000224, "Member 'UWheeledVehicleMovementComponent::AvoidanceUID' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceGroup) == 0x000228, "Member 'UWheeledVehicleMovementComponent::AvoidanceGroup' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, GroupsToAvoid) == 0x00022C, "Member 'UWheeledVehicleMovementComponent::GroupsToAvoid' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, GroupsToIgnore) == 0x000230, "Member 'UWheeledVehicleMovementComponent::GroupsToIgnore' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, AvoidanceWeight) == 0x000234, "Member 'UWheeledVehicleMovementComponent::AvoidanceWeight' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, PendingLaunchVelocity) == 0x000238, "Member 'UWheeledVehicleMovementComponent::PendingLaunchVelocity' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, ReplicatedState) == 0x000244, "Member 'UWheeledVehicleMovementComponent::ReplicatedState' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RawSteeringInput) == 0x00025C, "Member 'UWheeledVehicleMovementComponent::RawSteeringInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RawThrottleInput) == 0x000260, "Member 'UWheeledVehicleMovementComponent::RawThrottleInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, RawBrakeInput) == 0x000264, "Member 'UWheeledVehicleMovementComponent::RawBrakeInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, SteeringInput) == 0x000268, "Member 'UWheeledVehicleMovementComponent::SteeringInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, ThrottleInput) == 0x00026C, "Member 'UWheeledVehicleMovementComponent::ThrottleInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, BrakeInput) == 0x000270, "Member 'UWheeledVehicleMovementComponent::BrakeInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, HandbrakeInput) == 0x000274, "Member 'UWheeledVehicleMovementComponent::HandbrakeInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, IdleBrakeInput) == 0x000278, "Member 'UWheeledVehicleMovementComponent::IdleBrakeInput' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, StopThreshold) == 0x00027C, "Member 'UWheeledVehicleMovementComponent::StopThreshold' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, WrongDirectionThreshold) == 0x000280, "Member 'UWheeledVehicleMovementComponent::WrongDirectionThreshold' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, ThrottleInputRate) == 0x000284, "Member 'UWheeledVehicleMovementComponent::ThrottleInputRate' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, BrakeInputRate) == 0x00028C, "Member 'UWheeledVehicleMovementComponent::BrakeInputRate' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, HandbrakeInputRate) == 0x000294, "Member 'UWheeledVehicleMovementComponent::HandbrakeInputRate' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, SteeringInputRate) == 0x00029C, "Member 'UWheeledVehicleMovementComponent::SteeringInputRate' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent, OverrideController) == 0x0002C8, "Member 'UWheeledVehicleMovementComponent::OverrideController' has a wrong offset!");
 
 // Class PhysXVehicles.SimpleWheeledVehicleMovementComponent
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x02D0 - 0x02D0)
 class USimpleWheeledVehicleMovementComponent : public UWheeledVehicleMovementComponent
 {
 public:
@@ -245,7 +190,7 @@ public:
 	}
 };
 static_assert(alignof(USimpleWheeledVehicleMovementComponent) == 0x000008, "Wrong alignment on USimpleWheeledVehicleMovementComponent");
-static_assert(sizeof(USimpleWheeledVehicleMovementComponent) == 0x0002E0, "Wrong size on USimpleWheeledVehicleMovementComponent");
+static_assert(sizeof(USimpleWheeledVehicleMovementComponent) == 0x0002D0, "Wrong size on USimpleWheeledVehicleMovementComponent");
 
 // Class PhysXVehicles.TireConfig
 // 0x0020 (0x0050 - 0x0030)
@@ -273,13 +218,13 @@ static_assert(offsetof(UTireConfig, FrictionScale) == 0x000030, "Member 'UTireCo
 static_assert(offsetof(UTireConfig, TireFrictionScales) == 0x000038, "Member 'UTireConfig::TireFrictionScales' has a wrong offset!");
 
 // Class PhysXVehicles.VehicleAnimInstance
-// 0x05C8 (0x0940 - 0x0378)
+// 0x0618 (0x0970 - 0x0358)
 class UVehicleAnimInstance final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x5B8];                                    // 0x0378(0x05B8)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWheeledVehicleMovementComponent*       WheeledVehicleMovementComponent;                   // 0x0930(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_938[0x8];                                      // 0x0938(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_358[0x608];                                    // 0x0358(0x0608)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWheeledVehicleMovementComponent*       WheeledVehicleMovementComponent;                   // 0x0960(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_968[0x8];                                      // 0x0968(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class AWheeledVehicle* GetVehicle();
@@ -295,8 +240,8 @@ public:
 	}
 };
 static_assert(alignof(UVehicleAnimInstance) == 0x000008, "Wrong alignment on UVehicleAnimInstance");
-static_assert(sizeof(UVehicleAnimInstance) == 0x000940, "Wrong size on UVehicleAnimInstance");
-static_assert(offsetof(UVehicleAnimInstance, WheeledVehicleMovementComponent) == 0x000930, "Member 'UVehicleAnimInstance::WheeledVehicleMovementComponent' has a wrong offset!");
+static_assert(sizeof(UVehicleAnimInstance) == 0x000970, "Wrong size on UVehicleAnimInstance");
+static_assert(offsetof(UVehicleAnimInstance, WheeledVehicleMovementComponent) == 0x000960, "Member 'UVehicleAnimInstance::WheeledVehicleMovementComponent' has a wrong offset!");
 
 // Class PhysXVehicles.VehicleWheel
 // 0x00C8 (0x00F0 - 0x0028)
@@ -396,6 +341,58 @@ static_assert(offsetof(UVehicleWheel, DebugLatForce) == 0x0000BC, "Member 'UVehi
 static_assert(offsetof(UVehicleWheel, Location) == 0x0000C0, "Member 'UVehicleWheel::Location' has a wrong offset!");
 static_assert(offsetof(UVehicleWheel, OldLocation) == 0x0000CC, "Member 'UVehicleWheel::OldLocation' has a wrong offset!");
 static_assert(offsetof(UVehicleWheel, Velocity) == 0x0000D8, "Member 'UVehicleWheel::Velocity' has a wrong offset!");
+
+// Class PhysXVehicles.WheeledVehicle
+// 0x0010 (0x0398 - 0x0388)
+class AWheeledVehicle final : public APawn
+{
+public:
+	class USkeletalMeshComponent*                 Mesh;                                              // 0x0388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UWheeledVehicleMovementComponent*       VehicleMovement;                                   // 0x0390(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"WheeledVehicle">();
+	}
+	static class AWheeledVehicle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AWheeledVehicle>();
+	}
+};
+static_assert(alignof(AWheeledVehicle) == 0x000008, "Wrong alignment on AWheeledVehicle");
+static_assert(sizeof(AWheeledVehicle) == 0x000398, "Wrong size on AWheeledVehicle");
+static_assert(offsetof(AWheeledVehicle, Mesh) == 0x000388, "Member 'AWheeledVehicle::Mesh' has a wrong offset!");
+static_assert(offsetof(AWheeledVehicle, VehicleMovement) == 0x000390, "Member 'AWheeledVehicle::VehicleMovement' has a wrong offset!");
+
+// Class PhysXVehicles.WheeledVehicleMovementComponent4W
+// 0x0158 (0x0428 - 0x02D0)
+class UWheeledVehicleMovementComponent4W : public UWheeledVehicleMovementComponent
+{
+public:
+	struct FVehicleEngineData                     EngineSetup;                                       // 0x02D0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FVehicleDifferential4WData             DifferentialSetup;                                 // 0x0360(0x001C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         AckermannAccuracy;                                 // 0x037C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVehicleTransmissionData               TransmissionSetup;                                 // 0x0380(0x0030)(Edit, NativeAccessSpecifierPublic)
+	struct FRuntimeFloatCurve                     SteeringCurve;                                     // 0x03B0(0x0078)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"WheeledVehicleMovementComponent4W">();
+	}
+	static class UWheeledVehicleMovementComponent4W* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWheeledVehicleMovementComponent4W>();
+	}
+};
+static_assert(alignof(UWheeledVehicleMovementComponent4W) == 0x000008, "Wrong alignment on UWheeledVehicleMovementComponent4W");
+static_assert(sizeof(UWheeledVehicleMovementComponent4W) == 0x000428, "Wrong size on UWheeledVehicleMovementComponent4W");
+static_assert(offsetof(UWheeledVehicleMovementComponent4W, EngineSetup) == 0x0002D0, "Member 'UWheeledVehicleMovementComponent4W::EngineSetup' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent4W, DifferentialSetup) == 0x000360, "Member 'UWheeledVehicleMovementComponent4W::DifferentialSetup' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent4W, AckermannAccuracy) == 0x00037C, "Member 'UWheeledVehicleMovementComponent4W::AckermannAccuracy' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent4W, TransmissionSetup) == 0x000380, "Member 'UWheeledVehicleMovementComponent4W::TransmissionSetup' has a wrong offset!");
+static_assert(offsetof(UWheeledVehicleMovementComponent4W, SteeringCurve) == 0x0003B0, "Member 'UWheeledVehicleMovementComponent4W::SteeringCurve' has a wrong offset!");
 
 }
 

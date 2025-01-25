@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotEntry.ItemTransformSlotEntry_C
-// 0x0050 (0x0268 - 0x0218)
+// 0x0050 (0x0260 - 0x0210)
 class UItemTransformSlotEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UPanelButton_C*                         PanelButton;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonNumericTextBlock*                SacrificePointText;                                // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 SelectedItemCard;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SlotSizeBox;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnSlotChosen;                                      // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UFortItem*                              CurrentItem;                                       // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnSlotSelected;                                    // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UPanelButton_C*                         PanelButton;                                       // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonNumericTextBlock*                SacrificePointText;                                // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 SelectedItemCard;                                  // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SlotSizeBox;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnSlotChosen;                                      // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UFortItem*                              CurrentItem;                                       // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnSlotSelected;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnSlotChosen__DelegateSignature();
@@ -54,15 +54,15 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformSlotEntry_C) == 0x000008, "Wrong alignment on UItemTransformSlotEntry_C");
-static_assert(sizeof(UItemTransformSlotEntry_C) == 0x000268, "Wrong size on UItemTransformSlotEntry_C");
-static_assert(offsetof(UItemTransformSlotEntry_C, UberGraphFrame) == 0x000218, "Member 'UItemTransformSlotEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, PanelButton) == 0x000220, "Member 'UItemTransformSlotEntry_C::PanelButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SacrificePointText) == 0x000228, "Member 'UItemTransformSlotEntry_C::SacrificePointText' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SelectedItemCard) == 0x000230, "Member 'UItemTransformSlotEntry_C::SelectedItemCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SlotSizeBox) == 0x000238, "Member 'UItemTransformSlotEntry_C::SlotSizeBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotChosen) == 0x000240, "Member 'UItemTransformSlotEntry_C::OnSlotChosen' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, CurrentItem) == 0x000250, "Member 'UItemTransformSlotEntry_C::CurrentItem' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotSelected) == 0x000258, "Member 'UItemTransformSlotEntry_C::OnSlotSelected' has a wrong offset!");
+static_assert(sizeof(UItemTransformSlotEntry_C) == 0x000260, "Wrong size on UItemTransformSlotEntry_C");
+static_assert(offsetof(UItemTransformSlotEntry_C, UberGraphFrame) == 0x000210, "Member 'UItemTransformSlotEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, PanelButton) == 0x000218, "Member 'UItemTransformSlotEntry_C::PanelButton' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, SacrificePointText) == 0x000220, "Member 'UItemTransformSlotEntry_C::SacrificePointText' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, SelectedItemCard) == 0x000228, "Member 'UItemTransformSlotEntry_C::SelectedItemCard' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, SlotSizeBox) == 0x000230, "Member 'UItemTransformSlotEntry_C::SlotSizeBox' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotChosen) == 0x000238, "Member 'UItemTransformSlotEntry_C::OnSlotChosen' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, CurrentItem) == 0x000248, "Member 'UItemTransformSlotEntry_C::CurrentItem' has a wrong offset!");
+static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotSelected) == 0x000250, "Member 'UItemTransformSlotEntry_C::OnSlotSelected' has a wrong offset!");
 
 }
 

@@ -26,7 +26,7 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TriggerIfAppropriate_ReturnValue;         // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -36,7 +36,7 @@ static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor
 static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_IsDedicatedServer_ReturnValue) == 0x000010, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000014, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x000020, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x000020, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_TriggerIfAppropriate_ReturnValue) == 0x00002C, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_TriggerIfAppropriate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed, CallFunc_IsDedicatedServer_ReturnValue1) == 0x00002D, "Member 'Trap_Floor_Hoverboard_Speed_C_ExecuteUbergraph_Trap_Floor_Hoverboard_Speed::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
 

@@ -10,57 +10,57 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
-#include "AirStrikeLeveledPatterns_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "AirStrikeLeveledPatterns_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass AbilityDecoTool_AirStrike.AbilityDecoTool_AirStrike_C
-// 0x0160 (0x0C70 - 0x0B10)
+// 0x0160 (0x0D10 - 0x0BB0)
 class AAbilityDecoTool_AirStrike_C final : public AFortCustomizableAbilityDecoTool
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B10(0x0008)(Transient, DuplicateTransient)
-	class AFortPlayerPawn*                        FortPlayerPawn;                                    // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAttribute                     FiringRangeSubBuilding3;                           // 0x0B20(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         PowerLevel;                                        // 0x0B40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B44[0x4];                                      // 0x0B44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAirStrikeLeveledPatterns              DONOTEDIT_LeveledAirStrikeArrays;                  // 0x0B48(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         Current_Air_Strike_Sub_Tier_Selection;             // 0x0B58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Current_Level_Max;                                 // 0x0B5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        Current_Unprocessed_Positions_Array;               // 0x0B60(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FVector>                        Position_Array_Cleaned_of_duplicates;              // 0x0B70(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<int32>                                 Duplicate_Positions;                               // 0x0B80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<int32>                                 Double_Entries;                                    // 0x0B90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	float                                         Spacing_Between_the_Impacts;                       // 0x0BA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BA4[0x4];                                      // 0x0BA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0BA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Old_Power_Level;                                   // 0x0BB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Pattern_Needs_to_change;                           // 0x0BB4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BB5[0x3];                                      // 0x0BB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_BombUpgrade1;                                   // 0x0BB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_BombUpgrade2;                                   // 0x0BD8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_BombUpgrade3;                                   // 0x0BF8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_BombUpgrade4;                                   // 0x0C18(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_BombUpgrade5;                                   // 0x0C38(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Onboarding;                                        // 0x0C58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C59[0x7];                                      // 0x0C59(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortDecoHelper*                        Helper;                                            // 0x0C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           HideTimerHandle;                                   // 0x0C68(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BB0(0x0008)(Transient, DuplicateTransient)
+	class AFortPlayerPawn*                        FortPlayerPawn;                                    // 0x0BB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAttribute                     FiringRangeSubBuilding3;                           // 0x0BC0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         PowerLevel;                                        // 0x0BE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAirStrikeLeveledPatterns              DONOTEDIT_LeveledAirStrikeArrays;                  // 0x0BE8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         Current_Air_Strike_Sub_Tier_Selection;             // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Current_Level_Max;                                 // 0x0BFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        Current_Unprocessed_Positions_Array;               // 0x0C00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FVector>                        Position_Array_Cleaned_of_duplicates;              // 0x0C10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<int32>                                 Duplicate_Positions;                               // 0x0C20(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<int32>                                 Double_Entries;                                    // 0x0C30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	float                                         Spacing_Between_the_Impacts;                       // 0x0C40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C44[0x4];                                      // 0x0C44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0C48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Old_Power_Level;                                   // 0x0C50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Pattern_Needs_to_change;                           // 0x0C54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C55[0x3];                                      // 0x0C55(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_BombUpgrade1;                                   // 0x0C58(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_BombUpgrade2;                                   // 0x0C78(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_BombUpgrade3;                                   // 0x0C98(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_BombUpgrade4;                                   // 0x0CB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_BombUpgrade5;                                   // 0x0CD8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Onboarding;                                        // 0x0CF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CF9[0x7];                                      // 0x0CF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortDecoHelper*                        Helper;                                            // 0x0D00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           HideTimerHandle;                                   // 0x0D08(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AbilityDecoTool_AirStrike(int32 EntryPoint);
 	void Show();
 	void HideFor(float InTime);
 	void PassInfo(int32 Power_Level);
-	void BPPressSecondaryFire(class AFortDecoHelper* Param_FortDecoHelper);
-	void BPOnSetDecoObjectPreview(class AFortDecoHelper* Param_FortDecoHelper);
+	void BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper_0);
+	void BPOnSetDecoObjectPreview(class AFortDecoHelper* FortDecoHelper_0);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 	void PopulatePositionArrays();
@@ -77,30 +77,30 @@ public:
 	}
 };
 static_assert(alignof(AAbilityDecoTool_AirStrike_C) == 0x000008, "Wrong alignment on AAbilityDecoTool_AirStrike_C");
-static_assert(sizeof(AAbilityDecoTool_AirStrike_C) == 0x000C70, "Wrong size on AAbilityDecoTool_AirStrike_C");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, UberGraphFrame) == 0x000B10, "Member 'AAbilityDecoTool_AirStrike_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FortPlayerPawn) == 0x000B18, "Member 'AAbilityDecoTool_AirStrike_C::FortPlayerPawn' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FiringRangeSubBuilding3) == 0x000B20, "Member 'AAbilityDecoTool_AirStrike_C::FiringRangeSubBuilding3' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, PowerLevel) == 0x000B40, "Member 'AAbilityDecoTool_AirStrike_C::PowerLevel' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, DONOTEDIT_LeveledAirStrikeArrays) == 0x000B48, "Member 'AAbilityDecoTool_AirStrike_C::DONOTEDIT_LeveledAirStrikeArrays' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Air_Strike_Sub_Tier_Selection) == 0x000B58, "Member 'AAbilityDecoTool_AirStrike_C::Current_Air_Strike_Sub_Tier_Selection' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Level_Max) == 0x000B5C, "Member 'AAbilityDecoTool_AirStrike_C::Current_Level_Max' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Unprocessed_Positions_Array) == 0x000B60, "Member 'AAbilityDecoTool_AirStrike_C::Current_Unprocessed_Positions_Array' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Position_Array_Cleaned_of_duplicates) == 0x000B70, "Member 'AAbilityDecoTool_AirStrike_C::Position_Array_Cleaned_of_duplicates' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Duplicate_Positions) == 0x000B80, "Member 'AAbilityDecoTool_AirStrike_C::Duplicate_Positions' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Double_Entries) == 0x000B90, "Member 'AAbilityDecoTool_AirStrike_C::Double_Entries' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Spacing_Between_the_Impacts) == 0x000BA0, "Member 'AAbilityDecoTool_AirStrike_C::Spacing_Between_the_Impacts' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FortDecoHelper) == 0x000BA8, "Member 'AAbilityDecoTool_AirStrike_C::FortDecoHelper' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Old_Power_Level) == 0x000BB0, "Member 'AAbilityDecoTool_AirStrike_C::Old_Power_Level' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Pattern_Needs_to_change) == 0x000BB4, "Member 'AAbilityDecoTool_AirStrike_C::Pattern_Needs_to_change' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade1) == 0x000BB8, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade1' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade2) == 0x000BD8, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade2' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade3) == 0x000BF8, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade3' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade4) == 0x000C18, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade4' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade5) == 0x000C38, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade5' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Onboarding) == 0x000C58, "Member 'AAbilityDecoTool_AirStrike_C::Onboarding' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Helper) == 0x000C60, "Member 'AAbilityDecoTool_AirStrike_C::Helper' has a wrong offset!");
-static_assert(offsetof(AAbilityDecoTool_AirStrike_C, HideTimerHandle) == 0x000C68, "Member 'AAbilityDecoTool_AirStrike_C::HideTimerHandle' has a wrong offset!");
+static_assert(sizeof(AAbilityDecoTool_AirStrike_C) == 0x000D10, "Wrong size on AAbilityDecoTool_AirStrike_C");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, UberGraphFrame) == 0x000BB0, "Member 'AAbilityDecoTool_AirStrike_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FortPlayerPawn) == 0x000BB8, "Member 'AAbilityDecoTool_AirStrike_C::FortPlayerPawn' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FiringRangeSubBuilding3) == 0x000BC0, "Member 'AAbilityDecoTool_AirStrike_C::FiringRangeSubBuilding3' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, PowerLevel) == 0x000BE0, "Member 'AAbilityDecoTool_AirStrike_C::PowerLevel' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, DONOTEDIT_LeveledAirStrikeArrays) == 0x000BE8, "Member 'AAbilityDecoTool_AirStrike_C::DONOTEDIT_LeveledAirStrikeArrays' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Air_Strike_Sub_Tier_Selection) == 0x000BF8, "Member 'AAbilityDecoTool_AirStrike_C::Current_Air_Strike_Sub_Tier_Selection' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Level_Max) == 0x000BFC, "Member 'AAbilityDecoTool_AirStrike_C::Current_Level_Max' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Current_Unprocessed_Positions_Array) == 0x000C00, "Member 'AAbilityDecoTool_AirStrike_C::Current_Unprocessed_Positions_Array' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Position_Array_Cleaned_of_duplicates) == 0x000C10, "Member 'AAbilityDecoTool_AirStrike_C::Position_Array_Cleaned_of_duplicates' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Duplicate_Positions) == 0x000C20, "Member 'AAbilityDecoTool_AirStrike_C::Duplicate_Positions' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Double_Entries) == 0x000C30, "Member 'AAbilityDecoTool_AirStrike_C::Double_Entries' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Spacing_Between_the_Impacts) == 0x000C40, "Member 'AAbilityDecoTool_AirStrike_C::Spacing_Between_the_Impacts' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, FortDecoHelper) == 0x000C48, "Member 'AAbilityDecoTool_AirStrike_C::FortDecoHelper' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Old_Power_Level) == 0x000C50, "Member 'AAbilityDecoTool_AirStrike_C::Old_Power_Level' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Pattern_Needs_to_change) == 0x000C54, "Member 'AAbilityDecoTool_AirStrike_C::Pattern_Needs_to_change' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade1) == 0x000C58, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade1' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade2) == 0x000C78, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade2' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade3) == 0x000C98, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade3' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade4) == 0x000CB8, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade4' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, TC_BombUpgrade5) == 0x000CD8, "Member 'AAbilityDecoTool_AirStrike_C::TC_BombUpgrade5' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Onboarding) == 0x000CF8, "Member 'AAbilityDecoTool_AirStrike_C::Onboarding' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, Helper) == 0x000D00, "Member 'AAbilityDecoTool_AirStrike_C::Helper' has a wrong offset!");
+static_assert(offsetof(AAbilityDecoTool_AirStrike_C, HideTimerHandle) == 0x000D08, "Member 'AAbilityDecoTool_AirStrike_C::HideTimerHandle' has a wrong offset!");
 
 }
 

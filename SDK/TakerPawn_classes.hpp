@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 #include "ElementalEnum_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -22,100 +22,105 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TakerPawn.TakerPawn_C
-// 0x0230 (0x1E20 - 0x1BF0)
+// 0x0250 (0x1E60 - 0x1C10)
 class ATakerPawn_C final : public AFortPawn_Taker
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1BF0(0x0008)(Transient, DuplicateTransient)
-	class UBoxComponent*                          SwoopOverlapBox;                                   // 0x1BF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               TrailFX;                                           // 0x1C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               SoulSuckEffect;                                    // 0x1C08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SoulSuckSound;                                     // 0x1C10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortLOSComponent*                      FortLOSComponent;                                  // 0x1C18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SwoopSound;                                        // 0x1C20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3; // 0x1C28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C29[0x7];                                     // 0x1C29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     UpdateMaterialParamsTL;                            // 0x1C30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2; // 0x1C38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2; // 0x1C3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_E660A4034E5557BBA788399234042CF2; // 0x1C40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C41[0x7];                                     // 0x1C41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x1C48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanDoHitReact;                                     // 0x1C50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C51[0x7];                                     // 0x1C51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerPawn*                        TakerEvadeInstigator;                              // 0x1C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortAIController*                      TakerController;                                   // 0x1C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SpawnFeedbackEventName;                            // 0x1C68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             KnockTakerAwaySound;                               // 0x1C70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SoulSuckEffectActivated;                           // 0x1C78(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_1C79[0x7];                                     // 0x1C79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_TakerSoulSuckVulnerability;                     // 0x1C80(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AFortPlayerPawn*>                TargetArray;                                       // 0x1CA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          Temp_Disable_Elemental_Effects;                    // 0x1CB0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	ElementalEnum                                 ElementalType;                                     // 0x1CB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1CB2[0x6];                                     // 0x1CB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Default_Material;                                  // 0x1CB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Particle_Electrical_Ambient;                       // 0x1CC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Particle_Ice_Ambient;                              // 0x1CC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        Particle_Fire_Ambient;                             // 0x1CD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Electrical_Mat;                                    // 0x1CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Ice_Material;                                      // 0x1CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Fire_Material;                                     // 0x1CE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SoulSuckMontageSection;                            // 0x1CF0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SoulSuckCurrentMontageSection;                     // 0x1CF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckGoalActorNormalizedHealth;                 // 0x1D00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D04[0x4];                                     // 0x1D04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPawn*                              SoulSuckGoalActor;                                 // 0x1D08(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Impact_MeleeSocket;                                // 0x1D10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Default;                           // 0x1D18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Wood;                              // 0x1D20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Stone;                             // 0x1D28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_Metal;                             // 0x1D30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        ImpactParticles_HumanFlesh;                        // 0x1D38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          MeleeImpact_UseSocketTransforms;                   // 0x1D40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D41[0x3];                                     // 0x1D41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                TakerSwoopLevitateLocation;                        // 0x1D44(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TakerSwoopLevitateNavigationError;                 // 0x1D50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopAttackStrikeTime;                             // 0x1D54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopAttackMeleeRange;                             // 0x1D58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopOverlapBoxXMin;                               // 0x1D5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopOverlapBoxXMax;                               // 0x1D60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopOverlapBoxZMin;                               // 0x1D64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopOverlapBoxZMax;                               // 0x1D68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D6C[0x4];                                     // 0x1D6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   TakerCapsuleDefaultCollisionProfileName;           // 0x1D70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           TakerSoulSuckMontage;                              // 0x1D78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               TakerDefaultRotationRate;                          // 0x1D80(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1C10(0x0008)(Transient, DuplicateTransient)
+	class UBoxComponent*                          SwoopOverlapBox;                                   // 0x1C18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               TrailFX;                                           // 0x1C20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               SoulSuckEffect;                                    // 0x1C28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SoulSuckSound;                                     // 0x1C30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortLOSComponent*                      FortLOSComponent;                                  // 0x1C38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SwoopSound;                                        // 0x1C40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3; // 0x1C48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C49[0x7];                                     // 0x1C49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     UpdateMaterialParamsTL;                            // 0x1C50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2; // 0x1C58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2; // 0x1C5C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_E660A4034E5557BBA788399234042CF2; // 0x1C60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C61[0x7];                                     // 0x1C61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x1C68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanDoHitReact;                                     // 0x1C70(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C71[0x7];                                     // 0x1C71(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerPawn*                        TakerEvadeInstigator;                              // 0x1C78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortAIController*                      TakerController;                                   // 0x1C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SpawnFeedbackEventName;                            // 0x1C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             KnockTakerAwaySound;                               // 0x1C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SoulSuckEffectActivated;                           // 0x1C98(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_1C99[0x7];                                     // 0x1C99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_TakerSoulSuckVulnerability;                     // 0x1CA0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AFortPlayerPawn*>                TargetArray;                                       // 0x1CC0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          Temp_Disable_Elemental_Effects;                    // 0x1CD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	ElementalEnum                                 ElementalType;                                     // 0x1CD1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_1CD2[0x6];                                     // 0x1CD2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Default_Material;                                  // 0x1CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Particle_Electrical_Ambient;                       // 0x1CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Particle_Ice_Ambient;                              // 0x1CE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Particle_Fire_Ambient;                             // 0x1CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Electrical_Mat;                                    // 0x1CF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Ice_Material;                                      // 0x1D00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Fire_Material;                                     // 0x1D08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SoulSuckMontageSection;                            // 0x1D10(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SoulSuckCurrentMontageSection;                     // 0x1D18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckGoalActorNormalizedHealth;                 // 0x1D20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D24[0x4];                                     // 0x1D24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              SoulSuckGoalActor;                                 // 0x1D28(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Impact_MeleeSocket;                                // 0x1D30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Default;                           // 0x1D38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Wood;                              // 0x1D40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Stone;                             // 0x1D48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_Metal;                             // 0x1D50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        ImpactParticles_HumanFlesh;                        // 0x1D58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          MeleeImpact_UseSocketTransforms;                   // 0x1D60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D61[0x3];                                     // 0x1D61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                TakerSwoopLevitateLocation;                        // 0x1D64(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TakerSwoopLevitateNavigationError;                 // 0x1D70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopAttackStrikeTime;                             // 0x1D74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopAttackMeleeRange;                             // 0x1D78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopOverlapBoxXMin;                               // 0x1D7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopOverlapBoxXMax;                               // 0x1D80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopOverlapBoxZMin;                               // 0x1D84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopOverlapBoxZMax;                               // 0x1D88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D8C[0x4];                                     // 0x1D8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 TakerGoalActor;                                    // 0x1D90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TakerAirborneTraceLength;                          // 0x1D98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TakerAirborneThreshold;                            // 0x1D9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynamic_Material_Instance;                         // 0x1DA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Death_Effects;                                     // 0x1DA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        HQ_Death_Particle_System;                          // 0x1DB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HQ_DeathFX_SpawnRateScale;                         // 0x1DB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DBC[0x4];                                     // 0x1DBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystem*                        LQ_Death_Particle_System;                          // 0x1DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_CylinderHeight;                         // 0x1DC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_CylinderRadius;                         // 0x1DCC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LQ_DeathFX_SpawnRateScale;                         // 0x1DD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Sleeping;                                          // 0x1DD4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DD5[0x3];                                     // 0x1DD5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               SleepParticleSystemComp;                           // 0x1DD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PushDuration;                                      // 0x1DE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PushYawAngle;                                      // 0x1DE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PushVelocity;                                      // 0x1DE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DEC[0x4];                                     // 0x1DEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPawn*                              PawnBumpedByTaker;                                 // 0x1DF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnraged;                                         // 0x1DF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DF9[0x7];                                     // 0x1DF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               Dynamic_Material_Instance_Accessory_1;             // 0x1E00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 ShieldSkeletalMesh;                                // 0x1E08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AShielderSpringArm_C*                   ShieldArm;                                         // 0x1E10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Slow_Shackle_Scale;                                // 0x1E18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   TakerCapsuleDefaultCollisionProfileName;           // 0x1D90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           TakerSoulSuckMontage;                              // 0x1D98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               TakerDefaultRotationRate;                          // 0x1DA0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1DAC[0x4];                                     // 0x1DAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 TakerGoalActor;                                    // 0x1DB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TakerAirborneTraceLength;                          // 0x1DB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TakerAirborneThreshold;                            // 0x1DBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynamic_Material_Instance;                         // 0x1DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Death_Effects;                                     // 0x1DC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        HQ_Death_Particle_System;                          // 0x1DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HQ_DeathFX_SpawnRateScale;                         // 0x1DD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DDC[0x4];                                     // 0x1DDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        LQ_Death_Particle_System;                          // 0x1DE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_CylinderHeight;                         // 0x1DE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_CylinderRadius;                         // 0x1DEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LQ_DeathFX_SpawnRateScale;                         // 0x1DF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Sleeping;                                          // 0x1DF4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1DF5[0x3];                                     // 0x1DF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               SleepParticleSystemComp;                           // 0x1DF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PushDuration;                                      // 0x1E00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PushYawAngle;                                      // 0x1E04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PushVelocity;                                      // 0x1E08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E0C[0x4];                                     // 0x1E0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              PawnBumpedByTaker;                                 // 0x1E10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnraged;                                         // 0x1E18(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E19[0x7];                                     // 0x1E19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               Dynamic_Material_Instance_Accessory_1;             // 0x1E20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 ShieldSkeletalMesh;                                // 0x1E28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AShielderSpringArm_C*                   ShieldArm;                                         // 0x1E30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Slow_Shackle_Scale;                                // 0x1E38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E3C[0x4];                                     // 0x1E3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceDynamic*>       Previous_MID;                                      // 0x1E40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class USkeletalMeshComponent*                 DuplicateCharacterMesh;                            // 0x1E50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TakerPawn(int32 EntryPoint);
+	void RestorePreviousMaterialDelay(float Delay_Amount);
+	void RestorePreviousMaterialDelayCompleted();
 	void ReceivePossessed(class AController* NewController);
 	void GameplayCue_Damage_Shielded(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void GameplayCue_Shield_Destroyed(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
@@ -146,10 +151,10 @@ public:
 	void ReceiveBeginPlay();
 	void PortalCollision(bool Collide_);
 	void PortalFX();
-	void PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT);
+	void PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT);
 	void TakerSoulSuckInterrupted();
 	void PortalClear();
-	void PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList);
+	void PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList);
 	void TakerAttackFSM(bool SuccessfulHit);
 	void IsTakerWallPortalAvailable(bool Portal_Available_);
 	void TakerWallPortalBehavior(class AActor* BuildingPart, class UBTTask_BlueprintBase* Task, const struct FVector& DesiredMoveLocation, bool Debug);
@@ -173,6 +178,9 @@ public:
 	void TakerAirborneTest(struct FVector* ImpactPointOrTraceEndBelowTaker, bool* Airborne);
 	void StopDeathFX();
 	void StopMaterialTimeline();
+	void RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds);
+	void OverrideMaterialAndCopyParametersOnCharacterMesh(class UMaterialInterface* New_Material_To_Apply);
+	void SetScalarParameterOnAllCharacterMIDs(class FName Parameter_Name, float Scalar_Value);
 
 public:
 	static class UClass* StaticClass()
@@ -185,81 +193,83 @@ public:
 	}
 };
 static_assert(alignof(ATakerPawn_C) == 0x000010, "Wrong alignment on ATakerPawn_C");
-static_assert(sizeof(ATakerPawn_C) == 0x001E20, "Wrong size on ATakerPawn_C");
-static_assert(offsetof(ATakerPawn_C, UberGraphFrame) == 0x001BF0, "Member 'ATakerPawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopOverlapBox) == 0x001BF8, "Member 'ATakerPawn_C::SwoopOverlapBox' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TrailFX) == 0x001C00, "Member 'ATakerPawn_C::TrailFX' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckEffect) == 0x001C08, "Member 'ATakerPawn_C::SoulSuckEffect' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckSound) == 0x001C10, "Member 'ATakerPawn_C::SoulSuckSound' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, FortLOSComponent) == 0x001C18, "Member 'ATakerPawn_C::FortLOSComponent' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopSound) == 0x001C20, "Member 'ATakerPawn_C::SwoopSound' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3) == 0x001C28, "Member 'ATakerPawn_C::UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, UpdateMaterialParamsTL) == 0x001C30, "Member 'ATakerPawn_C::UpdateMaterialParamsTL' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2) == 0x001C38, "Member 'ATakerPawn_C::Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2) == 0x001C3C, "Member 'ATakerPawn_C::Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Timeline_0__Direction_E660A4034E5557BBA788399234042CF2) == 0x001C40, "Member 'ATakerPawn_C::Timeline_0__Direction_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Timeline_0) == 0x001C48, "Member 'ATakerPawn_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, CanDoHitReact) == 0x001C50, "Member 'ATakerPawn_C::CanDoHitReact' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerEvadeInstigator) == 0x001C58, "Member 'ATakerPawn_C::TakerEvadeInstigator' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerController) == 0x001C60, "Member 'ATakerPawn_C::TakerController' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SpawnFeedbackEventName) == 0x001C68, "Member 'ATakerPawn_C::SpawnFeedbackEventName' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, KnockTakerAwaySound) == 0x001C70, "Member 'ATakerPawn_C::KnockTakerAwaySound' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckEffectActivated) == 0x001C78, "Member 'ATakerPawn_C::SoulSuckEffectActivated' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TC_TakerSoulSuckVulnerability) == 0x001C80, "Member 'ATakerPawn_C::TC_TakerSoulSuckVulnerability' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TargetArray) == 0x001CA0, "Member 'ATakerPawn_C::TargetArray' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Temp_Disable_Elemental_Effects) == 0x001CB0, "Member 'ATakerPawn_C::Temp_Disable_Elemental_Effects' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ElementalType) == 0x001CB1, "Member 'ATakerPawn_C::ElementalType' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Default_Material) == 0x001CB8, "Member 'ATakerPawn_C::Default_Material' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Particle_Electrical_Ambient) == 0x001CC0, "Member 'ATakerPawn_C::Particle_Electrical_Ambient' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Particle_Ice_Ambient) == 0x001CC8, "Member 'ATakerPawn_C::Particle_Ice_Ambient' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Particle_Fire_Ambient) == 0x001CD0, "Member 'ATakerPawn_C::Particle_Fire_Ambient' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Electrical_Mat) == 0x001CD8, "Member 'ATakerPawn_C::Electrical_Mat' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Ice_Material) == 0x001CE0, "Member 'ATakerPawn_C::Ice_Material' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Fire_Material) == 0x001CE8, "Member 'ATakerPawn_C::Fire_Material' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckMontageSection) == 0x001CF0, "Member 'ATakerPawn_C::SoulSuckMontageSection' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckCurrentMontageSection) == 0x001CF8, "Member 'ATakerPawn_C::SoulSuckCurrentMontageSection' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckGoalActorNormalizedHealth) == 0x001D00, "Member 'ATakerPawn_C::SoulSuckGoalActorNormalizedHealth' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SoulSuckGoalActor) == 0x001D08, "Member 'ATakerPawn_C::SoulSuckGoalActor' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Impact_MeleeSocket) == 0x001D10, "Member 'ATakerPawn_C::Impact_MeleeSocket' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ImpactParticles_Default) == 0x001D18, "Member 'ATakerPawn_C::ImpactParticles_Default' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ImpactParticles_Wood) == 0x001D20, "Member 'ATakerPawn_C::ImpactParticles_Wood' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ImpactParticles_Stone) == 0x001D28, "Member 'ATakerPawn_C::ImpactParticles_Stone' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ImpactParticles_Metal) == 0x001D30, "Member 'ATakerPawn_C::ImpactParticles_Metal' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ImpactParticles_HumanFlesh) == 0x001D38, "Member 'ATakerPawn_C::ImpactParticles_HumanFlesh' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, MeleeImpact_UseSocketTransforms) == 0x001D40, "Member 'ATakerPawn_C::MeleeImpact_UseSocketTransforms' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerSwoopLevitateLocation) == 0x001D44, "Member 'ATakerPawn_C::TakerSwoopLevitateLocation' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerSwoopLevitateNavigationError) == 0x001D50, "Member 'ATakerPawn_C::TakerSwoopLevitateNavigationError' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopAttackStrikeTime) == 0x001D54, "Member 'ATakerPawn_C::SwoopAttackStrikeTime' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopAttackMeleeRange) == 0x001D58, "Member 'ATakerPawn_C::SwoopAttackMeleeRange' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxXMin) == 0x001D5C, "Member 'ATakerPawn_C::SwoopOverlapBoxXMin' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxXMax) == 0x001D60, "Member 'ATakerPawn_C::SwoopOverlapBoxXMax' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxZMin) == 0x001D64, "Member 'ATakerPawn_C::SwoopOverlapBoxZMin' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxZMax) == 0x001D68, "Member 'ATakerPawn_C::SwoopOverlapBoxZMax' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerCapsuleDefaultCollisionProfileName) == 0x001D70, "Member 'ATakerPawn_C::TakerCapsuleDefaultCollisionProfileName' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerSoulSuckMontage) == 0x001D78, "Member 'ATakerPawn_C::TakerSoulSuckMontage' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerDefaultRotationRate) == 0x001D80, "Member 'ATakerPawn_C::TakerDefaultRotationRate' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerGoalActor) == 0x001D90, "Member 'ATakerPawn_C::TakerGoalActor' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerAirborneTraceLength) == 0x001D98, "Member 'ATakerPawn_C::TakerAirborneTraceLength' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, TakerAirborneThreshold) == 0x001D9C, "Member 'ATakerPawn_C::TakerAirborneThreshold' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Dynamic_Material_Instance) == 0x001DA0, "Member 'ATakerPawn_C::Dynamic_Material_Instance' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Death_Effects) == 0x001DA8, "Member 'ATakerPawn_C::Death_Effects' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, HQ_Death_Particle_System) == 0x001DB0, "Member 'ATakerPawn_C::HQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, HQ_DeathFX_SpawnRateScale) == 0x001DB8, "Member 'ATakerPawn_C::HQ_DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, LQ_Death_Particle_System) == 0x001DC0, "Member 'ATakerPawn_C::LQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_CylinderHeight) == 0x001DC8, "Member 'ATakerPawn_C::LQ_DeathFX_CylinderHeight' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_CylinderRadius) == 0x001DCC, "Member 'ATakerPawn_C::LQ_DeathFX_CylinderRadius' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_SpawnRateScale) == 0x001DD0, "Member 'ATakerPawn_C::LQ_DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Sleeping) == 0x001DD4, "Member 'ATakerPawn_C::Sleeping' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, SleepParticleSystemComp) == 0x001DD8, "Member 'ATakerPawn_C::SleepParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, PushDuration) == 0x001DE0, "Member 'ATakerPawn_C::PushDuration' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, PushYawAngle) == 0x001DE4, "Member 'ATakerPawn_C::PushYawAngle' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, PushVelocity) == 0x001DE8, "Member 'ATakerPawn_C::PushVelocity' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, PawnBumpedByTaker) == 0x001DF0, "Member 'ATakerPawn_C::PawnBumpedByTaker' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, IsEnraged) == 0x001DF8, "Member 'ATakerPawn_C::IsEnraged' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Dynamic_Material_Instance_Accessory_1) == 0x001E00, "Member 'ATakerPawn_C::Dynamic_Material_Instance_Accessory_1' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ShieldSkeletalMesh) == 0x001E08, "Member 'ATakerPawn_C::ShieldSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, ShieldArm) == 0x001E10, "Member 'ATakerPawn_C::ShieldArm' has a wrong offset!");
-static_assert(offsetof(ATakerPawn_C, Slow_Shackle_Scale) == 0x001E18, "Member 'ATakerPawn_C::Slow_Shackle_Scale' has a wrong offset!");
+static_assert(sizeof(ATakerPawn_C) == 0x001E60, "Wrong size on ATakerPawn_C");
+static_assert(offsetof(ATakerPawn_C, UberGraphFrame) == 0x001C10, "Member 'ATakerPawn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopOverlapBox) == 0x001C18, "Member 'ATakerPawn_C::SwoopOverlapBox' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TrailFX) == 0x001C20, "Member 'ATakerPawn_C::TrailFX' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckEffect) == 0x001C28, "Member 'ATakerPawn_C::SoulSuckEffect' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckSound) == 0x001C30, "Member 'ATakerPawn_C::SoulSuckSound' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, FortLOSComponent) == 0x001C38, "Member 'ATakerPawn_C::FortLOSComponent' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopSound) == 0x001C40, "Member 'ATakerPawn_C::SwoopSound' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3) == 0x001C48, "Member 'ATakerPawn_C::UpdateMaterialParamsTL__Direction_ACBEB39C44788E2791FE33B31AFE7FC3' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, UpdateMaterialParamsTL) == 0x001C50, "Member 'ATakerPawn_C::UpdateMaterialParamsTL' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2) == 0x001C58, "Member 'ATakerPawn_C::Timeline_0_ColorFadeOutTrack_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2) == 0x001C5C, "Member 'ATakerPawn_C::Timeline_0_FadeInTrack_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Timeline_0__Direction_E660A4034E5557BBA788399234042CF2) == 0x001C60, "Member 'ATakerPawn_C::Timeline_0__Direction_E660A4034E5557BBA788399234042CF2' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Timeline_0) == 0x001C68, "Member 'ATakerPawn_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, CanDoHitReact) == 0x001C70, "Member 'ATakerPawn_C::CanDoHitReact' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerEvadeInstigator) == 0x001C78, "Member 'ATakerPawn_C::TakerEvadeInstigator' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerController) == 0x001C80, "Member 'ATakerPawn_C::TakerController' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SpawnFeedbackEventName) == 0x001C88, "Member 'ATakerPawn_C::SpawnFeedbackEventName' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, KnockTakerAwaySound) == 0x001C90, "Member 'ATakerPawn_C::KnockTakerAwaySound' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckEffectActivated) == 0x001C98, "Member 'ATakerPawn_C::SoulSuckEffectActivated' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TC_TakerSoulSuckVulnerability) == 0x001CA0, "Member 'ATakerPawn_C::TC_TakerSoulSuckVulnerability' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TargetArray) == 0x001CC0, "Member 'ATakerPawn_C::TargetArray' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Temp_Disable_Elemental_Effects) == 0x001CD0, "Member 'ATakerPawn_C::Temp_Disable_Elemental_Effects' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ElementalType) == 0x001CD1, "Member 'ATakerPawn_C::ElementalType' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Default_Material) == 0x001CD8, "Member 'ATakerPawn_C::Default_Material' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Particle_Electrical_Ambient) == 0x001CE0, "Member 'ATakerPawn_C::Particle_Electrical_Ambient' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Particle_Ice_Ambient) == 0x001CE8, "Member 'ATakerPawn_C::Particle_Ice_Ambient' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Particle_Fire_Ambient) == 0x001CF0, "Member 'ATakerPawn_C::Particle_Fire_Ambient' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Electrical_Mat) == 0x001CF8, "Member 'ATakerPawn_C::Electrical_Mat' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Ice_Material) == 0x001D00, "Member 'ATakerPawn_C::Ice_Material' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Fire_Material) == 0x001D08, "Member 'ATakerPawn_C::Fire_Material' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckMontageSection) == 0x001D10, "Member 'ATakerPawn_C::SoulSuckMontageSection' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckCurrentMontageSection) == 0x001D18, "Member 'ATakerPawn_C::SoulSuckCurrentMontageSection' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckGoalActorNormalizedHealth) == 0x001D20, "Member 'ATakerPawn_C::SoulSuckGoalActorNormalizedHealth' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SoulSuckGoalActor) == 0x001D28, "Member 'ATakerPawn_C::SoulSuckGoalActor' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Impact_MeleeSocket) == 0x001D30, "Member 'ATakerPawn_C::Impact_MeleeSocket' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ImpactParticles_Default) == 0x001D38, "Member 'ATakerPawn_C::ImpactParticles_Default' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ImpactParticles_Wood) == 0x001D40, "Member 'ATakerPawn_C::ImpactParticles_Wood' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ImpactParticles_Stone) == 0x001D48, "Member 'ATakerPawn_C::ImpactParticles_Stone' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ImpactParticles_Metal) == 0x001D50, "Member 'ATakerPawn_C::ImpactParticles_Metal' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ImpactParticles_HumanFlesh) == 0x001D58, "Member 'ATakerPawn_C::ImpactParticles_HumanFlesh' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, MeleeImpact_UseSocketTransforms) == 0x001D60, "Member 'ATakerPawn_C::MeleeImpact_UseSocketTransforms' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerSwoopLevitateLocation) == 0x001D64, "Member 'ATakerPawn_C::TakerSwoopLevitateLocation' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerSwoopLevitateNavigationError) == 0x001D70, "Member 'ATakerPawn_C::TakerSwoopLevitateNavigationError' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopAttackStrikeTime) == 0x001D74, "Member 'ATakerPawn_C::SwoopAttackStrikeTime' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopAttackMeleeRange) == 0x001D78, "Member 'ATakerPawn_C::SwoopAttackMeleeRange' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxXMin) == 0x001D7C, "Member 'ATakerPawn_C::SwoopOverlapBoxXMin' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxXMax) == 0x001D80, "Member 'ATakerPawn_C::SwoopOverlapBoxXMax' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxZMin) == 0x001D84, "Member 'ATakerPawn_C::SwoopOverlapBoxZMin' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SwoopOverlapBoxZMax) == 0x001D88, "Member 'ATakerPawn_C::SwoopOverlapBoxZMax' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerCapsuleDefaultCollisionProfileName) == 0x001D90, "Member 'ATakerPawn_C::TakerCapsuleDefaultCollisionProfileName' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerSoulSuckMontage) == 0x001D98, "Member 'ATakerPawn_C::TakerSoulSuckMontage' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerDefaultRotationRate) == 0x001DA0, "Member 'ATakerPawn_C::TakerDefaultRotationRate' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerGoalActor) == 0x001DB0, "Member 'ATakerPawn_C::TakerGoalActor' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerAirborneTraceLength) == 0x001DB8, "Member 'ATakerPawn_C::TakerAirborneTraceLength' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, TakerAirborneThreshold) == 0x001DBC, "Member 'ATakerPawn_C::TakerAirborneThreshold' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Dynamic_Material_Instance) == 0x001DC0, "Member 'ATakerPawn_C::Dynamic_Material_Instance' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Death_Effects) == 0x001DC8, "Member 'ATakerPawn_C::Death_Effects' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, HQ_Death_Particle_System) == 0x001DD0, "Member 'ATakerPawn_C::HQ_Death_Particle_System' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, HQ_DeathFX_SpawnRateScale) == 0x001DD8, "Member 'ATakerPawn_C::HQ_DeathFX_SpawnRateScale' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, LQ_Death_Particle_System) == 0x001DE0, "Member 'ATakerPawn_C::LQ_Death_Particle_System' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_CylinderHeight) == 0x001DE8, "Member 'ATakerPawn_C::LQ_DeathFX_CylinderHeight' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_CylinderRadius) == 0x001DEC, "Member 'ATakerPawn_C::LQ_DeathFX_CylinderRadius' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, LQ_DeathFX_SpawnRateScale) == 0x001DF0, "Member 'ATakerPawn_C::LQ_DeathFX_SpawnRateScale' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Sleeping) == 0x001DF4, "Member 'ATakerPawn_C::Sleeping' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, SleepParticleSystemComp) == 0x001DF8, "Member 'ATakerPawn_C::SleepParticleSystemComp' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, PushDuration) == 0x001E00, "Member 'ATakerPawn_C::PushDuration' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, PushYawAngle) == 0x001E04, "Member 'ATakerPawn_C::PushYawAngle' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, PushVelocity) == 0x001E08, "Member 'ATakerPawn_C::PushVelocity' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, PawnBumpedByTaker) == 0x001E10, "Member 'ATakerPawn_C::PawnBumpedByTaker' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, IsEnraged) == 0x001E18, "Member 'ATakerPawn_C::IsEnraged' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Dynamic_Material_Instance_Accessory_1) == 0x001E20, "Member 'ATakerPawn_C::Dynamic_Material_Instance_Accessory_1' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ShieldSkeletalMesh) == 0x001E28, "Member 'ATakerPawn_C::ShieldSkeletalMesh' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, ShieldArm) == 0x001E30, "Member 'ATakerPawn_C::ShieldArm' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Slow_Shackle_Scale) == 0x001E38, "Member 'ATakerPawn_C::Slow_Shackle_Scale' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, Previous_MID) == 0x001E40, "Member 'ATakerPawn_C::Previous_MID' has a wrong offset!");
+static_assert(offsetof(ATakerPawn_C, DuplicateCharacterMesh) == 0x001E50, "Member 'ATakerPawn_C::DuplicateCharacterMesh' has a wrong offset!");
 
 }
 

@@ -186,9 +186,9 @@ void UObjectivesPage_C::ConfigureModifiersView(bool ShowModifiers)
 // Function ObjectivesPage.ObjectivesPage_C.MissionHasModifiers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_MissionHasModifiers                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    MissionHasModifiers_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UObjectivesPage_C::MissionHasModifiers(bool* Param_MissionHasModifiers)
+void UObjectivesPage_C::MissionHasModifiers(bool* MissionHasModifiers_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -199,8 +199,8 @@ void UObjectivesPage_C::MissionHasModifiers(bool* Param_MissionHasModifiers)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_MissionHasModifiers != nullptr)
-		*Param_MissionHasModifiers = Parms.Param_MissionHasModifiers;
+	if (MissionHasModifiers_0 != nullptr)
+		*MissionHasModifiers_0 = Parms.MissionHasModifiers_0;
 }
 
 }

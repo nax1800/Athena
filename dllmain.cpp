@@ -33,36 +33,8 @@ DWORD Initialize(LPVOID)
         FreeLibraryAndExitThread(GetModuleHandleA(0), 0);
     }
 
-    *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
-    Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
-
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
-
-    for (uintptr_t FuncToNull : vector{ 0xa767b0, 0xc22e90, 0xf1c000 })
-    {
-        uintptr_t func = Memory::GetAddress(FuncToNull);
-
-        DWORD dwProtection;
-        VirtualProtect((PVOID)func, 1, PAGE_EXECUTE_READWRITE, &dwProtection);
-
-        *(uint8_t*)func = 0xC3;
-
-        DWORD dwTemp;
-        VirtualProtect((PVOID)func, 1, dwProtection, &dwTemp);
-        Logging::Log(ELogEvent::Info, ELogType::Athena, "Nulled at 0x%.8x", FuncToNull);
-    }
-
-    auto ByteToPatch = (uint8_t*)(uint8_t*)(Memory::GetAddress(0x9eb786));
-    DWORD dwProtection;
-    VirtualProtect((PVOID)ByteToPatch, 1, PAGE_EXECUTE_READWRITE, &dwProtection);
-    *ByteToPatch = 0x85;
-    DWORD dwTemp;
-    VirtualProtect((PVOID)ByteToPatch, 1, dwProtection, &dwTemp);
-    Logging::Log(ELogEvent::Info, ELogType::Athena, "Patched Byte at 0x%.8x", ByteToPatch);
-
-    *(bool*)Memory::GetAddress(0x4a9ca14) = false;
-    Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsClient should now be false.");
 
 #ifdef LOG_PROCESSEVENT
     Memory::CreateHook(Memory::GetAddress(Offsets::ProcessEvent), hkProcessEvent, (void**)&oProcessEvent);

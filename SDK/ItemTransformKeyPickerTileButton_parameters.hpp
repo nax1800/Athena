@@ -18,44 +18,41 @@ namespace SDK::Params
 {
 
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.ExecuteUbergraph_ItemTransformKeyPickerTileButton
-// 0x0030 (0x0030 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldUseNewItemCards_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_Event_InData;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_Event_ListItemObject;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNullItem_Is_Null_Item;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ShouldUseNewItemCards_ReturnValue;        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue;            // 0x0014(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue;            // 0x0028(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton) == 0x000008, "Wrong alignment on ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton");
-static_assert(sizeof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton) == 0x000030, "Wrong size on ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton");
+static_assert(sizeof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton) == 0x000028, "Wrong size on ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton");
 static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, EntryPoint) == 0x000000, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000004, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, Temp_bool_Variable) == 0x000005, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, K2Node_Event_InData) == 0x000008, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::K2Node_Event_InData' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, K2Node_Event_OwningList) == 0x000010, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::K2Node_Event_OwningList' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, Temp_bool_Variable) == 0x000004, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, K2Node_Event_ListItemObject) == 0x000008, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::K2Node_Event_ListItemObject' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_IsNullItem_Is_Null_Item) == 0x000010, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_IsNullItem_Is_Null_Item' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000011, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_GetCardDimensions_ReturnValue) == 0x000014, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, K2Node_Select_Default) == 0x000020, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton, CallFunc_GetCardDimensions_ReturnValue) == 0x000028, "Member 'ItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
 
-// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.SetData
-// 0x0010 (0x0010 - 0x0000)
-struct ItemTransformKeyPickerTileButton_C_SetData final
+// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct ItemTransformKeyPickerTileButton_C_OnListItemObjectSet final
 {
 public:
-	class UObject*                                InData;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformKeyPickerTileButton_C_SetData) == 0x000008, "Wrong alignment on ItemTransformKeyPickerTileButton_C_SetData");
-static_assert(sizeof(ItemTransformKeyPickerTileButton_C_SetData) == 0x000010, "Wrong size on ItemTransformKeyPickerTileButton_C_SetData");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_SetData, InData) == 0x000000, "Member 'ItemTransformKeyPickerTileButton_C_SetData::InData' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_SetData, OwningList) == 0x000008, "Member 'ItemTransformKeyPickerTileButton_C_SetData::OwningList' has a wrong offset!");
+static_assert(alignof(ItemTransformKeyPickerTileButton_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on ItemTransformKeyPickerTileButton_C_OnListItemObjectSet");
+static_assert(sizeof(ItemTransformKeyPickerTileButton_C_OnListItemObjectSet) == 0x000008, "Wrong size on ItemTransformKeyPickerTileButton_C_OnListItemObjectSet");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'ItemTransformKeyPickerTileButton_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Update Bang State
 // 0x0068 (0x0068 - 0x0000)
@@ -95,14 +92,14 @@ struct ItemTransformKeyPickerTileButton_C_Get_Transform_Key final
 {
 public:
 	class UFortAccountItem*                       AsFort_Account_Item;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_GetData_ReturnValue;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_GetListItemObject_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAccountItem*                       K2Node_DynamicCast_AsFort_Account_Item;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key) == 0x000008, "Wrong alignment on ItemTransformKeyPickerTileButton_C_Get_Transform_Key");
 static_assert(sizeof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key) == 0x000020, "Wrong size on ItemTransformKeyPickerTileButton_C_Get_Transform_Key");
 static_assert(offsetof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key, AsFort_Account_Item) == 0x000000, "Member 'ItemTransformKeyPickerTileButton_C_Get_Transform_Key::AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key, CallFunc_GetData_ReturnValue) == 0x000008, "Member 'ItemTransformKeyPickerTileButton_C_Get_Transform_Key::CallFunc_GetData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key, CallFunc_GetListItemObject_ReturnValue) == 0x000008, "Member 'ItemTransformKeyPickerTileButton_C_Get_Transform_Key::CallFunc_GetListItemObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key, K2Node_DynamicCast_AsFort_Account_Item) == 0x000010, "Member 'ItemTransformKeyPickerTileButton_C_Get_Transform_Key::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyPickerTileButton_C_Get_Transform_Key, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemTransformKeyPickerTileButton_C_Get_Transform_Key::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 

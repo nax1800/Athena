@@ -10,31 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteUI_classes.hpp"
+#include "AthenaHUDSituationalFeedback_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaAerialFeedback.AthenaAerialFeedback_C
-// 0x0020 (0x0260 - 0x0240)
-class UAthenaAerialFeedback_C final : public UFortHUDElementWidget
+// 0x0010 (0x0258 - 0x0248)
+class UAthenaAerialFeedback_C final : public UAthenaHUDSituationalFeedback_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         Feedback;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       FeedbackText;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UKeybindWidget_C*                       KeybindWidget_0;                                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
+	struct FTimerHandle                           CheckGliderTimerHandle;                            // 0x0250(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaAerialFeedback(int32 EntryPoint);
-	void CustomEvent_2(EAthenaGamePhaseStep GamePhaseStep);
-	void CustomEvent_1();
-	void Construct();
+	void CheckFallingForGlider();
+	void HandleFallingStarted();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Construct();
+	void OnKeybindsChanged_Bind();
+	void GamePhaseStepChanged(EAthenaGamePhaseStep GamePhaseStep);
+	void OnLocalPlayerBeginSkydiving_Bind();
 	void Update();
+	bool CheckPawnForGliderDeploy();
 
 public:
 	static class UClass* StaticClass()
@@ -47,11 +50,9 @@ public:
 	}
 };
 static_assert(alignof(UAthenaAerialFeedback_C) == 0x000008, "Wrong alignment on UAthenaAerialFeedback_C");
-static_assert(sizeof(UAthenaAerialFeedback_C) == 0x000260, "Wrong size on UAthenaAerialFeedback_C");
-static_assert(offsetof(UAthenaAerialFeedback_C, UberGraphFrame) == 0x000240, "Member 'UAthenaAerialFeedback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, Feedback) == 0x000248, "Member 'UAthenaAerialFeedback_C::Feedback' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, FeedbackText) == 0x000250, "Member 'UAthenaAerialFeedback_C::FeedbackText' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, KeybindWidget_0) == 0x000258, "Member 'UAthenaAerialFeedback_C::KeybindWidget_0' has a wrong offset!");
+static_assert(sizeof(UAthenaAerialFeedback_C) == 0x000258, "Wrong size on UAthenaAerialFeedback_C");
+static_assert(offsetof(UAthenaAerialFeedback_C, UberGraphFrame) == 0x000248, "Member 'UAthenaAerialFeedback_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaAerialFeedback_C, CheckGliderTimerHandle) == 0x000250, "Member 'UAthenaAerialFeedback_C::CheckGliderTimerHandle' has a wrong offset!");
 
 }
 

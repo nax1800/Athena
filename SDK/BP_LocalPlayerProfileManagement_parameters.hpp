@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,12 +27,12 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue12;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue123;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0048(0x01F8)(HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalHomebaseRating_Rating;            // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,12 +44,12 @@ static_assert(sizeof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_Local
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, EntryPoint) == 0x000000, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button123) == 0x000018, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button12) == 0x000020, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button3) == 0x000018, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button2) == 0x000020, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button1) == 0x000028, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue12) == 0x000030, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, K2Node_ComponentBoundEvent_Button) == 0x000038, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue123) == 0x000040, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetContext_ReturnValue3) == 0x000040, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000048, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetUINavigationManager_ReturnValue) == 0x000240, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement, CallFunc_GetTotalHomebaseRating_Rating) == 0x000248, "Member 'BP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement::CallFunc_GetTotalHomebaseRating_Rating' has a wrong offset!");
@@ -101,7 +101,7 @@ static_assert(sizeof(BP_LocalPlayerProfileManagement_C_BndEvt__IconTextButton_0_
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'BP_LocalPlayerProfileManagement_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.OnWidgetActivated
-// 0x0088 (0x0088 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct BP_LocalPlayerProfileManagement_C_OnWidgetActivated final
 {
 public:
@@ -113,44 +113,54 @@ public:
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInLobby_ReturnValue;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue12;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0048(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_ArePartyFeaturesEnabled_ReturnValue;      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue2;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ArePartyFeaturesEnabled_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0058(0x0028)(HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumPlayersInLocalParty_ReturnValue;    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated) == 0x000008, "Wrong alignment on BP_LocalPlayerProfileManagement_C_OnWidgetActivated");
-static_assert(sizeof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated) == 0x000088, "Wrong size on BP_LocalPlayerProfileManagement_C_OnWidgetActivated");
+static_assert(sizeof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated) == 0x0000A0, "Wrong size on BP_LocalPlayerProfileManagement_C_OnWidgetActivated");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, Temp_byte_Variable) == 0x000000, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_IsInZone_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetContext_ReturnValue1) == 0x000018, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, Temp_byte_Variable1) == 0x000020, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_IsInLobby_ReturnValue) == 0x000021, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_IsInLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_BooleanOR_ReturnValue) == 0x000022, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, Temp_bool_Variable) == 0x000023, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000030, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetContext_ReturnValue12) == 0x000040, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetGameAccountId_ReturnValue) == 0x000048, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_ArePartyFeaturesEnabled_ReturnValue) == 0x000070, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_ArePartyFeaturesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_Not_PreBool_ReturnValue) == 0x000071, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_BooleanOR_ReturnValue1) == 0x000072, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetUINavigationManager_ReturnValue) == 0x000078, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_Select_Default) == 0x000081, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, Temp_bool_Variable) == 0x000022, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_ArePartyFeaturesEnabled_ReturnValue) == 0x000030, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_ArePartyFeaturesEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_Not_PreBool_ReturnValue) == 0x000040, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000048, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetGameAccountId_ReturnValue) == 0x000058, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetContext_ReturnValue3) == 0x000080, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x000088, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00008C, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_GetUINavigationManager_ReturnValue) == 0x000090, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_BooleanOR_ReturnValue) == 0x000098, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_IsValid_ReturnValue) == 0x000099, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_BooleanOR_ReturnValue1) == 0x00009A, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, CallFunc_BooleanOR_ReturnValue2) == 0x00009B, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerProfileManagement_C_OnWidgetActivated, K2Node_Select_Default) == 0x00009C, "Member 'BP_LocalPlayerProfileManagement_C_OnWidgetActivated::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.UpdateBannerIconAndColor
 // 0x0018 (0x0018 - 0x0000)

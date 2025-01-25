@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass LoginCamera_Blueprint.LoginCamera_Blueprint_C
-// 0x0020 (0x08D0 - 0x08B0)
+// 0x0020 (0x08A0 - 0x0880)
 class ALoginCamera_Blueprint_C final : public AFortCameraBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCameraComponent*                       LoginCamera_0;                                     // 0x08C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0880(0x0008)(Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCameraComponent*                       LoginCamera_0;                                     // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_LoginCamera_Blueprint(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(ALoginCamera_Blueprint_C) == 0x000010, "Wrong alignment on ALoginCamera_Blueprint_C");
-static_assert(sizeof(ALoginCamera_Blueprint_C) == 0x0008D0, "Wrong size on ALoginCamera_Blueprint_C");
-static_assert(offsetof(ALoginCamera_Blueprint_C, UberGraphFrame) == 0x0008B0, "Member 'ALoginCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALoginCamera_Blueprint_C, StaticMesh) == 0x0008B8, "Member 'ALoginCamera_Blueprint_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ALoginCamera_Blueprint_C, LoginCamera_0) == 0x0008C0, "Member 'ALoginCamera_Blueprint_C::LoginCamera_0' has a wrong offset!");
+static_assert(sizeof(ALoginCamera_Blueprint_C) == 0x0008A0, "Wrong size on ALoginCamera_Blueprint_C");
+static_assert(offsetof(ALoginCamera_Blueprint_C, UberGraphFrame) == 0x000880, "Member 'ALoginCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ALoginCamera_Blueprint_C, StaticMesh) == 0x000888, "Member 'ALoginCamera_Blueprint_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(ALoginCamera_Blueprint_C, LoginCamera_0) == 0x000890, "Member 'ALoginCamera_Blueprint_C::LoginCamera_0' has a wrong offset!");
 
 }
 

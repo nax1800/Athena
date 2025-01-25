@@ -57,6 +57,48 @@ void USkewButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function SkewButton.SkewButton_C.BP_OnClicked
+// (Event, Protected, BlueprintEvent)
+
+void USkewButton_C::BP_OnClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SkewButton.SkewButton_C.BP_OnHovered
+// (Event, Protected, BlueprintEvent)
+
+void USkewButton_C::BP_OnHovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnHovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SkewButton.SkewButton_C.BP_OnUnhovered
+// (Event, Protected, BlueprintEvent)
+
+void USkewButton_C::BP_OnUnhovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnUnhovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SkewButton.SkewButton_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -66,34 +108,6 @@ void USkewButton_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("SkewButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SkewButton.SkewButton_C.OnClicked
-// (Event, Protected, BlueprintEvent)
-
-void USkewButton_C::OnClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SkewButton.SkewButton_C.OnHovered
-// (Event, Protected, BlueprintEvent)
-
-void USkewButton_C::OnHovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -238,20 +252,6 @@ struct FEventReply USkewButton_C::OnTouchStarted(const struct FGeometry& MyGeome
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function SkewButton.SkewButton_C.OnUnhovered
-// (Event, Protected, BlueprintEvent)
-
-void USkewButton_C::OnUnhovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnUnhovered");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

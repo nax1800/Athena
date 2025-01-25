@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass BP_Auto_Shotgun_Drum_Side_Action.BP_Auto_Shotgun_Drum_Side_Action_C
-// 0x0100 (0x0478 - 0x0378)
+// 0x00F0 (0x0448 - 0x0358)
 class UBP_Auto_Shotgun_Drum_Side_Action_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7; // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04; // 0x03D0(0x0070)()
-	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C; // 0x0440(0x0038)()
+	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7; // 0x0368(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04; // 0x03A8(0x0068)()
+	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C; // 0x0410(0x0038)()
 
 public:
 	void ExecuteUbergraph_BP_Auto_Shotgun_Drum_Side_Action(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UBP_Auto_Shotgun_Drum_Side_Action_C) == 0x000008, "Wrong alignment on UBP_Auto_Shotgun_Drum_Side_Action_C");
-static_assert(sizeof(UBP_Auto_Shotgun_Drum_Side_Action_C) == 0x000478, "Wrong size on UBP_Auto_Shotgun_Drum_Side_Action_C");
-static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, UberGraphFrame) == 0x000380, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7) == 0x000388, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7' has a wrong offset!");
-static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04) == 0x0003D0, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04' has a wrong offset!");
-static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C) == 0x000440, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C' has a wrong offset!");
+static_assert(sizeof(UBP_Auto_Shotgun_Drum_Side_Action_C) == 0x000448, "Wrong size on UBP_Auto_Shotgun_Drum_Side_Action_C");
+static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, UberGraphFrame) == 0x000360, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7) == 0x000368, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_Root_7EA7D37645F443897F10498323E528F7' has a wrong offset!");
+static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04) == 0x0003A8, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_Slot_64A40914450FCFA8B6BB00AA8DAB6F04' has a wrong offset!");
+static_assert(offsetof(UBP_Auto_Shotgun_Drum_Side_Action_C, AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C) == 0x000410, "Member 'UBP_Auto_Shotgun_Drum_Side_Action_C::AnimGraphNode_LocalRefPose_9AFCD47E4FA0ED23378DEABB5751407C' has a wrong offset!");
 
 }
 

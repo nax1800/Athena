@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaveButton.LeaveButton_C
-// 0x0060 (0x0278 - 0x0218)
+// 0x0060 (0x0270 - 0x0210)
 class ULeaveButton_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      Leave;                                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   Update_Visibility;                                 // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UClass*                                 ButtonStyleOverride;                               // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 ControllerStyleOverride;                           // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseButtoneStyleOverride;                           // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          OverrideButtonText;                                // 0x0259(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_25A[0x6];                                      // 0x025A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ButtonTextOverride;                                // 0x0260(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      Leave;                                             // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0220(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   Update_Visibility;                                 // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UClass*                                 ButtonStyleOverride;                               // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ControllerStyleOverride;                           // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseButtoneStyleOverride;                           // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          OverrideButtonText;                                // 0x0251(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ButtonTextOverride;                                // 0x0258(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void OnClicked__DelegateSignature();
-	void Update_Visibility__DelegateSignature(bool Param_Visibility);
+	void Update_Visibility__DelegateSignature(bool Visibility_0);
 	void ExecuteUbergraph_LeaveButton(int32 EntryPoint);
 	void HandlePlayerStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo);
 	void PreConstruct(bool IsDesignTime);
@@ -54,8 +54,8 @@ public:
 	void IsConsideredInGame(bool* InGame);
 	void UpdateState();
 	void LeaveParty();
-	void HasUnsavedQuestProgress(bool* Param_HasUnsavedQuestProgress);
-	void GetButton(class UIconTextButton_C** Param_Leave);
+	void HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress_0);
+	void GetButton(class UIconTextButton_C** Leave_0);
 	void SetText(const class FText& TextOverride);
 	void Update_Style_State();
 	void IsInNeighborhood(bool* bIsInNeighborhood);
@@ -72,16 +72,16 @@ public:
 	}
 };
 static_assert(alignof(ULeaveButton_C) == 0x000008, "Wrong alignment on ULeaveButton_C");
-static_assert(sizeof(ULeaveButton_C) == 0x000278, "Wrong size on ULeaveButton_C");
-static_assert(offsetof(ULeaveButton_C, UberGraphFrame) == 0x000218, "Member 'ULeaveButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, Leave) == 0x000220, "Member 'ULeaveButton_C::Leave' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, OnClicked) == 0x000228, "Member 'ULeaveButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, Update_Visibility) == 0x000238, "Member 'ULeaveButton_C::Update_Visibility' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ButtonStyleOverride) == 0x000248, "Member 'ULeaveButton_C::ButtonStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ControllerStyleOverride) == 0x000250, "Member 'ULeaveButton_C::ControllerStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, UseButtoneStyleOverride) == 0x000258, "Member 'ULeaveButton_C::UseButtoneStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, OverrideButtonText) == 0x000259, "Member 'ULeaveButton_C::OverrideButtonText' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ButtonTextOverride) == 0x000260, "Member 'ULeaveButton_C::ButtonTextOverride' has a wrong offset!");
+static_assert(sizeof(ULeaveButton_C) == 0x000270, "Wrong size on ULeaveButton_C");
+static_assert(offsetof(ULeaveButton_C, UberGraphFrame) == 0x000210, "Member 'ULeaveButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, Leave) == 0x000218, "Member 'ULeaveButton_C::Leave' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, OnClicked) == 0x000220, "Member 'ULeaveButton_C::OnClicked' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, Update_Visibility) == 0x000230, "Member 'ULeaveButton_C::Update_Visibility' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, ButtonStyleOverride) == 0x000240, "Member 'ULeaveButton_C::ButtonStyleOverride' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, ControllerStyleOverride) == 0x000248, "Member 'ULeaveButton_C::ControllerStyleOverride' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, UseButtoneStyleOverride) == 0x000250, "Member 'ULeaveButton_C::UseButtoneStyleOverride' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, OverrideButtonText) == 0x000251, "Member 'ULeaveButton_C::OverrideButtonText' has a wrong offset!");
+static_assert(offsetof(ULeaveButton_C, ButtonTextOverride) == 0x000258, "Member 'ULeaveButton_C::ButtonTextOverride' has a wrong offset!");
 
 }
 

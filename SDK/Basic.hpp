@@ -31,11 +31,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x04BA7768;
-	constexpr int32 AppendString      = 0x013298E0;
-	constexpr int32 GNames            = 0x04B9E370;
-	constexpr int32 GWorld            = 0x04CA8F40;
-	constexpr int32 ProcessEvent      = 0x014C04C0;
+	constexpr int32 GObjects          = 0x04F8EEB8;
+	constexpr int32 AppendString      = 0x0167BCB0;
+	constexpr int32 GNames            = 0x05405C50;
+	constexpr int32 GWorld            = 0x0550B8C0;
+	constexpr int32 ProcessEvent      = 0x0182A7B0;
 	constexpr int32 ProcessEventIdx   = 0x00000040;
 }
 
@@ -84,7 +84,7 @@ class UClass;
 class UObject;
 class UFunction;
 
-struct FName;
+class FName;
 
 namespace BasicFilesImpleUtils
 {
@@ -189,6 +189,12 @@ static_assert(offsetof(FUObjectItem, Object) == 0x000000, "Member 'FUObjectItem:
 
 class TUObjectArray
 {
+public:
+	enum
+	{
+		ElementsPerChunk = 0x10400,
+	};
+
 private:
 	static inline auto DecryptPtr = [](void* ObjPtr) -> uint8*
 	{
@@ -196,27 +202,36 @@ private:
 	};
 
 public:
-	FUObjectItem* Objects;
+	FUObjectItem** Objects;
+	uint8 Pad_0[0x08];
 	int32 MaxElements;
 	int32 NumElements;
+	int32 MaxChunks;
+	int32 NumChunks;
 
 public:
-	inline int Num() const
+	inline int32 Num() const
 	{
 		return NumElements;
 	}
 
-	inline FUObjectItem* GetDecrytedObjPtr() const
+	inline FUObjectItem** GetDecrytedObjPtr() const
 	{
-		return reinterpret_cast<FUObjectItem*>(DecryptPtr(Objects));
+		return reinterpret_cast<FUObjectItem**>(DecryptPtr(Objects));
 	}
 
 	inline class UObject* GetByIndex(const int32 Index) const
 	{
-		if (Index < 0 || Index > NumElements)
-			return nullptr;
+		const int32 ChunkIndex = Index / ElementsPerChunk;
+		const int32 InChunkIdx = Index % ElementsPerChunk;
 
-		return GetDecrytedObjPtr()[Index].Object;
+		if (ChunkIndex >= NumChunks || Index >= NumElements)
+			return nullptr;
+	
+		FUObjectItem* ChunkPtr = GetDecrytedObjPtr()[ChunkIndex];
+		if (!ChunkPtr) return nullptr;
+
+		return ChunkPtr[InChunkIdx].Object;
 	}
 };
 
@@ -334,19 +349,6 @@ public:
 	bool operator!=(const FName& Other) const
 	{
 		return ComparisonIndex != Other.ComparisonIndex || Number != Other.Number;
-	}
-
-	bool operator<(const FName& Rhs) const
-	{
-		auto res = this->ComparisonIndex == Rhs.ComparisonIndex ?  Number < Rhs.Number : this->ComparisonIndex < Rhs.ComparisonIndex;
-		return res;
-
-		if (ComparisonIndex == Rhs.ComparisonIndex)
-		{
-			return (Number - Rhs.Number) < 0;
-		}
-
-		return ComparisonIndex < Rhs.ComparisonIndex;
 	}
 };
 static_assert(alignof(FName) == 0x000004, "Wrong alignment on FName");
@@ -623,12 +625,13 @@ class TScriptInterface final : public FScriptInterface
 };
 
 // Predefined struct TDelegate
-// 0x0000 (0x0000 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 template<typename FunctionSignature>
 class TDelegate
 {
 public:
 	struct InvalidUseOfTDelegate                  TemplateParamIsNotAFunctionSignature;              // 0x0000(0x0000)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 
 // Predefined struct TDelegate<Ret(Args...)>

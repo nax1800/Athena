@@ -65,26 +65,6 @@ void UAthenaSeasonLevelConfirmationScreen_C::Construct()
 }
 
 
-// Function AthenaSeasonLevelConfirmationScreen.AthenaSeasonLevelConfirmationScreen_C.BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_450_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_450_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_450_CommonButtonClicked__DelegateSignature");
-
-	Params::AthenaSeasonLevelConfirmationScreen_C_BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_450_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AthenaSeasonLevelConfirmationScreen.AthenaSeasonLevelConfirmationScreen_C.BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -98,26 +78,6 @@ void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__DecreasePurchaseTier_K2Node
 		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaSeasonLevelConfirmationScreen_C_BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSeasonLevelConfirmationScreen.AthenaSeasonLevelConfirmationScreen_C.BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_409_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_409_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_409_CommonButtonClicked__DelegateSignature");
-
-	Params::AthenaSeasonLevelConfirmationScreen_C_BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_409_CommonButtonClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 

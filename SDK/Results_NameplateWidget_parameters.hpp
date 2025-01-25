@@ -44,8 +44,8 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0068(0x0018)()
 };
 static_assert(alignof(Results_NameplateWidget_C_Initialize) == 0x000008, "Wrong alignment on Results_NameplateWidget_C_Initialize");
@@ -54,8 +54,8 @@ static_assert(offsetof(Results_NameplateWidget_C_Initialize, Result) == 0x000000
 static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_byte_Variable) == 0x000001, "Member 'Results_NameplateWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable) == 0x000008, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable1) == 0x000020, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable12) == 0x000038, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable123) == 0x000050, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable123' has a wrong offset!");
+static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable2) == 0x000038, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable3) == 0x000050, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable3' has a wrong offset!");
 static_assert(offsetof(Results_NameplateWidget_C_Initialize, K2Node_Select_Default) == 0x000068, "Member 'Results_NameplateWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.Outro

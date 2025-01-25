@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RefundConfirmationModal.RefundConfirmationModal_C
-// 0x0038 (0x0468 - 0x0430)
+// 0x0040 (0x0368 - 0x0328)
 class URefundConfirmationModal_C final : public UFortRefundConfirmation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
-	class UBackgroundBlur*                        BackgroundBlur_0;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         RefundPeriod;                                      // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RefundsPerPeriod;                                  // 0x0444(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RefundsRemaining;                                  // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ItemName;                                          // 0x0450(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CommonTextBlock_6;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_Name;                                         // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_RefundCount;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Text_YesDetails;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTicketCounter_C*                       TicketCounter;                                     // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UUserWidget*>                    TicketArray;                                       // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_RefundConfirmationModal(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
+	void SetRefundsRemainingText(int32 RefundsRemaining, int32 TotalRefunds);
 
 public:
 	static class UClass* StaticClass()
@@ -45,13 +45,14 @@ public:
 	}
 };
 static_assert(alignof(URefundConfirmationModal_C) == 0x000008, "Wrong alignment on URefundConfirmationModal_C");
-static_assert(sizeof(URefundConfirmationModal_C) == 0x000468, "Wrong size on URefundConfirmationModal_C");
-static_assert(offsetof(URefundConfirmationModal_C, UberGraphFrame) == 0x000430, "Member 'URefundConfirmationModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, BackgroundBlur_0) == 0x000438, "Member 'URefundConfirmationModal_C::BackgroundBlur_0' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, RefundPeriod) == 0x000440, "Member 'URefundConfirmationModal_C::RefundPeriod' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, RefundsPerPeriod) == 0x000444, "Member 'URefundConfirmationModal_C::RefundsPerPeriod' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, RefundsRemaining) == 0x000448, "Member 'URefundConfirmationModal_C::RefundsRemaining' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, ItemName) == 0x000450, "Member 'URefundConfirmationModal_C::ItemName' has a wrong offset!");
+static_assert(sizeof(URefundConfirmationModal_C) == 0x000368, "Wrong size on URefundConfirmationModal_C");
+static_assert(offsetof(URefundConfirmationModal_C, UberGraphFrame) == 0x000328, "Member 'URefundConfirmationModal_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, CommonTextBlock_6) == 0x000330, "Member 'URefundConfirmationModal_C::CommonTextBlock_6' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, Text_Name) == 0x000338, "Member 'URefundConfirmationModal_C::Text_Name' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, Text_RefundCount) == 0x000340, "Member 'URefundConfirmationModal_C::Text_RefundCount' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, Text_YesDetails) == 0x000348, "Member 'URefundConfirmationModal_C::Text_YesDetails' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, TicketCounter) == 0x000350, "Member 'URefundConfirmationModal_C::TicketCounter' has a wrong offset!");
+static_assert(offsetof(URefundConfirmationModal_C, TicketArray) == 0x000358, "Member 'URefundConfirmationModal_C::TicketArray' has a wrong offset!");
 
 }
 

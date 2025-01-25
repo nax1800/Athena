@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -157,11 +157,11 @@ public:
 	int32                                         CallFunc_GetChildIndex_ReturnValue1;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue12;                 // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue2;                  // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue123;                // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue3;                  // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsAchievedCountInRange_bIsInRange1;       // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -186,10 +186,10 @@ static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, K2Node_Dyn
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_Subtract_IntInt_ReturnValue1) == 0x00004C, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildIndex_ReturnValue1) == 0x000050, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildIndex_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000054, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue12) == 0x000058, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue2) == 0x000058, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_BooleanAND_ReturnValue) == 0x000060, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsValid_ReturnValue1) == 0x000061, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue123) == 0x000068, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue3) == 0x000068, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000070, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsAchievedCountInRange_bIsInRange1) == 0x000071, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsAchievedCountInRange_bIsInRange1' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_BooleanOR_ReturnValue) == 0x000072, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");

@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SpectatorPlayerSelectionUI.SpectatorPlayerSelectionUI_C
-// 0x05A8 (0x07B8 - 0x0210)
+// 0x05A8 (0x07B0 - 0x0208)
 class USpectatorPlayerSelectionUI_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UScrollBox*                             ScrollBox_151;                                     // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FButtonStyle                           ButtonStyle;                                       // 0x0220(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UButton*, class AFortPlayerState*> ButtonToPlayerStateMap;                            // 0x0498(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FButtonStyle                           FollowedButtonStyle;                               // 0x04E8(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class AFortPlayerState*, class UButton*> PlayerStateToButtonMap;                            // 0x0760(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	class UButton*                                FollowedPlayerButton;                              // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UScrollBox*                             ScrollBox_151;                                     // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FButtonStyle                           ButtonStyle;                                       // 0x0218(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UButton*, class AFortPlayerState*> ButtonToPlayerStateMap;                            // 0x0490(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FButtonStyle                           FollowedButtonStyle;                               // 0x04E0(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class AFortPlayerState*, class UButton*> PlayerStateToButtonMap;                            // 0x0758(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UButton*                                FollowedPlayerButton;                              // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SpectatorPlayerSelectionUI(int32 EntryPoint);
@@ -53,14 +53,14 @@ public:
 	}
 };
 static_assert(alignof(USpectatorPlayerSelectionUI_C) == 0x000008, "Wrong alignment on USpectatorPlayerSelectionUI_C");
-static_assert(sizeof(USpectatorPlayerSelectionUI_C) == 0x0007B8, "Wrong size on USpectatorPlayerSelectionUI_C");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, UberGraphFrame) == 0x000210, "Member 'USpectatorPlayerSelectionUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, ScrollBox_151) == 0x000218, "Member 'USpectatorPlayerSelectionUI_C::ScrollBox_151' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, ButtonStyle) == 0x000220, "Member 'USpectatorPlayerSelectionUI_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, ButtonToPlayerStateMap) == 0x000498, "Member 'USpectatorPlayerSelectionUI_C::ButtonToPlayerStateMap' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, FollowedButtonStyle) == 0x0004E8, "Member 'USpectatorPlayerSelectionUI_C::FollowedButtonStyle' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, PlayerStateToButtonMap) == 0x000760, "Member 'USpectatorPlayerSelectionUI_C::PlayerStateToButtonMap' has a wrong offset!");
-static_assert(offsetof(USpectatorPlayerSelectionUI_C, FollowedPlayerButton) == 0x0007B0, "Member 'USpectatorPlayerSelectionUI_C::FollowedPlayerButton' has a wrong offset!");
+static_assert(sizeof(USpectatorPlayerSelectionUI_C) == 0x0007B0, "Wrong size on USpectatorPlayerSelectionUI_C");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, UberGraphFrame) == 0x000208, "Member 'USpectatorPlayerSelectionUI_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, ScrollBox_151) == 0x000210, "Member 'USpectatorPlayerSelectionUI_C::ScrollBox_151' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, ButtonStyle) == 0x000218, "Member 'USpectatorPlayerSelectionUI_C::ButtonStyle' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, ButtonToPlayerStateMap) == 0x000490, "Member 'USpectatorPlayerSelectionUI_C::ButtonToPlayerStateMap' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, FollowedButtonStyle) == 0x0004E0, "Member 'USpectatorPlayerSelectionUI_C::FollowedButtonStyle' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, PlayerStateToButtonMap) == 0x000758, "Member 'USpectatorPlayerSelectionUI_C::PlayerStateToButtonMap' has a wrong offset!");
+static_assert(offsetof(USpectatorPlayerSelectionUI_C, FollowedPlayerButton) == 0x0007A8, "Member 'USpectatorPlayerSelectionUI_C::FollowedPlayerButton' has a wrong offset!");
 
 }
 

@@ -36,7 +36,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue12;                 // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GameplayTags_C_PerformConditionCheckAI) == 0x000008, "Wrong alignment on GameplayTags_C_PerformConditionCheckAI");
 static_assert(sizeof(GameplayTags_C_PerformConditionCheckAI) == 0x000048, "Wrong size on GameplayTags_C_PerformConditionCheckAI");
@@ -54,7 +54,7 @@ static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_GreaterE
 static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_BooleanAND_ReturnValue) == 0x000041, "Member 'GameplayTags_C_PerformConditionCheckAI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_BooleanAND_ReturnValue1) == 0x000042, "Member 'GameplayTags_C_PerformConditionCheckAI::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_Not_PreBool_ReturnValue) == 0x000043, "Member 'GameplayTags_C_PerformConditionCheckAI::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_BooleanAND_ReturnValue12) == 0x000044, "Member 'GameplayTags_C_PerformConditionCheckAI::CallFunc_BooleanAND_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GameplayTags_C_PerformConditionCheckAI, CallFunc_BooleanAND_ReturnValue2) == 0x000044, "Member 'GameplayTags_C_PerformConditionCheckAI::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 }
 

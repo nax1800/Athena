@@ -10,39 +10,41 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_SoundIndicator_01.B_SoundIndicator_01_C
-// 0x0280 (0x0690 - 0x0410)
+// 0x0300 (0x0720 - 0x0420)
 class AB_SoundIndicator_01_C final : public AFortSoundCameraLensEffect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
-	bool                                          Chest;                                             // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          FootSteps;                                         // 0x0419(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Gunshot;                                           // 0x041A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Generic;                                           // 0x041B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRuntimeFloatCurve                     Gunshot_Falloff_Long_Range;                        // 0x0420(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                     Chest_Falloff;                                     // 0x0498(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                     Footsteps_Falloff;                                 // 0x0510(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                     Gunshot_Falloff_Mid_Range;                         // 0x0588(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                     Gunshot_Falloff_Melee;                             // 0x0600(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         OppositeFacingGunshotStrength;                     // 0x0678(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FacingGunshotExponentNear;                         // 0x067C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ForwardFacingGunshotStrength;                      // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FacingGunshotExponentFar;                          // 0x0684(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DistanceDivisor;                                   // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	bool                                          Chest;                                             // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          FootstepsOrGlider;                                 // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Gunshot;                                           // 0x042A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Generic;                                           // 0x042B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     Gunshot_Falloff_Long_Range;                        // 0x0430(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                     Chest_Falloff;                                     // 0x04A8(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                     Footsteps_Falloff;                                 // 0x0520(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                     Gunshot_Falloff_Mid_Range;                         // 0x0598(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                     Gunshot_Falloff_Melee;                             // 0x0610(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         OppositeFacingGunshotStrength;                     // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FacingGunshotExponentNear;                         // 0x068C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ForwardFacingGunshotStrength;                      // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FacingGunshotExponentFar;                          // 0x0694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DistanceDivisor;                                   // 0x0698(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69C[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     Glider_Falloff;                                    // 0x06A0(0x0078)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void OnEffectActivated();
+	void ReceiveBeginPlay();
 	void UserConstructionScript();
 	void UpdateEmitterStates();
 	struct FRuntimeFloatCurve GetWeaponCurve();
@@ -59,22 +61,23 @@ public:
 	}
 };
 static_assert(alignof(AB_SoundIndicator_01_C) == 0x000010, "Wrong alignment on AB_SoundIndicator_01_C");
-static_assert(sizeof(AB_SoundIndicator_01_C) == 0x000690, "Wrong size on AB_SoundIndicator_01_C");
-static_assert(offsetof(AB_SoundIndicator_01_C, UberGraphFrame) == 0x000410, "Member 'AB_SoundIndicator_01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Chest) == 0x000418, "Member 'AB_SoundIndicator_01_C::Chest' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FootSteps) == 0x000419, "Member 'AB_SoundIndicator_01_C::FootSteps' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot) == 0x00041A, "Member 'AB_SoundIndicator_01_C::Gunshot' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Generic) == 0x00041B, "Member 'AB_SoundIndicator_01_C::Generic' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Long_Range) == 0x000420, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Long_Range' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Chest_Falloff) == 0x000498, "Member 'AB_SoundIndicator_01_C::Chest_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Footsteps_Falloff) == 0x000510, "Member 'AB_SoundIndicator_01_C::Footsteps_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Mid_Range) == 0x000588, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Mid_Range' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Melee) == 0x000600, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Melee' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, OppositeFacingGunshotStrength) == 0x000678, "Member 'AB_SoundIndicator_01_C::OppositeFacingGunshotStrength' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentNear) == 0x00067C, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentNear' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, ForwardFacingGunshotStrength) == 0x000680, "Member 'AB_SoundIndicator_01_C::ForwardFacingGunshotStrength' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentFar) == 0x000684, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentFar' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, DistanceDivisor) == 0x000688, "Member 'AB_SoundIndicator_01_C::DistanceDivisor' has a wrong offset!");
+static_assert(sizeof(AB_SoundIndicator_01_C) == 0x000720, "Wrong size on AB_SoundIndicator_01_C");
+static_assert(offsetof(AB_SoundIndicator_01_C, UberGraphFrame) == 0x000420, "Member 'AB_SoundIndicator_01_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Chest) == 0x000428, "Member 'AB_SoundIndicator_01_C::Chest' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, FootstepsOrGlider) == 0x000429, "Member 'AB_SoundIndicator_01_C::FootstepsOrGlider' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot) == 0x00042A, "Member 'AB_SoundIndicator_01_C::Gunshot' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Generic) == 0x00042B, "Member 'AB_SoundIndicator_01_C::Generic' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Long_Range) == 0x000430, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Long_Range' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Chest_Falloff) == 0x0004A8, "Member 'AB_SoundIndicator_01_C::Chest_Falloff' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Footsteps_Falloff) == 0x000520, "Member 'AB_SoundIndicator_01_C::Footsteps_Falloff' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Mid_Range) == 0x000598, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Mid_Range' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Melee) == 0x000610, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Melee' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, OppositeFacingGunshotStrength) == 0x000688, "Member 'AB_SoundIndicator_01_C::OppositeFacingGunshotStrength' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentNear) == 0x00068C, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentNear' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, ForwardFacingGunshotStrength) == 0x000690, "Member 'AB_SoundIndicator_01_C::ForwardFacingGunshotStrength' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentFar) == 0x000694, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentFar' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, DistanceDivisor) == 0x000698, "Member 'AB_SoundIndicator_01_C::DistanceDivisor' has a wrong offset!");
+static_assert(offsetof(AB_SoundIndicator_01_C, Glider_Falloff) == 0x0006A0, "Member 'AB_SoundIndicator_01_C::Glider_Falloff' has a wrong offset!");
 
 }
 

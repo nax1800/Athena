@@ -37,6 +37,20 @@ void UHeroSquadManagementScreen_C::ExecuteUbergraph_HeroSquadManagementScreen(in
 }
 
 
+// Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.OnBeginIntro
+// (Event, Public, BlueprintEvent)
+
+void UHeroSquadManagementScreen_C::OnBeginIntro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadManagementScreen_C", "OnBeginIntro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -297,6 +311,34 @@ void UHeroSquadManagementScreen_C::HandleShowSlotInfoAni()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("HeroSquadManagementScreen_C", "HandleShowSlotInfoAni");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.Intro
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroSquadManagementScreen_C::Intro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadManagementScreen_C", "Intro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.Intro Initial Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroSquadManagementScreen_C::Intro_Initial_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadManagementScreen_C", "Intro Initial Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

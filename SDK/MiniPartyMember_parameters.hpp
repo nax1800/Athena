@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,7 +26,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x0008(0x01F8)(HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -35,7 +35,7 @@ static_assert(alignof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x0
 static_assert(sizeof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x000220, "Wrong size on MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, EntryPoint) == 0x000000, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_Event_NewInfo) == 0x000008, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_Event_NewInfo' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_ComponentBoundEvent_Button12) == 0x000200, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_ComponentBoundEvent_Button2) == 0x000200, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_ComponentBoundEvent_Button1) == 0x000208, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_ComponentBoundEvent_Button) == 0x000210, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_Event_IsDesignTime) == 0x000218, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -147,29 +147,28 @@ static_assert(offsetof(MiniPartyMember_C_GetLeaderVisibility, CallFunc_BooleanAN
 static_assert(offsetof(MiniPartyMember_C_GetLeaderVisibility, K2Node_Select_Default) == 0x000006, "Member 'MiniPartyMember_C_GetLeaderVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.OpenPartyFinder
-// 0x0038 (0x0038 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct MiniPartyMember_C_OpenPartyFinder final
 {
 public:
-	bool                                          CallFunc_IsTencentBuild_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPartyFinder_C*                         K2Node_DynamicCast_AsParty_Finder;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPartyFinder_C*                         K2Node_DynamicCast_AsParty_Finder;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldShowExternalFriendsUI_ReturnValue;  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MiniPartyMember_C_OpenPartyFinder) == 0x000008, "Wrong alignment on MiniPartyMember_C_OpenPartyFinder");
-static_assert(sizeof(MiniPartyMember_C_OpenPartyFinder) == 0x000038, "Wrong size on MiniPartyMember_C_OpenPartyFinder");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_IsTencentBuild_ReturnValue) == 0x000000, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_IsTencentBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, K2Node_DynamicCast_AsParty_Finder) == 0x000018, "Member 'MiniPartyMember_C_OpenPartyFinder::K2Node_DynamicCast_AsParty_Finder' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'MiniPartyMember_C_OpenPartyFinder::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(sizeof(MiniPartyMember_C_OpenPartyFinder) == 0x000030, "Wrong size on MiniPartyMember_C_OpenPartyFinder");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetCachedWidget_ReturnValue) == 0x000008, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, K2Node_DynamicCast_AsParty_Finder) == 0x000010, "Member 'MiniPartyMember_C_OpenPartyFinder::K2Node_DynamicCast_AsParty_Finder' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MiniPartyMember_C_OpenPartyFinder::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_ShouldShowExternalFriendsUI_ReturnValue) == 0x000028, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_ShouldShowExternalFriendsUI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.HandleMouseHoverVisualState
 // 0x00A8 (0x00A8 - 0x0000)

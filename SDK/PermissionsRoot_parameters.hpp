@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -57,7 +57,7 @@ public:
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0120(0x0040)(HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerControllerOutpost*           K2Node_DynamicCast_AsFort_Player_Controller_Outpost; // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -65,10 +65,10 @@ public:
 	bool                                          CallFunc_IsOutpostOwner_ReturnValue;               // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0380(0x0018)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0398(0x0040)(HasGetValueTypeHash)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue123;                // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0398(0x0040)(HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo1; // 0x03E0(0x01F8)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x05D8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x05D8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0618(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0628(0x0018)()
 };
@@ -90,16 +90,16 @@ static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_Format_Ret
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue) == 0x000118, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData1) == 0x000120, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue12) == 0x000168, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue2) == 0x000168, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_DynamicCast_AsFort_Player_Controller_Outpost) == 0x000170, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_DynamicCast_AsFort_Player_Controller_Outpost' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_DynamicCast_bSuccess) == 0x000178, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000180, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_IsOutpostOwner_ReturnValue) == 0x000378, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_Select_Default) == 0x000380, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData12) == 0x000398, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue123) == 0x0003D8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData2) == 0x000398, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue3) == 0x0003D8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo1) == 0x0003E0, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo1' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData123) == 0x0005D8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
+static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData3) == 0x0005D8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeArray_Array1) == 0x000618, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeArray_Array1' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_Format_ReturnValue1) == 0x000628, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_Format_ReturnValue1' has a wrong offset!");
 

@@ -93,26 +93,6 @@ void AStorePinataMaster_BP_C::SpawnCandy()
 }
 
 
-// Function StorePinataMaster_BP.StorePinataMaster_BP_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AStorePinataMaster_BP_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_BP_C", "ReceiveTick");
-
-	Params::StorePinataMaster_BP_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.Stop-SwingingEyeAnim
 // (BlueprintCallable, BlueprintEvent)
 
@@ -138,6 +118,26 @@ void AStorePinataMaster_BP_C::StopMinusDropEyeAnim()
 		Func = Class->GetFunction("StorePinataMaster_BP_C", "Stop-DropEyeAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StorePinataMaster_BP.StorePinataMaster_BP_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AStorePinataMaster_BP_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StorePinataMaster_BP_C", "ReceiveTick");
+
+	Params::StorePinataMaster_BP_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -487,34 +487,6 @@ void AStorePinataMaster_BP_C::TLMinusDropEyeAnim__FinishedFunc()
 }
 
 
-// Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__UpdateFunc
-// (BlueprintEvent)
-
-void AStorePinataMaster_BP_C::TLMinusEquipWeapon__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_BP_C", "TL-EquipWeapon__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__FinishedFunc
-// (BlueprintEvent)
-
-void AStorePinataMaster_BP_C::TLMinusEquipWeapon__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_BP_C", "TL-EquipWeapon__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-PupilContracts__UpdateFunc
 // (BlueprintEvent)
 
@@ -566,6 +538,34 @@ void AStorePinataMaster_BP_C::TLMinusSuspiciousEyes__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("StorePinataMaster_BP_C", "TL-SuspiciousEyes__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__UpdateFunc
+// (BlueprintEvent)
+
+void AStorePinataMaster_BP_C::TLMinusEquipWeapon__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StorePinataMaster_BP_C", "TL-EquipWeapon__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__FinishedFunc
+// (BlueprintEvent)
+
+void AStorePinataMaster_BP_C::TLMinusEquipWeapon__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StorePinataMaster_BP_C", "TL-EquipWeapon__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

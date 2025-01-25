@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "FortniteUI_structs.hpp"
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -54,8 +54,8 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId12;  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex12; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,8 +81,8 @@ static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, C
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex1) == 0x000018, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex1' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x00001D, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId12) == 0x000020, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId12' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex12) == 0x000028, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex12' has a wrong offset!");
+static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2) == 0x000020, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2' has a wrong offset!");
+static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2) == 0x000028, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_BooleanOR_ReturnValue) == 0x00002C, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, Temp_byte_Variable) == 0x00002D, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, Temp_byte_Variable1) == 0x00002E, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::Temp_byte_Variable1' has a wrong offset!");

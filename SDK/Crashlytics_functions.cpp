@@ -228,9 +228,9 @@ void UCrashlyticsBlueprintLibrary::SetUserIdentifier(const class FString& ID)
 // Function Crashlytics.CrashlyticsBlueprintLibrary.SetUserName
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Param_Name                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCrashlyticsBlueprintLibrary::SetUserName(const class FString& Param_Name)
+void UCrashlyticsBlueprintLibrary::SetUserName(const class FString& Name_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -239,7 +239,7 @@ void UCrashlyticsBlueprintLibrary::SetUserName(const class FString& Param_Name)
 
 	Params::CrashlyticsBlueprintLibrary_SetUserName Parms{};
 
-	Parms.Param_Name = std::move(Param_Name);
+	Parms.Name_0 = std::move(Name_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

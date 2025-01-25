@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_DirectCreatureDamage_DamageObjectives.GE_DirectCreatureDamage_DamageObjectives_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGE_DirectCreatureDamage_DamageObjectives_C final : public UGET_DirectCreatureDamage_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_DirectCreatureDamage_DamageObjectives_C>();
 	}
 };
-static_assert(alignof(UGE_DirectCreatureDamage_DamageObjectives_C) == 0x000010, "Wrong alignment on UGE_DirectCreatureDamage_DamageObjectives_C");
-static_assert(sizeof(UGE_DirectCreatureDamage_DamageObjectives_C) == 0x000670, "Wrong size on UGE_DirectCreatureDamage_DamageObjectives_C");
+static_assert(alignof(UGE_DirectCreatureDamage_DamageObjectives_C) == 0x000008, "Wrong alignment on UGE_DirectCreatureDamage_DamageObjectives_C");
+static_assert(sizeof(UGE_DirectCreatureDamage_DamageObjectives_C) == 0x000638, "Wrong size on UGE_DirectCreatureDamage_DamageObjectives_C");
 
 }
 

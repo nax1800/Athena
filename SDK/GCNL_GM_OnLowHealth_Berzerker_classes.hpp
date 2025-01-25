@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_classes.hpp"
 
 
@@ -17,11 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNL_GM_OnLowHealth_Berzerker.GCNL_GM_OnLowHealth_Berzerker_C
-// 0x0010 (0x0450 - 0x0440)
+// 0x0068 (0x0488 - 0x0420)
 class AGCNL_GM_OnLowHealth_Berzerker_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	class UParticleSystemComponent*               BodyMistFX;                                        // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_Husk_Berzerker_Activate_01;                      // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_Husk_Berzerker_Bodysmoke_01;                     // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               BodyMistFX;                                        // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, struct FLinearColor>        Berserker_Map;                                     // 0x0438(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void UserConstructionScript();
@@ -38,9 +42,12 @@ public:
 		return GetDefaultObjImpl<AGCNL_GM_OnLowHealth_Berzerker_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_OnLowHealth_Berzerker_C) == 0x000010, "Wrong alignment on AGCNL_GM_OnLowHealth_Berzerker_C");
-static_assert(sizeof(AGCNL_GM_OnLowHealth_Berzerker_C) == 0x000450, "Wrong size on AGCNL_GM_OnLowHealth_Berzerker_C");
-static_assert(offsetof(AGCNL_GM_OnLowHealth_Berzerker_C, BodyMistFX) == 0x000440, "Member 'AGCNL_GM_OnLowHealth_Berzerker_C::BodyMistFX' has a wrong offset!");
+static_assert(alignof(AGCNL_GM_OnLowHealth_Berzerker_C) == 0x000008, "Wrong alignment on AGCNL_GM_OnLowHealth_Berzerker_C");
+static_assert(sizeof(AGCNL_GM_OnLowHealth_Berzerker_C) == 0x000488, "Wrong size on AGCNL_GM_OnLowHealth_Berzerker_C");
+static_assert(offsetof(AGCNL_GM_OnLowHealth_Berzerker_C, P_Husk_Berzerker_Activate_01) == 0x000420, "Member 'AGCNL_GM_OnLowHealth_Berzerker_C::P_Husk_Berzerker_Activate_01' has a wrong offset!");
+static_assert(offsetof(AGCNL_GM_OnLowHealth_Berzerker_C, P_Husk_Berzerker_Bodysmoke_01) == 0x000428, "Member 'AGCNL_GM_OnLowHealth_Berzerker_C::P_Husk_Berzerker_Bodysmoke_01' has a wrong offset!");
+static_assert(offsetof(AGCNL_GM_OnLowHealth_Berzerker_C, BodyMistFX) == 0x000430, "Member 'AGCNL_GM_OnLowHealth_Berzerker_C::BodyMistFX' has a wrong offset!");
+static_assert(offsetof(AGCNL_GM_OnLowHealth_Berzerker_C, Berserker_Map) == 0x000438, "Member 'AGCNL_GM_OnLowHealth_Berzerker_C::Berserker_Map' has a wrong offset!");
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -55,37 +55,37 @@ public:
 	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent;            // 0x01D8(0x0098)(ConstParm)
 	bool                                          CallFunc_HasAllTags_ReturnValue;                   // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  K2Node_HandleMissionEvent_InMissionGuid12;         // 0x0274(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  K2Node_HandleMissionEvent_InMissionGuid2;          // 0x0274(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle12;       // 0x0288(0x0020)()
-	class UFortMissionEventParams*                K2Node_HandleMissionEvent_Params12;                // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW12; // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle2;        // 0x0288(0x0020)()
+	class UFortMissionEventParams*                K2Node_HandleMissionEvent_Params2;                 // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2; // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_HandleMissionEvent_EventFocus12;            // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UDataAsset*                       K2Node_HandleMissionEvent_EventContent12;          // 0x02C0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_HandleMissionEvent_EventInstigator12;       // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_HandleMissionEvent_GenericInt12;            // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_HandleMissionEvent_GenericFloat12;          // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_HandleMissionEvent_GenericText12;           // 0x02D8(0x0018)(ConstParm)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags12;          // 0x02F0(0x0020)()
-	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent12;          // 0x0310(0x0098)(ConstParm)
+	class UObject*                                K2Node_HandleMissionEvent_EventFocus2;             // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UDataAsset*                       K2Node_HandleMissionEvent_EventContent2;           // 0x02C0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_HandleMissionEvent_EventInstigator2;        // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_HandleMissionEvent_GenericInt2;             // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_HandleMissionEvent_GenericFloat2;           // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_HandleMissionEvent_GenericText2;            // 0x02D8(0x0018)(ConstParm)
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags2;           // 0x02F0(0x0020)()
+	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent2;           // 0x0310(0x0098)(ConstParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_CustomEvent_DamagedActor12;                 // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_Damage12;                       // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_DamagedActor2;                  // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_Damage2;                        // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            K2Node_CustomEvent_InstigatedBy12;                 // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_DamageCauser12;                 // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_HitLocation12;                  // 0x03D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            K2Node_CustomEvent_InstigatedBy2;                  // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_DamageCauser2;                  // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_HitLocation2;                   // 0x03D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_CustomEvent_FHitComponent12;                // 0x03E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_BoneName12;                     // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Momentum12;                     // 0x03F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_CustomEvent_FHitComponent2;                 // 0x03E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_BoneName2;                      // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Momentum2;                      // 0x03F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0410(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0410(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class AAIController*                          K2Node_DynamicCast_AsAIController;                 // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -94,7 +94,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHuskPawn_Mimic_C*                      K2Node_DynamicCast_AsHusk_Pawn_Mimic;              // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_449[0x7];                                      // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_DamagedActor1;                  // 0x0450(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Damage1;                        // 0x0458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,7 +110,7 @@ public:
 	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortBluGloManager*                     CallFunc_GetBluGloManager_ReturnValue;             // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABluGloManager_C*                       K2Node_DynamicCast_AsBlu_Glo_Manager;              // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4C1[0x3];                                      // 0x04C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue1;              // 0x04C4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -127,7 +127,7 @@ public:
 	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0524(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_525[0x3];                                      // 0x0525(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue12;             // 0x0530(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue2;              // 0x0530(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission) == 0x000008, "Wrong alignment on Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission");
@@ -159,27 +159,27 @@ static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_Ha
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GameplayTags) == 0x0001B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GameplayTags' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_MissionEvent) == 0x0001D8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_MissionEvent' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_HasAllTags_ReturnValue) == 0x000270, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_HasAllTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_InMissionGuid12) == 0x000274, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_InMissionGuid12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_ObjectiveHandle12) == 0x000288, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_ObjectiveHandle12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_Params12) == 0x0002A8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_Params12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW12) == 0x0002B0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventFocus12) == 0x0002B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventFocus12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventContent12) == 0x0002C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventContent12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventInstigator12) == 0x0002C8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventInstigator12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericInt12) == 0x0002D0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericInt12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericFloat12) == 0x0002D4, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericFloat12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericText12) == 0x0002D8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericText12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GameplayTags12) == 0x0002F0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GameplayTags12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_MissionEvent12) == 0x000310, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_MissionEvent12' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_InMissionGuid2) == 0x000274, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_InMissionGuid2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_ObjectiveHandle2) == 0x000288, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_ObjectiveHandle2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_Params2) == 0x0002A8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_Params2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2) == 0x0002B0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventFocus2) == 0x0002B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventFocus2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventContent2) == 0x0002C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventContent2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_EventInstigator2) == 0x0002C8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_EventInstigator2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericInt2) == 0x0002D0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericInt2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericFloat2) == 0x0002D4, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericFloat2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GenericText2) == 0x0002D8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GenericText2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_GameplayTags2) == 0x0002F0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_GameplayTags2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_HandleMissionEvent_MissionEvent2) == 0x000310, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_HandleMissionEvent_MissionEvent2' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_IsValid_ReturnValue) == 0x0003A8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamagedActor12) == 0x0003B0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamagedActor12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Damage12) == 0x0003B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Damage12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_InstigatedBy12) == 0x0003C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_InstigatedBy12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamageCauser12) == 0x0003C8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamageCauser12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_HitLocation12) == 0x0003D0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_HitLocation12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_FHitComponent12) == 0x0003E0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_FHitComponent12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_BoneName12) == 0x0003E8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_BoneName12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Momentum12) == 0x0003F0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Momentum12' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamagedActor2) == 0x0003B0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamagedActor2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Damage2) == 0x0003B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Damage2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_InstigatedBy2) == 0x0003C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_InstigatedBy2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamageCauser2) == 0x0003C8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamageCauser2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_HitLocation2) == 0x0003D0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_HitLocation2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_FHitComponent2) == 0x0003E0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_FHitComponent2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_BoneName2) == 0x0003E8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_BoneName2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Momentum2) == 0x0003F0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Momentum2' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000400, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_bSuccess) == 0x000408, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_K2_SetTimer_ReturnValue) == 0x000410, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
@@ -189,7 +189,7 @@ static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_Cu
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_SpawnedEnemy) == 0x000430, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_SpawnedEnemy' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000438, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_AsHusk_Pawn_Mimic) == 0x000440, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_AsHusk_Pawn_Mimic' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_bSuccess12) == 0x000448, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_bSuccess2) == 0x000448, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamagedActor1) == 0x000450, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamagedActor1' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Damage1) == 0x000458, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Damage1' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_InstigatedBy1) == 0x000460, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_InstigatedBy1' has a wrong offset!");
@@ -201,7 +201,7 @@ static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_Cu
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_GetMissionGuid_ReturnValue) == 0x00049C, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_GetMissionGuid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_GetBluGloManager_ReturnValue) == 0x0004B0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_GetBluGloManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_AsBlu_Glo_Manager) == 0x0004B8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_AsBlu_Glo_Manager' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_bSuccess123) == 0x0004C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_DynamicCast_bSuccess3) == 0x0004C0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_GetMissionGuid_ReturnValue1) == 0x0004C4, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_GetMissionGuid_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DamagedActor) == 0x0004D8, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DamagedActor' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Damage) == 0x0004E0, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Damage' has a wrong offset!");
@@ -213,7 +213,7 @@ static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_Cu
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_Momentum) == 0x000518, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_Momentum' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_EqualEqual_GuidGuid_ReturnValue) == 0x000524, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_EqualEqual_GuidGuid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, K2Node_CustomEvent_DestroyedActor) == 0x000528, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_GetMissionGuid_ReturnValue12) == 0x000530, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_GetMissionGuid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_GetMissionGuid_ReturnValue2) == 0x000530, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_GetMissionGuid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000540, "Member 'Mimic_Mission_C_ExecuteUbergraph_Mimic_Mission::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 
 // Function Mimic_Mission.Mimic_Mission_C.Event_OnMimicDestroyed
@@ -286,12 +286,12 @@ static_assert(offsetof(Mimic_Mission_C_OnInteractingPlayerDied_Event, Momentum) 
 struct Mimic_Mission_C_OnEncounterEnemySpawned final
 {
 public:
-	class UFortAIEncounterInfo*                   Param_Encounter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAIEncounterInfo*                   Encounter_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortAIPawn*                            SpawnedEnemy;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Mimic_Mission_C_OnEncounterEnemySpawned) == 0x000008, "Wrong alignment on Mimic_Mission_C_OnEncounterEnemySpawned");
 static_assert(sizeof(Mimic_Mission_C_OnEncounterEnemySpawned) == 0x000010, "Wrong size on Mimic_Mission_C_OnEncounterEnemySpawned");
-static_assert(offsetof(Mimic_Mission_C_OnEncounterEnemySpawned, Param_Encounter) == 0x000000, "Member 'Mimic_Mission_C_OnEncounterEnemySpawned::Param_Encounter' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnEncounterEnemySpawned, Encounter_0) == 0x000000, "Member 'Mimic_Mission_C_OnEncounterEnemySpawned::Encounter_0' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_OnEncounterEnemySpawned, SpawnedEnemy) == 0x000008, "Member 'Mimic_Mission_C_OnEncounterEnemySpawned::SpawnedEnemy' has a wrong offset!");
 
 // Function Mimic_Mission.Mimic_Mission_C.OnMimicDied_Event
@@ -516,20 +516,23 @@ static_assert(offsetof(Mimic_Mission_C_TryGiveRewards, CallFunc_Less_IntInt_Retu
 struct Mimic_Mission_C_InitializeMimicChest final
 {
 public:
-	class AMimic_Chest_C*                         Param_MimicChest;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMimic_Chest_C*                         MimicChest_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWakeOnDamage;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue;               // 0x0024(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue;               // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Mimic_Mission_C_InitializeMimicChest) == 0x000008, "Wrong alignment on Mimic_Mission_C_InitializeMimicChest");
 static_assert(sizeof(Mimic_Mission_C_InitializeMimicChest) == 0x000038, "Wrong size on Mimic_Mission_C_InitializeMimicChest");
-static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, Param_MimicChest) == 0x000000, "Member 'Mimic_Mission_C_InitializeMimicChest::Param_MimicChest' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, MimicChest_0) == 0x000000, "Member 'Mimic_Mission_C_InitializeMimicChest::MimicChest_0' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, bWakeOnDamage) == 0x000008, "Member 'Mimic_Mission_C_InitializeMimicChest::bWakeOnDamage' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Mimic_Mission_C_InitializeMimicChest::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'Mimic_Mission_C_InitializeMimicChest::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, CallFunc_GetMissionGuid_ReturnValue) == 0x000024, "Member 'Mimic_Mission_C_InitializeMimicChest::CallFunc_GetMissionGuid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, CallFunc_MakeLiteralByte_ReturnValue) == 0x000020, "Member 'Mimic_Mission_C_InitializeMimicChest::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000024, "Member 'Mimic_Mission_C_InitializeMimicChest::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_InitializeMimicChest, CallFunc_GetMissionGuid_ReturnValue) == 0x000028, "Member 'Mimic_Mission_C_InitializeMimicChest::CallFunc_GetMissionGuid_ReturnValue' has a wrong offset!");
 
 // Function Mimic_Mission.Mimic_Mission_C.HideFoundMimicText
 // 0x0010 (0x0010 - 0x0000)
@@ -551,7 +554,7 @@ struct Mimic_Mission_C_OnChestInteract final
 public:
 	TDelegate<void(class UFortAIEncounterInfo* Encounter, class AFortAIPawn* SpawnedEnemy)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<EFortEncounterDirection>               K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class AMimic_Chest_C*>                 K2Node_MakeArray_Array1;                           // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class AActor*>                         K2Node_MakeArray_Array1;                           // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortEncounterSettings                 K2Node_MakeStruct_FortEncounterSettings;           // 0x0038(0x0058)()
@@ -567,51 +570,55 @@ static_assert(offsetof(Mimic_Mission_C_OnChestInteract, K2Node_MakeStruct_FortEn
 static_assert(offsetof(Mimic_Mission_C_OnChestInteract, CallFunc_StartMissionAIEncounterFromGeneratedProfile_ReturnValue) == 0x000090, "Member 'Mimic_Mission_C_OnChestInteract::CallFunc_StartMissionAIEncounterFromGeneratedProfile_ReturnValue' has a wrong offset!");
 
 // Function Mimic_Mission.Mimic_Mission_C.OnMimicSpawned
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct Mimic_Mission_C_OnMimicSpawned final
 {
 public:
-	class AHuskPawn_Mimic_C*                      Param_MimicPawn;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHuskPawn_Mimic_C*                      MimicPawn_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x005C(0x000C)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0074(0x000C)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue;               // 0x0084(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RegisterForMissionEvents_ReturnValue;     // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue1;              // 0x0098(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue12;             // 0x00A8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue1;         // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0048(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0068(0x000C)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0080(0x000C)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue;               // 0x0090(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RegisterForMissionEvents_ReturnValue;     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue1;              // 0x00A4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetMissionGuid_ReturnValue2;              // 0x00B4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Mimic_Mission_C_OnMimicSpawned) == 0x000008, "Wrong alignment on Mimic_Mission_C_OnMimicSpawned");
-static_assert(sizeof(Mimic_Mission_C_OnMimicSpawned) == 0x0000C0, "Wrong size on Mimic_Mission_C_OnMimicSpawned");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, Param_MimicPawn) == 0x000000, "Member 'Mimic_Mission_C_OnMimicSpawned::Param_MimicPawn' has a wrong offset!");
+static_assert(sizeof(Mimic_Mission_C_OnMimicSpawned) == 0x0000C8, "Wrong size on Mimic_Mission_C_OnMimicSpawned");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, MimicPawn_0) == 0x000000, "Member 'Mimic_Mission_C_OnMimicSpawned::MimicPawn_0' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Mimic_Mission_C_OnMimicSpawned::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'Mimic_Mission_C_OnMimicSpawned::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, K2Node_CreateDelegate_OutputDelegate12) == 0x000028, "Member 'Mimic_Mission_C_OnMimicSpawned::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000038, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x000044, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000050, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_MakeRotFromX_ReturnValue) == 0x00005C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Roll) == 0x000068, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Pitch) == 0x00006C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Yaw) == 0x000070, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_MakeRotator_ReturnValue) == 0x000074, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000080, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue) == 0x000084, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_RegisterForMissionEvents_ReturnValue) == 0x000094, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_RegisterForMissionEvents_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue1) == 0x000098, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue12) == 0x0000A8, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000B8, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_MakeLiteralByte_ReturnValue) == 0x000028, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00002C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000030, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_GetActorLocation_ReturnValue1) == 0x00003C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_GetActorLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000048, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, K2Node_CreateDelegate_OutputDelegate2) == 0x000058, "Member 'Mimic_Mission_C_OnMimicSpawned::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_MakeRotFromX_ReturnValue) == 0x000068, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Roll) == 0x000074, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Pitch) == 0x000078, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_BreakRotator_Yaw) == 0x00007C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_MakeRotator_ReturnValue) == 0x000080, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_K2_SetActorRotation_ReturnValue) == 0x00008C, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue) == 0x000090, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_RegisterForMissionEvents_ReturnValue) == 0x0000A0, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_RegisterForMissionEvents_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue1) == 0x0000A4, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Mimic_Mission_C_OnMimicSpawned, CallFunc_GetMissionGuid_ReturnValue2) == 0x0000B4, "Member 'Mimic_Mission_C_OnMimicSpawned::CallFunc_GetMissionGuid_ReturnValue2' has a wrong offset!");
 
 }
 

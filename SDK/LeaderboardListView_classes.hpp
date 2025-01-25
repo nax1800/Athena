@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaderboardListView.LeaderboardListView_C
-// 0x0008 (0x0220 - 0x0218)
+// 0x0008 (0x0218 - 0x0210)
 class ULeaderboardListView_C final : public UCommonUserWidget
 {
 public:
-	class UCommonListView*                        List;                                              // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonListView*                        List;                                              // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void FocusListView();
@@ -37,8 +37,8 @@ public:
 	}
 };
 static_assert(alignof(ULeaderboardListView_C) == 0x000008, "Wrong alignment on ULeaderboardListView_C");
-static_assert(sizeof(ULeaderboardListView_C) == 0x000220, "Wrong size on ULeaderboardListView_C");
-static_assert(offsetof(ULeaderboardListView_C, List) == 0x000218, "Member 'ULeaderboardListView_C::List' has a wrong offset!");
+static_assert(sizeof(ULeaderboardListView_C) == 0x000218, "Wrong size on ULeaderboardListView_C");
+static_assert(offsetof(ULeaderboardListView_C, List) == 0x000210, "Member 'ULeaderboardListView_C::List' has a wrong offset!");
 
 }
 

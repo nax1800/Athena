@@ -20,10 +20,9 @@ namespace SDK
 // Function AthenaReplayBrowserRenameDialog.AthenaReplayBrowserRenameDialog_C.OnConfirmRename__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAthenaReplayBrowserRowProxyInstance*BrowserRowProxy                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             NewName                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UAthenaReplayBrowserRenameDialog_C::OnConfirmRename__DelegateSignature(class UAthenaReplayBrowserRowProxyInstance* BrowserRowProxy, const class FText& NewName)
+void UAthenaReplayBrowserRenameDialog_C::OnConfirmRename__DelegateSignature(const class FText& NewName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +31,6 @@ void UAthenaReplayBrowserRenameDialog_C::OnConfirmRename__DelegateSignature(clas
 
 	Params::AthenaReplayBrowserRenameDialog_C_OnConfirmRename__DelegateSignature Parms{};
 
-	Parms.BrowserRowProxy = BrowserRowProxy;
 	Parms.NewName = std::move(NewName);
 
 	UObject::ProcessEvent(Func, &Parms);

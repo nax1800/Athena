@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function GA_Trap_WallElectric.GA_Trap_WallElectric_C.ExecuteUbergraph_GA_Trap_WallElectric
-// 0x0138 (0x0138 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric final
 {
 public:
@@ -46,18 +46,18 @@ public:
 	int32                                         CallFunc_GetAbilityLevel_ReturnValue;              // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate1;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x00D0(0x0018)()
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwningActorFromActorInfo_ReturnValue1; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABuildingTrap*                          K2Node_DynamicCast_AsBuilding_Trap1;               // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData1;                    // 0x0108(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag1;                // 0x0128(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x00D0(0x0010)()
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x00E0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwningActorFromActorInfo_ReturnValue1; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingTrap*                          K2Node_DynamicCast_AsBuilding_Trap1;               // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData1;                    // 0x0100(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag1;                // 0x0120(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric) == 0x000008, "Wrong alignment on GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric");
-static_assert(sizeof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric) == 0x000138, "Wrong size on GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric");
+static_assert(sizeof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric) == 0x000130, "Wrong size on GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric");
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, EntryPoint) == 0x000000, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, Temp_struct_Variable) == 0x000018, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::Temp_struct_Variable' has a wrong offset!");
@@ -78,13 +78,13 @@ static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElect
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000BC, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CreateDelegate_OutputDelegate1) == 0x0000C0, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x0000D0, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x0000E8, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_GetOwningActorFromActorInfo_ReturnValue1) == 0x0000F0, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_GetOwningActorFromActorInfo_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_DynamicCast_AsBuilding_Trap1) == 0x0000F8, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_DynamicCast_AsBuilding_Trap1' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_DynamicCast_bSuccess1) == 0x000100, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CustomEvent_TargetData1) == 0x000108, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CustomEvent_TargetData1' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CustomEvent_ApplicationTag1) == 0x000128, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CustomEvent_ApplicationTag1' has a wrong offset!");
-static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_K2_CommitAbility_ReturnValue) == 0x000130, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x0000E0, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_GetOwningActorFromActorInfo_ReturnValue1) == 0x0000E8, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_GetOwningActorFromActorInfo_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_DynamicCast_AsBuilding_Trap1) == 0x0000F0, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_DynamicCast_AsBuilding_Trap1' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_DynamicCast_bSuccess1) == 0x0000F8, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CustomEvent_TargetData1) == 0x000100, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CustomEvent_TargetData1' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, K2Node_CustomEvent_ApplicationTag1) == 0x000120, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::K2Node_CustomEvent_ApplicationTag1' has a wrong offset!");
+static_assert(offsetof(GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric, CallFunc_K2_CommitAbility_ReturnValue) == 0x000128, "Member 'GA_Trap_WallElectric_C_ExecuteUbergraph_GA_Trap_WallElectric::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
 
 // Function GA_Trap_WallElectric.GA_Trap_WallElectric_C.Cancelled_CEF58A2B40484B3CF27922840D6C4E82
 // 0x0028 (0x0028 - 0x0000)

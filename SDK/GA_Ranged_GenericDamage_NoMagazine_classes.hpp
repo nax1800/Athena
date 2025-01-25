@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Ranged_GenericDamage_NoMagazine.GA_Ranged_GenericDamage_NoMagazine_C
-// 0x0000 (0x0B38 - 0x0B38)
+// 0x0000 (0x0938 - 0x0938)
 class UGA_Ranged_GenericDamage_NoMagazine_C final : public UGA_Ranged_GenericDamage_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGA_Ranged_GenericDamage_NoMagazine_C) == 0x000008, "Wrong alignment on UGA_Ranged_GenericDamage_NoMagazine_C");
-static_assert(sizeof(UGA_Ranged_GenericDamage_NoMagazine_C) == 0x000B38, "Wrong size on UGA_Ranged_GenericDamage_NoMagazine_C");
+static_assert(sizeof(UGA_Ranged_GenericDamage_NoMagazine_C) == 0x000938, "Wrong size on UGA_Ranged_GenericDamage_NoMagazine_C");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TwitchNotification.TwitchNotification_C
-// 0x0000 (0x00A8 - 0x00A8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTwitchNotification_C final : public UFortUIFriendNotification
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(UTwitchNotification_C) == 0x000008, "Wrong alignment on UTwitchNotification_C");
-static_assert(sizeof(UTwitchNotification_C) == 0x0000A8, "Wrong size on UTwitchNotification_C");
+static_assert(sizeof(UTwitchNotification_C) == 0x0000D0, "Wrong size on UTwitchNotification_C");
 
 }
 

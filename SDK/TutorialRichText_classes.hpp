@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialRichText.TutorialRichText_C
-// 0x0028 (0x0240 - 0x0218)
+// 0x0028 (0x0238 - 0x0210)
 class UTutorialRichText_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UFortRichTextBlock*                     FortRichTextBlock_0;                               // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Text;                                              // 0x0228(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UFortRichTextBlock*                     FortRichTextBlock_0;                               // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Text;                                              // 0x0220(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void Construct();
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UTutorialRichText_C) == 0x000008, "Wrong alignment on UTutorialRichText_C");
-static_assert(sizeof(UTutorialRichText_C) == 0x000240, "Wrong size on UTutorialRichText_C");
-static_assert(offsetof(UTutorialRichText_C, UberGraphFrame) == 0x000218, "Member 'UTutorialRichText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialRichText_C, FortRichTextBlock_0) == 0x000220, "Member 'UTutorialRichText_C::FortRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UTutorialRichText_C, Text) == 0x000228, "Member 'UTutorialRichText_C::Text' has a wrong offset!");
+static_assert(sizeof(UTutorialRichText_C) == 0x000238, "Wrong size on UTutorialRichText_C");
+static_assert(offsetof(UTutorialRichText_C, UberGraphFrame) == 0x000210, "Member 'UTutorialRichText_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTutorialRichText_C, FortRichTextBlock_0) == 0x000218, "Member 'UTutorialRichText_C::FortRichTextBlock_0' has a wrong offset!");
+static_assert(offsetof(UTutorialRichText_C, Text) == 0x000220, "Member 'UTutorialRichText_C::Text' has a wrong offset!");
 
 }
 

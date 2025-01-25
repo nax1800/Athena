@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -19,28 +19,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C
-// 0x0088 (0x02A0 - 0x0218)
+// 0x0088 (0x0298 - 0x0210)
 class UZoneDayCompletion_ScoreBlock_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UCommonNumericTextBlock*                NumericTextScore;                                  // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxRoot;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         CurrentValue;                                      // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   IntroComplete;                                     // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         NextValue;                                         // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   IncrementComplete;                                 // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	EFortUIScoreType                              ScoreType;                                         // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OutroComplete;                                     // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          OverfillActive;                                    // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        AC_ScoreCountLoop;                                 // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SoundCue_ScoreCountStart;                          // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SoundCue_ScoreCountLoop;                           // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SoundCue_ScoreCountEnd;                            // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UCommonNumericTextBlock*                NumericTextScore;                                  // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxRoot;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         CurrentValue;                                      // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   IntroComplete;                                     // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                         NextValue;                                         // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   IncrementComplete;                                 // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	EFortUIScoreType                              ScoreType;                                         // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OutroComplete;                                     // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          OverfillActive;                                    // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        AC_ScoreCountLoop;                                 // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SoundCue_ScoreCountStart;                          // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SoundCue_ScoreCountLoop;                           // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SoundCue_ScoreCountEnd;                            // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void IntroComplete__DelegateSignature();
@@ -69,21 +69,21 @@ public:
 	}
 };
 static_assert(alignof(UZoneDayCompletion_ScoreBlock_C) == 0x000008, "Wrong alignment on UZoneDayCompletion_ScoreBlock_C");
-static_assert(sizeof(UZoneDayCompletion_ScoreBlock_C) == 0x0002A0, "Wrong size on UZoneDayCompletion_ScoreBlock_C");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, UberGraphFrame) == 0x000218, "Member 'UZoneDayCompletion_ScoreBlock_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NumericTextScore) == 0x000220, "Member 'UZoneDayCompletion_ScoreBlock_C::NumericTextScore' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SizeBoxRoot) == 0x000228, "Member 'UZoneDayCompletion_ScoreBlock_C::SizeBoxRoot' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, CurrentValue) == 0x000230, "Member 'UZoneDayCompletion_ScoreBlock_C::CurrentValue' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IntroComplete) == 0x000238, "Member 'UZoneDayCompletion_ScoreBlock_C::IntroComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NextValue) == 0x000248, "Member 'UZoneDayCompletion_ScoreBlock_C::NextValue' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IncrementComplete) == 0x000250, "Member 'UZoneDayCompletion_ScoreBlock_C::IncrementComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, ScoreType) == 0x000260, "Member 'UZoneDayCompletion_ScoreBlock_C::ScoreType' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OutroComplete) == 0x000268, "Member 'UZoneDayCompletion_ScoreBlock_C::OutroComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OverfillActive) == 0x000278, "Member 'UZoneDayCompletion_ScoreBlock_C::OverfillActive' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, AC_ScoreCountLoop) == 0x000280, "Member 'UZoneDayCompletion_ScoreBlock_C::AC_ScoreCountLoop' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountStart) == 0x000288, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountStart' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountLoop) == 0x000290, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountLoop' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountEnd) == 0x000298, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountEnd' has a wrong offset!");
+static_assert(sizeof(UZoneDayCompletion_ScoreBlock_C) == 0x000298, "Wrong size on UZoneDayCompletion_ScoreBlock_C");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, UberGraphFrame) == 0x000210, "Member 'UZoneDayCompletion_ScoreBlock_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NumericTextScore) == 0x000218, "Member 'UZoneDayCompletion_ScoreBlock_C::NumericTextScore' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SizeBoxRoot) == 0x000220, "Member 'UZoneDayCompletion_ScoreBlock_C::SizeBoxRoot' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, CurrentValue) == 0x000228, "Member 'UZoneDayCompletion_ScoreBlock_C::CurrentValue' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IntroComplete) == 0x000230, "Member 'UZoneDayCompletion_ScoreBlock_C::IntroComplete' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NextValue) == 0x000240, "Member 'UZoneDayCompletion_ScoreBlock_C::NextValue' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IncrementComplete) == 0x000248, "Member 'UZoneDayCompletion_ScoreBlock_C::IncrementComplete' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, ScoreType) == 0x000258, "Member 'UZoneDayCompletion_ScoreBlock_C::ScoreType' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OutroComplete) == 0x000260, "Member 'UZoneDayCompletion_ScoreBlock_C::OutroComplete' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OverfillActive) == 0x000270, "Member 'UZoneDayCompletion_ScoreBlock_C::OverfillActive' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, AC_ScoreCountLoop) == 0x000278, "Member 'UZoneDayCompletion_ScoreBlock_C::AC_ScoreCountLoop' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountStart) == 0x000280, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountStart' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountLoop) == 0x000288, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountLoop' has a wrong offset!");
+static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountEnd) == 0x000290, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountEnd' has a wrong offset!");
 
 }
 

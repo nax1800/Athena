@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CCTeamStatsGameplayEffect.CCTeamStatsGameplayEffect_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UCCTeamStatsGameplayEffect_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCCTeamStatsGameplayEffect_C>();
 	}
 };
-static_assert(alignof(UCCTeamStatsGameplayEffect_C) == 0x000010, "Wrong alignment on UCCTeamStatsGameplayEffect_C");
-static_assert(sizeof(UCCTeamStatsGameplayEffect_C) == 0x000670, "Wrong size on UCCTeamStatsGameplayEffect_C");
+static_assert(alignof(UCCTeamStatsGameplayEffect_C) == 0x000008, "Wrong alignment on UCCTeamStatsGameplayEffect_C");
+static_assert(sizeof(UCCTeamStatsGameplayEffect_C) == 0x000638, "Wrong size on UCCTeamStatsGameplayEffect_C");
 
 }
 

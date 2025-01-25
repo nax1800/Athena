@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FeedbackAnnouncer.FeedbackAnnouncer_C
-// 0x0000 (0x0FD0 - 0x0FD0)
+// 0x0000 (0x1010 - 0x1010)
 class AFeedbackAnnouncer_C final : public AFortPawn_FeedbackAnnouncer
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AFeedbackAnnouncer_C) == 0x000010, "Wrong alignment on AFeedbackAnnouncer_C");
-static_assert(sizeof(AFeedbackAnnouncer_C) == 0x000FD0, "Wrong size on AFeedbackAnnouncer_C");
+static_assert(sizeof(AFeedbackAnnouncer_C) == 0x001010, "Wrong size on AFeedbackAnnouncer_C");
 
 }
 

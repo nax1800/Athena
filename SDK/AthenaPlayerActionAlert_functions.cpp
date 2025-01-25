@@ -37,26 +37,6 @@ void UAthenaPlayerActionAlert_C::ExecuteUbergraph_AthenaPlayerActionAlert(int32 
 }
 
 
-// Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// class UWidgetAnimation*                 Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaPlayerActionAlert_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPlayerActionAlert_C", "OnAnimationFinished");
-
-	Params::AthenaPlayerActionAlert_C_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.AlertPlayer
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -74,6 +54,26 @@ void UAthenaPlayerActionAlert_C::AlertPlayer(EAthenaPlayerActionAlert Alert, con
 
 	Parms.Alert = Alert;
 	Parms.DetailText = std::move(DetailText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// class UWidgetAnimation*                 Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaPlayerActionAlert_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaPlayerActionAlert_C", "OnAnimationFinished");
+
+	Params::AthenaPlayerActionAlert_C_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

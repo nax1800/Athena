@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -20,27 +20,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_Hunting.GAB_Hunting_C
-// 0x0078 (0x0B60 - 0x0AE8)
+// 0x0070 (0x0968 - 0x08F8)
 class UGAB_Hunting_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UEnvQuery*                              EQS_Hunting_Query;                                 // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EQS_Grid_Half_Size;                                // 0x0B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EQS_Density;                                       // 0x0B04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   HuntingMoveTaskName;                               // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortAIController*                      MyFortAIController;                                // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 HuntingTarget;                                     // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LastTimeStartedHunting;                            // 0x0B20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HuntingRestartDelta;                               // 0x0B24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAbilityTask_MoveAI*                MovementTask;                                      // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 GoalDistancesOnCompleteMove;                       // 0x0B30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FVector>                        PawnPositionsOnCompletedMove;                      // 0x0B40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	bool                                          ShouldAbortHunting;                                // 0x0B50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B51[0x3];                                      // 0x0B51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinGoalDistChange;                                 // 0x0B54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinPawnDistChange;                                 // 0x0B58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UEnvQuery*                              EQS_Hunting_Query;                                 // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EQS_Grid_Half_Size;                                // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EQS_Density;                                       // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HuntingMoveTaskName;                               // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortAIController*                      MyFortAIController;                                // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 HuntingTarget;                                     // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LastTimeStartedHunting;                            // 0x0928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HuntingRestartDelta;                               // 0x092C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAbilityTask_MoveAI*                MovementTask;                                      // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 GoalDistancesOnCompleteMove;                       // 0x0938(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FVector>                        PawnPositionsOnCompletedMove;                      // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	bool                                          ShouldAbortHunting;                                // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_959[0x3];                                      // 0x0959(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinGoalDistChange;                                 // 0x095C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinPawnDistChange;                                 // 0x0960(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_Hunting(int32 EntryPoint);
@@ -70,22 +69,22 @@ public:
 	}
 };
 static_assert(alignof(UGAB_Hunting_C) == 0x000008, "Wrong alignment on UGAB_Hunting_C");
-static_assert(sizeof(UGAB_Hunting_C) == 0x000B60, "Wrong size on UGAB_Hunting_C");
-static_assert(offsetof(UGAB_Hunting_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_Hunting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Hunting_Query) == 0x000AF8, "Member 'UGAB_Hunting_C::EQS_Hunting_Query' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Grid_Half_Size) == 0x000B00, "Member 'UGAB_Hunting_C::EQS_Grid_Half_Size' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Density) == 0x000B04, "Member 'UGAB_Hunting_C::EQS_Density' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingMoveTaskName) == 0x000B08, "Member 'UGAB_Hunting_C::HuntingMoveTaskName' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MyFortAIController) == 0x000B10, "Member 'UGAB_Hunting_C::MyFortAIController' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingTarget) == 0x000B18, "Member 'UGAB_Hunting_C::HuntingTarget' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, LastTimeStartedHunting) == 0x000B20, "Member 'UGAB_Hunting_C::LastTimeStartedHunting' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingRestartDelta) == 0x000B24, "Member 'UGAB_Hunting_C::HuntingRestartDelta' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MovementTask) == 0x000B28, "Member 'UGAB_Hunting_C::MovementTask' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, GoalDistancesOnCompleteMove) == 0x000B30, "Member 'UGAB_Hunting_C::GoalDistancesOnCompleteMove' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, PawnPositionsOnCompletedMove) == 0x000B40, "Member 'UGAB_Hunting_C::PawnPositionsOnCompletedMove' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, ShouldAbortHunting) == 0x000B50, "Member 'UGAB_Hunting_C::ShouldAbortHunting' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MinGoalDistChange) == 0x000B54, "Member 'UGAB_Hunting_C::MinGoalDistChange' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MinPawnDistChange) == 0x000B58, "Member 'UGAB_Hunting_C::MinPawnDistChange' has a wrong offset!");
+static_assert(sizeof(UGAB_Hunting_C) == 0x000968, "Wrong size on UGAB_Hunting_C");
+static_assert(offsetof(UGAB_Hunting_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_Hunting_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, EQS_Hunting_Query) == 0x000900, "Member 'UGAB_Hunting_C::EQS_Hunting_Query' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, EQS_Grid_Half_Size) == 0x000908, "Member 'UGAB_Hunting_C::EQS_Grid_Half_Size' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, EQS_Density) == 0x00090C, "Member 'UGAB_Hunting_C::EQS_Density' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, HuntingMoveTaskName) == 0x000910, "Member 'UGAB_Hunting_C::HuntingMoveTaskName' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, MyFortAIController) == 0x000918, "Member 'UGAB_Hunting_C::MyFortAIController' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, HuntingTarget) == 0x000920, "Member 'UGAB_Hunting_C::HuntingTarget' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, LastTimeStartedHunting) == 0x000928, "Member 'UGAB_Hunting_C::LastTimeStartedHunting' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, HuntingRestartDelta) == 0x00092C, "Member 'UGAB_Hunting_C::HuntingRestartDelta' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, MovementTask) == 0x000930, "Member 'UGAB_Hunting_C::MovementTask' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, GoalDistancesOnCompleteMove) == 0x000938, "Member 'UGAB_Hunting_C::GoalDistancesOnCompleteMove' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, PawnPositionsOnCompletedMove) == 0x000948, "Member 'UGAB_Hunting_C::PawnPositionsOnCompletedMove' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, ShouldAbortHunting) == 0x000958, "Member 'UGAB_Hunting_C::ShouldAbortHunting' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, MinGoalDistChange) == 0x00095C, "Member 'UGAB_Hunting_C::MinGoalDistChange' has a wrong offset!");
+static_assert(offsetof(UGAB_Hunting_C, MinPawnDistChange) == 0x000960, "Member 'UGAB_Hunting_C::MinPawnDistChange' has a wrong offset!");
 
 }
 

@@ -37,6 +37,28 @@ void UPurchaseHistoryEntry_C::ExecuteUbergraph_PurchaseHistoryEntry(int32 EntryP
 }
 
 
+// Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.SetPurchaseText
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// class FText                             PurchaseText                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bHasBeenRefunded                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UPurchaseHistoryEntry_C::SetPurchaseText(const class FText& PurchaseText, bool bHasBeenRefunded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "SetPurchaseText");
+
+	Params::PurchaseHistoryEntry_C_SetPurchaseText Parms{};
+
+	Parms.PurchaseText = std::move(PurchaseText);
+	Parms.bHasBeenRefunded = bHasBeenRefunded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -72,28 +94,6 @@ void UPurchaseHistoryEntry_C::DisableAppearance(bool IsDisabled)
 	Params::PurchaseHistoryEntry_C_DisableAppearance Parms{};
 
 	Parms.IsDisabled = IsDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.SetPurchaseText
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// class FText                             PurchaseText                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    bHasBeenRefunded                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UPurchaseHistoryEntry_C::SetPurchaseText(const class FText& PurchaseText, bool bHasBeenRefunded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseHistoryEntry_C", "SetPurchaseText");
-
-	Params::PurchaseHistoryEntry_C_SetPurchaseText Parms{};
-
-	Parms.PurchaseText = std::move(PurchaseText);
-	Parms.bHasBeenRefunded = bHasBeenRefunded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

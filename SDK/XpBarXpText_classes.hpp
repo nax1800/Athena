@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBarXpText.XpBarXpText_C
-// 0x0038 (0x0248 - 0x0210)
+// 0x0038 (0x0240 - 0x0208)
 class UXpBarXpText_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CurrentXP;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItemIcon*                          FortItemIcon_51;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UXpBar_C*                               XpBar;                                             // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       XPneeded;                                          // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       XpNeededEnd;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Xp_Bar_Material;                                   // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CurrentXP;                                         // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItemIcon*                          FortItemIcon_51;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UXpBar_C*                               XpBar;                                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       XPneeded;                                          // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       XpNeededEnd;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Xp_Bar_Material;                                   // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_XpBarXpText(int32 EntryPoint);
@@ -48,14 +48,14 @@ public:
 	}
 };
 static_assert(alignof(UXpBarXpText_C) == 0x000008, "Wrong alignment on UXpBarXpText_C");
-static_assert(sizeof(UXpBarXpText_C) == 0x000248, "Wrong size on UXpBarXpText_C");
-static_assert(offsetof(UXpBarXpText_C, UberGraphFrame) == 0x000210, "Member 'UXpBarXpText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, CurrentXP) == 0x000218, "Member 'UXpBarXpText_C::CurrentXP' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, FortItemIcon_51) == 0x000220, "Member 'UXpBarXpText_C::FortItemIcon_51' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XpBar) == 0x000228, "Member 'UXpBarXpText_C::XpBar' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XPneeded) == 0x000230, "Member 'UXpBarXpText_C::XPneeded' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XpNeededEnd) == 0x000238, "Member 'UXpBarXpText_C::XpNeededEnd' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, Xp_Bar_Material) == 0x000240, "Member 'UXpBarXpText_C::Xp_Bar_Material' has a wrong offset!");
+static_assert(sizeof(UXpBarXpText_C) == 0x000240, "Wrong size on UXpBarXpText_C");
+static_assert(offsetof(UXpBarXpText_C, UberGraphFrame) == 0x000208, "Member 'UXpBarXpText_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, CurrentXP) == 0x000210, "Member 'UXpBarXpText_C::CurrentXP' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, FortItemIcon_51) == 0x000218, "Member 'UXpBarXpText_C::FortItemIcon_51' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, XpBar) == 0x000220, "Member 'UXpBarXpText_C::XpBar' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, XPneeded) == 0x000228, "Member 'UXpBarXpText_C::XPneeded' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, XpNeededEnd) == 0x000230, "Member 'UXpBarXpText_C::XpNeededEnd' has a wrong offset!");
+static_assert(offsetof(UXpBarXpText_C, Xp_Bar_Material) == 0x000238, "Member 'UXpBarXpText_C::Xp_Bar_Material' has a wrong offset!");
 
 }
 

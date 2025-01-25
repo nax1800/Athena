@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBonusToolTip.XpBonusToolTip_C
-// 0x0018 (0x0230 - 0x0218)
+// 0x0018 (0x0228 - 0x0210)
 class UXpBonusToolTip_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         HBoxBoost;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HBoxDaily;                                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalBox*                         HBoxBoost;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HBoxDaily;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_XpBonusToolTip(int32 EntryPoint);
@@ -42,10 +42,10 @@ public:
 	}
 };
 static_assert(alignof(UXpBonusToolTip_C) == 0x000008, "Wrong alignment on UXpBonusToolTip_C");
-static_assert(sizeof(UXpBonusToolTip_C) == 0x000230, "Wrong size on UXpBonusToolTip_C");
-static_assert(offsetof(UXpBonusToolTip_C, UberGraphFrame) == 0x000218, "Member 'UXpBonusToolTip_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBonusToolTip_C, HBoxBoost) == 0x000220, "Member 'UXpBonusToolTip_C::HBoxBoost' has a wrong offset!");
-static_assert(offsetof(UXpBonusToolTip_C, HBoxDaily) == 0x000228, "Member 'UXpBonusToolTip_C::HBoxDaily' has a wrong offset!");
+static_assert(sizeof(UXpBonusToolTip_C) == 0x000228, "Wrong size on UXpBonusToolTip_C");
+static_assert(offsetof(UXpBonusToolTip_C, UberGraphFrame) == 0x000210, "Member 'UXpBonusToolTip_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UXpBonusToolTip_C, HBoxBoost) == 0x000218, "Member 'UXpBonusToolTip_C::HBoxBoost' has a wrong offset!");
+static_assert(offsetof(UXpBonusToolTip_C, HBoxDaily) == 0x000220, "Member 'UXpBonusToolTip_C::HBoxDaily' has a wrong offset!");
 
 }
 

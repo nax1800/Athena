@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C
-// 0x0008 (0x0848 - 0x0840)
+// 0x0008 (0x08D0 - 0x08C8)
 class UFriendCodeFrontEndShareButton_C final : public UFriendCodeShareButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C8(0x0008)(Transient, DuplicateTransient)
 
 public:
+	void BP_OnClicked();
 	void Construct();
 	void ExecuteUbergraph_FriendCodeFrontEndShareButton(int32 EntryPoint);
-	void OnClicked();
 
 public:
 	static class UClass* StaticClass()
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(UFriendCodeFrontEndShareButton_C) == 0x000008, "Wrong alignment on UFriendCodeFrontEndShareButton_C");
-static_assert(sizeof(UFriendCodeFrontEndShareButton_C) == 0x000848, "Wrong size on UFriendCodeFrontEndShareButton_C");
-static_assert(offsetof(UFriendCodeFrontEndShareButton_C, UberGraphFrame) == 0x000840, "Member 'UFriendCodeFrontEndShareButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UFriendCodeFrontEndShareButton_C) == 0x0008D0, "Wrong size on UFriendCodeFrontEndShareButton_C");
+static_assert(offsetof(UFriendCodeFrontEndShareButton_C, UberGraphFrame) == 0x0008C8, "Member 'UFriendCodeFrontEndShareButton_C::UberGraphFrame' has a wrong offset!");
 
 }
 

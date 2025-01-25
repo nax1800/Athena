@@ -96,9 +96,9 @@ void UAthenaLobbyPlayerPanel_C::Initialize()
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Param_TeamMemberInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo)
+void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -107,7 +107,7 @@ void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberIn
 
 	Params::AthenaLobbyPlayerPanel_C_SetTeamMemberInfo Parms{};
 
-	Parms.Param_TeamMemberInfo = std::move(Param_TeamMemberInfo);
+	Parms.TeamMemberInfo_0 = std::move(TeamMemberInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -158,9 +158,9 @@ void UAthenaLobbyPlayerPanel_C::InitializeContextEvents()
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Param_TeamMemberInfo                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& Param_TeamMemberInfo)
+void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -169,7 +169,7 @@ void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamM
 
 	Params::AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged Parms{};
 
-	Parms.Param_TeamMemberInfo = std::move(Param_TeamMemberInfo);
+	Parms.TeamMemberInfo_0 = std::move(TeamMemberInfo_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

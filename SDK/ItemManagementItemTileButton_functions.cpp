@@ -85,15 +85,15 @@ void UItemManagementItemTileButton_C::HandleItemChangedBP()
 }
 
 
-// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.OnSelected
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UItemManagementItemTileButton_C::OnSelected()
+void UItemManagementItemTileButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemManagementItemTileButton_C", "OnSelected");
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,29 +169,29 @@ void UItemManagementItemTileButton_C::HandleHasItemToDetailChanged()
 }
 
 
-// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.OnUnhovered
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UItemManagementItemTileButton_C::OnUnhovered()
+void UItemManagementItemTileButton_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemManagementItemTileButton_C", "OnUnhovered");
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.OnHovered
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UItemManagementItemTileButton_C::OnHovered()
+void UItemManagementItemTileButton_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemManagementItemTileButton_C", "OnHovered");
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -391,6 +391,54 @@ void UItemManagementItemTileButton_C::UpdateCollectionBookIndicator()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ItemManagementItemTileButton_C", "UpdateCollectionBookIndicator");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.IsItemMulchable
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UItemManagementItemTileButton_C::IsItemMulchable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "IsItemMulchable");
+
+	Params::ItemManagementItemTileButton_C_IsItemMulchable Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.Initial Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UItemManagementItemTileButton_C::Initial_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "Initial Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemManagementItemTileButton.ItemManagementItemTileButton_C.Populate
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UItemManagementItemTileButton_C::Populate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementItemTileButton_C", "Populate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

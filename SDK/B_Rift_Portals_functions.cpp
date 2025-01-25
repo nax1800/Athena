@@ -69,10 +69,10 @@ void AB_Rift_Portals_C::OnDeactivated()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_RiftLightningDuration                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_SpawnImpactParticles                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                                   RiftLightningDuration_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SpawnImpactParticles_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Rift_Portals_C::PatrolEnemySuckIn(float Delay, float Param_RiftLightningDuration, bool Param_SpawnImpactParticles)
+void AB_Rift_Portals_C::PatrolEnemySuckIn(float Delay, float RiftLightningDuration_0, bool SpawnImpactParticles_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -82,8 +82,8 @@ void AB_Rift_Portals_C::PatrolEnemySuckIn(float Delay, float Param_RiftLightning
 	Params::B_Rift_Portals_C_PatrolEnemySuckIn Parms{};
 
 	Parms.Delay = Delay;
-	Parms.Param_RiftLightningDuration = Param_RiftLightningDuration;
-	Parms.Param_SpawnImpactParticles = Param_SpawnImpactParticles;
+	Parms.RiftLightningDuration_0 = RiftLightningDuration_0;
+	Parms.SpawnImpactParticles_0 = SpawnImpactParticles_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

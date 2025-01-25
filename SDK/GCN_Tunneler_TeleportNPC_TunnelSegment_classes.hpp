@@ -19,13 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Tunneler_TeleportNPC_TunnelSegment.GCN_Tunneler_TeleportNPC_TunnelSegment_C
-// 0x0010 (0x03D0 - 0x03C0)
+// 0x0010 (0x03A8 - 0x0398)
 class AGCN_Tunneler_TeleportNPC_TunnelSegment_C final : public AGameplayCueNotify_Actor
 {
 public:
-	uint8                                         Pad_3B8[0x8];                                      // 0x03B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GCN_Tunneler_TeleportNPC_TunnelSegment(int32 EntryPoint);
@@ -42,10 +41,10 @@ public:
 		return GetDefaultObjImpl<AGCN_Tunneler_TeleportNPC_TunnelSegment_C>();
 	}
 };
-static_assert(alignof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C) == 0x000010, "Wrong alignment on AGCN_Tunneler_TeleportNPC_TunnelSegment_C");
-static_assert(sizeof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C) == 0x0003D0, "Wrong size on AGCN_Tunneler_TeleportNPC_TunnelSegment_C");
-static_assert(offsetof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C, UberGraphFrame) == 0x0003C0, "Member 'AGCN_Tunneler_TeleportNPC_TunnelSegment_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C, DefaultSceneRoot) == 0x0003C8, "Member 'AGCN_Tunneler_TeleportNPC_TunnelSegment_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(alignof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C) == 0x000008, "Wrong alignment on AGCN_Tunneler_TeleportNPC_TunnelSegment_C");
+static_assert(sizeof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C) == 0x0003A8, "Wrong size on AGCN_Tunneler_TeleportNPC_TunnelSegment_C");
+static_assert(offsetof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C, UberGraphFrame) == 0x000398, "Member 'AGCN_Tunneler_TeleportNPC_TunnelSegment_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGCN_Tunneler_TeleportNPC_TunnelSegment_C, DefaultSceneRoot) == 0x0003A0, "Member 'AGCN_Tunneler_TeleportNPC_TunnelSegment_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

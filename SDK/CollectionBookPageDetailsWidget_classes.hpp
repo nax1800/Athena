@@ -11,22 +11,22 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C
-// 0x0018 (0x02A0 - 0x0288)
+// 0x0018 (0x0298 - 0x0280)
 class UCollectionBookPageDetailsWidget_C final : public UFortCollectionBookPageDetailsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Image_0;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Image_0;                                           // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CollectionBookPageDetailsWidget(int32 EntryPoint);
@@ -43,10 +43,10 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookPageDetailsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageDetailsWidget_C");
-static_assert(sizeof(UCollectionBookPageDetailsWidget_C) == 0x0002A0, "Wrong size on UCollectionBookPageDetailsWidget_C");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, UberGraphFrame) == 0x000288, "Member 'UCollectionBookPageDetailsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_0) == 0x000290, "Member 'UCollectionBookPageDetailsWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_2) == 0x000298, "Member 'UCollectionBookPageDetailsWidget_C::Image_2' has a wrong offset!");
+static_assert(sizeof(UCollectionBookPageDetailsWidget_C) == 0x000298, "Wrong size on UCollectionBookPageDetailsWidget_C");
+static_assert(offsetof(UCollectionBookPageDetailsWidget_C, UberGraphFrame) == 0x000280, "Member 'UCollectionBookPageDetailsWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_0) == 0x000288, "Member 'UCollectionBookPageDetailsWidget_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_2) == 0x000290, "Member 'UCollectionBookPageDetailsWidget_C::Image_2' has a wrong offset!");
 
 }
 

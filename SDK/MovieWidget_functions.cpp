@@ -31,6 +31,20 @@ void UMovieWidget_C::OnMediaReadyToPlay__DelegateSignature()
 }
 
 
+// Function MovieWidget.MovieWidget_C.OnMediaFailedToOpen__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UMovieWidget_C::OnMediaFailedToOpen__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieWidget_C", "OnMediaFailedToOpen__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MovieWidget.MovieWidget_C.ExecuteUbergraph_MovieWidget
 // (HasDefaults)
 // Parameters:

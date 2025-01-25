@@ -37,12 +37,212 @@ void UAthenaSpectatorHUD_C::ExecuteUbergraph_AthenaSpectatorHUD(int32 EntryPoint
 }
 
 
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleScoreOnEventMatchScoreboard
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleScoreOnEventMatchScoreboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleScoreOnEventMatchScoreboard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SortEventMatchInfoByScore
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SortEventMatchInfoByScore()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SortEventMatchInfoByScore");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleTeamNumbersOnEventMatchScoreboard
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleTeamNumbersOnEventMatchScoreboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleTeamNumbersOnEventMatchScoreboard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleEventMatchActivePlayerGridVisibility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleEventMatchActivePlayerGridVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleEventMatchActivePlayerGridVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleEventMatchEliminatedPlayerGridVisibility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleEventMatchEliminatedPlayerGridVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleEventMatchEliminatedPlayerGridVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleEventMatchScoreboardVisibility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleEventMatchScoreboardVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleEventMatchScoreboardVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleEventMatchStatusVisibility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::ToggleEventMatchStatusVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleEventMatchStatusVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SortEventMatchInfoByPlace
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SortEventMatchInfoByPlace()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SortEventMatchInfoByPlace");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SortEventMatchInfoByEliminations
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SortEventMatchInfoByEliminations()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SortEventMatchInfoByEliminations");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.BndEvt__EventInfoButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::BndEvt__EventInfoButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "BndEvt__EventInfoButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::AthenaSpectatorHUD_C_BndEvt__EventInfoButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.BndEvt__BattleBusButton_K2Node_ComponentBoundEvent_27_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::BndEvt__BattleBusButton_K2Node_ComponentBoundEvent_27_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "BndEvt__BattleBusButton_K2Node_ComponentBoundEvent_27_CommonButtonClicked__DelegateSignature");
+
+	Params::AthenaSpectatorHUD_C_BndEvt__BattleBusButton_K2Node_ComponentBoundEvent_27_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnHUDScaleChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   HUDScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::OnHUDScaleChanged(float HUDScale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnHUDScaleChanged");
+
+	Params::AthenaSpectatorHUD_C_OnHUDScaleChanged Parms{};
+
+	Parms.HUDScale = HUDScale;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.HUDVisibilitySound
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EHudVisibilityState                     Param_HUDVisibility                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHudVisibilityState                     HUDVisibility_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaSpectatorHUD_C::HUDVisibilitySound(EHudVisibilityState Param_HUDVisibility)
+void UAthenaSpectatorHUD_C::HUDVisibilitySound(EHudVisibilityState HUDVisibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +251,7 @@ void UAthenaSpectatorHUD_C::HUDVisibilitySound(EHudVisibilityState Param_HUDVisi
 
 	Params::AthenaSpectatorHUD_C_HUDVisibilitySound Parms{};
 
-	Parms.Param_HUDVisibility = Param_HUDVisibility;
+	Parms.HUDVisibility_0 = HUDVisibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -243,6 +443,26 @@ void UAthenaSpectatorHUD_C::Prepare_Game_Over()
 }
 
 
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnEnterState
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EFortUIState                            PreviousUIState                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::OnEnterState(EFortUIState PreviousUIState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnEnterState");
+
+	Params::AthenaSpectatorHUD_C_OnEnterState Parms{};
+
+	Parms.PreviousUIState = PreviousUIState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnUnableToPerformAction
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -307,88 +527,6 @@ void UAthenaSpectatorHUD_C::Destruct()
 }
 
 
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.QuestsCompleted
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UFortQuestItem*>           Quests                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UAthenaSpectatorHUD_C::QuestsCompleted(const TArray<class UFortQuestItem*>& Quests)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "QuestsCompleted");
-
-	Params::AthenaSpectatorHUD_C_QuestsCompleted Parms{};
-
-	Parms.Quests = std::move(Quests);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnEnterState
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EFortUIState                            PreviousUIState                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaSpectatorHUD_C::OnEnterState(EFortUIState PreviousUIState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnEnterState");
-
-	Params::AthenaSpectatorHUD_C_OnEnterState Parms{};
-
-	Parms.PreviousUIState = PreviousUIState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UAthenaSpectatorHUD_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnConfirmed_96D6B69B40224C661B08D9B34525EE86
-// (BlueprintCallable, BlueprintEvent)
-
-void UAthenaSpectatorHUD_C::OnConfirmed_96D6B69B40224C661B08D9B34525EE86()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnConfirmed_96D6B69B40224C661B08D9B34525EE86");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnDeclined_96D6B69B40224C661B08D9B34525EE86
-// (BlueprintCallable, BlueprintEvent)
-
-void UAthenaSpectatorHUD_C::OnDeclined_96D6B69B40224C661B08D9B34525EE86()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnDeclined_96D6B69B40224C661B08D9B34525EE86");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.HandleCursorModeChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -410,31 +548,6 @@ void UAthenaSpectatorHUD_C::HandleCursorModeChanged(bool IsEnabled, class FName 
 	Parms.CursorModeContentCustomWidget = CursorModeContentCustomWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.OnHandleAction
-// (HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaSpectatorHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "OnHandleAction");
-
-	Params::AthenaSpectatorHUD_C_OnHandleAction Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = Parms.bPassThrough;
 }
 
 
@@ -774,23 +887,17 @@ void UAthenaSpectatorHUD_C::OnLevelStreamingChanged(bool bStreaming)
 }
 
 
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetViewSettingsVisibility
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleViewSettingsVisibility
 // (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaSpectatorHUD_C::SetViewSettingsVisibility(bool Visible)
+void UAthenaSpectatorHUD_C::ToggleViewSettingsVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetViewSettingsVisibility");
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleViewSettingsVisibility");
 
-	Params::AthenaSpectatorHUD_C_SetViewSettingsVisibility Parms{};
-
-	Parms.Visible = Visible;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -816,49 +923,215 @@ void UAthenaSpectatorHUD_C::HandleCameraChange(class AFortPlayerControllerSpecta
 }
 
 
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.HandleInputModeChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.TogglePlayerListVisibility
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UAthenaSpectatorHUD_C::HandleInputModeChanged(bool Passthrough)
+void UAthenaSpectatorHUD_C::TogglePlayerListVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "HandleInputModeChanged");
-
-	Params::AthenaSpectatorHUD_C_HandleInputModeChanged Parms{};
-
-	Parms.Passthrough = Passthrough;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.HideCameraControlsOnTimeout
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaSpectatorHUD_C::HideCameraControlsOnTimeout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "HideCameraControlsOnTimeout");
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "TogglePlayerListVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ShowCameraControls
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.ToggleOffAirWidgetVisibility
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UAthenaSpectatorHUD_C::ShowCameraControls()
+void UAthenaSpectatorHUD_C::ToggleOffAirWidgetVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ShowCameraControls");
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "ToggleOffAirWidgetVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.BindBroadcastEvents
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::BindBroadcastEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "BindBroadcastEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetNameplateLayerVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNameplatesEnabled                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaSpectatorHUD_C::SetNameplateLayerVisibility(bool bNameplatesEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetNameplateLayerVisibility");
+
+	Params::AthenaSpectatorHUD_C_SetNameplateLayerVisibility Parms{};
+
+	Parms.bNameplatesEnabled = bNameplatesEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetNameplateLayerDataSource
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SetNameplateLayerDataSource()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetNameplateLayerDataSource");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.HandleQuickbarSlot FocusSlotChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortQuickBars                          Quickbar_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::HandleQuickbarSlot_FocusSlotChanged(EFortQuickBars Quickbar_Index, int32 Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "HandleQuickbarSlot FocusSlotChanged");
+
+	Params::AthenaSpectatorHUD_C_HandleQuickbarSlot_FocusSlotChanged Parms{};
+
+	Parms.Quickbar_Index = Quickbar_Index;
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetQuickbarSizes
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SetQuickbarSizes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetQuickbarSizes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SpectatorMatchStatusVisibilityChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaSpectatorHUD_C::SpectatorMatchStatusVisibilityChanged(bool IsVisible_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SpectatorMatchStatusVisibilityChanged");
+
+	Params::AthenaSpectatorHUD_C_SpectatorMatchStatusVisibilityChanged Parms{};
+
+	Parms.IsVisible_0 = IsVisible_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SpectatorPlayerStatusVisibilityChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaSpectatorHUD_C::SpectatorPlayerStatusVisibilityChanged(bool IsVisible_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SpectatorPlayerStatusVisibilityChanged");
+
+	Params::AthenaSpectatorHUD_C_SpectatorPlayerStatusVisibilityChanged Parms{};
+
+	Parms.IsVisible_0 = IsVisible_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetupBattlebusButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SetupBattlebusButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetupBattlebusButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetupTransportWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SetupTransportWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetupTransportWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.Game Phase Changed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EAthenaGamePhase                        NewPhase                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaSpectatorHUD_C::Game_Phase_Changed(EAthenaGamePhase NewPhase)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "Game Phase Changed");
+
+	Params::AthenaSpectatorHUD_C_Game_Phase_Changed Parms{};
+
+	Parms.NewPhase = NewPhase;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaSpectatorHUD.AthenaSpectatorHUD_C.SetupEventInfoScreen
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSpectatorHUD_C::SetupEventInfoScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSpectatorHUD_C", "SetupEventInfoScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

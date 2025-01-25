@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct EpicCMSTileBase_DynamicHandleIconLoadingStateChanged final
-{
-public:
-	bool                                          bIsLoading;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EpicCMSTileBase_DynamicHandleIconLoadingStateChanged) == 0x000001, "Wrong alignment on EpicCMSTileBase_DynamicHandleIconLoadingStateChanged");
-static_assert(sizeof(EpicCMSTileBase_DynamicHandleIconLoadingStateChanged) == 0x000001, "Wrong size on EpicCMSTileBase_DynamicHandleIconLoadingStateChanged");
-static_assert(offsetof(EpicCMSTileBase_DynamicHandleIconLoadingStateChanged, bIsLoading) == 0x000000, "Member 'EpicCMSTileBase_DynamicHandleIconLoadingStateChanged::bIsLoading' has a wrong offset!");
-
 // Function EpicCMSUIFramework.EpicCMSTileCarousel.HandleTilePageAdded
 // 0x0008 (0x0008 - 0x0000)
 struct EpicCMSTileCarousel_HandleTilePageAdded final

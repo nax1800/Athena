@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -85,7 +85,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	bool                                          CallFunc_HandleBack_PassThrough;                   // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleBack_Passthrough;                   // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
 };
@@ -94,7 +94,7 @@ static_assert(sizeof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown
 static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, MyGeometry) == 0x000000, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, MouseEvent) == 0x000038, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, ReturnValue) == 0x0000A8, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, CallFunc_HandleBack_PassThrough) == 0x000160, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::CallFunc_HandleBack_PassThrough' has a wrong offset!");
+static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, CallFunc_HandleBack_Passthrough) == 0x000160, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::CallFunc_HandleBack_Passthrough' has a wrong offset!");
 static_assert(offsetof(AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'AthenaMatchStatsScreen_C_On_BorderTouchZone_MouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }

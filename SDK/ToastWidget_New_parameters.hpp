@@ -26,7 +26,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0020(0x0038)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent1;                          // 0x0058(0x0070)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C8(0x0070)(ConstParm)
@@ -78,17 +78,23 @@ static_assert(offsetof(ToastWidget_New_C_OnMouseEnter, MyGeometry) == 0x000000, 
 static_assert(offsetof(ToastWidget_New_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'ToastWidget_New_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function ToastWidget_New.ToastWidget_New_C.SetToast
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct ToastWidget_New_C_SetToast final
 {
 public:
 	class UFortUINotification*                    Toast;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              CallFunc_GetOpenButtonVisibility_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIFriendNotification*              K2Node_DynamicCast_AsFort_UIFriend_Notification;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              CallFunc_GetOpenButtonVisibility_ReturnValue;      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ToastWidget_New_C_SetToast) == 0x000008, "Wrong alignment on ToastWidget_New_C_SetToast");
-static_assert(sizeof(ToastWidget_New_C_SetToast) == 0x000010, "Wrong size on ToastWidget_New_C_SetToast");
+static_assert(sizeof(ToastWidget_New_C_SetToast) == 0x000018, "Wrong size on ToastWidget_New_C_SetToast");
 static_assert(offsetof(ToastWidget_New_C_SetToast, Toast) == 0x000000, "Member 'ToastWidget_New_C_SetToast::Toast' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_SetToast, CallFunc_GetOpenButtonVisibility_ReturnValue) == 0x000008, "Member 'ToastWidget_New_C_SetToast::CallFunc_GetOpenButtonVisibility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetToast, K2Node_DynamicCast_AsFort_UIFriend_Notification) == 0x000008, "Member 'ToastWidget_New_C_SetToast::K2Node_DynamicCast_AsFort_UIFriend_Notification' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetToast, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ToastWidget_New_C_SetToast::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetToast, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'ToastWidget_New_C_SetToast::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetToast, CallFunc_GetOpenButtonVisibility_ReturnValue) == 0x000012, "Member 'ToastWidget_New_C_SetToast::CallFunc_GetOpenButtonVisibility_ReturnValue' has a wrong offset!");
 
 // Function ToastWidget_New.ToastWidget_New_C.ShowText
 // 0x0048 (0x0048 - 0x0000)
@@ -155,34 +161,34 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Temp_class_Variable1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable123;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable1234;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12345;                          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UClass*                                 Temp_class_Variable3;                              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable4;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable5;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select1_Default;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_Select12_Default;                           // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_Select2_Default;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ToastWidget_New_C_ApplyAdditionalStyling) == 0x000008, "Wrong alignment on ToastWidget_New_C_ApplyAdditionalStyling");
 static_assert(sizeof(ToastWidget_New_C_ApplyAdditionalStyling) == 0x000060, "Wrong size on ToastWidget_New_C_ApplyAdditionalStyling");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable) == 0x000000, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_bool_Variable) == 0x000008, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable1) == 0x000010, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable1' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable12) == 0x000018, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable12' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable2) == 0x000018, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable2' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_bool_Variable1) == 0x000020, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable123) == 0x000028, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable123' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable1234) == 0x000030, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable1234' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable12345) == 0x000038, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable12345' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_bool_Variable12) == 0x000040, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable3) == 0x000028, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable3' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable4) == 0x000030, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable4' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_class_Variable5) == 0x000038, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_class_Variable5' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, Temp_bool_Variable2) == 0x000040, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, K2Node_Select_Default) == 0x000048, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, K2Node_Select1_Default) == 0x000050, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, K2Node_Select12_Default) == 0x000058, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_ApplyAdditionalStyling, K2Node_Select2_Default) == 0x000058, "Member 'ToastWidget_New_C_ApplyAdditionalStyling::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ToastWidget_New.ToastWidget_New_C.SetupAnimBindings
 // 0x0048 (0x0048 - 0x0000)
@@ -193,16 +199,16 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ToastWidget_New_C_SetupAnimBindings) == 0x000008, "Wrong alignment on ToastWidget_New_C_SetupAnimBindings");
 static_assert(sizeof(ToastWidget_New_C_SetupAnimBindings) == 0x000048, "Wrong size on ToastWidget_New_C_SetupAnimBindings");
 static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, Unbind) == 0x000000, "Member 'ToastWidget_New_C_SetupAnimBindings::Unbind' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate12) == 0x000028, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate123) == 0x000038, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ToastWidget_New_C_SetupAnimBindings, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'ToastWidget_New_C_SetupAnimBindings::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 }
 

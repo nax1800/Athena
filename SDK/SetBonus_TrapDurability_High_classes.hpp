@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SetBonus_TrapDurability_High.SetBonus_TrapDurability_High_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class USetBonus_TrapDurability_High_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USetBonus_TrapDurability_High_C>();
 	}
 };
-static_assert(alignof(USetBonus_TrapDurability_High_C) == 0x000010, "Wrong alignment on USetBonus_TrapDurability_High_C");
-static_assert(sizeof(USetBonus_TrapDurability_High_C) == 0x000670, "Wrong size on USetBonus_TrapDurability_High_C");
+static_assert(alignof(USetBonus_TrapDurability_High_C) == 0x000008, "Wrong alignment on USetBonus_TrapDurability_High_C");
+static_assert(sizeof(USetBonus_TrapDurability_High_C) == 0x000638, "Wrong size on USetBonus_TrapDurability_High_C");
 
 }
 

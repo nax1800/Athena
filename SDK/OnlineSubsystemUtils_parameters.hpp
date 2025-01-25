@@ -18,25 +18,6 @@
 namespace SDK::Params
 {
 
-// Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
-// 0x0038 (0x0038 - 0x0000)
-struct EndTurnCallbackProxy_EndTurn final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchID;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TScriptInterface<class ITurnBasedMatchInterface> TurnBasedMatchInterface;                           // 0x0020(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UEndTurnCallbackProxy*                  ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EndTurnCallbackProxy_EndTurn) == 0x000008, "Wrong alignment on EndTurnCallbackProxy_EndTurn");
-static_assert(sizeof(EndTurnCallbackProxy_EndTurn) == 0x000038, "Wrong size on EndTurnCallbackProxy_EndTurn");
-static_assert(offsetof(EndTurnCallbackProxy_EndTurn, WorldContextObject) == 0x000000, "Member 'EndTurnCallbackProxy_EndTurn::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(EndTurnCallbackProxy_EndTurn, PlayerController) == 0x000008, "Member 'EndTurnCallbackProxy_EndTurn::PlayerController' has a wrong offset!");
-static_assert(offsetof(EndTurnCallbackProxy_EndTurn, MatchID) == 0x000010, "Member 'EndTurnCallbackProxy_EndTurn::MatchID' has a wrong offset!");
-static_assert(offsetof(EndTurnCallbackProxy_EndTurn, TurnBasedMatchInterface) == 0x000020, "Member 'EndTurnCallbackProxy_EndTurn::TurnBasedMatchInterface' has a wrong offset!");
-static_assert(offsetof(EndTurnCallbackProxy_EndTurn, ReturnValue) == 0x000030, "Member 'EndTurnCallbackProxy_EndTurn::ReturnValue' has a wrong offset!");
-
 // Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
 // 0x0070 (0x0070 - 0x0000)
 struct AchievementBlueprintLibrary_GetCachedAchievementDescription final
@@ -83,6 +64,32 @@ static_assert(offsetof(AchievementBlueprintLibrary_GetCachedAchievementProgress,
 static_assert(offsetof(AchievementBlueprintLibrary_GetCachedAchievementProgress, AchievementID) == 0x000010, "Member 'AchievementBlueprintLibrary_GetCachedAchievementProgress::AchievementID' has a wrong offset!");
 static_assert(offsetof(AchievementBlueprintLibrary_GetCachedAchievementProgress, bFoundID) == 0x000018, "Member 'AchievementBlueprintLibrary_GetCachedAchievementProgress::bFoundID' has a wrong offset!");
 static_assert(offsetof(AchievementBlueprintLibrary_GetCachedAchievementProgress, Progress) == 0x00001C, "Member 'AchievementBlueprintLibrary_GetCachedAchievementProgress::Progress' has a wrong offset!");
+
+// Function OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
+// 0x0001 (0x0001 - 0x0000)
+struct VoipListenerSynthComponent_IsIdling final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(VoipListenerSynthComponent_IsIdling) == 0x000001, "Wrong alignment on VoipListenerSynthComponent_IsIdling");
+static_assert(sizeof(VoipListenerSynthComponent_IsIdling) == 0x000001, "Wrong size on VoipListenerSynthComponent_IsIdling");
+static_assert(offsetof(VoipListenerSynthComponent_IsIdling, ReturnValue) == 0x000000, "Member 'VoipListenerSynthComponent_IsIdling::ReturnValue' has a wrong offset!");
+
+// Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
+// 0x0018 (0x0018 - 0x0000)
+struct ConnectionCallbackProxy_ConnectToService final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UConnectionCallbackProxy*               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ConnectionCallbackProxy_ConnectToService) == 0x000008, "Wrong alignment on ConnectionCallbackProxy_ConnectToService");
+static_assert(sizeof(ConnectionCallbackProxy_ConnectToService) == 0x000018, "Wrong size on ConnectionCallbackProxy_ConnectToService");
+static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, WorldContextObject) == 0x000000, "Member 'ConnectionCallbackProxy_ConnectToService::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, PlayerController) == 0x000008, "Member 'ConnectionCallbackProxy_ConnectToService::PlayerController' has a wrong offset!");
+static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, ReturnValue) == 0x000010, "Member 'ConnectionCallbackProxy_ConnectToService::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
 // 0x0018 (0x0018 - 0x0000)
@@ -134,21 +141,6 @@ static_assert(offsetof(AchievementWriteCallbackProxy_WriteAchievementProgress, A
 static_assert(offsetof(AchievementWriteCallbackProxy_WriteAchievementProgress, Progress) == 0x000018, "Member 'AchievementWriteCallbackProxy_WriteAchievementProgress::Progress' has a wrong offset!");
 static_assert(offsetof(AchievementWriteCallbackProxy_WriteAchievementProgress, UserTag) == 0x00001C, "Member 'AchievementWriteCallbackProxy_WriteAchievementProgress::UserTag' has a wrong offset!");
 static_assert(offsetof(AchievementWriteCallbackProxy_WriteAchievementProgress, ReturnValue) == 0x000020, "Member 'AchievementWriteCallbackProxy_WriteAchievementProgress::ReturnValue' has a wrong offset!");
-
-// Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
-// 0x0018 (0x0018 - 0x0000)
-struct ConnectionCallbackProxy_ConnectToService final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UConnectionCallbackProxy*               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ConnectionCallbackProxy_ConnectToService) == 0x000008, "Wrong alignment on ConnectionCallbackProxy_ConnectToService");
-static_assert(sizeof(ConnectionCallbackProxy_ConnectToService) == 0x000018, "Wrong size on ConnectionCallbackProxy_ConnectToService");
-static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, WorldContextObject) == 0x000000, "Member 'ConnectionCallbackProxy_ConnectToService::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, PlayerController) == 0x000008, "Member 'ConnectionCallbackProxy_ConnectToService::PlayerController' has a wrong offset!");
-static_assert(offsetof(ConnectionCallbackProxy_ConnectToService, ReturnValue) == 0x000010, "Member 'ConnectionCallbackProxy_ConnectToService::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
 // 0x0020 (0x0020 - 0x0000)
@@ -208,6 +200,25 @@ static_assert(offsetof(EndMatchCallbackProxy_EndMatch, MatchID) == 0x000020, "Me
 static_assert(offsetof(EndMatchCallbackProxy_EndMatch, LocalPlayerOutcome) == 0x000030, "Member 'EndMatchCallbackProxy_EndMatch::LocalPlayerOutcome' has a wrong offset!");
 static_assert(offsetof(EndMatchCallbackProxy_EndMatch, OtherPlayersOutcome) == 0x000031, "Member 'EndMatchCallbackProxy_EndMatch::OtherPlayersOutcome' has a wrong offset!");
 static_assert(offsetof(EndMatchCallbackProxy_EndMatch, ReturnValue) == 0x000038, "Member 'EndMatchCallbackProxy_EndMatch::ReturnValue' has a wrong offset!");
+
+// Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
+// 0x0038 (0x0038 - 0x0000)
+struct EndTurnCallbackProxy_EndTurn final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchID;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TScriptInterface<class ITurnBasedMatchInterface> TurnBasedMatchInterface;                           // 0x0020(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	class UEndTurnCallbackProxy*                  ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EndTurnCallbackProxy_EndTurn) == 0x000008, "Wrong alignment on EndTurnCallbackProxy_EndTurn");
+static_assert(sizeof(EndTurnCallbackProxy_EndTurn) == 0x000038, "Wrong size on EndTurnCallbackProxy_EndTurn");
+static_assert(offsetof(EndTurnCallbackProxy_EndTurn, WorldContextObject) == 0x000000, "Member 'EndTurnCallbackProxy_EndTurn::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(EndTurnCallbackProxy_EndTurn, PlayerController) == 0x000008, "Member 'EndTurnCallbackProxy_EndTurn::PlayerController' has a wrong offset!");
+static_assert(offsetof(EndTurnCallbackProxy_EndTurn, MatchID) == 0x000010, "Member 'EndTurnCallbackProxy_EndTurn::MatchID' has a wrong offset!");
+static_assert(offsetof(EndTurnCallbackProxy_EndTurn, TurnBasedMatchInterface) == 0x000020, "Member 'EndTurnCallbackProxy_EndTurn::TurnBasedMatchInterface' has a wrong offset!");
+static_assert(offsetof(EndTurnCallbackProxy_EndTurn, ReturnValue) == 0x000030, "Member 'EndTurnCallbackProxy_EndTurn::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
 // 0x0020 (0x0020 - 0x0000)
@@ -612,17 +623,6 @@ static_assert(sizeof(TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceOb
 static_assert(offsetof(TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject, WorldContextObject) == 0x000000, "Member 'TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject, PlayerController) == 0x000008, "Member 'TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject::PlayerController' has a wrong offset!");
 static_assert(offsetof(TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject, Object) == 0x000010, "Member 'TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject::Object' has a wrong offset!");
-
-// Function OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
-// 0x0001 (0x0001 - 0x0000)
-struct VoipListenerSynthComponent_IsIdling final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(VoipListenerSynthComponent_IsIdling) == 0x000001, "Wrong alignment on VoipListenerSynthComponent_IsIdling");
-static_assert(sizeof(VoipListenerSynthComponent_IsIdling) == 0x000001, "Wrong size on VoipListenerSynthComponent_IsIdling");
-static_assert(offsetof(VoipListenerSynthComponent_IsIdling, ReturnValue) == 0x000000, "Member 'VoipListenerSynthComponent_IsIdling::ReturnValue' has a wrong offset!");
 
 }
 

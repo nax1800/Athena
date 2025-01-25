@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
-#include "CommonUI_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "FortniteGame_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CommonUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -32,7 +32,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, EntryPoint)
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, Temp_byte_Variable) == 0x000010, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetContext_ReturnValue1) == 0x000018, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetContext_ReturnValue12) == 0x000020, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_IsInZone_ReturnValue) == 0x000028, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetFeatureState_OutFeatureState) == 0x000029, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, CallFunc_GetFeatureState_OutReason) == 0x00002A, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
@@ -113,7 +113,7 @@ static_assert(sizeof(DailyRewards_C_PreConstruct) == 0x000001, "Wrong size on Da
 static_assert(offsetof(DailyRewards_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'DailyRewards_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function DailyRewards.DailyRewards_C.Setup Daily Rewards
-// 0x0250 (0x0250 - 0x0000)
+// 0x0248 (0x0248 - 0x0000)
 struct DailyRewards_C_Setup_Daily_Rewards final
 {
 public:
@@ -131,65 +131,64 @@ public:
 	class UFortAccountItem*                       CallFunc_GetAccountItemWithDefinition_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDailyRewardsCurrent_C*                 CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EInputActionState                             Temp_byte_Variable12;                              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EInputActionState                             Temp_byte_Variable123;                             // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDailyRewardsMissingFoundersPack_C*     CallFunc_Create_ReturnValue1;                      // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue12;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDailyRewardsCurrent_C*                 CallFunc_Create_ReturnValue12;                     // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue1;       // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue123;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDailyRewardsSchedule_C*                CallFunc_Create_ReturnValue123;                    // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue12;      // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDailyRewardsData                  CallFunc_TryGetDailyRewardsData_OutDailyRewardsData; // 0x00F0(0x0018)()
-	bool                                          CallFunc_TryGetDailyRewardsData_ReturnValue;       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDailyRewardsScheduleData          CallFunc_Array_Get_Item;                           // 0x0110(0x0098)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EInputActionState                             K2Node_Select_Default;                             // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x01BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EInputActionState                             K2Node_Select1_Default;                            // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BD[0x3];                                      // 0x01BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue12;            // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01D0(0x0040)(HasGetValueTypeHash)
-	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item1;                          // 0x0210(0x0010)(NoDestructor)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0220(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0230(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EInputActionState                             Temp_byte_Variable2;                               // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EInputActionState                             Temp_byte_Variable3;                               // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDailyRewardsMissingFoundersPack_C*     CallFunc_Create_ReturnValue1;                      // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDailyRewardsCurrent_C*                 CallFunc_Create_ReturnValue2;                      // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureState                           CallFunc_GetFeatureState_OutFeatureState;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureStateReason                     CallFunc_GetFeatureState_OutReason;                // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue1;       // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue3;             // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDailyRewardsSchedule_C*                CallFunc_Create_ReturnValue3;                      // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue2;       // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortDailyRewardsData                  CallFunc_TryGetDailyRewardsData_OutDailyRewardsData; // 0x00E8(0x0018)()
+	bool                                          CallFunc_TryGetDailyRewardsData_ReturnValue;       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortDailyRewardsScheduleData          CallFunc_Array_Get_Item;                           // 0x0108(0x0098)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInputActionState                             K2Node_Select_Default;                             // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x01B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInputActionState                             K2Node_Select1_Default;                            // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B5[0x3];                                      // 0x01B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01C8(0x0040)(HasGetValueTypeHash)
+	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item1;                          // 0x0208(0x0010)(NoDestructor)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0218(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0228(0x0018)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(DailyRewards_C_Setup_Daily_Rewards) == 0x000008, "Wrong alignment on DailyRewards_C_Setup_Daily_Rewards");
-static_assert(sizeof(DailyRewards_C_Setup_Daily_Rewards) == 0x000250, "Wrong size on DailyRewards_C_Setup_Daily_Rewards");
+static_assert(sizeof(DailyRewards_C_Setup_Daily_Rewards) == 0x000248, "Wrong size on DailyRewards_C_Setup_Daily_Rewards");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable) == 0x000004, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable1) == 0x000005, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable1' has a wrong offset!");
@@ -202,50 +201,50 @@ static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPla
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000040, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue) == 0x000048, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Not_PreBool_ReturnValue) == 0x000051, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000058, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Not_PreBool_ReturnValue) == 0x000060, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Add_ReturnValue) == 0x000064, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable12) == 0x000068, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue) == 0x00006C, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable123) == 0x000070, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000078, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_bool_Variable1) == 0x000080, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue1) == 0x000088, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000090, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue12) == 0x000098, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue12) == 0x0000A0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetContext_ReturnValue1) == 0x0000A8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetFeatureState_OutFeatureState) == 0x0000B0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetFeatureState_OutReason) == 0x0000B1, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue1) == 0x0000B8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue123) == 0x0000C8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue123) == 0x0000D0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue) == 0x0000D8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue12) == 0x0000E0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_int_Loop_Counter_Variable) == 0x0000E8, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_TryGetDailyRewardsData_OutDailyRewardsData) == 0x0000F0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_TryGetDailyRewardsData_OutDailyRewardsData' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_TryGetDailyRewardsData_ReturnValue) == 0x000108, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_TryGetDailyRewardsData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Add_IntInt_ReturnValue) == 0x00010C, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Get_Item) == 0x000110, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue) == 0x0001A8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue1) == 0x0001AC, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue1) == 0x0001B0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue12) == 0x0001B4, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue12) == 0x0001B8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_Select_Default) == 0x0001B9, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_BooleanAND_ReturnValue) == 0x0001BA, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_BooleanAND_ReturnValue1) == 0x0001BB, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_Select1_Default) == 0x0001BC, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue1) == 0x0001C0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Percent_IntInt_ReturnValue) == 0x0001C4, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0001C8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue12) == 0x0001CC, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeStruct_FormatArgumentData) == 0x0001D0, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Get_Item1) == 0x000210, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeArray_Array) == 0x000220, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Format_ReturnValue) == 0x000230, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000248, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Add_ReturnValue) == 0x000060, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable2) == 0x000064, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue) == 0x000068, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_byte_Variable3) == 0x00006C, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000070, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_bool_Variable1) == 0x000078, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue1) == 0x000080, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000088, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000090, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue2) == 0x000098, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetContext_ReturnValue1) == 0x0000A0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetFeatureState_OutFeatureState) == 0x0000A8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetFeatureState_OutReason) == 0x0000A9, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue1) == 0x0000B0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_GetOwningPlayer_ReturnValue3) == 0x0000C0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Create_ReturnValue3) == 0x0000C8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Create_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x0000D8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_int_Loop_Counter_Variable) == 0x0000E0, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_TryGetDailyRewardsData_OutDailyRewardsData) == 0x0000E8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_TryGetDailyRewardsData_OutDailyRewardsData' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_TryGetDailyRewardsData_ReturnValue) == 0x000100, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_TryGetDailyRewardsData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Add_IntInt_ReturnValue) == 0x000104, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Get_Item) == 0x000108, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue) == 0x0001A0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue1) == 0x0001A4, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue1) == 0x0001A8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Length_ReturnValue2) == 0x0001AC, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Less_IntInt_ReturnValue2) == 0x0001B0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_Select_Default) == 0x0001B1, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_BooleanAND_ReturnValue) == 0x0001B2, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_BooleanAND_ReturnValue1) == 0x0001B3, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_Select1_Default) == 0x0001B4, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue1) == 0x0001B8, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Percent_IntInt_ReturnValue) == 0x0001BC, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0001C0, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Subtract_IntInt_ReturnValue2) == 0x0001C4, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeStruct_FormatArgumentData) == 0x0001C8, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Array_Get_Item1) == 0x000208, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeArray_Array) == 0x000218, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Format_ReturnValue) == 0x000228, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000240, "Member 'DailyRewards_C_Setup_Daily_Rewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function DailyRewards.DailyRewards_C.PopPanelWhileInGame
 // 0x0020 (0x0020 - 0x0000)
@@ -254,14 +253,14 @@ struct DailyRewards_C_PopPanelWhileInGame final
 public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue12;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DailyRewards_C_PopPanelWhileInGame) == 0x000008, "Wrong alignment on DailyRewards_C_PopPanelWhileInGame");
 static_assert(sizeof(DailyRewards_C_PopPanelWhileInGame) == 0x000020, "Wrong size on DailyRewards_C_PopPanelWhileInGame");
 static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'DailyRewards_C_PopPanelWhileInGame::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetContext_ReturnValue1) == 0x000008, "Member 'DailyRewards_C_PopPanelWhileInGame::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetContext_ReturnValue12) == 0x000010, "Member 'DailyRewards_C_PopPanelWhileInGame::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'DailyRewards_C_PopPanelWhileInGame::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetInputManager_ReturnValue) == 0x000018, "Member 'DailyRewards_C_PopPanelWhileInGame::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
 
 // Function DailyRewards.DailyRewards_C.Set Input Action Handlers

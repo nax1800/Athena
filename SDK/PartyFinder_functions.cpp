@@ -500,10 +500,10 @@ void UPartyFinder_C::UnbindDelegates()
 // Function PartyFinder.PartyFinder_C.Handle_Nav_right
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPartyFinder_C::Handle_Nav_right(EUINavigation Param_Navigation, class UWidget** Widget)
+void UPartyFinder_C::Handle_Nav_right(EUINavigation Navigation_0, class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -512,7 +512,7 @@ void UPartyFinder_C::Handle_Nav_right(EUINavigation Param_Navigation, class UWid
 
 	Params::PartyFinder_C_Handle_Nav_right Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -524,10 +524,10 @@ void UPartyFinder_C::Handle_Nav_right(EUINavigation Param_Navigation, class UWid
 // Function PartyFinder.PartyFinder_C.Handle_Nav_left
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPartyFinder_C::Handle_Nav_left(EUINavigation Param_Navigation, class UWidget** Widget)
+void UPartyFinder_C::Handle_Nav_left(EUINavigation Navigation_0, class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -536,7 +536,7 @@ void UPartyFinder_C::Handle_Nav_left(EUINavigation Param_Navigation, class UWidg
 
 	Params::PartyFinder_C_Handle_Nav_left Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

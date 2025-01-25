@@ -118,11 +118,11 @@ static_assert(offsetof(CrashlyticsBlueprintLibrary_SetUserIdentifier, ID) == 0x0
 struct CrashlyticsBlueprintLibrary_SetUserName final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CrashlyticsBlueprintLibrary_SetUserName) == 0x000008, "Wrong alignment on CrashlyticsBlueprintLibrary_SetUserName");
 static_assert(sizeof(CrashlyticsBlueprintLibrary_SetUserName) == 0x000010, "Wrong size on CrashlyticsBlueprintLibrary_SetUserName");
-static_assert(offsetof(CrashlyticsBlueprintLibrary_SetUserName, Param_Name) == 0x000000, "Member 'CrashlyticsBlueprintLibrary_SetUserName::Param_Name' has a wrong offset!");
+static_assert(offsetof(CrashlyticsBlueprintLibrary_SetUserName, Name_0) == 0x000000, "Member 'CrashlyticsBlueprintLibrary_SetUserName::Name_0' has a wrong offset!");
 
 }
 

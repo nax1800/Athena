@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -17,9 +19,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectionItemExtraDetailsHostPanel.ItemInspectionItemExtraDetailsHostPanel_C
-// 0x0000 (0x0280 - 0x0280)
+// 0x00A0 (0x0318 - 0x0278)
 class UItemInspectionItemExtraDetailsHostPanel_C final : public UFortItemDetailsHostPanel
 {
+public:
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
+	bool                                          Show_OptIn_Headers;                                // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortRarityItemData                    RarityData;                                        // 0x0288(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UMaterialInstanceDynamic*               Border_Material;                                   // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AlwaysShowBorder;                                  // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+
+public:
+	void ExecuteUbergraph_ItemInspectionItemExtraDetailsHostPanel(int32 EntryPoint);
+	void HandleDifferentItemToDetailSet();
+	void Update_Header_Size();
+	void Update_Scrollbox_Layout();
+	void Update_Border_Color();
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -31,7 +48,12 @@ public:
 	}
 };
 static_assert(alignof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000008, "Wrong alignment on UItemInspectionItemExtraDetailsHostPanel_C");
-static_assert(sizeof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000280, "Wrong size on UItemInspectionItemExtraDetailsHostPanel_C");
+static_assert(sizeof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000318, "Wrong size on UItemInspectionItemExtraDetailsHostPanel_C");
+static_assert(offsetof(UItemInspectionItemExtraDetailsHostPanel_C, UberGraphFrame) == 0x000278, "Member 'UItemInspectionItemExtraDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemInspectionItemExtraDetailsHostPanel_C, Show_OptIn_Headers) == 0x000280, "Member 'UItemInspectionItemExtraDetailsHostPanel_C::Show_OptIn_Headers' has a wrong offset!");
+static_assert(offsetof(UItemInspectionItemExtraDetailsHostPanel_C, RarityData) == 0x000288, "Member 'UItemInspectionItemExtraDetailsHostPanel_C::RarityData' has a wrong offset!");
+static_assert(offsetof(UItemInspectionItemExtraDetailsHostPanel_C, Border_Material) == 0x000308, "Member 'UItemInspectionItemExtraDetailsHostPanel_C::Border_Material' has a wrong offset!");
+static_assert(offsetof(UItemInspectionItemExtraDetailsHostPanel_C, AlwaysShowBorder) == 0x000310, "Member 'UItemInspectionItemExtraDetailsHostPanel_C::AlwaysShowBorder' has a wrong offset!");
 
 }
 

@@ -10,54 +10,54 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_DtB_FloatingRift.B_DtB_FloatingRift_C
-// 0x0130 (0x08A0 - 0x0770)
+// 0x0128 (0x0800 - 0x06D8)
 class AB_DtB_FloatingRift_C final : public ABuildingGameplayActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(Transient, DuplicateTransient)
-	class UAudioComponent*                        Electricity_Spark_Zaps_Audio_Component;            // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_ground_04;                                // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_ground_03;                                // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_ground_02;                                // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_ground_01;                                // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       DispatcherCallOutVolume;                           // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDecalComponent*                        Decal_Ground;                                      // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_DtB_GroundFog;                                  // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_DtB_GroundTendril;                              // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_orb_01;                                   // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x07D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x07D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_floating_pieces_01;                       // 0x07E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   S_Elevation_Ground_Z;                              // 0x07E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dtb_rift_center_01;                                // 0x07F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_StormFog;                                        // 0x07F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        AmbientClose_small;                                // 0x0800(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        AmbientLoopingSound_large;                         // 0x0808(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortMiniMapComponent*                  FortMiniMap;                                       // 0x0810(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      KillVolume;                                        // 0x0818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       StaminaVolume;                                     // 0x0820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       DamageVolume;                                      // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_Rift_Arcs;                                       // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          RiftArcTriggerVolume;                              // 0x0838(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CampSlime;                                         // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPostProcessComponent*                  PostProcess;                                       // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       PostProcessVolume;                                 // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_DtBRiftCoreFloating;                             // 0x0858(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0860(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsRiftArcsActive_;                                // 0x0868(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_869[0x7];                                      // 0x0869(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAbilitySystemComponent*            AIPawnAbilitySystemComponent;                      // 0x0870(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   RiftLocated;                                       // 0x0878(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   CallOutVolumeOverlap;                              // 0x0888(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06D8(0x0008)(Transient, DuplicateTransient)
+	class UAudioComponent*                        Electricity_Spark_Zaps_Audio_Component;            // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_ground_04;                                // 0x06E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_ground_03;                                // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_ground_02;                                // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_ground_01;                                // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       DispatcherCallOutVolume;                           // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDecalComponent*                        Decal_Ground;                                      // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_DtB_GroundFog;                                  // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_DtB_GroundTendril;                              // 0x0720(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_orb_01;                                   // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_floating_pieces_01;                       // 0x0748(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   S_Elevation_Ground_Z;                              // 0x0750(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dtb_rift_center_01;                                // 0x0758(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_StormFog;                                        // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        AmbientClose_small;                                // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        AmbientLoopingSound_large;                         // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortMiniMapComponent*                  FortMiniMap;                                       // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      KillVolume;                                        // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       StaminaVolume;                                     // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       DamageVolume;                                      // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_Rift_Arcs;                                       // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          RiftArcTriggerVolume;                              // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CampSlime;                                         // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPostProcessComponent*                  PostProcess;                                       // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       PostProcessVolume;                                 // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_DtBRiftCoreFloating;                             // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsRiftArcsActive_;                                // 0x07D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_7D1[0x7];                                      // 0x07D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAbilitySystemComponent*            AIPawnAbilitySystemComponent;                      // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   RiftLocated;                                       // 0x07E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   CallOutVolumeOverlap;                              // 0x07F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void RiftLocated__DelegateSignature(class AFortPlayerPawn* FortPlayPawn);
@@ -83,43 +83,43 @@ public:
 		return GetDefaultObjImpl<AB_DtB_FloatingRift_C>();
 	}
 };
-static_assert(alignof(AB_DtB_FloatingRift_C) == 0x000010, "Wrong alignment on AB_DtB_FloatingRift_C");
-static_assert(sizeof(AB_DtB_FloatingRift_C) == 0x0008A0, "Wrong size on AB_DtB_FloatingRift_C");
-static_assert(offsetof(AB_DtB_FloatingRift_C, UberGraphFrame) == 0x000770, "Member 'AB_DtB_FloatingRift_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Electricity_Spark_Zaps_Audio_Component) == 0x000778, "Member 'AB_DtB_FloatingRift_C::Electricity_Spark_Zaps_Audio_Component' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_04) == 0x000780, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_04' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_03) == 0x000788, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_03' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_02) == 0x000790, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_02' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_01) == 0x000798, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DispatcherCallOutVolume) == 0x0007A0, "Member 'AB_DtB_FloatingRift_C::DispatcherCallOutVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Decal_Ground) == 0x0007A8, "Member 'AB_DtB_FloatingRift_C::Decal_Ground' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundFog) == 0x0007B0, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundFog' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundTendril) == 0x0007B8, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundTendril' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_orb_01) == 0x0007C0, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_orb_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh2) == 0x0007C8, "Member 'AB_DtB_FloatingRift_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh1) == 0x0007D0, "Member 'AB_DtB_FloatingRift_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh) == 0x0007D8, "Member 'AB_DtB_FloatingRift_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_floating_pieces_01) == 0x0007E0, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_floating_pieces_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, S_Elevation_Ground_Z) == 0x0007E8, "Member 'AB_DtB_FloatingRift_C::S_Elevation_Ground_Z' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_center_01) == 0x0007F0, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_center_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_StormFog) == 0x0007F8, "Member 'AB_DtB_FloatingRift_C::P_StormFog' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientClose_small) == 0x000800, "Member 'AB_DtB_FloatingRift_C::AmbientClose_small' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientLoopingSound_large) == 0x000808, "Member 'AB_DtB_FloatingRift_C::AmbientLoopingSound_large' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, FortMiniMap) == 0x000810, "Member 'AB_DtB_FloatingRift_C::FortMiniMap' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, KillVolume) == 0x000818, "Member 'AB_DtB_FloatingRift_C::KillVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaminaVolume) == 0x000820, "Member 'AB_DtB_FloatingRift_C::StaminaVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DamageVolume) == 0x000828, "Member 'AB_DtB_FloatingRift_C::DamageVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_Rift_Arcs) == 0x000830, "Member 'AB_DtB_FloatingRift_C::P_Rift_Arcs' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, RiftArcTriggerVolume) == 0x000838, "Member 'AB_DtB_FloatingRift_C::RiftArcTriggerVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, CampSlime) == 0x000840, "Member 'AB_DtB_FloatingRift_C::CampSlime' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcess) == 0x000848, "Member 'AB_DtB_FloatingRift_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcessVolume) == 0x000850, "Member 'AB_DtB_FloatingRift_C::PostProcessVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_DtBRiftCoreFloating) == 0x000858, "Member 'AB_DtB_FloatingRift_C::P_DtBRiftCoreFloating' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DefaultSceneRoot) == 0x000860, "Member 'AB_DtB_FloatingRift_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, bIsRiftArcsActive_) == 0x000868, "Member 'AB_DtB_FloatingRift_C::bIsRiftArcsActive_' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AIPawnAbilitySystemComponent) == 0x000870, "Member 'AB_DtB_FloatingRift_C::AIPawnAbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, RiftLocated) == 0x000878, "Member 'AB_DtB_FloatingRift_C::RiftLocated' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, CallOutVolumeOverlap) == 0x000888, "Member 'AB_DtB_FloatingRift_C::CallOutVolumeOverlap' has a wrong offset!");
+static_assert(alignof(AB_DtB_FloatingRift_C) == 0x000008, "Wrong alignment on AB_DtB_FloatingRift_C");
+static_assert(sizeof(AB_DtB_FloatingRift_C) == 0x000800, "Wrong size on AB_DtB_FloatingRift_C");
+static_assert(offsetof(AB_DtB_FloatingRift_C, UberGraphFrame) == 0x0006D8, "Member 'AB_DtB_FloatingRift_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Electricity_Spark_Zaps_Audio_Component) == 0x0006E0, "Member 'AB_DtB_FloatingRift_C::Electricity_Spark_Zaps_Audio_Component' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_04) == 0x0006E8, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_04' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_03) == 0x0006F0, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_03' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_02) == 0x0006F8, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_02' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_01) == 0x000700, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_01' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, DispatcherCallOutVolume) == 0x000708, "Member 'AB_DtB_FloatingRift_C::DispatcherCallOutVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Decal_Ground) == 0x000710, "Member 'AB_DtB_FloatingRift_C::Decal_Ground' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundFog) == 0x000718, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundFog' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundTendril) == 0x000720, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundTendril' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_orb_01) == 0x000728, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_orb_01' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh2) == 0x000730, "Member 'AB_DtB_FloatingRift_C::StaticMesh2' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh1) == 0x000738, "Member 'AB_DtB_FloatingRift_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh) == 0x000740, "Member 'AB_DtB_FloatingRift_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_floating_pieces_01) == 0x000748, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_floating_pieces_01' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, S_Elevation_Ground_Z) == 0x000750, "Member 'AB_DtB_FloatingRift_C::S_Elevation_Ground_Z' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_center_01) == 0x000758, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_center_01' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, P_StormFog) == 0x000760, "Member 'AB_DtB_FloatingRift_C::P_StormFog' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientClose_small) == 0x000768, "Member 'AB_DtB_FloatingRift_C::AmbientClose_small' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientLoopingSound_large) == 0x000770, "Member 'AB_DtB_FloatingRift_C::AmbientLoopingSound_large' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, FortMiniMap) == 0x000778, "Member 'AB_DtB_FloatingRift_C::FortMiniMap' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, KillVolume) == 0x000780, "Member 'AB_DtB_FloatingRift_C::KillVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, StaminaVolume) == 0x000788, "Member 'AB_DtB_FloatingRift_C::StaminaVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, DamageVolume) == 0x000790, "Member 'AB_DtB_FloatingRift_C::DamageVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, P_Rift_Arcs) == 0x000798, "Member 'AB_DtB_FloatingRift_C::P_Rift_Arcs' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, RiftArcTriggerVolume) == 0x0007A0, "Member 'AB_DtB_FloatingRift_C::RiftArcTriggerVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, CampSlime) == 0x0007A8, "Member 'AB_DtB_FloatingRift_C::CampSlime' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcess) == 0x0007B0, "Member 'AB_DtB_FloatingRift_C::PostProcess' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcessVolume) == 0x0007B8, "Member 'AB_DtB_FloatingRift_C::PostProcessVolume' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, P_DtBRiftCoreFloating) == 0x0007C0, "Member 'AB_DtB_FloatingRift_C::P_DtBRiftCoreFloating' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, DefaultSceneRoot) == 0x0007C8, "Member 'AB_DtB_FloatingRift_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, bIsRiftArcsActive_) == 0x0007D0, "Member 'AB_DtB_FloatingRift_C::bIsRiftArcsActive_' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, AIPawnAbilitySystemComponent) == 0x0007D8, "Member 'AB_DtB_FloatingRift_C::AIPawnAbilitySystemComponent' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, RiftLocated) == 0x0007E0, "Member 'AB_DtB_FloatingRift_C::RiftLocated' has a wrong offset!");
+static_assert(offsetof(AB_DtB_FloatingRift_C, CallOutVolumeOverlap) == 0x0007F0, "Member 'AB_DtB_FloatingRift_C::CallOutVolumeOverlap' has a wrong offset!");
 
 }
 

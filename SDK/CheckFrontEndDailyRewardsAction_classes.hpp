@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 
 
@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x03A0 - 0x0388)
 class ACheckFrontEndDailyRewardsAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          bLastStateWasLoginScreen;                          // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	ESubGame                                      NewVar_0;                                          // 0x0389(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          bLastStateWasLoginScreen;                          // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	ESubGame                                      NewVar_0;                                          // 0x0399(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CheckFrontEndDailyRewardsAction(int32 EntryPoint);
@@ -50,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(ACheckFrontEndDailyRewardsAction_C) == 0x000008, "Wrong alignment on ACheckFrontEndDailyRewardsAction_C");
-static_assert(sizeof(ACheckFrontEndDailyRewardsAction_C) == 0x000390, "Wrong size on ACheckFrontEndDailyRewardsAction_C");
-static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, UberGraphFrame) == 0x000378, "Member 'ACheckFrontEndDailyRewardsAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, DefaultSceneRoot) == 0x000380, "Member 'ACheckFrontEndDailyRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, bLastStateWasLoginScreen) == 0x000388, "Member 'ACheckFrontEndDailyRewardsAction_C::bLastStateWasLoginScreen' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, NewVar_0) == 0x000389, "Member 'ACheckFrontEndDailyRewardsAction_C::NewVar_0' has a wrong offset!");
+static_assert(sizeof(ACheckFrontEndDailyRewardsAction_C) == 0x0003A0, "Wrong size on ACheckFrontEndDailyRewardsAction_C");
+static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, UberGraphFrame) == 0x000388, "Member 'ACheckFrontEndDailyRewardsAction_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, DefaultSceneRoot) == 0x000390, "Member 'ACheckFrontEndDailyRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, bLastStateWasLoginScreen) == 0x000398, "Member 'ACheckFrontEndDailyRewardsAction_C::bLastStateWasLoginScreen' has a wrong offset!");
+static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, NewVar_0) == 0x000399, "Member 'ACheckFrontEndDailyRewardsAction_C::NewVar_0' has a wrong offset!");
 
 }
 

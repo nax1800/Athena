@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FounderBadgeTooltip.FounderBadgeTooltip_C
-// 0x0008 (0x0220 - 0x0218)
+// 0x0008 (0x0218 - 0x0210)
 class UFounderBadgeTooltip_C final : public UCommonUserWidget
 {
 public:
-	class UHorizontalBox*                         HBoxBoost;                                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HBoxBoost;                                         // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(UFounderBadgeTooltip_C) == 0x000008, "Wrong alignment on UFounderBadgeTooltip_C");
-static_assert(sizeof(UFounderBadgeTooltip_C) == 0x000220, "Wrong size on UFounderBadgeTooltip_C");
-static_assert(offsetof(UFounderBadgeTooltip_C, HBoxBoost) == 0x000218, "Member 'UFounderBadgeTooltip_C::HBoxBoost' has a wrong offset!");
+static_assert(sizeof(UFounderBadgeTooltip_C) == 0x000218, "Wrong size on UFounderBadgeTooltip_C");
+static_assert(offsetof(UFounderBadgeTooltip_C, HBoxBoost) == 0x000210, "Member 'UFounderBadgeTooltip_C::HBoxBoost' has a wrong offset!");
 
 }
 

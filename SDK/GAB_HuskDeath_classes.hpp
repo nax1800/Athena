@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "GAB_GenericDeath_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "GAB_GenericDeath_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskDeath.GAB_HuskDeath_C
-// 0x0010 (0x0C90 - 0x0C80)
+// 0x0010 (0x0A98 - 0x0A88)
 class UGAB_HuskDeath_C final : public UGAB_GenericDeath_C
 {
 public:
-	struct FGameplayTag                           LaserTag;                                          // 0x0C80(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           Headshot;                                          // 0x0C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           LaserTag;                                          // 0x0A88(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           Headshot;                                          // 0x0A90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,9 +36,9 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskDeath_C) == 0x000008, "Wrong alignment on UGAB_HuskDeath_C");
-static_assert(sizeof(UGAB_HuskDeath_C) == 0x000C90, "Wrong size on UGAB_HuskDeath_C");
-static_assert(offsetof(UGAB_HuskDeath_C, LaserTag) == 0x000C80, "Member 'UGAB_HuskDeath_C::LaserTag' has a wrong offset!");
-static_assert(offsetof(UGAB_HuskDeath_C, Headshot) == 0x000C88, "Member 'UGAB_HuskDeath_C::Headshot' has a wrong offset!");
+static_assert(sizeof(UGAB_HuskDeath_C) == 0x000A98, "Wrong size on UGAB_HuskDeath_C");
+static_assert(offsetof(UGAB_HuskDeath_C, LaserTag) == 0x000A88, "Member 'UGAB_HuskDeath_C::LaserTag' has a wrong offset!");
+static_assert(offsetof(UGAB_HuskDeath_C, Headshot) == 0x000A90, "Member 'UGAB_HuskDeath_C::Headshot' has a wrong offset!");
 
 }
 

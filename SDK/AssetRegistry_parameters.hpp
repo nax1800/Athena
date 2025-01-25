@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AssetRegistry_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AssetRegistry_structs.hpp"
 
 
 namespace SDK::Params
@@ -197,6 +197,67 @@ static_assert(alignof(AssetRegistryHelpers_ToSoftObjectPath) == 0x000008, "Wrong
 static_assert(sizeof(AssetRegistryHelpers_ToSoftObjectPath) == 0x000068, "Wrong size on AssetRegistryHelpers_ToSoftObjectPath");
 static_assert(offsetof(AssetRegistryHelpers_ToSoftObjectPath, InAssetData) == 0x000000, "Member 'AssetRegistryHelpers_ToSoftObjectPath::InAssetData' has a wrong offset!");
 static_assert(offsetof(AssetRegistryHelpers_ToSoftObjectPath, ReturnValue) == 0x000050, "Member 'AssetRegistryHelpers_ToSoftObjectPath::ReturnValue' has a wrong offset!");
+
+// Function AssetRegistry.AssetRegistry.PrioritizeSearchPath
+// 0x0010 (0x0010 - 0x0000)
+struct AssetRegistry_PrioritizeSearchPath final
+{
+public:
+	class FString                                 PathToPrioritize;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AssetRegistry_PrioritizeSearchPath) == 0x000008, "Wrong alignment on AssetRegistry_PrioritizeSearchPath");
+static_assert(sizeof(AssetRegistry_PrioritizeSearchPath) == 0x000010, "Wrong size on AssetRegistry_PrioritizeSearchPath");
+static_assert(offsetof(AssetRegistry_PrioritizeSearchPath, PathToPrioritize) == 0x000000, "Member 'AssetRegistry_PrioritizeSearchPath::PathToPrioritize' has a wrong offset!");
+
+// Function AssetRegistry.AssetRegistry.ScanFilesSynchronous
+// 0x0018 (0x0018 - 0x0000)
+struct AssetRegistry_ScanFilesSynchronous final
+{
+public:
+	TArray<class FString>                         InFilePaths;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          bForceRescan;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AssetRegistry_ScanFilesSynchronous) == 0x000008, "Wrong alignment on AssetRegistry_ScanFilesSynchronous");
+static_assert(sizeof(AssetRegistry_ScanFilesSynchronous) == 0x000018, "Wrong size on AssetRegistry_ScanFilesSynchronous");
+static_assert(offsetof(AssetRegistry_ScanFilesSynchronous, InFilePaths) == 0x000000, "Member 'AssetRegistry_ScanFilesSynchronous::InFilePaths' has a wrong offset!");
+static_assert(offsetof(AssetRegistry_ScanFilesSynchronous, bForceRescan) == 0x000010, "Member 'AssetRegistry_ScanFilesSynchronous::bForceRescan' has a wrong offset!");
+
+// Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles
+// 0x0010 (0x0010 - 0x0000)
+struct AssetRegistry_ScanModifiedAssetFiles final
+{
+public:
+	TArray<class FString>                         InFilePaths;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AssetRegistry_ScanModifiedAssetFiles) == 0x000008, "Wrong alignment on AssetRegistry_ScanModifiedAssetFiles");
+static_assert(sizeof(AssetRegistry_ScanModifiedAssetFiles) == 0x000010, "Wrong size on AssetRegistry_ScanModifiedAssetFiles");
+static_assert(offsetof(AssetRegistry_ScanModifiedAssetFiles, InFilePaths) == 0x000000, "Member 'AssetRegistry_ScanModifiedAssetFiles::InFilePaths' has a wrong offset!");
+
+// Function AssetRegistry.AssetRegistry.ScanPathsSynchronous
+// 0x0018 (0x0018 - 0x0000)
+struct AssetRegistry_ScanPathsSynchronous final
+{
+public:
+	TArray<class FString>                         InPaths;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          bForceRescan;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AssetRegistry_ScanPathsSynchronous) == 0x000008, "Wrong alignment on AssetRegistry_ScanPathsSynchronous");
+static_assert(sizeof(AssetRegistry_ScanPathsSynchronous) == 0x000018, "Wrong size on AssetRegistry_ScanPathsSynchronous");
+static_assert(offsetof(AssetRegistry_ScanPathsSynchronous, InPaths) == 0x000000, "Member 'AssetRegistry_ScanPathsSynchronous::InPaths' has a wrong offset!");
+static_assert(offsetof(AssetRegistry_ScanPathsSynchronous, bForceRescan) == 0x000010, "Member 'AssetRegistry_ScanPathsSynchronous::bForceRescan' has a wrong offset!");
+
+// Function AssetRegistry.AssetRegistry.SearchAllAssets
+// 0x0001 (0x0001 - 0x0000)
+struct AssetRegistry_SearchAllAssets final
+{
+public:
+	bool                                          bSynchronousSearch;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AssetRegistry_SearchAllAssets) == 0x000001, "Wrong alignment on AssetRegistry_SearchAllAssets");
+static_assert(sizeof(AssetRegistry_SearchAllAssets) == 0x000001, "Wrong size on AssetRegistry_SearchAllAssets");
+static_assert(offsetof(AssetRegistry_SearchAllAssets, bSynchronousSearch) == 0x000000, "Member 'AssetRegistry_SearchAllAssets::bSynchronousSearch' has a wrong offset!");
 
 // Function AssetRegistry.AssetRegistry.GetAllAssets
 // 0x0018 (0x0018 - 0x0000)

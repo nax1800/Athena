@@ -27,7 +27,7 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ABuildingSMActor* BuildingSMActor, class UFortItem* PotentialWorldItem, bool bDestroyed, bool bJustHitWeakspot)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget) == 0x000008, "Wrong alignment on ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget");
 static_assert(sizeof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget) == 0x000040, "Wrong size on ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget");
@@ -35,7 +35,7 @@ static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggr
 static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function ResourceAggregationWidget.ResourceAggregationWidget_C.HandleDamagedResourceObject
 // 0x00B8 (0x00B8 - 0x0000)
@@ -51,7 +51,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              LocalPotentialResource;                            // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABuildingSMActor*                       LocalDamagedResourceObject;                        // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0028(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)

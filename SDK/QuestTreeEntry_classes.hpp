@@ -11,51 +11,51 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTreeEntry.QuestTreeEntry_C
-// 0x00B0 (0x08C8 - 0x0818)
+// 0x00B0 (0x0950 - 0x08A0)
 class UQuestTreeEntry_C final : public UFortQuestTreeItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0818(0x0008)(Transient, DuplicateTransient)
-	class UBP_QuestExpiresWidget_C*               BP_QuestExpiresWidget;                             // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ExpansionIndicator;                                // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageComplete;                                     // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MainOrSubCategory;                                 // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Name_QuestTreeEntry_C;                             // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       PercentageComplete;                                // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          PercentageCompleteIndicator;                       // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               PinnedEmptyBox;                                    // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PinnedImage;                                       // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        PinnedSwitcher;                                    // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               QuestIconOverlay;                                  // 0x0878(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QuestTreeIcon;                                     // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcherProgress;                            // 0x0888(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortQuestItem*                         CurrentQuest;                                      // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPinned_;                                         // 0x0898(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_899[0x7];                                      // 0x0899(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortQuestCategory*                     CurrentQuestCategory;                              // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TwitchIconColor;                                   // 0x08A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DefaultIconColor;                                  // 0x08B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UBP_QuestExpiresWidget_C*               BP_QuestExpiresWidget;                             // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ExpansionIndicator;                                // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageComplete;                                     // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MainOrSubCategory;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Name_0;                                            // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       PercentageComplete;                                // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          PercentageCompleteIndicator;                       // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               PinnedEmptyBox;                                    // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PinnedImage;                                       // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        PinnedSwitcher;                                    // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               QuestIconOverlay;                                  // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QuestTreeIcon;                                     // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcherProgress;                            // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortQuestItem*                         CurrentQuest;                                      // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPinned_;                                         // 0x0920(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_921[0x7];                                      // 0x0921(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortQuestCategory*                     CurrentQuestCategory;                              // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TwitchIconColor;                                   // 0x0930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DefaultIconColor;                                  // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_QuestTreeEntry(int32 EntryPoint);
-	void OnDeselected();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnDeselected();
 	void Destruct();
 	void OnQuestSeen_Event_0(class UFortQuestItem* Quest);
-	void OnHovered();
+	void BP_OnHovered();
 	void OnQuestsUpdated();
-	void OnSelected();
-	void ExpansionChanged(bool bExpanded);
+	void BP_OnSelected();
 	void SetupAsQuest(class UFortQuestItem* Category);
 	void SetupAsCategory(class UFortQuestCategory* Category);
 	void SetPinnedState();
@@ -82,27 +82,27 @@ public:
 	}
 };
 static_assert(alignof(UQuestTreeEntry_C) == 0x000008, "Wrong alignment on UQuestTreeEntry_C");
-static_assert(sizeof(UQuestTreeEntry_C) == 0x0008C8, "Wrong size on UQuestTreeEntry_C");
-static_assert(offsetof(UQuestTreeEntry_C, UberGraphFrame) == 0x000818, "Member 'UQuestTreeEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, BP_QuestExpiresWidget) == 0x000820, "Member 'UQuestTreeEntry_C::BP_QuestExpiresWidget' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, ExpansionIndicator) == 0x000828, "Member 'UQuestTreeEntry_C::ExpansionIndicator' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, ImageComplete) == 0x000830, "Member 'UQuestTreeEntry_C::ImageComplete' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, MainOrSubCategory) == 0x000838, "Member 'UQuestTreeEntry_C::MainOrSubCategory' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, Name_QuestTreeEntry_C) == 0x000840, "Member 'UQuestTreeEntry_C::Name_QuestTreeEntry_C' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, NormalBangWrapper) == 0x000848, "Member 'UQuestTreeEntry_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PercentageComplete) == 0x000850, "Member 'UQuestTreeEntry_C::PercentageComplete' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PercentageCompleteIndicator) == 0x000858, "Member 'UQuestTreeEntry_C::PercentageCompleteIndicator' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedEmptyBox) == 0x000860, "Member 'UQuestTreeEntry_C::PinnedEmptyBox' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedImage) == 0x000868, "Member 'UQuestTreeEntry_C::PinnedImage' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedSwitcher) == 0x000870, "Member 'UQuestTreeEntry_C::PinnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, QuestIconOverlay) == 0x000878, "Member 'UQuestTreeEntry_C::QuestIconOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, QuestTreeIcon) == 0x000880, "Member 'UQuestTreeEntry_C::QuestTreeIcon' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, WidgetSwitcherProgress) == 0x000888, "Member 'UQuestTreeEntry_C::WidgetSwitcherProgress' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, CurrentQuest) == 0x000890, "Member 'UQuestTreeEntry_C::CurrentQuest' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, IsPinned_) == 0x000898, "Member 'UQuestTreeEntry_C::IsPinned_' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, CurrentQuestCategory) == 0x0008A0, "Member 'UQuestTreeEntry_C::CurrentQuestCategory' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, TwitchIconColor) == 0x0008A8, "Member 'UQuestTreeEntry_C::TwitchIconColor' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, DefaultIconColor) == 0x0008B8, "Member 'UQuestTreeEntry_C::DefaultIconColor' has a wrong offset!");
+static_assert(sizeof(UQuestTreeEntry_C) == 0x000950, "Wrong size on UQuestTreeEntry_C");
+static_assert(offsetof(UQuestTreeEntry_C, UberGraphFrame) == 0x0008A0, "Member 'UQuestTreeEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, BP_QuestExpiresWidget) == 0x0008A8, "Member 'UQuestTreeEntry_C::BP_QuestExpiresWidget' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, ExpansionIndicator) == 0x0008B0, "Member 'UQuestTreeEntry_C::ExpansionIndicator' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, ImageComplete) == 0x0008B8, "Member 'UQuestTreeEntry_C::ImageComplete' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, MainOrSubCategory) == 0x0008C0, "Member 'UQuestTreeEntry_C::MainOrSubCategory' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, Name_0) == 0x0008C8, "Member 'UQuestTreeEntry_C::Name_0' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, NormalBangWrapper) == 0x0008D0, "Member 'UQuestTreeEntry_C::NormalBangWrapper' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, PercentageComplete) == 0x0008D8, "Member 'UQuestTreeEntry_C::PercentageComplete' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, PercentageCompleteIndicator) == 0x0008E0, "Member 'UQuestTreeEntry_C::PercentageCompleteIndicator' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, PinnedEmptyBox) == 0x0008E8, "Member 'UQuestTreeEntry_C::PinnedEmptyBox' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, PinnedImage) == 0x0008F0, "Member 'UQuestTreeEntry_C::PinnedImage' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, PinnedSwitcher) == 0x0008F8, "Member 'UQuestTreeEntry_C::PinnedSwitcher' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, QuestIconOverlay) == 0x000900, "Member 'UQuestTreeEntry_C::QuestIconOverlay' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, QuestTreeIcon) == 0x000908, "Member 'UQuestTreeEntry_C::QuestTreeIcon' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, WidgetSwitcherProgress) == 0x000910, "Member 'UQuestTreeEntry_C::WidgetSwitcherProgress' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, CurrentQuest) == 0x000918, "Member 'UQuestTreeEntry_C::CurrentQuest' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, IsPinned_) == 0x000920, "Member 'UQuestTreeEntry_C::IsPinned_' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, CurrentQuestCategory) == 0x000928, "Member 'UQuestTreeEntry_C::CurrentQuestCategory' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, TwitchIconColor) == 0x000930, "Member 'UQuestTreeEntry_C::TwitchIconColor' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, DefaultIconColor) == 0x000940, "Member 'UQuestTreeEntry_C::DefaultIconColor' has a wrong offset!");
 
 }
 

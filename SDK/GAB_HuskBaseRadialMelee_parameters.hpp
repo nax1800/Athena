@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
@@ -61,15 +61,15 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x01A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x01B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x01BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData12;                   // 0x01C8(0x0020)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag12;               // 0x01E8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x01C8(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x01E8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x01F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X12;                          // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y12;                          // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z12;                          // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X2;                           // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y2;                           // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z2;                           // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0210(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0210(0x0010)(ZeroConstructor, NoDestructor)
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x0220(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee) == 0x000008, "Wrong alignment on GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee");
@@ -107,14 +107,14 @@ static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRa
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_MakeVector_ReturnValue1) == 0x0001A4, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_Normal_ReturnValue) == 0x0001B0, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_Normal_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_Normal_ReturnValue1) == 0x0001BC, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_Normal_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CustomEvent_TargetData12) == 0x0001C8, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CustomEvent_TargetData12' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CustomEvent_ApplicationTag12) == 0x0001E8, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CustomEvent_ApplicationTag12' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CustomEvent_TargetData2) == 0x0001C8, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CustomEvent_TargetData2' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CustomEvent_ApplicationTag2) == 0x0001E8, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_Cross_VectorVector_ReturnValue) == 0x0001F0, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_X12) == 0x0001FC, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_X12' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_Y12) == 0x000200, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_Y12' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_Z12) == 0x000204, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_Z12' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_X2) == 0x0001FC, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_X2' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_Y2) == 0x000200, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_Y2' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BreakVector_Z2) == 0x000204, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BreakVector_Z2' has a wrong offset!");
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000208, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CreateDelegate_OutputDelegate12) == 0x000210, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, K2Node_CreateDelegate_OutputDelegate2) == 0x000210, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000220, "Member 'GAB_HuskBaseRadialMelee_C_ExecuteUbergraph_GAB_HuskBaseRadialMelee::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
 
 // Function GAB_HuskBaseRadialMelee.GAB_HuskBaseRadialMelee_C.Triggered_A0D25C0C4C9CDEEB0EB0018B3334307D

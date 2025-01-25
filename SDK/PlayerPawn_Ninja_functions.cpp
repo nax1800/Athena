@@ -163,20 +163,6 @@ void APlayerPawn_Ninja_C::SetMenuScreenClassName()
 }
 
 
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.Toggle Shadow Stance
-// (BlueprintCallable, BlueprintEvent)
-
-void APlayerPawn_Ninja_C::Toggle_Shadow_Stance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "Toggle Shadow Stance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.DragonSlashActivatedOrDeactivated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -194,92 +180,6 @@ void APlayerPawn_Ninja_C::DragonSlashActivatedOrDeactivated(bool Active_)
 	Parms.Active_ = Active_;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.UpdateWeaponShadowStance
-// (BlueprintCallable, BlueprintEvent)
-
-void APlayerPawn_Ninja_C::UpdateWeaponShadowStance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "UpdateWeaponShadowStance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.GameplayCue.Ninja.DimMak.ActiveFX
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameplayCueEvent                       EventType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
-
-void APlayerPawn_Ninja_C::GameplayCue_Ninja_DimMak_ActiveFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "GameplayCue.Ninja.DimMak.ActiveFX");
-
-	Params::PlayerPawn_Ninja_C_GameplayCue_Ninja_DimMak_ActiveFX Parms{};
-
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.GameplayCue.Abilities.Activation.Ninja.ShadowStance
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameplayCueEvent                       EventType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
-
-void APlayerPawn_Ninja_C::GameplayCue_Abilities_Activation_Ninja_ShadowStance(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "GameplayCue.Abilities.Activation.Ninja.ShadowStance");
-
-	Params::PlayerPawn_Ninja_C_GameplayCue_Abilities_Activation_Ninja_ShadowStance Parms{};
-
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.Animate Ninja ShadowStance Dissolve__UpdateFunc
-// (BlueprintEvent)
-
-void APlayerPawn_Ninja_C::Animate_Ninja_ShadowStance_Dissolve__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "Animate Ninja ShadowStance Dissolve__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.Animate Ninja ShadowStance Dissolve__FinishedFunc
-// (BlueprintEvent)
-
-void APlayerPawn_Ninja_C::Animate_Ninja_ShadowStance_Dissolve__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "Animate Ninja ShadowStance Dissolve__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -314,37 +214,23 @@ void APlayerPawn_Ninja_C::CreateAndAttachDuplicateEffectSkeletalMeshes(EFortCust
 }
 
 
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.SetupShadowMeshAssetsAndMaterials
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.OnLanded
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// EFortCustomPartType                     PartType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMeshComponent*           Shadow_Mesh_Component                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInterface*>       Character_Body_Part_MID_Array                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UMaterialInstanceDynamic*> Empty_Translucent_Shadow_Stance_Output_MID_Array       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                                    Set                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void APlayerPawn_Ninja_C::SetupShadowMeshAssetsAndMaterials(EFortCustomPartType PartType, class USkeletalMeshComponent*& Shadow_Mesh_Component, TArray<class UMaterialInterface*>& Character_Body_Part_MID_Array, TArray<class UMaterialInstanceDynamic*>& Empty_Translucent_Shadow_Stance_Output_MID_Array, bool* Set)
+void APlayerPawn_Ninja_C::OnLanded(const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "SetupShadowMeshAssetsAndMaterials");
+		Func = Class->GetFunction("PlayerPawn_Ninja_C", "OnLanded");
 
-	Params::PlayerPawn_Ninja_C_SetupShadowMeshAssetsAndMaterials Parms{};
+	Params::PlayerPawn_Ninja_C_OnLanded Parms{};
 
-	Parms.PartType = PartType;
-	Parms.Shadow_Mesh_Component = Shadow_Mesh_Component;
-	Parms.Character_Body_Part_MID_Array = std::move(Character_Body_Part_MID_Array);
-	Parms.Empty_Translucent_Shadow_Stance_Output_MID_Array = std::move(Empty_Translucent_Shadow_Stance_Output_MID_Array);
+	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Shadow_Mesh_Component = Parms.Shadow_Mesh_Component;
-	Character_Body_Part_MID_Array = std::move(Parms.Character_Body_Part_MID_Array);
-	Empty_Translucent_Shadow_Stance_Output_MID_Array = std::move(Parms.Empty_Translucent_Shadow_Stance_Output_MID_Array);
-
-	if (Set != nullptr)
-		*Set = Parms.Set;
 }
 
 
@@ -365,26 +251,6 @@ void APlayerPawn_Ninja_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_T
 
 	Parms.EventType = EventType;
 	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.OnLanded
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void APlayerPawn_Ninja_C::OnLanded(const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Ninja_C", "OnLanded");
-
-	Params::PlayerPawn_Ninja_C_OnLanded Parms{};
-
-	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -445,6 +311,40 @@ void APlayerPawn_Ninja_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class A
 	Parms.PrevWeapon = PrevWeapon;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Ninja.PlayerPawn_Ninja_C.SetupShadowMeshAssetsAndMaterials
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortCustomPartType                     PartType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           Shadow_Mesh_Component                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInterface*>       Character_Body_Part_MID_Array                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UMaterialInstanceDynamic*> Empty_Translucent_Shadow_Stance_Output_MID_Array       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// bool                                    Set                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Ninja_C::SetupShadowMeshAssetsAndMaterials(EFortCustomPartType PartType, class USkeletalMeshComponent*& Shadow_Mesh_Component, TArray<class UMaterialInterface*>& Character_Body_Part_MID_Array, TArray<class UMaterialInstanceDynamic*>& Empty_Translucent_Shadow_Stance_Output_MID_Array, bool* Set)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Ninja_C", "SetupShadowMeshAssetsAndMaterials");
+
+	Params::PlayerPawn_Ninja_C_SetupShadowMeshAssetsAndMaterials Parms{};
+
+	Parms.PartType = PartType;
+	Parms.Shadow_Mesh_Component = Shadow_Mesh_Component;
+	Parms.Character_Body_Part_MID_Array = std::move(Character_Body_Part_MID_Array);
+	Parms.Empty_Translucent_Shadow_Stance_Output_MID_Array = std::move(Empty_Translucent_Shadow_Stance_Output_MID_Array);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Shadow_Mesh_Component = Parms.Shadow_Mesh_Component;
+	Character_Body_Part_MID_Array = std::move(Parms.Character_Body_Part_MID_Array);
+	Empty_Translucent_Shadow_Stance_Output_MID_Array = std::move(Parms.Empty_Translucent_Shadow_Stance_Output_MID_Array);
+
+	if (Set != nullptr)
+		*Set = Parms.Set;
 }
 
 

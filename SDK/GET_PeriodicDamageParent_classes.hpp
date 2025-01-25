@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GET_PeriodicDamageParent.GET_PeriodicDamageParent_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGET_PeriodicDamageParent_C : public UGET_AfflictedParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGET_PeriodicDamageParent_C>();
 	}
 };
-static_assert(alignof(UGET_PeriodicDamageParent_C) == 0x000010, "Wrong alignment on UGET_PeriodicDamageParent_C");
-static_assert(sizeof(UGET_PeriodicDamageParent_C) == 0x000670, "Wrong size on UGET_PeriodicDamageParent_C");
+static_assert(alignof(UGET_PeriodicDamageParent_C) == 0x000008, "Wrong alignment on UGET_PeriodicDamageParent_C");
+static_assert(sizeof(UGET_PeriodicDamageParent_C) == 0x000638, "Wrong size on UGET_PeriodicDamageParent_C");
 
 }
 

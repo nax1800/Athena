@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -38,21 +38,21 @@ public:
 	class FName                                   K2Node_Event_TabNameID;                            // 0x0028(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable12;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_FortExpeditionIconTabButton_C*      K2Node_DynamicCast_AsBP_Fort_Expedition_Icon_Tab_Button; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortExpeditionItem*                    K2Node_ComponentBoundEvent_Item12;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortExpeditionItem*                    K2Node_ComponentBoundEvent_Item2;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_FortExpeditionIconTabButton_C*      CallFunc_Array_Get_Item1;                          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_FortExpeditionIconTabButton_C*      CallFunc_Array_Get_Item12;                         // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_FortExpeditionIconTabButton_C*      CallFunc_Array_Get_Item2;                          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,14 +62,14 @@ public:
 	class UFortExpeditionItem*                    K2Node_DynamicCast_AsFort_Expedition_Item;         // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortExpeditionItem*                    K2Node_DynamicCast_AsFort_Expedition_Item1;        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable12;                  // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_ComponentBoundEvent_Item;                   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget) == 0x000008, "Wrong alignment on BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget");
@@ -85,30 +85,30 @@ static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_For
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_Event_TabNameID) == 0x000028, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_Event_TabNameID' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_TabId) == 0x000030, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_TabButton) == 0x000038, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, Temp_int_Array_Index_Variable12) == 0x000040, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::Temp_int_Array_Index_Variable12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, Temp_int_Array_Index_Variable2) == 0x000040, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::Temp_int_Array_Index_Variable2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_AsBP_Fort_Expedition_Icon_Tab_Button) == 0x000048, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_AsBP_Fort_Expedition_Icon_Tab_Button' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Add_ReturnValue) == 0x000054, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_Item12) == 0x000058, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_Item12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_Item2) == 0x000058, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_Item2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Get_Item1) == 0x000060, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Get_Item1' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Length_ReturnValue1) == 0x000068, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, Temp_int_Loop_Counter_Variable1) == 0x00006C, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Get_Item12) == 0x000070, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Get_Item12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Get_Item2) == 0x000070, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Get_Item2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Less_IntInt_ReturnValue1) == 0x000078, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Add_IntInt_ReturnValue1) == 0x00007C, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Length_ReturnValue12) == 0x000080, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Array_Length_ReturnValue2) == 0x000080, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000088, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_GetNumItems_ReturnValue) == 0x000098, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00009C, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_Item1) == 0x0000A0, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_Item1' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_AsFort_Expedition_Item) == 0x0000A8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_AsFort_Expedition_Item' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_bSuccess1) == 0x0000B0, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_GetSelectedItem_ReturnValue) == 0x0000B8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x0000B8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_AsFort_Expedition_Item1) == 0x0000C0, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_AsFort_Expedition_Item1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_bSuccess12) == 0x0000C8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, Temp_int_Loop_Counter_Variable12) == 0x0000CC, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::Temp_int_Loop_Counter_Variable12' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Less_IntInt_ReturnValue12) == 0x0000D0, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Less_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Add_IntInt_ReturnValue12) == 0x0000D4, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_DynamicCast_bSuccess2) == 0x0000C8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, Temp_int_Loop_Counter_Variable2) == 0x0000CC, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Less_IntInt_ReturnValue2) == 0x0000D0, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, CallFunc_Add_IntInt_ReturnValue2) == 0x0000D4, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget, K2Node_ComponentBoundEvent_Item) == 0x0000D8, "Member 'BP_FortExpeditionOverviewWidget_C_ExecuteUbergraph_BP_FortExpeditionOverviewWidget::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
 
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_38_OnItemHovered__DelegateSignature
@@ -190,24 +190,20 @@ static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Setup_Expedition_Detail
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Setup_Expedition_Details_Widget, K2Node_Select_Default) == 0x00000C, "Member 'BP_FortExpeditionOverviewWidget_C_Setup_Expedition_Details_Widget::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.On Widget Activated
-// 0x0020 (0x0020 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BP_FortExpeditionOverviewWidget_C_On_Widget_Activated final
 {
 public:
-	class UObject*                                CallFunc_GetItemAt_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue1;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_BP_GetNumItemsSelected_ReturnValue;       // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated) == 0x000008, "Wrong alignment on BP_FortExpeditionOverviewWidget_C_On_Widget_Activated");
-static_assert(sizeof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated) == 0x000020, "Wrong size on BP_FortExpeditionOverviewWidget_C_On_Widget_Activated");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_GetItemAt_ReturnValue) == 0x000000, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_SetSelectedItem_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_GetSelectedItem_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_SetSelectedItem_ReturnValue1) == 0x000019, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_SetSelectedItem_ReturnValue1' has a wrong offset!");
+static_assert(sizeof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated) == 0x000018, "Wrong size on BP_FortExpeditionOverviewWidget_C_On_Widget_Activated");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_BP_GetNumItemsSelected_ReturnValue) == 0x000000, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_BP_GetNumItemsSelected_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_On_Widget_Activated, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionOverviewWidget_C_On_Widget_Activated::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.Set Current Tab Name
 // 0x01B8 (0x01B8 - 0x0000)
@@ -316,7 +312,7 @@ public:
 	class FName                                   InTabId;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -328,17 +324,17 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable123;                             // 0x0070(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0070(0x0018)()
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable1234;                            // 0x0090(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0090(0x0018)()
 	struct FExpeditionTabInfo                     CallFunc_Array_Get_Item;                           // 0x00A8(0x00A8)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0155(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0156(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_157[0x1];                                      // 0x0157(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0160(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0178(0x0040)(HasGetValueTypeHash)
@@ -355,7 +351,7 @@ static_assert(sizeof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area) ==
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, InTabId) == 0x000000, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::InTabId' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable) == 0x000008, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable1) == 0x000020, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable12) == 0x000038, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable2) == 0x000038, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_bool_Variable) == 0x000050, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Variable) == 0x000054, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Variable1) == 0x000058, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Variable1' has a wrong offset!");
@@ -363,15 +359,15 @@ static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, 
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Array_Index_Variable) == 0x000060, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_Not_PreBool_ReturnValue) == 0x000064, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable123) == 0x000070, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable123' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable3) == 0x000070, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable3' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_Add_IntInt_ReturnValue) == 0x000088, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable1234) == 0x000090, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable1234' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_text_Variable4) == 0x000090, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_text_Variable4' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_Array_Length_ReturnValue) == 0x000150, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_Less_IntInt_ReturnValue) == 0x000154, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000155, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_BooleanAND_ReturnValue) == 0x000156, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Variable12) == 0x000158, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Variable12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, Temp_int_Variable2) == 0x000158, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::Temp_int_Variable2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, K2Node_Select_Default) == 0x000160, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, K2Node_MakeStruct_FormatArgumentData) == 0x000178, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, CallFunc_GetNumItems_ReturnValue) == 0x0001B8, "Member 'BP_FortExpeditionOverviewWidget_C_Update_List_View_Area::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
@@ -385,12 +381,12 @@ static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_List_View_Area, 
 struct BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility final
 {
 public:
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility) == 0x000008, "Wrong alignment on BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility");
 static_assert(sizeof(BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility) == 0x000010, "Wrong size on BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility, CallFunc_GetSelectedItem_ReturnValue) == 0x000000, "Member 'BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000000, "Member 'BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionOverviewWidget_C_Update_Details_Visibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.Update Active Input For Selected Item
@@ -458,13 +454,13 @@ public:
 	int32                                         AvailableLand;                                     // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue1;      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue12;     // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue2;      // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTag                           CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue; // 0x0038(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue12;          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue2;           // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -492,12 +488,12 @@ static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Ex
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, AvailableLand) == 0x00002C, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::AvailableLand' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_GameplayTag_ReturnValue) == 0x000030, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_GameplayTag_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_GameplayTag_ReturnValue1) == 0x000031, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_GameplayTag_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_GameplayTag_ReturnValue12) == 0x000032, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_GameplayTag_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_GameplayTag_ReturnValue2) == 0x000032, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_GameplayTag_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_IsValid_ReturnValue) == 0x000033, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue) == 0x000038, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000040, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x000041, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_IntInt_ReturnValue12) == 0x000042, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000042, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_Add_IntInt_ReturnValue1) == 0x000048, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action, CallFunc_GetOwningPlayer_ReturnValue) == 0x000050, "Member 'BP_FortExpeditionOverviewWidget_C_Should_Disable_Build_Expedition_Action::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");

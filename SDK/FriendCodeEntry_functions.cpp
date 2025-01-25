@@ -37,15 +37,15 @@ void UFriendCodeEntry_C::ExecuteUbergraph_FriendCodeEntry(int32 EntryPoint)
 }
 
 
-// Function FriendCodeEntry.FriendCodeEntry_C.OnClicked
+// Function FriendCodeEntry.FriendCodeEntry_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 
-void UFriendCodeEntry_C::OnClicked()
+void UFriendCodeEntry_C::BP_OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FriendCodeEntry_C", "OnClicked");
+		Func = Class->GetFunction("FriendCodeEntry_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

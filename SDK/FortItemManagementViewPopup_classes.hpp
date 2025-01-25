@@ -18,25 +18,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortItemManagementViewPopup.FortItemManagementViewPopup_C
-// 0x0030 (0x0410 - 0x03E0)
+// 0x0040 (0x0358 - 0x0318)
 class UFortItemManagementViewPopup_C final : public UFortPopupMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CancelButton;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconCheckmarkTextButton_C*             CollectionBookCheckmarkButton;                     // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconCheckmarkTextButton_C*             PrioritizeFavoritesCheckmarkButton;                // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ToggleSizeButton;                                  // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CancelButton;                                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CollectionBookCheckmark;                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CollectionBookCheckmarkButton;                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MainButtonVerticalBox;                             // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PrioritizeFavoritesCheckmark;                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      PrioritizeFavoritesCheckmarkButton;                // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ToggleSizeButton;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FortItemManagementViewPopup(int32 EntryPoint);
-	void BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__CollectionBookCheckmarkButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__IconCheckmarkTextButton_K2Node_ComponentBoundEvent_94_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnActivated();
 	void OnDeactivated();
+	void BndEvt__ToggleSizeButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void CheckboxUpdate(class UImage* CheckboxImage, bool Check);
+	void SetupCheckboxes();
 
 public:
 	static class UClass* StaticClass()
@@ -49,13 +53,15 @@ public:
 	}
 };
 static_assert(alignof(UFortItemManagementViewPopup_C) == 0x000008, "Wrong alignment on UFortItemManagementViewPopup_C");
-static_assert(sizeof(UFortItemManagementViewPopup_C) == 0x000410, "Wrong size on UFortItemManagementViewPopup_C");
-static_assert(offsetof(UFortItemManagementViewPopup_C, UberGraphFrame) == 0x0003E0, "Member 'UFortItemManagementViewPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortItemManagementViewPopup_C, CancelButton) == 0x0003E8, "Member 'UFortItemManagementViewPopup_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UFortItemManagementViewPopup_C, CollectionBookCheckmarkButton) == 0x0003F0, "Member 'UFortItemManagementViewPopup_C::CollectionBookCheckmarkButton' has a wrong offset!");
-static_assert(offsetof(UFortItemManagementViewPopup_C, MainButtonVerticalBox) == 0x0003F8, "Member 'UFortItemManagementViewPopup_C::MainButtonVerticalBox' has a wrong offset!");
-static_assert(offsetof(UFortItemManagementViewPopup_C, PrioritizeFavoritesCheckmarkButton) == 0x000400, "Member 'UFortItemManagementViewPopup_C::PrioritizeFavoritesCheckmarkButton' has a wrong offset!");
-static_assert(offsetof(UFortItemManagementViewPopup_C, ToggleSizeButton) == 0x000408, "Member 'UFortItemManagementViewPopup_C::ToggleSizeButton' has a wrong offset!");
+static_assert(sizeof(UFortItemManagementViewPopup_C) == 0x000358, "Wrong size on UFortItemManagementViewPopup_C");
+static_assert(offsetof(UFortItemManagementViewPopup_C, UberGraphFrame) == 0x000318, "Member 'UFortItemManagementViewPopup_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, CancelButton) == 0x000320, "Member 'UFortItemManagementViewPopup_C::CancelButton' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, CollectionBookCheckmark) == 0x000328, "Member 'UFortItemManagementViewPopup_C::CollectionBookCheckmark' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, CollectionBookCheckmarkButton) == 0x000330, "Member 'UFortItemManagementViewPopup_C::CollectionBookCheckmarkButton' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, MainButtonVerticalBox) == 0x000338, "Member 'UFortItemManagementViewPopup_C::MainButtonVerticalBox' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, PrioritizeFavoritesCheckmark) == 0x000340, "Member 'UFortItemManagementViewPopup_C::PrioritizeFavoritesCheckmark' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, PrioritizeFavoritesCheckmarkButton) == 0x000348, "Member 'UFortItemManagementViewPopup_C::PrioritizeFavoritesCheckmarkButton' has a wrong offset!");
+static_assert(offsetof(UFortItemManagementViewPopup_C, ToggleSizeButton) == 0x000350, "Member 'UFortItemManagementViewPopup_C::ToggleSizeButton' has a wrong offset!");
 
 }
 

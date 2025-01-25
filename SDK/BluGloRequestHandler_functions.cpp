@@ -20,13 +20,13 @@ namespace SDK
 // Function BluGloRequestHandler.BluGloRequestHandler_C.OnBluGloQueryFinished__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Param_ActorToSpawnFrom                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorToSpawnFrom_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                          LocationToSpawnFromIfActorInvalid                      (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EEnvQueryStatus                         QueryStatus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_NumBluGloToSpawn                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NumBluGloToSpawn_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBluGloRequestHandler_C::OnBluGloQueryFinished__DelegateSignature(class AActor* Param_ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 Param_NumBluGloToSpawn)
+void UBluGloRequestHandler_C::OnBluGloQueryFinished__DelegateSignature(class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -35,11 +35,11 @@ void UBluGloRequestHandler_C::OnBluGloQueryFinished__DelegateSignature(class AAc
 
 	Params::BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature Parms{};
 
-	Parms.Param_ActorToSpawnFrom = Param_ActorToSpawnFrom;
+	Parms.ActorToSpawnFrom_0 = ActorToSpawnFrom_0;
 	Parms.LocationToSpawnFromIfActorInvalid = std::move(LocationToSpawnFromIfActorInvalid);
 	Parms.QueryStatus = QueryStatus;
 	Parms.QueryInstance = QueryInstance;
-	Parms.Param_NumBluGloToSpawn = Param_NumBluGloToSpawn;
+	Parms.NumBluGloToSpawn_0 = NumBluGloToSpawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -68,11 +68,11 @@ void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int32 EntryP
 // Function BluGloRequestHandler.BluGloRequestHandler_C.InitializeBluGloRequestHandler
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_NumBluGloToSpawn                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Param_ActorToSpawnFrom                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NumBluGloToSpawn_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorToSpawnFrom_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                          LocationToSpawnFromIfActorInvalid                      (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 Param_NumBluGloToSpawn, class AActor* Param_ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid)
+void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 NumBluGloToSpawn_0, class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,8 +81,8 @@ void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 Param_NumBluG
 
 	Params::BluGloRequestHandler_C_InitializeBluGloRequestHandler Parms{};
 
-	Parms.Param_NumBluGloToSpawn = Param_NumBluGloToSpawn;
-	Parms.Param_ActorToSpawnFrom = Param_ActorToSpawnFrom;
+	Parms.NumBluGloToSpawn_0 = NumBluGloToSpawn_0;
+	Parms.ActorToSpawnFrom_0 = ActorToSpawnFrom_0;
 	Parms.LocationToSpawnFromIfActorInvalid = std::move(LocationToSpawnFromIfActorInvalid);
 
 	UObject::ProcessEvent(Func, &Parms);

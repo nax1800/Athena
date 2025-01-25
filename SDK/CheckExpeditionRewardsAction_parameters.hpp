@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FrontEndRewards_Definition_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -35,7 +35,7 @@ public:
 	bool                                          CallFunc_Is_FrontEndRewards_Running_bRunning;      // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
 static_assert(sizeof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x000068, "Wrong size on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
@@ -245,23 +245,25 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_HandleRewardsClaimed, Rewa
 static_assert(offsetof(CheckExpeditionRewardsAction_C_HandleRewardsClaimed, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckExpeditionRewardsAction_C_HandleRewardsClaimed::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Clear
-// 0x0090 (0x0090 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct CheckExpeditionRewardsAction_C_Clear final
 {
 public:
-	TArray<struct FFortCollectionBookRewards>     K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortExpeditionItem*>            K2Node_MakeArray_Array1;                           // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array12;                          // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array123;                         // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFrontEndRewards_Definition            K2Node_MakeStruct_FrontEndRewards_Definition;      // 0x0040(0x0050)(HasGetValueTypeHash)
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FFortCollectionBookRewards>     K2Node_MakeArray_Array1;                           // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortExpeditionItem*>            K2Node_MakeArray_Array2;                           // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array3;                           // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array4;                           // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFrontEndRewards_Definition            K2Node_MakeStruct_FrontEndRewards_Definition;      // 0x0050(0x0060)(HasGetValueTypeHash)
 };
 static_assert(alignof(CheckExpeditionRewardsAction_C_Clear) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_Clear");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_Clear) == 0x000090, "Wrong size on CheckExpeditionRewardsAction_C_Clear");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_Clear) == 0x0000B0, "Wrong size on CheckExpeditionRewardsAction_C_Clear");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array1) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array12) == 0x000020, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array123) == 0x000030, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array123' has a wrong offset!");
-static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeStruct_FrontEndRewards_Definition) == 0x000040, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeStruct_FrontEndRewards_Definition' has a wrong offset!");
+static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array2) == 0x000020, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array3) == 0x000030, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array3' has a wrong offset!");
+static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Array4) == 0x000040, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeArray_Array4' has a wrong offset!");
+static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeStruct_FrontEndRewards_Definition) == 0x000050, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeStruct_FrontEndRewards_Definition' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.HandleRewardsClaimError
 // 0x0008 (0x0008 - 0x0000)

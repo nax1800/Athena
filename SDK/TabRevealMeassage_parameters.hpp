@@ -67,7 +67,7 @@ public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TabRevealMeassage_C_ToggleTimer) == 0x000008, "Wrong alignment on TabRevealMeassage_C_ToggleTimer");
 static_assert(sizeof(TabRevealMeassage_C_ToggleTimer) == 0x000020, "Wrong size on TabRevealMeassage_C_ToggleTimer");

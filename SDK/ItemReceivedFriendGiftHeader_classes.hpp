@@ -18,18 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemReceivedFriendGiftHeader.ItemReceivedFriendGiftHeader_C
-// 0x0028 (0x0270 - 0x0248)
+// 0x0028 (0x0268 - 0x0240)
 class UItemReceivedFriendGiftHeader_C final : public UItemReceivedHeaderSubWidgetBase_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_ItemReceivedFriendGiftHeader_C;     // 0x0248(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Sender;                                            // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextName;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_ItemReceivedFriendGiftHeader_C;     // 0x0240(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlock_UserMessage;                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Sender;                                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextName;                                          // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemReceivedFriendGiftHeader(int32 EntryPoint);
+	void OnInitialized();
+	void CustomEvent_0(bool bSuccess, const class FString& SanitizedMsg);
 	void InitFromGiftBoxItem_BP();
 
 public:
@@ -43,12 +45,12 @@ public:
 	}
 };
 static_assert(alignof(UItemReceivedFriendGiftHeader_C) == 0x000008, "Wrong alignment on UItemReceivedFriendGiftHeader_C");
-static_assert(sizeof(UItemReceivedFriendGiftHeader_C) == 0x000270, "Wrong size on UItemReceivedFriendGiftHeader_C");
-static_assert(offsetof(UItemReceivedFriendGiftHeader_C, UberGraphFrame_ItemReceivedFriendGiftHeader_C) == 0x000248, "Member 'UItemReceivedFriendGiftHeader_C::UberGraphFrame_ItemReceivedFriendGiftHeader_C' has a wrong offset!");
-static_assert(offsetof(UItemReceivedFriendGiftHeader_C, CommonTextBlock_0) == 0x000250, "Member 'UItemReceivedFriendGiftHeader_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UItemReceivedFriendGiftHeader_C, CommonTextBlock_1) == 0x000258, "Member 'UItemReceivedFriendGiftHeader_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UItemReceivedFriendGiftHeader_C, Sender) == 0x000260, "Member 'UItemReceivedFriendGiftHeader_C::Sender' has a wrong offset!");
-static_assert(offsetof(UItemReceivedFriendGiftHeader_C, TextName) == 0x000268, "Member 'UItemReceivedFriendGiftHeader_C::TextName' has a wrong offset!");
+static_assert(sizeof(UItemReceivedFriendGiftHeader_C) == 0x000268, "Wrong size on UItemReceivedFriendGiftHeader_C");
+static_assert(offsetof(UItemReceivedFriendGiftHeader_C, UberGraphFrame_ItemReceivedFriendGiftHeader_C) == 0x000240, "Member 'UItemReceivedFriendGiftHeader_C::UberGraphFrame_ItemReceivedFriendGiftHeader_C' has a wrong offset!");
+static_assert(offsetof(UItemReceivedFriendGiftHeader_C, CommonTextBlock_1) == 0x000248, "Member 'UItemReceivedFriendGiftHeader_C::CommonTextBlock_1' has a wrong offset!");
+static_assert(offsetof(UItemReceivedFriendGiftHeader_C, CommonTextBlock_UserMessage) == 0x000250, "Member 'UItemReceivedFriendGiftHeader_C::CommonTextBlock_UserMessage' has a wrong offset!");
+static_assert(offsetof(UItemReceivedFriendGiftHeader_C, Sender) == 0x000258, "Member 'UItemReceivedFriendGiftHeader_C::Sender' has a wrong offset!");
+static_assert(offsetof(UItemReceivedFriendGiftHeader_C, TextName) == 0x000260, "Member 'UItemReceivedFriendGiftHeader_C::TextName' has a wrong offset!");
 
 }
 

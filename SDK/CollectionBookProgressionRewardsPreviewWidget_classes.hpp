@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookProgressionRewardsPreviewWidget.CollectionBookProgressionRewardsPreviewWidget_C
-// 0x0008 (0x0230 - 0x0228)
+// 0x0008 (0x0228 - 0x0220)
 class UCollectionBookProgressionRewardsPreviewWidget_C final : public UFortCollectionBookProgressionRewardsPreviewWidget
 {
 public:
-	class UImage*                                 Image_0;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookProgressionRewardsPreviewWidget_C) == 0x000008, "Wrong alignment on UCollectionBookProgressionRewardsPreviewWidget_C");
-static_assert(sizeof(UCollectionBookProgressionRewardsPreviewWidget_C) == 0x000230, "Wrong size on UCollectionBookProgressionRewardsPreviewWidget_C");
-static_assert(offsetof(UCollectionBookProgressionRewardsPreviewWidget_C, Image_0) == 0x000228, "Member 'UCollectionBookProgressionRewardsPreviewWidget_C::Image_0' has a wrong offset!");
+static_assert(sizeof(UCollectionBookProgressionRewardsPreviewWidget_C) == 0x000228, "Wrong size on UCollectionBookProgressionRewardsPreviewWidget_C");
+static_assert(offsetof(UCollectionBookProgressionRewardsPreviewWidget_C, Image_0) == 0x000220, "Member 'UCollectionBookProgressionRewardsPreviewWidget_C::Image_0' has a wrong offset!");
 
 }
 

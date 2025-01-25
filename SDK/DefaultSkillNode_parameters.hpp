@@ -14,8 +14,8 @@
 #include "SkillTreeGroups_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
 
 
@@ -30,10 +30,10 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0010(0x0008)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue12;                // 0x0018(0x0008)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue123;               // 0x0020(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue1;                 // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue3;                 // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FHomebaseNode                          CallFunc_TryGetStaticSkillTreeNodeData_OutNodeData; // 0x0028(0x00C0)()
 	bool                                          CallFunc_TryGetStaticSkillTreeNodeData_ReturnValue; // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -46,8 +46,8 @@ static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, Ent
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, K2Node_Event_IsDesignTime) == 0x000004, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue) == 0x000008, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue1) == 0x000010, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue12) == 0x000018, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue123) == 0x000020, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue2) == 0x000018, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_K2_SetTimer_ReturnValue3) == 0x000020, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_K2_SetTimer_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_TryGetStaticSkillTreeNodeData_OutNodeData) == 0x000028, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_TryGetStaticSkillTreeNodeData_OutNodeData' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_TryGetStaticSkillTreeNodeData_ReturnValue) == 0x0000E8, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_TryGetStaticSkillTreeNodeData_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000F0, "Member 'DefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
@@ -86,12 +86,12 @@ struct DefaultSkillNode_C_UpdateFromNodeData final
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortHomebaseNodeMagnitude                    Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortHomebaseNodeMagnitude                    Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetSingleMaterialStyleMID_ReturnValue;    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortSkillTreeNodeDisplayData          CallFunc_TryGetNodeDisplayData_OutDisplayData;     // 0x0018(0x0338)()
 	bool                                          CallFunc_TryGetNodeDisplayData_ReturnValue;        // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -114,11 +114,11 @@ static_assert(alignof(DefaultSkillNode_C_UpdateFromNodeData) == 0x000008, "Wrong
 static_assert(sizeof(DefaultSkillNode_C_UpdateFromNodeData) == 0x000430, "Wrong size on DefaultSkillNode_C_UpdateFromNodeData");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable) == 0x000000, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable1) == 0x000001, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable12) == 0x000002, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable123) == 0x000003, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable1234) == 0x000004, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable2) == 0x000002, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable3) == 0x000003, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable4) == 0x000004, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, CallFunc_GetSingleMaterialStyleMID_ReturnValue) == 0x000008, "Member 'DefaultSkillNode_C_UpdateFromNodeData::CallFunc_GetSingleMaterialStyleMID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable12345) == 0x000010, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_byte_Variable5) == 0x000010, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_byte_Variable5' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, CallFunc_TryGetNodeDisplayData_OutDisplayData) == 0x000018, "Member 'DefaultSkillNode_C_UpdateFromNodeData::CallFunc_TryGetNodeDisplayData_OutDisplayData' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, CallFunc_TryGetNodeDisplayData_ReturnValue) == 0x000350, "Member 'DefaultSkillNode_C_UpdateFromNodeData::CallFunc_TryGetNodeDisplayData_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_UpdateFromNodeData, Temp_bool_Variable) == 0x000351, "Member 'DefaultSkillNode_C_UpdateFromNodeData::Temp_bool_Variable' has a wrong offset!");
@@ -240,26 +240,26 @@ struct DefaultSkillNode_C_SetBackgroundColor final
 public:
 	ESkillTreePages                               Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESkillTreePages                               Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESkillTreePages                               Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESkillTreeGroups                              Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESkillTreePages                               Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESkillTreeGroups                              Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetSingleMaterialStyleMID_ReturnValue;    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select1_Default;                            // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x0030(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select123_Default;                          // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0030(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DefaultSkillNode_C_SetBackgroundColor) == 0x000008, "Wrong alignment on DefaultSkillNode_C_SetBackgroundColor");
 static_assert(sizeof(DefaultSkillNode_C_SetBackgroundColor) == 0x000050, "Wrong size on DefaultSkillNode_C_SetBackgroundColor");
 static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable) == 0x000000, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable1) == 0x000001, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable12) == 0x000002, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable123) == 0x000003, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable2) == 0x000002, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, Temp_byte_Variable3) == 0x000003, "Member 'DefaultSkillNode_C_SetBackgroundColor::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, CallFunc_GetSingleMaterialStyleMID_ReturnValue) == 0x000008, "Member 'DefaultSkillNode_C_SetBackgroundColor::CallFunc_GetSingleMaterialStyleMID_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select_Default) == 0x000010, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select1_Default) == 0x000020, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select12_Default) == 0x000030, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select123_Default) == 0x000040, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select2_Default) == 0x000030, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(DefaultSkillNode_C_SetBackgroundColor, K2Node_Select3_Default) == 0x000040, "Member 'DefaultSkillNode_C_SetBackgroundColor::K2Node_Select3_Default' has a wrong offset!");
 
 }
 

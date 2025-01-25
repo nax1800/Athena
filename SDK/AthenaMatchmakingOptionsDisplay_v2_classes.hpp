@@ -10,68 +10,91 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaMatchmakingOptionsDisplay_v2.AthenaMatchmakingOptionsDisplay_v2_C
-// 0x00E0 (0x04D0 - 0x03F0)
-class UAthenaMatchmakingOptionsDisplay_v2_C final : public UFortActivatablePanel
+// 0x0170 (0x0540 - 0x03D0)
+class UAthenaMatchmakingOptionsDisplay_v2_C final : public UFortAthenaMatchmakingOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeIn_Details;                                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Open;                                              // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthena_Matchmaking_GameModeButton_C*   B_GM_Duo;                                          // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthena_Matchmaking_GameModeButton_C*   B_GM_LTM;                                          // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthena_Matchmaking_GameModeButton_C*   B_GM_Solo;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthena_Matchmaking_GameModeButton_C*   B_GM_Squad;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBackgroundBlur*                        BackgroundBlur_0;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          ClickBlocker;                                      // 0x0430(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CT_HoveredGameMode;                                // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CT_HoveredModeDescription;                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           GameModeButtonBox;                                 // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SB_Content;                                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VB_GameModeContainer;                              // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    Input_Cancel;                                      // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UAthenaMatchmakingPlay_C*               Parent;                                            // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FText>                           DebugList_StandardModes;                           // 0x0480(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UAthena_Matchmaking_SpecialEventButton_C* MyLTM;                                             // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LastHoveredStandardModeIndex;                      // 0x0498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAthena_Matchmaking_GameModeButton_C*> MyActiveStandardGameModeButtons;                   // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	int32                                         SM_Button_IndexMax;                                // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SM_Button_IndexCurrent;                            // 0x04B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortAthenaPlaylist                           LTMPlaylist;                                       // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B9[0x7];                                      // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPlaylistAthena*                    DefaultPlaylists;                                  // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthena_Matchmaking_GameModeButton_C*   InitialButtonSelection;                            // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       IntroRightPanel;                                   // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       OutroRightPanel;                                   // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      AcceptButton;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaMatchmakingTile_C*               AthenaMatchmakingTile;                             // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaMatchmakingTile_C*               AthenaMatchmakingTile_0;                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaMatchmakingTile_C*               AthenaMatchmakingTile_1;                           // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaMatchmakingTile_C*               AthenaMatchmakingTile_2;                           // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        BangSwitcher;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BGImage;                                           // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderLTMBang;                                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderLTMBang_Heist;                               // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ChoosePromptSB;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ConfirmSelectionShine;                             // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CurrentGameModeDescription;                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CurrentGameModeDisabledDescription;                // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CurrentGameModeName;                               // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 GameModeGlow;                                      // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 GameModeIcon;                                      // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           GameModes;                                         // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                IconSpacer;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LineRule;                                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LTMModeSubIcon;                                    // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ModeDescriptionScrollBox;                          // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                RootBorder;                                        // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               RootOverlay;                                       // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       SubGameModeName;                                   // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         SubGameModeNameHB;                                 // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       T_LTMBangText;                                     // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       T_LTMBangText_Heist;                               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          TouchToCloseZone;                                  // 0x04C8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VB_GameModeContainer;                              // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         WarningHB;                                         // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    Input_Cancel;                                      // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UAthena_Matchmaking_SpecialEventButton_C* MyLTM;                                             // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LastHoveredStandardModeIndex;                      // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SM_Button_IndexMax;                                // 0x04FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SM_Button_IndexCurrent;                            // 0x0500(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_504[0x4];                                      // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                DefaultPlaylists;                                  // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthena_Matchmaking_GameModeButton_C*   InitialButtonSelection;                            // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CurrentPlaylist;                                   // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MatchmakingPageTileIndex;                          // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         IntroOutroTileDelayTime;                           // 0x0524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputCustomMatchmaking;                            // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          IsPerformingOutro;                                 // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2(int32 EntryPoint);
-	void Destruct();
-	void OnModeButtonHovered(class UAthena_Matchmaking_GameModeButton_C* HoveredButton);
-	void OnGameModeButtonSelected(class UAthena_Matchmaking_GameModeButton_C* SelectedGameModeButton);
-	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void OnActivated();
 	void Construct();
+	void OnActivated();
+	void ApplyCMSOverrides();
+	void Start_Closing_Matchmaking_Options();
+	void OnTileDoubleClicked(class UCommonButton* ButtonClicked);
+	void RepresentedPlaylistChanged(const struct FPlaylistFrontEndData& NewRepresentedPlaylist);
+	void OnRightPanelIntroFinshed();
+	void OnBeginIntro();
+	void OnRightPanelOutroFinshed();
+	void UpdateMatchmakingButtonsBP(bool IsPartyLeader, bool IsMatchmaking, bool PlaylistSupportsPartySize, bool PlaylistIsDisabled, bool CanShowFill);
+	void BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__AcceptButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void SetSquadFillText(bool InCurrentSquadFill);
 	void SetupInput();
 	void Handle_InputAction_Cancel(bool* Passthrough);
-	void CloseMatchmakingOptions();
-	void AddStandardGameModes();
-	void ClearStandardGameModes();
-	void AddLTM(class UFortPlaylistAthena* Param_LTMPlaylist, bool AddSpecialStyle);
-	void ClearLTM();
-	void SetupButtonBindings();
-	void UpdateStandardGameModeButtonAvailibilty();
-	void UpdateLTM();
-	void InitializeGameModeButtons();
-	struct FEventReply On_ClickBlocker_MouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
+	struct FEventReply Touch_To_Close(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void TriggerMatchmakingPageTileIntroAnim();
+	void TriggerMatchmakingPageTileOutroAnim();
+	void OnCustomMatchmaking(bool* Passthrough);
+	void SetScrollWidget();
 
 public:
 	static class UClass* StaticClass()
@@ -84,33 +107,53 @@ public:
 	}
 };
 static_assert(alignof(UAthenaMatchmakingOptionsDisplay_v2_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingOptionsDisplay_v2_C");
-static_assert(sizeof(UAthenaMatchmakingOptionsDisplay_v2_C) == 0x0004D0, "Wrong size on UAthenaMatchmakingOptionsDisplay_v2_C");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, UberGraphFrame) == 0x0003F0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, FadeIn_Details) == 0x0003F8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::FadeIn_Details' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Open) == 0x000400, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Open' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, B_GM_Duo) == 0x000408, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::B_GM_Duo' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, B_GM_LTM) == 0x000410, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::B_GM_LTM' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, B_GM_Solo) == 0x000418, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::B_GM_Solo' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, B_GM_Squad) == 0x000420, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::B_GM_Squad' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BackgroundBlur_0) == 0x000428, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BackgroundBlur_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ClickBlocker) == 0x000430, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ClickBlocker' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CT_HoveredGameMode) == 0x000438, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CT_HoveredGameMode' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CT_HoveredModeDescription) == 0x000440, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CT_HoveredModeDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeButtonBox) == 0x000448, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeButtonBox' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SafeZone_0) == 0x000450, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SB_Content) == 0x000458, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SB_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, VB_GameModeContainer) == 0x000460, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::VB_GameModeContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Input_Cancel) == 0x000468, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Input_Cancel' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Parent) == 0x000478, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Parent' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, DebugList_StandardModes) == 0x000480, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::DebugList_StandardModes' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MyLTM) == 0x000490, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MyLTM' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LastHoveredStandardModeIndex) == 0x000498, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LastHoveredStandardModeIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MyActiveStandardGameModeButtons) == 0x0004A0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MyActiveStandardGameModeButtons' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexMax) == 0x0004B0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexMax' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexCurrent) == 0x0004B4, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexCurrent' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LTMPlaylist) == 0x0004B8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LTMPlaylist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, DefaultPlaylists) == 0x0004C0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::DefaultPlaylists' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InitialButtonSelection) == 0x0004C8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InitialButtonSelection' has a wrong offset!");
+static_assert(sizeof(UAthenaMatchmakingOptionsDisplay_v2_C) == 0x000540, "Wrong size on UAthenaMatchmakingOptionsDisplay_v2_C");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, UberGraphFrame) == 0x0003D0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IntroRightPanel) == 0x0003D8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IntroRightPanel' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, OutroRightPanel) == 0x0003E0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::OutroRightPanel' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AcceptButton) == 0x0003E8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AcceptButton' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile) == 0x0003F0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile_0) == 0x0003F8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile_0' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile_1) == 0x000400, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile_1' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile_2) == 0x000408, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile_2' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BangSwitcher) == 0x000410, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BangSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BGImage) == 0x000418, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BGImage' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BorderLTMBang) == 0x000420, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BorderLTMBang' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BorderLTMBang_Heist) == 0x000428, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BorderLTMBang_Heist' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ChoosePromptSB) == 0x000430, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ChoosePromptSB' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ConfirmSelectionShine) == 0x000438, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ConfirmSelectionShine' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeDescription) == 0x000440, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeDescription' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeDisabledDescription) == 0x000448, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeDisabledDescription' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeName) == 0x000450, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeName' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeGlow) == 0x000458, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeGlow' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeIcon) == 0x000460, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModes) == 0x000468, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModes' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IconSpacer) == 0x000470, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IconSpacer' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Lightbox) == 0x000478, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LineRule) == 0x000480, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LineRule' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LTMModeSubIcon) == 0x000488, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LTMModeSubIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ModeDescriptionScrollBox) == 0x000490, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ModeDescriptionScrollBox' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, RootBorder) == 0x000498, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::RootBorder' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, RootOverlay) == 0x0004A0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::RootOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SubGameModeName) == 0x0004A8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SubGameModeName' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SubGameModeNameHB) == 0x0004B0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SubGameModeNameHB' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, T_LTMBangText) == 0x0004B8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::T_LTMBangText' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, T_LTMBangText_Heist) == 0x0004C0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::T_LTMBangText_Heist' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, TouchToCloseZone) == 0x0004C8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::TouchToCloseZone' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, VB_GameModeContainer) == 0x0004D0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::VB_GameModeContainer' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, WarningHB) == 0x0004D8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::WarningHB' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Input_Cancel) == 0x0004E0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Input_Cancel' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MyLTM) == 0x0004F0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MyLTM' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LastHoveredStandardModeIndex) == 0x0004F8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LastHoveredStandardModeIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexMax) == 0x0004FC, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexMax' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexCurrent) == 0x000500, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexCurrent' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, DefaultPlaylists) == 0x000508, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::DefaultPlaylists' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InitialButtonSelection) == 0x000510, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InitialButtonSelection' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentPlaylist) == 0x000518, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentPlaylist' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MatchmakingPageTileIndex) == 0x000520, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MatchmakingPageTileIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IntroOutroTileDelayTime) == 0x000524, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IntroOutroTileDelayTime' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InputCustomMatchmaking) == 0x000528, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InputCustomMatchmaking' has a wrong offset!");
+static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IsPerformingOutro) == 0x000538, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IsPerformingOutro' has a wrong offset!");
 
 }
 

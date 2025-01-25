@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -20,17 +20,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C
-// 0x0250 (0x0468 - 0x0218)
+// 0x0258 (0x0468 - 0x0210)
 class UAthenaLobbyPlayerPanelDetails_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 BattlePassBoostActiveIcon;                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BattlePassOwnerLine;                               // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         BattlePassRow;                                     // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BattlePassSelfXpGainLine;                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       BattlePassSharedXpGainLine;                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Platform;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 BattlePassBoostActiveIcon;                         // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BattlePassOwnerLine;                               // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         BattlePassRow;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BattlePassSelfXpGainLine;                          // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       BattlePassSharedXpGainLine;                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Platform;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LineRule;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 SeasonPassIcon;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextInviteSent;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,7 +49,7 @@ public:
 	void OnPartyInvitesCountChanged(int32 InvitesCount);
 	void OnActiveFriendsCountUpdated(int32 ActiveFriendsCount);
 	void InitializeContextEvents();
-	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo);
+	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0);
 	void RefreshBanner();
 	void RefreshBattlePass();
 	void OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& ChangedTeamMemberInfo);
@@ -65,13 +66,14 @@ public:
 };
 static_assert(alignof(UAthenaLobbyPlayerPanelDetails_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanelDetails_C");
 static_assert(sizeof(UAthenaLobbyPlayerPanelDetails_C) == 0x000468, "Wrong size on UAthenaLobbyPlayerPanelDetails_C");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, UberGraphFrame) == 0x000218, "Member 'UAthenaLobbyPlayerPanelDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassBoostActiveIcon) == 0x000220, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassBoostActiveIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassOwnerLine) == 0x000228, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassOwnerLine' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassRow) == 0x000230, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassRow' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassSelfXpGainLine) == 0x000238, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassSelfXpGainLine' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassSharedXpGainLine) == 0x000240, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassSharedXpGainLine' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, Image_Platform) == 0x000248, "Member 'UAthenaLobbyPlayerPanelDetails_C::Image_Platform' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, UberGraphFrame) == 0x000210, "Member 'UAthenaLobbyPlayerPanelDetails_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassBoostActiveIcon) == 0x000218, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassBoostActiveIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassOwnerLine) == 0x000220, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassOwnerLine' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassRow) == 0x000228, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassRow' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassSelfXpGainLine) == 0x000230, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassSelfXpGainLine' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, BattlePassSharedXpGainLine) == 0x000238, "Member 'UAthenaLobbyPlayerPanelDetails_C::BattlePassSharedXpGainLine' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, Image_Platform) == 0x000240, "Member 'UAthenaLobbyPlayerPanelDetails_C::Image_Platform' has a wrong offset!");
+static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, LineRule) == 0x000248, "Member 'UAthenaLobbyPlayerPanelDetails_C::LineRule' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, PlayerBanner) == 0x000250, "Member 'UAthenaLobbyPlayerPanelDetails_C::PlayerBanner' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, SeasonPassIcon) == 0x000258, "Member 'UAthenaLobbyPlayerPanelDetails_C::SeasonPassIcon' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, TextInviteSent) == 0x000260, "Member 'UAthenaLobbyPlayerPanelDetails_C::TextInviteSent' has a wrong offset!");

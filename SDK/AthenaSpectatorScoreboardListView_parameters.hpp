@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "CommonInput_structs.hpp"
+
 
 namespace SDK::Params
 {
@@ -19,13 +21,15 @@ namespace SDK::Params
 struct AthenaSpectatorScoreboardListView_C_ResetFocus final
 {
 public:
-	class UObject*                                CallFunc_GetItemAt_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedIndex_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaSpectatorScoreboardListView_C_ResetFocus) == 0x000008, "Wrong alignment on AthenaSpectatorScoreboardListView_C_ResetFocus");
 static_assert(sizeof(AthenaSpectatorScoreboardListView_C_ResetFocus) == 0x000010, "Wrong size on AthenaSpectatorScoreboardListView_C_ResetFocus");
-static_assert(offsetof(AthenaSpectatorScoreboardListView_C_ResetFocus, CallFunc_GetItemAt_ReturnValue) == 0x000000, "Member 'AthenaSpectatorScoreboardListView_C_ResetFocus::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectatorScoreboardListView_C_ResetFocus, CallFunc_SetSelectedIndex_ReturnValue) == 0x000008, "Member 'AthenaSpectatorScoreboardListView_C_ResetFocus::CallFunc_SetSelectedIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSpectatorScoreboardListView_C_ResetFocus, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AthenaSpectatorScoreboardListView_C_ResetFocus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSpectatorScoreboardListView_C_ResetFocus, CallFunc_GetCurrentInputType_ReturnValue) == 0x000008, "Member 'AthenaSpectatorScoreboardListView_C_ResetFocus::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSpectatorScoreboardListView_C_ResetFocus, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'AthenaSpectatorScoreboardListView_C_ResetFocus::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 }
 

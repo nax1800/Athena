@@ -10,19 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SpectatorPC.BP_SpectatorPC_C
-// 0x0008 (0x2998 - 0x2990)
+// 0x0010 (0x1F88 - 0x1F78)
 class ABP_SpectatorPC_C final : public AFortPlayerControllerSpectating
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2990(0x0008)(Transient, DuplicateTransient)
+	uint8                                         Pad_1F78[0x8];                                     // 0x1F78(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1F80(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_SpectatorPC(int32 EntryPoint);
@@ -40,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(ABP_SpectatorPC_C) == 0x000008, "Wrong alignment on ABP_SpectatorPC_C");
-static_assert(sizeof(ABP_SpectatorPC_C) == 0x002998, "Wrong size on ABP_SpectatorPC_C");
-static_assert(offsetof(ABP_SpectatorPC_C, UberGraphFrame) == 0x002990, "Member 'ABP_SpectatorPC_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(ABP_SpectatorPC_C) == 0x001F88, "Wrong size on ABP_SpectatorPC_C");
+static_assert(offsetof(ABP_SpectatorPC_C, UberGraphFrame) == 0x001F80, "Member 'ABP_SpectatorPC_C::UberGraphFrame' has a wrong offset!");
 
 }
 

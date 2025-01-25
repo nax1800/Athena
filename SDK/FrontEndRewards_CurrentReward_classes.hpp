@@ -10,42 +10,42 @@
 
 #include "Basic.hpp"
 
-#include "Slate_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C
-// 0x00B8 (0x02C8 - 0x0210)
+// 0x00B8 (0x02C0 - 0x0208)
 class UFrontEndRewards_CurrentReward_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AnimIdleBounce;                                    // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimOpenReward;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimDropReward;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimPopReward;                                     // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           RewardCanvasPanel;                                 // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URewardsIcon_C*                         RewardsIcon;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBoxIcon;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnDropAnimationFinished;                           // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnPopAnimationFinished;                            // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnOpenAnimationStarted;                            // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnOpenAnimationFinished;                           // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         CountTimeStart;                                    // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	float                                         CountTime;                                         // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CountTimer;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         FadeDuration;                                      // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFadingOut;                                       // 0x02A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FinalScale;                                        // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              FinalAlignment;                                    // 0x02AC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               FinalAnchors;                                      // 0x02B4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       AnimIdleBounce;                                    // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimOpenReward;                                    // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimDropReward;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimPopReward;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           RewardCanvasPanel;                                 // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URewardsIcon_C*                         RewardsIcon;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBoxIcon;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnDropAnimationFinished;                           // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnPopAnimationFinished;                            // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnOpenAnimationStarted;                            // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnOpenAnimationFinished;                           // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         CountTimeStart;                                    // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	float                                         CountTime;                                         // 0x028C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CountTimer;                                        // 0x0290(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         FadeDuration;                                      // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFadingOut;                                       // 0x029C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29D[0x3];                                      // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FinalScale;                                        // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              FinalAlignment;                                    // 0x02A4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               FinalAnchors;                                      // 0x02AC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void OnDropAnimationFinished__DelegateSignature();
@@ -83,27 +83,27 @@ public:
 	}
 };
 static_assert(alignof(UFrontEndRewards_CurrentReward_C) == 0x000008, "Wrong alignment on UFrontEndRewards_CurrentReward_C");
-static_assert(sizeof(UFrontEndRewards_CurrentReward_C) == 0x0002C8, "Wrong size on UFrontEndRewards_CurrentReward_C");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, UberGraphFrame) == 0x000210, "Member 'UFrontEndRewards_CurrentReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimIdleBounce) == 0x000218, "Member 'UFrontEndRewards_CurrentReward_C::AnimIdleBounce' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimOpenReward) == 0x000220, "Member 'UFrontEndRewards_CurrentReward_C::AnimOpenReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimDropReward) == 0x000228, "Member 'UFrontEndRewards_CurrentReward_C::AnimDropReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimPopReward) == 0x000230, "Member 'UFrontEndRewards_CurrentReward_C::AnimPopReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardCanvasPanel) == 0x000238, "Member 'UFrontEndRewards_CurrentReward_C::RewardCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardsIcon) == 0x000240, "Member 'UFrontEndRewards_CurrentReward_C::RewardsIcon' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, ScaleBoxIcon) == 0x000248, "Member 'UFrontEndRewards_CurrentReward_C::ScaleBoxIcon' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnDropAnimationFinished) == 0x000250, "Member 'UFrontEndRewards_CurrentReward_C::OnDropAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnPopAnimationFinished) == 0x000260, "Member 'UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationStarted) == 0x000270, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationFinished) == 0x000280, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimeStart) == 0x000290, "Member 'UFrontEndRewards_CurrentReward_C::CountTimeStart' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTime) == 0x000294, "Member 'UFrontEndRewards_CurrentReward_C::CountTime' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimer) == 0x000298, "Member 'UFrontEndRewards_CurrentReward_C::CountTimer' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FadeDuration) == 0x0002A0, "Member 'UFrontEndRewards_CurrentReward_C::FadeDuration' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, IsFadingOut) == 0x0002A4, "Member 'UFrontEndRewards_CurrentReward_C::IsFadingOut' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalScale) == 0x0002A8, "Member 'UFrontEndRewards_CurrentReward_C::FinalScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAlignment) == 0x0002AC, "Member 'UFrontEndRewards_CurrentReward_C::FinalAlignment' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAnchors) == 0x0002B4, "Member 'UFrontEndRewards_CurrentReward_C::FinalAnchors' has a wrong offset!");
+static_assert(sizeof(UFrontEndRewards_CurrentReward_C) == 0x0002C0, "Wrong size on UFrontEndRewards_CurrentReward_C");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, UberGraphFrame) == 0x000208, "Member 'UFrontEndRewards_CurrentReward_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimIdleBounce) == 0x000210, "Member 'UFrontEndRewards_CurrentReward_C::AnimIdleBounce' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimOpenReward) == 0x000218, "Member 'UFrontEndRewards_CurrentReward_C::AnimOpenReward' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimDropReward) == 0x000220, "Member 'UFrontEndRewards_CurrentReward_C::AnimDropReward' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimPopReward) == 0x000228, "Member 'UFrontEndRewards_CurrentReward_C::AnimPopReward' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardCanvasPanel) == 0x000230, "Member 'UFrontEndRewards_CurrentReward_C::RewardCanvasPanel' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardsIcon) == 0x000238, "Member 'UFrontEndRewards_CurrentReward_C::RewardsIcon' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, ScaleBoxIcon) == 0x000240, "Member 'UFrontEndRewards_CurrentReward_C::ScaleBoxIcon' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnDropAnimationFinished) == 0x000248, "Member 'UFrontEndRewards_CurrentReward_C::OnDropAnimationFinished' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnPopAnimationFinished) == 0x000258, "Member 'UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationStarted) == 0x000268, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationFinished) == 0x000278, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimeStart) == 0x000288, "Member 'UFrontEndRewards_CurrentReward_C::CountTimeStart' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTime) == 0x00028C, "Member 'UFrontEndRewards_CurrentReward_C::CountTime' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimer) == 0x000290, "Member 'UFrontEndRewards_CurrentReward_C::CountTimer' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FadeDuration) == 0x000298, "Member 'UFrontEndRewards_CurrentReward_C::FadeDuration' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, IsFadingOut) == 0x00029C, "Member 'UFrontEndRewards_CurrentReward_C::IsFadingOut' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalScale) == 0x0002A0, "Member 'UFrontEndRewards_CurrentReward_C::FinalScale' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAlignment) == 0x0002A4, "Member 'UFrontEndRewards_CurrentReward_C::FinalAlignment' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAnchors) == 0x0002AC, "Member 'UFrontEndRewards_CurrentReward_C::FinalAnchors' has a wrong offset!");
 
 }
 

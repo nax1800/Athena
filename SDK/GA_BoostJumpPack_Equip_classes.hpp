@@ -10,21 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_BoostJumpPack_Equip.GA_BoostJumpPack_Equip_C
-// 0x0018 (0x0B00 - 0x0AE8)
+// 0x0010 (0x0908 - 0x08F8)
 class UGA_BoostJumpPack_Equip_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_BoostJumpPack_Equip(int32 EntryPoint);
@@ -46,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(UGA_BoostJumpPack_Equip_C) == 0x000008, "Wrong alignment on UGA_BoostJumpPack_Equip_C");
-static_assert(sizeof(UGA_BoostJumpPack_Equip_C) == 0x000B00, "Wrong size on UGA_BoostJumpPack_Equip_C");
-static_assert(offsetof(UGA_BoostJumpPack_Equip_C, UberGraphFrame) == 0x000AF0, "Member 'UGA_BoostJumpPack_Equip_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_Equip_C, PlayerPawn) == 0x000AF8, "Member 'UGA_BoostJumpPack_Equip_C::PlayerPawn' has a wrong offset!");
+static_assert(sizeof(UGA_BoostJumpPack_Equip_C) == 0x000908, "Wrong size on UGA_BoostJumpPack_Equip_C");
+static_assert(offsetof(UGA_BoostJumpPack_Equip_C, UberGraphFrame) == 0x0008F8, "Member 'UGA_BoostJumpPack_Equip_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGA_BoostJumpPack_Equip_C, PlayerPawn) == 0x000900, "Member 'UGA_BoostJumpPack_Equip_C::PlayerPawn' has a wrong offset!");
 
 }
 

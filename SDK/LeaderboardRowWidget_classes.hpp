@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaderboardRowWidget.LeaderboardRowWidget_C
-// 0x0020 (0x0838 - 0x0818)
+// 0x0020 (0x08C0 - 0x08A0)
 class ULeaderboardRowWidget_C final : public UFortLeaderboardEntryWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0818(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       Rank;                                              // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       StatValue;                                         // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       User;                                              // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       Rank;                                              // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       StatValue;                                         // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       User;                                              // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_LeaderboardRowWidget(int32 EntryPoint);
-	void OnLeaderboardEntryDataSet();
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void Refresh(class UFortLeaderboardRowProxyInstance* RowObject);
 	void SetDataDirect(class UFortLeaderboardRowProxyInstance* NewData);
 
@@ -44,11 +44,11 @@ public:
 	}
 };
 static_assert(alignof(ULeaderboardRowWidget_C) == 0x000008, "Wrong alignment on ULeaderboardRowWidget_C");
-static_assert(sizeof(ULeaderboardRowWidget_C) == 0x000838, "Wrong size on ULeaderboardRowWidget_C");
-static_assert(offsetof(ULeaderboardRowWidget_C, UberGraphFrame) == 0x000818, "Member 'ULeaderboardRowWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, Rank) == 0x000820, "Member 'ULeaderboardRowWidget_C::Rank' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, StatValue) == 0x000828, "Member 'ULeaderboardRowWidget_C::StatValue' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, User) == 0x000830, "Member 'ULeaderboardRowWidget_C::User' has a wrong offset!");
+static_assert(sizeof(ULeaderboardRowWidget_C) == 0x0008C0, "Wrong size on ULeaderboardRowWidget_C");
+static_assert(offsetof(ULeaderboardRowWidget_C, UberGraphFrame) == 0x0008A0, "Member 'ULeaderboardRowWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULeaderboardRowWidget_C, Rank) == 0x0008A8, "Member 'ULeaderboardRowWidget_C::Rank' has a wrong offset!");
+static_assert(offsetof(ULeaderboardRowWidget_C, StatValue) == 0x0008B0, "Member 'ULeaderboardRowWidget_C::StatValue' has a wrong offset!");
+static_assert(offsetof(ULeaderboardRowWidget_C, User) == 0x0008B8, "Member 'ULeaderboardRowWidget_C::User' has a wrong offset!");
 
 }
 

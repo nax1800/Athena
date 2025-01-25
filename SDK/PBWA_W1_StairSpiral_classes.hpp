@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_W1_StairSpiral.PBWA_W1_StairSpiral_C
-// 0x0000 (0x0DC0 - 0x0DC0)
+// 0x0000 (0x0B58 - 0x0B58)
 class APBWA_W1_StairSpiral_C final : public ABuildingStairs
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(APBWA_W1_StairSpiral_C) == 0x000008, "Wrong alignment on APBWA_W1_StairSpiral_C");
-static_assert(sizeof(APBWA_W1_StairSpiral_C) == 0x000DC0, "Wrong size on APBWA_W1_StairSpiral_C");
+static_assert(sizeof(APBWA_W1_StairSpiral_C) == 0x000B58, "Wrong size on APBWA_W1_StairSpiral_C");
 
 }
 

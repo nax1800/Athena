@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MinimapContainer.MinimapContainer_C
-// 0x0000 (0x0240 - 0x0240)
+// 0x0000 (0x0238 - 0x0238)
 class UMinimapContainer_C final : public UFortHUDElementWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UMinimapContainer_C) == 0x000008, "Wrong alignment on UMinimapContainer_C");
-static_assert(sizeof(UMinimapContainer_C) == 0x000240, "Wrong size on UMinimapContainer_C");
+static_assert(sizeof(UMinimapContainer_C) == 0x000238, "Wrong size on UMinimapContainer_C");
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SurvivorRescuedCounter.SurvivorRescuedCounter_C
-// 0x0010 (0x0228 - 0x0218)
+// 0x0010 (0x0220 - 0x0210)
 class USurvivorRescuedCounter_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UCommonNumericTextBlock*                NumberSurvivors;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UCommonNumericTextBlock*                NumberSurvivors;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SurvivorRescuedCounter(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(USurvivorRescuedCounter_C) == 0x000008, "Wrong alignment on USurvivorRescuedCounter_C");
-static_assert(sizeof(USurvivorRescuedCounter_C) == 0x000228, "Wrong size on USurvivorRescuedCounter_C");
-static_assert(offsetof(USurvivorRescuedCounter_C, UberGraphFrame) == 0x000218, "Member 'USurvivorRescuedCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USurvivorRescuedCounter_C, NumberSurvivors) == 0x000220, "Member 'USurvivorRescuedCounter_C::NumberSurvivors' has a wrong offset!");
+static_assert(sizeof(USurvivorRescuedCounter_C) == 0x000220, "Wrong size on USurvivorRescuedCounter_C");
+static_assert(offsetof(USurvivorRescuedCounter_C, UberGraphFrame) == 0x000210, "Member 'USurvivorRescuedCounter_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USurvivorRescuedCounter_C, NumberSurvivors) == 0x000218, "Member 'USurvivorRescuedCounter_C::NumberSurvivors' has a wrong offset!");
 
 }
 

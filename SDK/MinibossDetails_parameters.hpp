@@ -73,8 +73,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0067(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,8 +96,8 @@ static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Va
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Variable1) == 0x000061, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, CallFunc_TextIsEmpty_ReturnValue) == 0x000062, "Member 'MinibossDetails_C_InitializeMiniBossDetails::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_bool_Variable) == 0x000063, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Variable12) == 0x000064, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Variable123) == 0x000065, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Variable2) == 0x000064, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_byte_Variable3) == 0x000065, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, Temp_bool_Variable1) == 0x000066, "Member 'MinibossDetails_C_InitializeMiniBossDetails::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, K2Node_Select_Default) == 0x000067, "Member 'MinibossDetails_C_InitializeMiniBossDetails::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_InitializeMiniBossDetails, K2Node_Select1_Default) == 0x000068, "Member 'MinibossDetails_C_InitializeMiniBossDetails::K2Node_Select1_Default' has a wrong offset!");
@@ -127,7 +127,7 @@ public:
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetEmptyText_ReturnValue1;                // 0x0110(0x0018)()
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0128(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0140(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0140(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0190(0x0018)()
 };
@@ -149,7 +149,7 @@ static_assert(offsetof(MinibossDetails_C_PopulateModifiers, K2Node_MakeStruct_Fo
 static_assert(offsetof(MinibossDetails_C_PopulateModifiers, CallFunc_Add_IntInt_ReturnValue) == 0x000108, "Member 'MinibossDetails_C_PopulateModifiers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_PopulateModifiers, CallFunc_GetEmptyText_ReturnValue1) == 0x000110, "Member 'MinibossDetails_C_PopulateModifiers::CallFunc_GetEmptyText_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_PopulateModifiers, CallFunc_GetText_ReturnValue) == 0x000128, "Member 'MinibossDetails_C_PopulateModifiers::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinibossDetails_C_PopulateModifiers, K2Node_MakeStruct_FormatArgumentData12) == 0x000140, "Member 'MinibossDetails_C_PopulateModifiers::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
+static_assert(offsetof(MinibossDetails_C_PopulateModifiers, K2Node_MakeStruct_FormatArgumentData2) == 0x000140, "Member 'MinibossDetails_C_PopulateModifiers::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_PopulateModifiers, K2Node_MakeArray_Array) == 0x000180, "Member 'MinibossDetails_C_PopulateModifiers::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(MinibossDetails_C_PopulateModifiers, CallFunc_Format_ReturnValue) == 0x000190, "Member 'MinibossDetails_C_PopulateModifiers::CallFunc_Format_ReturnValue' has a wrong offset!");
 

@@ -63,20 +63,20 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable1;                               // 0x0100(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0118(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0118(0x0018)()
 	bool                                          Temp_bool_Variable1;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0138(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0150(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0168(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0180(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0150(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0168(0x0018)()
+	class FText                                   Temp_text_Variable5;                               // 0x0180(0x0018)()
 	class FText                                   K2Node_Select1_Default;                            // 0x0198(0x0018)()
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue1;              // 0x01B8(0x0018)()
-	bool                                          Temp_bool_Variable12;                              // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select12_Default;                           // 0x01D8(0x0018)()
+	class FText                                   K2Node_Select2_Default;                            // 0x01D8(0x0018)()
 };
 static_assert(alignof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal");
 static_assert(sizeof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal) == 0x0001F0, "Wrong size on TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal");
@@ -99,17 +99,17 @@ static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInsta
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable) == 0x0000F8, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable1) == 0x000100, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable12) == 0x000118, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable2) == 0x000118, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable2' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable1) == 0x000130, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select_Default) == 0x000138, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable123) == 0x000150, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable1234) == 0x000168, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable12345) == 0x000180, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable12345' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable3) == 0x000150, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable4) == 0x000168, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable5) == 0x000180, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable5' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select1_Default) == 0x000198, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_MakeLiteralInt_ReturnValue) == 0x0001B0, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue1) == 0x0001B8, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable12) == 0x0001D0, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select12_Default) == 0x0001D8, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable2) == 0x0001D0, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select2_Default) == 0x0001D8, "Member 'TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select2_Default' has a wrong offset!");
 
 // Function TT_Commando_FragGrenade.TT_Commando_FragGrenade_C.GetApplicationTag
 // 0x0028 (0x0028 - 0x0000)

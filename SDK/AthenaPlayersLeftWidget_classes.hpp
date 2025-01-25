@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayersLeftWidget.AthenaPlayersLeftWidget_C
-// 0x0018 (0x0270 - 0x0258)
+// 0x0018 (0x0268 - 0x0250)
 class UAthenaPlayersLeftWidget_C final : public UAthenaPlayersLeftBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 PlayersImage;                                      // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         PlayersLeftText;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 PlayersImage;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         PlayersLeftText;                                   // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaPlayersLeftWidget(int32 EntryPoint);
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UAthenaPlayersLeftWidget_C) == 0x000008, "Wrong alignment on UAthenaPlayersLeftWidget_C");
-static_assert(sizeof(UAthenaPlayersLeftWidget_C) == 0x000270, "Wrong size on UAthenaPlayersLeftWidget_C");
-static_assert(offsetof(UAthenaPlayersLeftWidget_C, UberGraphFrame) == 0x000258, "Member 'UAthenaPlayersLeftWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersImage) == 0x000260, "Member 'UAthenaPlayersLeftWidget_C::PlayersImage' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersLeftText) == 0x000268, "Member 'UAthenaPlayersLeftWidget_C::PlayersLeftText' has a wrong offset!");
+static_assert(sizeof(UAthenaPlayersLeftWidget_C) == 0x000268, "Wrong size on UAthenaPlayersLeftWidget_C");
+static_assert(offsetof(UAthenaPlayersLeftWidget_C, UberGraphFrame) == 0x000250, "Member 'UAthenaPlayersLeftWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersImage) == 0x000258, "Member 'UAthenaPlayersLeftWidget_C::PlayersImage' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersLeftText) == 0x000260, "Member 'UAthenaPlayersLeftWidget_C::PlayersLeftText' has a wrong offset!");
 
 }
 

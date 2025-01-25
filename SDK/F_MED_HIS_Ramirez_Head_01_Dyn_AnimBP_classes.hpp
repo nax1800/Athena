@@ -10,34 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP.F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C
-// 0x1130 (0x1560 - 0x0430)
+// 0x11B0 (0x15E0 - 0x0430)
 class UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C final : public UCustomCharacterPartAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_966722F040605A529996238D427F43D4; // 0x0438(0x0048)()
-	struct FAnimNode_SubInput                     AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B; // 0x0480(0x0068)()
-	uint8                                         Pad_4E8[0x8];                                      // 0x04E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095; // 0x04F0(0x0360)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646; // 0x0850(0x0048)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2; // 0x0898(0x0048)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9; // 0x08E0(0x0360)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC; // 0x0C40(0x0360)()
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505; // 0x0FA0(0x0360)()
-	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3; // 0x1300(0x00E0)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7; // 0x13E0(0x0050)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405; // 0x1430(0x00D0)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E; // 0x1500(0x0050)()
-	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x1550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_Root                         AnimGraphNode_Root_966722F040605A529996238D427F43D4; // 0x0438(0x0040)()
+	struct FAnimNode_SubInput                     AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B; // 0x0478(0x0068)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095; // 0x04E0(0x0390)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646; // 0x0870(0x0040)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2; // 0x08B0(0x0040)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9; // 0x08F0(0x0390)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC; // 0x0C80(0x0390)()
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505; // 0x1010(0x0390)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3; // 0x13A0(0x00D8)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7; // 0x1478(0x0048)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405; // 0x14C0(0x00D0)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E; // 0x1590(0x0048)()
+	class USkeletalMeshComponent*                 MeshToCopy;                                        // 0x15D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BlueprintInitializeAnimation();
@@ -55,21 +54,21 @@ public:
 	}
 };
 static_assert(alignof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C) == 0x000010, "Wrong alignment on UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C");
-static_assert(sizeof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C) == 0x001560, "Wrong size on UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C");
+static_assert(sizeof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C) == 0x0015E0, "Wrong size on UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C");
 static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, UberGraphFrame) == 0x000430, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_Root_966722F040605A529996238D427F43D4) == 0x000438, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_Root_966722F040605A529996238D427F43D4' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B) == 0x000480, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095) == 0x0004F0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646) == 0x000850, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2) == 0x000898, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9) == 0x0008E0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC) == 0x000C40, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505) == 0x000FA0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3) == 0x001300, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7) == 0x0013E0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405) == 0x001430, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E) == 0x001500, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, MeshToCopy) == 0x001550, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::MeshToCopy' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B) == 0x000478, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095) == 0x0004E0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646) == 0x000870, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2) == 0x0008B0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9) == 0x0008F0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC) == 0x000C80, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505) == 0x001010, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3) == 0x0013A0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7) == 0x001478, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405) == 0x0014C0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E) == 0x001590, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E' has a wrong offset!");
+static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, MeshToCopy) == 0x0015D8, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::MeshToCopy' has a wrong offset!");
 
 }
 

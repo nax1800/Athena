@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CombatManager.CombatManager_C
-// 0x0008 (0x0B98 - 0x0B90)
+// 0x0008 (0x0BA8 - 0x0BA0)
 class ACombatManager_C final : public AFortCombatManager
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0B90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0BA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ACombatManager_C) == 0x000008, "Wrong alignment on ACombatManager_C");
-static_assert(sizeof(ACombatManager_C) == 0x000B98, "Wrong size on ACombatManager_C");
-static_assert(offsetof(ACombatManager_C, DefaultSceneRoot) == 0x000B90, "Member 'ACombatManager_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ACombatManager_C) == 0x000BA8, "Wrong size on ACombatManager_C");
+static_assert(offsetof(ACombatManager_C, DefaultSceneRoot) == 0x000BA0, "Member 'ACombatManager_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

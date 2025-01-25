@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -40,39 +40,39 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumPlayersInLocalParty_ReturnValue;    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345678910;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123456789;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345678;         // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234567;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button10;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button9;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button8;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button7;                // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason StateReason)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0048(0x0018)()
-	bool                                          Temp_bool_Variable123;                             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123456;           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345;            // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button6;                // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button5;                // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_isTeammateSlotPopulated_ReturnValue;      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_isTeammateSlotPopulated_ReturnValue1;     // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isTeammateSlotPopulated_ReturnValue12;    // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isTeammateSlotPopulated_ReturnValue2;     // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00A8(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x00C0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue12;            // 0x00D8(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x00D8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00F0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue123;           // 0x0108(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue3;             // 0x0108(0x0018)()
 	class FText                                   K2Node_Select1_Default;                            // 0x0120(0x0018)()
-	class FText                                   K2Node_Select12_Default;                           // 0x0138(0x0018)()
-	class FText                                   K2Node_Select123_Default;                          // 0x0150(0x0018)()
+	class FText                                   K2Node_Select2_Default;                            // 0x0138(0x0018)()
+	class FText                                   K2Node_Select3_Default;                            // 0x0150(0x0018)()
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x000008, "Wrong alignment on FullPartyBar_C_ExecuteUbergraph_FullPartyBar");
@@ -80,35 +80,35 @@ static_assert(sizeof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x000170, 
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, EntryPoint) == 0x000000, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable) == 0x000004, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable1) == 0x000005, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable12) == 0x000006, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable2) == 0x000006, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x000010, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button12345678910) == 0x000018, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button12345678910' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button123456789) == 0x000020, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button123456789' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button12345678) == 0x000028, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button12345678' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button1234567) == 0x000030, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button1234567' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button10) == 0x000018, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button10' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button9) == 0x000020, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button9' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button8) == 0x000028, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button8' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button7) == 0x000030, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_GetEmptyText_ReturnValue) == 0x000048, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable123) == 0x000060, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable123' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button123456) == 0x000068, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button123456' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button12345) == 0x000070, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button12345' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button1234) == 0x000078, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button123) == 0x000080, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button12) == 0x000088, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable3) == 0x000060, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button6) == 0x000068, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button5) == 0x000070, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button4) == 0x000078, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button3) == 0x000080, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button2) == 0x000088, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button1) == 0x000090, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_ComponentBoundEvent_Button) == 0x000098, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_isTeammateSlotPopulated_ReturnValue) == 0x0000A0, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_isTeammateSlotPopulated_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_isTeammateSlotPopulated_ReturnValue1) == 0x0000A1, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_isTeammateSlotPopulated_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_isTeammateSlotPopulated_ReturnValue12) == 0x0000A2, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_isTeammateSlotPopulated_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_isTeammateSlotPopulated_ReturnValue2) == 0x0000A2, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_isTeammateSlotPopulated_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue) == 0x0000A8, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue1) == 0x0000C0, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue12) == 0x0000D8, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue2) == 0x0000D8, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select_Default) == 0x0000F0, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue123) == 0x000108, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_MakeLiteralText_ReturnValue3) == 0x000108, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select1_Default) == 0x000120, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select12_Default) == 0x000138, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select123_Default) == 0x000150, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select123_Default' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select2_Default) == 0x000138, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Select3_Default) == 0x000150, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::K2Node_Select3_Default' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_GetContext_ReturnValue1) == 0x000168, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature
@@ -273,9 +273,9 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureState                           Temp_byte_Variable1234;                            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureState                           Temp_byte_Variable4;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FullPartyBar_C_HandlePartybarUIFeatureChanged) == 0x000001, "Wrong alignment on FullPartyBar_C_HandlePartybarUIFeatureChanged");
@@ -286,9 +286,9 @@ static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Reason) ==
 static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable) == 0x000003, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable1) == 0x000005, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable12) == 0x000006, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable123) == 0x000007, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable1234) == 0x000008, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable2) == 0x000006, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable3) == 0x000007, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable4) == 0x000008, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_HandlePartybarUIFeatureChanged, K2Node_Select_Default) == 0x000009, "Member 'FullPartyBar_C_HandlePartybarUIFeatureChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.OpenPartyPrivacy
@@ -331,17 +331,17 @@ struct FullPartyBar_C_GetTotalNumFriendCodes final
 {
 public:
 	int32                                         Num_Codes;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumFriendCodesToIssue_ReturnValue;     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumFriendCodesToIssue_ReturnValue1;    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFriendCode                            CallFunc_Array_Get_Item;                           // 0x0028(0x0020)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue123;                // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue1;           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -352,16 +352,17 @@ public:
 static_assert(alignof(FullPartyBar_C_GetTotalNumFriendCodes) == 0x000008, "Wrong alignment on FullPartyBar_C_GetTotalNumFriendCodes");
 static_assert(sizeof(FullPartyBar_C_GetTotalNumFriendCodes) == 0x000060, "Wrong size on FullPartyBar_C_GetTotalNumFriendCodes");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Num_Codes) == 0x000000, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Num_Codes' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Temp_int_Array_Index_Variable) == 0x000004, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue1) == 0x000010, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, Temp_int_Variable) == 0x000014, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_GetNumFriendCodesToIssue_ReturnValue) == 0x000020, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_GetNumFriendCodesToIssue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_GetNumFriendCodesToIssue_ReturnValue1) == 0x000024, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_GetNumFriendCodesToIssue_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Array_Get_Item) == 0x000028, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue12) == 0x000048, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue123) == 0x00004C, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue2) == 0x000048, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue3) == 0x00004C, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000050, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_EqualEqual_StrStr_ReturnValue1) == 0x000051, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_EqualEqual_StrStr_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -483,11 +484,11 @@ public:
 	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute1;      // 0x0078(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue1;              // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute12;     // 0x00F0(0x0070)()
-	bool                                          CallFunc_GetTooltipStat_ReturnValue12;             // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute2;      // 0x00F0(0x0070)()
+	bool                                          CallFunc_GetTooltipStat_ReturnValue2;              // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute123;    // 0x0168(0x0070)()
-	bool                                          CallFunc_GetTooltipStat_ReturnValue123;            // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute3;      // 0x0168(0x0070)()
+	bool                                          CallFunc_GetTooltipStat_ReturnValue3;              // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(FullPartyBar_C_InitializeStatLabels) == 0x000008, "Wrong alignment on FullPartyBar_C_InitializeStatLabels");
 static_assert(sizeof(FullPartyBar_C_InitializeStatLabels) == 0x0001E0, "Wrong size on FullPartyBar_C_InitializeStatLabels");
@@ -495,10 +496,10 @@ static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipS
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue) == 0x000070, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute1) == 0x000078, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute1' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue1) == 0x0000E8, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute12) == 0x0000F0, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute12' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue12) == 0x000160, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute123) == 0x000168, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute123' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue123) == 0x0001D8, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute2) == 0x0000F0, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute2' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue2) == 0x000160, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute3) == 0x000168, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute3' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue3) == 0x0001D8, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue3' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.GetTooltipStat
 // 0x0150 (0x0150 - 0x0000)

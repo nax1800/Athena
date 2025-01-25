@@ -51,29 +51,29 @@ void UStoreMain_MTXOffer_C::ExecuteUbergraph_StoreMain_MTXOffer(int32 EntryPoint
 }
 
 
-// Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnUnhovered
+// Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
-void UStoreMain_MTXOffer_C::OnUnhovered()
+void UStoreMain_MTXOffer_C::BP_OnUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnUnhovered");
+		Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnHovered
+// Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UStoreMain_MTXOffer_C::OnHovered()
+void UStoreMain_MTXOffer_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnHovered");
+		Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

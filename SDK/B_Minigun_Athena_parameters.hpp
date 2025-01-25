@@ -31,7 +31,7 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x0B30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B31[0x3];                                      // 0x0B31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetLocalMagazineAmmoCount_ReturnValue;    // 0x0B34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue12;          // 0x0B38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue2;           // 0x0B38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena) == 0x000008, "Wrong alignment on B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena");
 static_assert(sizeof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena) == 0x000B40, "Wrong size on B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena");
@@ -43,7 +43,7 @@ static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, K2N
 static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, K2Node_Event_DynamicMaterialInstance) == 0x000B28, "Member 'B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena::K2Node_Event_DynamicMaterialInstance' has a wrong offset!");
 static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, CallFunc_IsDedicatedServer_ReturnValue1) == 0x000B30, "Member 'B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, CallFunc_GetLocalMagazineAmmoCount_ReturnValue) == 0x000B34, "Member 'B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena::CallFunc_GetLocalMagazineAmmoCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, CallFunc_IsDedicatedServer_ReturnValue12) == 0x000B38, "Member 'B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena::CallFunc_IsDedicatedServer_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena, CallFunc_IsDedicatedServer_ReturnValue2) == 0x000B38, "Member 'B_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena::CallFunc_IsDedicatedServer_ReturnValue2' has a wrong offset!");
 
 // Function B_Minigun_Athena.B_Minigun_Athena_C.OnInitCosmeticAlterations
 // 0x0B28 (0x0B28 - 0x0000)

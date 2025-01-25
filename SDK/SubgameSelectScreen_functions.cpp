@@ -37,6 +37,48 @@ void USubgameSelectScreen_C::ExecuteUbergraph_SubgameSelectScreen(int32 EntryPoi
 }
 
 
+// Function SubgameSelectScreen.SubgameSelectScreen_C.OnSubGameImageLoadedFromCMS
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESubGame                                SubGame                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2DDynamic*                Image                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USubgameSelectScreen_C::OnSubGameImageLoadedFromCMS(const ESubGame SubGame, class UTexture2DDynamic* Image)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "OnSubGameImageLoadedFromCMS");
+
+	Params::SubgameSelectScreen_C_OnSubGameImageLoadedFromCMS Parms{};
+
+	Parms.SubGame = SubGame;
+	Parms.Image = Image;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SubgameSelectScreen.SubgameSelectScreen_C.OnInputModeChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bUsingGamepad                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void USubgameSelectScreen_C::OnInputModeChanged(bool bUsingGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "OnInputModeChanged");
+
+	Params::SubgameSelectScreen_C_OnInputModeChanged Parms{};
+
+	Parms.bUsingGamepad = bUsingGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function SubgameSelectScreen.SubgameSelectScreen_C.OnRedeemCodeComplete
 // (BlueprintCallable, BlueprintEvent)
 
@@ -431,6 +473,28 @@ void USubgameSelectScreen_C::BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_
 }
 
 
+// Function SubgameSelectScreen.SubgameSelectScreen_C.DialogResult_0A856DFB4C254288F2910E9EF8AC5903
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USubgameSelectScreen_C::DialogResult_0A856DFB4C254288F2910E9EF8AC5903(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "DialogResult_0A856DFB4C254288F2910E9EF8AC5903");
+
+	Params::SubgameSelectScreen_C_DialogResult_0A856DFB4C254288F2910E9EF8AC5903 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function SubgameSelectScreen.SubgameSelectScreen_C.DialogResult_9B87D67040B12081C9B651A92AD99EA4
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -671,6 +735,26 @@ void USubgameSelectScreen_C::StartSubgameSelectMusic()
 		Func = Class->GetFunction("SubgameSelectScreen_C", "StartSubgameSelectMusic");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SubgameSelectScreen.SubgameSelectScreen_C.SetCMSTextureToKeyArt
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESubGame                                Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USubgameSelectScreen_C::SetCMSTextureToKeyArt(const ESubGame Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "SetCMSTextureToKeyArt");
+
+	Params::SubgameSelectScreen_C_SetCMSTextureToKeyArt Parms{};
+
+	Parms.Key = Key;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

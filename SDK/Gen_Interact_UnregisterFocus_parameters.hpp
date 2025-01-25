@@ -19,12 +19,12 @@ namespace SDK::Params
 struct Gen_Interact_UnregisterFocus_C_SetParams final
 {
 public:
-	class AActor*                                 Param_ActorToUnregister;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorToUnregister_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UGen_Interact_UnregisterFocus_C*        ThisObject;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Gen_Interact_UnregisterFocus_C_SetParams) == 0x000008, "Wrong alignment on Gen_Interact_UnregisterFocus_C_SetParams");
 static_assert(sizeof(Gen_Interact_UnregisterFocus_C_SetParams) == 0x000010, "Wrong size on Gen_Interact_UnregisterFocus_C_SetParams");
-static_assert(offsetof(Gen_Interact_UnregisterFocus_C_SetParams, Param_ActorToUnregister) == 0x000000, "Member 'Gen_Interact_UnregisterFocus_C_SetParams::Param_ActorToUnregister' has a wrong offset!");
+static_assert(offsetof(Gen_Interact_UnregisterFocus_C_SetParams, ActorToUnregister_0) == 0x000000, "Member 'Gen_Interact_UnregisterFocus_C_SetParams::ActorToUnregister_0' has a wrong offset!");
 static_assert(offsetof(Gen_Interact_UnregisterFocus_C_SetParams, ThisObject) == 0x000008, "Member 'Gen_Interact_UnregisterFocus_C_SetParams::ThisObject' has a wrong offset!");
 
 // Function Gen_Interact_UnregisterFocus.Gen_Interact_UnregisterFocus_C.BreakParams

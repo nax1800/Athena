@@ -20,9 +20,9 @@ namespace SDK
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnVehicleSelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_SquadId                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SquadId_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected__DelegateSignature(class FName Param_SquadId)
+void UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected__DelegateSignature(class FName SquadId_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected__DelegateSigna
 
 	Params::BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature Parms{};
 
-	Parms.Param_SquadId = Param_SquadId;
+	Parms.SquadId_0 = SquadId_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +57,35 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::ExecuteUbergraph_BP_FortExpediti
 }
 
 
-// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnClicked
+// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::OnClicked()
+void UBP_FortExpeditionVehicleTileItemWidget_C::BP_OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "OnClicked");
+		Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UBP_FortExpeditionVehicleTileItemWidget_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "SetData");
+		Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "OnListItemObjectSet");
 
-	Params::BP_FortExpeditionVehicleTileItemWidget_C_SetData Parms{};
+	Params::BP_FortExpeditionVehicleTileItemWidget_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -96,9 +94,9 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject* InData, c
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Icon
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_SquadId                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SquadId_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& Param_SquadId)
+void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& SquadId_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -107,7 +105,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& Para
 
 	Params::BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon Parms{};
 
-	Parms.Param_SquadId = Param_SquadId;
+	Parms.SquadId_0 = SquadId_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -116,9 +114,9 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& Para
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Rating
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_SquadId                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SquadId_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& Param_SquadId)
+void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& SquadId_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -127,7 +125,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& Pa
 
 	Params::BP_FortExpeditionVehicleTileItemWidget_C_Set_Rating Parms{};
 
-	Parms.Param_SquadId = Param_SquadId;
+	Parms.SquadId_0 = SquadId_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -136,9 +134,9 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& Pa
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Name
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_SquadId                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SquadId_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const class FName Param_SquadId)
+void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const class FName SquadId_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -147,7 +145,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const class FName Param
 
 	Params::BP_FortExpeditionVehicleTileItemWidget_C_Set_Name Parms{};
 
-	Parms.Param_SquadId = Param_SquadId;
+	Parms.SquadId_0 = SquadId_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

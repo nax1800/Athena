@@ -37,6 +37,20 @@ void UFrontEndRewards_Queue_C::ExecuteUbergraph_FrontEndRewards_Queue(int32 Entr
 }
 
 
+// Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UFrontEndRewards_Queue_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FrontEndRewards_Queue_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:

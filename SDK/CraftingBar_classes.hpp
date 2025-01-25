@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CraftingBar.CraftingBar_C
-// 0x0000 (0x0268 - 0x0268)
+// 0x0000 (0x0260 - 0x0260)
 class UCraftingBar_C final : public UFortCraftingBarWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UCraftingBar_C) == 0x000008, "Wrong alignment on UCraftingBar_C");
-static_assert(sizeof(UCraftingBar_C) == 0x000268, "Wrong size on UCraftingBar_C");
+static_assert(sizeof(UCraftingBar_C) == 0x000260, "Wrong size on UCraftingBar_C");
 
 }
 

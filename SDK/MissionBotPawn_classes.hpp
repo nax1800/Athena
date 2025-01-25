@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MissionBotPawn.MissionBotPawn_C
-// 0x0000 (0x1BE0 - 0x1BE0)
+// 0x0000 (0x1C00 - 0x1C00)
 class AMissionBotPawn_C final : public AFortBotPawn
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AMissionBotPawn_C) == 0x000010, "Wrong alignment on AMissionBotPawn_C");
-static_assert(sizeof(AMissionBotPawn_C) == 0x001BE0, "Wrong size on AMissionBotPawn_C");
+static_assert(sizeof(AMissionBotPawn_C) == 0x001C00, "Wrong size on AMissionBotPawn_C");
 
 }
 

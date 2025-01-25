@@ -60,11 +60,11 @@ void UBasicGradientFill_C::PreConstruct(bool IsDesignTime)
 // Function BasicGradientFill.BasicGradientFill_C.Set Fill
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Param_Color_1                                          (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Param_Color_2                                          (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     Color_1_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     Color_2_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Rotation__0_Minus_1_                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Param_Color_1, const struct FLinearColor& Param_Color_2, float Rotation__0_Minus_1_)
+void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0_Minus_1_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,8 +73,8 @@ void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Param_Color_1, co
 
 	Params::BasicGradientFill_C_Set_Fill Parms{};
 
-	Parms.Param_Color_1 = std::move(Param_Color_1);
-	Parms.Param_Color_2 = std::move(Param_Color_2);
+	Parms.Color_1_0 = std::move(Color_1_0);
+	Parms.Color_2_0 = std::move(Color_2_0);
 	Parms.Rotation__0_Minus_1_ = Rotation__0_Minus_1_;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -84,9 +84,9 @@ void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Param_Color_1, co
 // Function BasicGradientFill.BasicGradientFill_C.Set Brush Size
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Param_Brush_Size                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                        Brush_Size_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Param_Brush_Size)
+void UBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Size_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,7 +95,7 @@ void UBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Param_Brush_Si
 
 	Params::BasicGradientFill_C_Set_Brush_Size Parms{};
 
-	Parms.Param_Brush_Size = std::move(Param_Brush_Size);
+	Parms.Brush_Size_0 = std::move(Brush_Size_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

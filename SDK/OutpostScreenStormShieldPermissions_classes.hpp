@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C
-// 0x0030 (0x03F0 - 0x03C0)
+// 0x0030 (0x0328 - 0x02F8)
 class UOutpostScreenStormShieldPermissions_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UOutpostScreenCanEditPanel_C*           OutpostScreenCanEditPanel;                         // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          GetHelp;                                           // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D1[0x7];                                      // 0x03D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   CloseOutpostScreen;                                // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UOutpostScreenStormShield_C*            ParentReference;                                   // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UOutpostScreenCanEditPanel_C*           OutpostScreenCanEditPanel;                         // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          GetHelp;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   CloseOutpostScreen;                                // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UOutpostScreenStormShield_C*            ParentReference;                                   // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CloseOutpostScreen__DelegateSignature();
@@ -55,12 +55,12 @@ public:
 	}
 };
 static_assert(alignof(UOutpostScreenStormShieldPermissions_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShieldPermissions_C");
-static_assert(sizeof(UOutpostScreenStormShieldPermissions_C) == 0x0003F0, "Wrong size on UOutpostScreenStormShieldPermissions_C");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, UberGraphFrame) == 0x0003C0, "Member 'UOutpostScreenStormShieldPermissions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, OutpostScreenCanEditPanel) == 0x0003C8, "Member 'UOutpostScreenStormShieldPermissions_C::OutpostScreenCanEditPanel' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, GetHelp) == 0x0003D0, "Member 'UOutpostScreenStormShieldPermissions_C::GetHelp' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, CloseOutpostScreen) == 0x0003D8, "Member 'UOutpostScreenStormShieldPermissions_C::CloseOutpostScreen' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, ParentReference) == 0x0003E8, "Member 'UOutpostScreenStormShieldPermissions_C::ParentReference' has a wrong offset!");
+static_assert(sizeof(UOutpostScreenStormShieldPermissions_C) == 0x000328, "Wrong size on UOutpostScreenStormShieldPermissions_C");
+static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, UberGraphFrame) == 0x0002F8, "Member 'UOutpostScreenStormShieldPermissions_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, OutpostScreenCanEditPanel) == 0x000300, "Member 'UOutpostScreenStormShieldPermissions_C::OutpostScreenCanEditPanel' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, GetHelp) == 0x000308, "Member 'UOutpostScreenStormShieldPermissions_C::GetHelp' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, CloseOutpostScreen) == 0x000310, "Member 'UOutpostScreenStormShieldPermissions_C::CloseOutpostScreen' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, ParentReference) == 0x000320, "Member 'UOutpostScreenStormShieldPermissions_C::ParentReference' has a wrong offset!");
 
 }
 

@@ -11,46 +11,45 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuantitySelector.QuantitySelector_C
-// 0x0960 (0x0D50 - 0x03F0)
+// 0x0730 (0x0A58 - 0x0328)
 class UQuantitySelector_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       AdditionalInfo;                                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CancelButton;                                      // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ConfirmButton;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonNumericTextBlock*                CurrentAmount;                                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonNumericTextBlock*                MaxAmount;                                         // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      MaxButton;                                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAnalogSlider*                          ValueSlider;                                       // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       WindowTitle;                                       // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         CurrentValue;                                      // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxValue;                                          // 0x044C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnButtonClickedDispatcher;                         // 0x0450(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnStackValueChangedDispatcher;                     // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UFortItem*                              Item;                                              // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSliderStyle                           SliderStyle_MouseKeyboard;                         // 0x0478(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSliderStyle                           SliderStyle_XboxOne;                               // 0x06A8(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSliderStyle                           SliderStyle_PS4;                                   // 0x08D8(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bShowConfirmButton;                                // 0x0B08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bShowCancelButton;                                 // 0x0B09(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bAllowZeroQuantity;                                // 0x0B0A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_B0B[0x5];                                      // 0x0B0B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSliderStyle                           SliderStyle_Touch;                                 // 0x0B10(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USoundBase*                             ConfirmButtonSound;                                // 0x0D40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class USoundBase*                             StorageCancelSound;                                // 0x0D48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       AdditionalInfo;                                    // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CancelButton;                                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ConfirmButton;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonNumericTextBlock*                CurrentAmount;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonNumericTextBlock*                MaxAmount;                                         // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      MaxButton;                                         // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAnalogSlider*                          ValueSlider;                                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       WindowTitle;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         CurrentValue;                                      // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxValue;                                          // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnButtonClickedDispatcher;                         // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnStackValueChangedDispatcher;                     // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UFortItem*                              Item;                                              // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSliderStyle                           SliderStyle_MouseKeyboard;                         // 0x03B0(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bShowConfirmButton;                                // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bShowCancelButton;                                 // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bAllowZeroQuantity;                                // 0x05E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_5E3[0x5];                                      // 0x05E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSliderStyle                           SliderStyle_Touch;                                 // 0x05E8(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USoundBase*                             ConfirmButtonSound;                                // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class USoundBase*                             StorageCancelSound;                                // 0x0820(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSliderStyle                           SliderStyle_Generic;                               // 0x0828(0x0230)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void OnButtonClickedDispatcher__DelegateSignature(int32 ChosenValue, class UFortItem* FortItem);
@@ -64,7 +63,7 @@ public:
 	void BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void SetSplitData(int32 StartingCount, int32 MaximumCount, class UFortItem* Param_Item, const class FText& TitleText, const class FText& ButtonText, const class FText& AdditionalInfoText);
+	void SetSplitData(int32 StartingCount, int32 MaximumCount, class UFortItem* Item_0, const class FText& TitleText, const class FText& ButtonText, const class FText& AdditionalInfoText);
 	void SetAdditionalText(const class FText& AdditionalInfoText);
 	void CloseSelector();
 	void HandleMaxPressed(bool* Passthrough);
@@ -72,7 +71,7 @@ public:
 	void HandleCancelPressed(bool* Passthrough);
 	void SliderValueChanged();
 	void SetupForInputMode(bool IsUsingGamepad);
-	void GetCurrentValue(int32* Param_CurrentValue);
+	void GetCurrentValue(int32* CurrentValue_0);
 	void SetCurrentValue(int32 NewValue);
 
 public:
@@ -86,32 +85,31 @@ public:
 	}
 };
 static_assert(alignof(UQuantitySelector_C) == 0x000008, "Wrong alignment on UQuantitySelector_C");
-static_assert(sizeof(UQuantitySelector_C) == 0x000D50, "Wrong size on UQuantitySelector_C");
-static_assert(offsetof(UQuantitySelector_C, UberGraphFrame) == 0x0003F0, "Member 'UQuantitySelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, AdditionalInfo) == 0x0003F8, "Member 'UQuantitySelector_C::AdditionalInfo' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CancelButton) == 0x000400, "Member 'UQuantitySelector_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ConfirmButton) == 0x000408, "Member 'UQuantitySelector_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CurrentAmount) == 0x000410, "Member 'UQuantitySelector_C::CurrentAmount' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ItemCard) == 0x000418, "Member 'UQuantitySelector_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, Lightbox) == 0x000420, "Member 'UQuantitySelector_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxAmount) == 0x000428, "Member 'UQuantitySelector_C::MaxAmount' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxButton) == 0x000430, "Member 'UQuantitySelector_C::MaxButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ValueSlider) == 0x000438, "Member 'UQuantitySelector_C::ValueSlider' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, WindowTitle) == 0x000440, "Member 'UQuantitySelector_C::WindowTitle' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CurrentValue) == 0x000448, "Member 'UQuantitySelector_C::CurrentValue' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxValue) == 0x00044C, "Member 'UQuantitySelector_C::MaxValue' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, OnButtonClickedDispatcher) == 0x000450, "Member 'UQuantitySelector_C::OnButtonClickedDispatcher' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, OnStackValueChangedDispatcher) == 0x000460, "Member 'UQuantitySelector_C::OnStackValueChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, Item) == 0x000470, "Member 'UQuantitySelector_C::Item' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_MouseKeyboard) == 0x000478, "Member 'UQuantitySelector_C::SliderStyle_MouseKeyboard' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_XboxOne) == 0x0006A8, "Member 'UQuantitySelector_C::SliderStyle_XboxOne' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_PS4) == 0x0008D8, "Member 'UQuantitySelector_C::SliderStyle_PS4' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, bShowConfirmButton) == 0x000B08, "Member 'UQuantitySelector_C::bShowConfirmButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, bShowCancelButton) == 0x000B09, "Member 'UQuantitySelector_C::bShowCancelButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, bAllowZeroQuantity) == 0x000B0A, "Member 'UQuantitySelector_C::bAllowZeroQuantity' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_Touch) == 0x000B10, "Member 'UQuantitySelector_C::SliderStyle_Touch' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ConfirmButtonSound) == 0x000D40, "Member 'UQuantitySelector_C::ConfirmButtonSound' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, StorageCancelSound) == 0x000D48, "Member 'UQuantitySelector_C::StorageCancelSound' has a wrong offset!");
+static_assert(sizeof(UQuantitySelector_C) == 0x000A58, "Wrong size on UQuantitySelector_C");
+static_assert(offsetof(UQuantitySelector_C, UberGraphFrame) == 0x000328, "Member 'UQuantitySelector_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, AdditionalInfo) == 0x000330, "Member 'UQuantitySelector_C::AdditionalInfo' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, CancelButton) == 0x000338, "Member 'UQuantitySelector_C::CancelButton' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, ConfirmButton) == 0x000340, "Member 'UQuantitySelector_C::ConfirmButton' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, CurrentAmount) == 0x000348, "Member 'UQuantitySelector_C::CurrentAmount' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, ItemCard) == 0x000350, "Member 'UQuantitySelector_C::ItemCard' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, Lightbox) == 0x000358, "Member 'UQuantitySelector_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, MaxAmount) == 0x000360, "Member 'UQuantitySelector_C::MaxAmount' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, MaxButton) == 0x000368, "Member 'UQuantitySelector_C::MaxButton' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, ValueSlider) == 0x000370, "Member 'UQuantitySelector_C::ValueSlider' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, WindowTitle) == 0x000378, "Member 'UQuantitySelector_C::WindowTitle' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, CurrentValue) == 0x000380, "Member 'UQuantitySelector_C::CurrentValue' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, MaxValue) == 0x000384, "Member 'UQuantitySelector_C::MaxValue' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, OnButtonClickedDispatcher) == 0x000388, "Member 'UQuantitySelector_C::OnButtonClickedDispatcher' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, OnStackValueChangedDispatcher) == 0x000398, "Member 'UQuantitySelector_C::OnStackValueChangedDispatcher' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, Item) == 0x0003A8, "Member 'UQuantitySelector_C::Item' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, SliderStyle_MouseKeyboard) == 0x0003B0, "Member 'UQuantitySelector_C::SliderStyle_MouseKeyboard' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, bShowConfirmButton) == 0x0005E0, "Member 'UQuantitySelector_C::bShowConfirmButton' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, bShowCancelButton) == 0x0005E1, "Member 'UQuantitySelector_C::bShowCancelButton' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, bAllowZeroQuantity) == 0x0005E2, "Member 'UQuantitySelector_C::bAllowZeroQuantity' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, SliderStyle_Touch) == 0x0005E8, "Member 'UQuantitySelector_C::SliderStyle_Touch' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, ConfirmButtonSound) == 0x000818, "Member 'UQuantitySelector_C::ConfirmButtonSound' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, StorageCancelSound) == 0x000820, "Member 'UQuantitySelector_C::StorageCancelSound' has a wrong offset!");
+static_assert(offsetof(UQuantitySelector_C, SliderStyle_Generic) == 0x000828, "Member 'UQuantitySelector_C::SliderStyle_Generic' has a wrong offset!");
 
 }
 

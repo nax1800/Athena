@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_BattlePassUnlockAnim.BP_BattlePassUnlockAnim_C
-// 0x0050 (0x04F0 - 0x04A0)
-class UBP_BattlePassUnlockAnim_C final : public UFortItemReceivedWidgetBase
+// 0x0050 (0x0478 - 0x0428)
+class UBP_BattlePassUnlockAnim_C final : public UFortItemReceivedPrePrompt
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_59;                                          // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_88;                                          // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_89;                                          // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_90;                                          // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_91;                                          // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_92;                                          // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_93;                                          // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USoundBase*                             SoundOnPlayIntro;                                  // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0428(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_59;                                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_88;                                          // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_89;                                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_90;                                          // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_91;                                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_92;                                          // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_93;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USoundBase*                             SoundOnPlayIntro;                                  // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_BattlePassUnlockAnim(int32 EntryPoint);
@@ -40,6 +40,7 @@ public:
 	void CustomEvent_0();
 	void AnimComplete();
 	void PreConstruct(bool IsDesignTime);
+	class UWidget* GetWidgetForFramingViewedItem();
 
 public:
 	static class UClass* StaticClass()
@@ -52,17 +53,17 @@ public:
 	}
 };
 static_assert(alignof(UBP_BattlePassUnlockAnim_C) == 0x000008, "Wrong alignment on UBP_BattlePassUnlockAnim_C");
-static_assert(sizeof(UBP_BattlePassUnlockAnim_C) == 0x0004F0, "Wrong size on UBP_BattlePassUnlockAnim_C");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, UberGraphFrame) == 0x0004A0, "Member 'UBP_BattlePassUnlockAnim_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Intro) == 0x0004A8, "Member 'UBP_BattlePassUnlockAnim_C::Intro' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_59) == 0x0004B0, "Member 'UBP_BattlePassUnlockAnim_C::Image_59' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_88) == 0x0004B8, "Member 'UBP_BattlePassUnlockAnim_C::Image_88' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_89) == 0x0004C0, "Member 'UBP_BattlePassUnlockAnim_C::Image_89' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_90) == 0x0004C8, "Member 'UBP_BattlePassUnlockAnim_C::Image_90' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_91) == 0x0004D0, "Member 'UBP_BattlePassUnlockAnim_C::Image_91' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_92) == 0x0004D8, "Member 'UBP_BattlePassUnlockAnim_C::Image_92' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_93) == 0x0004E0, "Member 'UBP_BattlePassUnlockAnim_C::Image_93' has a wrong offset!");
-static_assert(offsetof(UBP_BattlePassUnlockAnim_C, SoundOnPlayIntro) == 0x0004E8, "Member 'UBP_BattlePassUnlockAnim_C::SoundOnPlayIntro' has a wrong offset!");
+static_assert(sizeof(UBP_BattlePassUnlockAnim_C) == 0x000478, "Wrong size on UBP_BattlePassUnlockAnim_C");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, UberGraphFrame) == 0x000428, "Member 'UBP_BattlePassUnlockAnim_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Intro) == 0x000430, "Member 'UBP_BattlePassUnlockAnim_C::Intro' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_59) == 0x000438, "Member 'UBP_BattlePassUnlockAnim_C::Image_59' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_88) == 0x000440, "Member 'UBP_BattlePassUnlockAnim_C::Image_88' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_89) == 0x000448, "Member 'UBP_BattlePassUnlockAnim_C::Image_89' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_90) == 0x000450, "Member 'UBP_BattlePassUnlockAnim_C::Image_90' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_91) == 0x000458, "Member 'UBP_BattlePassUnlockAnim_C::Image_91' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_92) == 0x000460, "Member 'UBP_BattlePassUnlockAnim_C::Image_92' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, Image_93) == 0x000468, "Member 'UBP_BattlePassUnlockAnim_C::Image_93' has a wrong offset!");
+static_assert(offsetof(UBP_BattlePassUnlockAnim_C, SoundOnPlayIntro) == 0x000470, "Member 'UBP_BattlePassUnlockAnim_C::SoundOnPlayIntro' has a wrong offset!");
 
 }
 

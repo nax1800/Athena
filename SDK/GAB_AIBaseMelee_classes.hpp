@@ -10,25 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_AIBaseMelee.GAB_AIBaseMelee_C
-// 0x0018 (0x0B00 - 0x0AE8)
+// 0x0010 (0x0908 - 0x08F8)
 class UGAB_AIBaseMelee_C : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	bool                                          Debug;                                             // 0x0AF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          UseMoveForwardAction;                              // 0x0AF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          MoveGate;                                          // 0x0AFA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          UseRotationRateModification;                       // 0x0AFB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         MeleeRotationRate;                                 // 0x0AFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	bool                                          Debug;                                             // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          UseMoveForwardAction;                              // 0x0901(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          MoveGate;                                          // 0x0902(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          UseRotationRateModification;                       // 0x0903(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         MeleeRotationRate;                                 // 0x0904(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_AIBaseMelee(int32 EntryPoint);
@@ -48,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(UGAB_AIBaseMelee_C) == 0x000008, "Wrong alignment on UGAB_AIBaseMelee_C");
-static_assert(sizeof(UGAB_AIBaseMelee_C) == 0x000B00, "Wrong size on UGAB_AIBaseMelee_C");
-static_assert(offsetof(UGAB_AIBaseMelee_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_AIBaseMelee_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseMelee_C, Debug) == 0x000AF8, "Member 'UGAB_AIBaseMelee_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseMelee_C, UseMoveForwardAction) == 0x000AF9, "Member 'UGAB_AIBaseMelee_C::UseMoveForwardAction' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseMelee_C, MoveGate) == 0x000AFA, "Member 'UGAB_AIBaseMelee_C::MoveGate' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseMelee_C, UseRotationRateModification) == 0x000AFB, "Member 'UGAB_AIBaseMelee_C::UseRotationRateModification' has a wrong offset!");
-static_assert(offsetof(UGAB_AIBaseMelee_C, MeleeRotationRate) == 0x000AFC, "Member 'UGAB_AIBaseMelee_C::MeleeRotationRate' has a wrong offset!");
+static_assert(sizeof(UGAB_AIBaseMelee_C) == 0x000908, "Wrong size on UGAB_AIBaseMelee_C");
+static_assert(offsetof(UGAB_AIBaseMelee_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_AIBaseMelee_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseMelee_C, Debug) == 0x000900, "Member 'UGAB_AIBaseMelee_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseMelee_C, UseMoveForwardAction) == 0x000901, "Member 'UGAB_AIBaseMelee_C::UseMoveForwardAction' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseMelee_C, MoveGate) == 0x000902, "Member 'UGAB_AIBaseMelee_C::MoveGate' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseMelee_C, UseRotationRateModification) == 0x000903, "Member 'UGAB_AIBaseMelee_C::UseRotationRateModification' has a wrong offset!");
+static_assert(offsetof(UGAB_AIBaseMelee_C, MeleeRotationRate) == 0x000904, "Member 'UGAB_AIBaseMelee_C::MeleeRotationRate' has a wrong offset!");
 
 }
 

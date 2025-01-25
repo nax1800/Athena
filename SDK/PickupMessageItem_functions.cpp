@@ -102,9 +102,9 @@ void UPickupMessageItem_C::Refresh_Count()
 // Function PickupMessageItem.PickupMessageItem_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Picked_Up_Item                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Picked_Up_Item_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPickupMessageItem_C::Setup(class UFortItem* Param_Picked_Up_Item)
+void UPickupMessageItem_C::Setup(class UFortItem* Picked_Up_Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -113,7 +113,7 @@ void UPickupMessageItem_C::Setup(class UFortItem* Param_Picked_Up_Item)
 
 	Params::PickupMessageItem_C_Setup Parms{};
 
-	Parms.Param_Picked_Up_Item = Param_Picked_Up_Item;
+	Parms.Picked_Up_Item_0 = Picked_Up_Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

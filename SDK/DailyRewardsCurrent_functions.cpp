@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function DailyRewardsCurrent.DailyRewardsCurrent_C.ExecuteUbergraph_DailyRewardsCurrent
-// (HasDefaults)
+// ()
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -52,7 +52,7 @@ void UDailyRewardsCurrent_C::Construct()
 
 
 // Function DailyRewardsCurrent.DailyRewardsCurrent_C.Set Item
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item_To_Represent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Quantity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,6 +82,20 @@ void UDailyRewardsCurrent_C::Set_Item_Flare()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("DailyRewardsCurrent_C", "Set Item Flare");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function DailyRewardsCurrent.DailyRewardsCurrent_C.InitializeRewardView
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UDailyRewardsCurrent_C::InitializeRewardView()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DailyRewardsCurrent_C", "InitializeRewardView");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

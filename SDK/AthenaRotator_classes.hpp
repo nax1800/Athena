@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -20,23 +20,23 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaRotator.AthenaRotator_C
-// 0x0050 (0x08D0 - 0x0880)
+// 0x0050 (0x0920 - 0x08D0)
 class UAthenaRotator_C final : public UCommonRotator
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0880(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ButtonLeft;                                        // 0x0888(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonRight;                                       // 0x0890(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          MainBorder;                                        // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    Left_Triggering_Input_Action;                      // 0x08A0(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    Right_Triggering_Input_Action;                     // 0x08B0(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class UClass*                                 TextStyle;                                         // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowGamepadButtonOnlyWhenFocused;                  // 0x08C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          OneDirectionalModeActive;                          // 0x08C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ButtonLeft;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonRight;                                       // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          MainBorder;                                        // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    Left_Triggering_Input_Action;                      // 0x08F0(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    Right_Triggering_Input_Action;                     // 0x0900(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	class UClass*                                 TextStyle;                                         // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShowGamepadButtonOnlyWhenFocused;                  // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          OneDirectionalModeActive;                          // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaRotator(int32 EntryPoint);
-	void OnClicked();
+	void BP_OnClicked();
 	void PreConstruct(bool IsDesignTime);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -56,16 +56,16 @@ public:
 	}
 };
 static_assert(alignof(UAthenaRotator_C) == 0x000008, "Wrong alignment on UAthenaRotator_C");
-static_assert(sizeof(UAthenaRotator_C) == 0x0008D0, "Wrong size on UAthenaRotator_C");
-static_assert(offsetof(UAthenaRotator_C, UberGraphFrame) == 0x000880, "Member 'UAthenaRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ButtonLeft) == 0x000888, "Member 'UAthenaRotator_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ButtonRight) == 0x000890, "Member 'UAthenaRotator_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, MainBorder) == 0x000898, "Member 'UAthenaRotator_C::MainBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Left_Triggering_Input_Action) == 0x0008A0, "Member 'UAthenaRotator_C::Left_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Right_Triggering_Input_Action) == 0x0008B0, "Member 'UAthenaRotator_C::Right_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, TextStyle) == 0x0008C0, "Member 'UAthenaRotator_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ShowGamepadButtonOnlyWhenFocused) == 0x0008C8, "Member 'UAthenaRotator_C::ShowGamepadButtonOnlyWhenFocused' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, OneDirectionalModeActive) == 0x0008C9, "Member 'UAthenaRotator_C::OneDirectionalModeActive' has a wrong offset!");
+static_assert(sizeof(UAthenaRotator_C) == 0x000920, "Wrong size on UAthenaRotator_C");
+static_assert(offsetof(UAthenaRotator_C, UberGraphFrame) == 0x0008D0, "Member 'UAthenaRotator_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, ButtonLeft) == 0x0008D8, "Member 'UAthenaRotator_C::ButtonLeft' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, ButtonRight) == 0x0008E0, "Member 'UAthenaRotator_C::ButtonRight' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, MainBorder) == 0x0008E8, "Member 'UAthenaRotator_C::MainBorder' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, Left_Triggering_Input_Action) == 0x0008F0, "Member 'UAthenaRotator_C::Left_Triggering_Input_Action' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, Right_Triggering_Input_Action) == 0x000900, "Member 'UAthenaRotator_C::Right_Triggering_Input_Action' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, TextStyle) == 0x000910, "Member 'UAthenaRotator_C::TextStyle' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, ShowGamepadButtonOnlyWhenFocused) == 0x000918, "Member 'UAthenaRotator_C::ShowGamepadButtonOnlyWhenFocused' has a wrong offset!");
+static_assert(offsetof(UAthenaRotator_C, OneDirectionalModeActive) == 0x000919, "Member 'UAthenaRotator_C::OneDirectionalModeActive' has a wrong offset!");
 
 }
 

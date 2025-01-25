@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C
-// 0x0030 (0x0470 - 0x0440)
+// 0x0030 (0x0450 - 0x0420)
 class AGCN_RiftStaminaDrain_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	class UStaticMeshComponent*                   SM_DtB_StaminaDrainPlayer;                         // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DrainMeshMaterial;                                 // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DrainBeamMaterial;                                 // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DrainLocationOffset;                               // 0x0458(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TargetLocation;                                    // 0x0464(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_DtB_StaminaDrainPlayer;                         // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DrainMeshMaterial;                                 // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DrainBeamMaterial;                                 // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DrainLocationOffset;                               // 0x0438(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TargetLocation;                                    // 0x0444(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -44,13 +44,13 @@ public:
 		return GetDefaultObjImpl<AGCN_RiftStaminaDrain_C>();
 	}
 };
-static_assert(alignof(AGCN_RiftStaminaDrain_C) == 0x000010, "Wrong alignment on AGCN_RiftStaminaDrain_C");
-static_assert(sizeof(AGCN_RiftStaminaDrain_C) == 0x000470, "Wrong size on AGCN_RiftStaminaDrain_C");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, SM_DtB_StaminaDrainPlayer) == 0x000440, "Member 'AGCN_RiftStaminaDrain_C::SM_DtB_StaminaDrainPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainMeshMaterial) == 0x000448, "Member 'AGCN_RiftStaminaDrain_C::DrainMeshMaterial' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainBeamMaterial) == 0x000450, "Member 'AGCN_RiftStaminaDrain_C::DrainBeamMaterial' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainLocationOffset) == 0x000458, "Member 'AGCN_RiftStaminaDrain_C::DrainLocationOffset' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, TargetLocation) == 0x000464, "Member 'AGCN_RiftStaminaDrain_C::TargetLocation' has a wrong offset!");
+static_assert(alignof(AGCN_RiftStaminaDrain_C) == 0x000008, "Wrong alignment on AGCN_RiftStaminaDrain_C");
+static_assert(sizeof(AGCN_RiftStaminaDrain_C) == 0x000450, "Wrong size on AGCN_RiftStaminaDrain_C");
+static_assert(offsetof(AGCN_RiftStaminaDrain_C, SM_DtB_StaminaDrainPlayer) == 0x000420, "Member 'AGCN_RiftStaminaDrain_C::SM_DtB_StaminaDrainPlayer' has a wrong offset!");
+static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainMeshMaterial) == 0x000428, "Member 'AGCN_RiftStaminaDrain_C::DrainMeshMaterial' has a wrong offset!");
+static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainBeamMaterial) == 0x000430, "Member 'AGCN_RiftStaminaDrain_C::DrainBeamMaterial' has a wrong offset!");
+static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainLocationOffset) == 0x000438, "Member 'AGCN_RiftStaminaDrain_C::DrainLocationOffset' has a wrong offset!");
+static_assert(offsetof(AGCN_RiftStaminaDrain_C, TargetLocation) == 0x000444, "Member 'AGCN_RiftStaminaDrain_C::TargetLocation' has a wrong offset!");
 
 }
 

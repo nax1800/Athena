@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
 
@@ -18,30 +19,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Lightbox.Lightbox_C
-// 0x0058 (0x0268 - 0x0210)
+// 0x0070 (0x0278 - 0x0208)
 class ULightbox_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeOut;                                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FadeIn;                                            // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Content;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                Dimmer;                                            // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWindowTitleBarArea*                    WindowTitleBar;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   IntroEnded;                                        // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OutroEnded;                                        // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       FadeOut;                                           // 0x0210(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FadeIn;                                            // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Content;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Dimmer;                                            // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonVisibilityWidget*                WIndowButtons;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               WindowsOverlay;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWindowchromebuttons_C*                 WindowTitleBar;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   IntroEnded;                                        // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OutroEnded;                                        // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          ShowWindowControlButtons;                          // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void IntroEnded__DelegateSignature();
 	void OutroEnded__DelegateSignature();
 	void ExecuteUbergraph_Lightbox(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
 	void BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void Destruct();
 	void Intro();
 	void Outro();
-	void AddContent(class UCommonUserWidget* Param_Content);
+	void AddContent(class UCommonUserWidget* Content_0);
 	void RemoveContent();
 
 public:
@@ -55,16 +61,19 @@ public:
 	}
 };
 static_assert(alignof(ULightbox_C) == 0x000008, "Wrong alignment on ULightbox_C");
-static_assert(sizeof(ULightbox_C) == 0x000268, "Wrong size on ULightbox_C");
-static_assert(offsetof(ULightbox_C, UberGraphFrame) == 0x000210, "Member 'ULightbox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeOut) == 0x000218, "Member 'ULightbox_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeIn) == 0x000220, "Member 'ULightbox_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Content) == 0x000228, "Member 'ULightbox_C::Content' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Dimmer) == 0x000230, "Member 'ULightbox_C::Dimmer' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, SafeZone_0) == 0x000238, "Member 'ULightbox_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, WindowTitleBar) == 0x000240, "Member 'ULightbox_C::WindowTitleBar' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, IntroEnded) == 0x000248, "Member 'ULightbox_C::IntroEnded' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, OutroEnded) == 0x000258, "Member 'ULightbox_C::OutroEnded' has a wrong offset!");
+static_assert(sizeof(ULightbox_C) == 0x000278, "Wrong size on ULightbox_C");
+static_assert(offsetof(ULightbox_C, UberGraphFrame) == 0x000208, "Member 'ULightbox_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, FadeOut) == 0x000210, "Member 'ULightbox_C::FadeOut' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, FadeIn) == 0x000218, "Member 'ULightbox_C::FadeIn' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, Content) == 0x000220, "Member 'ULightbox_C::Content' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, Dimmer) == 0x000228, "Member 'ULightbox_C::Dimmer' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, SafeZone_0) == 0x000230, "Member 'ULightbox_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, WIndowButtons) == 0x000238, "Member 'ULightbox_C::WIndowButtons' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, WindowsOverlay) == 0x000240, "Member 'ULightbox_C::WindowsOverlay' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, WindowTitleBar) == 0x000248, "Member 'ULightbox_C::WindowTitleBar' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, IntroEnded) == 0x000250, "Member 'ULightbox_C::IntroEnded' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, OutroEnded) == 0x000260, "Member 'ULightbox_C::OutroEnded' has a wrong offset!");
+static_assert(offsetof(ULightbox_C, ShowWindowControlButtons) == 0x000270, "Member 'ULightbox_C::ShowWindowControlButtons' has a wrong offset!");
 
 }
 

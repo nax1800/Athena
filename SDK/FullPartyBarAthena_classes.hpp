@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FullPartyBarAthena.FullPartyBarAthena_C
-// 0x0008 (0x0238 - 0x0230)
+// 0x0008 (0x0230 - 0x0228)
 class UFullPartyBarAthena_C final : public UAthenaPartyBar
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void Construct();
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(UFullPartyBarAthena_C) == 0x000008, "Wrong alignment on UFullPartyBarAthena_C");
-static_assert(sizeof(UFullPartyBarAthena_C) == 0x000238, "Wrong size on UFullPartyBarAthena_C");
-static_assert(offsetof(UFullPartyBarAthena_C, UberGraphFrame) == 0x000230, "Member 'UFullPartyBarAthena_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UFullPartyBarAthena_C) == 0x000230, "Wrong size on UFullPartyBarAthena_C");
+static_assert(offsetof(UFullPartyBarAthena_C, UberGraphFrame) == 0x000228, "Member 'UFullPartyBarAthena_C::UberGraphFrame' has a wrong offset!");
 
 }
 

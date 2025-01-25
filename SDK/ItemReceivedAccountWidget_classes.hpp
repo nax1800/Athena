@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemReceivedAccountWidget.ItemReceivedAccountWidget_C
-// 0x0010 (0x0260 - 0x0250)
+// 0x0010 (0x0258 - 0x0248)
 class UItemReceivedAccountWidget_C final : public UFortAccountWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CommonTextBlock_UserMessage;                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CommonTextBlock_UserMessage;                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemReceivedAccountWidget(int32 EntryPoint);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UItemReceivedAccountWidget_C) == 0x000008, "Wrong alignment on UItemReceivedAccountWidget_C");
-static_assert(sizeof(UItemReceivedAccountWidget_C) == 0x000260, "Wrong size on UItemReceivedAccountWidget_C");
-static_assert(offsetof(UItemReceivedAccountWidget_C, UberGraphFrame) == 0x000250, "Member 'UItemReceivedAccountWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemReceivedAccountWidget_C, CommonTextBlock_UserMessage) == 0x000258, "Member 'UItemReceivedAccountWidget_C::CommonTextBlock_UserMessage' has a wrong offset!");
+static_assert(sizeof(UItemReceivedAccountWidget_C) == 0x000258, "Wrong size on UItemReceivedAccountWidget_C");
+static_assert(offsetof(UItemReceivedAccountWidget_C, UberGraphFrame) == 0x000248, "Member 'UItemReceivedAccountWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemReceivedAccountWidget_C, CommonTextBlock_UserMessage) == 0x000250, "Member 'UItemReceivedAccountWidget_C::CommonTextBlock_UserMessage' has a wrong offset!");
 
 }
 

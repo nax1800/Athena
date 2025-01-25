@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
+#include "UMG_structs.hpp"
 #include "FortniteUI_structs.hpp"
 
 
@@ -81,9 +81,9 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortUIFeatureState                           Temp_byte_Variable1234;                            // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortUIFeatureState                           Temp_byte_Variable4;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ArePartyFeaturesEnabled_ReturnValue;      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -96,9 +96,9 @@ static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, FeatureSta
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable) == 0x000002, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable1) == 0x000004, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable12) == 0x000005, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable123) == 0x000006, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable1234) == 0x000007, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable2) == 0x000005, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable3) == 0x000006, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable4) == 0x000007, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, K2Node_Select_Default) == 0x000010, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_ArePartyFeaturesEnabled_ReturnValue) == 0x000011, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::CallFunc_ArePartyFeaturesEnabled_ReturnValue' has a wrong offset!");

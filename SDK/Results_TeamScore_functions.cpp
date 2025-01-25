@@ -215,9 +215,9 @@ void UResults_TeamScore_C::Intro_Sequence()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortUIScoreReport*               ScoreReport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UResults_TeamTotalScore_C*        Param_TeamTotalScore                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UResults_TeamTotalScore_C*        TeamTotalScore_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_TeamScore_C::Initialize(class UFortUIScoreReport* ScoreReport, class UResults_TeamTotalScore_C* Param_TeamTotalScore)
+void UResults_TeamScore_C::Initialize(class UFortUIScoreReport* ScoreReport, class UResults_TeamTotalScore_C* TeamTotalScore_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -227,7 +227,7 @@ void UResults_TeamScore_C::Initialize(class UFortUIScoreReport* ScoreReport, cla
 	Params::Results_TeamScore_C_Initialize Parms{};
 
 	Parms.ScoreReport = ScoreReport;
-	Parms.Param_TeamTotalScore = Param_TeamTotalScore;
+	Parms.TeamTotalScore_0 = TeamTotalScore_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

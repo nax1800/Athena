@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -19,48 +20,67 @@ namespace SDK::Params
 {
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.ExecuteUbergraph_AthenaAerialFeedback
-// 0x0088 (0x0088 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAthenaGamePhaseStep                          K2Node_CustomEvent_GamePhaseStep;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EAthenaGamePhaseStep GamePhaseStep)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0028(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EAthenaGamePhaseStep                          K2Node_CustomEvent_GamePhaseStep;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EAthenaGamePhaseStep GamePhaseStep)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0058(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_CheckPawnForGliderDeploy_ReturnValue;     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetOwningPlayerPawn_ReturnValue;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetJumpActionName_ReturnValue;            // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000008, "Wrong alignment on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
-static_assert(sizeof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000088, "Wrong size on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
+static_assert(sizeof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000108, "Wrong size on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
 static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, EntryPoint) == 0x000000, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CustomEvent_GamePhaseStep) == 0x000004, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CustomEvent_GamePhaseStep' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_MyGeometry) == 0x000028, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_InDeltaTime) == 0x000060, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetGameState_ReturnValue) == 0x000070, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000078, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function AthenaAerialFeedback.AthenaAerialFeedback_C.CustomEvent_2
-// 0x0001 (0x0001 - 0x0000)
-struct AthenaAerialFeedback_C_CustomEvent_2 final
-{
-public:
-	EAthenaGamePhaseStep                          GamePhaseStep;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaAerialFeedback_C_CustomEvent_2) == 0x000001, "Wrong alignment on AthenaAerialFeedback_C_CustomEvent_2");
-static_assert(sizeof(AthenaAerialFeedback_C_CustomEvent_2) == 0x000001, "Wrong size on AthenaAerialFeedback_C_CustomEvent_2");
-static_assert(offsetof(AthenaAerialFeedback_C_CustomEvent_2, GamePhaseStep) == 0x000000, "Member 'AthenaAerialFeedback_C_CustomEvent_2::GamePhaseStep' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000010, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CustomEvent_GamePhaseStep) == 0x000019, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CustomEvent_GamePhaseStep' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_SwitchEnum_CmpSuccess) == 0x00001A, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate1) == 0x000038, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate2) == 0x000048, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_MyGeometry) == 0x000058, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_InDeltaTime) == 0x000090, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetContext_ReturnValue1) == 0x000098, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate3) == 0x0000A0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_CheckPawnForGliderDeploy_ReturnValue) == 0x0000B0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_CheckPawnForGliderDeploy_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_CreateDelegate_OutputDelegate4) == 0x0000B8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000C8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x0000D0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetContext_ReturnValue2) == 0x0000D8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000E0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_bSuccess1) == 0x0000E8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetJumpActionName_ReturnValue) == 0x0000F0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetJumpActionName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_IsFalling_ReturnValue) == 0x0000F8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetContext_ReturnValue3) == 0x000100, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -75,13 +95,25 @@ static_assert(sizeof(AthenaAerialFeedback_C_Tick) == 0x00003C, "Wrong size on At
 static_assert(offsetof(AthenaAerialFeedback_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaAerialFeedback_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Tick, InDeltaTime) == 0x000038, "Member 'AthenaAerialFeedback_C_Tick::InDeltaTime' has a wrong offset!");
 
+// Function AthenaAerialFeedback.AthenaAerialFeedback_C.GamePhaseStepChanged
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaAerialFeedback_C_GamePhaseStepChanged final
+{
+public:
+	EAthenaGamePhaseStep                          GamePhaseStep;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaAerialFeedback_C_GamePhaseStepChanged) == 0x000001, "Wrong alignment on AthenaAerialFeedback_C_GamePhaseStepChanged");
+static_assert(sizeof(AthenaAerialFeedback_C_GamePhaseStepChanged) == 0x000001, "Wrong size on AthenaAerialFeedback_C_GamePhaseStepChanged");
+static_assert(offsetof(AthenaAerialFeedback_C_GamePhaseStepChanged, GamePhaseStep) == 0x000000, "Member 'AthenaAerialFeedback_C_GamePhaseStepChanged::GamePhaseStep' has a wrong offset!");
+
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.Update
 // 0x0130 (0x0130 - 0x0000)
 struct AthenaAerialFeedback_C_Update final
 {
 public:
-	EAthenaAerialPhase                            Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              LocalVisibility;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAthenaAerialPhase                            Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
 	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,10 +129,10 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue1;             // 0x0080(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0098(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D8(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E8(0x0018)()
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue1;                // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue1;                // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F0(0x0018)()
 	class AAthena_GameState_C*                    K2Node_DynamicCast_AsAthena_Game_State;            // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EAthenaAerialPhase                            CallFunc_GetAerialPhase_ReturnValue;               // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_113[0x5];                                      // 0x0113(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
@@ -108,7 +140,8 @@ public:
 };
 static_assert(alignof(AthenaAerialFeedback_C_Update) == 0x000008, "Wrong alignment on AthenaAerialFeedback_C_Update");
 static_assert(sizeof(AthenaAerialFeedback_C_Update) == 0x000130, "Wrong size on AthenaAerialFeedback_C_Update");
-static_assert(offsetof(AthenaAerialFeedback_C_Update, Temp_byte_Variable) == 0x000000, "Member 'AthenaAerialFeedback_C_Update::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_Update, LocalVisibility) == 0x000000, "Member 'AthenaAerialFeedback_C_Update::LocalVisibility' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_Update, Temp_byte_Variable) == 0x000001, "Member 'AthenaAerialFeedback_C_Update::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, Temp_text_Variable) == 0x000008, "Member 'AthenaAerialFeedback_C_Update::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, Temp_text_Variable1) == 0x000020, "Member 'AthenaAerialFeedback_C_Update::Temp_text_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_GetGameState_ReturnValue) == 0x000038, "Member 'AthenaAerialFeedback_C_Update::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
@@ -122,13 +155,50 @@ static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_DynamicCast_bSucces
 static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_MakeLiteralText_ReturnValue1) == 0x000080, "Member 'AthenaAerialFeedback_C_Update::CallFunc_MakeLiteralText_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_MakeStruct_FormatArgumentData) == 0x000098, "Member 'AthenaAerialFeedback_C_Update::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_MakeArray_Array) == 0x0000D8, "Member 'AthenaAerialFeedback_C_Update::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_Format_ReturnValue) == 0x0000E8, "Member 'AthenaAerialFeedback_C_Update::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_GetGameState_ReturnValue1) == 0x000100, "Member 'AthenaAerialFeedback_C_Update::CallFunc_GetGameState_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_GetGameState_ReturnValue1) == 0x0000E8, "Member 'AthenaAerialFeedback_C_Update::CallFunc_GetGameState_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_Format_ReturnValue) == 0x0000F0, "Member 'AthenaAerialFeedback_C_Update::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_DynamicCast_AsAthena_Game_State) == 0x000108, "Member 'AthenaAerialFeedback_C_Update::K2Node_DynamicCast_AsAthena_Game_State' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_DynamicCast_bSuccess12) == 0x000110, "Member 'AthenaAerialFeedback_C_Update::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_DynamicCast_bSuccess2) == 0x000110, "Member 'AthenaAerialFeedback_C_Update::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, CallFunc_GetAerialPhase_ReturnValue) == 0x000111, "Member 'AthenaAerialFeedback_C_Update::CallFunc_GetAerialPhase_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_SwitchEnum1_CmpSuccess) == 0x000112, "Member 'AthenaAerialFeedback_C_Update::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Update, K2Node_Select_Default) == 0x000118, "Member 'AthenaAerialFeedback_C_Update::K2Node_Select_Default' has a wrong offset!");
+
+// Function AthenaAerialFeedback.AthenaAerialFeedback_C.CheckPawnForGliderDeploy
+// 0x0038 (0x0038 - 0x0000)
+struct AthenaAerialFeedback_C_CheckPawnForGliderDeploy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_GetOwningPlayerPawn_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSkydivingFromLaunchPad_ReturnValue;     // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSkydivingFromBus_ReturnValue;           // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSkydiving_ReturnValue;                  // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy) == 0x000008, "Wrong alignment on AthenaAerialFeedback_C_CheckPawnForGliderDeploy");
+static_assert(sizeof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy) == 0x000038, "Wrong size on AthenaAerialFeedback_C_CheckPawnForGliderDeploy");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, ReturnValue) == 0x000000, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000008, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000010, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000020, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000030, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_IsSkydivingFromLaunchPad_ReturnValue) == 0x000031, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_IsSkydivingFromLaunchPad_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_IsSkydivingFromBus_ReturnValue) == 0x000032, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_IsSkydivingFromBus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_IsSkydiving_ReturnValue) == 0x000033, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_IsSkydiving_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_BooleanOR_ReturnValue1) == 0x000035, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_Not_PreBool_ReturnValue) == 0x000036, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaAerialFeedback_C_CheckPawnForGliderDeploy, CallFunc_BooleanAND_ReturnValue) == 0x000037, "Member 'AthenaAerialFeedback_C_CheckPawnForGliderDeploy::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

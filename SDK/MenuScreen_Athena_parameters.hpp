@@ -17,29 +17,74 @@ namespace SDK::Params
 {
 
 // Function MenuScreen_Athena.MenuScreen_Athena_C.ExecuteUbergraph_MenuScreen_Athena
-// 0x0028 (0x0028 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetCurveValue_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0018(0x000C)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_DeltaTimeX;                           // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetCurveValue_ReturnValue;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTimeX;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0038(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerPawn_Athena_C*                   K2Node_DynamicCast_AsPlayer_Pawn_Athena;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMesh*                          CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena) == 0x000004, "Wrong alignment on MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena");
-static_assert(sizeof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena) == 0x000028, "Wrong size on MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena");
+static_assert(alignof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena) == 0x000008, "Wrong alignment on MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena");
+static_assert(sizeof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena) == 0x000080, "Wrong size on MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena");
 static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, EntryPoint) == 0x000000, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Roll) == 0x000004, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Pitch) == 0x000008, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Yaw) == 0x00000C, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000010, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_GetCurveValue_ReturnValue) == 0x000014, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_GetCurveValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_MakeRotator_ReturnValue) == 0x000018, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, K2Node_Event_DeltaTimeX) == 0x000024, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::K2Node_Event_DeltaTimeX' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, Temp_bool_True_if_break_was_hit_Variable) == 0x00000C, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_Not_PreBool_ReturnValue) == 0x00000D, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, Temp_int_Array_Index_Variable) == 0x000010, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, Temp_bool_Has_Been_Initd_Variable) == 0x000014, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_GetCurveValue_ReturnValue) == 0x000018, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_GetCurveValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, K2Node_Event_DeltaTimeX) == 0x00001C, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::K2Node_Event_DeltaTimeX' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000020, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Roll) == 0x000028, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Pitch) == 0x00002C, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BreakRotator_Yaw) == 0x000030, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_IsValid_ReturnValue) == 0x000034, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_MakeRotator_ReturnValue) == 0x000038, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x000048, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000054, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, Temp_bool_IsClosed_Variable) == 0x000058, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_IsValid_ReturnValue1) == 0x000059, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x000060, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_IsValid_ReturnValue2) == 0x000068, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_Array_Get_Item) == 0x000070, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00007D, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena, CallFunc_BooleanAND_ReturnValue) == 0x00007E, "Member 'MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function MenuScreen_Athena.MenuScreen_Athena_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)

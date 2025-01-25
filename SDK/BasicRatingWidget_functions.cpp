@@ -60,9 +60,9 @@ void UBasicRatingWidget_C::PreConstruct(bool IsDesignTime)
 // Function BasicRatingWidget.BasicRatingWidget_C.GetBorderVisibility
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// ESlateVisibility                        Param_Visibility                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        Visibility_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Param_Visibility)
+void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,8 +73,8 @@ void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Param_Visibilit
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Visibility != nullptr)
-		*Param_Visibility = Parms.Param_Visibility;
+	if (Visibility_0 != nullptr)
+		*Visibility_0 = Parms.Visibility_0;
 }
 
 

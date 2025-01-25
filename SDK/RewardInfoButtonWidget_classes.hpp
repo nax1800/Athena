@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardInfoButtonWidget.RewardInfoButtonWidget_C
-// 0x0048 (0x0870 - 0x0828)
+// 0x0048 (0x08F8 - 0x08B0)
 class URewardInfoButtonWidget_C final : public UFortRewardInfoButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0828(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         ItemDetails;                                       // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ItemInfo;                                          // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   DisplayNameText;                                   // 0x0840(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   DisplayQuantity;                                   // 0x0858(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalBox*                         ItemDetails;                                       // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ItemInfo;                                          // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   DisplayNameText;                                   // 0x08C8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   DisplayQuantity;                                   // 0x08E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_RewardInfoButtonWidget(int32 EntryPoint);
@@ -47,12 +47,12 @@ public:
 	}
 };
 static_assert(alignof(URewardInfoButtonWidget_C) == 0x000008, "Wrong alignment on URewardInfoButtonWidget_C");
-static_assert(sizeof(URewardInfoButtonWidget_C) == 0x000870, "Wrong size on URewardInfoButtonWidget_C");
-static_assert(offsetof(URewardInfoButtonWidget_C, UberGraphFrame) == 0x000828, "Member 'URewardInfoButtonWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, ItemDetails) == 0x000830, "Member 'URewardInfoButtonWidget_C::ItemDetails' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, ItemInfo) == 0x000838, "Member 'URewardInfoButtonWidget_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, DisplayNameText) == 0x000840, "Member 'URewardInfoButtonWidget_C::DisplayNameText' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, DisplayQuantity) == 0x000858, "Member 'URewardInfoButtonWidget_C::DisplayQuantity' has a wrong offset!");
+static_assert(sizeof(URewardInfoButtonWidget_C) == 0x0008F8, "Wrong size on URewardInfoButtonWidget_C");
+static_assert(offsetof(URewardInfoButtonWidget_C, UberGraphFrame) == 0x0008B0, "Member 'URewardInfoButtonWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URewardInfoButtonWidget_C, ItemDetails) == 0x0008B8, "Member 'URewardInfoButtonWidget_C::ItemDetails' has a wrong offset!");
+static_assert(offsetof(URewardInfoButtonWidget_C, ItemInfo) == 0x0008C0, "Member 'URewardInfoButtonWidget_C::ItemInfo' has a wrong offset!");
+static_assert(offsetof(URewardInfoButtonWidget_C, DisplayNameText) == 0x0008C8, "Member 'URewardInfoButtonWidget_C::DisplayNameText' has a wrong offset!");
+static_assert(offsetof(URewardInfoButtonWidget_C, DisplayQuantity) == 0x0008E0, "Member 'URewardInfoButtonWidget_C::DisplayQuantity' has a wrong offset!");
 
 }
 

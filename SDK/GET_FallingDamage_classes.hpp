@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GET_FallingDamage.GET_FallingDamage_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGET_FallingDamage_C final : public UGet_DirectDamageParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGET_FallingDamage_C>();
 	}
 };
-static_assert(alignof(UGET_FallingDamage_C) == 0x000010, "Wrong alignment on UGET_FallingDamage_C");
-static_assert(sizeof(UGET_FallingDamage_C) == 0x000670, "Wrong size on UGET_FallingDamage_C");
+static_assert(alignof(UGET_FallingDamage_C) == 0x000008, "Wrong alignment on UGET_FallingDamage_C");
+static_assert(sizeof(UGET_FallingDamage_C) == 0x000638, "Wrong size on UGET_FallingDamage_C");
 
 }
 

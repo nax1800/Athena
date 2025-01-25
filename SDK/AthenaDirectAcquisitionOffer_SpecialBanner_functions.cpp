@@ -43,10 +43,10 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::ExecuteUbergraph_AthenaDirec
 // bool                                    bHasSale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             SaleText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FString                           BannerOverrideTag                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    Param_bHasBattlePassStars                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHasBattlePassStars_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   INumOfBattlePassStars                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool bHasSale, const class FText& SaleText, const class FString& BannerOverrideTag, bool Param_bHasBattlePassStars, int32 INumOfBattlePassStars)
+void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool bHasSale, const class FText& SaleText, const class FString& BannerOverrideTag, bool bHasBattlePassStars_0, int32 INumOfBattlePassStars)
 {
 	static class UFunction* Func = nullptr;
 
@@ -58,7 +58,7 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool
 	Parms.bHasSale = bHasSale;
 	Parms.SaleText = std::move(SaleText);
 	Parms.BannerOverrideTag = std::move(BannerOverrideTag);
-	Parms.Param_bHasBattlePassStars = Param_bHasBattlePassStars;
+	Parms.bHasBattlePassStars_0 = bHasBattlePassStars_0;
 	Parms.INumOfBattlePassStars = INumOfBattlePassStars;
 
 	UObject::ProcessEvent(Func, &Parms);

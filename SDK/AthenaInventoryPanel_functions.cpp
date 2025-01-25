@@ -37,6 +37,20 @@ void UAthenaInventoryPanel_C::ExecuteUbergraph_AthenaInventoryPanel(int32 EntryP
 }
 
 
+// Function AthenaInventoryPanel.AthenaInventoryPanel_C.PostActivate
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaInventoryPanel_C::PostActivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaInventoryPanel_C", "PostActivate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RequestEquip
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -322,10 +336,10 @@ void UAthenaInventoryPanel_C::HandleDropItemConfirmationCallback(int32 ChosenQua
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.NavEquipment
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UAthenaInventoryPanel_C::NavEquipment(EUINavigation Param_Navigation)
+class UWidget* UAthenaInventoryPanel_C::NavEquipment(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -334,7 +348,7 @@ class UWidget* UAthenaInventoryPanel_C::NavEquipment(EUINavigation Param_Navigat
 
 	Params::AthenaInventoryPanel_C_NavEquipment Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -345,10 +359,10 @@ class UWidget* UAthenaInventoryPanel_C::NavEquipment(EUINavigation Param_Navigat
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.NavResources
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UAthenaInventoryPanel_C::NavResources(EUINavigation Param_Navigation)
+class UWidget* UAthenaInventoryPanel_C::NavResources(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -357,7 +371,7 @@ class UWidget* UAthenaInventoryPanel_C::NavResources(EUINavigation Param_Navigat
 
 	Params::AthenaInventoryPanel_C_NavResources Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -368,10 +382,10 @@ class UWidget* UAthenaInventoryPanel_C::NavResources(EUINavigation Param_Navigat
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.NavAmmo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UAthenaInventoryPanel_C::NavAmmo(EUINavigation Param_Navigation)
+class UWidget* UAthenaInventoryPanel_C::NavAmmo(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -380,7 +394,7 @@ class UWidget* UAthenaInventoryPanel_C::NavAmmo(EUINavigation Param_Navigation)
 
 	Params::AthenaInventoryPanel_C_NavAmmo Parms{};
 
-	Parms.Param_Navigation = Param_Navigation;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

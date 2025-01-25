@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -90,10 +90,10 @@ public:
 	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0150(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0168(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x0180(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x01C0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12;                          // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue12;                     // 0x0210(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0180(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x01C0(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0210(0x0018)()
 };
 static_assert(alignof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x000008, "Wrong alignment on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
 static_assert(sizeof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x000228, "Wrong size on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
@@ -117,10 +117,10 @@ static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeAr
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_Greater_IntInt_ReturnValue) == 0x000148, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_Format_ReturnValue1) == 0x000150, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_Format_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_Conv_IntToText_ReturnValue) == 0x000168, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeStruct_FormatArgumentData12) == 0x000180, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeStruct_FormatArgumentData123) == 0x0001C0, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeArray_Array12) == 0x000200, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_Format_ReturnValue12) == 0x000210, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_Format_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeStruct_FormatArgumentData2) == 0x000180, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeStruct_FormatArgumentData3) == 0x0001C0, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, K2Node_MakeArray_Array2) == 0x000200, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_Format_ReturnValue2) == 0x000210, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function XpBoostQuantities.XpBoostQuantities_C.ScaledBoostBalance
 // 0x0038 (0x0038 - 0x0000)
@@ -135,7 +135,7 @@ public:
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetXpBoostBalance_ReturnValue;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -150,7 +150,7 @@ static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Conv_Int
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000014, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_GetXpBoostBalance_ReturnValue) == 0x000020, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_GetXpBoostBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x000024, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000024, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000028, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_FTrunc_ReturnValue) == 0x000030, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
@@ -168,7 +168,7 @@ public:
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetRestXpBalance_ReturnValue;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -183,7 +183,7 @@ static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_Conv_IntT
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000014, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_GetRestXpBalance_ReturnValue) == 0x000020, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x000024, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000024, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000028, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, CallFunc_FTrunc_ReturnValue) == 0x000030, "Member 'XpBoostQuantities_C_ScaledRestBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");

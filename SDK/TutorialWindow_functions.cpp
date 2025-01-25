@@ -74,9 +74,9 @@ void UTutorialWindow_C::ExecuteUbergraph_TutorialWindow(int32 EntryPoint)
 // Function TutorialWindow.TutorialWindow_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Description                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Description_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UTutorialWindow_C::SetDescription(const class FText& Param_Description)
+void UTutorialWindow_C::SetDescription(const class FText& Description_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -85,7 +85,7 @@ void UTutorialWindow_C::SetDescription(const class FText& Param_Description)
 
 	Params::TutorialWindow_C_SetDescription Parms{};
 
-	Parms.Param_Description = std::move(Param_Description);
+	Parms.Description_0 = std::move(Description_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

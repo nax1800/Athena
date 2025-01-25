@@ -35,15 +35,15 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingRoof*                          K2Node_DynamicCast_AsBuilding_Roof;                // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingStairs*                        K2Node_DynamicCast_AsBuilding_Stairs;              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GAB_SmasherRoar_C_K2_CanActivateAbility) == 0x000008, "Wrong alignment on GAB_SmasherRoar_C_K2_CanActivateAbility");
 static_assert(sizeof(GAB_SmasherRoar_C_K2_CanActivateAbility) == 0x0000B0, "Wrong size on GAB_SmasherRoar_C_K2_CanActivateAbility");
@@ -57,14 +57,14 @@ static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCa
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess1) == 0x000088, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_Not_PreBool_ReturnValue) == 0x000089, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_AsBuilding_Roof) == 0x000090, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_AsBuilding_Roof' has a wrong offset!");
-static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess12) == 0x000098, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess2) == 0x000098, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_AsBuilding_Stairs) == 0x0000A0, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_AsBuilding_Stairs' has a wrong offset!");
-static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess123) == 0x0000A8, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess3) == 0x0000A8, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_BooleanOR_ReturnValue) == 0x0000A9, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_BooleanOR_ReturnValue1) == 0x0000AA, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_Not_PreBool_ReturnValue1) == 0x0000AB, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_BooleanAND_ReturnValue) == 0x0000AC, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_BooleanOR_ReturnValue12) == 0x0000AD, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GAB_SmasherRoar_C_K2_CanActivateAbility, CallFunc_BooleanOR_ReturnValue2) == 0x0000AD, "Member 'GAB_SmasherRoar_C_K2_CanActivateAbility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 
 }
 

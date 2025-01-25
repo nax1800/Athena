@@ -17,64 +17,90 @@ namespace SDK::Params
 {
 
 // Function TabBrightnessOptions.TabBrightnessOptions_C.ExecuteUbergraph_TabBrightnessOptions
-// 0x0008 (0x0008 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Slider_Value;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000004, "Wrong alignment on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
-static_assert(sizeof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000008, "Wrong size on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
-static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, EntryPoint) == 0x000000, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_ComponentBoundEvent_Slider_Value) == 0x000004, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
-
-// Function TabBrightnessOptions.TabBrightnessOptions_C.BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature final
-{
-public:
-	float                                         Slider_Value;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature");
-static_assert(offsetof(TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabBrightnessOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
-
-// Function TabBrightnessOptions.TabBrightnessOptions_C.Update Data
-// 0x0038 (0x0038 - 0x0000)
-struct TabBrightnessOptions_C_Update_Data final
-{
-public:
-	float                                         CallFunc_GetGammaSettings_ReturnValue;             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0008(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0020(0x0018)()
+	class UObject*                                K2Node_ComponentBoundEvent_Item;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortOptionsMenuSetting*                K2Node_DynamicCast_AsFort_Options_Menu_Setting;    // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	class UOptionsMenuSetting_C*                  K2Node_DynamicCast_AsOptions_Menu_Setting;         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget1;                // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortOptionsMenuSetting*                K2Node_DynamicCast_AsFort_Options_Menu_Setting1;   // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabBrightnessOptions_C_Update_Data) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_Update_Data");
-static_assert(sizeof(TabBrightnessOptions_C_Update_Data) == 0x000038, "Wrong size on TabBrightnessOptions_C_Update_Data");
-static_assert(offsetof(TabBrightnessOptions_C_Update_Data, CallFunc_GetGammaSettings_ReturnValue) == 0x000000, "Member 'TabBrightnessOptions_C_Update_Data::CallFunc_GetGammaSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Update_Data, CallFunc_GetEmptyText_ReturnValue) == 0x000008, "Member 'TabBrightnessOptions_C_Update_Data::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'TabBrightnessOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(alignof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
+static_assert(sizeof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000060, "Wrong size on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, EntryPoint) == 0x000000, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::EntryPoint' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_ComponentBoundEvent_Item) == 0x000008, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_ComponentBoundEvent_Widget) == 0x000010, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_AsFort_Options_Menu_Setting) == 0x000018, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_AsFort_Options_Menu_Setting' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_AsOptions_Menu_Setting) == 0x000038, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_AsOptions_Menu_Setting' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_ComponentBoundEvent_Widget1) == 0x000048, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_ComponentBoundEvent_Widget1' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_AsFort_Options_Menu_Setting1) == 0x000050, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_AsFort_Options_Menu_Setting1' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+
+// Function TabBrightnessOptions.TabBrightnessOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+static_assert(sizeof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature) == 0x000010, "Wrong size on TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+static_assert(offsetof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature, Item) == 0x000000, "Member 'TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature::Item' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature, Widget) == 0x000008, "Member 'TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature::Widget' has a wrong offset!");
+
+// Function TabBrightnessOptions.TabBrightnessOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+static_assert(sizeof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong size on TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+static_assert(offsetof(TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature, Widget) == 0x000000, "Member 'TabBrightnessOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature::Widget' has a wrong offset!");
+
+// Function TabBrightnessOptions.TabBrightnessOptions_C.Initialize Data
+// 0x0008 (0x0008 - 0x0000)
+struct TabBrightnessOptions_C_Initialize_Data final
+{
+public:
+	class UFortSettingsContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TabBrightnessOptions_C_Initialize_Data) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_Initialize_Data");
+static_assert(sizeof(TabBrightnessOptions_C_Initialize_Data) == 0x000008, "Wrong size on TabBrightnessOptions_C_Initialize_Data");
+static_assert(offsetof(TabBrightnessOptions_C_Initialize_Data, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'TabBrightnessOptions_C_Initialize_Data::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function TabBrightnessOptions.TabBrightnessOptions_C.Set Default Call Out
-// 0x0088 (0x0088 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct TabBrightnessOptions_C_Set_Default_Call_Out final
 {
 public:
-	float                                         CallFunc_GetDefaultGammaSettings_ReturnValue;      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0008(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0000(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
 };
 static_assert(alignof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_Set_Default_Call_Out");
-static_assert(sizeof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000088, "Wrong size on TabBrightnessOptions_C_Set_Default_Call_Out");
-static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_GetDefaultGammaSettings_ReturnValue) == 0x000000, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_GetDefaultGammaSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_Conv_FloatToText_ReturnValue) == 0x000008, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, K2Node_MakeArray_Array) == 0x000060, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_Format_ReturnValue) == 0x000070, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(sizeof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000080, "Wrong size on TabBrightnessOptions_C_Set_Default_Call_Out");
+static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_Conv_FloatToText_ReturnValue) == 0x000000, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, K2Node_MakeArray_Array) == 0x000058, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_Format_ReturnValue) == 0x000068, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 }
 

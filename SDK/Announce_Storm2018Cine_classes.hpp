@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_Storm2018Cine.Announce_Storm2018Cine_C
-// 0x0000 (0x03B0 - 0x03B0)
+// 0x0000 (0x03C0 - 0x03C0)
 class AAnnounce_Storm2018Cine_C final : public AAnnounce_EventCine_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AAnnounce_Storm2018Cine_C) == 0x000008, "Wrong alignment on AAnnounce_Storm2018Cine_C");
-static_assert(sizeof(AAnnounce_Storm2018Cine_C) == 0x0003B0, "Wrong size on AAnnounce_Storm2018Cine_C");
+static_assert(sizeof(AAnnounce_Storm2018Cine_C) == 0x0003C0, "Wrong size on AAnnounce_Storm2018Cine_C");
 
 }
 

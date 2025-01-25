@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MapAndBackpackKeys.MapAndBackpackKeys_C
-// 0x0020 (0x0260 - 0x0240)
+// 0x0020 (0x0258 - 0x0238)
 class UMapAndBackpackKeys_C final : public UFortHUDElementWidget
 {
 public:
-	class UImage*                                 Backpack;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UKeybindWidget_C*                       KeybindInventory;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UKeybindWidget_C*                       KeybindMap;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Map;                                               // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Backpack;                                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UKeybindWidget_C*                       KeybindInventory;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UKeybindWidget_C*                       KeybindMap;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Map;                                               // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,11 +37,11 @@ public:
 	}
 };
 static_assert(alignof(UMapAndBackpackKeys_C) == 0x000008, "Wrong alignment on UMapAndBackpackKeys_C");
-static_assert(sizeof(UMapAndBackpackKeys_C) == 0x000260, "Wrong size on UMapAndBackpackKeys_C");
-static_assert(offsetof(UMapAndBackpackKeys_C, Backpack) == 0x000240, "Member 'UMapAndBackpackKeys_C::Backpack' has a wrong offset!");
-static_assert(offsetof(UMapAndBackpackKeys_C, KeybindInventory) == 0x000248, "Member 'UMapAndBackpackKeys_C::KeybindInventory' has a wrong offset!");
-static_assert(offsetof(UMapAndBackpackKeys_C, KeybindMap) == 0x000250, "Member 'UMapAndBackpackKeys_C::KeybindMap' has a wrong offset!");
-static_assert(offsetof(UMapAndBackpackKeys_C, Map) == 0x000258, "Member 'UMapAndBackpackKeys_C::Map' has a wrong offset!");
+static_assert(sizeof(UMapAndBackpackKeys_C) == 0x000258, "Wrong size on UMapAndBackpackKeys_C");
+static_assert(offsetof(UMapAndBackpackKeys_C, Backpack) == 0x000238, "Member 'UMapAndBackpackKeys_C::Backpack' has a wrong offset!");
+static_assert(offsetof(UMapAndBackpackKeys_C, KeybindInventory) == 0x000240, "Member 'UMapAndBackpackKeys_C::KeybindInventory' has a wrong offset!");
+static_assert(offsetof(UMapAndBackpackKeys_C, KeybindMap) == 0x000248, "Member 'UMapAndBackpackKeys_C::KeybindMap' has a wrong offset!");
+static_assert(offsetof(UMapAndBackpackKeys_C, Map) == 0x000250, "Member 'UMapAndBackpackKeys_C::Map' has a wrong offset!");
 
 }
 

@@ -18,78 +18,152 @@ namespace SDK::Params
 {
 
 // Function ShielderSpringArm.ShielderSpringArm_C.ExecuteUbergraph_ShielderSpringArm
-// 0x01D8 (0x01D8 - 0x0000)
+// 0x0330 (0x0330 - 0x0000)
 struct ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue12;          // 0x0038(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue123;         // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue1;            // 0x005C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0068(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue1;          // 0x0074(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0080(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_DoesSocketExist_ReturnValue;              // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1234;        // 0x0194(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_Origin;                         // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn1;               // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue1234;                  // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AActor*                                 K2Node_CustomEvent_Origin;                         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn1;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5E[0x2];                                       // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0xF];                                       // 0x0071(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0080(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B2[0xE];                                       // 0x00B2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue8;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x0104(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue1;      // 0x0110(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0140(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue9;                     // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue1;           // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1CE[0x2];                                      // 0x01CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue10;                    // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue1;        // 0x01DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x01DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1DF[0x1];                                      // 0x01DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn2;               // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1EA[0x6];                                      // 0x01EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue11;                    // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsActive_ReturnValue1;                    // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0214(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue13;                    // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0228(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x0234(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue2;      // 0x0240(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_InverseTransformLocation_ReturnValue;     // 0x0270(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue14;                    // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult1;     // 0x0280(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0308(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue1;          // 0x0314(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm) == 0x000008, "Wrong alignment on ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm");
-static_assert(sizeof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm) == 0x0001D8, "Wrong size on ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm");
+static_assert(alignof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm) == 0x000010, "Wrong alignment on ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm");
+static_assert(sizeof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm) == 0x000330, "Wrong size on ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm");
 static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, EntryPoint) == 0x000000, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_AsShielder_Pawn) == 0x000008, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_AsShielder_Pawn' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue1) == 0x000012, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue) == 0x000014, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsDedicatedServer_ReturnValue) == 0x000020, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000024, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsDedicatedServer_ReturnValue1) == 0x000028, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue1) == 0x00002C, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue12) == 0x000038, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue123) == 0x000044, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Add_VectorVector_ReturnValue) == 0x000050, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Add_VectorVector_ReturnValue1) == 0x00005C, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Add_VectorVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Divide_VectorFloat_ReturnValue) == 0x000068, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Divide_VectorFloat_ReturnValue1) == 0x000074, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Divide_VectorFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000080, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_SetWorldLocation_SweepHitResult1) == 0x000108, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_SetWorldLocation_SweepHitResult1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_DoesSocketExist_ReturnValue) == 0x000190, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue1234) == 0x000194, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue12) == 0x0001A0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_Event_DeltaSeconds) == 0x0001A4, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_CustomEvent_Origin) == 0x0001A8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_CustomEvent_Origin' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_AsShielder_Pawn1) == 0x0001B0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_AsShielder_Pawn1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_bSuccess1) == 0x0001B8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0001C0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x0001C8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue123) == 0x0001D0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue1234) == 0x0001D1, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_CustomEvent_Origin) == 0x000008, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_CustomEvent_Origin' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_AsShielder_Pawn) == 0x000010, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_AsShielder_Pawn' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000020, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x000028, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue1) == 0x000030, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue2) == 0x000031, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsDedicatedServer_ReturnValue) == 0x000032, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_AsShielder_Pawn1) == 0x000038, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_AsShielder_Pawn1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_bSuccess1) == 0x000040, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue3) == 0x000041, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue4) == 0x000042, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue) == 0x000044, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue1) == 0x000050, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue5) == 0x00005C, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue6) == 0x00005D, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000060, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000070, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000080, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue7) == 0x0000B0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000B1, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_MakeTransform_ReturnValue) == 0x0000C0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000F0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_AddComponent_ReturnValue) == 0x0000F8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue8) == 0x000100, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetSocketLocation_ReturnValue2) == 0x000104, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetSocketLocation_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_GetComponentToWorld_ReturnValue1) == 0x000110, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_GetComponentToWorld_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x000140, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_Event_DeltaSeconds) == 0x0001C8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue9) == 0x0001CC, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsDedicatedServer_ReturnValue1) == 0x0001CD, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsDedicatedServer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x0001D0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_SwitchInteger_CmpSuccess) == 0x0001D4, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Add_IntInt_ReturnValue) == 0x0001D8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue10) == 0x0001DC, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_AttachToComponent_ReturnValue1) == 0x0001DD, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_AttachToComponent_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsActive_ReturnValue) == 0x0001DE, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsActive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_AsShielder_Pawn2) == 0x0001E0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_AsShielder_Pawn2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_DynamicCast_bSuccess2) == 0x0001E8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_AttachToComponent_ReturnValue2) == 0x0001E9, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_AttachToComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0001F0, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue11) == 0x0001F8, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000200, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, Temp_int_Variable) == 0x000208, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsActive_ReturnValue1) == 0x00020C, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsActive_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Lerp_ReturnValue) == 0x000210, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_VLerp_ReturnValue) == 0x000214, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue12) == 0x000220, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue13) == 0x000221, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000228, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000230, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_VInterpTo_ReturnValue) == 0x000234, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_VInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_GetComponentToWorld_ReturnValue2) == 0x000240, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_GetComponentToWorld_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_InverseTransformLocation_ReturnValue) == 0x000270, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_InverseTransformLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_IsValid_ReturnValue14) == 0x00027C, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_IsValid_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_K2_SetWorldTransform_SweepHitResult1) == 0x000280, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_K2_SetWorldTransform_SweepHitResult1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000308, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, CallFunc_Conv_FloatToVector_ReturnValue1) == 0x000314, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::CallFunc_Conv_FloatToVector_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm, K2Node_SwitchEnum_CmpSuccess) == 0x000320, "Member 'ShielderSpringArm_C_ExecuteUbergraph_ShielderSpringArm::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ShielderSpringArm.ShielderSpringArm_C.Beam_Spawn
 // 0x0008 (0x0008 - 0x0000)
@@ -112,6 +186,50 @@ public:
 static_assert(alignof(ShielderSpringArm_C_ReceiveTick) == 0x000004, "Wrong alignment on ShielderSpringArm_C_ReceiveTick");
 static_assert(sizeof(ShielderSpringArm_C_ReceiveTick) == 0x000004, "Wrong size on ShielderSpringArm_C_ReceiveTick");
 static_assert(offsetof(ShielderSpringArm_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'ShielderSpringArm_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Spline Points
+// 0x0060 (0x0060 - 0x0000)
+struct ShielderSpringArm_C_Spline_Points final
+{
+public:
+	class AShielderPawn_C*                        K2Node_DynamicCast_AsShielder_Pawn;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x000C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x0018(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X1;                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y1;                           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z1;                           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0054(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ShielderSpringArm_C_Spline_Points) == 0x000008, "Wrong alignment on ShielderSpringArm_C_Spline_Points");
+static_assert(sizeof(ShielderSpringArm_C_Spline_Points) == 0x000060, "Wrong size on ShielderSpringArm_C_Spline_Points");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, K2Node_DynamicCast_AsShielder_Pawn) == 0x000000, "Member 'ShielderSpringArm_C_Spline_Points::K2Node_DynamicCast_AsShielder_Pawn' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ShielderSpringArm_C_Spline_Points::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_GetSocketLocation_ReturnValue) == 0x00000C, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_GetSocketLocation_ReturnValue1) == 0x000018, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_X) == 0x000024, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_Y) == 0x000028, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_Z) == 0x00002C, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_X1) == 0x000030, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_X1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_Y1) == 0x000034, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_Y1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_BreakVector_Z1) == 0x000038, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_BreakVector_Z1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Add_FloatFloat_ReturnValue) == 0x00003C, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000040, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000044, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000048, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00004C, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000050, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ShielderSpringArm_C_Spline_Points, CallFunc_MakeVector_ReturnValue) == 0x000054, "Member 'ShielderSpringArm_C_Spline_Points::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 }
 

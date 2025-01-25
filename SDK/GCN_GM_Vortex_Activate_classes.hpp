@@ -19,18 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_GM_Vortex_Activate.GCN_GM_Vortex_Activate_C
-// 0x0030 (0x03F0 - 0x03C0)
+// 0x0028 (0x03C0 - 0x0398)
 class AGCN_GM_Vortex_Activate_C final : public AGameplayCueNotify_Actor
 {
 public:
-	uint8                                         Pad_3B8[0x8];                                      // 0x03B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12; // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12; // 0x03D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D5[0x3];                                      // 0x03D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             VortexActivateSound;                               // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12; // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12; // 0x03AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AD[0x3];                                      // 0x03AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             VortexActivateSound;                               // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GCN_GM_Vortex_Activate(int32 EntryPoint);
@@ -50,14 +49,14 @@ public:
 		return GetDefaultObjImpl<AGCN_GM_Vortex_Activate_C>();
 	}
 };
-static_assert(alignof(AGCN_GM_Vortex_Activate_C) == 0x000010, "Wrong alignment on AGCN_GM_Vortex_Activate_C");
-static_assert(sizeof(AGCN_GM_Vortex_Activate_C) == 0x0003F0, "Wrong size on AGCN_GM_Vortex_Activate_C");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, UberGraphFrame) == 0x0003C0, "Member 'AGCN_GM_Vortex_Activate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, DefaultSceneRoot) == 0x0003C8, "Member 'AGCN_GM_Vortex_Activate_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12) == 0x0003D0, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12' has a wrong offset!");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12) == 0x0003D4, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12' has a wrong offset!");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0) == 0x0003D8, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AGCN_GM_Vortex_Activate_C, VortexActivateSound) == 0x0003E0, "Member 'AGCN_GM_Vortex_Activate_C::VortexActivateSound' has a wrong offset!");
+static_assert(alignof(AGCN_GM_Vortex_Activate_C) == 0x000008, "Wrong alignment on AGCN_GM_Vortex_Activate_C");
+static_assert(sizeof(AGCN_GM_Vortex_Activate_C) == 0x0003C0, "Wrong size on AGCN_GM_Vortex_Activate_C");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, UberGraphFrame) == 0x000398, "Member 'AGCN_GM_Vortex_Activate_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, DefaultSceneRoot) == 0x0003A0, "Member 'AGCN_GM_Vortex_Activate_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12) == 0x0003A8, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0_NewTrack_0_F918BF534BE0AED903D63EA6410E0D12' has a wrong offset!");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12) == 0x0003AC, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0__Direction_F918BF534BE0AED903D63EA6410E0D12' has a wrong offset!");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, Timeline_0) == 0x0003B0, "Member 'AGCN_GM_Vortex_Activate_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AGCN_GM_Vortex_Activate_C, VortexActivateSound) == 0x0003B8, "Member 'AGCN_GM_Vortex_Activate_C::VortexActivateSound' has a wrong offset!");
 
 }
 

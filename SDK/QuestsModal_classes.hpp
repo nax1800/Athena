@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestsModal.QuestsModal_C
-// 0x0048 (0x0438 - 0x03F0)
+// 0x0048 (0x0370 - 0x0328)
 class UQuestsModal_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UBottomBarWidget_C*                     BottomBarWidget;                                   // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UQuestScreen_C*                         QuestScreen;                                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          TouchToCloseZone;                                  // 0x0418(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CloseButton;                                       // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          ClosingPanel;                                      // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UBottomBarWidget_C*                     BottomBarWidget;                                   // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UQuestScreen_C*                         QuestScreen;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          TouchToCloseZone;                                  // 0x0350(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CloseButton;                                       // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          ClosingPanel;                                      // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_QuestsModal(int32 EntryPoint);
@@ -49,15 +49,15 @@ public:
 	}
 };
 static_assert(alignof(UQuestsModal_C) == 0x000008, "Wrong alignment on UQuestsModal_C");
-static_assert(sizeof(UQuestsModal_C) == 0x000438, "Wrong size on UQuestsModal_C");
-static_assert(offsetof(UQuestsModal_C, UberGraphFrame) == 0x0003F0, "Member 'UQuestsModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, BottomBarWidget) == 0x0003F8, "Member 'UQuestsModal_C::BottomBarWidget' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, Lightbox) == 0x000400, "Member 'UQuestsModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, QuestScreen) == 0x000408, "Member 'UQuestsModal_C::QuestScreen' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, SafeZone_0) == 0x000410, "Member 'UQuestsModal_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, TouchToCloseZone) == 0x000418, "Member 'UQuestsModal_C::TouchToCloseZone' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, CloseButton) == 0x000420, "Member 'UQuestsModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UQuestsModal_C, ClosingPanel) == 0x000430, "Member 'UQuestsModal_C::ClosingPanel' has a wrong offset!");
+static_assert(sizeof(UQuestsModal_C) == 0x000370, "Wrong size on UQuestsModal_C");
+static_assert(offsetof(UQuestsModal_C, UberGraphFrame) == 0x000328, "Member 'UQuestsModal_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, BottomBarWidget) == 0x000330, "Member 'UQuestsModal_C::BottomBarWidget' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, Lightbox) == 0x000338, "Member 'UQuestsModal_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, QuestScreen) == 0x000340, "Member 'UQuestsModal_C::QuestScreen' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, SafeZone_0) == 0x000348, "Member 'UQuestsModal_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, TouchToCloseZone) == 0x000350, "Member 'UQuestsModal_C::TouchToCloseZone' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, CloseButton) == 0x000358, "Member 'UQuestsModal_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UQuestsModal_C, ClosingPanel) == 0x000368, "Member 'UQuestsModal_C::ClosingPanel' has a wrong offset!");
 
 }
 

@@ -54,7 +54,7 @@ static_assert(offsetof(ScoreBarsScoreMessageItem_C_UpdateValues, CallFunc_Multip
 struct ScoreBarsScoreMessageItem_C_Setup final
 {
 public:
-	int32                                         Param_Base_Delta;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Base_Delta_0;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Name_Text;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UScoreMessageNumber_C*                  In_Score_Widget;                                   // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ public:
 };
 static_assert(alignof(ScoreBarsScoreMessageItem_C_Setup) == 0x000008, "Wrong alignment on ScoreBarsScoreMessageItem_C_Setup");
 static_assert(sizeof(ScoreBarsScoreMessageItem_C_Setup) == 0x000038, "Wrong size on ScoreBarsScoreMessageItem_C_Setup");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, Param_Base_Delta) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_Setup::Param_Base_Delta' has a wrong offset!");
+static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, Base_Delta_0) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_Setup::Base_Delta_0' has a wrong offset!");
 static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, Name_Text) == 0x000008, "Member 'ScoreBarsScoreMessageItem_C_Setup::Name_Text' has a wrong offset!");
 static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, In_Score_Widget) == 0x000020, "Member 'ScoreBarsScoreMessageItem_C_Setup::In_Score_Widget' has a wrong offset!");
 static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'ScoreBarsScoreMessageItem_C_Setup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");

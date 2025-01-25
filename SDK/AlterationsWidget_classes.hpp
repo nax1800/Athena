@@ -10,53 +10,72 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AlterationsWidget.AlterationsWidget_C
-// 0x0098 (0x02E0 - 0x0248)
+// 0x00B8 (0x0340 - 0x0288)
 class UAlterationsWidget_C final : public UFortAlterationsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
-	class UAlterationWidget_C*                    AlterationWidget;                                  // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAlterationWidget_C*                    AlterationWidget_2;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAlterationWidget_C*                    AlterationWidget_3;                                // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAlterationWidget_C*                    AlterationWidget_6;                                // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          Border_PerksMessage;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderLocked;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderUnlocked;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPerkDivider_C*                         LockedUnlockedDivider;                             // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPerkDivider_C*                         PerkDivider_C_106;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPerkDivider_C*                         PerkDivider_C_107;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxAlterationsLocked;                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxAlterationsUnlocked;                    // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bIncludeName;                                      // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bIncludeDescription;                               // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bIncludeShortDescription;                          // 0x02B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          FirstAlterationComplete;                           // 0x02B3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          FirstLockedComplete;                               // 0x02B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	EFortBrushSize                                IconSize;                                          // 0x02B5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2B6[0x2];                                      // 0x02B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                RowPadding;                                        // 0x02B8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
-	bool                                          bUseLargeFormatNameOnly;                           // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2C9[0x3];                                      // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Description_Padding;                               // 0x02CC(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
+	class UAlterationWidget_C*                    AlterationWidget;                                  // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAlterationWidget_C*                    AlterationWidget_2;                                // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAlterationWidget_C*                    AlterationWidget_3;                                // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAlterationWidget_C*                    AlterationWidget_6;                                // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          Border_PerksMessage;                               // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderLocked;                                      // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderUnlocked;                                    // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPerkDivider_C*                         LockedUnlockedDivider;                             // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPerkDivider_C*                         PerkDivider_C_106;                                 // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPerkDivider_C*                         PerkDivider_C_107;                                 // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxAlterationsLocked;                      // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxAlterationsUnlocked;                    // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bIncludeName;                                      // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bIncludeDescription;                               // 0x02F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bIncludeShortDescription;                          // 0x02F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          FirstAlterationComplete;                           // 0x02F3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          FirstLockedComplete;                               // 0x02F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	EFortBrushSize                                IconSize;                                          // 0x02F5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_2F6[0x2];                                      // 0x02F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                RowPadding;                                        // 0x02F8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	bool                                          bUseLargeFormatNameOnly;                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                Description_Padding;                               // 0x030C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           PerkAnimIntroTimer;                                // 0x0320(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         NextAnimToPlay;                                    // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                RowPadding2;                                       // 0x032C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AlterationsWidget(int32 EntryPoint);
+	void Destruct();
+	void OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex);
+	void OnFocusFirstItem();
+	void OnGenerateAlteration(class UFortAlterationInfo* AlterationInfo);
 	void OnStateChanged();
 	void OnItemToCompareWithChanged();
-	void OnItemChanged();
-	void OnGenerateAlteration(const struct FFortUIAlteration& AlterationInfo);
+	void OnItemChanged(bool bIntroAlterations);
 	void Construct();
 	void UpdatePerksMessage();
+	void AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked);
+	void GenerateAlteration(class UFortAlterationInfo* AlterationInfo);
+	class UCommonUserWidget* CreateAlterationWidget();
+	void SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo);
+	void TriggerModificationAnim(int32 ModifiedSlotIndex);
+	void SetupBorders();
+	void CenterWidget();
+	void IntroAnim();
+	void CreateAnimations(bool IntroAnims);
+	void Reset();
+	void ClearAndInitialize(bool IntroAlterations);
+	void Clear();
 
 public:
 	static class UClass* StaticClass()
@@ -69,29 +88,32 @@ public:
 	}
 };
 static_assert(alignof(UAlterationsWidget_C) == 0x000008, "Wrong alignment on UAlterationsWidget_C");
-static_assert(sizeof(UAlterationsWidget_C) == 0x0002E0, "Wrong size on UAlterationsWidget_C");
-static_assert(offsetof(UAlterationsWidget_C, UberGraphFrame) == 0x000248, "Member 'UAlterationsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget) == 0x000250, "Member 'UAlterationsWidget_C::AlterationWidget' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_2) == 0x000258, "Member 'UAlterationsWidget_C::AlterationWidget_2' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_3) == 0x000260, "Member 'UAlterationsWidget_C::AlterationWidget_3' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_6) == 0x000268, "Member 'UAlterationsWidget_C::AlterationWidget_6' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, Border_PerksMessage) == 0x000270, "Member 'UAlterationsWidget_C::Border_PerksMessage' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderLocked) == 0x000278, "Member 'UAlterationsWidget_C::BorderLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderUnlocked) == 0x000280, "Member 'UAlterationsWidget_C::BorderUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, LockedUnlockedDivider) == 0x000288, "Member 'UAlterationsWidget_C::LockedUnlockedDivider' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, PerkDivider_C_106) == 0x000290, "Member 'UAlterationsWidget_C::PerkDivider_C_106' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, PerkDivider_C_107) == 0x000298, "Member 'UAlterationsWidget_C::PerkDivider_C_107' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsLocked) == 0x0002A0, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsUnlocked) == 0x0002A8, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeName) == 0x0002B0, "Member 'UAlterationsWidget_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeDescription) == 0x0002B1, "Member 'UAlterationsWidget_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeShortDescription) == 0x0002B2, "Member 'UAlterationsWidget_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstAlterationComplete) == 0x0002B3, "Member 'UAlterationsWidget_C::FirstAlterationComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstLockedComplete) == 0x0002B4, "Member 'UAlterationsWidget_C::FirstLockedComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, IconSize) == 0x0002B5, "Member 'UAlterationsWidget_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, RowPadding) == 0x0002B8, "Member 'UAlterationsWidget_C::RowPadding' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bUseLargeFormatNameOnly) == 0x0002C8, "Member 'UAlterationsWidget_C::bUseLargeFormatNameOnly' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, Description_Padding) == 0x0002CC, "Member 'UAlterationsWidget_C::Description_Padding' has a wrong offset!");
+static_assert(sizeof(UAlterationsWidget_C) == 0x000340, "Wrong size on UAlterationsWidget_C");
+static_assert(offsetof(UAlterationsWidget_C, UberGraphFrame) == 0x000288, "Member 'UAlterationsWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, AlterationWidget) == 0x000290, "Member 'UAlterationsWidget_C::AlterationWidget' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_2) == 0x000298, "Member 'UAlterationsWidget_C::AlterationWidget_2' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_3) == 0x0002A0, "Member 'UAlterationsWidget_C::AlterationWidget_3' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_6) == 0x0002A8, "Member 'UAlterationsWidget_C::AlterationWidget_6' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, Border_PerksMessage) == 0x0002B0, "Member 'UAlterationsWidget_C::Border_PerksMessage' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, BorderLocked) == 0x0002B8, "Member 'UAlterationsWidget_C::BorderLocked' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, BorderUnlocked) == 0x0002C0, "Member 'UAlterationsWidget_C::BorderUnlocked' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, LockedUnlockedDivider) == 0x0002C8, "Member 'UAlterationsWidget_C::LockedUnlockedDivider' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, PerkDivider_C_106) == 0x0002D0, "Member 'UAlterationsWidget_C::PerkDivider_C_106' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, PerkDivider_C_107) == 0x0002D8, "Member 'UAlterationsWidget_C::PerkDivider_C_107' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsLocked) == 0x0002E0, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsLocked' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsUnlocked) == 0x0002E8, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsUnlocked' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, bIncludeName) == 0x0002F0, "Member 'UAlterationsWidget_C::bIncludeName' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, bIncludeDescription) == 0x0002F1, "Member 'UAlterationsWidget_C::bIncludeDescription' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, bIncludeShortDescription) == 0x0002F2, "Member 'UAlterationsWidget_C::bIncludeShortDescription' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, FirstAlterationComplete) == 0x0002F3, "Member 'UAlterationsWidget_C::FirstAlterationComplete' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, FirstLockedComplete) == 0x0002F4, "Member 'UAlterationsWidget_C::FirstLockedComplete' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, IconSize) == 0x0002F5, "Member 'UAlterationsWidget_C::IconSize' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, RowPadding) == 0x0002F8, "Member 'UAlterationsWidget_C::RowPadding' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, bUseLargeFormatNameOnly) == 0x000308, "Member 'UAlterationsWidget_C::bUseLargeFormatNameOnly' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, Description_Padding) == 0x00030C, "Member 'UAlterationsWidget_C::Description_Padding' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, PerkAnimIntroTimer) == 0x000320, "Member 'UAlterationsWidget_C::PerkAnimIntroTimer' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, NextAnimToPlay) == 0x000328, "Member 'UAlterationsWidget_C::NextAnimToPlay' has a wrong offset!");
+static_assert(offsetof(UAlterationsWidget_C, RowPadding2) == 0x00032C, "Member 'UAlterationsWidget_C::RowPadding2' has a wrong offset!");
 
 }
 

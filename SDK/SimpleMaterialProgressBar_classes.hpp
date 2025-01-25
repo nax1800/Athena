@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SimpleMaterialProgressBar.SimpleMaterialProgressBar_C
-// 0x0040 (0x0250 - 0x0210)
+// 0x0040 (0x0248 - 0x0208)
 class USimpleMaterialProgressBar_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Bar;                                               // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           ColorA;                                            // 0x0220(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorB;                                            // 0x0230(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorBackground;                                   // 0x0240(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0208(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Bar;                                               // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FLinearColor                           ColorA;                                            // 0x0218(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorB;                                            // 0x0228(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorBackground;                                   // 0x0238(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SimpleMaterialProgressBar(int32 EntryPoint);
@@ -35,6 +35,7 @@ public:
 	void SetProgress(float Value);
 	void SetColorA(const struct FLinearColor& Value);
 	void SetColorB(const struct FLinearColor& Value);
+	void SetColorBackground(const struct FLinearColor& Value);
 
 public:
 	static class UClass* StaticClass()
@@ -47,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(USimpleMaterialProgressBar_C) == 0x000008, "Wrong alignment on USimpleMaterialProgressBar_C");
-static_assert(sizeof(USimpleMaterialProgressBar_C) == 0x000250, "Wrong size on USimpleMaterialProgressBar_C");
-static_assert(offsetof(USimpleMaterialProgressBar_C, UberGraphFrame) == 0x000210, "Member 'USimpleMaterialProgressBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, Bar) == 0x000218, "Member 'USimpleMaterialProgressBar_C::Bar' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorA) == 0x000220, "Member 'USimpleMaterialProgressBar_C::ColorA' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorB) == 0x000230, "Member 'USimpleMaterialProgressBar_C::ColorB' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorBackground) == 0x000240, "Member 'USimpleMaterialProgressBar_C::ColorBackground' has a wrong offset!");
+static_assert(sizeof(USimpleMaterialProgressBar_C) == 0x000248, "Wrong size on USimpleMaterialProgressBar_C");
+static_assert(offsetof(USimpleMaterialProgressBar_C, UberGraphFrame) == 0x000208, "Member 'USimpleMaterialProgressBar_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USimpleMaterialProgressBar_C, Bar) == 0x000210, "Member 'USimpleMaterialProgressBar_C::Bar' has a wrong offset!");
+static_assert(offsetof(USimpleMaterialProgressBar_C, ColorA) == 0x000218, "Member 'USimpleMaterialProgressBar_C::ColorA' has a wrong offset!");
+static_assert(offsetof(USimpleMaterialProgressBar_C, ColorB) == 0x000228, "Member 'USimpleMaterialProgressBar_C::ColorB' has a wrong offset!");
+static_assert(offsetof(USimpleMaterialProgressBar_C, ColorBackground) == 0x000238, "Member 'USimpleMaterialProgressBar_C::ColorBackground' has a wrong offset!");
 
 }
 

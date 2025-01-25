@@ -11,27 +11,29 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InputReflector.InputReflector_C
-// 0x0028 (0x02A0 - 0x0278)
+// 0x0028 (0x0298 - 0x0270)
 class UInputReflector_C final : public UFortInputReflector
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         ButtonBox;                                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxShell;                                      // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                DefaultButtonMargin;                               // 0x0290(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalBox*                         ButtonBox;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxShell;                                      // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FMargin                                DefaultButtonMargin;                               // 0x0288(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_InputReflector(int32 EntryPoint);
 	void OnButtonAdded(class UCommonButton* AddedButton, const struct FCommonInputActionHandlerData& Data);
+	void HandleAddButton(class UCommonButton* AddedButton);
+	void StyleButton(class UCommonButton*& ButtonToStyle, class UCommonButton** ButtonStyled);
 
 public:
 	static class UClass* StaticClass()
@@ -44,11 +46,11 @@ public:
 	}
 };
 static_assert(alignof(UInputReflector_C) == 0x000008, "Wrong alignment on UInputReflector_C");
-static_assert(sizeof(UInputReflector_C) == 0x0002A0, "Wrong size on UInputReflector_C");
-static_assert(offsetof(UInputReflector_C, UberGraphFrame) == 0x000278, "Member 'UInputReflector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, ButtonBox) == 0x000280, "Member 'UInputReflector_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, SizeBoxShell) == 0x000288, "Member 'UInputReflector_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, DefaultButtonMargin) == 0x000290, "Member 'UInputReflector_C::DefaultButtonMargin' has a wrong offset!");
+static_assert(sizeof(UInputReflector_C) == 0x000298, "Wrong size on UInputReflector_C");
+static_assert(offsetof(UInputReflector_C, UberGraphFrame) == 0x000270, "Member 'UInputReflector_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UInputReflector_C, ButtonBox) == 0x000278, "Member 'UInputReflector_C::ButtonBox' has a wrong offset!");
+static_assert(offsetof(UInputReflector_C, SizeBoxShell) == 0x000280, "Member 'UInputReflector_C::SizeBoxShell' has a wrong offset!");
+static_assert(offsetof(UInputReflector_C, DefaultButtonMargin) == 0x000288, "Member 'UInputReflector_C::DefaultButtonMargin' has a wrong offset!");
 
 }
 

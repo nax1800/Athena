@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function Athena_PartySuggestion.Athena_PartySuggestion_C.ExecuteUbergraph_Athena_PartySuggestion
-// (HasDefaults)
+// Function Athena_PartySuggestion.Athena_PartySuggestion_C.PartyFocused__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthena_PartySuggestion_C::ExecuteUbergraph_Athena_PartySuggestion(int32 EntryPoint)
+void UAthena_PartySuggestion_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PartySuggestion_C", "ExecuteUbergraph_Athena_PartySuggestion");
+		Func = Class->GetFunction("Athena_PartySuggestion_C", "PartyFocused__DelegateSignature");
 
-	Params::Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion Parms{};
+	Params::Athena_PartySuggestion_C_PartyFocused__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.FocusedPartyItem = FocusedPartyItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UAthena_PartySuggestion_C::OnSuggestionMouseDown__DelegateSignature()
 }
 
 
-// Function Athena_PartySuggestion.Athena_PartySuggestion_C.PartyFocused__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function Athena_PartySuggestion.Athena_PartySuggestion_C.ExecuteUbergraph_Athena_PartySuggestion
+// (HasDefaults)
 // Parameters:
-// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthena_PartySuggestion_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
+void UAthena_PartySuggestion_C::ExecuteUbergraph_Athena_PartySuggestion(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PartySuggestion_C", "PartyFocused__DelegateSignature");
+		Func = Class->GetFunction("Athena_PartySuggestion_C", "ExecuteUbergraph_Athena_PartySuggestion");
 
-	Params::Athena_PartySuggestion_C_PartyFocused__DelegateSignature Parms{};
+	Params::Athena_PartySuggestion_C_ExecuteUbergraph_Athena_PartySuggestion Parms{};
 
-	Parms.FocusedPartyItem = FocusedPartyItem;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

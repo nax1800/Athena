@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaStatsRow.AthenaStatsRow_C
-// 0x0040 (0x0258 - 0x0218)
+// 0x0040 (0x0250 - 0x0210)
 class UAthenaStatsRow_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       Name_AthenaStatsRow_C;                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Value;                                             // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   StatName;                                          // 0x0230(0x0018)(Edit, BlueprintVisible)
-	class FString                                 BaseGameplayTag;                                   // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       Name_0;                                            // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Value;                                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   StatName;                                          // 0x0228(0x0018)(Edit, BlueprintVisible)
+	class FString                                 BaseGameplayTag;                                   // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaStatsRow(int32 EntryPoint);
@@ -44,12 +44,12 @@ public:
 	}
 };
 static_assert(alignof(UAthenaStatsRow_C) == 0x000008, "Wrong alignment on UAthenaStatsRow_C");
-static_assert(sizeof(UAthenaStatsRow_C) == 0x000258, "Wrong size on UAthenaStatsRow_C");
-static_assert(offsetof(UAthenaStatsRow_C, UberGraphFrame) == 0x000218, "Member 'UAthenaStatsRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, Name_AthenaStatsRow_C) == 0x000220, "Member 'UAthenaStatsRow_C::Name_AthenaStatsRow_C' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, Value) == 0x000228, "Member 'UAthenaStatsRow_C::Value' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, StatName) == 0x000230, "Member 'UAthenaStatsRow_C::StatName' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, BaseGameplayTag) == 0x000248, "Member 'UAthenaStatsRow_C::BaseGameplayTag' has a wrong offset!");
+static_assert(sizeof(UAthenaStatsRow_C) == 0x000250, "Wrong size on UAthenaStatsRow_C");
+static_assert(offsetof(UAthenaStatsRow_C, UberGraphFrame) == 0x000210, "Member 'UAthenaStatsRow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaStatsRow_C, Name_0) == 0x000218, "Member 'UAthenaStatsRow_C::Name_0' has a wrong offset!");
+static_assert(offsetof(UAthenaStatsRow_C, Value) == 0x000220, "Member 'UAthenaStatsRow_C::Value' has a wrong offset!");
+static_assert(offsetof(UAthenaStatsRow_C, StatName) == 0x000228, "Member 'UAthenaStatsRow_C::StatName' has a wrong offset!");
+static_assert(offsetof(UAthenaStatsRow_C, BaseGameplayTag) == 0x000240, "Member 'UAthenaStatsRow_C::BaseGameplayTag' has a wrong offset!");
 
 }
 

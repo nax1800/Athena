@@ -11,300 +11,317 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function B_Melee_Generic.B_Melee_Generic_C.ExecuteUbergraph_B_Melee_Generic
-// 0x1100 (0x1100 - 0x0000)
+// 0x1130 (0x1130 - 0x0000)
 struct B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetPI_ReturnValue;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bPersistentFire;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bSecondaryFire;                       // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_Event_HitResult;                            // 0x0030(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	EPhysicalSurface                              K2Node_Event_ImpactPhysicalSurface;                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               K2Node_Event_SpawnedPSC;                           // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1234;      // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0100(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0138(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0144(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bPersistentFire;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bSecondaryFire;                       // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitResult;                            // 0x0020(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	EPhysicalSurface                              K2Node_Event_ImpactPhysicalSurface;                // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               K2Node_Event_SpawnedPSC;                           // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetPI_ReturnValue;                        // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue4;         // 0x00C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue5;         // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue6;         // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00E4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00FC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0130(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x013C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetInstigator_ReturnValue;                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetInstigator_ReturnValue;                // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x0178(0x0028)(HasGetValueTypeHash)
-	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetInstigator_ReturnValue1;               // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetInstigator_ReturnValue12;              // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn1;            // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue12;       // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0224(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x0230(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable;                              // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        K2Node_DynamicCast_AsParticle_System;              // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1234;                   // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetInstigator_ReturnValue123;             // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn1;                   // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12345;                  // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue1;           // 0x0280(0x000C)(IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           CallFunc_GetCurrentActiveMontage_ReturnValue;      // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue1;        // 0x0298(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x02A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue12;          // 0x02B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortCosmeticModification              K2Node_Event_CosmeticMod;                          // 0x02C0(0x0B20)()
-	class UMaterialInstanceDynamic*               K2Node_Event_DynamicMaterialInstance;              // 0x0DE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0DE8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x0DF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0DF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x0DFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0E00(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAssetNull_ReturnValue;                  // 0x0E0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E0D[0x3];                                      // 0x0E0D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x0E10(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue1;       // 0x0E1C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue12;      // 0x0E28(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x0E34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue12;                     // 0x0E38(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0E44(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0E50(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0E5C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue1;          // 0x0E68(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue123;     // 0x0E74(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromXY_ReturnValue;                // 0x0E80(0x000C)(IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E8C[0x4];                                      // 0x0E8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0E90(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_bVisible;                             // 0x0F18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0F19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_DoesSocketExist_ReturnValue;              // 0x0F1A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0178(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           CallFunc_GetCurrentActiveMontage_ReturnValue;      // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x0190(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x019C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x01A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x01B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue1;       // 0x01C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue1;                      // 0x01E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x01F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0200(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x0224(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetInstigator_ReturnValue1;               // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x0238(0x0028)(HasGetValueTypeHash)
+	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn1;                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_GetOrLoadSynchronously_ReturnValue;       // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x0280(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetInstigator_ReturnValue2;               // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_GetInstigator_ReturnValue3;               // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn1;            // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x02C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x02C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue1;           // 0x02D4(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x02E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue1;        // 0x02EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x02F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue2;                      // 0x0304(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable;                              // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0318(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_DynamicCast_AsParticle_System;              // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue1;          // 0x0334(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotFromXY_ReturnValue;                // 0x0348(0x000C)(IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_355[0x3];                                      // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                K2Node_Select_Default;                             // 0x0358(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0368(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FFortCosmeticModification              K2Node_Event_CosmeticMod;                          // 0x03F0(0x0B20)()
+	class UMaterialInstanceDynamic*               K2Node_Event_DynamicMaterialInstance;              // 0x0F10(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAssetNull_ReturnValue;                  // 0x0F18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bVisible;                             // 0x0F19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0F1A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1B[0x5];                                      // 0x0F1B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0F20(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue1;          // 0x0F50(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0F80(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0F8C(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0F98(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location1;                 // 0x0FA4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation1;                 // 0x0FB0(0x000C)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale1;                    // 0x0FBC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X1;                           // 0x0FC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y1;                           // 0x0FCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z1;                           // 0x0FD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X12;                          // 0x0FD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y12;                          // 0x0FD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z12;                          // 0x0FDC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetInstigator_ReturnValue4;               // 0x0F20(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn2;            // 0x0F28(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0F30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F31[0xF];                                      // 0x0F31(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0F40(0x0030)(IsPlainOldData, NoDestructor)
+	class APlayerPawn_Generic_C*                  K2Node_DynamicCast_AsPlayer_Pawn_Generic;          // 0x0F70(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0F78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F79[0x3];                                      // 0x0F79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0F7C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0F88(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0F94(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X1;                           // 0x0FA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y1;                           // 0x0FA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z1;                           // 0x0FA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FAC[0x4];                                      // 0x0FAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue1;          // 0x0FB0(0x0030)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0FE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue123;         // 0x0FE4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0FF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1234;        // 0x0FF4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x1000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue1234;    // 0x1004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue123;      // 0x1010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x1018(0x000C)(IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1024[0x4];                                     // 0x1024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x1028(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_VSize_ReturnValue1;                       // 0x10B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DoesSocketExist_ReturnValue1;             // 0x10B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10B5[0x3];                                     // 0x10B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue12;        // 0x10B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x10BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10BD[0x3];                                     // 0x10BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x10C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12;          // 0x10C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x10C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue123;         // 0x10D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue12;                 // 0x10D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1234;        // 0x10E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue123;                // 0x10E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location1;                 // 0x0FE4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation1;                 // 0x0FF0(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale1;                    // 0x0FFC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x1008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X2;                           // 0x100C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y2;                           // 0x1010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z2;                           // 0x1014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x1018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue3;           // 0x101C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue4;           // 0x1028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1034[0x4];                                     // 0x1034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue3;        // 0x1038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue4;       // 0x1040(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x104C(0x000C)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_VSize_ReturnValue1;                       // 0x1058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_105C[0x4];                                     // 0x105C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x1060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x10E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x10EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x10F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x10F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x1100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue4;           // 0x1104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x1108(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x1114(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DoesSocketExist_ReturnValue;              // 0x1120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_DoesSocketExist_ReturnValue1;             // 0x1121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x1122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic) == 0x000010, "Wrong alignment on B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic");
-static_assert(sizeof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic) == 0x001100, "Wrong size on B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic");
+static_assert(sizeof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic) == 0x001130, "Wrong size on B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic");
 static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, EntryPoint) == 0x000000, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::EntryPoint' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000004, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000018, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetPI_ReturnValue) == 0x00001C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsDedicatedServer_ReturnValue) == 0x000020, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000024, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bPersistentFire) == 0x000028, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bPersistentFire' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bSecondaryFire) == 0x000029, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bSecondaryFire' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_HitResult) == 0x000030, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_HitResult' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_ImpactPhysicalSurface) == 0x0000B8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_ImpactPhysicalSurface' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_SpawnedPSC) == 0x0000C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_SpawnedPSC' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0000C9, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x0000CA, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue) == 0x0000CB, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x0000CC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue1) == 0x0000CD, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue1234) == 0x0000CE, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue12) == 0x0000CF, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_bBlockingHit) == 0x0000D0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000D1, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Time) == 0x0000D4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Distance) == 0x0000D8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Location) == 0x0000DC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_ImpactPoint) == 0x0000E8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Normal) == 0x0000F4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_ImpactNormal) == 0x000100, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_PhysMat) == 0x000110, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitActor) == 0x000118, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitComponent) == 0x000120, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitBoneName) == 0x000128, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitItem) == 0x000130, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_FaceIndex) == 0x000134, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_TraceStart) == 0x000138, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_TraceEnd) == 0x000144, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsDedicatedServer_ReturnValue) == 0x000018, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bPersistentFire) == 0x000019, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bPersistentFire' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bSecondaryFire) == 0x00001A, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bSecondaryFire' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_HitResult) == 0x000020, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_HitResult' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_ImpactPhysicalSurface) == 0x0000A8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_ImpactPhysicalSurface' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_SpawnedPSC) == 0x0000B0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_SpawnedPSC' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetPI_ReturnValue) == 0x0000B8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetPI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000BC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0000C1, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x0000C2, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue) == 0x0000C3, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0000C4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue1) == 0x0000C5, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x0000C6, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue2) == 0x0000C7, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue5) == 0x0000C8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue6) == 0x0000C9, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanOR_ReturnValue3) == 0x0000CA, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_bBlockingHit) == 0x0000CB, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000CC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Time) == 0x0000D0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Distance) == 0x0000D4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Location) == 0x0000D8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_ImpactPoint) == 0x0000E4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_Normal) == 0x0000F0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_ImpactNormal) == 0x0000FC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_PhysMat) == 0x000108, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitActor) == 0x000110, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitComponent) == 0x000118, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitBoneName) == 0x000120, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_HitItem) == 0x000128, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_FaceIndex) == 0x00012C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_TraceStart) == 0x000130, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakHitResult_TraceEnd) == 0x00013C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue) == 0x000148, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000150, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue) == 0x00015C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000168, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue) == 0x000170, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000178, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Pawn) == 0x0001A0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess) == 0x0001A8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0001B0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsTexture_2D) == 0x0001B8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess1) == 0x0001C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0001C8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x0001D0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0001D8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue1) == 0x0001E0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0001E8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess12) == 0x0001F0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue12) == 0x0001F8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Player_Pawn1) == 0x000200, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Player_Pawn1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess123) == 0x000208, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue12) == 0x000210, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue1) == 0x000218, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketRotation_ReturnValue) == 0x000224, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_RotatorToVector_ReturnValue) == 0x000230, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_RotatorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, Temp_object_Variable) == 0x000240, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_CustomEvent_Loaded) == 0x000248, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsParticle_System) == 0x000250, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsParticle_System' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess1234) == 0x000258, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue123) == 0x000260, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Pawn1) == 0x000268, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Pawn1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess12345) == 0x000270, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess12345' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetAnimInstance_ReturnValue) == 0x000278, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketRotation_ReturnValue1) == 0x000280, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketRotation_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetCurrentActiveMontage_ReturnValue) == 0x000290, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetCurrentActiveMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_RotatorToVector_ReturnValue1) == 0x000298, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_RotatorToVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Array_Contains_ReturnValue) == 0x0002A4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue) == 0x0002A8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue12) == 0x0002B4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_CosmeticMod) == 0x0002C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_CosmeticMod' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_DynamicMaterialInstance) == 0x000DE0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_DynamicMaterialInstance' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000DE8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X) == 0x000DF4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y) == 0x000DF8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z) == 0x000DFC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue) == 0x000E00, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsAssetNull_ReturnValue) == 0x000E0C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue1) == 0x000E10, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue1) == 0x000E1C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue12) == 0x000E28, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_VSize_ReturnValue) == 0x000E34, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue12) == 0x000E38, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000E44, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Cross_VectorVector_ReturnValue) == 0x000E50, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Add_VectorVector_ReturnValue) == 0x000E5C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Cross_VectorVector_ReturnValue1) == 0x000E68, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Cross_VectorVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue123) == 0x000E74, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeRotFromXY_ReturnValue) == 0x000E80, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeRotFromXY_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000E90, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bVisible) == 0x000F18, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bVisible' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsValid_ReturnValue) == 0x000F19, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_DoesSocketExist_ReturnValue) == 0x000F1A, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketTransform_ReturnValue) == 0x000F20, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketTransform_ReturnValue1) == 0x000F50, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketTransform_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Location) == 0x000F80, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Rotation) == 0x000F8C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Scale) == 0x000F98, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Location1) == 0x000FA4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Location1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Rotation1) == 0x000FB0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Rotation1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Scale1) == 0x000FBC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Scale1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X1) == 0x000FC8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y1) == 0x000FCC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z1) == 0x000FD0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X12) == 0x000FD4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y12) == 0x000FD8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z12) == 0x000FDC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z12' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Pawn) == 0x000160, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetAnimInstance_ReturnValue) == 0x000170, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketRotation_ReturnValue) == 0x000178, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetCurrentActiveMontage_ReturnValue) == 0x000188, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetCurrentActiveMontage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_RotatorToVector_ReturnValue) == 0x000190, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_RotatorToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue) == 0x00019C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue) == 0x0001A8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0001B4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue1) == 0x0001C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X) == 0x0001CC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y) == 0x0001D0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z) == 0x0001D4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_VSize_ReturnValue) == 0x0001D8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue) == 0x0001DC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue1) == 0x0001E8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue1) == 0x0001F4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000200, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000210, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Add_VectorVector_ReturnValue) == 0x000218, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue2) == 0x000224, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue1) == 0x000230, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000238, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Pawn1) == 0x000260, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Pawn1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess1) == 0x000268, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetOrLoadSynchronously_ReturnValue) == 0x000270, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetOrLoadSynchronously_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000278, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x000280, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000288, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue2) == 0x000290, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000298, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess2) == 0x0002A0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue3) == 0x0002A8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Player_Pawn1) == 0x0002B0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Player_Pawn1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess3) == 0x0002B8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue2) == 0x0002C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue2) == 0x0002C8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketRotation_ReturnValue1) == 0x0002D4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketRotation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_VLerp_ReturnValue) == 0x0002E0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_RotatorToVector_ReturnValue1) == 0x0002EC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_RotatorToVector_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue3) == 0x0002F8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Normal_ReturnValue2) == 0x000304, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Normal_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, Temp_object_Variable) == 0x000310, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Cross_VectorVector_ReturnValue) == 0x000318, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsParticle_System) == 0x000328, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsParticle_System' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess4) == 0x000330, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Cross_VectorVector_ReturnValue1) == 0x000334, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Cross_VectorVector_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_CustomEvent_Loaded) == 0x000340, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeRotFromXY_ReturnValue) == 0x000348, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeRotFromXY_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, Temp_bool_Variable) == 0x000354, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Select_Default) == 0x000358, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Array_Contains_ReturnValue) == 0x000364, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000368, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_CosmeticMod) == 0x0003F0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_CosmeticMod' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_DynamicMaterialInstance) == 0x000F10, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_DynamicMaterialInstance' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsAssetNull_ReturnValue) == 0x000F18, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_Event_bVisible) == 0x000F19, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_Event_bVisible' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_IsValid_ReturnValue) == 0x000F1A, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetInstigator_ReturnValue4) == 0x000F20, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetInstigator_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsFort_Player_Pawn2) == 0x000F28, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsFort_Player_Pawn2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess5) == 0x000F30, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketTransform_ReturnValue) == 0x000F40, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000F70, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, K2Node_DynamicCast_bSuccess6) == 0x000F78, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Location) == 0x000F7C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Rotation) == 0x000F88, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Scale) == 0x000F94, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X1) == 0x000FA0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y1) == 0x000FA4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z1) == 0x000FA8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketTransform_ReturnValue1) == 0x000FB0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketTransform_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Add_FloatFloat_ReturnValue) == 0x000FE0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue123) == 0x000FE4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000FF0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue1234) == 0x000FF4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x001000, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue1234) == 0x001004, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue123) == 0x001010, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x001018, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x001028, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_VSize_ReturnValue1) == 0x0010B0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_VSize_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_DoesSocketExist_ReturnValue1) == 0x0010B4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_DoesSocketExist_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue12) == 0x0010B8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanAND_ReturnValue) == 0x0010BC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x0010C0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue12) == 0x0010C4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue1) == 0x0010C8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue123) == 0x0010D4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue12) == 0x0010D8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue1234) == 0x0010E4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue123) == 0x0010E8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Location1) == 0x000FE4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Location1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Rotation1) == 0x000FF0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Rotation1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakTransform_Scale1) == 0x000FFC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakTransform_Scale1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue) == 0x001008, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_X2) == 0x00100C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_X2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Y2) == 0x001010, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Y2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BreakVector_Z2) == 0x001014, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BreakVector_Z2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue1) == 0x001018, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue3) == 0x00101C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_GetSocketLocation_ReturnValue4) == 0x001028, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_GetSocketLocation_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_SpawnEmitterAttached_ReturnValue3) == 0x001038, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_SpawnEmitterAttached_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Subtract_VectorVector_ReturnValue4) == 0x001040, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Subtract_VectorVector_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x00104C, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_VSize_ReturnValue1) == 0x001058, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_VSize_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x001060, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x0010E8, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x0010EC, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x0010F0, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue1) == 0x0010F4, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x001100, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_Divide_FloatFloat_ReturnValue4) == 0x001104, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_Divide_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue2) == 0x001108, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_MakeVector_ReturnValue3) == 0x001114, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_MakeVector_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_DoesSocketExist_ReturnValue) == 0x001120, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_DoesSocketExist_ReturnValue1) == 0x001121, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_DoesSocketExist_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic, CallFunc_BooleanAND_ReturnValue) == 0x001122, "Member 'B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function B_Melee_Generic.B_Melee_Generic_C.OnWeaponVisibilityChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -377,15 +394,15 @@ struct B_Melee_Generic_C_SetWpnRarity final
 public:
 	EFortRarity                                   Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable1234;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable12345;                           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable123456;                          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable1234567;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable12345678;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable123456789;                       // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable12345678910;                     // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable4;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable5;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable6;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable7;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable8;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable9;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable10;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -397,15 +414,15 @@ static_assert(alignof(B_Melee_Generic_C_SetWpnRarity) == 0x000008, "Wrong alignm
 static_assert(sizeof(B_Melee_Generic_C_SetWpnRarity) == 0x000028, "Wrong size on B_Melee_Generic_C_SetWpnRarity");
 static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable) == 0x000000, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable1) == 0x000001, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable12) == 0x000002, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable123) == 0x000003, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable1234) == 0x000004, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable12345) == 0x000005, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable123456) == 0x000006, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable123456' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable1234567) == 0x000007, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable1234567' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable12345678) == 0x000008, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable12345678' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable123456789) == 0x000009, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable123456789' has a wrong offset!");
-static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable12345678910) == 0x00000A, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable12345678910' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable2) == 0x000002, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable3) == 0x000003, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable4) == 0x000004, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable5) == 0x000005, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable6) == 0x000006, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable7) == 0x000007, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable8) == 0x000008, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable8' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable9) == 0x000009, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable9' has a wrong offset!");
+static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, Temp_byte_Variable10) == 0x00000A, "Member 'B_Melee_Generic_C_SetWpnRarity::Temp_byte_Variable10' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, CallFunc_GetRarity_ReturnValue) == 0x00000B, "Member 'B_Melee_Generic_C_SetWpnRarity::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, K2Node_Select_Default) == 0x00000C, "Member 'B_Melee_Generic_C_SetWpnRarity::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(B_Melee_Generic_C_SetWpnRarity, CallFunc_Conv_ByteToFloat_ReturnValue) == 0x000010, "Member 'B_Melee_Generic_C_SetWpnRarity::CallFunc_Conv_ByteToFloat_ReturnValue' has a wrong offset!");

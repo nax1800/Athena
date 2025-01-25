@@ -10,6 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
+
 
 namespace SDK::Params
 {
@@ -68,13 +71,13 @@ struct alignas(0x08) AthenaBannerSelectModal_C_Setup_Input_Action_Handlers final
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers) == 0x000008, "Wrong alignment on AthenaBannerSelectModal_C_Setup_Input_Action_Handlers");
 static_assert(sizeof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers) == 0x000030, "Wrong size on AthenaBannerSelectModal_C_Setup_Input_Action_Handlers");
 static_assert(offsetof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaBannerSelectModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'AthenaBannerSelectModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'AthenaBannerSelectModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(AthenaBannerSelectModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'AthenaBannerSelectModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.HandlePreviousAction
 // 0x0001 (0x0001 - 0x0000)
@@ -97,6 +100,26 @@ public:
 static_assert(alignof(AthenaBannerSelectModal_C_HandleNextAction) == 0x000001, "Wrong alignment on AthenaBannerSelectModal_C_HandleNextAction");
 static_assert(sizeof(AthenaBannerSelectModal_C_HandleNextAction) == 0x000001, "Wrong size on AthenaBannerSelectModal_C_HandleNextAction");
 static_assert(offsetof(AthenaBannerSelectModal_C_HandleNextAction, Passthrough) == 0x000000, "Member 'AthenaBannerSelectModal_C_HandleNextAction::Passthrough' has a wrong offset!");
+
+// Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.On_BorderTouch_MouseButtonDown_0
+// 0x0220 (0x0220 - 0x0000)
+struct AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0 final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
+};
+static_assert(alignof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0) == 0x000008, "Wrong alignment on AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0");
+static_assert(sizeof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0) == 0x000220, "Wrong size on AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0");
+static_assert(offsetof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0, MyGeometry) == 0x000000, "Member 'AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0::MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0, MouseEvent) == 0x000038, "Member 'AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0::MouseEvent' has a wrong offset!");
+static_assert(offsetof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0, ReturnValue) == 0x0000A8, "Member 'AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0, CallFunc_IsMobileGame_ReturnValue) == 0x000160, "Member 'AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }
 

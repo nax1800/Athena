@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_QuestUpdate.Announce_QuestUpdate_C
-// 0x0028 (0x03B0 - 0x0388)
+// 0x0018 (0x03B0 - 0x0398)
 class AAnnounce_QuestUpdate_C final : public AFortClientAnnouncement
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FDynamicQuestUpdateInfo                QuestUpdateInfo;                                   // 0x0390(0x0020)(Edit, BlueprintVisible, Net, ExposeOnSpawn, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                QuestUpdateInfo;                                   // 0x03A0(0x0010)(Edit, BlueprintVisible, Net, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -40,8 +40,8 @@ public:
 };
 static_assert(alignof(AAnnounce_QuestUpdate_C) == 0x000008, "Wrong alignment on AAnnounce_QuestUpdate_C");
 static_assert(sizeof(AAnnounce_QuestUpdate_C) == 0x0003B0, "Wrong size on AAnnounce_QuestUpdate_C");
-static_assert(offsetof(AAnnounce_QuestUpdate_C, DefaultSceneRoot) == 0x000388, "Member 'AAnnounce_QuestUpdate_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAnnounce_QuestUpdate_C, QuestUpdateInfo) == 0x000390, "Member 'AAnnounce_QuestUpdate_C::QuestUpdateInfo' has a wrong offset!");
+static_assert(offsetof(AAnnounce_QuestUpdate_C, DefaultSceneRoot) == 0x000398, "Member 'AAnnounce_QuestUpdate_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AAnnounce_QuestUpdate_C, QuestUpdateInfo) == 0x0003A0, "Member 'AAnnounce_QuestUpdate_C::QuestUpdateInfo' has a wrong offset!");
 
 }
 

@@ -14,16 +14,16 @@
 namespace SDK::Params
 {
 
-// Function XpReasonFeedItem.XpReasonFeedItem_C.ExecuteUbergraph_XpReasonFeedItem
+// Function XpReasonFeedItem.XpReasonFeedItem_C.PlayPresentEffect
 // 0x0004 (0x0004 - 0x0000)
-struct XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem final
+struct XpReasonFeedItem_C_PlayPresentEffect final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PlaybackSpeed;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem) == 0x000004, "Wrong alignment on XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem");
-static_assert(sizeof(XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem) == 0x000004, "Wrong size on XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem");
-static_assert(offsetof(XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem, EntryPoint) == 0x000000, "Member 'XpReasonFeedItem_C_ExecuteUbergraph_XpReasonFeedItem::EntryPoint' has a wrong offset!");
+static_assert(alignof(XpReasonFeedItem_C_PlayPresentEffect) == 0x000004, "Wrong alignment on XpReasonFeedItem_C_PlayPresentEffect");
+static_assert(sizeof(XpReasonFeedItem_C_PlayPresentEffect) == 0x000004, "Wrong size on XpReasonFeedItem_C_PlayPresentEffect");
+static_assert(offsetof(XpReasonFeedItem_C_PlayPresentEffect, PlaybackSpeed) == 0x000000, "Member 'XpReasonFeedItem_C_PlayPresentEffect::PlaybackSpeed' has a wrong offset!");
 
 // Function XpReasonFeedItem.XpReasonFeedItem_C.SetXpText
 // 0x0018 (0x0018 - 0x0000)

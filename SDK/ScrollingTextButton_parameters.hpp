@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -127,7 +127,7 @@ static_assert(offsetof(ScrollingTextButton_C_PreConstruct, IsDesignTime) == 0x00
 struct ScrollingTextButton_C_Set_Text final
 {
 public:
-	class FText                                   Param_ButtonText;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   ButtonText_0;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -136,7 +136,7 @@ public:
 };
 static_assert(alignof(ScrollingTextButton_C_Set_Text) == 0x000008, "Wrong alignment on ScrollingTextButton_C_Set_Text");
 static_assert(sizeof(ScrollingTextButton_C_Set_Text) == 0x000020, "Wrong size on ScrollingTextButton_C_Set_Text");
-static_assert(offsetof(ScrollingTextButton_C_Set_Text, Param_ButtonText) == 0x000000, "Member 'ScrollingTextButton_C_Set_Text::Param_ButtonText' has a wrong offset!");
+static_assert(offsetof(ScrollingTextButton_C_Set_Text, ButtonText_0) == 0x000000, "Member 'ScrollingTextButton_C_Set_Text::ButtonText_0' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_Set_Text, Temp_byte_Variable) == 0x000018, "Member 'ScrollingTextButton_C_Set_Text::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_Set_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'ScrollingTextButton_C_Set_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_Set_Text, Temp_byte_Variable1) == 0x00001A, "Member 'ScrollingTextButton_C_Set_Text::Temp_byte_Variable1' has a wrong offset!");
@@ -148,11 +148,11 @@ static_assert(offsetof(ScrollingTextButton_C_Set_Text, K2Node_Select_Default) ==
 struct ScrollingTextButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            Param_IconBrush;                                   // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(ScrollingTextButton_C_Set_Icon) == 0x000008, "Wrong alignment on ScrollingTextButton_C_Set_Icon");
 static_assert(sizeof(ScrollingTextButton_C_Set_Icon) == 0x000088, "Wrong size on ScrollingTextButton_C_Set_Icon");
-static_assert(offsetof(ScrollingTextButton_C_Set_Icon, Param_IconBrush) == 0x000000, "Member 'ScrollingTextButton_C_Set_Icon::Param_IconBrush' has a wrong offset!");
+static_assert(offsetof(ScrollingTextButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'ScrollingTextButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.InitializeButton
 // 0x0010 (0x0010 - 0x0000)
@@ -183,14 +183,14 @@ static_assert(offsetof(ScrollingTextButton_C_UpdateTextAndStyle, bUsingGamepad) 
 struct ScrollingTextButton_C_SetControllerStyle final
 {
 public:
-	class UClass*                                 Param_ControllerInputStyle;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ControllerInputStyle_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ScrollingTextButton_C_SetControllerStyle) == 0x000008, "Wrong alignment on ScrollingTextButton_C_SetControllerStyle");
 static_assert(sizeof(ScrollingTextButton_C_SetControllerStyle) == 0x000018, "Wrong size on ScrollingTextButton_C_SetControllerStyle");
-static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, Param_ControllerInputStyle) == 0x000000, "Member 'ScrollingTextButton_C_SetControllerStyle::Param_ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, ControllerInputStyle_0) == 0x000000, "Member 'ScrollingTextButton_C_SetControllerStyle::ControllerInputStyle_0' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_SetControllerStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'ScrollingTextButton_C_SetControllerStyle::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'ScrollingTextButton_C_SetControllerStyle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -232,14 +232,14 @@ static_assert(offsetof(ScrollingTextButton_C_UpdateStyle, UsingGamepad) == 0x000
 struct ScrollingTextButton_C_SetMouseKeyboardStyle final
 {
 public:
-	class UClass*                                 Param_ControllerInputStyle;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ControllerInputStyle_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ScrollingTextButton_C_SetMouseKeyboardStyle) == 0x000008, "Wrong alignment on ScrollingTextButton_C_SetMouseKeyboardStyle");
 static_assert(sizeof(ScrollingTextButton_C_SetMouseKeyboardStyle) == 0x000018, "Wrong size on ScrollingTextButton_C_SetMouseKeyboardStyle");
-static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, Param_ControllerInputStyle) == 0x000000, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::Param_ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, ControllerInputStyle_0) == 0x000000, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::ControllerInputStyle_0' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -264,11 +264,11 @@ static_assert(offsetof(ScrollingTextButton_C_UpdateContentAlignment, K2Node_Dyna
 struct ScrollingTextButton_C_SetContentAlignment final
 {
 public:
-	EHorizontalAlignment                          Param_ContentAlignment;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHorizontalAlignment                          ContentAlignment_0;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ScrollingTextButton_C_SetContentAlignment) == 0x000001, "Wrong alignment on ScrollingTextButton_C_SetContentAlignment");
 static_assert(sizeof(ScrollingTextButton_C_SetContentAlignment) == 0x000001, "Wrong size on ScrollingTextButton_C_SetContentAlignment");
-static_assert(offsetof(ScrollingTextButton_C_SetContentAlignment, Param_ContentAlignment) == 0x000000, "Member 'ScrollingTextButton_C_SetContentAlignment::Param_ContentAlignment' has a wrong offset!");
+static_assert(offsetof(ScrollingTextButton_C_SetContentAlignment, ContentAlignment_0) == 0x000000, "Member 'ScrollingTextButton_C_SetContentAlignment::ContentAlignment_0' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.UpdateTextStyle
 // 0x0008 (0x0008 - 0x0000)

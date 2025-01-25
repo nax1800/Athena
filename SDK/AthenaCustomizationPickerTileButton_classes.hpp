@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C
-// 0x0028 (0x0868 - 0x0840)
+// 0x0030 (0x08F8 - 0x08C8)
 class UAthenaCustomizationPickerTileButton_C final : public UAthenaCustomizationPickerTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x0008)(Transient, DuplicateTransient)
-	class UNormalBangWrapper_C*                   Bang;                                              // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NullItemOverlay;                                   // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        RootWidgetSwitcher;                                // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsSlottedSomewhere;                                // 0x0860(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C8(0x0008)(Transient, DuplicateTransient)
+	class UNormalBangWrapper_C*                   Bang;                                              // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Active;                                      // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NullItemOverlay;                                   // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        RootWidgetSwitcher;                                // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsSlottedSomewhere;                                // 0x08F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaCustomizationPickerTileButton(int32 EntryPoint);
-	void Construct();
-	void OnSelected();
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
+	void BP_OnSelected();
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void UpdateBangState();
 	void MarkCosmeticAsSeen();
 
@@ -47,12 +47,13 @@ public:
 	}
 };
 static_assert(alignof(UAthenaCustomizationPickerTileButton_C) == 0x000008, "Wrong alignment on UAthenaCustomizationPickerTileButton_C");
-static_assert(sizeof(UAthenaCustomizationPickerTileButton_C) == 0x000868, "Wrong size on UAthenaCustomizationPickerTileButton_C");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, UberGraphFrame) == 0x000840, "Member 'UAthenaCustomizationPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, Bang) == 0x000848, "Member 'UAthenaCustomizationPickerTileButton_C::Bang' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, NullItemOverlay) == 0x000850, "Member 'UAthenaCustomizationPickerTileButton_C::NullItemOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, RootWidgetSwitcher) == 0x000858, "Member 'UAthenaCustomizationPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, IsSlottedSomewhere) == 0x000860, "Member 'UAthenaCustomizationPickerTileButton_C::IsSlottedSomewhere' has a wrong offset!");
+static_assert(sizeof(UAthenaCustomizationPickerTileButton_C) == 0x0008F8, "Wrong size on UAthenaCustomizationPickerTileButton_C");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, UberGraphFrame) == 0x0008C8, "Member 'UAthenaCustomizationPickerTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, Bang) == 0x0008D0, "Member 'UAthenaCustomizationPickerTileButton_C::Bang' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, Image_Active) == 0x0008D8, "Member 'UAthenaCustomizationPickerTileButton_C::Image_Active' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, NullItemOverlay) == 0x0008E0, "Member 'UAthenaCustomizationPickerTileButton_C::NullItemOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, RootWidgetSwitcher) == 0x0008E8, "Member 'UAthenaCustomizationPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, IsSlottedSomewhere) == 0x0008F0, "Member 'UAthenaCustomizationPickerTileButton_C::IsSlottedSomewhere' has a wrong offset!");
 
 }
 

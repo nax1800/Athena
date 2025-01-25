@@ -324,9 +324,9 @@ void UPartyFinder_ListItem_ButtonOptions_C::SetupButtons(bool bIsInvite, bool bC
 // Function PartyFinder_ListItem_ButtonOptions.PartyFinder_ListItem_ButtonOptions_C.SetEnableButtons
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIsEnabled                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPartyFinder_ListItem_ButtonOptions_C::SetEnableButtons(bool Param_bIsEnabled)
+void UPartyFinder_ListItem_ButtonOptions_C::SetEnableButtons(bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -335,7 +335,7 @@ void UPartyFinder_ListItem_ButtonOptions_C::SetEnableButtons(bool Param_bIsEnabl
 
 	Params::PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons Parms{};
 
-	Parms.Param_bIsEnabled = Param_bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

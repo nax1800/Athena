@@ -10,24 +10,93 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct Athena_LFG_SuggestedPartyItem_C_PreConstruct final
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PartyFocused__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UAthena_LFG_SuggestedPartyItem_C*       FocusedPartyItem;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_PreConstruct) == 0x000001, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_PreConstruct");
-static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_PreConstruct) == 0x000001, "Wrong size on Athena_LFG_SuggestedPartyItem_C_PreConstruct");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_PreConstruct::IsDesignTime' has a wrong offset!");
+static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature");
+static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong size on Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature, FocusedPartyItem) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature::FocusedPartyItem' has a wrong offset!");
+
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.ExecuteUbergraph_Athena_LFG_SuggestedPartyItem
+// 0x01A0 (0x01A0 - 0x0000)
+struct Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
+	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable4;                               // 0x0070(0x0018)()
+	class FText                                   Temp_text_Variable5;                               // 0x0088(0x0018)()
+	bool                                          Temp_bool_Variable2;                               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A3[0x1];                                       // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D0(0x0040)(HasGetValueTypeHash)
+	class FText                                   K2Node_Select2_Default;                            // 0x0110(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0128(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0168(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0178(0x0008)(NoDestructor)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_IsSelected;                     // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x019A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem) == 0x000008, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem");
+static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem) == 0x0001A0, "Wrong size on Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, EntryPoint) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::EntryPoint' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_int_Variable) == 0x000004, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable) == 0x000008, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable1) == 0x000020, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable2) == 0x000038, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable3) == 0x000050, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable) == 0x000068, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable) == 0x000069, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable1) == 0x00006A, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable1) == 0x00006B, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable4) == 0x000070, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable4' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable5) == 0x000088, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable5' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable2) == 0x0000A0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable2) == 0x0000A1, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable3) == 0x0000A2, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000A4, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_RandomBool_ReturnValue) == 0x0000A8, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select_Default) == 0x0000B0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select1_Default) == 0x0000C8, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeStruct_FormatArgumentData) == 0x0000D0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select2_Default) == 0x000110, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeStruct_FormatArgumentData1) == 0x000128, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeArray_Array) == 0x000168, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Event_InFocusEvent) == 0x000178, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Event_InFocusEvent' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_Format_ReturnValue) == 0x000180, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Event_IsDesignTime) == 0x000198, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_CustomEvent_IsSelected) == 0x000199, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_CustomEvent_IsSelected' has a wrong offset!");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select3_Default) == 0x00019A, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select3_Default' has a wrong offset!");
 
 // Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.UpdatePartyItemSelection
 // 0x0001 (0x0001 - 0x0000)
@@ -40,85 +109,16 @@ static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection) 
 static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection) == 0x000001, "Wrong size on Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection");
 static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection, IsSelected) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection::IsSelected' has a wrong offset!");
 
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.ExecuteUbergraph_Athena_LFG_SuggestedPartyItem
-// 0x01A0 (0x01A0 - 0x0000)
-struct Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem final
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct Athena_LFG_SuggestedPartyItem_C_PreConstruct final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0050(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable1234;                            // 0x0070(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0088(0x0018)()
-	bool                                          Temp_bool_Variable12;                              // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A3[0x1];                                       // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D0(0x0040)(HasGetValueTypeHash)
-	class FText                                   K2Node_Select12_Default;                           // 0x0110(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0128(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0168(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0178(0x0008)(NoDestructor)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_IsSelected;                     // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select123_Default;                          // 0x019A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem) == 0x000008, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem");
-static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem) == 0x0001A0, "Wrong size on Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, EntryPoint) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_int_Variable) == 0x000004, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable) == 0x000008, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable1) == 0x000020, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable12) == 0x000038, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable123) == 0x000050, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable) == 0x000068, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable) == 0x000069, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable1) == 0x00006A, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable1) == 0x00006B, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable1234) == 0x000070, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable1234' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_text_Variable12345) == 0x000088, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_bool_Variable12) == 0x0000A0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable12) == 0x0000A1, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, Temp_byte_Variable123) == 0x0000A2, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000A4, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_RandomBool_ReturnValue) == 0x0000A8, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select_Default) == 0x0000B0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select1_Default) == 0x0000C8, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeStruct_FormatArgumentData) == 0x0000D0, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select12_Default) == 0x000110, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeStruct_FormatArgumentData1) == 0x000128, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_MakeArray_Array) == 0x000168, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Event_InFocusEvent) == 0x000178, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, CallFunc_Format_ReturnValue) == 0x000180, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Event_IsDesignTime) == 0x000198, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_CustomEvent_IsSelected) == 0x000199, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_CustomEvent_IsSelected' has a wrong offset!");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem, K2Node_Select123_Default) == 0x00019A, "Member 'Athena_LFG_SuggestedPartyItem_C_ExecuteUbergraph_Athena_LFG_SuggestedPartyItem::K2Node_Select123_Default' has a wrong offset!");
-
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PartyFocused__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature final
-{
-public:
-	class UAthena_LFG_SuggestedPartyItem_C*       FocusedPartyItem;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature");
-static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature) == 0x000008, "Wrong size on Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature");
-static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature, FocusedPartyItem) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature::FocusedPartyItem' has a wrong offset!");
+static_assert(alignof(Athena_LFG_SuggestedPartyItem_C_PreConstruct) == 0x000001, "Wrong alignment on Athena_LFG_SuggestedPartyItem_C_PreConstruct");
+static_assert(sizeof(Athena_LFG_SuggestedPartyItem_C_PreConstruct) == 0x000001, "Wrong size on Athena_LFG_SuggestedPartyItem_C_PreConstruct");
+static_assert(offsetof(Athena_LFG_SuggestedPartyItem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Athena_LFG_SuggestedPartyItem_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)

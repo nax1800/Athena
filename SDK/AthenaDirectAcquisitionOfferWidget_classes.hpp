@@ -11,9 +11,10 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "GameSubCatalog_structs.hpp"
 
 
@@ -21,64 +22,69 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaDirectAcquisitionOfferWidget.AthenaDirectAcquisitionOfferWidget_C
-// 0x00F8 (0x0918 - 0x0820)
+// 0x01D0 (0x0A78 - 0x08A8)
 class UAthenaDirectAcquisitionOfferWidget_C final : public UFortDirectAcquisitionOfferWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Hover;                                             // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitionOffer_SpecialBanner_C* AthenaDirectAcquisitionOffer_SpecialBanner;        // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BattlePassGlow;                                    // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderRarityColored;                               // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BottomBorder;                                      // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Check;                                             // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextBlockOfferRemainingText;                 // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Currency1ItemImage;                                // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 CustomBadge;                                       // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               CustomBadgeOverlay;                                // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HighlightGlow;                                     // 0x0878(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 I_StrikeThrough;                                   // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LockImage;                                         // 0x0888(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 MainImage;                                         // 0x0890(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLoadGuard*                       MainImageLoadGuard;                                // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       NameText;                                          // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               O_Sale_PreviousPrice;                              // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        OwnedSwitcher;                                     // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       OwnedText;                                         // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Sale_PreviousPrice;                                // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SBPriceBox;                                        // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SBScaleDownArt;                                    // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SBTileSize;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ShortDescriptionText;                              // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextOfferDisplayPrice;                             // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBHeaderAndDescription;                            // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          LargeTile;                                         // 0x08F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_8F9[0x7];                                      // 0x08F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MID_StrikeThrough;                                 // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           Carousel_Timer_Handle;                             // 0x0908(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          MTXStyle;                                          // 0x0910(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       CarouselTransition;                                // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Hover;                                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                AnimatedBarSpacer;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          AnimatedTimerBox;                                  // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitionOffer_SpecialBanner_C* AthenaDirectAcquisitionOffer_SpecialBanner;        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BattlePassGlow;                                    // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderRarityColored;                               // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BottomBorder;                                      // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Check;                                             // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextBlockOfferRemainingText;                 // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Currency1ItemImage;                                // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CustomBadge;                                       // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               CustomBadgeOverlay;                                // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HighlightGlow;                                     // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 I_StrikeThrough;                                   // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LockImage;                                         // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 MainImage;                                         // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLoadGuard*                       MainImageLoadGuard;                                // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       NameText;                                          // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               O_Sale_PreviousPrice;                              // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        OwnedSwitcher;                                     // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       OwnedText;                                         // 0x0958(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Sale_PreviousPrice;                                // 0x0960(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBPriceBox;                                        // 0x0968(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBScaleDownArt;                                    // 0x0970(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SBTileSize;                                        // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ShortDescriptionText;                              // 0x0980(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextOfferDisplayPrice;                             // 0x0988(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VBHeaderAndDescription;                            // 0x0990(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          LargeTile;                                         // 0x0998(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_999[0x7];                                      // 0x0999(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               MID_StrikeThrough;                                 // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          MTXStyle;                                          // 0x09A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_9A9[0x7];                                      // 0x09A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               MID_CarouselTimerProgressBar;                      // 0x09B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            Carousel_NextItemImage;                            // 0x09B8(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         CarouselLoopTimeRemaining;                         // 0x0A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CarouselLoopTimer;                                 // 0x0A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              LargeSoftImage;                                    // 0x0A48(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class UTexture2D*                             Carousel_NextLargeTexture;                         // 0x0A70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaDirectAcquisitionOfferWidget(int32 EntryPoint);
-	void OfferCarousel();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void PlayAnim_CarouselTransition();
+	void BP_OnEntryReleased();
+	void AnimEvent_Carousel_ImageSwap();
 	void OnOfferAdded();
 	void Construct();
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void OnUpdateStatus();
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void HandleOfferPurchaseComplete(bool bSuccess);
-	void OnClicked();
+	void BP_OnClicked();
 	void OnOfferSet();
-	void Reset();
-	void ToggleExpansion();
-	void SetSelected(bool bSelected);
-	void SetIndexInList(int32 InIndexInList);
-	void SetExpanded(bool bExpanded);
-	void RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback);
-	void Private_OnExpanderArrowShiftClicked();
-	void OnReleaseToPool();
-	void OnAcquireFromPool();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void OfferSet();
 	void UpdateAvailability();
 	void UpdateStyle();
@@ -93,11 +99,11 @@ public:
 	void UpdateStyle_Border();
 	void UpdateStyle_Sizing();
 	void UpdateBadge();
+	void GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount);
+	bool HasGroupedOffers();
+	void TryToResetCarouselTimer();
 
-	class UObject* GetData() const;
-	bool IsItemExpanded() const;
-	int32 DoesItemHaveChildren() const;
-	int32 GetIndentLevel() const;
+	class UObject* GetListItemObject() const;
 
 public:
 	static class UClass* StaticClass()
@@ -110,38 +116,46 @@ public:
 	}
 };
 static_assert(alignof(UAthenaDirectAcquisitionOfferWidget_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOfferWidget_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOfferWidget_C) == 0x000918, "Wrong size on UAthenaDirectAcquisitionOfferWidget_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, UberGraphFrame) == 0x000820, "Member 'UAthenaDirectAcquisitionOfferWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Hover) == 0x000828, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Hover' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, AthenaDirectAcquisitionOffer_SpecialBanner) == 0x000830, "Member 'UAthenaDirectAcquisitionOfferWidget_C::AthenaDirectAcquisitionOffer_SpecialBanner' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BattlePassGlow) == 0x000838, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BattlePassGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BorderRarityColored) == 0x000840, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BorderRarityColored' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BottomBorder) == 0x000848, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BottomBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Check) == 0x000850, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Check' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CommonTextBlockOfferRemainingText) == 0x000858, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CommonTextBlockOfferRemainingText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Currency1ItemImage) == 0x000860, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Currency1ItemImage' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CustomBadge) == 0x000868, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CustomBadge' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CustomBadgeOverlay) == 0x000870, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CustomBadgeOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, HighlightGlow) == 0x000878, "Member 'UAthenaDirectAcquisitionOfferWidget_C::HighlightGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, I_StrikeThrough) == 0x000880, "Member 'UAthenaDirectAcquisitionOfferWidget_C::I_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, LockImage) == 0x000888, "Member 'UAthenaDirectAcquisitionOfferWidget_C::LockImage' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MainImage) == 0x000890, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MainImage' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MainImageLoadGuard) == 0x000898, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MainImageLoadGuard' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, NameText) == 0x0008A0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::NameText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, O_Sale_PreviousPrice) == 0x0008A8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::O_Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, OwnedSwitcher) == 0x0008B0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::OwnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, OwnedText) == 0x0008B8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::OwnedText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Sale_PreviousPrice) == 0x0008C0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBPriceBox) == 0x0008C8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBPriceBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBScaleDownArt) == 0x0008D0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBScaleDownArt' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBTileSize) == 0x0008D8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBTileSize' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, ShortDescriptionText) == 0x0008E0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::ShortDescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, TextOfferDisplayPrice) == 0x0008E8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, VBHeaderAndDescription) == 0x0008F0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::VBHeaderAndDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, LargeTile) == 0x0008F8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::LargeTile' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MID_StrikeThrough) == 0x000900, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MID_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Carousel_Timer_Handle) == 0x000908, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Carousel_Timer_Handle' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MTXStyle) == 0x000910, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MTXStyle' has a wrong offset!");
+static_assert(sizeof(UAthenaDirectAcquisitionOfferWidget_C) == 0x000A78, "Wrong size on UAthenaDirectAcquisitionOfferWidget_C");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, UberGraphFrame) == 0x0008A8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CarouselTransition) == 0x0008B0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CarouselTransition' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Hover) == 0x0008B8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Hover' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, AnimatedBarSpacer) == 0x0008C0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::AnimatedBarSpacer' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, AnimatedTimerBox) == 0x0008C8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::AnimatedTimerBox' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, AthenaDirectAcquisitionOffer_SpecialBanner) == 0x0008D0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::AthenaDirectAcquisitionOffer_SpecialBanner' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BattlePassGlow) == 0x0008D8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BattlePassGlow' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BorderRarityColored) == 0x0008E0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BorderRarityColored' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, BottomBorder) == 0x0008E8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::BottomBorder' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Check) == 0x0008F0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Check' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CommonTextBlockOfferRemainingText) == 0x0008F8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CommonTextBlockOfferRemainingText' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Currency1ItemImage) == 0x000900, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Currency1ItemImage' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CustomBadge) == 0x000908, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CustomBadge' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CustomBadgeOverlay) == 0x000910, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CustomBadgeOverlay' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, HighlightGlow) == 0x000918, "Member 'UAthenaDirectAcquisitionOfferWidget_C::HighlightGlow' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, I_StrikeThrough) == 0x000920, "Member 'UAthenaDirectAcquisitionOfferWidget_C::I_StrikeThrough' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, LockImage) == 0x000928, "Member 'UAthenaDirectAcquisitionOfferWidget_C::LockImage' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MainImage) == 0x000930, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MainImage' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MainImageLoadGuard) == 0x000938, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MainImageLoadGuard' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, NameText) == 0x000940, "Member 'UAthenaDirectAcquisitionOfferWidget_C::NameText' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, O_Sale_PreviousPrice) == 0x000948, "Member 'UAthenaDirectAcquisitionOfferWidget_C::O_Sale_PreviousPrice' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, OwnedSwitcher) == 0x000950, "Member 'UAthenaDirectAcquisitionOfferWidget_C::OwnedSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, OwnedText) == 0x000958, "Member 'UAthenaDirectAcquisitionOfferWidget_C::OwnedText' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Sale_PreviousPrice) == 0x000960, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Sale_PreviousPrice' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBPriceBox) == 0x000968, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBPriceBox' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBScaleDownArt) == 0x000970, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBScaleDownArt' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, SBTileSize) == 0x000978, "Member 'UAthenaDirectAcquisitionOfferWidget_C::SBTileSize' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, ShortDescriptionText) == 0x000980, "Member 'UAthenaDirectAcquisitionOfferWidget_C::ShortDescriptionText' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, TextOfferDisplayPrice) == 0x000988, "Member 'UAthenaDirectAcquisitionOfferWidget_C::TextOfferDisplayPrice' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, VBHeaderAndDescription) == 0x000990, "Member 'UAthenaDirectAcquisitionOfferWidget_C::VBHeaderAndDescription' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, LargeTile) == 0x000998, "Member 'UAthenaDirectAcquisitionOfferWidget_C::LargeTile' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MID_StrikeThrough) == 0x0009A0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MID_StrikeThrough' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MTXStyle) == 0x0009A8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MTXStyle' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, MID_CarouselTimerProgressBar) == 0x0009B0, "Member 'UAthenaDirectAcquisitionOfferWidget_C::MID_CarouselTimerProgressBar' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Carousel_NextItemImage) == 0x0009B8, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Carousel_NextItemImage' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CarouselLoopTimeRemaining) == 0x000A40, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CarouselLoopTimeRemaining' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, CarouselLoopTimer) == 0x000A44, "Member 'UAthenaDirectAcquisitionOfferWidget_C::CarouselLoopTimer' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, LargeSoftImage) == 0x000A48, "Member 'UAthenaDirectAcquisitionOfferWidget_C::LargeSoftImage' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferWidget_C, Carousel_NextLargeTexture) == 0x000A70, "Member 'UAthenaDirectAcquisitionOfferWidget_C::Carousel_NextLargeTexture' has a wrong offset!");
 
 }
 

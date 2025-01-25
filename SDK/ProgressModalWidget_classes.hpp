@@ -11,28 +11,28 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ProgressModalWidget.ProgressModalWidget_C
-// 0x00D8 (0x04C8 - 0x03F0)
+// 0x00D8 (0x0400 - 0x0328)
 class UProgressModalWidget_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class ULightbox_C*                            Lightbox;                                          // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressWidget_C*                      ProgressWidget;                                    // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Title;                                             // 0x0408(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                   Description;                                       // 0x0420(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            Icon;                                              // 0x0438(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                          bIntroOutrEnabled;                                 // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bAutoInitialize;                                   // 0x04C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bFocusSelf;                                        // 0x04C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          bConsumeAnalogInput;                               // 0x04C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class ULightbox_C*                            Lightbox;                                          // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressWidget_C*                      ProgressWidget;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Title;                                             // 0x0340(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                   Description;                                       // 0x0358(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            Icon;                                              // 0x0370(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                          bIntroOutrEnabled;                                 // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bAutoInitialize;                                   // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bFocusSelf;                                        // 0x03FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          bConsumeAnalogInput;                               // 0x03FB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_ProgressModalWidget(int32 EntryPoint);
@@ -44,9 +44,9 @@ public:
 	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
 	void OnBeginIntro();
 	void OnBeginOutro();
-	void SetDescription(const class FText& Param_Description);
-	void SetIcon(const struct FSlateBrush& Param_Icon);
-	void SetTitle(const class FText& Param_Title);
+	void SetDescription(const class FText& Description_0);
+	void SetIcon(const struct FSlateBrush& Icon_0);
+	void SetTitle(const class FText& Title_0);
 
 public:
 	static class UClass* StaticClass()
@@ -59,17 +59,17 @@ public:
 	}
 };
 static_assert(alignof(UProgressModalWidget_C) == 0x000008, "Wrong alignment on UProgressModalWidget_C");
-static_assert(sizeof(UProgressModalWidget_C) == 0x0004C8, "Wrong size on UProgressModalWidget_C");
-static_assert(offsetof(UProgressModalWidget_C, UberGraphFrame) == 0x0003F0, "Member 'UProgressModalWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Lightbox) == 0x0003F8, "Member 'UProgressModalWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, ProgressWidget) == 0x000400, "Member 'UProgressModalWidget_C::ProgressWidget' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Title) == 0x000408, "Member 'UProgressModalWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Description) == 0x000420, "Member 'UProgressModalWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Icon) == 0x000438, "Member 'UProgressModalWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bIntroOutrEnabled) == 0x0004C0, "Member 'UProgressModalWidget_C::bIntroOutrEnabled' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bAutoInitialize) == 0x0004C1, "Member 'UProgressModalWidget_C::bAutoInitialize' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bFocusSelf) == 0x0004C2, "Member 'UProgressModalWidget_C::bFocusSelf' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bConsumeAnalogInput) == 0x0004C3, "Member 'UProgressModalWidget_C::bConsumeAnalogInput' has a wrong offset!");
+static_assert(sizeof(UProgressModalWidget_C) == 0x000400, "Wrong size on UProgressModalWidget_C");
+static_assert(offsetof(UProgressModalWidget_C, UberGraphFrame) == 0x000328, "Member 'UProgressModalWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, Lightbox) == 0x000330, "Member 'UProgressModalWidget_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, ProgressWidget) == 0x000338, "Member 'UProgressModalWidget_C::ProgressWidget' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, Title) == 0x000340, "Member 'UProgressModalWidget_C::Title' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, Description) == 0x000358, "Member 'UProgressModalWidget_C::Description' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, Icon) == 0x000370, "Member 'UProgressModalWidget_C::Icon' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, bIntroOutrEnabled) == 0x0003F8, "Member 'UProgressModalWidget_C::bIntroOutrEnabled' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, bAutoInitialize) == 0x0003F9, "Member 'UProgressModalWidget_C::bAutoInitialize' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, bFocusSelf) == 0x0003FA, "Member 'UProgressModalWidget_C::bFocusSelf' has a wrong offset!");
+static_assert(offsetof(UProgressModalWidget_C, bConsumeAnalogInput) == 0x0003FB, "Member 'UProgressModalWidget_C::bConsumeAnalogInput' has a wrong offset!");
 
 }
 

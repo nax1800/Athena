@@ -111,6 +111,20 @@ void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int32 EntryPoint)
 }
 
 
+// Function RewardsIcon.RewardsIcon_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void URewardsIcon_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardsIcon_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function RewardsIcon.RewardsIcon_C.whiteFadeOut
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -565,6 +579,20 @@ void URewardsIcon_C::PopulateFromGiftBoxData()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("RewardsIcon_C", "PopulateFromGiftBoxData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function RewardsIcon.RewardsIcon_C.PopulateFromItemCacheData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void URewardsIcon_C::PopulateFromItemCacheData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RewardsIcon_C", "PopulateFromItemCacheData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

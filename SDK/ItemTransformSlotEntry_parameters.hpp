@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,7 +27,7 @@ public:
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -45,7 +45,7 @@ static_assert(sizeof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlot
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, EntryPoint) == 0x000000, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, K2Node_ComponentBoundEvent_Button12) == 0x000018, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, K2Node_ComponentBoundEvent_Button2) == 0x000018, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000020, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, K2Node_Event_IsDesignTime) == 0x000021, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, K2Node_ComponentBoundEvent_Button1) == 0x000028, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");

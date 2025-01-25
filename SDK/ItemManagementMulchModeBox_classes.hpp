@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchModeBox.ItemManagementMulchModeBox_C
-// 0x0010 (0x0420 - 0x0410)
+// 0x0010 (0x0350 - 0x0340)
 class UItemManagementMulchModeBox_C final : public UFortItemMulchModeActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
-	class UItemWindow_C*                          Recycle_Info_Window;                               // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(Transient, DuplicateTransient)
+	class UItemWindow_C*                          Recycle_Info_Window;                               // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemManagementMulchModeBox(int32 EntryPoint);
@@ -49,9 +49,9 @@ public:
 	}
 };
 static_assert(alignof(UItemManagementMulchModeBox_C) == 0x000008, "Wrong alignment on UItemManagementMulchModeBox_C");
-static_assert(sizeof(UItemManagementMulchModeBox_C) == 0x000420, "Wrong size on UItemManagementMulchModeBox_C");
-static_assert(offsetof(UItemManagementMulchModeBox_C, UberGraphFrame) == 0x000410, "Member 'UItemManagementMulchModeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchModeBox_C, Recycle_Info_Window) == 0x000418, "Member 'UItemManagementMulchModeBox_C::Recycle_Info_Window' has a wrong offset!");
+static_assert(sizeof(UItemManagementMulchModeBox_C) == 0x000350, "Wrong size on UItemManagementMulchModeBox_C");
+static_assert(offsetof(UItemManagementMulchModeBox_C, UberGraphFrame) == 0x000340, "Member 'UItemManagementMulchModeBox_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemManagementMulchModeBox_C, Recycle_Info_Window) == 0x000348, "Member 'UItemManagementMulchModeBox_C::Recycle_Info_Window' has a wrong offset!");
 
 }
 

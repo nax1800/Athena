@@ -52,21 +52,25 @@ static_assert(offsetof(HordeWaveModifiersWidget_C_OnModifiersAdded, CallFunc_Cre
 static_assert(offsetof(HordeWaveModifiersWidget_C_OnModifiersAdded, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'HordeWaveModifiersWidget_C_OnModifiersAdded::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.PresentNextModifier
-// 0x0018 (0x0018 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct HordeWaveModifiersWidget_C_PresentNextModifier final
 {
 public:
-	class UHordeWaveModifiersTile_C*              CallFunc_Array_Get_Item;                           // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHordeWaveModifiersTile_C*              CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HordeWaveModifiersWidget_C_PresentNextModifier) == 0x000008, "Wrong alignment on HordeWaveModifiersWidget_C_PresentNextModifier");
-static_assert(sizeof(HordeWaveModifiersWidget_C_PresentNextModifier) == 0x000018, "Wrong size on HordeWaveModifiersWidget_C_PresentNextModifier");
-static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_Get_Item) == 0x000000, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000008, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000014, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(sizeof(HordeWaveModifiersWidget_C_PresentNextModifier) == 0x000028, "Wrong size on HordeWaveModifiersWidget_C_PresentNextModifier");
+static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, Temp_int_Variable) == 0x000000, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_Get_Item) == 0x000008, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000010, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000018, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HordeWaveModifiersWidget_C_PresentNextModifier, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'HordeWaveModifiersWidget_C_PresentNextModifier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

@@ -51,49 +51,41 @@ void UHelpListItem_C::ExecuteUbergraph_HelpListItem(int32 EntryPoint)
 }
 
 
-// Function HelpListItem.HelpListItem_C.OnHelpItemSet
-// (Event, Protected, BlueprintEvent)
-
-void UHelpListItem_C::OnHelpItemSet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HelpListItem_C", "OnHelpItemSet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HelpListItem.HelpListItem_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UHelpListItem_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HelpListItem_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HelpListItem.HelpListItem_C.ExpansionChanged
+// Function HelpListItem.HelpListItem_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bExpanded                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHelpListItem_C::ExpansionChanged(bool bExpanded)
+void UHelpListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HelpListItem_C", "ExpansionChanged");
+		Func = Class->GetFunction("HelpListItem_C", "BP_OnItemExpansionChanged");
 
-	Params::HelpListItem_C_ExpansionChanged Parms{};
+	Params::HelpListItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.bExpanded = bExpanded;
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HelpListItem.HelpListItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHelpListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HelpListItem_C", "OnListItemObjectSet");
+
+	Params::HelpListItem_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

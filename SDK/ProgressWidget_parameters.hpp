@@ -22,22 +22,22 @@ namespace SDK::Params
 struct ProgressWidget_C_SetTitle final
 {
 public:
-	class FText                                   Param_Title;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Title_0;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(ProgressWidget_C_SetTitle) == 0x000008, "Wrong alignment on ProgressWidget_C_SetTitle");
 static_assert(sizeof(ProgressWidget_C_SetTitle) == 0x000018, "Wrong size on ProgressWidget_C_SetTitle");
-static_assert(offsetof(ProgressWidget_C_SetTitle, Param_Title) == 0x000000, "Member 'ProgressWidget_C_SetTitle::Param_Title' has a wrong offset!");
+static_assert(offsetof(ProgressWidget_C_SetTitle, Title_0) == 0x000000, "Member 'ProgressWidget_C_SetTitle::Title_0' has a wrong offset!");
 
 // Function ProgressWidget.ProgressWidget_C.SetDescription
 // 0x0018 (0x0018 - 0x0000)
 struct ProgressWidget_C_SetDescription final
 {
 public:
-	class FText                                   Param_Description;                                 // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Description_0;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(ProgressWidget_C_SetDescription) == 0x000008, "Wrong alignment on ProgressWidget_C_SetDescription");
 static_assert(sizeof(ProgressWidget_C_SetDescription) == 0x000018, "Wrong size on ProgressWidget_C_SetDescription");
-static_assert(offsetof(ProgressWidget_C_SetDescription, Param_Description) == 0x000000, "Member 'ProgressWidget_C_SetDescription::Param_Description' has a wrong offset!");
+static_assert(offsetof(ProgressWidget_C_SetDescription, Description_0) == 0x000000, "Member 'ProgressWidget_C_SetDescription::Description_0' has a wrong offset!");
 
 // Function ProgressWidget.ProgressWidget_C.SetIcon
 // 0x0090 (0x0090 - 0x0000)

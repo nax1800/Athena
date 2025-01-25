@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaSpectatorScoreboardRowWidget.AthenaSpectatorScoreboardRowWidget_C
-// 0x0040 (0x0858 - 0x0818)
+// 0x0040 (0x08E0 - 0x08A0)
 class UAthenaSpectatorScoreboardRowWidget_C final : public UAthenaSpectatorScoreboardEntryWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0818(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       Kills;                                             // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RecordingPlayerIcon;                               // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          ScoreboardStateBorder;                             // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SpectatorTargetIcon;                               // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          TeamColorBorder;                                   // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TeamNumber;                                        // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       User;                                              // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       Kills;                                             // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RecordingPlayerIcon;                               // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          ScoreboardStateBorder;                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SpectatorTargetIcon;                               // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          TeamColorBorder;                                   // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TeamNumber;                                        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       User;                                              // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaSpectatorScoreboardRowWidget(int32 EntryPoint);
@@ -48,15 +48,15 @@ public:
 	}
 };
 static_assert(alignof(UAthenaSpectatorScoreboardRowWidget_C) == 0x000008, "Wrong alignment on UAthenaSpectatorScoreboardRowWidget_C");
-static_assert(sizeof(UAthenaSpectatorScoreboardRowWidget_C) == 0x000858, "Wrong size on UAthenaSpectatorScoreboardRowWidget_C");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, UberGraphFrame) == 0x000818, "Member 'UAthenaSpectatorScoreboardRowWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, Kills) == 0x000820, "Member 'UAthenaSpectatorScoreboardRowWidget_C::Kills' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, RecordingPlayerIcon) == 0x000828, "Member 'UAthenaSpectatorScoreboardRowWidget_C::RecordingPlayerIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, ScoreboardStateBorder) == 0x000830, "Member 'UAthenaSpectatorScoreboardRowWidget_C::ScoreboardStateBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, SpectatorTargetIcon) == 0x000838, "Member 'UAthenaSpectatorScoreboardRowWidget_C::SpectatorTargetIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, TeamColorBorder) == 0x000840, "Member 'UAthenaSpectatorScoreboardRowWidget_C::TeamColorBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, TeamNumber) == 0x000848, "Member 'UAthenaSpectatorScoreboardRowWidget_C::TeamNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, User) == 0x000850, "Member 'UAthenaSpectatorScoreboardRowWidget_C::User' has a wrong offset!");
+static_assert(sizeof(UAthenaSpectatorScoreboardRowWidget_C) == 0x0008E0, "Wrong size on UAthenaSpectatorScoreboardRowWidget_C");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, UberGraphFrame) == 0x0008A0, "Member 'UAthenaSpectatorScoreboardRowWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, Kills) == 0x0008A8, "Member 'UAthenaSpectatorScoreboardRowWidget_C::Kills' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, RecordingPlayerIcon) == 0x0008B0, "Member 'UAthenaSpectatorScoreboardRowWidget_C::RecordingPlayerIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, ScoreboardStateBorder) == 0x0008B8, "Member 'UAthenaSpectatorScoreboardRowWidget_C::ScoreboardStateBorder' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, SpectatorTargetIcon) == 0x0008C0, "Member 'UAthenaSpectatorScoreboardRowWidget_C::SpectatorTargetIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, TeamColorBorder) == 0x0008C8, "Member 'UAthenaSpectatorScoreboardRowWidget_C::TeamColorBorder' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, TeamNumber) == 0x0008D0, "Member 'UAthenaSpectatorScoreboardRowWidget_C::TeamNumber' has a wrong offset!");
+static_assert(offsetof(UAthenaSpectatorScoreboardRowWidget_C, User) == 0x0008D8, "Member 'UAthenaSpectatorScoreboardRowWidget_C::User' has a wrong offset!");
 
 }
 

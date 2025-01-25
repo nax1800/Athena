@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Pistol_PostApocalyptic_Athena.B_Pistol_PostApocalyptic_Athena_C
-// 0x0000 (0x0E58 - 0x0E58)
+// 0x0000 (0x0F70 - 0x0F70)
 class AB_Pistol_PostApocalyptic_Athena_C final : public AB_Pistol_Auto_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AB_Pistol_PostApocalyptic_Athena_C) == 0x000008, "Wrong alignment on AB_Pistol_PostApocalyptic_Athena_C");
-static_assert(sizeof(AB_Pistol_PostApocalyptic_Athena_C) == 0x000E58, "Wrong size on AB_Pistol_PostApocalyptic_Athena_C");
+static_assert(sizeof(AB_Pistol_PostApocalyptic_Athena_C) == 0x000F70, "Wrong size on AB_Pistol_PostApocalyptic_Athena_C");
 
 }
 

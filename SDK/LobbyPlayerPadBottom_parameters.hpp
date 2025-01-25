@@ -10,51 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.Refresh
-// 0x00A8 (0x00A8 - 0x0000)
-struct LobbyPlayerPadBottom_C_Refresh final
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.ExecuteUbergraph_LobbyPlayerPadBottom
+// 0x0038 (0x0038 - 0x0000)
+struct LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom final
 {
 public:
-	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTeamMemberFriend_ReturnValue;           // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsLocalPlayersUniqueID_ReturnValue;       // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue1;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyPlayerPadBottom_C_Refresh) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_Refresh");
-static_assert(sizeof(LobbyPlayerPadBottom_C_Refresh) == 0x0000A8, "Wrong size on LobbyPlayerPadBottom_C_Refresh");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_IsValidNetID_ReturnValue) == 0x000000, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetSubGame_ReturnValue) == 0x000010, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000058, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeArray_Array) == 0x000060, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x000070, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_Format_ReturnValue) == 0x000078, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetContext_ReturnValue1) == 0x000090, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetContext_ReturnValue12) == 0x000098, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_IsTeamMemberFriend_ReturnValue) == 0x0000A0, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_IsTeamMemberFriend_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_IsLocalPlayersUniqueID_ReturnValue) == 0x0000A1, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_IsLocalPlayersUniqueID_ReturnValue' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom");
+static_assert(sizeof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom) == 0x000038, "Wrong size on LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom");
+static_assert(offsetof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom, EntryPoint) == 0x000000, "Member 'LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom::EntryPoint' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000018, "Member 'LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom, CallFunc_GetRuntimeOptions_ReturnValue1) == 0x000030, "Member 'LobbyPlayerPadBottom_C_ExecuteUbergraph_LobbyPlayerPadBottom::CallFunc_GetRuntimeOptions_ReturnValue1' has a wrong offset!");
 
 // Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.Set Team Member Info
 // 0x01F8 (0x01F8 - 0x0000)
@@ -66,6 +48,160 @@ public:
 static_assert(alignof(LobbyPlayerPadBottom_C_Set_Team_Member_Info) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_Set_Team_Member_Info");
 static_assert(sizeof(LobbyPlayerPadBottom_C_Set_Team_Member_Info) == 0x0001F8, "Wrong size on LobbyPlayerPadBottom_C_Set_Team_Member_Info");
 static_assert(offsetof(LobbyPlayerPadBottom_C_Set_Team_Member_Info, New_Team_Member_Info) == 0x000000, "Member 'LobbyPlayerPadBottom_C_Set_Team_Member_Info::New_Team_Member_Info' has a wrong offset!");
+
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.Refresh
+// 0x0160 (0x0160 - 0x0000)
+struct LobbyPlayerPadBottom_C_Refresh final
+{
+public:
+	int32                                         BonusXPValue;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBattlePassInfo_HasBattlePass;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetBonusXPValue_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost1; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost1; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBattlePassInfo_HasBattlePass1;         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0080(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ZeroConstructor, ReferenceParm)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
+	bool                                          Temp_bool_Variable2;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00F8(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0138(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0148(0x0018)()
+};
+static_assert(alignof(LobbyPlayerPadBottom_C_Refresh) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_Refresh");
+static_assert(sizeof(LobbyPlayerPadBottom_C_Refresh) == 0x000160, "Wrong size on LobbyPlayerPadBottom_C_Refresh");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, BonusXPValue) == 0x000000, "Member 'LobbyPlayerPadBottom_C_Refresh::BonusXPValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_bool_Variable) == 0x000004, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable) == 0x000005, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable1) == 0x000006, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_bool_Variable1) == 0x000007, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable2) == 0x000008, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable3) == 0x000009, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetSubGame_ReturnValue) == 0x000018, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_Greater_IntInt_ReturnValue) == 0x00001A, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable4) == 0x00001B, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x00001C, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost) == 0x000020, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost) == 0x000024, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_HasBattlePass) == 0x000028, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_HasBattlePass' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_Greater_IntInt_ReturnValue1) == 0x000029, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_BooleanOR_ReturnValue) == 0x00002A, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_Select_Default) == 0x00002B, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_Select1_Default) == 0x00002C, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBonusXPValue_ReturnValue) == 0x000030, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBonusXPValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost1) == 0x000034, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_BattlePassSelfXpBoost1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost1) == 0x000038, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_BattlePassFriendXpBoost1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_GetBattlePassInfo_HasBattlePass1) == 0x00003C, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_GetBattlePassInfo_HasBattlePass1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeStruct_FormatArgumentData1) == 0x000080, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeArray_Array) == 0x0000C0, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_byte_Variable5) == 0x0000D0, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_Format_ReturnValue) == 0x0000D8, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, Temp_bool_Variable2) == 0x0000F0, "Member 'LobbyPlayerPadBottom_C_Refresh::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_Select2_Default) == 0x0000F1, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeStruct_FormatArgumentData2) == 0x0000F8, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, K2Node_MakeArray_Array1) == 0x000138, "Member 'LobbyPlayerPadBottom_C_Refresh::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_Refresh, CallFunc_Format_ReturnValue1) == 0x000148, "Member 'LobbyPlayerPadBottom_C_Refresh::CallFunc_Format_ReturnValue1' has a wrong offset!");
+
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.GetBattlePassInfo
+// 0x000C (0x000C - 0x0000)
+struct LobbyPlayerPadBottom_C_GetBattlePassInfo final
+{
+public:
+	int32                                         BattlePassSelfXpBoost;                             // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BattlePassFriendXpBoost;                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasBattlePass;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadBottom_C_GetBattlePassInfo) == 0x000004, "Wrong alignment on LobbyPlayerPadBottom_C_GetBattlePassInfo");
+static_assert(sizeof(LobbyPlayerPadBottom_C_GetBattlePassInfo) == 0x00000C, "Wrong size on LobbyPlayerPadBottom_C_GetBattlePassInfo");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBattlePassInfo, BattlePassSelfXpBoost) == 0x000000, "Member 'LobbyPlayerPadBottom_C_GetBattlePassInfo::BattlePassSelfXpBoost' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBattlePassInfo, BattlePassFriendXpBoost) == 0x000004, "Member 'LobbyPlayerPadBottom_C_GetBattlePassInfo::BattlePassFriendXpBoost' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBattlePassInfo, HasBattlePass) == 0x000008, "Member 'LobbyPlayerPadBottom_C_GetBattlePassInfo::HasBattlePass' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBattlePassInfo, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000009, "Member 'LobbyPlayerPadBottom_C_GetBattlePassInfo::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.UpdateIsFriendAndLocal
+// 0x0018 (0x0018 - 0x0000)
+struct LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal final
+{
+public:
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTeamMemberFriend_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocalPlayersUniqueID_ReturnValue;       // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal");
+static_assert(sizeof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal) == 0x000018, "Wrong size on LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal, CallFunc_GetContext_ReturnValue1) == 0x000008, "Member 'LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal, CallFunc_IsTeamMemberFriend_ReturnValue) == 0x000010, "Member 'LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal::CallFunc_IsTeamMemberFriend_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal, CallFunc_IsValidNetID_ReturnValue) == 0x000011, "Member 'LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal, CallFunc_IsLocalPlayersUniqueID_ReturnValue) == 0x000012, "Member 'LobbyPlayerPadBottom_C_UpdateIsFriendAndLocal::CallFunc_IsLocalPlayersUniqueID_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.GetBonusXPValue
+// 0x01B0 (0x01B0 - 0x0000)
+struct LobbyPlayerPadBottom_C_GetBonusXPValue final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSeasonalEventManager*              CallFunc_GetSeasonalEventManager_ReturnValue;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortClientEventsState                 CallFunc_GetEventState_ReturnValue;                // 0x0018(0x0190)(ConstParm)
+	int32                                         CallFunc_GetBRXPBonusPoints_ReturnValue;           // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(LobbyPlayerPadBottom_C_GetBonusXPValue) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_GetBonusXPValue");
+static_assert(sizeof(LobbyPlayerPadBottom_C_GetBonusXPValue) == 0x0001B0, "Wrong size on LobbyPlayerPadBottom_C_GetBonusXPValue");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBonusXPValue, ReturnValue) == 0x000000, "Member 'LobbyPlayerPadBottom_C_GetBonusXPValue::ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBonusXPValue, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadBottom_C_GetBonusXPValue::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBonusXPValue, CallFunc_GetSeasonalEventManager_ReturnValue) == 0x000010, "Member 'LobbyPlayerPadBottom_C_GetBonusXPValue::CallFunc_GetSeasonalEventManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBonusXPValue, CallFunc_GetEventState_ReturnValue) == 0x000018, "Member 'LobbyPlayerPadBottom_C_GetBonusXPValue::CallFunc_GetEventState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_GetBonusXPValue, CallFunc_GetBRXPBonusPoints_ReturnValue) == 0x0001A8, "Member 'LobbyPlayerPadBottom_C_GetBonusXPValue::CallFunc_GetBRXPBonusPoints_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadBottom.LobbyPlayerPadBottom_C.UpdateHotfixableBonusEventTitle
+// 0x0028 (0x0028 - 0x0000)
+struct LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle final
+{
+public:
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetOverrideBonusEventXpTitleText_ReturnValue; // 0x0008(0x0018)()
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle) == 0x000008, "Wrong alignment on LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle");
+static_assert(sizeof(LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle) == 0x000028, "Wrong size on LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000000, "Member 'LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle, CallFunc_GetOverrideBonusEventXpTitleText_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle::CallFunc_GetOverrideBonusEventXpTitleText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'LobbyPlayerPadBottom_C_UpdateHotfixableBonusEventTitle::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 
 }
 

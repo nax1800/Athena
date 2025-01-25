@@ -10,87 +10,95 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass Husk_V2_Skeleton_AnimBP.Husk_V2_Skeleton_AnimBP_C
-// 0x2A60 (0x2ED0 - 0x0470)
+// 0x2D58 (0x31C8 - 0x0470)
 class UHusk_V2_Skeleton_AnimBP_C final : public UFortHuskAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_CE090E354EB61760D79F62953755D48B; // 0x0478(0x0050)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95; // 0x04C8(0x0070)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5; // 0x0538(0x0050)()
-	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA; // 0x0588(0x00E0)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1; // 0x0668(0x00E0)()
-	uint8                                         Pad_748[0x8];                                      // 0x0748(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C; // 0x0750(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4; // 0x07D0(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524; // 0x0850(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205; // 0x08D0(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01; // 0x0950(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE; // 0x09D0(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD; // 0x0A50(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D; // 0x0AD0(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199; // 0x0B50(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3; // 0x0BD0(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C; // 0x0C50(0x0080)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB; // 0x0CD0(0x0080)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913; // 0x0D50(0x0088)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF; // 0x0DD8(0x0048)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178; // 0x0E20(0x0088)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69; // 0x0EA8(0x0048)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6; // 0x0EF0(0x0128)()
-	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9; // 0x1018(0x00D0)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D; // 0x10E8(0x00D0)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F; // 0x11B8(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82; // 0x12E0(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6; // 0x1408(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87; // 0x1530(0x0128)()
-	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D; // 0x1658(0x00D0)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963; // 0x1728(0x00D0)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A; // 0x17F8(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4; // 0x1920(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59; // 0x1A48(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600; // 0x1B70(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970; // 0x1C98(0x0128)()
-	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183; // 0x1DC0(0x00D0)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B; // 0x1E90(0x0128)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601; // 0x1FB8(0x0128)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7; // 0x20E0(0x0048)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73; // 0x2128(0x0048)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870; // 0x2170(0x0088)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225; // 0x21F8(0x0048)()
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A; // 0x2240(0x0070)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4; // 0x22B0(0x0048)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21; // 0x22F8(0x0088)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C; // 0x2380(0x0088)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F; // 0x2408(0x00D0)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD; // 0x24D8(0x0048)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35; // 0x2520(0x0088)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB; // 0x25A8(0x0088)()
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE; // 0x2630(0x00D0)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9; // 0x2700(0x0088)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754; // 0x2788(0x0048)()
-	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8; // 0x27D0(0x00E0)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127; // 0x28B0(0x0070)()
-	struct FAnimNode_Root                         AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11; // 0x2920(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF; // 0x2968(0x0070)()
-	struct FFortAnimNode_ScaleHuskBones           FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12; // 0x29D8(0x01E0)()
-	struct FAnimNode_LegIK                        AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129; // 0x2BB8(0x0120)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA; // 0x2CD8(0x0048)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959; // 0x2D20(0x0048)()
-	struct FAnimNode_RotationOffsetBlendSpace     AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B; // 0x2D68(0x0158)()
-	bool                                          ShouldDisableWalking;                              // 0x2EC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_CE090E354EB61760D79F62953755D48B; // 0x0478(0x0048)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95; // 0x04C0(0x0068)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5; // 0x0528(0x0048)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA; // 0x0570(0x00D8)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1; // 0x0648(0x00D8)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C; // 0x0720(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4; // 0x0768(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524; // 0x07B0(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205; // 0x07F8(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01; // 0x0840(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE; // 0x0888(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD; // 0x08D0(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D; // 0x0918(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199; // 0x0960(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3; // 0x09A8(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C; // 0x09F0(0x0048)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB; // 0x0A38(0x0048)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913; // 0x0A80(0x00A0)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF; // 0x0B20(0x0040)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178; // 0x0B60(0x00A0)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69; // 0x0C00(0x0040)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6; // 0x0C40(0x0128)()
+	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9; // 0x0D68(0x00D0)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D; // 0x0E38(0x00D0)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F; // 0x0F08(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82; // 0x1030(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6; // 0x1158(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87; // 0x1280(0x0128)()
+	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D; // 0x13A8(0x00D0)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963; // 0x1478(0x00D0)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A; // 0x1548(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4; // 0x1670(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59; // 0x1798(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600; // 0x18C0(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970; // 0x19E8(0x0128)()
+	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183; // 0x1B10(0x00D0)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B; // 0x1BE0(0x0128)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601; // 0x1D08(0x0128)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7; // 0x1E30(0x0040)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73; // 0x1E70(0x0040)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870; // 0x1EB0(0x00A0)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225; // 0x1F50(0x0040)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A; // 0x1F90(0x0070)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4; // 0x2000(0x0040)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21; // 0x2040(0x00A0)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C; // 0x20E0(0x00A0)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F; // 0x2180(0x00D0)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD; // 0x2250(0x0040)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35; // 0x2290(0x00A0)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB; // 0x2330(0x00A0)()
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE; // 0x23D0(0x00D0)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9; // 0x24A0(0x00A0)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754; // 0x2540(0x0040)()
+	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8; // 0x2580(0x00E0)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127; // 0x2660(0x0068)()
+	struct FAnimNode_Root                         AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11; // 0x26C8(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF; // 0x2708(0x0068)()
+	struct FFortAnimNode_ScaleHuskBones           FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12; // 0x2770(0x01D8)()
+	struct FAnimNode_LegIK                        AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129; // 0x2948(0x0120)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA; // 0x2A68(0x0040)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959; // 0x2AA8(0x0040)()
+	struct FAnimNode_RotationOffsetBlendSpace     AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B; // 0x2AE8(0x01E0)()
+	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2; // 0x2CC8(0x00F0)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866; // 0x2DB8(0x00D8)()
+	struct FAnimNode_BlendListByInt               AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1; // 0x2E90(0x00D0)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_27D5D46D48FC1C7F97F1E0BCA1F22DEC; // 0x2F60(0x0070)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_08C2BBD247629F653E827CB2E2AC5821; // 0x2FD0(0x0070)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_2B96F3E246E06BAC1B4A6B88125B87D9; // 0x3040(0x0070)()
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_5D9F5E484AB77E4893B21FA868DA2A0F; // 0x30B0(0x0070)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3329431749B97429D217EF99E4ADB4A6; // 0x3120(0x00A0)()
+	bool                                          ShouldDisableWalking;                              // 0x31C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963();
@@ -98,6 +106,7 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_3B21D0F74A571B7E44D77182E3664CD6();
@@ -110,6 +119,7 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_D51EEE3C40EF00C40880ED99E7B4CB82();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_EB9668CE4E63A6AEAC0D118192166A87();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199();
@@ -136,72 +146,80 @@ public:
 		return GetDefaultObjImpl<UHusk_V2_Skeleton_AnimBP_C>();
 	}
 };
-static_assert(alignof(UHusk_V2_Skeleton_AnimBP_C) == 0x000010, "Wrong alignment on UHusk_V2_Skeleton_AnimBP_C");
-static_assert(sizeof(UHusk_V2_Skeleton_AnimBP_C) == 0x002ED0, "Wrong size on UHusk_V2_Skeleton_AnimBP_C");
+static_assert(alignof(UHusk_V2_Skeleton_AnimBP_C) == 0x000008, "Wrong alignment on UHusk_V2_Skeleton_AnimBP_C");
+static_assert(sizeof(UHusk_V2_Skeleton_AnimBP_C) == 0x0031C8, "Wrong size on UHusk_V2_Skeleton_AnimBP_C");
 static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, UberGraphFrame) == 0x000470, "Member 'UHusk_V2_Skeleton_AnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_UseCachedPose_CE090E354EB61760D79F62953755D48B) == 0x000478, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_UseCachedPose_CE090E354EB61760D79F62953755D48B' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95) == 0x0004C8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5) == 0x000538, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA) == 0x000588, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1) == 0x000668, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C) == 0x000750, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4) == 0x0007D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524) == 0x000850, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205) == 0x0008D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01) == 0x000950, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE) == 0x0009D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD) == 0x000A50, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D) == 0x000AD0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199) == 0x000B50, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3) == 0x000BD0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C) == 0x000C50, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB) == 0x000CD0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913) == 0x000D50, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF) == 0x000DD8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178) == 0x000E20, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69) == 0x000EA8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6) == 0x000EF0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9) == 0x001018, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D) == 0x0010E8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F) == 0x0011B8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82) == 0x0012E0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6) == 0x001408, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87) == 0x001530, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D) == 0x001658, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963) == 0x001728, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A) == 0x0017F8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4) == 0x001920, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59) == 0x001A48, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600) == 0x001B70, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970) == 0x001C98, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183) == 0x001DC0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B) == 0x001E90, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601) == 0x001FB8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7) == 0x0020E0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73) == 0x002128, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870) == 0x002170, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225) == 0x0021F8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A) == 0x002240, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4) == 0x0022B0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21) == 0x0022F8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C) == 0x002380, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F) == 0x002408, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD) == 0x0024D8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35) == 0x002520, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB) == 0x0025A8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE) == 0x002630, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9) == 0x002700, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754) == 0x002788, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8) == 0x0027D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127) == 0x0028B0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11) == 0x002920, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF) == 0x002968, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12) == 0x0029D8, "Member 'UHusk_V2_Skeleton_AnimBP_C::FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129) == 0x002BB8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA) == 0x002CD8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959) == 0x002D20, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B) == 0x002D68, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B' has a wrong offset!");
-static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, ShouldDisableWalking) == 0x002EC0, "Member 'UHusk_V2_Skeleton_AnimBP_C::ShouldDisableWalking' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95) == 0x0004C0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_4262A82C494C864EB2783181565B1F95' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5) == 0x000528, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_UseCachedPose_201546E14BB12870CD46DEB250F8B5F5' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA) == 0x000570, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SaveCachedPose_8CF796A84E97B8DF6CF0FA9BEC0A8FEA' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1) == 0x000648, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LayeredBoneBlend_CC90BF5D4485EFDC63F006AB266EF7B1' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C) == 0x000720, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_9C10D5024694DE038D18DF9A1E2ED16C' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4) == 0x000768, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_0761E3E2446FBE8BA8C70182C4A35DC4' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524) == 0x0007B0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_9EA1B562402B71A1A343FC9CBE33E524' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205) == 0x0007F8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_68E2A6A24AF42DF156FC058BEDF08205' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01) == 0x000840, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_3519F49C4E381BBD00035481AA888E01' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE) == 0x000888, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_FE855055439F65E90F5DBC83DF9B5FAE' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD) == 0x0008D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_46B780A24C65642605CE6C90EC7E5FBD' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D) == 0x000918, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_B8D4B871406AB17AE19CD6A71858050D' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199) == 0x000960, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_04AE961145429F2A6516B5AFED7A1199' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3) == 0x0009A8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_18F96FA14A02CD829B1BD2BB319893A3' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C) == 0x0009F0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_92D1462E43608D5A772EE8977188B28C' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB) == 0x000A38, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_TransitionResult_B3B42E5F483C92E55E5B5AB2EEF928CB' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913) == 0x000A80, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_07853C194127B6B9ABA25EB0CE8FC913' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF) == 0x000B20, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_2B5D61D94A998DAF661E3AA5F111D3DF' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178) == 0x000B60, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_F2466C2945F75171ADD34DBC8512C178' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69) == 0x000C00, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_52441323478ECFAD9002D3981B66DB69' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6) == 0x000C40, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_CEBDB7714BDD47EE51EC628B95F88CC6' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9) == 0x000D68, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D) == 0x000E38, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F) == 0x000F08, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_61D09BDE4910BB779CE507B34C77D77F' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82) == 0x001030, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_D51EEE3C40EF00C40880ED99E7B4CB82' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6) == 0x001158, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_3B21D0F74A571B7E44D77182E3664CD6' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87) == 0x001280, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpace_EB9668CE4E63A6AEAC0D118192166A87' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D) == 0x0013A8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_4D3EF8E6479C8F9899D8B0A0E462CD2D' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963) == 0x001478, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_475422DD46F8DF502DF471AE74362963' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A) == 0x001548, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_1572F9DA490001FD6004CDB0DF3D781A' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4) == 0x001670, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_AF887C0F4724BAE182A49FB7D4A582E4' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59) == 0x001798, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_D80717DD435257C906A758BA71A50B59' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600) == 0x0018C0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_59353A2F4400DE28791A0A81BB3EE600' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970) == 0x0019E8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_9F755C6847C47BF3424FFC93A343B970' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183) == 0x001B10, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_3A6B017A48D75B51843A31903180A183' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B) == 0x001BE0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_200821C74709E63BAF313582BF695B3B' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601) == 0x001D08, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendSpacePlayer_7E75A143410F22AF256540B459D2B601' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7) == 0x001E30, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_F0E099ED4017D74017D962B11C61B5E7' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73) == 0x001E70, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_DD1C02754A07A803179F1786A417BC73' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870) == 0x001EB0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_122B753F43EC33EA4C995CABEA83C870' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225) == 0x001F50, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_11E2EC1247C028C995A4A9BE1A3AA225' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A) == 0x001F90, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_39F837DF4559E7B78618509212FA101A' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4) == 0x002000, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_E0AAFD514546039873FDE1B2BC5973A4' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21) == 0x002040, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_6A66E89B412EC4DCEA3B28BE0FB8CB21' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C) == 0x0020E0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_8AC800314C69C5BD9936DDBEF6F3969C' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F) == 0x002180, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_5556979540657B0296A90EA8BAD15B6F' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD) == 0x002250, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_DE200ADD4A630F30F23969BE517276BD' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35) == 0x002290, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_1E2D082A46CD2A209782FEA2AD93AF35' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB) == 0x002330, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_13C28DE240F88A86CE0491B6966B00AB' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE) == 0x0023D0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByBool_3DA2FC3048234652B4FAFDBE463B38CE' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9) == 0x0024A0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_02564C8C4230BED3F452CABC83461CB9' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754) == 0x002540, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateResult_9E52933D47EAE3A3023E249E12656754' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8) == 0x002580, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_StateMachine_76F42A8841D435051B3D67AF7338EAB8' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127) == 0x002660, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_48C2482447E3BB71BB32CC9176C9C127' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11) == 0x0026C8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Root_2056727A4CA6CAC00898479B970FEF11' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF) == 0x002708, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_Slot_E0569F414F3F089D3F91ED8FA17208DF' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12) == 0x002770, "Member 'UHusk_V2_Skeleton_AnimBP_C::FortAnimGraphNode_ScaleHuskBones_C98C005645E0445DEC600E8072A81B12' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129) == 0x002948, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LegIK_D6D702774E1F4455BAF2A7A5B736D129' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA) == 0x002A68, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LocalToComponentSpace_8736A3B946229ADBF7304781565DC4EA' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959) == 0x002AA8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_01EB402E47EB33C78EF0E185C084E959' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B) == 0x002AE8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_RotationOffsetBlendSpace_61C61714470FAED4B69625AF00614E3B' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2) == 0x002CC8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866) == 0x002DB8, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1) == 0x002E90, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_27D5D46D48FC1C7F97F1E0BCA1F22DEC) == 0x002F60, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_27D5D46D48FC1C7F97F1E0BCA1F22DEC' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_08C2BBD247629F653E827CB2E2AC5821) == 0x002FD0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_08C2BBD247629F653E827CB2E2AC5821' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_2B96F3E246E06BAC1B4A6B88125B87D9) == 0x003040, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_2B96F3E246E06BAC1B4A6B88125B87D9' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequenceEvaluator_5D9F5E484AB77E4893B21FA868DA2A0F) == 0x0030B0, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequenceEvaluator_5D9F5E484AB77E4893B21FA868DA2A0F' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, AnimGraphNode_SequencePlayer_3329431749B97429D217EF99E4ADB4A6) == 0x003120, "Member 'UHusk_V2_Skeleton_AnimBP_C::AnimGraphNode_SequencePlayer_3329431749B97429D217EF99E4ADB4A6' has a wrong offset!");
+static_assert(offsetof(UHusk_V2_Skeleton_AnimBP_C, ShouldDisableWalking) == 0x0031C0, "Member 'UHusk_V2_Skeleton_AnimBP_C::ShouldDisableWalking' has a wrong offset!");
 
 }
 

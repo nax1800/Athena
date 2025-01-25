@@ -10,25 +10,27 @@
 
 #include "Basic.hpp"
 
-#include "JsonUtilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "JsonUtilities_structs.hpp"
 
 
 namespace SDK
 {
 
 // ScriptStruct ScheduledEvents.EventRecord
-// 0x0018 (0x0018 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FEventRecord final
 {
 public:
 	class FString                                 EventType;                                         // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                              ActiveUntil;                                       // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ActiveSince;                                       // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FEventRecord) == 0x000008, "Wrong alignment on FEventRecord");
-static_assert(sizeof(FEventRecord) == 0x000018, "Wrong size on FEventRecord");
+static_assert(sizeof(FEventRecord) == 0x000020, "Wrong size on FEventRecord");
 static_assert(offsetof(FEventRecord, EventType) == 0x000000, "Member 'FEventRecord::EventType' has a wrong offset!");
 static_assert(offsetof(FEventRecord, ActiveUntil) == 0x000010, "Member 'FEventRecord::ActiveUntil' has a wrong offset!");
+static_assert(offsetof(FEventRecord, ActiveSince) == 0x000018, "Member 'FEventRecord::ActiveSince' has a wrong offset!");
 
 // ScriptStruct ScheduledEvents.EventChannelState
 // 0x0038 (0x0038 - 0x0000)
@@ -59,17 +61,19 @@ static_assert(offsetof(FEventsTimeline, CacheExpire) == 0x000000, "Member 'FEven
 static_assert(offsetof(FEventsTimeline, States) == 0x000008, "Member 'FEventsTimeline::States' has a wrong offset!");
 
 // ScriptStruct ScheduledEvents.CalendarDownload
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct FCalendarDownload final
 {
 public:
 	struct FDateTime                              CurrentTime;                                       // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FEventsTimeline>   Channels;                                          // 0x0008(0x0050)(ZeroConstructor, NativeAccessSpecifierPublic)
+	double                                        EventsTimeOffsetHrs;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FEventsTimeline>   Channels;                                          // 0x0010(0x0050)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCalendarDownload) == 0x000008, "Wrong alignment on FCalendarDownload");
-static_assert(sizeof(FCalendarDownload) == 0x000058, "Wrong size on FCalendarDownload");
+static_assert(sizeof(FCalendarDownload) == 0x000060, "Wrong size on FCalendarDownload");
 static_assert(offsetof(FCalendarDownload, CurrentTime) == 0x000000, "Member 'FCalendarDownload::CurrentTime' has a wrong offset!");
-static_assert(offsetof(FCalendarDownload, Channels) == 0x000008, "Member 'FCalendarDownload::Channels' has a wrong offset!");
+static_assert(offsetof(FCalendarDownload, EventsTimeOffsetHrs) == 0x000008, "Member 'FCalendarDownload::EventsTimeOffsetHrs' has a wrong offset!");
+static_assert(offsetof(FCalendarDownload, Channels) == 0x000010, "Member 'FCalendarDownload::Channels' has a wrong offset!");
 
 }
 

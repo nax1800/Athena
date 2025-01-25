@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MiniCraftingIngredientList.MiniCraftingIngredientList_C
-// 0x0010 (0x02A8 - 0x0298)
+// 0x0010 (0x02A0 - 0x0290)
 class UMiniCraftingIngredientList_C final : public UFortItemQuantityListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
-	class UWrapBox*                               EntriesWrapBox;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
+	class UWrapBox*                               EntriesWrapBox;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void AddListEntry(class UFortItemQuantityListEntryBase* ListEntry);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UMiniCraftingIngredientList_C) == 0x000008, "Wrong alignment on UMiniCraftingIngredientList_C");
-static_assert(sizeof(UMiniCraftingIngredientList_C) == 0x0002A8, "Wrong size on UMiniCraftingIngredientList_C");
-static_assert(offsetof(UMiniCraftingIngredientList_C, UberGraphFrame) == 0x000298, "Member 'UMiniCraftingIngredientList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiniCraftingIngredientList_C, EntriesWrapBox) == 0x0002A0, "Member 'UMiniCraftingIngredientList_C::EntriesWrapBox' has a wrong offset!");
+static_assert(sizeof(UMiniCraftingIngredientList_C) == 0x0002A0, "Wrong size on UMiniCraftingIngredientList_C");
+static_assert(offsetof(UMiniCraftingIngredientList_C, UberGraphFrame) == 0x000290, "Member 'UMiniCraftingIngredientList_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMiniCraftingIngredientList_C, EntriesWrapBox) == 0x000298, "Member 'UMiniCraftingIngredientList_C::EntriesWrapBox' has a wrong offset!");
 
 }
 

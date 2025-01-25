@@ -66,6 +66,16 @@ static_assert(alignof(FEngineServiceTerminate) == 0x000008, "Wrong alignment on 
 static_assert(sizeof(FEngineServiceTerminate) == 0x000010, "Wrong size on FEngineServiceTerminate");
 static_assert(offsetof(FEngineServiceTerminate, UserName) == 0x000000, "Member 'FEngineServiceTerminate::UserName' has a wrong offset!");
 
+// ScriptStruct EngineMessages.EngineServicePing
+// 0x0001 (0x0001 - 0x0000)
+struct FEngineServicePing final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FEngineServicePing) == 0x000001, "Wrong alignment on FEngineServicePing");
+static_assert(sizeof(FEngineServicePing) == 0x000001, "Wrong size on FEngineServicePing");
+
 // ScriptStruct EngineMessages.EngineServiceExecuteCommand
 // 0x0020 (0x0020 - 0x0000)
 struct FEngineServiceExecuteCommand final
@@ -78,16 +88,6 @@ static_assert(alignof(FEngineServiceExecuteCommand) == 0x000008, "Wrong alignmen
 static_assert(sizeof(FEngineServiceExecuteCommand) == 0x000020, "Wrong size on FEngineServiceExecuteCommand");
 static_assert(offsetof(FEngineServiceExecuteCommand, Command) == 0x000000, "Member 'FEngineServiceExecuteCommand::Command' has a wrong offset!");
 static_assert(offsetof(FEngineServiceExecuteCommand, UserName) == 0x000010, "Member 'FEngineServiceExecuteCommand::UserName' has a wrong offset!");
-
-// ScriptStruct EngineMessages.EngineServicePing
-// 0x0001 (0x0001 - 0x0000)
-struct FEngineServicePing final
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FEngineServicePing) == 0x000001, "Wrong alignment on FEngineServicePing");
-static_assert(sizeof(FEngineServicePing) == 0x000001, "Wrong size on FEngineServicePing");
 
 // ScriptStruct EngineMessages.EngineServicePong
 // 0x0050 (0x0050 - 0x0000)

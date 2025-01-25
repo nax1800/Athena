@@ -10,23 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotDetailsPanel.SquadSlotDetailsPanel_C
-// 0x0078 (0x02F0 - 0x0278)
+// 0x0080 (0x02F0 - 0x0270)
 class USquadSlotDetailsPanel_C final : public UFortSquadSlotDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           LockedSlotDetailsPanel;                            // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           LockedSlotDetailsPanel;                            // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       LockedSlotTextBlock;                               // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PreviewEmptySlotTextBlock;                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       SelectionHintTextBlock;                            // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ShowInSkillTreeButton;                             // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -60,8 +61,9 @@ public:
 };
 static_assert(alignof(USquadSlotDetailsPanel_C) == 0x000008, "Wrong alignment on USquadSlotDetailsPanel_C");
 static_assert(sizeof(USquadSlotDetailsPanel_C) == 0x0002F0, "Wrong size on USquadSlotDetailsPanel_C");
-static_assert(offsetof(USquadSlotDetailsPanel_C, UberGraphFrame) == 0x000278, "Member 'USquadSlotDetailsPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, LockedSlotDetailsPanel) == 0x000280, "Member 'USquadSlotDetailsPanel_C::LockedSlotDetailsPanel' has a wrong offset!");
+static_assert(offsetof(USquadSlotDetailsPanel_C, UberGraphFrame) == 0x000270, "Member 'USquadSlotDetailsPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USquadSlotDetailsPanel_C, LockedSlotDetailsPanel) == 0x000278, "Member 'USquadSlotDetailsPanel_C::LockedSlotDetailsPanel' has a wrong offset!");
+static_assert(offsetof(USquadSlotDetailsPanel_C, LockedSlotTextBlock) == 0x000280, "Member 'USquadSlotDetailsPanel_C::LockedSlotTextBlock' has a wrong offset!");
 static_assert(offsetof(USquadSlotDetailsPanel_C, PreviewEmptySlotTextBlock) == 0x000288, "Member 'USquadSlotDetailsPanel_C::PreviewEmptySlotTextBlock' has a wrong offset!");
 static_assert(offsetof(USquadSlotDetailsPanel_C, SelectionHintTextBlock) == 0x000290, "Member 'USquadSlotDetailsPanel_C::SelectionHintTextBlock' has a wrong offset!");
 static_assert(offsetof(USquadSlotDetailsPanel_C, ShowInSkillTreeButton) == 0x000298, "Member 'USquadSlotDetailsPanel_C::ShowInSkillTreeButton' has a wrong offset!");

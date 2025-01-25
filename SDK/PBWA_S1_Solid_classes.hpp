@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_S1_Solid.PBWA_S1_Solid_C
-// 0x0028 (0x0EC8 - 0x0EA0)
+// 0x0028 (0x0C78 - 0x0C50)
 class APBWA_S1_Solid_C final : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0EA0(0x0008)(Transient, DuplicateTransient)
-	int32                                         GnomeWallChance;                                   // 0x0EA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         GnomeWallMax;                                      // 0x0EAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Gnomed;                                            // 0x0EB0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EB1[0x7];                                      // 0x0EB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceConstant*              GnomeMaterial;                                     // 0x0EB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            GnomeWall;                                         // 0x0EC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C50(0x0008)(Transient, DuplicateTransient)
+	int32                                         GnomeWallChance;                                   // 0x0C58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         GnomeWallMax;                                      // 0x0C5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Gnomed;                                            // 0x0C60(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C61[0x7];                                      // 0x0C61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceConstant*              GnomeMaterial;                                     // 0x0C68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            GnomeWall;                                         // 0x0C70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_PBWA_S1_Solid(int32 EntryPoint);
@@ -46,13 +46,13 @@ public:
 	}
 };
 static_assert(alignof(APBWA_S1_Solid_C) == 0x000008, "Wrong alignment on APBWA_S1_Solid_C");
-static_assert(sizeof(APBWA_S1_Solid_C) == 0x000EC8, "Wrong size on APBWA_S1_Solid_C");
-static_assert(offsetof(APBWA_S1_Solid_C, UberGraphFrame) == 0x000EA0, "Member 'APBWA_S1_Solid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallChance) == 0x000EA8, "Member 'APBWA_S1_Solid_C::GnomeWallChance' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallMax) == 0x000EAC, "Member 'APBWA_S1_Solid_C::GnomeWallMax' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, Gnomed) == 0x000EB0, "Member 'APBWA_S1_Solid_C::Gnomed' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeMaterial) == 0x000EB8, "Member 'APBWA_S1_Solid_C::GnomeMaterial' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWall) == 0x000EC0, "Member 'APBWA_S1_Solid_C::GnomeWall' has a wrong offset!");
+static_assert(sizeof(APBWA_S1_Solid_C) == 0x000C78, "Wrong size on APBWA_S1_Solid_C");
+static_assert(offsetof(APBWA_S1_Solid_C, UberGraphFrame) == 0x000C50, "Member 'APBWA_S1_Solid_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallChance) == 0x000C58, "Member 'APBWA_S1_Solid_C::GnomeWallChance' has a wrong offset!");
+static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallMax) == 0x000C5C, "Member 'APBWA_S1_Solid_C::GnomeWallMax' has a wrong offset!");
+static_assert(offsetof(APBWA_S1_Solid_C, Gnomed) == 0x000C60, "Member 'APBWA_S1_Solid_C::Gnomed' has a wrong offset!");
+static_assert(offsetof(APBWA_S1_Solid_C, GnomeMaterial) == 0x000C68, "Member 'APBWA_S1_Solid_C::GnomeMaterial' has a wrong offset!");
+static_assert(offsetof(APBWA_S1_Solid_C, GnomeWall) == 0x000C70, "Member 'APBWA_S1_Solid_C::GnomeWall' has a wrong offset!");
 
 }
 

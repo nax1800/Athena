@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -21,158 +21,244 @@ namespace SDK::Params
 {
 
 // Function ItemReceived_Base.ItemReceived_Base_C.ExecuteUbergraph_ItemReceived_Base
-// 0x0288 (0x0288 - 0x0000)
+// 0x03D8 (0x03D8 - 0x0000)
 struct ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x0038(0x0008)(NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item;                           // 0x0050(0x0028)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0080(0x0080)()
-	int32                                         K2Node_CustomEvent_Index;                          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_CenterWidget;                   // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortGiftBoxItemDefinition*             CallFunc_GetGiftBoxDefinition_ReturnValue;         // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemCardWidget_C*                      K2Node_DynamicCast_AsItem_Card_Widget;             // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemReceivedHeaderSubWidgetBase_C*     K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base; // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue1;                  // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemCardWidget_C*                      K2Node_DynamicCast_AsItem_Card_Widget1;            // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16A[0x2];                                      // 0x016A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item1;                          // 0x0170(0x0028)()
-	class UItemCardWidget_C*                      CallFunc_AddItemCard_ReturnValue;                  // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item12;                         // 0x01A0(0x0028)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x01C8(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_HandleBack_PassThrough;                   // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable1;                    // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue1;                  // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UFortItem*>                      CallFunc_GetItemInstancesByDefinition_Items;       // 0x0210(0x0010)(ZeroConstructor, ReferenceParm)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              CallFunc_Array_Get_Item123;                        // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAccountItem*                       K2Node_DynamicCast_AsFort_Account_Item;            // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bUsingGamepad;                        // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsFavorite_ReturnValue;                   // 0x023A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x023B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item1234;                       // 0x0248(0x0028)()
-	int32                                         CallFunc_Array_Length_ReturnValue12;               // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_276[0x2];                                      // 0x0276(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0285(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0008(0x0020)()
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0038(0x0010)(NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HandleBack_Passthrough;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bFromSelf;                            // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable1;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item;                           // 0x0078(0x0028)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemCardWidget_C*                      CallFunc_AddItemCard_ReturnValue;                  // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_Index;                          // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_CenterWidget;                   // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemCardWidget_C*                      K2Node_DynamicCast_AsItem_Card_Widget;             // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CB[0x5];                                       // 0x00CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x00D0(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item1;                          // 0x0108(0x0028)()
+	bool                                          Temp_bool_Variable1;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_NewParam;                       // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_132[0x2];                                      // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_Who;                            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0140(0x0080)()
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x01C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable4;                               // 0x01C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGiftBoxItemDefinition*             CallFunc_GetGiftBoxDefinition_ReturnValue;         // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue1;                  // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemCardWidget_C*                      K2Node_DynamicCast_AsItem_Card_Widget1;            // 0x01E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemReceivedHeaderSubWidgetBase_C*     K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base; // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_215[0x3];                                      // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0228(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bUsingGamepad;                        // 0x0232(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_233[0x5];                                      // 0x0233(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortReceivedItemLootInfo              CallFunc_Array_Get_Item2;                          // 0x0238(0x0028)()
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue1;                 // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_266[0x2];                                      // 0x0266(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0268(0x0010)(ZeroConstructor, NoDestructor)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemCardWidget_C*                      CallFunc_AddItemCard_ReturnValue1;                 // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0290(0x0040)(HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DC[0x4];                                      // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortItem*>                      CallFunc_GetItemInstancesByDefinition_Items;       // 0x02E0(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x02F0(0x0040)(HasGetValueTypeHash)
+	class UFortItem*                              CallFunc_Array_Get_Item3;                          // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0338(0x0010)(ZeroConstructor, ReferenceParm)
+	class UFortAccountItem*                       K2Node_DynamicCast_AsFort_Account_Item;            // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_351[0x7];                                      // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0358(0x0018)()
+	bool                                          CallFunc_IsFavorite_ReturnValue;                   // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0371(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_372[0x2];                                      // 0x0372(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue4;                // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue1;         // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x037D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x037E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select2_Default;                            // 0x037F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable7;                               // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0391(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_392[0x6];                                      // 0x0392(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0398(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue1; // 0x03A8(0x0020)()
+	TArray<struct FFortAnalyticsEventAttribute>   K2Node_MakeArray_Array1;                           // 0x03C8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base) == 0x000008, "Wrong alignment on ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base");
-static_assert(sizeof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base) == 0x000288, "Wrong size on ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base");
+static_assert(sizeof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base) == 0x0003D8, "Wrong size on ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base");
 static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, EntryPoint) == 0x000000, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000020, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate1) == 0x000028, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_K2_SetTimerDelegate_ReturnValue1) == 0x000038, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_K2_SetTimerDelegate_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Event_IsDesignTime) == 0x000040, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_bool_Variable) == 0x000041, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000042, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item) == 0x000050, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetRarity_ReturnValue) == 0x00007C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x00007D, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_BPGetRarityData_ReturnValue) == 0x000080, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_Index) == 0x000100, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_CenterWidget) == 0x000104, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_CenterWidget' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetGiftBoxDefinition_ReturnValue) == 0x000108, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetGiftBoxDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetChildAt_ReturnValue) == 0x000110, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Card_Widget) == 0x000118, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Card_Widget' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Create_ReturnValue) == 0x000128, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base) == 0x000130, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess1) == 0x000138, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_AddChild_ReturnValue) == 0x000140, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue1) == 0x000148, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetChildAt_ReturnValue1) == 0x000150, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetChildAt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetUINavigationManager_ReturnValue) == 0x000158, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Card_Widget1) == 0x000160, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Card_Widget1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess12) == 0x000168, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_IsValid_ReturnValue) == 0x000169, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Array_Index_Variable) == 0x00016C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item1) == 0x000170, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_AddItemCard_ReturnValue) == 0x000198, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_AddItemCard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item12) == 0x0001A0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate12) == 0x0001C8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_HandleBack_PassThrough) == 0x0001D8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_HandleBack_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Loop_Counter_Variable) == 0x0001DC, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_ComponentBoundEvent_Button1) == 0x0001E0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Less_IntInt_ReturnValue) == 0x0001E8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue1) == 0x0001EC, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Array_Index_Variable1) == 0x0001F0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Array_Index_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Greater_IntInt_ReturnValue) == 0x0001F4, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_ComponentBoundEvent_Button) == 0x0001F8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue) == 0x000200, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue1) == 0x000208, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetItemInstancesByDefinition_Items) == 0x000210, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetItemInstancesByDefinition_Items' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue12) == 0x000220, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item123) == 0x000228, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item123' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsFort_Account_Item) == 0x000230, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess123) == 0x000238, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Event_bUsingGamepad) == 0x000239, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Event_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_IsFavorite_ReturnValue) == 0x00023A, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_IsFavorite_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Not_PreBool_ReturnValue) == 0x00023B, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue123) == 0x000240, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item1234) == 0x000248, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item1234' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue12) == 0x000270, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000274, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable) == 0x000275, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Loop_Counter_Variable1) == 0x000278, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Less_IntInt_ReturnValue1) == 0x00027C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue12) == 0x000280, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable1) == 0x000284, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Select_Default) == 0x000285, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000008, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_bool_Variable) == 0x00002C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_MakeStruct_DataTableRowHandle) == 0x000038, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_ComponentBoundEvent_Button2) == 0x000058, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_HandleBack_Passthrough) == 0x000060, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_HandleBack_Passthrough' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Event_bFromSelf) == 0x000061, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Event_bFromSelf' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetUINavigationManager_ReturnValue) == 0x000068, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable) == 0x000070, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Array_Index_Variable1) == 0x000074, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Array_Index_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item) == 0x000078, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_AddItemCard_ReturnValue) == 0x0000A8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_AddItemCard_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_Index) == 0x0000B0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_Index' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_CenterWidget) == 0x0000B4, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_CenterWidget' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetChildAt_ReturnValue) == 0x0000B8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Card_Widget) == 0x0000C0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Card_Widget' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_IsValid_ReturnValue) == 0x0000C9, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000CA, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate1) == 0x0000D0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue1) == 0x0000E0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000E8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue) == 0x0000F0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable1) == 0x0000F8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable2) == 0x0000F9, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000FA, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Variable) == 0x0000FC, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000100, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item1) == 0x000108, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_bool_Variable1) == 0x000130, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_NewParam) == 0x000131, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_NewParam' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CustomEvent_Who) == 0x000134, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CustomEvent_Who' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetRarity_ReturnValue) == 0x000138, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000139, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_BPGetRarityData_ReturnValue) == 0x000140, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue1) == 0x0001C0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x0001C4, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_BooleanOR_ReturnValue) == 0x0001C5, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable3) == 0x0001C6, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable4) == 0x0001C7, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable4' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_bool_Variable2) == 0x0001C8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetGiftBoxDefinition_ReturnValue) == 0x0001D0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetGiftBoxDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetChildAt_ReturnValue1) == 0x0001D8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetChildAt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Create_ReturnValue) == 0x0001E0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Card_Widget1) == 0x0001E8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Card_Widget1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess1) == 0x0001F0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base) == 0x0001F8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsItem_Received_Header_Sub_Widget_Base' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess2) == 0x000200, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_AddChild_ReturnValue) == 0x000208, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Loop_Counter_Variable1) == 0x000210, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Less_IntInt_ReturnValue) == 0x000214, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue2) == 0x000218, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_int_Variable1) == 0x00021C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Greater_IntInt_ReturnValue) == 0x000220, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable5) == 0x000221, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable5' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_ComponentBoundEvent_Button1) == 0x000228, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable6) == 0x000230, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable6' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_bool_Variable3) == 0x000231, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Event_bUsingGamepad) == 0x000232, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Event_bUsingGamepad' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item2) == 0x000238, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue2) == 0x000260, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Less_IntInt_ReturnValue1) == 0x000264, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Less_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000265, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_CreateDelegate_OutputDelegate2) == 0x000268, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_ComponentBoundEvent_Button) == 0x000278, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue3) == 0x000280, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue3) == 0x000284, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_AddItemCard_ReturnValue1) == 0x000288, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_AddItemCard_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_MakeStruct_FormatArgumentData) == 0x000290, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue1) == 0x0002D0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Add_IntInt_ReturnValue4) == 0x0002D8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetItemInstancesByDefinition_Items) == 0x0002E0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetItemInstancesByDefinition_Items' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_MakeStruct_FormatArgumentData1) == 0x0002F0, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Get_Item3) == 0x000330, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_MakeArray_Array) == 0x000338, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_AsFort_Account_Item) == 0x000348, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_DynamicCast_bSuccess3) == 0x000350, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Format_ReturnValue) == 0x000358, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_IsFavorite_ReturnValue) == 0x000370, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_IsFavorite_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Not_PreBool_ReturnValue) == 0x000371, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Array_Length_ReturnValue4) == 0x000374, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Array_Length_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Subtract_IntInt_ReturnValue) == 0x000378, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GreaterEqual_IntInt_ReturnValue1) == 0x00037C, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GreaterEqual_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Select_Default) == 0x00037D, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Select1_Default) == 0x00037E, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Select2_Default) == 0x00037F, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetChildrenCount_ReturnValue) == 0x000380, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_Subtract_IntInt_ReturnValue1) == 0x000384, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetContext_ReturnValue2) == 0x000388, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, Temp_byte_Variable7) == 0x000390, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::Temp_byte_Variable7' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_Select3_Default) == 0x000391, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_GetDisplayName_ReturnValue) == 0x000398, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, CallFunc_ConstructAnalyticsAttribute_ReturnValue1) == 0x0003A8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::CallFunc_ConstructAnalyticsAttribute_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base, K2Node_MakeArray_Array1) == 0x0003C8, "Member 'ItemReceived_Base_C_ExecuteUbergraph_ItemReceived_Base::K2Node_MakeArray_Array1' has a wrong offset!");
+
+// Function ItemReceived_Base.ItemReceived_Base_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemReceived_Base_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_58_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemReceived_Base.ItemReceived_Base_C.OnInputModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -196,6 +282,44 @@ static_assert(alignof(ItemReceived_Base_C_BndEvt__EquipButton_K2Node_ComponentBo
 static_assert(sizeof(ItemReceived_Base_C_BndEvt__EquipButton_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemReceived_Base_C_BndEvt__EquipButton_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ItemReceived_Base_C_BndEvt__EquipButton_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemReceived_Base_C_BndEvt__EquipButton_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
+// Function ItemReceived_Base.ItemReceived_Base_C.UpdateRarityFlare
+// 0x0008 (0x0008 - 0x0000)
+struct ItemReceived_Base_C_UpdateRarityFlare final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Who;                                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ItemReceived_Base_C_UpdateRarityFlare) == 0x000004, "Wrong alignment on ItemReceived_Base_C_UpdateRarityFlare");
+static_assert(sizeof(ItemReceived_Base_C_UpdateRarityFlare) == 0x000008, "Wrong size on ItemReceived_Base_C_UpdateRarityFlare");
+static_assert(offsetof(ItemReceived_Base_C_UpdateRarityFlare, NewParam) == 0x000000, "Member 'ItemReceived_Base_C_UpdateRarityFlare::NewParam' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_UpdateRarityFlare, Who) == 0x000004, "Member 'ItemReceived_Base_C_UpdateRarityFlare::Who' has a wrong offset!");
+
+// Function ItemReceived_Base.ItemReceived_Base_C.SelectItem
+// 0x0008 (0x0008 - 0x0000)
+struct ItemReceived_Base_C_SelectItem final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CenterWidget;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ItemReceived_Base_C_SelectItem) == 0x000004, "Wrong alignment on ItemReceived_Base_C_SelectItem");
+static_assert(sizeof(ItemReceived_Base_C_SelectItem) == 0x000008, "Wrong size on ItemReceived_Base_C_SelectItem");
+static_assert(offsetof(ItemReceived_Base_C_SelectItem, Index_0) == 0x000000, "Member 'ItemReceived_Base_C_SelectItem::Index_0' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_SelectItem, CenterWidget) == 0x000004, "Member 'ItemReceived_Base_C_SelectItem::CenterWidget' has a wrong offset!");
+
+// Function ItemReceived_Base.ItemReceived_Base_C.OnGiftBoxItemSet
+// 0x0001 (0x0001 - 0x0000)
+struct ItemReceived_Base_C_OnGiftBoxItemSet final
+{
+public:
+	bool                                          bFromSelf;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ItemReceived_Base_C_OnGiftBoxItemSet) == 0x000001, "Wrong alignment on ItemReceived_Base_C_OnGiftBoxItemSet");
+static_assert(sizeof(ItemReceived_Base_C_OnGiftBoxItemSet) == 0x000001, "Wrong size on ItemReceived_Base_C_OnGiftBoxItemSet");
+static_assert(offsetof(ItemReceived_Base_C_OnGiftBoxItemSet, bFromSelf) == 0x000000, "Member 'ItemReceived_Base_C_OnGiftBoxItemSet::bFromSelf' has a wrong offset!");
+
 // Function ItemReceived_Base.ItemReceived_Base_C.BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature final
@@ -207,46 +331,24 @@ static_assert(alignof(ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_Componen
 static_assert(sizeof(ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemReceived_Base_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
-// Function ItemReceived_Base.ItemReceived_Base_C.SelectItem
-// 0x0008 (0x0008 - 0x0000)
-struct ItemReceived_Base_C_SelectItem final
-{
-public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CenterWidget;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ItemReceived_Base_C_SelectItem) == 0x000004, "Wrong alignment on ItemReceived_Base_C_SelectItem");
-static_assert(sizeof(ItemReceived_Base_C_SelectItem) == 0x000008, "Wrong size on ItemReceived_Base_C_SelectItem");
-static_assert(offsetof(ItemReceived_Base_C_SelectItem, Param_Index) == 0x000000, "Member 'ItemReceived_Base_C_SelectItem::Param_Index' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_SelectItem, CenterWidget) == 0x000004, "Member 'ItemReceived_Base_C_SelectItem::CenterWidget' has a wrong offset!");
-
-// Function ItemReceived_Base.ItemReceived_Base_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct ItemReceived_Base_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ItemReceived_Base_C_PreConstruct) == 0x000001, "Wrong alignment on ItemReceived_Base_C_PreConstruct");
-static_assert(sizeof(ItemReceived_Base_C_PreConstruct) == 0x000001, "Wrong size on ItemReceived_Base_C_PreConstruct");
-static_assert(offsetof(ItemReceived_Base_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemReceived_Base_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
 // Function ItemReceived_Base.ItemReceived_Base_C.HandleBack
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct ItemReceived_Base_C_HandleBack final
 {
 public:
 	bool                                          Passthrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemReceived_Base_C_HandleBack) == 0x000008, "Wrong alignment on ItemReceived_Base_C_HandleBack");
-static_assert(sizeof(ItemReceived_Base_C_HandleBack) == 0x000010, "Wrong size on ItemReceived_Base_C_HandleBack");
+static_assert(sizeof(ItemReceived_Base_C_HandleBack) == 0x000018, "Wrong size on ItemReceived_Base_C_HandleBack");
 static_assert(offsetof(ItemReceived_Base_C_HandleBack, Passthrough) == 0x000000, "Member 'ItemReceived_Base_C_HandleBack::Passthrough' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'ItemReceived_Base_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleBack, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ItemReceived_Base_C_HandleBack::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000010, "Member 'ItemReceived_Base_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function ItemReceived_Base.ItemReceived_Base_C.UpdateFromItemReceivedInfo
-// 0x0038 (0x0038 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct ItemReceived_Base_C_UpdateFromItemReceivedInfo final
 {
 public:
@@ -254,37 +356,45 @@ public:
 	bool                                          Select;                                            // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemReceived_Base_C_UpdateFromItemReceivedInfo) == 0x000008, "Wrong alignment on ItemReceived_Base_C_UpdateFromItemReceivedInfo");
-static_assert(sizeof(ItemReceived_Base_C_UpdateFromItemReceivedInfo) == 0x000038, "Wrong size on ItemReceived_Base_C_UpdateFromItemReceivedInfo");
+static_assert(sizeof(ItemReceived_Base_C_UpdateFromItemReceivedInfo) == 0x000040, "Wrong size on ItemReceived_Base_C_UpdateFromItemReceivedInfo");
 static_assert(offsetof(ItemReceived_Base_C_UpdateFromItemReceivedInfo, Loot) == 0x000000, "Member 'ItemReceived_Base_C_UpdateFromItemReceivedInfo::Loot' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_UpdateFromItemReceivedInfo, Select) == 0x000028, "Member 'ItemReceived_Base_C_UpdateFromItemReceivedInfo::Select' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_UpdateFromItemReceivedInfo, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'ItemReceived_Base_C_UpdateFromItemReceivedInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_UpdateFromItemReceivedInfo, CallFunc_GetContext_ReturnValue1) == 0x000038, "Member 'ItemReceived_Base_C_UpdateFromItemReceivedInfo::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 
 // Function ItemReceived_Base.ItemReceived_Base_C.AddItemCard
-// 0x0070 (0x0070 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ItemReceived_Base_C_AddItemCard final
 {
 public:
 	struct FFortReceivedItemLootInfo              NewParam;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UItemCardWidget_C*                      ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UItemCardWidget_C*                      CallFunc_Create_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFortReceivedItemLootInfo& NewParam)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0048(0x0010)(IsPlainOldData, NoDestructor)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UScrollBoxSlot*                         K2Node_DynamicCast_AsScroll_Box_Slot;              // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UItemCardWidget_C*                      CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FFortReceivedItemLootInfo& NewParam)> K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0058(0x0010)(IsPlainOldData, NoDestructor)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UScrollBoxSlot*                         K2Node_DynamicCast_AsScroll_Box_Slot;              // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemReceived_Base_C_AddItemCard) == 0x000008, "Wrong alignment on ItemReceived_Base_C_AddItemCard");
-static_assert(sizeof(ItemReceived_Base_C_AddItemCard) == 0x000070, "Wrong size on ItemReceived_Base_C_AddItemCard");
+static_assert(sizeof(ItemReceived_Base_C_AddItemCard) == 0x000080, "Wrong size on ItemReceived_Base_C_AddItemCard");
 static_assert(offsetof(ItemReceived_Base_C_AddItemCard, NewParam) == 0x000000, "Member 'ItemReceived_Base_C_AddItemCard::NewParam' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_AddItemCard, ReturnValue) == 0x000028, "Member 'ItemReceived_Base_C_AddItemCard::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_Create_ReturnValue) == 0x000030, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_MakeStruct_Margin) == 0x000048, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_AddChild_ReturnValue) == 0x000058, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_DynamicCast_AsScroll_Box_Slot) == 0x000060, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_DynamicCast_AsScroll_Box_Slot' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_GetChildrenCount_ReturnValue) == 0x000030, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_Create_ReturnValue) == 0x000038, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_Subtract_IntInt_ReturnValue) == 0x000040, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_MakeStruct_Margin) == 0x000058, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_MakeStruct_Margin' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, CallFunc_AddChild_ReturnValue) == 0x000068, "Member 'ItemReceived_Base_C_AddItemCard::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_DynamicCast_AsScroll_Box_Slot) == 0x000070, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_DynamicCast_AsScroll_Box_Slot' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_AddItemCard, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'ItemReceived_Base_C_AddItemCard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemReceived_Base.ItemReceived_Base_C.UpdateFromHoverState
 // 0x0028 (0x0028 - 0x0000)
@@ -309,9 +419,9 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                Temp_object_Variable1;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable12;                            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable123;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable1234;                          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable2;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable3;                             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable4;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_HandleSelectionIncrement_Index;           // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -324,9 +434,9 @@ static_assert(offsetof(ItemReceived_Base_C_HandleLeft, NewParam) == 0x000008, "M
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_byte_Variable) == 0x000010, "Member 'ItemReceived_Base_C_HandleLeft::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable) == 0x000018, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable1) == 0x000020, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable12) == 0x000028, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable123) == 0x000030, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable1234) == 0x000038, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable2) == 0x000028, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable3) == 0x000030, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleLeft, Temp_object_Variable4) == 0x000038, "Member 'ItemReceived_Base_C_HandleLeft::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, CallFunc_HandleSelectionIncrement_Index) == 0x000040, "Member 'ItemReceived_Base_C_HandleLeft::CallFunc_HandleSelectionIncrement_Index' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, CallFunc_GetChildAt_ReturnValue) == 0x000048, "Member 'ItemReceived_Base_C_HandleLeft::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleLeft, K2Node_Select_Default) == 0x000050, "Member 'ItemReceived_Base_C_HandleLeft::K2Node_Select_Default' has a wrong offset!");
@@ -343,9 +453,9 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                Temp_object_Variable1;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable12;                            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable123;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable1234;                          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable2;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable3;                             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable4;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_HandleSelectionIncrement_Index;           // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -358,51 +468,55 @@ static_assert(offsetof(ItemReceived_Base_C_HandleRight, NewParam) == 0x000008, "
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_byte_Variable) == 0x000010, "Member 'ItemReceived_Base_C_HandleRight::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable) == 0x000018, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable1) == 0x000020, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable12) == 0x000028, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable123) == 0x000030, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable1234) == 0x000038, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable2) == 0x000028, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable3) == 0x000030, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleRight, Temp_object_Variable4) == 0x000038, "Member 'ItemReceived_Base_C_HandleRight::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, CallFunc_HandleSelectionIncrement_Index) == 0x000040, "Member 'ItemReceived_Base_C_HandleRight::CallFunc_HandleSelectionIncrement_Index' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, CallFunc_GetChildAt_ReturnValue) == 0x000048, "Member 'ItemReceived_Base_C_HandleRight::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemReceived_Base_C_HandleRight, K2Node_Select_Default) == 0x000050, "Member 'ItemReceived_Base_C_HandleRight::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemReceived_Base.ItemReceived_Base_C.HandleSelectionIncrement
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct ItemReceived_Base_C_HandleSelectionIncrement final
 {
 public:
 	bool                                          Increment;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Param_Index;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable1;                                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue1;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemReceived_Base_C_HandleSelectionIncrement) == 0x000004, "Wrong alignment on ItemReceived_Base_C_HandleSelectionIncrement");
-static_assert(sizeof(ItemReceived_Base_C_HandleSelectionIncrement) == 0x000020, "Wrong size on ItemReceived_Base_C_HandleSelectionIncrement");
+static_assert(sizeof(ItemReceived_Base_C_HandleSelectionIncrement) == 0x000028, "Wrong size on ItemReceived_Base_C_HandleSelectionIncrement");
 static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, Increment) == 0x000000, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::Increment' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, Param_Index) == 0x000004, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::Param_Index' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_GetChildrenCount_ReturnValue) == 0x00000C, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Less_IntInt_ReturnValue) == 0x000010, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Subtract_IntInt_ReturnValue1) == 0x000014, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000018, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, Index_0) == 0x000004, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::Index_0' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, Temp_int_Variable) == 0x000008, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, Temp_int_Variable1) == 0x00000C, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_GetChildrenCount_ReturnValue) == 0x000014, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Subtract_IntInt_ReturnValue1) == 0x00001C, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Subtract_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemReceived_Base_C_HandleSelectionIncrement, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'ItemReceived_Base_C_HandleSelectionIncrement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
-// Function ItemReceived_Base.ItemReceived_Base_C.Clicked
+// Function ItemReceived_Base.ItemReceived_Base_C.GetWidgetForFramingViewedItem
 // 0x0008 (0x0008 - 0x0000)
-struct ItemReceived_Base_C_Clicked final
+struct ItemReceived_Base_C_GetWidgetForFramingViewedItem final
 {
 public:
-	class UCommonButton*                          NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemReceived_Base_C_Clicked) == 0x000008, "Wrong alignment on ItemReceived_Base_C_Clicked");
-static_assert(sizeof(ItemReceived_Base_C_Clicked) == 0x000008, "Wrong size on ItemReceived_Base_C_Clicked");
-static_assert(offsetof(ItemReceived_Base_C_Clicked, NewParam) == 0x000000, "Member 'ItemReceived_Base_C_Clicked::NewParam' has a wrong offset!");
+static_assert(alignof(ItemReceived_Base_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong alignment on ItemReceived_Base_C_GetWidgetForFramingViewedItem");
+static_assert(sizeof(ItemReceived_Base_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong size on ItemReceived_Base_C_GetWidgetForFramingViewedItem");
+static_assert(offsetof(ItemReceived_Base_C_GetWidgetForFramingViewedItem, ReturnValue) == 0x000000, "Member 'ItemReceived_Base_C_GetWidgetForFramingViewedItem::ReturnValue' has a wrong offset!");
 
 }
 

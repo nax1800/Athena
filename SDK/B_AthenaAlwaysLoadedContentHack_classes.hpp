@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_AthenaAlwaysLoadedContentHack.B_AthenaAlwaysLoadedContentHack_C
-// 0x0028 (0x0340 - 0x0318)
+// 0x0028 (0x0350 - 0x0328)
 class AB_AthenaAlwaysLoadedContentHack_C final : public AActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class UObject*>                        HardObjectList;                                    // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<class UClass*>                         HardClassList;                                     // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        HardObjectList;                                    // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UClass*>                         HardClassList;                                     // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void UserConstructionScript();
@@ -39,10 +39,10 @@ public:
 	}
 };
 static_assert(alignof(AB_AthenaAlwaysLoadedContentHack_C) == 0x000008, "Wrong alignment on AB_AthenaAlwaysLoadedContentHack_C");
-static_assert(sizeof(AB_AthenaAlwaysLoadedContentHack_C) == 0x000340, "Wrong size on AB_AthenaAlwaysLoadedContentHack_C");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, DefaultSceneRoot) == 0x000318, "Member 'AB_AthenaAlwaysLoadedContentHack_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardObjectList) == 0x000320, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardObjectList' has a wrong offset!");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardClassList) == 0x000330, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardClassList' has a wrong offset!");
+static_assert(sizeof(AB_AthenaAlwaysLoadedContentHack_C) == 0x000350, "Wrong size on AB_AthenaAlwaysLoadedContentHack_C");
+static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, DefaultSceneRoot) == 0x000328, "Member 'AB_AthenaAlwaysLoadedContentHack_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardObjectList) == 0x000330, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardObjectList' has a wrong offset!");
+static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardClassList) == 0x000340, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardClassList' has a wrong offset!");
 
 }
 

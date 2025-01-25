@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 #include "GAT_GenericTriggeredAbility_classes.hpp"
 
 
@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C
-// 0x0040 (0x0C00 - 0x0BC0)
+// 0x0040 (0x0A08 - 0x09C8)
 class UGA_Constructor_FeelTheBase_DeathListener_C final : public UGAT_GenericTriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C; // 0x0BC0(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 StackCount;                                        // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  OverflowTag;                                       // 0x0BD0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Stack1;                                            // 0x0BF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Stack2;                                            // 0x0BF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Stack3;                                            // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C; // 0x09C8(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 StackCount;                                        // 0x09D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  OverflowTag;                                       // 0x09D8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Stack1;                                            // 0x09F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Stack2;                                            // 0x09FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Stack3;                                            // 0x0A00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener(int32 EntryPoint);
-	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& Param_EventData);
 	void Exceute_GC(class AB_Constructor_BASE_C* BaseReference, bool* Overflow);
-	void ActivateBaseStacks(int32 Param_StackCount, class AB_Constructor_BASE_C* BaseReference);
+	void ActivateBaseStacks(int32 StackCount_0, class AB_Constructor_BASE_C* BaseReference);
+	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0);
 
 public:
 	static class UClass* StaticClass()
@@ -47,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(UGA_Constructor_FeelTheBase_DeathListener_C) == 0x000008, "Wrong alignment on UGA_Constructor_FeelTheBase_DeathListener_C");
-static_assert(sizeof(UGA_Constructor_FeelTheBase_DeathListener_C) == 0x000C00, "Wrong size on UGA_Constructor_FeelTheBase_DeathListener_C");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C) == 0x000BC0, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, StackCount) == 0x000BC8, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::StackCount' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, OverflowTag) == 0x000BD0, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::OverflowTag' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack1) == 0x000BF0, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack1' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack2) == 0x000BF4, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack2' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack3) == 0x000BF8, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack3' has a wrong offset!");
+static_assert(sizeof(UGA_Constructor_FeelTheBase_DeathListener_C) == 0x000A08, "Wrong size on UGA_Constructor_FeelTheBase_DeathListener_C");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C) == 0x0009C8, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::UberGraphFrame_GA_Constructor_FeelTheBase_DeathListener_C' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, StackCount) == 0x0009D0, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::StackCount' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, OverflowTag) == 0x0009D8, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::OverflowTag' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack1) == 0x0009F8, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack1' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack2) == 0x0009FC, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack2' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_FeelTheBase_DeathListener_C, Stack3) == 0x000A00, "Member 'UGA_Constructor_FeelTheBase_DeathListener_C::Stack3' has a wrong offset!");
 
 }
 

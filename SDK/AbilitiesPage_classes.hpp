@@ -11,39 +11,39 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AbilitiesPage.AbilitiesPage_C
-// 0x00A0 (0x0460 - 0x03C0)
+// 0x00A0 (0x0398 - 0x02F8)
 class UAbilitiesPage_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           AbilitiesBox;                                      // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAbilitiesPageTile_C*                   AbilityTilePrimary;                                // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAbilitiesPageTile_C*                   AbilityTileSecondary;                              // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAbilitiesPageTile_C*                   AbilityTileTertiary;                               // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextAbilityDescription;                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CommonTextAbilityName;                             // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortTierIndicator*                     FortTierIndicatorUnlockTier;                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           GadgetsBox;                                        // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAbilitiesPageTile_C*                   GadgetTilePrimary;                                 // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAbilitiesPageTile_C*                   GadgetTileSecondary;                               // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMovieWidget_C*                         MovieWidget;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxMovie;                                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextLevel;                                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBoxGadgetsList;                            // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcherAbilityDescription;                  // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonButtonGroup*                     ButtonGroup;                                       // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          SelectedAbilityButton;                             // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMediaSource*                           VideoMediaSource;                                  // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           AbilitiesBox;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAbilitiesPageTile_C*                   AbilityTilePrimary;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAbilitiesPageTile_C*                   AbilityTileSecondary;                              // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAbilitiesPageTile_C*                   AbilityTileTertiary;                               // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextAbilityDescription;                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CommonTextAbilityName;                             // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortTierIndicator*                     FortTierIndicatorUnlockTier;                       // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           GadgetsBox;                                        // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAbilitiesPageTile_C*                   GadgetTilePrimary;                                 // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAbilitiesPageTile_C*                   GadgetTileSecondary;                               // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMovieWidget_C*                         MovieWidget;                                       // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxMovie;                                      // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextLevel;                                         // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBoxGadgetsList;                            // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcherAbilityDescription;                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonButtonGroup*                     ButtonGroup;                                       // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          SelectedAbilityButton;                             // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMediaSource*                           VideoMediaSource;                                  // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AbilitiesPage(int32 EntryPoint);
@@ -70,27 +70,27 @@ public:
 	}
 };
 static_assert(alignof(UAbilitiesPage_C) == 0x000008, "Wrong alignment on UAbilitiesPage_C");
-static_assert(sizeof(UAbilitiesPage_C) == 0x000460, "Wrong size on UAbilitiesPage_C");
-static_assert(offsetof(UAbilitiesPage_C, UberGraphFrame) == 0x0003C0, "Member 'UAbilitiesPage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilitiesBox) == 0x0003C8, "Member 'UAbilitiesPage_C::AbilitiesBox' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTilePrimary) == 0x0003D0, "Member 'UAbilitiesPage_C::AbilityTilePrimary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTileSecondary) == 0x0003D8, "Member 'UAbilitiesPage_C::AbilityTileSecondary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTileTertiary) == 0x0003E0, "Member 'UAbilitiesPage_C::AbilityTileTertiary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityDescription) == 0x0003E8, "Member 'UAbilitiesPage_C::CommonTextAbilityDescription' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityName) == 0x0003F0, "Member 'UAbilitiesPage_C::CommonTextAbilityName' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, FortTierIndicatorUnlockTier) == 0x0003F8, "Member 'UAbilitiesPage_C::FortTierIndicatorUnlockTier' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetsBox) == 0x000400, "Member 'UAbilitiesPage_C::GadgetsBox' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetTilePrimary) == 0x000408, "Member 'UAbilitiesPage_C::GadgetTilePrimary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetTileSecondary) == 0x000410, "Member 'UAbilitiesPage_C::GadgetTileSecondary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, MovieWidget) == 0x000418, "Member 'UAbilitiesPage_C::MovieWidget' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SafeZone_0) == 0x000420, "Member 'UAbilitiesPage_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SizeBoxMovie) == 0x000428, "Member 'UAbilitiesPage_C::SizeBoxMovie' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, TextLevel) == 0x000430, "Member 'UAbilitiesPage_C::TextLevel' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, VerticalBoxGadgetsList) == 0x000438, "Member 'UAbilitiesPage_C::VerticalBoxGadgetsList' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, WidgetSwitcherAbilityDescription) == 0x000440, "Member 'UAbilitiesPage_C::WidgetSwitcherAbilityDescription' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, ButtonGroup) == 0x000448, "Member 'UAbilitiesPage_C::ButtonGroup' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SelectedAbilityButton) == 0x000450, "Member 'UAbilitiesPage_C::SelectedAbilityButton' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, VideoMediaSource) == 0x000458, "Member 'UAbilitiesPage_C::VideoMediaSource' has a wrong offset!");
+static_assert(sizeof(UAbilitiesPage_C) == 0x000398, "Wrong size on UAbilitiesPage_C");
+static_assert(offsetof(UAbilitiesPage_C, UberGraphFrame) == 0x0002F8, "Member 'UAbilitiesPage_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, AbilitiesBox) == 0x000300, "Member 'UAbilitiesPage_C::AbilitiesBox' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, AbilityTilePrimary) == 0x000308, "Member 'UAbilitiesPage_C::AbilityTilePrimary' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, AbilityTileSecondary) == 0x000310, "Member 'UAbilitiesPage_C::AbilityTileSecondary' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, AbilityTileTertiary) == 0x000318, "Member 'UAbilitiesPage_C::AbilityTileTertiary' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityDescription) == 0x000320, "Member 'UAbilitiesPage_C::CommonTextAbilityDescription' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityName) == 0x000328, "Member 'UAbilitiesPage_C::CommonTextAbilityName' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, FortTierIndicatorUnlockTier) == 0x000330, "Member 'UAbilitiesPage_C::FortTierIndicatorUnlockTier' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, GadgetsBox) == 0x000338, "Member 'UAbilitiesPage_C::GadgetsBox' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, GadgetTilePrimary) == 0x000340, "Member 'UAbilitiesPage_C::GadgetTilePrimary' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, GadgetTileSecondary) == 0x000348, "Member 'UAbilitiesPage_C::GadgetTileSecondary' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, MovieWidget) == 0x000350, "Member 'UAbilitiesPage_C::MovieWidget' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, SafeZone_0) == 0x000358, "Member 'UAbilitiesPage_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, SizeBoxMovie) == 0x000360, "Member 'UAbilitiesPage_C::SizeBoxMovie' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, TextLevel) == 0x000368, "Member 'UAbilitiesPage_C::TextLevel' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, VerticalBoxGadgetsList) == 0x000370, "Member 'UAbilitiesPage_C::VerticalBoxGadgetsList' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, WidgetSwitcherAbilityDescription) == 0x000378, "Member 'UAbilitiesPage_C::WidgetSwitcherAbilityDescription' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, ButtonGroup) == 0x000380, "Member 'UAbilitiesPage_C::ButtonGroup' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, SelectedAbilityButton) == 0x000388, "Member 'UAbilitiesPage_C::SelectedAbilityButton' has a wrong offset!");
+static_assert(offsetof(UAbilitiesPage_C, VideoMediaSource) == 0x000390, "Member 'UAbilitiesPage_C::VideoMediaSource' has a wrong offset!");
 
 }
 

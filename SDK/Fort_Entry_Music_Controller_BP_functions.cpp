@@ -57,20 +57,6 @@ void AFort_Entry_Music_Controller_BP_C::Change_Music(class USoundBase* New_Music
 }
 
 
-// Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Lobby_Athena_FadeIn
-// (BlueprintCallable, BlueprintEvent)
-
-void AFort_Entry_Music_Controller_BP_C::Music_Lobby_Athena_FadeIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Music_Lobby_Athena_FadeIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.On Sub Game Changed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

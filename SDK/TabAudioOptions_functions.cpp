@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function TabAudioOptions.TabAudioOptions_C.ExecuteUbergraph_TabAudioOptions
-// (HasDefaults)
+// ()
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -37,161 +37,43 @@ void UTabAudioOptions_C::ExecuteUbergraph_TabAudioOptions(int32 EntryPoint)
 }
 
 
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__AllowGameVolumeWhenMinimized_K2Node_ComponentBoundEvent_30_Selection Changed__DelegateSignature
+// Function TabAudioOptions.TabAudioOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAudioOptions_C::BndEvt__AllowGameVolumeWhenMinimized_K2Node_ComponentBoundEvent_30_Selection_Changed__DelegateSignature(int32 Selected_Index)
+void UTabAudioOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__AllowGameVolumeWhenMinimized_K2Node_ComponentBoundEvent_30_Selection Changed__DelegateSignature");
+		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
 
-	Params::TabAudioOptions_C_BndEvt__AllowGameVolumeWhenMinimized_K2Node_ComponentBoundEvent_30_Selection_Changed__DelegateSignature Parms{};
+	Params::TabAudioOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature Parms{};
 
-	Parms.Selected_Index = Selected_Index;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__CinematicsVolume_K2Node_ComponentBoundEvent_42_SliderChanged__DelegateSignature
+// Function TabAudioOptions.TabAudioOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAudioOptions_C::BndEvt__CinematicsVolume_K2Node_ComponentBoundEvent_42_SliderChanged__DelegateSignature(float Slider_Value)
+void UTabAudioOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__CinematicsVolume_K2Node_ComponentBoundEvent_42_SliderChanged__DelegateSignature");
+		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
 
-	Params::TabAudioOptions_C_BndEvt__CinematicsVolume_K2Node_ComponentBoundEvent_42_SliderChanged__DelegateSignature Parms{};
+	Params::TabAudioOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature Parms{};
 
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatDevice_K2Node_ComponentBoundEvent_175_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__VoiceChatDevice_K2Node_ComponentBoundEvent_175_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__VoiceChatDevice_K2Node_ComponentBoundEvent_175_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__VoiceChatDevice_K2Node_ComponentBoundEvent_175_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChat3DEnable_K2Node_ComponentBoundEvent_22_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__VoiceChat3DEnable_K2Node_ComponentBoundEvent_22_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__VoiceChat3DEnable_K2Node_ComponentBoundEvent_22_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__VoiceChat3DEnable_K2Node_ComponentBoundEvent_22_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection Changed__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
+	Parms.Item = Item;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -211,100 +93,6 @@ void UTabAudioOptions_C::CenterOnTab()
 }
 
 
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature");
-
-	Params::TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.UpdateOptionsTab
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UTabAudioOptions_C::UpdateOptionsTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "UpdateOptionsTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TabAudioOptions.TabAudioOptions_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -319,80 +107,31 @@ void UTabAudioOptions_C::Construct()
 }
 
 
-// Function TabAudioOptions.TabAudioOptions_C.Update Data
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function TabAudioOptions.TabAudioOptions_C.Setting Value Changed
+// (BlueprintCallable, BlueprintEvent)
 
-void UTabAudioOptions_C::Update_Data()
+void UTabAudioOptions_C::Setting_Value_Changed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "Update Data");
+		Func = Class->GetFunction("TabAudioOptions_C", "Setting Value Changed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function TabAudioOptions.TabAudioOptions_C.InitializeData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function TabAudioOptions.TabAudioOptions_C.UpdateOptionsTab
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UTabAudioOptions_C::InitializeData()
+void UTabAudioOptions_C::UpdateOptionsTab()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "InitializeData");
+		Func = Class->GetFunction("TabAudioOptions_C", "UpdateOptionsTab");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.UpdateVoiceOptionsVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UTabAudioOptions_C::UpdateVoiceOptionsVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "UpdateVoiceOptionsVisibility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.GatherVoiceChatDevices
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UTabAudioOptions_C::GatherVoiceChatDevices()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "GatherVoiceChatDevices");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabAudioOptions.TabAudioOptions_C.FindVoiceChatDeviceIndex
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   FoundDeviceIndex                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAudioOptions_C::FindVoiceChatDeviceIndex(int32* FoundDeviceIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_C", "FindVoiceChatDeviceIndex");
-
-	Params::TabAudioOptions_C_FindVoiceChatDeviceIndex Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FoundDeviceIndex != nullptr)
-		*FoundDeviceIndex = Parms.FoundDeviceIndex;
 }
 
 }

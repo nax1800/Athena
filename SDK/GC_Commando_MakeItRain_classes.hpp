@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Commando_MakeItRain.GC_Commando_MakeItRain_C
-// 0x0010 (0x0450 - 0x0440)
+// 0x0008 (0x0428 - 0x0420)
 class AGC_Commando_MakeItRain_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	class UParticleSystemComponent*               Spawned_Looping;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Spawned_Looping;                                   // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -38,9 +38,9 @@ public:
 		return GetDefaultObjImpl<AGC_Commando_MakeItRain_C>();
 	}
 };
-static_assert(alignof(AGC_Commando_MakeItRain_C) == 0x000010, "Wrong alignment on AGC_Commando_MakeItRain_C");
-static_assert(sizeof(AGC_Commando_MakeItRain_C) == 0x000450, "Wrong size on AGC_Commando_MakeItRain_C");
-static_assert(offsetof(AGC_Commando_MakeItRain_C, Spawned_Looping) == 0x000440, "Member 'AGC_Commando_MakeItRain_C::Spawned_Looping' has a wrong offset!");
+static_assert(alignof(AGC_Commando_MakeItRain_C) == 0x000008, "Wrong alignment on AGC_Commando_MakeItRain_C");
+static_assert(sizeof(AGC_Commando_MakeItRain_C) == 0x000428, "Wrong size on AGC_Commando_MakeItRain_C");
+static_assert(offsetof(AGC_Commando_MakeItRain_C, Spawned_Looping) == 0x000420, "Member 'AGC_Commando_MakeItRain_C::Spawned_Looping' has a wrong offset!");
 
 }
 

@@ -37,6 +37,186 @@ void UTabAccount_C::ExecuteUbergraph_TabAccount(int32 EntryPoint)
 }
 
 
+// Function TabAccount.TabAccount_C.BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.OnReadPrivacySettings
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSuccess                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FMcpPrivacySettings              Settings                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UTabAccount_C::OnReadPrivacySettings(bool bSuccess, const struct FMcpPrivacySettings& Settings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "OnReadPrivacySettings");
+
+	Params::TabAccount_C_OnReadPrivacySettings Parms{};
+
+	Parms.bSuccess = bSuccess;
+	Parms.Settings = std::move(Settings);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection Changed__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection Changed__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.SetRefundRequestText
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   RefundsRemaining                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TotalRefunds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DaysToRefund                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::SetRefundRequestText(int32 RefundsRemaining, int32 TotalRefunds, int32 DaysToRefund)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "SetRefundRequestText");
+
+	Params::TabAccount_C_SetRefundRequestText Parms{};
+
+	Parms.RefundsRemaining = RefundsRemaining;
+	Parms.TotalRefunds = TotalRefunds;
+	Parms.DaysToRefund = DaysToRefund;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.UpdateOptionsTab
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UTabAccount_C::UpdateOptionsTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "UpdateOptionsTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TabAccount.TabAccount_C.BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FText                             NewTooltipText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UTabAccount_C::BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature Parms{};
+
+	Parms.NewTooltipText = std::move(NewTooltipText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabAccount.TabAccount_C.BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabAccount_C::BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+
+	Params::TabAccount_C_BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function TabAccount.TabAccount_C.BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -137,6 +317,20 @@ void UTabAccount_C::BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_Co
 }
 
 
+// Function TabAccount.TabAccount_C.CenterOnTab
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UTabAccount_C::CenterOnTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "CenterOnTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function TabAccount.TabAccount_C.BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -157,26 +351,6 @@ void UTabAccount_C::BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButton
 }
 
 
-// Function TabAccount.TabAccount_C.BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FText                             NewTooltipText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UTabAccount_C::BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccount_C", "BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
-
-	Params::TabAccount_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature Parms{};
-
-	Parms.NewTooltipText = std::move(NewTooltipText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function TabAccount.TabAccount_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -186,34 +360,6 @@ void UTabAccount_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TabAccount_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabAccount.TabAccount_C.CenterOnTab
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UTabAccount_C::CenterOnTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccount_C", "CenterOnTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabAccount.TabAccount_C.UpdateOptionsTab
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UTabAccount_C::UpdateOptionsTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccount_C", "UpdateOptionsTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -354,6 +500,78 @@ class FText UTabAccount_C::GetTencentId()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function TabAccount.TabAccount_C.OnStWContentUninstalled
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UTabAccount_C::OnStWContentUninstalled()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "OnStWContentUninstalled");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TabAccount.TabAccount_C.PrivacySettingsToSelection
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 UTabAccount_C::PrivacySettingsToSelection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "PrivacySettingsToSelection");
+
+	Params::TabAccount_C_PrivacySettingsToSelection Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabAccount.TabAccount_C.PrivacySettingsFromSelection
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMcpPrivacySettings              McpPrivacySettings                                     (Parm, OutParm, NoDestructor)
+
+void UTabAccount_C::PrivacySettingsFromSelection(int32 A, struct FMcpPrivacySettings* McpPrivacySettings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "PrivacySettingsFromSelection");
+
+	Params::TabAccount_C_PrivacySettingsFromSelection Parms{};
+
+	Parms.A = A;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (McpPrivacySettings != nullptr)
+		*McpPrivacySettings = std::move(Parms.McpPrivacySettings);
+}
+
+
+// Function TabAccount.TabAccount_C.CenterAppropriateWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UTabAccount_C::CenterAppropriateWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabAccount_C", "CenterAppropriateWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

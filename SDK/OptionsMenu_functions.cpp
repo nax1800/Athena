@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function OptionsMenu.OptionsMenu_C.OnSettingsApplied__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenu_C::OnSettingsApplied__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "OnSettingsApplied__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function OptionsMenu.OptionsMenu_C.ExecuteUbergraph_OptionsMenu
 // (HasDefaults)
 // Parameters:
@@ -37,145 +51,63 @@ void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint)
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.ShowResetKBMToDefaultMessage
+// Function OptionsMenu.OptionsMenu_C.ShowInputReset DefaultConfirmation
 // (BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::ShowResetKBMToDefaultMessage()
+void UOptionsMenu_C::ShowInputReset_DefaultConfirmation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ShowResetKBMToDefaultMessage");
+		Func = Class->GetFunction("OptionsMenu_C", "ShowInputReset DefaultConfirmation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetKBMToDefaultNo_K2Node_ComponentBoundEvent_97_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetKBMToDefaultNo_K2Node_ComponentBoundEvent_97_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetKBMToDefaultNo_K2Node_ComponentBoundEvent_97_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetKBMToDefaultNo_K2Node_ComponentBoundEvent_97_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetKBMToDefaultYes_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetKBMToDefaultYes_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetKBMToDefaultYes_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetKBMToDefaultYes_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UOptionsMenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetCustomGamepadToDefaultNo_K2Node_ComponentBoundEvent_228_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetCustomGamepadToDefaultNo_K2Node_ComponentBoundEvent_228_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetCustomGamepadToDefaultNo_K2Node_ComponentBoundEvent_228_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetCustomGamepadToDefaultNo_K2Node_ComponentBoundEvent_228_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetCustomGamepadToDefaultYes_K2Node_ComponentBoundEvent_202_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetCustomGamepadToDefaultYes_K2Node_ComponentBoundEvent_202_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetCustomGamepadToDefaultYes_K2Node_ComponentBoundEvent_202_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetCustomGamepadToDefaultYes_K2Node_ComponentBoundEvent_202_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.ShowResetCustomGamepadToDefaultMessage
+// Function OptionsMenu.OptionsMenu_C.ShowLangaugeConfirmation
 // (BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::ShowResetCustomGamepadToDefaultMessage()
+void UOptionsMenu_C::ShowLangaugeConfirmation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ShowResetCustomGamepadToDefaultMessage");
+		Func = Class->GetFunction("OptionsMenu_C", "ShowLangaugeConfirmation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWidget*                          ActiveWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function OptionsMenu.OptionsMenu_C.ShowResetDefaultConfirmation
+// (BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
+void UOptionsMenu_C::ShowResetDefaultConfirmation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
+		Func = Class->GetFunction("OptionsMenu_C", "ShowResetDefaultConfirmation");
 
-	Params::OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ActiveWidget = ActiveWidget;
-	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
+
+// Function OptionsMenu.OptionsMenu_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature(class FName TabId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
+
+	Params::OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature Parms{};
+
+	Parms.TabId = TabId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -237,114 +169,6 @@ void UOptionsMenu_C::HandleSettingsSaveComplete()
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.ShowResetHUDOptionToDefaultMessage
-// (BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::ShowResetHUDOptionToDefaultMessage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ShowResetHUDOptionToDefaultMessage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.ShowResetGameOptionsToDefaultMessage
-// (BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::ShowResetGameOptionsToDefaultMessage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ShowResetGameOptionsToDefaultMessage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetHUDOptionsToDefaultNo_K2Node_ComponentBoundEvent_533_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetHUDOptionsToDefaultNo_K2Node_ComponentBoundEvent_533_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetHUDOptionsToDefaultNo_K2Node_ComponentBoundEvent_533_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetHUDOptionsToDefaultNo_K2Node_ComponentBoundEvent_533_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetHUDOptionsToDefaultYes_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetHUDOptionsToDefaultYes_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetHUDOptionsToDefaultYes_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetHUDOptionsToDefaultYes_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetGameOptionsToDefaultNo_K2Node_ComponentBoundEvent_484_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetGameOptionsToDefaultNo_K2Node_ComponentBoundEvent_484_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetGameOptionsToDefaultNo_K2Node_ComponentBoundEvent_484_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetGameOptionsToDefaultNo_K2Node_ComponentBoundEvent_484_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.BndEvt__ResetGameOptionsToDefaultYes_K2Node_ComponentBoundEvent_461_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::BndEvt__ResetGameOptionsToDefaultYes_K2Node_ComponentBoundEvent_461_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__ResetGameOptionsToDefaultYes_K2Node_ComponentBoundEvent_461_CommonButtonClicked__DelegateSignature");
-
-	Params::OptionsMenu_C_BndEvt__ResetGameOptionsToDefaultYes_K2Node_ComponentBoundEvent_461_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenu.OptionsMenu_C.TabGameOptions_OnActiveWidgetChanged_Bind
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -367,13 +191,49 @@ void UOptionsMenu_C::TabGameOptions_OnActiveWidgetChanged_Bind(class UWidget* Ac
 }
 
 
+// Function OptionsMenu.OptionsMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UOptionsMenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWidget*                          ActiveWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature Parms{};
+
+	Parms.ActiveWidget = ActiveWidget;
+	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function OptionsMenu.OptionsMenu_C.Enable Overlay Input
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Accept_Input                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Accept_Input_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             Overlay_Text                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UOptionsMenu_C::Enable_Overlay_Input(bool Param_Accept_Input, const class FText& Overlay_Text)
+void UOptionsMenu_C::Enable_Overlay_Input(bool Accept_Input_0, const class FText& Overlay_Text)
 {
 	static class UFunction* Func = nullptr;
 
@@ -382,44 +242,10 @@ void UOptionsMenu_C::Enable_Overlay_Input(bool Param_Accept_Input, const class F
 
 	Params::OptionsMenu_C_Enable_Overlay_Input Parms{};
 
-	Parms.Param_Accept_Input = Param_Accept_Input;
+	Parms.Accept_Input_0 = Accept_Input_0;
 	Parms.Overlay_Text = std::move(Overlay_Text);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.Enable Overlay Video
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Accept_Input                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenu_C::Enable_Overlay_Video(bool Param_Accept_Input)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Video");
-
-	Params::OptionsMenu_C_Enable_Overlay_Video Parms{};
-
-	Parms.Param_Accept_Input = Param_Accept_Input;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.Disable Overlay
-// (BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::Disable_Overlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -623,6 +449,128 @@ void UOptionsMenu_C::BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_C
 }
 
 
+// Function OptionsMenu.OptionsMenu_C.Disable Overlay
+// (BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenu_C::Disable_Overlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.Enable Overlay Video
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Accept_Input_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UOptionsMenu_C::Enable_Overlay_Video(bool Accept_Input_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Video");
+
+	Params::OptionsMenu_C_Enable_Overlay_Video Parms{};
+
+	Parms.Accept_Input_0 = Accept_Input_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A");
+
+	Params::OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.DialogResult_505313CB4EC9E510DD07E6B544334958
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::DialogResult_505313CB4EC9E510DD07E6B544334958(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_505313CB4EC9E510DD07E6B544334958");
+
+	Params::OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.DialogResult_865D48E84DB087F08A2C9797E6CB619E
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::DialogResult_865D48E84DB087F08A2C9797E6CB619E(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_865D48E84DB087F08A2C9797E6CB619E");
+
+	Params::OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
+
+	Params::OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_EF0A182C49925D83A3E55080FA222F7D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -743,28 +691,6 @@ void UOptionsMenu_C::OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426(class UClass* Loa
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.DialogResult_360436EF48DEEFB10FA2CAA85B0BEA8F
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenu_C::DialogResult_360436EF48DEEFB10FA2CAA85B0BEA8F(EFortDialogResult Result, class FName ResultName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_360436EF48DEEFB10FA2CAA85B0BEA8F");
-
-	Params::OptionsMenu_C_DialogResult_360436EF48DEEFB10FA2CAA85B0BEA8F Parms{};
-
-	Parms.Result = Result;
-	Parms.ResultName = ResultName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenu.OptionsMenu_C.Initialize
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -875,19 +801,19 @@ void UOptionsMenu_C::Handle_Apply(bool* Passthrough)
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.HandleResetKBMToDefault
+// Function OptionsMenu.OptionsMenu_C.HandleResetToDefault
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenu_C::HandleResetKBMToDefault(bool* Passthrough)
+void UOptionsMenu_C::HandleResetToDefault(bool* Passthrough)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleResetKBMToDefault");
+		Func = Class->GetFunction("OptionsMenu_C", "HandleResetToDefault");
 
-	Params::OptionsMenu_C_HandleResetKBMToDefault Parms{};
+	Params::OptionsMenu_C_HandleResetToDefault Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -999,8 +925,10 @@ void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 // class UClass*                           WidgetClass                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             DisplayName                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FName                             NameId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush                      Icon                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// ESettingTab                             Tab_Type                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenu_C::AddTab(class UClass* WidgetClass, const class FText& DisplayName, class FName NameId)
+void UOptionsMenu_C::AddTab(class UClass* WidgetClass, const class FText& DisplayName, class FName NameId, const struct FSlateBrush& Icon, ESettingTab Tab_Type)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1012,6 +940,8 @@ void UOptionsMenu_C::AddTab(class UClass* WidgetClass, const class FText& Displa
 	Parms.WidgetClass = WidgetClass;
 	Parms.DisplayName = std::move(DisplayName);
 	Parms.NameId = NameId;
+	Parms.Icon = std::move(Icon);
+	Parms.Tab_Type = Tab_Type;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1031,27 +961,6 @@ void UOptionsMenu_C::SetBackground()
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.Handle Reset HUD Default
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenu_C::Handle_Reset_HUD_Default(bool* Passthrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Handle Reset HUD Default");
-
-	Params::OptionsMenu_C_Handle_Reset_HUD_Default Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
-}
-
-
 // Function OptionsMenu.OptionsMenu_C.CenterOnActiveTab
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1066,42 +975,21 @@ void UOptionsMenu_C::CenterOnActiveTab()
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.HandleResetGameOptionsToDefault
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenu_C::HandleResetGameOptionsToDefault(bool* Passthrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleResetGameOptionsToDefault");
-
-	Params::OptionsMenu_C_HandleResetGameOptionsToDefault Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.HandleTabGameOptionsResetActionHandlerStates
+// Function OptionsMenu.OptionsMenu_C.HandleTabGameOptionsActionHandlerStates
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   ActiveWidgetIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Active_Widget_Index                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenu_C::HandleTabGameOptionsResetActionHandlerStates(int32 ActiveWidgetIndex)
+void UOptionsMenu_C::HandleTabGameOptionsActionHandlerStates(int32 Active_Widget_Index)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGameOptionsResetActionHandlerStates");
+		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGameOptionsActionHandlerStates");
 
-	Params::OptionsMenu_C_HandleTabGameOptionsResetActionHandlerStates Parms{};
+	Params::OptionsMenu_C_HandleTabGameOptionsActionHandlerStates Parms{};
 
-	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
+	Parms.Active_Widget_Index = Active_Widget_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1127,45 +1015,23 @@ void UOptionsMenu_C::HandleTabInputOptionsActionHandlerStates(class UTabInputOpt
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.HandleTabBrightnessOptionsActionHandlerStates
+// Function OptionsMenu.OptionsMenu_C.HandleResetUnavailableActionHandlerStates
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldShowApply                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenu_C::HandleTabBrightnessOptionsActionHandlerStates()
+void UOptionsMenu_C::HandleResetUnavailableActionHandlerStates(bool ShouldShowApply)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabBrightnessOptionsActionHandlerStates");
+		Func = Class->GetFunction("OptionsMenu_C", "HandleResetUnavailableActionHandlerStates");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::OptionsMenu_C_HandleResetUnavailableActionHandlerStates Parms{};
 
+	Parms.ShouldShowApply = ShouldShowApply;
 
-// Function OptionsMenu.OptionsMenu_C.HandleTabVideoOptionsActionHandlerStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::HandleTabVideoOptionsActionHandlerStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabVideoOptionsActionHandlerStates");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.HandleTabFortAudioOptionsActionHandlerStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::HandleTabFortAudioOptionsActionHandlerStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabFortAudioOptionsActionHandlerStates");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1183,45 +1049,23 @@ void UOptionsMenu_C::HandleTabGamepadConfigActionHandlerStates()
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.HandleTabAccountLinkageActionHandlerStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::HandleTabAccountLinkageActionHandlerStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabAccountLinkageActionHandlerStates");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OptionsMenu.OptionsMenu_C.HandleTabGameOptionsActionHandlerStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::HandleTabGameOptionsActionHandlerStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGameOptionsActionHandlerStates");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function OptionsMenu.OptionsMenu_C.DoResetGameOptionsToDefault
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortOptionsTab*                  Tab_To_Reset                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenu_C::DoResetGameOptionsToDefault()
+void UOptionsMenu_C::DoResetGameOptionsToDefault(class UFortOptionsTab* Tab_To_Reset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("OptionsMenu_C", "DoResetGameOptionsToDefault");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::OptionsMenu_C_DoResetGameOptionsToDefault Parms{};
+
+	Parms.Tab_To_Reset = Tab_To_Reset;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1295,20 +1139,6 @@ void UOptionsMenu_C::ResetActionHandlerStates(bool DisableBack)
 }
 
 
-// Function OptionsMenu.OptionsMenu_C.HandleTabAccessibilityOptionsActionHandlerStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UOptionsMenu_C::HandleTabAccessibilityOptionsActionHandlerStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabAccessibilityOptionsActionHandlerStates");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function OptionsMenu.OptionsMenu_C.UpdateAllOptionsTabs
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1324,37 +1154,91 @@ void UOptionsMenu_C::UpdateAllOptionsTabs()
 
 
 // Function OptionsMenu.OptionsMenu_C.HandleResetCustomGamepadToDefault
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenu_C::HandleResetCustomGamepadToDefault(bool* Passthrough)
+void UOptionsMenu_C::HandleResetCustomGamepadToDefault()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("OptionsMenu_C", "HandleResetCustomGamepadToDefault");
 
-	Params::OptionsMenu_C_HandleResetCustomGamepadToDefault Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function OptionsMenu.OptionsMenu_C.DoResetKBMToDefault
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Preset_To_Set                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenu_C::DoResetKBMToDefault()
+void UOptionsMenu_C::DoResetKBMToDefault(int32 Preset_To_Set)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("OptionsMenu_C", "DoResetKBMToDefault");
 
+	Params::OptionsMenu_C_DoResetKBMToDefault Parms{};
+
+	Parms.Preset_To_Set = Preset_To_Set;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.Update Header Text by Tab ID
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UOptionsMenu_C::Update_Header_Text_by_Tab_ID(class FName TabId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "Update Header Text by Tab ID");
+
+	Params::OptionsMenu_C_Update_Header_Text_by_Tab_ID Parms{};
+
+	Parms.TabId = TabId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.HandleResetAvailableActionHandlerStates
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UOptionsMenu_C::HandleResetAvailableActionHandlerStates()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleResetAvailableActionHandlerStates");
+
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function OptionsMenu.OptionsMenu_C.HandleInputResetToDefault
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UOptionsMenu_C::HandleInputResetToDefault(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleInputResetToDefault");
+
+	Params::OptionsMenu_C_HandleInputResetToDefault Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
 }
 
 }

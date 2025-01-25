@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionObjectiveProgress.MissionObjectiveProgress_C
-// 0x0018 (0x0230 - 0x0218)
+// 0x0018 (0x0228 - 0x0210)
 class UMissionObjectiveProgress_C final : public UCommonUserWidget
 {
 public:
-	class UProgressBar*                           ObjectiveProgressBar;                              // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ProgressBarText;                                   // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bConfigureAsHUD;                                   // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	class UProgressBar*                           ObjectiveProgressBar;                              // 0x0210(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ProgressBarText;                                   // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bConfigureAsHUD;                                   // 0x0220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void Update(class AFortObjectiveBase* Objective, int32 BarIndex);
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UMissionObjectiveProgress_C) == 0x000008, "Wrong alignment on UMissionObjectiveProgress_C");
-static_assert(sizeof(UMissionObjectiveProgress_C) == 0x000230, "Wrong size on UMissionObjectiveProgress_C");
-static_assert(offsetof(UMissionObjectiveProgress_C, ObjectiveProgressBar) == 0x000218, "Member 'UMissionObjectiveProgress_C::ObjectiveProgressBar' has a wrong offset!");
-static_assert(offsetof(UMissionObjectiveProgress_C, ProgressBarText) == 0x000220, "Member 'UMissionObjectiveProgress_C::ProgressBarText' has a wrong offset!");
-static_assert(offsetof(UMissionObjectiveProgress_C, bConfigureAsHUD) == 0x000228, "Member 'UMissionObjectiveProgress_C::bConfigureAsHUD' has a wrong offset!");
+static_assert(sizeof(UMissionObjectiveProgress_C) == 0x000228, "Wrong size on UMissionObjectiveProgress_C");
+static_assert(offsetof(UMissionObjectiveProgress_C, ObjectiveProgressBar) == 0x000210, "Member 'UMissionObjectiveProgress_C::ObjectiveProgressBar' has a wrong offset!");
+static_assert(offsetof(UMissionObjectiveProgress_C, ProgressBarText) == 0x000218, "Member 'UMissionObjectiveProgress_C::ProgressBarText' has a wrong offset!");
+static_assert(offsetof(UMissionObjectiveProgress_C, bConfigureAsHUD) == 0x000220, "Member 'UMissionObjectiveProgress_C::bConfigureAsHUD' has a wrong offset!");
 
 }
 

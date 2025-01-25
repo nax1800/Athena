@@ -10,43 +10,44 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HorizontalTabList.HorizontalTabList_C
-// 0x0070 (0x03C8 - 0x0358)
+// 0x0070 (0x03B8 - 0x0348)
 class UHorizontalTabList_C final : public UFortTabListWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 ImageGamepadKeyPrompt;                             // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageHorizRule;                                    // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActionWidget*                    NextTabAction;                                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               NextTabActionWrapper;                              // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Container;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActionWidget*                    PreviousTabAction;                                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               PreviousTabActionWrapper;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         TabButtonBox;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                TabButtonPadding;                                  // 0x03A0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	class UClass*                                 ButtonStyle;                                       // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          UseButtonStyle;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          ShowGamePadInputPrompt;                            // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          ShowRail;                                          // 0x03BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_3BB[0x1];                                      // 0x03BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinTabWidth;                                       // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewVar_0;                                          // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ForceTabLabelsCollapsed;                           // 0x03C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          ForceTabIconsCollapsed;                            // 0x03C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 ImageGamepadKeyPrompt;                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageHorizRule;                                    // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActionWidget*                    NextTabAction;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               NextTabActionWrapper;                              // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Container;                                 // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActionWidget*                    PreviousTabAction;                                 // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               PreviousTabActionWrapper;                          // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         TabButtonBox;                                      // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FMargin                                TabButtonPadding;                                  // 0x0390(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	class UClass*                                 ButtonStyle;                                       // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          UseButtonStyle;                                    // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          ShowGamePadInputPrompt;                            // 0x03A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          ShowRail;                                          // 0x03AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_3AB[0x1];                                      // 0x03AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MinTabWidth;                                       // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewVar_0;                                          // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ForceTabLabelsCollapsed;                           // 0x03B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          ForceTabIconsCollapsed;                            // 0x03B5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_HorizontalTabList(int32 EntryPoint);
+	void HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton);
 	void HandleTabCreated(class FName TabNameID, class UCommonButton* TabButton);
 	void CustomEvent_0(class FName TabId);
 	void Previous_Visibility();
@@ -69,25 +70,25 @@ public:
 	}
 };
 static_assert(alignof(UHorizontalTabList_C) == 0x000008, "Wrong alignment on UHorizontalTabList_C");
-static_assert(sizeof(UHorizontalTabList_C) == 0x0003C8, "Wrong size on UHorizontalTabList_C");
-static_assert(offsetof(UHorizontalTabList_C, UberGraphFrame) == 0x000358, "Member 'UHorizontalTabList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageGamepadKeyPrompt) == 0x000360, "Member 'UHorizontalTabList_C::ImageGamepadKeyPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageHorizRule) == 0x000368, "Member 'UHorizontalTabList_C::ImageHorizRule' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabAction) == 0x000370, "Member 'UHorizontalTabList_C::NextTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabActionWrapper) == 0x000378, "Member 'UHorizontalTabList_C::NextTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, Overlay_Container) == 0x000380, "Member 'UHorizontalTabList_C::Overlay_Container' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabAction) == 0x000388, "Member 'UHorizontalTabList_C::PreviousTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabActionWrapper) == 0x000390, "Member 'UHorizontalTabList_C::PreviousTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonBox) == 0x000398, "Member 'UHorizontalTabList_C::TabButtonBox' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonPadding) == 0x0003A0, "Member 'UHorizontalTabList_C::TabButtonPadding' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ButtonStyle) == 0x0003B0, "Member 'UHorizontalTabList_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, UseButtonStyle) == 0x0003B8, "Member 'UHorizontalTabList_C::UseButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowGamePadInputPrompt) == 0x0003B9, "Member 'UHorizontalTabList_C::ShowGamePadInputPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowRail) == 0x0003BA, "Member 'UHorizontalTabList_C::ShowRail' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, MinTabWidth) == 0x0003BC, "Member 'UHorizontalTabList_C::MinTabWidth' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NewVar_0) == 0x0003C0, "Member 'UHorizontalTabList_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ForceTabLabelsCollapsed) == 0x0003C4, "Member 'UHorizontalTabList_C::ForceTabLabelsCollapsed' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ForceTabIconsCollapsed) == 0x0003C5, "Member 'UHorizontalTabList_C::ForceTabIconsCollapsed' has a wrong offset!");
+static_assert(sizeof(UHorizontalTabList_C) == 0x0003B8, "Wrong size on UHorizontalTabList_C");
+static_assert(offsetof(UHorizontalTabList_C, UberGraphFrame) == 0x000348, "Member 'UHorizontalTabList_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ImageGamepadKeyPrompt) == 0x000350, "Member 'UHorizontalTabList_C::ImageGamepadKeyPrompt' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ImageHorizRule) == 0x000358, "Member 'UHorizontalTabList_C::ImageHorizRule' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, NextTabAction) == 0x000360, "Member 'UHorizontalTabList_C::NextTabAction' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, NextTabActionWrapper) == 0x000368, "Member 'UHorizontalTabList_C::NextTabActionWrapper' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, Overlay_Container) == 0x000370, "Member 'UHorizontalTabList_C::Overlay_Container' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, PreviousTabAction) == 0x000378, "Member 'UHorizontalTabList_C::PreviousTabAction' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, PreviousTabActionWrapper) == 0x000380, "Member 'UHorizontalTabList_C::PreviousTabActionWrapper' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, TabButtonBox) == 0x000388, "Member 'UHorizontalTabList_C::TabButtonBox' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, TabButtonPadding) == 0x000390, "Member 'UHorizontalTabList_C::TabButtonPadding' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ButtonStyle) == 0x0003A0, "Member 'UHorizontalTabList_C::ButtonStyle' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, UseButtonStyle) == 0x0003A8, "Member 'UHorizontalTabList_C::UseButtonStyle' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ShowGamePadInputPrompt) == 0x0003A9, "Member 'UHorizontalTabList_C::ShowGamePadInputPrompt' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ShowRail) == 0x0003AA, "Member 'UHorizontalTabList_C::ShowRail' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, MinTabWidth) == 0x0003AC, "Member 'UHorizontalTabList_C::MinTabWidth' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, NewVar_0) == 0x0003B0, "Member 'UHorizontalTabList_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ForceTabLabelsCollapsed) == 0x0003B4, "Member 'UHorizontalTabList_C::ForceTabLabelsCollapsed' has a wrong offset!");
+static_assert(offsetof(UHorizontalTabList_C, ForceTabIconsCollapsed) == 0x0003B5, "Member 'UHorizontalTabList_C::ForceTabIconsCollapsed' has a wrong offset!");
 
 }
 

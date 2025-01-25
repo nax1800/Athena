@@ -10,16 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaSeasonReward.AthenaSeasonReward_C.ExecuteUbergraph_AthenaSeasonReward
-// 0x0040 (0x0040 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward final
 {
 public:
@@ -27,26 +29,19 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaCharacterItemDefinition*         K2Node_DynamicCast_AsAthena_Character_Item_Definition; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward");
-static_assert(sizeof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward) == 0x000040, "Wrong size on AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward");
+static_assert(sizeof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward) == 0x000028, "Wrong size on AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward");
 static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, EntryPoint) == 0x000000, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000011, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_GetContext_ReturnValue1) == 0x000018, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000028, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, K2Node_DynamicCast_AsAthena_Character_Item_Definition) == 0x000030, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::K2Node_DynamicCast_AsAthena_Character_Item_Definition' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_GetUINavigationManager_ReturnValue) == 0x000018, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000020, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward, CallFunc_BooleanAND_ReturnValue) == 0x000021, "Member 'AthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonReward.AthenaSeasonReward_C.Setup
 // 0x00A8 (0x00A8 - 0x0000)
@@ -57,7 +52,8 @@ public:
 	bool                                          Claimed;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Locked;                                            // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          LevelAchieved;                                     // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	EFortItemCardSize                             ItemCardSize;                                      // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -70,6 +66,7 @@ static_assert(offsetof(AthenaSeasonReward_C_Setup, ItemToRepresent) == 0x000000,
 static_assert(offsetof(AthenaSeasonReward_C_Setup, Claimed) == 0x000008, "Member 'AthenaSeasonReward_C_Setup::Claimed' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_Setup, Locked) == 0x000009, "Member 'AthenaSeasonReward_C_Setup::Locked' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_Setup, LevelAchieved) == 0x00000A, "Member 'AthenaSeasonReward_C_Setup::LevelAchieved' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_Setup, ItemCardSize) == 0x00000B, "Member 'AthenaSeasonReward_C_Setup::ItemCardSize' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_Setup, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'AthenaSeasonReward_C_Setup::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_Setup, CallFunc_GetRarity_ReturnValue) == 0x000018, "Member 'AthenaSeasonReward_C_Setup::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_Setup, CallFunc_BPGetRarityData_ReturnValue) == 0x000020, "Member 'AthenaSeasonReward_C_Setup::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
@@ -90,13 +87,13 @@ public:
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable1;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select12_Default;                           // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select2_Default;                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaSeasonReward_C_SetState) == 0x000004, "Wrong alignment on AthenaSeasonReward_C_SetState");
 static_assert(sizeof(AthenaSeasonReward_C_SetState) == 0x00001C, "Wrong size on AthenaSeasonReward_C_SetState");
@@ -109,12 +106,285 @@ static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable) == 0x0
 static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable1) == 0x00000A, "Member 'AthenaSeasonReward_C_SetState::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_bool_Variable1) == 0x00000B, "Member 'AthenaSeasonReward_C_SetState::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_SetState, K2Node_Select_Default) == 0x00000C, "Member 'AthenaSeasonReward_C_SetState::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable12) == 0x00000D, "Member 'AthenaSeasonReward_C_SetState::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable123) == 0x00000E, "Member 'AthenaSeasonReward_C_SetState::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable2) == 0x00000D, "Member 'AthenaSeasonReward_C_SetState::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_byte_Variable3) == 0x00000E, "Member 'AthenaSeasonReward_C_SetState::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_SetState, K2Node_Select1_Default) == 0x00000F, "Member 'AthenaSeasonReward_C_SetState::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_float_Variable1) == 0x000010, "Member 'AthenaSeasonReward_C_SetState::Temp_float_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_bool_Variable12) == 0x000014, "Member 'AthenaSeasonReward_C_SetState::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonReward_C_SetState, K2Node_Select12_Default) == 0x000018, "Member 'AthenaSeasonReward_C_SetState::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_SetState, Temp_bool_Variable2) == 0x000014, "Member 'AthenaSeasonReward_C_SetState::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_SetState, K2Node_Select2_Default) == 0x000018, "Member 'AthenaSeasonReward_C_SetState::K2Node_Select2_Default' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.SetViewOnHover
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaSeasonReward_C_SetViewOnHover final
+{
+public:
+	bool                                          ShouldViewOnHover;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_SetViewOnHover) == 0x000001, "Wrong alignment on AthenaSeasonReward_C_SetViewOnHover");
+static_assert(sizeof(AthenaSeasonReward_C_SetViewOnHover) == 0x000001, "Wrong size on AthenaSeasonReward_C_SetViewOnHover");
+static_assert(offsetof(AthenaSeasonReward_C_SetViewOnHover, ShouldViewOnHover) == 0x000000, "Member 'AthenaSeasonReward_C_SetViewOnHover::ShouldViewOnHover' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.SetSecondaryItem
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaSeasonReward_C_SetSecondaryItem final
+{
+public:
+	class UFortItem*                              SecondaryItem_0;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaSeasonReward_C_SetSecondaryItem) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_SetSecondaryItem");
+static_assert(sizeof(AthenaSeasonReward_C_SetSecondaryItem) == 0x000008, "Wrong size on AthenaSeasonReward_C_SetSecondaryItem");
+static_assert(offsetof(AthenaSeasonReward_C_SetSecondaryItem, SecondaryItem_0) == 0x000000, "Member 'AthenaSeasonReward_C_SetSecondaryItem::SecondaryItem_0' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.ViewInVault
+// 0x0058 (0x0058 - 0x0000)
+struct AthenaSeasonReward_C_ViewInVault final
+{
+public:
+	TArray<class UFortItem*>                      Additional_Items;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortItem*>                      Mutable_Additional_Items;                          // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCharacterItemDefinition*         K2Node_DynamicCast_AsAthena_Character_Item_Definition; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_ViewInVault) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_ViewInVault");
+static_assert(sizeof(AthenaSeasonReward_C_ViewInVault) == 0x000058, "Wrong size on AthenaSeasonReward_C_ViewInVault");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, Additional_Items) == 0x000000, "Member 'AthenaSeasonReward_C_ViewInVault::Additional_Items' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, Mutable_Additional_Items) == 0x000010, "Member 'AthenaSeasonReward_C_ViewInVault::Mutable_Additional_Items' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_IsValid_ReturnValue) == 0x000025, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_Array_AddUnique_ReturnValue) == 0x000028, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_IsValid_ReturnValue1) == 0x000038, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000040, "Member 'AthenaSeasonReward_C_ViewInVault::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, K2Node_DynamicCast_AsAthena_Character_Item_Definition) == 0x000048, "Member 'AthenaSeasonReward_C_ViewInVault::K2Node_DynamicCast_AsAthena_Character_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ViewInVault, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'AthenaSeasonReward_C_ViewInVault::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.BeginCyclingVariants
+// 0x00B8 (0x00B8 - 0x0000)
+struct AthenaSeasonReward_C_BeginCyclingVariants final
+{
+public:
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	struct FUnlockableVariantPreviewInfo          K2Node_MakeStruct_UnlockableVariantPreviewInfo;    // 0x0010(0x0028)()
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCharacterItemDefinition*         CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFortCosmeticVariantPreview>    CallFunc_GetItemVariantPreviews_ReturnValue;       // 0x0050(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(TArray<class UFortItem*>& Items)> K2Node_CreateDelegate_OutputDelegate;              // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	struct FUnlockableVariantPreviewInfo          K2Node_MakeStruct_UnlockableVariantPreviewInfo1;   // 0x0088(0x0028)()
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaSeasonReward_C_BeginCyclingVariants) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_BeginCyclingVariants");
+static_assert(sizeof(AthenaSeasonReward_C_BeginCyclingVariants) == 0x0000B8, "Wrong size on AthenaSeasonReward_C_BeginCyclingVariants");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, K2Node_MakeArray_Array) == 0x000000, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, K2Node_MakeStruct_UnlockableVariantPreviewInfo) == 0x000010, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::K2Node_MakeStruct_UnlockableVariantPreviewInfo' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition) == 0x000040, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_GetItemVariantPreviews_ReturnValue) == 0x000050, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_GetItemVariantPreviews_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_GetContext_ReturnValue1) == 0x000068, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_Greater_IntInt_ReturnValue) == 0x000074, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, K2Node_CreateDelegate_OutputDelegate) == 0x000078, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, K2Node_MakeStruct_UnlockableVariantPreviewInfo1) == 0x000088, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::K2Node_MakeStruct_UnlockableVariantPreviewInfo1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_BeginCyclingVariants, CallFunc_GetContext_ReturnValue2) == 0x0000B0, "Member 'AthenaSeasonReward_C_BeginCyclingVariants::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.StopCyclingVariants
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaSeasonReward_C_StopCyclingVariants final
+{
+public:
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(TArray<class UFortItem*>& Items)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_StopCyclingVariants) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_StopCyclingVariants");
+static_assert(sizeof(AthenaSeasonReward_C_StopCyclingVariants) == 0x000018, "Wrong size on AthenaSeasonReward_C_StopCyclingVariants");
+static_assert(offsetof(AthenaSeasonReward_C_StopCyclingVariants, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AthenaSeasonReward_C_StopCyclingVariants::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_StopCyclingVariants, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaSeasonReward_C_StopCyclingVariants::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.ShowNextVariant
+// 0x0110 (0x0110 - 0x0000)
+struct AthenaSeasonReward_C_ShowNextVariant final
+{
+public:
+	TArray<struct FFortCosmeticVariantPreviewElement> Temp;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	int32                                         VariantPreviewLength;                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortItem*>                      CallFunc_GetTemporaryItems_Temporary_Items;        // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCharacterItemDefinition*         CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFortCosmeticVariantPreview>    CallFunc_GetItemVariantPreviews_ReturnValue;       // 0x0068(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFortCosmeticVariantPreview>    CallFunc_GetItemVariantPreviews_ReturnValue1;      // 0x0080(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMcpVariantChannelInfo                 CallFunc_Array_Get_Item;                           // 0x0098(0x0038)()
+	int32                                         CallFunc_Array_Length_ReturnValue1;                // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnlockableVariantPreviewInfo          K2Node_MakeStruct_UnlockableVariantPreviewInfo;    // 0x00D8(0x0028)()
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_ShowNextVariant) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_ShowNextVariant");
+static_assert(sizeof(AthenaSeasonReward_C_ShowNextVariant) == 0x000110, "Wrong size on AthenaSeasonReward_C_ShowNextVariant");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, Temp) == 0x000000, "Member 'AthenaSeasonReward_C_ShowNextVariant::Temp' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, VariantPreviewLength) == 0x000010, "Member 'AthenaSeasonReward_C_ShowNextVariant::VariantPreviewLength' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, Temp_int_Array_Index_Variable) == 0x000014, "Member 'AthenaSeasonReward_C_ShowNextVariant::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'AthenaSeasonReward_C_ShowNextVariant::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000024, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Add_IntInt_ReturnValue1) == 0x00002C, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Add_IntInt_ReturnValue2) == 0x000030, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, Temp_int_Variable) == 0x000034, "Member 'AthenaSeasonReward_C_ShowNextVariant::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetTemporaryItems_Temporary_Items) == 0x000040, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetTemporaryItems_Temporary_Items' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Percent_IntInt_ReturnValue) == 0x000050, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Add_IntInt_ReturnValue3) == 0x000054, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetContext_ReturnValue1) == 0x000058, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition) == 0x000060, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetAthenaItemCharacterItemDefinition_AsAthena_Character_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetItemVariantPreviews_ReturnValue) == 0x000068, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetItemVariantPreviews_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetItemVariantPreviews_ReturnValue1) == 0x000080, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetItemVariantPreviews_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Array_Get_Item) == 0x000098, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Array_Length_ReturnValue1) == 0x0000D0, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Array_Length_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_Less_IntInt_ReturnValue) == 0x0000D4, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, K2Node_MakeStruct_UnlockableVariantPreviewInfo) == 0x0000D8, "Member 'AthenaSeasonReward_C_ShowNextVariant::K2Node_MakeStruct_UnlockableVariantPreviewInfo' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_GetContext_ReturnValue2) == 0x000100, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ShowNextVariant, CallFunc_IsValid_ReturnValue1) == 0x000108, "Member 'AthenaSeasonReward_C_ShowNextVariant::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.OnVaultItemsChanged
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaSeasonReward_C_OnVaultItemsChanged final
+{
+public:
+	TArray<class UFortItem*>                      Items;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+static_assert(alignof(AthenaSeasonReward_C_OnVaultItemsChanged) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_OnVaultItemsChanged");
+static_assert(sizeof(AthenaSeasonReward_C_OnVaultItemsChanged) == 0x000010, "Wrong size on AthenaSeasonReward_C_OnVaultItemsChanged");
+static_assert(offsetof(AthenaSeasonReward_C_OnVaultItemsChanged, Items) == 0x000000, "Member 'AthenaSeasonReward_C_OnVaultItemsChanged::Items' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.GetAthenaItemCharacterItemDefinition
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition final
+{
+public:
+	class UAthenaCharacterItemDefinition*         AsAthena_Character_Item_Definition;                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCharacterItemDefinition*         K2Node_DynamicCast_AsAthena_Character_Item_Definition; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition");
+static_assert(sizeof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition) == 0x000020, "Wrong size on AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition");
+static_assert(offsetof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition, AsAthena_Character_Item_Definition) == 0x000000, "Member 'AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition::AsAthena_Character_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition, K2Node_DynamicCast_AsAthena_Character_Item_Definition) == 0x000010, "Member 'AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition::K2Node_DynamicCast_AsAthena_Character_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaSeasonReward_C_GetAthenaItemCharacterItemDefinition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.StartVariantTimer
+// 0x0038 (0x0038 - 0x0000)
+struct AthenaSeasonReward_C_StartVariantTimer final
+{
+public:
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue1;         // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaSeasonReward_C_StartVariantTimer) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_StartVariantTimer");
+static_assert(sizeof(AthenaSeasonReward_C_StartVariantTimer) == 0x000038, "Wrong size on AthenaSeasonReward_C_StartVariantTimer");
+static_assert(offsetof(AthenaSeasonReward_C_StartVariantTimer, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000000, "Member 'AthenaSeasonReward_C_StartVariantTimer::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_StartVariantTimer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaSeasonReward_C_StartVariantTimer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_StartVariantTimer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'AthenaSeasonReward_C_StartVariantTimer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_StartVariantTimer, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'AthenaSeasonReward_C_StartVariantTimer::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_StartVariantTimer, CallFunc_K2_SetTimerDelegate_ReturnValue1) == 0x000030, "Member 'AthenaSeasonReward_C_StartVariantTimer::CallFunc_K2_SetTimerDelegate_ReturnValue1' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.ResetVariantToDefault
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaSeasonReward_C_ResetVariantToDefault final
+{
+public:
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaCosmeticItemDefinition*          K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AthenaSeasonReward_C_ResetVariantToDefault) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_ResetVariantToDefault");
+static_assert(sizeof(AthenaSeasonReward_C_ResetVariantToDefault) == 0x000020, "Wrong size on AthenaSeasonReward_C_ResetVariantToDefault");
+static_assert(offsetof(AthenaSeasonReward_C_ResetVariantToDefault, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AthenaSeasonReward_C_ResetVariantToDefault::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ResetVariantToDefault, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'AthenaSeasonReward_C_ResetVariantToDefault::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ResetVariantToDefault, K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition) == 0x000010, "Member 'AthenaSeasonReward_C_ResetVariantToDefault::K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ResetVariantToDefault, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaSeasonReward_C_ResetVariantToDefault::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_ResetVariantToDefault, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'AthenaSeasonReward_C_ResetVariantToDefault::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function AthenaSeasonReward.AthenaSeasonReward_C.GetTemporaryItems
+// 0x0070 (0x0070 - 0x0000)
+struct AthenaSeasonReward_C_GetTemporaryItems final
+{
+public:
+	TArray<struct FFortCosmeticVariantPreviewElement> Cosmetics;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortItem*>                      Temporary_Items;                                   // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor)
+	TArray<class UFortItem*>                      TemporaryItems;                                    // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortCosmeticVariantPreviewElement     CallFunc_Array_Get_Item;                           // 0x0040(0x0018)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AthenaSeasonReward_C_GetTemporaryItems) == 0x000008, "Wrong alignment on AthenaSeasonReward_C_GetTemporaryItems");
+static_assert(sizeof(AthenaSeasonReward_C_GetTemporaryItems) == 0x000070, "Wrong size on AthenaSeasonReward_C_GetTemporaryItems");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, Cosmetics) == 0x000000, "Member 'AthenaSeasonReward_C_GetTemporaryItems::Cosmetics' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, Temporary_Items) == 0x000010, "Member 'AthenaSeasonReward_C_GetTemporaryItems::Temporary_Items' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, TemporaryItems) == 0x000020, "Member 'AthenaSeasonReward_C_GetTemporaryItems::TemporaryItems' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, Temp_int_Array_Index_Variable) == 0x000034, "Member 'AthenaSeasonReward_C_GetTemporaryItems::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'AthenaSeasonReward_C_GetTemporaryItems::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_Array_Get_Item) == 0x000040, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000060, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaSeasonReward_C_GetTemporaryItems, CallFunc_Array_Add_ReturnValue) == 0x00006C, "Member 'AthenaSeasonReward_C_GetTemporaryItems::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 }
 

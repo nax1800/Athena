@@ -12,69 +12,81 @@
 
 #include "SlateCore_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.ExecuteUbergraph_AthenaEquipProgress
-// 0x0160 (0x0160 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_CueName;                        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameplayCueEvent                             K2Node_CustomEvent_EventType;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_CustomEvent_Parameters;                     // 0x0070(0x00B8)(ConstParm, ContainsInstancedReference)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12B[0x5];                                      // 0x012B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName CueName, EGameplayCueEvent EventType, struct FGameplayCueParameters& Parameters)> K2Node_CreateDelegate_OutputDelegate;              // 0x0130(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0028(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue1;         // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_CueName;                        // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameplayCueEvent                             K2Node_CustomEvent_EventType;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 K2Node_CustomEvent_Parameters;                     // 0x0090(0x00B8)(ConstParm, ContainsInstancedReference)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14B[0x5];                                      // 0x014B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName CueName, EGameplayCueEvent EventType, struct FGameplayCueParameters& Parameters)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0150(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue1;        // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0180(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x000008, "Wrong alignment on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
-static_assert(sizeof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x000160, "Wrong size on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
+static_assert(sizeof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x000188, "Wrong size on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
 static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, EntryPoint) == 0x000000, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000048, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00004C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000050, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_FClamp_ReturnValue) == 0x000054, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000058, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00005C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_CueName) == 0x000060, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_CueName' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_EventType) == 0x000068, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_EventType' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_Parameters) == 0x000070, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000128, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_SwitchEnum_CmpSuccess) == 0x000129, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_SwitchName_CmpSuccess) == 0x00012A, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CreateDelegate_OutputDelegate) == 0x000130, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000140, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000144, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetContext_ReturnValue) == 0x000148, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Less_FloatFloat_ReturnValue) == 0x000150, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Add_IntInt_ReturnValue) == 0x000154, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Add_IntInt_ReturnValue1) == 0x000158, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_MyGeometry) == 0x000028, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_InDeltaTime) == 0x000060, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000064, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000068, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00006C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_FClamp_ReturnValue) == 0x000070, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Subtract_FloatFloat_ReturnValue1) == 0x000074, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Subtract_FloatFloat_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000078, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_CueName) == 0x000080, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_CueName' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_EventType) == 0x000088, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_EventType' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CustomEvent_Parameters) == 0x000090, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CustomEvent_Parameters' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_SwitchEnum_CmpSuccess) == 0x000148, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_SwitchName_CmpSuccess) == 0x000149, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Less_FloatFloat_ReturnValue) == 0x00014A, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_CreateDelegate_OutputDelegate1) == 0x000150, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetGameTimeInSeconds_ReturnValue1) == 0x000160, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetGameTimeInSeconds_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000164, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000168, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Add_IntInt_ReturnValue) == 0x000170, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Add_IntInt_ReturnValue1) == 0x000174, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Add_FloatFloat_ReturnValue) == 0x000178, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00017C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000180, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.OnUIGameplayCue_Event_0
 // 0x00C8 (0x00C8 - 0x0000)

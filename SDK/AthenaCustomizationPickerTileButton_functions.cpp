@@ -37,51 +37,35 @@ void UAthenaCustomizationPickerTileButton_C::ExecuteUbergraph_AthenaCustomizatio
 }
 
 
-// Function AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UAthenaCustomizationPickerTileButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C.OnSelected
+// Function AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UAthenaCustomizationPickerTileButton_C::OnSelected()
+void UAthenaCustomizationPickerTileButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnSelected");
+		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function AthenaCustomizationPickerTileButton.AthenaCustomizationPickerTileButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaCustomizationPickerTileButton_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UAthenaCustomizationPickerTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "SetData");
+		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnListItemObjectSet");
 
-	Params::AthenaCustomizationPickerTileButton_C_SetData Parms{};
+	Params::AthenaCustomizationPickerTileButton_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

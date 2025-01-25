@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Athena_PlayerCameraModeSkydiveGlide.Athena_PlayerCameraModeSkydiveGlide_C
-// 0x0000 (0x0118 - 0x0118)
+// 0x0000 (0x0C20 - 0x0C20)
 class UAthena_PlayerCameraModeSkydiveGlide_C final : public UAthena_PlayerCameraModeBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeSkydiveGlide_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeSkydiveGlide_C) == 0x000008, "Wrong alignment on UAthena_PlayerCameraModeSkydiveGlide_C");
-static_assert(sizeof(UAthena_PlayerCameraModeSkydiveGlide_C) == 0x000118, "Wrong size on UAthena_PlayerCameraModeSkydiveGlide_C");
+static_assert(alignof(UAthena_PlayerCameraModeSkydiveGlide_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeSkydiveGlide_C");
+static_assert(sizeof(UAthena_PlayerCameraModeSkydiveGlide_C) == 0x000C20, "Wrong size on UAthena_PlayerCameraModeSkydiveGlide_C");
 
 }
 

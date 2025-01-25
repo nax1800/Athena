@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "CommonUI_structs.hpp"
@@ -22,63 +22,79 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaCustomizationTab.AthenaCustomizationTab_C
-// 0x0190 (0x0590 - 0x0400)
+// 0x01E8 (0x05C0 - 0x03D8)
 class UAthenaCustomizationTab_C final : public UAthenaCustomizationScreenBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       IntroPicker;                                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* BackpackSlot;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        BannerItemSwitcher;                                // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationBannerButton_C*     BannerSlot;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* BattleBusSlot;                                     // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonCancel;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonConfirm;                                     // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* CharacterSlot;                                     // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* ContrailSlot;                                      // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot1;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot2;                                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot3;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot4;                                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot5;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot6;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       DescriptionText;                                   // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* GliderSlot;                                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* HarvestToolSlot;                                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* HatSlot;                                           // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HBoxBacchusControls;                               // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 HeaderItemCard;                                    // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       HeaderItemType;                                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       HeaderText;                                        // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* LoadScreenSlot;                                    // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          LockerSlotsCB;                                     // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OutroIntoPicker;                                   // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IntroPicker;                                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* BackpackSlot;                                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        BannerItemSwitcher;                                // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationBannerButton_C*     BannerSlot;                                        // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* BattleBusSlot;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonCancel;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonConfirm;                                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* CallingCardSlot;                                   // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               CameraFramingWidget;                               // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* CharacterSlot;                                     // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* ContrailSlot;                                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot1;                                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot2;                                        // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot3;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot4;                                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot5;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* DanceSlot6;                                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* GliderSlot;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* HarvestToolSlot;                                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* HatSlot;                                           // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HBoxBacchusControls;                               // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 HeaderItemCard;                                    // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       HeaderItemType;                                    // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       HeaderText;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* LoadScreenSlot;                                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          LockerSlotsCB;                                     // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* MapMarkerSlot;                                     // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* MusicPackSlot;                                     // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* PetSkinSlot;                                       // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCanvasPanel*                           PickerCP;                                          // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RarityGlow;                                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ShortDescriptionText;                              // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* SpraySlot1;                                        // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* SpraySlot2;                                        // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         RichDescriptionBox;                                // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationPicker_C*           SelectionPicker;                                   // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ShortDescriptionText;                              // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       StatsHeader;                                       // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaCustomizationSlotButtonWrapper_C* TauntSlot;                                         // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaCustomizationSlotButtonWrapper_C* VictoryPoseSlot;                                   // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          PickingCosmetic;                                   // 0x0520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_521[0x7];                                      // 0x0521(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                PickingRestoreFocusWidget;                         // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UProgressModalWidget_C*                 ProgressModal;                                     // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_LocalPlayerProfileModal_C*          NewLocalPlayerWidget;                              // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DoUnhoveredBehavior;                               // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAthenaCustomizationSlotButtonWrapper_C*> AllSlots;                                          // 0x0548(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class FText                                   CurrentCategoryName;                               // 0x0558(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          SavingModalShown;                                  // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	EAthenaCustomizationCategory                  CurrentCustomizationType;                          // 0x0571(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_572[0x2];                                      // 0x0572(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CurrentSubslotIndex;                               // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CurrentSlotDescriptionText;                        // 0x0578(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UAthenaCustomizationSlotButtonWrapper_C* VehicleSkinSlot;                                   // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* VictoryPoseSlot;                                   // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaCustomizationSlotButtonWrapper_C* WeaponSkinSlot;                                    // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          PickingCosmetic;                                   // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_531[0x7];                                      // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                PickingRestoreFocusWidget;                         // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UProgressModalWidget_C*                 ProgressModal;                                     // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_LocalPlayerProfileModal_C*          NewLocalPlayerWidget;                              // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DoUnhoveredBehavior;                               // 0x0550(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UAthenaCustomizationSlotButtonWrapper_C*> AllSlots;                                          // 0x0558(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class FText                                   CurrentCategoryName;                               // 0x0568(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          SavingModalShown;                                  // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	EAthenaCustomizationCategory                  CurrentCustomizationType;                          // 0x0581(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_582[0x2];                                      // 0x0582(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CurrentSubslotIndex;                               // 0x0584(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CurrentSlotDescriptionText;                        // 0x0588(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USoundBase*                             Sound_OnChangeStyle;                               // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaItemCustomizationSelector_C*     ItemCustomizationSelector;                         // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAthenaCustomizationCategory                  CustomizationCategoryLastChanged;                  // 0x05B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B1[0x3];                                      // 0x05B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CustimizationSubSlotLastChanged;                   // 0x05B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAthenaCustomizationCategory                  LastHoveredCustomizationType;                      // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B9[0x3];                                      // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LastHoveredSubslotIndex;                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaCustomizationTab(int32 EntryPoint);
+	void ProcessLoadoutChanged();
 	void BndEvt__ButtonConfirm_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__ButtonCancel_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__ButtonOk_K2Node_ComponentBoundEvent_148_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -95,19 +111,22 @@ public:
 	void HandleCancel(bool* Passthrough);
 	void RegisterCancel();
 	void RegisterInputActions();
-	void BeginPickingCustomization(EAthenaCustomizationCategory Category, class UCommonButton* WidgetToReturnFocusTo, const class FText& Param_HeaderText, int32 Subslot_Index);
+	void BeginPickingCustomization(EAthenaCustomizationCategory Category, class UCommonButton* WidgetToReturnFocusTo, const class FText& HeaderText_0, int32 Subslot_Index);
 	void EndPickingCustomization(bool RestoreFocus);
 	void SelectInitialWidgetForGamepad();
 	void RefreshInputActions();
 	void ShowSavingModal();
 	void SelectFirstWidget();
-	void HandleSlotHovered(EAthenaCustomizationCategory Type, const class FText& Param_HeaderText, const class FText& Param_DescriptionText, int32 SubslotIndex);
+	void HandleSlotHovered(EAthenaCustomizationCategory Type, const class FText& HeaderText_0, const class FText& DescriptionText, int32 SubslotIndex);
 	void ShowVaultItemByCategory(EAthenaCustomizationCategory CustomizationType, int32 SubslotIndex, bool CanShowEmpty);
 	void SetupBanner();
 	void SetHeaderToBanner();
-	void SetItemDetailsToDisplay(class UFortItem* InputPin, const class FText& Param_HeaderText, const class FText& Param_DescriptionText);
+	void SetItemDetailsToDisplay(class UFortItem* InputPin, const class FText& HeaderText_0, const class FText& DescriptionText);
 	void RegisterFavorite();
 	void HandleFavorite(bool* Passthrough);
+	void RegisterShiftCosmeticTier();
+	void HandleShiftCosmeticTier(bool* Passthrough);
+	class UWidget* GetWidgetForFramingViewedItem();
 
 public:
 	static class UClass* StaticClass()
@@ -120,54 +139,67 @@ public:
 	}
 };
 static_assert(alignof(UAthenaCustomizationTab_C) == 0x000008, "Wrong alignment on UAthenaCustomizationTab_C");
-static_assert(sizeof(UAthenaCustomizationTab_C) == 0x000590, "Wrong size on UAthenaCustomizationTab_C");
-static_assert(offsetof(UAthenaCustomizationTab_C, UberGraphFrame) == 0x000400, "Member 'UAthenaCustomizationTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, IntroPicker) == 0x000408, "Member 'UAthenaCustomizationTab_C::IntroPicker' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, BackpackSlot) == 0x000410, "Member 'UAthenaCustomizationTab_C::BackpackSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, BannerItemSwitcher) == 0x000418, "Member 'UAthenaCustomizationTab_C::BannerItemSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, BannerSlot) == 0x000420, "Member 'UAthenaCustomizationTab_C::BannerSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, BattleBusSlot) == 0x000428, "Member 'UAthenaCustomizationTab_C::BattleBusSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, ButtonCancel) == 0x000430, "Member 'UAthenaCustomizationTab_C::ButtonCancel' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, ButtonConfirm) == 0x000438, "Member 'UAthenaCustomizationTab_C::ButtonConfirm' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, CharacterSlot) == 0x000440, "Member 'UAthenaCustomizationTab_C::CharacterSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, ContrailSlot) == 0x000448, "Member 'UAthenaCustomizationTab_C::ContrailSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot1) == 0x000450, "Member 'UAthenaCustomizationTab_C::DanceSlot1' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot2) == 0x000458, "Member 'UAthenaCustomizationTab_C::DanceSlot2' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot3) == 0x000460, "Member 'UAthenaCustomizationTab_C::DanceSlot3' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot4) == 0x000468, "Member 'UAthenaCustomizationTab_C::DanceSlot4' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot5) == 0x000470, "Member 'UAthenaCustomizationTab_C::DanceSlot5' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot6) == 0x000478, "Member 'UAthenaCustomizationTab_C::DanceSlot6' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DescriptionText) == 0x000480, "Member 'UAthenaCustomizationTab_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, GliderSlot) == 0x000488, "Member 'UAthenaCustomizationTab_C::GliderSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HarvestToolSlot) == 0x000490, "Member 'UAthenaCustomizationTab_C::HarvestToolSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HatSlot) == 0x000498, "Member 'UAthenaCustomizationTab_C::HatSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HBoxBacchusControls) == 0x0004A0, "Member 'UAthenaCustomizationTab_C::HBoxBacchusControls' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HeaderItemCard) == 0x0004A8, "Member 'UAthenaCustomizationTab_C::HeaderItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HeaderItemType) == 0x0004B0, "Member 'UAthenaCustomizationTab_C::HeaderItemType' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, HeaderText) == 0x0004B8, "Member 'UAthenaCustomizationTab_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, Image_0) == 0x0004C0, "Member 'UAthenaCustomizationTab_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, LoadScreenSlot) == 0x0004C8, "Member 'UAthenaCustomizationTab_C::LoadScreenSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, LockerSlotsCB) == 0x0004D0, "Member 'UAthenaCustomizationTab_C::LockerSlotsCB' has a wrong offset!");
+static_assert(sizeof(UAthenaCustomizationTab_C) == 0x0005C0, "Wrong size on UAthenaCustomizationTab_C");
+static_assert(offsetof(UAthenaCustomizationTab_C, UberGraphFrame) == 0x0003D8, "Member 'UAthenaCustomizationTab_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, OutroIntoPicker) == 0x0003E0, "Member 'UAthenaCustomizationTab_C::OutroIntoPicker' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, IntroPicker) == 0x0003E8, "Member 'UAthenaCustomizationTab_C::IntroPicker' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, BackpackSlot) == 0x0003F0, "Member 'UAthenaCustomizationTab_C::BackpackSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, BannerItemSwitcher) == 0x0003F8, "Member 'UAthenaCustomizationTab_C::BannerItemSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, BannerSlot) == 0x000400, "Member 'UAthenaCustomizationTab_C::BannerSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, BattleBusSlot) == 0x000408, "Member 'UAthenaCustomizationTab_C::BattleBusSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ButtonCancel) == 0x000410, "Member 'UAthenaCustomizationTab_C::ButtonCancel' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ButtonConfirm) == 0x000418, "Member 'UAthenaCustomizationTab_C::ButtonConfirm' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CallingCardSlot) == 0x000420, "Member 'UAthenaCustomizationTab_C::CallingCardSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CameraFramingWidget) == 0x000428, "Member 'UAthenaCustomizationTab_C::CameraFramingWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CharacterSlot) == 0x000430, "Member 'UAthenaCustomizationTab_C::CharacterSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ContrailSlot) == 0x000438, "Member 'UAthenaCustomizationTab_C::ContrailSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot1) == 0x000440, "Member 'UAthenaCustomizationTab_C::DanceSlot1' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot2) == 0x000448, "Member 'UAthenaCustomizationTab_C::DanceSlot2' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot3) == 0x000450, "Member 'UAthenaCustomizationTab_C::DanceSlot3' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot4) == 0x000458, "Member 'UAthenaCustomizationTab_C::DanceSlot4' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot5) == 0x000460, "Member 'UAthenaCustomizationTab_C::DanceSlot5' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DanceSlot6) == 0x000468, "Member 'UAthenaCustomizationTab_C::DanceSlot6' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, GliderSlot) == 0x000470, "Member 'UAthenaCustomizationTab_C::GliderSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HarvestToolSlot) == 0x000478, "Member 'UAthenaCustomizationTab_C::HarvestToolSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HatSlot) == 0x000480, "Member 'UAthenaCustomizationTab_C::HatSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HBoxBacchusControls) == 0x000488, "Member 'UAthenaCustomizationTab_C::HBoxBacchusControls' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HeaderItemCard) == 0x000490, "Member 'UAthenaCustomizationTab_C::HeaderItemCard' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HeaderItemType) == 0x000498, "Member 'UAthenaCustomizationTab_C::HeaderItemType' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, HeaderText) == 0x0004A0, "Member 'UAthenaCustomizationTab_C::HeaderText' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, Image_0) == 0x0004A8, "Member 'UAthenaCustomizationTab_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, LoadScreenSlot) == 0x0004B0, "Member 'UAthenaCustomizationTab_C::LoadScreenSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, LockerSlotsCB) == 0x0004B8, "Member 'UAthenaCustomizationTab_C::LockerSlotsCB' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, MapMarkerSlot) == 0x0004C0, "Member 'UAthenaCustomizationTab_C::MapMarkerSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, MusicPackSlot) == 0x0004C8, "Member 'UAthenaCustomizationTab_C::MusicPackSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, PetSkinSlot) == 0x0004D0, "Member 'UAthenaCustomizationTab_C::PetSkinSlot' has a wrong offset!");
 static_assert(offsetof(UAthenaCustomizationTab_C, PickerCP) == 0x0004D8, "Member 'UAthenaCustomizationTab_C::PickerCP' has a wrong offset!");
 static_assert(offsetof(UAthenaCustomizationTab_C, PlayerBanner) == 0x0004E0, "Member 'UAthenaCustomizationTab_C::PlayerBanner' has a wrong offset!");
 static_assert(offsetof(UAthenaCustomizationTab_C, RarityGlow) == 0x0004E8, "Member 'UAthenaCustomizationTab_C::RarityGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, ShortDescriptionText) == 0x0004F0, "Member 'UAthenaCustomizationTab_C::ShortDescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, SpraySlot1) == 0x0004F8, "Member 'UAthenaCustomizationTab_C::SpraySlot1' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, SpraySlot2) == 0x000500, "Member 'UAthenaCustomizationTab_C::SpraySlot2' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, RichDescriptionBox) == 0x0004F0, "Member 'UAthenaCustomizationTab_C::RichDescriptionBox' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, SelectionPicker) == 0x0004F8, "Member 'UAthenaCustomizationTab_C::SelectionPicker' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ShortDescriptionText) == 0x000500, "Member 'UAthenaCustomizationTab_C::ShortDescriptionText' has a wrong offset!");
 static_assert(offsetof(UAthenaCustomizationTab_C, StatsHeader) == 0x000508, "Member 'UAthenaCustomizationTab_C::StatsHeader' has a wrong offset!");
 static_assert(offsetof(UAthenaCustomizationTab_C, TauntSlot) == 0x000510, "Member 'UAthenaCustomizationTab_C::TauntSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, VictoryPoseSlot) == 0x000518, "Member 'UAthenaCustomizationTab_C::VictoryPoseSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, PickingCosmetic) == 0x000520, "Member 'UAthenaCustomizationTab_C::PickingCosmetic' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, PickingRestoreFocusWidget) == 0x000528, "Member 'UAthenaCustomizationTab_C::PickingRestoreFocusWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, ProgressModal) == 0x000530, "Member 'UAthenaCustomizationTab_C::ProgressModal' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, NewLocalPlayerWidget) == 0x000538, "Member 'UAthenaCustomizationTab_C::NewLocalPlayerWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, DoUnhoveredBehavior) == 0x000540, "Member 'UAthenaCustomizationTab_C::DoUnhoveredBehavior' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, AllSlots) == 0x000548, "Member 'UAthenaCustomizationTab_C::AllSlots' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, CurrentCategoryName) == 0x000558, "Member 'UAthenaCustomizationTab_C::CurrentCategoryName' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, SavingModalShown) == 0x000570, "Member 'UAthenaCustomizationTab_C::SavingModalShown' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, CurrentCustomizationType) == 0x000571, "Member 'UAthenaCustomizationTab_C::CurrentCustomizationType' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, CurrentSubslotIndex) == 0x000574, "Member 'UAthenaCustomizationTab_C::CurrentSubslotIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationTab_C, CurrentSlotDescriptionText) == 0x000578, "Member 'UAthenaCustomizationTab_C::CurrentSlotDescriptionText' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, VehicleSkinSlot) == 0x000518, "Member 'UAthenaCustomizationTab_C::VehicleSkinSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, VictoryPoseSlot) == 0x000520, "Member 'UAthenaCustomizationTab_C::VictoryPoseSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, WeaponSkinSlot) == 0x000528, "Member 'UAthenaCustomizationTab_C::WeaponSkinSlot' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, PickingCosmetic) == 0x000530, "Member 'UAthenaCustomizationTab_C::PickingCosmetic' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, PickingRestoreFocusWidget) == 0x000538, "Member 'UAthenaCustomizationTab_C::PickingRestoreFocusWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ProgressModal) == 0x000540, "Member 'UAthenaCustomizationTab_C::ProgressModal' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, NewLocalPlayerWidget) == 0x000548, "Member 'UAthenaCustomizationTab_C::NewLocalPlayerWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, DoUnhoveredBehavior) == 0x000550, "Member 'UAthenaCustomizationTab_C::DoUnhoveredBehavior' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, AllSlots) == 0x000558, "Member 'UAthenaCustomizationTab_C::AllSlots' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CurrentCategoryName) == 0x000568, "Member 'UAthenaCustomizationTab_C::CurrentCategoryName' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, SavingModalShown) == 0x000580, "Member 'UAthenaCustomizationTab_C::SavingModalShown' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CurrentCustomizationType) == 0x000581, "Member 'UAthenaCustomizationTab_C::CurrentCustomizationType' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CurrentSubslotIndex) == 0x000584, "Member 'UAthenaCustomizationTab_C::CurrentSubslotIndex' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CurrentSlotDescriptionText) == 0x000588, "Member 'UAthenaCustomizationTab_C::CurrentSlotDescriptionText' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, Sound_OnChangeStyle) == 0x0005A0, "Member 'UAthenaCustomizationTab_C::Sound_OnChangeStyle' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, ItemCustomizationSelector) == 0x0005A8, "Member 'UAthenaCustomizationTab_C::ItemCustomizationSelector' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CustomizationCategoryLastChanged) == 0x0005B0, "Member 'UAthenaCustomizationTab_C::CustomizationCategoryLastChanged' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, CustimizationSubSlotLastChanged) == 0x0005B4, "Member 'UAthenaCustomizationTab_C::CustimizationSubSlotLastChanged' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, LastHoveredCustomizationType) == 0x0005B8, "Member 'UAthenaCustomizationTab_C::LastHoveredCustomizationType' has a wrong offset!");
+static_assert(offsetof(UAthenaCustomizationTab_C, LastHoveredSubslotIndex) == 0x0005BC, "Member 'UAthenaCustomizationTab_C::LastHoveredSubslotIndex' has a wrong offset!");
 
 }
 

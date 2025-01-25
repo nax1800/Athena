@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAT_ConstructorActiveAbility.GAT_ConstructorActiveAbility_C
-// 0x00C0 (0x0BC0 - 0x0B00)
+// 0x00C0 (0x09E0 - 0x0920)
 class UGAT_ConstructorActiveAbility_C : public UGAT_ActiveAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_ConstructorActiveAbility_C;     // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayEventData                     Event_Data;                                        // 0x0B08(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class APlayerPawn_Constructor_C*              ConstructorPlayerPawn;                             // 0x0BB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsStaminaLockedOut;                                // 0x0BB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsAutoCommitted;                                   // 0x0BB9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_ConstructorActiveAbility_C;     // 0x0920(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayEventData                     Event_Data;                                        // 0x0928(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class APlayerPawn_Constructor_C*              ConstructorPlayerPawn;                             // 0x09D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStaminaLockedOut;                                // 0x09D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsAutoCommitted;                                   // 0x09D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_GAT_ConstructorActiveAbility(int32 EntryPoint);
@@ -44,12 +44,12 @@ public:
 	}
 };
 static_assert(alignof(UGAT_ConstructorActiveAbility_C) == 0x000008, "Wrong alignment on UGAT_ConstructorActiveAbility_C");
-static_assert(sizeof(UGAT_ConstructorActiveAbility_C) == 0x000BC0, "Wrong size on UGAT_ConstructorActiveAbility_C");
-static_assert(offsetof(UGAT_ConstructorActiveAbility_C, UberGraphFrame_GAT_ConstructorActiveAbility_C) == 0x000B00, "Member 'UGAT_ConstructorActiveAbility_C::UberGraphFrame_GAT_ConstructorActiveAbility_C' has a wrong offset!");
-static_assert(offsetof(UGAT_ConstructorActiveAbility_C, Event_Data) == 0x000B08, "Member 'UGAT_ConstructorActiveAbility_C::Event_Data' has a wrong offset!");
-static_assert(offsetof(UGAT_ConstructorActiveAbility_C, ConstructorPlayerPawn) == 0x000BB0, "Member 'UGAT_ConstructorActiveAbility_C::ConstructorPlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAT_ConstructorActiveAbility_C, IsStaminaLockedOut) == 0x000BB8, "Member 'UGAT_ConstructorActiveAbility_C::IsStaminaLockedOut' has a wrong offset!");
-static_assert(offsetof(UGAT_ConstructorActiveAbility_C, IsAutoCommitted) == 0x000BB9, "Member 'UGAT_ConstructorActiveAbility_C::IsAutoCommitted' has a wrong offset!");
+static_assert(sizeof(UGAT_ConstructorActiveAbility_C) == 0x0009E0, "Wrong size on UGAT_ConstructorActiveAbility_C");
+static_assert(offsetof(UGAT_ConstructorActiveAbility_C, UberGraphFrame_GAT_ConstructorActiveAbility_C) == 0x000920, "Member 'UGAT_ConstructorActiveAbility_C::UberGraphFrame_GAT_ConstructorActiveAbility_C' has a wrong offset!");
+static_assert(offsetof(UGAT_ConstructorActiveAbility_C, Event_Data) == 0x000928, "Member 'UGAT_ConstructorActiveAbility_C::Event_Data' has a wrong offset!");
+static_assert(offsetof(UGAT_ConstructorActiveAbility_C, ConstructorPlayerPawn) == 0x0009D0, "Member 'UGAT_ConstructorActiveAbility_C::ConstructorPlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGAT_ConstructorActiveAbility_C, IsStaminaLockedOut) == 0x0009D8, "Member 'UGAT_ConstructorActiveAbility_C::IsStaminaLockedOut' has a wrong offset!");
+static_assert(offsetof(UGAT_ConstructorActiveAbility_C, IsAutoCommitted) == 0x0009D9, "Member 'UGAT_ConstructorActiveAbility_C::IsAutoCommitted' has a wrong offset!");
 
 }
 

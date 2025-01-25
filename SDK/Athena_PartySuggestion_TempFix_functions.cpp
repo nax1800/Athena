@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function Athena_PartySuggestion_TempFix.Athena_PartySuggestion_TempFix_C.ExecuteUbergraph_Athena_PartySuggestion_TempFix
-// (HasDefaults)
+// Function Athena_PartySuggestion_TempFix.Athena_PartySuggestion_TempFix_C.PartyFocused__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthena_PartySuggestion_TempFix_C::ExecuteUbergraph_Athena_PartySuggestion_TempFix(int32 EntryPoint)
+void UAthena_PartySuggestion_TempFix_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PartySuggestion_TempFix_C", "ExecuteUbergraph_Athena_PartySuggestion_TempFix");
+		Func = Class->GetFunction("Athena_PartySuggestion_TempFix_C", "PartyFocused__DelegateSignature");
 
-	Params::Athena_PartySuggestion_TempFix_C_ExecuteUbergraph_Athena_PartySuggestion_TempFix Parms{};
+	Params::Athena_PartySuggestion_TempFix_C_PartyFocused__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.FocusedPartyItem = FocusedPartyItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UAthena_PartySuggestion_TempFix_C::OnSuggestionMouseDown__DelegateSignature
 }
 
 
-// Function Athena_PartySuggestion_TempFix.Athena_PartySuggestion_TempFix_C.PartyFocused__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function Athena_PartySuggestion_TempFix.Athena_PartySuggestion_TempFix_C.ExecuteUbergraph_Athena_PartySuggestion_TempFix
+// (HasDefaults)
 // Parameters:
-// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthena_PartySuggestion_TempFix_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
+void UAthena_PartySuggestion_TempFix_C::ExecuteUbergraph_Athena_PartySuggestion_TempFix(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PartySuggestion_TempFix_C", "PartyFocused__DelegateSignature");
+		Func = Class->GetFunction("Athena_PartySuggestion_TempFix_C", "ExecuteUbergraph_Athena_PartySuggestion_TempFix");
 
-	Params::Athena_PartySuggestion_TempFix_C_PartyFocused__DelegateSignature Parms{};
+	Params::Athena_PartySuggestion_TempFix_C_ExecuteUbergraph_Athena_PartySuggestion_TempFix Parms{};
 
-	Parms.FocusedPartyItem = FocusedPartyItem;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

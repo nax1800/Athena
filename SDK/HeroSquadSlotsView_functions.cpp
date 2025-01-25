@@ -105,9 +105,9 @@ void UHeroSquadSlotsView_C::HandleSquadNavigation(class FName SquadId, int32 Slo
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.HighlightSlotByIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHeroSquadSlotsView_C::HighlightSlotByIndex(int32 Param_Index)
+void UHeroSquadSlotsView_C::HighlightSlotByIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -116,9 +116,51 @@ void UHeroSquadSlotsView_C::HighlightSlotByIndex(int32 Param_Index)
 
 	Params::HeroSquadSlotsView_C_HighlightSlotByIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroSquadSlotsView.HeroSquadSlotsView_C.Bonus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroSquadSlotsView_C::Bonus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadSlotsView_C", "Bonus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroSquadSlotsView.HeroSquadSlotsView_C.Defenders
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroSquadSlotsView_C::Defenders()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadSlotsView_C", "Defenders");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroSquadSlotsView.HeroSquadSlotsView_C.Primary
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroSquadSlotsView_C::Primary()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroSquadSlotsView_C", "Primary");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

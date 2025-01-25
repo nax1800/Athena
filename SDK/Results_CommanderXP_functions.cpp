@@ -305,9 +305,9 @@ void UResults_CommanderXP_C::BndEvt__Results_CommanderXPBar_K2Node_ComponentBoun
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortUIScoreReport*               InScoreReport                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UResults_TeamTotalScore_C*        Param_TeamTotalScore                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UResults_TeamTotalScore_C*        TeamTotalScore_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_CommanderXP_C::Initialize(class UFortUIScoreReport* InScoreReport, class UResults_TeamTotalScore_C* Param_TeamTotalScore)
+void UResults_CommanderXP_C::Initialize(class UFortUIScoreReport* InScoreReport, class UResults_TeamTotalScore_C* TeamTotalScore_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -317,7 +317,7 @@ void UResults_CommanderXP_C::Initialize(class UFortUIScoreReport* InScoreReport,
 	Params::Results_CommanderXP_C_Initialize Parms{};
 
 	Parms.InScoreReport = InScoreReport;
-	Parms.Param_TeamTotalScore = Param_TeamTotalScore;
+	Parms.TeamTotalScore_0 = TeamTotalScore_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

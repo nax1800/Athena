@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK::Params
@@ -44,7 +44,7 @@ public:
 	class UBlackboardComponent*                   CallFunc_GetBlackboard_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBlackboardComponent*                   CallFunc_GetBlackboard_ReturnValue1;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0090(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0090(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
 	class AController*                            K2Node_Event_NewController;                        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_Damage;                               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ public:
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -107,7 +107,7 @@ static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, K2Node_
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, CallFunc_GetGoalActor_ReturnValue) == 0x0001C8, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::CallFunc_GetGoalActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, CallFunc_HasAuthority_ReturnValue) == 0x0001D0, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, K2Node_DynamicCast_AsFort_Pawn) == 0x0001D8, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, K2Node_DynamicCast_bSuccess12) == 0x0001E0, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, K2Node_DynamicCast_bSuccess2) == 0x0001E0, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, CallFunc_IsDead_ReturnValue) == 0x0001E1, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::CallFunc_IsDead_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, CallFunc_IsValid_ReturnValue) == 0x0001E2, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic, CallFunc_Not_PreBool_ReturnValue) == 0x0001E3, "Member 'HuskPawn_Mimic_C_ExecuteUbergraph_HuskPawn_Mimic::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -184,7 +184,7 @@ public:
 	class AFortAIController*                      K2Node_DynamicCast_AsFort_AIController;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0020(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuskPawn_Mimic_C_BecomeChest) == 0x000008, "Wrong alignment on HuskPawn_Mimic_C_BecomeChest");
 static_assert(sizeof(HuskPawn_Mimic_C_BecomeChest) == 0x000028, "Wrong size on HuskPawn_Mimic_C_BecomeChest");
@@ -242,15 +242,20 @@ static_assert(offsetof(HuskPawn_Mimic_C_OnDeathPlayEffects, DamageCauser) == 0x0
 static_assert(offsetof(HuskPawn_Mimic_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'HuskPawn_Mimic_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function HuskPawn_Mimic.HuskPawn_Mimic_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct HuskPawn_Mimic_C_UserConstructionScript final
 {
 public:
-	class UGen_Interact_UnregisterFocus_C*        CallFunc_SpawnObject_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGen_Interact_UnregisterFocus_C*        CallFunc_SpawnObject_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HuskPawn_Mimic_C_UserConstructionScript) == 0x000008, "Wrong alignment on HuskPawn_Mimic_C_UserConstructionScript");
-static_assert(sizeof(HuskPawn_Mimic_C_UserConstructionScript) == 0x000008, "Wrong size on HuskPawn_Mimic_C_UserConstructionScript");
-static_assert(offsetof(HuskPawn_Mimic_C_UserConstructionScript, CallFunc_SpawnObject_ReturnValue) == 0x000000, "Member 'HuskPawn_Mimic_C_UserConstructionScript::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+static_assert(sizeof(HuskPawn_Mimic_C_UserConstructionScript) == 0x000018, "Wrong size on HuskPawn_Mimic_C_UserConstructionScript");
+static_assert(offsetof(HuskPawn_Mimic_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x000000, "Member 'HuskPawn_Mimic_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HuskPawn_Mimic_C_UserConstructionScript, CallFunc_SpawnObject_ReturnValue) == 0x000008, "Member 'HuskPawn_Mimic_C_UserConstructionScript::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HuskPawn_Mimic_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue1) == 0x000010, "Member 'HuskPawn_Mimic_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue1' has a wrong offset!");
 
 }
 

@@ -11,78 +11,141 @@
 #include "Basic.hpp"
 
 #include "FortniteUI_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ItemDisplayStyle_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function QuickbarSlot.QuickbarSlot_C.ExecuteUbergraph_QuickbarSlot
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable1;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable123;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable1234;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable12345;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable123456;                        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	EItemDisplayStyle                             Temp_byte_Variable;                                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue1;                 // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_CustomEvent_AnimatedBoxScaleFactor;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue1;                 // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_CustomEvent_AnimatedBoxScaleFactor;         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bShouldSkipAnimation1;                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable1;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable2;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable3;                             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable4;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bShouldSkipAnimation;                 // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UQuickbarSlotCooldown_C*                K2Node_DynamicCast_AsQuickbar_Slot_Cooldown;       // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue1;          // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable5;                             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable6;                             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EItemDisplayStyle                             Temp_byte_Variable2;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	class UQuickbarSlotCooldown_C*                K2Node_DynamicCast_AsQuickbar_Slot_Cooldown1;      // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bSelected;                            // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D3[0x1];                                       // 0x00D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot) == 0x000008, "Wrong alignment on QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot");
-static_assert(sizeof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot) == 0x0000A8, "Wrong size on QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot");
+static_assert(sizeof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot) == 0x0000D8, "Wrong size on QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot");
 static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, EntryPoint) == 0x000000, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable) == 0x000008, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable1) == 0x000018, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable12) == 0x000020, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable123) == 0x000028, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable1234) == 0x000030, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable12345) == 0x000038, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable123456) == 0x000040, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate1) == 0x000058, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_byte_Variable) == 0x000068, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Select_Default) == 0x000070, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetCardSize_ReturnValue) == 0x000078, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetCardSize_ReturnValue1) == 0x000079, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetCardSize_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate12) == 0x000080, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate123) == 0x000090, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_IsDesignTime) == 0x0000A0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CustomEvent_AnimatedBoxScaleFactor) == 0x0000A4, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CustomEvent_AnimatedBoxScaleFactor' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_bool_Variable) == 0x000004, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_byte_Variable) == 0x000005, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_byte_Variable1) == 0x000006, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetCardSize_ReturnValue) == 0x000007, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetCardSize_ReturnValue1) == 0x000008, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetCardSize_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_IsDesignTime) == 0x000030, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CustomEvent_AnimatedBoxScaleFactor) == 0x000034, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CustomEvent_AnimatedBoxScaleFactor' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable) == 0x000038, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_bShouldSkipAnimation1) == 0x000040, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_bShouldSkipAnimation1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_SwitchEnum_CmpSuccess) == 0x000041, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable1) == 0x000048, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000050, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable2) == 0x000058, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable3) == 0x000060, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable4) == 0x000068, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_bShouldSkipAnimation) == 0x000070, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_bShouldSkipAnimation' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_AsQuickbar_Slot_Cooldown) == 0x000078, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_AsQuickbar_Slot_Cooldown' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_IsAnimationPlaying_ReturnValue1) == 0x000081, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_IsAnimationPlaying_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable5) == 0x000088, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable6) == 0x000090, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_byte_Variable2) == 0x000098, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Select_Default) == 0x0000A0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate2) == 0x0000A8, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate3) == 0x0000B8, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_AsQuickbar_Slot_Cooldown1) == 0x0000C8, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_AsQuickbar_Slot_Cooldown1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_bSuccess1) == 0x0000D0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_bSelected) == 0x0000D1, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_bSelected' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Select1_Default) == 0x0000D2, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetEndTime_ReturnValue) == 0x0000D4, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
+
+// Function QuickbarSlot.QuickbarSlot_C.SetSlotSelected
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_SetSlotSelected final
+{
+public:
+	bool                                          bSelected;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(QuickbarSlot_C_SetSlotSelected) == 0x000001, "Wrong alignment on QuickbarSlot_C_SetSlotSelected");
+static_assert(sizeof(QuickbarSlot_C_SetSlotSelected) == 0x000001, "Wrong size on QuickbarSlot_C_SetSlotSelected");
+static_assert(offsetof(QuickbarSlot_C_SetSlotSelected, bSelected) == 0x000000, "Member 'QuickbarSlot_C_SetSlotSelected::bSelected' has a wrong offset!");
+
+// Function QuickbarSlot.QuickbarSlot_C.MinimizeSlot
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_MinimizeSlot final
+{
+public:
+	bool                                          bShouldSkipAnimation;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(QuickbarSlot_C_MinimizeSlot) == 0x000001, "Wrong alignment on QuickbarSlot_C_MinimizeSlot");
+static_assert(sizeof(QuickbarSlot_C_MinimizeSlot) == 0x000001, "Wrong size on QuickbarSlot_C_MinimizeSlot");
+static_assert(offsetof(QuickbarSlot_C_MinimizeSlot, bShouldSkipAnimation) == 0x000000, "Member 'QuickbarSlot_C_MinimizeSlot::bShouldSkipAnimation' has a wrong offset!");
+
+// Function QuickbarSlot.QuickbarSlot_C.MaximizeSlot
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_MaximizeSlot final
+{
+public:
+	bool                                          bShouldSkipAnimation;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(QuickbarSlot_C_MaximizeSlot) == 0x000001, "Wrong alignment on QuickbarSlot_C_MaximizeSlot");
+static_assert(sizeof(QuickbarSlot_C_MaximizeSlot) == 0x000001, "Wrong size on QuickbarSlot_C_MaximizeSlot");
+static_assert(offsetof(QuickbarSlot_C_MaximizeSlot, bShouldSkipAnimation) == 0x000000, "Member 'QuickbarSlot_C_MaximizeSlot::bShouldSkipAnimation' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.SetAnimatedBoxScaleFactor
 // 0x0004 (0x0004 - 0x0000)
 struct QuickbarSlot_C_SetAnimatedBoxScaleFactor final
 {
 public:
-	float                                         Param_AnimatedBoxScaleFactor;                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AnimatedBoxScaleFactor_0;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(QuickbarSlot_C_SetAnimatedBoxScaleFactor) == 0x000004, "Wrong alignment on QuickbarSlot_C_SetAnimatedBoxScaleFactor");
 static_assert(sizeof(QuickbarSlot_C_SetAnimatedBoxScaleFactor) == 0x000004, "Wrong size on QuickbarSlot_C_SetAnimatedBoxScaleFactor");
-static_assert(offsetof(QuickbarSlot_C_SetAnimatedBoxScaleFactor, Param_AnimatedBoxScaleFactor) == 0x000000, "Member 'QuickbarSlot_C_SetAnimatedBoxScaleFactor::Param_AnimatedBoxScaleFactor' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_SetAnimatedBoxScaleFactor, AnimatedBoxScaleFactor_0) == 0x000000, "Member 'QuickbarSlot_C_SetAnimatedBoxScaleFactor::AnimatedBoxScaleFactor_0' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -94,91 +157,6 @@ public:
 static_assert(alignof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong alignment on QuickbarSlot_C_PreConstruct");
 static_assert(sizeof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong size on QuickbarSlot_C_PreConstruct");
 static_assert(offsetof(QuickbarSlot_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuickbarSlot_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function QuickbarSlot.QuickbarSlot_C.SetSelected
-// 0x0028 (0x0028 - 0x0000)
-struct QuickbarSlot_C_SetSelected final
-{
-public:
-	bool                                          Param_Selected;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1234;                            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12345;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select12_Default;                           // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(QuickbarSlot_C_SetSelected) == 0x000008, "Wrong alignment on QuickbarSlot_C_SetSelected");
-static_assert(sizeof(QuickbarSlot_C_SetSelected) == 0x000028, "Wrong size on QuickbarSlot_C_SetSelected");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Param_Selected) == 0x000000, "Member 'QuickbarSlot_C_SetSelected::Param_Selected' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable) == 0x000001, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable) == 0x000002, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable1) == 0x000003, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable1) == 0x000004, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable12) == 0x000005, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable123) == 0x000006, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select_Default) == 0x000007, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable1234) == 0x000008, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable1234' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable12345) == 0x000009, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable12345' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable12) == 0x00000A, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetCurrentInputType_ReturnValue) == 0x000018, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'QuickbarSlot_C_SetSelected::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'QuickbarSlot_C_SetSelected::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_BooleanAND_ReturnValue1) == 0x00001B, "Member 'QuickbarSlot_C_SetSelected::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select1_Default) == 0x00001C, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select12_Default) == 0x00001D, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetEndTime_ReturnValue) == 0x000020, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-
-// Function QuickbarSlot.QuickbarSlot_C.Minimize
-// 0x0018 (0x0018 - 0x0000)
-struct QuickbarSlot_C_Minimize final
-{
-public:
-	bool                                          ShouldSkipAnimation;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UQuickbarSlotCooldown_C*                K2Node_DynamicCast_AsQuickbar_Slot_Cooldown;       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(QuickbarSlot_C_Minimize) == 0x000008, "Wrong alignment on QuickbarSlot_C_Minimize");
-static_assert(sizeof(QuickbarSlot_C_Minimize) == 0x000018, "Wrong size on QuickbarSlot_C_Minimize");
-static_assert(offsetof(QuickbarSlot_C_Minimize, ShouldSkipAnimation) == 0x000000, "Member 'QuickbarSlot_C_Minimize::ShouldSkipAnimation' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Minimize, K2Node_DynamicCast_AsQuickbar_Slot_Cooldown) == 0x000008, "Member 'QuickbarSlot_C_Minimize::K2Node_DynamicCast_AsQuickbar_Slot_Cooldown' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Minimize, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'QuickbarSlot_C_Minimize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Minimize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000011, "Member 'QuickbarSlot_C_Minimize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-
-// Function QuickbarSlot.QuickbarSlot_C.Maximize
-// 0x0018 (0x0018 - 0x0000)
-struct QuickbarSlot_C_Maximize final
-{
-public:
-	bool                                          ShouldSkipAnimation;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UQuickbarSlotCooldown_C*                K2Node_DynamicCast_AsQuickbar_Slot_Cooldown;       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(QuickbarSlot_C_Maximize) == 0x000008, "Wrong alignment on QuickbarSlot_C_Maximize");
-static_assert(sizeof(QuickbarSlot_C_Maximize) == 0x000018, "Wrong size on QuickbarSlot_C_Maximize");
-static_assert(offsetof(QuickbarSlot_C_Maximize, ShouldSkipAnimation) == 0x000000, "Member 'QuickbarSlot_C_Maximize::ShouldSkipAnimation' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Maximize, K2Node_DynamicCast_AsQuickbar_Slot_Cooldown) == 0x000008, "Member 'QuickbarSlot_C_Maximize::K2Node_DynamicCast_AsQuickbar_Slot_Cooldown' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Maximize, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'QuickbarSlot_C_Maximize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_Maximize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000011, "Member 'QuickbarSlot_C_Maximize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.InitializeCooldowns
 // 0x0030 (0x0030 - 0x0000)
@@ -245,20 +223,20 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue1;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue12;             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue123;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue1;                 // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue1;           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemType                                 K2Node_Select1_Default;                            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue1;           // 0x0044(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1234;           // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue4;              // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X1;                         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y1;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue12345;          // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue123456;         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue1234567;        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue5;              // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue6;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue7;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue1;                        // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -279,18 +257,18 @@ static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_BreakVector2D_X) == 0x000020, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_BreakVector2D_Y) == 0x000024, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue1) == 0x000028, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue12) == 0x00002C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue123) == 0x000030, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00002C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue3) == 0x000030, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_GetCardSize_ReturnValue1) == 0x000034, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_GetCardSize_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_SlotAsOverlaySlot_ReturnValue1) == 0x000038, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_SlotAsOverlaySlot_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, K2Node_Select1_Default) == 0x000040, "Member 'QuickbarSlot_C_UpdateItemBoxSize::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_GetCardDimensions_ReturnValue1) == 0x000044, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_GetCardDimensions_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue1234) == 0x00004C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue4) == 0x00004C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_BreakVector2D_X1) == 0x000050, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_BreakVector2D_X1' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_BreakVector2D_Y1) == 0x000054, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_BreakVector2D_Y1' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue12345) == 0x000058, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue123456) == 0x00005C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue1234567) == 0x000060, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue1234567' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue5) == 0x000058, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue6) == 0x00005C, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Add_FloatFloat_ReturnValue7) == 0x000060, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Add_FloatFloat_ReturnValue7' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Lerp_ReturnValue) == 0x000064, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemBoxSize, CallFunc_Lerp_ReturnValue1) == 0x000068, "Member 'QuickbarSlot_C_UpdateItemBoxSize::CallFunc_Lerp_ReturnValue1' has a wrong offset!");
 

@@ -44,7 +44,7 @@ static_assert(offsetof(UChatroom, MaxChatRoomRetries) == 0x000038, "Member 'UCha
 static_assert(offsetof(UChatroom, NumChatRoomRetries) == 0x00003C, "Member 'UChatroom::NumChatRoomRetries' has a wrong offset!");
 
 // Class Party.Party
-// 0x0478 (0x04A0 - 0x0028)
+// 0x0208 (0x0230 - 0x0028)
 class UParty : public UObject
 {
 public:
@@ -52,7 +52,7 @@ public:
 	int32                                         DefaultMaxPartySize;                               // 0x0098(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_9C[0x14];                                      // 0x009C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bLeavingPersistentParty;                           // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_B1[0x3EF];                                     // 0x00B1(0x03EF)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B1[0x17F];                                     // 0x00B1(0x017F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -65,14 +65,13 @@ public:
 	}
 };
 static_assert(alignof(UParty) == 0x000008, "Wrong alignment on UParty");
-static_assert(sizeof(UParty) == 0x0004A0, "Wrong size on UParty");
+static_assert(sizeof(UParty) == 0x000230, "Wrong size on UParty");
 static_assert(offsetof(UParty, DefaultMaxPartySize) == 0x000098, "Member 'UParty::DefaultMaxPartySize' has a wrong offset!");
 static_assert(offsetof(UParty, bLeavingPersistentParty) == 0x0000B0, "Member 'UParty::bLeavingPersistentParty' has a wrong offset!");
 
 // Class Party.PartyGameState
-// 0x0500 (0x0528 - 0x0028)
-#pragma pack(push, 0x1)
-class alignas(0x08) UPartyGameState : public UObject
+// 0x0298 (0x02C0 - 0x0028)
+class UPartyGameState : public UObject
 {
 public:
 	class UScriptStruct*                          PartyStateRefDef;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -87,7 +86,7 @@ public:
 	uint8                                         Pad_E0[0x108];                                     // 0x00E0(0x0108)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class APartyBeaconClient>         ReservationBeaconClientClass;                      // 0x01E8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class APartyBeaconClient*                     ReservationBeaconClient;                           // 0x01F0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1F8[0x330];                                    // 0x01F8(0x0330)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F8[0xC8];                                     // 0x01F8(0x00C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -99,9 +98,8 @@ public:
 		return GetDefaultObjImpl<UPartyGameState>();
 	}
 };
-#pragma pack(pop)
 static_assert(alignof(UPartyGameState) == 0x000008, "Wrong alignment on UPartyGameState");
-static_assert(sizeof(UPartyGameState) == 0x000528, "Wrong size on UPartyGameState");
+static_assert(sizeof(UPartyGameState) == 0x0002C0, "Wrong size on UPartyGameState");
 static_assert(offsetof(UPartyGameState, PartyStateRefDef) == 0x000028, "Member 'UPartyGameState::PartyStateRefDef' has a wrong offset!");
 static_assert(offsetof(UPartyGameState, OwningUserId) == 0x000038, "Member 'UPartyGameState::OwningUserId' has a wrong offset!");
 static_assert(offsetof(UPartyGameState, bDebugAcceptingMembers) == 0x0000B8, "Member 'UPartyGameState::bDebugAcceptingMembers' has a wrong offset!");

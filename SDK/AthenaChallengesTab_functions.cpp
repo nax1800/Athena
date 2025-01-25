@@ -37,6 +37,82 @@ void UAthenaChallengesTab_C::ExecuteUbergraph_AthenaChallengesTab(int32 EntryPoi
 }
 
 
+// Function AthenaChallengesTab.AthenaChallengesTab_C.BndEvt__BackgroundButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UAthenaChallengesTab_C::BndEvt__BackgroundButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "BndEvt__BackgroundButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaChallengesTab_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengesTab_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "PreConstruct");
+
+	Params::AthenaChallengesTab_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.OnRefreshNavigation
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaChallengesTab_C::OnRefreshNavigation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "OnRefreshNavigation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaChallengesTab_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaChallengesTab.AthenaChallengesTab_C.OnChallengesChanged
 // (Event, Protected, BlueprintEvent)
 
@@ -110,6 +186,26 @@ void UAthenaChallengesTab_C::Construct()
 		Func = Class->GetFunction("AthenaChallengesTab_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.BndEvt__ChallangeTreeView_K2Node_ComponentBoundEvent_40_OnListEntryGeneratedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaChallengesTab_C::BndEvt__ChallangeTreeView_K2Node_ComponentBoundEvent_40_OnListEntryGeneratedDynamic__DelegateSignature(class UUserWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "BndEvt__ChallangeTreeView_K2Node_ComponentBoundEvent_40_OnListEntryGeneratedDynamic__DelegateSignature");
+
+	Params::AthenaChallengesTab_C_BndEvt__ChallangeTreeView_K2Node_ComponentBoundEvent_40_OnListEntryGeneratedDynamic__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -195,6 +291,157 @@ void UAthenaChallengesTab_C::SelectFirstBundle()
 		Func = Class->GetFunction("AthenaChallengesTab_C", "SelectFirstBundle");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.SetBackground
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsInGame                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengesTab_C::SetBackground(bool IsInGame)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "SetBackground");
+
+	Params::AthenaChallengesTab_C_SetBackground Parms{};
+
+	Parms.IsInGame = IsInGame;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.OnCursorModeChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnabled                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengesTab_C::OnCursorModeChanged(bool IsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "OnCursorModeChanged");
+
+	Params::AthenaChallengesTab_C_OnCursorModeChanged Parms{};
+
+	Parms.IsEnabled = IsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.OnBack
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengesTab_C::OnBack(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "OnBack");
+
+	Params::AthenaChallengesTab_C_OnBack Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.InitializeInput
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaChallengesTab_C::InitializeInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "InitializeInput");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.SetupFrontendInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaChallengesTab_C::SetupFrontendInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "SetupFrontendInfo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.SetupChallengeBundleInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UChallengeBundlePage_C*           InChallengeBundlePageWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaChallengesTab_C::SetupChallengeBundleInfo(class UChallengeBundlePage_C* InChallengeBundlePageWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "SetupChallengeBundleInfo");
+
+	Params::AthenaChallengesTab_C_SetupChallengeBundleInfo Parms{};
+
+	Parms.InChallengeBundlePageWidget = InChallengeBundlePageWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.ConstructTimespanSource
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortTimerTimespanDataSource*     NewObject                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaChallengesTab_C::ConstructTimespanSource(class UFortTimerTimespanDataSource** NewObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "ConstructTimespanSource");
+
+	Params::AthenaChallengesTab_C_ConstructTimespanSource Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewObject != nullptr)
+		*NewObject = Parms.NewObject;
+}
+
+
+// Function AthenaChallengesTab.AthenaChallengesTab_C.GetAthenaEventTime
+// (Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FTimespan                        Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaChallengesTab_C::GetAthenaEventTime(struct FTimespan* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaChallengesTab_C", "GetAthenaEventTime");
+
+	Params::AthenaChallengesTab_C_GetAthenaEventTime Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
 }
 
 }

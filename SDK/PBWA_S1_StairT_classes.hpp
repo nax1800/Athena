@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_S1_StairT.PBWA_S1_StairT_C
-// 0x0000 (0x0DC0 - 0x0DC0)
+// 0x0000 (0x0B58 - 0x0B58)
 class APBWA_S1_StairT_C final : public ABuildingStairs
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(APBWA_S1_StairT_C) == 0x000008, "Wrong alignment on APBWA_S1_StairT_C");
-static_assert(sizeof(APBWA_S1_StairT_C) == 0x000DC0, "Wrong size on APBWA_S1_StairT_C");
+static_assert(sizeof(APBWA_S1_StairT_C) == 0x000B58, "Wrong size on APBWA_S1_StairT_C");
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialOverlay.TutorialOverlay_C
-// 0x0018 (0x03D8 - 0x03C0)
+// 0x0018 (0x0310 - 0x02F8)
 class UTutorialOverlay_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UAnnouncement_Tutorial_C*               Announcement_Tutorial;                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UAnnouncement_Tutorial_C*               Announcement_Tutorial;                             // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -41,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(UTutorialOverlay_C) == 0x000008, "Wrong alignment on UTutorialOverlay_C");
-static_assert(sizeof(UTutorialOverlay_C) == 0x0003D8, "Wrong size on UTutorialOverlay_C");
-static_assert(offsetof(UTutorialOverlay_C, UberGraphFrame) == 0x0003C0, "Member 'UTutorialOverlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialOverlay_C, Announcement_Tutorial) == 0x0003C8, "Member 'UTutorialOverlay_C::Announcement_Tutorial' has a wrong offset!");
-static_assert(offsetof(UTutorialOverlay_C, SafeZone_0) == 0x0003D0, "Member 'UTutorialOverlay_C::SafeZone_0' has a wrong offset!");
+static_assert(sizeof(UTutorialOverlay_C) == 0x000310, "Wrong size on UTutorialOverlay_C");
+static_assert(offsetof(UTutorialOverlay_C, UberGraphFrame) == 0x0002F8, "Member 'UTutorialOverlay_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTutorialOverlay_C, Announcement_Tutorial) == 0x000300, "Member 'UTutorialOverlay_C::Announcement_Tutorial' has a wrong offset!");
+static_assert(offsetof(UTutorialOverlay_C, SafeZone_0) == 0x000308, "Member 'UTutorialOverlay_C::SafeZone_0' has a wrong offset!");
 
 }
 

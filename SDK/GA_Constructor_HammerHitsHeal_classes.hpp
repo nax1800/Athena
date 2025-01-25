@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 #include "GA_Ninja_Tactical_MeleeHitsHeal_classes.hpp"
 
 
@@ -19,18 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C
-// 0x0028 (0x0C60 - 0x0C38)
+// 0x0028 (0x0A48 - 0x0A20)
 class UGA_Constructor_HammerHitsHeal_C final : public UGA_Ninja_Tactical_MeleeHitsHeal_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_HammerHitsHeal_C;    // 0x0C38(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTagContainer                  TC_RequiredTags;                                   // 0x0C40(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_HammerHitsHeal_C;    // 0x0A20(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTagContainer                  TC_RequiredTags;                                   // 0x0A28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GA_Constructor_HammerHitsHeal(int32 EntryPoint);
-	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& Param_EventData);
-	bool K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload);
 	void SetupAbility(class UAbilitySystemComponent* AbilitySystem);
+	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0);
+
+	bool K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const;
 
 public:
 	static class UClass* StaticClass()
@@ -43,9 +44,9 @@ public:
 	}
 };
 static_assert(alignof(UGA_Constructor_HammerHitsHeal_C) == 0x000008, "Wrong alignment on UGA_Constructor_HammerHitsHeal_C");
-static_assert(sizeof(UGA_Constructor_HammerHitsHeal_C) == 0x000C60, "Wrong size on UGA_Constructor_HammerHitsHeal_C");
-static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, UberGraphFrame_GA_Constructor_HammerHitsHeal_C) == 0x000C38, "Member 'UGA_Constructor_HammerHitsHeal_C::UberGraphFrame_GA_Constructor_HammerHitsHeal_C' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, TC_RequiredTags) == 0x000C40, "Member 'UGA_Constructor_HammerHitsHeal_C::TC_RequiredTags' has a wrong offset!");
+static_assert(sizeof(UGA_Constructor_HammerHitsHeal_C) == 0x000A48, "Wrong size on UGA_Constructor_HammerHitsHeal_C");
+static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, UberGraphFrame_GA_Constructor_HammerHitsHeal_C) == 0x000A20, "Member 'UGA_Constructor_HammerHitsHeal_C::UberGraphFrame_GA_Constructor_HammerHitsHeal_C' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, TC_RequiredTags) == 0x000A28, "Member 'UGA_Constructor_HammerHitsHeal_C::TC_RequiredTags' has a wrong offset!");
 
 }
 

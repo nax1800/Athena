@@ -37,6 +37,34 @@ void ULegalInfo_C::ExecuteUbergraph_LegalInfo(int32 EntryPoint)
 }
 
 
+// Function LegalInfo.LegalInfo_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ULegalInfo_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LegalInfo_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LegalInfo.LegalInfo_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void ULegalInfo_C::OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LegalInfo_C", "OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function LegalInfo.LegalInfo_C.Close
 // (BlueprintCallable, BlueprintEvent)
 

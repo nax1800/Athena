@@ -10,38 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass HBOnboardingFlow.HBOnboardingFlow_C
-// 0x00A0 (0x03B8 - 0x0318)
+// 0x00A0 (0x03C8 - 0x0328)
 class AHBOnboardingFlow_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortQuestItemDefinition*               OnboardingQuest;                                   // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortQuestItemDefinition*               PlayPeriodicEventMovieQuest;                       // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlayedPeriodicEventMovie;                         // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bHasRecheckedNeedToPlayPeriodicEventMovie;         // 0x0339(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33A[0x6];                                      // 0x033A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    CompleteZoneObjective;                             // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    NameHomebaseObjective;                             // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FMargin                                NotificationPadding;                               // 0x0360(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FDataTableRowHandle                    PlaySatelliteCineObjective;                        // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UFortAccountItemDefinition*             ShowNewsToken;                                     // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ClientQuestLoginRetryCount;                        // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ClientQuestLoginNumRetries;                        // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    PlayPeriodicEventCineObjective;                    // 0x0390(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    StormShieldDefenseObjective;                       // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UClass*                                 PeriodicEventMovieAnnouncementClass;               // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortQuestItemDefinition*               OnboardingQuest;                                   // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortQuestItemDefinition*               PlayPeriodicEventMovieQuest;                       // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlayedPeriodicEventMovie;                         // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bHasRecheckedNeedToPlayPeriodicEventMovie;         // 0x0349(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34A[0x6];                                      // 0x034A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    CompleteZoneObjective;                             // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    NameHomebaseObjective;                             // 0x0360(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                NotificationPadding;                               // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FDataTableRowHandle                    PlaySatelliteCineObjective;                        // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UFortAccountItemDefinition*             ShowNewsToken;                                     // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ClientQuestLoginRetryCount;                        // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ClientQuestLoginNumRetries;                        // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    PlayPeriodicEventCineObjective;                    // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    StormShieldDefenseObjective;                       // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UClass*                                 PeriodicEventMovieAnnouncementClass;               // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_HBOnboardingFlow(int32 EntryPoint);
@@ -118,23 +118,23 @@ public:
 	}
 };
 static_assert(alignof(AHBOnboardingFlow_C) == 0x000008, "Wrong alignment on AHBOnboardingFlow_C");
-static_assert(sizeof(AHBOnboardingFlow_C) == 0x0003B8, "Wrong size on AHBOnboardingFlow_C");
-static_assert(offsetof(AHBOnboardingFlow_C, UberGraphFrame) == 0x000318, "Member 'AHBOnboardingFlow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, DefaultSceneRoot) == 0x000320, "Member 'AHBOnboardingFlow_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, OnboardingQuest) == 0x000328, "Member 'AHBOnboardingFlow_C::OnboardingQuest' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventMovieQuest) == 0x000330, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventMovieQuest' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, bPlayedPeriodicEventMovie) == 0x000338, "Member 'AHBOnboardingFlow_C::bPlayedPeriodicEventMovie' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, bHasRecheckedNeedToPlayPeriodicEventMovie) == 0x000339, "Member 'AHBOnboardingFlow_C::bHasRecheckedNeedToPlayPeriodicEventMovie' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, CompleteZoneObjective) == 0x000340, "Member 'AHBOnboardingFlow_C::CompleteZoneObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, NameHomebaseObjective) == 0x000350, "Member 'AHBOnboardingFlow_C::NameHomebaseObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, NotificationPadding) == 0x000360, "Member 'AHBOnboardingFlow_C::NotificationPadding' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlaySatelliteCineObjective) == 0x000370, "Member 'AHBOnboardingFlow_C::PlaySatelliteCineObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ShowNewsToken) == 0x000380, "Member 'AHBOnboardingFlow_C::ShowNewsToken' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginRetryCount) == 0x000388, "Member 'AHBOnboardingFlow_C::ClientQuestLoginRetryCount' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginNumRetries) == 0x00038C, "Member 'AHBOnboardingFlow_C::ClientQuestLoginNumRetries' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventCineObjective) == 0x000390, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventCineObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, StormShieldDefenseObjective) == 0x0003A0, "Member 'AHBOnboardingFlow_C::StormShieldDefenseObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PeriodicEventMovieAnnouncementClass) == 0x0003B0, "Member 'AHBOnboardingFlow_C::PeriodicEventMovieAnnouncementClass' has a wrong offset!");
+static_assert(sizeof(AHBOnboardingFlow_C) == 0x0003C8, "Wrong size on AHBOnboardingFlow_C");
+static_assert(offsetof(AHBOnboardingFlow_C, UberGraphFrame) == 0x000328, "Member 'AHBOnboardingFlow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, DefaultSceneRoot) == 0x000330, "Member 'AHBOnboardingFlow_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, OnboardingQuest) == 0x000338, "Member 'AHBOnboardingFlow_C::OnboardingQuest' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventMovieQuest) == 0x000340, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventMovieQuest' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, bPlayedPeriodicEventMovie) == 0x000348, "Member 'AHBOnboardingFlow_C::bPlayedPeriodicEventMovie' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, bHasRecheckedNeedToPlayPeriodicEventMovie) == 0x000349, "Member 'AHBOnboardingFlow_C::bHasRecheckedNeedToPlayPeriodicEventMovie' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, CompleteZoneObjective) == 0x000350, "Member 'AHBOnboardingFlow_C::CompleteZoneObjective' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, NameHomebaseObjective) == 0x000360, "Member 'AHBOnboardingFlow_C::NameHomebaseObjective' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, NotificationPadding) == 0x000370, "Member 'AHBOnboardingFlow_C::NotificationPadding' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, PlaySatelliteCineObjective) == 0x000380, "Member 'AHBOnboardingFlow_C::PlaySatelliteCineObjective' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, ShowNewsToken) == 0x000390, "Member 'AHBOnboardingFlow_C::ShowNewsToken' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginRetryCount) == 0x000398, "Member 'AHBOnboardingFlow_C::ClientQuestLoginRetryCount' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginNumRetries) == 0x00039C, "Member 'AHBOnboardingFlow_C::ClientQuestLoginNumRetries' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventCineObjective) == 0x0003A0, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventCineObjective' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, StormShieldDefenseObjective) == 0x0003B0, "Member 'AHBOnboardingFlow_C::StormShieldDefenseObjective' has a wrong offset!");
+static_assert(offsetof(AHBOnboardingFlow_C, PeriodicEventMovieAnnouncementClass) == 0x0003C0, "Member 'AHBOnboardingFlow_C::PeriodicEventMovieAnnouncementClass' has a wrong offset!");
 
 }
 

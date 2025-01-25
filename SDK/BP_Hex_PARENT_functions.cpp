@@ -369,20 +369,6 @@ void ABP_Hex_PARENT_C::OnMissionDataUpdated()
 }
 
 
-// Function BP_Hex_PARENT.BP_Hex_PARENT_C.ForceDefocus
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hex_PARENT_C::ForceDefocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hex_PARENT_C", "ForceDefocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.FireLightningA
 // (BlueprintCallable, BlueprintEvent)
 
@@ -406,6 +392,20 @@ void ABP_Hex_PARENT_C::CheckFocus()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Hex_PARENT_C", "CheckFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Hex_PARENT.BP_Hex_PARENT_C.ForceDefocus
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hex_PARENT_C::ForceDefocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hex_PARENT_C", "ForceDefocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -20,9 +20,9 @@ namespace SDK
 // Function DailyQuestWidget.DailyQuestWidget_C.SetQuestItem
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortQuestItem*                   Param_Quest                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestItem*                   Quest_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDailyQuestWidget_C::SetQuestItem(class UFortQuestItem* Param_Quest)
+void UDailyQuestWidget_C::SetQuestItem(class UFortQuestItem* Quest_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UDailyQuestWidget_C::SetQuestItem(class UFortQuestItem* Param_Quest)
 
 	Params::DailyQuestWidget_C_SetQuestItem Parms{};
 
-	Parms.Param_Quest = Param_Quest;
+	Parms.Quest_0 = Quest_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

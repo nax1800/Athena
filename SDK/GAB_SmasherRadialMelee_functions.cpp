@@ -149,20 +149,6 @@ void UGAB_SmasherRadialMelee_C::OnMoveFinished_1C768C2A4BDB2902BA3FDD92DD5F3C46(
 }
 
 
-// Function GAB_SmasherRadialMelee.GAB_SmasherRadialMelee_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void UGAB_SmasherRadialMelee_C::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SmasherRadialMelee_C", "K2_ActivateAbility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GAB_SmasherRadialMelee.GAB_SmasherRadialMelee_C.Cancelled_2EFEB45748E11A8A846C14AD7ADF164D
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -226,6 +212,20 @@ void UGAB_SmasherRadialMelee_C::Triggered_2EFEB45748E11A8A846C14AD7ADF164D(const
 	Parms.ApplicationTag = std::move(ApplicationTag);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAB_SmasherRadialMelee.GAB_SmasherRadialMelee_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void UGAB_SmasherRadialMelee_C::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAB_SmasherRadialMelee_C", "K2_ActivateAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

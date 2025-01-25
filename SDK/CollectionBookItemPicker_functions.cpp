@@ -163,5 +163,29 @@ void UCollectionBookItemPicker_C::Get_Type_Text(class UFortItem* Item, class FTe
 		*Type = std::move(Parms.Type);
 }
 
+
+// Function CollectionBookItemPicker.CollectionBookItemPicker_C.Get Plural Type Text
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortItem*                        Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             Type                                                   (Parm, OutParm)
+
+void UCollectionBookItemPicker_C::Get_Plural_Type_Text(class UFortItem* Item, class FText* Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CollectionBookItemPicker_C", "Get Plural Type Text");
+
+	Params::CollectionBookItemPicker_C_Get_Plural_Type_Text Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Type != nullptr)
+		*Type = std::move(Parms.Type);
+}
+
 }
 

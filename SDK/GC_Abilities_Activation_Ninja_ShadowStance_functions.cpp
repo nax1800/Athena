@@ -17,6 +17,98 @@
 namespace SDK
 {
 
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance
+// (HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGC_Abilities_Activation_Ninja_ShadowStance_C::ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance");
+
+	Params::GC_Abilities_Activation_Ninja_ShadowStance_C_ExecuteUbergraph_GC_Abilities_Activation_Ninja_ShadowStance Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.K2_HandleGameplayCue
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EGameplayCueEvent                       EventType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+
+void AGC_Abilities_Activation_Ninja_ShadowStance_C::K2_HandleGameplayCue(class AActor* MyTarget_0, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "K2_HandleGameplayCue");
+
+	Params::GC_Abilities_Activation_Ninja_ShadowStance_C_K2_HandleGameplayCue Parms{};
+
+	Parms.MyTarget_0 = MyTarget_0;
+	Parms.EventType = EventType;
+	Parms.Parameters = std::move(Parameters);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.Shadow Stance Dissolve Timeline
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Reverse                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGC_Abilities_Activation_Ninja_ShadowStance_C::Shadow_Stance_Dissolve_Timeline(bool Reverse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "Shadow Stance Dissolve Timeline");
+
+	Params::GC_Abilities_Activation_Ninja_ShadowStance_C_Shadow_Stance_Dissolve_Timeline Parms{};
+
+	Parms.Reverse = Reverse;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.Animate Ninja ShadowStance Dissolve__FinishedFunc
+// (BlueprintEvent)
+
+void AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "Animate Ninja ShadowStance Dissolve__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.Animate Ninja ShadowStance Dissolve__UpdateFunc
+// (BlueprintEvent)
+
+void AGC_Abilities_Activation_Ninja_ShadowStance_C::Animate_Ninja_ShadowStance_Dissolve__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "Animate Ninja ShadowStance Dissolve__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -28,28 +120,6 @@ void AGC_Abilities_Activation_Ninja_ShadowStance_C::UserConstructionScript()
 		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GC_Abilities_Activation_Ninja_ShadowStance.GC_Abilities_Activation_Ninja_ShadowStance_C.OnWhileActiveParticleSystemDeactivate
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UParticleSystemComponent*         WhileActiveParticleSysComponent                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void AGC_Abilities_Activation_Ninja_ShadowStance_C::OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Activation_Ninja_ShadowStance_C", "OnWhileActiveParticleSystemDeactivate");
-
-	Params::GC_Abilities_Activation_Ninja_ShadowStance_C_OnWhileActiveParticleSystemDeactivate Parms{};
-
-	Parms.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

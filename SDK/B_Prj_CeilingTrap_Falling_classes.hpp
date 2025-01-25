@@ -10,34 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Prj_CeilingTrap_Falling.B_Prj_CeilingTrap_Falling_C
-// 0x0048 (0x0868 - 0x0820)
+// 0x0068 (0x0738 - 0x06D0)
 class AB_Prj_CeilingTrap_Falling_C final : public AFortProjectileFallingTrap
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(Transient, DuplicateTransient)
-	class USphereComponent*                       Sphere;                                            // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class UStaticMesh*>                    MeshTypes;                                         // 0x0830(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	bool                                          bActive;                                           // 0x0840(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_841[0x3];                                      // 0x0841(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PrevBounceLocation;                                // 0x0844(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinBounceDistanceSquared;                          // 0x0850(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PrevBounceTime;                                    // 0x0854(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinBounceTime;                                     // 0x0858(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MinVelocitySquared;                                // 0x085C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bExploded;                                         // 0x0860(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06D0(0x0008)(Transient, DuplicateTransient)
+	class USphereComponent*                       Sphere;                                            // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class UStaticMesh*>                    MeshTypes;                                         // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	bool                                          bActive;                                           // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6F1[0x3];                                      // 0x06F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PrevBounceLocation;                                // 0x06F4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinBounceDistanceSquared;                          // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PrevBounceTime;                                    // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinBounceTime;                                     // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinVelocitySquared;                                // 0x070C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bExploded;                                         // 0x0710(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_711[0x7];                                      // 0x0711(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_ActorTagsThatShouldTriggerDamageOnHit;          // 0x0718(0x0020)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_B_Prj_CeilingTrap_Falling(int32 EntryPoint);
+	void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void DestroyTire();
 	void CheckTireDestruction(const struct FVector& CurrentVelocity);
 	void ReceiveBeginPlay();
@@ -59,17 +63,18 @@ public:
 	}
 };
 static_assert(alignof(AB_Prj_CeilingTrap_Falling_C) == 0x000008, "Wrong alignment on AB_Prj_CeilingTrap_Falling_C");
-static_assert(sizeof(AB_Prj_CeilingTrap_Falling_C) == 0x000868, "Wrong size on AB_Prj_CeilingTrap_Falling_C");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, UberGraphFrame) == 0x000820, "Member 'AB_Prj_CeilingTrap_Falling_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, Sphere) == 0x000828, "Member 'AB_Prj_CeilingTrap_Falling_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MeshTypes) == 0x000830, "Member 'AB_Prj_CeilingTrap_Falling_C::MeshTypes' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, bActive) == 0x000840, "Member 'AB_Prj_CeilingTrap_Falling_C::bActive' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, PrevBounceLocation) == 0x000844, "Member 'AB_Prj_CeilingTrap_Falling_C::PrevBounceLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinBounceDistanceSquared) == 0x000850, "Member 'AB_Prj_CeilingTrap_Falling_C::MinBounceDistanceSquared' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, PrevBounceTime) == 0x000854, "Member 'AB_Prj_CeilingTrap_Falling_C::PrevBounceTime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinBounceTime) == 0x000858, "Member 'AB_Prj_CeilingTrap_Falling_C::MinBounceTime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinVelocitySquared) == 0x00085C, "Member 'AB_Prj_CeilingTrap_Falling_C::MinVelocitySquared' has a wrong offset!");
-static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, bExploded) == 0x000860, "Member 'AB_Prj_CeilingTrap_Falling_C::bExploded' has a wrong offset!");
+static_assert(sizeof(AB_Prj_CeilingTrap_Falling_C) == 0x000738, "Wrong size on AB_Prj_CeilingTrap_Falling_C");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, UberGraphFrame) == 0x0006D0, "Member 'AB_Prj_CeilingTrap_Falling_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, Sphere) == 0x0006D8, "Member 'AB_Prj_CeilingTrap_Falling_C::Sphere' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MeshTypes) == 0x0006E0, "Member 'AB_Prj_CeilingTrap_Falling_C::MeshTypes' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, bActive) == 0x0006F0, "Member 'AB_Prj_CeilingTrap_Falling_C::bActive' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, PrevBounceLocation) == 0x0006F4, "Member 'AB_Prj_CeilingTrap_Falling_C::PrevBounceLocation' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinBounceDistanceSquared) == 0x000700, "Member 'AB_Prj_CeilingTrap_Falling_C::MinBounceDistanceSquared' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, PrevBounceTime) == 0x000704, "Member 'AB_Prj_CeilingTrap_Falling_C::PrevBounceTime' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinBounceTime) == 0x000708, "Member 'AB_Prj_CeilingTrap_Falling_C::MinBounceTime' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, MinVelocitySquared) == 0x00070C, "Member 'AB_Prj_CeilingTrap_Falling_C::MinVelocitySquared' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, bExploded) == 0x000710, "Member 'AB_Prj_CeilingTrap_Falling_C::bExploded' has a wrong offset!");
+static_assert(offsetof(AB_Prj_CeilingTrap_Falling_C, TC_ActorTagsThatShouldTriggerDamageOnHit) == 0x000718, "Member 'AB_Prj_CeilingTrap_Falling_C::TC_ActorTagsThatShouldTriggerDamageOnHit' has a wrong offset!");
 
 }
 

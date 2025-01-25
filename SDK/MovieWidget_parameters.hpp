@@ -60,15 +60,19 @@ struct MovieWidget_C_Init final
 public:
 	class UMediaSource*                           InMediaSource;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                InMediaSoundWave;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasPlayerForSource_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_SetMediaSource_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetMediaSource_ReturnValue1;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasPlayerForSource_ReturnValue;           // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(MovieWidget_C_Init) == 0x000008, "Wrong alignment on MovieWidget_C_Init");
 static_assert(sizeof(MovieWidget_C_Init) == 0x000028, "Wrong size on MovieWidget_C_Init");
 static_assert(offsetof(MovieWidget_C_Init, InMediaSource) == 0x000000, "Member 'MovieWidget_C_Init::InMediaSource' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_Init, InMediaSoundWave) == 0x000008, "Member 'MovieWidget_C_Init::InMediaSoundWave' has a wrong offset!");
-static_assert(offsetof(MovieWidget_C_Init, CallFunc_HasPlayerForSource_ReturnValue) == 0x000010, "Member 'MovieWidget_C_Init::CallFunc_HasPlayerForSource_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MovieWidget_C_Init, CallFunc_SetMediaSource_ReturnValue) == 0x000010, "Member 'MovieWidget_C_Init::CallFunc_SetMediaSource_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MovieWidget_C_Init, CallFunc_SetMediaSource_ReturnValue1) == 0x000011, "Member 'MovieWidget_C_Init::CallFunc_SetMediaSource_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(MovieWidget_C_Init, CallFunc_HasPlayerForSource_ReturnValue) == 0x000012, "Member 'MovieWidget_C_Init::CallFunc_HasPlayerForSource_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_Init, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'MovieWidget_C_Init::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function MovieWidget.MovieWidget_C.Play

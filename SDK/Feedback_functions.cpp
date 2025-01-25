@@ -310,10 +310,10 @@ void UFeedback_C::Setup_For_Reporting_Player(const class FText& PlayerName)
 // Function Feedback.Feedback_C.SetupAutoFillPlayerFields
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_KillersName                                      (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText                             Param_SpectatingName                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             KillersName_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             SpectatingName_0                                       (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UFeedback_C::SetupAutoFillPlayerFields(const class FText& Param_KillersName, const class FText& Param_SpectatingName)
+void UFeedback_C::SetupAutoFillPlayerFields(const class FText& KillersName_0, const class FText& SpectatingName_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -322,8 +322,8 @@ void UFeedback_C::SetupAutoFillPlayerFields(const class FText& Param_KillersName
 
 	Params::Feedback_C_SetupAutoFillPlayerFields Parms{};
 
-	Parms.Param_KillersName = std::move(Param_KillersName);
-	Parms.Param_SpectatingName = std::move(Param_SpectatingName);
+	Parms.KillersName_0 = std::move(KillersName_0);
+	Parms.SpectatingName_0 = std::move(SpectatingName_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

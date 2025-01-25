@@ -10,56 +10,56 @@
 
 #include "Basic.hpp"
 
-#include "Results_CommanderXP_Data_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
-#include "REsults_CommanderXP_MaterialData_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "Results_CommanderXP_Data_structs.hpp"
+#include "REsults_CommanderXP_MaterialData_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_CommanderXPBar.Results_CommanderXPBar_C
-// 0x0118 (0x0330 - 0x0218)
+// 0x0118 (0x0328 - 0x0210)
 class UResults_CommanderXPBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FlashBar;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_BonusXpType_C*                 BonusXpType;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ProgressBarNew;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextCommanderLabel;                                // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           CountTimer;                                        // 0x0250(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	int32                                         CurrentXP;                                         // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentLevel;                                      // 0x025C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   CountFinished;                                     // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         PlayRate;                                          // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MAT_progressBarNew;                                // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   LeveledUp;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   IntroFinished;                                     // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         CountTime;                                         // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CountTimeStart;                                    // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bSkippedToEnd;                                     // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bSkippingToEnd;                                    // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B2[0x6];                                      // 0x02B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             GainXP;                                            // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ACGainXp;                                          // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Intro;                                             // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             CountEnd;                                          // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CurrentXpParameterName;                            // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentCountStep;                                  // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   CountIncrement;                                    // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class USoundBase*                             RestXP;                                            // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             BoostXP;                                           // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             MissedXP;                                          // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FResults_CommanderXP_Data>      XpSections;                                        // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FResults_CommanderXP_MaterialData> ProgressBarInfo;                                   // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FlashBar;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_BonusXpType_C*                 BonusXpType;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ProgressBarNew;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextCommanderLabel;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           CountTimer;                                        // 0x0248(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentXP;                                         // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentLevel;                                      // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   CountFinished;                                     // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         PlayRate;                                          // 0x0268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               MAT_progressBarNew;                                // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   LeveledUp;                                         // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   IntroFinished;                                     // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         CountTime;                                         // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CountTimeStart;                                    // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSkippedToEnd;                                     // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bSkippingToEnd;                                    // 0x02A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2AA[0x6];                                      // 0x02AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             GainXP;                                            // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ACGainXp;                                          // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Intro;                                             // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             CountEnd;                                          // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CurrentXpParameterName;                            // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentCountStep;                                  // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DC[0x4];                                      // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   CountIncrement;                                    // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class USoundBase*                             RestXP;                                            // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             BoostXP;                                           // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             MissedXP;                                          // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FResults_CommanderXP_Data>      XpSections;                                        // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FResults_CommanderXP_MaterialData> ProgressBarInfo;                                   // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void CountFinished__DelegateSignature();
@@ -74,7 +74,7 @@ public:
 	void Count_Sequence();
 	void Intro_Sequence();
 	void UpdateCount();
-	void Initialize(class UFortUIScoreReport* InScoreReport, float Param_PlayRate);
+	void Initialize(class UFortUIScoreReport* InScoreReport, float PlayRate_0);
 	void SetSkippingToEnd();
 	void SkipToFinalState();
 	void PlayAnimationCommon(class UWidgetAnimation* Animation);
@@ -96,39 +96,39 @@ public:
 	}
 };
 static_assert(alignof(UResults_CommanderXPBar_C) == 0x000008, "Wrong alignment on UResults_CommanderXPBar_C");
-static_assert(sizeof(UResults_CommanderXPBar_C) == 0x000330, "Wrong size on UResults_CommanderXPBar_C");
-static_assert(offsetof(UResults_CommanderXPBar_C, UberGraphFrame) == 0x000218, "Member 'UResults_CommanderXPBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, Anim_SkipToFinalState) == 0x000220, "Member 'UResults_CommanderXPBar_C::Anim_SkipToFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, Anim_FlashBar) == 0x000228, "Member 'UResults_CommanderXPBar_C::Anim_FlashBar' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, Anim_Intro) == 0x000230, "Member 'UResults_CommanderXPBar_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, BonusXpType) == 0x000238, "Member 'UResults_CommanderXPBar_C::BonusXpType' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, ProgressBarNew) == 0x000240, "Member 'UResults_CommanderXPBar_C::ProgressBarNew' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, TextCommanderLabel) == 0x000248, "Member 'UResults_CommanderXPBar_C::TextCommanderLabel' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountTimer) == 0x000250, "Member 'UResults_CommanderXPBar_C::CountTimer' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CurrentXP) == 0x000258, "Member 'UResults_CommanderXPBar_C::CurrentXP' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CurrentLevel) == 0x00025C, "Member 'UResults_CommanderXPBar_C::CurrentLevel' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountFinished) == 0x000260, "Member 'UResults_CommanderXPBar_C::CountFinished' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, PlayRate) == 0x000270, "Member 'UResults_CommanderXPBar_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, MAT_progressBarNew) == 0x000278, "Member 'UResults_CommanderXPBar_C::MAT_progressBarNew' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, ScoreReport) == 0x000280, "Member 'UResults_CommanderXPBar_C::ScoreReport' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, LeveledUp) == 0x000288, "Member 'UResults_CommanderXPBar_C::LeveledUp' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, IntroFinished) == 0x000298, "Member 'UResults_CommanderXPBar_C::IntroFinished' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountTime) == 0x0002A8, "Member 'UResults_CommanderXPBar_C::CountTime' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountTimeStart) == 0x0002AC, "Member 'UResults_CommanderXPBar_C::CountTimeStart' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, bSkippedToEnd) == 0x0002B0, "Member 'UResults_CommanderXPBar_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, bSkippingToEnd) == 0x0002B1, "Member 'UResults_CommanderXPBar_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, GainXP) == 0x0002B8, "Member 'UResults_CommanderXPBar_C::GainXP' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, ACGainXp) == 0x0002C0, "Member 'UResults_CommanderXPBar_C::ACGainXp' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, Intro) == 0x0002C8, "Member 'UResults_CommanderXPBar_C::Intro' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountEnd) == 0x0002D0, "Member 'UResults_CommanderXPBar_C::CountEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CurrentXpParameterName) == 0x0002D8, "Member 'UResults_CommanderXPBar_C::CurrentXpParameterName' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CurrentCountStep) == 0x0002E0, "Member 'UResults_CommanderXPBar_C::CurrentCountStep' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountIncrement) == 0x0002E8, "Member 'UResults_CommanderXPBar_C::CountIncrement' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, RestXP) == 0x0002F8, "Member 'UResults_CommanderXPBar_C::RestXP' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, BoostXP) == 0x000300, "Member 'UResults_CommanderXPBar_C::BoostXP' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, MissedXP) == 0x000308, "Member 'UResults_CommanderXPBar_C::MissedXP' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, XpSections) == 0x000310, "Member 'UResults_CommanderXPBar_C::XpSections' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, ProgressBarInfo) == 0x000320, "Member 'UResults_CommanderXPBar_C::ProgressBarInfo' has a wrong offset!");
+static_assert(sizeof(UResults_CommanderXPBar_C) == 0x000328, "Wrong size on UResults_CommanderXPBar_C");
+static_assert(offsetof(UResults_CommanderXPBar_C, UberGraphFrame) == 0x000210, "Member 'UResults_CommanderXPBar_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, Anim_SkipToFinalState) == 0x000218, "Member 'UResults_CommanderXPBar_C::Anim_SkipToFinalState' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, Anim_FlashBar) == 0x000220, "Member 'UResults_CommanderXPBar_C::Anim_FlashBar' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, Anim_Intro) == 0x000228, "Member 'UResults_CommanderXPBar_C::Anim_Intro' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, BonusXpType) == 0x000230, "Member 'UResults_CommanderXPBar_C::BonusXpType' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, ProgressBarNew) == 0x000238, "Member 'UResults_CommanderXPBar_C::ProgressBarNew' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, TextCommanderLabel) == 0x000240, "Member 'UResults_CommanderXPBar_C::TextCommanderLabel' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountTimer) == 0x000248, "Member 'UResults_CommanderXPBar_C::CountTimer' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CurrentXP) == 0x000250, "Member 'UResults_CommanderXPBar_C::CurrentXP' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CurrentLevel) == 0x000254, "Member 'UResults_CommanderXPBar_C::CurrentLevel' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountFinished) == 0x000258, "Member 'UResults_CommanderXPBar_C::CountFinished' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, PlayRate) == 0x000268, "Member 'UResults_CommanderXPBar_C::PlayRate' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, MAT_progressBarNew) == 0x000270, "Member 'UResults_CommanderXPBar_C::MAT_progressBarNew' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, ScoreReport) == 0x000278, "Member 'UResults_CommanderXPBar_C::ScoreReport' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, LeveledUp) == 0x000280, "Member 'UResults_CommanderXPBar_C::LeveledUp' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, IntroFinished) == 0x000290, "Member 'UResults_CommanderXPBar_C::IntroFinished' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountTime) == 0x0002A0, "Member 'UResults_CommanderXPBar_C::CountTime' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountTimeStart) == 0x0002A4, "Member 'UResults_CommanderXPBar_C::CountTimeStart' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, bSkippedToEnd) == 0x0002A8, "Member 'UResults_CommanderXPBar_C::bSkippedToEnd' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, bSkippingToEnd) == 0x0002A9, "Member 'UResults_CommanderXPBar_C::bSkippingToEnd' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, GainXP) == 0x0002B0, "Member 'UResults_CommanderXPBar_C::GainXP' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, ACGainXp) == 0x0002B8, "Member 'UResults_CommanderXPBar_C::ACGainXp' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, Intro) == 0x0002C0, "Member 'UResults_CommanderXPBar_C::Intro' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountEnd) == 0x0002C8, "Member 'UResults_CommanderXPBar_C::CountEnd' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CurrentXpParameterName) == 0x0002D0, "Member 'UResults_CommanderXPBar_C::CurrentXpParameterName' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CurrentCountStep) == 0x0002D8, "Member 'UResults_CommanderXPBar_C::CurrentCountStep' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, CountIncrement) == 0x0002E0, "Member 'UResults_CommanderXPBar_C::CountIncrement' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, RestXP) == 0x0002F0, "Member 'UResults_CommanderXPBar_C::RestXP' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, BoostXP) == 0x0002F8, "Member 'UResults_CommanderXPBar_C::BoostXP' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, MissedXP) == 0x000300, "Member 'UResults_CommanderXPBar_C::MissedXP' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, XpSections) == 0x000308, "Member 'UResults_CommanderXPBar_C::XpSections' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, ProgressBarInfo) == 0x000318, "Member 'UResults_CommanderXPBar_C::ProgressBarInfo' has a wrong offset!");
 
 }
 

@@ -56,5 +56,51 @@ void UGAT_TriggeredAbility_C::K2_ActivateAbilityFromEvent(const struct FGameplay
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function GAT_TriggeredAbility.GAT_TriggeredAbility_C.SetHolsterWeaponWithName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AFortPawn*                        Target_Fort_Pawn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ShouldHolster                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    PlayEquipAnim                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ShowDebugPrintName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGAT_TriggeredAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort_Pawn, bool ShouldHolster, bool PlayEquipAnim, bool ShowDebugPrintName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "SetHolsterWeaponWithName");
+
+	Params::GAT_TriggeredAbility_C_SetHolsterWeaponWithName Parms{};
+
+	Parms.Target_Fort_Pawn = Target_Fort_Pawn;
+	Parms.ShouldHolster = ShouldHolster;
+	Parms.PlayEquipAnim = PlayEquipAnim;
+	Parms.ShowDebugPrintName = ShowDebugPrintName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAT_TriggeredAbility.GAT_TriggeredAbility_C.TriggeredAbilitySetup
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UAbilitySystemComponent*          Ability_System_Component                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UGAT_TriggeredAbility_C::TriggeredAbilitySetup(class UAbilitySystemComponent* Ability_System_Component) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "TriggeredAbilitySetup");
+
+	Params::GAT_TriggeredAbility_C_TriggeredAbilitySetup Parms{};
+
+	Parms.Ability_System_Component = Ability_System_Component;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

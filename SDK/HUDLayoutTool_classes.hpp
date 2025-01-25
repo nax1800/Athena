@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -17,11 +19,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUDLayoutTool.HUDLayoutTool_C
-// 0x0008 (0x03C8 - 0x03C0)
+// 0x0040 (0x03C0 - 0x0380)
 class UHUDLayoutTool_C final : public UBacchusHUDLayoutToolPanel
 {
 public:
-	class UImage*                                 Image_0;                                           // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       HidePanel;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowPanel;                                         // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHUDLayoutToolFireModePanel_C*          HUDLayoutToolFireModePanel;                        // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHUDLayoutToolPropertyPanel_C*          HUDLayoutToolPropertyPanel;                        // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      InfoButtonToggle;                                  // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPanelButton_C*                         RecenterButton;                                    // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               ArrowMID;                                          // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
+	void ExecuteUbergraph_HUDLayoutTool(int32 EntryPoint);
+	void Tool_Is_Open();
+	void Construct();
+	void On_View_Offset_Update(const struct FVector2D& NewOffset);
+	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_66_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void On_Property_State_Change(bool bNewlyOpen);
+	void BndEvt__RecenterButton2_K2Node_ComponentBoundEvent_82_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void Close_Tool();
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +53,15 @@ public:
 	}
 };
 static_assert(alignof(UHUDLayoutTool_C) == 0x000008, "Wrong alignment on UHUDLayoutTool_C");
-static_assert(sizeof(UHUDLayoutTool_C) == 0x0003C8, "Wrong size on UHUDLayoutTool_C");
-static_assert(offsetof(UHUDLayoutTool_C, Image_0) == 0x0003C0, "Member 'UHUDLayoutTool_C::Image_0' has a wrong offset!");
+static_assert(sizeof(UHUDLayoutTool_C) == 0x0003C0, "Wrong size on UHUDLayoutTool_C");
+static_assert(offsetof(UHUDLayoutTool_C, UberGraphFrame) == 0x000380, "Member 'UHUDLayoutTool_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, HidePanel) == 0x000388, "Member 'UHUDLayoutTool_C::HidePanel' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, ShowPanel) == 0x000390, "Member 'UHUDLayoutTool_C::ShowPanel' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, HUDLayoutToolFireModePanel) == 0x000398, "Member 'UHUDLayoutTool_C::HUDLayoutToolFireModePanel' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, HUDLayoutToolPropertyPanel) == 0x0003A0, "Member 'UHUDLayoutTool_C::HUDLayoutToolPropertyPanel' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, InfoButtonToggle) == 0x0003A8, "Member 'UHUDLayoutTool_C::InfoButtonToggle' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, RecenterButton) == 0x0003B0, "Member 'UHUDLayoutTool_C::RecenterButton' has a wrong offset!");
+static_assert(offsetof(UHUDLayoutTool_C, ArrowMID) == 0x0003B8, "Member 'UHUDLayoutTool_C::ArrowMID' has a wrong offset!");
 
 }
 

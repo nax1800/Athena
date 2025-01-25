@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TheaterMapViewer.TheaterMapViewer_C
-// 0x0008 (0x0688 - 0x0680)
+// 0x0008 (0x0480 - 0x0478)
 class ATheaterMapViewer_C final : public AFortTheaterMapViewer
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0680(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ATheaterMapViewer_C) == 0x000008, "Wrong alignment on ATheaterMapViewer_C");
-static_assert(sizeof(ATheaterMapViewer_C) == 0x000688, "Wrong size on ATheaterMapViewer_C");
-static_assert(offsetof(ATheaterMapViewer_C, DefaultSceneRoot) == 0x000680, "Member 'ATheaterMapViewer_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ATheaterMapViewer_C) == 0x000480, "Wrong size on ATheaterMapViewer_C");
+static_assert(offsetof(ATheaterMapViewer_C, DefaultSceneRoot) == 0x000478, "Member 'ATheaterMapViewer_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

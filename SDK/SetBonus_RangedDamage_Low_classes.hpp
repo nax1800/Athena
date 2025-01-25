@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SetBonus_RangedDamage_Low.SetBonus_RangedDamage_Low_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class USetBonus_RangedDamage_Low_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USetBonus_RangedDamage_Low_C>();
 	}
 };
-static_assert(alignof(USetBonus_RangedDamage_Low_C) == 0x000010, "Wrong alignment on USetBonus_RangedDamage_Low_C");
-static_assert(sizeof(USetBonus_RangedDamage_Low_C) == 0x000670, "Wrong size on USetBonus_RangedDamage_Low_C");
+static_assert(alignof(USetBonus_RangedDamage_Low_C) == 0x000008, "Wrong alignment on USetBonus_RangedDamage_Low_C");
+static_assert(sizeof(USetBonus_RangedDamage_Low_C) == 0x000638, "Wrong size on USetBonus_RangedDamage_Low_C");
 
 }
 

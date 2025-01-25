@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,7 +27,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UTexture2D* Image, class FText Title, class FText Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool bShouldBlockSubtitlePortrait)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bShouldBlockSubtitlePortrait)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x000008, "Wrong alignment on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
 static_assert(sizeof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x000040, "Wrong size on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
@@ -35,7 +35,7 @@ static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHea
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000018, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000020, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate12) == 0x000030, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadImage
 // 0x0008 (0x0008 - 0x0000)
@@ -88,14 +88,14 @@ public:
 	class UTexture2D*                             Image;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Title;                                             // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   Subtitle;                                          // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	EFortAnnouncementDisplayPreference            Param_DisplayPreference;                           // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortAnnouncementDisplayPreference            DisplayPreference_0;                               // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin) == 0x000008, "Wrong alignment on QuestTalkingHeadWidget_C_HandleTalkingHeadBegin");
 static_assert(sizeof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin) == 0x000040, "Wrong size on QuestTalkingHeadWidget_C_HandleTalkingHeadBegin");
 static_assert(offsetof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin, Image) == 0x000000, "Member 'QuestTalkingHeadWidget_C_HandleTalkingHeadBegin::Image' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin, Title) == 0x000008, "Member 'QuestTalkingHeadWidget_C_HandleTalkingHeadBegin::Title' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin, Subtitle) == 0x000020, "Member 'QuestTalkingHeadWidget_C_HandleTalkingHeadBegin::Subtitle' has a wrong offset!");
-static_assert(offsetof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin, Param_DisplayPreference) == 0x000038, "Member 'QuestTalkingHeadWidget_C_HandleTalkingHeadBegin::Param_DisplayPreference' has a wrong offset!");
+static_assert(offsetof(QuestTalkingHeadWidget_C_HandleTalkingHeadBegin, DisplayPreference_0) == 0x000038, "Member 'QuestTalkingHeadWidget_C_HandleTalkingHeadBegin::DisplayPreference_0' has a wrong offset!");
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.HandleShouldBlockSubtitlePortraitChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -115,8 +115,8 @@ struct QuestTalkingHeadWidget_C_UpdateVisibility final
 public:
 	EFortAnnouncementDisplayPreference            Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,8 +125,8 @@ static_assert(alignof(QuestTalkingHeadWidget_C_UpdateVisibility) == 0x000001, "W
 static_assert(sizeof(QuestTalkingHeadWidget_C_UpdateVisibility) == 0x000007, "Wrong size on QuestTalkingHeadWidget_C_UpdateVisibility");
 static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable) == 0x000000, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable1) == 0x000001, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable12) == 0x000002, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable123) == 0x000003, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable2) == 0x000002, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, Temp_byte_Variable3) == 0x000003, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_UpdateVisibility, K2Node_Select_Default) == 0x000006, "Member 'QuestTalkingHeadWidget_C_UpdateVisibility::K2Node_Select_Default' has a wrong offset!");

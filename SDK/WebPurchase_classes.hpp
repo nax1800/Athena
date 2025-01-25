@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WebPurchase.WebPurchase_C
-// 0x0028 (0x03E8 - 0x03C0)
+// 0x0028 (0x0320 - 0x02F8)
 class UWebPurchase_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UCircularThrobber*                      Throbber;                                          // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                WebContent;                                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackAction;                                        // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UCircularThrobber*                      Throbber;                                          // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                WebContent;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    BackAction;                                        // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WebPurchase(int32 EntryPoint);
@@ -46,11 +46,11 @@ public:
 	}
 };
 static_assert(alignof(UWebPurchase_C) == 0x000008, "Wrong alignment on UWebPurchase_C");
-static_assert(sizeof(UWebPurchase_C) == 0x0003E8, "Wrong size on UWebPurchase_C");
-static_assert(offsetof(UWebPurchase_C, UberGraphFrame) == 0x0003C0, "Member 'UWebPurchase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, Throbber) == 0x0003C8, "Member 'UWebPurchase_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, WebContent) == 0x0003D0, "Member 'UWebPurchase_C::WebContent' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, BackAction) == 0x0003D8, "Member 'UWebPurchase_C::BackAction' has a wrong offset!");
+static_assert(sizeof(UWebPurchase_C) == 0x000320, "Wrong size on UWebPurchase_C");
+static_assert(offsetof(UWebPurchase_C, UberGraphFrame) == 0x0002F8, "Member 'UWebPurchase_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWebPurchase_C, Throbber) == 0x000300, "Member 'UWebPurchase_C::Throbber' has a wrong offset!");
+static_assert(offsetof(UWebPurchase_C, WebContent) == 0x000308, "Member 'UWebPurchase_C::WebContent' has a wrong offset!");
+static_assert(offsetof(UWebPurchase_C, BackAction) == 0x000310, "Member 'UWebPurchase_C::BackAction' has a wrong offset!");
 
 }
 

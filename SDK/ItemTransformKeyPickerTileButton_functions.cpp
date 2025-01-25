@@ -37,51 +37,49 @@ void UItemTransformKeyPickerTileButton_C::ExecuteUbergraph_ItemTransformKeyPicke
 }
 
 
-// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnHovered
+// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UItemTransformKeyPickerTileButton_C::OnHovered()
+void UItemTransformKeyPickerTileButton_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "OnHovered");
+		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnSelected
+// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UItemTransformKeyPickerTileButton_C::OnSelected()
+void UItemTransformKeyPickerTileButton_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "OnSelected");
+		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformKeyPickerTileButton_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UItemTransformKeyPickerTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "SetData");
+		Func = Class->GetFunction("ItemTransformKeyPickerTileButton_C", "OnListItemObjectSet");
 
-	Params::ItemTransformKeyPickerTileButton_C_SetData Parms{};
+	Params::ItemTransformKeyPickerTileButton_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

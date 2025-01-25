@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShield.OutpostScreenStormShield_C
-// 0x0040 (0x0400 - 0x03C0)
+// 0x0040 (0x0338 - 0x02F8)
 class UOutpostScreenStormShield_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalTabList_C*                   ContentOrPermissionsTab;                           // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  ShieldToContentSwitcher;                           // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class AFortOutpostBuilding*                   OutpostCoreBuilding;                               // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   CloseOutpostScreen;                                // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UOutpostScreenStormShieldContent_C*     StormShieldWidgetReference;                        // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UOutpostScreenStormShieldPermissions_C* PermissionsWidgetReference;                        // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalTabList_C*                   ContentOrPermissionsTab;                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  ShieldToContentSwitcher;                           // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class AFortOutpostBuilding*                   OutpostCoreBuilding;                               // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   CloseOutpostScreen;                                // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UOutpostScreenStormShieldContent_C*     StormShieldWidgetReference;                        // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UOutpostScreenStormShieldPermissions_C* PermissionsWidgetReference;                        // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CloseOutpostScreen__DelegateSignature();
@@ -53,14 +53,14 @@ public:
 	}
 };
 static_assert(alignof(UOutpostScreenStormShield_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShield_C");
-static_assert(sizeof(UOutpostScreenStormShield_C) == 0x000400, "Wrong size on UOutpostScreenStormShield_C");
-static_assert(offsetof(UOutpostScreenStormShield_C, UberGraphFrame) == 0x0003C0, "Member 'UOutpostScreenStormShield_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, ContentOrPermissionsTab) == 0x0003C8, "Member 'UOutpostScreenStormShield_C::ContentOrPermissionsTab' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, ShieldToContentSwitcher) == 0x0003D0, "Member 'UOutpostScreenStormShield_C::ShieldToContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, OutpostCoreBuilding) == 0x0003D8, "Member 'UOutpostScreenStormShield_C::OutpostCoreBuilding' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, CloseOutpostScreen) == 0x0003E0, "Member 'UOutpostScreenStormShield_C::CloseOutpostScreen' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, StormShieldWidgetReference) == 0x0003F0, "Member 'UOutpostScreenStormShield_C::StormShieldWidgetReference' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, PermissionsWidgetReference) == 0x0003F8, "Member 'UOutpostScreenStormShield_C::PermissionsWidgetReference' has a wrong offset!");
+static_assert(sizeof(UOutpostScreenStormShield_C) == 0x000338, "Wrong size on UOutpostScreenStormShield_C");
+static_assert(offsetof(UOutpostScreenStormShield_C, UberGraphFrame) == 0x0002F8, "Member 'UOutpostScreenStormShield_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, ContentOrPermissionsTab) == 0x000300, "Member 'UOutpostScreenStormShield_C::ContentOrPermissionsTab' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, ShieldToContentSwitcher) == 0x000308, "Member 'UOutpostScreenStormShield_C::ShieldToContentSwitcher' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, OutpostCoreBuilding) == 0x000310, "Member 'UOutpostScreenStormShield_C::OutpostCoreBuilding' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, CloseOutpostScreen) == 0x000318, "Member 'UOutpostScreenStormShield_C::CloseOutpostScreen' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, StormShieldWidgetReference) == 0x000328, "Member 'UOutpostScreenStormShield_C::StormShieldWidgetReference' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShield_C, PermissionsWidgetReference) == 0x000330, "Member 'UOutpostScreenStormShield_C::PermissionsWidgetReference' has a wrong offset!");
 
 }
 

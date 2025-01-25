@@ -198,6 +198,26 @@ void UDefaultObjectiveContentWidget_C::HandleTimerComponentUpdated(class UFortMi
 }
 
 
+// Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.UpdateAutoRefreshTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldAutoRefresh                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UDefaultObjectiveContentWidget_C::UpdateAutoRefreshTimer(bool ShouldAutoRefresh)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DefaultObjectiveContentWidget_C", "UpdateAutoRefreshTimer");
+
+	Params::DefaultObjectiveContentWidget_C_UpdateAutoRefreshTimer Parms{};
+
+	Parms.ShouldAutoRefresh = ShouldAutoRefresh;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetHeightEstimate
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

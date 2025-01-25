@@ -259,9 +259,9 @@ void IInterfaceAIStates_C::TakerSoulSuckSoundEnd()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void IInterfaceAIStates_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList)
+void IInterfaceAIStates_C::PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList)
 {
 	static class UFunction* Func = nullptr;
 
@@ -274,8 +274,6 @@ void IInterfaceAIStates_C::PortalAdd(class ABuildingActor* BuildingActor, TArray
 	Parms.BuildingActorList = std::move(BuildingActorList);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -311,10 +309,10 @@ void IInterfaceAIStates_C::TakerSoulSuckInterrupted()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class AActor*                           BT                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void IInterfaceAIStates_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
+void IInterfaceAIStates_C::PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
 {
 	static class UFunction* Func = nullptr;
 
@@ -328,8 +326,6 @@ void IInterfaceAIStates_C::PortalGet(class ABuildingActor* BuildingActor, TArray
 	Parms.BT = BT;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 

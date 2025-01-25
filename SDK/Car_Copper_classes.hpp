@@ -10,106 +10,108 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Car_Copper.Car_Copper_C
-// 0x01D8 (0x0FD0 - 0x0DF8)
+// 0x01D8 (0x0D70 - 0x0B98)
 class ACar_Copper_C final : public ABuildingProp
 {
 public:
-	uint8                                         Pad_DF8[0x8];                                      // 0x0DF8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0E00(0x0008)(Transient, DuplicateTransient)
-	float                                         Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0E08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0E0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E0D[0x3];                                      // 0x0E0D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_2;                                        // 0x0E10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12; // 0x0E18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            BounceCar__Direction_05733C554001D77C015F47B548F45A12; // 0x0E1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E1D[0x3];                                      // 0x0E1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     BounceCar;                                         // 0x0E20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B; // 0x0E28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B; // 0x0E2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E2D[0x3];                                      // 0x0E2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0E30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          OverallAlarmCycleFinished;                         // 0x0E38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E39[0x3];                                      // 0x0E39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           InitialEmissiveMultiplier;                         // 0x0E3C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           InitialEmissiveMultiplier2;                        // 0x0E4C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         AlarmLightCounter;                                 // 0x0E5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SoundIsRetriggerable;                              // 0x0E60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          CurrentFlashAnimationCycleFinished;                // 0x0E61(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E62[0x2];                                      // 0x0E62(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NumberOfTimesTheLightsFlashWhenHit;                // 0x0E64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SirenLightEmissiveMultiplier;                      // 0x0E68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SirenLightOn;                                      // 0x0E6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E6D[0x3];                                      // 0x0E6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Emissive_Multiplier_2;                             // 0x0E70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Emissive_Multiplier;                               // 0x0E78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Minus_HitAlarm;                              // 0x0E80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Use_Emissive_2;                                    // 0x0E88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E89[0x7];                                      // 0x0E89(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Sound_Minus_Jump_on_Car;                           // 0x0E90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SuspensionMovementAmount;                          // 0x0E98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ParticleEffectHas_NOT_AlreadyBeenTriggered;        // 0x0E9C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9D[0x3];                                      // 0x0E9D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               EngineSteamParticleEffect;                         // 0x0EA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Sound_Minus_Hit_AutoBody;                          // 0x0EA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanMakeJumpingNoiseAgain;                          // 0x0EB0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          CarAlarmIsCurrentlyMakingNoise;                    // 0x0EB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          CarAlarmEnabled;                                   // 0x0EB2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          RandomlyDisableSomeCarAlarms;                      // 0x0EB3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         PercentageChanceOfCarAlarmsBeingDisabled;          // 0x0EB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   HLight1;                                           // 0x0EB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HLight1SocketLocation;                             // 0x0EC0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HLight2SocketLocation;                             // 0x0ECC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       AnimatingMIDArray;                                 // 0x0ED8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UAudioComponent*                        AudibleAlarmSound;                                 // 0x0EE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseCarBounce;                                      // 0x0EF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          UseCarAlarm;                                       // 0x0EF1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EF2[0x2];                                      // 0x0EF2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Headlight_Emissive_Brightness;                     // 0x0EF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsCarAlarmEnabledInitialized;                      // 0x0EF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          DebugWind;                                         // 0x0EF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EFA[0x6];                                      // 0x0EFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             OriginalMaterials;                                 // 0x0F00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<class UMaterialInterface*>             IntenseWindMaterialsForPreview;                    // 0x0F10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class UMaterialInstanceDynamic*               Debug_TempMaterial;                                // 0x0F20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Debug_Wind_Intensity;                              // 0x0F28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F2C[0x4];                                      // 0x0F2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   Wind_Intensity_Debug_Mesh;                         // 0x0F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanDropOilDecal;                                   // 0x0F38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F39[0x3];                                      // 0x0F39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Wind_Yaw_Rotation;                                 // 0x0F3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   Taillight1;                                        // 0x0F40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   Taillight2;                                        // 0x0F48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TailLightBrightness;                               // 0x0F50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TailLightsExist;                                   // 0x0F54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HeadLightsExist;                                   // 0x0F55(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F56[0x2];                                      // 0x0F56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USpotLightComponent*                    HLight2;                                           // 0x0F58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HeadLightLightBrightness;                          // 0x0F60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TLight1SocketLocation;                             // 0x0F64(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TLight2SocketLocation;                             // 0x0F70(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Bounce_Offset;                                     // 0x0F7C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Hlight2_Minus_impact_bounce_light_location;        // 0x0F88(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Tlight2_Minus_impact_bounce_light_location;        // 0x0F94(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Car_Currently_Bouncing_From_Jump;                  // 0x0FA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FA1[0x3];                                      // 0x0FA1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Hlight1_Minus_impact_bounce_light_location;        // 0x0FA4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Tlight1_Minus_impact_bounce_light_location;        // 0x0FB0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Randomly_start_with_some_cars_lights_on;           // 0x0FBC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FBD[0x3];                                      // 0x0FBD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Percentage_chance_of_lights_being_left_off;        // 0x0FC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Final_Random_Light_Intensity_Variance;             // 0x0FC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          This_Car_s_Lights_Have_Been_Randomly_Enabled;      // 0x0FC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          TurnHeadLightsOn;                                  // 0x0FC9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B98(0x0008)(Transient, DuplicateTransient)
+	float                                         Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0BA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0BA4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BA5[0x3];                                      // 0x0BA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_2;                                        // 0x0BA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12; // 0x0BB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            BounceCar__Direction_05733C554001D77C015F47B548F45A12; // 0x0BB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BB5[0x3];                                      // 0x0BB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     BounceCar;                                         // 0x0BB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B; // 0x0BC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B; // 0x0BC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC5[0x3];                                      // 0x0BC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          OverallAlarmCycleFinished;                         // 0x0BD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BD1[0x3];                                      // 0x0BD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           InitialEmissiveMultiplier;                         // 0x0BD4(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InitialEmissiveMultiplier2;                        // 0x0BE4(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         AlarmLightCounter;                                 // 0x0BF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SoundIsRetriggerable;                              // 0x0BF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          CurrentFlashAnimationCycleFinished;                // 0x0BF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BFA[0x2];                                      // 0x0BFA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NumberOfTimesTheLightsFlashWhenHit;                // 0x0BFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SirenLightEmissiveMultiplier;                      // 0x0C00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SirenLightOn;                                      // 0x0C04(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C05[0x3];                                      // 0x0C05(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Emissive_Multiplier_2;                             // 0x0C08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Emissive_Multiplier;                               // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Minus_HitAlarm;                              // 0x0C18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Use_Emissive_2;                                    // 0x0C20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C21[0x7];                                      // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Sound_Minus_Jump_on_Car;                           // 0x0C28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SuspensionMovementAmount;                          // 0x0C30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ParticleEffectHas_NOT_AlreadyBeenTriggered;        // 0x0C34(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C35[0x3];                                      // 0x0C35(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               EngineSteamParticleEffect;                         // 0x0C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Sound_Minus_Hit_AutoBody;                          // 0x0C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanMakeJumpingNoiseAgain;                          // 0x0C48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          CarAlarmIsCurrentlyMakingNoise;                    // 0x0C49(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          CarAlarmEnabled;                                   // 0x0C4A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          RandomlyDisableSomeCarAlarms;                      // 0x0C4B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         PercentageChanceOfCarAlarmsBeingDisabled;          // 0x0C4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   HLight1;                                           // 0x0C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HLight1SocketLocation;                             // 0x0C58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HLight2SocketLocation;                             // 0x0C64(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       AnimatingMIDArray;                                 // 0x0C70(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UAudioComponent*                        AudibleAlarmSound;                                 // 0x0C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseCarBounce;                                      // 0x0C88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          UseCarAlarm;                                       // 0x0C89(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C8A[0x2];                                      // 0x0C8A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Headlight_Emissive_Brightness;                     // 0x0C8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsCarAlarmEnabledInitialized;                      // 0x0C90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          DebugWind;                                         // 0x0C91(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C92[0x6];                                      // 0x0C92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             OriginalMaterials;                                 // 0x0C98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UMaterialInterface*>             IntenseWindMaterialsForPreview;                    // 0x0CA8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UMaterialInstanceDynamic*               Debug_TempMaterial;                                // 0x0CB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Debug_Wind_Intensity;                              // 0x0CC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC4[0x4];                                      // 0x0CC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   Wind_Intensity_Debug_Mesh;                         // 0x0CC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanDropOilDecal;                                   // 0x0CD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CD1[0x3];                                      // 0x0CD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Wind_Yaw_Rotation;                                 // 0x0CD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   Taillight1;                                        // 0x0CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   Taillight2;                                        // 0x0CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TailLightBrightness;                               // 0x0CE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TailLightsExist;                                   // 0x0CEC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HeadLightsExist;                                   // 0x0CED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CEE[0x2];                                      // 0x0CEE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USpotLightComponent*                    HLight2;                                           // 0x0CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HeadLightLightBrightness;                          // 0x0CF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TLight1SocketLocation;                             // 0x0CFC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TLight2SocketLocation;                             // 0x0D08(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Bounce_Offset;                                     // 0x0D14(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Hlight2_Minus_impact_bounce_light_location;        // 0x0D20(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Tlight2_Minus_impact_bounce_light_location;        // 0x0D2C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Car_Currently_Bouncing_From_Jump;                  // 0x0D38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D39[0x3];                                      // 0x0D39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Hlight1_Minus_impact_bounce_light_location;        // 0x0D3C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Tlight1_Minus_impact_bounce_light_location;        // 0x0D48(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Randomly_start_with_some_cars_lights_on;           // 0x0D54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D55[0x3];                                      // 0x0D55(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Percentage_chance_of_lights_being_left_off;        // 0x0D58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Final_Random_Light_Intensity_Variance;             // 0x0D5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          This_Car_s_Lights_Have_Been_Randomly_Enabled;      // 0x0D60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          TurnHeadLightsOn;                                  // 0x0D61(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_D62[0x2];                                      // 0x0D62(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimeSinceLastJumpSound;                            // 0x0D64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MinTimeBetweenJumpSound;                           // 0x0D68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Car_Copper(int32 EntryPoint);
@@ -141,6 +143,7 @@ public:
 	void Set_Light_Brightness(float ZeroMinus1_Intensity, bool Include_Second_Emissive_Channel);
 	void Randomize_the_target_brightness_levels();
 	void Toggle_light_visibility(bool bNewVisibility);
+	void PlayJumpOnCarSound(const struct FVector& Location);
 
 public:
 	static class UClass* StaticClass()
@@ -153,77 +156,79 @@ public:
 	}
 };
 static_assert(alignof(ACar_Copper_C) == 0x000008, "Wrong alignment on ACar_Copper_C");
-static_assert(sizeof(ACar_Copper_C) == 0x000FD0, "Wrong size on ACar_Copper_C");
-static_assert(offsetof(ACar_Copper_C, UberGraphFrame) == 0x000E00, "Member 'ACar_Copper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000E08, "Member 'ACar_Copper_C::Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000E0C, "Member 'ACar_Copper_C::Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2) == 0x000E10, "Member 'ACar_Copper_C::Timeline_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12) == 0x000E18, "Member 'ACar_Copper_C::BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar__Direction_05733C554001D77C015F47B548F45A12) == 0x000E1C, "Member 'ACar_Copper_C::BounceCar__Direction_05733C554001D77C015F47B548F45A12' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar) == 0x000E20, "Member 'ACar_Copper_C::BounceCar' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B) == 0x000E28, "Member 'ACar_Copper_C::Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B) == 0x000E2C, "Member 'ACar_Copper_C::Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0) == 0x000E30, "Member 'ACar_Copper_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, OverallAlarmCycleFinished) == 0x000E38, "Member 'ACar_Copper_C::OverallAlarmCycleFinished' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier) == 0x000E3C, "Member 'ACar_Copper_C::InitialEmissiveMultiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier2) == 0x000E4C, "Member 'ACar_Copper_C::InitialEmissiveMultiplier2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AlarmLightCounter) == 0x000E5C, "Member 'ACar_Copper_C::AlarmLightCounter' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SoundIsRetriggerable) == 0x000E60, "Member 'ACar_Copper_C::SoundIsRetriggerable' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CurrentFlashAnimationCycleFinished) == 0x000E61, "Member 'ACar_Copper_C::CurrentFlashAnimationCycleFinished' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, NumberOfTimesTheLightsFlashWhenHit) == 0x000E64, "Member 'ACar_Copper_C::NumberOfTimesTheLightsFlashWhenHit' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SirenLightEmissiveMultiplier) == 0x000E68, "Member 'ACar_Copper_C::SirenLightEmissiveMultiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SirenLightOn) == 0x000E6C, "Member 'ACar_Copper_C::SirenLightOn' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier_2) == 0x000E70, "Member 'ACar_Copper_C::Emissive_Multiplier_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier) == 0x000E78, "Member 'ACar_Copper_C::Emissive_Multiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound_Minus_HitAlarm) == 0x000E80, "Member 'ACar_Copper_C::Sound_Minus_HitAlarm' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Use_Emissive_2) == 0x000E88, "Member 'ACar_Copper_C::Use_Emissive_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound_Minus_Jump_on_Car) == 0x000E90, "Member 'ACar_Copper_C::Sound_Minus_Jump_on_Car' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SuspensionMovementAmount) == 0x000E98, "Member 'ACar_Copper_C::SuspensionMovementAmount' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, ParticleEffectHas_NOT_AlreadyBeenTriggered) == 0x000E9C, "Member 'ACar_Copper_C::ParticleEffectHas_NOT_AlreadyBeenTriggered' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, EngineSteamParticleEffect) == 0x000EA0, "Member 'ACar_Copper_C::EngineSteamParticleEffect' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound_Minus_Hit_AutoBody) == 0x000EA8, "Member 'ACar_Copper_C::Sound_Minus_Hit_AutoBody' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CanMakeJumpingNoiseAgain) == 0x000EB0, "Member 'ACar_Copper_C::CanMakeJumpingNoiseAgain' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CarAlarmIsCurrentlyMakingNoise) == 0x000EB1, "Member 'ACar_Copper_C::CarAlarmIsCurrentlyMakingNoise' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CarAlarmEnabled) == 0x000EB2, "Member 'ACar_Copper_C::CarAlarmEnabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, RandomlyDisableSomeCarAlarms) == 0x000EB3, "Member 'ACar_Copper_C::RandomlyDisableSomeCarAlarms' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, PercentageChanceOfCarAlarmsBeingDisabled) == 0x000EB4, "Member 'ACar_Copper_C::PercentageChanceOfCarAlarmsBeingDisabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight1) == 0x000EB8, "Member 'ACar_Copper_C::HLight1' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight1SocketLocation) == 0x000EC0, "Member 'ACar_Copper_C::HLight1SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight2SocketLocation) == 0x000ECC, "Member 'ACar_Copper_C::HLight2SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AnimatingMIDArray) == 0x000ED8, "Member 'ACar_Copper_C::AnimatingMIDArray' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AudibleAlarmSound) == 0x000EE8, "Member 'ACar_Copper_C::AudibleAlarmSound' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, UseCarBounce) == 0x000EF0, "Member 'ACar_Copper_C::UseCarBounce' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, UseCarAlarm) == 0x000EF1, "Member 'ACar_Copper_C::UseCarAlarm' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Headlight_Emissive_Brightness) == 0x000EF4, "Member 'ACar_Copper_C::Headlight_Emissive_Brightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, IsCarAlarmEnabledInitialized) == 0x000EF8, "Member 'ACar_Copper_C::IsCarAlarmEnabledInitialized' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, DebugWind) == 0x000EF9, "Member 'ACar_Copper_C::DebugWind' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, OriginalMaterials) == 0x000F00, "Member 'ACar_Copper_C::OriginalMaterials' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, IntenseWindMaterialsForPreview) == 0x000F10, "Member 'ACar_Copper_C::IntenseWindMaterialsForPreview' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Debug_TempMaterial) == 0x000F20, "Member 'ACar_Copper_C::Debug_TempMaterial' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Debug_Wind_Intensity) == 0x000F28, "Member 'ACar_Copper_C::Debug_Wind_Intensity' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Wind_Intensity_Debug_Mesh) == 0x000F30, "Member 'ACar_Copper_C::Wind_Intensity_Debug_Mesh' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CanDropOilDecal) == 0x000F38, "Member 'ACar_Copper_C::CanDropOilDecal' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Wind_Yaw_Rotation) == 0x000F3C, "Member 'ACar_Copper_C::Wind_Yaw_Rotation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Taillight1) == 0x000F40, "Member 'ACar_Copper_C::Taillight1' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Taillight2) == 0x000F48, "Member 'ACar_Copper_C::Taillight2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TailLightBrightness) == 0x000F50, "Member 'ACar_Copper_C::TailLightBrightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TailLightsExist) == 0x000F54, "Member 'ACar_Copper_C::TailLightsExist' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HeadLightsExist) == 0x000F55, "Member 'ACar_Copper_C::HeadLightsExist' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight2) == 0x000F58, "Member 'ACar_Copper_C::HLight2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HeadLightLightBrightness) == 0x000F60, "Member 'ACar_Copper_C::HeadLightLightBrightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TLight1SocketLocation) == 0x000F64, "Member 'ACar_Copper_C::TLight1SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TLight2SocketLocation) == 0x000F70, "Member 'ACar_Copper_C::TLight2SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Bounce_Offset) == 0x000F7C, "Member 'ACar_Copper_C::Bounce_Offset' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Hlight2_Minus_impact_bounce_light_location) == 0x000F88, "Member 'ACar_Copper_C::Hlight2_Minus_impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Tlight2_Minus_impact_bounce_light_location) == 0x000F94, "Member 'ACar_Copper_C::Tlight2_Minus_impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Car_Currently_Bouncing_From_Jump) == 0x000FA0, "Member 'ACar_Copper_C::Car_Currently_Bouncing_From_Jump' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Hlight1_Minus_impact_bounce_light_location) == 0x000FA4, "Member 'ACar_Copper_C::Hlight1_Minus_impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Tlight1_Minus_impact_bounce_light_location) == 0x000FB0, "Member 'ACar_Copper_C::Tlight1_Minus_impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Randomly_start_with_some_cars_lights_on) == 0x000FBC, "Member 'ACar_Copper_C::Randomly_start_with_some_cars_lights_on' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Percentage_chance_of_lights_being_left_off) == 0x000FC0, "Member 'ACar_Copper_C::Percentage_chance_of_lights_being_left_off' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Final_Random_Light_Intensity_Variance) == 0x000FC4, "Member 'ACar_Copper_C::Final_Random_Light_Intensity_Variance' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, This_Car_s_Lights_Have_Been_Randomly_Enabled) == 0x000FC8, "Member 'ACar_Copper_C::This_Car_s_Lights_Have_Been_Randomly_Enabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TurnHeadLightsOn) == 0x000FC9, "Member 'ACar_Copper_C::TurnHeadLightsOn' has a wrong offset!");
+static_assert(sizeof(ACar_Copper_C) == 0x000D70, "Wrong size on ACar_Copper_C");
+static_assert(offsetof(ACar_Copper_C, UberGraphFrame) == 0x000B98, "Member 'ACar_Copper_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000BA0, "Member 'ACar_Copper_C::Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000BA4, "Member 'ACar_Copper_C::Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_2) == 0x000BA8, "Member 'ACar_Copper_C::Timeline_2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12) == 0x000BB0, "Member 'ACar_Copper_C::BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, BounceCar__Direction_05733C554001D77C015F47B548F45A12) == 0x000BB4, "Member 'ACar_Copper_C::BounceCar__Direction_05733C554001D77C015F47B548F45A12' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, BounceCar) == 0x000BB8, "Member 'ACar_Copper_C::BounceCar' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B) == 0x000BC0, "Member 'ACar_Copper_C::Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B) == 0x000BC4, "Member 'ACar_Copper_C::Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Timeline_0) == 0x000BC8, "Member 'ACar_Copper_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, OverallAlarmCycleFinished) == 0x000BD0, "Member 'ACar_Copper_C::OverallAlarmCycleFinished' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier) == 0x000BD4, "Member 'ACar_Copper_C::InitialEmissiveMultiplier' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier2) == 0x000BE4, "Member 'ACar_Copper_C::InitialEmissiveMultiplier2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, AlarmLightCounter) == 0x000BF4, "Member 'ACar_Copper_C::AlarmLightCounter' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, SoundIsRetriggerable) == 0x000BF8, "Member 'ACar_Copper_C::SoundIsRetriggerable' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, CurrentFlashAnimationCycleFinished) == 0x000BF9, "Member 'ACar_Copper_C::CurrentFlashAnimationCycleFinished' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, NumberOfTimesTheLightsFlashWhenHit) == 0x000BFC, "Member 'ACar_Copper_C::NumberOfTimesTheLightsFlashWhenHit' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, SirenLightEmissiveMultiplier) == 0x000C00, "Member 'ACar_Copper_C::SirenLightEmissiveMultiplier' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, SirenLightOn) == 0x000C04, "Member 'ACar_Copper_C::SirenLightOn' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier_2) == 0x000C08, "Member 'ACar_Copper_C::Emissive_Multiplier_2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier) == 0x000C10, "Member 'ACar_Copper_C::Emissive_Multiplier' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Sound_Minus_HitAlarm) == 0x000C18, "Member 'ACar_Copper_C::Sound_Minus_HitAlarm' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Use_Emissive_2) == 0x000C20, "Member 'ACar_Copper_C::Use_Emissive_2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Sound_Minus_Jump_on_Car) == 0x000C28, "Member 'ACar_Copper_C::Sound_Minus_Jump_on_Car' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, SuspensionMovementAmount) == 0x000C30, "Member 'ACar_Copper_C::SuspensionMovementAmount' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, ParticleEffectHas_NOT_AlreadyBeenTriggered) == 0x000C34, "Member 'ACar_Copper_C::ParticleEffectHas_NOT_AlreadyBeenTriggered' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, EngineSteamParticleEffect) == 0x000C38, "Member 'ACar_Copper_C::EngineSteamParticleEffect' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Sound_Minus_Hit_AutoBody) == 0x000C40, "Member 'ACar_Copper_C::Sound_Minus_Hit_AutoBody' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, CanMakeJumpingNoiseAgain) == 0x000C48, "Member 'ACar_Copper_C::CanMakeJumpingNoiseAgain' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, CarAlarmIsCurrentlyMakingNoise) == 0x000C49, "Member 'ACar_Copper_C::CarAlarmIsCurrentlyMakingNoise' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, CarAlarmEnabled) == 0x000C4A, "Member 'ACar_Copper_C::CarAlarmEnabled' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, RandomlyDisableSomeCarAlarms) == 0x000C4B, "Member 'ACar_Copper_C::RandomlyDisableSomeCarAlarms' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, PercentageChanceOfCarAlarmsBeingDisabled) == 0x000C4C, "Member 'ACar_Copper_C::PercentageChanceOfCarAlarmsBeingDisabled' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HLight1) == 0x000C50, "Member 'ACar_Copper_C::HLight1' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HLight1SocketLocation) == 0x000C58, "Member 'ACar_Copper_C::HLight1SocketLocation' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HLight2SocketLocation) == 0x000C64, "Member 'ACar_Copper_C::HLight2SocketLocation' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, AnimatingMIDArray) == 0x000C70, "Member 'ACar_Copper_C::AnimatingMIDArray' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, AudibleAlarmSound) == 0x000C80, "Member 'ACar_Copper_C::AudibleAlarmSound' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, UseCarBounce) == 0x000C88, "Member 'ACar_Copper_C::UseCarBounce' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, UseCarAlarm) == 0x000C89, "Member 'ACar_Copper_C::UseCarAlarm' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Headlight_Emissive_Brightness) == 0x000C8C, "Member 'ACar_Copper_C::Headlight_Emissive_Brightness' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, IsCarAlarmEnabledInitialized) == 0x000C90, "Member 'ACar_Copper_C::IsCarAlarmEnabledInitialized' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, DebugWind) == 0x000C91, "Member 'ACar_Copper_C::DebugWind' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, OriginalMaterials) == 0x000C98, "Member 'ACar_Copper_C::OriginalMaterials' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, IntenseWindMaterialsForPreview) == 0x000CA8, "Member 'ACar_Copper_C::IntenseWindMaterialsForPreview' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Debug_TempMaterial) == 0x000CB8, "Member 'ACar_Copper_C::Debug_TempMaterial' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Debug_Wind_Intensity) == 0x000CC0, "Member 'ACar_Copper_C::Debug_Wind_Intensity' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Wind_Intensity_Debug_Mesh) == 0x000CC8, "Member 'ACar_Copper_C::Wind_Intensity_Debug_Mesh' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, CanDropOilDecal) == 0x000CD0, "Member 'ACar_Copper_C::CanDropOilDecal' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Wind_Yaw_Rotation) == 0x000CD4, "Member 'ACar_Copper_C::Wind_Yaw_Rotation' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Taillight1) == 0x000CD8, "Member 'ACar_Copper_C::Taillight1' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Taillight2) == 0x000CE0, "Member 'ACar_Copper_C::Taillight2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TailLightBrightness) == 0x000CE8, "Member 'ACar_Copper_C::TailLightBrightness' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TailLightsExist) == 0x000CEC, "Member 'ACar_Copper_C::TailLightsExist' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HeadLightsExist) == 0x000CED, "Member 'ACar_Copper_C::HeadLightsExist' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HLight2) == 0x000CF0, "Member 'ACar_Copper_C::HLight2' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, HeadLightLightBrightness) == 0x000CF8, "Member 'ACar_Copper_C::HeadLightLightBrightness' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TLight1SocketLocation) == 0x000CFC, "Member 'ACar_Copper_C::TLight1SocketLocation' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TLight2SocketLocation) == 0x000D08, "Member 'ACar_Copper_C::TLight2SocketLocation' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Bounce_Offset) == 0x000D14, "Member 'ACar_Copper_C::Bounce_Offset' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Hlight2_Minus_impact_bounce_light_location) == 0x000D20, "Member 'ACar_Copper_C::Hlight2_Minus_impact_bounce_light_location' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Tlight2_Minus_impact_bounce_light_location) == 0x000D2C, "Member 'ACar_Copper_C::Tlight2_Minus_impact_bounce_light_location' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Car_Currently_Bouncing_From_Jump) == 0x000D38, "Member 'ACar_Copper_C::Car_Currently_Bouncing_From_Jump' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Hlight1_Minus_impact_bounce_light_location) == 0x000D3C, "Member 'ACar_Copper_C::Hlight1_Minus_impact_bounce_light_location' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Tlight1_Minus_impact_bounce_light_location) == 0x000D48, "Member 'ACar_Copper_C::Tlight1_Minus_impact_bounce_light_location' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Randomly_start_with_some_cars_lights_on) == 0x000D54, "Member 'ACar_Copper_C::Randomly_start_with_some_cars_lights_on' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Percentage_chance_of_lights_being_left_off) == 0x000D58, "Member 'ACar_Copper_C::Percentage_chance_of_lights_being_left_off' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, Final_Random_Light_Intensity_Variance) == 0x000D5C, "Member 'ACar_Copper_C::Final_Random_Light_Intensity_Variance' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, This_Car_s_Lights_Have_Been_Randomly_Enabled) == 0x000D60, "Member 'ACar_Copper_C::This_Car_s_Lights_Have_Been_Randomly_Enabled' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TurnHeadLightsOn) == 0x000D61, "Member 'ACar_Copper_C::TurnHeadLightsOn' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, TimeSinceLastJumpSound) == 0x000D64, "Member 'ACar_Copper_C::TimeSinceLastJumpSound' has a wrong offset!");
+static_assert(offsetof(ACar_Copper_C, MinTimeBetweenJumpSound) == 0x000D68, "Member 'ACar_Copper_C::MinTimeBetweenJumpSound' has a wrong offset!");
 
 }
 

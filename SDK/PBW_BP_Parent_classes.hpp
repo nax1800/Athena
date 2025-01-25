@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass PBW_BP_Parent.PBW_BP_Parent_C
-// 0x0018 (0x0EB8 - 0x0EA0)
+// 0x0018 (0x0C68 - 0x0C50)
 class APBW_BP_Parent_C final : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0EA0(0x0008)(Transient, DuplicateTransient)
-	TArray<class UStaticMesh*>                    StaticMeshAlternateArray;                          // 0x0EA8(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C50(0x0008)(Transient, DuplicateTransient)
+	TArray<class UStaticMesh*>                    StaticMeshAlternateArray;                          // 0x0C58(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 
 public:
 	void ExecuteUbergraph_PBW_BP_Parent(int32 EntryPoint);
@@ -42,9 +42,9 @@ public:
 	}
 };
 static_assert(alignof(APBW_BP_Parent_C) == 0x000008, "Wrong alignment on APBW_BP_Parent_C");
-static_assert(sizeof(APBW_BP_Parent_C) == 0x000EB8, "Wrong size on APBW_BP_Parent_C");
-static_assert(offsetof(APBW_BP_Parent_C, UberGraphFrame) == 0x000EA0, "Member 'APBW_BP_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APBW_BP_Parent_C, StaticMeshAlternateArray) == 0x000EA8, "Member 'APBW_BP_Parent_C::StaticMeshAlternateArray' has a wrong offset!");
+static_assert(sizeof(APBW_BP_Parent_C) == 0x000C68, "Wrong size on APBW_BP_Parent_C");
+static_assert(offsetof(APBW_BP_Parent_C, UberGraphFrame) == 0x000C50, "Member 'APBW_BP_Parent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(APBW_BP_Parent_C, StaticMeshAlternateArray) == 0x000C58, "Member 'APBW_BP_Parent_C::StaticMeshAlternateArray' has a wrong offset!");
 
 }
 

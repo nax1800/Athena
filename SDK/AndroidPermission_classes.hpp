@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // Class AndroidPermission.AndroidPermissionCallbackProxy
-// 0x0058 (0x0080 - 0x0028)
+// 0x0020 (0x0048 - 0x0028)
 class UAndroidPermissionCallbackProxy final : public UObject
 {
 public:
 	UMulticastDelegateProperty_                   OnPermissionsGrantedDynamicDelegate;               // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x48];                                      // 0x0038(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -36,7 +36,7 @@ public:
 	}
 };
 static_assert(alignof(UAndroidPermissionCallbackProxy) == 0x000008, "Wrong alignment on UAndroidPermissionCallbackProxy");
-static_assert(sizeof(UAndroidPermissionCallbackProxy) == 0x000080, "Wrong size on UAndroidPermissionCallbackProxy");
+static_assert(sizeof(UAndroidPermissionCallbackProxy) == 0x000048, "Wrong size on UAndroidPermissionCallbackProxy");
 static_assert(offsetof(UAndroidPermissionCallbackProxy, OnPermissionsGrantedDynamicDelegate) == 0x000028, "Member 'UAndroidPermissionCallbackProxy::OnPermissionsGrantedDynamicDelegate' has a wrong offset!");
 
 // Class AndroidPermission.AndroidPermissionFunctionLibrary

@@ -176,9 +176,9 @@ void UAthenaSeasonPageWidget_C::AddLevelWidgets(class UFortSeasonPassLevelInfo* 
 // Function AthenaSeasonPageWidget.AthenaSeasonPageWidget_C.IsFull
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Full                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Full_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaSeasonPageWidget_C::IsFull(bool* Param_Full)
+void UAthenaSeasonPageWidget_C::IsFull(bool* Full_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -189,8 +189,8 @@ void UAthenaSeasonPageWidget_C::IsFull(bool* Param_Full)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Full != nullptr)
-		*Param_Full = Parms.Param_Full;
+	if (Full_0 != nullptr)
+		*Full_0 = Parms.Full_0;
 }
 
 

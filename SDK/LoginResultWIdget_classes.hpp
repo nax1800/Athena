@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginResultWIdget.LoginResultWIdget_C
-// 0x0000 (0x0430 - 0x0430)
+// 0x0000 (0x0338 - 0x0338)
 class ULoginResultWIdget_C final : public UFortLoginResultWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ULoginResultWIdget_C) == 0x000008, "Wrong alignment on ULoginResultWIdget_C");
-static_assert(sizeof(ULoginResultWIdget_C) == 0x000430, "Wrong size on ULoginResultWIdget_C");
+static_assert(sizeof(ULoginResultWIdget_C) == 0x000338, "Wrong size on ULoginResultWIdget_C");
 
 }
 

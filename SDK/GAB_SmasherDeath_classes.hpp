@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherDeath.GAB_SmasherDeath_C
-// 0x0008 (0x0C88 - 0x0C80)
+// 0x0008 (0x0A90 - 0x0A88)
 class UGAB_SmasherDeath_C final : public UGAB_GenericDeath_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherDeath_C;                 // 0x0C80(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherDeath_C;                 // 0x0A88(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherDeath(int32 EntryPoint);
@@ -38,8 +38,8 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherDeath_C) == 0x000008, "Wrong alignment on UGAB_SmasherDeath_C");
-static_assert(sizeof(UGAB_SmasherDeath_C) == 0x000C88, "Wrong size on UGAB_SmasherDeath_C");
-static_assert(offsetof(UGAB_SmasherDeath_C, UberGraphFrame_GAB_SmasherDeath_C) == 0x000C80, "Member 'UGAB_SmasherDeath_C::UberGraphFrame_GAB_SmasherDeath_C' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherDeath_C) == 0x000A90, "Wrong size on UGAB_SmasherDeath_C");
+static_assert(offsetof(UGAB_SmasherDeath_C, UberGraphFrame_GAB_SmasherDeath_C) == 0x000A88, "Member 'UGAB_SmasherDeath_C::UberGraphFrame_GAB_SmasherDeath_C' has a wrong offset!");
 
 }
 

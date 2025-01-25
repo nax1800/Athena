@@ -54,7 +54,7 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0098(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x00A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x0030)(IsPlainOldData, NoDestructor)
@@ -65,7 +65,7 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue12;        // 0x0184(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0184(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CallFunc_Array_Get_Item;                           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WeakSpot_C_ExecuteUbergraph_WeakSpot) == 0x000010, "Wrong alignment on WeakSpot_C_ExecuteUbergraph_WeakSpot");
@@ -104,7 +104,7 @@ static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, Temp_bool_Variable)
 static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, K2Node_Select_Default) == 0x000178, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Array_LastIndex_ReturnValue) == 0x00017C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Clamp_ReturnValue) == 0x000180, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_K2_GetActorLocation_ReturnValue12) == 0x000184, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_K2_GetActorLocation_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x000184, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Array_Get_Item) == 0x000190, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function WeakSpot.WeakSpot_C.UserConstructionScript

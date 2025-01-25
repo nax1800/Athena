@@ -34,11 +34,11 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              K2Node_ComponentBoundEvent_Key;                    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TArray<struct FFortItemInstanceQuantityPair>& TransmoggedItems, TArray<struct FFortItemInstanceQuantityPair>& RecycledItems)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(TArray<struct FFortItemInstanceQuantityPair>& TransmoggedItems, TArray<struct FFortItemInstanceQuantityPair>& RecycledItems)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_HandleClosePicker_PassThrough;            // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue1;        // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,11 +56,11 @@ static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_Co
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000030, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000034, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate1) == 0x000038, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate12) == 0x000048, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate2) == 0x000048, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetContext_ReturnValue1) == 0x000058, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_ComponentBoundEvent_Key) == 0x000060, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_ComponentBoundEvent_Key' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetContext_ReturnValue12) == 0x000068, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate123) == 0x000070, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetContext_ReturnValue2) == 0x000068, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate3) == 0x000070, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_HandleClosePicker_PassThrough) == 0x000080, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_HandleClosePicker_PassThrough' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetActiveWidgetIndex_ReturnValue1) == 0x000084, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetActiveWidgetIndex_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_EqualEqual_IntInt_ReturnValue1) == 0x000088, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_EqualEqual_IntInt_ReturnValue1' has a wrong offset!");
@@ -118,19 +118,19 @@ struct alignas(0x08) ItemTransform_C_SetupActionHandlers final
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate12;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate123;           // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate1234;          // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate12345;         // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate4;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(ItemTransform_C_SetupActionHandlers) == 0x000008, "Wrong alignment on ItemTransform_C_SetupActionHandlers");
 static_assert(sizeof(ItemTransform_C_SetupActionHandlers) == 0x000060, "Wrong size on ItemTransform_C_SetupActionHandlers");
 static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate12) == 0x000020, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate123) == 0x000030, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate1234) == 0x000040, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate12345) == 0x000050, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate4) == 0x000040, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
+static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate5) == 0x000050, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleBack
 // 0x0018 (0x0018 - 0x0000)

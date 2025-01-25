@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C
-// 0x0028 (0x0400 - 0x03D8)
+// 0x0028 (0x0430 - 0x0408)
 class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C final : public AFortClientAnnouncement_Conversation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(Transient, DuplicateTransient)
-	UMulticastDelegateProperty_                   OnNewSentence;                                     // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnCurrentConversationFinished;                     // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(Transient, DuplicateTransient)
+	UMulticastDelegateProperty_                   OnNewSentence;                                     // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnCurrentConversationFinished;                     // 0x0420(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnNewSentence__DelegateSignature(const struct FFortConversationSentence& Sentence);
@@ -47,10 +47,10 @@ public:
 	}
 };
 static_assert(alignof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000008, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
-static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000400, "Wrong size on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, UberGraphFrame) == 0x0003D8, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnNewSentence) == 0x0003E0, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence' has a wrong offset!");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnCurrentConversationFinished) == 0x0003F0, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished' has a wrong offset!");
+static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000430, "Wrong size on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
+static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, UberGraphFrame) == 0x000408, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnNewSentence) == 0x000410, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence' has a wrong offset!");
+static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnCurrentConversationFinished) == 0x000420, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished' has a wrong offset!");
 
 }
 

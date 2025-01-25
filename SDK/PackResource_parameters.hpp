@@ -12,8 +12,8 @@
 
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -40,26 +40,26 @@ static_assert(offsetof(PackResource_C_ExecuteUbergraph_PackResource, CallFunc_Ge
 struct PackResource_C_UpdateType final
 {
 public:
-	EFortResourceType                             Param_ResourceType;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortResourceType                             ResourceType_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortResourceType                             Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSprite*                           Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPaperSprite*                           Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPaperSprite*                           K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            CallFunc_MakeBrushFromSprite_ReturnValue;          // 0x0038(0x0088)()
 };
 static_assert(alignof(PackResource_C_UpdateType) == 0x000008, "Wrong alignment on PackResource_C_UpdateType");
 static_assert(sizeof(PackResource_C_UpdateType) == 0x0000C0, "Wrong size on PackResource_C_UpdateType");
-static_assert(offsetof(PackResource_C_UpdateType, Param_ResourceType) == 0x000000, "Member 'PackResource_C_UpdateType::Param_ResourceType' has a wrong offset!");
+static_assert(offsetof(PackResource_C_UpdateType, ResourceType_0) == 0x000000, "Member 'PackResource_C_UpdateType::ResourceType_0' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, Temp_byte_Variable) == 0x000001, "Member 'PackResource_C_UpdateType::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable) == 0x000008, "Member 'PackResource_C_UpdateType::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable1) == 0x000010, "Member 'PackResource_C_UpdateType::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable12) == 0x000018, "Member 'PackResource_C_UpdateType::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable123) == 0x000020, "Member 'PackResource_C_UpdateType::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable1234) == 0x000028, "Member 'PackResource_C_UpdateType::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable2) == 0x000018, "Member 'PackResource_C_UpdateType::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable3) == 0x000020, "Member 'PackResource_C_UpdateType::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(PackResource_C_UpdateType, Temp_object_Variable4) == 0x000028, "Member 'PackResource_C_UpdateType::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, K2Node_Select_Default) == 0x000030, "Member 'PackResource_C_UpdateType::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, CallFunc_MakeBrushFromSprite_ReturnValue) == 0x000038, "Member 'PackResource_C_UpdateType::CallFunc_MakeBrushFromSprite_ReturnValue' has a wrong offset!");
 
@@ -77,9 +77,9 @@ public:
 	bool                                          Temp_bool_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortResourceItemDefinition*            CallFunc_GetCurrentResourceItemDefinition_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable12;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable123;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UClass*                                 Temp_class_Variable2;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable3;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select1_Default;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,9 +97,9 @@ static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_class_Variable1)
 static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'PackResource_C_TryUpdateBackground::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_bool_Variable1) == 0x000020, "Member 'PackResource_C_TryUpdateBackground::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_GetCurrentResourceItemDefinition_ReturnValue) == 0x000028, "Member 'PackResource_C_TryUpdateBackground::CallFunc_GetCurrentResourceItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_class_Variable12) == 0x000030, "Member 'PackResource_C_TryUpdateBackground::Temp_class_Variable12' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_class_Variable123) == 0x000038, "Member 'PackResource_C_TryUpdateBackground::Temp_class_Variable123' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_IsBROnly_ReturnValue) == 0x000040, "Member 'PackResource_C_TryUpdateBackground::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_class_Variable2) == 0x000030, "Member 'PackResource_C_TryUpdateBackground::Temp_class_Variable2' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateBackground, Temp_class_Variable3) == 0x000038, "Member 'PackResource_C_TryUpdateBackground::Temp_class_Variable3' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_IsMobileGame_ReturnValue) == 0x000040, "Member 'PackResource_C_TryUpdateBackground::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PackResource_C_TryUpdateBackground, K2Node_Select_Default) == 0x000048, "Member 'PackResource_C_TryUpdateBackground::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PackResource_C_TryUpdateBackground, K2Node_Select1_Default) == 0x000050, "Member 'PackResource_C_TryUpdateBackground::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000058, "Member 'PackResource_C_TryUpdateBackground::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
@@ -107,26 +107,23 @@ static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_GetResourceI
 static_assert(offsetof(PackResource_C_TryUpdateBackground, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000068, "Member 'PackResource_C_TryUpdateBackground::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function PackResource.PackResource_C.TryUpdateCount
-// 0x0028 (0x0028 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct PackResource_C_TryUpdateCount final
 {
 public:
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetResourceCount_ReturnValue;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetResourceCount_ReturnValue1;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetResourceCount_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetResourceCount_ReturnValue1;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PackResource_C_TryUpdateCount) == 0x000008, "Wrong alignment on PackResource_C_TryUpdateCount");
-static_assert(sizeof(PackResource_C_TryUpdateCount) == 0x000028, "Wrong size on PackResource_C_TryUpdateCount");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_Greater_IntInt_ReturnValue) == 0x000000, "Member 'PackResource_C_TryUpdateCount::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetResourceCount_ReturnValue) == 0x000018, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetResourceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetResourceCount_ReturnValue1) == 0x00001C, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetResourceCount_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000020, "Member 'PackResource_C_TryUpdateCount::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(sizeof(PackResource_C_TryUpdateCount) == 0x000020, "Wrong size on PackResource_C_TryUpdateCount");
+static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetContext_ReturnValue1) == 0x000008, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetResourceCount_ReturnValue) == 0x000010, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetResourceCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_GetResourceCount_ReturnValue1) == 0x000014, "Member 'PackResource_C_TryUpdateCount::CallFunc_GetResourceCount_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PackResource_C_TryUpdateCount, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000018, "Member 'PackResource_C_TryUpdateCount::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function PackResource.PackResource_C.SetImageSize
 // 0x0188 (0x0188 - 0x0000)
@@ -137,16 +134,16 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSprite*                           Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPaperSprite*                           Temp_object_Variable1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable12;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable123;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable1234;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable2;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortResourceType                             Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           Temp_object_Variable12345;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable123456;                        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable1234567;                       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable12345678;                      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           Temp_object_Variable123456789;                     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable5;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable6;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable7;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable8;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Temp_object_Variable9;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortResourceType                             Temp_byte_Variable1;                               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSprite*                           K2Node_Select_Default;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -159,15 +156,15 @@ static_assert(sizeof(PackResource_C_SetImageSize) == 0x000188, "Wrong size on Pa
 static_assert(offsetof(PackResource_C_SetImageSize, UseLargeIcon) == 0x000000, "Member 'PackResource_C_SetImageSize::UseLargeIcon' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable) == 0x000008, "Member 'PackResource_C_SetImageSize::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable1) == 0x000010, "Member 'PackResource_C_SetImageSize::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable12) == 0x000018, "Member 'PackResource_C_SetImageSize::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable123) == 0x000020, "Member 'PackResource_C_SetImageSize::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable1234) == 0x000028, "Member 'PackResource_C_SetImageSize::Temp_object_Variable1234' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable2) == 0x000018, "Member 'PackResource_C_SetImageSize::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable3) == 0x000020, "Member 'PackResource_C_SetImageSize::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable4) == 0x000028, "Member 'PackResource_C_SetImageSize::Temp_object_Variable4' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, Temp_byte_Variable) == 0x000030, "Member 'PackResource_C_SetImageSize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable12345) == 0x000038, "Member 'PackResource_C_SetImageSize::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable123456) == 0x000040, "Member 'PackResource_C_SetImageSize::Temp_object_Variable123456' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable1234567) == 0x000048, "Member 'PackResource_C_SetImageSize::Temp_object_Variable1234567' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable12345678) == 0x000050, "Member 'PackResource_C_SetImageSize::Temp_object_Variable12345678' has a wrong offset!");
-static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable123456789) == 0x000058, "Member 'PackResource_C_SetImageSize::Temp_object_Variable123456789' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable5) == 0x000038, "Member 'PackResource_C_SetImageSize::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable6) == 0x000040, "Member 'PackResource_C_SetImageSize::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable7) == 0x000048, "Member 'PackResource_C_SetImageSize::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable8) == 0x000050, "Member 'PackResource_C_SetImageSize::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(PackResource_C_SetImageSize, Temp_object_Variable9) == 0x000058, "Member 'PackResource_C_SetImageSize::Temp_object_Variable9' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, Temp_byte_Variable1) == 0x000060, "Member 'PackResource_C_SetImageSize::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, K2Node_Select_Default) == 0x000068, "Member 'PackResource_C_SetImageSize::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(PackResource_C_SetImageSize, K2Node_Select1_Default) == 0x000070, "Member 'PackResource_C_SetImageSize::K2Node_Select1_Default' has a wrong offset!");

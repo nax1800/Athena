@@ -37,6 +37,40 @@ void UAthenaSeasonTab_C::ExecuteUbergraph_AthenaSeasonTab(int32 EntryPoint)
 }
 
 
+// Function AthenaSeasonTab.AthenaSeasonTab_C.Season Variant Preview Info Updated
+// (BlueprintCallable, BlueprintEvent)
+
+void UAthenaSeasonTab_C::Season_Variant_Preview_Info_Updated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Season Variant Preview Info Updated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSeasonTab.AthenaSeasonTab_C.OnSetGiftability
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGiftable                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaSeasonTab_C::OnSetGiftability(bool bIsGiftable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnSetGiftability");
+
+	Params::AthenaSeasonTab_C_OnSetGiftability Parms{};
+
+	Parms.bIsGiftable = bIsGiftable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnNoCurrentSeason
 // (Event, Protected, BlueprintEvent)
 
@@ -182,20 +216,6 @@ void UAthenaSeasonTab_C::ScrollPositive()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("AthenaSeasonTab_C", "ScrollPositive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSeasonTab.AthenaSeasonTab_C.NoOffersAvailable
-// (Event, Public, BlueprintEvent)
-
-void UAthenaSeasonTab_C::NoOffersAvailable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "NoOffersAvailable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -359,54 +379,6 @@ void UAthenaSeasonTab_C::OnSeasonPassChanged()
 }
 
 
-// Function AthenaSeasonTab.AthenaSeasonTab_C.GenerateOfferWidget
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UFortDirectAcquisitionOfferInfo*  OfferData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaSeasonTab_C::GenerateOfferWidget(class UFortDirectAcquisitionOfferInfo* OfferData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "GenerateOfferWidget");
-
-	Params::AthenaSeasonTab_C_GenerateOfferWidget Parms{};
-
-	Parms.OfferData = OfferData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSeasonTab.AthenaSeasonTab_C.OnOffersGenerated
-// (Event, Public, BlueprintEvent)
-
-void UAthenaSeasonTab_C::OnOffersGenerated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "OnOffersGenerated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSeasonTab.AthenaSeasonTab_C.OnStartReadingOffers
-// (Event, Public, BlueprintEvent)
-
-void UAthenaSeasonTab_C::OnStartReadingOffers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "OnStartReadingOffers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnNavigateToLevel
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -560,39 +532,19 @@ void UAthenaSeasonTab_C::UpdatePageCount()
 }
 
 
-// Function AthenaSeasonTab.AthenaSeasonTab_C.SetupViewedItemName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortItem*                        Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaSeasonTab_C::SetupViewedItemName(class UFortItem* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "SetupViewedItemName");
-
-	Params::AthenaSeasonTab_C_SetupViewedItemName Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ShowFAQ
+// Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ShowAbout
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaSeasonTab_C::Handle_ShowFAQ(bool* Passthrough)
+void UAthenaSeasonTab_C::Handle_ShowAbout(bool* Passthrough)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ShowFAQ");
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ShowAbout");
 
-	Params::AthenaSeasonTab_C_Handle_ShowFAQ Parms{};
+	Params::AthenaSeasonTab_C_Handle_ShowAbout Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -665,6 +617,75 @@ void UAthenaSeasonTab_C::UpdateLevelPageWidgetSwitcherTranslation()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateLevelPageWidgetSwitcherTranslation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ReplayCinematic
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Passthrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaSeasonTab_C::Handle_ReplayCinematic(bool* Passthrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ReplayCinematic");
+
+	Params::AthenaSeasonTab_C_Handle_ReplayCinematic Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Passthrough != nullptr)
+		*Passthrough = Parms.Passthrough;
+}
+
+
+// Function AthenaSeasonTab.AthenaSeasonTab_C.PlaySeasonCinematic
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSeasonTab_C::PlaySeasonCinematic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "PlaySeasonCinematic");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSeasonTab.AthenaSeasonTab_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UAthenaSeasonTab_C::GetWidgetForFramingViewedItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "GetWidgetForFramingViewedItem");
+
+	Params::AthenaSeasonTab_C_GetWidgetForFramingViewedItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaSeasonTab.AthenaSeasonTab_C.OnMovieFinished
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSeasonTab_C::OnMovieFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnMovieFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

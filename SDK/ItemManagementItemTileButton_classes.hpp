@@ -10,58 +10,59 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementItemTileButton.ItemManagementItemTileButton_C
-// 0x00B8 (0x0950 - 0x0898)
+// 0x00C0 (0x09E0 - 0x0920)
 class UItemManagementItemTileButton_C final : public UFortItemManagementItemTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0898(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 CollectionBookIndicator;                           // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                CollectionBookIndicatorLayer;                      // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                CurrentlySlottedIndicatorLayer;                    // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                EquipSlotBorder;                                   // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 EquipSlotOverlay;                                  // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageSquad;                                        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               InputActionWrapper;                                // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                ItemWidgetHolder;                                  // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActionWidget*                    MarkForMulchAction;                                // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MulchCountText;                                    // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                MulchIndicatorBorder;                              // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                MulchStateBorder;                                  // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               MulchStateBox;                                     // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 MulchStateIndicatorImage;                          // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           NotCraftableIconVerticalBox;                       // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               QuantityProducedOverlay;                           // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       QuantityProducedText;                              // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 TileDimmer;                                        // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 VaultOverflowedIndicator;                          // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                VaultOverflowedIndicatorLayer;                     // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0920(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CollectionBookIndicator;                           // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                CollectionBookIndicatorLayer;                      // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                CurrentlySlottedIndicatorLayer;                    // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                EquipSlotBorder;                                   // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 EquipSlotOverlay;                                  // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0958(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageSquad;                                        // 0x0960(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               InputActionWrapper;                                // 0x0968(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                ItemWidgetHolder;                                  // 0x0970(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActionWidget*                    MarkForMulchAction;                                // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MulchCountText;                                    // 0x0980(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                MulchIndicatorBorder;                              // 0x0988(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                MulchStateBorder;                                  // 0x0990(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               MulchStateBox;                                     // 0x0998(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 MulchStateIndicatorImage;                          // 0x09A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNormalBangWrapper_C*                   NormalBangWrapper;                                 // 0x09A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           NotCraftableIconVerticalBox;                       // 0x09B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               QuantityProducedOverlay;                           // 0x09B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       QuantityProducedText;                              // 0x09C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 TileDimmer;                                        // 0x09C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 VaultOverflowedIndicator;                          // 0x09D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                VaultOverflowedIndicatorLayer;                     // 0x09D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemManagementItemTileButton(int32 EntryPoint);
 	void HandleShowCollectionBookIndicatorChanged();
 	void BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);
 	void HandleItemChangedBP();
-	void OnSelected();
+	void BP_OnSelected();
 	void OnDragCancelled(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
 	void HandleEquipSlotChanged(int32 EquipSlot);
 	void HandleHasItemToCompareDetailsWithChanged();
 	void HandleHasItemToDetailChanged();
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void HandleDifferentItemManagementModeSetBP();
 	void HandleItemMulchStateChanged();
 	void UpdateMulchStateBox();
@@ -74,6 +75,9 @@ public:
 	void UpdateQuantityProduced();
 	void HandleSlottedSurvivor();
 	void UpdateCollectionBookIndicator();
+	bool IsItemMulchable();
+	void Initial_Reset();
+	void Populate();
 
 public:
 	static class UClass* StaticClass()
@@ -86,30 +90,31 @@ public:
 	}
 };
 static_assert(alignof(UItemManagementItemTileButton_C) == 0x000008, "Wrong alignment on UItemManagementItemTileButton_C");
-static_assert(sizeof(UItemManagementItemTileButton_C) == 0x000950, "Wrong size on UItemManagementItemTileButton_C");
-static_assert(offsetof(UItemManagementItemTileButton_C, UberGraphFrame) == 0x000898, "Member 'UItemManagementItemTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, CollectionBookIndicator) == 0x0008A0, "Member 'UItemManagementItemTileButton_C::CollectionBookIndicator' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, CollectionBookIndicatorLayer) == 0x0008A8, "Member 'UItemManagementItemTileButton_C::CollectionBookIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, CurrentlySlottedIndicatorLayer) == 0x0008B0, "Member 'UItemManagementItemTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, EquipSlotBorder) == 0x0008B8, "Member 'UItemManagementItemTileButton_C::EquipSlotBorder' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, EquipSlotOverlay) == 0x0008C0, "Member 'UItemManagementItemTileButton_C::EquipSlotOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, Image_0) == 0x0008C8, "Member 'UItemManagementItemTileButton_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, ImageSquad) == 0x0008D0, "Member 'UItemManagementItemTileButton_C::ImageSquad' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, InputActionWrapper) == 0x0008D8, "Member 'UItemManagementItemTileButton_C::InputActionWrapper' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, ItemWidgetHolder) == 0x0008E0, "Member 'UItemManagementItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MarkForMulchAction) == 0x0008E8, "Member 'UItemManagementItemTileButton_C::MarkForMulchAction' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MulchCountText) == 0x0008F0, "Member 'UItemManagementItemTileButton_C::MulchCountText' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MulchIndicatorBorder) == 0x0008F8, "Member 'UItemManagementItemTileButton_C::MulchIndicatorBorder' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateBorder) == 0x000900, "Member 'UItemManagementItemTileButton_C::MulchStateBorder' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateBox) == 0x000908, "Member 'UItemManagementItemTileButton_C::MulchStateBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateIndicatorImage) == 0x000910, "Member 'UItemManagementItemTileButton_C::MulchStateIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, NormalBangWrapper) == 0x000918, "Member 'UItemManagementItemTileButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, NotCraftableIconVerticalBox) == 0x000920, "Member 'UItemManagementItemTileButton_C::NotCraftableIconVerticalBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, QuantityProducedOverlay) == 0x000928, "Member 'UItemManagementItemTileButton_C::QuantityProducedOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, QuantityProducedText) == 0x000930, "Member 'UItemManagementItemTileButton_C::QuantityProducedText' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, TileDimmer) == 0x000938, "Member 'UItemManagementItemTileButton_C::TileDimmer' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, VaultOverflowedIndicator) == 0x000940, "Member 'UItemManagementItemTileButton_C::VaultOverflowedIndicator' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemTileButton_C, VaultOverflowedIndicatorLayer) == 0x000948, "Member 'UItemManagementItemTileButton_C::VaultOverflowedIndicatorLayer' has a wrong offset!");
+static_assert(sizeof(UItemManagementItemTileButton_C) == 0x0009E0, "Wrong size on UItemManagementItemTileButton_C");
+static_assert(offsetof(UItemManagementItemTileButton_C, UberGraphFrame) == 0x000920, "Member 'UItemManagementItemTileButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, Intro) == 0x000928, "Member 'UItemManagementItemTileButton_C::Intro' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, CollectionBookIndicator) == 0x000930, "Member 'UItemManagementItemTileButton_C::CollectionBookIndicator' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, CollectionBookIndicatorLayer) == 0x000938, "Member 'UItemManagementItemTileButton_C::CollectionBookIndicatorLayer' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, CurrentlySlottedIndicatorLayer) == 0x000940, "Member 'UItemManagementItemTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, EquipSlotBorder) == 0x000948, "Member 'UItemManagementItemTileButton_C::EquipSlotBorder' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, EquipSlotOverlay) == 0x000950, "Member 'UItemManagementItemTileButton_C::EquipSlotOverlay' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, Image_0) == 0x000958, "Member 'UItemManagementItemTileButton_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, ImageSquad) == 0x000960, "Member 'UItemManagementItemTileButton_C::ImageSquad' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, InputActionWrapper) == 0x000968, "Member 'UItemManagementItemTileButton_C::InputActionWrapper' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, ItemWidgetHolder) == 0x000970, "Member 'UItemManagementItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MarkForMulchAction) == 0x000978, "Member 'UItemManagementItemTileButton_C::MarkForMulchAction' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MulchCountText) == 0x000980, "Member 'UItemManagementItemTileButton_C::MulchCountText' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MulchIndicatorBorder) == 0x000988, "Member 'UItemManagementItemTileButton_C::MulchIndicatorBorder' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateBorder) == 0x000990, "Member 'UItemManagementItemTileButton_C::MulchStateBorder' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateBox) == 0x000998, "Member 'UItemManagementItemTileButton_C::MulchStateBox' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, MulchStateIndicatorImage) == 0x0009A0, "Member 'UItemManagementItemTileButton_C::MulchStateIndicatorImage' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, NormalBangWrapper) == 0x0009A8, "Member 'UItemManagementItemTileButton_C::NormalBangWrapper' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, NotCraftableIconVerticalBox) == 0x0009B0, "Member 'UItemManagementItemTileButton_C::NotCraftableIconVerticalBox' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, QuantityProducedOverlay) == 0x0009B8, "Member 'UItemManagementItemTileButton_C::QuantityProducedOverlay' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, QuantityProducedText) == 0x0009C0, "Member 'UItemManagementItemTileButton_C::QuantityProducedText' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, TileDimmer) == 0x0009C8, "Member 'UItemManagementItemTileButton_C::TileDimmer' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, VaultOverflowedIndicator) == 0x0009D0, "Member 'UItemManagementItemTileButton_C::VaultOverflowedIndicator' has a wrong offset!");
+static_assert(offsetof(UItemManagementItemTileButton_C, VaultOverflowedIndicatorLayer) == 0x0009D8, "Member 'UItemManagementItemTileButton_C::VaultOverflowedIndicatorLayer' has a wrong offset!");
 
 }
 

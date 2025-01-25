@@ -37,6 +37,40 @@ void AFlingerPawn_C::ExecuteUbergraph_FlingerPawn(int32 EntryPoint)
 }
 
 
+// Function FlingerPawn.FlingerPawn_C.RestorePreviousMaterialDelay
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay_Amount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFlingerPawn_C::RestorePreviousMaterialDelay(float Delay_Amount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FlingerPawn_C", "RestorePreviousMaterialDelay");
+
+	Params::FlingerPawn_C_RestorePreviousMaterialDelay Parms{};
+
+	Parms.Delay_Amount = Delay_Amount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FlingerPawn.FlingerPawn_C.RestorePreviousMaterialDelayCompleted
+// (BlueprintCallable, BlueprintEvent)
+
+void AFlingerPawn_C::RestorePreviousMaterialDelayCompleted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FlingerPawn_C", "RestorePreviousMaterialDelayCompleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function FlingerPawn.FlingerPawn_C.GameplayCue.Damage.Shielded
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -447,10 +481,10 @@ void AFlingerPawn_C::PortalFX()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class AActor*                           BT                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AFlingerPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
+void AFlingerPawn_C::PortalGet(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
 {
 	static class UFunction* Func = nullptr;
 
@@ -464,8 +498,6 @@ void AFlingerPawn_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class
 	Parms.BT = BT;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -501,9 +533,9 @@ void AFlingerPawn_C::PortalClear()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingActor*                   BuildingActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class ABuildingActor*>           BuildingActorList                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class ABuildingActor*>           BuildingActorList                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void AFlingerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList)
+void AFlingerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, const TArray<class ABuildingActor*>& BuildingActorList)
 {
 	static class UFunction* Func = nullptr;
 
@@ -516,8 +548,6 @@ void AFlingerPawn_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class
 	Parms.BuildingActorList = std::move(BuildingActorList);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	BuildingActorList = std::move(Parms.BuildingActorList);
 }
 
 
@@ -782,11 +812,11 @@ void AFlingerPawn_C::FlingerEnemyDied(class APawn* PawnThatDied)
 // Function FlingerPawn.FlingerPawn_C.AlertEnemySpawnedByFlinger
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Param_PushMomentum                                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_PushDuration                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          PushMomentum_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   PushDuration_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                            OwningFlinger                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AFlingerPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& Param_PushMomentum, float Param_PushDuration, class APawn* OwningFlinger)
+void AFlingerPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& PushMomentum_0, float PushDuration_0, class APawn* OwningFlinger)
 {
 	static class UFunction* Func = nullptr;
 
@@ -795,8 +825,8 @@ void AFlingerPawn_C::AlertEnemySpawnedByFlinger(const struct FVector& Param_Push
 
 	Params::FlingerPawn_C_AlertEnemySpawnedByFlinger Parms{};
 
-	Parms.Param_PushMomentum = std::move(Param_PushMomentum);
-	Parms.Param_PushDuration = Param_PushDuration;
+	Parms.PushMomentum_0 = std::move(PushMomentum_0);
+	Parms.PushDuration_0 = PushDuration_0;
 	Parms.OwningFlinger = OwningFlinger;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1022,6 +1052,68 @@ void AFlingerPawn_C::StopMaterialTimeline()
 		Func = Class->GetFunction("FlingerPawn_C", "StopMaterialTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function FlingerPawn.FlingerPawn_C.OverrideMaterialAndCopyParametersOnCharacterMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UMaterialInterface*               New_Material_To_Apply                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFlingerPawn_C::OverrideMaterialAndCopyParametersOnCharacterMesh(class UMaterialInterface* New_Material_To_Apply)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FlingerPawn_C", "OverrideMaterialAndCopyParametersOnCharacterMesh");
+
+	Params::FlingerPawn_C_OverrideMaterialAndCopyParametersOnCharacterMesh Parms{};
+
+	Parms.New_Material_To_Apply = New_Material_To_Apply;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FlingerPawn.FlingerPawn_C.SetScalarParameterOnAllCharacterMIDs
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Parameter_Name                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Scalar_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFlingerPawn_C::SetScalarParameterOnAllCharacterMIDs(class FName Parameter_Name, float Scalar_Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FlingerPawn_C", "SetScalarParameterOnAllCharacterMIDs");
+
+	Params::FlingerPawn_C_SetScalarParameterOnAllCharacterMIDs Parms{};
+
+	Parms.Parameter_Name = Parameter_Name;
+	Parms.Scalar_Value = Scalar_Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FlingerPawn.FlingerPawn_C.RestorePreviousMaterialOnCharacterMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay_in_Seconds                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFlingerPawn_C::RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FlingerPawn_C", "RestorePreviousMaterialOnCharacterMesh");
+
+	Params::FlingerPawn_C_RestorePreviousMaterialOnCharacterMesh Parms{};
+
+	Parms.Delay_in_Seconds = Delay_in_Seconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

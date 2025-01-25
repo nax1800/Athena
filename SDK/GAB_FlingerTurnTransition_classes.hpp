@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_FlingerTurnTransition.GAB_FlingerTurnTransition_C
-// 0x0000 (0x0B40 - 0x0B40)
+// 0x0000 (0x0950 - 0x0950)
 class UGAB_FlingerTurnTransition_C final : public UGAB_HuskTurnTransition_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_FlingerTurnTransition_C) == 0x000008, "Wrong alignment on UGAB_FlingerTurnTransition_C");
-static_assert(sizeof(UGAB_FlingerTurnTransition_C) == 0x000B40, "Wrong size on UGAB_FlingerTurnTransition_C");
+static_assert(sizeof(UGAB_FlingerTurnTransition_C) == 0x000950, "Wrong size on UGAB_FlingerTurnTransition_C");
 
 }
 

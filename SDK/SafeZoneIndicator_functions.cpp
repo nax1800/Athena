@@ -37,6 +37,68 @@ void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint)
 }
 
 
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Start Megastorm Audio
+// (BlueprintCallable, BlueprintEvent)
+
+void ASafeZoneIndicator_C::Start_Megastorm_Audio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "Start Megastorm Audio");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Megastorm Pre Damage Tell
+// (BlueprintCallable, BlueprintEvent)
+
+void ASafeZoneIndicator_C::Megastorm_Pre_Damage_Tell()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "Megastorm Pre Damage Tell");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASafeZoneIndicator_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveTick");
+
+	Params::SafeZoneIndicator_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.OnBeginStartingStateEffectsEvent
+// (Event, Public, BlueprintEvent)
+
+void ASafeZoneIndicator_C::OnBeginStartingStateEffectsEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "OnBeginStartingStateEffectsEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
 
@@ -71,20 +133,6 @@ void ASafeZoneIndicator_C::Stormy(float NewParam)
 }
 
 
-// Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASafeZoneIndicator_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SafeZoneIndicator.SafeZoneIndicator_C.ResetSafeZoneScale
 // (BlueprintCallable, BlueprintEvent)
 
@@ -99,26 +147,6 @@ void ASafeZoneIndicator_C::ResetSafeZoneScale()
 }
 
 
-// Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASafeZoneIndicator_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveTick");
-
-	Params::SafeZoneIndicator_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SafeZoneIndicator.SafeZoneIndicator_C.Apply Lowpass to Audio
 // (BlueprintCallable, BlueprintEvent)
 
@@ -128,6 +156,20 @@ void ASafeZoneIndicator_C::Apply_Lowpass_to_Audio()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("SafeZoneIndicator_C", "Apply Lowpass to Audio");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASafeZoneIndicator_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -152,6 +194,34 @@ void ASafeZoneIndicator_C::OnSafeZoneStateChange(EFortSafeZoneState NewState, bo
 	Parms.bInitial = bInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Pre Damage Audio Ramp__UpdateFunc
+// (BlueprintEvent)
+
+void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Pre Damage Audio Ramp__FinishedFunc
+// (BlueprintEvent)
+
+void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

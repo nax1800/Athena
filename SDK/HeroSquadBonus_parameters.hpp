@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -106,13 +106,13 @@ public:
 	struct FSlateColor                            Tint;                                              // 0x0000(0x0028)(Edit, BlueprintVisible)
 	EFortSupportBonusType                         Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortSupportBonusType                         Temp_byte_Variable1234;                            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortSupportBonusType                         Temp_byte_Variable4;                               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                Temp_object_Variable1;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable12;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable2;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
@@ -123,7 +123,7 @@ public:
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select1_Default;                            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x0088(0x0028)()
-	struct FSlateColor                            K2Node_Select12_Default;                           // 0x00B0(0x0028)()
+	struct FSlateColor                            K2Node_Select2_Default;                            // 0x00B0(0x0028)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D8(0x0088)()
 };
 static_assert(alignof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x000008, "Wrong alignment on HeroSquadBonus_C_UpdateSquadBonusIconState");
@@ -131,12 +131,12 @@ static_assert(sizeof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x000160, "W
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Tint) == 0x000000, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Tint' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable) == 0x000028, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable1) == 0x000029, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable12) == 0x00002A, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable123) == 0x00002B, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable1234) == 0x00002C, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable2) == 0x00002A, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable3) == 0x00002B, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable4) == 0x00002C, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_object_Variable) == 0x000030, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_object_Variable1) == 0x000038, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_object_Variable12) == 0x000040, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_object_Variable12' has a wrong offset!");
+static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_object_Variable2) == 0x000040, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_object_Variable2' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_bool_Variable) == 0x000048, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_Select_Default) == 0x000078, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_Select_Default' has a wrong offset!");
@@ -145,7 +145,7 @@ static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, CallFunc_IsPe
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, CallFunc_BooleanAND_ReturnValue) == 0x00007B, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_Select1_Default) == 0x000080, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_MakeStruct_SlateColor1) == 0x000088, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_Select12_Default) == 0x0000B0, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_Select2_Default) == 0x0000B0, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_Select2_Default' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, K2Node_MakeStruct_SlateBrush) == 0x0000D8, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function HeroSquadBonus.HeroSquadBonus_C.SetBackgroundGlow

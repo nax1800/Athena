@@ -11,35 +11,36 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "GAT_TriggeredAbility_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAT_Athena_c4_Detonate.GAT_Athena_c4_Detonate_C
-// 0x0090 (0x0B90 - 0x0B00)
+// 0x0090 (0x0998 - 0x0908)
 class UGAT_Athena_c4_Detonate_C final : public UGAT_TriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_Athena_c4_Detonate_C;           // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayForChainExplode;                              // 0x0B10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayBetweenExplodes;                              // 0x0B14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TrackGroupTag;                                     // 0x0B18(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FFortGameplayAbilityMontageInfo        MontageNoAmmo;                                     // 0x0B20(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UFortWorldItemDefinition*               C4ItemDef;                                         // 0x0B80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasTargetC4ToExplode;                              // 0x0B88(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_Athena_c4_Detonate_C;           // 0x0908(0x0008)(Transient, DuplicateTransient)
+	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayForChainExplode;                              // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayBetweenExplodes;                              // 0x091C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TrackGroupTag;                                     // 0x0920(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FFortGameplayAbilityMontageInfo        MontageNoAmmo;                                     // 0x0928(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UFortWorldItemDefinition*               C4ItemDef;                                         // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasTargetC4ToExplode;                              // 0x0990(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_GAT_Athena_c4_Detonate(int32 EntryPoint);
+	void K2_ActivateAbility();
+	void Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Cancelled_1CF0B54948FD6A9E1DB2B5BC49A0C635(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Completed_1CF0B54948FD6A9E1DB2B5BC49A0C635(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
-	void K2_ActivateAbility();
 	void OnRep_NumberOfBombsOut();
-	void Triggered_1CF0B54948FD6A9E1DB2B5BC49A0C635(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
+	void Update_Used_Explosive_Stat();
 
 public:
 	static class UClass* StaticClass()
@@ -52,15 +53,15 @@ public:
 	}
 };
 static_assert(alignof(UGAT_Athena_c4_Detonate_C) == 0x000008, "Wrong alignment on UGAT_Athena_c4_Detonate_C");
-static_assert(sizeof(UGAT_Athena_c4_Detonate_C) == 0x000B90, "Wrong size on UGAT_Athena_c4_Detonate_C");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, UberGraphFrame_GAT_Athena_c4_Detonate_C) == 0x000B00, "Member 'UGAT_Athena_c4_Detonate_C::UberGraphFrame_GAT_Athena_c4_Detonate_C' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, PlayerPawn) == 0x000B08, "Member 'UGAT_Athena_c4_Detonate_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, DelayForChainExplode) == 0x000B10, "Member 'UGAT_Athena_c4_Detonate_C::DelayForChainExplode' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, DelayBetweenExplodes) == 0x000B14, "Member 'UGAT_Athena_c4_Detonate_C::DelayBetweenExplodes' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, TrackGroupTag) == 0x000B18, "Member 'UGAT_Athena_c4_Detonate_C::TrackGroupTag' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, MontageNoAmmo) == 0x000B20, "Member 'UGAT_Athena_c4_Detonate_C::MontageNoAmmo' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, C4ItemDef) == 0x000B80, "Member 'UGAT_Athena_c4_Detonate_C::C4ItemDef' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_c4_Detonate_C, HasTargetC4ToExplode) == 0x000B88, "Member 'UGAT_Athena_c4_Detonate_C::HasTargetC4ToExplode' has a wrong offset!");
+static_assert(sizeof(UGAT_Athena_c4_Detonate_C) == 0x000998, "Wrong size on UGAT_Athena_c4_Detonate_C");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, UberGraphFrame_GAT_Athena_c4_Detonate_C) == 0x000908, "Member 'UGAT_Athena_c4_Detonate_C::UberGraphFrame_GAT_Athena_c4_Detonate_C' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, PlayerPawn) == 0x000910, "Member 'UGAT_Athena_c4_Detonate_C::PlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, DelayForChainExplode) == 0x000918, "Member 'UGAT_Athena_c4_Detonate_C::DelayForChainExplode' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, DelayBetweenExplodes) == 0x00091C, "Member 'UGAT_Athena_c4_Detonate_C::DelayBetweenExplodes' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, TrackGroupTag) == 0x000920, "Member 'UGAT_Athena_c4_Detonate_C::TrackGroupTag' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, MontageNoAmmo) == 0x000928, "Member 'UGAT_Athena_c4_Detonate_C::MontageNoAmmo' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, C4ItemDef) == 0x000988, "Member 'UGAT_Athena_c4_Detonate_C::C4ItemDef' has a wrong offset!");
+static_assert(offsetof(UGAT_Athena_c4_Detonate_C, HasTargetC4ToExplode) == 0x000990, "Member 'UGAT_Athena_c4_Detonate_C::HasTargetC4ToExplode' has a wrong offset!");
 
 }
 

@@ -11,27 +11,30 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GA_Athena_ProjWithTrajectory_classes.hpp"
+#include "GA_Athena_Grenade_WithTrajectory_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Athena_TowerGrenadeWithTrajectory.GA_Athena_TowerGrenadeWithTrajectory_C
-// 0x0018 (0x0D70 - 0x0D58)
-class UGA_Athena_TowerGrenadeWithTrajectory_C final : public UGA_Athena_ProjWithTrajectory_C
+// 0x0030 (0x0B98 - 0x0B68)
+class UGA_Athena_TowerGrenadeWithTrajectory_C final : public UGA_Athena_Grenade_WithTrajectory_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C; // 0x0D58(0x0008)(Transient, DuplicateTransient)
-	class ABP_ProjectileTrajectory_C*             ProjectileTrajectoryRed;                           // 0x0D60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 TrajectoryIndicatorRedClass;                       // 0x0D68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C; // 0x0B68(0x0008)(Transient, DuplicateTransient)
+	class ABP_ProjectileTrajectory_C*             ProjectileTrajectoryRed;                           // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 TrajectoryIndicatorRedClass;                       // 0x0B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    ObjectiveStat;                                     // 0x0B80(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UFortQuestItemDefinition*               QuestItemUsePortafort;                             // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Athena_TowerGrenadeWithTrajectory(int32 EntryPoint);
+	void UpdateTrajectorySpline();
+	void Server_SpawnProjectile(const struct FVector& Location, const struct FRotator& Direction);
 	void CleanupTrajectoryDisplay();
 	void K2_ActivateAbility();
 	void SetupDummyProjectileRed();
-	void UpdateTrajectorySpline();
 
 public:
 	static class UClass* StaticClass()
@@ -44,10 +47,12 @@ public:
 	}
 };
 static_assert(alignof(UGA_Athena_TowerGrenadeWithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Athena_TowerGrenadeWithTrajectory_C");
-static_assert(sizeof(UGA_Athena_TowerGrenadeWithTrajectory_C) == 0x000D70, "Wrong size on UGA_Athena_TowerGrenadeWithTrajectory_C");
-static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C) == 0x000D58, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, ProjectileTrajectoryRed) == 0x000D60, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::ProjectileTrajectoryRed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, TrajectoryIndicatorRedClass) == 0x000D68, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::TrajectoryIndicatorRedClass' has a wrong offset!");
+static_assert(sizeof(UGA_Athena_TowerGrenadeWithTrajectory_C) == 0x000B98, "Wrong size on UGA_Athena_TowerGrenadeWithTrajectory_C");
+static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C) == 0x000B68, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::UberGraphFrame_GA_Athena_TowerGrenadeWithTrajectory_C' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, ProjectileTrajectoryRed) == 0x000B70, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::ProjectileTrajectoryRed' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, TrajectoryIndicatorRedClass) == 0x000B78, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::TrajectoryIndicatorRedClass' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, ObjectiveStat) == 0x000B80, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::ObjectiveStat' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_TowerGrenadeWithTrajectory_C, QuestItemUsePortafort) == 0x000B90, "Member 'UGA_Athena_TowerGrenadeWithTrajectory_C::QuestItemUsePortafort' has a wrong offset!");
 
 }
 

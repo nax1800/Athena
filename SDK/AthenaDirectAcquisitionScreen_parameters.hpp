@@ -17,33 +17,54 @@ namespace SDK::Params
 {
 
 // Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.ExecuteUbergraph_AthenaDirectAcquisitionScreen
-// 0x0048 (0x0048 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDisablePurchaseHistoryScreen_ReturnValue; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              CallFunc_GetWeeklyStoreEndDate_ReturnValue;        // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                              CallFunc_GetDailyStoreEndDate_ReturnValue;         // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_HasOtherPlatformCurrency;             // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Event_CurrencyMessageLocText;               // 0x0038(0x0018)(ConstParm)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetEnableSplitWalletTextNotice_ReturnValue; // 0x0060(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen");
-static_assert(sizeof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen) == 0x000048, "Wrong size on AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen");
+static_assert(sizeof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen) == 0x000068, "Wrong size on AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen");
 static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, EntryPoint) == 0x000000, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetDisablePurchaseHistoryScreen_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetDisablePurchaseHistoryScreen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_IsActivated_ReturnValue) == 0x000011, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_IsActivated_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetWeeklyStoreEndDate_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetWeeklyStoreEndDate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetDailyStoreEndDate_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetDailyStoreEndDate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetContext_ReturnValue1) == 0x000028, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, K2Node_Event_HasOtherPlatformCurrency) == 0x000030, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::K2Node_Event_HasOtherPlatformCurrency' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, K2Node_Event_CurrencyMessageLocText) == 0x000038, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::K2Node_Event_CurrencyMessageLocText' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_GetEnableSplitWalletTextNotice_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_GetEnableSplitWalletTextNotice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen, CallFunc_BooleanAND_ReturnValue) == 0x000061, "Member 'AthenaDirectAcquisitionScreen_C_ExecuteUbergraph_AthenaDirectAcquisitionScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.OnUpdateOtherPlatformMTXMessage
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage final
+{
+public:
+	bool                                          HasOtherPlatformCurrency;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CurrencyMessageLocText;                            // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage");
+static_assert(sizeof(AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage) == 0x000020, "Wrong size on AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage, HasOtherPlatformCurrency) == 0x000000, "Member 'AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage::HasOtherPlatformCurrency' has a wrong offset!");
+static_assert(offsetof(AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage, CurrencyMessageLocText) == 0x000008, "Member 'AthenaDirectAcquisitionScreen_C_OnUpdateOtherPlatformMTXMessage::CurrencyMessageLocText' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.GenerateOfferWidget
 // 0x0098 (0x0098 - 0x0000)
@@ -113,26 +134,6 @@ public:
 static_assert(alignof(AthenaDirectAcquisitionScreen_C_Focus) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionScreen_C_Focus");
 static_assert(sizeof(AthenaDirectAcquisitionScreen_C_Focus) == 0x000008, "Wrong size on AthenaDirectAcquisitionScreen_C_Focus");
 static_assert(offsetof(AthenaDirectAcquisitionScreen_C_Focus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionScreen_C_Focus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionScreen.AthenaDirectAcquisitionScreen_C.HandlePurchaseHistory
-// 0x0020 (0x0020 - 0x0000)
-struct AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory final
-{
-public:
-	bool                                          Passthrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPurchaseHistoryScreen_C*               CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory");
-static_assert(sizeof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory) == 0x000020, "Wrong size on AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory, Passthrough) == 0x000000, "Member 'AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory::Passthrough' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory, CallFunc_IsMobileGame_ReturnValue) == 0x000001, "Member 'AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory, CallFunc_Create_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionScreen_C_HandlePurchaseHistory::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 }
 

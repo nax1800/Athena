@@ -82,10 +82,10 @@ void ALightningLsystem_C::DebugStrike()
 // Function LightningLSystem.LightningLsystem_C.SetupLightning
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Param_Start_Location                                   (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Param_End_Location                                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Start_Location_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          End_Location_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALightningLsystem_C::SetupLightning(const struct FVector& Param_Start_Location, const struct FVector& Param_End_Location)
+void ALightningLsystem_C::SetupLightning(const struct FVector& Start_Location_0, const struct FVector& End_Location_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -94,8 +94,8 @@ void ALightningLsystem_C::SetupLightning(const struct FVector& Param_Start_Locat
 
 	Params::LightningLsystem_C_SetupLightning Parms{};
 
-	Parms.Param_Start_Location = std::move(Param_Start_Location);
-	Parms.Param_End_Location = std::move(Param_End_Location);
+	Parms.Start_Location_0 = std::move(Start_Location_0);
+	Parms.End_Location_0 = std::move(End_Location_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

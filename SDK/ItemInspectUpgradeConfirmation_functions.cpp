@@ -65,6 +65,20 @@ void UItemInspectUpgradeConfirmation_C::ExecuteUbergraph_ItemInspectUpgradeConfi
 }
 
 
+// Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UItemInspectUpgradeConfirmation_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemInspectUpgradeConfirmation_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.BndEvt__UpgradeCancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -122,9 +136,9 @@ void UItemInspectUpgradeConfirmation_C::Refresh()
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.SetItemToRepresent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectUpgradeConfirmation_C::SetItemToRepresent(class UFortItem* Param_Item)
+void UItemInspectUpgradeConfirmation_C::SetItemToRepresent(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -133,7 +147,7 @@ void UItemInspectUpgradeConfirmation_C::SetItemToRepresent(class UFortItem* Para
 
 	Params::ItemInspectUpgradeConfirmation_C_SetItemToRepresent Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

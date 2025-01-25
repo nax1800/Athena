@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AthenaMinimapTeamIndicators.AthenaMinimapTeamIndicators_C
-// 0x0000 (0x0530 - 0x0530)
+// 0x0000 (0x0348 - 0x0348)
 class UAthenaMinimapTeamIndicators_C final : public UFortMiniMapTeamIndicators
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UAthenaMinimapTeamIndicators_C) == 0x000008, "Wrong alignment on UAthenaMinimapTeamIndicators_C");
-static_assert(sizeof(UAthenaMinimapTeamIndicators_C) == 0x000530, "Wrong size on UAthenaMinimapTeamIndicators_C");
+static_assert(sizeof(UAthenaMinimapTeamIndicators_C) == 0x000348, "Wrong size on UAthenaMinimapTeamIndicators_C");
 
 }
 

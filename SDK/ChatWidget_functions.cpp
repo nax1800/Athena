@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function ChatWidget.ChatWidget_C.AboutToEnterChat__DelegateSignature
+// Function ChatWidget.ChatWidget_C.OnEnteredChat__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    EnteredChat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UChatWidget_C::AboutToEnterChat__DelegateSignature()
+void UChatWidget_C::OnEnteredChat__DelegateSignature(bool EnteredChat)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ChatWidget_C", "AboutToEnterChat__DelegateSignature");
+		Func = Class->GetFunction("ChatWidget_C", "OnEnteredChat__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::ChatWidget_C_OnEnteredChat__DelegateSignature Parms{};
+
+	Parms.EnteredChat = EnteredChat;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -122,9 +128,9 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChan
 // Function ChatWidget.ChatWidget_C.BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                                    Param_bEnteringChat                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bEnteringChat_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool Param_bEnteringChat)
+void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool bEnteringChat_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -133,7 +139,7 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEntered
 
 	Params::ChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature Parms{};
 
-	Parms.Param_bEnteringChat = Param_bEnteringChat;
+	Parms.bEnteringChat_0 = bEnteringChat_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -222,9 +228,9 @@ void UChatWidget_C::UpdateChatUserListIcon(bool Open)
 // Function ChatWidget.ChatWidget_C.HandeChatEnteredEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bEnteringChat                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bEnteringChat_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UChatWidget_C::HandeChatEnteredEvent(bool Param_bEnteringChat)
+void UChatWidget_C::HandeChatEnteredEvent(bool bEnteringChat_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -233,7 +239,7 @@ void UChatWidget_C::HandeChatEnteredEvent(bool Param_bEnteringChat)
 
 	Params::ChatWidget_C_HandeChatEnteredEvent Parms{};
 
-	Parms.Param_bEnteringChat = Param_bEnteringChat;
+	Parms.bEnteringChat_0 = bEnteringChat_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

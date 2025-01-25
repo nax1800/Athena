@@ -118,9 +118,9 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x0050(0x0018)()
-	class FText                                   Temp_text_Variable1234;                            // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0038(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x0050(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x0068(0x0018)()
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default;                             // 0x0088(0x0018)()
 };
@@ -131,9 +131,9 @@ static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Failur
 static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_byte_Variable) == 0x000002, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable) == 0x000008, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable1) == 0x000020, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable12) == 0x000038, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable123) == 0x000050, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable123' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable1234) == 0x000068, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable1234' has a wrong offset!");
+static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable2) == 0x000038, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable2' has a wrong offset!");
+static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable3) == 0x000050, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable3' has a wrong offset!");
+static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable4) == 0x000068, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable4' has a wrong offset!");
 static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, K2Node_Select_Default) == 0x000088, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::K2Node_Select_Default' has a wrong offset!");
 

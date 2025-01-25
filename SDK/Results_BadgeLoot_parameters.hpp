@@ -24,13 +24,13 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1234567;             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue4;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue5;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue6;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue7;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue8;                   // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_A_Execution_Happened_Variable;           // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_B_Execution_Happened_Variable;           // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -39,24 +39,24 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasValidItem_HasValidItem;                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasValidItem_HasValidItem1;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasValidItem_HasValidItem12;              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasValidItem_HasValidItem2;               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UResults_Badge_C*                       CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasValidItem_HasValidItem123;             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123456789;           // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasValidItem_HasValidItem3;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue9;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       CallFunc_Array_Get_Item1;                          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasValidItem_HasValidItem1234;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasValidItem_HasValidItem12345;           // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12345678910;         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasValidItem_HasValidItem4;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasValidItem_HasValidItem5;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue10;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	class UObject*                                K2Node_HandleClientEvent_EventSource123;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_HandleClientEvent_EventFocus123;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent123;           // 0x0058(0x0020)(ConstParm, NoDestructor)
-	class UObject*                                K2Node_HandleClientEvent_EventSource12;            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_HandleClientEvent_EventFocus12;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent12;            // 0x0088(0x0020)(ConstParm, NoDestructor)
+	class UObject*                                K2Node_HandleClientEvent_EventSource3;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_HandleClientEvent_EventFocus3;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent3;             // 0x0058(0x0020)(ConstParm, NoDestructor)
+	class UObject*                                K2Node_HandleClientEvent_EventSource2;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_HandleClientEvent_EventFocus2;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x0088(0x0020)(ConstParm, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource1;             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus1;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent1;             // 0x00B8(0x0020)(ConstParm, NoDestructor)
@@ -72,13 +72,13 @@ static_assert(sizeof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot) == 
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, EntryPoint) == 0x000000, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue1) == 0x000005, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue12) == 0x000006, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue123) == 0x000007, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue1234) == 0x000008, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue12345) == 0x000009, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue123456) == 0x00000A, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue123456' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue1234567) == 0x00000B, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue1234567' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue12345678) == 0x00000C, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue12345678' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue2) == 0x000006, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue3) == 0x000007, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue4) == 0x000008, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue5) == 0x000009, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue6) == 0x00000A, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue7) == 0x00000B, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue8) == 0x00000C, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue8' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, Temp_bool_A_Execution_Happened_Variable) == 0x00000D, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, Temp_bool_B_Execution_Happened_Variable) == 0x00000E, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::Temp_bool_B_Execution_Happened_Variable' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanAND_ReturnValue) == 0x00000F, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -87,21 +87,21 @@ static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, T
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanAND_ReturnValue1) == 0x000012, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem) == 0x000013, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem1) == 0x000014, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem1' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem12) == 0x000015, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem12' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem2) == 0x000015, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem2' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_Array_Get_Item) == 0x000018, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem123) == 0x000020, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue123456789) == 0x000021, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue123456789' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem3) == 0x000020, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue9) == 0x000021, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue9' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_Array_Get_Item1) == 0x000028, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_Array_Get_Item1' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem1234) == 0x000030, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem1234' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem12345) == 0x000031, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem12345' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue12345678910) == 0x000032, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue12345678910' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem4) == 0x000030, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem4' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_HasValidItem_HasValidItem5) == 0x000031, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_HasValidItem_HasValidItem5' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue10) == 0x000032, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue10' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventSource123) == 0x000048, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventSource123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventFocus123) == 0x000050, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventFocus123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_ClientEvent123) == 0x000058, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_ClientEvent123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventSource12) == 0x000078, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventSource12' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventFocus12) == 0x000080, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventFocus12' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_ClientEvent12) == 0x000088, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_ClientEvent12' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventSource3) == 0x000048, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventSource3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventFocus3) == 0x000050, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventFocus3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_ClientEvent3) == 0x000058, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_ClientEvent3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventSource2) == 0x000078, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventSource2' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventFocus2) == 0x000080, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventFocus2' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_ClientEvent2) == 0x000088, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_ClientEvent2' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventSource1) == 0x0000A8, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventSource1' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_EventFocus1) == 0x0000B0, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_EventFocus1' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, K2Node_HandleClientEvent_ClientEvent1) == 0x0000B8, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::K2Node_HandleClientEvent_ClientEvent1' has a wrong offset!");
@@ -212,29 +212,35 @@ static_assert(offsetof(Results_BadgeLoot_C_Initialize, K2Node_MakeArray_Array) =
 static_assert(offsetof(Results_BadgeLoot_C_Initialize, K2Node_MakeArray_Array1) == 0x000040, "Member 'Results_BadgeLoot_C_Initialize::K2Node_MakeArray_Array1' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.PopulateNextBadge
-// 0x0028 (0x0028 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct Results_BadgeLoot_C_PopulateNextBadge final
 {
 public:
 	class UResults_Badge_C*                       Badge;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown;     // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow;    // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              CallFunc_Array_Get_Item1;                          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable1;                                // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              CallFunc_Array_Get_Item1;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_BadgeLoot_C_PopulateNextBadge) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_PopulateNextBadge");
-static_assert(sizeof(Results_BadgeLoot_C_PopulateNextBadge) == 0x000028, "Wrong size on Results_BadgeLoot_C_PopulateNextBadge");
+static_assert(sizeof(Results_BadgeLoot_C_PopulateNextBadge) == 0x000038, "Wrong size on Results_BadgeLoot_C_PopulateNextBadge");
 static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, Badge) == 0x000000, "Member 'Results_BadgeLoot_C_PopulateNextBadge::Badge' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Array_Get_Item) == 0x000008, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown) == 0x000014, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow) == 0x000015, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Add_IntInt_ReturnValue1) == 0x000018, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Array_Get_Item1) == 0x000020, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Array_Get_Item1' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, Temp_int_Variable) == 0x000008, "Member 'Results_BadgeLoot_C_PopulateNextBadge::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Array_Get_Item) == 0x000010, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown) == 0x000018, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_ShouldBadgeBeShown_ShownBadgeBeShown' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow) == 0x000020, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, Temp_int_Variable1) == 0x000024, "Member 'Results_BadgeLoot_C_PopulateNextBadge::Temp_int_Variable1' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Add_IntInt_ReturnValue1) == 0x000028, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_PopulateNextBadge, CallFunc_Array_Get_Item1) == 0x000030, "Member 'Results_BadgeLoot_C_PopulateNextBadge::CallFunc_Array_Get_Item1' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HasMoreBadgesToShow
 // 0x000C (0x000C - 0x0000)
@@ -292,19 +298,19 @@ struct Results_BadgeLoot_C_InitializeDelays final
 public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue1;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue123;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue1234;        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue12345;       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue4;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue5;           // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Results_BadgeLoot_C_InitializeDelays) == 0x000004, "Wrong alignment on Results_BadgeLoot_C_InitializeDelays");
 static_assert(sizeof(Results_BadgeLoot_C_InitializeDelays) == 0x000018, "Wrong size on Results_BadgeLoot_C_InitializeDelays");
 static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000000, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue1) == 0x000004, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue12) == 0x000008, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue123) == 0x00000C, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue1234) == 0x000010, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue12345) == 0x000014, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000008, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x00000C, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue4) == 0x000010, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLoot_C_InitializeDelays, CallFunc_Divide_FloatFloat_ReturnValue5) == 0x000014, "Member 'Results_BadgeLoot_C_InitializeDelays::CallFunc_Divide_FloatFloat_ReturnValue5' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.SkipToFinalState
 // 0x0030 (0x0030 - 0x0000)

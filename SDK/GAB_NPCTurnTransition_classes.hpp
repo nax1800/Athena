@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_NPCTurnTransition.GAB_NPCTurnTransition_C
-// 0x0010 (0x0B40 - 0x0B30)
+// 0x0010 (0x0950 - 0x0940)
 class UGAB_NPCTurnTransition_C : public UFortGameplayAbility_AITurnTransition
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B30(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 GE_AIBaseMeleeFrustration_Build;                   // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0940(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 GE_AIBaseMeleeFrustration_Build;                   // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_NPCTurnTransition(int32 EntryPoint);
@@ -44,9 +44,9 @@ public:
 	}
 };
 static_assert(alignof(UGAB_NPCTurnTransition_C) == 0x000008, "Wrong alignment on UGAB_NPCTurnTransition_C");
-static_assert(sizeof(UGAB_NPCTurnTransition_C) == 0x000B40, "Wrong size on UGAB_NPCTurnTransition_C");
-static_assert(offsetof(UGAB_NPCTurnTransition_C, UberGraphFrame) == 0x000B30, "Member 'UGAB_NPCTurnTransition_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_NPCTurnTransition_C, GE_AIBaseMeleeFrustration_Build) == 0x000B38, "Member 'UGAB_NPCTurnTransition_C::GE_AIBaseMeleeFrustration_Build' has a wrong offset!");
+static_assert(sizeof(UGAB_NPCTurnTransition_C) == 0x000950, "Wrong size on UGAB_NPCTurnTransition_C");
+static_assert(offsetof(UGAB_NPCTurnTransition_C, UberGraphFrame) == 0x000940, "Member 'UGAB_NPCTurnTransition_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_NPCTurnTransition_C, GE_AIBaseMeleeFrustration_Build) == 0x000948, "Member 'UGAB_NPCTurnTransition_C::GE_AIBaseMeleeFrustration_Build' has a wrong offset!");
 
 }
 

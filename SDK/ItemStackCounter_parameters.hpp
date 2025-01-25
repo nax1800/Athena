@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -47,9 +47,9 @@ static_assert(offsetof(ItemStackCounter_C_PreConstruct, IsDesignTime) == 0x00000
 struct ItemStackCounter_C_Update final
 {
 public:
-	EFortBrushSize                                Param_Brush_Size;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBrushSize                                Brush_Size_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Param_Count;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBorderSlot*                            K2Node_DynamicCast_AsBorder_Slot;                  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -61,8 +61,8 @@ public:
 };
 static_assert(alignof(ItemStackCounter_C_Update) == 0x000008, "Wrong alignment on ItemStackCounter_C_Update");
 static_assert(sizeof(ItemStackCounter_C_Update) == 0x0000B8, "Wrong size on ItemStackCounter_C_Update");
-static_assert(offsetof(ItemStackCounter_C_Update, Param_Brush_Size) == 0x000000, "Member 'ItemStackCounter_C_Update::Param_Brush_Size' has a wrong offset!");
-static_assert(offsetof(ItemStackCounter_C_Update, Param_Count) == 0x000004, "Member 'ItemStackCounter_C_Update::Param_Count' has a wrong offset!");
+static_assert(offsetof(ItemStackCounter_C_Update, Brush_Size_0) == 0x000000, "Member 'ItemStackCounter_C_Update::Brush_Size_0' has a wrong offset!");
+static_assert(offsetof(ItemStackCounter_C_Update, Count_0) == 0x000004, "Member 'ItemStackCounter_C_Update::Count_0' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Update, K2Node_DynamicCast_AsBorder_Slot) == 0x000008, "Member 'ItemStackCounter_C_Update::K2Node_DynamicCast_AsBorder_Slot' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Update, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemStackCounter_C_Update::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Update, CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue) == 0x000014, "Member 'ItemStackCounter_C_Update::CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue' has a wrong offset!");
@@ -75,7 +75,7 @@ static_assert(offsetof(ItemStackCounter_C_Update, CallFunc_BreakVector2D_Y) == 0
 struct ItemStackCounter_C_Set_Stack_Count final
 {
 public:
-	int32                                         Param_Count;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
@@ -84,7 +84,7 @@ public:
 };
 static_assert(alignof(ItemStackCounter_C_Set_Stack_Count) == 0x000008, "Wrong alignment on ItemStackCounter_C_Set_Stack_Count");
 static_assert(sizeof(ItemStackCounter_C_Set_Stack_Count) == 0x000050, "Wrong size on ItemStackCounter_C_Set_Stack_Count");
-static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, Param_Count) == 0x000000, "Member 'ItemStackCounter_C_Set_Stack_Count::Param_Count' has a wrong offset!");
+static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, Count_0) == 0x000000, "Member 'ItemStackCounter_C_Set_Stack_Count::Count_0' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, Temp_bool_Variable) == 0x000004, "Member 'ItemStackCounter_C_Set_Stack_Count::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'ItemStackCounter_C_Set_Stack_Count::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, CallFunc_Truncate_Integer_Value_Formatted_Value) == 0x000020, "Member 'ItemStackCounter_C_Set_Stack_Count::CallFunc_Truncate_Integer_Value_Formatted_Value' has a wrong offset!");

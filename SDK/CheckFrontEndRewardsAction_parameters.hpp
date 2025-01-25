@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "FrontEndRewards_Definition_structs.hpp"
 
 
@@ -221,7 +221,7 @@ public:
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UFrontEndRewards_Widget_C* RewardsWidget)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UFrontEndRewards_Widget_C* RewardsWidget)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFrontEndRewards_Widget_C* RewardsWidget)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFrontEndRewards_Widget_C*              K2Node_DynamicCast_AsFront_End_Rewards_Widget;     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -235,7 +235,7 @@ static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, CallFun
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, CallFunc_GetContext_ReturnValue1) == 0x000020, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, CallFunc_IsInZone_ReturnValue) == 0x000028, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, K2Node_CreateDelegate_OutputDelegate1) == 0x000030, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, K2Node_CreateDelegate_OutputDelegate12) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, K2Node_CreateDelegate_OutputDelegate2) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000050, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, CallFunc_GetCachedWidget_ReturnValue) == 0x000058, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_OpenFrontEndRewards, K2Node_DynamicCast_AsFront_End_Rewards_Widget) == 0x000060, "Member 'CheckFrontEndRewardsAction_C_OpenFrontEndRewards::K2Node_DynamicCast_AsFront_End_Rewards_Widget' has a wrong offset!");
@@ -274,39 +274,38 @@ static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimed, Reward
 static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimed, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckFrontEndRewardsAction_C_HandleRewardsClaimed::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Clear
-// 0x0090 (0x0090 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct CheckFrontEndRewardsAction_C_Clear final
 {
 public:
-	TArray<struct FFortCollectionBookRewards>     K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortExpeditionItem*>            K2Node_MakeArray_Array1;                           // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array12;                          // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
-	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array123;                         // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFrontEndRewards_Definition            K2Node_MakeStruct_FrontEndRewards_Definition;      // 0x0040(0x0050)(HasGetValueTypeHash)
+	TArray<class UFortItem*>                      K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FFortCollectionBookRewards>     K2Node_MakeArray_Array1;                           // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortExpeditionItem*>            K2Node_MakeArray_Array2;                           // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array3;                           // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class UFortQuestItem*>                 K2Node_MakeArray_Array4;                           // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
+	struct FFrontEndRewards_Definition            K2Node_MakeStruct_FrontEndRewards_Definition;      // 0x0050(0x0060)(HasGetValueTypeHash)
 };
 static_assert(alignof(CheckFrontEndRewardsAction_C_Clear) == 0x000008, "Wrong alignment on CheckFrontEndRewardsAction_C_Clear");
-static_assert(sizeof(CheckFrontEndRewardsAction_C_Clear) == 0x000090, "Wrong size on CheckFrontEndRewardsAction_C_Clear");
+static_assert(sizeof(CheckFrontEndRewardsAction_C_Clear) == 0x0000B0, "Wrong size on CheckFrontEndRewardsAction_C_Clear");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array) == 0x000000, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array1) == 0x000010, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array1' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array12) == 0x000020, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array123) == 0x000030, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array123' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeStruct_FrontEndRewards_Definition) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeStruct_FrontEndRewards_Definition' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array2) == 0x000020, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array2' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array3) == 0x000030, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array3' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeArray_Array4) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeArray_Array4' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_Clear, K2Node_MakeStruct_FrontEndRewards_Definition) == 0x000050, "Member 'CheckFrontEndRewardsAction_C_Clear::K2Node_MakeStruct_FrontEndRewards_Definition' has a wrong offset!");
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsClaimError
-// 0x0018 (0x0018 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct CheckFrontEndRewardsAction_C_HandleRewardsClaimError final
 {
 public:
 	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Is_FrontEndRewards_Running_bRunning;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError) == 0x000008, "Wrong alignment on CheckFrontEndRewardsAction_C_HandleRewardsClaimError");
-static_assert(sizeof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError) == 0x000018, "Wrong size on CheckFrontEndRewardsAction_C_HandleRewardsClaimError");
+static_assert(sizeof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError) == 0x000010, "Wrong size on CheckFrontEndRewardsAction_C_HandleRewardsClaimError");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError, RewardsWidget) == 0x000000, "Member 'CheckFrontEndRewardsAction_C_HandleRewardsClaimError::RewardsWidget' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError, CallFunc_Is_FrontEndRewards_Running_bRunning) == 0x000008, "Member 'CheckFrontEndRewardsAction_C_HandleRewardsClaimError::CallFunc_Is_FrontEndRewards_Running_bRunning' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000010, "Member 'CheckFrontEndRewardsAction_C_HandleRewardsClaimError::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_HandleRewardsClaimError, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckFrontEndRewardsAction_C_HandleRewardsClaimError::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateMissionAlertRewards
 // 0x0010 (0x0010 - 0x0000)
@@ -363,13 +362,13 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortPartyMemberLocation                      CallFunc_GetLocalPartyMemberLocation_Location;     // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetLocalPartyMemberLocation_ReturnValue;  // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue1;           // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue123;                 // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards) == 0x000008, "Wrong alignment on CheckFrontEndRewardsAction_C_CanShowFrontendRewards");
@@ -387,13 +386,13 @@ static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, Call
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_GetStoreState_ReturnValue) == 0x000039, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_GetStoreState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanOR_ReturnValue1) == 0x00003A, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00003B, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_GetContext_ReturnValue12) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanOR_ReturnValue12) == 0x000048, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_GetContext_ReturnValue2) == 0x000040, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanOR_ReturnValue2) == 0x000048, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_GetLocalPartyMemberLocation_Location) == 0x000049, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_GetLocalPartyMemberLocation_Location' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_GetLocalPartyMemberLocation_ReturnValue) == 0x00004A, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_GetLocalPartyMemberLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_NotEqual_ByteByte_ReturnValue1) == 0x00004B, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_NotEqual_ByteByte_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanOR_ReturnValue123) == 0x00004D, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanOR_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_BooleanOR_ReturnValue3) == 0x00004D, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_CanShowFrontendRewards, CallFunc_Not_PreBool_ReturnValue) == 0x00004E, "Member 'CheckFrontEndRewardsAction_C_CanShowFrontendRewards::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsIgnored
@@ -439,6 +438,26 @@ static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes, CallFu
 static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes, CallFunc_GetNextGiftBox_ReturnValue) == 0x000010, "Member 'CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes::CallFunc_GetNextGiftBox_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes, CallFunc_IsValid_ReturnValue1) == 0x000018, "Member 'CheckFrontEndRewardsAction_C_PopulateNewGiftBoxes::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
+
+// Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateItemCacheRewards
+// 0x0028 (0x0028 - 0x0000)
+struct CheckFrontEndRewardsAction_C_PopulateItemCacheRewards final
+{
+public:
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortItem*>                      CallFunc_GetPendingItemCacheRewards_OutItemCacheRewards; // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards) == 0x000008, "Wrong alignment on CheckFrontEndRewardsAction_C_PopulateItemCacheRewards");
+static_assert(sizeof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards) == 0x000028, "Wrong size on CheckFrontEndRewardsAction_C_PopulateItemCacheRewards");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'CheckFrontEndRewardsAction_C_PopulateItemCacheRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'CheckFrontEndRewardsAction_C_PopulateItemCacheRewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards, CallFunc_GetPendingItemCacheRewards_OutItemCacheRewards) == 0x000010, "Member 'CheckFrontEndRewardsAction_C_PopulateItemCacheRewards::CallFunc_GetPendingItemCacheRewards_OutItemCacheRewards' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'CheckFrontEndRewardsAction_C_PopulateItemCacheRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CheckFrontEndRewardsAction_C_PopulateItemCacheRewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'CheckFrontEndRewardsAction_C_PopulateItemCacheRewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

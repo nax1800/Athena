@@ -24,10 +24,12 @@ namespace SDK
 // class FText                             Body_Text                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FText                             Header_Text                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           Header_Style                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           Body_Style                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
+void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UClass* Header_Style, class UClass* Body_Style, class UObject* __WorldContext, class UUserWidget** Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,6 +42,8 @@ void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Pla
 	Parms.Body_Text = std::move(Body_Text);
 	Parms.Header_Text = std::move(Header_Text);
 	Parms.Icon_Brush = Icon_Brush;
+	Parms.Header_Style = Header_Style;
+	Parms.Body_Style = Body_Style;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);

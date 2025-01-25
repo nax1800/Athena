@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MainTabsScreen.MainTabsScreen_C
-// 0x0028 (0x0458 - 0x0430)
+// 0x0028 (0x0388 - 0x0360)
 class UMainTabsScreen_C final : public UFortMainTabsScreenBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
-	class UCommonWidgetSwitcher*                  TopTabContentWidgetSwitcher;                       // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FName                                   LastActiveTabId;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UnclaimedResearchBangThreshold;                    // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           UnclaimedResearchPointsHandle;                     // 0x0450(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	class UCommonWidgetSwitcher*                  TopTabContentWidgetSwitcher;                       // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FName                                   LastActiveTabId;                                   // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         UnclaimedResearchBangThreshold;                    // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37C[0x4];                                      // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           UnclaimedResearchPointsHandle;                     // 0x0380(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MainTabsScreen(int32 EntryPoint);
@@ -79,12 +79,12 @@ public:
 	}
 };
 static_assert(alignof(UMainTabsScreen_C) == 0x000008, "Wrong alignment on UMainTabsScreen_C");
-static_assert(sizeof(UMainTabsScreen_C) == 0x000458, "Wrong size on UMainTabsScreen_C");
-static_assert(offsetof(UMainTabsScreen_C, UberGraphFrame) == 0x000430, "Member 'UMainTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000438, "Member 'UMainTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, LastActiveTabId) == 0x000440, "Member 'UMainTabsScreen_C::LastActiveTabId' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchBangThreshold) == 0x000448, "Member 'UMainTabsScreen_C::UnclaimedResearchBangThreshold' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchPointsHandle) == 0x000450, "Member 'UMainTabsScreen_C::UnclaimedResearchPointsHandle' has a wrong offset!");
+static_assert(sizeof(UMainTabsScreen_C) == 0x000388, "Wrong size on UMainTabsScreen_C");
+static_assert(offsetof(UMainTabsScreen_C, UberGraphFrame) == 0x000360, "Member 'UMainTabsScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMainTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000368, "Member 'UMainTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UMainTabsScreen_C, LastActiveTabId) == 0x000370, "Member 'UMainTabsScreen_C::LastActiveTabId' has a wrong offset!");
+static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchBangThreshold) == 0x000378, "Member 'UMainTabsScreen_C::UnclaimedResearchBangThreshold' has a wrong offset!");
+static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchPointsHandle) == 0x000380, "Member 'UMainTabsScreen_C::UnclaimedResearchPointsHandle' has a wrong offset!");
 
 }
 

@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -34,7 +35,7 @@ enum class EHDRCaptureGamut : uint8
 struct FCompositionGraphCapturePasses final
 {
 public:
-	TArray<class FString>                         Value;                                             // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Value;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCompositionGraphCapturePasses) == 0x000008, "Wrong alignment on FCompositionGraphCapturePasses");
 static_assert(sizeof(FCompositionGraphCapturePasses) == 0x000010, "Wrong size on FCompositionGraphCapturePasses");
@@ -45,7 +46,7 @@ static_assert(offsetof(FCompositionGraphCapturePasses, Value) == 0x000000, "Memb
 struct alignas(0x08) FCaptureProtocolID final
 {
 public:
-	class FName                                   Identifier;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Identifier;                                        // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCaptureProtocolID) == 0x000008, "Wrong alignment on FCaptureProtocolID");
 static_assert(sizeof(FCaptureProtocolID) == 0x000008, "Wrong size on FCaptureProtocolID");
@@ -56,8 +57,8 @@ static_assert(offsetof(FCaptureProtocolID, Identifier) == 0x000000, "Member 'FCa
 struct FCaptureResolution final
 {
 public:
-	uint32                                        ResX;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        ResY;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResX;                                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResY;                                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCaptureResolution) == 0x000004, "Wrong alignment on FCaptureResolution");
 static_assert(sizeof(FCaptureResolution) == 0x000008, "Wrong size on FCaptureResolution");
@@ -65,32 +66,32 @@ static_assert(offsetof(FCaptureResolution, ResX) == 0x000000, "Member 'FCaptureR
 static_assert(offsetof(FCaptureResolution, ResY) == 0x000004, "Member 'FCaptureResolution::ResY' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.MovieSceneCaptureSettings
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FMovieSceneCaptureSettings final
 {
 public:
-	struct FDirectoryPath                         OutputDirectory;                                   // 0x0000(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
-	TSubclassOf<class AGameModeBase>              GameModeOverride;                                  // 0x0010(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 OutputFormat;                                      // 0x0018(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOverwriteExisting;                                // 0x0028(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseRelativeFrameNumbers;                          // 0x0029(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDirectoryPath                         OutputDirectory;                                   // 0x0000(0x0010)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
+	TSubclassOf<class AGameModeBase>              GameModeOverride;                                  // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 OutputFormat;                                      // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOverwriteExisting;                                // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseRelativeFrameNumbers;                          // 0x0029(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HandleFrames;                                      // 0x002C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         ZeroPadFrameNumbers;                               // 0x0030(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HandleFrames;                                      // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         ZeroPadFrameNumbers;                               // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         FrameRate;                                         // 0x0034(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCaptureResolution                     Resolution;                                        // 0x0038(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bEnableTextureStreaming;                           // 0x0040(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCinematicEngineScalability;                       // 0x0041(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCinematicMode;                                    // 0x0042(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowMovement;                                    // 0x0043(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowTurning;                                     // 0x0044(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShowPlayer;                                       // 0x0045(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShowHUD;                                          // 0x0046(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FFrameRate                             FrameRate;                                         // 0x0034(0x0008)(Edit, BlueprintVisible, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCaptureResolution                     Resolution;                                        // 0x003C(0x0008)(Edit, BlueprintVisible, Config, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bEnableTextureStreaming;                           // 0x0044(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCinematicEngineScalability;                       // 0x0045(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCinematicMode;                                    // 0x0046(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowMovement;                                    // 0x0047(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowTurning;                                     // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowPlayer;                                       // 0x0049(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowHUD;                                          // 0x004A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4B[0x5];                                       // 0x004B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCaptureSettings) == 0x000008, "Wrong alignment on FMovieSceneCaptureSettings");
-static_assert(sizeof(FMovieSceneCaptureSettings) == 0x000048, "Wrong size on FMovieSceneCaptureSettings");
+static_assert(sizeof(FMovieSceneCaptureSettings) == 0x000050, "Wrong size on FMovieSceneCaptureSettings");
 static_assert(offsetof(FMovieSceneCaptureSettings, OutputDirectory) == 0x000000, "Member 'FMovieSceneCaptureSettings::OutputDirectory' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, GameModeOverride) == 0x000010, "Member 'FMovieSceneCaptureSettings::GameModeOverride' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, OutputFormat) == 0x000018, "Member 'FMovieSceneCaptureSettings::OutputFormat' has a wrong offset!");
@@ -99,14 +100,14 @@ static_assert(offsetof(FMovieSceneCaptureSettings, bUseRelativeFrameNumbers) == 
 static_assert(offsetof(FMovieSceneCaptureSettings, HandleFrames) == 0x00002C, "Member 'FMovieSceneCaptureSettings::HandleFrames' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, ZeroPadFrameNumbers) == 0x000030, "Member 'FMovieSceneCaptureSettings::ZeroPadFrameNumbers' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, FrameRate) == 0x000034, "Member 'FMovieSceneCaptureSettings::FrameRate' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, Resolution) == 0x000038, "Member 'FMovieSceneCaptureSettings::Resolution' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bEnableTextureStreaming) == 0x000040, "Member 'FMovieSceneCaptureSettings::bEnableTextureStreaming' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicEngineScalability) == 0x000041, "Member 'FMovieSceneCaptureSettings::bCinematicEngineScalability' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicMode) == 0x000042, "Member 'FMovieSceneCaptureSettings::bCinematicMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bAllowMovement) == 0x000043, "Member 'FMovieSceneCaptureSettings::bAllowMovement' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bAllowTurning) == 0x000044, "Member 'FMovieSceneCaptureSettings::bAllowTurning' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bShowPlayer) == 0x000045, "Member 'FMovieSceneCaptureSettings::bShowPlayer' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bShowHUD) == 0x000046, "Member 'FMovieSceneCaptureSettings::bShowHUD' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, Resolution) == 0x00003C, "Member 'FMovieSceneCaptureSettings::Resolution' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bEnableTextureStreaming) == 0x000044, "Member 'FMovieSceneCaptureSettings::bEnableTextureStreaming' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicEngineScalability) == 0x000045, "Member 'FMovieSceneCaptureSettings::bCinematicEngineScalability' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicMode) == 0x000046, "Member 'FMovieSceneCaptureSettings::bCinematicMode' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bAllowMovement) == 0x000047, "Member 'FMovieSceneCaptureSettings::bAllowMovement' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bAllowTurning) == 0x000048, "Member 'FMovieSceneCaptureSettings::bAllowTurning' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bShowPlayer) == 0x000049, "Member 'FMovieSceneCaptureSettings::bShowPlayer' has a wrong offset!");
+static_assert(offsetof(FMovieSceneCaptureSettings, bShowHUD) == 0x00004A, "Member 'FMovieSceneCaptureSettings::bShowHUD' has a wrong offset!");
 
 }
 

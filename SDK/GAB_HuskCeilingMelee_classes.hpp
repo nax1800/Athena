@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_HuskCeilingMelee.GAB_HuskCeilingMelee_C
-// 0x0000 (0x0B28 - 0x0B28)
+// 0x0000 (0x0930 - 0x0930)
 class UGAB_HuskCeilingMelee_C : public UGAB_HuskMelee_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_HuskCeilingMelee_C) == 0x000008, "Wrong alignment on UGAB_HuskCeilingMelee_C");
-static_assert(sizeof(UGAB_HuskCeilingMelee_C) == 0x000B28, "Wrong size on UGAB_HuskCeilingMelee_C");
+static_assert(sizeof(UGAB_HuskCeilingMelee_C) == 0x000930, "Wrong size on UGAB_HuskCeilingMelee_C");
 
 }
 

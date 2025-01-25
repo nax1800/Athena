@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BadgesEarnedPanelContent.BadgesEarnedPanelContent_C
-// 0x0038 (0x0250 - 0x0218)
+// 0x0038 (0x0248 - 0x0210)
 class UBadgesEarnedPanelContent_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           EarnedBadges;                                      // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               OverlayBadeInfo;                                   // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           PotentialBadges;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VBoxEarnedBadges;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UVerticalBox*                           EarnedBadges;                                      // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               OverlayBadeInfo;                                   // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           PotentialBadges;                                   // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VBoxEarnedBadges;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BadgesEarnedPanelContent(int32 EntryPoint);
@@ -52,14 +52,14 @@ public:
 	}
 };
 static_assert(alignof(UBadgesEarnedPanelContent_C) == 0x000008, "Wrong alignment on UBadgesEarnedPanelContent_C");
-static_assert(sizeof(UBadgesEarnedPanelContent_C) == 0x000250, "Wrong size on UBadgesEarnedPanelContent_C");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, UberGraphFrame) == 0x000218, "Member 'UBadgesEarnedPanelContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, EarnedBadges) == 0x000220, "Member 'UBadgesEarnedPanelContent_C::EarnedBadges' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_0) == 0x000228, "Member 'UBadgesEarnedPanelContent_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_1) == 0x000230, "Member 'UBadgesEarnedPanelContent_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, OverlayBadeInfo) == 0x000238, "Member 'UBadgesEarnedPanelContent_C::OverlayBadeInfo' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, PotentialBadges) == 0x000240, "Member 'UBadgesEarnedPanelContent_C::PotentialBadges' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, VBoxEarnedBadges) == 0x000248, "Member 'UBadgesEarnedPanelContent_C::VBoxEarnedBadges' has a wrong offset!");
+static_assert(sizeof(UBadgesEarnedPanelContent_C) == 0x000248, "Wrong size on UBadgesEarnedPanelContent_C");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, UberGraphFrame) == 0x000210, "Member 'UBadgesEarnedPanelContent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, EarnedBadges) == 0x000218, "Member 'UBadgesEarnedPanelContent_C::EarnedBadges' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_0) == 0x000220, "Member 'UBadgesEarnedPanelContent_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_1) == 0x000228, "Member 'UBadgesEarnedPanelContent_C::Image_1' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, OverlayBadeInfo) == 0x000230, "Member 'UBadgesEarnedPanelContent_C::OverlayBadeInfo' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, PotentialBadges) == 0x000238, "Member 'UBadgesEarnedPanelContent_C::PotentialBadges' has a wrong offset!");
+static_assert(offsetof(UBadgesEarnedPanelContent_C, VBoxEarnedBadges) == 0x000240, "Member 'UBadgesEarnedPanelContent_C::VBoxEarnedBadges' has a wrong offset!");
 
 }
 

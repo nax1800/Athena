@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerDeath.GAB_TakerDeath_C
-// 0x0000 (0x0C80 - 0x0C80)
+// 0x0000 (0x0A88 - 0x0A88)
 class UGAB_TakerDeath_C final : public UGAB_GenericDeath_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerDeath_C) == 0x000008, "Wrong alignment on UGAB_TakerDeath_C");
-static_assert(sizeof(UGAB_TakerDeath_C) == 0x000C80, "Wrong size on UGAB_TakerDeath_C");
+static_assert(sizeof(UGAB_TakerDeath_C) == 0x000A88, "Wrong size on UGAB_TakerDeath_C");
 
 }
 

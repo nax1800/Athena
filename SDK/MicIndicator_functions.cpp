@@ -40,9 +40,9 @@ void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int32 EntryPoint)
 // Function MicIndicator.MicIndicator_C.OnPlayerMuted
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIsMuted                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsMuted_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMicIndicator_C::OnPlayerMuted(bool Param_bIsMuted)
+void UMicIndicator_C::OnPlayerMuted(bool bIsMuted_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void UMicIndicator_C::OnPlayerMuted(bool Param_bIsMuted)
 
 	Params::MicIndicator_C_OnPlayerMuted Parms{};
 
-	Parms.Param_bIsMuted = Param_bIsMuted;
+	Parms.bIsMuted_0 = bIsMuted_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -60,9 +60,9 @@ void UMicIndicator_C::OnPlayerMuted(bool Param_bIsMuted)
 // Function MicIndicator.MicIndicator_C.OnPlayerTalkingChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIsTalking                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsTalking_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMicIndicator_C::OnPlayerTalkingChanged(bool Param_bIsTalking)
+void UMicIndicator_C::OnPlayerTalkingChanged(bool bIsTalking_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -71,7 +71,7 @@ void UMicIndicator_C::OnPlayerTalkingChanged(bool Param_bIsTalking)
 
 	Params::MicIndicator_C_OnPlayerTalkingChanged Parms{};
 
-	Parms.Param_bIsTalking = Param_bIsTalking;
+	Parms.bIsTalking_0 = bIsTalking_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

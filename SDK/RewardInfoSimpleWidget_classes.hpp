@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardInfoSimpleWidget.RewardInfoSimpleWidget_C
-// 0x0018 (0x0840 - 0x0828)
+// 0x0018 (0x08C8 - 0x08B0)
 class URewardInfoSimpleWidget_C final : public UFortRewardInfoButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0828(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       ItemCount;                                         // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ItemIcon;                                          // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       ItemCount;                                         // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       ItemIcon;                                          // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_RewardInfoSimpleWidget(int32 EntryPoint);
@@ -43,10 +43,10 @@ public:
 	}
 };
 static_assert(alignof(URewardInfoSimpleWidget_C) == 0x000008, "Wrong alignment on URewardInfoSimpleWidget_C");
-static_assert(sizeof(URewardInfoSimpleWidget_C) == 0x000840, "Wrong size on URewardInfoSimpleWidget_C");
-static_assert(offsetof(URewardInfoSimpleWidget_C, UberGraphFrame) == 0x000828, "Member 'URewardInfoSimpleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardInfoSimpleWidget_C, ItemCount) == 0x000830, "Member 'URewardInfoSimpleWidget_C::ItemCount' has a wrong offset!");
-static_assert(offsetof(URewardInfoSimpleWidget_C, ItemIcon) == 0x000838, "Member 'URewardInfoSimpleWidget_C::ItemIcon' has a wrong offset!");
+static_assert(sizeof(URewardInfoSimpleWidget_C) == 0x0008C8, "Wrong size on URewardInfoSimpleWidget_C");
+static_assert(offsetof(URewardInfoSimpleWidget_C, UberGraphFrame) == 0x0008B0, "Member 'URewardInfoSimpleWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URewardInfoSimpleWidget_C, ItemCount) == 0x0008B8, "Member 'URewardInfoSimpleWidget_C::ItemCount' has a wrong offset!");
+static_assert(offsetof(URewardInfoSimpleWidget_C, ItemIcon) == 0x0008C0, "Member 'URewardInfoSimpleWidget_C::ItemIcon' has a wrong offset!");
 
 }
 

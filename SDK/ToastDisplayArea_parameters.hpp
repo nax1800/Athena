@@ -44,29 +44,27 @@ static_assert(offsetof(ToastDisplayArea_C_RegisterToastHandler, CallFunc_IsValid
 static_assert(offsetof(ToastDisplayArea_C_RegisterToastHandler, CallFunc_GetUINotificationQueue_ReturnValue) == 0x000018, "Member 'ToastDisplayArea_C_RegisterToastHandler::CallFunc_GetUINotificationQueue_ReturnValue' has a wrong offset!");
 
 // Function ToastDisplayArea.ToastDisplayArea_C.AttemptDisplayNextToast
-// 0x0028 (0x0028 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct ToastDisplayArea_C_AttemptDisplayNextToast final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINotification*                    CallFunc_GetNextNotification_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x000008, "Wrong alignment on ToastDisplayArea_C_AttemptDisplayNextToast");
-static_assert(sizeof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x000028, "Wrong size on ToastDisplayArea_C_AttemptDisplayNextToast");
+static_assert(sizeof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x000020, "Wrong size on ToastDisplayArea_C_AttemptDisplayNextToast");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_GetSubGame_ReturnValue) == 0x000010, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000011, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_GetNextNotification_ReturnValue) == 0x000018, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_GetNextNotification_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_BooleanAND_ReturnValue) == 0x000020, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

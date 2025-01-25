@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionTrackerEntry.MissionTrackerEntry_C
-// 0x0018 (0x02D8 - 0x02C0)
+// 0x0018 (0x02D0 - 0x02B8)
 class UMissionTrackerEntry_C final : public UFortMissionTrackerEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(Transient, DuplicateTransient)
-	UMulticastDelegateProperty_                   WidgetVisibilityChanged;                           // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(Transient, DuplicateTransient)
+	UMulticastDelegateProperty_                   WidgetVisibilityChanged;                           // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void Construct();
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UMissionTrackerEntry_C) == 0x000008, "Wrong alignment on UMissionTrackerEntry_C");
-static_assert(sizeof(UMissionTrackerEntry_C) == 0x0002D8, "Wrong size on UMissionTrackerEntry_C");
-static_assert(offsetof(UMissionTrackerEntry_C, UberGraphFrame) == 0x0002C0, "Member 'UMissionTrackerEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerEntry_C, WidgetVisibilityChanged) == 0x0002C8, "Member 'UMissionTrackerEntry_C::WidgetVisibilityChanged' has a wrong offset!");
+static_assert(sizeof(UMissionTrackerEntry_C) == 0x0002D0, "Wrong size on UMissionTrackerEntry_C");
+static_assert(offsetof(UMissionTrackerEntry_C, UberGraphFrame) == 0x0002B8, "Member 'UMissionTrackerEntry_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMissionTrackerEntry_C, WidgetVisibilityChanged) == 0x0002C0, "Member 'UMissionTrackerEntry_C::WidgetVisibilityChanged' has a wrong offset!");
 
 }
 

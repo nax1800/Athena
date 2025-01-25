@@ -37,6 +37,42 @@ void UGA_Athena_TowerGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_TowerGr
 }
 
 
+// Function GA_Athena_TowerGrenadeWithTrajectory.GA_Athena_TowerGrenadeWithTrajectory_C.UpdateTrajectorySpline
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGA_Athena_TowerGrenadeWithTrajectory_C::UpdateTrajectorySpline()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Athena_TowerGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Athena_TowerGrenadeWithTrajectory.GA_Athena_TowerGrenadeWithTrajectory_C.Server_SpawnProjectile
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                         Direction                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+
+void UGA_Athena_TowerGrenadeWithTrajectory_C::Server_SpawnProjectile(const struct FVector& Location, const struct FRotator& Direction)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Athena_TowerGrenadeWithTrajectory_C", "Server_SpawnProjectile");
+
+	Params::GA_Athena_TowerGrenadeWithTrajectory_C_Server_SpawnProjectile Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Direction = std::move(Direction);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function GA_Athena_TowerGrenadeWithTrajectory.GA_Athena_TowerGrenadeWithTrajectory_C.CleanupTrajectoryDisplay
 // (BlueprintCallable, BlueprintEvent)
 
@@ -74,20 +110,6 @@ void UGA_Athena_TowerGrenadeWithTrajectory_C::SetupDummyProjectileRed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("GA_Athena_TowerGrenadeWithTrajectory_C", "SetupDummyProjectileRed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Athena_TowerGrenadeWithTrajectory.GA_Athena_TowerGrenadeWithTrajectory_C.UpdateTrajectorySpline
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UGA_Athena_TowerGrenadeWithTrajectory_C::UpdateTrajectorySpline()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TowerGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

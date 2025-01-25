@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortReplayViewSettings.FortReplayViewSettings_C
-// 0x0038 (0x0428 - 0x03F0)
+// 0x0038 (0x0360 - 0x0328)
 class UFortReplayViewSettings_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CameraType;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      CloseButton;                                       // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ResetButton;                                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   ViewSettingsTabList;                               // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonWidgetSwitcher*                  ViewSettingsWidgetSwitcher;                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class AFortReplaySpectator*                   FortReplaySpectator;                               // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CameraType;                                        // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      CloseButton;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ResetButton;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   ViewSettingsTabList;                               // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonWidgetSwitcher*                  ViewSettingsWidgetSwitcher;                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class AFortPlayerControllerSpectating*        SpectatorController;                               // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FortReplayViewSettings(int32 EntryPoint);
@@ -38,8 +38,9 @@ public:
 	void BndEvt__ResetButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void Construct();
-	void OnCameraTypeChanged(class AFortPlayerControllerSpectating* PlayerController, ESpectatorCameraType Param_CameraType);
+	void OnCameraTypeChanged(class AFortPlayerControllerSpectating* PlayerController, ESpectatorCameraType CameraType_0);
 	void SwitchToValidTab();
+	void CameraTypeToText(ESpectatorCameraType CameraType_0, class FText* Text);
 
 public:
 	static class UClass* StaticClass()
@@ -52,14 +53,14 @@ public:
 	}
 };
 static_assert(alignof(UFortReplayViewSettings_C) == 0x000008, "Wrong alignment on UFortReplayViewSettings_C");
-static_assert(sizeof(UFortReplayViewSettings_C) == 0x000428, "Wrong size on UFortReplayViewSettings_C");
-static_assert(offsetof(UFortReplayViewSettings_C, UberGraphFrame) == 0x0003F0, "Member 'UFortReplayViewSettings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, CameraType) == 0x0003F8, "Member 'UFortReplayViewSettings_C::CameraType' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, CloseButton) == 0x000400, "Member 'UFortReplayViewSettings_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, ResetButton) == 0x000408, "Member 'UFortReplayViewSettings_C::ResetButton' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, ViewSettingsTabList) == 0x000410, "Member 'UFortReplayViewSettings_C::ViewSettingsTabList' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, ViewSettingsWidgetSwitcher) == 0x000418, "Member 'UFortReplayViewSettings_C::ViewSettingsWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UFortReplayViewSettings_C, FortReplaySpectator) == 0x000420, "Member 'UFortReplayViewSettings_C::FortReplaySpectator' has a wrong offset!");
+static_assert(sizeof(UFortReplayViewSettings_C) == 0x000360, "Wrong size on UFortReplayViewSettings_C");
+static_assert(offsetof(UFortReplayViewSettings_C, UberGraphFrame) == 0x000328, "Member 'UFortReplayViewSettings_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, CameraType) == 0x000330, "Member 'UFortReplayViewSettings_C::CameraType' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, CloseButton) == 0x000338, "Member 'UFortReplayViewSettings_C::CloseButton' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, ResetButton) == 0x000340, "Member 'UFortReplayViewSettings_C::ResetButton' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, ViewSettingsTabList) == 0x000348, "Member 'UFortReplayViewSettings_C::ViewSettingsTabList' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, ViewSettingsWidgetSwitcher) == 0x000350, "Member 'UFortReplayViewSettings_C::ViewSettingsWidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UFortReplayViewSettings_C, SpectatorController) == 0x000358, "Member 'UFortReplayViewSettings_C::SpectatorController' has a wrong offset!");
 
 }
 

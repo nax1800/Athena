@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass BP_Shotgun_BreakAction.BP_Shotgun_BreakAction_C
-// 0x0100 (0x0478 - 0x0378)
+// 0x00F0 (0x0448 - 0x0358)
 class UBP_Shotgun_BreakAction_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C; // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE; // 0x03D0(0x0070)()
-	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF; // 0x0440(0x0038)()
+	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C; // 0x0368(0x0040)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE; // 0x03A8(0x0068)()
+	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF; // 0x0410(0x0038)()
 
 public:
 	void ExecuteUbergraph_BP_Shotgun_BreakAction(int32 EntryPoint);
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UBP_Shotgun_BreakAction_C) == 0x000008, "Wrong alignment on UBP_Shotgun_BreakAction_C");
-static_assert(sizeof(UBP_Shotgun_BreakAction_C) == 0x000478, "Wrong size on UBP_Shotgun_BreakAction_C");
-static_assert(offsetof(UBP_Shotgun_BreakAction_C, UberGraphFrame) == 0x000380, "Member 'UBP_Shotgun_BreakAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C) == 0x000388, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE) == 0x0003D0, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF) == 0x000440, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF' has a wrong offset!");
+static_assert(sizeof(UBP_Shotgun_BreakAction_C) == 0x000448, "Wrong size on UBP_Shotgun_BreakAction_C");
+static_assert(offsetof(UBP_Shotgun_BreakAction_C, UberGraphFrame) == 0x000360, "Member 'UBP_Shotgun_BreakAction_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C) == 0x000368, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_Root_BA976D5D4DB7967075F7CDB8A77EDD8C' has a wrong offset!");
+static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE) == 0x0003A8, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_Slot_40047C1541B43E34DADF6696EC1EDEBE' has a wrong offset!");
+static_assert(offsetof(UBP_Shotgun_BreakAction_C, AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF) == 0x000410, "Member 'UBP_Shotgun_BreakAction_C::AnimGraphNode_LocalRefPose_EADE6A484AF7A66F69258C8F614628BF' has a wrong offset!");
 
 }
 

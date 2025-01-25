@@ -18,16 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionAlertIndicator.MissionAlertIndicator_C
-// 0x0020 (0x0238 - 0x0218)
+// 0x0028 (0x0238 - 0x0210)
 class UMissionAlertIndicator_C final : public UCommonUserWidget
 {
 public:
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageOtherIcon;                                    // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageOtherIconShadow;                              // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  Switcher;                                          // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           CycleTimer;                                        // 0x0230(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CycleTimer;                                        // 0x0230(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ExecuteUbergraph_MissionAlertIndicator(int32 EntryPoint);
+	void Destruct();
 	void ToggleTimer(bool IsEnabled);
 	void Update();
 	void Config(const struct FGameplayTagContainer& AlertVisualTags);
@@ -45,6 +48,7 @@ public:
 };
 static_assert(alignof(UMissionAlertIndicator_C) == 0x000008, "Wrong alignment on UMissionAlertIndicator_C");
 static_assert(sizeof(UMissionAlertIndicator_C) == 0x000238, "Wrong size on UMissionAlertIndicator_C");
+static_assert(offsetof(UMissionAlertIndicator_C, UberGraphFrame) == 0x000210, "Member 'UMissionAlertIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionAlertIndicator_C, ImageOtherIcon) == 0x000218, "Member 'UMissionAlertIndicator_C::ImageOtherIcon' has a wrong offset!");
 static_assert(offsetof(UMissionAlertIndicator_C, ImageOtherIconShadow) == 0x000220, "Member 'UMissionAlertIndicator_C::ImageOtherIconShadow' has a wrong offset!");
 static_assert(offsetof(UMissionAlertIndicator_C, Switcher) == 0x000228, "Member 'UMissionAlertIndicator_C::Switcher' has a wrong offset!");

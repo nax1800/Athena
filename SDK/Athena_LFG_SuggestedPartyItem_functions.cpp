@@ -17,41 +17,21 @@
 namespace SDK
 {
 
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PartyFocused__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthena_LFG_SuggestedPartyItem_C::PreConstruct(bool IsDesignTime)
+void UAthena_LFG_SuggestedPartyItem_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "PreConstruct");
+		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "PartyFocused__DelegateSignature");
 
-	Params::Athena_LFG_SuggestedPartyItem_C_PreConstruct Parms{};
+	Params::Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.UpdatePartyItemSelection
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthena_LFG_SuggestedPartyItem_C::UpdatePartyItemSelection(bool IsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "UpdatePartyItemSelection");
-
-	Params::Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection Parms{};
-
-	Parms.IsSelected = IsSelected;
+	Parms.FocusedPartyItem = FocusedPartyItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,21 +57,41 @@ void UAthena_LFG_SuggestedPartyItem_C::ExecuteUbergraph_Athena_LFG_SuggestedPart
 }
 
 
-// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PartyFocused__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.UpdatePartyItemSelection
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthena_LFG_SuggestedPartyItem_C::PartyFocused__DelegateSignature(class UAthena_LFG_SuggestedPartyItem_C* FocusedPartyItem)
+void UAthena_LFG_SuggestedPartyItem_C::UpdatePartyItemSelection(bool IsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "PartyFocused__DelegateSignature");
+		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "UpdatePartyItemSelection");
 
-	Params::Athena_LFG_SuggestedPartyItem_C_PartyFocused__DelegateSignature Parms{};
+	Params::Athena_LFG_SuggestedPartyItem_C_UpdatePartyItemSelection Parms{};
 
-	Parms.FocusedPartyItem = FocusedPartyItem;
+	Parms.IsSelected = IsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Athena_LFG_SuggestedPartyItem.Athena_LFG_SuggestedPartyItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthena_LFG_SuggestedPartyItem_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_LFG_SuggestedPartyItem_C", "PreConstruct");
+
+	Params::Athena_LFG_SuggestedPartyItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

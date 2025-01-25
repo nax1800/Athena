@@ -21,10 +21,10 @@ namespace SDK
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // class UObject*                          ContextObject                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSubclassOf<class UBlueprintContextBase>Param_Class                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class UBlueprintContextBase>Class_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UBlueprintContextBase*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UBlueprintContextBase* UBlueprintContextLibrary::GetContext(class UObject* ContextObject, TSubclassOf<class UBlueprintContextBase> Param_Class)
+class UBlueprintContextBase* UBlueprintContextLibrary::GetContext(class UObject* ContextObject, TSubclassOf<class UBlueprintContextBase> Class_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -34,7 +34,7 @@ class UBlueprintContextBase* UBlueprintContextLibrary::GetContext(class UObject*
 	Params::BlueprintContextLibrary_GetContext Parms{};
 
 	Parms.ContextObject = ContextObject;
-	Parms.Param_Class = Param_Class;
+	Parms.Class_0 = Class_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

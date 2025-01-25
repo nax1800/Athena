@@ -10,43 +10,42 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerSwoopMelee.GAB_TakerSwoopMelee_C
-// 0x0098 (0x0B80 - 0x0AE8)
+// 0x0090 (0x0988 - 0x08F8)
 class UGAB_TakerSwoopMelee_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	bool                                          Debug;                                             // 0x0AF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AF9[0x7];                                      // 0x0AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATakerPawn_C*                           Taker;                                             // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RotationRateWhenSwooping;                          // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           TC_NPCAbilityAttackMeleeSwoop;                     // 0x0B10(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           SwoopTransitionMontage;                            // 0x0B18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           SwoopAttackEndMontage;                             // 0x0B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopTimeout;                                      // 0x0B28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SwoopMoveAcceptRadius;                             // 0x0B2C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         ActorsHitThisTargetSelection;                      // 0x0B30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          AbilityEnded;                                      // 0x0B40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B41[0x7];                                      // 0x0B41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         ActorsHitThisSwoop;                                // 0x0B48(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AActor*>                         ActorsHitThisTargetSelectionFiltered;              // 0x0B58(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          MovingSlowly;                                      // 0x0B68(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B69[0x7];                                      // 0x0B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAbilityTask_MoveAI*                SwoopMove;                                         // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          MeleeInProgress;                                   // 0x0B78(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B79[0x3];                                      // 0x0B79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DebugSwoopAttackTime;                              // 0x0B7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	bool                                          Debug;                                             // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_901[0x7];                                      // 0x0901(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATakerPawn_C*                           Taker;                                             // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RotationRateWhenSwooping;                          // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_914[0x4];                                      // 0x0914(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           TC_NPCAbilityAttackMeleeSwoop;                     // 0x0918(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           SwoopTransitionMontage;                            // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           SwoopAttackEndMontage;                             // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopTimeout;                                      // 0x0930(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SwoopMoveAcceptRadius;                             // 0x0934(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         ActorsHitThisTargetSelection;                      // 0x0938(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          AbilityEnded;                                      // 0x0948(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_949[0x7];                                      // 0x0949(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         ActorsHitThisSwoop;                                // 0x0950(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AActor*>                         ActorsHitThisTargetSelectionFiltered;              // 0x0960(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          MovingSlowly;                                      // 0x0970(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_971[0x7];                                      // 0x0971(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortAbilityTask_MoveAI*                SwoopMove;                                         // 0x0978(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          MeleeInProgress;                                   // 0x0980(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_981[0x3];                                      // 0x0981(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DebugSwoopAttackTime;                              // 0x0984(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_TakerSwoopMelee(int32 EntryPoint);
@@ -84,24 +83,24 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerSwoopMelee_C) == 0x000008, "Wrong alignment on UGAB_TakerSwoopMelee_C");
-static_assert(sizeof(UGAB_TakerSwoopMelee_C) == 0x000B80, "Wrong size on UGAB_TakerSwoopMelee_C");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_TakerSwoopMelee_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, Debug) == 0x000AF8, "Member 'UGAB_TakerSwoopMelee_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, Taker) == 0x000B00, "Member 'UGAB_TakerSwoopMelee_C::Taker' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, RotationRateWhenSwooping) == 0x000B08, "Member 'UGAB_TakerSwoopMelee_C::RotationRateWhenSwooping' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, TC_NPCAbilityAttackMeleeSwoop) == 0x000B10, "Member 'UGAB_TakerSwoopMelee_C::TC_NPCAbilityAttackMeleeSwoop' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopTransitionMontage) == 0x000B18, "Member 'UGAB_TakerSwoopMelee_C::SwoopTransitionMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopAttackEndMontage) == 0x000B20, "Member 'UGAB_TakerSwoopMelee_C::SwoopAttackEndMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopTimeout) == 0x000B28, "Member 'UGAB_TakerSwoopMelee_C::SwoopTimeout' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopMoveAcceptRadius) == 0x000B2C, "Member 'UGAB_TakerSwoopMelee_C::SwoopMoveAcceptRadius' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisTargetSelection) == 0x000B30, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisTargetSelection' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, AbilityEnded) == 0x000B40, "Member 'UGAB_TakerSwoopMelee_C::AbilityEnded' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisSwoop) == 0x000B48, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisSwoop' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisTargetSelectionFiltered) == 0x000B58, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisTargetSelectionFiltered' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, MovingSlowly) == 0x000B68, "Member 'UGAB_TakerSwoopMelee_C::MovingSlowly' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopMove) == 0x000B70, "Member 'UGAB_TakerSwoopMelee_C::SwoopMove' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, MeleeInProgress) == 0x000B78, "Member 'UGAB_TakerSwoopMelee_C::MeleeInProgress' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSwoopMelee_C, DebugSwoopAttackTime) == 0x000B7C, "Member 'UGAB_TakerSwoopMelee_C::DebugSwoopAttackTime' has a wrong offset!");
+static_assert(sizeof(UGAB_TakerSwoopMelee_C) == 0x000988, "Wrong size on UGAB_TakerSwoopMelee_C");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_TakerSwoopMelee_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, Debug) == 0x000900, "Member 'UGAB_TakerSwoopMelee_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, Taker) == 0x000908, "Member 'UGAB_TakerSwoopMelee_C::Taker' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, RotationRateWhenSwooping) == 0x000910, "Member 'UGAB_TakerSwoopMelee_C::RotationRateWhenSwooping' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, TC_NPCAbilityAttackMeleeSwoop) == 0x000918, "Member 'UGAB_TakerSwoopMelee_C::TC_NPCAbilityAttackMeleeSwoop' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopTransitionMontage) == 0x000920, "Member 'UGAB_TakerSwoopMelee_C::SwoopTransitionMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopAttackEndMontage) == 0x000928, "Member 'UGAB_TakerSwoopMelee_C::SwoopAttackEndMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopTimeout) == 0x000930, "Member 'UGAB_TakerSwoopMelee_C::SwoopTimeout' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopMoveAcceptRadius) == 0x000934, "Member 'UGAB_TakerSwoopMelee_C::SwoopMoveAcceptRadius' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisTargetSelection) == 0x000938, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisTargetSelection' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, AbilityEnded) == 0x000948, "Member 'UGAB_TakerSwoopMelee_C::AbilityEnded' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisSwoop) == 0x000950, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisSwoop' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, ActorsHitThisTargetSelectionFiltered) == 0x000960, "Member 'UGAB_TakerSwoopMelee_C::ActorsHitThisTargetSelectionFiltered' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, MovingSlowly) == 0x000970, "Member 'UGAB_TakerSwoopMelee_C::MovingSlowly' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, SwoopMove) == 0x000978, "Member 'UGAB_TakerSwoopMelee_C::SwoopMove' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, MeleeInProgress) == 0x000980, "Member 'UGAB_TakerSwoopMelee_C::MeleeInProgress' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSwoopMelee_C, DebugSwoopAttackTime) == 0x000984, "Member 'UGAB_TakerSwoopMelee_C::DebugSwoopAttackTime' has a wrong offset!");
 
 }
 

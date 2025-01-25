@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass S_Water_Shallow_1x1.S_Water_Shallow_1x1_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x03F0 - 0x03F0)
 class AS_Water_Shallow_1x1_C final : public A_WaterMeshBlueprintMaster_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AS_Water_Shallow_1x1_C) == 0x000008, "Wrong alignment on AS_Water_Shallow_1x1_C");
-static_assert(sizeof(AS_Water_Shallow_1x1_C) == 0x0003E0, "Wrong size on AS_Water_Shallow_1x1_C");
+static_assert(sizeof(AS_Water_Shallow_1x1_C) == 0x0003F0, "Wrong size on AS_Water_Shallow_1x1_C");
 
 }
 

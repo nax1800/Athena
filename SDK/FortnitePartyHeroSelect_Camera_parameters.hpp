@@ -25,12 +25,12 @@ struct FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_InputKeyEvent_Key12;                        // 0x0008(0x0018)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key2;                         // 0x0008(0x0018)(HasGetValueTypeHash)
 	struct FKey                                   K2Node_InputKeyEvent_Key1;                         // 0x0020(0x0018)(HasGetValueTypeHash)
 	struct FKey                                   K2Node_InputKeyEvent_Key;                          // 0x0038(0x0018)(HasGetValueTypeHash)
 	struct FKey                                   Temp_struct_Variable;                              // 0x0050(0x0018)(HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputKeyEvent_Key123;                       // 0x0070(0x0018)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key3;                         // 0x0070(0x0018)(HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue1;         // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,17 +52,17 @@ public:
 	class ATVPostProcessBP_C*                     CallFunc_Array_Get_Item;                           // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortTimeOfDayManager*                  CallFunc_GetTimeOfDayManagerFromContext_ReturnValue; // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue12;        // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue2;         // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera) == 0x000008, "Wrong alignment on FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera");
 static_assert(sizeof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera) == 0x0001A0, "Wrong size on FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, EntryPoint) == 0x000000, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key12) == 0x000008, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key12' has a wrong offset!");
+static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key2) == 0x000008, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key2' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key1) == 0x000020, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key1' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key) == 0x000038, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, Temp_struct_Variable) == 0x000050, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key123) == 0x000070, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key123' has a wrong offset!");
+static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_InputKeyEvent_Key3) == 0x000070, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_InputKeyEvent_Key3' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, K2Node_Event_DeltaSeconds) == 0x000088, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetPlayerController_ReturnValue1) == 0x000090, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetPlayerController_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetInputMouseDelta_DeltaX) == 0x000098, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetInputMouseDelta_DeltaX' has a wrong offset!");
@@ -81,7 +81,7 @@ static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_Fortnit
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_Array_Get_Item) == 0x000100, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000108, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000190, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetPlayerController_ReturnValue12) == 0x000198, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetPlayerController_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera, CallFunc_GetPlayerController_ReturnValue2) == 0x000198, "Member 'FortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera::CallFunc_GetPlayerController_ReturnValue2' has a wrong offset!");
 
 // Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)

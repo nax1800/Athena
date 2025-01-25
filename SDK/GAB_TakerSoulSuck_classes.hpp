@@ -10,46 +10,45 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerSoulSuck.GAB_TakerSoulSuck_C
-// 0x00D0 (0x0BB8 - 0x0AE8)
+// 0x00C8 (0x09C0 - 0x08F8)
 class UGAB_TakerSoulSuck_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	bool                                          Debug;                                             // 0x0AF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AF9[0x7];                                      // 0x0AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPawn*                              GoalPawn;                                          // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ATakerPawn_C*                           TakerPawn;                                         // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            TakerController;                                   // 0x0B10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckTickTime;                                  // 0x0B18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckLowDamagePeriod;                           // 0x0B1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckDamageBeganAtThisTime;                     // 0x0B20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckLastDamageTime;                            // 0x0B24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SoulSuckMontageSection;                            // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SoulSuckCurrentMontageSection;                     // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckGoalActorNormalizedHealth;                 // 0x0B38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SoulSuckHitNothingTimeoutDuration;                 // 0x0B3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             KnockTakerAwaySound;                               // 0x0B40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         KnockTakerAwayMomentum;                            // 0x0B48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4C[0x4];                                      // 0x0B4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_TakerSoulSuckAttack;                            // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_TakerDirectDamageSoulSuckHeavy;                 // 0x0B58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_TakerSoulSuckHeal;                              // 0x0B60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_NPCAbilityAttackMeleeSoulSuck;                  // 0x0B68(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_TakerSoulSuckRelease;                           // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_TakerMeleeStunCooldown;                         // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_TakerSwoopCooldown;                             // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         HitActors;                                         // 0x0BA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FGameplayTag                           TC_NPCEnemyTypeBASE;                               // 0x0BB0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	bool                                          Debug;                                             // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_901[0x7];                                      // 0x0901(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPawn*                              GoalPawn;                                          // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ATakerPawn_C*                           TakerPawn;                                         // 0x0910(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            TakerController;                                   // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckTickTime;                                  // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckLowDamagePeriod;                           // 0x0924(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckDamageBeganAtThisTime;                     // 0x0928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckLastDamageTime;                            // 0x092C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SoulSuckMontageSection;                            // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SoulSuckCurrentMontageSection;                     // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckGoalActorNormalizedHealth;                 // 0x0940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SoulSuckHitNothingTimeoutDuration;                 // 0x0944(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             KnockTakerAwaySound;                               // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         KnockTakerAwayMomentum;                            // 0x0950(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_954[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_TakerSoulSuckAttack;                            // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_TakerDirectDamageSoulSuckHeavy;                 // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_TakerSoulSuckHeal;                              // 0x0968(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_NPCAbilityAttackMeleeSoulSuck;                  // 0x0970(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_TakerSoulSuckRelease;                           // 0x0990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_TakerMeleeStunCooldown;                         // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_TakerSwoopCooldown;                             // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         HitActors;                                         // 0x09A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FGameplayTag                           TC_NPCEnemyTypeBASE;                               // 0x09B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_TakerSoulSuck(int32 EntryPoint);
@@ -90,31 +89,31 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerSoulSuck_C) == 0x000008, "Wrong alignment on UGAB_TakerSoulSuck_C");
-static_assert(sizeof(UGAB_TakerSoulSuck_C) == 0x000BB8, "Wrong size on UGAB_TakerSoulSuck_C");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_TakerSoulSuck_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, Debug) == 0x000AF8, "Member 'UGAB_TakerSoulSuck_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GoalPawn) == 0x000B00, "Member 'UGAB_TakerSoulSuck_C::GoalPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, TakerPawn) == 0x000B08, "Member 'UGAB_TakerSoulSuck_C::TakerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, TakerController) == 0x000B10, "Member 'UGAB_TakerSoulSuck_C::TakerController' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckTickTime) == 0x000B18, "Member 'UGAB_TakerSoulSuck_C::SoulSuckTickTime' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckLowDamagePeriod) == 0x000B1C, "Member 'UGAB_TakerSoulSuck_C::SoulSuckLowDamagePeriod' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckDamageBeganAtThisTime) == 0x000B20, "Member 'UGAB_TakerSoulSuck_C::SoulSuckDamageBeganAtThisTime' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckLastDamageTime) == 0x000B24, "Member 'UGAB_TakerSoulSuck_C::SoulSuckLastDamageTime' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckMontageSection) == 0x000B28, "Member 'UGAB_TakerSoulSuck_C::SoulSuckMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckCurrentMontageSection) == 0x000B30, "Member 'UGAB_TakerSoulSuck_C::SoulSuckCurrentMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckGoalActorNormalizedHealth) == 0x000B38, "Member 'UGAB_TakerSoulSuck_C::SoulSuckGoalActorNormalizedHealth' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckHitNothingTimeoutDuration) == 0x000B3C, "Member 'UGAB_TakerSoulSuck_C::SoulSuckHitNothingTimeoutDuration' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, KnockTakerAwaySound) == 0x000B40, "Member 'UGAB_TakerSoulSuck_C::KnockTakerAwaySound' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, KnockTakerAwayMomentum) == 0x000B48, "Member 'UGAB_TakerSoulSuck_C::KnockTakerAwayMomentum' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckAttack) == 0x000B50, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckAttack' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerDirectDamageSoulSuckHeavy) == 0x000B58, "Member 'UGAB_TakerSoulSuck_C::GE_TakerDirectDamageSoulSuckHeavy' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckHeal) == 0x000B60, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckHeal' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, TC_NPCAbilityAttackMeleeSoulSuck) == 0x000B68, "Member 'UGAB_TakerSoulSuck_C::TC_NPCAbilityAttackMeleeSoulSuck' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckRelease) == 0x000B88, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckRelease' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerMeleeStunCooldown) == 0x000B90, "Member 'UGAB_TakerSoulSuck_C::GE_TakerMeleeStunCooldown' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSwoopCooldown) == 0x000B98, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSwoopCooldown' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, HitActors) == 0x000BA0, "Member 'UGAB_TakerSoulSuck_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerSoulSuck_C, TC_NPCEnemyTypeBASE) == 0x000BB0, "Member 'UGAB_TakerSoulSuck_C::TC_NPCEnemyTypeBASE' has a wrong offset!");
+static_assert(sizeof(UGAB_TakerSoulSuck_C) == 0x0009C0, "Wrong size on UGAB_TakerSoulSuck_C");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_TakerSoulSuck_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, Debug) == 0x000900, "Member 'UGAB_TakerSoulSuck_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GoalPawn) == 0x000908, "Member 'UGAB_TakerSoulSuck_C::GoalPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, TakerPawn) == 0x000910, "Member 'UGAB_TakerSoulSuck_C::TakerPawn' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, TakerController) == 0x000918, "Member 'UGAB_TakerSoulSuck_C::TakerController' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckTickTime) == 0x000920, "Member 'UGAB_TakerSoulSuck_C::SoulSuckTickTime' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckLowDamagePeriod) == 0x000924, "Member 'UGAB_TakerSoulSuck_C::SoulSuckLowDamagePeriod' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckDamageBeganAtThisTime) == 0x000928, "Member 'UGAB_TakerSoulSuck_C::SoulSuckDamageBeganAtThisTime' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckLastDamageTime) == 0x00092C, "Member 'UGAB_TakerSoulSuck_C::SoulSuckLastDamageTime' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckMontageSection) == 0x000930, "Member 'UGAB_TakerSoulSuck_C::SoulSuckMontageSection' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckCurrentMontageSection) == 0x000938, "Member 'UGAB_TakerSoulSuck_C::SoulSuckCurrentMontageSection' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckGoalActorNormalizedHealth) == 0x000940, "Member 'UGAB_TakerSoulSuck_C::SoulSuckGoalActorNormalizedHealth' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, SoulSuckHitNothingTimeoutDuration) == 0x000944, "Member 'UGAB_TakerSoulSuck_C::SoulSuckHitNothingTimeoutDuration' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, KnockTakerAwaySound) == 0x000948, "Member 'UGAB_TakerSoulSuck_C::KnockTakerAwaySound' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, KnockTakerAwayMomentum) == 0x000950, "Member 'UGAB_TakerSoulSuck_C::KnockTakerAwayMomentum' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckAttack) == 0x000958, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckAttack' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerDirectDamageSoulSuckHeavy) == 0x000960, "Member 'UGAB_TakerSoulSuck_C::GE_TakerDirectDamageSoulSuckHeavy' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckHeal) == 0x000968, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckHeal' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, TC_NPCAbilityAttackMeleeSoulSuck) == 0x000970, "Member 'UGAB_TakerSoulSuck_C::TC_NPCAbilityAttackMeleeSoulSuck' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSoulSuckRelease) == 0x000990, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSoulSuckRelease' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerMeleeStunCooldown) == 0x000998, "Member 'UGAB_TakerSoulSuck_C::GE_TakerMeleeStunCooldown' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, GE_TakerSwoopCooldown) == 0x0009A0, "Member 'UGAB_TakerSoulSuck_C::GE_TakerSwoopCooldown' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, HitActors) == 0x0009A8, "Member 'UGAB_TakerSoulSuck_C::HitActors' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerSoulSuck_C, TC_NPCEnemyTypeBASE) == 0x0009B8, "Member 'UGAB_TakerSoulSuck_C::TC_NPCEnemyTypeBASE' has a wrong offset!");
 
 }
 

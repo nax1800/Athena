@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Buff_PartyXPBoost.Buff_PartyXPBoost_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UBuff_PartyXPBoost_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBuff_PartyXPBoost_C>();
 	}
 };
-static_assert(alignof(UBuff_PartyXPBoost_C) == 0x000010, "Wrong alignment on UBuff_PartyXPBoost_C");
-static_assert(sizeof(UBuff_PartyXPBoost_C) == 0x000670, "Wrong size on UBuff_PartyXPBoost_C");
+static_assert(alignof(UBuff_PartyXPBoost_C) == 0x000008, "Wrong alignment on UBuff_PartyXPBoost_C");
+static_assert(sizeof(UBuff_PartyXPBoost_C) == 0x000638, "Wrong size on UBuff_PartyXPBoost_C");
 
 }
 

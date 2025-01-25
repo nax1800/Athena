@@ -37,6 +37,42 @@ void UItemReceivedFriendGiftHeader_C::ExecuteUbergraph_ItemReceivedFriendGiftHea
 }
 
 
+// Function ItemReceivedFriendGiftHeader.ItemReceivedFriendGiftHeader_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UItemReceivedFriendGiftHeader_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceivedFriendGiftHeader_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemReceivedFriendGiftHeader.ItemReceivedFriendGiftHeader_C.CustomEvent_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSuccess                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                           SanitizedMsg                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UItemReceivedFriendGiftHeader_C::CustomEvent_0(bool bSuccess, const class FString& SanitizedMsg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemReceivedFriendGiftHeader_C", "CustomEvent_0");
+
+	Params::ItemReceivedFriendGiftHeader_C_CustomEvent_0 Parms{};
+
+	Parms.bSuccess = bSuccess;
+	Parms.SanitizedMsg = std::move(SanitizedMsg);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ItemReceivedFriendGiftHeader.ItemReceivedFriendGiftHeader_C.InitFromGiftBoxItem_BP
 // (Public, BlueprintCallable, BlueprintEvent)
 

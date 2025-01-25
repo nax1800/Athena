@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SmasherMeleeFailure.GE_SmasherMeleeFailure_C
-// 0x0000 (0x0670 - 0x0670)
+// 0x0000 (0x0638 - 0x0638)
 class UGE_SmasherMeleeFailure_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_SmasherMeleeFailure_C>();
 	}
 };
-static_assert(alignof(UGE_SmasherMeleeFailure_C) == 0x000010, "Wrong alignment on UGE_SmasherMeleeFailure_C");
-static_assert(sizeof(UGE_SmasherMeleeFailure_C) == 0x000670, "Wrong size on UGE_SmasherMeleeFailure_C");
+static_assert(alignof(UGE_SmasherMeleeFailure_C) == 0x000008, "Wrong alignment on UGE_SmasherMeleeFailure_C");
+static_assert(sizeof(UGE_SmasherMeleeFailure_C) == 0x000638, "Wrong size on UGE_SmasherMeleeFailure_C");
 
 }
 

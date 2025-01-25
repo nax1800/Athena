@@ -18,31 +18,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaHeadlessReminder.AthenaHeadlessReminder_C
-// 0x00A8 (0x0468 - 0x03C0)
+// 0x00A8 (0x03A0 - 0x02F8)
 class UAthenaHeadlessReminder_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Body1;                                             // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Body2;                                             // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Body3;                                             // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      Button_Close;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             DescriptionScroll;                                 // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 GliderGirl;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 GliderPerson1;                                     // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      IconTextButton;                                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_0;                                           // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEpicCMSImage*                          Image1;                                            // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEpicCMSImage*                          Image2;                                            // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEpicCMSImage*                          Image3;                                            // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULightbox_C*                            Lightbox;                                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 MainIcon;                                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title;                                             // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title1;                                            // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title2;                                            // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Title3;                                            // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Body1;                                             // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Body2;                                             // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       body3;                                             // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      Button_Close;                                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             DescriptionScroll;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 GliderGirl;                                        // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 GliderPerson1;                                     // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      IconTextButton;                                    // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_0;                                           // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEpicCMSImage*                          Image1;                                            // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEpicCMSImage*                          Image2;                                            // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEpicCMSImage*                          Image3;                                            // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULightbox_C*                            Lightbox;                                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 MainIcon;                                          // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title;                                             // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title1;                                            // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title2;                                            // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Title3;                                            // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -60,28 +60,28 @@ public:
 	}
 };
 static_assert(alignof(UAthenaHeadlessReminder_C) == 0x000008, "Wrong alignment on UAthenaHeadlessReminder_C");
-static_assert(sizeof(UAthenaHeadlessReminder_C) == 0x000468, "Wrong size on UAthenaHeadlessReminder_C");
-static_assert(offsetof(UAthenaHeadlessReminder_C, UberGraphFrame) == 0x0003C0, "Member 'UAthenaHeadlessReminder_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Intro) == 0x0003C8, "Member 'UAthenaHeadlessReminder_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Body1) == 0x0003D0, "Member 'UAthenaHeadlessReminder_C::Body1' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Body2) == 0x0003D8, "Member 'UAthenaHeadlessReminder_C::Body2' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Body3) == 0x0003E0, "Member 'UAthenaHeadlessReminder_C::Body3' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Button_Close) == 0x0003E8, "Member 'UAthenaHeadlessReminder_C::Button_Close' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, DescriptionScroll) == 0x0003F0, "Member 'UAthenaHeadlessReminder_C::DescriptionScroll' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, GliderGirl) == 0x0003F8, "Member 'UAthenaHeadlessReminder_C::GliderGirl' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, GliderPerson1) == 0x000400, "Member 'UAthenaHeadlessReminder_C::GliderPerson1' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, IconTextButton) == 0x000408, "Member 'UAthenaHeadlessReminder_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Image_0) == 0x000410, "Member 'UAthenaHeadlessReminder_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Image1) == 0x000418, "Member 'UAthenaHeadlessReminder_C::Image1' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Image2) == 0x000420, "Member 'UAthenaHeadlessReminder_C::Image2' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Image3) == 0x000428, "Member 'UAthenaHeadlessReminder_C::Image3' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Lightbox) == 0x000430, "Member 'UAthenaHeadlessReminder_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, MainIcon) == 0x000438, "Member 'UAthenaHeadlessReminder_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, SafeZone_0) == 0x000440, "Member 'UAthenaHeadlessReminder_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Title) == 0x000448, "Member 'UAthenaHeadlessReminder_C::Title' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Title1) == 0x000450, "Member 'UAthenaHeadlessReminder_C::Title1' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Title2) == 0x000458, "Member 'UAthenaHeadlessReminder_C::Title2' has a wrong offset!");
-static_assert(offsetof(UAthenaHeadlessReminder_C, Title3) == 0x000460, "Member 'UAthenaHeadlessReminder_C::Title3' has a wrong offset!");
+static_assert(sizeof(UAthenaHeadlessReminder_C) == 0x0003A0, "Wrong size on UAthenaHeadlessReminder_C");
+static_assert(offsetof(UAthenaHeadlessReminder_C, UberGraphFrame) == 0x0002F8, "Member 'UAthenaHeadlessReminder_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Intro) == 0x000300, "Member 'UAthenaHeadlessReminder_C::Intro' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Body1) == 0x000308, "Member 'UAthenaHeadlessReminder_C::Body1' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Body2) == 0x000310, "Member 'UAthenaHeadlessReminder_C::Body2' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, body3) == 0x000318, "Member 'UAthenaHeadlessReminder_C::body3' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Button_Close) == 0x000320, "Member 'UAthenaHeadlessReminder_C::Button_Close' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, DescriptionScroll) == 0x000328, "Member 'UAthenaHeadlessReminder_C::DescriptionScroll' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, GliderGirl) == 0x000330, "Member 'UAthenaHeadlessReminder_C::GliderGirl' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, GliderPerson1) == 0x000338, "Member 'UAthenaHeadlessReminder_C::GliderPerson1' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, IconTextButton) == 0x000340, "Member 'UAthenaHeadlessReminder_C::IconTextButton' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Image_0) == 0x000348, "Member 'UAthenaHeadlessReminder_C::Image_0' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Image1) == 0x000350, "Member 'UAthenaHeadlessReminder_C::Image1' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Image2) == 0x000358, "Member 'UAthenaHeadlessReminder_C::Image2' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Image3) == 0x000360, "Member 'UAthenaHeadlessReminder_C::Image3' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Lightbox) == 0x000368, "Member 'UAthenaHeadlessReminder_C::Lightbox' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, MainIcon) == 0x000370, "Member 'UAthenaHeadlessReminder_C::MainIcon' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, SafeZone_0) == 0x000378, "Member 'UAthenaHeadlessReminder_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Title) == 0x000380, "Member 'UAthenaHeadlessReminder_C::Title' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Title1) == 0x000388, "Member 'UAthenaHeadlessReminder_C::Title1' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Title2) == 0x000390, "Member 'UAthenaHeadlessReminder_C::Title2' has a wrong offset!");
+static_assert(offsetof(UAthenaHeadlessReminder_C, Title3) == 0x000398, "Member 'UAthenaHeadlessReminder_C::Title3' has a wrong offset!");
 
 }
 

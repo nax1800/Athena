@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -50,20 +50,20 @@ struct StatNumericTextBlock_C_UpdateComparison final
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuffState                                Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuffState                                Temp_byte_Variable1234;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuffState                                Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuffState                                Temp_byte_Variable4;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable1;                              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable12;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortBuffState                                Temp_byte_Variable12345;                           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable2;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuffState                                Temp_byte_Variable5;                               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select1_Default;                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x001C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x002C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select12_Default;                           // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
 };
@@ -71,18 +71,18 @@ static_assert(alignof(StatNumericTextBlock_C_UpdateComparison) == 0x000008, "Wro
 static_assert(sizeof(StatNumericTextBlock_C_UpdateComparison) == 0x000078, "Wrong size on StatNumericTextBlock_C_UpdateComparison");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable) == 0x000000, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable1) == 0x000001, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable12) == 0x000002, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable123) == 0x000003, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable1234) == 0x000004, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable2) == 0x000002, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable3) == 0x000003, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable4) == 0x000004, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_Select_Default) == 0x000005, "Member 'StatNumericTextBlock_C_UpdateComparison::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_float_Variable) == 0x000008, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_float_Variable1) == 0x00000C, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_float_Variable1' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_float_Variable12) == 0x000010, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_float_Variable12' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable12345) == 0x000014, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable12345' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_float_Variable2) == 0x000010, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_float_Variable2' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, Temp_byte_Variable5) == 0x000014, "Member 'StatNumericTextBlock_C_UpdateComparison::Temp_byte_Variable5' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_Select1_Default) == 0x000018, "Member 'StatNumericTextBlock_C_UpdateComparison::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, CallFunc_Get_Base___Buff_Colors_Base) == 0x00001C, "Member 'StatNumericTextBlock_C_UpdateComparison::CallFunc_Get_Base___Buff_Colors_Base' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, CallFunc_Get_Base___Buff_Colors_Buff) == 0x00002C, "Member 'StatNumericTextBlock_C_UpdateComparison::CallFunc_Get_Base___Buff_Colors_Buff' has a wrong offset!");
-static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_Select12_Default) == 0x00003C, "Member 'StatNumericTextBlock_C_UpdateComparison::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_Select2_Default) == 0x00003C, "Member 'StatNumericTextBlock_C_UpdateComparison::K2Node_Select2_Default' has a wrong offset!");
 static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'StatNumericTextBlock_C_UpdateComparison::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function StatNumericTextBlock.StatNumericTextBlock_C.SetComparisonState
@@ -90,11 +90,11 @@ static_assert(offsetof(StatNumericTextBlock_C_UpdateComparison, K2Node_MakeStruc
 struct StatNumericTextBlock_C_SetComparisonState final
 {
 public:
-	EFortBuffState                                Param_Buff_State;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortBuffState                                Buff_State_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(StatNumericTextBlock_C_SetComparisonState) == 0x000001, "Wrong alignment on StatNumericTextBlock_C_SetComparisonState");
 static_assert(sizeof(StatNumericTextBlock_C_SetComparisonState) == 0x000001, "Wrong size on StatNumericTextBlock_C_SetComparisonState");
-static_assert(offsetof(StatNumericTextBlock_C_SetComparisonState, Param_Buff_State) == 0x000000, "Member 'StatNumericTextBlock_C_SetComparisonState::Param_Buff_State' has a wrong offset!");
+static_assert(offsetof(StatNumericTextBlock_C_SetComparisonState, Buff_State_0) == 0x000000, "Member 'StatNumericTextBlock_C_SetComparisonState::Buff_State_0' has a wrong offset!");
 
 }
 

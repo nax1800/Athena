@@ -51,29 +51,29 @@ void UBP_BannerEditorTile_C::ExecuteUbergraph_BP_BannerEditorTile(int32 EntryPoi
 }
 
 
-// Function BP_BannerEditorTile.BP_BannerEditorTile_C.OnHovered
+// Function BP_BannerEditorTile.BP_BannerEditorTile_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
-void UBP_BannerEditorTile_C::OnHovered()
+void UBP_BannerEditorTile_C::BP_OnHovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BannerEditorTile_C", "OnHovered");
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BannerEditorTile.BP_BannerEditorTile_C.OnSelected
+// Function BP_BannerEditorTile.BP_BannerEditorTile_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
-void UBP_BannerEditorTile_C::OnSelected()
+void UBP_BannerEditorTile_C::BP_OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BannerEditorTile_C", "OnSelected");
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,23 +113,21 @@ void UBP_BannerEditorTile_C::Construct()
 }
 
 
-// Function BP_BannerEditorTile.BP_BannerEditorTile_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BannerEditorTile.BP_BannerEditorTile_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*                  OwningList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BannerEditorTile_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UBP_BannerEditorTile_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BannerEditorTile_C", "SetData");
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "OnListItemObjectSet");
 
-	Params::BP_BannerEditorTile_C_SetData Parms{};
+	Params::BP_BannerEditorTile_C_OnListItemObjectSet Parms{};
 
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

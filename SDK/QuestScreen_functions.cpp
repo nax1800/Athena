@@ -51,6 +51,26 @@ void UQuestScreen_C::AbandonQuest__DelegateSignature(class UFortQuestItem* Quest
 }
 
 
+// Function QuestScreen.QuestScreen_C.OnCheckingPatch__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bStarted                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UQuestScreen_C::OnCheckingPatch__DelegateSignature(bool bStarted)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "OnCheckingPatch__DelegateSignature");
+
+	Params::QuestScreen_C_OnCheckingPatch__DelegateSignature Parms{};
+
+	Parms.bStarted = bStarted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
 // (HasDefaults)
 // Parameters:
@@ -68,6 +88,62 @@ void UQuestScreen_C::ExecuteUbergraph_QuestScreen(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuestScreen.QuestScreen_C.UnbindQuestUpdateEvents
+// (BlueprintCallable, BlueprintEvent)
+
+void UQuestScreen_C::UnbindQuestUpdateEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "UnbindQuestUpdateEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestScreen.QuestScreen_C.BindQuestUpdateEvents
+// (BlueprintCallable, BlueprintEvent)
+
+void UQuestScreen_C::BindQuestUpdateEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "BindQuestUpdateEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestScreen.QuestScreen_C.OnContentMissing
+// (BlueprintCallable, BlueprintEvent)
+
+void UQuestScreen_C::OnContentMissing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "OnContentMissing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestScreen.QuestScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UQuestScreen_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -110,20 +186,6 @@ void UQuestScreen_C::OnItemSelected(class UObject* Item, bool bIsSelected)
 	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function QuestScreen.QuestScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UQuestScreen_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestScreen_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -339,6 +401,72 @@ void UQuestScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_On
 }
 
 
+// Function QuestScreen.QuestScreen_C.DialogResult_C0903C7A4B03E8635AF882BD10F7171B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UQuestScreen_C::DialogResult_C0903C7A4B03E8635AF882BD10F7171B(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "DialogResult_C0903C7A4B03E8635AF882BD10F7171B");
+
+	Params::QuestScreen_C_DialogResult_C0903C7A4B03E8635AF882BD10F7171B Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuestScreen.QuestScreen_C.DialogResult_C35A8CD244DE431DD7750FA526449983
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UQuestScreen_C::DialogResult_C35A8CD244DE431DD7750FA526449983(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "DialogResult_C35A8CD244DE431DD7750FA526449983");
+
+	Params::QuestScreen_C_DialogResult_C35A8CD244DE431DD7750FA526449983 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function QuestScreen.QuestScreen_C.DialogResult_E0B996764ED97392157AE8A3D55F864D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UQuestScreen_C::DialogResult_E0B996764ED97392157AE8A3D55F864D(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "DialogResult_E0B996764ED97392157AE8A3D55F864D");
+
+	Params::QuestScreen_C_DialogResult_E0B996764ED97392157AE8A3D55F864D Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function QuestScreen.QuestScreen_C.DialogResult_CE39442C4BCACCFD8414B495A3B27A21
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -531,7 +659,7 @@ void UQuestScreen_C::ClaimReward(bool* Passthrough)
 
 
 // Function QuestScreen.QuestScreen_C.UpdateInputHandlers
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortQuestItem*                   Active_Quest                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -820,6 +948,40 @@ void UQuestScreen_C::CalculateInitialQuestToSelect()
 		Func = Class->GetFunction("QuestScreen_C", "CalculateInitialQuestToSelect");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestScreen.QuestScreen_C.ConstructStreamingInstallProgressBar
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UQuestScreen_C::ConstructStreamingInstallProgressBar()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "ConstructStreamingInstallProgressBar");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function QuestScreen.QuestScreen_C.CheckBan
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UQuestScreen_C::CheckBan()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("QuestScreen_C", "CheckBan");
+
+	Params::QuestScreen_C_CheckBan Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

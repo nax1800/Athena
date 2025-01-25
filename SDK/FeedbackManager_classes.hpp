@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FeedbackManager.FeedbackManager_C
-// 0x0008 (0x0440 - 0x0438)
+// 0x0008 (0x0450 - 0x0448)
 class AFeedbackManager_C final : public AFortFeedbackManager
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AFeedbackManager_C) == 0x000008, "Wrong alignment on AFeedbackManager_C");
-static_assert(sizeof(AFeedbackManager_C) == 0x000440, "Wrong size on AFeedbackManager_C");
-static_assert(offsetof(AFeedbackManager_C, DefaultSceneRoot) == 0x000438, "Member 'AFeedbackManager_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(AFeedbackManager_C) == 0x000450, "Wrong size on AFeedbackManager_C");
+static_assert(offsetof(AFeedbackManager_C, DefaultSceneRoot) == 0x000448, "Member 'AFeedbackManager_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

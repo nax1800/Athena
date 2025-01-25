@@ -68,9 +68,9 @@ void AAOE_Commando_KeepOutExplosion_C::ReceiveDestroyed()
 // Function AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C.Send_Info
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Param_Radius                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Radius_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAOE_Commando_KeepOutExplosion_C::Send_Info(float Param_Radius)
+void AAOE_Commando_KeepOutExplosion_C::Send_Info(float Radius_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -79,7 +79,7 @@ void AAOE_Commando_KeepOutExplosion_C::Send_Info(float Param_Radius)
 
 	Params::AOE_Commando_KeepOutExplosion_C_Send_Info Parms{};
 
-	Parms.Param_Radius = Param_Radius;
+	Parms.Radius_0 = Radius_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

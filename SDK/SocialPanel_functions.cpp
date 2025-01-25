@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function SocialPanel.SocialPanel_C.SocialPanelCloseRequested__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void USocialPanel_C::SocialPanelCloseRequested__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SocialPanel_C", "SocialPanelCloseRequested__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SocialPanel.SocialPanel_C.ExecuteUbergraph_SocialPanel
 // ()
 // Parameters:
@@ -34,20 +48,6 @@ void USocialPanel_C::ExecuteUbergraph_SocialPanel(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SocialPanel.SocialPanel_C.OnBeginIntro
-// (Event, Public, BlueprintEvent)
-
-void USocialPanel_C::OnBeginIntro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_C", "OnBeginIntro");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

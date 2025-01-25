@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RotatorSelectorReplaySettings.RotatorSelectorReplaySettings_C
-// 0x0060 (0x0278 - 0x0218)
+// 0x0060 (0x0270 - 0x0210)
 class URotatorSelectorReplaySettings_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ButtonLeft;                                        // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      ButtonRight;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       DisplayText;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextRotator_C*                         TextRotator;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         SelectedIndex;                                     // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   HoverText;                                         // 0x0248(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	UMulticastDelegateProperty_                   Selection_Changed;                                 // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ButtonLeft;                                        // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonRight;                                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       DisplayText;                                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextRotator_C*                         TextRotator;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         SelectedIndex;                                     // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   HoverText;                                         // 0x0240(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	UMulticastDelegateProperty_                   Selection_Changed;                                 // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Selection_Changed__DelegateSignature(int32 Selected_Index);
@@ -59,16 +59,16 @@ public:
 	}
 };
 static_assert(alignof(URotatorSelectorReplaySettings_C) == 0x000008, "Wrong alignment on URotatorSelectorReplaySettings_C");
-static_assert(sizeof(URotatorSelectorReplaySettings_C) == 0x000278, "Wrong size on URotatorSelectorReplaySettings_C");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, UberGraphFrame) == 0x000218, "Member 'URotatorSelectorReplaySettings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, ButtonLeft) == 0x000220, "Member 'URotatorSelectorReplaySettings_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, ButtonRight) == 0x000228, "Member 'URotatorSelectorReplaySettings_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, DisplayText) == 0x000230, "Member 'URotatorSelectorReplaySettings_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, TextRotator) == 0x000238, "Member 'URotatorSelectorReplaySettings_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, SelectedIndex) == 0x000240, "Member 'URotatorSelectorReplaySettings_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, HoverText) == 0x000248, "Member 'URotatorSelectorReplaySettings_C::HoverText' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, Selection_Changed) == 0x000260, "Member 'URotatorSelectorReplaySettings_C::Selection_Changed' has a wrong offset!");
-static_assert(offsetof(URotatorSelectorReplaySettings_C, Tab_Tooltip_Text) == 0x000270, "Member 'URotatorSelectorReplaySettings_C::Tab_Tooltip_Text' has a wrong offset!");
+static_assert(sizeof(URotatorSelectorReplaySettings_C) == 0x000270, "Wrong size on URotatorSelectorReplaySettings_C");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, UberGraphFrame) == 0x000210, "Member 'URotatorSelectorReplaySettings_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, ButtonLeft) == 0x000218, "Member 'URotatorSelectorReplaySettings_C::ButtonLeft' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, ButtonRight) == 0x000220, "Member 'URotatorSelectorReplaySettings_C::ButtonRight' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, DisplayText) == 0x000228, "Member 'URotatorSelectorReplaySettings_C::DisplayText' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, TextRotator) == 0x000230, "Member 'URotatorSelectorReplaySettings_C::TextRotator' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, SelectedIndex) == 0x000238, "Member 'URotatorSelectorReplaySettings_C::SelectedIndex' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, HoverText) == 0x000240, "Member 'URotatorSelectorReplaySettings_C::HoverText' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, Selection_Changed) == 0x000258, "Member 'URotatorSelectorReplaySettings_C::Selection_Changed' has a wrong offset!");
+static_assert(offsetof(URotatorSelectorReplaySettings_C, Tab_Tooltip_Text) == 0x000268, "Member 'URotatorSelectorReplaySettings_C::Tab_Tooltip_Text' has a wrong offset!");
 
 }
 

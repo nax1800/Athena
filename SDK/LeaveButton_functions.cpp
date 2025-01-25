@@ -34,9 +34,9 @@ void ULeaveButton_C::OnClicked__DelegateSignature()
 // Function LeaveButton.LeaveButton_C.Update Visibility__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Visibility                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Param_Visibility)
+void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -45,7 +45,7 @@ void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Param_Visibility)
 
 	Params::LeaveButton_C_Update_Visibility__DelegateSignature Parms{};
 
-	Parms.Param_Visibility = Param_Visibility;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -374,9 +374,9 @@ void ULeaveButton_C::LeaveParty()
 // Function LeaveButton.LeaveButton_C.HasUnsavedQuestProgress
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_HasUnsavedQuestProgress                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    HasUnsavedQuestProgress_0                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ULeaveButton_C::HasUnsavedQuestProgress(bool* Param_HasUnsavedQuestProgress)
+void ULeaveButton_C::HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -387,17 +387,17 @@ void ULeaveButton_C::HasUnsavedQuestProgress(bool* Param_HasUnsavedQuestProgress
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_HasUnsavedQuestProgress != nullptr)
-		*Param_HasUnsavedQuestProgress = Parms.Param_HasUnsavedQuestProgress;
+	if (HasUnsavedQuestProgress_0 != nullptr)
+		*HasUnsavedQuestProgress_0 = Parms.HasUnsavedQuestProgress_0;
 }
 
 
 // Function LeaveButton.LeaveButton_C.GetButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UIconTextButton_C*                Param_Leave                                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UIconTextButton_C*                Leave_0                                                (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULeaveButton_C::GetButton(class UIconTextButton_C** Param_Leave)
+void ULeaveButton_C::GetButton(class UIconTextButton_C** Leave_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -408,8 +408,8 @@ void ULeaveButton_C::GetButton(class UIconTextButton_C** Param_Leave)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Leave != nullptr)
-		*Param_Leave = Parms.Param_Leave;
+	if (Leave_0 != nullptr)
+		*Leave_0 = Parms.Leave_0;
 }
 
 

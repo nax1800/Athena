@@ -37,6 +37,20 @@ void UAthenaEquippedItemWidget_C::ExecuteUbergraph_AthenaEquippedItemWidget(int3
 }
 
 
+// Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UAthenaEquippedItemWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaEquippedItemWidget_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.UtilityItemTypeChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -82,11 +96,11 @@ void UAthenaEquippedItemWidget_C::UtilityItemCountChanged(int32 Remaining)
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.AmmoChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   Param_MagazineAmmoCount                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MagazineAmmoCount_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   BackupAmmoCount                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   TotalRemaining                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaEquippedItemWidget_C::AmmoChanged(int32 Param_MagazineAmmoCount, int32 BackupAmmoCount, int32 TotalRemaining)
+void UAthenaEquippedItemWidget_C::AmmoChanged(int32 MagazineAmmoCount_0, int32 BackupAmmoCount, int32 TotalRemaining)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,7 +109,7 @@ void UAthenaEquippedItemWidget_C::AmmoChanged(int32 Param_MagazineAmmoCount, int
 
 	Params::AthenaEquippedItemWidget_C_AmmoChanged Parms{};
 
-	Parms.Param_MagazineAmmoCount = Param_MagazineAmmoCount;
+	Parms.MagazineAmmoCount_0 = MagazineAmmoCount_0;
 	Parms.BackupAmmoCount = BackupAmmoCount;
 	Parms.TotalRemaining = TotalRemaining;
 
@@ -147,9 +161,9 @@ void UAthenaEquippedItemWidget_C::WeaponTypeChanged(EEquippedWeaponDisplay Mode)
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UFortResourceItemDefinition*      Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_ResourceCount                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ResourceCount_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaEquippedItemWidget_C::ResourceTypeChanged(class UFortResourceItemDefinition* Item, int32 Param_ResourceCount)
+void UAthenaEquippedItemWidget_C::ResourceTypeChanged(class UFortResourceItemDefinition* Item, int32 ResourceCount_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -159,7 +173,7 @@ void UAthenaEquippedItemWidget_C::ResourceTypeChanged(class UFortResourceItemDef
 	Params::AthenaEquippedItemWidget_C_ResourceTypeChanged Parms{};
 
 	Parms.Item = Item;
-	Parms.Param_ResourceCount = Param_ResourceCount;
+	Parms.ResourceCount_0 = ResourceCount_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -190,9 +204,9 @@ void UAthenaEquippedItemWidget_C::AmmoTypeChanged(class AFortWeaponRanged* Range
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.ResourceCountChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   Param_ResourceCount                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ResourceCount_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaEquippedItemWidget_C::ResourceCountChanged(int32 Param_ResourceCount)
+void UAthenaEquippedItemWidget_C::ResourceCountChanged(int32 ResourceCount_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -201,7 +215,7 @@ void UAthenaEquippedItemWidget_C::ResourceCountChanged(int32 Param_ResourceCount
 
 	Params::AthenaEquippedItemWidget_C_ResourceCountChanged Parms{};
 
-	Parms.Param_ResourceCount = Param_ResourceCount;
+	Parms.ResourceCount_0 = ResourceCount_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

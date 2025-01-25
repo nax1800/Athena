@@ -102,9 +102,9 @@ void AB_Constructor_BASE_C::FeelTheBaseGlow(bool Stack1, bool Stack2, bool Stack
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SaveOwner
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APlayerPawn_Constructor_C*        Param_ConstructorPawn                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APlayerPawn_Constructor_C*        ConstructorPawn_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SaveOwner(class APlayerPawn_Constructor_C* Param_ConstructorPawn)
+void AB_Constructor_BASE_C::SaveOwner(class APlayerPawn_Constructor_C* ConstructorPawn_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -113,7 +113,7 @@ void AB_Constructor_BASE_C::SaveOwner(class APlayerPawn_Constructor_C* Param_Con
 
 	Params::B_Constructor_BASE_C_SaveOwner Parms{};
 
-	Parms.Param_ConstructorPawn = Param_ConstructorPawn;
+	Parms.ConstructorPawn_0 = ConstructorPawn_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -395,9 +395,9 @@ void AB_Constructor_BASE_C::UserConstructionScript()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAbilitySystemComponent*          Ability_System_Component                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_NodesToAffect                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NodesToAffect_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* Param_NodesToAffect)
+void AB_Constructor_BASE_C::SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* NodesToAffect_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -410,8 +410,8 @@ void AB_Constructor_BASE_C::SetupBaseDefaultValues(class UAbilitySystemComponent
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_NodesToAffect != nullptr)
-		*Param_NodesToAffect = Parms.Param_NodesToAffect;
+	if (NodesToAffect_0 != nullptr)
+		*NodesToAffect_0 = Parms.NodesToAffect_0;
 }
 
 
@@ -450,10 +450,10 @@ void AB_Constructor_BASE_C::Setup_Base_Effect_Array(class UAbilitySystemComponen
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupBuildingEffects
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAbilitySystemComponent*          Param_AbilitySystemComponent                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAbilitySystemComponent*          AbilitySystemComponent_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FBASEGameplayEffect>      BuildingEffects                                        (Parm, OutParm, ZeroConstructor)
 
-void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* BuildingEffects)
+void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* BuildingEffects)
 {
 	static class UFunction* Func = nullptr;
 
@@ -462,7 +462,7 @@ void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* 
 
 	Params::B_Constructor_BASE_C_SetupBuildingEffects Parms{};
 
-	Parms.Param_AbilitySystemComponent = Param_AbilitySystemComponent;
+	Parms.AbilitySystemComponent_0 = AbilitySystemComponent_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -474,10 +474,10 @@ void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupFriendlyEffects
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAbilitySystemComponent*          Param_AbilitySystemComponent                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAbilitySystemComponent*          AbilitySystemComponent_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FBASEGameplayEffect>      FriendlyEffects                                        (Parm, OutParm, ZeroConstructor)
 
-void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* FriendlyEffects)
+void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* FriendlyEffects)
 {
 	static class UFunction* Func = nullptr;
 
@@ -486,7 +486,7 @@ void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* 
 
 	Params::B_Constructor_BASE_C_SetupFriendlyEffects Parms{};
 
-	Parms.Param_AbilitySystemComponent = Param_AbilitySystemComponent;
+	Parms.AbilitySystemComponent_0 = AbilitySystemComponent_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -498,10 +498,10 @@ void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetupHostileEffects
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAbilitySystemComponent*          Param_AbilitySystemComponent                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAbilitySystemComponent*          AbilitySystemComponent_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FBASEGameplayEffect>      HostileEffects                                         (Parm, OutParm, ZeroConstructor)
 
-void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* Param_AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* HostileEffects)
+void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* AbilitySystemComponent_0, TArray<struct FBASEGameplayEffect>* HostileEffects)
 {
 	static class UFunction* Func = nullptr;
 
@@ -510,7 +510,7 @@ void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* P
 
 	Params::B_Constructor_BASE_C_SetupHostileEffects Parms{};
 
-	Parms.Param_AbilitySystemComponent = Param_AbilitySystemComponent;
+	Parms.AbilitySystemComponent_0 = AbilitySystemComponent_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -552,9 +552,9 @@ void AB_Constructor_BASE_C::OnRep_BaseIsPlaced()
 // Parameters:
 // class UFortWorldItemDefinition*         ItemDefinition                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   AmountToSpawn                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortResourceType                       Param_ResourceType                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortResourceType                       ResourceType_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType Param_ResourceType)
+void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType ResourceType_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -565,7 +565,7 @@ void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefini
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.AmountToSpawn = AmountToSpawn;
-	Parms.Param_ResourceType = Param_ResourceType;
+	Parms.ResourceType_0 = ResourceType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -630,9 +630,9 @@ void AB_Constructor_BASE_C::SetDamageMultiplier()
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SetBaseVisualGlow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAbilitySystemComponent*          Param_AbilitySystemComponent                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAbilitySystemComponent*          AbilitySystemComponent_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* Param_AbilitySystemComponent)
+void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* AbilitySystemComponent_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -641,7 +641,7 @@ void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* Par
 
 	Params::B_Constructor_BASE_C_SetBaseVisualGlow Parms{};
 
-	Parms.Param_AbilitySystemComponent = Param_AbilitySystemComponent;
+	Parms.AbilitySystemComponent_0 = AbilitySystemComponent_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -744,9 +744,9 @@ void AB_Constructor_BASE_C::SetHealingMultiplier()
 // Parameters:
 // class UFortWorldItemDefinition*         ItemDefinition                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   AmountToSpawn                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortResourceType                       Param_ResourceType                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortResourceType                       ResourceType_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SpawnResourceWithAmount(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType Param_ResourceType)
+void AB_Constructor_BASE_C::SpawnResourceWithAmount(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, EFortResourceType ResourceType_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -757,7 +757,7 @@ void AB_Constructor_BASE_C::SpawnResourceWithAmount(class UFortWorldItemDefiniti
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.AmountToSpawn = AmountToSpawn;
-	Parms.Param_ResourceType = Param_ResourceType;
+	Parms.ResourceType_0 = ResourceType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

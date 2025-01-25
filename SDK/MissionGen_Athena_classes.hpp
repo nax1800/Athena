@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MissionGen_Athena.MissionGen_Athena_C
-// 0x0000 (0x0698 - 0x0698)
+// 0x0000 (0x06C0 - 0x06C0)
 class UMissionGen_Athena_C final : public UFortMissionGenerator
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UMissionGen_Athena_C) == 0x000008, "Wrong alignment on UMissionGen_Athena_C");
-static_assert(sizeof(UMissionGen_Athena_C) == 0x000698, "Wrong size on UMissionGen_Athena_C");
+static_assert(sizeof(UMissionGen_Athena_C) == 0x0006C0, "Wrong size on UMissionGen_Athena_C");
 
 }
 

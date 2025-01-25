@@ -134,5 +134,47 @@ void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widg
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function StatsListWidget.StatsListWidget_C.Update
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UStatsListWidget_C::Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StatsListWidget_C", "Update");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StatsListWidget.StatsListWidget_C.Trigger Update Anim
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UStatsListWidget_C::Trigger_Update_Anim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StatsListWidget_C", "Trigger Update Anim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StatsListWidget.StatsListWidget_C.Trigger Initial Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UStatsListWidget_C::Trigger_Initial_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StatsListWidget_C", "Trigger Initial Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

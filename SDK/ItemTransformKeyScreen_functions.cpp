@@ -71,15 +71,15 @@ void UItemTransformKeyScreen_C::ExecuteUbergraph_ItemTransformKeyScreen(int32 En
 }
 
 
-// Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.HACK
+// Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Hack
 // (BlueprintCallable, BlueprintEvent)
 
-void UItemTransformKeyScreen_C::HACK()
+void UItemTransformKeyScreen_C::Hack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyScreen_C", "HACK");
+		Func = Class->GetFunction("ItemTransformKeyScreen_C", "Hack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

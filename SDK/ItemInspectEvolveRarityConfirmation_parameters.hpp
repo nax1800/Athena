@@ -21,34 +21,34 @@ namespace SDK::Params
 struct ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionHovered__DelegateSignature::Item_0' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.OnEvolutionOptionUnhovered__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature::Item_0' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.OnEvolutionOptionSelected__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature) == 0x000010, "Wrong size on ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature::Item_0' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_OnEvolutionOptionSelected__DelegateSignature::RecipeIndex' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.ExecuteUbergraph_ItemInspectEvolveRarityConfirmation
@@ -83,7 +83,7 @@ static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_BndEvt__UpgradeConf
 struct ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanUpgradeRarity;                                  // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          NoEvolutions;                                      // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -106,7 +106,7 @@ public:
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent) == 0x000050, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::Item_0' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, CanUpgradeRarity) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::CanUpgradeRarity' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, NoEvolutions) == 0x000009, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::NoEvolutions' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -125,7 +125,7 @@ static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent,
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'ItemInspectEvolveRarityConfirmation_C_SetItemToRepresent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.SetEvolutionToRepresent
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent final
 {
 public:
@@ -142,13 +142,13 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00A0(0x0030)()
-	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00E0(0x0018)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00A0(0x0040)()
+	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00F0(0x0018)()
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent");
-static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent) == 0x0000F8, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent");
+static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent) == 0x000108, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, EvolutionIndex) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::EvolutionIndex' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, EvolutionItem) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::EvolutionItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, Ingredients) == 0x000010, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::Ingredients' has a wrong offset!");
@@ -160,16 +160,16 @@ static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepre
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_Greater_IntInt_ReturnValue) == 0x00009C, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000D0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x0000D8, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_GetDisplayName_ReturnValue) == 0x0000E0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000E0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x0000E8, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent, CallFunc_GetDisplayName_ReturnValue) == 0x0000F0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionToRepresent::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.HandleEvolutionOptionSelected
 // 0x0020 (0x0020 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              TempItemForLevel;                                  // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -177,13 +177,13 @@ public:
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected) == 0x000020, "Wrong size on ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected::Item_0' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected::RecipeIndex' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected, TempItemForLevel) == 0x000010, "Member 'ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected::TempItemForLevel' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected, CallFunc_Get_Temp_Item_Based_on_Current_Level_NewItem) == 0x000018, "Member 'ItemInspectEvolveRarityConfirmation_C_HandleEvolutionOptionSelected::CallFunc_Get_Temp_Item_Based_on_Current_Level_NewItem' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.SetupEvolutionOptions
-// 0x0120 (0x0120 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions final
 {
 public:
@@ -192,49 +192,49 @@ public:
 	class UItemInspectEvolutionChoiceEntry_C*     CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_Get_Temp_Item_Based_on_Current_Level_NewItem; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UFortItem* Item, int32 RecipeIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UFortItem* Item, int32 RecipeIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRecipe                                CallFunc_GetUpgradeItemRarityRecipeFromItemDefintion_ReturnValue; // 0x0060(0x0058)()
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00C0(0x0030)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAllowedConversionIndex_ReturnValue;     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00C0(0x0040)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortItem*                              CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAllowedConversionIndex_ReturnValue;     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions");
-static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions) == 0x000120, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions");
+static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions) == 0x000130, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, TemporaryEvolutionItem) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::TemporaryEvolutionItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Get_Temp_Item_Based_on_Current_Level_NewItem) == 0x000018, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Get_Temp_Item_Based_on_Current_Level_NewItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000020, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000038, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000048, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetContext_ReturnValue1) == 0x000058, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetUpgradeItemRarityRecipeFromItemDefintion_ReturnValue) == 0x000060, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetUpgradeItemRarityRecipeFromItemDefintion_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_AddChild_ReturnValue) == 0x0000B8, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Array_Length_ReturnValue) == 0x0000F0, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000F8, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Greater_IntInt_ReturnValue) == 0x000100, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_IsValid_ReturnValue) == 0x000101, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue) == 0x000108, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetContext_ReturnValue12) == 0x000110, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_IsAllowedConversionIndex_ReturnValue) == 0x000118, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_IsAllowedConversionIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Array_Length_ReturnValue) == 0x000100, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x000108, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_Greater_IntInt_ReturnValue) == 0x000110, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_IsValid_ReturnValue) == 0x000111, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue) == 0x000118, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_CreateTemporaryInstanceFromExistingItemBP_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_GetContext_ReturnValue2) == 0x000120, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions, CallFunc_IsAllowedConversionIndex_ReturnValue) == 0x000128, "Member 'ItemInspectEvolveRarityConfirmation_C_SetupEvolutionOptions::CallFunc_IsAllowedConversionIndex_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.GetNumEvolutionOptions
 // 0x0078 (0x0078 - 0x0000)
@@ -291,15 +291,15 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetEvolveRestrictionReasonText_ReturnValue; // 0x0010(0x0018)()
 	class FText                                   CallFunc_GetEvolveRestrictionReasonText_ReturnValue1; // 0x0028(0x0018)()
-	EItemEvolutionRestrictionReason               Temp_byte_Variable12;                              // 0x0040(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EItemEvolutionRestrictionReason               Temp_byte_Variable2;                               // 0x0040(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EItemEvolutionRestrictionReason>       CallFunc_CanUpgradeItemRarity_OutRestrictionReasons; // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_CanUpgradeItemRarity_ReturnValue;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetEvolveRestrictionReasonText_ReturnValue12; // 0x0060(0x0018)()
+	class FText                                   CallFunc_GetEvolveRestrictionReasonText_ReturnValue2; // 0x0060(0x0018)()
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue1;              // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue12;             // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue2;              // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions) == 0x000080, "Wrong size on ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions");
@@ -308,20 +308,20 @@ static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestric
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_GetEvolveRestrictionReasonText_ReturnValue) == 0x000010, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_GetEvolveRestrictionReasonText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_GetEvolveRestrictionReasonText_ReturnValue1) == 0x000028, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_GetEvolveRestrictionReasonText_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, Temp_byte_Variable12) == 0x000040, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, Temp_byte_Variable2) == 0x000040, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_CanUpgradeItemRarity_OutRestrictionReasons) == 0x000048, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_CanUpgradeItemRarity_OutRestrictionReasons' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_CanUpgradeItemRarity_ReturnValue) == 0x000058, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_CanUpgradeItemRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_GetEvolveRestrictionReasonText_ReturnValue12) == 0x000060, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_GetEvolveRestrictionReasonText_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_GetEvolveRestrictionReasonText_ReturnValue2) == 0x000060, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_GetEvolveRestrictionReasonText_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_Array_Contains_ReturnValue) == 0x000078, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_Array_Contains_ReturnValue1) == 0x000079, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_Array_Contains_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_Array_Contains_ReturnValue12) == 0x00007A, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_Array_Contains_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions, CallFunc_Array_Contains_ReturnValue2) == 0x00007A, "Member 'ItemInspectEvolveRarityConfirmation_C_SetEvolutionRestrictions::CallFunc_Array_Contains_ReturnValue2' has a wrong offset!");
 
 // Function ItemInspectEvolveRarityConfirmation.ItemInspectEvolveRarityConfirmation_C.Get Temp Item Based on Current Level
 // 0x0038 (0x0038 - 0x0000)
 struct ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              NewItem;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              TempItem;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -332,7 +332,7 @@ public:
 };
 static_assert(alignof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level) == 0x000008, "Wrong alignment on ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level");
 static_assert(sizeof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level) == 0x000038, "Wrong size on ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level");
-static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level, Param_Item) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level, Item_0) == 0x000000, "Member 'ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level::Item_0' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level, NewItem) == 0x000008, "Member 'ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level::NewItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level, TempItem) == 0x000010, "Member 'ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level::TempItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000018, "Member 'ItemInspectEvolveRarityConfirmation_C_Get_Temp_Item_Based_on_Current_Level::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");

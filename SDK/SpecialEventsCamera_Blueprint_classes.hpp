@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass SpecialEventsCamera_Blueprint.SpecialEventsCamera_Blueprint_C
-// 0x0010 (0x08C0 - 0x08B0)
+// 0x0010 (0x0890 - 0x0880)
 class ASpecialEventsCamera_Blueprint_C final : public AFortCameraBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0880(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_SpecialEventsCamera_Blueprint(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(ASpecialEventsCamera_Blueprint_C) == 0x000010, "Wrong alignment on ASpecialEventsCamera_Blueprint_C");
-static_assert(sizeof(ASpecialEventsCamera_Blueprint_C) == 0x0008C0, "Wrong size on ASpecialEventsCamera_Blueprint_C");
-static_assert(offsetof(ASpecialEventsCamera_Blueprint_C, UberGraphFrame) == 0x0008B0, "Member 'ASpecialEventsCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(ASpecialEventsCamera_Blueprint_C) == 0x000890, "Wrong size on ASpecialEventsCamera_Blueprint_C");
+static_assert(offsetof(ASpecialEventsCamera_Blueprint_C, UberGraphFrame) == 0x000880, "Member 'ASpecialEventsCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
 
 }
 

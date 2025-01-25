@@ -583,9 +583,9 @@ void UResults_TeleportPad_C::Team_Score_Screen_Intro()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortUIScoreReport*               InScoreReport                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortCompletionResult                   Param_CompletionResult                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortCompletionResult                   CompletionResult_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_TeleportPad_C::Initialize(class UFortUIScoreReport* InScoreReport, EFortCompletionResult Param_CompletionResult)
+void UResults_TeleportPad_C::Initialize(class UFortUIScoreReport* InScoreReport, EFortCompletionResult CompletionResult_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -595,7 +595,7 @@ void UResults_TeleportPad_C::Initialize(class UFortUIScoreReport* InScoreReport,
 	Params::Results_TeleportPad_C_Initialize Parms{};
 
 	Parms.InScoreReport = InScoreReport;
-	Parms.Param_CompletionResult = Param_CompletionResult;
+	Parms.CompletionResult_0 = CompletionResult_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,20 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_ShielderTeleportOut.GAB_ShielderTeleportOut_C
-// 0x0010 (0x0AF8 - 0x0AE8)
+// 0x0008 (0x0900 - 0x08F8)
 class UGAB_ShielderTeleportOut_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GAB_ShielderTeleportOut(int32 EntryPoint);
@@ -44,8 +43,8 @@ public:
 	}
 };
 static_assert(alignof(UGAB_ShielderTeleportOut_C) == 0x000008, "Wrong alignment on UGAB_ShielderTeleportOut_C");
-static_assert(sizeof(UGAB_ShielderTeleportOut_C) == 0x000AF8, "Wrong size on UGAB_ShielderTeleportOut_C");
-static_assert(offsetof(UGAB_ShielderTeleportOut_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_ShielderTeleportOut_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UGAB_ShielderTeleportOut_C) == 0x000900, "Wrong size on UGAB_ShielderTeleportOut_C");
+static_assert(offsetof(UGAB_ShielderTeleportOut_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_ShielderTeleportOut_C::UberGraphFrame' has a wrong offset!");
 
 }
 

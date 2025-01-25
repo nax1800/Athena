@@ -87,6 +87,26 @@ void UTabGamePadConfig_C::ExecuteUbergraph_TabGamePadConfig(int32 EntryPoint)
 }
 
 
+// Function TabGamePadConfig.TabGamePadConfig_C.HandleChangeBinding
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::HandleChangeBinding(const struct FKey& NewKey)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "HandleChangeBinding");
+
+	Params::TabGamePadConfig_C_HandleChangeBinding Parms{};
+
+	Parms.NewKey = std::move(NewKey);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function TabGamePadConfig.TabGamePadConfig_C.TrySetInputEnabled
 // (BlueprintCallable, BlueprintEvent)
 
@@ -96,20 +116,6 @@ void UTabGamePadConfig_C::TrySetInputEnabled()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TabGamePadConfig_C", "TrySetInputEnabled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabGamePadConfig.TabGamePadConfig_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UTabGamePadConfig_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,22 +169,22 @@ void UTabGamePadConfig_C::BndEvt__CustomInputTemplateConfigs_K2Node_ComponentBou
 }
 
 
-// Function TabGamePadConfig.TabGamePadConfig_C.Unclicked_Bind
+// Function TabGamePadConfig.TabGamePadConfig_C.UnbindClicked_Bind
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Number_in_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Number_In_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UOptionsMenuInputOneKey_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabGamePadConfig_C::Unclicked_Bind(int32 Number_in_List, class UOptionsMenuInputOneKey_C* Widget)
+void UTabGamePadConfig_C::UnbindClicked_Bind(int32 Number_In_List, class UOptionsMenuInputOneKey_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_C", "Unclicked_Bind");
+		Func = Class->GetFunction("TabGamePadConfig_C", "UnbindClicked_Bind");
 
-	Params::TabGamePadConfig_C_Unclicked_Bind Parms{};
+	Params::TabGamePadConfig_C_UnbindClicked_Bind Parms{};
 
-	Parms.Number_in_List = Number_in_List;
+	Parms.Number_In_List = Number_In_List;
 	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -199,33 +205,13 @@ void UTabGamePadConfig_C::HandleGamePadToggleMode()
 }
 
 
-// Function TabGamePadConfig.TabGamePadConfig_C.Configuration Changed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabGamePadConfig_C::Configuration_Changed(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_C", "Configuration Changed");
-
-	Params::TabGamePadConfig_C_Configuration_Changed Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function TabGamePadConfig.TabGamePadConfig_C.InputClicked_Bind
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Number_in_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Number_In_List                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Is_Primary_Button                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTabGamePadConfig_C::InputClicked_Bind(int32 Number_in_List, bool Is_Primary_Button)
+void UTabGamePadConfig_C::InputClicked_Bind(int32 Number_In_List, bool Is_Primary_Button)
 {
 	static class UFunction* Func = nullptr;
 
@@ -234,7 +220,7 @@ void UTabGamePadConfig_C::InputClicked_Bind(int32 Number_in_List, bool Is_Primar
 
 	Params::TabGamePadConfig_C_InputClicked_Bind Parms{};
 
-	Parms.Number_in_List = Number_in_List;
+	Parms.Number_In_List = Number_In_List;
 	Parms.Is_Primary_Button = Is_Primary_Button;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -261,20 +247,6 @@ void UTabGamePadConfig_C::BndEvt__InputCommonListView_K2Node_ComponentBoundEvent
 }
 
 
-// Function TabGamePadConfig.TabGamePadConfig_C.CenterOnTab
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UTabGamePadConfig_C::CenterOnTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_C", "CenterOnTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TabGamePadConfig.TabGamePadConfig_C.ClearAndConstructKeybindList
 // (BlueprintCallable, BlueprintEvent)
 
@@ -289,19 +261,33 @@ void UTabGamePadConfig_C::ClearAndConstructKeybindList()
 }
 
 
-// Function TabGamePadConfig.TabGamePadConfig_C.Gamepad Config Changed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TabGamePadConfig.TabGamePadConfig_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UTabGamePadConfig_C::Gamepad_Config_Changed(int32 Selected_Index)
+void UTabGamePadConfig_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_C", "Gamepad Config Changed");
+		Func = Class->GetFunction("TabGamePadConfig_C", "Construct");
 
-	Params::TabGamePadConfig_C_Gamepad_Config_Changed Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.Configuration Changed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::Configuration_Changed(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "Configuration Changed");
+
+	Params::TabGamePadConfig_C_Configuration_Changed Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -340,6 +326,62 @@ void UTabGamePadConfig_C::UpdateOptionsTab()
 		Func = Class->GetFunction("TabGamePadConfig_C", "UpdateOptionsTab");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.Gamepad Config Changed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selected_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::Gamepad_Config_Changed(int32 Selected_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "Gamepad Config Changed");
+
+	Params::TabGamePadConfig_C_Gamepad_Config_Changed Parms{};
+
+	Parms.Selected_Index = Selected_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.CenterOnTab
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UTabGamePadConfig_C::CenterOnTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "CenterOnTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.DialogResult_78BE0188450C0D75A0C9159AB760C3B8
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::DialogResult_78BE0188450C0D75A0C9159AB760C3B8(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "DialogResult_78BE0188450C0D75A0C9159AB760C3B8");
+
+	Params::TabGamePadConfig_C_DialogResult_78BE0188450C0D75A0C9159AB760C3B8 Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -386,7 +428,7 @@ void UTabGamePadConfig_C::Handle_Mode_Toggled()
 
 
 // Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void UTabGamePadConfig_C::HandleGamepadMappingInfoChange()
 {
@@ -459,6 +501,163 @@ bool UTabGamePadConfig_C::IsCustomConfig(int32 PresetIndex)
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.GamepadConfigNav
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTabGamePadConfig_C::GamepadConfigNav(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "GamepadConfigNav");
+
+	Params::TabGamePadConfig_C_GamepadConfigNav Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.IsConsole
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UTabGamePadConfig_C::IsConsole()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "IsConsole");
+
+	Params::TabGamePadConfig_C_IsConsole Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.GamepadPlatformConfigNav
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTabGamePadConfig_C::GamepadPlatformConfigNav(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "GamepadPlatformConfigNav");
+
+	Params::TabGamePadConfig_C_GamepadPlatformConfigNav Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.CustomInputTemplateConfigsNav
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTabGamePadConfig_C::CustomInputTemplateConfigsNav(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "CustomInputTemplateConfigsNav");
+
+	Params::TabGamePadConfig_C_CustomInputTemplateConfigsNav Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.InputCommonListViewNav
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UTabGamePadConfig_C::InputCommonListViewNav(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "InputCommonListViewNav");
+
+	Params::TabGamePadConfig_C_InputCommonListViewNav Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.SetupDisplayObject
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InputIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UOptionsMenuInputOneKeyDisplayOnly_C*ReturnObject                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::SetupDisplayObject(int32 InputIndex, class UOptionsMenuInputOneKeyDisplayOnly_C** ReturnObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "SetupDisplayObject");
+
+	Params::TabGamePadConfig_C_SetupDisplayObject Parms{};
+
+	Parms.InputIndex = InputIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ReturnObject != nullptr)
+		*ReturnObject = Parms.ReturnObject;
+}
+
+
+// Function TabGamePadConfig.TabGamePadConfig_C.GetCurrentPlatformIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// int32                                   Platform_Index                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTabGamePadConfig_C::GetCurrentPlatformIndex(int32* Platform_Index) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabGamePadConfig_C", "GetCurrentPlatformIndex");
+
+	Params::TabGamePadConfig_C_GetCurrentPlatformIndex Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Platform_Index != nullptr)
+		*Platform_Index = Parms.Platform_Index;
 }
 
 }

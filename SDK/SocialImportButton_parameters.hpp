@@ -36,7 +36,7 @@ public:
 	bool                                          Temp_bool_Variable1;                               // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select1_Default;                            // 0x0048(0x0018)()
-	bool                                          CallFunc_TextIsEmpty_ReturnValue12;                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue2;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton) == 0x000008, "Wrong alignment on SocialImportButton_C_ExecuteUbergraph_SocialImportButton");
 static_assert(sizeof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton) == 0x000068, "Wrong size on SocialImportButton_C_ExecuteUbergraph_SocialImportButton");
@@ -52,7 +52,7 @@ static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton,
 static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton, CallFunc_Not_PreBool_ReturnValue) == 0x000042, "Member 'SocialImportButton_C_ExecuteUbergraph_SocialImportButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton, Temp_bool_Variable1) == 0x000043, "Member 'SocialImportButton_C_ExecuteUbergraph_SocialImportButton::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton, K2Node_Select1_Default) == 0x000048, "Member 'SocialImportButton_C_ExecuteUbergraph_SocialImportButton::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton, CallFunc_TextIsEmpty_ReturnValue12) == 0x000060, "Member 'SocialImportButton_C_ExecuteUbergraph_SocialImportButton::CallFunc_TextIsEmpty_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(SocialImportButton_C_ExecuteUbergraph_SocialImportButton, CallFunc_TextIsEmpty_ReturnValue2) == 0x000060, "Member 'SocialImportButton_C_ExecuteUbergraph_SocialImportButton::CallFunc_TextIsEmpty_ReturnValue2' has a wrong offset!");
 
 // Function SocialImportButton.SocialImportButton_C.OnCaptionGenerated
 // 0x0018 (0x0018 - 0x0000)

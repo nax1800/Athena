@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Engine_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -59,7 +59,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingStairs*                        K2Node_DynamicCast_AsBuilding_Stairs;              // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest) == 0x000008, "Wrong alignment on Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest");
 static_assert(sizeof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest) == 0x000228, "Wrong size on Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest");
@@ -91,7 +91,7 @@ static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_Compon
 static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_DynamicCast_AsBuilding_Roof) == 0x000208, "Member 'Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest::K2Node_DynamicCast_AsBuilding_Roof' has a wrong offset!");
 static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_DynamicCast_bSuccess1) == 0x000210, "Member 'Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_DynamicCast_AsBuilding_Stairs) == 0x000218, "Member 'Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest::K2Node_DynamicCast_AsBuilding_Stairs' has a wrong offset!");
-static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_DynamicCast_bSuccess12) == 0x000220, "Member 'Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest, K2Node_DynamicCast_bSuccess2) == 0x000220, "Member 'Mimic_Chest_C_ExecuteUbergraph_Mimic_Chest::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function Mimic_Chest.Mimic_Chest_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_18_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -120,11 +120,11 @@ static_assert(offsetof(Mimic_Chest_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_
 struct Mimic_Chest_C_BlueprintOnInteract final
 {
 public:
-	const class AFortPawn*                        Param_InteractingPawn;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class AFortPawn*                        InteractingPawn_0;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Mimic_Chest_C_BlueprintOnInteract) == 0x000008, "Wrong alignment on Mimic_Chest_C_BlueprintOnInteract");
 static_assert(sizeof(Mimic_Chest_C_BlueprintOnInteract) == 0x000008, "Wrong size on Mimic_Chest_C_BlueprintOnInteract");
-static_assert(offsetof(Mimic_Chest_C_BlueprintOnInteract, Param_InteractingPawn) == 0x000000, "Member 'Mimic_Chest_C_BlueprintOnInteract::Param_InteractingPawn' has a wrong offset!");
+static_assert(offsetof(Mimic_Chest_C_BlueprintOnInteract, InteractingPawn_0) == 0x000000, "Member 'Mimic_Chest_C_BlueprintOnInteract::InteractingPawn_0' has a wrong offset!");
 
 // Function Mimic_Chest.Mimic_Chest_C.OnDeathPlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -156,12 +156,12 @@ static_assert(offsetof(Mimic_Chest_C_OnDeathPlayEffects, EffectContext) == 0x000
 struct Mimic_Chest_C_BlueprintCanInteract final
 {
 public:
-	const class AFortPawn*                        Param_InteractingPawn;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class AFortPawn*                        InteractingPawn_0;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Mimic_Chest_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on Mimic_Chest_C_BlueprintCanInteract");
 static_assert(sizeof(Mimic_Chest_C_BlueprintCanInteract) == 0x000010, "Wrong size on Mimic_Chest_C_BlueprintCanInteract");
-static_assert(offsetof(Mimic_Chest_C_BlueprintCanInteract, Param_InteractingPawn) == 0x000000, "Member 'Mimic_Chest_C_BlueprintCanInteract::Param_InteractingPawn' has a wrong offset!");
+static_assert(offsetof(Mimic_Chest_C_BlueprintCanInteract, InteractingPawn_0) == 0x000000, "Member 'Mimic_Chest_C_BlueprintCanInteract::InteractingPawn_0' has a wrong offset!");
 static_assert(offsetof(Mimic_Chest_C_BlueprintCanInteract, ReturnValue) == 0x000008, "Member 'Mimic_Chest_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
 
 // Function Mimic_Chest.Mimic_Chest_C.BlueprintGetInteractionString
@@ -169,13 +169,13 @@ static_assert(offsetof(Mimic_Chest_C_BlueprintCanInteract, ReturnValue) == 0x000
 struct Mimic_Chest_C_BlueprintGetInteractionString final
 {
 public:
-	const class AFortPawn*                        Param_InteractingPawn;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class AFortPawn*                        InteractingPawn_0;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   InteractionDisplayText;                            // 0x0020(0x0018)(Edit, BlueprintVisible)
 };
 static_assert(alignof(Mimic_Chest_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on Mimic_Chest_C_BlueprintGetInteractionString");
 static_assert(sizeof(Mimic_Chest_C_BlueprintGetInteractionString) == 0x000038, "Wrong size on Mimic_Chest_C_BlueprintGetInteractionString");
-static_assert(offsetof(Mimic_Chest_C_BlueprintGetInteractionString, Param_InteractingPawn) == 0x000000, "Member 'Mimic_Chest_C_BlueprintGetInteractionString::Param_InteractingPawn' has a wrong offset!");
+static_assert(offsetof(Mimic_Chest_C_BlueprintGetInteractionString, InteractingPawn_0) == 0x000000, "Member 'Mimic_Chest_C_BlueprintGetInteractionString::InteractingPawn_0' has a wrong offset!");
 static_assert(offsetof(Mimic_Chest_C_BlueprintGetInteractionString, ReturnValue) == 0x000008, "Member 'Mimic_Chest_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mimic_Chest_C_BlueprintGetInteractionString, InteractionDisplayText) == 0x000020, "Member 'Mimic_Chest_C_BlueprintGetInteractionString::InteractionDisplayText' has a wrong offset!");
 

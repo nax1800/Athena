@@ -20,9 +20,9 @@ namespace SDK
 // Function ProgressWidget.ProgressWidget_C.SetTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Title                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Title_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UProgressWidget_C::SetTitle(const class FText& Param_Title)
+void UProgressWidget_C::SetTitle(const class FText& Title_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UProgressWidget_C::SetTitle(const class FText& Param_Title)
 
 	Params::ProgressWidget_C_SetTitle Parms{};
 
-	Parms.Param_Title = std::move(Param_Title);
+	Parms.Title_0 = std::move(Title_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +40,9 @@ void UProgressWidget_C::SetTitle(const class FText& Param_Title)
 // Function ProgressWidget.ProgressWidget_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Description                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Description_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UProgressWidget_C::SetDescription(const class FText& Param_Description)
+void UProgressWidget_C::SetDescription(const class FText& Description_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void UProgressWidget_C::SetDescription(const class FText& Param_Description)
 
 	Params::ProgressWidget_C_SetDescription Parms{};
 
-	Parms.Param_Description = std::move(Param_Description);
+	Parms.Description_0 = std::move(Description_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

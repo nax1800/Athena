@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C
-// 0x00C0 (0x0BC0 - 0x0B00)
+// 0x00C0 (0x09C8 - 0x0908)
 class UGAT_GenericTriggeredAbility_C : public UGAT_TriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_GenericTriggeredAbility_C;      // 0x0B00(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayEventData                     EventData;                                         // 0x0B08(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AFortPlayerPawn*                        FortPlayerPawn;                                    // 0x0BB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsAutoCommitted;                                   // 0x0BB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsStaminaLockedOut;                                // 0x0BB9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAT_GenericTriggeredAbility_C;      // 0x0908(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayEventData                     EventData;                                         // 0x0910(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AFortPlayerPawn*                        FortPlayerPawn;                                    // 0x09B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsAutoCommitted;                                   // 0x09C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsStaminaLockedOut;                                // 0x09C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_GAT_GenericTriggeredAbility(int32 EntryPoint);
-	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& Param_EventData);
+	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0);
 
 public:
 	static class UClass* StaticClass()
@@ -44,12 +44,12 @@ public:
 	}
 };
 static_assert(alignof(UGAT_GenericTriggeredAbility_C) == 0x000008, "Wrong alignment on UGAT_GenericTriggeredAbility_C");
-static_assert(sizeof(UGAT_GenericTriggeredAbility_C) == 0x000BC0, "Wrong size on UGAT_GenericTriggeredAbility_C");
-static_assert(offsetof(UGAT_GenericTriggeredAbility_C, UberGraphFrame_GAT_GenericTriggeredAbility_C) == 0x000B00, "Member 'UGAT_GenericTriggeredAbility_C::UberGraphFrame_GAT_GenericTriggeredAbility_C' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericTriggeredAbility_C, EventData) == 0x000B08, "Member 'UGAT_GenericTriggeredAbility_C::EventData' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericTriggeredAbility_C, FortPlayerPawn) == 0x000BB0, "Member 'UGAT_GenericTriggeredAbility_C::FortPlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericTriggeredAbility_C, IsAutoCommitted) == 0x000BB8, "Member 'UGAT_GenericTriggeredAbility_C::IsAutoCommitted' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericTriggeredAbility_C, IsStaminaLockedOut) == 0x000BB9, "Member 'UGAT_GenericTriggeredAbility_C::IsStaminaLockedOut' has a wrong offset!");
+static_assert(sizeof(UGAT_GenericTriggeredAbility_C) == 0x0009C8, "Wrong size on UGAT_GenericTriggeredAbility_C");
+static_assert(offsetof(UGAT_GenericTriggeredAbility_C, UberGraphFrame_GAT_GenericTriggeredAbility_C) == 0x000908, "Member 'UGAT_GenericTriggeredAbility_C::UberGraphFrame_GAT_GenericTriggeredAbility_C' has a wrong offset!");
+static_assert(offsetof(UGAT_GenericTriggeredAbility_C, EventData) == 0x000910, "Member 'UGAT_GenericTriggeredAbility_C::EventData' has a wrong offset!");
+static_assert(offsetof(UGAT_GenericTriggeredAbility_C, FortPlayerPawn) == 0x0009B8, "Member 'UGAT_GenericTriggeredAbility_C::FortPlayerPawn' has a wrong offset!");
+static_assert(offsetof(UGAT_GenericTriggeredAbility_C, IsAutoCommitted) == 0x0009C0, "Member 'UGAT_GenericTriggeredAbility_C::IsAutoCommitted' has a wrong offset!");
+static_assert(offsetof(UGAT_GenericTriggeredAbility_C, IsStaminaLockedOut) == 0x0009C1, "Member 'UGAT_GenericTriggeredAbility_C::IsStaminaLockedOut' has a wrong offset!");
 
 }
 

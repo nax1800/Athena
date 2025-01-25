@@ -65,6 +65,20 @@ void UFriendNotification_C::ShowPartyInvites()
 }
 
 
+// Function FriendNotification.FriendNotification_C.JoinPartyInvite
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UFriendNotification_C::JoinPartyInvite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FriendNotification_C", "JoinPartyInvite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function FriendNotification.FriendNotification_C.ShowFriendInvites
 // (Public, BlueprintCallable, BlueprintEvent)
 

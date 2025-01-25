@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -56,30 +56,33 @@ static_assert(sizeof(ItemInspectUpgradeConfirmation_C_BndEvt__UpgradeConfirmButt
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemInspectUpgradeConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.Refresh
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct ItemInspectUpgradeConfirmation_C_Refresh final
 {
 public:
 	class UFortPersistentResourceItemDefinition*  CallFunc_GetUpgradeResourceItemDefinition_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetUpgradeCost_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetUpgradeCost_ReturnValue;               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ItemInspectUpgradeConfirmation_C_Refresh) == 0x000008, "Wrong alignment on ItemInspectUpgradeConfirmation_C_Refresh");
-static_assert(sizeof(ItemInspectUpgradeConfirmation_C_Refresh) == 0x000010, "Wrong size on ItemInspectUpgradeConfirmation_C_Refresh");
+static_assert(sizeof(ItemInspectUpgradeConfirmation_C_Refresh) == 0x000018, "Wrong size on ItemInspectUpgradeConfirmation_C_Refresh");
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_GetUpgradeResourceItemDefinition_ReturnValue) == 0x000000, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_GetUpgradeResourceItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_GetUpgradeCost_ReturnValue) == 0x000008, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_GetUpgradeCost_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_IsVisible_ReturnValue) == 0x00000C, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_GetUpgradeCost_ReturnValue) == 0x00000C, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_GetUpgradeCost_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeConfirmation_C_Refresh, CallFunc_IsVisible_ReturnValue) == 0x000010, "Member 'ItemInspectUpgradeConfirmation_C_Refresh::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.SetItemToRepresent
 // 0x0008 (0x0008 - 0x0000)
 struct ItemInspectUpgradeConfirmation_C_SetItemToRepresent final
 {
 public:
-	class UFortItem*                              Param_Item;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ItemInspectUpgradeConfirmation_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectUpgradeConfirmation_C_SetItemToRepresent");
 static_assert(sizeof(ItemInspectUpgradeConfirmation_C_SetItemToRepresent) == 0x000008, "Wrong size on ItemInspectUpgradeConfirmation_C_SetItemToRepresent");
-static_assert(offsetof(ItemInspectUpgradeConfirmation_C_SetItemToRepresent, Param_Item) == 0x000000, "Member 'ItemInspectUpgradeConfirmation_C_SetItemToRepresent::Param_Item' has a wrong offset!");
+static_assert(offsetof(ItemInspectUpgradeConfirmation_C_SetItemToRepresent, Item_0) == 0x000000, "Member 'ItemInspectUpgradeConfirmation_C_SetItemToRepresent::Item_0' has a wrong offset!");
 
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnShow
 // 0x0008 (0x0008 - 0x0000)

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -23,7 +23,7 @@ namespace SDK::Params
 struct BP_LiveStreamerDescription_C_Set_Quest final
 {
 public:
-	class UFortQuestItem*                         Param_Quest;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortQuestItem*                         Quest_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,7 +47,7 @@ public:
 };
 static_assert(alignof(BP_LiveStreamerDescription_C_Set_Quest) == 0x000008, "Wrong alignment on BP_LiveStreamerDescription_C_Set_Quest");
 static_assert(sizeof(BP_LiveStreamerDescription_C_Set_Quest) == 0x000140, "Wrong size on BP_LiveStreamerDescription_C_Set_Quest");
-static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, Param_Quest) == 0x000000, "Member 'BP_LiveStreamerDescription_C_Set_Quest::Param_Quest' has a wrong offset!");
+static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, Quest_0) == 0x000000, "Member 'BP_LiveStreamerDescription_C_Set_Quest::Quest_0' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, Temp_bool_Variable) == 0x000008, "Member 'BP_LiveStreamerDescription_C_Set_Quest::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'BP_LiveStreamerDescription_C_Set_Quest::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, CallFunc_GetQuestType_ReturnValue) == 0x000018, "Member 'BP_LiveStreamerDescription_C_Set_Quest::CallFunc_GetQuestType_ReturnValue' has a wrong offset!");
@@ -75,7 +75,7 @@ public:
 	EFortQuestType                                CallFunc_GetQuestType_ReturnValue;                 // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -89,7 +89,7 @@ static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, Temp_byte
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_GetQuestType_ReturnValue) == 0x000009, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_GetQuestType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x00000B, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x00000C, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00000C, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, Temp_byte_Variable1) == 0x00000D, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_BooleanOR_ReturnValue) == 0x00000E, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, CallFunc_BooleanOR_ReturnValue1) == 0x00000F, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");

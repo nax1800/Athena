@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SignInAlternateWidget.SignInAlternateWidget_C
-// 0x0040 (0x04A0 - 0x0460)
+// 0x0040 (0x03A8 - 0x0368)
 class USignInAlternateWidget_C final : public UFortSignInWidget
 {
 public:
-	class UNamedSlot*                             ButtonSlot;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       CommonLazyImage_0;                                 // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           ContentBox;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEmergencyNoticeWidget_C*               EmergencyNoticeWidget;                             // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_132;                                         // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_133;                                         // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    LoginInputAction;                                  // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UNamedSlot*                             ButtonSlot;                                        // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       CommonLazyImage_0;                                 // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           ContentBox;                                        // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEmergencyNoticeWidget_C*               EmergencyNoticeWidget;                             // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_132;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_133;                                         // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    LoginInputAction;                                  // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
@@ -41,14 +41,14 @@ public:
 	}
 };
 static_assert(alignof(USignInAlternateWidget_C) == 0x000008, "Wrong alignment on USignInAlternateWidget_C");
-static_assert(sizeof(USignInAlternateWidget_C) == 0x0004A0, "Wrong size on USignInAlternateWidget_C");
-static_assert(offsetof(USignInAlternateWidget_C, ButtonSlot) == 0x000460, "Member 'USignInAlternateWidget_C::ButtonSlot' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, CommonLazyImage_0) == 0x000468, "Member 'USignInAlternateWidget_C::CommonLazyImage_0' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, ContentBox) == 0x000470, "Member 'USignInAlternateWidget_C::ContentBox' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, EmergencyNoticeWidget) == 0x000478, "Member 'USignInAlternateWidget_C::EmergencyNoticeWidget' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, Image_132) == 0x000480, "Member 'USignInAlternateWidget_C::Image_132' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, Image_133) == 0x000488, "Member 'USignInAlternateWidget_C::Image_133' has a wrong offset!");
-static_assert(offsetof(USignInAlternateWidget_C, LoginInputAction) == 0x000490, "Member 'USignInAlternateWidget_C::LoginInputAction' has a wrong offset!");
+static_assert(sizeof(USignInAlternateWidget_C) == 0x0003A8, "Wrong size on USignInAlternateWidget_C");
+static_assert(offsetof(USignInAlternateWidget_C, ButtonSlot) == 0x000368, "Member 'USignInAlternateWidget_C::ButtonSlot' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, CommonLazyImage_0) == 0x000370, "Member 'USignInAlternateWidget_C::CommonLazyImage_0' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, ContentBox) == 0x000378, "Member 'USignInAlternateWidget_C::ContentBox' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, EmergencyNoticeWidget) == 0x000380, "Member 'USignInAlternateWidget_C::EmergencyNoticeWidget' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, Image_132) == 0x000388, "Member 'USignInAlternateWidget_C::Image_132' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, Image_133) == 0x000390, "Member 'USignInAlternateWidget_C::Image_133' has a wrong offset!");
+static_assert(offsetof(USignInAlternateWidget_C, LoginInputAction) == 0x000398, "Member 'USignInAlternateWidget_C::LoginInputAction' has a wrong offset!");
 
 }
 

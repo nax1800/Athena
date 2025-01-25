@@ -18,15 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayerLevel.AthenaPlayerLevel_C
-// 0x0098 (0x02B0 - 0x0218)
+// 0x00A0 (0x02B0 - 0x0210)
 class UAthenaPlayerLevel_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AnimateXpAndLevel;                                 // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimateXp;                                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       Divider;                                           // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             ExtraContentArea;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       AnimateXpAndLevel;                                 // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimateXp;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       Divider;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ExtraContentArea;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ExtraContentArea2;                                 // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             LevelRewardArea;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       LevelText;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerRankEmblem_C*                    PlayerBanner;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,7 +54,7 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Destruct();
 	void EventTrack_Leveled();
-	void Play_XP_Reward_Directly(int32 Param_XpToAdd);
+	void Play_XP_Reward_Directly(int32 XpToAdd_0);
 	void BndEvt__AnimateXpAndLevel_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__AnimateXp_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -61,7 +62,7 @@ public:
 	void InitializeFromAccount(struct FFortPublicAccountInfo& FortPublicAccountInfo);
 	void InitializeFromLevelInfo(const struct FAthenaLevelInfo& LevelInfo);
 	void IsReadyForNextXpReward(bool* Ready);
-	void UpdateXp(int32 LevelXp, int32 Param_LevelXpForLevel, int32 Level, int32 Param_MaxLevel);
+	void UpdateXp(int32 LevelXp, int32 LevelXpForLevel_0, int32 Level, int32 MaxLevel_0);
 	void UpdateLevel(int32 Value);
 
 public:
@@ -76,11 +77,12 @@ public:
 };
 static_assert(alignof(UAthenaPlayerLevel_C) == 0x000008, "Wrong alignment on UAthenaPlayerLevel_C");
 static_assert(sizeof(UAthenaPlayerLevel_C) == 0x0002B0, "Wrong size on UAthenaPlayerLevel_C");
-static_assert(offsetof(UAthenaPlayerLevel_C, UberGraphFrame) == 0x000218, "Member 'UAthenaPlayerLevel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevel_C, AnimateXpAndLevel) == 0x000220, "Member 'UAthenaPlayerLevel_C::AnimateXpAndLevel' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevel_C, AnimateXp) == 0x000228, "Member 'UAthenaPlayerLevel_C::AnimateXp' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevel_C, Divider) == 0x000230, "Member 'UAthenaPlayerLevel_C::Divider' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevel_C, ExtraContentArea) == 0x000238, "Member 'UAthenaPlayerLevel_C::ExtraContentArea' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, UberGraphFrame) == 0x000210, "Member 'UAthenaPlayerLevel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, AnimateXpAndLevel) == 0x000218, "Member 'UAthenaPlayerLevel_C::AnimateXpAndLevel' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, AnimateXp) == 0x000220, "Member 'UAthenaPlayerLevel_C::AnimateXp' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, Divider) == 0x000228, "Member 'UAthenaPlayerLevel_C::Divider' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, ExtraContentArea) == 0x000230, "Member 'UAthenaPlayerLevel_C::ExtraContentArea' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerLevel_C, ExtraContentArea2) == 0x000238, "Member 'UAthenaPlayerLevel_C::ExtraContentArea2' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerLevel_C, LevelRewardArea) == 0x000240, "Member 'UAthenaPlayerLevel_C::LevelRewardArea' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerLevel_C, LevelText) == 0x000248, "Member 'UAthenaPlayerLevel_C::LevelText' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerLevel_C, PlayerBanner) == 0x000250, "Member 'UAthenaPlayerLevel_C::PlayerBanner' has a wrong offset!");

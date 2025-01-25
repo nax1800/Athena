@@ -19,22 +19,26 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayerActionAlert.AthenaPlayerActionAlert_C
-// 0x0038 (0x0298 - 0x0260)
+// 0x0058 (0x02B0 - 0x0258)
 class UAthenaPlayerActionAlert_C final : public UAthenaHUDPlayerActionAlertBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       CrawlDown;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FlashRun;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowAlert;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MessageSwitcher;                                   // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       PlayerDownText;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       PlayerEliminatedText;                              // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       CrawlDown_NEW;                                     // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Elimination_NEW;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Elimination;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowAlert_NEW;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       CrawlDown;                                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FlashRun;                                          // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowAlert;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MessageSwitcher;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       PlayerDownText;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       PlayerEliminatedText;                              // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaPlayerActionAlert(int32 EntryPoint);
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 	void AlertPlayer(EAthenaPlayerActionAlert Alert, const class FText& DetailText);
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 
 public:
 	static class UClass* StaticClass()
@@ -47,14 +51,18 @@ public:
 	}
 };
 static_assert(alignof(UAthenaPlayerActionAlert_C) == 0x000008, "Wrong alignment on UAthenaPlayerActionAlert_C");
-static_assert(sizeof(UAthenaPlayerActionAlert_C) == 0x000298, "Wrong size on UAthenaPlayerActionAlert_C");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, UberGraphFrame) == 0x000260, "Member 'UAthenaPlayerActionAlert_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, CrawlDown) == 0x000268, "Member 'UAthenaPlayerActionAlert_C::CrawlDown' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, FlashRun) == 0x000270, "Member 'UAthenaPlayerActionAlert_C::FlashRun' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, ShowAlert) == 0x000278, "Member 'UAthenaPlayerActionAlert_C::ShowAlert' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, MessageSwitcher) == 0x000280, "Member 'UAthenaPlayerActionAlert_C::MessageSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerDownText) == 0x000288, "Member 'UAthenaPlayerActionAlert_C::PlayerDownText' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerEliminatedText) == 0x000290, "Member 'UAthenaPlayerActionAlert_C::PlayerEliminatedText' has a wrong offset!");
+static_assert(sizeof(UAthenaPlayerActionAlert_C) == 0x0002B0, "Wrong size on UAthenaPlayerActionAlert_C");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, UberGraphFrame) == 0x000258, "Member 'UAthenaPlayerActionAlert_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, CrawlDown_NEW) == 0x000260, "Member 'UAthenaPlayerActionAlert_C::CrawlDown_NEW' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, Elimination_NEW) == 0x000268, "Member 'UAthenaPlayerActionAlert_C::Elimination_NEW' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, Elimination) == 0x000270, "Member 'UAthenaPlayerActionAlert_C::Elimination' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, ShowAlert_NEW) == 0x000278, "Member 'UAthenaPlayerActionAlert_C::ShowAlert_NEW' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, CrawlDown) == 0x000280, "Member 'UAthenaPlayerActionAlert_C::CrawlDown' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, FlashRun) == 0x000288, "Member 'UAthenaPlayerActionAlert_C::FlashRun' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, ShowAlert) == 0x000290, "Member 'UAthenaPlayerActionAlert_C::ShowAlert' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, MessageSwitcher) == 0x000298, "Member 'UAthenaPlayerActionAlert_C::MessageSwitcher' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerDownText) == 0x0002A0, "Member 'UAthenaPlayerActionAlert_C::PlayerDownText' has a wrong offset!");
+static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerEliminatedText) == 0x0002A8, "Member 'UAthenaPlayerActionAlert_C::PlayerEliminatedText' has a wrong offset!");
 
 }
 

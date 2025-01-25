@@ -116,5 +116,25 @@ void USimpleMaterialProgressBar_C::SetColorB(const struct FLinearColor& Value)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.SetColorBackground
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLinearColor                     Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USimpleMaterialProgressBar_C::SetColorBackground(const struct FLinearColor& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorBackground");
+
+	Params::SimpleMaterialProgressBar_C_SetColorBackground Parms{};
+
+	Parms.Value = std::move(Value);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

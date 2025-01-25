@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_classes.hpp"
 
 
@@ -17,9 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNS_GM_OnPreviewEmoji.GCNS_GM_OnPreviewEmoji_C
-// 0x0000 (0x00B0 - 0x00B0)
+// 0x0018 (0x0098 - 0x0080)
 class UGCNS_GM_OnPreviewEmoji_C final : public UFortGameplayCueNotify_Simple
 {
+public:
+	struct FVector                                InitialVelocity;                                   // 0x0080(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Offset;                                            // 0x008C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
 public:
 	void OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const;
 
@@ -33,8 +38,10 @@ public:
 		return GetDefaultObjImpl<UGCNS_GM_OnPreviewEmoji_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnPreviewEmoji_C) == 0x000010, "Wrong alignment on UGCNS_GM_OnPreviewEmoji_C");
-static_assert(sizeof(UGCNS_GM_OnPreviewEmoji_C) == 0x0000B0, "Wrong size on UGCNS_GM_OnPreviewEmoji_C");
+static_assert(alignof(UGCNS_GM_OnPreviewEmoji_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnPreviewEmoji_C");
+static_assert(sizeof(UGCNS_GM_OnPreviewEmoji_C) == 0x000098, "Wrong size on UGCNS_GM_OnPreviewEmoji_C");
+static_assert(offsetof(UGCNS_GM_OnPreviewEmoji_C, InitialVelocity) == 0x000080, "Member 'UGCNS_GM_OnPreviewEmoji_C::InitialVelocity' has a wrong offset!");
+static_assert(offsetof(UGCNS_GM_OnPreviewEmoji_C, Offset) == 0x00008C, "Member 'UGCNS_GM_OnPreviewEmoji_C::Offset' has a wrong offset!");
 
 }
 

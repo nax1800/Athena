@@ -344,9 +344,9 @@ void URewards_ItemCard_C::HandlePopInAnimationFinished()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetItemToRepresent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortItem*                        Param_ItemToRepresent                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        ItemToRepresent_0                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** Param_ItemToRepresent)
+void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** ItemToRepresent_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -357,8 +357,8 @@ void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** Param_ItemToRepre
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_ItemToRepresent != nullptr)
-		*Param_ItemToRepresent = Parms.Param_ItemToRepresent;
+	if (ItemToRepresent_0 != nullptr)
+		*ItemToRepresent_0 = Parms.ItemToRepresent_0;
 }
 
 
@@ -666,6 +666,26 @@ void URewards_ItemCard_C::SetQuantityOverride(int32 QuantityOverride)
 	Params::Rewards_ItemCard_C_SetQuantityOverride Parms{};
 
 	Parms.QuantityOverride = QuantityOverride;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Rewards_ItemCard.Rewards_ItemCard_C.SetItemLimitReachedNotification
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldShow                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URewards_ItemCard_C::SetItemLimitReachedNotification(bool ShouldShow)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Rewards_ItemCard_C", "SetItemLimitReachedNotification");
+
+	Params::Rewards_ItemCard_C_SetItemLimitReachedNotification Parms{};
+
+	Parms.ShouldShow = ShouldShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

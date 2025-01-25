@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WebLogin.WebLogin_C
-// 0x0028 (0x03F8 - 0x03D0)
+// 0x0028 (0x0328 - 0x0300)
 class UWebLogin_C final : public UFortWebLoginWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(Transient, DuplicateTransient)
-	class UCircularThrobber*                      Throbber;                                          // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                WebContent;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackAction;                                        // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
+	class UCircularThrobber*                      Throbber;                                          // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                WebContent;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    BackAction;                                        // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void DismissWidget();
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(UWebLogin_C) == 0x000008, "Wrong alignment on UWebLogin_C");
-static_assert(sizeof(UWebLogin_C) == 0x0003F8, "Wrong size on UWebLogin_C");
-static_assert(offsetof(UWebLogin_C, UberGraphFrame) == 0x0003D0, "Member 'UWebLogin_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, Throbber) == 0x0003D8, "Member 'UWebLogin_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, WebContent) == 0x0003E0, "Member 'UWebLogin_C::WebContent' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, BackAction) == 0x0003E8, "Member 'UWebLogin_C::BackAction' has a wrong offset!");
+static_assert(sizeof(UWebLogin_C) == 0x000328, "Wrong size on UWebLogin_C");
+static_assert(offsetof(UWebLogin_C, UberGraphFrame) == 0x000300, "Member 'UWebLogin_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWebLogin_C, Throbber) == 0x000308, "Member 'UWebLogin_C::Throbber' has a wrong offset!");
+static_assert(offsetof(UWebLogin_C, WebContent) == 0x000310, "Member 'UWebLogin_C::WebContent' has a wrong offset!");
+static_assert(offsetof(UWebLogin_C, BackAction) == 0x000318, "Member 'UWebLogin_C::BackAction' has a wrong offset!");
 
 }
 

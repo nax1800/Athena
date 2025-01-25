@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C
-// 0x0020 (0x0238 - 0x0218)
+// 0x0020 (0x0230 - 0x0210)
 class ULeaderboardHeaderRowWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      Rank;                                              // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      StatName;                                          // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      User;                                              // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      Rank;                                              // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      StatName;                                          // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      User;                                              // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -43,11 +43,11 @@ public:
 	}
 };
 static_assert(alignof(ULeaderboardHeaderRowWidget_C) == 0x000008, "Wrong alignment on ULeaderboardHeaderRowWidget_C");
-static_assert(sizeof(ULeaderboardHeaderRowWidget_C) == 0x000238, "Wrong size on ULeaderboardHeaderRowWidget_C");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, UberGraphFrame) == 0x000218, "Member 'ULeaderboardHeaderRowWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, Rank) == 0x000220, "Member 'ULeaderboardHeaderRowWidget_C::Rank' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, StatName) == 0x000228, "Member 'ULeaderboardHeaderRowWidget_C::StatName' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, User) == 0x000230, "Member 'ULeaderboardHeaderRowWidget_C::User' has a wrong offset!");
+static_assert(sizeof(ULeaderboardHeaderRowWidget_C) == 0x000230, "Wrong size on ULeaderboardHeaderRowWidget_C");
+static_assert(offsetof(ULeaderboardHeaderRowWidget_C, UberGraphFrame) == 0x000210, "Member 'ULeaderboardHeaderRowWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULeaderboardHeaderRowWidget_C, Rank) == 0x000218, "Member 'ULeaderboardHeaderRowWidget_C::Rank' has a wrong offset!");
+static_assert(offsetof(ULeaderboardHeaderRowWidget_C, StatName) == 0x000220, "Member 'ULeaderboardHeaderRowWidget_C::StatName' has a wrong offset!");
+static_assert(offsetof(ULeaderboardHeaderRowWidget_C, User) == 0x000228, "Member 'ULeaderboardHeaderRowWidget_C::User' has a wrong offset!");
 
 }
 

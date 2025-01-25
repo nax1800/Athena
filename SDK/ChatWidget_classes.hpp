@@ -10,47 +10,47 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChatWidget.ChatWidget_C
-// 0x0078 (0x0468 - 0x03F0)
+// 0x0078 (0x03A0 - 0x0328)
 class UChatWidget_C final : public UFortActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ConsoleChatShortcut;                               // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        CursorModeSwitcher;                                // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortChatWidget*                        FortChat;                                          // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HudContentHBox;                                    // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UKeybindWidget_C*                       KeybindWidget;                                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CloseUserListAction;                               // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    OpenUserListAction;                                // 0x0430(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CurrentUserListAction;                             // 0x0440(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          bEnteringChat;                                     // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   AboutToEnterChat;                                  // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ConsoleChatShortcut;                               // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        CursorModeSwitcher;                                // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortChatWidget*                        FortChat;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HudContentHBox;                                    // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UKeybindWidget_C*                       KeybindWidget;                                     // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CloseUserListAction;                               // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    OpenUserListAction;                                // 0x0368(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CurrentUserListAction;                             // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          bEnteringChat;                                     // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnEnteredChat;                                     // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AboutToEnterChat__DelegateSignature();
+	void OnEnteredChat__DelegateSignature(bool EnteredChat);
 	void ExecuteUbergraph_ChatWidget(int32 EntryPoint);
 	void Destruct();
 	void HandleInputMethodChanged(bool bUsingGamepad);
 	void Construct();
 	void BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature(bool bOpen);
-	void BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool Param_bEnteringChat);
+	void BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool bEnteringChat_0);
 	void BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void Set_Chat_Visibility(ESlateVisibility New_Visibility);
 	void Set_Chat_Shortcut_Visibility(ESlateVisibility New_Visibility);
 	void UpdateChatUserListIcon(bool Open);
-	void HandeChatEnteredEvent(bool Param_bEnteringChat);
+	void HandeChatEnteredEvent(bool bEnteringChat_0);
 	void HandleShowChatWindow(EFortUIFeature Feature, EFortUIFeatureState FeatureState, EFortUIFeatureStateReason FeatureStateReason);
 	void HandleCursorModeChanged(bool bEnabled, class FName ActionName, class UUserWidget* Widget);
 	void BindDelegates();
@@ -67,18 +67,18 @@ public:
 	}
 };
 static_assert(alignof(UChatWidget_C) == 0x000008, "Wrong alignment on UChatWidget_C");
-static_assert(sizeof(UChatWidget_C) == 0x000468, "Wrong size on UChatWidget_C");
-static_assert(offsetof(UChatWidget_C, UberGraphFrame) == 0x0003F0, "Member 'UChatWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, ConsoleChatShortcut) == 0x0003F8, "Member 'UChatWidget_C::ConsoleChatShortcut' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CursorModeSwitcher) == 0x000400, "Member 'UChatWidget_C::CursorModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, FortChat) == 0x000408, "Member 'UChatWidget_C::FortChat' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, HudContentHBox) == 0x000410, "Member 'UChatWidget_C::HudContentHBox' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, KeybindWidget) == 0x000418, "Member 'UChatWidget_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CloseUserListAction) == 0x000420, "Member 'UChatWidget_C::CloseUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, OpenUserListAction) == 0x000430, "Member 'UChatWidget_C::OpenUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CurrentUserListAction) == 0x000440, "Member 'UChatWidget_C::CurrentUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, bEnteringChat) == 0x000450, "Member 'UChatWidget_C::bEnteringChat' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, AboutToEnterChat) == 0x000458, "Member 'UChatWidget_C::AboutToEnterChat' has a wrong offset!");
+static_assert(sizeof(UChatWidget_C) == 0x0003A0, "Wrong size on UChatWidget_C");
+static_assert(offsetof(UChatWidget_C, UberGraphFrame) == 0x000328, "Member 'UChatWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, ConsoleChatShortcut) == 0x000330, "Member 'UChatWidget_C::ConsoleChatShortcut' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, CursorModeSwitcher) == 0x000338, "Member 'UChatWidget_C::CursorModeSwitcher' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, FortChat) == 0x000340, "Member 'UChatWidget_C::FortChat' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, HudContentHBox) == 0x000348, "Member 'UChatWidget_C::HudContentHBox' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, KeybindWidget) == 0x000350, "Member 'UChatWidget_C::KeybindWidget' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, CloseUserListAction) == 0x000358, "Member 'UChatWidget_C::CloseUserListAction' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, OpenUserListAction) == 0x000368, "Member 'UChatWidget_C::OpenUserListAction' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, CurrentUserListAction) == 0x000378, "Member 'UChatWidget_C::CurrentUserListAction' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, bEnteringChat) == 0x000388, "Member 'UChatWidget_C::bEnteringChat' has a wrong offset!");
+static_assert(offsetof(UChatWidget_C, OnEnteredChat) == 0x000390, "Member 'UChatWidget_C::OnEnteredChat' has a wrong offset!");
 
 }
 

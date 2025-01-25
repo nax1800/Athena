@@ -65,6 +65,40 @@ void ULightbox_C::ExecuteUbergraph_Lightbox(int32 EntryPoint)
 }
 
 
+// Function Lightbox.Lightbox_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ULightbox_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lightbox_C", "PreConstruct");
+
+	Params::Lightbox_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Lightbox.Lightbox_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ULightbox_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lightbox_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Lightbox.Lightbox_C.BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
 
@@ -138,9 +172,9 @@ void ULightbox_C::Outro()
 // Function Lightbox.Lightbox_C.AddContent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonUserWidget*                Param_Content                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUserWidget*                Content_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULightbox_C::AddContent(class UCommonUserWidget* Param_Content)
+void ULightbox_C::AddContent(class UCommonUserWidget* Content_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -149,7 +183,7 @@ void ULightbox_C::AddContent(class UCommonUserWidget* Param_Content)
 
 	Params::Lightbox_C_AddContent Parms{};
 
-	Parms.Param_Content = Param_Content;
+	Parms.Content_0 = Content_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

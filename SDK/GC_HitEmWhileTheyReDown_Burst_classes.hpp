@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_HitEmWhileTheyReDown_Burst.GC_HitEmWhileTheyReDown_Burst_C
-// 0x0000 (0x00B0 - 0x00B0)
+// 0x0000 (0x0080 - 0x0080)
 class UGC_HitEmWhileTheyReDown_Burst_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGC_HitEmWhileTheyReDown_Burst_C>();
 	}
 };
-static_assert(alignof(UGC_HitEmWhileTheyReDown_Burst_C) == 0x000010, "Wrong alignment on UGC_HitEmWhileTheyReDown_Burst_C");
-static_assert(sizeof(UGC_HitEmWhileTheyReDown_Burst_C) == 0x0000B0, "Wrong size on UGC_HitEmWhileTheyReDown_Burst_C");
+static_assert(alignof(UGC_HitEmWhileTheyReDown_Burst_C) == 0x000008, "Wrong alignment on UGC_HitEmWhileTheyReDown_Burst_C");
+static_assert(sizeof(UGC_HitEmWhileTheyReDown_Burst_C) == 0x000080, "Wrong size on UGC_HitEmWhileTheyReDown_Burst_C");
 
 }
 

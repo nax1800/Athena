@@ -155,38 +155,6 @@ void ASmasherPawn_C::GameplayCue_NPC_Smasher_Charge(EGameplayCueEvent EventType,
 }
 
 
-// Function SmasherPawn.SmasherPawn_C.OnDamagePlayEffects
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AFortPawn*                        InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ASmasherPawn_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SmasherPawn_C", "OnDamagePlayEffects");
-
-	Params::SmasherPawn_C_OnDamagePlayEffects Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageTags = std::move(DamageTags);
-	Parms.Momentum = std::move(Momentum);
-	Parms.HitInfo = std::move(HitInfo);
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-	Parms.EffectContext = std::move(EffectContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SmasherPawn.SmasherPawn_C.GameplayCue.Impact.Physical.Creature
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -365,80 +333,6 @@ void ASmasherPawn_C::CalculateBumpMomentum(float Velocity, float YawAngle, class
 }
 
 
-// Function SmasherPawn.SmasherPawn_C.OnFinishedEncounterSpawn
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void ASmasherPawn_C::OnFinishedEncounterSpawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SmasherPawn_C", "OnFinishedEncounterSpawn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SmasherPawn.SmasherPawn_C.OnStartedEncounterSpawn
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void ASmasherPawn_C::OnStartedEncounterSpawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SmasherPawn_C", "OnStartedEncounterSpawn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SmasherPawn.SmasherPawn_C.OnDeathPlayEffects
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AFortPawn*                        InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ASmasherPawn_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SmasherPawn_C", "OnDeathPlayEffects");
-
-	Params::SmasherPawn_C_OnDeathPlayEffects Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageTags = std::move(DamageTags);
-	Parms.Momentum = std::move(Momentum);
-	Parms.HitInfo = std::move(HitInfo);
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-	Parms.EffectContext = std::move(EffectContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SmasherPawn.SmasherPawn_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASmasherPawn_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SmasherPawn_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SmasherPawn.SmasherPawn_C.PaceHitSoundsAndVocalizations
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -535,6 +429,112 @@ void ASmasherPawn_C::GetCollisionPredictionComponent(class UShapeComponent** Col
 
 	if (Collision_Prediction_Shape_Component != nullptr)
 		*Collision_Prediction_Shape_Component = Parms.Collision_Prediction_Shape_Component;
+}
+
+
+// Function SmasherPawn.SmasherPawn_C.OnFinishedEncounterSpawn
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ASmasherPawn_C::OnFinishedEncounterSpawn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SmasherPawn_C", "OnFinishedEncounterSpawn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SmasherPawn.SmasherPawn_C.OnStartedEncounterSpawn
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void ASmasherPawn_C::OnStartedEncounterSpawn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SmasherPawn_C", "OnStartedEncounterSpawn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SmasherPawn.SmasherPawn_C.OnDamagePlayEffects
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer            DamageTags                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FVector                          Momentum                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       HitInfo                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AFortPawn*                        InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayEffectContextHandle     EffectContext                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ASmasherPawn_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SmasherPawn_C", "OnDamagePlayEffects");
+
+	Params::SmasherPawn_C_OnDamagePlayEffects Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageTags = std::move(DamageTags);
+	Parms.Momentum = std::move(Momentum);
+	Parms.HitInfo = std::move(HitInfo);
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+	Parms.EffectContext = std::move(EffectContext);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SmasherPawn.SmasherPawn_C.OnDeathPlayEffects
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer            DamageTags                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FVector                          Momentum                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       HitInfo                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AFortPawn*                        InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayEffectContextHandle     EffectContext                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ASmasherPawn_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SmasherPawn_C", "OnDeathPlayEffects");
+
+	Params::SmasherPawn_C_OnDeathPlayEffects Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageTags = std::move(DamageTags);
+	Parms.Momentum = std::move(Momentum);
+	Parms.HitInfo = std::move(HitInfo);
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+	Parms.EffectContext = std::move(EffectContext);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SmasherPawn.SmasherPawn_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASmasherPawn_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SmasherPawn_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

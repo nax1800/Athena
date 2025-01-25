@@ -74,9 +74,9 @@ void UItemCount_C::Construct()
 // Function ItemCount.ItemCount_C.SetItemDefinition
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItemDefinition*              Param_ItemDefinition                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition*              ItemDefinition_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemCount_C::SetItemDefinition(class UFortItemDefinition* Param_ItemDefinition)
+void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -85,7 +85,7 @@ void UItemCount_C::SetItemDefinition(class UFortItemDefinition* Param_ItemDefini
 
 	Params::ItemCount_C_SetItemDefinition Parms{};
 
-	Parms.Param_ItemDefinition = Param_ItemDefinition;
+	Parms.ItemDefinition_0 = ItemDefinition_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

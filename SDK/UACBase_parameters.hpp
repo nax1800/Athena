@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function UACBase.UACNetworkComponent.SendClientHello
+// 0x0004 (0x0004 - 0x0000)
+struct UACNetworkComponent_SendClientHello final
+{
+public:
+	uint32                                        SessionKey;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UACNetworkComponent_SendClientHello) == 0x000004, "Wrong alignment on UACNetworkComponent_SendClientHello");
+static_assert(sizeof(UACNetworkComponent_SendClientHello) == 0x000004, "Wrong size on UACNetworkComponent_SendClientHello");
+static_assert(offsetof(UACNetworkComponent_SendClientHello, SessionKey) == 0x000000, "Member 'UACNetworkComponent_SendClientHello::SessionKey' has a wrong offset!");
+
 // Function UACBase.UACNetworkComponent.SendPacketToClient
 // 0x0018 (0x0018 - 0x0000)
 struct UACNetworkComponent_SendPacketToClient final

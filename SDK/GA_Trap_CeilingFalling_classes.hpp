@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Trap_CeilingFalling.GA_Trap_CeilingFalling_C
-// 0x0000 (0x0B30 - 0x0B30)
+// 0x0000 (0x0940 - 0x0940)
 class UGA_Trap_CeilingFalling_C final : public UFortGameplayAbility_CeilingFallingTrap
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UGA_Trap_CeilingFalling_C) == 0x000008, "Wrong alignment on UGA_Trap_CeilingFalling_C");
-static_assert(sizeof(UGA_Trap_CeilingFalling_C) == 0x000B30, "Wrong size on UGA_Trap_CeilingFalling_C");
+static_assert(sizeof(UGA_Trap_CeilingFalling_C) == 0x000940, "Wrong size on UGA_Trap_CeilingFalling_C");
 
 }
 

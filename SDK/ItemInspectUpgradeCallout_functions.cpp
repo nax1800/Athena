@@ -51,6 +51,20 @@ void UItemInspectUpgradeCallout_C::ExecuteUbergraph_ItemInspectUpgradeCallout(in
 }
 
 
+// Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UItemInspectUpgradeCallout_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemInspectUpgradeCallout_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -108,9 +122,9 @@ void UItemInspectUpgradeCallout_C::Refresh()
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.SetItemToRepresent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_Item                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        Item_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemInspectUpgradeCallout_C::SetItemToRepresent(class UFortItem* Param_Item)
+void UItemInspectUpgradeCallout_C::SetItemToRepresent(class UFortItem* Item_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -119,7 +133,7 @@ void UItemInspectUpgradeCallout_C::SetItemToRepresent(class UFortItem* Param_Ite
 
 	Params::ItemInspectUpgradeCallout_C_SetItemToRepresent Parms{};
 
-	Parms.Param_Item = Param_Item;
+	Parms.Item_0 = Item_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

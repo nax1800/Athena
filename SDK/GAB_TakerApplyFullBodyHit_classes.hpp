@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerApplyFullBodyHit.GAB_TakerApplyFullBodyHit_C
-// 0x0008 (0x0B50 - 0x0B48)
+// 0x0008 (0x0958 - 0x0950)
 class UGAB_TakerApplyFullBodyHit_C final : public UGAB_GenericApplyFullBodyHit_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_TakerApplyFullBodyHit_C;        // 0x0B48(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_TakerApplyFullBodyHit_C;        // 0x0950(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GAB_TakerApplyFullBodyHit(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerApplyFullBodyHit_C) == 0x000008, "Wrong alignment on UGAB_TakerApplyFullBodyHit_C");
-static_assert(sizeof(UGAB_TakerApplyFullBodyHit_C) == 0x000B50, "Wrong size on UGAB_TakerApplyFullBodyHit_C");
-static_assert(offsetof(UGAB_TakerApplyFullBodyHit_C, UberGraphFrame_GAB_TakerApplyFullBodyHit_C) == 0x000B48, "Member 'UGAB_TakerApplyFullBodyHit_C::UberGraphFrame_GAB_TakerApplyFullBodyHit_C' has a wrong offset!");
+static_assert(sizeof(UGAB_TakerApplyFullBodyHit_C) == 0x000958, "Wrong size on UGAB_TakerApplyFullBodyHit_C");
+static_assert(offsetof(UGAB_TakerApplyFullBodyHit_C, UberGraphFrame_GAB_TakerApplyFullBodyHit_C) == 0x000950, "Member 'UGAB_TakerApplyFullBodyHit_C::UberGraphFrame_GAB_TakerApplyFullBodyHit_C' has a wrong offset!");
 
 }
 

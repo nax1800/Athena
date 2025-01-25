@@ -83,11 +83,11 @@ public:
 	int32                                         Temp_int_Variable1;                                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -98,10 +98,10 @@ static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_Par
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, Temp_int_Variable) == 0x000008, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, Temp_int_Variable1) == 0x00000C, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_Event_IsDesignTime) == 0x000010, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button1234) == 0x000018, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
+static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button4) == 0x000018, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_Select_Default) == 0x000020, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button123) == 0x000028, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button12) == 0x000030, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button3) == 0x000028, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button2) == 0x000030, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button1) == 0x000038, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions, K2Node_ComponentBoundEvent_Button) == 0x000040, "Member 'PartyFinder_ListItem_ButtonOptions_C_ExecuteUbergraph_PartyFinder_ListItem_ButtonOptions::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
@@ -184,7 +184,7 @@ public:
 	int32                                         Temp_int_Variable1;                                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable12;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsConsolePlatform_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -202,7 +202,7 @@ static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_b
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_int_Variable) == 0x000004, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_int_Variable1) == 0x000008, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::Temp_int_Variable1' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_bool_Variable1) == 0x00000C, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_int_Variable12) == 0x000010, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::Temp_int_Variable12' has a wrong offset!");
+static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, Temp_int_Variable2) == 0x000010, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::Temp_int_Variable2' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, CallFunc_IsConsolePlatform_ReturnValue) == 0x000014, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::CallFunc_IsConsolePlatform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, CallFunc_GetSubGame_ReturnValue) == 0x000015, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000016, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetupButtons::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -216,11 +216,11 @@ static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetupButtons, K2Node
 struct PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons final
 {
 public:
-	bool                                          Param_bIsEnabled;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsEnabled_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons) == 0x000001, "Wrong alignment on PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons");
 static_assert(sizeof(PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons) == 0x000001, "Wrong size on PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons");
-static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons, Param_bIsEnabled) == 0x000000, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons::Param_bIsEnabled' has a wrong offset!");
+static_assert(offsetof(PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons, bIsEnabled_0) == 0x000000, "Member 'PartyFinder_ListItem_ButtonOptions_C_SetEnableButtons::bIsEnabled_0' has a wrong offset!");
 
 // Function PartyFinder_ListItem_ButtonOptions.PartyFinder_ListItem_ButtonOptions_C.NumPartyMembersInviteOrJoinText
 // 0x0050 (0x0050 - 0x0000)

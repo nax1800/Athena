@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenCanEditRow.OutpostScreenCanEditRow_C
-// 0x0020 (0x0240 - 0x0220)
+// 0x0020 (0x0238 - 0x0218)
 class UOutpostScreenCanEditRow_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      CanEditButton;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class AFortPlayerStateOutpost*                Player;                                            // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerStateOutpost*                OutpostOwner;                                      // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      CanEditButton;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class AFortPlayerStateOutpost*                Player;                                            // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerStateOutpost*                OutpostOwner;                                      // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_OutpostScreenCanEditRow(int32 EntryPoint);
@@ -44,11 +44,11 @@ public:
 	}
 };
 static_assert(alignof(UOutpostScreenCanEditRow_C) == 0x000008, "Wrong alignment on UOutpostScreenCanEditRow_C");
-static_assert(sizeof(UOutpostScreenCanEditRow_C) == 0x000240, "Wrong size on UOutpostScreenCanEditRow_C");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, UberGraphFrame) == 0x000220, "Member 'UOutpostScreenCanEditRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, CanEditButton) == 0x000228, "Member 'UOutpostScreenCanEditRow_C::CanEditButton' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, Player) == 0x000230, "Member 'UOutpostScreenCanEditRow_C::Player' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, OutpostOwner) == 0x000238, "Member 'UOutpostScreenCanEditRow_C::OutpostOwner' has a wrong offset!");
+static_assert(sizeof(UOutpostScreenCanEditRow_C) == 0x000238, "Wrong size on UOutpostScreenCanEditRow_C");
+static_assert(offsetof(UOutpostScreenCanEditRow_C, UberGraphFrame) == 0x000218, "Member 'UOutpostScreenCanEditRow_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenCanEditRow_C, CanEditButton) == 0x000220, "Member 'UOutpostScreenCanEditRow_C::CanEditButton' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenCanEditRow_C, Player) == 0x000228, "Member 'UOutpostScreenCanEditRow_C::Player' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenCanEditRow_C, OutpostOwner) == 0x000230, "Member 'UOutpostScreenCanEditRow_C::OutpostOwner' has a wrong offset!");
 
 }
 

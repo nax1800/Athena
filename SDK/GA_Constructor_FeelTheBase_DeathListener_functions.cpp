@@ -37,26 +37,6 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::ExecuteUbergraph_GA_Constructo
 }
 
 
-// Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.K2_ActivateAbilityFromEvent
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FGameplayEventData               Param_EventData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UGA_Constructor_FeelTheBase_DeathListener_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& Param_EventData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Constructor_FeelTheBase_DeathListener_C", "K2_ActivateAbilityFromEvent");
-
-	Params::GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent Parms{};
-
-	Parms.Param_EventData = std::move(Param_EventData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.Exceute GC
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -84,10 +64,10 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::Exceute_GC(class AB_Constructo
 // Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.ActivateBaseStacks
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_StackCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   StackCount_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AB_Constructor_BASE_C*            BaseReference                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 Param_StackCount, class AB_Constructor_BASE_C* BaseReference)
+void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 StackCount_0, class AB_Constructor_BASE_C* BaseReference)
 {
 	static class UFunction* Func = nullptr;
 
@@ -96,8 +76,28 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 Param
 
 	Params::GA_Constructor_FeelTheBase_DeathListener_C_ActivateBaseStacks Parms{};
 
-	Parms.Param_StackCount = Param_StackCount;
+	Parms.StackCount_0 = StackCount_0;
 	Parms.BaseReference = BaseReference;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.K2_ActivateAbilityFromEvent
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FGameplayEventData               EventData_0                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UGA_Constructor_FeelTheBase_DeathListener_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Constructor_FeelTheBase_DeathListener_C", "K2_ActivateAbilityFromEvent");
+
+	Params::GA_Constructor_FeelTheBase_DeathListener_C_K2_ActivateAbilityFromEvent Parms{};
+
+	Parms.EventData_0 = std::move(EventData_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InviteRequest.InviteRequest_C
-// 0x0008 (0x0278 - 0x0270)
+// 0x0010 (0x0240 - 0x0230)
 class UInviteRequest_C final : public UFortInviteRequest
 {
 public:
-	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Border_Invite;                                     // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInviteEventTitle_C*                    InviteEventTitle;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +35,9 @@ public:
 	}
 };
 static_assert(alignof(UInviteRequest_C) == 0x000008, "Wrong alignment on UInviteRequest_C");
-static_assert(sizeof(UInviteRequest_C) == 0x000278, "Wrong size on UInviteRequest_C");
-static_assert(offsetof(UInviteRequest_C, InviteEventTitle) == 0x000270, "Member 'UInviteRequest_C::InviteEventTitle' has a wrong offset!");
+static_assert(sizeof(UInviteRequest_C) == 0x000240, "Wrong size on UInviteRequest_C");
+static_assert(offsetof(UInviteRequest_C, Border_Invite) == 0x000230, "Member 'UInviteRequest_C::Border_Invite' has a wrong offset!");
+static_assert(offsetof(UInviteRequest_C, InviteEventTitle) == 0x000238, "Member 'UInviteRequest_C::InviteEventTitle' has a wrong offset!");
 
 }
 

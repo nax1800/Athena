@@ -60,10 +60,10 @@ void UItemStackCounter_C::PreConstruct(bool IsDesignTime)
 // Function ItemStackCounter.ItemStackCounter_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortBrushSize                          Param_Brush_Size                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Count                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortBrushSize                          Brush_Size_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Count_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemStackCounter_C::Update(EFortBrushSize Param_Brush_Size, int32 Param_Count)
+void UItemStackCounter_C::Update(EFortBrushSize Brush_Size_0, int32 Count_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -72,8 +72,8 @@ void UItemStackCounter_C::Update(EFortBrushSize Param_Brush_Size, int32 Param_Co
 
 	Params::ItemStackCounter_C_Update Parms{};
 
-	Parms.Param_Brush_Size = Param_Brush_Size;
-	Parms.Param_Count = Param_Count;
+	Parms.Brush_Size_0 = Brush_Size_0;
+	Parms.Count_0 = Count_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,9 +82,9 @@ void UItemStackCounter_C::Update(EFortBrushSize Param_Brush_Size, int32 Param_Co
 // Function ItemStackCounter.ItemStackCounter_C.Set Stack Count
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Count                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Count_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemStackCounter_C::Set_Stack_Count(int32 Param_Count)
+void UItemStackCounter_C::Set_Stack_Count(int32 Count_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,7 +93,7 @@ void UItemStackCounter_C::Set_Stack_Count(int32 Param_Count)
 
 	Params::ItemStackCounter_C_Set_Stack_Count Parms{};
 
-	Parms.Param_Count = Param_Count;
+	Parms.Count_0 = Count_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

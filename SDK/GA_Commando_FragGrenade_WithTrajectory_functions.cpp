@@ -37,6 +37,20 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ExecuteUbergraph_GA_Commando_Fra
 }
 
 
+// Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.CommitOnSever
+// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+
+void UGA_Commando_FragGrenade_WithTrajectory_C::CommitOnSever()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "CommitOnSever");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.TossGrenade
 // (BlueprintCallable, BlueprintEvent)
 
@@ -46,20 +60,6 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::TossGrenade()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "TossGrenade");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void UGA_Commando_FragGrenade_WithTrajectory_C::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -372,14 +372,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::UpdateTrajectorySpline()
 // Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.SpawnFragGrenade
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Param_ProjectileClass                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           ProjectileClass_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                          SpawnLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                         InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FFortGameplayEffectContainerSpec EffectContainerSpecToApplyOnExplode                    (BlueprintVisible, BlueprintReadOnly, Parm)
 // float                                   InitialSpeed                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_GravityScale                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   GravityScale_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnFragGrenade(class UClass* Param_ProjectileClass, struct FVector& SpawnLocation, const struct FRotator& InputPin, const struct FFortGameplayEffectContainerSpec& EffectContainerSpecToApplyOnExplode, float InitialSpeed, float Param_GravityScale)
+void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnFragGrenade(class UClass* ProjectileClass_0, struct FVector& SpawnLocation, const struct FRotator& InputPin, const struct FFortGameplayEffectContainerSpec& EffectContainerSpecToApplyOnExplode, float InitialSpeed, float GravityScale_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -388,16 +388,30 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnFragGrenade(class UClass* P
 
 	Params::GA_Commando_FragGrenade_WithTrajectory_C_SpawnFragGrenade Parms{};
 
-	Parms.Param_ProjectileClass = Param_ProjectileClass;
+	Parms.ProjectileClass_0 = ProjectileClass_0;
 	Parms.SpawnLocation = std::move(SpawnLocation);
 	Parms.InputPin = std::move(InputPin);
 	Parms.EffectContainerSpecToApplyOnExplode = std::move(EffectContainerSpecToApplyOnExplode);
 	Parms.InitialSpeed = InitialSpeed;
-	Parms.Param_GravityScale = Param_GravityScale;
+	Parms.GravityScale_0 = GravityScale_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	SpawnLocation = std::move(Parms.SpawnLocation);
+}
+
+
+// Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void UGA_Commando_FragGrenade_WithTrajectory_C::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_ActivateAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

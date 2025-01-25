@@ -40,9 +40,9 @@ void ABP_PlayerControllerOutpost_C::ExecuteUbergraph_BP_PlayerControllerOutpost(
 // Function BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C.ServerStartExpandingOutpost
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_GetHelp                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    GetHelp_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerControllerOutpost_C::ServerStartExpandingOutpost(bool Param_GetHelp)
+void ABP_PlayerControllerOutpost_C::ServerStartExpandingOutpost(bool GetHelp_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void ABP_PlayerControllerOutpost_C::ServerStartExpandingOutpost(bool Param_GetHe
 
 	Params::BP_PlayerControllerOutpost_C_ServerStartExpandingOutpost Parms{};
 
-	Parms.Param_GetHelp = Param_GetHelp;
+	Parms.GetHelp_0 = GetHelp_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

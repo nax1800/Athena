@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "CommonInput_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -103,8 +103,8 @@ public:
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue12;            // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue123;           // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue3;             // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_PlayerHasTeammates_ReturnValue;           // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue1;          // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -125,8 +125,8 @@ static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_GetHomebaseRa
 static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_GetHomebaseRating_ReturnValue1) == 0x000094, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_GetHomebaseRating_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000098, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue1) == 0x00009C, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue12) == 0x0000A0, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue123) == 0x0000A4, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0000A0, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x0000A4, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_PlayerHasTeammates_ReturnValue) == 0x0000A8, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Greater_FloatFloat_ReturnValue1) == 0x0000A9, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Greater_FloatFloat_ReturnValue1' has a wrong offset!");
 
@@ -155,14 +155,14 @@ public:
 	float                                         CallFunc_GetModifiedHomebaseRating_ProgressFraction1; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetModifiedHomebaseRating_ReturnValue1;   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetHomebaseRating_Rating12;               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetHomebaseRating_ProgressFraction12;     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetHomebaseRating_ReturnValue12;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetHomebaseRating_Rating2;                // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetHomebaseRating_ProgressFraction2;      // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetHomebaseRating_ReturnValue2;           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetModifiedHomebaseRating_Rating12;       // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetModifiedHomebaseRating_ProgressFraction12; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetModifiedHomebaseRating_ReturnValue12;  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_GetModifiedHomebaseRating_Rating2;        // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetModifiedHomebaseRating_ProgressFraction2; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetModifiedHomebaseRating_ReturnValue2;   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_PlayerHasTeammates_ReturnValue;           // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -183,13 +183,13 @@ static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebas
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_Rating1) == 0x000030, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_Rating1' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ProgressFraction1) == 0x000034, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ProgressFraction1' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ReturnValue1) == 0x000038, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_Rating12) == 0x00003C, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_Rating12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_ProgressFraction12) == 0x000040, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_ProgressFraction12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_ReturnValue12) == 0x000044, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_Rating2) == 0x00003C, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_Rating2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_ProgressFraction2) == 0x000040, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_ProgressFraction2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetHomebaseRating_ReturnValue2) == 0x000044, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetHomebaseRating_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000048, "Member 'PowerWidget_C_UpdateProgress::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_Rating12) == 0x00004C, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_Rating12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ProgressFraction12) == 0x000050, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ProgressFraction12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ReturnValue12) == 0x000054, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_Rating2) == 0x00004C, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_Rating2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ProgressFraction2) == 0x000050, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ProgressFraction2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_GetModifiedHomebaseRating_ReturnValue2) == 0x000054, "Member 'PowerWidget_C_UpdateProgress::CallFunc_GetModifiedHomebaseRating_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000055, "Member 'PowerWidget_C_UpdateProgress::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_UpdateProgress, CallFunc_PlayerHasTeammates_ReturnValue) == 0x000056, "Member 'PowerWidget_C_UpdateProgress::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
 
@@ -202,8 +202,8 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0008(0x0088)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush1;                     // 0x0090(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush12;                    // 0x0118(0x0088)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush123;                   // 0x01A0(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x0118(0x0088)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush3;                     // 0x01A0(0x0088)()
 	bool                                          CallFunc_PlayerHasTeammates_ReturnValue;           // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -212,8 +212,8 @@ static_assert(sizeof(PowerWidget_C_SetState) == 0x000230, "Wrong size on PowerWi
 static_assert(offsetof(PowerWidget_C_SetState, Passthrough) == 0x000000, "Member 'PowerWidget_C_SetState::Passthrough' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush) == 0x000008, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush1) == 0x000090, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush1' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush12) == 0x000118, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush123) == 0x0001A0, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush123' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush2) == 0x000118, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_SetState, K2Node_MakeStruct_SlateBrush3) == 0x0001A0, "Member 'PowerWidget_C_SetState::K2Node_MakeStruct_SlateBrush3' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_SetState, CallFunc_PlayerHasTeammates_ReturnValue) == 0x000228, "Member 'PowerWidget_C_SetState::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_SetState, CallFunc_BooleanAND_ReturnValue) == 0x000229, "Member 'PowerWidget_C_SetState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
@@ -235,18 +235,18 @@ public:
 	class FText                                   CallFunc_Conv_BoolToText_ReturnValue1;             // 0x0038(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x0090(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x00D0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123;           // 0x0110(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1234;          // 0x0150(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12345;         // 0x0190(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0110(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0150(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0190(0x0040)(HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalHomebaseRating_Rating;            // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTotalHomebaseRating_ProgressFraction;  // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetTotalHomebaseRating_ReturnValue;       // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData123456;        // 0x01E0(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_BoolToText_ReturnValue12;            // 0x0220(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1234567;       // 0x0238(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12345678;      // 0x0278(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x01E0(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_BoolToText_ReturnValue2;             // 0x0220(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x0238(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData8;             // 0x0278(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02B8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02C8(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -264,17 +264,17 @@ static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue1) == 0x000038, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData1) == 0x000090, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData12) == 0x0000D0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData123) == 0x000110, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData123' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData1234) == 0x000150, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData1234' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData12345) == 0x000190, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData12345' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData2) == 0x0000D0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData3) == 0x000110, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData4) == 0x000150, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData5) == 0x000190, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_Rating) == 0x0001D0, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_Rating' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_ProgressFraction) == 0x0001D4, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_ProgressFraction' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_ReturnValue) == 0x0001D8, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData123456) == 0x0001E0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData123456' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue12) == 0x000220, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData1234567) == 0x000238, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData1234567' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData12345678) == 0x000278, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData12345678' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData6) == 0x0001E0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue2) == 0x000220, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData7) == 0x000238, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
+static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData8) == 0x000278, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData8' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeArray_Array) == 0x0002B8, "Member 'PowerWidget_C_Debug::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Format_ReturnValue) == 0x0002C8, "Member 'PowerWidget_C_Debug::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_TextToString_ReturnValue) == 0x0002E0, "Member 'PowerWidget_C_Debug::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");

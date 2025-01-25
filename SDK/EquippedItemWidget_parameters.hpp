@@ -43,10 +43,10 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         K2Node_CustomEvent_LocalCount;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_LocalRemaining;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate123;           // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 LocalCount, int32 LocalRemaining)> K2Node_CreateDelegate_OutputDelegate1234;          // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 LocalCount, int32 LocalRemaining)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
 };
 static_assert(alignof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x000008, "Wrong alignment on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
 static_assert(sizeof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x0000A8, "Wrong size on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
@@ -65,10 +65,10 @@ static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget,
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate1) == 0x000058, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CustomEvent_LocalCount) == 0x000068, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CustomEvent_LocalCount' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CustomEvent_LocalRemaining) == 0x00006C, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CustomEvent_LocalRemaining' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate12) == 0x000070, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate123) == 0x000080, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000070, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000080, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, CallFunc_GetContext_ReturnValue1) == 0x000090, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate1234) == 0x000098, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate4) == 0x000098, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.OnLocalAmmoChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -167,7 +167,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
@@ -177,7 +177,7 @@ public:
 	struct FLinearColor                           K2Node_Select1_Default;                            // 0x0054(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor1;                     // 0x0068(0x0028)()
-	struct FSlateColor                            K2Node_Select12_Default;                           // 0x0090(0x0028)()
+	struct FSlateColor                            K2Node_Select2_Default;                            // 0x0090(0x0028)()
 };
 static_assert(alignof(EquippedItemWidget_C_UpdateWidgetColor) == 0x000008, "Wrong alignment on EquippedItemWidget_C_UpdateWidgetColor");
 static_assert(sizeof(EquippedItemWidget_C_UpdateWidgetColor) == 0x0000B8, "Wrong size on EquippedItemWidget_C_UpdateWidgetColor");
@@ -186,14 +186,14 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_byte_Variabl
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable) == 0x000002, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable1) == 0x000003, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_byte_Variable1) == 0x000004, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable12) == 0x000005, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable2) == 0x000005, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_MakeStruct_LinearColor) == 0x000008, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_MakeStruct_SlateColor) == 0x000018, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_Select_Default) == 0x000040, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, CallFunc_Get_Debuff_Color_Color) == 0x000044, "Member 'EquippedItemWidget_C_UpdateWidgetColor::CallFunc_Get_Debuff_Color_Color' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_Select1_Default) == 0x000054, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_Select1_Default' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_MakeStruct_SlateColor1) == 0x000068, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_MakeStruct_SlateColor1' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_Select12_Default) == 0x000090, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, K2Node_Select2_Default) == 0x000090, "Member 'EquippedItemWidget_C_UpdateWidgetColor::K2Node_Select2_Default' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.UpdateCurrentAmmo
 // 0x0150 (0x0150 - 0x0000)
@@ -207,15 +207,15 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue123;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue3;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetCurrentAmmoText_CurrentAmmoText;       // 0x0038(0x0018)()
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue1234;           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12345;          // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue4;              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue5;              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWorldItemDefinition*               CallFunc_GetCurrentAmmoItemDefinition_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -230,12 +230,12 @@ public:
 	float                                         Temp_float_Variable1;                              // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable12;                             // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable2;                              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select1_Default;                            // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable123;                            // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable12;                              // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         Temp_float_Variable3;                              // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select12_Default;                           // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select2_Default;                            // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x000008, "Wrong alignment on EquippedItemWidget_C_UpdateCurrentAmmo");
 static_assert(sizeof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x000150, "Wrong size on EquippedItemWidget_C_UpdateCurrentAmmo");
@@ -245,13 +245,13 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Max_ReturnValue) == 0x000010, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Max_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue1) == 0x000014, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue12) == 0x000015, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue2) == 0x000015, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue123) == 0x000030, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue3) == 0x000030, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_GetCurrentAmmoText_CurrentAmmoText) == 0x000038, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_GetCurrentAmmoText_CurrentAmmoText' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_BooleanAND_ReturnValue) == 0x000050, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue1234) == 0x000051, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue12345) == 0x000052, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue12345' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue4) == 0x000051, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue5) == 0x000052, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue5' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_GetCurrentAmmoItemDefinition_ReturnValue) == 0x000060, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_GetCurrentAmmoItemDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_text_Variable) == 0x000068, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_text_Variable' has a wrong offset!");
@@ -262,11 +262,11 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variab
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, K2Node_Select_Default) == 0x000118, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variable1) == 0x000130, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_float_Variable1' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_bool_Variable1) == 0x000134, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variable12) == 0x000138, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_float_Variable12' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variable2) == 0x000138, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_float_Variable2' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, K2Node_Select1_Default) == 0x00013C, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variable123) == 0x000140, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_float_Variable123' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_bool_Variable12) == 0x000144, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, K2Node_Select12_Default) == 0x000148, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_float_Variable3) == 0x000140, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_float_Variable3' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, Temp_bool_Variable2) == 0x000144, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, K2Node_Select2_Default) == 0x000148, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::K2Node_Select2_Default' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.UpdateResourceCount
 // 0x0028 (0x0028 - 0x0000)

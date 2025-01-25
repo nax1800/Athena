@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaveWarningInfo.LeaveWarningInfo_C
-// 0x0000 (0x0220 - 0x0220)
+// 0x0000 (0x0218 - 0x0218)
 class ULeaveWarningInfo_C final : public UFortUserWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ULeaveWarningInfo_C) == 0x000008, "Wrong alignment on ULeaveWarningInfo_C");
-static_assert(sizeof(ULeaveWarningInfo_C) == 0x000220, "Wrong size on ULeaveWarningInfo_C");
+static_assert(sizeof(ULeaveWarningInfo_C) == 0x000218, "Wrong size on ULeaveWarningInfo_C");
 
 }
 

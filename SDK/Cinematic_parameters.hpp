@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "CinematicLanuageToTrackStruct_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "CinematicLanuageToTrackStruct_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
@@ -56,7 +56,7 @@ public:
 	class UMediaPlayer*                           CallFunc_GetMediaPlayer_ReturnValue1;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           CallFunc_GetMediaPlayer_ReturnValue12;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMediaPlayer*                           CallFunc_GetMediaPlayer_ReturnValue2;              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetAudioTrackIndex_AudioTrack;            // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SelectTrack_ReturnValue;                  // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -87,7 +87,7 @@ static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_IsPrepar
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_IsPlaying_ReturnValue) == 0x0000E1, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_GetMediaPlayer_ReturnValue1) == 0x0000E8, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_GetMediaPlayer_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_BooleanOR_ReturnValue) == 0x0000F0, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_GetMediaPlayer_ReturnValue12) == 0x0000F8, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_GetMediaPlayer_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_GetMediaPlayer_ReturnValue2) == 0x0000F8, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_GetMediaPlayer_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_GetAudioTrackIndex_AudioTrack) == 0x000100, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_GetAudioTrackIndex_AudioTrack' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, CallFunc_SelectTrack_ReturnValue) == 0x000104, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::CallFunc_SelectTrack_ReturnValue' has a wrong offset!");
 
@@ -162,8 +162,8 @@ struct Cinematic_C_ShowMovie final
 {
 public:
 	class UMediaSource*                           MediaSource;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNamedSlot*                             Param_MovieSlot;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMovieWidget_C*                         Param_MovieWidget;                                 // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNamedSlot*                             MovieSlot_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMovieWidget_C*                         MovieWidget_0;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -172,8 +172,8 @@ public:
 static_assert(alignof(Cinematic_C_ShowMovie) == 0x000008, "Wrong alignment on Cinematic_C_ShowMovie");
 static_assert(sizeof(Cinematic_C_ShowMovie) == 0x000040, "Wrong size on Cinematic_C_ShowMovie");
 static_assert(offsetof(Cinematic_C_ShowMovie, MediaSource) == 0x000000, "Member 'Cinematic_C_ShowMovie::MediaSource' has a wrong offset!");
-static_assert(offsetof(Cinematic_C_ShowMovie, Param_MovieSlot) == 0x000008, "Member 'Cinematic_C_ShowMovie::Param_MovieSlot' has a wrong offset!");
-static_assert(offsetof(Cinematic_C_ShowMovie, Param_MovieWidget) == 0x000010, "Member 'Cinematic_C_ShowMovie::Param_MovieWidget' has a wrong offset!");
+static_assert(offsetof(Cinematic_C_ShowMovie, MovieSlot_0) == 0x000008, "Member 'Cinematic_C_ShowMovie::MovieSlot_0' has a wrong offset!");
+static_assert(offsetof(Cinematic_C_ShowMovie, MovieWidget_0) == 0x000010, "Member 'Cinematic_C_ShowMovie::MovieWidget_0' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ShowMovie, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'Cinematic_C_ShowMovie::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ShowMovie, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'Cinematic_C_ShowMovie::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ShowMovie, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'Cinematic_C_ShowMovie::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -202,13 +202,13 @@ public:
 	struct FContentPushState                      State;                                             // 0x0000(0x0003)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_PopWidget_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Cinematic_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on Cinematic_C_PopContentWidgetInternal");
 static_assert(sizeof(Cinematic_C_PopContentWidgetInternal) == 0x000018, "Wrong size on Cinematic_C_PopContentWidgetInternal");
 static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, State) == 0x000000, "Member 'Cinematic_C_PopContentWidgetInternal::State' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'Cinematic_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, CallFunc_PopWigdet_ReturnValue) == 0x000010, "Member 'Cinematic_C_PopContentWidgetInternal::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, CallFunc_PopWidget_ReturnValue) == 0x000010, "Member 'Cinematic_C_PopContentWidgetInternal::CallFunc_PopWidget_ReturnValue' has a wrong offset!");
 
 // Function Cinematic.Cinematic_C.ClearMovieSlot
 // 0x0008 (0x0008 - 0x0000)

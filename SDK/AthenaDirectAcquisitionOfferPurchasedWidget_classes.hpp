@@ -11,29 +11,31 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaDirectAcquisitionOfferPurchasedWidget.AthenaDirectAcquisitionOfferPurchasedWidget_C
-// 0x0040 (0x0490 - 0x0450)
+// 0x0050 (0x0458 - 0x0408)
 class UAthenaDirectAcquisitionOfferPurchasedWidget_C final : public UFortDirectAcquisitionOfferDetailsWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Purchased_;                                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageRarityFlare;                                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         PanelButtonClose;                                  // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RarityGlow;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextName;                                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          CanPurchase;                                       // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_489[0x3];                                      // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         QuantityPurchased;                                 // 0x048C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Purchased__0;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Purchased_;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                CameraFramingWidget;                               // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageRarityFlare;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 ItemCard;                                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPanelButton_C*                         PanelButtonClose;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RarityGlow;                                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextName;                                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          CanPurchase;                                       // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_451[0x3];                                      // 0x0451(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         QuantityPurchased;                                 // 0x0454(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaDirectAcquisitionOfferPurchasedWidget(int32 EntryPoint);
@@ -44,6 +46,7 @@ public:
 	void OnOfferSet();
 	void UpdateFromOffer();
 	void HandleBack(bool* Passthrough);
+	class UWidget* GetWidgetForFramingViewedItem();
 	void PopScreen();
 
 public:
@@ -57,16 +60,18 @@ public:
 	}
 };
 static_assert(alignof(UAthenaDirectAcquisitionOfferPurchasedWidget_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOfferPurchasedWidget_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOfferPurchasedWidget_C) == 0x000490, "Wrong size on UAthenaDirectAcquisitionOfferPurchasedWidget_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, UberGraphFrame) == 0x000450, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, Purchased_) == 0x000458, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::Purchased_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, ImageRarityFlare) == 0x000460, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::ImageRarityFlare' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, ItemCard) == 0x000468, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, PanelButtonClose) == 0x000470, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::PanelButtonClose' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, RarityGlow) == 0x000478, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::RarityGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, TextName) == 0x000480, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::TextName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, CanPurchase) == 0x000488, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::CanPurchase' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, QuantityPurchased) == 0x00048C, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::QuantityPurchased' has a wrong offset!");
+static_assert(sizeof(UAthenaDirectAcquisitionOfferPurchasedWidget_C) == 0x000458, "Wrong size on UAthenaDirectAcquisitionOfferPurchasedWidget_C");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, UberGraphFrame) == 0x000408, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, Purchased__0) == 0x000410, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::Purchased__0' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, Purchased_) == 0x000418, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::Purchased_' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, CameraFramingWidget) == 0x000420, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::CameraFramingWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, ImageRarityFlare) == 0x000428, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::ImageRarityFlare' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, ItemCard) == 0x000430, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::ItemCard' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, PanelButtonClose) == 0x000438, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::PanelButtonClose' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, RarityGlow) == 0x000440, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::RarityGlow' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, TextName) == 0x000448, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::TextName' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, CanPurchase) == 0x000450, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::CanPurchase' has a wrong offset!");
+static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedWidget_C, QuantityPurchased) == 0x000454, "Member 'UAthenaDirectAcquisitionOfferPurchasedWidget_C::QuantityPurchased' has a wrong offset!");
 
 }
 

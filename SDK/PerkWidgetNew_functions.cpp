@@ -262,14 +262,14 @@ void UPerkWidgetNew_C::HighlightBadge()
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeSettings
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bIncludeName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_bIncludeDescription                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// EFortBrushSize                          Param_IconSize                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Param_bUseLargeFormatName                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortUIPerk                      Param_Perk                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bIncludeName_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIncludeDescription_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EFortBrushSize                          IconSize_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bUseLargeFormatName_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FFortUIPerk                      Perk_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    ShowMouseTooltips                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPerkWidgetNew_C::InitializeSettings(bool Param_bIncludeName, bool Param_bIncludeDescription, EFortBrushSize Param_IconSize, bool Param_bUseLargeFormatName, const struct FFortUIPerk& Param_Perk, bool ShowMouseTooltips)
+void UPerkWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, EFortBrushSize IconSize_0, bool bUseLargeFormatName_0, const struct FFortUIPerk& Perk_0, bool ShowMouseTooltips)
 {
 	static class UFunction* Func = nullptr;
 
@@ -278,11 +278,11 @@ void UPerkWidgetNew_C::InitializeSettings(bool Param_bIncludeName, bool Param_bI
 
 	Params::PerkWidgetNew_C_InitializeSettings Parms{};
 
-	Parms.Param_bIncludeName = Param_bIncludeName;
-	Parms.Param_bIncludeDescription = Param_bIncludeDescription;
-	Parms.Param_IconSize = Param_IconSize;
-	Parms.Param_bUseLargeFormatName = Param_bUseLargeFormatName;
-	Parms.Param_Perk = std::move(Param_Perk);
+	Parms.bIncludeName_0 = bIncludeName_0;
+	Parms.bIncludeDescription_0 = bIncludeDescription_0;
+	Parms.IconSize_0 = IconSize_0;
+	Parms.bUseLargeFormatName_0 = bUseLargeFormatName_0;
+	Parms.Perk_0 = std::move(Perk_0);
 	Parms.ShowMouseTooltips = ShowMouseTooltips;
 
 	UObject::ProcessEvent(Func, &Parms);

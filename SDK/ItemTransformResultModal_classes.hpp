@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -20,21 +20,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformResultModal.ItemTransformResultModal_C
-// 0x0070 (0x0430 - 0x03C0)
+// 0x0070 (0x0368 - 0x02F8)
 class UItemTransformResultModal_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ContinueButton;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UIconTextButton_C*                      InspectButton;                                     // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMainModeItemDetailsHostPanel_C*        MainModeItemDetailsHostPanel;                      // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          RecycleItemsBorder;                                // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           RecycleItemsBox;                                   // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 TransformResultItemCard;                           // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnContinue;                                        // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UFortItem*                              RewardItem;                                        // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFortItemInstanceQuantityPair>  Reward_Items;                                      // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FFortItemInstanceQuantityPair>  Recycle_Items;                                     // 0x0420(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ContinueButton;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      InspectButton;                                     // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMainModeItemDetailsHostPanel_C*        MainModeItemDetailsHostPanel;                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          RecycleItemsBorder;                                // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           RecycleItemsBox;                                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 TransformResultItemCard;                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnContinue;                                        // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UFortItem*                              RewardItem;                                        // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFortItemInstanceQuantityPair>  Reward_Items;                                      // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FFortItemInstanceQuantityPair>  Recycle_Items;                                     // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void OnContinue__DelegateSignature();
@@ -56,18 +56,18 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformResultModal_C) == 0x000008, "Wrong alignment on UItemTransformResultModal_C");
-static_assert(sizeof(UItemTransformResultModal_C) == 0x000430, "Wrong size on UItemTransformResultModal_C");
-static_assert(offsetof(UItemTransformResultModal_C, UberGraphFrame) == 0x0003C0, "Member 'UItemTransformResultModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, ContinueButton) == 0x0003C8, "Member 'UItemTransformResultModal_C::ContinueButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, InspectButton) == 0x0003D0, "Member 'UItemTransformResultModal_C::InspectButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, MainModeItemDetailsHostPanel) == 0x0003D8, "Member 'UItemTransformResultModal_C::MainModeItemDetailsHostPanel' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBorder) == 0x0003E0, "Member 'UItemTransformResultModal_C::RecycleItemsBorder' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBox) == 0x0003E8, "Member 'UItemTransformResultModal_C::RecycleItemsBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, TransformResultItemCard) == 0x0003F0, "Member 'UItemTransformResultModal_C::TransformResultItemCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, OnContinue) == 0x0003F8, "Member 'UItemTransformResultModal_C::OnContinue' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RewardItem) == 0x000408, "Member 'UItemTransformResultModal_C::RewardItem' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, Reward_Items) == 0x000410, "Member 'UItemTransformResultModal_C::Reward_Items' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, Recycle_Items) == 0x000420, "Member 'UItemTransformResultModal_C::Recycle_Items' has a wrong offset!");
+static_assert(sizeof(UItemTransformResultModal_C) == 0x000368, "Wrong size on UItemTransformResultModal_C");
+static_assert(offsetof(UItemTransformResultModal_C, UberGraphFrame) == 0x0002F8, "Member 'UItemTransformResultModal_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, ContinueButton) == 0x000300, "Member 'UItemTransformResultModal_C::ContinueButton' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, InspectButton) == 0x000308, "Member 'UItemTransformResultModal_C::InspectButton' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, MainModeItemDetailsHostPanel) == 0x000310, "Member 'UItemTransformResultModal_C::MainModeItemDetailsHostPanel' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBorder) == 0x000318, "Member 'UItemTransformResultModal_C::RecycleItemsBorder' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBox) == 0x000320, "Member 'UItemTransformResultModal_C::RecycleItemsBox' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, TransformResultItemCard) == 0x000328, "Member 'UItemTransformResultModal_C::TransformResultItemCard' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, OnContinue) == 0x000330, "Member 'UItemTransformResultModal_C::OnContinue' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, RewardItem) == 0x000340, "Member 'UItemTransformResultModal_C::RewardItem' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, Reward_Items) == 0x000348, "Member 'UItemTransformResultModal_C::Reward_Items' has a wrong offset!");
+static_assert(offsetof(UItemTransformResultModal_C, Recycle_Items) == 0x000358, "Member 'UItemTransformResultModal_C::Recycle_Items' has a wrong offset!");
 
 }
 

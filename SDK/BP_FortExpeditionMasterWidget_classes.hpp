@@ -10,38 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FrontEndRewards_Definition_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
-#include "FrontEndRewards_Definition_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C
-// 0x00D8 (0x0518 - 0x0440)
+// 0x00E8 (0x0400 - 0x0318)
 class UBP_FortExpeditionMasterWidget_C final : public UFortExpeditionMasterWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
-	class UBP_FortExpeditionOverviewWidget_C*     BP_FortExpeditionOverviewWidget;                   // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0450(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    BuildExpeditionAction;                             // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    AbandonExpeditionAction;                           // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CollectExpeditionAction;                           // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SortInputAction;                                   // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          bRewardsShowing;                                   // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UFortExpeditionItem*>            CompletedExpeditions;                              // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FFrontEndRewards_Definition            RewardsDefinition;                                 // 0x04C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	EFortExpeditionListSort                       ExpeditionListSortType;                            // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortExpeditionListSort                       ExpeditionListSortBegin;                           // 0x0511(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortExpeditionListSort                       ExpeditionListSortEnd;                             // 0x0512(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          BlockedByStorageWarningShown;                      // 0x0513(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          BlockedByProfileLockWarningShown;                  // 0x0514(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
+	class UBP_FortExpeditionOverviewWidget_C*     BP_FortExpeditionOverviewWidget;                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BuildExpeditionAction;                             // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    AbandonExpeditionAction;                           // 0x0348(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CollectExpeditionAction;                           // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SortInputAction;                                   // 0x0368(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          bRewardsShowing;                                   // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UFortExpeditionItem*>            CompletedExpeditions;                              // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FFrontEndRewards_Definition            RewardsDefinition;                                 // 0x0398(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	EFortExpeditionListSort                       ExpeditionListSortType;                            // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortExpeditionListSort                       ExpeditionListSortBegin;                           // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortExpeditionListSort                       ExpeditionListSortEnd;                             // 0x03FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          BlockedByStorageWarningShown;                      // 0x03FB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          BlockedByProfileLockWarningShown;                  // 0x03FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_FortExpeditionMasterWidget(int32 EntryPoint);
@@ -79,23 +79,23 @@ public:
 	}
 };
 static_assert(alignof(UBP_FortExpeditionMasterWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionMasterWidget_C");
-static_assert(sizeof(UBP_FortExpeditionMasterWidget_C) == 0x000518, "Wrong size on UBP_FortExpeditionMasterWidget_C");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, UberGraphFrame) == 0x000440, "Member 'UBP_FortExpeditionMasterWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BP_FortExpeditionOverviewWidget) == 0x000448, "Member 'UBP_FortExpeditionMasterWidget_C::BP_FortExpeditionOverviewWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BackInputAction) == 0x000450, "Member 'UBP_FortExpeditionMasterWidget_C::BackInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BuildExpeditionAction) == 0x000460, "Member 'UBP_FortExpeditionMasterWidget_C::BuildExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, AbandonExpeditionAction) == 0x000470, "Member 'UBP_FortExpeditionMasterWidget_C::AbandonExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, CollectExpeditionAction) == 0x000480, "Member 'UBP_FortExpeditionMasterWidget_C::CollectExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, SortInputAction) == 0x000490, "Member 'UBP_FortExpeditionMasterWidget_C::SortInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, bRewardsShowing) == 0x0004A0, "Member 'UBP_FortExpeditionMasterWidget_C::bRewardsShowing' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, RewardsWidget) == 0x0004A8, "Member 'UBP_FortExpeditionMasterWidget_C::RewardsWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, CompletedExpeditions) == 0x0004B0, "Member 'UBP_FortExpeditionMasterWidget_C::CompletedExpeditions' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, RewardsDefinition) == 0x0004C0, "Member 'UBP_FortExpeditionMasterWidget_C::RewardsDefinition' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortType) == 0x000510, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortType' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortBegin) == 0x000511, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortBegin' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortEnd) == 0x000512, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortEnd' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BlockedByStorageWarningShown) == 0x000513, "Member 'UBP_FortExpeditionMasterWidget_C::BlockedByStorageWarningShown' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BlockedByProfileLockWarningShown) == 0x000514, "Member 'UBP_FortExpeditionMasterWidget_C::BlockedByProfileLockWarningShown' has a wrong offset!");
+static_assert(sizeof(UBP_FortExpeditionMasterWidget_C) == 0x000400, "Wrong size on UBP_FortExpeditionMasterWidget_C");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, UberGraphFrame) == 0x000318, "Member 'UBP_FortExpeditionMasterWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BP_FortExpeditionOverviewWidget) == 0x000320, "Member 'UBP_FortExpeditionMasterWidget_C::BP_FortExpeditionOverviewWidget' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BackInputAction) == 0x000328, "Member 'UBP_FortExpeditionMasterWidget_C::BackInputAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BuildExpeditionAction) == 0x000338, "Member 'UBP_FortExpeditionMasterWidget_C::BuildExpeditionAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, AbandonExpeditionAction) == 0x000348, "Member 'UBP_FortExpeditionMasterWidget_C::AbandonExpeditionAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, CollectExpeditionAction) == 0x000358, "Member 'UBP_FortExpeditionMasterWidget_C::CollectExpeditionAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, SortInputAction) == 0x000368, "Member 'UBP_FortExpeditionMasterWidget_C::SortInputAction' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, bRewardsShowing) == 0x000378, "Member 'UBP_FortExpeditionMasterWidget_C::bRewardsShowing' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, RewardsWidget) == 0x000380, "Member 'UBP_FortExpeditionMasterWidget_C::RewardsWidget' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, CompletedExpeditions) == 0x000388, "Member 'UBP_FortExpeditionMasterWidget_C::CompletedExpeditions' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, RewardsDefinition) == 0x000398, "Member 'UBP_FortExpeditionMasterWidget_C::RewardsDefinition' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortType) == 0x0003F8, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortType' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortBegin) == 0x0003F9, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortBegin' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, ExpeditionListSortEnd) == 0x0003FA, "Member 'UBP_FortExpeditionMasterWidget_C::ExpeditionListSortEnd' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BlockedByStorageWarningShown) == 0x0003FB, "Member 'UBP_FortExpeditionMasterWidget_C::BlockedByStorageWarningShown' has a wrong offset!");
+static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BlockedByProfileLockWarningShown) == 0x0003FC, "Member 'UBP_FortExpeditionMasterWidget_C::BlockedByProfileLockWarningShown' has a wrong offset!");
 
 }
 

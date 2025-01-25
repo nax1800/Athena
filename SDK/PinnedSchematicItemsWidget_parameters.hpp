@@ -48,7 +48,7 @@ struct PinnedSchematicItemsWidget_C_Refresh final
 {
 public:
 	class UFortSchematicItem*                     PinnedItem;                                        // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UFortSchematicItem*>             PinnedSchematics;                                  // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,7 +76,7 @@ public:
 static_assert(alignof(PinnedSchematicItemsWidget_C_Refresh) == 0x000008, "Wrong alignment on PinnedSchematicItemsWidget_C_Refresh");
 static_assert(sizeof(PinnedSchematicItemsWidget_C_Refresh) == 0x000098, "Wrong size on PinnedSchematicItemsWidget_C_Refresh");
 static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, PinnedItem) == 0x000000, "Member 'PinnedSchematicItemsWidget_C_Refresh::PinnedItem' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, Param_Index) == 0x000008, "Member 'PinnedSchematicItemsWidget_C_Refresh::Param_Index' has a wrong offset!");
+static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, Index_0) == 0x000008, "Member 'PinnedSchematicItemsWidget_C_Refresh::Index_0' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, PinnedSchematics) == 0x000010, "Member 'PinnedSchematicItemsWidget_C_Refresh::PinnedSchematics' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, Temp_int_Variable) == 0x000020, "Member 'PinnedSchematicItemsWidget_C_Refresh::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");

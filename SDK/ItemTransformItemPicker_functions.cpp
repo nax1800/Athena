@@ -231,10 +231,10 @@ void UItemTransformItemPicker_C::SetFilter(class FName FilterName)
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.OpenPicker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                Param_SacrificeItems                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>                SacrificeItems_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   SelectedSlot                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemTransformItemPicker_C::OpenPicker(TArray<class UFortItem*>& Param_SacrificeItems, int32 SelectedSlot)
+void UItemTransformItemPicker_C::OpenPicker(TArray<class UFortItem*>& SacrificeItems_0, int32 SelectedSlot)
 {
 	static class UFunction* Func = nullptr;
 
@@ -243,12 +243,12 @@ void UItemTransformItemPicker_C::OpenPicker(TArray<class UFortItem*>& Param_Sacr
 
 	Params::ItemTransformItemPicker_C_OpenPicker Parms{};
 
-	Parms.Param_SacrificeItems = std::move(Param_SacrificeItems);
+	Parms.SacrificeItems_0 = std::move(SacrificeItems_0);
 	Parms.SelectedSlot = SelectedSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Param_SacrificeItems = std::move(Parms.Param_SacrificeItems);
+	SacrificeItems_0 = std::move(Parms.SacrificeItems_0);
 }
 
 

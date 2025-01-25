@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C
-// 0x0010 (0x0490 - 0x0480)
+// 0x0010 (0x03C8 - 0x03B8)
 class UCollectionBookPrimaryPanel_C final : public UFortCollectionBookPrimaryPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(Transient, DuplicateTransient)
-	bool                                          CanShowCollectionBookHelp;                         // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B8(0x0008)(Transient, DuplicateTransient)
+	bool                                          CanShowCollectionBookHelp;                         // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_CollectionBookPrimaryPanel(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UCollectionBookPrimaryPanel_C) == 0x000008, "Wrong alignment on UCollectionBookPrimaryPanel_C");
-static_assert(sizeof(UCollectionBookPrimaryPanel_C) == 0x000490, "Wrong size on UCollectionBookPrimaryPanel_C");
-static_assert(offsetof(UCollectionBookPrimaryPanel_C, UberGraphFrame) == 0x000480, "Member 'UCollectionBookPrimaryPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPrimaryPanel_C, CanShowCollectionBookHelp) == 0x000488, "Member 'UCollectionBookPrimaryPanel_C::CanShowCollectionBookHelp' has a wrong offset!");
+static_assert(sizeof(UCollectionBookPrimaryPanel_C) == 0x0003C8, "Wrong size on UCollectionBookPrimaryPanel_C");
+static_assert(offsetof(UCollectionBookPrimaryPanel_C, UberGraphFrame) == 0x0003B8, "Member 'UCollectionBookPrimaryPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UCollectionBookPrimaryPanel_C, CanShowCollectionBookHelp) == 0x0003C0, "Member 'UCollectionBookPrimaryPanel_C::CanShowCollectionBookHelp' has a wrong offset!");
 
 }
 

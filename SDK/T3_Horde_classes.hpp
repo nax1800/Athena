@@ -19,37 +19,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass T3_Horde.T3_Horde_C
-// 0x0190 (0x04A0 - 0x0310)
+// 0x0190 (0x03E8 - 0x0258)
 class UT3_Horde_C final : public UFortSkillTreePageWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(Transient, DuplicateTransient)
-	class UCommonBorder*                          Background;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_24;                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_25;                             // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_26;                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_27;                             // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_28;                             // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_29;                             // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_30;                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_31;                             // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_32;                             // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_33;                             // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_34;                             // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_35;                             // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_36;                             // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_37;                             // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_38;                             // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_39;                             // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_40;                             // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_41;                             // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_42;                             // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_43;                             // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_44;                             // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_45;                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_46;                             // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UDefaultSkillNode_C*                    DefaultSkillNode_C_47;                             // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSkillTreePageColors                   PageColors;                                        // 0x03E0(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
+	class UCommonBorder*                          Background;                                        // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_24;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_25;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_26;                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_27;                             // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_28;                             // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_29;                             // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_30;                             // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_31;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_32;                             // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_33;                             // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_34;                             // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_35;                             // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_36;                             // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_37;                             // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_38;                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_39;                             // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_40;                             // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_41;                             // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_42;                             // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_43;                             // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_44;                             // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_45;                             // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_46;                             // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UDefaultSkillNode_C*                    DefaultSkillNode_C_47;                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSkillTreePageColors                   PageColors;                                        // 0x0328(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_T3_Horde(int32 EntryPoint);
@@ -67,34 +67,34 @@ public:
 	}
 };
 static_assert(alignof(UT3_Horde_C) == 0x000008, "Wrong alignment on UT3_Horde_C");
-static_assert(sizeof(UT3_Horde_C) == 0x0004A0, "Wrong size on UT3_Horde_C");
-static_assert(offsetof(UT3_Horde_C, UberGraphFrame) == 0x000310, "Member 'UT3_Horde_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, Background) == 0x000318, "Member 'UT3_Horde_C::Background' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_24) == 0x000320, "Member 'UT3_Horde_C::DefaultSkillNode_C_24' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_25) == 0x000328, "Member 'UT3_Horde_C::DefaultSkillNode_C_25' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_26) == 0x000330, "Member 'UT3_Horde_C::DefaultSkillNode_C_26' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_27) == 0x000338, "Member 'UT3_Horde_C::DefaultSkillNode_C_27' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_28) == 0x000340, "Member 'UT3_Horde_C::DefaultSkillNode_C_28' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_29) == 0x000348, "Member 'UT3_Horde_C::DefaultSkillNode_C_29' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_30) == 0x000350, "Member 'UT3_Horde_C::DefaultSkillNode_C_30' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_31) == 0x000358, "Member 'UT3_Horde_C::DefaultSkillNode_C_31' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_32) == 0x000360, "Member 'UT3_Horde_C::DefaultSkillNode_C_32' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_33) == 0x000368, "Member 'UT3_Horde_C::DefaultSkillNode_C_33' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_34) == 0x000370, "Member 'UT3_Horde_C::DefaultSkillNode_C_34' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_35) == 0x000378, "Member 'UT3_Horde_C::DefaultSkillNode_C_35' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_36) == 0x000380, "Member 'UT3_Horde_C::DefaultSkillNode_C_36' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_37) == 0x000388, "Member 'UT3_Horde_C::DefaultSkillNode_C_37' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_38) == 0x000390, "Member 'UT3_Horde_C::DefaultSkillNode_C_38' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_39) == 0x000398, "Member 'UT3_Horde_C::DefaultSkillNode_C_39' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_40) == 0x0003A0, "Member 'UT3_Horde_C::DefaultSkillNode_C_40' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_41) == 0x0003A8, "Member 'UT3_Horde_C::DefaultSkillNode_C_41' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_42) == 0x0003B0, "Member 'UT3_Horde_C::DefaultSkillNode_C_42' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_43) == 0x0003B8, "Member 'UT3_Horde_C::DefaultSkillNode_C_43' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_44) == 0x0003C0, "Member 'UT3_Horde_C::DefaultSkillNode_C_44' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_45) == 0x0003C8, "Member 'UT3_Horde_C::DefaultSkillNode_C_45' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_46) == 0x0003D0, "Member 'UT3_Horde_C::DefaultSkillNode_C_46' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_47) == 0x0003D8, "Member 'UT3_Horde_C::DefaultSkillNode_C_47' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, PageColors) == 0x0003E0, "Member 'UT3_Horde_C::PageColors' has a wrong offset!");
+static_assert(sizeof(UT3_Horde_C) == 0x0003E8, "Wrong size on UT3_Horde_C");
+static_assert(offsetof(UT3_Horde_C, UberGraphFrame) == 0x000258, "Member 'UT3_Horde_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, Background) == 0x000260, "Member 'UT3_Horde_C::Background' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_24) == 0x000268, "Member 'UT3_Horde_C::DefaultSkillNode_C_24' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_25) == 0x000270, "Member 'UT3_Horde_C::DefaultSkillNode_C_25' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_26) == 0x000278, "Member 'UT3_Horde_C::DefaultSkillNode_C_26' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_27) == 0x000280, "Member 'UT3_Horde_C::DefaultSkillNode_C_27' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_28) == 0x000288, "Member 'UT3_Horde_C::DefaultSkillNode_C_28' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_29) == 0x000290, "Member 'UT3_Horde_C::DefaultSkillNode_C_29' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_30) == 0x000298, "Member 'UT3_Horde_C::DefaultSkillNode_C_30' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_31) == 0x0002A0, "Member 'UT3_Horde_C::DefaultSkillNode_C_31' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_32) == 0x0002A8, "Member 'UT3_Horde_C::DefaultSkillNode_C_32' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_33) == 0x0002B0, "Member 'UT3_Horde_C::DefaultSkillNode_C_33' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_34) == 0x0002B8, "Member 'UT3_Horde_C::DefaultSkillNode_C_34' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_35) == 0x0002C0, "Member 'UT3_Horde_C::DefaultSkillNode_C_35' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_36) == 0x0002C8, "Member 'UT3_Horde_C::DefaultSkillNode_C_36' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_37) == 0x0002D0, "Member 'UT3_Horde_C::DefaultSkillNode_C_37' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_38) == 0x0002D8, "Member 'UT3_Horde_C::DefaultSkillNode_C_38' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_39) == 0x0002E0, "Member 'UT3_Horde_C::DefaultSkillNode_C_39' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_40) == 0x0002E8, "Member 'UT3_Horde_C::DefaultSkillNode_C_40' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_41) == 0x0002F0, "Member 'UT3_Horde_C::DefaultSkillNode_C_41' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_42) == 0x0002F8, "Member 'UT3_Horde_C::DefaultSkillNode_C_42' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_43) == 0x000300, "Member 'UT3_Horde_C::DefaultSkillNode_C_43' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_44) == 0x000308, "Member 'UT3_Horde_C::DefaultSkillNode_C_44' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_45) == 0x000310, "Member 'UT3_Horde_C::DefaultSkillNode_C_45' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_46) == 0x000318, "Member 'UT3_Horde_C::DefaultSkillNode_C_46' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_47) == 0x000320, "Member 'UT3_Horde_C::DefaultSkillNode_C_47' has a wrong offset!");
+static_assert(offsetof(UT3_Horde_C, PageColors) == 0x000328, "Member 'UT3_Horde_C::PageColors' has a wrong offset!");
 
 }
 

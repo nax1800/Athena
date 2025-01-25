@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -67,7 +67,7 @@ public:
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel) == 0x000008, "Wrong alignment on AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel");
 static_assert(sizeof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel) == 0x000110, "Wrong size on AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel");
@@ -98,7 +98,7 @@ static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, C
 static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, CallFunc_Add_IntInt_ReturnValue1) == 0x0000FC, "Member 'AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, CallFunc_SelectInt_ReturnValue) == 0x000100, "Member 'AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, K2Node_Event_IsDesignTime) == 0x000104, "Member 'AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, CallFunc_Add_IntInt_ReturnValue12) == 0x000108, "Member 'AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel::CallFunc_Add_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel, CallFunc_Add_IntInt_ReturnValue2) == 0x000108, "Member 'AthenaPlayerLevel_C_ExecuteUbergraph_AthenaPlayerLevel::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function AthenaPlayerLevel.AthenaPlayerLevel_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -116,11 +116,11 @@ static_assert(offsetof(AthenaPlayerLevel_C_PreConstruct, IsDesignTime) == 0x0000
 struct AthenaPlayerLevel_C_Play_XP_Reward_Directly final
 {
 public:
-	int32                                         Param_XpToAdd;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         XpToAdd_0;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaPlayerLevel_C_Play_XP_Reward_Directly) == 0x000004, "Wrong alignment on AthenaPlayerLevel_C_Play_XP_Reward_Directly");
 static_assert(sizeof(AthenaPlayerLevel_C_Play_XP_Reward_Directly) == 0x000004, "Wrong size on AthenaPlayerLevel_C_Play_XP_Reward_Directly");
-static_assert(offsetof(AthenaPlayerLevel_C_Play_XP_Reward_Directly, Param_XpToAdd) == 0x000000, "Member 'AthenaPlayerLevel_C_Play_XP_Reward_Directly::Param_XpToAdd' has a wrong offset!");
+static_assert(offsetof(AthenaPlayerLevel_C_Play_XP_Reward_Directly, XpToAdd_0) == 0x000000, "Member 'AthenaPlayerLevel_C_Play_XP_Reward_Directly::XpToAdd_0' has a wrong offset!");
 
 // Function AthenaPlayerLevel.AthenaPlayerLevel_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -187,9 +187,9 @@ struct AthenaPlayerLevel_C_UpdateXp final
 {
 public:
 	int32                                         LevelXp;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_LevelXpForLevel;                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LevelXpForLevel_0;                                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level;                                             // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_MaxLevel;                                    // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxLevel_0;                                        // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
@@ -205,9 +205,9 @@ public:
 static_assert(alignof(AthenaPlayerLevel_C_UpdateXp) == 0x000008, "Wrong alignment on AthenaPlayerLevel_C_UpdateXp");
 static_assert(sizeof(AthenaPlayerLevel_C_UpdateXp) == 0x000088, "Wrong size on AthenaPlayerLevel_C_UpdateXp");
 static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, LevelXp) == 0x000000, "Member 'AthenaPlayerLevel_C_UpdateXp::LevelXp' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, Param_LevelXpForLevel) == 0x000004, "Member 'AthenaPlayerLevel_C_UpdateXp::Param_LevelXpForLevel' has a wrong offset!");
+static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, LevelXpForLevel_0) == 0x000004, "Member 'AthenaPlayerLevel_C_UpdateXp::LevelXpForLevel_0' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, Level) == 0x000008, "Member 'AthenaPlayerLevel_C_UpdateXp::Level' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, Param_MaxLevel) == 0x00000C, "Member 'AthenaPlayerLevel_C_UpdateXp::Param_MaxLevel' has a wrong offset!");
+static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, MaxLevel_0) == 0x00000C, "Member 'AthenaPlayerLevel_C_UpdateXp::MaxLevel_0' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaPlayerLevel_C_UpdateXp::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'AthenaPlayerLevel_C_UpdateXp::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerLevel_C_UpdateXp, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000030, "Member 'AthenaPlayerLevel_C_UpdateXp::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");

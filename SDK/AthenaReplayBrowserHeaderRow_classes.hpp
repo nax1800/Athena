@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaReplayBrowserHeaderRow.AthenaReplayBrowserHeaderRow_C
-// 0x0000 (0x0218 - 0x0218)
+// 0x0000 (0x0210 - 0x0210)
 class UAthenaReplayBrowserHeaderRow_C final : public UCommonUserWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UAthenaReplayBrowserHeaderRow_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserHeaderRow_C");
-static_assert(sizeof(UAthenaReplayBrowserHeaderRow_C) == 0x000218, "Wrong size on UAthenaReplayBrowserHeaderRow_C");
+static_assert(sizeof(UAthenaReplayBrowserHeaderRow_C) == 0x000210, "Wrong size on UAthenaReplayBrowserHeaderRow_C");
 
 }
 

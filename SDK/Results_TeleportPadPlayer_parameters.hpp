@@ -63,7 +63,7 @@ struct Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,7 +73,7 @@ public:
 static_assert(alignof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
 static_assert(sizeof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x0000E0, "Wrong size on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, EntryPoint) == 0x000000, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button12) == 0x000008, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button1) == 0x000010, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_MakeStruct_LinearColor) == 0x000018, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
@@ -145,11 +145,11 @@ static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, CallFunc_GetScore
 struct Results_TeleportPadPlayer_C_IsValidPad final
 {
 public:
-	bool                                          Param_bIsValid;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsValid_0;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Results_TeleportPadPlayer_C_IsValidPad) == 0x000001, "Wrong alignment on Results_TeleportPadPlayer_C_IsValidPad");
 static_assert(sizeof(Results_TeleportPadPlayer_C_IsValidPad) == 0x000001, "Wrong size on Results_TeleportPadPlayer_C_IsValidPad");
-static_assert(offsetof(Results_TeleportPadPlayer_C_IsValidPad, Param_bIsValid) == 0x000000, "Member 'Results_TeleportPadPlayer_C_IsValidPad::Param_bIsValid' has a wrong offset!");
+static_assert(offsetof(Results_TeleportPadPlayer_C_IsValidPad, bIsValid_0) == 0x000000, "Member 'Results_TeleportPadPlayer_C_IsValidPad::bIsValid_0' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ThumbsUpPlayer
 // 0x0010 (0x0010 - 0x0000)

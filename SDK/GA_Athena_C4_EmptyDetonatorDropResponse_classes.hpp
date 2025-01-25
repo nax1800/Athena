@@ -10,25 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Athena_C4_EmptyDetonatorDropResponse.GA_Athena_C4_EmptyDetonatorDropResponse_C
-// 0x0028 (0x0B10 - 0x0AE8)
+// 0x0020 (0x0918 - 0x08F8)
 class UGA_Athena_C4_EmptyDetonatorDropResponse_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UFortWorldItemDefinition*               C4ItemDef;                                         // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TrackedActorTag;                                   // 0x0B00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayBetweenExplosions;                            // 0x0B08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CurrentExplosionDelay;                             // 0x0B0C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UFortWorldItemDefinition*               C4ItemDef;                                         // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TrackedActorTag;                                   // 0x0908(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayBetweenExplosions;                            // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CurrentExplosionDelay;                             // 0x0914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Athena_C4_EmptyDetonatorDropResponse(int32 EntryPoint);
@@ -47,12 +46,12 @@ public:
 	}
 };
 static_assert(alignof(UGA_Athena_C4_EmptyDetonatorDropResponse_C) == 0x000008, "Wrong alignment on UGA_Athena_C4_EmptyDetonatorDropResponse_C");
-static_assert(sizeof(UGA_Athena_C4_EmptyDetonatorDropResponse_C) == 0x000B10, "Wrong size on UGA_Athena_C4_EmptyDetonatorDropResponse_C");
-static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, UberGraphFrame) == 0x000AF0, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, C4ItemDef) == 0x000AF8, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::C4ItemDef' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, TrackedActorTag) == 0x000B00, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::TrackedActorTag' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, DelayBetweenExplosions) == 0x000B08, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::DelayBetweenExplosions' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, CurrentExplosionDelay) == 0x000B0C, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::CurrentExplosionDelay' has a wrong offset!");
+static_assert(sizeof(UGA_Athena_C4_EmptyDetonatorDropResponse_C) == 0x000918, "Wrong size on UGA_Athena_C4_EmptyDetonatorDropResponse_C");
+static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, UberGraphFrame) == 0x0008F8, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, C4ItemDef) == 0x000900, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::C4ItemDef' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, TrackedActorTag) == 0x000908, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::TrackedActorTag' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, DelayBetweenExplosions) == 0x000910, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::DelayBetweenExplosions' has a wrong offset!");
+static_assert(offsetof(UGA_Athena_C4_EmptyDetonatorDropResponse_C, CurrentExplosionDelay) == 0x000914, "Member 'UGA_Athena_C4_EmptyDetonatorDropResponse_C::CurrentExplosionDelay' has a wrong offset!");
 
 }
 

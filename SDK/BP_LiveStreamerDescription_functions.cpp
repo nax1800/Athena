@@ -20,9 +20,9 @@ namespace SDK
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Set Quest
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortQuestItem*                   Param_Quest                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestItem*                   Quest_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_LiveStreamerDescription_C::Set_Quest(class UFortQuestItem* Param_Quest)
+void UBP_LiveStreamerDescription_C::Set_Quest(class UFortQuestItem* Quest_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UBP_LiveStreamerDescription_C::Set_Quest(class UFortQuestItem* Param_Quest)
 
 	Params::BP_LiveStreamerDescription_C_Set_Quest Parms{};
 
-	Parms.Param_Quest = Param_Quest;
+	Parms.Quest_0 = Quest_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

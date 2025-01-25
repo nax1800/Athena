@@ -150,6 +150,29 @@ static_assert(offsetof(UGameNetworkManagerSettings, PercentMissingForTxStandby) 
 static_assert(offsetof(UGameNetworkManagerSettings, PercentForBadPing) == 0x00004C, "Member 'UGameNetworkManagerSettings::PercentForBadPing' has a wrong offset!");
 static_assert(offsetof(UGameNetworkManagerSettings, JoinInProgressStandbyWaitTime) == 0x000050, "Member 'UGameNetworkManagerSettings::JoinInProgressStandbyWaitTime' has a wrong offset!");
 
+// Class EngineSettings.HudSettings
+// 0x0018 (0x0040 - 0x0028)
+class UHudSettings final : public UObject
+{
+public:
+	uint8                                         bShowHUD : 1;                                      // 0x0028(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           DebugDisplay;                                      // 0x0030(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"HudSettings">();
+	}
+	static class UHudSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHudSettings>();
+	}
+};
+static_assert(alignof(UHudSettings) == 0x000008, "Wrong alignment on UHudSettings");
+static_assert(sizeof(UHudSettings) == 0x000040, "Wrong size on UHudSettings");
+static_assert(offsetof(UHudSettings, DebugDisplay) == 0x000030, "Member 'UHudSettings::DebugDisplay' has a wrong offset!");
+
 // Class EngineSettings.GameSessionSettings
 // 0x0010 (0x0038 - 0x0028)
 class UGameSessionSettings final : public UObject
@@ -193,7 +216,7 @@ static_assert(alignof(UGeneralEngineSettings) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UGeneralEngineSettings) == 0x000028, "Wrong size on UGeneralEngineSettings");
 
 // Class EngineSettings.GeneralProjectSettings
-// 0x00E8 (0x0110 - 0x0028)
+// 0x00F0 (0x0118 - 0x0028)
 class UGeneralProjectSettings final : public UObject
 {
 public:
@@ -213,11 +236,13 @@ public:
 	bool                                          bShouldWindowPreserveAspectRatio;                  // 0x0108(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseBorderlessWindow;                              // 0x0109(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStartInVR;                                        // 0x010A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStartInAR;                                        // 0x010B(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowWindowResize;                                // 0x010C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowClose;                                       // 0x010D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowMaximize;                                    // 0x010E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowMinimize;                                    // 0x010F(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStartInAR;                                        // 0x010B(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSupportAR;                                        // 0x010C(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowWindowResize;                                // 0x010D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowClose;                                       // 0x010E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowMaximize;                                    // 0x010F(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowMinimize;                                    // 0x0110(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -230,7 +255,7 @@ public:
 	}
 };
 static_assert(alignof(UGeneralProjectSettings) == 0x000008, "Wrong alignment on UGeneralProjectSettings");
-static_assert(sizeof(UGeneralProjectSettings) == 0x000110, "Wrong size on UGeneralProjectSettings");
+static_assert(sizeof(UGeneralProjectSettings) == 0x000118, "Wrong size on UGeneralProjectSettings");
 static_assert(offsetof(UGeneralProjectSettings, CompanyName) == 0x000028, "Member 'UGeneralProjectSettings::CompanyName' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, CompanyDistinguishedName) == 0x000038, "Member 'UGeneralProjectSettings::CompanyDistinguishedName' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, CopyrightNotice) == 0x000048, "Member 'UGeneralProjectSettings::CopyrightNotice' has a wrong offset!");
@@ -248,33 +273,11 @@ static_assert(offsetof(UGeneralProjectSettings, bShouldWindowPreserveAspectRatio
 static_assert(offsetof(UGeneralProjectSettings, bUseBorderlessWindow) == 0x000109, "Member 'UGeneralProjectSettings::bUseBorderlessWindow' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, bStartInVR) == 0x00010A, "Member 'UGeneralProjectSettings::bStartInVR' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, bStartInAR) == 0x00010B, "Member 'UGeneralProjectSettings::bStartInAR' has a wrong offset!");
-static_assert(offsetof(UGeneralProjectSettings, bAllowWindowResize) == 0x00010C, "Member 'UGeneralProjectSettings::bAllowWindowResize' has a wrong offset!");
-static_assert(offsetof(UGeneralProjectSettings, bAllowClose) == 0x00010D, "Member 'UGeneralProjectSettings::bAllowClose' has a wrong offset!");
-static_assert(offsetof(UGeneralProjectSettings, bAllowMaximize) == 0x00010E, "Member 'UGeneralProjectSettings::bAllowMaximize' has a wrong offset!");
-static_assert(offsetof(UGeneralProjectSettings, bAllowMinimize) == 0x00010F, "Member 'UGeneralProjectSettings::bAllowMinimize' has a wrong offset!");
-
-// Class EngineSettings.HudSettings
-// 0x0018 (0x0040 - 0x0028)
-class UHudSettings final : public UObject
-{
-public:
-	uint8                                         bShowHUD : 1;                                      // 0x0028(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           DebugDisplay;                                      // 0x0030(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"HudSettings">();
-	}
-	static class UHudSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UHudSettings>();
-	}
-};
-static_assert(alignof(UHudSettings) == 0x000008, "Wrong alignment on UHudSettings");
-static_assert(sizeof(UHudSettings) == 0x000040, "Wrong size on UHudSettings");
-static_assert(offsetof(UHudSettings, DebugDisplay) == 0x000030, "Member 'UHudSettings::DebugDisplay' has a wrong offset!");
+static_assert(offsetof(UGeneralProjectSettings, bSupportAR) == 0x00010C, "Member 'UGeneralProjectSettings::bSupportAR' has a wrong offset!");
+static_assert(offsetof(UGeneralProjectSettings, bAllowWindowResize) == 0x00010D, "Member 'UGeneralProjectSettings::bAllowWindowResize' has a wrong offset!");
+static_assert(offsetof(UGeneralProjectSettings, bAllowClose) == 0x00010E, "Member 'UGeneralProjectSettings::bAllowClose' has a wrong offset!");
+static_assert(offsetof(UGeneralProjectSettings, bAllowMaximize) == 0x00010F, "Member 'UGeneralProjectSettings::bAllowMaximize' has a wrong offset!");
+static_assert(offsetof(UGeneralProjectSettings, bAllowMinimize) == 0x000110, "Member 'UGeneralProjectSettings::bAllowMinimize' has a wrong offset!");
 
 }
 

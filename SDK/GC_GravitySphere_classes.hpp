@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_GravitySphere.GC_GravitySphere_C
-// 0x0020 (0x0460 - 0x0440)
+// 0x0018 (0x0438 - 0x0420)
 class AGC_GravitySphere_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               P_Outlander_GravitySphere_Feet_01;                 // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 My_Target;                                         // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               P_Outlander_GravitySphere_Feet_01;                 // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 My_Target;                                         // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GC_GravitySphere(int32 EntryPoint);
@@ -45,11 +45,11 @@ public:
 		return GetDefaultObjImpl<AGC_GravitySphere_C>();
 	}
 };
-static_assert(alignof(AGC_GravitySphere_C) == 0x000010, "Wrong alignment on AGC_GravitySphere_C");
-static_assert(sizeof(AGC_GravitySphere_C) == 0x000460, "Wrong size on AGC_GravitySphere_C");
-static_assert(offsetof(AGC_GravitySphere_C, UberGraphFrame) == 0x000440, "Member 'AGC_GravitySphere_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGC_GravitySphere_C, P_Outlander_GravitySphere_Feet_01) == 0x000448, "Member 'AGC_GravitySphere_C::P_Outlander_GravitySphere_Feet_01' has a wrong offset!");
-static_assert(offsetof(AGC_GravitySphere_C, My_Target) == 0x000450, "Member 'AGC_GravitySphere_C::My_Target' has a wrong offset!");
+static_assert(alignof(AGC_GravitySphere_C) == 0x000008, "Wrong alignment on AGC_GravitySphere_C");
+static_assert(sizeof(AGC_GravitySphere_C) == 0x000438, "Wrong size on AGC_GravitySphere_C");
+static_assert(offsetof(AGC_GravitySphere_C, UberGraphFrame) == 0x000420, "Member 'AGC_GravitySphere_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGC_GravitySphere_C, P_Outlander_GravitySphere_Feet_01) == 0x000428, "Member 'AGC_GravitySphere_C::P_Outlander_GravitySphere_Feet_01' has a wrong offset!");
+static_assert(offsetof(AGC_GravitySphere_C, My_Target) == 0x000430, "Member 'AGC_GravitySphere_C::My_Target' has a wrong offset!");
 
 }
 

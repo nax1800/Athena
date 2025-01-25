@@ -10,100 +10,105 @@
 
 #include "Basic.hpp"
 
-#include "GAT_ConstructorActiveAbility_classes.hpp"
-#include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "AIType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AIType_structs.hpp"
+#include "GAT_ConstructorActiveAbility_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Constructor_BullRush.GA_Constructor_BullRush_C
-// 0x0288 (0x0E48 - 0x0BC0)
+// 0x02B8 (0x0C98 - 0x09E0)
 class UGA_Constructor_BullRush_C final : public UGAT_ConstructorActiveAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_BullRush_C;          // 0x0BC0(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTag                           Event_Activate;                                    // 0x0BC8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Event_Complete;                                    // 0x0BD0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           M_BullRush;                                        // 0x0BD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_BullRushDamage;                                 // 0x0BE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EventPush;                                         // 0x0BE8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EventPushEnd;                                      // 0x0BF0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         RunForwardStartTime;                               // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BullRushDistance;                                  // 0x0BFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RunForwardDuration;                                // 0x0C00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         BullRushAnimUnitsPerSec;                           // 0x0C04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RiotShieldApplyEndingKnockback;                    // 0x0C08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          RiotShield;                                        // 0x0C09(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C0A[0x6];                                      // 0x0C0A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         HitTargets;                                        // 0x0C10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	float                                         EndingKnockback;                                   // 0x0C20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EndingKnockbackZAngle;                             // 0x0C24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_RiotShield;                                     // 0x0C28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UClass*                                 GE_RiotShieldDamage;                               // 0x0C48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        P_MotionLines;                                     // 0x0C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               P_MotionLines_Active;                              // 0x0C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UpgradeDistance;                                   // 0x0C60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DefaultDistance;                                   // 0x0C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PitchInputScale;                                   // 0x0C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         YawInputScale;                                     // 0x0C6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              SoundImpactEnemy;                                  // 0x0C70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              SoundShieldChargeStart;                            // 0x0C78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              SoundChargeKnockback;                              // 0x0C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortFeedbackHandle                    BullRushStartFeedback;                             // 0x0C88(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UClass*                                 ShieldCameraShake;                                 // 0x0CA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 ImpactEnemyCameraShake;                            // 0x0CA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABuildingWall*                          HitBuilding;                                       // 0x0CB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_LongRush;                                       // 0x0CB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_AttachedToShield;                               // 0x0CD8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          DashEnded;                                         // 0x0CF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          LongRush;                                          // 0x0CF9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CFA[0x6];                                      // 0x0CFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_EmergencyOverride;                              // 0x0D00(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          EmergencyOverride;                                 // 0x0D20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D21[0x7];                                      // 0x0D21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_BloodyBull;                                     // 0x0D28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          BloodyBull;                                        // 0x0D48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D49[0x7];                                      // 0x0D49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_BloodyBullDamage;                               // 0x0D50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DashStartLocation;                                 // 0x0D58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D64[0x4];                                      // 0x0D64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceFeedbackEffect*                   ShieldForceFeedback;                               // 0x0D68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UForceFeedbackEffect*                   ImpactEnemyForceFeedback;                          // 0x0D70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_ChinaShop;                                      // 0x0D78(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          ChinaShop;                                         // 0x0D98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bPlayerIsInBullRushAndFalling;                     // 0x0D99(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9A[0x6];                                      // 0x0D9A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           FallingTimerHandle;                                // 0x0DA0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class USoundBase*                             HitWallSound;                                      // 0x0DA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        HitWallFX;                                         // 0x0DB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HitWallDotProduct;                                 // 0x0DB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DBC[0x4];                                      // 0x0DBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_Disarm;                                         // 0x0DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_StandardDamage;                                 // 0x0DC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 GE_ChinaShop;                                      // 0x0DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Count;                                             // 0x0DD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DDC[0x4];                                      // 0x0DDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CheckForDistanceHandle;                            // 0x0DE0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         CurrentRunForwardDuration;                         // 0x0DE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DEC[0x4];                                      // 0x0DEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 GE_Charging;                                       // 0x0DF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_StopSmasherCharge;                              // 0x0DF8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class AFortAIPawn*                            LocalOverlap;                                      // 0x0E00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAIType                                       CurrentAIType;                                     // 0x0E08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E09[0x7];                                      // 0x0E09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFortCharacterPartMontageInfo>  CharacterPartMontages;                             // 0x0E10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	float                                         F_Slide_FailSafe;                                  // 0x0E20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E24[0x4];                                      // 0x0E24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  NPC_Survivor;                                      // 0x0E28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_Constructor_BullRush_C;          // 0x09E0(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           Event_Activate;                                    // 0x09E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Event_Complete;                                    // 0x09F0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           M_BullRush;                                        // 0x09F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_BullRushDamage;                                 // 0x0A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EventPush;                                         // 0x0A08(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EventPushEnd;                                      // 0x0A10(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         RunForwardStartTime;                               // 0x0A18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BullRushDistance;                                  // 0x0A1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RunForwardDuration;                                // 0x0A20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         BullRushAnimUnitsPerSec;                           // 0x0A24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RiotShieldApplyEndingKnockback;                    // 0x0A28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          RiotShield;                                        // 0x0A29(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A2A[0x6];                                      // 0x0A2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         HitTargets;                                        // 0x0A30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	float                                         EndingKnockback;                                   // 0x0A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EndingKnockbackZAngle;                             // 0x0A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_RiotShield;                                     // 0x0A48(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UClass*                                 GE_RiotShieldDamage;                               // 0x0A68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        P_MotionLines;                                     // 0x0A70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               P_MotionLines_Active;                              // 0x0A78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         UpgradeDistance;                                   // 0x0A80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DefaultDistance;                                   // 0x0A84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PitchInputScale;                                   // 0x0A88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         YawInputScale;                                     // 0x0A8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              SoundImpactEnemy;                                  // 0x0A90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              SoundShieldChargeStart;                            // 0x0A98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              SoundChargeKnockback;                              // 0x0AA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortFeedbackHandle                    BullRushStartFeedback;                             // 0x0AA8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UClass*                                 ShieldCameraShake;                                 // 0x0AC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ImpactEnemyCameraShake;                            // 0x0AC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABuildingWall*                          HitBuilding;                                       // 0x0AD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_LongRush;                                       // 0x0AD8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_AttachedToShield;                               // 0x0AF8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          DashEnded;                                         // 0x0B18(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          LongRush;                                          // 0x0B19(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B1A[0x6];                                      // 0x0B1A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_EmergencyOverride;                              // 0x0B20(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          EmergencyOverride;                                 // 0x0B40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B41[0x7];                                      // 0x0B41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TC_BloodyBull;                                     // 0x0B48(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          BloodyBull;                                        // 0x0B68(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B69[0x7];                                      // 0x0B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_BloodyBullDamage;                               // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DashStartLocation;                                 // 0x0B78(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B84[0x4];                                      // 0x0B84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UForceFeedbackEffect*                   ShieldForceFeedback;                               // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceFeedbackEffect*                   ImpactEnemyForceFeedback;                          // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_ChinaShop;                                      // 0x0B98(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          ChinaShop;                                         // 0x0BB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bPlayerIsInBullRushAndFalling;                     // 0x0BB9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BBA[0x6];                                      // 0x0BBA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           FallingTimerHandle;                                // 0x0BC0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             HitWallSound;                                      // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        HitWallFX;                                         // 0x0BD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HitWallDotProduct;                                 // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BDC[0x4];                                      // 0x0BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_Disarm;                                         // 0x0BE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_StandardDamage;                                 // 0x0BE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 GE_ChinaShop;                                      // 0x0BF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BFC[0x4];                                      // 0x0BFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CheckForDistanceHandle;                            // 0x0C00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         CurrentRunForwardDuration;                         // 0x0C08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C0C[0x4];                                      // 0x0C0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 GE_Charging;                                       // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TC_StopSmasherCharge;                              // 0x0C18(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class AFortAIPawn*                            LocalOverlap;                                      // 0x0C20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAIType                                       CurrentAIType;                                     // 0x0C28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C29[0x7];                                      // 0x0C29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFortCharacterPartMontageInfo>  CharacterPartMontages;                             // 0x0C30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	float                                         F_Slide_FailSafe;                                  // 0x0C40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C44[0x4];                                      // 0x0C44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  NPC_Survivor;                                      // 0x0C48(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         CloseWall;                                         // 0x0C68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
+	class UClass*                                 GE_LongRush;                                       // 0x0C78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           M_Bull_Rush_Med_M;                                 // 0x0C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           BullRush_Anim_ToUse;                               // 0x0C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           M_Bull_Rush_Med_F;                                 // 0x0C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GA_Constructor_BullRush(int32 EntryPoint);
-	void ForceAttach(class AFortAIPawn* Param_LocalOverlap);
+	void ForceAttach(class AFortAIPawn* LocalOverlap_0);
 	void UnbindHit();
 	void Hit();
 	void ConstructorPawnHit(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
@@ -173,10 +178,12 @@ public:
 	void ApplyDamageToTarget(class AActor* Actor, class UClass* Applied);
 	void GetAIType(class AFortAIPawn* InPawn, EAIType* OutType);
 	void GetAppliedDamage(class UClass** Applied);
-	void NotADefender(class AFortPawn* InPawn, bool* Param_NotADefender);
+	void NotADefender(class AFortPawn* InPawn, bool* NotADefender_0);
 	void HasShieldCharacterPiece(bool* HasCharm);
 	bool NotBuilding(class AActor* InActor);
 	bool HighOffGround(const struct FVector& ImpactPoint);
+	void ForceDamageWallClose();
+	void SetupBodytype();
 
 public:
 	static class UClass* StaticClass()
@@ -189,70 +196,75 @@ public:
 	}
 };
 static_assert(alignof(UGA_Constructor_BullRush_C) == 0x000008, "Wrong alignment on UGA_Constructor_BullRush_C");
-static_assert(sizeof(UGA_Constructor_BullRush_C) == 0x000E48, "Wrong size on UGA_Constructor_BullRush_C");
-static_assert(offsetof(UGA_Constructor_BullRush_C, UberGraphFrame_GA_Constructor_BullRush_C) == 0x000BC0, "Member 'UGA_Constructor_BullRush_C::UberGraphFrame_GA_Constructor_BullRush_C' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, Event_Activate) == 0x000BC8, "Member 'UGA_Constructor_BullRush_C::Event_Activate' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, Event_Complete) == 0x000BD0, "Member 'UGA_Constructor_BullRush_C::Event_Complete' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, M_BullRush) == 0x000BD8, "Member 'UGA_Constructor_BullRush_C::M_BullRush' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_BullRushDamage) == 0x000BE0, "Member 'UGA_Constructor_BullRush_C::GE_BullRushDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, EventPush) == 0x000BE8, "Member 'UGA_Constructor_BullRush_C::EventPush' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, EventPushEnd) == 0x000BF0, "Member 'UGA_Constructor_BullRush_C::EventPushEnd' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, RunForwardStartTime) == 0x000BF8, "Member 'UGA_Constructor_BullRush_C::RunForwardStartTime' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushDistance) == 0x000BFC, "Member 'UGA_Constructor_BullRush_C::BullRushDistance' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, RunForwardDuration) == 0x000C00, "Member 'UGA_Constructor_BullRush_C::RunForwardDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushAnimUnitsPerSec) == 0x000C04, "Member 'UGA_Constructor_BullRush_C::BullRushAnimUnitsPerSec' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, RiotShieldApplyEndingKnockback) == 0x000C08, "Member 'UGA_Constructor_BullRush_C::RiotShieldApplyEndingKnockback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, RiotShield) == 0x000C09, "Member 'UGA_Constructor_BullRush_C::RiotShield' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, HitTargets) == 0x000C10, "Member 'UGA_Constructor_BullRush_C::HitTargets' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, EndingKnockback) == 0x000C20, "Member 'UGA_Constructor_BullRush_C::EndingKnockback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, EndingKnockbackZAngle) == 0x000C24, "Member 'UGA_Constructor_BullRush_C::EndingKnockbackZAngle' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_RiotShield) == 0x000C28, "Member 'UGA_Constructor_BullRush_C::TC_RiotShield' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_RiotShieldDamage) == 0x000C48, "Member 'UGA_Constructor_BullRush_C::GE_RiotShieldDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, P_MotionLines) == 0x000C50, "Member 'UGA_Constructor_BullRush_C::P_MotionLines' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, P_MotionLines_Active) == 0x000C58, "Member 'UGA_Constructor_BullRush_C::P_MotionLines_Active' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, UpgradeDistance) == 0x000C60, "Member 'UGA_Constructor_BullRush_C::UpgradeDistance' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, DefaultDistance) == 0x000C64, "Member 'UGA_Constructor_BullRush_C::DefaultDistance' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, PitchInputScale) == 0x000C68, "Member 'UGA_Constructor_BullRush_C::PitchInputScale' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, YawInputScale) == 0x000C6C, "Member 'UGA_Constructor_BullRush_C::YawInputScale' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, SoundImpactEnemy) == 0x000C70, "Member 'UGA_Constructor_BullRush_C::SoundImpactEnemy' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, SoundShieldChargeStart) == 0x000C78, "Member 'UGA_Constructor_BullRush_C::SoundShieldChargeStart' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, SoundChargeKnockback) == 0x000C80, "Member 'UGA_Constructor_BullRush_C::SoundChargeKnockback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushStartFeedback) == 0x000C88, "Member 'UGA_Constructor_BullRush_C::BullRushStartFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, ShieldCameraShake) == 0x000CA0, "Member 'UGA_Constructor_BullRush_C::ShieldCameraShake' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, ImpactEnemyCameraShake) == 0x000CA8, "Member 'UGA_Constructor_BullRush_C::ImpactEnemyCameraShake' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, HitBuilding) == 0x000CB0, "Member 'UGA_Constructor_BullRush_C::HitBuilding' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_LongRush) == 0x000CB8, "Member 'UGA_Constructor_BullRush_C::TC_LongRush' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_AttachedToShield) == 0x000CD8, "Member 'UGA_Constructor_BullRush_C::TC_AttachedToShield' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, DashEnded) == 0x000CF8, "Member 'UGA_Constructor_BullRush_C::DashEnded' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, LongRush) == 0x000CF9, "Member 'UGA_Constructor_BullRush_C::LongRush' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_EmergencyOverride) == 0x000D00, "Member 'UGA_Constructor_BullRush_C::TC_EmergencyOverride' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, EmergencyOverride) == 0x000D20, "Member 'UGA_Constructor_BullRush_C::EmergencyOverride' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_BloodyBull) == 0x000D28, "Member 'UGA_Constructor_BullRush_C::TC_BloodyBull' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, BloodyBull) == 0x000D48, "Member 'UGA_Constructor_BullRush_C::BloodyBull' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_BloodyBullDamage) == 0x000D50, "Member 'UGA_Constructor_BullRush_C::GE_BloodyBullDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, DashStartLocation) == 0x000D58, "Member 'UGA_Constructor_BullRush_C::DashStartLocation' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, ShieldForceFeedback) == 0x000D68, "Member 'UGA_Constructor_BullRush_C::ShieldForceFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, ImpactEnemyForceFeedback) == 0x000D70, "Member 'UGA_Constructor_BullRush_C::ImpactEnemyForceFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_ChinaShop) == 0x000D78, "Member 'UGA_Constructor_BullRush_C::TC_ChinaShop' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, ChinaShop) == 0x000D98, "Member 'UGA_Constructor_BullRush_C::ChinaShop' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, bPlayerIsInBullRushAndFalling) == 0x000D99, "Member 'UGA_Constructor_BullRush_C::bPlayerIsInBullRushAndFalling' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, FallingTimerHandle) == 0x000DA0, "Member 'UGA_Constructor_BullRush_C::FallingTimerHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallSound) == 0x000DA8, "Member 'UGA_Constructor_BullRush_C::HitWallSound' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallFX) == 0x000DB0, "Member 'UGA_Constructor_BullRush_C::HitWallFX' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallDotProduct) == 0x000DB8, "Member 'UGA_Constructor_BullRush_C::HitWallDotProduct' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_Disarm) == 0x000DC0, "Member 'UGA_Constructor_BullRush_C::GE_Disarm' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_StandardDamage) == 0x000DC8, "Member 'UGA_Constructor_BullRush_C::GE_StandardDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_ChinaShop) == 0x000DD0, "Member 'UGA_Constructor_BullRush_C::GE_ChinaShop' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, Count) == 0x000DD8, "Member 'UGA_Constructor_BullRush_C::Count' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, CheckForDistanceHandle) == 0x000DE0, "Member 'UGA_Constructor_BullRush_C::CheckForDistanceHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, CurrentRunForwardDuration) == 0x000DE8, "Member 'UGA_Constructor_BullRush_C::CurrentRunForwardDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, GE_Charging) == 0x000DF0, "Member 'UGA_Constructor_BullRush_C::GE_Charging' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, TC_StopSmasherCharge) == 0x000DF8, "Member 'UGA_Constructor_BullRush_C::TC_StopSmasherCharge' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, LocalOverlap) == 0x000E00, "Member 'UGA_Constructor_BullRush_C::LocalOverlap' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, CurrentAIType) == 0x000E08, "Member 'UGA_Constructor_BullRush_C::CurrentAIType' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, CharacterPartMontages) == 0x000E10, "Member 'UGA_Constructor_BullRush_C::CharacterPartMontages' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, F_Slide_FailSafe) == 0x000E20, "Member 'UGA_Constructor_BullRush_C::F_Slide_FailSafe' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_BullRush_C, NPC_Survivor) == 0x000E28, "Member 'UGA_Constructor_BullRush_C::NPC_Survivor' has a wrong offset!");
+static_assert(sizeof(UGA_Constructor_BullRush_C) == 0x000C98, "Wrong size on UGA_Constructor_BullRush_C");
+static_assert(offsetof(UGA_Constructor_BullRush_C, UberGraphFrame_GA_Constructor_BullRush_C) == 0x0009E0, "Member 'UGA_Constructor_BullRush_C::UberGraphFrame_GA_Constructor_BullRush_C' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, Event_Activate) == 0x0009E8, "Member 'UGA_Constructor_BullRush_C::Event_Activate' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, Event_Complete) == 0x0009F0, "Member 'UGA_Constructor_BullRush_C::Event_Complete' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, M_BullRush) == 0x0009F8, "Member 'UGA_Constructor_BullRush_C::M_BullRush' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_BullRushDamage) == 0x000A00, "Member 'UGA_Constructor_BullRush_C::GE_BullRushDamage' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, EventPush) == 0x000A08, "Member 'UGA_Constructor_BullRush_C::EventPush' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, EventPushEnd) == 0x000A10, "Member 'UGA_Constructor_BullRush_C::EventPushEnd' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, RunForwardStartTime) == 0x000A18, "Member 'UGA_Constructor_BullRush_C::RunForwardStartTime' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushDistance) == 0x000A1C, "Member 'UGA_Constructor_BullRush_C::BullRushDistance' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, RunForwardDuration) == 0x000A20, "Member 'UGA_Constructor_BullRush_C::RunForwardDuration' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushAnimUnitsPerSec) == 0x000A24, "Member 'UGA_Constructor_BullRush_C::BullRushAnimUnitsPerSec' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, RiotShieldApplyEndingKnockback) == 0x000A28, "Member 'UGA_Constructor_BullRush_C::RiotShieldApplyEndingKnockback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, RiotShield) == 0x000A29, "Member 'UGA_Constructor_BullRush_C::RiotShield' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, HitTargets) == 0x000A30, "Member 'UGA_Constructor_BullRush_C::HitTargets' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, EndingKnockback) == 0x000A40, "Member 'UGA_Constructor_BullRush_C::EndingKnockback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, EndingKnockbackZAngle) == 0x000A44, "Member 'UGA_Constructor_BullRush_C::EndingKnockbackZAngle' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_RiotShield) == 0x000A48, "Member 'UGA_Constructor_BullRush_C::TC_RiotShield' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_RiotShieldDamage) == 0x000A68, "Member 'UGA_Constructor_BullRush_C::GE_RiotShieldDamage' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, P_MotionLines) == 0x000A70, "Member 'UGA_Constructor_BullRush_C::P_MotionLines' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, P_MotionLines_Active) == 0x000A78, "Member 'UGA_Constructor_BullRush_C::P_MotionLines_Active' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, UpgradeDistance) == 0x000A80, "Member 'UGA_Constructor_BullRush_C::UpgradeDistance' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, DefaultDistance) == 0x000A84, "Member 'UGA_Constructor_BullRush_C::DefaultDistance' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, PitchInputScale) == 0x000A88, "Member 'UGA_Constructor_BullRush_C::PitchInputScale' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, YawInputScale) == 0x000A8C, "Member 'UGA_Constructor_BullRush_C::YawInputScale' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, SoundImpactEnemy) == 0x000A90, "Member 'UGA_Constructor_BullRush_C::SoundImpactEnemy' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, SoundShieldChargeStart) == 0x000A98, "Member 'UGA_Constructor_BullRush_C::SoundShieldChargeStart' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, SoundChargeKnockback) == 0x000AA0, "Member 'UGA_Constructor_BullRush_C::SoundChargeKnockback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, BullRushStartFeedback) == 0x000AA8, "Member 'UGA_Constructor_BullRush_C::BullRushStartFeedback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, ShieldCameraShake) == 0x000AC0, "Member 'UGA_Constructor_BullRush_C::ShieldCameraShake' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, ImpactEnemyCameraShake) == 0x000AC8, "Member 'UGA_Constructor_BullRush_C::ImpactEnemyCameraShake' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, HitBuilding) == 0x000AD0, "Member 'UGA_Constructor_BullRush_C::HitBuilding' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_LongRush) == 0x000AD8, "Member 'UGA_Constructor_BullRush_C::TC_LongRush' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_AttachedToShield) == 0x000AF8, "Member 'UGA_Constructor_BullRush_C::TC_AttachedToShield' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, DashEnded) == 0x000B18, "Member 'UGA_Constructor_BullRush_C::DashEnded' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, LongRush) == 0x000B19, "Member 'UGA_Constructor_BullRush_C::LongRush' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_EmergencyOverride) == 0x000B20, "Member 'UGA_Constructor_BullRush_C::TC_EmergencyOverride' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, EmergencyOverride) == 0x000B40, "Member 'UGA_Constructor_BullRush_C::EmergencyOverride' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_BloodyBull) == 0x000B48, "Member 'UGA_Constructor_BullRush_C::TC_BloodyBull' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, BloodyBull) == 0x000B68, "Member 'UGA_Constructor_BullRush_C::BloodyBull' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_BloodyBullDamage) == 0x000B70, "Member 'UGA_Constructor_BullRush_C::GE_BloodyBullDamage' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, DashStartLocation) == 0x000B78, "Member 'UGA_Constructor_BullRush_C::DashStartLocation' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, ShieldForceFeedback) == 0x000B88, "Member 'UGA_Constructor_BullRush_C::ShieldForceFeedback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, ImpactEnemyForceFeedback) == 0x000B90, "Member 'UGA_Constructor_BullRush_C::ImpactEnemyForceFeedback' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_ChinaShop) == 0x000B98, "Member 'UGA_Constructor_BullRush_C::TC_ChinaShop' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, ChinaShop) == 0x000BB8, "Member 'UGA_Constructor_BullRush_C::ChinaShop' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, bPlayerIsInBullRushAndFalling) == 0x000BB9, "Member 'UGA_Constructor_BullRush_C::bPlayerIsInBullRushAndFalling' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, FallingTimerHandle) == 0x000BC0, "Member 'UGA_Constructor_BullRush_C::FallingTimerHandle' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallSound) == 0x000BC8, "Member 'UGA_Constructor_BullRush_C::HitWallSound' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallFX) == 0x000BD0, "Member 'UGA_Constructor_BullRush_C::HitWallFX' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, HitWallDotProduct) == 0x000BD8, "Member 'UGA_Constructor_BullRush_C::HitWallDotProduct' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_Disarm) == 0x000BE0, "Member 'UGA_Constructor_BullRush_C::GE_Disarm' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_StandardDamage) == 0x000BE8, "Member 'UGA_Constructor_BullRush_C::GE_StandardDamage' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_ChinaShop) == 0x000BF0, "Member 'UGA_Constructor_BullRush_C::GE_ChinaShop' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, Count) == 0x000BF8, "Member 'UGA_Constructor_BullRush_C::Count' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, CheckForDistanceHandle) == 0x000C00, "Member 'UGA_Constructor_BullRush_C::CheckForDistanceHandle' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, CurrentRunForwardDuration) == 0x000C08, "Member 'UGA_Constructor_BullRush_C::CurrentRunForwardDuration' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_Charging) == 0x000C10, "Member 'UGA_Constructor_BullRush_C::GE_Charging' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, TC_StopSmasherCharge) == 0x000C18, "Member 'UGA_Constructor_BullRush_C::TC_StopSmasherCharge' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, LocalOverlap) == 0x000C20, "Member 'UGA_Constructor_BullRush_C::LocalOverlap' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, CurrentAIType) == 0x000C28, "Member 'UGA_Constructor_BullRush_C::CurrentAIType' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, CharacterPartMontages) == 0x000C30, "Member 'UGA_Constructor_BullRush_C::CharacterPartMontages' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, F_Slide_FailSafe) == 0x000C40, "Member 'UGA_Constructor_BullRush_C::F_Slide_FailSafe' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, NPC_Survivor) == 0x000C48, "Member 'UGA_Constructor_BullRush_C::NPC_Survivor' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, CloseWall) == 0x000C68, "Member 'UGA_Constructor_BullRush_C::CloseWall' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, GE_LongRush) == 0x000C78, "Member 'UGA_Constructor_BullRush_C::GE_LongRush' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, M_Bull_Rush_Med_M) == 0x000C80, "Member 'UGA_Constructor_BullRush_C::M_Bull_Rush_Med_M' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, BullRush_Anim_ToUse) == 0x000C88, "Member 'UGA_Constructor_BullRush_C::BullRush_Anim_ToUse' has a wrong offset!");
+static_assert(offsetof(UGA_Constructor_BullRush_C, M_Bull_Rush_Med_F) == 0x000C90, "Member 'UGA_Constructor_BullRush_C::M_Bull_Rush_Med_F' has a wrong offset!");
 
 }
 

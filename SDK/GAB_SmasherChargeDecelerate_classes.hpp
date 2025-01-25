@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherChargeDecelerate.GAB_SmasherChargeDecelerate_C
-// 0x0010 (0x0B08 - 0x0AF8)
+// 0x0010 (0x0910 - 0x0900)
 class UGAB_SmasherChargeDecelerate_C final : public UGAB_AIBaseSimpleMontage_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherChargeDecelerate_C;      // 0x0AF8(0x0008)(Transient, DuplicateTransient)
-	struct FGameplayTag                           GC_GameplayCueNPCSmasherCharge;                    // 0x0B00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherChargeDecelerate_C;      // 0x0900(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           GC_GameplayCueNPCSmasherCharge;                    // 0x0908(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherChargeDecelerate(int32 EntryPoint);
@@ -42,9 +42,9 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherChargeDecelerate_C) == 0x000008, "Wrong alignment on UGAB_SmasherChargeDecelerate_C");
-static_assert(sizeof(UGAB_SmasherChargeDecelerate_C) == 0x000B08, "Wrong size on UGAB_SmasherChargeDecelerate_C");
-static_assert(offsetof(UGAB_SmasherChargeDecelerate_C, UberGraphFrame_GAB_SmasherChargeDecelerate_C) == 0x000AF8, "Member 'UGAB_SmasherChargeDecelerate_C::UberGraphFrame_GAB_SmasherChargeDecelerate_C' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherChargeDecelerate_C, GC_GameplayCueNPCSmasherCharge) == 0x000B00, "Member 'UGAB_SmasherChargeDecelerate_C::GC_GameplayCueNPCSmasherCharge' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherChargeDecelerate_C) == 0x000910, "Wrong size on UGAB_SmasherChargeDecelerate_C");
+static_assert(offsetof(UGAB_SmasherChargeDecelerate_C, UberGraphFrame_GAB_SmasherChargeDecelerate_C) == 0x000900, "Member 'UGAB_SmasherChargeDecelerate_C::UberGraphFrame_GAB_SmasherChargeDecelerate_C' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherChargeDecelerate_C, GC_GameplayCueNPCSmasherCharge) == 0x000908, "Member 'UGAB_SmasherChargeDecelerate_C::GC_GameplayCueNPCSmasherCharge' has a wrong offset!");
 
 }
 

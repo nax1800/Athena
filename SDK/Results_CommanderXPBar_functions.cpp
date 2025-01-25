@@ -207,9 +207,9 @@ void UResults_CommanderXPBar_C::UpdateCount()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortUIScoreReport*               InScoreReport                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_PlayRate                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   PlayRate_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_CommanderXPBar_C::Initialize(class UFortUIScoreReport* InScoreReport, float Param_PlayRate)
+void UResults_CommanderXPBar_C::Initialize(class UFortUIScoreReport* InScoreReport, float PlayRate_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -219,7 +219,7 @@ void UResults_CommanderXPBar_C::Initialize(class UFortUIScoreReport* InScoreRepo
 	Params::Results_CommanderXPBar_C_Initialize Parms{};
 
 	Parms.InScoreReport = InScoreReport;
-	Parms.Param_PlayRate = Param_PlayRate;
+	Parms.PlayRate_0 = PlayRate_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

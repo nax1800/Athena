@@ -50,5 +50,118 @@ void UGAT_ActiveAbility_C::K2_ActivateAbility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function GAT_ActiveAbility.GAT_ActiveAbility_C.SetPawnCollision
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AFortPawn*                        FortPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CollisionOn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGAT_ActiveAbility_C::SetPawnCollision(class AFortPawn* FortPawn, bool CollisionOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetPawnCollision");
+
+	Params::GAT_ActiveAbility_C_SetPawnCollision Parms{};
+
+	Parms.FortPawn = FortPawn;
+	Parms.CollisionOn = CollisionOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAT_ActiveAbility.GAT_ActiveAbility_C.SetKnockbackImmunity
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ImmunityOn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGAT_ActiveAbility_C::SetKnockbackImmunity(bool ImmunityOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetKnockbackImmunity");
+
+	Params::GAT_ActiveAbility_C_SetKnockbackImmunity Parms{};
+
+	Parms.ImmunityOn = ImmunityOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAT_ActiveAbility.GAT_ActiveAbility_C.SetHolsterWeaponWithName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AFortPawn*                        Target_Fort_Pawn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ShouldHolster                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    PlayEquipAnim                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ShowDebugPrintName                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGAT_ActiveAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort_Pawn, bool ShouldHolster, bool PlayEquipAnim, bool ShowDebugPrintName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetHolsterWeaponWithName");
+
+	Params::GAT_ActiveAbility_C_SetHolsterWeaponWithName Parms{};
+
+	Parms.Target_Fort_Pawn = Target_Fort_Pawn;
+	Parms.ShouldHolster = ShouldHolster;
+	Parms.PlayEquipAnim = PlayEquipAnim;
+	Parms.ShowDebugPrintName = ShowDebugPrintName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAT_ActiveAbility.GAT_ActiveAbility_C.ActiveAbilitySetup
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UAbilitySystemComponent*          AbilitySystemComponent                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UGAT_ActiveAbility_C::ActiveAbilitySetup(class UAbilitySystemComponent* AbilitySystemComponent) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "ActiveAbilitySetup");
+
+	Params::GAT_ActiveAbility_C_ActiveAbilitySetup Parms{};
+
+	Parms.AbilitySystemComponent = AbilitySystemComponent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GAT_ActiveAbility.GAT_ActiveAbility_C.K2_ShouldAbilityRespondToEvent
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FGameplayAbilityActorInfo        ActorInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+// struct FGameplayEventData               Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UGAT_ActiveAbility_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::GAT_ActiveAbility_C_K2_ShouldAbilityRespondToEvent Parms{};
+
+	Parms.ActorInfo = std::move(ActorInfo);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

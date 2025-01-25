@@ -10,13 +10,73 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
-#include "ReplicationGraph_structs.hpp"
 #include "Engine_classes.hpp"
+#include "ReplicationGraph_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 namespace SDK
 {
+
+// Class ReplicationGraph.ReplicationGraph
+// 0x02C8 (0x02F0 - 0x0028)
+class UReplicationGraph : public UReplicationDriver
+{
+public:
+	TSubclassOf<class UNetReplicationGraphConnection> ReplicationConnectionManagerClass;                 // 0x0028(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNetDriver*                             NetDriver;                                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UNetReplicationGraphConnection*> Connections;                                       // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class UNetReplicationGraphConnection*> PendingConnections;                                // 0x0048(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_58[0x40];                                      // 0x0058(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UReplicationGraphNode*>          GlobalGraphNodes;                                  // 0x0098(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class UReplicationGraphNode*>          PrepareForReplicationNodes;                        // 0x00A8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_B8[0x238];                                     // 0x00B8(0x0238)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ReplicationGraph">();
+	}
+	static class UReplicationGraph* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UReplicationGraph>();
+	}
+};
+static_assert(alignof(UReplicationGraph) == 0x000008, "Wrong alignment on UReplicationGraph");
+static_assert(sizeof(UReplicationGraph) == 0x0002F0, "Wrong size on UReplicationGraph");
+static_assert(offsetof(UReplicationGraph, ReplicationConnectionManagerClass) == 0x000028, "Member 'UReplicationGraph::ReplicationConnectionManagerClass' has a wrong offset!");
+static_assert(offsetof(UReplicationGraph, NetDriver) == 0x000030, "Member 'UReplicationGraph::NetDriver' has a wrong offset!");
+static_assert(offsetof(UReplicationGraph, Connections) == 0x000038, "Member 'UReplicationGraph::Connections' has a wrong offset!");
+static_assert(offsetof(UReplicationGraph, PendingConnections) == 0x000048, "Member 'UReplicationGraph::PendingConnections' has a wrong offset!");
+static_assert(offsetof(UReplicationGraph, GlobalGraphNodes) == 0x000098, "Member 'UReplicationGraph::GlobalGraphNodes' has a wrong offset!");
+static_assert(offsetof(UReplicationGraph, PrepareForReplicationNodes) == 0x0000A8, "Member 'UReplicationGraph::PrepareForReplicationNodes' has a wrong offset!");
+
+// Class ReplicationGraph.BasicReplicationGraph
+// 0x0030 (0x0320 - 0x02F0)
+class UBasicReplicationGraph final : public UReplicationGraph
+{
+public:
+	class UReplicationGraphNode_GridSpatialization2D* GridNode;                                          // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UReplicationGraphNode_ActorList*        AlwaysRelevantNode;                                // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FConnectionAlwaysRelevantNodePair> AlwaysRelevantForConnectionList;                   // 0x0300(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                         ActorsWithoutNetConnection;                        // 0x0310(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BasicReplicationGraph">();
+	}
+	static class UBasicReplicationGraph* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBasicReplicationGraph>();
+	}
+};
+static_assert(alignof(UBasicReplicationGraph) == 0x000008, "Wrong alignment on UBasicReplicationGraph");
+static_assert(sizeof(UBasicReplicationGraph) == 0x000320, "Wrong size on UBasicReplicationGraph");
+static_assert(offsetof(UBasicReplicationGraph, GridNode) == 0x0002F0, "Member 'UBasicReplicationGraph::GridNode' has a wrong offset!");
+static_assert(offsetof(UBasicReplicationGraph, AlwaysRelevantNode) == 0x0002F8, "Member 'UBasicReplicationGraph::AlwaysRelevantNode' has a wrong offset!");
+static_assert(offsetof(UBasicReplicationGraph, AlwaysRelevantForConnectionList) == 0x000300, "Member 'UBasicReplicationGraph::AlwaysRelevantForConnectionList' has a wrong offset!");
+static_assert(offsetof(UBasicReplicationGraph, ActorsWithoutNetConnection) == 0x000310, "Member 'UBasicReplicationGraph::ActorsWithoutNetConnection' has a wrong offset!");
 
 // Class ReplicationGraph.ReplicationGraphNode
 // 0x0078 (0x00A0 - 0x0028)
@@ -83,11 +143,11 @@ static_assert(alignof(UReplicationGraphNode_ActorListFrequencyBuckets) == 0x0000
 static_assert(sizeof(UReplicationGraphNode_ActorListFrequencyBuckets) == 0x000180, "Wrong size on UReplicationGraphNode_ActorListFrequencyBuckets");
 
 // Class ReplicationGraph.ReplicationGraphNode_ConnectionDormanyNode
-// 0x0008 (0x0150 - 0x0148)
+// 0x0098 (0x01E0 - 0x0148)
 class UReplicationGraphNode_ConnectionDormanyNode final : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                         Pad_148[0x8];                                      // 0x0148(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_148[0x98];                                     // 0x0148(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -100,7 +160,7 @@ public:
 	}
 };
 static_assert(alignof(UReplicationGraphNode_ConnectionDormanyNode) == 0x000008, "Wrong alignment on UReplicationGraphNode_ConnectionDormanyNode");
-static_assert(sizeof(UReplicationGraphNode_ConnectionDormanyNode) == 0x000150, "Wrong size on UReplicationGraphNode_ConnectionDormanyNode");
+static_assert(sizeof(UReplicationGraphNode_ConnectionDormanyNode) == 0x0001E0, "Wrong size on UReplicationGraphNode_ConnectionDormanyNode");
 
 // Class ReplicationGraph.ReplicationGraphNode_DormancyNode
 // 0x0058 (0x01A0 - 0x0148)
@@ -166,46 +226,6 @@ public:
 static_assert(alignof(UReplicationGraphNode_GridSpatialization2D) == 0x000008, "Wrong alignment on UReplicationGraphNode_GridSpatialization2D");
 static_assert(sizeof(UReplicationGraphNode_GridSpatialization2D) == 0x0001D0, "Wrong size on UReplicationGraphNode_GridSpatialization2D");
 
-// Class ReplicationGraph.ReplicationGraphNode_ClassCategories
-// 0x0060 (0x0100 - 0x00A0)
-class UReplicationGraphNode_ClassCategories final : public UReplicationGraphNode
-{
-public:
-	uint8                                         Pad_A0[0x60];                                      // 0x00A0(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ReplicationGraphNode_ClassCategories">();
-	}
-	static class UReplicationGraphNode_ClassCategories* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UReplicationGraphNode_ClassCategories>();
-	}
-};
-static_assert(alignof(UReplicationGraphNode_ClassCategories) == 0x000008, "Wrong alignment on UReplicationGraphNode_ClassCategories");
-static_assert(sizeof(UReplicationGraphNode_ClassCategories) == 0x000100, "Wrong size on UReplicationGraphNode_ClassCategories");
-
-// Class ReplicationGraph.ReplicationGraphNode_FrequencyLimiter
-// 0x0020 (0x00C0 - 0x00A0)
-class UReplicationGraphNode_FrequencyLimiter final : public UReplicationGraphNode
-{
-public:
-	uint8                                         Pad_A0[0x20];                                      // 0x00A0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ReplicationGraphNode_FrequencyLimiter">();
-	}
-	static class UReplicationGraphNode_FrequencyLimiter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UReplicationGraphNode_FrequencyLimiter>();
-	}
-};
-static_assert(alignof(UReplicationGraphNode_FrequencyLimiter) == 0x000008, "Wrong alignment on UReplicationGraphNode_FrequencyLimiter");
-static_assert(sizeof(UReplicationGraphNode_FrequencyLimiter) == 0x0000C0, "Wrong size on UReplicationGraphNode_FrequencyLimiter");
-
 // Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant
 // 0x0020 (0x00C0 - 0x00A0)
 class UReplicationGraphNode_AlwaysRelevant final : public UReplicationGraphNode
@@ -229,12 +249,13 @@ static_assert(sizeof(UReplicationGraphNode_AlwaysRelevant) == 0x0000C0, "Wrong s
 static_assert(offsetof(UReplicationGraphNode_AlwaysRelevant, ChildNode) == 0x0000A0, "Member 'UReplicationGraphNode_AlwaysRelevant::ChildNode' has a wrong offset!");
 
 // Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant_ForConnection
-// 0x0010 (0x00B0 - 0x00A0)
-class UReplicationGraphNode_AlwaysRelevant_ForConnection final : public UReplicationGraphNode
+// 0x0028 (0x0170 - 0x0148)
+class UReplicationGraphNode_AlwaysRelevant_ForConnection final : public UReplicationGraphNode_ActorList
 {
 public:
-	class UReplicationGraphNode*                  ChildNode;                                         // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_148[0x18];                                     // 0x0148(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 LastViewer;                                        // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 LastViewTarget;                                    // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -247,8 +268,9 @@ public:
 	}
 };
 static_assert(alignof(UReplicationGraphNode_AlwaysRelevant_ForConnection) == 0x000008, "Wrong alignment on UReplicationGraphNode_AlwaysRelevant_ForConnection");
-static_assert(sizeof(UReplicationGraphNode_AlwaysRelevant_ForConnection) == 0x0000B0, "Wrong size on UReplicationGraphNode_AlwaysRelevant_ForConnection");
-static_assert(offsetof(UReplicationGraphNode_AlwaysRelevant_ForConnection, ChildNode) == 0x0000A0, "Member 'UReplicationGraphNode_AlwaysRelevant_ForConnection::ChildNode' has a wrong offset!");
+static_assert(sizeof(UReplicationGraphNode_AlwaysRelevant_ForConnection) == 0x000170, "Wrong size on UReplicationGraphNode_AlwaysRelevant_ForConnection");
+static_assert(offsetof(UReplicationGraphNode_AlwaysRelevant_ForConnection, LastViewer) == 0x000160, "Member 'UReplicationGraphNode_AlwaysRelevant_ForConnection::LastViewer' has a wrong offset!");
+static_assert(offsetof(UReplicationGraphNode_AlwaysRelevant_ForConnection, LastViewTarget) == 0x000168, "Member 'UReplicationGraphNode_AlwaysRelevant_ForConnection::LastViewTarget' has a wrong offset!");
 
 // Class ReplicationGraph.ReplicationGraphNode_TearOff_ForConnection
 // 0x0030 (0x00D0 - 0x00A0)
@@ -272,51 +294,18 @@ static_assert(alignof(UReplicationGraphNode_TearOff_ForConnection) == 0x000008, 
 static_assert(sizeof(UReplicationGraphNode_TearOff_ForConnection) == 0x0000D0, "Wrong size on UReplicationGraphNode_TearOff_ForConnection");
 static_assert(offsetof(UReplicationGraphNode_TearOff_ForConnection, TearOffActors) == 0x0000A0, "Member 'UReplicationGraphNode_TearOff_ForConnection::TearOffActors' has a wrong offset!");
 
-// Class ReplicationGraph.ReplicationGraph
-// 0x0248 (0x0298 - 0x0050)
-class UReplicationGraph : public UReplicationDriver
-{
-public:
-	TSubclassOf<class UNetReplicationGraphConnection> ReplicationConnectionManagerClass;                 // 0x0050(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNetDriver*                             NetDriver;                                         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UNetReplicationGraphConnection*> Connections;                                       // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class UNetReplicationGraphConnection*> PendingConnections;                                // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_80[0xB0];                                      // 0x0080(0x00B0)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UReplicationGraphNode*>          GlobalGraphNodes;                                  // 0x0130(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class UReplicationGraphNode*>          PrepareForReplicationNodes;                        // 0x0140(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_150[0x148];                                    // 0x0150(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ReplicationGraph">();
-	}
-	static class UReplicationGraph* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UReplicationGraph>();
-	}
-};
-static_assert(alignof(UReplicationGraph) == 0x000008, "Wrong alignment on UReplicationGraph");
-static_assert(sizeof(UReplicationGraph) == 0x000298, "Wrong size on UReplicationGraph");
-static_assert(offsetof(UReplicationGraph, ReplicationConnectionManagerClass) == 0x000050, "Member 'UReplicationGraph::ReplicationConnectionManagerClass' has a wrong offset!");
-static_assert(offsetof(UReplicationGraph, NetDriver) == 0x000058, "Member 'UReplicationGraph::NetDriver' has a wrong offset!");
-static_assert(offsetof(UReplicationGraph, Connections) == 0x000060, "Member 'UReplicationGraph::Connections' has a wrong offset!");
-static_assert(offsetof(UReplicationGraph, PendingConnections) == 0x000070, "Member 'UReplicationGraph::PendingConnections' has a wrong offset!");
-static_assert(offsetof(UReplicationGraph, GlobalGraphNodes) == 0x000130, "Member 'UReplicationGraph::GlobalGraphNodes' has a wrong offset!");
-static_assert(offsetof(UReplicationGraph, PrepareForReplicationNodes) == 0x000140, "Member 'UReplicationGraph::PrepareForReplicationNodes' has a wrong offset!");
-
 // Class ReplicationGraph.NetReplicationGraphConnection
-// 0x01F8 (0x0220 - 0x0028)
+// 0x0180 (0x01A8 - 0x0028)
 class UNetReplicationGraphConnection final : public UReplicationConnectionDriver
 {
 public:
 	class UNetConnection*                         NetConnection;                                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_30[0x1B0];                                     // 0x0030(0x01B0)(Fixing Size After Last Property [ Dumper-7 ])
-	class AReplicationGraphDebugActor*            DebugActor;                                        // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E8[0x8];                                      // 0x01E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UReplicationGraphNode*>          ConnectionGraphNodes;                              // 0x01F0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	class UReplicationGraphNode_TearOff_ForConnection* TearOffNode;                                       // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_208[0x18];                                     // 0x0208(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x140];                                     // 0x0030(0x0140)(Fixing Size After Last Property [ Dumper-7 ])
+	class AReplicationGraphDebugActor*            DebugActor;                                        // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UReplicationGraphNode*>          ConnectionGraphNodes;                              // 0x0180(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	class UReplicationGraphNode_TearOff_ForConnection* TearOffNode;                                       // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_198[0x10];                                     // 0x0198(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -329,24 +318,26 @@ public:
 	}
 };
 static_assert(alignof(UNetReplicationGraphConnection) == 0x000008, "Wrong alignment on UNetReplicationGraphConnection");
-static_assert(sizeof(UNetReplicationGraphConnection) == 0x000220, "Wrong size on UNetReplicationGraphConnection");
+static_assert(sizeof(UNetReplicationGraphConnection) == 0x0001A8, "Wrong size on UNetReplicationGraphConnection");
 static_assert(offsetof(UNetReplicationGraphConnection, NetConnection) == 0x000028, "Member 'UNetReplicationGraphConnection::NetConnection' has a wrong offset!");
-static_assert(offsetof(UNetReplicationGraphConnection, DebugActor) == 0x0001E0, "Member 'UNetReplicationGraphConnection::DebugActor' has a wrong offset!");
-static_assert(offsetof(UNetReplicationGraphConnection, ConnectionGraphNodes) == 0x0001F0, "Member 'UNetReplicationGraphConnection::ConnectionGraphNodes' has a wrong offset!");
-static_assert(offsetof(UNetReplicationGraphConnection, TearOffNode) == 0x000200, "Member 'UNetReplicationGraphConnection::TearOffNode' has a wrong offset!");
+static_assert(offsetof(UNetReplicationGraphConnection, DebugActor) == 0x000170, "Member 'UNetReplicationGraphConnection::DebugActor' has a wrong offset!");
+static_assert(offsetof(UNetReplicationGraphConnection, ConnectionGraphNodes) == 0x000180, "Member 'UNetReplicationGraphConnection::ConnectionGraphNodes' has a wrong offset!");
+static_assert(offsetof(UNetReplicationGraphConnection, TearOffNode) == 0x000190, "Member 'UNetReplicationGraphConnection::TearOffNode' has a wrong offset!");
 
 // Class ReplicationGraph.ReplicationGraphDebugActor
-// 0x0010 (0x0328 - 0x0318)
+// 0x0010 (0x0338 - 0x0328)
 class AReplicationGraphDebugActor final : public AActor
 {
 public:
-	class UReplicationGraph*                      ReplicationGraph;                                  // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNetReplicationGraphConnection*         ConnectionManager;                                 // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UReplicationGraph*                      ReplicationGraph;                                  // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNetReplicationGraphConnection*         ConnectionManager;                                 // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ClientCellInfo(const struct FVector& CellLocation, const struct FVector& CellExtent, const TArray<class AActor*>& Actors);
 	void ServerCellInfo();
 	void ServerPrintAllActorInfo(const class FString& Str);
+	void ServerSetCullDistanceForClass(class UClass* Class_0, float CullDistance);
+	void ServerSetPeriodFrameForClass(class UClass* Class_0, int32 PeriodFrame);
 	void ServerStartDebugging();
 	void ServerStopDebugging();
 
@@ -361,9 +352,9 @@ public:
 	}
 };
 static_assert(alignof(AReplicationGraphDebugActor) == 0x000008, "Wrong alignment on AReplicationGraphDebugActor");
-static_assert(sizeof(AReplicationGraphDebugActor) == 0x000328, "Wrong size on AReplicationGraphDebugActor");
-static_assert(offsetof(AReplicationGraphDebugActor, ReplicationGraph) == 0x000318, "Member 'AReplicationGraphDebugActor::ReplicationGraph' has a wrong offset!");
-static_assert(offsetof(AReplicationGraphDebugActor, ConnectionManager) == 0x000320, "Member 'AReplicationGraphDebugActor::ConnectionManager' has a wrong offset!");
+static_assert(sizeof(AReplicationGraphDebugActor) == 0x000338, "Wrong size on AReplicationGraphDebugActor");
+static_assert(offsetof(AReplicationGraphDebugActor, ReplicationGraph) == 0x000328, "Member 'AReplicationGraphDebugActor::ReplicationGraph' has a wrong offset!");
+static_assert(offsetof(AReplicationGraphDebugActor, ConnectionManager) == 0x000330, "Member 'AReplicationGraphDebugActor::ConnectionManager' has a wrong offset!");
 
 }
 

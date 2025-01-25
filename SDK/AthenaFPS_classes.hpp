@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaFPS.AthenaFPS_C
-// 0x0010 (0x0250 - 0x0240)
+// 0x0010 (0x0248 - 0x0238)
 class UAthenaFPS_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
-	class UTextBlock*                             FPS;                                               // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
+	class UTextBlock*                             FPS;                                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaFPS(int32 EntryPoint);
@@ -43,9 +43,9 @@ public:
 	}
 };
 static_assert(alignof(UAthenaFPS_C) == 0x000008, "Wrong alignment on UAthenaFPS_C");
-static_assert(sizeof(UAthenaFPS_C) == 0x000250, "Wrong size on UAthenaFPS_C");
-static_assert(offsetof(UAthenaFPS_C, UberGraphFrame) == 0x000240, "Member 'UAthenaFPS_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaFPS_C, FPS) == 0x000248, "Member 'UAthenaFPS_C::FPS' has a wrong offset!");
+static_assert(sizeof(UAthenaFPS_C) == 0x000248, "Wrong size on UAthenaFPS_C");
+static_assert(offsetof(UAthenaFPS_C, UberGraphFrame) == 0x000238, "Member 'UAthenaFPS_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaFPS_C, FPS) == 0x000240, "Member 'UAthenaFPS_C::FPS' has a wrong offset!");
 
 }
 

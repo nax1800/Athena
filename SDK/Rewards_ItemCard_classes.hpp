@@ -10,29 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "Slate_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "FortniteUI_structs.hpp"
+#include "Slate_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Rewards_ItemCard.Rewards_ItemCard_C
-// 0x0140 (0x0358 - 0x0218)
+// 0x0148 (0x0358 - 0x0210)
 class URewards_ItemCard_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AnimPopInPrimary;                                  // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AnimPopIn;                                         // 0x0228(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPanelButton_C*                         ButtonInspect;                                     // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          CommonBorder_0;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 ItemCardL;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortMultiSizeItemCard*                 ItemCardM;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       AnimPopInPrimary;                                  // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimPopIn;                                         // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPanelButton_C*                         ButtonInspect;                                     // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          CommonBorder_0;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 ItemCardL;                                         // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortMultiSizeItemCard*                 ItemCardM;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ItemMaxedOutMessage;                               // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       OutpostStorageMessage;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScaleBox*                              ScaleBoxLargeCard;                                 // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxDropShadow;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,7 +42,7 @@ public:
 	UMulticastDelegateProperty_                   OnSlideAnimationFinished;                          // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector2D                              SlideStartAlignment;                               // 0x0280(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              SlideTargetAlignment;                              // 0x0288(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           SlideAnimationHandle;                              // 0x0290(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           SlideAnimationHandle;                              // 0x0290(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideAnimationDuration;                            // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideStartScale;                                   // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideTargetScale;                                  // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,7 +65,7 @@ public:
 	float                                         ResizeDuration;                                    // 0x032C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ResizeStartTime;                                   // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_334[0x4];                                      // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           ResizeHandle;                                      // 0x0338(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ResizeHandle;                                      // 0x0338(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         ResizeTargetScale;                                 // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ResizeStartScale;                                  // 0x0344(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DropShadowTargetDepth;                             // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,7 +91,7 @@ public:
 	void TickScaleAnimation();
 	void SetInspectAction();
 	void HandlePopInAnimationFinished();
-	void GetItemToRepresent(class UFortItem** Param_ItemToRepresent);
+	void GetItemToRepresent(class UFortItem** ItemToRepresent_0);
 	struct FVector2D GetCardSize();
 	void SizeDown(float Duration, float Delay, float DropShadowDepth);
 	void TickResizeAnimation();
@@ -109,6 +110,7 @@ public:
 	void SetOpaque();
 	void SetOutpostInventoryNotification(bool ShouldShow);
 	void SetQuantityOverride(int32 QuantityOverride);
+	void SetItemLimitReachedNotification(bool ShouldShow);
 
 public:
 	static class UClass* StaticClass()
@@ -122,13 +124,14 @@ public:
 };
 static_assert(alignof(URewards_ItemCard_C) == 0x000008, "Wrong alignment on URewards_ItemCard_C");
 static_assert(sizeof(URewards_ItemCard_C) == 0x000358, "Wrong size on URewards_ItemCard_C");
-static_assert(offsetof(URewards_ItemCard_C, UberGraphFrame) == 0x000218, "Member 'URewards_ItemCard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, AnimPopInPrimary) == 0x000220, "Member 'URewards_ItemCard_C::AnimPopInPrimary' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, AnimPopIn) == 0x000228, "Member 'URewards_ItemCard_C::AnimPopIn' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ButtonInspect) == 0x000230, "Member 'URewards_ItemCard_C::ButtonInspect' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, CommonBorder_0) == 0x000238, "Member 'URewards_ItemCard_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ItemCardL) == 0x000240, "Member 'URewards_ItemCard_C::ItemCardL' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ItemCardM) == 0x000248, "Member 'URewards_ItemCard_C::ItemCardM' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, UberGraphFrame) == 0x000210, "Member 'URewards_ItemCard_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, AnimPopInPrimary) == 0x000218, "Member 'URewards_ItemCard_C::AnimPopInPrimary' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, AnimPopIn) == 0x000220, "Member 'URewards_ItemCard_C::AnimPopIn' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, ButtonInspect) == 0x000228, "Member 'URewards_ItemCard_C::ButtonInspect' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, CommonBorder_0) == 0x000230, "Member 'URewards_ItemCard_C::CommonBorder_0' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, ItemCardL) == 0x000238, "Member 'URewards_ItemCard_C::ItemCardL' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, ItemCardM) == 0x000240, "Member 'URewards_ItemCard_C::ItemCardM' has a wrong offset!");
+static_assert(offsetof(URewards_ItemCard_C, ItemMaxedOutMessage) == 0x000248, "Member 'URewards_ItemCard_C::ItemMaxedOutMessage' has a wrong offset!");
 static_assert(offsetof(URewards_ItemCard_C, OutpostStorageMessage) == 0x000250, "Member 'URewards_ItemCard_C::OutpostStorageMessage' has a wrong offset!");
 static_assert(offsetof(URewards_ItemCard_C, ScaleBoxLargeCard) == 0x000258, "Member 'URewards_ItemCard_C::ScaleBoxLargeCard' has a wrong offset!");
 static_assert(offsetof(URewards_ItemCard_C, SizeBoxDropShadow) == 0x000260, "Member 'URewards_ItemCard_C::SizeBoxDropShadow' has a wrong offset!");

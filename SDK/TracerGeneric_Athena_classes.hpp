@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TracerGeneric_Athena.TracerGeneric_Athena_C
-// 0x0000 (0x03D0 - 0x03D0)
+// 0x0000 (0x03E0 - 0x03E0)
 class ATracerGeneric_Athena_C : public AFortTracerBase
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ATracerGeneric_Athena_C) == 0x000008, "Wrong alignment on ATracerGeneric_Athena_C");
-static_assert(sizeof(ATracerGeneric_Athena_C) == 0x0003D0, "Wrong size on ATracerGeneric_Athena_C");
+static_assert(sizeof(ATracerGeneric_Athena_C) == 0x0003E0, "Wrong size on ATracerGeneric_Athena_C");
 
 }
 

@@ -19,36 +19,36 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SkewButton.SkewButton_C
-// 0x0058 (0x0860 - 0x0808)
+// 0x0058 (0x08E8 - 0x0890)
 class USkewButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Released;                                          // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Pressed;                                           // 0x0818(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Hover;                                             // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageButtonFill;                                   // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageShadow;                                       // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             NamedSlot_ButtonContent;                           // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_SkewBrushes;                               // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           ButtonColor;                                       // 0x0848(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Chip;                                              // 0x0858(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Skew;                                              // 0x0859(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          NoHoverColor;                                      // 0x085A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Released;                                          // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Pressed;                                           // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Hover;                                             // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageButtonFill;                                   // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageShadow;                                       // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             NamedSlot_ButtonContent;                           // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_SkewBrushes;                               // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FLinearColor                           ButtonColor;                                       // 0x08D0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Chip;                                              // 0x08E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Skew;                                              // 0x08E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          NoHoverColor;                                      // 0x08E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_SkewButton(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void BP_OnClicked();
+	void BP_OnHovered();
+	void BP_OnUnhovered();
 	void Construct();
-	void OnClicked();
-	void OnHovered();
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnTouchEnded(const struct FGeometry& MyGeometry, const struct FPointerEvent& InTouchEvent);
 	struct FEventReply OnTouchStarted(const struct FGeometry& MyGeometry, const struct FPointerEvent& InTouchEvent);
-	void OnUnhovered();
 
 public:
 	static class UClass* StaticClass()
@@ -61,19 +61,19 @@ public:
 	}
 };
 static_assert(alignof(USkewButton_C) == 0x000008, "Wrong alignment on USkewButton_C");
-static_assert(sizeof(USkewButton_C) == 0x000860, "Wrong size on USkewButton_C");
-static_assert(offsetof(USkewButton_C, UberGraphFrame) == 0x000808, "Member 'USkewButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Released) == 0x000810, "Member 'USkewButton_C::Released' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Pressed) == 0x000818, "Member 'USkewButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Hover) == 0x000820, "Member 'USkewButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ImageButtonFill) == 0x000828, "Member 'USkewButton_C::ImageButtonFill' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ImageShadow) == 0x000830, "Member 'USkewButton_C::ImageShadow' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, NamedSlot_ButtonContent) == 0x000838, "Member 'USkewButton_C::NamedSlot_ButtonContent' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Overlay_SkewBrushes) == 0x000840, "Member 'USkewButton_C::Overlay_SkewBrushes' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ButtonColor) == 0x000848, "Member 'USkewButton_C::ButtonColor' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Chip) == 0x000858, "Member 'USkewButton_C::Chip' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Skew) == 0x000859, "Member 'USkewButton_C::Skew' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, NoHoverColor) == 0x00085A, "Member 'USkewButton_C::NoHoverColor' has a wrong offset!");
+static_assert(sizeof(USkewButton_C) == 0x0008E8, "Wrong size on USkewButton_C");
+static_assert(offsetof(USkewButton_C, UberGraphFrame) == 0x000890, "Member 'USkewButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Released) == 0x000898, "Member 'USkewButton_C::Released' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Pressed) == 0x0008A0, "Member 'USkewButton_C::Pressed' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Hover) == 0x0008A8, "Member 'USkewButton_C::Hover' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, ImageButtonFill) == 0x0008B0, "Member 'USkewButton_C::ImageButtonFill' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, ImageShadow) == 0x0008B8, "Member 'USkewButton_C::ImageShadow' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, NamedSlot_ButtonContent) == 0x0008C0, "Member 'USkewButton_C::NamedSlot_ButtonContent' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Overlay_SkewBrushes) == 0x0008C8, "Member 'USkewButton_C::Overlay_SkewBrushes' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, ButtonColor) == 0x0008D0, "Member 'USkewButton_C::ButtonColor' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Chip) == 0x0008E0, "Member 'USkewButton_C::Chip' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, Skew) == 0x0008E1, "Member 'USkewButton_C::Skew' has a wrong offset!");
+static_assert(offsetof(USkewButton_C, NoHoverColor) == 0x0008E2, "Member 'USkewButton_C::NoHoverColor' has a wrong offset!");
 
 }
 

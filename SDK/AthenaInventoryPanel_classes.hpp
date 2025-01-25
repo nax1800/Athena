@@ -10,45 +10,47 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "CommonUI_structs.hpp"
 #include "AthenaDragDropAction_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryPanel.AthenaInventoryPanel_C
-// 0x0090 (0x04D0 - 0x0440)
+// 0x0098 (0x0410 - 0x0378)
 class UAthenaInventoryPanel_C final : public UAthenaInventoryPanelBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeMessage;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAlterationsWidget_C*                   AlterationsWidget;                                 // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaInventoryEquipSlot_C*            EquipSlot1;                                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaInventoryEquipSlot_C*            EquipSlot2;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaInventoryEquipSlot_C*            EquipSlot3;                                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaInventoryEquipSlot_C*            EquipSlot4;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaInventoryEquipSlot_C*            EquipSlot5;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          InventoryArea;                                     // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemInspectionMainItemDetailsHostPanel_C* ItemDetails;                                       // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bUseRetire;                                        // 0x0498(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bHideCount;                                        // 0x0499(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bHideResources;                                    // 0x049A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bHideTitle;                                        // 0x049B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UQuantitySelector_C*                    MulchQuantitySelector;                             // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UQuantitySelector_C*                    QuantitySelectorWidget;                            // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    Input_AthenaMoveItem;                              // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    Input_AthenaDropHalf;                              // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       FadeMessage;                                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAlterationsWidget_C*                   AlterationsWidget;                                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaInventoryEquipSlot_C*            EquipSlot1;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaInventoryEquipSlot_C*            EquipSlot2;                                        // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaInventoryEquipSlot_C*            EquipSlot3;                                        // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaInventoryEquipSlot_C*            EquipSlot4;                                        // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaInventoryEquipSlot_C*            EquipSlot5;                                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          InventoryArea;                                     // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemInspectionMainItemDetailsHostPanel_C* ItemDetails;                                       // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bUseRetire;                                        // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bHideCount;                                        // 0x03D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bHideResources;                                    // 0x03D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bHideTitle;                                        // 0x03D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UQuantitySelector_C*                    MulchQuantitySelector;                             // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UQuantitySelector_C*                    QuantitySelectorWidget;                            // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    Input_AthenaMoveItem;                              // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    Input_AthenaDropHalf;                              // 0x03F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           HackTimer;                                         // 0x0408(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AthenaInventoryPanel(int32 EntryPoint);
+	void PostActivate();
 	void RequestEquip(class UFortItem* Item);
 	void OnDeactivated();
 	void OnDragLeave(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
@@ -65,9 +67,9 @@ public:
 	void CreateQuantitySelectorWidget(class UFortWorldItem* Item, const class FText& ConfirmationText);
 	void DestroyQuantitySelectorWidget();
 	void HandleDropItemConfirmationCallback(int32 ChosenQuantity, class UFortItem* Item);
-	class UWidget* NavEquipment(EUINavigation Param_Navigation);
-	class UWidget* NavResources(EUINavigation Param_Navigation);
-	class UWidget* NavAmmo(EUINavigation Param_Navigation);
+	class UWidget* NavEquipment(EUINavigation Navigation_0);
+	class UWidget* NavResources(EUINavigation Navigation_0);
+	class UWidget* NavAmmo(EUINavigation Navigation_0);
 	void FocusFirstEquipSlot();
 	void RegisterMove();
 	void RefreshItemDetails(class UFortItem* ItemToDetail);
@@ -91,26 +93,27 @@ public:
 	}
 };
 static_assert(alignof(UAthenaInventoryPanel_C) == 0x000008, "Wrong alignment on UAthenaInventoryPanel_C");
-static_assert(sizeof(UAthenaInventoryPanel_C) == 0x0004D0, "Wrong size on UAthenaInventoryPanel_C");
-static_assert(offsetof(UAthenaInventoryPanel_C, UberGraphFrame) == 0x000440, "Member 'UAthenaInventoryPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, FadeMessage) == 0x000448, "Member 'UAthenaInventoryPanel_C::FadeMessage' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, AlterationsWidget) == 0x000450, "Member 'UAthenaInventoryPanel_C::AlterationsWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot1) == 0x000458, "Member 'UAthenaInventoryPanel_C::EquipSlot1' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot2) == 0x000460, "Member 'UAthenaInventoryPanel_C::EquipSlot2' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot3) == 0x000468, "Member 'UAthenaInventoryPanel_C::EquipSlot3' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot4) == 0x000470, "Member 'UAthenaInventoryPanel_C::EquipSlot4' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot5) == 0x000478, "Member 'UAthenaInventoryPanel_C::EquipSlot5' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, InventoryArea) == 0x000480, "Member 'UAthenaInventoryPanel_C::InventoryArea' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, ItemDetails) == 0x000488, "Member 'UAthenaInventoryPanel_C::ItemDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, SafeZone_0) == 0x000490, "Member 'UAthenaInventoryPanel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bUseRetire) == 0x000498, "Member 'UAthenaInventoryPanel_C::bUseRetire' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideCount) == 0x000499, "Member 'UAthenaInventoryPanel_C::bHideCount' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideResources) == 0x00049A, "Member 'UAthenaInventoryPanel_C::bHideResources' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideTitle) == 0x00049B, "Member 'UAthenaInventoryPanel_C::bHideTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, MulchQuantitySelector) == 0x0004A0, "Member 'UAthenaInventoryPanel_C::MulchQuantitySelector' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, QuantitySelectorWidget) == 0x0004A8, "Member 'UAthenaInventoryPanel_C::QuantitySelectorWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, Input_AthenaMoveItem) == 0x0004B0, "Member 'UAthenaInventoryPanel_C::Input_AthenaMoveItem' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, Input_AthenaDropHalf) == 0x0004C0, "Member 'UAthenaInventoryPanel_C::Input_AthenaDropHalf' has a wrong offset!");
+static_assert(sizeof(UAthenaInventoryPanel_C) == 0x000410, "Wrong size on UAthenaInventoryPanel_C");
+static_assert(offsetof(UAthenaInventoryPanel_C, UberGraphFrame) == 0x000378, "Member 'UAthenaInventoryPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, FadeMessage) == 0x000380, "Member 'UAthenaInventoryPanel_C::FadeMessage' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, AlterationsWidget) == 0x000388, "Member 'UAthenaInventoryPanel_C::AlterationsWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot1) == 0x000390, "Member 'UAthenaInventoryPanel_C::EquipSlot1' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot2) == 0x000398, "Member 'UAthenaInventoryPanel_C::EquipSlot2' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot3) == 0x0003A0, "Member 'UAthenaInventoryPanel_C::EquipSlot3' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot4) == 0x0003A8, "Member 'UAthenaInventoryPanel_C::EquipSlot4' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot5) == 0x0003B0, "Member 'UAthenaInventoryPanel_C::EquipSlot5' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, InventoryArea) == 0x0003B8, "Member 'UAthenaInventoryPanel_C::InventoryArea' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, ItemDetails) == 0x0003C0, "Member 'UAthenaInventoryPanel_C::ItemDetails' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, SafeZone_0) == 0x0003C8, "Member 'UAthenaInventoryPanel_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, bUseRetire) == 0x0003D0, "Member 'UAthenaInventoryPanel_C::bUseRetire' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, bHideCount) == 0x0003D1, "Member 'UAthenaInventoryPanel_C::bHideCount' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, bHideResources) == 0x0003D2, "Member 'UAthenaInventoryPanel_C::bHideResources' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, bHideTitle) == 0x0003D3, "Member 'UAthenaInventoryPanel_C::bHideTitle' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, MulchQuantitySelector) == 0x0003D8, "Member 'UAthenaInventoryPanel_C::MulchQuantitySelector' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, QuantitySelectorWidget) == 0x0003E0, "Member 'UAthenaInventoryPanel_C::QuantitySelectorWidget' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, Input_AthenaMoveItem) == 0x0003E8, "Member 'UAthenaInventoryPanel_C::Input_AthenaMoveItem' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, Input_AthenaDropHalf) == 0x0003F8, "Member 'UAthenaInventoryPanel_C::Input_AthenaDropHalf' has a wrong offset!");
+static_assert(offsetof(UAthenaInventoryPanel_C, HackTimer) == 0x000408, "Member 'UAthenaInventoryPanel_C::HackTimer' has a wrong offset!");
 
 }
 

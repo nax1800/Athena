@@ -10,49 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Hoverboard_Running.GCN_Hoverboard_Running_C
-// 0x00C0 (0x0500 - 0x0440)
+// 0x00C0 (0x04E0 - 0x0420)
 class AGCN_Hoverboard_Running_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
-	struct FLinearColor                           Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D;    // 0x0448(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D; // 0x0458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D; // 0x045C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D[0x3];                                      // 0x045D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Spawnin;                                           // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerPawn_Generic_C*                  OwningPlayer;                                      // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SND_HoverboardLoopAsset;                           // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SND_HoverboardLoop;                                // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bJumpActive;                                       // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_481[0x3];                                      // 0x0481(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CurrentSpeed;                                      // 0x0484(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NextSpeed;                                         // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Delta;                                             // 0x048C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SND_HoverboardSound_JumpAsset;                     // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SND_HoverboardSound_AccelerateAsset;               // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        SND_HoverboardSound_Accelerate;                    // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TickRate;                                          // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        SND_HoverboardStart;                               // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             SND_HoverboardSound_StartAsset;                    // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 SK_HoverboardComponent;                            // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               IdleFX;                                            // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               BoostFX;                                           // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               LSmokeTrail;                                       // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               RSmokeTrail;                                       // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NoiseRadius;                                       // 0x04E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4EC[0x4];                                      // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Target;                                            // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           SetupTimerHandle;                                  // 0x04F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
+	struct FLinearColor                           Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D;    // 0x0428(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D; // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D; // 0x043C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43D[0x3];                                      // 0x043D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Spawnin;                                           // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerPawn_Generic_C*                  OwningPlayer;                                      // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SND_HoverboardLoopAsset;                           // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SND_HoverboardLoop;                                // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bJumpActive;                                       // 0x0460(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_461[0x3];                                      // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CurrentSpeed;                                      // 0x0464(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NextSpeed;                                         // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Delta;                                             // 0x046C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SND_HoverboardSound_JumpAsset;                     // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SND_HoverboardSound_AccelerateAsset;               // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        SND_HoverboardSound_Accelerate;                    // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TickRate;                                          // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        SND_HoverboardStart;                               // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             SND_HoverboardSound_StartAsset;                    // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SK_HoverboardComponent;                            // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               IdleFX;                                            // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               BoostFX;                                           // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               LSmokeTrail;                                       // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               RSmokeTrail;                                       // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NoiseRadius;                                       // 0x04C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4CC[0x4];                                      // 0x04CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Target;                                            // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           SetupTimerHandle;                                  // 0x04D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GCN_Hoverboard_Running(int32 EntryPoint);
@@ -75,8 +75,10 @@ public:
 	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void ClearSounds();
-	void GetHoverboardSkeletal(class USkeletalMeshComponent** Param_SK_HoverboardComponent);
+	void GetHoverboardSkeletal(class USkeletalMeshComponent** SK_HoverboardComponent_0);
 	float GetPlayerLeanValuePercent();
+	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 
 public:
 	static class UClass* StaticClass()
@@ -88,34 +90,34 @@ public:
 		return GetDefaultObjImpl<AGCN_Hoverboard_Running_C>();
 	}
 };
-static_assert(alignof(AGCN_Hoverboard_Running_C) == 0x000010, "Wrong alignment on AGCN_Hoverboard_Running_C");
-static_assert(sizeof(AGCN_Hoverboard_Running_C) == 0x000500, "Wrong size on AGCN_Hoverboard_Running_C");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, UberGraphFrame) == 0x000440, "Member 'AGCN_Hoverboard_Running_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D) == 0x000448, "Member 'AGCN_Hoverboard_Running_C::Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D) == 0x000458, "Member 'AGCN_Hoverboard_Running_C::Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D) == 0x00045C, "Member 'AGCN_Hoverboard_Running_C::Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin) == 0x000460, "Member 'AGCN_Hoverboard_Running_C::Spawnin' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, OwningPlayer) == 0x000468, "Member 'AGCN_Hoverboard_Running_C::OwningPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardLoopAsset) == 0x000470, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardLoopAsset' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardLoop) == 0x000478, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardLoop' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, bJumpActive) == 0x000480, "Member 'AGCN_Hoverboard_Running_C::bJumpActive' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, CurrentSpeed) == 0x000484, "Member 'AGCN_Hoverboard_Running_C::CurrentSpeed' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, NextSpeed) == 0x000488, "Member 'AGCN_Hoverboard_Running_C::NextSpeed' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Delta) == 0x00048C, "Member 'AGCN_Hoverboard_Running_C::Delta' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_JumpAsset) == 0x000490, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_JumpAsset' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_AccelerateAsset) == 0x000498, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_AccelerateAsset' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_Accelerate) == 0x0004A0, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_Accelerate' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, TickRate) == 0x0004A8, "Member 'AGCN_Hoverboard_Running_C::TickRate' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardStart) == 0x0004B0, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardStart' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_StartAsset) == 0x0004B8, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_StartAsset' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SK_HoverboardComponent) == 0x0004C0, "Member 'AGCN_Hoverboard_Running_C::SK_HoverboardComponent' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, IdleFX) == 0x0004C8, "Member 'AGCN_Hoverboard_Running_C::IdleFX' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, BoostFX) == 0x0004D0, "Member 'AGCN_Hoverboard_Running_C::BoostFX' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, LSmokeTrail) == 0x0004D8, "Member 'AGCN_Hoverboard_Running_C::LSmokeTrail' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, RSmokeTrail) == 0x0004E0, "Member 'AGCN_Hoverboard_Running_C::RSmokeTrail' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, NoiseRadius) == 0x0004E8, "Member 'AGCN_Hoverboard_Running_C::NoiseRadius' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, Target) == 0x0004F0, "Member 'AGCN_Hoverboard_Running_C::Target' has a wrong offset!");
-static_assert(offsetof(AGCN_Hoverboard_Running_C, SetupTimerHandle) == 0x0004F8, "Member 'AGCN_Hoverboard_Running_C::SetupTimerHandle' has a wrong offset!");
+static_assert(alignof(AGCN_Hoverboard_Running_C) == 0x000008, "Wrong alignment on AGCN_Hoverboard_Running_C");
+static_assert(sizeof(AGCN_Hoverboard_Running_C) == 0x0004E0, "Wrong size on AGCN_Hoverboard_Running_C");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, UberGraphFrame) == 0x000420, "Member 'AGCN_Hoverboard_Running_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D) == 0x000428, "Member 'AGCN_Hoverboard_Running_C::Spawnin_Color_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D) == 0x000438, "Member 'AGCN_Hoverboard_Running_C::Spawnin_Dissolve_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D) == 0x00043C, "Member 'AGCN_Hoverboard_Running_C::Spawnin__Direction_9CDC88F8422A5E3495C4D286D1223B9D' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Spawnin) == 0x000440, "Member 'AGCN_Hoverboard_Running_C::Spawnin' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, OwningPlayer) == 0x000448, "Member 'AGCN_Hoverboard_Running_C::OwningPlayer' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardLoopAsset) == 0x000450, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardLoopAsset' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardLoop) == 0x000458, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardLoop' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, bJumpActive) == 0x000460, "Member 'AGCN_Hoverboard_Running_C::bJumpActive' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, CurrentSpeed) == 0x000464, "Member 'AGCN_Hoverboard_Running_C::CurrentSpeed' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, NextSpeed) == 0x000468, "Member 'AGCN_Hoverboard_Running_C::NextSpeed' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Delta) == 0x00046C, "Member 'AGCN_Hoverboard_Running_C::Delta' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_JumpAsset) == 0x000470, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_JumpAsset' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_AccelerateAsset) == 0x000478, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_AccelerateAsset' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_Accelerate) == 0x000480, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_Accelerate' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, TickRate) == 0x000488, "Member 'AGCN_Hoverboard_Running_C::TickRate' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardStart) == 0x000490, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardStart' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SND_HoverboardSound_StartAsset) == 0x000498, "Member 'AGCN_Hoverboard_Running_C::SND_HoverboardSound_StartAsset' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SK_HoverboardComponent) == 0x0004A0, "Member 'AGCN_Hoverboard_Running_C::SK_HoverboardComponent' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, IdleFX) == 0x0004A8, "Member 'AGCN_Hoverboard_Running_C::IdleFX' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, BoostFX) == 0x0004B0, "Member 'AGCN_Hoverboard_Running_C::BoostFX' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, LSmokeTrail) == 0x0004B8, "Member 'AGCN_Hoverboard_Running_C::LSmokeTrail' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, RSmokeTrail) == 0x0004C0, "Member 'AGCN_Hoverboard_Running_C::RSmokeTrail' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, NoiseRadius) == 0x0004C8, "Member 'AGCN_Hoverboard_Running_C::NoiseRadius' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, Target) == 0x0004D0, "Member 'AGCN_Hoverboard_Running_C::Target' has a wrong offset!");
+static_assert(offsetof(AGCN_Hoverboard_Running_C, SetupTimerHandle) == 0x0004D8, "Member 'AGCN_Hoverboard_Running_C::SetupTimerHandle' has a wrong offset!");
 
 }
 

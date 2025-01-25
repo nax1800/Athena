@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerCameraMode_DBNO.PlayerCameraMode_DBNO_C
-// 0x0000 (0x0118 - 0x0118)
+// 0x0000 (0x0C20 - 0x0C20)
 class UPlayerCameraMode_DBNO_C final : public UV3_PlayerCameraModeBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPlayerCameraMode_DBNO_C>();
 	}
 };
-static_assert(alignof(UPlayerCameraMode_DBNO_C) == 0x000008, "Wrong alignment on UPlayerCameraMode_DBNO_C");
-static_assert(sizeof(UPlayerCameraMode_DBNO_C) == 0x000118, "Wrong size on UPlayerCameraMode_DBNO_C");
+static_assert(alignof(UPlayerCameraMode_DBNO_C) == 0x000010, "Wrong alignment on UPlayerCameraMode_DBNO_C");
+static_assert(sizeof(UPlayerCameraMode_DBNO_C) == 0x000C20, "Wrong size on UPlayerCameraMode_DBNO_C");
 
 }
 

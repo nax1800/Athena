@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -21,21 +21,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ScrollingTextButton.ScrollingTextButton_C
-// 0x00E8 (0x08F0 - 0x0808)
+// 0x00E8 (0x0978 - 0x0890)
 class UScrollingTextButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                ContentBorder;                                     // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LeftSideImage;                                     // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   ButtonText;                                        // 0x0828(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x0840(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UClass*                                 ControllerInputStyle;                              // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UClass*                                 MouseKeyboardStyle;                                // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x08D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	EHorizontalAlignment                          ContentAlignment;                                  // 0x08E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bMouseKeyboardStyleSet;                            // 0x08E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                ContentBorder;                                     // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LeftSideImage;                                     // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   ButtonText;                                        // 0x08B0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08C8(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UClass*                                 ControllerInputStyle;                              // 0x0950(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UClass*                                 MouseKeyboardStyle;                                // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x0960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	EHorizontalAlignment                          ContentAlignment;                                  // 0x0970(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bMouseKeyboardStyleSet;                            // 0x0971(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ScrollingTextButton(int32 EntryPoint);
@@ -47,16 +47,16 @@ public:
 	void SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo);
 	void PreConstruct(bool IsDesignTime);
 	void OnCurrentTextStyleChanged();
-	void Set_Text(const class FText& Param_ButtonText);
-	void Set_Icon(const struct FSlateBrush& Param_IconBrush);
+	void Set_Text(const class FText& ButtonText_0);
+	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void InitializeButton();
 	void UpdateTextAndStyle(bool bUsingGamepad);
-	void SetControllerStyle(class UClass* Param_ControllerInputStyle);
+	void SetControllerStyle(class UClass* ControllerInputStyle_0);
 	void UpdateText();
 	void UpdateStyle(bool UsingGamepad);
-	void SetMouseKeyboardStyle(class UClass* Param_ControllerInputStyle);
+	void SetMouseKeyboardStyle(class UClass* ControllerInputStyle_0);
 	void UpdateContentAlignment();
-	void SetContentAlignment(EHorizontalAlignment Param_ContentAlignment);
+	void SetContentAlignment(EHorizontalAlignment ContentAlignment_0);
 	void UpdateTextStyle();
 	void SetInitialMouseKeyboardStyle();
 
@@ -71,18 +71,18 @@ public:
 	}
 };
 static_assert(alignof(UScrollingTextButton_C) == 0x000008, "Wrong alignment on UScrollingTextButton_C");
-static_assert(sizeof(UScrollingTextButton_C) == 0x0008F0, "Wrong size on UScrollingTextButton_C");
-static_assert(offsetof(UScrollingTextButton_C, UberGraphFrame) == 0x000808, "Member 'UScrollingTextButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, CenterButtonTextWidget) == 0x000810, "Member 'UScrollingTextButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ContentBorder) == 0x000818, "Member 'UScrollingTextButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, LeftSideImage) == 0x000820, "Member 'UScrollingTextButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ButtonText) == 0x000828, "Member 'UScrollingTextButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, IconBrush) == 0x000840, "Member 'UScrollingTextButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ControllerInputStyle) == 0x0008C8, "Member 'UScrollingTextButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, MouseKeyboardStyle) == 0x0008D0, "Member 'UScrollingTextButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ButtonClickAction) == 0x0008D8, "Member 'UScrollingTextButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ContentAlignment) == 0x0008E8, "Member 'UScrollingTextButton_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, bMouseKeyboardStyleSet) == 0x0008E9, "Member 'UScrollingTextButton_C::bMouseKeyboardStyleSet' has a wrong offset!");
+static_assert(sizeof(UScrollingTextButton_C) == 0x000978, "Wrong size on UScrollingTextButton_C");
+static_assert(offsetof(UScrollingTextButton_C, UberGraphFrame) == 0x000890, "Member 'UScrollingTextButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, CenterButtonTextWidget) == 0x000898, "Member 'UScrollingTextButton_C::CenterButtonTextWidget' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, ContentBorder) == 0x0008A0, "Member 'UScrollingTextButton_C::ContentBorder' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, LeftSideImage) == 0x0008A8, "Member 'UScrollingTextButton_C::LeftSideImage' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, ButtonText) == 0x0008B0, "Member 'UScrollingTextButton_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, IconBrush) == 0x0008C8, "Member 'UScrollingTextButton_C::IconBrush' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, ControllerInputStyle) == 0x000950, "Member 'UScrollingTextButton_C::ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, MouseKeyboardStyle) == 0x000958, "Member 'UScrollingTextButton_C::MouseKeyboardStyle' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, ButtonClickAction) == 0x000960, "Member 'UScrollingTextButton_C::ButtonClickAction' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, ContentAlignment) == 0x000970, "Member 'UScrollingTextButton_C::ContentAlignment' has a wrong offset!");
+static_assert(offsetof(UScrollingTextButton_C, bMouseKeyboardStyleSet) == 0x000971, "Member 'UScrollingTextButton_C::bMouseKeyboardStyleSet' has a wrong offset!");
 
 }
 

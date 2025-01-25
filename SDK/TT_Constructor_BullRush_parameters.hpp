@@ -55,17 +55,17 @@ public:
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0050(0x0018)()
 	class FText                                   Temp_text_Variable;                                // 0x0068(0x0018)()
 	class FText                                   Temp_text_Variable1;                               // 0x0080(0x0018)()
-	class FText                                   Temp_text_Variable12;                              // 0x0098(0x0018)()
+	class FText                                   Temp_text_Variable2;                               // 0x0098(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
-	class FText                                   Temp_text_Variable123;                             // 0x00C8(0x0018)()
+	class FText                                   Temp_text_Variable3;                               // 0x00C8(0x0018)()
 	bool                                          Temp_bool_Variable1;                               // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable1234;                            // 0x00E8(0x0018)()
+	class FText                                   Temp_text_Variable4;                               // 0x00E8(0x0018)()
 	class FText                                   K2Node_Select1_Default;                            // 0x0100(0x0018)()
-	class FText                                   Temp_text_Variable12345;                           // 0x0118(0x0018)()
-	bool                                          Temp_bool_Variable12;                              // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   Temp_text_Variable5;                               // 0x0118(0x0018)()
+	bool                                          Temp_bool_Variable2;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select12_Default;                           // 0x0138(0x0018)()
+	class FText                                   K2Node_Select2_Default;                            // 0x0138(0x0018)()
 };
 static_assert(alignof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal");
 static_assert(sizeof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000150, "Wrong size on TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal");
@@ -84,15 +84,15 @@ static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInsta
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_FloatToText_ReturnValue) == 0x000050, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable) == 0x000068, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable1) == 0x000080, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable1' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable12) == 0x000098, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable12' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable2) == 0x000098, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable2' has a wrong offset!");
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select_Default) == 0x0000B0, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable123) == 0x0000C8, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable123' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable3) == 0x0000C8, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable3' has a wrong offset!");
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable1) == 0x0000E0, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable1234) == 0x0000E8, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable1234' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable4) == 0x0000E8, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable4' has a wrong offset!");
 static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select1_Default) == 0x000100, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable12345) == 0x000118, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable12345' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable12) == 0x000130, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select12_Default) == 0x000138, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select12_Default' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable5) == 0x000118, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable5' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable2) == 0x000130, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select2_Default) == 0x000138, "Member 'TT_Constructor_BullRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select2_Default' has a wrong offset!");
 
 // Function TT_Constructor_BullRush.TT_Constructor_BullRush_C.GetApplicationTag
 // 0x0018 (0x0018 - 0x0000)

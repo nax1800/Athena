@@ -186,11 +186,11 @@ void UOptionsMenuSliderReplay_C::Construct()
 // Parameters:
 // class FText                             Slider_Text                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // float                                   Slider_Value                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Param_Hover_Text                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Hover_Text_0                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UCommonTextBlock*                 Tooltip_Text_Block                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        Min_Max_Value                                          (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuSliderReplay_C::Update_Slider(const class FText& Slider_Text, float Slider_Value, const class FText& Param_Hover_Text, class UCommonTextBlock* Tooltip_Text_Block, const struct FVector2D& Min_Max_Value)
+void UOptionsMenuSliderReplay_C::Update_Slider(const class FText& Slider_Text, float Slider_Value, const class FText& Hover_Text_0, class UCommonTextBlock* Tooltip_Text_Block, const struct FVector2D& Min_Max_Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -201,7 +201,7 @@ void UOptionsMenuSliderReplay_C::Update_Slider(const class FText& Slider_Text, f
 
 	Parms.Slider_Text = std::move(Slider_Text);
 	Parms.Slider_Value = Slider_Value;
-	Parms.Param_Hover_Text = std::move(Param_Hover_Text);
+	Parms.Hover_Text_0 = std::move(Hover_Text_0);
 	Parms.Tooltip_Text_Block = Tooltip_Text_Block;
 	Parms.Min_Max_Value = std::move(Min_Max_Value);
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WinnerOverlay.WinnerOverlay_C
-// 0x0000 (0x0210 - 0x0210)
+// 0x0000 (0x0208 - 0x0208)
 class UWinnerOverlay_C final : public UUserWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UWinnerOverlay_C) == 0x000008, "Wrong alignment on UWinnerOverlay_C");
-static_assert(sizeof(UWinnerOverlay_C) == 0x000210, "Wrong size on UWinnerOverlay_C");
+static_assert(sizeof(UWinnerOverlay_C) == 0x000208, "Wrong size on UWinnerOverlay_C");
 
 }
 

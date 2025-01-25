@@ -10,6 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "FortniteGame_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -17,37 +20,164 @@ namespace SDK::Params
 {
 
 // Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.ExecuteUbergraph_PurchaseHistoryScreen
-// 0x0038 (0x0038 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bHaveItemsToRefund;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMobileGame_ReturnValue1;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMtxPurchaseHistory                    K2Node_Event_PurchaseHistory;                      // 0x0028(0x0018)()
+	EPurchaseReturnStep                           K2Node_Event_CurrentStep;                          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bSuccess;                             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_MtxRefunded;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    K2Node_Event_ReturnedItem;                         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_TicketIndex;                          // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0080(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0098(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData1;             // 0x00D8(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0118(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array1;                           // 0x0128(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue1;                      // 0x0150(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16A[0x2];                                      // 0x016A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_NumTicketsAvailableToUse;             // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen");
-static_assert(sizeof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen) == 0x000038, "Wrong size on PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen");
+static_assert(sizeof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen) == 0x000178, "Wrong size on PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen");
 static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, EntryPoint) == 0x000000, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_bool_Variable) == 0x000005, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_byte_Variable) == 0x000006, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_byte_Variable1) == 0x000007, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_bHaveItemsToRefund) == 0x000008, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_bHaveItemsToRefund' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_byte_Variable) == 0x000004, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_byte_Variable1) == 0x000005, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_ComponentBoundEvent_Button3) == 0x000010, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
 static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000018, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_IsMobileGame_ReturnValue1) == 0x000020, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_IsMobileGame_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Select_Default) == 0x000021, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000020, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_PurchaseHistory) == 0x000028, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_PurchaseHistory' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_CurrentStep) == 0x000040, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_CurrentStep' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_SwitchEnum_CmpSuccess) == 0x000041, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_Greater_IntInt_ReturnValue) == 0x000048, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_ComponentBoundEvent_Button2) == 0x000050, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_ComponentBoundEvent_Button1) == 0x000058, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_bSuccess) == 0x000068, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_bSuccess' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_MtxRefunded) == 0x00006C, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_MtxRefunded' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_ReturnedItem) == 0x000070, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_ReturnedItem' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_TicketIndex) == 0x000078, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_TicketIndex' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_GetDisplayName_ReturnValue) == 0x000080, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_MakeStruct_FormatArgumentData) == 0x000098, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_MakeStruct_FormatArgumentData1) == 0x0000D8, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_MakeStruct_FormatArgumentData1' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_MakeArray_Array) == 0x000118, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_MakeArray_Array1) == 0x000128, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_MakeArray_Array1' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_Format_ReturnValue) == 0x000138, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_Format_ReturnValue1) == 0x000150, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_Format_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, Temp_bool_Variable) == 0x000168, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Select_Default) == 0x000169, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, K2Node_Event_NumTicketsAvailableToUse) == 0x00016C, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::K2Node_Event_NumTicketsAvailableToUse' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen, CallFunc_RandomFloatInRange_ReturnValue) == 0x000170, "Member 'PurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.InitializeTickets
+// 0x0004 (0x0004 - 0x0000)
+struct PurchaseHistoryScreen_C_InitializeTickets final
+{
+public:
+	int32                                         NumTicketsAvailableToUse;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_InitializeTickets) == 0x000004, "Wrong alignment on PurchaseHistoryScreen_C_InitializeTickets");
+static_assert(sizeof(PurchaseHistoryScreen_C_InitializeTickets) == 0x000004, "Wrong size on PurchaseHistoryScreen_C_InitializeTickets");
+static_assert(offsetof(PurchaseHistoryScreen_C_InitializeTickets, NumTicketsAvailableToUse) == 0x000000, "Member 'PurchaseHistoryScreen_C_InitializeTickets::NumTicketsAvailableToUse' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.OnEndRefundSubmission
+// 0x0018 (0x0018 - 0x0000)
+struct PurchaseHistoryScreen_C_OnEndRefundSubmission final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MtxRefunded;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    ReturnedItem;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TicketIndex;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_OnEndRefundSubmission) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_OnEndRefundSubmission");
+static_assert(sizeof(PurchaseHistoryScreen_C_OnEndRefundSubmission) == 0x000018, "Wrong size on PurchaseHistoryScreen_C_OnEndRefundSubmission");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnEndRefundSubmission, bSuccess) == 0x000000, "Member 'PurchaseHistoryScreen_C_OnEndRefundSubmission::bSuccess' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnEndRefundSubmission, MtxRefunded) == 0x000004, "Member 'PurchaseHistoryScreen_C_OnEndRefundSubmission::MtxRefunded' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnEndRefundSubmission, ReturnedItem) == 0x000008, "Member 'PurchaseHistoryScreen_C_OnEndRefundSubmission::ReturnedItem' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnEndRefundSubmission, TicketIndex) == 0x000010, "Member 'PurchaseHistoryScreen_C_OnEndRefundSubmission::TicketIndex' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+static_assert(offsetof(PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.OnPopulateView
+// 0x0001 (0x0001 - 0x0000)
+struct PurchaseHistoryScreen_C_OnPopulateView final
+{
+public:
+	EPurchaseReturnStep                           CurrentStep;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_OnPopulateView) == 0x000001, "Wrong alignment on PurchaseHistoryScreen_C_OnPopulateView");
+static_assert(sizeof(PurchaseHistoryScreen_C_OnPopulateView) == 0x000001, "Wrong size on PurchaseHistoryScreen_C_OnPopulateView");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnPopulateView, CurrentStep) == 0x000000, "Member 'PurchaseHistoryScreen_C_OnPopulateView::CurrentStep' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.OnItemRefresh
+// 0x0018 (0x0018 - 0x0000)
+struct PurchaseHistoryScreen_C_OnItemRefresh final
+{
+public:
+	struct FMtxPurchaseHistory                    PurchaseHistory;                                   // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_OnItemRefresh) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_OnItemRefresh");
+static_assert(sizeof(PurchaseHistoryScreen_C_OnItemRefresh) == 0x000018, "Wrong size on PurchaseHistoryScreen_C_OnItemRefresh");
+static_assert(offsetof(PurchaseHistoryScreen_C_OnItemRefresh, PurchaseHistory) == 0x000000, "Member 'PurchaseHistoryScreen_C_OnItemRefresh::PurchaseHistory' has a wrong offset!");
 
 // Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -60,30 +190,38 @@ static_assert(alignof(PurchaseHistoryScreen_C_BndEvt__BacchusCloseButton_K2Node_
 static_assert(sizeof(PurchaseHistoryScreen_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PurchaseHistoryScreen_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(PurchaseHistoryScreen_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PurchaseHistoryScreen_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
-// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.OnItemRefresh
-// 0x0001 (0x0001 - 0x0000)
-struct PurchaseHistoryScreen_C_OnItemRefresh final
-{
-public:
-	bool                                          bHaveItemsToRefund;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PurchaseHistoryScreen_C_OnItemRefresh) == 0x000001, "Wrong alignment on PurchaseHistoryScreen_C_OnItemRefresh");
-static_assert(sizeof(PurchaseHistoryScreen_C_OnItemRefresh) == 0x000001, "Wrong size on PurchaseHistoryScreen_C_OnItemRefresh");
-static_assert(offsetof(PurchaseHistoryScreen_C_OnItemRefresh, bHaveItemsToRefund) == 0x000000, "Member 'PurchaseHistoryScreen_C_OnItemRefresh::bHaveItemsToRefund' has a wrong offset!");
-
 // Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.HandleBack
-// 0x0010 (0x0010 - 0x0000)
+// 0x0002 (0x0002 - 0x0000)
 struct PurchaseHistoryScreen_C_HandleBack final
 {
 public:
 	bool                                          Passthrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HandlePreviousStepAction_bPassthrough;    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryScreen_C_HandleBack) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_HandleBack");
-static_assert(sizeof(PurchaseHistoryScreen_C_HandleBack) == 0x000010, "Wrong size on PurchaseHistoryScreen_C_HandleBack");
+static_assert(alignof(PurchaseHistoryScreen_C_HandleBack) == 0x000001, "Wrong alignment on PurchaseHistoryScreen_C_HandleBack");
+static_assert(sizeof(PurchaseHistoryScreen_C_HandleBack) == 0x000002, "Wrong size on PurchaseHistoryScreen_C_HandleBack");
 static_assert(offsetof(PurchaseHistoryScreen_C_HandleBack, Passthrough) == 0x000000, "Member 'PurchaseHistoryScreen_C_HandleBack::Passthrough' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryScreen_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'PurchaseHistoryScreen_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_HandleBack, CallFunc_HandlePreviousStepAction_bPassthrough) == 0x000001, "Member 'PurchaseHistoryScreen_C_HandleBack::CallFunc_HandlePreviousStepAction_bPassthrough' has a wrong offset!");
+
+// Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.ToggleBackAction
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) PurchaseHistoryScreen_C_ToggleBackAction final
+{
+public:
+	bool                                          bShouldShow;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasInputActionHandler_ReturnValue;        // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasInputActionHandler_ReturnValue1;       // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PurchaseHistoryScreen_C_ToggleBackAction) == 0x000008, "Wrong alignment on PurchaseHistoryScreen_C_ToggleBackAction");
+static_assert(sizeof(PurchaseHistoryScreen_C_ToggleBackAction) == 0x000020, "Wrong size on PurchaseHistoryScreen_C_ToggleBackAction");
+static_assert(offsetof(PurchaseHistoryScreen_C_ToggleBackAction, bShouldShow) == 0x000000, "Member 'PurchaseHistoryScreen_C_ToggleBackAction::bShouldShow' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ToggleBackAction, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'PurchaseHistoryScreen_C_ToggleBackAction::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ToggleBackAction, CallFunc_IsMobileGame_ReturnValue) == 0x000018, "Member 'PurchaseHistoryScreen_C_ToggleBackAction::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ToggleBackAction, CallFunc_HasInputActionHandler_ReturnValue) == 0x000019, "Member 'PurchaseHistoryScreen_C_ToggleBackAction::CallFunc_HasInputActionHandler_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PurchaseHistoryScreen_C_ToggleBackAction, CallFunc_HasInputActionHandler_ReturnValue1) == 0x00001A, "Member 'PurchaseHistoryScreen_C_ToggleBackAction::CallFunc_HasInputActionHandler_ReturnValue1' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformItemPicker.ItemTransformItemPicker_C
-// 0x0060 (0x0278 - 0x0218)
+// 0x0060 (0x0270 - 0x0210)
 class UItemTransformItemPicker_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalTabList_C*                   FilterTabList;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemTransformSlotItemPicker_C*         ItemTransformSlotItemPicker;                       // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMainModeItemDetailsHostPanel_C*        MainModeItemDetailsHostPanel;                      // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnItemSelected;                                    // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<struct FFortItemTransformFilterTabLabelInfo> FilterTabs;                                        // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
-	TArray<class UFortItem*>                      SacrificeItems;                                    // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	class FName                                   CurrentTab;                                        // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentlySelectedSlot;                             // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UHorizontalTabList_C*                   FilterTabList;                                     // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemTransformSlotItemPicker_C*         ItemTransformSlotItemPicker;                       // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMainModeItemDetailsHostPanel_C*        MainModeItemDetailsHostPanel;                      // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnItemSelected;                                    // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<struct FFortItemTransformFilterTabLabelInfo> FilterTabs;                                        // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
+	TArray<class UFortItem*>                      SacrificeItems;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class FName                                   CurrentTab;                                        // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentlySelectedSlot;                             // 0x0268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void OnItemSelected__DelegateSignature(class UFortItem* SelectedItem);
@@ -45,7 +45,7 @@ public:
 	void HandleItemCommitted(class UFortItem* Item);
 	void SetupFilterTabList();
 	void SetFilter(class FName FilterName);
-	void OpenPicker(TArray<class UFortItem*>& Param_SacrificeItems, int32 SelectedSlot);
+	void OpenPicker(TArray<class UFortItem*>& SacrificeItems_0, int32 SelectedSlot);
 	void CommitSelectedItem(bool* PassThru);
 	void OpenInspectionScreen(bool* PassThru);
 	void Return_Item_to_Detail(class UFortItem* InItem, class UFortItem** OutItem);
@@ -61,16 +61,16 @@ public:
 	}
 };
 static_assert(alignof(UItemTransformItemPicker_C) == 0x000008, "Wrong alignment on UItemTransformItemPicker_C");
-static_assert(sizeof(UItemTransformItemPicker_C) == 0x000278, "Wrong size on UItemTransformItemPicker_C");
-static_assert(offsetof(UItemTransformItemPicker_C, UberGraphFrame) == 0x000218, "Member 'UItemTransformItemPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, FilterTabList) == 0x000220, "Member 'UItemTransformItemPicker_C::FilterTabList' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, ItemTransformSlotItemPicker) == 0x000228, "Member 'UItemTransformItemPicker_C::ItemTransformSlotItemPicker' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, MainModeItemDetailsHostPanel) == 0x000230, "Member 'UItemTransformItemPicker_C::MainModeItemDetailsHostPanel' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, OnItemSelected) == 0x000238, "Member 'UItemTransformItemPicker_C::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, FilterTabs) == 0x000248, "Member 'UItemTransformItemPicker_C::FilterTabs' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, SacrificeItems) == 0x000258, "Member 'UItemTransformItemPicker_C::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, CurrentTab) == 0x000268, "Member 'UItemTransformItemPicker_C::CurrentTab' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, CurrentlySelectedSlot) == 0x000270, "Member 'UItemTransformItemPicker_C::CurrentlySelectedSlot' has a wrong offset!");
+static_assert(sizeof(UItemTransformItemPicker_C) == 0x000270, "Wrong size on UItemTransformItemPicker_C");
+static_assert(offsetof(UItemTransformItemPicker_C, UberGraphFrame) == 0x000210, "Member 'UItemTransformItemPicker_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, FilterTabList) == 0x000218, "Member 'UItemTransformItemPicker_C::FilterTabList' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, ItemTransformSlotItemPicker) == 0x000220, "Member 'UItemTransformItemPicker_C::ItemTransformSlotItemPicker' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, MainModeItemDetailsHostPanel) == 0x000228, "Member 'UItemTransformItemPicker_C::MainModeItemDetailsHostPanel' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, OnItemSelected) == 0x000230, "Member 'UItemTransformItemPicker_C::OnItemSelected' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, FilterTabs) == 0x000240, "Member 'UItemTransformItemPicker_C::FilterTabs' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, SacrificeItems) == 0x000250, "Member 'UItemTransformItemPicker_C::SacrificeItems' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, CurrentTab) == 0x000260, "Member 'UItemTransformItemPicker_C::CurrentTab' has a wrong offset!");
+static_assert(offsetof(UItemTransformItemPicker_C, CurrentlySelectedSlot) == 0x000268, "Member 'UItemTransformItemPicker_C::CurrentlySelectedSlot' has a wrong offset!");
 
 }
 

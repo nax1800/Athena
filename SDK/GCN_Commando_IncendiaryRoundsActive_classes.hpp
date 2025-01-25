@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Commando_IncendiaryRoundsActive.GCN_Commando_IncendiaryRoundsActive_C
-// 0x0000 (0x0440 - 0x0440)
+// 0x0000 (0x0420 - 0x0420)
 class AGCN_Commando_IncendiaryRoundsActive_C final : public AFortGameplayCueNotify_Looping
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<AGCN_Commando_IncendiaryRoundsActive_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_IncendiaryRoundsActive_C) == 0x000010, "Wrong alignment on AGCN_Commando_IncendiaryRoundsActive_C");
-static_assert(sizeof(AGCN_Commando_IncendiaryRoundsActive_C) == 0x000440, "Wrong size on AGCN_Commando_IncendiaryRoundsActive_C");
+static_assert(alignof(AGCN_Commando_IncendiaryRoundsActive_C) == 0x000008, "Wrong alignment on AGCN_Commando_IncendiaryRoundsActive_C");
+static_assert(sizeof(AGCN_Commando_IncendiaryRoundsActive_C) == 0x000420, "Wrong size on AGCN_Commando_IncendiaryRoundsActive_C");
 
 }
 

@@ -46,7 +46,7 @@ void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
 
 
 // Function RejoinWindow.RejoinWindow_C.ExecuteUbergraph_RejoinWindow
-// ()
+// (HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

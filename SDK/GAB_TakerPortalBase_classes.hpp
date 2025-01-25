@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_TakerPortalBase.GAB_TakerPortalBase_C
-// 0x0040 (0x0B80 - 0x0B40)
+// 0x0040 (0x0990 - 0x0950)
 class UGAB_TakerPortalBase_C : public UFortGameplayAbility_AIPortal
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B40(0x0008)(Transient, DuplicateTransient)
-	bool                                          Debug;                                             // 0x0B48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B49[0x3];                                      // 0x0B49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PortalInStartLocation;                             // 0x0B4C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PortalInEndLocation;                               // 0x0B58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PortalOutEndLocation;                              // 0x0B64(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAbilityTask_MoveAI*                PortalInMove;                                      // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAbilityTask_MoveAI*                PortalOutMove;                                     // 0x0B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0950(0x0008)(Transient, DuplicateTransient)
+	bool                                          Debug;                                             // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_959[0x3];                                      // 0x0959(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PortalInStartLocation;                             // 0x095C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PortalInEndLocation;                               // 0x0968(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PortalOutEndLocation;                              // 0x0974(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAbilityTask_MoveAI*                PortalInMove;                                      // 0x0980(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAbilityTask_MoveAI*                PortalOutMove;                                     // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_TakerPortalBase(int32 EntryPoint);
@@ -62,14 +62,14 @@ public:
 	}
 };
 static_assert(alignof(UGAB_TakerPortalBase_C) == 0x000008, "Wrong alignment on UGAB_TakerPortalBase_C");
-static_assert(sizeof(UGAB_TakerPortalBase_C) == 0x000B80, "Wrong size on UGAB_TakerPortalBase_C");
-static_assert(offsetof(UGAB_TakerPortalBase_C, UberGraphFrame) == 0x000B40, "Member 'UGAB_TakerPortalBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, Debug) == 0x000B48, "Member 'UGAB_TakerPortalBase_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInStartLocation) == 0x000B4C, "Member 'UGAB_TakerPortalBase_C::PortalInStartLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInEndLocation) == 0x000B58, "Member 'UGAB_TakerPortalBase_C::PortalInEndLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, PortalOutEndLocation) == 0x000B64, "Member 'UGAB_TakerPortalBase_C::PortalOutEndLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInMove) == 0x000B70, "Member 'UGAB_TakerPortalBase_C::PortalInMove' has a wrong offset!");
-static_assert(offsetof(UGAB_TakerPortalBase_C, PortalOutMove) == 0x000B78, "Member 'UGAB_TakerPortalBase_C::PortalOutMove' has a wrong offset!");
+static_assert(sizeof(UGAB_TakerPortalBase_C) == 0x000990, "Wrong size on UGAB_TakerPortalBase_C");
+static_assert(offsetof(UGAB_TakerPortalBase_C, UberGraphFrame) == 0x000950, "Member 'UGAB_TakerPortalBase_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, Debug) == 0x000958, "Member 'UGAB_TakerPortalBase_C::Debug' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInStartLocation) == 0x00095C, "Member 'UGAB_TakerPortalBase_C::PortalInStartLocation' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInEndLocation) == 0x000968, "Member 'UGAB_TakerPortalBase_C::PortalInEndLocation' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, PortalOutEndLocation) == 0x000974, "Member 'UGAB_TakerPortalBase_C::PortalOutEndLocation' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, PortalInMove) == 0x000980, "Member 'UGAB_TakerPortalBase_C::PortalInMove' has a wrong offset!");
+static_assert(offsetof(UGAB_TakerPortalBase_C, PortalOutMove) == 0x000988, "Member 'UGAB_TakerPortalBase_C::PortalOutMove' has a wrong offset!");
 
 }
 

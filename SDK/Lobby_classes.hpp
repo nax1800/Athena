@@ -20,15 +20,15 @@ namespace SDK
 {
 
 // Class Lobby.LobbyBeaconClient
-// 0x01A8 (0x0570 - 0x03C8)
+// 0x0088 (0x0428 - 0x03A0)
 class ALobbyBeaconClient : public AOnlineBeaconClient
 {
 public:
-	class ALobbyBeaconState*                      LobbyState;                                        // 0x03C8(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ALobbyBeaconPlayerState*                PlayerState;                                       // 0x03D0(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D8[0x1];                                      // 0x03D8(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	ELobbyBeaconJoinState                         LobbyJoinServerState;                              // 0x03D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3DA[0x196];                                    // 0x03DA(0x0196)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class ALobbyBeaconState*                      LobbyState;                                        // 0x03A0(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ALobbyBeaconPlayerState*                PlayerState;                                       // 0x03A8(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3B0[0x1];                                      // 0x03B0(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	ELobbyBeaconJoinState                         LobbyJoinServerState;                              // 0x03B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3B2[0x76];                                     // 0x03B2(0x0076)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientAckJoiningServer();
@@ -56,19 +56,19 @@ public:
 	}
 };
 static_assert(alignof(ALobbyBeaconClient) == 0x000008, "Wrong alignment on ALobbyBeaconClient");
-static_assert(sizeof(ALobbyBeaconClient) == 0x000570, "Wrong size on ALobbyBeaconClient");
-static_assert(offsetof(ALobbyBeaconClient, LobbyState) == 0x0003C8, "Member 'ALobbyBeaconClient::LobbyState' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconClient, PlayerState) == 0x0003D0, "Member 'ALobbyBeaconClient::PlayerState' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconClient, LobbyJoinServerState) == 0x0003D9, "Member 'ALobbyBeaconClient::LobbyJoinServerState' has a wrong offset!");
+static_assert(sizeof(ALobbyBeaconClient) == 0x000428, "Wrong size on ALobbyBeaconClient");
+static_assert(offsetof(ALobbyBeaconClient, LobbyState) == 0x0003A0, "Member 'ALobbyBeaconClient::LobbyState' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconClient, PlayerState) == 0x0003A8, "Member 'ALobbyBeaconClient::PlayerState' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconClient, LobbyJoinServerState) == 0x0003B1, "Member 'ALobbyBeaconClient::LobbyJoinServerState' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconHost
-// 0x0038 (0x0378 - 0x0340)
+// 0x0038 (0x0388 - 0x0350)
 class ALobbyBeaconHost : public AOnlineBeaconHostObject
 {
 public:
-	uint8                                         Pad_340[0x8];                                      // 0x0340(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftClassPtr<class UClass>                   LobbyStateClass;                                   // 0x0348(0x0028)(Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ALobbyBeaconState*                      LobbyState;                                        // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_350[0x8];                                      // 0x0350(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftClassPtr<class UClass>                   LobbyStateClass;                                   // 0x0358(0x0028)(Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ALobbyBeaconState*                      LobbyState;                                        // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -81,22 +81,22 @@ public:
 	}
 };
 static_assert(alignof(ALobbyBeaconHost) == 0x000008, "Wrong alignment on ALobbyBeaconHost");
-static_assert(sizeof(ALobbyBeaconHost) == 0x000378, "Wrong size on ALobbyBeaconHost");
-static_assert(offsetof(ALobbyBeaconHost, LobbyStateClass) == 0x000348, "Member 'ALobbyBeaconHost::LobbyStateClass' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconHost, LobbyState) == 0x000370, "Member 'ALobbyBeaconHost::LobbyState' has a wrong offset!");
+static_assert(sizeof(ALobbyBeaconHost) == 0x000388, "Wrong size on ALobbyBeaconHost");
+static_assert(offsetof(ALobbyBeaconHost, LobbyStateClass) == 0x000358, "Member 'ALobbyBeaconHost::LobbyStateClass' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconHost, LobbyState) == 0x000380, "Member 'ALobbyBeaconHost::LobbyState' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconPlayerState
-// 0x0158 (0x0470 - 0x0318)
+// 0x00A8 (0x03D0 - 0x0328)
 class ALobbyBeaconPlayerState : public AInfo
 {
 public:
-	class FText                                   DisplayName;                                       // 0x0318(0x0018)(Net, NativeAccessSpecifierPublic)
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0330(0x0028)(Net, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUniqueNetIdRepl                       PartyOwnerUniqueId;                                // 0x0358(0x0028)(Net, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInLobby;                                          // 0x0380(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AOnlineBeaconClient*                    ClientActor;                                       // 0x0388(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_390[0xE0];                                     // 0x0390(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FText                                   DisplayName;                                       // 0x0328(0x0018)(Net, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0340(0x0028)(Net, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       PartyOwnerUniqueId;                                // 0x0368(0x0028)(Net, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInLobby;                                          // 0x0390(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AOnlineBeaconClient*                    ClientActor;                                       // 0x0398(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3A0[0x30];                                     // 0x03A0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_InLobby();
@@ -113,28 +113,27 @@ public:
 	}
 };
 static_assert(alignof(ALobbyBeaconPlayerState) == 0x000008, "Wrong alignment on ALobbyBeaconPlayerState");
-static_assert(sizeof(ALobbyBeaconPlayerState) == 0x000470, "Wrong size on ALobbyBeaconPlayerState");
-static_assert(offsetof(ALobbyBeaconPlayerState, DisplayName) == 0x000318, "Member 'ALobbyBeaconPlayerState::DisplayName' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, UniqueId) == 0x000330, "Member 'ALobbyBeaconPlayerState::UniqueId' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, PartyOwnerUniqueId) == 0x000358, "Member 'ALobbyBeaconPlayerState::PartyOwnerUniqueId' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, bInLobby) == 0x000380, "Member 'ALobbyBeaconPlayerState::bInLobby' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, ClientActor) == 0x000388, "Member 'ALobbyBeaconPlayerState::ClientActor' has a wrong offset!");
+static_assert(sizeof(ALobbyBeaconPlayerState) == 0x0003D0, "Wrong size on ALobbyBeaconPlayerState");
+static_assert(offsetof(ALobbyBeaconPlayerState, DisplayName) == 0x000328, "Member 'ALobbyBeaconPlayerState::DisplayName' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconPlayerState, UniqueId) == 0x000340, "Member 'ALobbyBeaconPlayerState::UniqueId' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconPlayerState, PartyOwnerUniqueId) == 0x000368, "Member 'ALobbyBeaconPlayerState::PartyOwnerUniqueId' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconPlayerState, bInLobby) == 0x000390, "Member 'ALobbyBeaconPlayerState::bInLobby' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconPlayerState, ClientActor) == 0x000398, "Member 'ALobbyBeaconPlayerState::ClientActor' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconState
-// 0x02B0 (0x05C8 - 0x0318)
-#pragma pack(push, 0x1)
-class alignas(0x08) ALobbyBeaconState : public AInfo
+// 0x0150 (0x0478 - 0x0328)
+class ALobbyBeaconState : public AInfo
 {
 public:
-	int32                                         MaxPlayers;                                        // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class ALobbyBeaconPlayerState>    LobbyBeaconPlayerStateClass;                       // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bLobbyStarted;                                     // 0x0330(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         WaitForPlayersTimeRemaining;                       // 0x0334(0x0004)(Net, ZeroConstructor, Config, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FLobbyPlayerStateInfoArray             Players;                                           // 0x0338(0x00C8)(Net, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_400[0x1C8];                                    // 0x0400(0x01C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         MaxPlayers;                                        // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class ALobbyBeaconPlayerState>    LobbyBeaconPlayerStateClass;                       // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_338[0x8];                                      // 0x0338(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bLobbyStarted;                                     // 0x0340(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_341[0x3];                                      // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WaitForPlayersTimeRemaining;                       // 0x0344(0x0004)(Net, ZeroConstructor, Config, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FLobbyPlayerStateInfoArray             Players;                                           // 0x0348(0x00C8)(Net, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_410[0x68];                                     // 0x0410(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_LobbyStarted();
@@ -150,14 +149,13 @@ public:
 		return GetDefaultObjImpl<ALobbyBeaconState>();
 	}
 };
-#pragma pack(pop)
 static_assert(alignof(ALobbyBeaconState) == 0x000008, "Wrong alignment on ALobbyBeaconState");
-static_assert(sizeof(ALobbyBeaconState) == 0x0005C8, "Wrong size on ALobbyBeaconState");
-static_assert(offsetof(ALobbyBeaconState, MaxPlayers) == 0x000318, "Member 'ALobbyBeaconState::MaxPlayers' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, LobbyBeaconPlayerStateClass) == 0x000320, "Member 'ALobbyBeaconState::LobbyBeaconPlayerStateClass' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, bLobbyStarted) == 0x000330, "Member 'ALobbyBeaconState::bLobbyStarted' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, WaitForPlayersTimeRemaining) == 0x000334, "Member 'ALobbyBeaconState::WaitForPlayersTimeRemaining' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, Players) == 0x000338, "Member 'ALobbyBeaconState::Players' has a wrong offset!");
+static_assert(sizeof(ALobbyBeaconState) == 0x000478, "Wrong size on ALobbyBeaconState");
+static_assert(offsetof(ALobbyBeaconState, MaxPlayers) == 0x000328, "Member 'ALobbyBeaconState::MaxPlayers' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconState, LobbyBeaconPlayerStateClass) == 0x000330, "Member 'ALobbyBeaconState::LobbyBeaconPlayerStateClass' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconState, bLobbyStarted) == 0x000340, "Member 'ALobbyBeaconState::bLobbyStarted' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconState, WaitForPlayersTimeRemaining) == 0x000344, "Member 'ALobbyBeaconState::WaitForPlayersTimeRemaining' has a wrong offset!");
+static_assert(offsetof(ALobbyBeaconState, Players) == 0x000348, "Member 'ALobbyBeaconState::Players' has a wrong offset!");
 
 }
 

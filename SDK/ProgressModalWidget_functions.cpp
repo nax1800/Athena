@@ -163,9 +163,9 @@ void UProgressModalWidget_C::OnBeginOutro()
 // Function ProgressModalWidget.ProgressModalWidget_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Description                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Description_0                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UProgressModalWidget_C::SetDescription(const class FText& Param_Description)
+void UProgressModalWidget_C::SetDescription(const class FText& Description_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -174,7 +174,7 @@ void UProgressModalWidget_C::SetDescription(const class FText& Param_Description
 
 	Params::ProgressModalWidget_C_SetDescription Parms{};
 
-	Parms.Param_Description = std::move(Param_Description);
+	Parms.Description_0 = std::move(Description_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -183,9 +183,9 @@ void UProgressModalWidget_C::SetDescription(const class FText& Param_Description
 // Function ProgressModalWidget.ProgressModalWidget_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      Param_Icon                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FSlateBrush                      Icon_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Param_Icon)
+void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -194,7 +194,7 @@ void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Param_Icon)
 
 	Params::ProgressModalWidget_C_SetIcon Parms{};
 
-	Parms.Param_Icon = std::move(Param_Icon);
+	Parms.Icon_0 = std::move(Icon_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -203,9 +203,9 @@ void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Param_Icon)
 // Function ProgressModalWidget.ProgressModalWidget_C.SetTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_Title                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             Title_0                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UProgressModalWidget_C::SetTitle(const class FText& Param_Title)
+void UProgressModalWidget_C::SetTitle(const class FText& Title_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -214,7 +214,7 @@ void UProgressModalWidget_C::SetTitle(const class FText& Param_Title)
 
 	Params::ProgressModalWidget_C_SetTitle Parms{};
 
-	Parms.Param_Title = std::move(Param_Title);
+	Parms.Title_0 = std::move(Title_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

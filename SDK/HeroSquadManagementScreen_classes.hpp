@@ -19,22 +19,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadManagementScreen.HeroSquadManagementScreen_C
-// 0x0050 (0x0570 - 0x0520)
+// 0x0058 (0x04B0 - 0x0458)
 class UHeroSquadManagementScreen_C final : public UFortHeroSquadManagementScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0520(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AniShowSlotInfo;                                   // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       HidePicker;                                        // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       AniHideSlotInfo;                                   // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowPicker;                                        // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonBorder*                          BorderSlotInfo;                                    // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextSlotBody;                                      // 0x0550(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextSlotHeader;                                    // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputBackAction;                                   // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0458(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Entrance;                                          // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AniShowSlotInfo;                                   // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       HidePicker;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AniHideSlotInfo;                                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowPicker;                                        // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonBorder*                          BorderSlotInfo;                                    // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextSlotBody;                                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextSlotHeader;                                    // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputBackAction;                                   // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_HeroSquadManagementScreen(int32 EntryPoint);
+	void OnBeginIntro();
 	void BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex);
 	void HandleSquadSlotPickerHidden();
 	void HandleSquadSlotPickerShown();
@@ -52,6 +54,8 @@ public:
 	void HandlePickerHideAni();
 	void HandlePickerShowAni();
 	void HandleShowSlotInfoAni();
+	void Intro();
+	void Intro_Initial_Reset();
 	void UpdateSquadSlotInfoPanel(int32 SquadSlotIndex);
 
 public:
@@ -65,16 +69,17 @@ public:
 	}
 };
 static_assert(alignof(UHeroSquadManagementScreen_C) == 0x000008, "Wrong alignment on UHeroSquadManagementScreen_C");
-static_assert(sizeof(UHeroSquadManagementScreen_C) == 0x000570, "Wrong size on UHeroSquadManagementScreen_C");
-static_assert(offsetof(UHeroSquadManagementScreen_C, UberGraphFrame) == 0x000520, "Member 'UHeroSquadManagementScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, AniShowSlotInfo) == 0x000528, "Member 'UHeroSquadManagementScreen_C::AniShowSlotInfo' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, HidePicker) == 0x000530, "Member 'UHeroSquadManagementScreen_C::HidePicker' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, AniHideSlotInfo) == 0x000538, "Member 'UHeroSquadManagementScreen_C::AniHideSlotInfo' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, ShowPicker) == 0x000540, "Member 'UHeroSquadManagementScreen_C::ShowPicker' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, BorderSlotInfo) == 0x000548, "Member 'UHeroSquadManagementScreen_C::BorderSlotInfo' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotBody) == 0x000550, "Member 'UHeroSquadManagementScreen_C::TextSlotBody' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotHeader) == 0x000558, "Member 'UHeroSquadManagementScreen_C::TextSlotHeader' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, InputBackAction) == 0x000560, "Member 'UHeroSquadManagementScreen_C::InputBackAction' has a wrong offset!");
+static_assert(sizeof(UHeroSquadManagementScreen_C) == 0x0004B0, "Wrong size on UHeroSquadManagementScreen_C");
+static_assert(offsetof(UHeroSquadManagementScreen_C, UberGraphFrame) == 0x000458, "Member 'UHeroSquadManagementScreen_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, Entrance) == 0x000460, "Member 'UHeroSquadManagementScreen_C::Entrance' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, AniShowSlotInfo) == 0x000468, "Member 'UHeroSquadManagementScreen_C::AniShowSlotInfo' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, HidePicker) == 0x000470, "Member 'UHeroSquadManagementScreen_C::HidePicker' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, AniHideSlotInfo) == 0x000478, "Member 'UHeroSquadManagementScreen_C::AniHideSlotInfo' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, ShowPicker) == 0x000480, "Member 'UHeroSquadManagementScreen_C::ShowPicker' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, BorderSlotInfo) == 0x000488, "Member 'UHeroSquadManagementScreen_C::BorderSlotInfo' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotBody) == 0x000490, "Member 'UHeroSquadManagementScreen_C::TextSlotBody' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotHeader) == 0x000498, "Member 'UHeroSquadManagementScreen_C::TextSlotHeader' has a wrong offset!");
+static_assert(offsetof(UHeroSquadManagementScreen_C, InputBackAction) == 0x0004A0, "Member 'UHeroSquadManagementScreen_C::InputBackAction' has a wrong offset!");
 
 }
 

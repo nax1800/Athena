@@ -37,6 +37,20 @@ void UBattlePassDirectAcquisitionScreen_C::ExecuteUbergraph_BattlePassDirectAcqu
 }
 
 
+// Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.OnBeginIntro
+// (Event, Public, BlueprintEvent)
+
+void UBattlePassDirectAcquisitionScreen_C::OnBeginIntro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattlePassDirectAcquisitionScreen_C", "OnBeginIntro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_97_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -204,6 +218,62 @@ struct FEventReply UBattlePassDirectAcquisitionScreen_C::On_CommonBorderTouchToC
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.Intro Anim "Header"
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBattlePassDirectAcquisitionScreen_C::Intro_Anim__Header_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattlePassDirectAcquisitionScreen_C", "Intro Anim \"Header\"");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.Intro Anim "OR"
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBattlePassDirectAcquisitionScreen_C::Intro_Anim__OR_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattlePassDirectAcquisitionScreen_C", "Intro Anim \"OR\"");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.Intro Anim "Tiles"
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBattlePassDirectAcquisitionScreen_C::Intro_Anim__Tiles_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattlePassDirectAcquisitionScreen_C", "Intro Anim \"Tiles\"");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BattlePassDirectAcquisitionScreen.BattlePassDirectAcquisitionScreen_C.Intro Anim Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBattlePassDirectAcquisitionScreen_C::Intro_Anim_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattlePassDirectAcquisitionScreen_C", "Intro Anim Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

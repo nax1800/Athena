@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -19,21 +19,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Trap_Floor_Player_Jump_Free_Direction_Pad.Trap_Floor_Player_Jump_Free_Direction_Pad_C
-// 0x0058 (0x0F30 - 0x0ED8)
+// 0x0050 (0x0CD8 - 0x0C88)
 class ATrap_Floor_Player_Jump_Free_Direction_Pad_C final : public ABuildingTrapFloor
 {
 public:
-	uint8                                         Pad_ED8[0x8];                                      // 0x0ED8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0EE0(0x0008)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*               JumpParticleSystem;                                // 0x0EE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Trigger;                                           // 0x0EF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene1;                                            // 0x0EF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Placed_Sound;                                 // 0x0F00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Active_Sound;                                 // 0x0F08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Fire_Sound;                                   // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Reload_Sound;                                 // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundCue*                              Trap_Explode_Sound;                                // 0x0F20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               JumpMaterial;                                      // 0x0F28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C88(0x0008)(Transient, DuplicateTransient)
+	class UParticleSystemComponent*               JumpParticleSystem;                                // 0x0C90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Trigger;                                           // 0x0C98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Scene1;                                            // 0x0CA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Placed_Sound;                                 // 0x0CA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Active_Sound;                                 // 0x0CB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Fire_Sound;                                   // 0x0CB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Reload_Sound;                                 // 0x0CC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundCue*                              Trap_Explode_Sound;                                // 0x0CC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               JumpMaterial;                                      // 0x0CD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad(int32 EntryPoint);
@@ -44,6 +43,8 @@ public:
 	void OnPlaced();
 	void OnReloadEnd();
 	void UserConstructionScript();
+
+	bool BP_ShouldTrigger(const TArray<class AActor*>& TouchingActors) const;
 
 public:
 	static class UClass* StaticClass()
@@ -56,17 +57,17 @@ public:
 	}
 };
 static_assert(alignof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C) == 0x000008, "Wrong alignment on ATrap_Floor_Player_Jump_Free_Direction_Pad_C");
-static_assert(sizeof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C) == 0x000F30, "Wrong size on ATrap_Floor_Player_Jump_Free_Direction_Pad_C");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, UberGraphFrame) == 0x000EE0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpParticleSystem) == 0x000EE8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpParticleSystem' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trigger) == 0x000EF0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Scene1) == 0x000EF8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Scene1' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Placed_Sound) == 0x000F00, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Placed_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Active_Sound) == 0x000F08, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Active_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Fire_Sound) == 0x000F10, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Fire_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Reload_Sound) == 0x000F18, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Reload_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Explode_Sound) == 0x000F20, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Explode_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpMaterial) == 0x000F28, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpMaterial' has a wrong offset!");
+static_assert(sizeof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C) == 0x000CD8, "Wrong size on ATrap_Floor_Player_Jump_Free_Direction_Pad_C");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, UberGraphFrame) == 0x000C88, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpParticleSystem) == 0x000C90, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpParticleSystem' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trigger) == 0x000C98, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trigger' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Scene1) == 0x000CA0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Scene1' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Placed_Sound) == 0x000CA8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Placed_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Active_Sound) == 0x000CB0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Active_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Fire_Sound) == 0x000CB8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Fire_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Reload_Sound) == 0x000CC0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Reload_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Explode_Sound) == 0x000CC8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Explode_Sound' has a wrong offset!");
+static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpMaterial) == 0x000CD0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpMaterial' has a wrong offset!");
 
 }
 

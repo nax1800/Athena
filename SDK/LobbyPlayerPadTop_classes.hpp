@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
 
@@ -21,53 +21,56 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LobbyPlayerPadTop.LobbyPlayerPadTop_C
-// 0x0400 (0x0618 - 0x0218)
+// 0x0400 (0x0610 - 0x0210)
 class ULobbyPlayerPadTop_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       On_Ready_Change_Text;                              // 0x0218(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        Banner;                                            // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Platform;                                    // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LeaderImage;                                       // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Microphone;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               OverlayInputAction;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         PowerBox;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPowerWidget_C*                         PowerWidget;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               ReadyStatusBox;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       ReadyUpStatusText;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0270(0x01F8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         PlayerIndex;                                       // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHovered;                                          // 0x046C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsTalking;                                        // 0x046D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bIsMuted;                                          // 0x046E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_46F[0x1];                                      // 0x046F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            TalkingBrush;                                      // 0x0470(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            MutedBrush;                                        // 0x04F8(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            MicBrush;                                          // 0x0580(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<EFortPartyMemberLocation>              NewVar_0;                                          // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	class UMatchmakingInputIndicator_C*           InputIndicator;                                    // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LeaderImage;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Microphone;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               OverlayInputAction;                                // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         PowerBox;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPowerWidget_C*                         PowerWidget;                                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ReadyStatusBox;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       ReadyUpStatusText;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0278(0x01F8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         PlayerIndex;                                       // 0x0470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHovered;                                          // 0x0474(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bIsTalking;                                        // 0x0475(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          bIsMuted;                                          // 0x0476(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_477[0x1];                                      // 0x0477(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            TalkingBrush;                                      // 0x0478(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            MutedBrush;                                        // 0x0500(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            MicBrush;                                          // 0x0588(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void OnAthenaMemberLocationStateChanged(struct FUniqueNetIdRepl& Member_Id, EFortPartyMemberLocation Location);
-	void UpdateMicIcon();
-	void HandlePlayerStoppedTalking();
-	void HandlePlayerMutingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking);
-	void HandlePlayerTalkingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking);
-	void RefreshAthenaReadyState(bool Ready, EFortPartyMemberLocation Location, bool LocationValid);
-	void OnAthenaReadyStateChanged(struct FUniqueNetIdRepl& Member_Id, bool Ready);
-	void OnLobbyPlayerUnhovered(int32 Param_PlayerIndex);
-	void Initialize(int32 Param_PlayerIndex);
-	void InitializeContextEvents();
-	void OnLobbyPlayerHovered(int32 Param_PlayerIndex);
-	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& Param_TeamMemberInfo);
-	void Refresh();
-	void RefreshPlayerName();
-	void PreConstruct(bool IsDesignTime);
-	void Construct();
-	void OnLobbyStarted();
-	void OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady);
-	void OnLobbyDisconnected();
 	void ExecuteUbergraph_LobbyPlayerPadTop(int32 EntryPoint);
+	void OnLobbyDisconnected();
+	void OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady);
+	void OnLobbyStarted();
+	void Construct();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshPlayerName();
+	void Refresh();
+	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0);
+	void OnLobbyPlayerHovered(int32 PlayerIndex_0);
+	void InitializeContextEvents();
+	void Initialize(int32 PlayerIndex_0);
+	void OnLobbyPlayerUnhovered(int32 PlayerIndex_0);
+	void RefreshAthenaReadyState(const struct FUniqueNetIdRepl& MemberId);
+	void HandlePlayerTalkingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking);
+	void HandlePlayerMutingChanged(const struct FUniqueNetIdRepl& UniqueId, bool IsTalking);
+	void HandlePlayerStoppedTalking();
+	void UpdateMicIcon();
+	void OnAthenaNumAliveChanged(struct FUniqueNetIdRepl& MemberId, int32 NumAlive);
+	void OnAthenaTimeSpentInMatchChanged(struct FUniqueNetIdRepl& MemberId, class FText& Minutes, class FText& Seconds);
+	void OnAthenaReadyTypeChanged(struct FUniqueNetIdRepl& MemberId, EAthenaPartyMemberReadyType ReadyType);
+	void RefreshChatDisabled();
 
 public:
 	static class UClass* StaticClass()
@@ -80,27 +83,28 @@ public:
 	}
 };
 static_assert(alignof(ULobbyPlayerPadTop_C) == 0x000008, "Wrong alignment on ULobbyPlayerPadTop_C");
-static_assert(sizeof(ULobbyPlayerPadTop_C) == 0x000618, "Wrong size on ULobbyPlayerPadTop_C");
-static_assert(offsetof(ULobbyPlayerPadTop_C, UberGraphFrame) == 0x000218, "Member 'ULobbyPlayerPadTop_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(ULobbyPlayerPadTop_C) == 0x000610, "Wrong size on ULobbyPlayerPadTop_C");
+static_assert(offsetof(ULobbyPlayerPadTop_C, UberGraphFrame) == 0x000210, "Member 'ULobbyPlayerPadTop_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, On_Ready_Change_Text) == 0x000218, "Member 'ULobbyPlayerPadTop_C::On_Ready_Change_Text' has a wrong offset!");
 static_assert(offsetof(ULobbyPlayerPadTop_C, Banner) == 0x000220, "Member 'ULobbyPlayerPadTop_C::Banner' has a wrong offset!");
 static_assert(offsetof(ULobbyPlayerPadTop_C, Image_Platform) == 0x000228, "Member 'ULobbyPlayerPadTop_C::Image_Platform' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, LeaderImage) == 0x000230, "Member 'ULobbyPlayerPadTop_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, Microphone) == 0x000238, "Member 'ULobbyPlayerPadTop_C::Microphone' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, OverlayInputAction) == 0x000240, "Member 'ULobbyPlayerPadTop_C::OverlayInputAction' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PowerBox) == 0x000248, "Member 'ULobbyPlayerPadTop_C::PowerBox' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PowerWidget) == 0x000250, "Member 'ULobbyPlayerPadTop_C::PowerWidget' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyStatusBox) == 0x000258, "Member 'ULobbyPlayerPadTop_C::ReadyStatusBox' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyUpStatusText) == 0x000260, "Member 'ULobbyPlayerPadTop_C::ReadyUpStatusText' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TextPlayerName) == 0x000268, "Member 'ULobbyPlayerPadTop_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TeamMemberInfo) == 0x000270, "Member 'ULobbyPlayerPadTop_C::TeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PlayerIndex) == 0x000468, "Member 'ULobbyPlayerPadTop_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, bHovered) == 0x00046C, "Member 'ULobbyPlayerPadTop_C::bHovered' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, bIsTalking) == 0x00046D, "Member 'ULobbyPlayerPadTop_C::bIsTalking' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, bIsMuted) == 0x00046E, "Member 'ULobbyPlayerPadTop_C::bIsMuted' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TalkingBrush) == 0x000470, "Member 'ULobbyPlayerPadTop_C::TalkingBrush' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, MutedBrush) == 0x0004F8, "Member 'ULobbyPlayerPadTop_C::MutedBrush' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, MicBrush) == 0x000580, "Member 'ULobbyPlayerPadTop_C::MicBrush' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, NewVar_0) == 0x000608, "Member 'ULobbyPlayerPadTop_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, InputIndicator) == 0x000230, "Member 'ULobbyPlayerPadTop_C::InputIndicator' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, LeaderImage) == 0x000238, "Member 'ULobbyPlayerPadTop_C::LeaderImage' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, Microphone) == 0x000240, "Member 'ULobbyPlayerPadTop_C::Microphone' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, OverlayInputAction) == 0x000248, "Member 'ULobbyPlayerPadTop_C::OverlayInputAction' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, PowerBox) == 0x000250, "Member 'ULobbyPlayerPadTop_C::PowerBox' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, PowerWidget) == 0x000258, "Member 'ULobbyPlayerPadTop_C::PowerWidget' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyStatusBox) == 0x000260, "Member 'ULobbyPlayerPadTop_C::ReadyStatusBox' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyUpStatusText) == 0x000268, "Member 'ULobbyPlayerPadTop_C::ReadyUpStatusText' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, TextPlayerName) == 0x000270, "Member 'ULobbyPlayerPadTop_C::TextPlayerName' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, TeamMemberInfo) == 0x000278, "Member 'ULobbyPlayerPadTop_C::TeamMemberInfo' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, PlayerIndex) == 0x000470, "Member 'ULobbyPlayerPadTop_C::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, bHovered) == 0x000474, "Member 'ULobbyPlayerPadTop_C::bHovered' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, bIsTalking) == 0x000475, "Member 'ULobbyPlayerPadTop_C::bIsTalking' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, bIsMuted) == 0x000476, "Member 'ULobbyPlayerPadTop_C::bIsMuted' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, TalkingBrush) == 0x000478, "Member 'ULobbyPlayerPadTop_C::TalkingBrush' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, MutedBrush) == 0x000500, "Member 'ULobbyPlayerPadTop_C::MutedBrush' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadTop_C, MicBrush) == 0x000588, "Member 'ULobbyPlayerPadTop_C::MicBrush' has a wrong offset!");
 
 }
 

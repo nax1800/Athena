@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NullLeaderboardContent.NullLeaderboardContent_C
-// 0x0000 (0x0218 - 0x0218)
+// 0x0000 (0x0210 - 0x0210)
 class UNullLeaderboardContent_C final : public UCommonUserWidget
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UNullLeaderboardContent_C) == 0x000008, "Wrong alignment on UNullLeaderboardContent_C");
-static_assert(sizeof(UNullLeaderboardContent_C) == 0x000218, "Wrong size on UNullLeaderboardContent_C");
+static_assert(sizeof(UNullLeaderboardContent_C) == 0x000210, "Wrong size on UNullLeaderboardContent_C");
 
 }
 

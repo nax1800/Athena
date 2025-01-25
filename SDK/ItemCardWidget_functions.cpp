@@ -57,6 +57,20 @@ void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint)
 }
 
 
+// Function ItemCardWidget.ItemCardWidget_C.BP_OnHovered
+// (Event, Protected, BlueprintEvent)
+
+void UItemCardWidget_C::BP_OnHovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ItemCardWidget.ItemCardWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -127,20 +141,6 @@ struct FEventReply UItemCardWidget_C::OnFocusReceived(const struct FGeometry& My
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function ItemCardWidget.ItemCardWidget_C.OnHovered
-// (Event, Protected, BlueprintEvent)
-
-void UItemCardWidget_C::OnHovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "OnHovered");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -10,75 +10,78 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
-#include "AthenaDragDropAction_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonUI_structs.hpp"
+#include "AthenaDragDropAction_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.ExecuteUbergraph_AthenaInventoryPanel
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortQuickBars                                K2Node_Event_QuickBarType;                         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UFortItem* Item)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0028(0x0070)()
-	class UDragDropOperation*                     K2Node_Event_Operation;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UAthenaInventoryEquipSlot_C*>    K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ZeroConstructor, ReferenceParm)
-	class UAthenaInventoryDragDrop_C*             K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop;   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaInventoryEquipSlot_C*            CallFunc_Array_Get_Item;                           // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                              K2Node_Event_Item;                                 // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleClose_PassThrough;                  // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EB[0x5];                                       // 0x00EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortQuickBars                                K2Node_Event_QuickBarType;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UFortItem* Item)>        K2Node_CreateDelegate_OutputDelegate1;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0038(0x0070)()
+	class UDragDropOperation*                     K2Node_Event_Operation;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UAthenaInventoryEquipSlot_C*>    K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
+	class UAthenaInventoryDragDrop_C*             K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop;   // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaInventoryEquipSlot_C*            CallFunc_Array_Get_Item;                           // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                              K2Node_Event_Item;                                 // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleClose_PassThrough;                  // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FB[0x5];                                       // 0x00FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel");
-static_assert(sizeof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel) == 0x0000F8, "Wrong size on AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel");
+static_assert(sizeof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel) == 0x000110, "Wrong size on AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel");
 static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, EntryPoint) == 0x000000, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, Temp_int_Array_Index_Variable) == 0x000010, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_QuickBarType) == 0x000014, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_QuickBarType' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000015, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_PointerEvent) == 0x000028, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_PointerEvent' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Operation) == 0x000098, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Operation' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_MakeArray_Array) == 0x0000A0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop) == 0x0000B0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Array_Length_ReturnValue) == 0x0000C8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, Temp_int_Loop_Counter_Variable) == 0x0000CC, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Add_IntInt_ReturnValue) == 0x0000D4, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Item) == 0x0000D8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue1) == 0x0000E0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetType_ReturnValue) == 0x0000E8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0000E9, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_HandleClose_PassThrough) == 0x0000EA, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_HandleClose_PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue12) == 0x0000F0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, Temp_int_Array_Index_Variable) == 0x000004, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_QuickBarType) == 0x000008, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_QuickBarType' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_CreateDelegate_OutputDelegate1) == 0x000028, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_PointerEvent) == 0x000038, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_PointerEvent' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Operation) == 0x0000A8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Operation' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_MakeArray_Array) == 0x0000B0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop) == 0x0000C0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Array_Length_ReturnValue) == 0x0000D8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, Temp_int_Loop_Counter_Variable) == 0x0000DC, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Less_IntInt_ReturnValue) == 0x0000E0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Item) == 0x0000E8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Item' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue) == 0x0000F0, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetType_ReturnValue) == 0x0000F8, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0000F9, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_HandleClose_PassThrough) == 0x0000FA, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_HandleClose_PassThrough' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue1) == 0x000100, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue2) == 0x000108, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RequestEquip
 // 0x0008 (0x0008 - 0x0000)
@@ -127,7 +130,7 @@ public:
 	bool                                          CallFunc_IsSwapping_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaInventoryPanel_C_HandleClose) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_HandleClose");
 static_assert(sizeof(AthenaInventoryPanel_C_HandleClose) == 0x000030, "Wrong size on AthenaInventoryPanel_C_HandleClose");
@@ -136,7 +139,7 @@ static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetContext_R
 static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_IsSwapping_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_IsSwapping_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetContext_ReturnValue12) == 0x000028, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RegisterBack
 // 0x0020 (0x0020 - 0x0000)
@@ -173,27 +176,28 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetSelectedInventoryItem_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EInputActionState                             Temp_byte_Variable1;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanBeDropped_ReturnValue;                 // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanBeDropped_ReturnValue;                 // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EInputActionState                             Temp_byte_Variable1;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0030(0x0010)(NoDestructor)
-	EInputActionState                             K2Node_Select_Default;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EInputActionState                             K2Node_Select_Default;                             // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0038(0x0010)(NoDestructor)
 };
 static_assert(alignof(AthenaInventoryPanel_C_RegisterDrop) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RegisterDrop");
 static_assert(sizeof(AthenaInventoryPanel_C_RegisterDrop) == 0x000048, "Wrong size on AthenaInventoryPanel_C_RegisterDrop");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, Temp_byte_Variable) == 0x000000, "Member 'AthenaInventoryPanel_C_RegisterDrop::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, Temp_byte_Variable1) == 0x000018, "Member 'AthenaInventoryPanel_C_RegisterDrop::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_CanBeDropped_ReturnValue) == 0x00001A, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_CanBeDropped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_CanBeDropped_ReturnValue) == 0x000019, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_CanBeDropped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, Temp_byte_Variable1) == 0x00001A, "Member 'AthenaInventoryPanel_C_RegisterDrop::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, Temp_bool_Variable) == 0x00001B, "Member 'AthenaInventoryPanel_C_RegisterDrop::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_MakeStruct_DataTableRowHandle) == 0x000030, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_Select_Default) == 0x000040, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_Select_Default) == 0x000030, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_MakeStruct_DataTableRowHandle) == 0x000038, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleDrop
 // 0x0028 (0x0028 - 0x0000)
@@ -227,7 +231,8 @@ public:
 	class UFortItemTileView*                      CallFunc_GetTileViewForItem_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemTileView*                      CallFunc_GetTileViewForItem_ReturnValue1;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AthenaInventoryPanel_C_DropItem) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_DropItem");
 static_assert(sizeof(AthenaInventoryPanel_C_DropItem) == 0x000030, "Wrong size on AthenaInventoryPanel_C_DropItem");
@@ -237,7 +242,8 @@ static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetContext_Retu
 static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetTileViewForItem_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_GetTileViewForItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetTileViewForItem_ReturnValue1) == 0x000020, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_GetTileViewForItem_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetNumInStack_ReturnValue) == 0x000028, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_IsValid_ReturnValue) == 0x00002C, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002D, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.CreateQuantitySelectorWidget
 // 0x0048 (0x0048 - 0x0000)
@@ -298,23 +304,23 @@ static_assert(offsetof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback
 struct AthenaInventoryPanel_C_NavEquipment final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemTileView*                      Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemTileView*                      Temp_object_Variable1;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUINavigation                                 Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                Temp_object_Variable12;                            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable123;                           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable1234;                          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable12345;                         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable123;                             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UWidget*                                Temp_object_Variable2;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable3;                             // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable4;                             // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable5;                             // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSwapping_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -325,55 +331,55 @@ public:
 	int32                                         CallFunc_GetNumItems_ReturnValue1;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue1;              // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetNumItems_ReturnValue12;                // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumItems_ReturnValue2;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemTileView*                      K2Node_Select_Default;                             // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue12;             // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemTileView*                      K2Node_Select1_Default;                            // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemTileView*                      K2Node_Select12_Default;                           // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumItems_ReturnValue123;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue123;            // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortItemTileView*                      K2Node_Select2_Default;                            // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumItems_ReturnValue3;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue3;              // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_Select123_Default;                          // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select1234_Default;                         // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select3_Default;                            // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select4_Default;                            // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AthenaInventoryPanel_C_NavEquipment) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_NavEquipment");
 static_assert(sizeof(AthenaInventoryPanel_C_NavEquipment) == 0x0000B8, "Wrong size on AthenaInventoryPanel_C_NavEquipment");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Param_Navigation) == 0x000000, "Member 'AthenaInventoryPanel_C_NavEquipment::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Navigation_0) == 0x000000, "Member 'AthenaInventoryPanel_C_NavEquipment::Navigation_0' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_NavEquipment::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable) == 0x000010, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable) == 0x000018, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable1) == 0x000020, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable12) == 0x000021, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable2) == 0x000021, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable1) == 0x000028, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_byte_Variable) == 0x000030, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable12) == 0x000038, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable123) == 0x000040, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable123' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable1234) == 0x000048, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable1234' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable12345) == 0x000050, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable12345' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable123) == 0x000058, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable2) == 0x000038, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable3) == 0x000040, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable4) == 0x000048, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_object_Variable5) == 0x000050, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, Temp_bool_Variable3) == 0x000058, "Member 'AthenaInventoryPanel_C_NavEquipment::Temp_bool_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_IsSwapping_ReturnValue) == 0x000068, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_IsSwapping_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue) == 0x00006C, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue) == 0x000070, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue1) == 0x000074, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue1) == 0x000078, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue12) == 0x00007C, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue2) == 0x00007C, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select_Default) == 0x000080, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue12) == 0x000088, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue2) == 0x000088, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select1_Default) == 0x000090, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select1_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select12_Default) == 0x000098, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue123) == 0x0000A0, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue123) == 0x0000A4, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select123_Default) == 0x0000A8, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select123_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select1234_Default) == 0x0000B0, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select1234_Default' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select2_Default) == 0x000098, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_GetNumItems_ReturnValue3) == 0x0000A0, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_GetNumItems_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, CallFunc_Greater_IntInt_ReturnValue3) == 0x0000A4, "Member 'AthenaInventoryPanel_C_NavEquipment::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select3_Default) == 0x0000A8, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavEquipment, K2Node_Select4_Default) == 0x0000B0, "Member 'AthenaInventoryPanel_C_NavEquipment::K2Node_Select4_Default' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.NavResources
 // 0x0050 (0x0050 - 0x0000)
 struct AthenaInventoryPanel_C_NavResources final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -381,8 +387,8 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                Temp_object_Variable1;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable12;                            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable123;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable2;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable3;                             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -391,14 +397,14 @@ public:
 };
 static_assert(alignof(AthenaInventoryPanel_C_NavResources) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_NavResources");
 static_assert(sizeof(AthenaInventoryPanel_C_NavResources) == 0x000050, "Wrong size on AthenaInventoryPanel_C_NavResources");
-static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Param_Navigation) == 0x000000, "Member 'AthenaInventoryPanel_C_NavResources::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Navigation_0) == 0x000000, "Member 'AthenaInventoryPanel_C_NavResources::Navigation_0' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_NavResources::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_bool_Variable) == 0x000010, "Member 'AthenaInventoryPanel_C_NavResources::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_byte_Variable) == 0x000011, "Member 'AthenaInventoryPanel_C_NavResources::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable) == 0x000018, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable1) == 0x000020, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable12) == 0x000028, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable123) == 0x000030, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable2) == 0x000028, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavResources, Temp_object_Variable3) == 0x000030, "Member 'AthenaInventoryPanel_C_NavResources::Temp_object_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, CallFunc_GetNumItems_ReturnValue) == 0x000038, "Member 'AthenaInventoryPanel_C_NavResources::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, CallFunc_Greater_IntInt_ReturnValue) == 0x00003C, "Member 'AthenaInventoryPanel_C_NavResources::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavResources, K2Node_Select_Default) == 0x000040, "Member 'AthenaInventoryPanel_C_NavResources::K2Node_Select_Default' has a wrong offset!");
@@ -409,7 +415,7 @@ static_assert(offsetof(AthenaInventoryPanel_C_NavResources, K2Node_Select1_Defau
 struct AthenaInventoryPanel_C_NavAmmo final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -417,8 +423,8 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                Temp_object_Variable1;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable12;                            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Temp_object_Variable123;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable2;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Temp_object_Variable3;                             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumItems_ReturnValue;                  // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -427,14 +433,14 @@ public:
 };
 static_assert(alignof(AthenaInventoryPanel_C_NavAmmo) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_NavAmmo");
 static_assert(sizeof(AthenaInventoryPanel_C_NavAmmo) == 0x000050, "Wrong size on AthenaInventoryPanel_C_NavAmmo");
-static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Param_Navigation) == 0x000000, "Member 'AthenaInventoryPanel_C_NavAmmo::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Navigation_0) == 0x000000, "Member 'AthenaInventoryPanel_C_NavAmmo::Navigation_0' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_NavAmmo::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_bool_Variable) == 0x000010, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_byte_Variable) == 0x000011, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable) == 0x000018, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable1) == 0x000020, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable12) == 0x000028, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable123) == 0x000030, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable123' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable2) == 0x000028, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, Temp_object_Variable3) == 0x000030, "Member 'AthenaInventoryPanel_C_NavAmmo::Temp_object_Variable3' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, CallFunc_GetNumItems_ReturnValue) == 0x000038, "Member 'AthenaInventoryPanel_C_NavAmmo::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, CallFunc_Greater_IntInt_ReturnValue) == 0x00003C, "Member 'AthenaInventoryPanel_C_NavAmmo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_NavAmmo, K2Node_Select_Default) == 0x000040, "Member 'AthenaInventoryPanel_C_NavAmmo::K2Node_Select_Default' has a wrong offset!");
@@ -464,7 +470,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -476,7 +482,7 @@ static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_GetType_Ret
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000013, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000014, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000014, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_BooleanOR_ReturnValue) == 0x000015, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryPanel_C_RegisterMove, CallFunc_BooleanOR_ReturnValue1) == 0x000016, "Member 'AthenaInventoryPanel_C_RegisterMove::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
 

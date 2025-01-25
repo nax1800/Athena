@@ -37,6 +37,28 @@ void ABP_ProjectileTrajectory_C::ExecuteUbergraph_BP_ProjectileTrajectory(int32 
 }
 
 
+// Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectoryFromNative
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FVector>                  SplinePoints                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector>                  SplineTangents                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void ABP_ProjectileTrajectory_C::SetTrajectoryFromNative(const TArray<struct FVector>& SplinePoints, const TArray<struct FVector>& SplineTangents)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectoryFromNative");
+
+	Params::BP_ProjectileTrajectory_C_SetTrajectoryFromNative Parms{};
+
+	Parms.SplinePoints = std::move(SplinePoints);
+	Parms.SplineTangents = std::move(SplineTangents);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 

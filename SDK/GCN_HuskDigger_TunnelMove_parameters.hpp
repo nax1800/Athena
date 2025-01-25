@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function GCN_HuskDigger_TunnelMove.GCN_HuskDigger_TunnelMove_C.ExecuteUbergraph_GCN_HuskDigger_TunnelMove
-// 0x0138 (0x0138 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove final
 {
 public:
@@ -39,14 +39,16 @@ public:
 	float                                         CallFunc_BreakVector_Y;                            // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0104(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0110(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0110(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0118(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue1;      // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0124(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue1;      // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue3;      // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove) == 0x000008, "Wrong alignment on GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove");
-static_assert(sizeof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove) == 0x000138, "Wrong size on GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove");
+static_assert(sizeof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove) == 0x000150, "Wrong size on GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove");
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, EntryPoint) == 0x000000, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, K2Node_Event_MyTarget) == 0x000008, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::K2Node_Event_MyTarget' has a wrong offset!");
@@ -62,8 +64,11 @@ static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigg
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_MakeVector_ReturnValue) == 0x000104, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_K2_SetTimer_ReturnValue) == 0x000110, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000118, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000128, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x000130, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_Add_VectorVector_ReturnValue) == 0x000124, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000130, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue1) == 0x000138, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue2) == 0x000140, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove, CallFunc_SpawnEmitterAtLocation_ReturnValue3) == 0x000148, "Member 'GCN_HuskDigger_TunnelMove_C_ExecuteUbergraph_GCN_HuskDigger_TunnelMove::CallFunc_SpawnEmitterAtLocation_ReturnValue3' has a wrong offset!");
 
 // Function GCN_HuskDigger_TunnelMove.GCN_HuskDigger_TunnelMove_C.K2_HandleGameplayCue
 // 0x00C8 (0x00C8 - 0x0000)

@@ -34,9 +34,9 @@ void UTopMenu_HelpButton_C::OnClicked__DelegateSignature()
 // Function TopMenu_HelpButton.TopMenu_HelpButton_C.OnUpdateVisibility__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_Visibility                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTopMenu_HelpButton_C::OnUpdateVisibility__DelegateSignature(bool Param_Visibility)
+void UTopMenu_HelpButton_C::OnUpdateVisibility__DelegateSignature(bool Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -45,7 +45,7 @@ void UTopMenu_HelpButton_C::OnUpdateVisibility__DelegateSignature(bool Param_Vis
 
 	Params::TopMenu_HelpButton_C_OnUpdateVisibility__DelegateSignature Parms{};
 
-	Parms.Param_Visibility = Param_Visibility;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -86,30 +86,6 @@ void UTopMenu_HelpButton_C::ExecuteUbergraph_TopMenu_HelpButton(int32 EntryPoint
 	Params::TopMenu_HelpButton_C_ExecuteUbergraph_TopMenu_HelpButton Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TopMenu_HelpButton.TopMenu_HelpButton_C.OnFeatureStateChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EFortUIFeature                          ChangedFeature                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortUIFeatureState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortUIFeatureStateReason               StateReason                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTopMenu_HelpButton_C::OnFeatureStateChanged(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason StateReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopMenu_HelpButton_C", "OnFeatureStateChanged");
-
-	Params::TopMenu_HelpButton_C_OnFeatureStateChanged Parms{};
-
-	Parms.ChangedFeature = ChangedFeature;
-	Parms.NewState = NewState;
-	Parms.StateReason = StateReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -164,6 +140,20 @@ void UTopMenu_HelpButton_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TopMenu_HelpButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TopMenu_HelpButton.TopMenu_HelpButton_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UTopMenu_HelpButton_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TopMenu_HelpButton_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -18,17 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SocialPanel.SocialPanel_C
-// 0x0020 (0x0430 - 0x0410)
+// 0x0030 (0x0370 - 0x0340)
 class USocialPanel_C final : public UFortSocialMenuPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
-	class USafeZone*                              SafeZone_0;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputClose;                                        // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(Transient, DuplicateTransient)
+	class USafeZone*                              SafeZone_0;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputClose;                                        // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	UMulticastDelegateProperty_                   SocialPanelCloseRequested;                         // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void SocialPanelCloseRequested__DelegateSignature();
 	void ExecuteUbergraph_SocialPanel(int32 EntryPoint);
-	void OnBeginIntro();
 	void OnDeactivated();
 	void OnActivated();
 	void Construct();
@@ -46,10 +47,11 @@ public:
 	}
 };
 static_assert(alignof(USocialPanel_C) == 0x000008, "Wrong alignment on USocialPanel_C");
-static_assert(sizeof(USocialPanel_C) == 0x000430, "Wrong size on USocialPanel_C");
-static_assert(offsetof(USocialPanel_C, UberGraphFrame) == 0x000410, "Member 'USocialPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, SafeZone_0) == 0x000418, "Member 'USocialPanel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, InputClose) == 0x000420, "Member 'USocialPanel_C::InputClose' has a wrong offset!");
+static_assert(sizeof(USocialPanel_C) == 0x000370, "Wrong size on USocialPanel_C");
+static_assert(offsetof(USocialPanel_C, UberGraphFrame) == 0x000340, "Member 'USocialPanel_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USocialPanel_C, SafeZone_0) == 0x000348, "Member 'USocialPanel_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(USocialPanel_C, InputClose) == 0x000350, "Member 'USocialPanel_C::InputClose' has a wrong offset!");
+static_assert(offsetof(USocialPanel_C, SocialPanelCloseRequested) == 0x000360, "Member 'USocialPanel_C::SocialPanelCloseRequested' has a wrong offset!");
 
 }
 

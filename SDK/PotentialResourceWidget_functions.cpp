@@ -134,10 +134,10 @@ void UPotentialResourceWidget_C::SetupFont()
 // Function PotentialResourceWidget.PotentialResourceWidget_C.ShowPotentialResource
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        Param_PotentialResource                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                        PotentialResource_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bWeakpointDamage                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* Param_PotentialResource, bool bWeakpointDamage)
+void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* PotentialResource_0, bool bWeakpointDamage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -146,7 +146,7 @@ void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* Param_Po
 
 	Params::PotentialResourceWidget_C_ShowPotentialResource Parms{};
 
-	Parms.Param_PotentialResource = Param_PotentialResource;
+	Parms.PotentialResource_0 = PotentialResource_0;
 	Parms.bWeakpointDamage = bWeakpointDamage;
 
 	UObject::ProcessEvent(Func, &Parms);

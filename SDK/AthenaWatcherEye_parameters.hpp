@@ -28,12 +28,12 @@ public:
 	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetEndTime_ReturnValue1;                  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue1;       // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue12;      // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue2;       // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_ManySpectatorsJoining;          // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue123;     // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnyAnimationPlaying_ReturnValue3;       // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable1;                               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,9 +52,9 @@ static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, Cal
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_GetEndTime_ReturnValue1) == 0x000028, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_GetEndTime_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_IsAnyAnimationPlaying_ReturnValue1) == 0x00002C, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_IsAnyAnimationPlaying_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_IsAnyAnimationPlaying_ReturnValue12) == 0x00002D, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_IsAnyAnimationPlaying_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_IsAnyAnimationPlaying_ReturnValue2) == 0x00002D, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_IsAnyAnimationPlaying_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, K2Node_CustomEvent_ManySpectatorsJoining) == 0x00002E, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::K2Node_CustomEvent_ManySpectatorsJoining' has a wrong offset!");
-static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_IsAnyAnimationPlaying_ReturnValue123) == 0x00002F, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_IsAnyAnimationPlaying_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_IsAnyAnimationPlaying_ReturnValue3) == 0x00002F, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_IsAnyAnimationPlaying_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, Temp_bool_Variable1) == 0x000030, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, K2Node_Select_Default) == 0x000038, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye, CallFunc_RandomFloatInRange_ReturnValue) == 0x000040, "Member 'AthenaWatcherEye_C_ExecuteUbergraph_AthenaWatcherEye::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");

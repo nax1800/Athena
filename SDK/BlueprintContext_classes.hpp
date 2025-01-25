@@ -39,7 +39,7 @@ static_assert(sizeof(UBlueprintContextBase) == 0x000028, "Wrong size on UBluepri
 class UBlueprintContextLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	static class UBlueprintContextBase* GetContext(class UObject* ContextObject, TSubclassOf<class UBlueprintContextBase> Param_Class);
+	static class UBlueprintContextBase* GetContext(class UObject* ContextObject, TSubclassOf<class UBlueprintContextBase> Class_0);
 
 public:
 	static class UClass* StaticClass()

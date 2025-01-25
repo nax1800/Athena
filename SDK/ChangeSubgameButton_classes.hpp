@@ -11,23 +11,23 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChangeSubgameButton.ChangeSubgameButton_C
-// 0x0028 (0x0240 - 0x0218)
+// 0x0028 (0x0238 - 0x0210)
 class UChangeSubgameButton_C final : public UFortSubGameSelectButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                      ChangeSubgame;                                     // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxContainer;                                  // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class UIconTextButton_C*                      ChangeSubgame;                                     // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxContainer;                                  // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnClicked__DelegateSignature();
@@ -50,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(UChangeSubgameButton_C) == 0x000008, "Wrong alignment on UChangeSubgameButton_C");
-static_assert(sizeof(UChangeSubgameButton_C) == 0x000240, "Wrong size on UChangeSubgameButton_C");
-static_assert(offsetof(UChangeSubgameButton_C, UberGraphFrame) == 0x000218, "Member 'UChangeSubgameButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, ChangeSubgame) == 0x000220, "Member 'UChangeSubgameButton_C::ChangeSubgame' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, SizeBoxContainer) == 0x000228, "Member 'UChangeSubgameButton_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, OnClicked) == 0x000230, "Member 'UChangeSubgameButton_C::OnClicked' has a wrong offset!");
+static_assert(sizeof(UChangeSubgameButton_C) == 0x000238, "Wrong size on UChangeSubgameButton_C");
+static_assert(offsetof(UChangeSubgameButton_C, UberGraphFrame) == 0x000210, "Member 'UChangeSubgameButton_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UChangeSubgameButton_C, ChangeSubgame) == 0x000218, "Member 'UChangeSubgameButton_C::ChangeSubgame' has a wrong offset!");
+static_assert(offsetof(UChangeSubgameButton_C, SizeBoxContainer) == 0x000220, "Member 'UChangeSubgameButton_C::SizeBoxContainer' has a wrong offset!");
+static_assert(offsetof(UChangeSubgameButton_C, OnClicked) == 0x000228, "Member 'UChangeSubgameButton_C::OnClicked' has a wrong offset!");
 
 }
 

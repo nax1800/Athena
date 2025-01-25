@@ -25,7 +25,7 @@ enum class ECrossplayPreference : uint8
 };
 
 // Enum Party.EJoinPartyDenialReason
-// NumValues: 0x000B
+// NumValues: 0x000C
 enum class EJoinPartyDenialReason : uint8
 {
 	NoReason                                 = 0,
@@ -38,7 +38,8 @@ enum class EJoinPartyDenialReason : uint8
 	GameModeRestricted                       = 7,
 	JoinerCrossplayRestricted                = 8,
 	MemberCrossplayRestricted                = 9,
-	EJoinPartyDenialReason_MAX               = 10,
+	Banned                                   = 10,
+	EJoinPartyDenialReason_MAX               = 11,
 };
 
 // Enum Party.EPartyType

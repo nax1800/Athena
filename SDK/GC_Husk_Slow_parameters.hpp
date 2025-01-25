@@ -41,12 +41,12 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue1;                  // 0x0100(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AEnemyPawn_Parent_C*                    K2Node_DynamicCast_AsEnemy_Pawn_Parent;            // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess12;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11A[0x2];                                      // 0x011A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue12;                 // 0x011C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x011C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue1;                     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12A[0x2];                                      // 0x012A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x012C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue1;           // 0x0138(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,19 +57,19 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0170(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_MakeVector_ReturnValue123;                // 0x01F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x01F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            K2Node_CustomEvent_TimelineDirection1;             // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum1_CmpSuccess;                     // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue1;        // 0x0213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue123;                   // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum12_CmpSuccess;                    // 0x0215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ETimelineDirection                            K2Node_CustomEvent_TimelineDirection;              // 0x0216(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum123_CmpSuccess;                   // 0x0217(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum3_CmpSuccess;                     // 0x0217(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class ASmasherPawn_C*                         K2Node_DynamicCast_AsSmasher_Pawn;                 // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess123;                    // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow) == 0x000008, "Wrong alignment on GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow");
 static_assert(sizeof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow) == 0x000228, "Wrong size on GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow");
@@ -86,11 +86,11 @@ static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_Dyna
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue) == 0x0000F4, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue1) == 0x000100, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_AsEnemy_Pawn_Parent) == 0x000110, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_AsEnemy_Pawn_Parent' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_bSuccess12) == 0x000118, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_bSuccess12' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_bSuccess2) == 0x000118, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue) == 0x000119, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue12) == 0x00011C, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue2) == 0x00011C, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue1) == 0x000128, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue12) == 0x000129, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue2) == 0x000129, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_GetSocketLocation_ReturnValue) == 0x00012C, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_GetSocketLocation_ReturnValue1) == 0x000138, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_GetSocketLocation_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000144, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
@@ -99,18 +99,18 @@ static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_VS
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_FindLookAtRotation_ReturnValue) == 0x00015C, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000168, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000170, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue123) == 0x0001F8, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_MakeVector_ReturnValue3) == 0x0001F8, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_MakeVector_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_SpawnEmitterAttached_ReturnValue1) == 0x000208, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_SpawnEmitterAttached_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_CustomEvent_TimelineDirection1) == 0x000210, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_CustomEvent_TimelineDirection1' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_SwitchEnum1_CmpSuccess) == 0x000211, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_SwitchEnum1_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000212, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_K2_AttachToComponent_ReturnValue1) == 0x000213, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_K2_AttachToComponent_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue123) == 0x000214, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_SwitchEnum12_CmpSuccess) == 0x000215, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_SwitchEnum12_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, CallFunc_IsValid_ReturnValue3) == 0x000214, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_SwitchEnum2_CmpSuccess) == 0x000215, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_CustomEvent_TimelineDirection) == 0x000216, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_CustomEvent_TimelineDirection' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_SwitchEnum123_CmpSuccess) == 0x000217, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_SwitchEnum123_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_SwitchEnum3_CmpSuccess) == 0x000217, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_SwitchEnum3_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_AsSmasher_Pawn) == 0x000218, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_AsSmasher_Pawn' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_bSuccess123) == 0x000220, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_bSuccess123' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow, K2Node_DynamicCast_bSuccess3) == 0x000220, "Member 'GC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 
 // Function GC_Husk_Slow.GC_Husk_Slow_C.Cuff_Unlocked
 // 0x0001 (0x0001 - 0x0000)
@@ -170,14 +170,14 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GC_Husk_Slow_C_UserConstructionScript) == 0x000008, "Wrong alignment on GC_Husk_Slow_C_UserConstructionScript");
 static_assert(sizeof(GC_Husk_Slow_C_UserConstructionScript) == 0x000020, "Wrong size on GC_Husk_Slow_C_UserConstructionScript");
 static_assert(offsetof(GC_Husk_Slow_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'GC_Husk_Slow_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_UserConstructionScript, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'GC_Husk_Slow_C_UserConstructionScript::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GC_Husk_Slow_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue1) == 0x000010, "Member 'GC_Husk_Slow_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(GC_Husk_Slow_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue12) == 0x000018, "Member 'GC_Husk_Slow_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(GC_Husk_Slow_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000018, "Member 'GC_Husk_Slow_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
 
 }
 

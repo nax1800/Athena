@@ -18,28 +18,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C
-// 0x0040 (0x0258 - 0x0218)
+// 0x0040 (0x0250 - 0x0210)
 class ULobbyPlayerPadGadgets_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(Transient, DuplicateTransient)
-	class ULobbyGadgetButton_C*                   Gadget1;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULobbyGadgetButton_C*                   Gadget2;                                           // 0x0228(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         PlayerIndex;                                       // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OnGadgetsMouseEntered;                             // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                   OnGadgetsMouseLeft;                                // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(Transient, DuplicateTransient)
+	class ULobbyGadgetButton_C*                   Gadget1;                                           // 0x0218(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULobbyGadgetButton_C*                   Gadget2;                                           // 0x0220(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         PlayerIndex;                                       // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnGadgetsMouseEntered;                             // 0x0230(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnGadgetsMouseLeft;                                // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnInputClicked();
-	void Initialize(int32 Param_PlayerIndex);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void Refresh(const struct FFortTeamMemberInfo& TeamMemberInfo);
-	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
-	void ExecuteUbergraph_LobbyPlayerPadGadgets(int32 EntryPoint);
-	void OnGadgetsMouseLeft__DelegateSignature();
 	void OnGadgetsMouseEntered__DelegateSignature();
+	void OnGadgetsMouseLeft__DelegateSignature();
+	void ExecuteUbergraph_LobbyPlayerPadGadgets(int32 EntryPoint);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Refresh(const struct FFortTeamMemberInfo& TeamMemberInfo);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Initialize(int32 PlayerIndex_0);
+	void OnInputClicked();
 
 public:
 	static class UClass* StaticClass()
@@ -52,13 +52,13 @@ public:
 	}
 };
 static_assert(alignof(ULobbyPlayerPadGadgets_C) == 0x000008, "Wrong alignment on ULobbyPlayerPadGadgets_C");
-static_assert(sizeof(ULobbyPlayerPadGadgets_C) == 0x000258, "Wrong size on ULobbyPlayerPadGadgets_C");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, UberGraphFrame) == 0x000218, "Member 'ULobbyPlayerPadGadgets_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget1) == 0x000220, "Member 'ULobbyPlayerPadGadgets_C::Gadget1' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget2) == 0x000228, "Member 'ULobbyPlayerPadGadgets_C::Gadget2' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, PlayerIndex) == 0x000230, "Member 'ULobbyPlayerPadGadgets_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseEntered) == 0x000238, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseLeft) == 0x000248, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft' has a wrong offset!");
+static_assert(sizeof(ULobbyPlayerPadGadgets_C) == 0x000250, "Wrong size on ULobbyPlayerPadGadgets_C");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, UberGraphFrame) == 0x000210, "Member 'ULobbyPlayerPadGadgets_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget1) == 0x000218, "Member 'ULobbyPlayerPadGadgets_C::Gadget1' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget2) == 0x000220, "Member 'ULobbyPlayerPadGadgets_C::Gadget2' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, PlayerIndex) == 0x000228, "Member 'ULobbyPlayerPadGadgets_C::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseEntered) == 0x000230, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered' has a wrong offset!");
+static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseLeft) == 0x000240, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft' has a wrong offset!");
 
 }
 

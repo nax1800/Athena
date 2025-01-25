@@ -61,8 +61,8 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetPlayerScore_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPlayerScore_ReturnValue1;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerScore_ReturnValue12;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerScore_ReturnValue123;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerScore_ReturnValue2;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerScore_ReturnValue3;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPlayerName_ReturnValue;                // 0x0040(0x0018)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,8 +81,8 @@ static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_Subtract_I
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue) == 0x00002C, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue1) == 0x000030, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue12) == 0x000034, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue123) == 0x000038, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue2) == 0x000034, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue3) == 0x000038, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerName_ReturnValue) == 0x000040, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_Create_ReturnValue) == 0x000060, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_Create_ReturnValue' has a wrong offset!");

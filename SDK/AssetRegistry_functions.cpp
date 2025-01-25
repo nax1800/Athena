@@ -388,6 +388,135 @@ struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAss
 }
 
 
+// Function AssetRegistry.AssetRegistry.PrioritizeSearchPath
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class FString                           PathToPrioritize                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::PrioritizeSearchPath(const class FString& PathToPrioritize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetRegistry", "PrioritizeSearchPath");
+
+	Params::AssetRegistry_PrioritizeSearchPath Parms{};
+
+	Parms.PathToPrioritize = std::move(PathToPrioritize);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AssetRegistry.AssetRegistry.ScanFilesSynchronous
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class FString>                   InFilePaths                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    bForceRescan                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::ScanFilesSynchronous(const TArray<class FString>& InFilePaths, bool bForceRescan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetRegistry", "ScanFilesSynchronous");
+
+	Params::AssetRegistry_ScanFilesSynchronous Parms{};
+
+	Parms.InFilePaths = std::move(InFilePaths);
+	Parms.bForceRescan = bForceRescan;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class FString>                   InFilePaths                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::ScanModifiedAssetFiles(const TArray<class FString>& InFilePaths)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetRegistry", "ScanModifiedAssetFiles");
+
+	Params::AssetRegistry_ScanModifiedAssetFiles Parms{};
+
+	Parms.InFilePaths = std::move(InFilePaths);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AssetRegistry.AssetRegistry.ScanPathsSynchronous
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class FString>                   InPaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    bForceRescan                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, bool bForceRescan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetRegistry", "ScanPathsSynchronous");
+
+	Params::AssetRegistry_ScanPathsSynchronous Parms{};
+
+	Parms.InPaths = std::move(InPaths);
+	Parms.bForceRescan = bForceRescan;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AssetRegistry.AssetRegistry.SearchAllAssets
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bSynchronousSearch                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::SearchAllAssets(bool bSynchronousSearch)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetRegistry", "SearchAllAssets");
+
+	Params::AssetRegistry_SearchAllAssets Parms{};
+
+	Parms.bSynchronousSearch = bSynchronousSearch;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AssetRegistry.AssetRegistry.GetAllAssets
 // (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:

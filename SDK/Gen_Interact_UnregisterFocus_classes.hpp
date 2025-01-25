@@ -24,7 +24,7 @@ public:
 	class AActor*                                 ActorToUnregister;                                 // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetParams(class AActor* Param_ActorToUnregister, class UGen_Interact_UnregisterFocus_C** ThisObject);
+	void SetParams(class AActor* ActorToUnregister_0, class UGen_Interact_UnregisterFocus_C** ThisObject);
 	void BreakParams(class AActor** ActorToUnregisterRegister);
 
 public:

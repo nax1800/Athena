@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabGameOptions.TabGameOptions_C
-// 0x0020 (0x0280 - 0x0260)
+// 0x0020 (0x0270 - 0x0250)
 class UTabGameOptions_C final : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   GameTabs;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       TooltipDisplay;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
+	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   GameTabs;                                          // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       TooltipDisplay;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TabGameOptions(int32 EntryPoint);
@@ -47,11 +47,11 @@ public:
 	}
 };
 static_assert(alignof(UTabGameOptions_C) == 0x000008, "Wrong alignment on UTabGameOptions_C");
-static_assert(sizeof(UTabGameOptions_C) == 0x000280, "Wrong size on UTabGameOptions_C");
-static_assert(offsetof(UTabGameOptions_C, UberGraphFrame) == 0x000260, "Member 'UTabGameOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, CommonWidgetSwitcher_0) == 0x000268, "Member 'UTabGameOptions_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, GameTabs) == 0x000270, "Member 'UTabGameOptions_C::GameTabs' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, TooltipDisplay) == 0x000278, "Member 'UTabGameOptions_C::TooltipDisplay' has a wrong offset!");
+static_assert(sizeof(UTabGameOptions_C) == 0x000270, "Wrong size on UTabGameOptions_C");
+static_assert(offsetof(UTabGameOptions_C, UberGraphFrame) == 0x000250, "Member 'UTabGameOptions_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UTabGameOptions_C, CommonWidgetSwitcher_0) == 0x000258, "Member 'UTabGameOptions_C::CommonWidgetSwitcher_0' has a wrong offset!");
+static_assert(offsetof(UTabGameOptions_C, GameTabs) == 0x000260, "Member 'UTabGameOptions_C::GameTabs' has a wrong offset!");
+static_assert(offsetof(UTabGameOptions_C, TooltipDisplay) == 0x000268, "Member 'UTabGameOptions_C::TooltipDisplay' has a wrong offset!");
 
 }
 

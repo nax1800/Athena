@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SplashScreenWidget.SplashScreenWidget_C
-// 0x0070 (0x0470 - 0x0400)
+// 0x0070 (0x0378 - 0x0308)
 class USplashScreenWidget_C final : public UFortSplashScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       InputPromptIdle;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USkewButton_C*                          Button_Start;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActionWidget*                    GamepadActionWidget;                               // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         GamepadInputHbox;                                  // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       GamepadInputText;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       I_BattleRoyale;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       I_Fortnite;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         MobileInputHbox;                                   // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MobileInputText;                                   // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         MouseInputHBox;                                    // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       MouseInputText;                                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        Switcher_Input;                                    // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        Switcher_Logo;                                     // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       InputPromptIdle;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USkewButton_C*                          Button_Start;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActionWidget*                    GamepadActionWidget;                               // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         GamepadInputHbox;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       GamepadInputText;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       I_BattleRoyale;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       I_Fortnite;                                        // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         MobileInputHbox;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MobileInputText;                                   // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         MouseInputHBox;                                    // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       MouseInputText;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        Switcher_Input;                                    // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        Switcher_Logo;                                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SplashScreenWidget(int32 EntryPoint);
@@ -55,21 +55,21 @@ public:
 	}
 };
 static_assert(alignof(USplashScreenWidget_C) == 0x000008, "Wrong alignment on USplashScreenWidget_C");
-static_assert(sizeof(USplashScreenWidget_C) == 0x000470, "Wrong size on USplashScreenWidget_C");
-static_assert(offsetof(USplashScreenWidget_C, UberGraphFrame) == 0x000400, "Member 'USplashScreenWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, InputPromptIdle) == 0x000408, "Member 'USplashScreenWidget_C::InputPromptIdle' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, Button_Start) == 0x000410, "Member 'USplashScreenWidget_C::Button_Start' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadActionWidget) == 0x000418, "Member 'USplashScreenWidget_C::GamepadActionWidget' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadInputHbox) == 0x000420, "Member 'USplashScreenWidget_C::GamepadInputHbox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadInputText) == 0x000428, "Member 'USplashScreenWidget_C::GamepadInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, I_BattleRoyale) == 0x000430, "Member 'USplashScreenWidget_C::I_BattleRoyale' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, I_Fortnite) == 0x000438, "Member 'USplashScreenWidget_C::I_Fortnite' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MobileInputHbox) == 0x000440, "Member 'USplashScreenWidget_C::MobileInputHbox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MobileInputText) == 0x000448, "Member 'USplashScreenWidget_C::MobileInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MouseInputHBox) == 0x000450, "Member 'USplashScreenWidget_C::MouseInputHBox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MouseInputText) == 0x000458, "Member 'USplashScreenWidget_C::MouseInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, Switcher_Input) == 0x000460, "Member 'USplashScreenWidget_C::Switcher_Input' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, Switcher_Logo) == 0x000468, "Member 'USplashScreenWidget_C::Switcher_Logo' has a wrong offset!");
+static_assert(sizeof(USplashScreenWidget_C) == 0x000378, "Wrong size on USplashScreenWidget_C");
+static_assert(offsetof(USplashScreenWidget_C, UberGraphFrame) == 0x000308, "Member 'USplashScreenWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, InputPromptIdle) == 0x000310, "Member 'USplashScreenWidget_C::InputPromptIdle' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, Button_Start) == 0x000318, "Member 'USplashScreenWidget_C::Button_Start' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, GamepadActionWidget) == 0x000320, "Member 'USplashScreenWidget_C::GamepadActionWidget' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, GamepadInputHbox) == 0x000328, "Member 'USplashScreenWidget_C::GamepadInputHbox' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, GamepadInputText) == 0x000330, "Member 'USplashScreenWidget_C::GamepadInputText' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, I_BattleRoyale) == 0x000338, "Member 'USplashScreenWidget_C::I_BattleRoyale' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, I_Fortnite) == 0x000340, "Member 'USplashScreenWidget_C::I_Fortnite' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, MobileInputHbox) == 0x000348, "Member 'USplashScreenWidget_C::MobileInputHbox' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, MobileInputText) == 0x000350, "Member 'USplashScreenWidget_C::MobileInputText' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, MouseInputHBox) == 0x000358, "Member 'USplashScreenWidget_C::MouseInputHBox' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, MouseInputText) == 0x000360, "Member 'USplashScreenWidget_C::MouseInputText' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, Switcher_Input) == 0x000368, "Member 'USplashScreenWidget_C::Switcher_Input' has a wrong offset!");
+static_assert(offsetof(USplashScreenWidget_C, Switcher_Logo) == 0x000370, "Member 'USplashScreenWidget_C::Switcher_Logo' has a wrong offset!");
 
 }
 

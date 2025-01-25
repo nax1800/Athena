@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
+#include "GAB_GenericStunned_classes.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "GAB_GenericStunned_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C
-// 0x0020 (0x0B40 - 0x0B20)
+// 0x0020 (0x0948 - 0x0928)
 class UGA_DefaultPlayer_Stunned_C final : public UGAB_GenericStunned_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Stunned_C;         // 0x0B20(0x0008)(Transient, DuplicateTransient)
-	struct FFortFeedbackHandle                    StunFeedbackEvent;                                 // 0x0B28(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Stunned_C;         // 0x0928(0x0008)(Transient, DuplicateTransient)
+	struct FFortFeedbackHandle                    StunFeedbackEvent;                                 // 0x0930(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_GA_DefaultPlayer_Stunned(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UGA_DefaultPlayer_Stunned_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Stunned_C");
-static_assert(sizeof(UGA_DefaultPlayer_Stunned_C) == 0x000B40, "Wrong size on UGA_DefaultPlayer_Stunned_C");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, UberGraphFrame_GA_DefaultPlayer_Stunned_C) == 0x000B20, "Member 'UGA_DefaultPlayer_Stunned_C::UberGraphFrame_GA_DefaultPlayer_Stunned_C' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, StunFeedbackEvent) == 0x000B28, "Member 'UGA_DefaultPlayer_Stunned_C::StunFeedbackEvent' has a wrong offset!");
+static_assert(sizeof(UGA_DefaultPlayer_Stunned_C) == 0x000948, "Wrong size on UGA_DefaultPlayer_Stunned_C");
+static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, UberGraphFrame_GA_DefaultPlayer_Stunned_C) == 0x000928, "Member 'UGA_DefaultPlayer_Stunned_C::UberGraphFrame_GA_DefaultPlayer_Stunned_C' has a wrong offset!");
+static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, StunFeedbackEvent) == 0x000930, "Member 'UGA_DefaultPlayer_Stunned_C::StunFeedbackEvent' has a wrong offset!");
 
 }
 

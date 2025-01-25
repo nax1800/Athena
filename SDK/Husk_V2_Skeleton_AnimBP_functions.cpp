@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function Husk_V2_Skeleton_AnimBP.Husk_V2_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2
+// (BlueprintEvent)
+
+void UHusk_V2_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Husk_V2_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_ApplyAdditive_BCB82FCA4F7248B50A9FB1818E57F4C2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Husk_V2_Skeleton_AnimBP.Husk_V2_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_34B158C94B4C0A758A1ECB9543B1E89D
 // (BlueprintEvent)
 
@@ -110,6 +124,20 @@ void UHusk_V2_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Hus
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Husk_V2_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_AA78A5724647E4158FF5F4BB3DAE6AE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Husk_V2_Skeleton_AnimBP.Husk_V2_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1
+// (BlueprintEvent)
+
+void UHusk_V2_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Husk_V2_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendListByInt_DCEFF6F44F895C53A8225293C7E284E1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -278,6 +306,20 @@ void UHusk_V2_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Hus
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Husk_V2_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_BlendSpacePlayer_EB9668CE4E63A6AEAC0D118192166A87");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Husk_V2_Skeleton_AnimBP.Husk_V2_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866
+// (BlueprintEvent)
+
+void UHusk_V2_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Husk_V2_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_Husk_V2_Skeleton_AnimBP_AnimGraphNode_LayeredBoneBlend_2C339AAA4867DCCE54A5F6B29C084866");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

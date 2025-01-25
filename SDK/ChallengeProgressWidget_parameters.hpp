@@ -27,8 +27,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select1_Default;                            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,8 +40,8 @@ static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgr
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable) == 0x000005, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable1) == 0x000006, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable1' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_bool_Variable) == 0x000007, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable12) == 0x000008, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable123) == 0x000009, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable2) == 0x000008, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_byte_Variable3) == 0x000009, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, K2Node_Select_Default) == 0x00000A, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, Temp_bool_Variable1) == 0x00000B, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget, K2Node_Select1_Default) == 0x00000C, "Member 'ChallengeProgressWidget_C_ExecuteUbergraph_ChallengeProgressWidget::K2Node_Select1_Default' has a wrong offset!");
@@ -128,22 +128,23 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable1;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue1;         // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue1;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B[0x1];                                       // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable1;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue1;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USpacer*>                        K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
 	class USpacer*                                CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,19 +164,19 @@ static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Clamp_Ret
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_bool_Variable) == 0x000010, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_byte_Variable1) == 0x000011, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_byte_Variable12) == 0x000012, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_byte_Variable12' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_byte_Variable2) == 0x000012, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_int_Array_Index_Variable) == 0x000014, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_byte_Variable123) == 0x000018, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_byte_Variable3) == 0x000018, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000019, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_int_Array_Index_Variable1) == 0x000024, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_int_Array_Index_Variable1' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_bool_Variable1) == 0x000028, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_GreaterEqual_IntInt_ReturnValue1) == 0x000029, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_GreaterEqual_IntInt_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, K2Node_Select_Default) == 0x00002A, "Member 'ChallengeProgressWidget_C_SegmentHack::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, K2Node_Select1_Default) == 0x00002B, "Member 'ChallengeProgressWidget_C_SegmentHack::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_GreaterEqual_IntInt_ReturnValue1) == 0x000028, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_GreaterEqual_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, K2Node_Select_Default) == 0x000029, "Member 'ChallengeProgressWidget_C_SegmentHack::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_bool_Variable1) == 0x00002A, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_bool_Variable1' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, Temp_int_Loop_Counter_Variable1) == 0x00002C, "Member 'ChallengeProgressWidget_C_SegmentHack::Temp_int_Loop_Counter_Variable1' has a wrong offset!");
-static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Add_IntInt_ReturnValue1) == 0x000030, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, K2Node_Select1_Default) == 0x000030, "Member 'ChallengeProgressWidget_C_SegmentHack::K2Node_Select1_Default' has a wrong offset!");
+static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Add_IntInt_ReturnValue1) == 0x000034, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Add_IntInt_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, K2Node_MakeArray_Array) == 0x000038, "Member 'ChallengeProgressWidget_C_SegmentHack::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Array_Get_Item) == 0x000048, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(ChallengeProgressWidget_C_SegmentHack, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'ChallengeProgressWidget_C_SegmentHack::CallFunc_Array_Length_ReturnValue' has a wrong offset!");

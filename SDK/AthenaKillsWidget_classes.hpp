@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaKillsWidget.AthenaKillsWidget_C
-// 0x0000 (0x0248 - 0x0248)
+// 0x0000 (0x0250 - 0x0250)
 class UAthenaKillsWidget_C final : public UAthenaPlayerKillsBase
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UAthenaKillsWidget_C) == 0x000008, "Wrong alignment on UAthenaKillsWidget_C");
-static_assert(sizeof(UAthenaKillsWidget_C) == 0x000248, "Wrong size on UAthenaKillsWidget_C");
+static_assert(sizeof(UAthenaKillsWidget_C) == 0x000250, "Wrong size on UAthenaKillsWidget_C");
 
 }
 

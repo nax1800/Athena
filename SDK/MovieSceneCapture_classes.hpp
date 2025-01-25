@@ -10,71 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "MovieSceneCapture_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "MovieSceneCapture_structs.hpp"
 
 
 namespace SDK
 {
-
-// Class MovieSceneCapture.MovieSceneCapture
-// 0x0210 (0x0238 - 0x0028)
-#pragma pack(push, 0x1)
-class alignas(0x08) UMovieSceneCapture : public UObject
-{
-public:
-	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCaptureProtocolID                     CaptureType;                                       // 0x0038(0x0008)(Edit, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneCaptureProtocolSettings*     ProtocolSettings;                                  // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneCaptureSettings             Settings;                                          // 0x0048(0x0048)(Edit, Config, NativeAccessSpecifierPublic)
-	bool                                          bUseSeparateProcess;                               // 0x0090(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCloseEditorWhenCaptureStarts;                     // 0x0091(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AdditionalCommandLineArguments;                    // 0x0098(0x0010)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InheritedCommandLineArguments;                     // 0x00A8(0x0010)(Edit, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B8[0x180];                                     // 0x00B8(0x0180)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieSceneCapture">();
-	}
-	static class UMovieSceneCapture* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneCapture>();
-	}
-};
-#pragma pack(pop)
-static_assert(alignof(UMovieSceneCapture) == 0x000008, "Wrong alignment on UMovieSceneCapture");
-static_assert(sizeof(UMovieSceneCapture) == 0x000238, "Wrong size on UMovieSceneCapture");
-static_assert(offsetof(UMovieSceneCapture, CaptureType) == 0x000038, "Member 'UMovieSceneCapture::CaptureType' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, ProtocolSettings) == 0x000040, "Member 'UMovieSceneCapture::ProtocolSettings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, Settings) == 0x000048, "Member 'UMovieSceneCapture::Settings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bUseSeparateProcess) == 0x000090, "Member 'UMovieSceneCapture::bUseSeparateProcess' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bCloseEditorWhenCaptureStarts) == 0x000091, "Member 'UMovieSceneCapture::bCloseEditorWhenCaptureStarts' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, AdditionalCommandLineArguments) == 0x000098, "Member 'UMovieSceneCapture::AdditionalCommandLineArguments' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, InheritedCommandLineArguments) == 0x0000A8, "Member 'UMovieSceneCapture::InheritedCommandLineArguments' has a wrong offset!");
-
-// Class MovieSceneCapture.AutomatedLevelSequenceCapture
-// 0x0008 (0x0240 - 0x0238)
-class UAutomatedLevelSequenceCapture final : public UMovieSceneCapture
-{
-public:
-	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AutomatedLevelSequenceCapture">();
-	}
-	static class UAutomatedLevelSequenceCapture* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAutomatedLevelSequenceCapture>();
-	}
-};
-static_assert(alignof(UAutomatedLevelSequenceCapture) == 0x000008, "Wrong alignment on UAutomatedLevelSequenceCapture");
-static_assert(sizeof(UAutomatedLevelSequenceCapture) == 0x000240, "Wrong size on UAutomatedLevelSequenceCapture");
 
 // Class MovieSceneCapture.MovieSceneCaptureProtocolSettings
 // 0x0000 (0x0028 - 0x0028)
@@ -94,17 +36,19 @@ static_assert(alignof(UMovieSceneCaptureProtocolSettings) == 0x000008, "Wrong al
 static_assert(sizeof(UMovieSceneCaptureProtocolSettings) == 0x000028, "Wrong size on UMovieSceneCaptureProtocolSettings");
 
 // Class MovieSceneCapture.CompositionGraphCaptureSettings
-// 0x0038 (0x0060 - 0x0028)
+// 0x0040 (0x0068 - 0x0028)
 class UCompositionGraphCaptureSettings final : public UMovieSceneCaptureProtocolSettings
 {
 public:
-	struct FCompositionGraphCapturePasses         IncludeRenderPasses;                               // 0x0028(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
-	bool                                          bCaptureFramesInHDR;                               // 0x0038(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCompositionGraphCapturePasses         IncludeRenderPasses;                               // 0x0028(0x0010)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
+	bool                                          bCaptureFramesInHDR;                               // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HDRCompressionQuality;                             // 0x003C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHDRCaptureGamut                              CaptureGamut;                                      // 0x0040(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HDRCompressionQuality;                             // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHDRCaptureGamut                              CaptureGamut;                                      // 0x0040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftObjectPath                        PostProcessingMaterial;                            // 0x0048(0x0018)(Edit, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        PostProcessingMaterial;                            // 0x0048(0x0018)(Edit, BlueprintVisible, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDisableScreenPercentage;                          // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -117,12 +61,13 @@ public:
 	}
 };
 static_assert(alignof(UCompositionGraphCaptureSettings) == 0x000008, "Wrong alignment on UCompositionGraphCaptureSettings");
-static_assert(sizeof(UCompositionGraphCaptureSettings) == 0x000060, "Wrong size on UCompositionGraphCaptureSettings");
+static_assert(sizeof(UCompositionGraphCaptureSettings) == 0x000068, "Wrong size on UCompositionGraphCaptureSettings");
 static_assert(offsetof(UCompositionGraphCaptureSettings, IncludeRenderPasses) == 0x000028, "Member 'UCompositionGraphCaptureSettings::IncludeRenderPasses' has a wrong offset!");
 static_assert(offsetof(UCompositionGraphCaptureSettings, bCaptureFramesInHDR) == 0x000038, "Member 'UCompositionGraphCaptureSettings::bCaptureFramesInHDR' has a wrong offset!");
 static_assert(offsetof(UCompositionGraphCaptureSettings, HDRCompressionQuality) == 0x00003C, "Member 'UCompositionGraphCaptureSettings::HDRCompressionQuality' has a wrong offset!");
 static_assert(offsetof(UCompositionGraphCaptureSettings, CaptureGamut) == 0x000040, "Member 'UCompositionGraphCaptureSettings::CaptureGamut' has a wrong offset!");
 static_assert(offsetof(UCompositionGraphCaptureSettings, PostProcessingMaterial) == 0x000048, "Member 'UCompositionGraphCaptureSettings::PostProcessingMaterial' has a wrong offset!");
+static_assert(offsetof(UCompositionGraphCaptureSettings, bDisableScreenPercentage) == 0x000060, "Member 'UCompositionGraphCaptureSettings::bDisableScreenPercentage' has a wrong offset!");
 
 // Class MovieSceneCapture.FrameGrabberProtocolSettings
 // 0x0008 (0x0030 - 0x0028)
@@ -200,15 +145,51 @@ public:
 static_assert(alignof(IMovieSceneCaptureInterface) == 0x000008, "Wrong alignment on IMovieSceneCaptureInterface");
 static_assert(sizeof(IMovieSceneCaptureInterface) == 0x000028, "Wrong size on IMovieSceneCaptureInterface");
 
+// Class MovieSceneCapture.MovieSceneCapture
+// 0x01B0 (0x01D8 - 0x0028)
+class UMovieSceneCapture : public UObject
+{
+public:
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCaptureProtocolID                     CaptureType;                                       // 0x0038(0x0008)(Edit, BlueprintVisible, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneCaptureProtocolSettings*     ProtocolSettings;                                  // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneCaptureSettings             Settings;                                          // 0x0048(0x0050)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
+	bool                                          bUseSeparateProcess;                               // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCloseEditorWhenCaptureStarts;                     // 0x0099(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AdditionalCommandLineArguments;                    // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InheritedCommandLineArguments;                     // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C0[0x118];                                     // 0x00C0(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieSceneCapture">();
+	}
+	static class UMovieSceneCapture* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneCapture>();
+	}
+};
+static_assert(alignof(UMovieSceneCapture) == 0x000008, "Wrong alignment on UMovieSceneCapture");
+static_assert(sizeof(UMovieSceneCapture) == 0x0001D8, "Wrong size on UMovieSceneCapture");
+static_assert(offsetof(UMovieSceneCapture, CaptureType) == 0x000038, "Member 'UMovieSceneCapture::CaptureType' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, ProtocolSettings) == 0x000040, "Member 'UMovieSceneCapture::ProtocolSettings' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, Settings) == 0x000048, "Member 'UMovieSceneCapture::Settings' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, bUseSeparateProcess) == 0x000098, "Member 'UMovieSceneCapture::bUseSeparateProcess' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, bCloseEditorWhenCaptureStarts) == 0x000099, "Member 'UMovieSceneCapture::bCloseEditorWhenCaptureStarts' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, AdditionalCommandLineArguments) == 0x0000A0, "Member 'UMovieSceneCapture::AdditionalCommandLineArguments' has a wrong offset!");
+static_assert(offsetof(UMovieSceneCapture, InheritedCommandLineArguments) == 0x0000B0, "Member 'UMovieSceneCapture::InheritedCommandLineArguments' has a wrong offset!");
+
 // Class MovieSceneCapture.LevelCapture
-// 0x0028 (0x0260 - 0x0238)
+// 0x0020 (0x01F8 - 0x01D8)
 class ULevelCapture final : public UMovieSceneCapture
 {
 public:
-	bool                                          bAutoStartCapture;                                 // 0x0238(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239[0xB];                                      // 0x0239(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  PrerequisiteActorId;                               // 0x0244(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_254[0xC];                                      // 0x0254(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bAutoStartCapture;                                 // 0x01D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D9[0xB];                                      // 0x01D9(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  PrerequisiteActorId;                               // 0x01E4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -221,9 +202,9 @@ public:
 	}
 };
 static_assert(alignof(ULevelCapture) == 0x000008, "Wrong alignment on ULevelCapture");
-static_assert(sizeof(ULevelCapture) == 0x000260, "Wrong size on ULevelCapture");
-static_assert(offsetof(ULevelCapture, bAutoStartCapture) == 0x000238, "Member 'ULevelCapture::bAutoStartCapture' has a wrong offset!");
-static_assert(offsetof(ULevelCapture, PrerequisiteActorId) == 0x000244, "Member 'ULevelCapture::PrerequisiteActorId' has a wrong offset!");
+static_assert(sizeof(ULevelCapture) == 0x0001F8, "Wrong size on ULevelCapture");
+static_assert(offsetof(ULevelCapture, bAutoStartCapture) == 0x0001D8, "Member 'ULevelCapture::bAutoStartCapture' has a wrong offset!");
+static_assert(offsetof(ULevelCapture, PrerequisiteActorId) == 0x0001E4, "Member 'ULevelCapture::PrerequisiteActorId' has a wrong offset!");
 
 // Class MovieSceneCapture.MovieSceneCaptureEnvironment
 // 0x0000 (0x0028 - 0x0028)

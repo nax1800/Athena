@@ -10,31 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_AthenaDBNO.GAB_AthenaDBNO_C
-// 0x0100 (0x0BE8 - 0x0AE8)
+// 0x0100 (0x09F8 - 0x08F8)
 class UGAB_AthenaDBNO_C final : public UFortGameplayAbility
 {
 public:
-	uint8                                         Pad_AE8[0x8];                                      // 0x0AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AF0(0x0008)(Transient, DuplicateTransient)
-	class UAnimMontage*                           DeathMontage;                                      // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DeathHitDirection;                                 // 0x0B00(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             DeathHitResult;                                    // 0x0B10(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0B98(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x0BB8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UAnimMontage*                           DeathMontageSkydive;                               // 0x0BD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            DBNOBleedGEHandle;                                 // 0x0BE0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
+	class UAnimMontage*                           DeathMontage;                                      // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DeathHitDirection;                                 // 0x0908(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_914[0x4];                                      // 0x0914(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             DeathHitResult;                                    // 0x0918(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x09A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x09C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UAnimMontage*                           DeathMontageSkydive;                               // 0x09E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            DBNOBleedGEHandle;                                 // 0x09E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   HolsterId;                                         // 0x09F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_AthenaDBNO(int32 EntryPoint);
@@ -61,15 +61,16 @@ public:
 	}
 };
 static_assert(alignof(UGAB_AthenaDBNO_C) == 0x000008, "Wrong alignment on UGAB_AthenaDBNO_C");
-static_assert(sizeof(UGAB_AthenaDBNO_C) == 0x000BE8, "Wrong size on UGAB_AthenaDBNO_C");
-static_assert(offsetof(UGAB_AthenaDBNO_C, UberGraphFrame) == 0x000AF0, "Member 'UGAB_AthenaDBNO_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontage) == 0x000AF8, "Member 'UGAB_AthenaDBNO_C::DeathMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitDirection) == 0x000B00, "Member 'UGAB_AthenaDBNO_C::DeathHitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitResult) == 0x000B10, "Member 'UGAB_AthenaDBNO_C::DeathHitResult' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DamageTags) == 0x000B98, "Member 'UGAB_AthenaDBNO_C::DamageTags' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, GameplayStatusAfflicted) == 0x000BB8, "Member 'UGAB_AthenaDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontageSkydive) == 0x000BD8, "Member 'UGAB_AthenaDBNO_C::DeathMontageSkydive' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DBNOBleedGEHandle) == 0x000BE0, "Member 'UGAB_AthenaDBNO_C::DBNOBleedGEHandle' has a wrong offset!");
+static_assert(sizeof(UGAB_AthenaDBNO_C) == 0x0009F8, "Wrong size on UGAB_AthenaDBNO_C");
+static_assert(offsetof(UGAB_AthenaDBNO_C, UberGraphFrame) == 0x0008F8, "Member 'UGAB_AthenaDBNO_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontage) == 0x000900, "Member 'UGAB_AthenaDBNO_C::DeathMontage' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitDirection) == 0x000908, "Member 'UGAB_AthenaDBNO_C::DeathHitDirection' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitResult) == 0x000918, "Member 'UGAB_AthenaDBNO_C::DeathHitResult' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DamageTags) == 0x0009A0, "Member 'UGAB_AthenaDBNO_C::DamageTags' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, GameplayStatusAfflicted) == 0x0009C0, "Member 'UGAB_AthenaDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontageSkydive) == 0x0009E0, "Member 'UGAB_AthenaDBNO_C::DeathMontageSkydive' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, DBNOBleedGEHandle) == 0x0009E8, "Member 'UGAB_AthenaDBNO_C::DBNOBleedGEHandle' has a wrong offset!");
+static_assert(offsetof(UGAB_AthenaDBNO_C, HolsterId) == 0x0009F0, "Member 'UGAB_AthenaDBNO_C::HolsterId' has a wrong offset!");
 
 }
 

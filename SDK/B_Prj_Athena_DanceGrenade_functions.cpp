@@ -37,7 +37,7 @@ void AB_Prj_Athena_DanceGrenade_C::ExecuteUbergraph_B_Prj_Athena_DanceGrenade(in
 }
 
 
-// Function B_Prj_Athena_DanceGrenade.B_Prj_Athena_DanceGrenade_C.BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// Function B_Prj_Athena_DanceGrenade.B_Prj_Athena_DanceGrenade_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,14 +47,14 @@ void AB_Prj_Athena_DanceGrenade_C::ExecuteUbergraph_B_Prj_Athena_DanceGrenade(in
 // bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AB_Prj_Athena_DanceGrenade_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void AB_Prj_Athena_DanceGrenade_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_DanceGrenade_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+		Func = Class->GetFunction("B_Prj_Athena_DanceGrenade_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
-	Params::B_Prj_Athena_DanceGrenade_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+	Params::B_Prj_Athena_DanceGrenade_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -62,26 +62,6 @@ void AB_Prj_Athena_DanceGrenade_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundE
 	Parms.OtherBodyIndex = OtherBodyIndex;
 	Parms.bFromSweep = bFromSweep;
 	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function B_Prj_Athena_DanceGrenade.B_Prj_Athena_DanceGrenade_C.OnBounce
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void AB_Prj_Athena_DanceGrenade_C::OnBounce(const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_DanceGrenade_C", "OnBounce");
-
-	Params::B_Prj_Athena_DanceGrenade_C_OnBounce Parms{};
-
-	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -120,6 +100,26 @@ void AB_Prj_Athena_DanceGrenade_C::FuseEnded()
 		Func = Class->GetFunction("B_Prj_Athena_DanceGrenade_C", "FuseEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function B_Prj_Athena_DanceGrenade.B_Prj_Athena_DanceGrenade_C.OnBounce
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AB_Prj_Athena_DanceGrenade_C::OnBounce(const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("B_Prj_Athena_DanceGrenade_C", "OnBounce");
+
+	Params::B_Prj_Athena_DanceGrenade_C_OnBounce Parms{};
+
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

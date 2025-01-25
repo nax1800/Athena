@@ -37,6 +37,104 @@ void AShielderSpringArm_C::ExecuteUbergraph_ShielderSpringArm(int32 EntryPoint)
 }
 
 
+// Function ShielderSpringArm.ShielderSpringArm_C.Conjure
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::Conjure()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Conjure");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Hit Flash FX
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::Hit_Flash_FX()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Hit Flash FX");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.PulseBuildUp
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::PulseBuildUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "PulseBuildUp");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.ShieldMeshSetup
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::ShieldMeshSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "ShieldMeshSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Pulse Shielder Release
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::Pulse_Shielder_Release()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Pulse Shielder Release");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.FadeIn
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::FadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "FadeIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.FadeOut
+// (BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "FadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ShielderSpringArm.ShielderSpringArm_C.Beam_Spawn
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -85,20 +183,6 @@ void AShielderSpringArm_C::ReceiveDestroyed()
 }
 
 
-// Function ShielderSpringArm.ShielderSpringArm_C.HitFlashFX
-// (BlueprintCallable, BlueprintEvent)
-
-void AShielderSpringArm_C::HitFlashFX()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShielderSpringArm_C", "HitFlashFX");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ShielderSpringArm.ShielderSpringArm_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -119,6 +203,118 @@ void AShielderSpringArm_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function ShielderSpringArm.ShielderSpringArm_C.Conjure_BuildUp__UpdateFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::Conjure_BuildUp__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Conjure_BuildUp__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Conjure_BuildUp__FinishedFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::Conjure_BuildUp__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Conjure_BuildUp__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.BuildUp__UpdateFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::BuildUp__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "BuildUp__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.BuildUp__FinishedFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::BuildUp__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "BuildUp__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.PulseRelease__UpdateFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::PulseRelease__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "PulseRelease__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.PulseRelease__FinishedFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::PulseRelease__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "PulseRelease__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::Timeline_0__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Timeline_0__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void AShielderSpringArm_C::Timeline_0__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ShielderSpringArm.ShielderSpringArm_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -128,6 +324,20 @@ void AShielderSpringArm_C::UserConstructionScript()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ShielderSpringArm_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShielderSpringArm.ShielderSpringArm_C.Spline Points
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AShielderSpringArm_C::Spline_Points()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShielderSpringArm_C", "Spline Points");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

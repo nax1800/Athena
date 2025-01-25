@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -22,35 +22,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass IconTextButtonReplay.IconTextButtonReplay_C
-// 0x0130 (0x0938 - 0x0808)
+// 0x0130 (0x09C0 - 0x0890)
 class UIconTextButtonReplay_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0808(0x0008)(Transient, DuplicateTransient)
-	class UBorder*                                Background;                                        // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                ContentBorder;                                     // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             RightExtraContentSlot;                             // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   ButtonText;                                        // 0x0838(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x0850(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UClass*                                 ControllerInputStyle;                              // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UClass*                                 MouseKeyboardStyle;                                // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x08E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	EHorizontalAlignment                          ContentAlignment;                                  // 0x08F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8F9[0x3];                                      // 0x08F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           HoveredColor;                                      // 0x08FC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DefaultColor;                                      // 0x090C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FColor                                 PressedColor;                                      // 0x091C(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           SelectedColor;                                     // 0x0920(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShouldHideIcon;                                    // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0890(0x0008)(Transient, DuplicateTransient)
+	class UBorder*                                Background;                                        // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                ContentBorder;                                     // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             RightExtraContentSlot;                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   ButtonText;                                        // 0x08C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08D8(0x0088)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UClass*                                 ControllerInputStyle;                              // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UClass*                                 MouseKeyboardStyle;                                // 0x0968(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x0970(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	EHorizontalAlignment                          ContentAlignment;                                  // 0x0980(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_981[0x3];                                      // 0x0981(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           HoveredColor;                                      // 0x0984(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DefaultColor;                                      // 0x0994(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FColor                                 PressedColor;                                      // 0x09A4(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           SelectedColor;                                     // 0x09A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShouldHideIcon;                                    // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_IconTextButtonReplay(int32 EntryPoint);
-	void OnDeselected();
-	void OnSelected();
-	void OnUnhovered();
-	void OnHovered();
+	void BP_OnDeselected();
+	void BP_OnSelected();
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void Construct();
 	void OnActionComplete();
 	void OnActionProgress(float HeldPercent);
@@ -59,16 +59,16 @@ public:
 	void SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo);
 	void PreConstruct(bool IsDesignTime);
 	void OnCurrentTextStyleChanged();
-	void Set_Text(const class FText& Param_ButtonText);
-	void Set_Icon(const struct FSlateBrush& Param_IconBrush);
+	void Set_Text(const class FText& ButtonText_0);
+	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void InitializeButton();
 	void UpdateTextAndStyle(bool bUsingGamepad);
-	void SetControllerStyle(class UClass* Param_ControllerInputStyle);
+	void SetControllerStyle(class UClass* ControllerInputStyle_0);
 	void UpdateText();
 	void UpdateStyle(bool UsingGamepad);
-	void SetMouseKeyboardStyle(class UClass* Param_ControllerInputStyle);
+	void SetMouseKeyboardStyle(class UClass* ControllerInputStyle_0);
 	void UpdateContentAlignment();
-	void SetContentAlignment(EHorizontalAlignment Param_ContentAlignment);
+	void SetContentAlignment(EHorizontalAlignment ContentAlignment_0);
 	void UpdateTextStyle();
 	void ActivateButton();
 
@@ -83,24 +83,24 @@ public:
 	}
 };
 static_assert(alignof(UIconTextButtonReplay_C) == 0x000008, "Wrong alignment on UIconTextButtonReplay_C");
-static_assert(sizeof(UIconTextButtonReplay_C) == 0x000938, "Wrong size on UIconTextButtonReplay_C");
-static_assert(offsetof(UIconTextButtonReplay_C, UberGraphFrame) == 0x000808, "Member 'UIconTextButtonReplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, Background) == 0x000810, "Member 'UIconTextButtonReplay_C::Background' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, CenterButtonTextWidget) == 0x000818, "Member 'UIconTextButtonReplay_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ContentBorder) == 0x000820, "Member 'UIconTextButtonReplay_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, Image) == 0x000828, "Member 'UIconTextButtonReplay_C::Image' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, RightExtraContentSlot) == 0x000830, "Member 'UIconTextButtonReplay_C::RightExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ButtonText) == 0x000838, "Member 'UIconTextButtonReplay_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, IconBrush) == 0x000850, "Member 'UIconTextButtonReplay_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ControllerInputStyle) == 0x0008D8, "Member 'UIconTextButtonReplay_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, MouseKeyboardStyle) == 0x0008E0, "Member 'UIconTextButtonReplay_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ButtonClickAction) == 0x0008E8, "Member 'UIconTextButtonReplay_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ContentAlignment) == 0x0008F8, "Member 'UIconTextButtonReplay_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, HoveredColor) == 0x0008FC, "Member 'UIconTextButtonReplay_C::HoveredColor' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, DefaultColor) == 0x00090C, "Member 'UIconTextButtonReplay_C::DefaultColor' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, PressedColor) == 0x00091C, "Member 'UIconTextButtonReplay_C::PressedColor' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, SelectedColor) == 0x000920, "Member 'UIconTextButtonReplay_C::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UIconTextButtonReplay_C, ShouldHideIcon) == 0x000930, "Member 'UIconTextButtonReplay_C::ShouldHideIcon' has a wrong offset!");
+static_assert(sizeof(UIconTextButtonReplay_C) == 0x0009C0, "Wrong size on UIconTextButtonReplay_C");
+static_assert(offsetof(UIconTextButtonReplay_C, UberGraphFrame) == 0x000890, "Member 'UIconTextButtonReplay_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, Background) == 0x000898, "Member 'UIconTextButtonReplay_C::Background' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, CenterButtonTextWidget) == 0x0008A0, "Member 'UIconTextButtonReplay_C::CenterButtonTextWidget' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ContentBorder) == 0x0008A8, "Member 'UIconTextButtonReplay_C::ContentBorder' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, Image) == 0x0008B0, "Member 'UIconTextButtonReplay_C::Image' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, RightExtraContentSlot) == 0x0008B8, "Member 'UIconTextButtonReplay_C::RightExtraContentSlot' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ButtonText) == 0x0008C0, "Member 'UIconTextButtonReplay_C::ButtonText' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, IconBrush) == 0x0008D8, "Member 'UIconTextButtonReplay_C::IconBrush' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ControllerInputStyle) == 0x000960, "Member 'UIconTextButtonReplay_C::ControllerInputStyle' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, MouseKeyboardStyle) == 0x000968, "Member 'UIconTextButtonReplay_C::MouseKeyboardStyle' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ButtonClickAction) == 0x000970, "Member 'UIconTextButtonReplay_C::ButtonClickAction' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ContentAlignment) == 0x000980, "Member 'UIconTextButtonReplay_C::ContentAlignment' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, HoveredColor) == 0x000984, "Member 'UIconTextButtonReplay_C::HoveredColor' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, DefaultColor) == 0x000994, "Member 'UIconTextButtonReplay_C::DefaultColor' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, PressedColor) == 0x0009A4, "Member 'UIconTextButtonReplay_C::PressedColor' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, SelectedColor) == 0x0009A8, "Member 'UIconTextButtonReplay_C::SelectedColor' has a wrong offset!");
+static_assert(offsetof(UIconTextButtonReplay_C, ShouldHideIcon) == 0x0009B8, "Member 'UIconTextButtonReplay_C::ShouldHideIcon' has a wrong offset!");
 
 }
 

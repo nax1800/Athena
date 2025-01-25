@@ -10,38 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BuildWatermark.BuildWatermark_C
-// 0x0058 (0x0298 - 0x0240)
+// 0x0040 (0x0278 - 0x0238)
 class UBuildWatermark_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         HBox_FillWith;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HBox_PlayAgainst;                                  // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text;                                              // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_FillWithPlatforms;                            // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PlayAgainstPlatforms;                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextMcpRegion;                                     // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextMcpVersion;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Watermark;                                         // 0x0280(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
+	class UTextBlock*                             BuildText;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_CalendarOffset;                               // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextMcpRegion;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextMcpVersion;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Watermark;                                         // 0x0260(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_BuildWatermark(int32 EntryPoint);
+	void HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo);
 	void Destruct();
 	void HandlePartyJoined();
-	void HandlePlayerStateChanged(const struct FFortTeamMemberInfo& TeamInfo);
 	void Construct();
 	void Update_Watermark();
+	void SetTextCollapseIfDefault(class UTextBlock* Text_Widget, const class FText& InputText, const class FText& DefaultText);
+	void UpdateCalenderOffset();
 
 public:
 	static class UClass* StaticClass()
@@ -54,16 +51,13 @@ public:
 	}
 };
 static_assert(alignof(UBuildWatermark_C) == 0x000008, "Wrong alignment on UBuildWatermark_C");
-static_assert(sizeof(UBuildWatermark_C) == 0x000298, "Wrong size on UBuildWatermark_C");
-static_assert(offsetof(UBuildWatermark_C, UberGraphFrame) == 0x000240, "Member 'UBuildWatermark_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, HBox_FillWith) == 0x000248, "Member 'UBuildWatermark_C::HBox_FillWith' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, HBox_PlayAgainst) == 0x000250, "Member 'UBuildWatermark_C::HBox_PlayAgainst' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Text) == 0x000258, "Member 'UBuildWatermark_C::Text' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Text_FillWithPlatforms) == 0x000260, "Member 'UBuildWatermark_C::Text_FillWithPlatforms' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Text_PlayAgainstPlatforms) == 0x000268, "Member 'UBuildWatermark_C::Text_PlayAgainstPlatforms' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, TextMcpRegion) == 0x000270, "Member 'UBuildWatermark_C::TextMcpRegion' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, TextMcpVersion) == 0x000278, "Member 'UBuildWatermark_C::TextMcpVersion' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Watermark) == 0x000280, "Member 'UBuildWatermark_C::Watermark' has a wrong offset!");
+static_assert(sizeof(UBuildWatermark_C) == 0x000278, "Wrong size on UBuildWatermark_C");
+static_assert(offsetof(UBuildWatermark_C, UberGraphFrame) == 0x000238, "Member 'UBuildWatermark_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBuildWatermark_C, BuildText) == 0x000240, "Member 'UBuildWatermark_C::BuildText' has a wrong offset!");
+static_assert(offsetof(UBuildWatermark_C, Text_CalendarOffset) == 0x000248, "Member 'UBuildWatermark_C::Text_CalendarOffset' has a wrong offset!");
+static_assert(offsetof(UBuildWatermark_C, TextMcpRegion) == 0x000250, "Member 'UBuildWatermark_C::TextMcpRegion' has a wrong offset!");
+static_assert(offsetof(UBuildWatermark_C, TextMcpVersion) == 0x000258, "Member 'UBuildWatermark_C::TextMcpVersion' has a wrong offset!");
+static_assert(offsetof(UBuildWatermark_C, Watermark) == 0x000260, "Member 'UBuildWatermark_C::Watermark' has a wrong offset!");
 
 }
 

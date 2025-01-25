@@ -20,12 +20,12 @@ namespace SDK
 // Function AthenaCustomizationSlotButtonWrapper.AthenaCustomizationSlotButtonWrapper_C.OnSlotClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EAthenaCustomizationCategory            Param_CustomizationType                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EAthenaCustomizationCategory            CustomizationType_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             BannerLabel                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                                   Subslot_Index                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(EAthenaCustomizationCategory Param_CustomizationType, class UCommonButton* Button, const class FText& BannerLabel, int32 Subslot_Index)
+void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(EAthenaCustomizationCategory CustomizationType_0, class UCommonButton* Button, const class FText& BannerLabel, int32 Subslot_Index)
 {
 	static class UFunction* Func = nullptr;
 
@@ -34,7 +34,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(E
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_OnSlotClicked__DelegateSignature Parms{};
 
-	Parms.Param_CustomizationType = Param_CustomizationType;
+	Parms.CustomizationType_0 = CustomizationType_0;
 	Parms.Button = Button;
 	Parms.BannerLabel = std::move(BannerLabel);
 	Parms.Subslot_Index = Subslot_Index;
@@ -46,12 +46,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(E
 // Function AthenaCustomizationSlotButtonWrapper.AthenaCustomizationSlotButtonWrapper_C.OnSlotHovered__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EAthenaCustomizationCategory            Param_CustomizationType                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EAthenaCustomizationCategory            CustomizationType_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             BannerLabel                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // class FText                             CustomizationDescription                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   Param_SubslotIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SubslotIndex_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered__DelegateSignature(EAthenaCustomizationCategory Param_CustomizationType, const class FText& BannerLabel, const class FText& CustomizationDescription, int32 Param_SubslotIndex)
+void UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered__DelegateSignature(EAthenaCustomizationCategory CustomizationType_0, const class FText& BannerLabel, const class FText& CustomizationDescription, int32 SubslotIndex_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,10 +60,10 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered__DelegateSignature(E
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_OnSlotHovered__DelegateSignature Parms{};
 
-	Parms.Param_CustomizationType = Param_CustomizationType;
+	Parms.CustomizationType_0 = CustomizationType_0;
 	Parms.BannerLabel = std::move(BannerLabel);
 	Parms.CustomizationDescription = std::move(CustomizationDescription);
-	Parms.Param_SubslotIndex = Param_SubslotIndex;
+	Parms.SubslotIndex_0 = SubslotIndex_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -314,9 +314,9 @@ void UItemManagementInventoryPanel_C::ProcessSlotAction()
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.GetSelectedEquipSlot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Slot                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemManagementInventoryPanel_C::GetSelectedEquipSlot(int32* Param_Slot)
+void UItemManagementInventoryPanel_C::GetSelectedEquipSlot(int32* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -327,8 +327,8 @@ void UItemManagementInventoryPanel_C::GetSelectedEquipSlot(int32* Param_Slot)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Slot != nullptr)
-		*Param_Slot = Parms.Param_Slot;
+	if (Slot_0 != nullptr)
+		*Slot_0 = Parms.Slot_0;
 }
 
 
@@ -451,6 +451,48 @@ void UItemManagementInventoryPanel_C::UpdateStorageTextVisbility()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ItemManagementInventoryPanel_C", "UpdateStorageTextVisbility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.Trigger Population Anim
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UItemManagementInventoryPanel_C::Trigger_Population_Anim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementInventoryPanel_C", "Trigger Population Anim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.Trigger Initial Population Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UItemManagementInventoryPanel_C::Trigger_Initial_Population_Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementInventoryPanel_C", "Trigger Initial Population Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.Population Anim
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UItemManagementInventoryPanel_C::Population_Anim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemManagementInventoryPanel_C", "Population Anim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

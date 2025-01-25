@@ -54,9 +54,9 @@ void UNewsEntry_C::Construct()
 // Function NewsEntry.NewsEntry_C.HandleEntrySelected__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Param_BodyText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                             BodyText_0                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UNewsEntry_C::HandleEntrySelected__DelegateSignature(const class FText& Param_BodyText)
+void UNewsEntry_C::HandleEntrySelected__DelegateSignature(const class FText& BodyText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65,7 +65,7 @@ void UNewsEntry_C::HandleEntrySelected__DelegateSignature(const class FText& Par
 
 	Params::NewsEntry_C_HandleEntrySelected__DelegateSignature Parms{};
 
-	Parms.Param_BodyText = std::move(Param_BodyText);
+	Parms.BodyText_0 = std::move(BodyText_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

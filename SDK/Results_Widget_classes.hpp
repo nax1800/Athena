@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
@@ -20,54 +20,56 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_Widget.Results_Widget_C
-// 0x0138 (0x05B8 - 0x0480)
+// 0x0148 (0x0500 - 0x03B8)
 class UResults_Widget_C final : public UFortResultsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_TeleportPadIntro;                             // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_CommanderXPOutro;                             // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_CommanderXPIntro;                             // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_GradientOutro;                                // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_GradientIntro;                                // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_VideoOutro;                                   // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_VideoIntro;                                   // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_BadgeLoot_C*                   BadgeLoot;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                BorderVideo;                                       // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_CommanderXP_C*                 CommanderXP;                                       // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMovieWidget_C*                         MovieWidgetVideo;                                  // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_3;                                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_Summary_C*                     Summary;                                           // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTeamMicStack_C*                        TeamMicStack;                                      // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_TeamScore_C*                   TeamScore;                                         // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_TeamTotalScore_C*              TeamTotalScore;                                    // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_TeleportPad_C*                 TeleportPad;                                       // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextZoneCompletion;                                // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UResults_TopPanel_C*                    TopPanel;                                          // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcherMain;                                // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	float                                         AnalyticsTimeStart;                                // 0x0530(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_534[0x4];                                      // 0x0534(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           MediaPlayer;                                       // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             ResultsStartVictory;                               // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             ResultsStartDefeat;                                // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             ResultsFinished;                                   // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ACResultsFinished;                                 // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             VictoryIntro;                                      // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             DefeatIntro;                                       // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMediaSource*                           DefeatVideo;                                       // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortCompletionResult                         ZoneCompletionResult;                              // 0x0578(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_579[0x3];                                      // 0x0579(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayBetweenVideoAndIntro;                         // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanSkipVideo;                                     // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_581[0x7];                                      // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             VictoryStart;                                      // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             TeamScoreWhoosh;                                   // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             CommanderXPWhoosh;                                 // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputSkip;                                         // 0x05A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          bVideoSkipped;                                     // 0x05B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5B1[0x3];                                      // 0x05B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TPAnalyticsTimeStart;                              // 0x05B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B8(0x0008)(Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_TeleportPadIntro;                             // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_CommanderXPOutro;                             // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_CommanderXPIntro;                             // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_GradientOutro;                                // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_GradientIntro;                                // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_VideoOutro;                                   // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_VideoIntro;                                   // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_BadgeLoot_C*                   BadgeLoot;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                BorderVideo;                                       // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMovieWidget_C*                         MovieWidgetVideo;                                  // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_CommanderXP;                               // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_3;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_Summary_C*                     Summary;                                           // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTeamMicStack_C*                        TeamMicStack;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_TeamScore_C*                   TeamScore;                                         // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_TeamTotalScore_C*              TeamTotalScore;                                    // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_TeleportPad_C*                 TeleportPad;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextZoneCompletion;                                // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UResults_TopPanel_C*                    TopPanel;                                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcherMain;                                // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	float                                         AnalyticsTimeStart;                                // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMediaPlayer*                           MediaPlayer;                                       // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             ResultsStartVictory;                               // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             ResultsStartDefeat;                                // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             ResultsFinished;                                   // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ACResultsFinished;                                 // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             VictoryIntro;                                      // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             DefeatIntro;                                       // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMediaSource*                           DefeatVideo;                                       // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortCompletionResult                         ZoneCompletionResult;                              // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B1[0x3];                                      // 0x04B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayBetweenVideoAndIntro;                         // 0x04B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanSkipVideo;                                     // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B9[0x7];                                      // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             VictoryStart;                                      // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             TeamScoreWhoosh;                                   // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             CommanderXPWhoosh;                                 // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputSkip;                                         // 0x04D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          bVideoSkipped;                                     // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E9[0x3];                                      // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TPAnalyticsTimeStart;                              // 0x04EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_New_C*             CommanderXPNew_Widget;                             // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UResults_CommanderXP_C*                 CommanderXPOld_Widget;                             // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Results_Widget(int32 EntryPoint);
@@ -86,9 +88,9 @@ public:
 	void BndEvt__TopPanel_K2Node_ComponentBoundEvent_1_IntroComplete__DelegateSignature();
 	void Team_Score_Sequence();
 	void BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_Finished__DelegateSignature();
+	void Xp_Finished();
 	void BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
-	void BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature();
 	void Commander_XP_Sequence();
 	void BndEvt__ResultsBadgeLoot_K2Node_ComponentBoundEvent_0_Finished__DelegateSignature();
 	void Badge_Loot_Sequence();
@@ -110,6 +112,8 @@ public:
 	void Focus();
 	void UseVideos(bool* bVideos);
 	bool ShouldDisplayEndOfZoneCinematic();
+	void AddCommanderXPWidget();
+	void GetCommanderXPWidget(bool* UseNewWidget, class UResults_CommanderXP_New_C** CommanderXPNew_Widget_0, class UResults_CommanderXP_C** CommanderXPOld_Widget_0);
 
 public:
 	static class UClass* StaticClass()
@@ -122,47 +126,49 @@ public:
 	}
 };
 static_assert(alignof(UResults_Widget_C) == 0x000008, "Wrong alignment on UResults_Widget_C");
-static_assert(sizeof(UResults_Widget_C) == 0x0005B8, "Wrong size on UResults_Widget_C");
-static_assert(offsetof(UResults_Widget_C, UberGraphFrame) == 0x000480, "Member 'UResults_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_TeleportPadIntro) == 0x000488, "Member 'UResults_Widget_C::Anim_TeleportPadIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPOutro) == 0x000490, "Member 'UResults_Widget_C::Anim_CommanderXPOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPIntro) == 0x000498, "Member 'UResults_Widget_C::Anim_CommanderXPIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_GradientOutro) == 0x0004A0, "Member 'UResults_Widget_C::Anim_GradientOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_GradientIntro) == 0x0004A8, "Member 'UResults_Widget_C::Anim_GradientIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_VideoOutro) == 0x0004B0, "Member 'UResults_Widget_C::Anim_VideoOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_VideoIntro) == 0x0004B8, "Member 'UResults_Widget_C::Anim_VideoIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, BadgeLoot) == 0x0004C0, "Member 'UResults_Widget_C::BadgeLoot' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, BorderVideo) == 0x0004C8, "Member 'UResults_Widget_C::BorderVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, CommanderXP) == 0x0004D0, "Member 'UResults_Widget_C::CommanderXP' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, MovieWidgetVideo) == 0x0004D8, "Member 'UResults_Widget_C::MovieWidgetVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, SafeZone_0) == 0x0004E0, "Member 'UResults_Widget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, SafeZone_3) == 0x0004E8, "Member 'UResults_Widget_C::SafeZone_3' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Summary) == 0x0004F0, "Member 'UResults_Widget_C::Summary' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamMicStack) == 0x0004F8, "Member 'UResults_Widget_C::TeamMicStack' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamScore) == 0x000500, "Member 'UResults_Widget_C::TeamScore' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamTotalScore) == 0x000508, "Member 'UResults_Widget_C::TeamTotalScore' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeleportPad) == 0x000510, "Member 'UResults_Widget_C::TeleportPad' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TextZoneCompletion) == 0x000518, "Member 'UResults_Widget_C::TextZoneCompletion' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TopPanel) == 0x000520, "Member 'UResults_Widget_C::TopPanel' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, WidgetSwitcherMain) == 0x000528, "Member 'UResults_Widget_C::WidgetSwitcherMain' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, AnalyticsTimeStart) == 0x000530, "Member 'UResults_Widget_C::AnalyticsTimeStart' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, MediaPlayer) == 0x000538, "Member 'UResults_Widget_C::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsStartVictory) == 0x000540, "Member 'UResults_Widget_C::ResultsStartVictory' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsStartDefeat) == 0x000548, "Member 'UResults_Widget_C::ResultsStartDefeat' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsFinished) == 0x000550, "Member 'UResults_Widget_C::ResultsFinished' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ACResultsFinished) == 0x000558, "Member 'UResults_Widget_C::ACResultsFinished' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, VictoryIntro) == 0x000560, "Member 'UResults_Widget_C::VictoryIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DefeatIntro) == 0x000568, "Member 'UResults_Widget_C::DefeatIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DefeatVideo) == 0x000570, "Member 'UResults_Widget_C::DefeatVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ZoneCompletionResult) == 0x000578, "Member 'UResults_Widget_C::ZoneCompletionResult' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DelayBetweenVideoAndIntro) == 0x00057C, "Member 'UResults_Widget_C::DelayBetweenVideoAndIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, bCanSkipVideo) == 0x000580, "Member 'UResults_Widget_C::bCanSkipVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, VictoryStart) == 0x000588, "Member 'UResults_Widget_C::VictoryStart' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamScoreWhoosh) == 0x000590, "Member 'UResults_Widget_C::TeamScoreWhoosh' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, CommanderXPWhoosh) == 0x000598, "Member 'UResults_Widget_C::CommanderXPWhoosh' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, InputSkip) == 0x0005A0, "Member 'UResults_Widget_C::InputSkip' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, bVideoSkipped) == 0x0005B0, "Member 'UResults_Widget_C::bVideoSkipped' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TPAnalyticsTimeStart) == 0x0005B4, "Member 'UResults_Widget_C::TPAnalyticsTimeStart' has a wrong offset!");
+static_assert(sizeof(UResults_Widget_C) == 0x000500, "Wrong size on UResults_Widget_C");
+static_assert(offsetof(UResults_Widget_C, UberGraphFrame) == 0x0003B8, "Member 'UResults_Widget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_TeleportPadIntro) == 0x0003C0, "Member 'UResults_Widget_C::Anim_TeleportPadIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPOutro) == 0x0003C8, "Member 'UResults_Widget_C::Anim_CommanderXPOutro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPIntro) == 0x0003D0, "Member 'UResults_Widget_C::Anim_CommanderXPIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_GradientOutro) == 0x0003D8, "Member 'UResults_Widget_C::Anim_GradientOutro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_GradientIntro) == 0x0003E0, "Member 'UResults_Widget_C::Anim_GradientIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_VideoOutro) == 0x0003E8, "Member 'UResults_Widget_C::Anim_VideoOutro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Anim_VideoIntro) == 0x0003F0, "Member 'UResults_Widget_C::Anim_VideoIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, BadgeLoot) == 0x0003F8, "Member 'UResults_Widget_C::BadgeLoot' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, BorderVideo) == 0x000400, "Member 'UResults_Widget_C::BorderVideo' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, MovieWidgetVideo) == 0x000408, "Member 'UResults_Widget_C::MovieWidgetVideo' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Overlay_CommanderXP) == 0x000410, "Member 'UResults_Widget_C::Overlay_CommanderXP' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, SafeZone_0) == 0x000418, "Member 'UResults_Widget_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, SafeZone_3) == 0x000420, "Member 'UResults_Widget_C::SafeZone_3' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, Summary) == 0x000428, "Member 'UResults_Widget_C::Summary' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TeamMicStack) == 0x000430, "Member 'UResults_Widget_C::TeamMicStack' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TeamScore) == 0x000438, "Member 'UResults_Widget_C::TeamScore' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TeamTotalScore) == 0x000440, "Member 'UResults_Widget_C::TeamTotalScore' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TeleportPad) == 0x000448, "Member 'UResults_Widget_C::TeleportPad' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TextZoneCompletion) == 0x000450, "Member 'UResults_Widget_C::TextZoneCompletion' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TopPanel) == 0x000458, "Member 'UResults_Widget_C::TopPanel' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, WidgetSwitcherMain) == 0x000460, "Member 'UResults_Widget_C::WidgetSwitcherMain' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, AnalyticsTimeStart) == 0x000468, "Member 'UResults_Widget_C::AnalyticsTimeStart' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, MediaPlayer) == 0x000470, "Member 'UResults_Widget_C::MediaPlayer' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, ResultsStartVictory) == 0x000478, "Member 'UResults_Widget_C::ResultsStartVictory' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, ResultsStartDefeat) == 0x000480, "Member 'UResults_Widget_C::ResultsStartDefeat' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, ResultsFinished) == 0x000488, "Member 'UResults_Widget_C::ResultsFinished' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, ACResultsFinished) == 0x000490, "Member 'UResults_Widget_C::ACResultsFinished' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, VictoryIntro) == 0x000498, "Member 'UResults_Widget_C::VictoryIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, DefeatIntro) == 0x0004A0, "Member 'UResults_Widget_C::DefeatIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, DefeatVideo) == 0x0004A8, "Member 'UResults_Widget_C::DefeatVideo' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, ZoneCompletionResult) == 0x0004B0, "Member 'UResults_Widget_C::ZoneCompletionResult' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, DelayBetweenVideoAndIntro) == 0x0004B4, "Member 'UResults_Widget_C::DelayBetweenVideoAndIntro' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, bCanSkipVideo) == 0x0004B8, "Member 'UResults_Widget_C::bCanSkipVideo' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, VictoryStart) == 0x0004C0, "Member 'UResults_Widget_C::VictoryStart' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TeamScoreWhoosh) == 0x0004C8, "Member 'UResults_Widget_C::TeamScoreWhoosh' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, CommanderXPWhoosh) == 0x0004D0, "Member 'UResults_Widget_C::CommanderXPWhoosh' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, InputSkip) == 0x0004D8, "Member 'UResults_Widget_C::InputSkip' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, bVideoSkipped) == 0x0004E8, "Member 'UResults_Widget_C::bVideoSkipped' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, TPAnalyticsTimeStart) == 0x0004EC, "Member 'UResults_Widget_C::TPAnalyticsTimeStart' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, CommanderXPNew_Widget) == 0x0004F0, "Member 'UResults_Widget_C::CommanderXPNew_Widget' has a wrong offset!");
+static_assert(offsetof(UResults_Widget_C, CommanderXPOld_Widget) == 0x0004F8, "Member 'UResults_Widget_C::CommanderXPOld_Widget' has a wrong offset!");
 
 }
 

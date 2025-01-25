@@ -11,11 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -43,12 +42,12 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234567;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123456;           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12345;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1234;             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button123;              // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                          K2Node_ComponentBoundEvent_Button12;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button7;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button6;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button5;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button4;                // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button1;                // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_ComponentBoundEvent_Item1;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bIsSelected;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -72,28 +71,28 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00D8(0x0008)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00D8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue1;                 // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue12;                 // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue2;                  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue1;         // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue12;                // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F3[0x5];                                       // 0x00F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue123;                // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue12;        // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue3;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue2;         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue1234;               // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue4;                  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue123;       // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue3;         // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_113[0x5];                                      // 0x0113(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable1;                               // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable12;                              // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select1_Default;                            // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor");
@@ -101,12 +100,12 @@ static_assert(sizeof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlaye
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, EntryPoint) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button1234567) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button1234567' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button123456) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button123456' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button12345) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button12345' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button1234) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button1234' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button123) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button123' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button12) == 0x000040, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button7) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button6) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button5) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button4) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button3) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button2) == 0x000040, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Button1) == 0x000048, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Button1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_Item1) == 0x000050, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_Item1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_ComponentBoundEvent_bIsSelected) == 0x000058, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_ComponentBoundEvent_bIsSelected' has a wrong offset!");
@@ -126,24 +125,24 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPla
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_DynamicCast_AsBP_Banner_Editor_Tile) == 0x0000A8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_DynamicCast_AsBP_Banner_Editor_Tile' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_DynamicCast_bSuccess) == 0x0000B0, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_CreateDelegate_OutputDelegate1) == 0x0000B8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_CreateDelegate_OutputDelegate12) == 0x0000C8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_CreateDelegate_OutputDelegate2) == 0x0000C8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000D8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x0000E0, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_Not_PreBool_ReturnValue1) == 0x0000E1, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_Not_PreBool_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue12) == 0x0000E8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue2) == 0x0000E8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetCurrentInputType_ReturnValue1) == 0x0000F0, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetCurrentInputType_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x0000F1, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_Not_PreBool_ReturnValue12) == 0x0000F2, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_Not_PreBool_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue123) == 0x0000F8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetCurrentInputType_ReturnValue12) == 0x000100, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetCurrentInputType_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000101, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue1234) == 0x000108, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_Not_PreBool_ReturnValue2) == 0x0000F2, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue3) == 0x0000F8, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetCurrentInputType_ReturnValue2) == 0x000100, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetCurrentInputType_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000101, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetContext_ReturnValue4) == 0x000108, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, Temp_bool_Variable) == 0x000110, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetCurrentInputType_ReturnValue123) == 0x000111, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetCurrentInputType_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000112, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_GetCurrentInputType_ReturnValue3) == 0x000111, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_GetCurrentInputType_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000112, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_Select_Default) == 0x000118, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, Temp_bool_Variable1) == 0x000120, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, Temp_bool_Variable12) == 0x000121, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::Temp_bool_Variable12' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, Temp_bool_Variable2) == 0x000121, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::Temp_bool_Variable2' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor, K2Node_Select1_Default) == 0x000122, "Member 'BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor::K2Node_Select1_Default' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature
@@ -299,12 +298,11 @@ struct BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons final
 {
 public:
 	class FName                                   CategoryRowName;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedIndex_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -315,17 +313,15 @@ public:
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHomebaseBannerIconItem*            CallFunc_GetBannerIconItemFromRowName_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UFortAccountItem*>               CallFunc_GetBannerIconsForCategory_BannerIcons;    // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons");
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons) == 0x000070, "Wrong size on BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CategoryRowName) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CategoryRowName' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetSelectedItem_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetCurrentInputType_ReturnValue) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_SetSelectedIndex_ReturnValue) == 0x000019, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_SetSelectedIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
@@ -334,70 +330,61 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, K2
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, K2Node_DynamicCast_bSuccess1) == 0x000048, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetBannerIconItemFromRowName_ReturnValue) == 0x000050, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetBannerIconItemFromRowName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_GetBannerIconsForCategory_BannerIcons) == 0x000058, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_GetBannerIconsForCategory_BannerIcons' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_SetSelectedItem_ReturnValue) == 0x000068, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_Array_Contains_ReturnValue) == 0x000069, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons, CallFunc_Array_Contains_ReturnValue) == 0x000068, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Setup Tileview For Colorswatches
-// 0x0090 (0x0090 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches final
 {
 public:
 	class FName                                   CategoryRowName;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedIndex_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0020(0x0010)(IsPlainOldData, NoDestructor)
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortHomebaseBannerColorItem*           CallFunc_GetBannerColorItemFromRowName_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortHomebaseBannerColorItem*           CallFunc_GetBannerColorItemFromRowName_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                    CallFunc_GetContext_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller1;      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortAccountItem*>               CallFunc_GetBannerColorsForCategory_BannerColors;  // 0x0078(0x0010)(ZeroConstructor, ReferenceParm)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue1;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller1;      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess1;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UFortAccountItem*>               CallFunc_GetBannerColorsForCategory_BannerColors;  // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches");
-static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches) == 0x000090, "Wrong size on BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches");
+static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches) == 0x000070, "Wrong size on BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CategoryRowName) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CategoryRowName' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetSelectedItem_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_SetSelectedIndex_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_SetSelectedIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_MakeStruct_Margin) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetBannerColorItemFromRowName_ReturnValue) == 0x000040, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetBannerColorItemFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_SetSelectedItem_ReturnValue) == 0x000050, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetCurrentInputType_ReturnValue) == 0x000051, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000058, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000060, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_AsFort_Player_Controller1) == 0x000068, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_AsFort_Player_Controller1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_bSuccess1) == 0x000070, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetBannerColorsForCategory_BannerColors) == 0x000078, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetBannerColorsForCategory_BannerColors' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_Array_Contains_ReturnValue) == 0x000088, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetCurrentInputType_ReturnValue) == 0x000029, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetBannerColorItemFromRowName_ReturnValue) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetBannerColorItemFromRowName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetOwningPlayer_ReturnValue1) == 0x000040, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetOwningPlayer_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_AsFort_Player_Controller1) == 0x000048, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_AsFort_Player_Controller1' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, K2Node_DynamicCast_bSuccess1) == 0x000050, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::K2Node_DynamicCast_bSuccess1' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_GetBannerColorsForCategory_BannerColors) == 0x000058, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_GetBannerColorsForCategory_BannerColors' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches, CallFunc_Array_Contains_ReturnValue) == 0x000068, "Member 'BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Set Current Category
 // 0x0050 (0x0050 - 0x0000)
 struct BP_LocalPlayerBannerEditor_C_Set_Current_Category final
 {
 public:
-	class FName                                   Param_CurrentCategory;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CurrentCategory_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CategoryDisplayName;                               // 0x0008(0x0018)(Edit, BlueprintVisible)
 	class FText                                   CallFunc_GetBannerIconCategoryName_ReturnValue;    // 0x0020(0x0018)()
 	class FText                                   CallFunc_GetBannerColorCategoryName_ReturnValue;   // 0x0038(0x0018)()
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Set_Current_Category) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Set_Current_Category");
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Set_Current_Category) == 0x000050, "Wrong size on BP_LocalPlayerBannerEditor_C_Set_Current_Category");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Current_Category, Param_CurrentCategory) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Set_Current_Category::Param_CurrentCategory' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Current_Category, CurrentCategory_0) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Set_Current_Category::CurrentCategory_0' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Current_Category, CategoryDisplayName) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Set_Current_Category::CategoryDisplayName' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Current_Category, CallFunc_GetBannerIconCategoryName_ReturnValue) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Set_Current_Category::CallFunc_GetBannerIconCategoryName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Current_Category, CallFunc_GetBannerColorCategoryName_ReturnValue) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_Set_Current_Category::CallFunc_GetBannerColorCategoryName_ReturnValue' has a wrong offset!");
@@ -495,25 +482,25 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Increment_Color_Category_Ind
 struct alignas(0x08) BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview final
 {
 public:
-	class FName                                   Param_CurrentCategory;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CurrentCategory_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview");
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview) == 0x000008, "Wrong size on BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview, Param_CurrentCategory) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview::Param_CurrentCategory' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview, CurrentCategory_0) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview::CurrentCategory_0' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Update Banner Icon Tileview
 // 0x0008 (0x0008 - 0x0000)
 struct alignas(0x08) BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview final
 {
 public:
-	class FName                                   Param_CurrentCategory;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CurrentCategory_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview");
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview) == 0x000008, "Wrong size on BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview, Param_CurrentCategory) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview::Param_CurrentCategory' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview, CurrentCategory_0) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview::CurrentCategory_0' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Navigate to Chosen Icon
-// 0x0048 (0x0048 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon final
 {
 public:
@@ -528,10 +515,9 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHomebaseBannerIconItem*            CallFunc_GetBannerIconItemFromRowName_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon");
-static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon) == 0x000048, "Wrong size on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon");
+static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon) == 0x000040, "Wrong size on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, CallFunc_GetCurrentInputType_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
@@ -540,10 +526,9 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, Cal
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, CallFunc_GetBannerIconItemFromRowName_ReturnValue) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::CallFunc_GetBannerIconItemFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon, CallFunc_SetSelectedItem_ReturnValue) == 0x000040, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Navigate to Chosen Color
-// 0x0040 (0x0040 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color final
 {
 public:
@@ -557,10 +542,9 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHomebaseBannerColorItem*           CallFunc_GetBannerColorItemFromRowName_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color");
-static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color) == 0x000040, "Wrong size on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color");
+static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color) == 0x000038, "Wrong size on BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
@@ -569,7 +553,6 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, Ca
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, CallFunc_GetBannerColorItemFromRowName_ReturnValue) == 0x000030, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::CallFunc_GetBannerColorItemFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color, CallFunc_SetSelectedItem_ReturnValue) == 0x000038, "Member 'BP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Attempt Leave Picker
 // 0x0028 (0x0028 - 0x0000)
@@ -600,7 +583,7 @@ static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Attempt_Leave_Picker, K2Node
 struct BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State final
 {
 public:
-	bool                                          Param_bPickingTile;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bPickingTile_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
@@ -609,7 +592,7 @@ public:
 };
 static_assert(alignof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State");
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State) == 0x000050, "Wrong size on BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State, Param_bPickingTile) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State::Param_bPickingTile' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State, bPickingTile_0) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State::bPickingTile_0' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State, Temp_bool_Variable) == 0x000001, "Member 'BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State, Temp_text_Variable) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State, Temp_text_Variable1) == 0x000020, "Member 'BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State::Temp_text_Variable1' has a wrong offset!");
@@ -662,15 +645,15 @@ struct BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate final
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortFrontEndFeatureState                     CallFunc_GetFeatureState_OutFeatureState;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortFrontEndFeatureStateReason               CallFunc_GetFeatureState_OutReason;                // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      Temp_byte_Variable1234;                            // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESubGame                                      Temp_byte_Variable4;                               // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -678,14 +661,14 @@ static_assert(alignof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate) == 0x00
 static_assert(sizeof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate) == 0x000020, "Wrong size on BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable1) == 0x000001, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable12) == 0x000002, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable123) == 0x000003, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable123' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable2) == 0x000002, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable3) == 0x000003, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable3' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, CallFunc_GetSubGame_ReturnValue) == 0x000018, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, CallFunc_GetFeatureState_OutFeatureState) == 0x000019, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::CallFunc_GetFeatureState_OutFeatureState' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, CallFunc_GetFeatureState_OutReason) == 0x00001A, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::CallFunc_GetFeatureState_OutReason' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable1234) == 0x00001B, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable1234' has a wrong offset!");
+static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, Temp_byte_Variable4) == 0x00001B, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::Temp_byte_Variable4' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, K2Node_SwitchEnum_CmpSuccess) == 0x00001C, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate, K2Node_Select_Default) == 0x00001D, "Member 'BP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate::K2Node_Select_Default' has a wrong offset!");
 

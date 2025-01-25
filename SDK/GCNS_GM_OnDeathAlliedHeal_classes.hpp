@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNS_GM_OnDeathAlliedHeal.GCNS_GM_OnDeathAlliedHeal_C
-// 0x0000 (0x00B0 - 0x00B0)
+// 0x0000 (0x0080 - 0x0080)
 class UGCNS_GM_OnDeathAlliedHeal_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGCNS_GM_OnDeathAlliedHeal_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnDeathAlliedHeal_C) == 0x000010, "Wrong alignment on UGCNS_GM_OnDeathAlliedHeal_C");
-static_assert(sizeof(UGCNS_GM_OnDeathAlliedHeal_C) == 0x0000B0, "Wrong size on UGCNS_GM_OnDeathAlliedHeal_C");
+static_assert(alignof(UGCNS_GM_OnDeathAlliedHeal_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnDeathAlliedHeal_C");
+static_assert(sizeof(UGCNS_GM_OnDeathAlliedHeal_C) == 0x000080, "Wrong size on UGCNS_GM_OnDeathAlliedHeal_C");
 
 }
 

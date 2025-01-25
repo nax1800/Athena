@@ -10,277 +10,101 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaMemberLocationStateChanged
-// 0x0040 (0x0040 - 0x0000)
-struct LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged final
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop
+// 0x0110 (0x0110 - 0x0000)
+struct LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop final
 {
 public:
-	struct FUniqueNetIdRepl                       Member_Id;                                         // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	EFortPartyMemberLocation                      Location;                                          // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAthenaPartyMemberReady_ReturnValue;     // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable;                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable1;                             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	class AFortLobbyBeaconClient*                 CallFunc_GetLobbyBeaconClient_ReturnValue;         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortLobbyBeaconClientRM*               K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
+	class FString                                 Temp_string_Variable2;                             // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9B[0x1];                                       // 0x009B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable3;                             // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_CustomEvent_PlayerNetId;                    // 0x00B0(0x0028)(HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsReady;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Select_Default;                             // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00F0(0x0018)()
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged");
-static_assert(sizeof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged) == 0x000040, "Wrong size on LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged, Member_Id) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged::Member_Id' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged, Location) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged::Location' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000038, "Member 'LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged, CallFunc_IsAthenaPartyMemberReady_ReturnValue) == 0x000039, "Member 'LobbyPlayerPadTop_C_OnAthenaMemberLocationStateChanged::CallFunc_IsAthenaPartyMemberReady_ReturnValue' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop");
+static_assert(sizeof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop) == 0x000110, "Wrong size on LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, EntryPoint) == 0x000000, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::EntryPoint' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable) == 0x000008, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable1) == 0x000018, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetLobbyBeaconClient_ReturnValue) == 0x000048, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetLobbyBeaconClient_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM) == 0x000050, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate1) == 0x000060, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable2) == 0x000070, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue2) == 0x000080, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate2) == 0x000088, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetSubGame_ReturnValue) == 0x000098, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_Event_IsDesignTime) == 0x00009A, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_RandomInteger_ReturnValue) == 0x00009C, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable3) == 0x0000A0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable3' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CustomEvent_PlayerNetId) == 0x0000B0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CustomEvent_PlayerNetId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CustomEvent_bIsReady) == 0x0000D8, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CustomEvent_bIsReady' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x0000D9, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_int_Variable) == 0x0000DC, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_Select_Default) == 0x0000E0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_Conv_StringToText_ReturnValue) == 0x0000F0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000108, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerMutingChanged
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnUpdateLobbyPlayerPadTop
 // 0x0030 (0x0030 - 0x0000)
-struct LobbyPlayerPadTop_C_HandlePlayerMutingChanged final
+struct LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop final
 {
 public:
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          IsTalking;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          bIsReady;                                          // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_HandlePlayerMutingChanged");
-static_assert(sizeof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_HandlePlayerMutingChanged");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, UniqueId) == 0x000000, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::UniqueId' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, IsTalking) == 0x000028, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::IsTalking' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000029, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop, PlayerNetId) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop::PlayerNetId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop, bIsReady) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop::bIsReady' has a wrong offset!");
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerTalkingChanged
-// 0x0030 (0x0030 - 0x0000)
-struct LobbyPlayerPadTop_C_HandlePlayerTalkingChanged final
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct LobbyPlayerPadTop_C_PreConstruct final
 {
 public:
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          IsTalking;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_HandlePlayerTalkingChanged");
-static_assert(sizeof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_HandlePlayerTalkingChanged");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, UniqueId) == 0x000000, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::UniqueId' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, IsTalking) == 0x000028, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::IsTalking' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000029, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshAthenaReadyState
-// 0x0030 (0x0030 - 0x0000)
-struct LobbyPlayerPadTop_C_RefreshAthenaReadyState final
-{
-public:
-	bool                                          Ready;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortPartyMemberLocation                      Location;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          LocationValid;                                     // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ReadyVar;                                          // 0x0008(0x0018)(Edit, BlueprintVisible)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue12;        // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue123;       // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue; // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue1;                   // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue12;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue1;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_RefreshAthenaReadyState) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_RefreshAthenaReadyState");
-static_assert(sizeof(LobbyPlayerPadTop_C_RefreshAthenaReadyState) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_RefreshAthenaReadyState");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, Ready) == 0x000000, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::Ready' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, Location) == 0x000001, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::Location' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, LocationValid) == 0x000002, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::LocationValid' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, ReadyVar) == 0x000008, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::ReadyVar' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000020, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_EqualEqual_ByteByte_ReturnValue1) == 0x000021, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_EqualEqual_ByteByte_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_EqualEqual_ByteByte_ReturnValue12) == 0x000022, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_EqualEqual_ByteByte_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_EqualEqual_ByteByte_ReturnValue123) == 0x000023, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_EqualEqual_ByteByte_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_BooleanOR_ReturnValue) == 0x000024, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue) == 0x000025, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_BooleanOR_ReturnValue1) == 0x000026, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_BooleanOR_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_BooleanAND_ReturnValue) == 0x000027, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_BooleanOR_ReturnValue12) == 0x000028, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_BooleanOR_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_BooleanAND_ReturnValue1) == 0x000029, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_BooleanAND_ReturnValue1' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyStateChanged
-// 0x0040 (0x0040 - 0x0000)
-struct LobbyPlayerPadTop_C_OnAthenaReadyStateChanged final
-{
-public:
-	struct FUniqueNetIdRepl                       Member_Id;                                         // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	bool                                          Ready;                                             // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnAthenaReadyStateChanged");
-static_assert(sizeof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged) == 0x000040, "Wrong size on LobbyPlayerPadTop_C_OnAthenaReadyStateChanged");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, Member_Id) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::Member_Id' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, Ready) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::Ready' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000038, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000039, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyStateChanged, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x00003A, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyStateChanged::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerUnhovered
-// 0x0008 (0x0008 - 0x0000)
-struct LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered final
-{
-public:
-	int32                                         Param_PlayerIndex;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered");
-static_assert(sizeof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered) == 0x000008, "Wrong size on LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered, Param_PlayerIndex) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered::Param_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Initialize
-// 0x0004 (0x0004 - 0x0000)
-struct LobbyPlayerPadTop_C_Initialize final
-{
-public:
-	int32                                         Param_PlayerIndex;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_Initialize) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_Initialize");
-static_assert(sizeof(LobbyPlayerPadTop_C_Initialize) == 0x000004, "Wrong size on LobbyPlayerPadTop_C_Initialize");
-static_assert(offsetof(LobbyPlayerPadTop_C_Initialize, Param_PlayerIndex) == 0x000000, "Member 'LobbyPlayerPadTop_C_Initialize::Param_PlayerIndex' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.InitializeContextEvents
-// 0x00B0 (0x00B0 - 0x0000)
-struct LobbyPlayerPadTop_C_InitializeContextEvents final
-{
-public:
-	TDelegate<void(struct FUniqueNetIdRepl& UniqueId, EFortPartyMemberLocation Location)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate1;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FUniqueNetIdRepl& UniqueId, bool bMuted)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FUniqueNetIdRepl& UniqueId, bool bTalking)> K2Node_CreateDelegate_OutputDelegate123;           // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue12;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FUniqueNetIdRepl& UniqueId, bool bReady)> K2Node_CreateDelegate_OutputDelegate1234;          // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue123;                // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate12345;         // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1234;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate123456;        // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12345;              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_InitializeContextEvents) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_InitializeContextEvents");
-static_assert(sizeof(LobbyPlayerPadTop_C_InitializeContextEvents) == 0x0000B0, "Wrong size on LobbyPlayerPadTop_C_InitializeContextEvents");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue) == 0x000010, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_IsJoinPartyDuringMatchEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000018, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate12) == 0x000038, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate123) == 0x000048, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue12) == 0x000058, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1234) == 0x000060, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1234' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue123) == 0x000070, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate12345) == 0x000078, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate12345' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue1234) == 0x000088, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue1234' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate123456) == 0x000090, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate123456' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue12345) == 0x0000A0, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue12345' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetSubGame_ReturnValue) == 0x0000A8, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_SwitchEnum_CmpSuccess) == 0x0000A9, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerHovered
-// 0x0008 (0x0008 - 0x0000)
-struct LobbyPlayerPadTop_C_OnLobbyPlayerHovered final
-{
-public:
-	int32                                         Param_PlayerIndex;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_OnLobbyPlayerHovered");
-static_assert(sizeof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered) == 0x000008, "Wrong size on LobbyPlayerPadTop_C_OnLobbyPlayerHovered");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered, Param_PlayerIndex) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerHovered::Param_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerHovered::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo
-// 0x0210 (0x0210 - 0x0000)
-struct LobbyPlayerPadTop_C_SetTeamMemberInfo final
-{
-public:
-	struct FFortTeamMemberInfo                    Param_TeamMemberInfo;                              // 0x0000(0x01F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_ByteByte_ReturnValue;           // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FB[0x5];                                      // 0x01FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue1;           // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_SetTeamMemberInfo) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_SetTeamMemberInfo");
-static_assert(sizeof(LobbyPlayerPadTop_C_SetTeamMemberInfo) == 0x000210, "Wrong size on LobbyPlayerPadTop_C_SetTeamMemberInfo");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, Param_TeamMemberInfo) == 0x000000, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::Param_TeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001F8, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_LessEqual_ByteByte_ReturnValue) == 0x0001F9, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_LessEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_BooleanAND_ReturnValue) == 0x0001FA, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_Conv_StringToName_ReturnValue) == 0x000200, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_Conv_StringToName_ReturnValue1) == 0x000208, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_Conv_StringToName_ReturnValue1' has a wrong offset!");
-
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Refresh
-// 0x0058 (0x0058 - 0x0000)
-struct LobbyPlayerPadTop_C_Refresh final
-{
-public:
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue12;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortLobbyBeaconClient*                 CallFunc_GetLobbyBeaconClient_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortLobbyBeaconClientRM*               K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM;  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable12;                              // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable123;                             // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable1;                               // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAthenaPartyMemberReady_ReturnValue;     // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue123;                // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select1_Default;                            // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(LobbyPlayerPadTop_C_Refresh) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_Refresh");
-static_assert(sizeof(LobbyPlayerPadTop_C_Refresh) == 0x000058, "Wrong size on LobbyPlayerPadTop_C_Refresh");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable) == 0x000000, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable1) == 0x000001, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue12) == 0x000018, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetSubGame_ReturnValue) == 0x000020, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetLobbyBeaconClient_ReturnValue) == 0x000028, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetLobbyBeaconClient_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM) == 0x000038, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_bool_Variable) == 0x000041, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable12) == 0x000042, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable123) == 0x000043, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_bool_Variable1) == 0x000044, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_bool_Variable1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_IsAthenaPartyMemberReady_ReturnValue) == 0x000045, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_IsAthenaPartyMemberReady_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_Select_Default) == 0x000046, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue123) == 0x000048, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000050, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x000051, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_Select1_Default) == 0x000052, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_Select1_Default' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_PreConstruct) == 0x000001, "Wrong alignment on LobbyPlayerPadTop_C_PreConstruct");
+static_assert(sizeof(LobbyPlayerPadTop_C_PreConstruct) == 0x000001, "Wrong size on LobbyPlayerPadTop_C_PreConstruct");
+static_assert(offsetof(LobbyPlayerPadTop_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LobbyPlayerPadTop_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshPlayerName
 // 0x0018 (0x0018 - 0x0000)
@@ -302,90 +126,291 @@ static_assert(offsetof(LobbyPlayerPadTop_C_RefreshPlayerName, Temp_byte_Variable
 static_assert(offsetof(LobbyPlayerPadTop_C_RefreshPlayerName, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadTop_C_RefreshPlayerName::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LobbyPlayerPadTop_C_RefreshPlayerName, K2Node_Select_Default) == 0x000010, "Member 'LobbyPlayerPadTop_C_RefreshPlayerName::K2Node_Select_Default' has a wrong offset!");
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct LobbyPlayerPadTop_C_PreConstruct final
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Refresh
+// 0x0040 (0x0040 - 0x0000)
+struct LobbyPlayerPadTop_C_Refresh final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bChatDisabled;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable1;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue1;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortLobbyBeaconClient*                 CallFunc_GetLobbyBeaconClient_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AFortLobbyBeaconClientRM*               K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM;  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable2;                               // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable3;                               // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable1;                               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select1_Default;                            // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_PreConstruct) == 0x000001, "Wrong alignment on LobbyPlayerPadTop_C_PreConstruct");
-static_assert(sizeof(LobbyPlayerPadTop_C_PreConstruct) == 0x000001, "Wrong size on LobbyPlayerPadTop_C_PreConstruct");
-static_assert(offsetof(LobbyPlayerPadTop_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LobbyPlayerPadTop_C_PreConstruct::IsDesignTime' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_Refresh) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_Refresh");
+static_assert(sizeof(LobbyPlayerPadTop_C_Refresh) == 0x000040, "Wrong size on LobbyPlayerPadTop_C_Refresh");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, bChatDisabled) == 0x000000, "Member 'LobbyPlayerPadTop_C_Refresh::bChatDisabled' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable) == 0x000001, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable1) == 0x000002, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetContext_ReturnValue1) == 0x000010, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetSubGame_ReturnValue) == 0x000018, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, CallFunc_GetLobbyBeaconClient_ReturnValue) == 0x000020, "Member 'LobbyPlayerPadTop_C_Refresh::CallFunc_GetLobbyBeaconClient_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM) == 0x000030, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_bool_Variable) == 0x000039, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable2) == 0x00003A, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_byte_Variable3) == 0x00003B, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_byte_Variable3' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, Temp_bool_Variable1) == 0x00003C, "Member 'LobbyPlayerPadTop_C_Refresh::Temp_bool_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_Select_Default) == 0x00003D, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_Refresh, K2Node_Select1_Default) == 0x00003E, "Member 'LobbyPlayerPadTop_C_Refresh::K2Node_Select1_Default' has a wrong offset!");
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnUpdateLobbyPlayerPadTop
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo
+// 0x0218 (0x0218 - 0x0000)
+struct LobbyPlayerPadTop_C_SetTeamMemberInfo final
+{
+public:
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x01F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue1;           // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue1;             // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_ByteByte_ReturnValue;           // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_SetTeamMemberInfo) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_SetTeamMemberInfo");
+static_assert(sizeof(LobbyPlayerPadTop_C_SetTeamMemberInfo) == 0x000218, "Wrong size on LobbyPlayerPadTop_C_SetTeamMemberInfo");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, TeamMemberInfo_0) == 0x000000, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::TeamMemberInfo_0' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_MakeLiteralByte_ReturnValue) == 0x0001F8, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_Conv_StringToName_ReturnValue) == 0x000200, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_Conv_StringToName_ReturnValue1) == 0x000208, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_Conv_StringToName_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000210, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_MakeLiteralByte_ReturnValue1) == 0x000211, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_MakeLiteralByte_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_LessEqual_ByteByte_ReturnValue) == 0x000212, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_LessEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_SetTeamMemberInfo, CallFunc_BooleanAND_ReturnValue) == 0x000213, "Member 'LobbyPlayerPadTop_C_SetTeamMemberInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerHovered
+// 0x0008 (0x0008 - 0x0000)
+struct LobbyPlayerPadTop_C_OnLobbyPlayerHovered final
+{
+public:
+	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_OnLobbyPlayerHovered");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered) == 0x000008, "Wrong size on LobbyPlayerPadTop_C_OnLobbyPlayerHovered");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered, PlayerIndex_0) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerHovered::PlayerIndex_0' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerHovered, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerHovered::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.InitializeContextEvents
+// 0x00A8 (0x00A8 - 0x0000)
+struct LobbyPlayerPadTop_C_InitializeContextEvents final
+{
+public:
+	TDelegate<void(struct FUniqueNetIdRepl& UniqueId, int32 NumAlive)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FUniqueNetIdRepl& UniqueId, class FText& Mins, class FText& Seconds)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(struct FUniqueNetIdRepl& UniqueId, EAthenaPartyMemberReadyType MemberReadyType)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FUniqueNetIdRepl& UniqueId, bool bMuted)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FUniqueNetIdRepl& UniqueId, bool bTalking)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue1;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate6;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate7;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue4;                  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_InitializeContextEvents) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_InitializeContextEvents");
+static_assert(sizeof(LobbyPlayerPadTop_C_InitializeContextEvents) == 0x0000A8, "Wrong size on LobbyPlayerPadTop_C_InitializeContextEvents");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate1) == 0x000010, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate4) == 0x000048, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate5) == 0x000058, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue1) == 0x000068, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue2) == 0x000070, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate6) == 0x000078, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue3) == 0x000088, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate7) == 0x000090, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue4) == 0x0000A0, "Member 'LobbyPlayerPadTop_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Initialize
+// 0x0004 (0x0004 - 0x0000)
+struct LobbyPlayerPadTop_C_Initialize final
+{
+public:
+	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_Initialize) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_Initialize");
+static_assert(sizeof(LobbyPlayerPadTop_C_Initialize) == 0x000004, "Wrong size on LobbyPlayerPadTop_C_Initialize");
+static_assert(offsetof(LobbyPlayerPadTop_C_Initialize, PlayerIndex_0) == 0x000000, "Member 'LobbyPlayerPadTop_C_Initialize::PlayerIndex_0' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerUnhovered
+// 0x0008 (0x0008 - 0x0000)
+struct LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered final
+{
+public:
+	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered) == 0x000004, "Wrong alignment on LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered) == 0x000008, "Wrong size on LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered, PlayerIndex_0) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered::PlayerIndex_0' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'LobbyPlayerPadTop_C_OnLobbyPlayerUnhovered::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshAthenaReadyState
+// 0x0090 (0x0090 - 0x0000)
+struct LobbyPlayerPadTop_C_RefreshAthenaReadyState final
+{
+public:
+	struct FUniqueNetIdRepl                       MemberId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FText                                   ReadyVar;                                          // 0x0028(0x0018)(Edit, BlueprintVisible)
+	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Temp_class_Variable;                               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable1;                              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetAthenaPartyMemberReadyText_ReturnValue; // 0x0060(0x0018)()
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue1;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAthenaPartyMemberReadyType                   CallFunc_GetAthenaPartyMemberReadyType_ReturnValue; // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_Select_Default;                             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_RefreshAthenaReadyState) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_RefreshAthenaReadyState");
+static_assert(sizeof(LobbyPlayerPadTop_C_RefreshAthenaReadyState) == 0x000090, "Wrong size on LobbyPlayerPadTop_C_RefreshAthenaReadyState");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, MemberId) == 0x000000, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::MemberId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, ReadyVar) == 0x000028, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::ReadyVar' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, Temp_bool_Variable) == 0x000040, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, Temp_class_Variable) == 0x000048, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::Temp_class_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, Temp_class_Variable1) == 0x000050, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::Temp_class_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_GetAthenaPartyMemberReadyText_ReturnValue) == 0x000060, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_GetAthenaPartyMemberReadyText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_GetContext_ReturnValue1) == 0x000078, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_GetAthenaPartyMemberReadyType_ReturnValue) == 0x000080, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_GetAthenaPartyMemberReadyType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000081, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshAthenaReadyState, K2Node_Select_Default) == 0x000088, "Member 'LobbyPlayerPadTop_C_RefreshAthenaReadyState::K2Node_Select_Default' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerTalkingChanged
 // 0x0030 (0x0030 - 0x0000)
-struct LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop final
+struct LobbyPlayerPadTop_C_HandlePlayerTalkingChanged final
 {
 public:
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          bIsReady;                                          // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          IsTalking;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop");
-static_assert(sizeof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop, PlayerNetId) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop::PlayerNetId' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop, bIsReady) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop::bIsReady' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_HandlePlayerTalkingChanged");
+static_assert(sizeof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_HandlePlayerTalkingChanged");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, UniqueId) == 0x000000, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::UniqueId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, IsTalking) == 0x000028, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::IsTalking' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerTalkingChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000029, "Member 'LobbyPlayerPadTop_C_HandlePlayerTalkingChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
 
-// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop
-// 0x0108 (0x0108 - 0x0000)
-struct LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop final
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.HandlePlayerMutingChanged
+// 0x0030 (0x0030 - 0x0000)
+struct LobbyPlayerPadTop_C_HandlePlayerMutingChanged final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable;                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable1;                             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue1;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	class AFortLobbyBeaconClient*                 CallFunc_GetLobbyBeaconClient_ReturnValue;         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortLobbyBeaconClientRM*               K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady)> K2Node_CreateDelegate_OutputDelegate1;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
-	class FString                                 Temp_string_Variable12;                            // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9B[0x1];                                       // 0x009B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable123;                           // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_CustomEvent_PlayerNetId;                    // 0x00B0(0x0028)(HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsReady;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default;                             // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00F0(0x0018)()
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          IsTalking;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop");
-static_assert(sizeof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop) == 0x000108, "Wrong size on LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, EntryPoint) == 0x000000, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable) == 0x000008, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable1) == 0x000018, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue1) == 0x000030, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetLobbyBeaconClient_ReturnValue) == 0x000048, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetLobbyBeaconClient_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM) == 0x000050, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_DynamicCast_AsFort_Lobby_Beacon_Client_RM' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate1) == 0x000060, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate1' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable12) == 0x000070, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetContext_ReturnValue12) == 0x000080, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CreateDelegate_OutputDelegate12) == 0x000088, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_GetSubGame_ReturnValue) == 0x000098, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_Event_IsDesignTime) == 0x00009A, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_RandomInteger_ReturnValue) == 0x00009C, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_string_Variable123) == 0x0000A0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_string_Variable123' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CustomEvent_PlayerNetId) == 0x0000B0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CustomEvent_PlayerNetId' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_CustomEvent_bIsReady) == 0x0000D8, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_CustomEvent_bIsReady' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x0000D9, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, Temp_int_Variable) == 0x0000DC, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, K2Node_Select_Default) == 0x0000E0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop, CallFunc_Conv_StringToText_ReturnValue) == 0x0000F0, "Member 'LobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(alignof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_HandlePlayerMutingChanged");
+static_assert(sizeof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_HandlePlayerMutingChanged");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, UniqueId) == 0x000000, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::UniqueId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, IsTalking) == 0x000028, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::IsTalking' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_HandlePlayerMutingChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000029, "Member 'LobbyPlayerPadTop_C_HandlePlayerMutingChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaNumAliveChanged
+// 0x0030 (0x0030 - 0x0000)
+struct LobbyPlayerPadTop_C_OnAthenaNumAliveChanged final
+{
+public:
+	struct FUniqueNetIdRepl                       MemberId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	int32                                         NumAlive;                                          // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPartyInProgressEnabled_ReturnValue;     // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnAthenaNumAliveChanged");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_OnAthenaNumAliveChanged");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged, MemberId) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnAthenaNumAliveChanged::MemberId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged, NumAlive) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnAthenaNumAliveChanged::NumAlive' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged, CallFunc_IsPartyInProgressEnabled_ReturnValue) == 0x00002C, "Member 'LobbyPlayerPadTop_C_OnAthenaNumAliveChanged::CallFunc_IsPartyInProgressEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaNumAliveChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x00002D, "Member 'LobbyPlayerPadTop_C_OnAthenaNumAliveChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaTimeSpentInMatchChanged
+// 0x0060 (0x0060 - 0x0000)
+struct LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged final
+{
+public:
+	struct FUniqueNetIdRepl                       MemberId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	class FText                                   Minutes;                                           // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   Seconds;                                           // 0x0040(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          CallFunc_IsPartyInProgressEnabled_ReturnValue;     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged) == 0x000060, "Wrong size on LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged, MemberId) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged::MemberId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged, Minutes) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged::Minutes' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged, Seconds) == 0x000040, "Member 'LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged::Seconds' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged, CallFunc_IsPartyInProgressEnabled_ReturnValue) == 0x000058, "Member 'LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged::CallFunc_IsPartyInProgressEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000059, "Member 'LobbyPlayerPadTop_C_OnAthenaTimeSpentInMatchChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyTypeChanged
+// 0x0030 (0x0030 - 0x0000)
+struct LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged final
+{
+public:
+	struct FUniqueNetIdRepl                       MemberId;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	EAthenaPartyMemberReadyType                   ReadyType;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged");
+static_assert(sizeof(LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged) == 0x000030, "Wrong size on LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged, MemberId) == 0x000000, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged::MemberId' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged, ReadyType) == 0x000028, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged::ReadyType' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x000029, "Member 'LobbyPlayerPadTop_C_OnAthenaReadyTypeChanged::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
+
+// Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshChatDisabled
+// 0x0048 (0x0048 - 0x0000)
+struct LobbyPlayerPadTop_C_RefreshChatDisabled final
+{
+public:
+	bool                                          bChatDisabled;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable1;                             // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFortPartyMemberLocation                      CallFunc_GetPartyMemberLocation_LocationOut;       // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartyMemberLocation_ReturnValue;       // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(LobbyPlayerPadTop_C_RefreshChatDisabled) == 0x000008, "Wrong alignment on LobbyPlayerPadTop_C_RefreshChatDisabled");
+static_assert(sizeof(LobbyPlayerPadTop_C_RefreshChatDisabled) == 0x000048, "Wrong size on LobbyPlayerPadTop_C_RefreshChatDisabled");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, bChatDisabled) == 0x000000, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::bChatDisabled' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, Temp_struct_Variable) == 0x000004, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, Temp_struct_Variable1) == 0x000014, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::Temp_struct_Variable1' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, Temp_bool_Variable) == 0x000030, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, K2Node_Select_Default) == 0x000034, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, CallFunc_GetPartyMemberLocation_LocationOut) == 0x000044, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::CallFunc_GetPartyMemberLocation_LocationOut' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, CallFunc_GetPartyMemberLocation_ReturnValue) == 0x000045, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::CallFunc_GetPartyMemberLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(LobbyPlayerPadTop_C_RefreshChatDisabled, K2Node_SwitchEnum_CmpSuccess) == 0x000046, "Member 'LobbyPlayerPadTop_C_RefreshChatDisabled::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 }
 

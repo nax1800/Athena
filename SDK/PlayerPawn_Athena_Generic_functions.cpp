@@ -715,10 +715,10 @@ void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_P
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SlaveAMeshToTheBody
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           Param_Mesh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           Mesh_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*           Master                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Param_Mesh, class USkeletalMeshComponent* Master)
+void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh_0, class USkeletalMeshComponent* Master)
 {
 	static class UFunction* Func = nullptr;
 
@@ -727,7 +727,7 @@ void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshCompon
 
 	Params::PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody Parms{};
 
-	Parms.Param_Mesh = Param_Mesh;
+	Parms.Mesh_0 = Mesh_0;
 	Parms.Master = Master;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -837,6 +837,30 @@ void APlayerPawn_Athena_Generic_C::SetSlidingFXEnabled(bool Enabled)
 	Parms.Enabled = Enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GetHitPoint FXLocation
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Object                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          OutputLocation                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_Generic_C::GetHitPoint_FXLocation(class AActor* Object, struct FVector* OutputLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GetHitPoint FXLocation");
+
+	Params::PlayerPawn_Athena_Generic_C_GetHitPoint_FXLocation Parms{};
+
+	Parms.Object = Object;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutputLocation != nullptr)
+		*OutputLocation = std::move(Parms.OutputLocation);
 }
 
 

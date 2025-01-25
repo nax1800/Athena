@@ -11,29 +11,31 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteUI_classes.hpp"
 #include "Slate_structs.hpp"
+#include "FortniteUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MovieWidget.MovieWidget_C
-// 0x0030 (0x0278 - 0x0248)
+// 0x0040 (0x0280 - 0x0240)
 class UMovieWidget_C final : public UFortMovieWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 Video_Image;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              Video_ScaleBox;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          Shouldloop;                                        // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          AutoPlay;                                          // 0x0261(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          MaintainAspectRatio;                               // 0x0262(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_263[0x5];                                      // 0x0263(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	UMulticastDelegateProperty_                   OnMediaReadyToPlay;                                // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
+	class UImage*                                 Video_Image;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              Video_ScaleBox;                                    // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          Shouldloop;                                        // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          AutoPlay;                                          // 0x0259(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          MaintainAspectRatio;                               // 0x025A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_25B[0x5];                                      // 0x025B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	UMulticastDelegateProperty_                   OnMediaReadyToPlay;                                // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                   OnMediaFailedToOpen;                               // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void OnMediaReadyToPlay__DelegateSignature();
+	void OnMediaFailedToOpen__DelegateSignature();
 	void ExecuteUbergraph_MovieWidget(int32 EntryPoint);
 	void OnMediaLoaded();
 	void MediaDimensionsUpdated(float NewWidth, float NewHeight);
@@ -54,14 +56,15 @@ public:
 	}
 };
 static_assert(alignof(UMovieWidget_C) == 0x000008, "Wrong alignment on UMovieWidget_C");
-static_assert(sizeof(UMovieWidget_C) == 0x000278, "Wrong size on UMovieWidget_C");
-static_assert(offsetof(UMovieWidget_C, UberGraphFrame) == 0x000248, "Member 'UMovieWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_Image) == 0x000250, "Member 'UMovieWidget_C::Video_Image' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_ScaleBox) == 0x000258, "Member 'UMovieWidget_C::Video_ScaleBox' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Shouldloop) == 0x000260, "Member 'UMovieWidget_C::Shouldloop' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, AutoPlay) == 0x000261, "Member 'UMovieWidget_C::AutoPlay' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, MaintainAspectRatio) == 0x000262, "Member 'UMovieWidget_C::MaintainAspectRatio' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, OnMediaReadyToPlay) == 0x000268, "Member 'UMovieWidget_C::OnMediaReadyToPlay' has a wrong offset!");
+static_assert(sizeof(UMovieWidget_C) == 0x000280, "Wrong size on UMovieWidget_C");
+static_assert(offsetof(UMovieWidget_C, UberGraphFrame) == 0x000240, "Member 'UMovieWidget_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, Video_Image) == 0x000248, "Member 'UMovieWidget_C::Video_Image' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, Video_ScaleBox) == 0x000250, "Member 'UMovieWidget_C::Video_ScaleBox' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, Shouldloop) == 0x000258, "Member 'UMovieWidget_C::Shouldloop' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, AutoPlay) == 0x000259, "Member 'UMovieWidget_C::AutoPlay' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, MaintainAspectRatio) == 0x00025A, "Member 'UMovieWidget_C::MaintainAspectRatio' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, OnMediaReadyToPlay) == 0x000260, "Member 'UMovieWidget_C::OnMediaReadyToPlay' has a wrong offset!");
+static_assert(offsetof(UMovieWidget_C, OnMediaFailedToOpen) == 0x000270, "Member 'UMovieWidget_C::OnMediaFailedToOpen' has a wrong offset!");
 
 }
 

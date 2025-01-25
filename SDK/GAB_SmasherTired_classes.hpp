@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_SmasherTired.GAB_SmasherTired_C
-// 0x0010 (0x0B08 - 0x0AF8)
+// 0x0010 (0x0910 - 0x0900)
 class UGAB_SmasherTired_C final : public UGAB_AIBaseSimpleMontage_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherTired_C;                 // 0x0AF8(0x0008)(Transient, DuplicateTransient)
-	class UClass*                                 GE_SmasherClearChargeEffects;                      // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GAB_SmasherTired_C;                 // 0x0900(0x0008)(Transient, DuplicateTransient)
+	class UClass*                                 GE_SmasherClearChargeEffects;                      // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_SmasherTired(int32 EntryPoint);
@@ -41,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UGAB_SmasherTired_C) == 0x000008, "Wrong alignment on UGAB_SmasherTired_C");
-static_assert(sizeof(UGAB_SmasherTired_C) == 0x000B08, "Wrong size on UGAB_SmasherTired_C");
-static_assert(offsetof(UGAB_SmasherTired_C, UberGraphFrame_GAB_SmasherTired_C) == 0x000AF8, "Member 'UGAB_SmasherTired_C::UberGraphFrame_GAB_SmasherTired_C' has a wrong offset!");
-static_assert(offsetof(UGAB_SmasherTired_C, GE_SmasherClearChargeEffects) == 0x000B00, "Member 'UGAB_SmasherTired_C::GE_SmasherClearChargeEffects' has a wrong offset!");
+static_assert(sizeof(UGAB_SmasherTired_C) == 0x000910, "Wrong size on UGAB_SmasherTired_C");
+static_assert(offsetof(UGAB_SmasherTired_C, UberGraphFrame_GAB_SmasherTired_C) == 0x000900, "Member 'UGAB_SmasherTired_C::UberGraphFrame_GAB_SmasherTired_C' has a wrong offset!");
+static_assert(offsetof(UGAB_SmasherTired_C, GE_SmasherClearChargeEffects) == 0x000908, "Member 'UGAB_SmasherTired_C::GE_SmasherClearChargeEffects' has a wrong offset!");
 
 }
 

@@ -37,6 +37,60 @@ void UHUD_C::ExecuteUbergraph_HUD(int32 EntryPoint)
 }
 
 
+// Function HUD.HUD_C.OnLoadingScreenVisibilityChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UHUD_C::OnLoadingScreenVisibilityChanged(bool IsVisible_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUD_C", "OnLoadingScreenVisibilityChanged");
+
+	Params::HUD_C_OnLoadingScreenVisibilityChanged Parms{};
+
+	Parms.IsVisible_0 = IsVisible_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HUD.HUD_C.OnHUDScaleChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   HUDScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHUD_C::OnHUDScaleChanged(float HUDScale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUD_C", "OnHUDScaleChanged");
+
+	Params::HUD_C_OnHUDScaleChanged Parms{};
+
+	Parms.HUDScale = HUDScale;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HUD.HUD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UHUD_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUD_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function HUD.HUD_C.ShowPersonalVehicleMounting
 // (BlueprintCallable, BlueprintEvent)
 
@@ -247,60 +301,6 @@ void UHUD_C::EndOfDayRecapStarted(const struct FEndOfDayRecap& EndOfDayRecap)
 }
 
 
-// Function HUD.HUD_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UHUD_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HUD.HUD_C.LoadingScreenChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bVisible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHUD_C::LoadingScreenChanged(bool bVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "LoadingScreenChanged");
-
-	Params::HUD_C_LoadingScreenChanged Parms{};
-
-	Parms.bVisible = bVisible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HUD.HUD_C.QuestsCompleted
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UFortQuestItem*>           Quests                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UHUD_C::QuestsCompleted(const TArray<class UFortQuestItem*>& Quests)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "QuestsCompleted");
-
-	Params::HUD_C_QuestsCompleted Parms{};
-
-	Parms.Quests = std::move(Quests);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function HUD.HUD_C.OnEnterState
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -318,34 +318,6 @@ void UHUD_C::OnEnterState(EFortUIState PreviousUIState)
 	Parms.PreviousUIState = PreviousUIState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HUD.HUD_C.OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A
-// (BlueprintCallable, BlueprintEvent)
-
-void UHUD_C::OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HUD.HUD_C.OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A
-// (BlueprintCallable, BlueprintEvent)
-
-void UHUD_C::OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -377,9 +349,9 @@ void UHUD_C::HandleCursorModeChanged(bool IsEnabled, class FName ActionName, cla
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortQuickBars                          Quickbar_Index                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Slot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, int32 Param_Slot)
+void UHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, int32 Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -389,7 +361,7 @@ void UHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, i
 	Params::HUD_C_HandleQuickbarSlotFocusSlotChanged Parms{};
 
 	Parms.Quickbar_Index = Quickbar_Index;
-	Parms.Param_Slot = Param_Slot;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -406,31 +378,6 @@ void UHUD_C::SetQuickbarSizes()
 		Func = Class->GetFunction("HUD_C", "SetQuickbarSizes");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HUD.HUD_C.OnHandleAction
-// (HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_C", "OnHandleAction");
-
-	Params::HUD_C_OnHandleAction Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = Parms.bPassThrough;
 }
 
 
@@ -861,6 +808,26 @@ void UHUD_C::InitializeTagVisibilityWidgets()
 		Func = Class->GetFunction("HUD_C", "InitializeTagVisibilityWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HUD.HUD_C.HandleGameViewportActivationChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UHUD_C::HandleGameViewportActivationChanged(bool IsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HUD_C", "HandleGameViewportActivationChanged");
+
+	Params::HUD_C_HandleGameViewportActivationChanged Parms{};
+
+	Parms.IsActive = IsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }
